@@ -16,7 +16,7 @@ def parse_args():
 
     parser.add_argument("-src", "--source", type=str, nargs=1, required=True, help="Pass 'crs' or 'gao' for extractive label generation")
 
-    parser.add_argument("-i", "--index", type=int, nargs=1, default=0, help="Pass index number to start generating labels at")
+    parser.add_argument("-i", "--index", type=int, nargs='+', default=0, help="Pass index number to start generating labels at")
 
     parser.add_argument("--punkt", default=False, action="store_true", help="Set if have not downloaded 'punkt' from nltk")
 
@@ -151,7 +151,7 @@ def getLabels(file, clean_file, out_path, source='crs'):
 
 def main():
     args = parse_args()
-    index = args.index[0]
+    index = args.index
     source = args.source[0]
 
     if args.punkt:
@@ -162,8 +162,11 @@ def main():
         path_to_json = 'gov-report/crs'
         json_files = [pos_json for pos_json in os.listdir(path_to_json) if pos_json.endswith('.json')]
 
-        ## start labeling files beginning at index
-        json_files = json_files[index:]
+        if len(index) > 1:
+            json_files = json_files[index[0]:index[1]]
+        else:
+            ## start labeling files beginning at index
+            json_files = json_files[index[0]:]
 
         pbar = ProgressBar()
         for d in pbar(json_files):
@@ -176,7 +179,10 @@ def main():
         path_to_json = 'gov-report/gao'
         json_files = [pos_json for pos_json in os.listdir(path_to_json) if pos_json.endswith('.json')]
 
-        json_files = json_files[index:]
+        if len(index) > 1:
+            json_files = json_files[index[0]:index[1]]
+        else:
+            json_files = json_files[index:]
 
         pbar = ProgressBar()
         for d in pbar(json_files):
