@@ -12,7 +12,7 @@ missing_data = []
 def parse_args():
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter,
                             description=__doc__,
-                            epilog='Example Usage: ')
+                            epilog='Example Usage: python label_generation.py -src crs -i 500 --punkt')
 
     parser.add_argument("-src", "--source", type=str, nargs=1, required=True, help="Pass 'crs' or 'gao' for extractive label generation")
 
