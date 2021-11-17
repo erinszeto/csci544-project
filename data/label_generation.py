@@ -179,6 +179,9 @@ def main():
         path_to_json = 'gov-report/gao'
         json_files = [pos_json for pos_json in os.listdir(path_to_json) if pos_json.endswith('.json')]
 
+        label_path = 'labels/gao'
+        label_files = [jsonf for jsonf in os.listdir(label_path) if jsonf.endswith('.json')]
+
         if len(index) > 1:
             json_files = json_files[index[0]:index[1]]
         else:
@@ -189,6 +192,9 @@ def main():
             file = path_to_json + '/' + d
             clean_file = f'formatted-data-and-code/formatted-data/gao/{d}'
             out_path = f'labels/gao/{d}'
+
+            if d in label_files:
+                continue
             
             getLabels(file, clean_file, out_path, source='gao')
 
