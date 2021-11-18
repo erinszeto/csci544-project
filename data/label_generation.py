@@ -191,7 +191,7 @@ def main():
         if len(index) > 1:
             json_files = json_files[index[0]:index[1]]
         else:
-            json_files = json_files[index:]
+            json_files = json_files[index[0]:]
 
         pbar = ProgressBar()
         for d in pbar(json_files):
