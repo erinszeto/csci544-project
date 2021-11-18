@@ -161,6 +161,7 @@ def main():
     if source == 'crs':
         path_to_json = 'gov-report/crs'
         json_files = [pos_json for pos_json in os.listdir(path_to_json) if pos_json.endswith('.json')]
+        json_files.sort()
 
         label_path = 'labels/crs'
         label_files = [jsonf for jsonf in os.listdir(label_path) if jsonf.endswith('.json')]
@@ -184,6 +185,7 @@ def main():
     else:
         path_to_json = 'gov-report/gao'
         json_files = [pos_json for pos_json in os.listdir(path_to_json) if pos_json.endswith('.json')]
+        json_files.sort()
 
         label_path = 'labels/gao'
         label_files = [jsonf for jsonf in os.listdir(label_path) if jsonf.endswith('.json')]
