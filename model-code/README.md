@@ -2,6 +2,10 @@
 
 This is the official code for paper 'Extractive summarization of Long Documents by combining local context and global context'(EMNLP-IJCNLP 2019).
 
+## Notes for our project
+This code uses a PERL subprocess to calculate ROUGE scores. Thus, you will need to have perl installed on the machine you run the model on. Additionally, you will need to install the XML::DOM perl module to run the training portion. This can be done with the command:
+```sudo cpan XML::MOD```
+
 ## Installation
 Make sure you have `python 3` and `pytorch` installed.
 
