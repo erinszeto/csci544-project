@@ -1,0 +1,734 @@
+within the department of veterans affairs ( va ) , the veterans health administration ( vha ) operates one of the nation's largest health care systems .
+
+as a significant part of delivering health care to veterans , vha provides medications , prescription refills , and other pharmacy services .
+
+in addition to patient data from its own system , to help ensure that it has access to the necessary health information that could assist clinicians and pharmacists in making informed decisions about the health of veterans , va relies on patient data from the department of defense ( dod ) .
+
+the two departments have been working since 1998 to electronically exchange patient data across their electronic health information systems .
+
+yet , we have previously noted that va has faced significant information technology ( it ) challenges that have contributed to our designation of va health care as a high - risk area for the federal government .
+
+the bob stump national defense authorization act for fiscal year 2003 required va to ensure it has a pharmacy system that is interoperable with dod's system .
+
+specifically , the act required that the departments' systems achieve real - time interface , data exchange , and the ability to check prescription drug information for outpatients .
+
+the act also required that the systems use national standards for exchanging outpatient medication information .
+
+the senate appropriations committee report 114-57 accompanying the consolidated appropriations act , 2016 called for us to examine va's acquisition and use of a pharmacy data system .
+
+the specific objectives of our review were to determine whether ( 1 ) va currently possesses a functioning pharmacy system and the extent to which the system enables data to be viewed , shared , and transferred among vha pharmacy locations ; ( 2 ) va's pharmacy system is interoperable with dod's and , whether this system , or the absence thereof , is impacting service members who transition care from dod ; and ( 3 ) va has implemented its pharmacy system in accordance with health care industry practices .
+
+to address the first objective , we obtained and analyzed documentation describing va's pharmacy system , such as technical manuals and architecture diagrams that showed the current and planned capabilities of the system .
+
+in addition , we observed demonstrations of the system at va medical centers in baltimore , maryland ; butler , pennsylvania ; and san antonio , texas .
+
+we also visited a joint va and dod health center in north chicago , illinois to review capabilities for viewing , sharing , and transferring pharmacy data between vha locations .
+
+our criteria for selecting these sites was intended to ensure coverage of ( 1 ) different geographic locations , ( 2 ) the various types of va facilities ( eg , a medical center and an independent outpatient clinic ) , and ( 3 ) a location piloting the new va enterprise health platform .
+
+our selection criteria also ensured that we included sites of varying sizes , and which offered a breadth of medical services .
+
+to address the second objective , we reviewed va technical manuals and architecture diagrams , and documents produced by the va / dod interagency program office .
+
+we analyzed the department's plans and identified its actions taken toward achieving interoperability with dod .
+
+we then compared the department's actions to relevant requirements specified in the fiscal year 2003 , 2008 , and 2014 national defense authorization acts .
+
+we observed clinicians' and pharmacists' use of va and dod systems for the purposes of exchanging pharmacy data in real - time and performing prescription drug data checking for outpatients .
+
+additionally , we reviewed va documentation to learn how the department was monitoring and checking prescription drug data exchanged with dod .
+
+we also obtained written responses from va on questions regarding interoperability and reviewed va reports and documents , including a report to congress on interoperability standards , to evaluate the extent the pharmacy system conformed to national standards for the exchange of outpatient medication information between va and dod .
+
+further , to address the third objective , we conducted literature searches , reviewed our prior work , and consulted with various sources to identify industry practices associated with pharmacy it systems .
+
+these sources included our previous reports , the department of health and human services' office of the national coordinator for health information technology , the american society of health - system pharmacists , the archives of pharmacy practice , and a private provider .
+
+we reviewed the office of the national coordinator for health information technology's certification criteria for health it systems and its advisory on interoperability standards .
+
+we also reviewed gartner's update to the enterprise electronic health record generation model , as well as standards set by the national council for prescription drug programs .
+
+from these sources , we compiled a list of practices that the health care industry has identified as being relevant to the implementation of an effective pharmacy it system and that reflect areas of relevance with regard to va's health information system capabilities .
+
+this resulted in a list of six practices that relate to ( 1 ) ordering medication electronically , ( 2 ) receiving drug order checks , ( 3 ) tracking the dispensing of controlled prescription drugs , ( 4 ) electronically exchanging prescriptions , ( 5 ) using clinical decision support capabilities , and ( 6 ) using a perpetual inventory management capability to monitor medication inventory levels .
+
+we confirmed the validity and relevance of the identified practices with the office of the national coordinator for health information technology .
+
+we also confirmed our selection of the practices through discussions with industry leaders .
+
+based on the views and experiences of these sources , we characterized the practices discussed in our report as being industry practices ( rather than best practices ) .
+
+we also reviewed various va documentation , including its pharmacy system architecture and user manuals , a va office of inspector general report on pharmacy re - engineering , a 2011 comparison of va's electronic health record system to leading commercial solutions , and va's plans to implement pharmacy system capabilities through its pharmacy re - engineering project .
+
+we then used this information to assess va's current system capabilities and modernization plans against the identified industry practices to identify gaps .
+
+we supplemented our analyses with interviews of va , dod , and department of health and human services officials with knowledge of va's pharmacy system and the interoperability efforts within the department and with dod .
+
+these officials included those in va's office of information and technology and in vha , including the pharmacy benefits management services , as well as those with the va national center for patient safety .
+
+we also interviewed officials in the department of health and human services' office of the national coordinator for health information technology as well as dod officials in the defense health agency and dod / va program coordination office .
+
+additional details on our objectives , scope , and methodology are discussed in appendix i .
+
+we conducted this performance audit from january 2016 to june 2017 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+vha provides health care to approximately 6.7 million veterans and their families at an estimated annual cost of about $56 billion .
+
+in 2016 , the agency reported that it employed approximately 207,000 clinical staff to care for veterans in numerous venues throughout the united states and its territories .
+
+these venues include 168 va medical centers and approximately 750 primary care and multi - specialty outpatient clinics .
+
+within vha , pharmacy benefits management services is responsible for providing a broad range of pharmacy services , such as promoting appropriate drug therapy , ensuring medication safety , providing clinical guidance to pharmacists and other clinicians , and maintaining va drugs and supplies used to deliver pharmacy benefits , among other services .
+
+to provide these services , vha operates about 260 pharmacies located in the medical centers and outpatient clinics , as well as 7 consolidated mail outpatient pharmacies .
+
+veterans can receive treatment and obtain and fill prescriptions at the medical centers and outpatient clinics ; they can also receive medications by mail via the consolidated mail outpatient pharmacies .
+
+according to the department , outpatient prescribing is performed most predominantly .
+
+for fiscal year 2016 , vha reported that it provided outpatient pharmacy services to approximately 5 million veterans .
+
+the agency further reported that about 31 million outpatient prescriptions were filled at medical center and outpatient clinic pharmacies , and about 116 million prescriptions were filled by consolidated mail outpatient pharmacies .
+
+vha estimated that it spent approximately $6.3 billion for pharmacy services in fiscal year 2016 and it has requested about $7.7 billion for pharmacy services in fiscal year 2017 .
+
+in prescribing medication for an outpatient , clinicians generally follow a prescription process in which the clinician first reviews the patient's medical record and selects an appropriate medication from va's approved list of medications .
+
+the clinician then orders the necessary medication .
+
+for each order , the clinician performs checks to identify any excessive dosage , or any possible interactions for the medication ; for example , the patient may be allergic to that medication .
+
+medication orders are then reviewed by a pharmacist , who dispenses the drug and updates the patient's medical record to reflect the medication that was dispensed .
+
+the general process for prescribing and dispensing prescription medications to va patients is depicted in figure 1 .
+
+vha relies on the department's health information system — the veterans health information systems and technology architecture ( vista ) — to deliver health care .
+
+vista consists of approximately 200 separate computer applications and modules that provide health care delivery capabilities .
+
+this includes multiple computer applications which have pharmacy capabilities .
+
+a key application within vista — the computerized patient record system ( cprs ) — enables the department to create and update an individual electronic health record for each va patient .
+
+specifically , cprs enables clinicians to enter , review , and continuously update information connected with a patient .
+
+among other things , clinicians can order lab tests , medications , diets , radiology tests , and procedures ; record a patient's allergies or adverse reactions to medications ; request and track consults ; enter progress notes , diagnoses , and treatments for each encounter ; and enter discharge summaries .
+
+over the last three decades , local vha medical sites have made numerous modifications to vista , resulting in about 130 different instances , or variations , of the system .
+
+since 2001 , va has recognized the need to modernize vista and several of its efforts also were aimed at improving the department's pharmacy capabilities .
+
+specifically , in that year , vha began the healthevet initiative to standardize patient data and modernize health information software applications .
+
+under healthevet , va began the pharmacy re - engineering project in 2002 , with the intent of replacing all of the legacy applications that supported pharmacy services in order to meet current and future patient needs .
+
+the department had initially planned the pharmacy re - engineering project to be completed for deployment in 2009 .
+
+however , in june 2009 , the secretary of veterans affairs announced that va would stop financing failed projects and improve the management of its it development projects .
+
+toward this end , the va chief information officer transitioned the pharmacy re - engineering project to a phased development effort .
+
+according to va pharmacy management officials , this was done because the project had faced funding delays , contracting difficulties , and differing directions from a number of va chief information officers .
+
+the project was also rescoped to focus on implementing clinical decision support tools , specifically to cross - check drugs in medication orders to reduce the frequency of adverse drug events and improve patient safety .
+
+in august 2010 , va reported that it had terminated the healthevet initiative .
+
+subsequently , from march 2011 to february 2013 , va worked toward the development of a new , joint integrated electronic health record system with dod .
+
+in october 2011 , pharmacy requirements were developed as a part of the joint integrated electronic health record initiative .
+
+however , the joint integrated electronic health record system was discontinued in february 2013 based on concerns about the program facing challenges in meeting deadlines , costing too much , and taking too long to deliver capabilities .
+
+in december 2013 , va began a new program , vista evolution , to enhance and modernize the existing health information system ( vista ) by incrementally deploying capabilities through fiscal year 2018 .
+
+this initiative included plans for future pharmacy enhancements , such as additional order checks and automatic updates to replace the slow ( 60- day ) manual inclusion of new drugs into the medication ordering and management process , as part of the pharmacy re - engineering project .
+
+the planned pharmacy enhancements also included inbound e - prescribing , a capability to receive inbound electronic prescriptions ( e - prescriptions ) from a non - va provider , and then fill , and dispense the prescriptions in vista .
+
+from fiscal years 2002 to 2016 , va reported spending about $187.6 million for the pharmacy re - engineering project .
+
+figure 2 shows a timeline of the modernization initiatives for the pharmacy re - engineering project in relation to va's vista modernization initiatives .
+
+va's office of information and technology has responsibility for providing technology services across the department , including the development and management of all it assets and resources .
+
+as such , the office is to support vha in planning for and acquiring it capabilities that meet business requirements , to include delivering the necessary technology and expertise that support health care providers within va's network of hospitals , outpatient facilities , and pharmacies .
+
+specifically , regarding pharmacy services , it has responsibility for developing computer systems based on requirements from pharmacy benefits management services .
+
+to support its efforts to deliver health care , dod uses the armed forces health longitudinal technology application ( ahlta ) — its outpatient electronic health information system .
+
+ahlta is used to generate , maintain , store , and access patient electronic health records ; and it is comprised of multiple legacy medical information systems that were developed from commercial software products and customized for specific uses .
+
+for example , the composite health care system , which was formerly dod's primary health information system and serves as a foundation for ahlta , is used to capture information related to pharmacy , radiology , and laboratory order management .
+
+the composite health care system also allows clinicians to electronically prescribe medications .
+
+dod relies on its system , called the pharmacy data transaction service , for its pharmacy capabilities .
+
+this system is a central repository for prescription data from all dod pharmacies .
+
+further , it detects duplicate drug treatments , therapeutic overlap , and drug interactions .
+
+it also contains data on specific drugs , dosages , and dispensing dates .
+
+the repository includes data for dod prescriptions processed through authorized private and dod medical facilities' pharmacies , as well as through the mail .
+
+the department is currently in the process of transitioning from its existing electronic health record systems to a new commercial electronic health record system called mhs genesis .
+
+the transition to the new system began in february 2017 in the pacific northwest region of the united states .
+
+according to the department , the new system is to integrate inpatient and outpatient solutions and provide medical and dental information .
+
+ahlta and the composite health care system are among the systems that are intended to be replaced by the new system .
+
+according to the department of health and human services' office of the national coordinator for health information technology , the american society of health - system pharmacists , and others , industry practices for pharmacy it systems stress the use of capabilities aimed at improving the efficiency and effectiveness of clinicians and pharmacists in prescribing and dispensing medication .
+
+among others , these capabilities would enable clinicians and pharmacists to: electronically order medications , and record , change , and access a medication order for a patient .
+
+computerized order entry improves the safety , efficiency , and accuracy of the medication - use process by enabling the pharmacist to review and verify the medication order before filling it .
+
+perform drug - to - drug interactions and drug - allergy interaction checks during computerized order entry .
+
+before a medication order is completed and acted upon , interventions should automatically indicate to a user drug - to - drug and drug - allergy contraindications based on a patient's medication list and medication allergy list .
+
+clinical decision support systems , such as drug interaction , allergy , and dose monitoring warning systems , should be adopted to make patient care more efficient and effective .
+
+track the dispensing of controlled prescription drugs to patients through state - run prescription monitoring drug programs , which may be used to monitor for suspected abuse or diversion , and can give a clinician critical information regarding a patient's pain management and controlled substance prescription drug history .
+
+electronically create prescriptions for electronic transmission in accordance with national council for prescription drug programs standards .
+
+according to the office of the national coordinator for health information technology , 90 percent of pharmacies in the united states are enabled to accept electronic prescriptions , and 70 percent of physicians are electronically prescribing medication .
+
+use capabilities that would help guide the implementation of improved treatment methodologies .
+
+specifically , gartner's generation model for enterprise electronic health record systems is a framework where generation level 3 calls for establishing effective clinical decision support capabilities , clinical workflow , clinical display , as well as computer - based physician order entry .
+
+according to gartner , in more robust electronic health record products , medication order entry is tightly connected to clinical decision support .
+
+generation level 3 facilitates dissemination of the latest evidence - based practices by alerting , reminding , and proactively escalating issues to the clinician as necessary .
+
+use a computerized system to manage perpetual inventory so the system displays up - to - date pharmaceutical inventory at all times .
+
+the pharmaceutical inventory on hand is entered into the system , and the appropriate amount of products is automatically reduced from the inventory when a prescription or medication order is filled .
+
+we have previously reported on va's efforts to share pharmacy data .
+
+for example , in 2007 , we reported that the department and dod were exchanging computable outpatient pharmacy data for some shared patients , but had not completed important steps for exchanging these data for all shared patients .
+
+va and dod had developed an electronic interface — the clinical data repository / health data repository — that linked the two departments' health data repositories and allowed for the exchange of computable data between them .
+
+however , we noted that shared patients were not activated when patients' identifying information did not match exactly and va patients who were discharged from active duty before 1997 could not be activated if they did not have a unique dod identification number .
+
+in addition , va and dod had not established written guidelines for defining and identifying shared patients and va was exchanging computable outpatient pharmacy data at a limited number of sites .
+
+to help ensure that all shared patients would benefit from the exchange of computable outpatient pharmacy data , we recommended that both va and dod expedite the development of a solution for activating shared patients when patients' identifying information does not match exactly and dod expedite efforts to assign a unique dod identification number to va patients who were discharged from active duty before 1997 .
+
+we also recommended development of written guidelines for all va and dod sites to use for defining and identifying shared patients .
+
+in addition , we recommended that va expedite efforts to expand to all va sites the capability to automatically check dod data that are exchanged through the clinical data repository / health data repository .
+
+both departments concurred with these recommendations and have taken actions to implement them .
+
+in addition , the va inspector general reported on the department's pharmacy system efforts in 2013 .
+
+the report noted that the office of information and technology had not been effective in keeping the pharmacy re - engineering project on target in terms of schedule and cost , as well as the functionality delivered .
+
+it noted that project managers had struggled to deploy the pharmacy re - engineering project increments in a timely manner and recommended that va ensure that each remaining pharmacy re - engineering increment be reported and monitored ; ensure adequate oversight and controls , including the planning guidance , staffing , and cost and schedule tracking needed to deliver functionality on time and within budget ; and establish a plan for future funding of the pharmacy re - engineering project .
+
+va's chief information officer agreed with the inspector general's recommendations .
+
+va currently has system capabilities that support clinicians and pharmacists in prescribing and dispensing medications to patients .
+
+these capabilities are achieved with the use of multiple vista and other computer applications that enable the processing and viewing of health data .
+
+nevertheless , as a result of several limitations in vista's capabilities , pharmacists cannot always view the necessary patient data and transfer prescriptions among the department's numerous medical centers , primary care clinics , and multi - specialty outpatient clinics .
+
+industry practices suggest that pharmacy systems should , among other things , include the capability to electronically create prescriptions and send them to pharmacies for the dispensing of medications .
+
+guidance developed by the office of the national coordinator for health information technology identifies specific capabilities that are key to having a pharmacy system that enables effectively creating and processing prescriptions .
+
+these include capabilities to review patient data , select and authorize medications , and send medication orders to pharmacies for processing .
+
+accomplishing this depends on the system enabling clinicians and pharmacists to effectively view and share patient information and pharmacy data .
+
+a congressional report has emphasized the importance of va being able to use its pharmacy systems to view data among vha medical sites .
+
+va's current pharmacy system capabilities are being provided by 17 vista pharmacy software applications and cprs which , collectively , enable clinicians and pharmacists to process , view , and share pharmacy data .
+
+the department relies on these applications to support pharmacy services such as ( 1 ) processing and dispensing outpatient and inpatient medications to veterans ; ( 2 ) processing and automatically transmitting prescription data from va medical centers to consolidated mail outpatient pharmacies ; ( 3 ) monitoring and tracking the receipt , inventory , and dispensing of all controlled substances ; and ( 4 ) alerting pharmacy personnel to the existence of medications that may have been prescribed at other facilities .
+
+for a description of applications that va has categorized as vista pharmacy applications , see appendix ii .
+
+although multiple applications support pharmacy capabilities , clinicians and pharmacists primarily rely on three applications to prescribe and dispense outpatient medications: cprs , the medication order check healthcare application , and outpatient pharmacy .
+
+cprs provides clinicians the ability to prescribe medications as well as the ability to record patient data , including patients' allergies or adverse reactions to medications .
+
+the medication order check healthcare application enables clinicians and pharmacists to check new prescriptions to identify any interactions with other medications that the patient is currently taking , a process that is referred to as order checks .
+
+this application enables checks of new prescriptions for interactions at the medical site where the patient is being treated , as well as at other vha medical sites .
+
+after the clinician prescribes the medications in cprs , the medication order check healthcare application is run instantaneously and the results of the check are displayed for the clinician to review and make any needed changes .
+
+outpatient pharmacy allows pharmacists to process and fill medication prescriptions from cprs for veterans that are seen in outpatient clinics or that have received prescriptions upon discharge from a va hospital .
+
+the application also enables pharmacists to review the results of the medication order check healthcare application checks to ensure there are no allergies or interactions before filling the prescription .
+
+in conjunction with the patient data that can be viewed in these vista applications , three different viewing applications , or viewers , are available to clinicians and pharmacists for use in creating prescriptions and dispensing medications .
+
+these applications — remote data view , vistaweb , and joint legacy viewer — can be used by clinicians and pharmacists to view and share information from other vha medical sites .
+
+each of these read - only viewers provides slightly different capabilities .
+
+remote data view enables clinicians and pharmacists to view and share prescriptions , laboratory histories , radiological images , and reports of outpatient medications , which can be seen by clinicians and pharmacists at all vha medical sites .
+
+clinicians and pharmacists can access remote data view after logging on to the cprs application .
+
+vistaweb enables clinicians and pharmacists to view and share patient data , including prescriptions , lab history , limited radiological imaging , patient information from va's private health care providers , and reports of outpatient medications with all vha medical sites .
+
+vistaweb can be accessed separately in vista or from the cprs application .
+
+the joint legacy viewer enables clinicians and pharmacists to view and share prescriptions , lab history , radiological imaging , patient information from va's private health care providers , and reports of outpatient medications with all vha medical sites .
+
+the joint legacy viewer provides access to dod clinical notes , among other dod data , that are not available using the other two viewers ; it also offers the ability to integrate data and customize what is displayed .
+
+the joint legacy viewer cannot be accessed from the cprs application and requires a separate login .
+
+figure 3 provides a simplified depiction of the vista applications and viewers that clinicians and pharmacists use to prescribe and dispense outpatient medications .
+
+as shown in figure 3 , clinicians and pharmacists follow separate workflows to , respectively , prescribe and dispense medications .
+
+specifically , when prescribing a medication , a clinician uses cprs to: select the patient being treated by using a patient selection screen .
+
+view information needed to assess the patient .
+
+clinicians can use cprs to view patient information such as active problems , allergies , and medications at the site where the patient is being treated .
+
+the patient information is displayed by cprs to support the clinician's treatment decisions .
+
+access the different viewers to view patient information from other vha and dod medical sites where the patient was treated and share additional patient information with other vha locations .
+
+enter new prescriptions and other patient information , such as a patient's allergies or adverse reactions to medications , progress notes , diagnoses , and treatments , which make up the patient's electronic record .
+
+access the medication order check healthcare application to view potential drug interactions and allergy data: when a clinician enters a prescription using cprs , the system displays drug interactions identified by the medication order check healthcare application instantaneously to alert clinicians to potential drug interactions , duplicate therapy , and maximum drug dosage .
+
+complete the prescription by approving and signing the prescription .
+
+the prescription then becomes available in the outpatient pharmacy application for processing and dispensing by a pharmacist .
+
+to process and dispense outpatient prescriptions , a pharmacist uses the outpatient pharmacy application to: select a prescription for processing by accessing a list of outpatient prescriptions that were approved by clinicians .
+
+obtain additional patient information from cprs or from one of the three viewers , and may also update prescription information in cprs , such as the number of refills that remain for the patient .
+
+the pharmacist can also use the outpatient pharmacy application to view prescription and patient information , such as current and past medications and prescriptions that are ready to be dispensed to the patient .
+
+process the prescription by entering additional patient information , such as allergy data , reviewing the medication order check healthcare application potential interactions , flagging the prescription if the pharmacist has questions for the clinician , and then entering prescription information , followed by verifying the prescription for dispensing .
+
+process , dispense , and generate prescription labels and reports that aid the pharmacist in controlling the medication inventory .
+
+nevertheless , while clinicians can view and share patient data to prescribe medications , pharmacists cannot always efficiently view patient data needed to dispense medications .
+
+as we found at selected vha medical sites and during interviews with pharmacy benefits management services officials , when using the outpatient pharmacy application , certain limitations can hinder the pharmacists' ability to view data: data continually rolls off the computer screen in order to make room for other information , which requires the pharmacists to continually scroll through multiple screens to view pharmacy data ; and additional time is required for the pharmacists to check and dispense medications because the pharmacists must switch between the outpatient pharmacy application and the data viewers in order to see all relevant patient information needed to dispense medications .
+
+pharmacy benefits management services officials attributed these limitations to several factors: ( 1 ) the outpatient pharmacy application is outdated , as the core functionality was developed in the 1980s , with character - based input screens that have limited screen space and data that rolls off the computer screen ; ( 2 ) the outpatient pharmacy application provides a character - based interface for users ( i.e. , the application requires text - based inputs to initiate actions ) , rather than a graphical user interface ; and ( 3 ) the three data viewers are not integrated with the outpatient pharmacy application because the application was developed without a graphical user interface that could be used to select the viewers ; thus the viewers need to be accessed in a separate screen .
+
+vha pharmacists have noted the lack of a graphical user interface as a limitation to efficiently processing prescriptions since 2001 .
+
+accordingly , pharmacy benefits management services officials stated that they have requested that the outpatient pharmacy application be modernized during va's annual process for requesting system updates .
+
+however , va has not yet done so .
+
+according to the vista evolution modernization plans and pharmacy benefits management services officials , the department does not have plans to address this issue due to other re - engineering priorities .
+
+until va implements changes to its pharmacy system that address the inefficiencies with viewing patient information , pharmacists will continue to lack important capabilities that are essential to their reviews of patient data while processing and dispensing prescriptions .
+
+beyond limitations in viewing patient data , pharmacists lack the capacity to electronically transfer prescriptions to other vha pharmacies or process prescription refills received from other vha medical sites .
+
+according to the national council for prescription drug programs' standards , systems should be able to electronically transfer prescriptions between pharmacies .
+
+however , pharmacists at the vha medical sites we visited said patients that receive specialty care and prescriptions from a vha medical site cannot have that prescription electronically transferred to their primary care site ( the location that the veteran usually goes to ) , even if the different medical sites are in the same state .
+
+this is due to the fact that , as discussed in va's inbound e - prescribing project plans and with vha pharmacists , cprs and the vista outpatient pharmacy application do not provide the capability to transfer prescriptions between pharmacies .
+
+the department's vista modernization plans include acquiring by may 2018 , the capability to transfer prescriptions from one vha pharmacy to another vha pharmacy , as part of the inbound e - prescribing project .
+
+in addition , the modernization plans call for the implementation of a new system — oneva pharmacy — that is to allow veterans to obtain prescription refills from a different vha medical site .
+
+according to pharmacy benefits management services officials , va is developing plans to implement this capability in september 2017 .
+
+if va fully implements the prescription transfer capability as intended , pharmacists should then have an important tool to support the efficient and safe transfer of prescriptions and refills while ensuring that veterans receive prescriptions at the pharmacy of their choice in a timely manner .
+
+va has developed various capabilities over the past two decades that have helped to advance interoperability between its own pharmacy system and dod's pharmacy system , thereby allowing clinicians and pharmacists to exchange certain patient and medication information .
+
+for example , the departments' pharmacy systems provide the ability for clinicians and pharmacists to check prescription drug information for potentially adverse drug and allergy interactions .
+
+nevertheless , certain limitations impede interoperability with dod: va clinicians and pharmacists ( 1 ) cannot always view dod patient data and ( 2 ) do not always receive complete order checks that include new dod medication data .
+
+further , va has not assessed the impact of its pharmacy system interoperability on service members transitioning care from dod to va .
+
+the national defense authorization act for fiscal year 2003 required va and dod systems to be interoperable , to achieve real - time interface and data exchange , and to have the ability to check prescription drug information for outpatients .
+
+real - time interfaces can enable pharmacy and patient medical data to be viewed instantaneously after patient data is entered .
+
+in addition , complete patient information is needed for clinicians and pharmacists to make effective clinical decisions .
+
+the act also required that va's and dod's pharmacy systems have the ability to check prescription drug information for outpatients based on the use of national standards .
+
+to perform prescription order checks that include dod patient data , the medication information has to be interoperable between dod and va systems .
+
+to advance interoperability between their health information systems and adhere to the use of national standards , va and dod have mapped their medication data to the national standard rxnorm , thereby enabling clinicians at each department to use their pharmacy systems to perform medication order checks to identify potential adverse effects , such as drug allergies and drug interactions .
+
+further , as a result of various capabilities that the two departments developed over the past two decades , they are able to view and share pharmacy data in near real - time for transitioning service members or patients that receive care at both departments' medical facilities .
+
+these capabilities include the: bidirectional health information exchange – built on the federal health information exchange framework , this mechanism allows va and dod clinicians to view real - time inpatient and outpatient clinical data for patients receiving treatment from both departments .
+
+the data shared through this exchange includes drug allergy , outpatient pharmacy , and inpatient information .
+
+clinical data repository / health data repository – as mentioned earlier , this is an interface that allows va and dod to share electronic health records from their respective health data repositories .
+
+this interface provides clinicians at both departments' with bidirectional , real - time exchange of medical records , to include outpatient pharmacy and drug - allergy information that enables drug - to - drug and drug - allergy order checks .
+
+additionally , certain vista applications ( i.e. , the medication order check healthcare application , cprs , and vista outpatient pharmacy ) , along with the joint legacy viewer , enable some level of interoperability between va's and dod's pharmacy systems by allowing clinicians and pharmacists to check prescription drug information for outpatients .
+
+specifically , the joint legacy viewer enables va clinicians to view dod data through a single interface .
+
+in addition , as mentioned previously , the medication order check healthcare application enables clinicians and pharmacists to check on prescription drug data from both va and dod to view drug - to - drug interactions and allergies for outpatients .
+
+if any such interactions are identified , the medication order check healthcare application displays an alert in cprs or the vista outpatient pharmacy application .
+
+ ( additional information on dod and va's initiatives to share patient pharmacy data is discussed in appendix iii. ) .
+
+nevertheless , while these capabilities exist , va clinicians and pharmacists face limitations in that they cannot always view patients' data .
+
+specifically , dod patient data does not always populate in the remote data view even though a record exists for the veteran .
+
+in addition , we observed during our site visits that the joint legacy viewer could not always connect to dod's pharmacy system and display the patient's medical data .
+
+as demonstrated at these sites , when dod data did not populate in one of the viewers , va clinicians and pharmacists had to either recheck the viewer that failed to display the dod data or check one of the other two viewers .
+
+vha officials stated they could not explain the reasons that clinicians and pharmacists could not always view dod data as we observed during our site visits without additional information .
+
+specifically , they would need information regarding how the data was requested to identify and address any system limitations .
+
+the officials also stated that the department had conducted assessments of the accuracy and completeness of the data exchanged between the two departments from october 2014 to may 2015 .
+
+however , they discontinued the assessments due to other priorities and have not since conducted any such assessments .
+
+until va ensures that its clinicians and pharmacists can view all necessary dod patient records , they may not have complete information for making effective clinical decisions about prescriptions which , in turn , may cause unnecessary delays in providing medical care to veterans and eligible service members .
+
+in addition , va pharmacists and clinicians do not always receive complete information from dod's pharmacy system that is needed to perform medication order checks on new medications .
+
+specifically , they face limitations in receiving the results of medication order checks based on dod data when accessed through cprs and the vista outpatient pharmacy .
+
+to facilitate medication information interoperability , both departments currently map and update their medication information to ensure it is consistent with national standards every month .
+
+however , since the timing of the updates for each department's mapping to the national standards may not always be the same , order checks cannot always be performed for new medications that have not been mapped to the national standards .
+
+incomplete order checks are , in part , due to the fact that va uses data mapping instead of using standardized medication terminology in its pharmacy system ( this process is referred to as native standardization ) .
+
+according to va's interoperability plan , the department is using mapping as an interim approach in order to meet the requirements of the national defense authorization act for fiscal year 2003 , which states that va and dod should use national standards to exchange outpatient medication information .
+
+vha officials said they recognized that mapping limits standardization and had started to use native standardization for certain data , such as immunizations , labs , problem lists , and encounter data .
+
+in addition , according to va's interoperability plan , the department has started , but has not yet completed a plan for implementing native standardization for medication and allergy data that is necessary to conduct order checks for duplicate medications , medication allergies , and medications that exceed the maximum dosage amounts .
+
+the officials could not tell us when the department expects to complete this plan .
+
+until the department reduces the risk of incomplete order checks by completing its plan to implement an approach to using national standards for medication and allergy data , its clinicians and pharmacists will continue to receive incomplete order checks , which may present risks to patient safety .
+
+according to the office of management and budget guidelines , an agency is to conduct assessments of its systems to analyze how organizational assets , such as it systems , are able to support the organization's mission .
+
+a key aspect of va's organizational mission includes providing pharmacy benefits to transitioning service members , which relies on having interoperability between va and dod's systems .
+
+however , the impact of va's interoperable pharmacy system capabilities on transitioning service members is not known because the department has not conducted such an assessment .
+
+while the department performed an operational analysis in fiscal year 2015 for its overall medical it support investment , the analysis did not address interoperability capabilities of systems , such as the medication order check healthcare application , cprs , or vista outpatient pharmacy , and their impact on the care being provided to transitioning service members .
+
+vha officials in the national center for patient safety stated that it is difficult to assess system impact on veterans' care and to link adverse medical events in patient care to the pharmacy system because there may be other contributing factors , such as personnel fatigue , team members' dynamics , or training of the staff .
+
+while such factors are relevant , as previously discussed , we identified pharmacy system limitations in va and dod interoperability and in medical data mapping , which hindered va clinicians' and pharmacists' ability to view dod data .
+
+both of these limitations prevent the va clinicians' and pharmacists' ability to consistently obtain prescription information necessary to perform drug - to - drug checks and to make informed clinical decisions on patient care .
+
+thus , without an assessment , va cannot be assured of the potential impact on veterans as a result of the interoperability of its pharmacy system with dod's system .
+
+further , in the absence of such an assessment , va lacks assurance regarding the effectiveness of its pharmacy system to adequately support its mission of providing health care to veterans .
+
+industry practices that have been suggested for improving the efficiency and effectiveness of clinicians and pharmacists in prescribing and dispensing medications include the six selected practices identified earlier in this report .
+
+these practices focus on enabling clinicians and / or pharmacists to ( 1 ) order medications electronically , ( 2 ) receive drug - to - drug and drug - allergy interaction checks , ( 3 ) track the dispensing of controlled prescription drugs , ( 4 ) electronically exchange prescriptions with non - va entities ( i.e. , private or dod clinicians and pharmacies ) , ( 5 ) utilize clinical decision support capabilities , and ( 6 ) maintain a perpetual inventory management capability to monitor medication inventory levels .
+
+we found that va implemented pharmacy system capabilities that align with three of these six practices .
+
+specifically , as discussed earlier , the department's current pharmacy system capabilities incorporate two practices: the ability for clinicians to order medications electronically and to receive drug - to - drug and drug - allergy interaction checks .
+
+in this regard , vista and cprs provide the ability for clinicians to electronically order patient medications at local vha sites and for clinicians and pharmacists to receive drug - to - drug and drug - allergy interaction checks through the medication order check healthcare application .
+
+the medication order check healthcare application also provides order checks for duplicate therapy and maximum single dose order checks .
+
+according to va's pharmacy re - engineering plans , va intends to implement the ability for the medication order check healthcare application to deliver maximum daily dose order checks for clinicians and pharmacists beginning in may 2018 .
+
+further , va has taken steps related to a third industry practice to track the dispensing of controlled prescription drugs through state - run prescription monitoring drug programs .
+
+according to pharmacy benefits management services officials , and based on our visits to selected medical sites , va currently sends data on prescriptions for controlled substances to 47 state programs .
+
+the officials added that the department plans to begin sending controlled substance prescription data to 3 additional state programs when appropriate agreements have been established .
+
+to retrieve data from the state prescription monitoring drug programs , va clinicians manually access the state prescription monitoring databases and document that they accessed these databases in the patient's file .
+
+according to the user manuals for va's cprs , medication order check healthcare application , and vista outpatient pharmacy , the clinicians receive alerts warning them of duplicate orders for controlled substances via these applications ; the alerts prompt them to review data from the state prescription monitoring databases .
+
+clinicians at the sites we visited use a template in cprs that identifies clinical warning signs of potential controlled substance abuse .
+
+while va's system includes capabilities that are consistent with three of the selected industry practices , the department has not implemented capabilities that align with three other selected practices that could enhance its pharmacy system's usefulness .
+
+specifically , it has not implemented practices related to electronically exchanging prescriptions with non - va entities ( eg , private or dod ) , using certain clinical decision support capabilities , and maintaining a perpetual inventory management capability to monitor medication inventory levels .
+
+according to the office of the national coordinator for health information technology , health it systems should enable a user to electronically send prescriptions to , or receive them from , non - va providers and pharmacies in accordance with national council for prescription drug programs standards .
+
+the office of the national coordinator for health information technology also stated that electronic prescriptions should have the capability to include key information , such as the reason for the prescription , the diagnosis , and the ability to transmit the prescription in a secure manner .
+
+this is important to prevent the risk of loss or misinterpretation , which may occur with hand - written prescriptions .
+
+however , cprs and the vista outpatient pharmacy application do not have the functionality that would enable clinicians or pharmacists to electronically receive prescriptions from non - va providers or non - va pharmacies ( private or dod ) .
+
+in addition , these applications do not have functionality that enables clinicians or pharmacists to send prescriptions to external providers and pharmacies , which are referred to as outbound prescriptions .
+
+as a result , veterans must obtain paper prescriptions or have prescriptions faxed from non - va providers , and submit the prescriptions to their local va medical sites in order for the va pharmacy to manually input the prescriptions into the system and fill them — a process that is time consuming and inefficient .
+
+va has recognized the need to exchange prescriptions with non - va providers and pharmacies , and has plans to include the capability to receive electronic prescriptions and use the national council for prescription drug programs standards in the vista outpatient pharmacy application .
+
+specifically , according to pharmacy re - engineering documentation , its inbound eprescribing project is intended to provide the ability to receive electronic prescriptions from a non - va provider or a non - va pharmacy .
+
+according to the vista 4 roadmap , the inbound eprescribing project was originally planned for national deployment in march 2016 .
+
+va officials from the office of information and technology stated that they began development of inbound electronic prescribing capabilities in july 2016 .
+
+however , the initiative was delayed because the technical system infrastructure was not available to support the initiative .
+
+among other actions , these officials said va needed to redefine technical requirements for the acquisition process and rebaseline and reapprove planning documents .
+
+the department now plans to begin to release this functionality in august 2017 .
+
+on the other hand , with regard to sending electronic prescriptions to non - va pharmacies , va does not yet have plans to implement outbound electronic prescribing capabilities .
+
+pharmacy benefits management services officials stated that doing so would require complex modifications to cprs , or changes to the enterprise health management platform , which va is in the initial stages of deploying .
+
+however , without outbound electronic prescribing capabilities , va's ability to electronically send prescriptions to non - va pharmacies is limited and the department faces increased risk that a clinician's prescription will not be entered correctly at a non - va pharmacy .
+
+this could lead to the wrong medication being dispensed or other patient safety issues , including dosing mistakes .
+
+in addition , veterans may face inconvenience because their prescriptions are not electronically transmitted to private pharmacies .
+
+as previously discussed , gartner's generation model for enterprise electronic health record systems is a framework where generation level 3 calls for establishing effective clinical decision support capabilities , clinical workflow , and clinical display , as well as computer - based physician order entry .
+
+in robust electronic health record systems , ordering medication is tightly connected to clinical decision support .
+
+clinical decision support helps clinicians make complex decisions and can trigger appropriate early notification of possible untoward events .
+
+va's health information system , vista , including cprs , does not have capabilities that could enhance clinical decision support for patient treatment .
+
+moreover , while va has undertaken a new initiative to address these deficiencies , the initiative is not in clinical use and its plans are incomplete .
+
+according to va documentation , a 2011 evaluation found that vista and cprs did not have generation level 3 capabilities and noted that , compared to commercial solutions , vista lagged with regard to key clinical functionalities such as clinical decision support , clinical display , and clinical workflow .
+
+for example , vista does not always display data in a meaningful manner that contributes to the clinician's ability to use the data effectively .
+
+va also identified that cprs has limited capability for presenting patient information recorded at dod and other vha medical sites in a manner that supports clinicians' effective use of patient data .
+
+in this regard , data such as laboratory tests and medications are currently not available for viewing on the same screen , but should be considered together to improve the understanding of how medications affect patients .
+
+in order to provide clinicians and pharmacists with more clinical decision support and to help with patient treatment , in 2014 , va initiated development of the enterprise health management platform , which according to the system design document , is a multi - year effort to modernize the department's electronic health record system and replace parts of cprs .
+
+the current version of the enterprise health management platform is to have capabilities for clinicians to view patient data from both va and non - va providers and pharmacies on a single screen , and for clinicians to customize the screen — enabling data such as laboratory tests and medications to be displayed together — to meet the clinician's data needs .
+
+by addressing the existing limitation of laboratory and test data not being available on a single screen when creating prescriptions , the enterprise health management platform is expected to provide a clinical decision support capability that improves the clinicians' ability to consider all relevant information when creating prescriptions .
+
+according to va officials , these capabilities are currently being tested .
+
+nevertheless , while the enterprise health management platform will include some generation level 3 clinical capabilities , such as those mentioned above , it is currently not in clinical use and does not have additional capabilities that could make the pharmacy system more useful to clinicians and pharmacists , and enhance clinical decision support and clinical display .
+
+these capabilities include the ability to proactively alert a clinician that medication dosage may need to be adjusted based on medical test results , which would help ensure that medication is prescribed based on current medical information for patients , and the ability to navigate from an alert directly to a new medication order screen to change the medication .
+
+while va has plans and time frames for implementing the capability to proactively alert a clinician about medication dosages , vha officials did not have specific time frames or milestones for when the ability to navigate from an alert to medication order is expected to be achieved .
+
+the officials stated that they did not yet have time frames for this effort because the department is evaluating alternatives for its future electronic health record system .
+
+nevertheless , until va implements certain clinical decision support capabilities , such as the ability to navigate from an alert directly to a new medication order screen , va clinicians and pharmacists will lack important capabilities that could enhance clinical decisions related to prescribing medications .
+
+industry practices stress the use of a computerized system to manage perpetual inventory so that the system displays up - to - date pharmaceutical inventory at all times .
+
+this includes the capability to , when dispensing or restocking medication , update the inventory totals to accurately reflect the amount of medication that is in stock , and to set minimum inventory levels for medications that , when reached , alert the pharmacy to reorder the medication .
+
+however , vista does not include a perpetual pharmaceutical inventory management system to monitor the inventory of va's pharmacy medications .
+
+specifically , the pharmacy system cannot consistently update inventory totals to accurately reflect the amounts in stock and cannot set minimum inventory amounts for automated reordering of medication .
+
+for example , pharmacists at sites that we visited said that the automated machines they rely on to dispense medication are not integrated with their inventory systems , resulting in labor - intensive processes for updating and tracking when to reorder medications .
+
+further , a vha pharmacist at one site stated that , compared to commercial retail pharmacies , when dispensing medication , va's pharmacy system does not have automated updates to the inventory total to reflect that medication was dispensed ( with the exception of controlled substances which they monitor closely ) .
+
+in addition , according to pharmacy benefits management services officials , va's pharmacy system does not have the capability to set automated reorder levels so that pharmacists receive an automated alert to reorder medication when inventory levels drop to a specified amount .
+
+according to vha officials , the department has not prioritized requests to develop inventory management capabilities , although plans and funding requests for these capabilities were included in the original pharmacy re - engineering plans and have been resubmitted for inclusion in the budget by pharmacy benefits management services officials annually since 2009 .
+
+pharmacy benefits management services officials added that , other priorities , such as the development of the medication order check healthcare application , have prevented va from replacing inventory management system capabilities , as originally planned in 2002 .
+
+however , without the ability to monitor and update the inventory of pharmacy medications , vha pharmacists lack the means to effectively track when to reorder medications , which can potentially impact patient's health care and safety .
+
+va currently uses vista and multiple other computer applications to support clinicians and pharmacists in prescribing and dispensing medications to patients .
+
+however , inefficiencies exist in the ability of va pharmacists to view patient medication data between the department's pharmacy systems , which limits their ability to efficiently process and dispense medications .
+
+most notably , the outpatient pharmacy application lacks a graphical user interface and , therefore , pharmacists must take additional steps to view all the necessary information .
+
+while pharmacists have requested a modernized graphical user interface since 2001 , va has not developed one , nor does it have plans to do so going forward .
+
+however , until pharmacists can efficiently view all necessary medication data , there is a risk that veteran's safety may be compromised .
+
+in addition , va has implemented capabilities to exchange patient data with dod via the joint legacy viewer and other sharing initiatives .
+
+nevertheless , va continues to face limitations in the ability to receive and use dod data: clinicians and pharmacists cannot always view dod patient data and va pharmacists cannot always receive complete order checks from dod for new medications .
+
+until the department addresses these limitations in viewing dod patient data and receiving complete order checks from dod , clinicians and pharmacists will continue to lack the tools to make efficient clinical decisions about prescriptions , which could negatively affect patient safety .
+
+moreover , va has not assessed the impact that these shortcomings and its pharmacy system interoperability with dod have on veterans .
+
+without an assessment of the impact of its pharmacy system interoperability with dod on veterans , va will be hindered in its ability to determine the effectiveness of delivering pharmacy services and the potential impact on veterans .
+
+finally , while va's pharmacy system incorporates some industry practices , it lacks other capabilities , such as electronic prescribing , certain clinical decision support , and inventory management , which could enhance the system's usefulness .
+
+va has plans to address part of the electronic prescribing capability , but the plans are incomplete since they do not address outbound prescriptions sent to non - va pharmacies .
+
+va's planned enterprise health management platform is expected to position the department to achieve clinical decision support capabilities ; but the platform is not in clinical use and there is uncertainty about va's implementation approach for delivering these important capabilities .
+
+further , va has not prioritized the development of pharmacy system capabilities to update and monitor inventory needed to track when to reorder medications .
+
+lacking these capabilities , the department will continue to be limited in its ability to exchange prescriptions with non - va providers , provide additional clinical decision support , and track medication which could impact veteran patient safety .
+
+to provide clinicians and pharmacists with improved tools to support pharmacy services to veterans and reduce risks to patient safety , we recommend that the secretary of veterans affairs direct the assistant secretary for information and technology and the under secretary for health to take the following six actions: establish and implement a plan for updating the pharmacy system to address the inefficiencies with viewing patient medication data in the outpatient pharmacy application and between the pharmacy application and viewers ; complete a plan for the implementation of an approach to data standardization that will support the capability for clinicians and pharmacists to view complete dod data and receive order checks that consistently include dod data ; conduct an assessment to determine to what extent interoperability of va's pharmacy system with dod's pharmacy system is impacting transitioning service members ; develop and execute a plan for implementing the capability to send outbound e - prescriptions to non - va pharmacies , in accordance with national council for prescription drug programs standards ; ensure that the department's evaluation of alternatives for electronic health records includes consideration for additional generation level 3 capability such as navigating from an alert to medication order in the electronic health record system ; and reassess the priority for establishing an inventory management capability to monitor and update medication levels and track when to reorder medications .
+
+we provided a draft of this report to va , dod , and hhs for their review and comment .
+
+in its written comments on a draft of this report ( reprinted in appendix iv ) , va generally concurred with our six recommendations and described various actions that it planned to take to address the recommendations .
+
+dod provided technical comments , which we incorporated into our report as appropriate .
+
+hhs did not provide comments .
+
+after va received our draft report , vha officials expressed concerns with the wording of our second recommendation ( pertaining to completing a plan for the implementation of an approach to data standardization that will support the capability for clinicians and pharmacists to view complete dod data and receive order checks that consistently include dod data ) .
+
+vha officials noted that the recommendation required actions by dod in addition to the actions directed specifically at va. based on further discussion with these officials , we revised our second recommendation to emphasize the importance of va completing a plan for the implementation of an approach to data standardization that will support its clinicians and pharmacists in viewing complete dod data and receiving order checks that consistently include dod data .
+
+in its written comments that addressed the revised recommendation , the department stated that it concurred in principle with this recommendation .
+
+in this regard , the department stated that , while viewing complete dod data is essential for the safe care of veterans , va's consistent viewing of dod pharmacy data is dependent on that department's completion of its data interoperability initiatives .
+
+va added that , in the interim , both departments are planning enhancements to the joint dod / va clinical health data repository to improve the exchange of pharmacy data between va and dod , and plan to complete this effort in fiscal year 2018 .
+
+we are sending copies of this report to the secretary of veterans affairs and other interested parties .
+
+in addition , the report is available at no charge on the gao website at http: / / www.gao.gov .
+
+if you or your staff have any questions about this report , please contact me at ( 202 ) 512-6304 .
+
+i can also be reached by e - mail at melvinv@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made key contributions to this report are listed in appendix v .
+
+the senate appropriations committee report accompanying the consolidated appropriations act for fiscal year 2016 called for us to examine the department of veterans affairs' ( va ) acquisition and use of a pharmacy data system .
+
+our objectives were to determine whether: ( 1 ) va currently possesses a functioning pharmacy system and the extent to which the system enables data to be viewed , shared , and transferred among veteran's health administration ( vha ) pharmacy locations ; ( 2 ) va's pharmacy system is interoperable with the department of defense's ( dod ) , and whether this system , or the absence thereof , is impacting service members who transition care from dod ; and ( 3 ) va has implemented its pharmacy system in accordance with health care industry practices .
+
+to address the first objective , we obtained and analyzed documentation on va's pharmacy system , such as technical manuals and architecture diagrams , which showed the current and planned capabilities of the pharmacy system .
+
+we analyzed the documents to identify the key systems that vha clinicians and pharmacists used to order and dispense medication , and to assess system capabilities for viewing patient data and medication , both at a veteran's home facility where most care is provided as well as at other vha facilities .
+
+we also assessed system capabilities of the pharmacy outpatient application with a focus on outpatient care because about 70 percent of prescriptions are for outpatient use .
+
+we validated our initial assessments through observing demonstrations of the pharmacy system at va medical centers in baltimore , maryland ; butler , pennsylvania ; and san antonio , texas ; and at a joint va and dod health center in north chicago , illinois .
+
+during these site visits , we reviewed how the system enables the viewing , sharing , and transferring of pharmacy data between vha locations .
+
+our criteria for selecting these sites was intended to ensure coverage of: ( 1 ) different geographic locations , ( 2 ) the variety of va facilities ( eg , a medical center and an independent outpatient clinic ) , and ( 3 ) a location piloting the new va enterprise health platform ( the enterprise health management platform ) .
+
+additionally , each of the sites we selected had an on - site pharmacy .
+
+our selection of medical sites ensured that we included diverse geographic locations of varying sizes and breadth of medical services offered .
+
+at the sites , we met with clinicians , including doctors , nurses , and clinical pharmacists , and with pharmacists who review and dispense orders for prescriptions .
+
+we conducted site visits at medical facilities where we discussed the processes and corresponding systems and data viewers that clinicians and pharmacists used to provide health care to veterans , as well as what was working well and if there were any limitations of the system in conducting their work .
+
+in addition , we obtained the perspectives of officials representing va's pharmacy benefits management services and office of information and technology on the strengths and limitations of the department's pharmacy system , the underlying causes of any limitations , and plans to address the limitations .
+
+to address the second objective , we reviewed va technical manuals , architecture diagrams , and documents produced by the va / dod interagency program office .
+
+we also analyzed va's plans and identified its actions taken toward achieving interoperability with dod ; we then compared the department's actions to certain requirements specified in the fiscal year 2003 , 2008 , and 2014 national defense authorization acts .
+
+specifically , we reviewed va responses and documentation on: data exchange mechanisms and services , implementation and use of national standards in pharmacy systems , pharmacy data checking , pharmacy system metrics such as availability , and pharmacy system testing .
+
+we observed va clinicians' and pharmacists' use of the va and dod systems at our selected sites to determine whether they could exchange pharmacy data in real - time and perform prescription drug interaction checks for outpatients .
+
+we also observed pharmacy capabilities of the dod systems , and how those systems access va data , at the joint va and dod health center in north chicago , illinois , and during two system demonstrations in washington , d.c. additionally , we reviewed va documentation to see how the department was monitoring and checking prescription drug data that is exchanged with dod .
+
+we also evaluated whether va systems used national standards for the exchange and mapping of outpatient medication information between va and dod .
+
+we obtained written responses from va to questions on interoperability and reviewed va reports and documents , including a report to congress on interoperability standards , to evaluate the extent of pharmacy system conformance to national standards for the exchange of outpatient medication information between va and dod .
+
+further , we selected and contacted veterans service organizations to determine whether they could provide information on the impact of interoperability of va and dod systems on veterans .
+
+we selected organizations that ( 1 ) we had identified in our prior work related to transitioning service members , ( 2 ) represented veterans from recent conflicts , and ( 3 ) were referred to us by va or other veterans service organizations .
+
+this resulted in the selection of six organizations for our review , which we determined had not reported on the impact of va and dod pharmacy information technology ( it ) systems interoperability on veterans .
+
+lastly , to address the third objective we took the following steps to identify best practices of the health care industry .
+
+we conducted literature searches , reviewed our prior work , and consulted with the department of health and human services' office of the national coordinator for health information technology , va's pharmacy benefits management services and a private provider .
+
+we reviewed the office of the national coordinator for health information technology 2015 edition health information technology certification criteria , and its 2016 interoperability standards advisory to identify the standard for electronic prescribing .
+
+we also reviewed the office of the national coordinator for health information technology's report to congress on the prescription drug monitoring program interoperability standards .
+
+further , we reviewed the 2014 national defense authorization act , gartner's update to the enterprise electronic health record generation model , standards set by the national council for prescription drug programs , and publications from the american society of health - system pharmacists , and the archives of pharmacy practice .
+
+from these sources , we compiled a list of practices that the health care industry has identified as being relevant to the implementation of an effective pharmacy it system and that reflect areas of relevance with regard to va's health information system capabilities .
+
+this action resulted in a list of six practices that relate to ( 1 ) ordering medication electronically , ( 2 ) receiving drug order checks , ( 3 ) tracking the dispensing of controlled prescription drugs , ( 4 ) electronically exchanging prescriptions , ( 5 ) using clinical decision support capabilities , and ( 6 ) using a perpetual inventory management capability to monitor medication inventory levels .
+
+we confirmed the validity and relevance of the identified practices with the office of the national coordinator for health information technology .
+
+we also confirmed our selection of the practices through discussions with industry leaders , and based on the views and experiences of these sources , we characterized the practices that we assessed in the third objective as industry practices ( rather than as best practices ) .
+
+in addition , we reviewed the pharmacy system architecture and user documents , a va office of inspector general report on pharmacy re - engineering , and va's plans to implement pharmacy system capabilities through its pharmacy re - engineering project and plans to modernize its veterans health information systems and technology architecture ( vista ) , such as the vista 4 roadmap .
+
+we compared the industry practices to current va system capabilities and modernization plans to identify additional practices va could implement to enhance its pharmacy it system to be more aligned with those of the industry .
+
+we supplemented our analyses with interviews of va , dod , and department of health and human services officials with knowledge of va's pharmacy systems and the interoperability efforts within va and between va and dod .
+
+va officials included those in the department's office of information and technology , vha , and its pharmacy benefits management services , and the va national center for patient safety and informatics patient safety .
+
+we also interviewed officials from the department of health and human services' office of the national coordinator for health information technology , as well as dod officials from the defense health agency and dod / va program coordination office .
+
+we conducted this performance audit from january 2016 to june 2017 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+to enable the provision of health care services to veterans , the department of veterans affairs ( va ) uses its integrated health information system — the veterans health information systems and technology architecture ( vista ) — which was developed in - house by va clinicians and information technology ( it ) personnel .
+
+the system consists of approximately 200 separate computer applications and modules , 17 of which include pharmacy related applications .
+
+the following table describes vista applications categorized as pharmacy applications .
+
+the following table describes the department of veterans affairs ( va ) and the department of defense's ( dod ) initiatives to share patient data , the pharmacy data exchanged , limitations , and plans for decommissioning .
+
+in addition to the contact named above , tammi kalugdan ( assistant director ) , daniel wexler ( analyst in charge ) , nabajyoti barkakati , jennifer beddor , christopher businsky , debra conner , rebecca eyler , wilfred holloway , anh le , carlo mozo , monica perez - nelson , martin skorczynski , and merry woo made key contributions to this report .
+

@@ -1,0 +1,724 @@
+information security is a critical consideration for any organization that depends on information systems and computer networks to carry out its mission or business .
+
+it is especially important for government agencies , where maintaining the public's trust is essential .
+
+federal agencies face increasing security risks from viruses , hackers , and others who seek to disrupt federal operations or obtain sensitive information stored in federal computers .
+
+the department of the treasury , which collects and maintains a significant amount of sensitive information , needs effective security controls to prevent the improper disclosure , manipulation , or destruction of this information .
+
+this report presents the results of our evaluation of the effectiveness of treasury information security controls at key bureaus and its implementation of a departmentwide information security program .
+
+in response to your request , we are addressing this report to you .
+
+the dramatic expansion in computer interconnectivity and the rapid increase in the use of the internet are changing the way our government , the nation , and much of the world communicate and conduct business .
+
+without proper safeguards , these factors also pose enormous risks that make it easier for individuals and groups with malicious intent to intrude into inadequately protected systems and use such access to obtain sensitive information , commit fraud , disrupt operations , or launch attacks against other computer systems and networks .
+
+protecting the computer systems that support critical operations and infrastructures has never been more important because of concerns about attacks from individuals and groups with such malicious intent , including terrorists .
+
+these concerns are well founded for a number of reasons , including the dramatic increase in reported computer security incidents , the ease of obtaining and using hacking tools , the steady advance in the sophistication and effectiveness of attack technology , and the dire warnings of new and more destructive cyber attacks to come .
+
+computer - supported federal operations are likewise at risk .
+
+our previous reports , and those of agency inspectors general , describe persistent computer security weaknesses that place a variety of critical federal operations , including those at treasury , at risk of disruption , fraud , and inappropriate disclosure .
+
+this body of audit evidence led us , in 1997 , to designate computer security as a governmentwide high - risk area in reports to the congress .
+
+it remains so today .
+
+how well federal agencies are addressing these risks is a topic of increasing interest in both the congress and the executive branch .
+
+this is evidenced by recent hearings on information security and recent legislation intended to strengthen it — the federal information security management act ( fisma ) and the government information security reform ( gisra ) provisions of the fiscal year 2001 national defense authorization act .
+
+in addition , the administration has taken important actions to improve information security , such as integrating information security into the president's management agenda scorecard .
+
+moreover , the office of management and budget ( omb ) and the national institute of standards and technology ( nist ) have issued security guidance to agencies .
+
+the department of the treasury is responsible for promoting prosperous and stable domestic and international economies , managing the government's finances , and safeguarding federal financial systems .
+
+treasury is organized into two major components — departmental offices and operating bureaus .
+
+the departmental offices are primarily responsible for formulating policy and managing the department as a whole , while the operating bureaus carry out the specific functions of the department .
+
+the basic functions of the department include collecting taxes and monies due to the u.s. and making most of the payments of the u.s. government ; producing all postage stamps , currency , and coinage ; managing government accounts and the public debt ; supervising national banks and thrift institutions ; advising on domestic and international financial , monetary , economic , trade , and tax policy ; enforcing federal finance and tax laws ; and investigating and prosecuting tax evaders .
+
+in fiscal year 2003 , treasury experienced significant organizational changes .
+
+the homeland security act of 2002 ( signed by the president on november 25 , 2002 ) called for several treasury bureaus or elements to be transferred to the newly formed department of homeland security and to the department of justice .
+
+on january 24 , 2003 , the bureau of alcohol , tobacco , and firearms' law enforcement function moved to justice .
+
+the tax and trade functions of the bureau remained with treasury under the newly formed alcohol and tobacco tax and trade bureau .
+
+on march 1 , 2003 , three treasury bureaus moved to homeland security: the federal law enforcement training center , the u.s. customs service , and the u.s. secret service .
+
+the reorganized department had a fiscal year 2003 budget of $10.7 billion and a staff of about 115,000 .
+
+staff located at the bureaus makes up about 97 percent of the treasury work force .
+
+to support the department's overall mission , treasury and its key bureaus , including the internal revenue service ( irs ) — - by far the largest ; financial management service ( fms ) ; u.s. mint ; and the bureau of the public debt ( bpd ) , have diverse functions .
+
+for example , irs is responsible for determining , assessing , and collecting internal revenue in the united states .
+
+it collects taxes , processes tax returns , and enforces the nation's tax laws .
+
+in fiscal year 2003 , irs processed about 130 million individual tax returns , accounted for almost $2 trillion in collections , and paid about $300 billion in refunds to taxpayers .
+
+fms receives and disburses public monies , maintains government accounts , and prepares reports on the status of government finances .
+
+as the government's financial manager , fms disbursed more than $1.6 trillion in fiscal year 2003 .
+
+bpd borrows the money needed to finance the federal government and administers the public debt through treasury financial instruments .
+
+it is responsible for ensuring that reliable systems and processes are in place for purchasing and servicing treasury securities .
+
+in fiscal year 2003 , bpd conducted about 200 auctions and issued about $4 trillion in marketable securities .
+
+treasury and its bureaus rely heavily on information management systems to fulfill their many financial management stewardship roles and responsibilities for the nation .
+
+the bureaus have distinct , numerous , and complex information systems to process , store , and secure highly sensitive data .
+
+treasury and its bureaus report in fiscal year 2003 that they have 708 distinct information systems supporting their operations .
+
+a centralized data communications network and management system interconnects networks and systems at the bureaus and departmental offices .
+
+fisma provides that the secretary of the treasury is responsible for , among other things , ( 1 ) providing information security protections commensurate with the risk and magnitude of the harm resulting from unauthorized access , use , disclosure , disruption , modification , or destruction of the agency's information systems and information ; ( 2 ) ensuring that senior agency officials provide information security for the information and information systems that support the operations and assets under their control ; and ( 3 ) delegating to the agency chief information officer ( cio ) the authority to ensure compliance with the requirements imposed on the agency under the act .
+
+treasury's cio is responsible for developing and maintaining a departmentwide information security program ; developing and maintaining information security policies , procedures , and control techniques that address all applicable requirements ; and assisting senior agency officials concerning their responsibilities under the act .
+
+in addition , the cio provides oversight , strategic management , and policy direction on all information security programs within treasury .
+
+the office of security compliance within the office of the cio is responsible for developing departmentwide information security policies and ensuring bureau implementation .
+
+each bureau is responsible for implementing treasury - mandated security policies within its domain .
+
+in order to implement departmentwide security policies , the bureaus are required to develop their own information security programs , including their own security compliance functions .
+
+our objectives were to ( 1 ) determine whether treasury and its key bureaus have effectively implemented information security controls to protect the confidentiality , integrity , and availability of their systems and data and ( 2 ) determine whether treasury has effectively implemented its departmentwide information security program .
+
+to determine the effectiveness of the information security controls implemented at treasury and its bureaus , we considered the results of prior information security reviews that we performed at irs , bpd , and fms .
+
+we also examined and analyzed the contents of audit reports and associated work papers for information security and internal control reviews performed by the treasury office of the inspector general ( oig ) or independent auditors in connection with their audits of the bureaus' financial statements .
+
+in addition , we reviewed the department's performance and accountability reports to document treasury's information security - related weaknesses .
+
+to assess treasury's departmentwide information security program , we reviewed and evaluated the department's information security policies in effect at the time of our review ; analyzed data presented in treasury's gisra report for fiscal year 2002 and fisma report for fiscal year 2003 ; examined and assessed reports and other documents related to the department's information security program , and interviewed treasury officials regarding their processes and procedures for overseeing , monitoring , evaluating , and reporting on the implementation of information security across the department .
+
+our review was performed at treasury headquarters and our headquarters in washington , d.c. , from march through october 2003 , in accordance with generally accepted government auditing standards .
+
+the effective implementation of appropriate , properly designed security controls is an essential element for ensuring the confidentiality , integrity , and availability of information systems and information .
+
+weak security controls can expose information systems and information to an increased risk of unauthorized access , use , disclosure , disruption , modification , and destruction .
+
+treasury's bureaus have not consistently implemented effective information security programs and resolved known information security control weaknesses .
+
+some bureaus have consistently reported implementing effective controls over their information systems and / or limiting the negative effect control weaknesses could have on the preparation of financial statements and internal controls .
+
+other key treasury bureaus , including irs and fms , have reported long - standing weaknesses in information security controls and continued to report significant weaknesses in fiscal year 2002 .
+
+as a result of the weaknesses and inconsistencies in the overall implementation of the bureaus' information security programs , the treasury oig designated information security as a departmentwide material weakness in its fiscal year 2002 financial audit report .
+
+several treasury bureaus have consistently implemented effective information security controls over their computing environments and / or implemented compensating controls to correct or mitigate the weaknesses identified during previous audits .
+
+for example , the external auditors for the office of thrift supervision , the office of the comptroller of the currency , and the bureau of engraving and printing have not reported significant information security control weaknesses .
+
+bpd has also consistently implemented internal control over its financial systems .
+
+since 1997 we have reviewed the general and application controls over key bpd systems as part of our audit of the schedule of federal debt managed by bpd .
+
+we found that , although security over its computer systems and service continuity controls needed strengthening , bpd maintained , in all material respects , effective internal control , including general and application computer controls , related to reporting reliable financial information on the schedule of federal debt .
+
+in instances in which information security improvements were needed , bpd management has been responsive in taking corrective action or in implementing compensating controls to mitigate the weaknesses identified during our reviews .
+
+as the following table indicates , our subsequent audits have found that , as of may 2003 , bpd had taken action to correct or mitigate a substantial percentage of the security weaknesses reported during the prior year's audit .
+
+strengthening information systems controls at other bureaus is one of the management challenges currently facing the department of the treasury .
+
+in fiscal year 2002 , significant information security weaknesses existed in the computer systems used at key treasury bureaus to process sensitive information and data needed to accomplish treasury's mission .
+
+weaknesses span all six general control audit areas addressed in our information security audit methodology .
+
+these six areas are ( 1 ) security program management , which provides the framework for ensuring that risks are understood and that effective controls are selected and properly implemented ; ( 2 ) access controls , which ensure that only authorized individuals can read , alter , or delete data ; ( 3 ) software development and change controls , which ensure that only authorized software programs are implemented ; ( 4 ) segregation of duties , which reduces the risk that one individual can independently perform inappropriate actions without detection ; ( 5 ) operating systems controls , which protect sensitive programs that support multiple applications from tampering and misuse ; and ( 6 ) service continuity , which ensures that computer - dependent operations experience no significant disruptions .
+
+we identified information systems security as a major challenge for treasury in our 2003 performance and accountability report on the department .
+
+the following examples highlight the serious information security weaknesses that existed at treasury's key bureaus .
+
+since 1992 , we have reviewed the effectiveness of irs information security in connection with our annual audit of irs's financial statements and conducted information security reviews over irs's computing facilities and electronic filing systems at the request of the congress .
+
+the results of these reviews have led us each year to designate information security as a material weakness .
+
+during the 3-year period ending july 31 , 2002 , we conducted 14 information security reviews at 11 irs tax processing facilities nationwide .
+
+these reviews identified 765 specific general control weaknesses and demonstrate the departmentwide challenge irs and treasury face in addressing information security .
+
+in addition , we conducted 5 application control reviews and reported 112 application control weaknesses during this same period .
+
+while the majority of general control weaknesses identified fell in the area of logical access controls , weaknesses in physical security , software change controls , segregation of duties , and service continuity also posed significant risk to irs systems and taxpayer information , as the following illustrates: inadequate logical access controls diminished the reliability of irs's computerized data and increased the risk of unauthorized disclosure , modification , and use of sensitive systems and taxpayer data .
+
+logical access controls at irs facilities did not effectively prevent , limit , or detect access to computing resources .
+
+irs did not adequately control user accounts and passwords to ensure that only authorized individuals were allowed access to computer systems .
+
+inactive and unused user system accounts were found at all 11 irs computing facilities reviewed .
+
+in addition , irs inappropriately granted powerful operating system privileges to users who did not need them and granted users access to certain system files for which they had no business need .
+
+further , inadequate controls over network services and devices were found that could allow intruders to gain unauthorized access to valuable information about irs systems without logging on to the systems .
+
+physical security control weaknesses , such as inadequate physical barriers and ineffective screening of visitors , contributed to weakening the perimeter security at several irs facilities .
+
+as a result , increased risk exists that individuals could gain unauthorized access to facility grounds , buildings , sensitive computing resources , and taxpayer data , without detection .
+
+software change control procedures at two facilities did not provide sufficient control mechanisms to ensure that the facilities received all authorized program updates .
+
+in addition , software developer accounts and / or development tools were allowed on production servers at five facilities , which increases the risk that individuals could make unauthorized modifications to production software on these servers .
+
+inadequate segregation of duties was also an issue , as irs did not consistently separate incompatible computer - related activities among individuals performing system administration and security administration duties at its computing facilities .
+
+in addition , irs assigned incompatible operating system privileges to users , such as granting auditing privileges to system administrators at 10 facilities .
+
+as a result , increased risk exists that erroneous or unauthorized activity could occur and go undetected .
+
+service continuity control weaknesses limited irs's ability to restore and continue critical data processing services in the event of unexpected service interruptions .
+
+irs had not developed disaster recovery plans for certain key systems and / or had not adequately tested service continuity plans at several facilities .
+
+as a result , increased risk exists that irs will not be able to protect or recover essential information and critical business processes in the event of an unexpected interruption of service .
+
+irs has made progress in correcting the general and application control weaknesses identified in our information security reviews during this 3- year period .
+
+in may 2003 we reported that irs had corrected about one - third of the 765 general control weaknesses and 55 percent of the application control weaknesses identified in our reviews .
+
+although irs has corrected a significant number of weaknesses , many significant weaknesses in information security controls remain .
+
+fms has experienced long - standing weaknesses in its computer controls .
+
+it has reported its overall information systems security environment as a material weakness every year since fiscal year 1998 .
+
+treasury has recognized the seriousness of this problem and reported fms's computer controls as a material weakness in its annual accountability reports for each of those fiscal years .
+
+in january 2002 , we reported that fms's overall information security control environment was ineffective in identifying , deterring , and responding promptly to computer control weaknesses .
+
+in november 2002 , the independent external auditor responsible for auditing fms's fiscal year 2001 and 2002 financial statements reported a material weakness in the general controls over the hyattsville ( md. ) .
+
+regional operations center .
+
+the external auditor reported that general controls did not effectively prevent ( 1 ) unauthorized access to the disclosure of sensitive information , ( 2 ) unauthorized changes to systems and application software , ( 3 ) unauthorized access to programs and files that control computer hardware and secure applications , or ( 4 ) disruption of critical operations .
+
+specifically , the external auditor found weaknesses in the following areas: access controls .
+
+the majority of information security weaknesses were identified in this area .
+
+weaknesses were found in the administration of access controls , access to computer programs and files , and access to sensitive data .
+
+systems software .
+
+the development and enforcement of systems software policies and procedures over usage and modifications to operating system upgrades and utilities were inadequate .
+
+change controls .
+
+configuration change management control procedures were not consistently enforced across all major fms applications reviewed .
+
+service continuity .
+
+although fms has completed its business impact assessment , the results of this assessment had not been incorporated into detailed disaster recovery plans .
+
+although the independent external auditor reported that fms had made improvements in its information security control environment during fiscal year 2002 , the external auditor was critical of the overall effectiveness of fms's information security management program .
+
+fms management was still in the process of implementing its new entitywide security plan — authorized in september 2002 — for most of the year under audit .
+
+while fms has corrected vulnerabilities in some areas , subsequent reviews have found that previously identified weaknesses continue to exist on other systems .
+
+significant information security weaknesses also existed at the u.s. mint .
+
+the independent external auditor responsible for auditing the mint's fiscal year 2001 financial statements identified numerous general and application control weaknesses .
+
+due to the magnitude of these weaknesses , the external auditor reported two separate material weaknesses — one for general controls and one for application controls .
+
+in its audit report on the mint's fiscal year 2002 financial statements , the external auditor aggregated the two previously reported material weaknesses into one material weakness on information systems controls .
+
+the auditor noted that the mint had made improvements in its computer control environment and systems security control activities , which included the development of a comprehensive corrective action plan , and hired a new chief information officer .
+
+however , the external auditor noted weaknesses in the mint's information systems general controls relating to its network infrastructure , systems documentation , software change control , and related security policies and procedures .
+
+assessing and managing the risks associated with information systems are key elements of an information security program .
+
+fisma and other federal guidance require federal agencies to develop comprehensive information security programs based on assessing and managing risks .
+
+omb requires agencies to report performance measure data related to required aspects of their information security programs .
+
+these data include the number and percentage of systems that have been assessed for risk and assigned a level of risk , been certified and accredited , security controls that have been tested / evaluated within the last year , tested contingency plans .
+
+treasury also requires that its bureaus use these same performance measures when reporting to it on the status of bureau information security programs .
+
+performance data reported by the bureaus indicate that the bureaus have not consistently performed these required information security activities and that certain bureaus performed them better than others .
+
+for example , bureaus reported that the percentage of systems that they performed these required activities ranged from 0 to 100 percent of their systems .
+
+risk management is a process that allows information technology managers to balance the operational and economic costs of protective measures to achieve gains in mission capability by protecting the information technology systems and data that support organizational missions .
+
+agencies , including treasury , are required to perform periodic threat - based risk assessments for systems and data .
+
+risk assessments are an essential element of risk management and overall security program management and , as our best practice work has shown , are an integral part of the management processes of leading organizations .
+
+risk assessments help ensure that the greatest risks have been identified and addressed , increase the understanding of risk , and provide support for needed controls .
+
+treasury bureaus have not consistently assessed their systems for risk .
+
+according to treasury's fisma report for 2003 and as illustrated in figure 1 , four bureaus reported that they had assessed risk for 90 to 100 percent of their systems .
+
+however , figure 1 also shows that the other nine bureaus , including the four that reported that less than half of their systems had been assessed for risk , did not consistently assess risks for their systems .
+
+the bureaus also experienced mixed results in fiscal year 2003 with increasing the percentage of their systems that have been assessed for risk .
+
+of the 11 bureaus that reported this security metric in both fiscal years , 4 reported an increase in the percentage of systems assessed for risk in fiscal year 2003 compared with fiscal year 2002 , while 4 reported a decrease .
+
+the remaining 3 bureaus did not report a change in the percentage of systems assessed for risk .
+
+omb circular a - 130 requires that security plans be prepared for all federal systems that contain sensitive information .
+
+the purpose of these plans is to ( 1 ) provide an overview of the security requirements of the system and describe the controls in place or planned for meeting those requirements , ( 2 ) delineate the responsibilities and expected behavior of all individuals who access the system , and ( 3 ) serve as documentation of the structured process of planning adequate , cost - effective security protection for a system .
+
+treasury bureaus did not consistently maintain up - to - date security plans for their systems .
+
+according to treasury's fisma report for 2003 , only 304 ( 43 percent ) of the department's 708 systems had up - to - date security plans .
+
+although irs had by far the largest number of systems without a security plan , 8 of the 13 bureaus reported that they had up - to - date security plans for less than 90 percent of their systems for fiscal year 2003 , as shown in figure 2 .
+
+omb and treasury require management officials to formally authorize the use of each general support system and major application through a certification and accreditation process before it becomes operational , when a significant change occurs , and at least every 3 years thereafter .
+
+system certification is based on a technical evaluation of an information system to see how well it meets its security requirements , including all applicable federal laws , policies , regulations , and standards .
+
+system accreditation is the written management authorization for a system to operate and / or process information .
+
+treasury bureaus did not certify and accredit many of their systems .
+
+according to treasury's fisma report for fiscal year 2003 and as shown in figure 3 , 11 of 13 bureaus reported that less than 90 percent of their systems had been certified and accredited for fiscal year 2003 .
+
+moreover , 2 bureaus reported that none of their systems had been authorized for processing following system certification and accreditation .
+
+our analysis of data submitted by the 11 bureaus that reported on this performance measure for both fiscal years 2002 and 2003 showed mixed progress .
+
+for example , 5 of the 11 bureaus reported a decrease in the percentage of systems authorized for processing following certification and accreditation , while 5 of the remaining 6 bureaus showed improvement in this area .
+
+an agency head is responsible for ensuring that the appropriate agency officials evaluate the effectiveness of the information security program , including testing controls .
+
+further , the agencywide information security program is to include periodic management testing and evaluation of the effectiveness of information security policies and procedures .
+
+periodically evaluating the effectiveness of security policies and controls and acting to address any identified weaknesses are fundamental activities that allow an organization to manage its information security risks cost - effectively , rather than reacting to individual problems ad hoc only after a violation has been detected or an audit finding has been reported .
+
+further , management control testing and evaluation as part of the program reviews can supplement control testing and evaluation in ig and our audits to help provide a more complete picture of the agency's security posture .
+
+fisma requires that agencies test the management , operational , and technical controls of every information system identified in their inventories of major information systems no less than annually .
+
+most treasury bureaus did not test the security controls on each of their inventoried systems during fiscal year 2003 .
+
+as illustrated below , 9 of the 13 treasury bureaus reported in treasury's fisma report that they had tested the controls on less than 90 percent of their systems for fiscal year 2003 , including 6 that tested controls on less than half of their systems .
+
+contingency plans provide specific instructions for restoring critical systems , including such items as arrangements for alternative processing facilities , in case the usual facilities are significantly damaged or cannot be accessed .
+
+these plans and procedures help to ensure that critical operations can continue when unexpected events occur , such as a temporary power failure , an accidental loss of files , or a major disaster .
+
+contingency plans should also identify which operations and supporting resources are critical and need to be restored first and should be tested to identify their weaknesses .
+
+without such tested plans , agencies have inadequate assurance that they can recover operational capability in a timely , orderly manner after a disruptive attack .
+
+treasury bureaus have not consistently prepared or tested contingency plans for their information systems .
+
+according to treasury's fisma report for fiscal year 2003 , only 44 percent of its systems had a contingency plan .
+
+bureaus also reported that 41 percent of their systems had tested contingency plans .
+
+as shown in figure 5 , only 2 of 13 bureaus reported that they had tested contingency plans for at least 90 percent of their systems .
+
+moreover , 4 bureaus reported that none of their contingency plans had been tested .
+
+the bureaus' inconsistent track record for performing these essential information security activities can lead to the implementation of insecure systems and / or the implementation of inadequate or inappropriate security controls that do not sufficiently address threats to these systems and could result in costly efforts to subsequently implement effective controls .
+
+the information security weaknesses and inconsistent security practices identified at the bureaus exist , in part , because treasury's departmentwide security program , while evolving , is not yet fully institutionalized across the entire department .
+
+at treasury , the vast majority of the department's information system assets and computing operations are located at the operating bureaus .
+
+each bureau has been assigned responsibility for developing and maintaining an effective information security program for managing its information security risks , in accordance with departmental policies .
+
+although responsibility for developing and maintaining an effective bureau - specific information security program has been delegated to each operating bureau , broad program responsibility for information security throughout the department is assigned to the treasury cio .
+
+however , prior to fiscal year 2003 , treasury had not provided adequate direction to or oversight of the bureaus to ensure that key elements of a strong information security program were fully and consistently implemented at each bureau , as the following examples illustrate .
+
+treasury's information security policies and procedures were outdated and incomplete .
+
+the principal policy document governing treasury's information security program was treasury directive 71-10 , department of treasury security manual .
+
+the primary purpose of this document was to establish comprehensive , uniform security policies , procedures , and guidelines that were to be followed by each bureau in developing its own specific policies and operating directives .
+
+however , the security manual contained policies that had not been revised since 1992 and did not reflect current federal guidance .
+
+for example , the manual was silent in many areas where security policy was needed , such as voice mail , e - mail , and security - incident reporting .
+
+in addition , treasury's security manual did not provide to the bureaus policies or guidance in the areas of virus protection , audit trails , and warning banners .
+
+although most bureaus have developed their own information security policies , five relied exclusively on these outdated and incomplete policies to implement their information security programs .
+
+treasury had not established effective processes and procedures for monitoring and overseeing the implementation of security at the bureaus .
+
+the office of security compliance within the office of treasury cio is responsible for monitoring treasury bureaus and ensuring compliance with federal and treasury security policies .
+
+however , prior to fiscal year 2002 , the office did not conduct security reviews of bureau information security programs .
+
+in fiscal year 2002 , the office conducted 35 security reviews of the bureaus' information systems and programs .
+
+according to treasury officials , these reviews were limited in scope , were conducted only at selected bureaus , and did not represent a complete security program review .
+
+for example , some security reviews consisted primarily of reviewing a system's security plan and did not include testing security controls for the system .
+
+to address these issues and improve oversight of information security at the bureaus , treasury launched or expanded several initiatives during fiscal year 2003 that were designed to promote the implementation of key elements of a departmentwide information security program .
+
+appointment of chief information officer .
+
+in march 2003 , treasury appointed a new departmental cio .
+
+fisma provides that the authority to ensure compliance with the requirements imposed on the agency under the act be delegated to the agency cio .
+
+the cio's responsibilities include developing and maintaining a departmentwide information security program and security policies and providing oversight , strategic management , and policy direction on all information security programs within treasury .
+
+development of information security governance model .
+
+the treasury cio proposed a governance model for information security during fiscal year 2003 .
+
+elements of the model include integrating security programs both functionally with capital planning and organizationally across bureaus ; increasing cio oversight ; increasing bureau self - assessments ; creating and distributing comprehensive security policies , standards , and procedures ; establishing a security policy forum ; and linking the information technology governance process to the enterprise architecture and capital investment and planning process .
+
+updated departmental information security policies and procedures .
+
+during fiscal year 2003 , treasury undertook a major revision of its outdated and incomplete information security policies .
+
+in august 2003 , treasury published a comprehensive , up - to - date body of information security policies and procedures — the treasury information systems security program — consisting of the treasury information technology security program policy ( volume 1 ) and the treasury information technology security program handbook ( volume 2 ) .
+
+the documents replaced treasury directive 71-10 and formally establish a uniform baseline for the department's information security requirements .
+
+they are based on requirements levied by the fisma , nist , and omb and are to serve as a framework for the bureaus as they develop their specific policies and operating directives .
+
+expanded program and system review .
+
+treasury expanded its review of the bureaus' information security programs and systems during fiscal year 2003 .
+
+according to treasury's fiscal year 2003 fisma report , one departmental initiative to create and maintain a system inventory revealed an additional 270 systems in fiscal year 2003 .
+
+the department also conducted reviews of each bureau's information security program and performed 21 system certification and accreditation package reviews .
+
+in addition , treasury conducted vulnerability scans on networks and performed system penetration tests as part of its program and system reviews .
+
+analysis of bureaus' plans of action and milestones .
+
+treasury continued tracking and analyzing the plan of action and milestones ( poa&m ) reported by the bureaus on a quarterly basis .
+
+this plan is a tool that details the tasks that need to be accomplished and the resources required , milestones , and scheduled completion dates for accomplishing the tasks .
+
+the purpose of a poa&m is to help agencies identify , assess , prioritize , and monitor the progress of corrective efforts for security weaknesses found in programs and systems .
+
+omb requires agencies to ( 1 ) develop a separate poa&m for every program and system for which weaknesses were identified and ( 2 ) report quarterly on progress implementing the plans .
+
+accordingly , treasury requires its bureaus to maintain poa&ms on all information security weaknesses and provide quarterly updates to the treasury cio's office .
+
+treasury monitors bureau progress in correcting weaknesses by using the plans as a performance tracking mechanism .
+
+according to the treasury cio , treasury analyzes the updated plans for quality and completeness and evaluates progress and other significant trends that may influence the resolution of security - related weaknesses .
+
+educational outreach programs .
+
+according to treasury's fisma report for fiscal year 2003 , treasury's oversight and compliance program also developed and maintained a series of outreach programs that are designed to educate treasury employees about elements of information security compliance and to stimulate dialogue among security practitioners and stakeholders across the department .
+
+increased funding for information technology security .
+
+according to treasury's fisma report for fiscal year 2003 , the department more than doubled its total information security spending , from $85 million in fiscal year 2002 to $174 million in fiscal year 2003 .
+
+although treasury has significantly increased funding for information security and has begun to make progress implementing key elements of its information security program , it remains challenged to effectively and consistently implement security controls and procedures across the department .
+
+as illustrated in figure 6 , an analysis of security metric data in treasury's fiscal year 2002 gisra report and its fiscal year 2003 fisma report shows that the majority of treasury systems do not meet key information security requirements , and treasury's reported performance in meeting certain of these requirements has decreased .
+
+treasury reported that it did not implement any of these six required information security activities on a majority of its systems for fiscal year 2003 .
+
+for example , treasury established a specific goal that 80 percent of all information systems be certified and accredited by the end of fiscal year 2003 .
+
+however , as of august 15 , 2003 — the date of data contained in its fisma report for fiscal year 2003 — treasury had certified and accredited only about 24 percent of its 708 systems .
+
+according to treasury's cio , this was due to ( 1 ) the discovery of 276 additional systems at the irs as a result of an effort to compile an accurate inventory and ( 2 ) a new reporting requirement that stipulated that systems with an interim authority to operate not be counted in fiscal year 2003 as an accredited system .
+
+in fiscal year 2002 , such systems were counted as accredited for reporting purposes .
+
+in addition , implementation of certain information security requirements has decreased from fiscal year 2002 .
+
+for the 11 bureaus that reported performance measures for both years , the percentage of treasury systems implementing five of the six requirements decreased in fiscal year 2003 , while it increased for one .
+
+for example , treasury - reported data for fiscal year 2002 shows that 93 percent of the systems at those bureaus were assessed for risk and assigned a level of risk , while for fiscal year 2003 only 42 percent were .
+
+treasury's overall performance demonstrates that it continues to face challenges implementing and monitoring information security throughout the department .
+
+the following factors contribute to the challenges confronting treasury as it endeavors to improve the security of its information systems and data: treasury reorganization .
+
+throughout fiscal year 2003 , treasury underwent a major reorganization .
+
+the reorganization resulted in the reassignment of three bureaus to the department of homeland security , the creation of a new entity within treasury , and the transfer of about 50 percent of treasury's information technology security staff to the department of homeland security .
+
+the reduction in staff resulting from the reorganization , combined with the reported increase in the total number of departmental systems , could hinder the department's ability to provide effective oversight and direction over the bureaus' information security programs .
+
+senior information security officer has not been designated .
+
+fisma requires that a senior agency information security officer be designated to carry out the information security duties and responsibilities of the cio under the act .
+
+this senior level official is to ( 1 ) have information security as his or her primary duty ; ( 2 ) head an office with the mission and resources necessary to assist in ensuring compliance with the act ; and ( 3 ) possess the professional qualifications , including training and experience , required to administer the functions described in the act .
+
+the official would oversee the development and implementation of departmental information policies , procedures , and control techniques and coordinate departmentwide security - related activities to ensure that weaknesses identified in one bureau's systems do not place the entire department's information assets at undue risk .
+
+however , treasury has not designated a senior agency information security officer to develop , maintain , and oversee the department's security program .
+
+the lack of a senior information security officer with the stature and experience as well as the responsibility and authority for directing and overseeing the implementation of the departmentwide program could impair departmental control or influence in information security program decisions made by the bureaus .
+
+reliability and completeness of performance information .
+
+although fisma reporting provided performance information on key security areas , it is important for agencies to ensure that they have the appropriate management structures and processes in place to strategically manage information security , as well as to ensure the reliability of performance information .
+
+for example , disciplined processes can routinely provide the agency with timely , accurate , and useful information for day - to - day management of information security .
+
+treasury has established a process for receiving quarterly updates on the bureaus' plans of actions and milestones and issuing an annual data call to the bureaus for performance information on key information security requirements used in fisma reports .
+
+however , the treasury reports reveal issues with the reliability and completeness of bureau - reported information .
+
+for example , in treasury's fiscal year 2002 gisra report , there were significant differences between what treasury and the oig reported for the percentage of systems that met certain information security requirements .
+
+in addition , the treasury inspector general for tax administration ( tigta ) states in the fiscal year 2003 fisma report that irs's poa&ms do not report on the status of system - specific vulnerabilities and are not specific enough to ensure accountability and timely remediation of the vulnerabilities .
+
+tigta also states that since irs's poa&ms are not reported by system , justifications for information security funding found in its business cases cannot be tied to or linked with weaknesses reported in the poa&m .
+
+with the need for effective oversight to ensure compliance with the departmentwide information security program and the need to comply with a new requirement by omb for quarterly reporting of agency progress against certain information security performance measures , disciplined processes that can routinely provide treasury with timely , accurate , and useful information for day - to - day management of information security will become more important for the department .
+
+weaknesses in information security controls at treasury bureaus have placed its financial and information management systems at risk and could hinder its ability to effectively and efficiently accomplish its mission .
+
+although treasury has taken the initial steps necessary to implement a departmentwide information security program , key elements of such a program — those needed to help mitigate treasury's long - standing information security weaknesses — have not been fully implemented .
+
+implementing an effective information security program could help ensure that known weaknesses affecting treasury's computing resources are promptly mitigated and that general controls effectively protect its computing environments .
+
+until treasury oversees the implementation of a departmentwide security program , limited assurance exists that it and its bureaus will be able to resolve known information security weaknesses and adequately safeguard their information resources .
+
+to improve oversight and compliance with treasury's information security program , we recommend that the secretary of the treasury direct the chief information officer to do the following: assess the staffing and resource requirements for performing the department's oversight and compliance efforts to ensure that departmental information security policies are effectively and consistently implemented throughout the organization .
+
+designate a senior agency information security officer .
+
+examine existing reporting processes and implement procedures to enhance the reliability and completeness of the bureau - provided information required for day - to - day management of information security .
+
+in providing written comments on a draft of this report ( which are reprinted as appendix 1 ) , the treasury cio responded on behalf of the department and concurred with our assessment and recommendations .
+
+in addition , the cio underscored his commitment to implementing a new security governance model that not only aligns with treasury's information technology governance model but also aligns with security policies and security operations .
+
+the treasury cio also provided technical comments that have been incorporated into the report as appropriate .
+
+if you have any questions or need further information , please contact gregory c. wilshusen , assistant director , at ( 202 ) 512-6244 , or me at ( 202 ) 512-3317 .
+
+we can also be reached by e - mail at wilshuseng@gao.gov and daceyr@gao.gov , respectively .
+
+kenneth a. johnson and ronald e. parker made key contributions to this report .
+
+information security: computer controls over key treasury internet payment system .
+
+gao - 03-837 .
+
+washington , d.c.: july 30 , 2003 .
+
+information security: progress made , but weaknesses at the internal revenue service continue to pose risks .
+
+gao - 03-44 .
+
+washington , d.c.: may 30 , 2003 .
+
+bureau of the public debt: areas for improvement in computer controls .
+
+gao - 03-524r .
+
+washington , d.c.: may 1 , 2003 .
+
+information security: progress made , but challenges remain to protect federal systems and the nation's critical infrastructures .
+
+gao - 03-564t .
+
+washington , d.c.: apr .
+
+8 , 2003 .
+
+high - risk series: protecting information systems supporting the federal government and the nation's critical infrastructures .
+
+gao - 03-121 .
+
+washington , d.c.: january 2003 .
+
+major management challenges and program risks: department of the treasury .
+
+gao - 03-109 .
+
+washington , d.c.: january 2003 .
+
+computer security: progress made , but critical federal operations and assets remain at risk .
+
+washington , d.c.: gao - 03-303t .
+
+nov. 19 , 2002 .
+
+financial audit: irs's fiscal years 2002 and 2001 financial statements .
+
+gao - 03-243 .
+
+washington , d.c.: nov. 15 , 2002 .
+
+financial audit: bureau of the public debt's fiscal years 2002 and 2001 schedules of federal debt .
+
+gao - 03-199 .
+
+washington , d.c.: nov. 1 , 2002 .
+
+bureau of the public debt: areas for improvement in computer controls .
+
+gao - 02-1082r .
+
+washington , d.c.: sept. 18 , 2002 .
+
+information security: comments on the proposed federal information security management act of 2002 .
+
+gao - 02-677t .
+
+washington , d.c.: may 2 , 2002 .
+
+information security: additional actions needed to implement reform legislation .
+
+gao - 02-470t .
+
+washington , d.c.: mar .
+
+6 , 2002 .
+
+financial audit: irs's fiscal years 2001 and 2000 financial statements .
+
+gao - 02-414 .
+
+washington , d.c.: feb. 27 , 2002 .
+
+financial audit: bureau of the public debt's fiscal years 2001 and 2000 schedules of federal debt .
+
+gao - 02-354 .
+
+washington , d.c.: feb. 15 , 2002 .
+
+financial management service: significant weaknesses in computer controls continue .
+
+gao - 02-317 .
+
+washington , d.c.: jan. 31 , 2002 .
+
+computer security: improvements needed to reduce risk to critical federal operations and assets .
+
+gao - 02-231t .
+
+washington , d.c.: nov. 9 , 2001 .
+
+bureau of the public debt: areas for improvement in computer controls .
+
+gao - 01-1131r .
+
+washington , d.c.: sept. 13 , 2001 .
+
+management letter: improvements needed in irs's accounting procedures and internal controls .
+
+gao - 01-880r .
+
+washington , d.c.: july 30 , 2001 .
+
+computer security: weaknesses continue to place critical federal operations and assets at risk .
+
+gao - 01-600t .
+
+washington , d.c.: apr .
+
+5 , 2001 .
+
+internal revenue service: progress continues but serious management challenges remain .
+
+gao - 01-562t .
+
+washington , d.c.: apr .
+
+2 , 2001 .
+
+financial audit: bureau of the public debt's fiscal years 2000 and 1999 schedule of federal debt .
+
+gao - 01-389 .
+
+washington , d.c.: mar .
+
+1 , 2001 .
+
+financial audit: irs' fiscal year 2000 financial statements .
+
+gao - 01-394 .
+
+washington , d.c.: mar .
+
+1 , 2001 .
+
+information security: irs electronic filing system .
+
+gao - 01-306 .
+
+washington , d.c.: feb. 16 , 2001 .
+
+computer security: critical federal operations and assets remain at risk .
+
+gao / aimd - 00-314 .
+
+washington , d.c.: sept. 11 , 2000 .
+
+information security: serious and widespread weaknesses persist at federal agencies .
+
+gao / aimd - 00-295 .
+
+washington , d.c.: sept. 6 , 2000 .
+
+information security: software change controls at the department of treasury .
+
+gao / aimd - 00-200r .
+
+washington , d.c.: june 30 , 2000 .
+
+management letter: suggested improvements in irs's accounting procedures and internal controls .
+
+aimd - 00-162r .
+
+washington , d.c.: june 14 , 2000 .
+
+financial audit: irs's fiscal year 1999 financial statements .
+
+aimd - 00- 76 .
+
+washington , d.c.: feb. 29 , 2000 .
+
+federal information system controls audit manual .
+
+gao / aimd - 12.19.6 .
+
+washington , d.c.: january 1999 .
+
+organizations information security management: learning from leading .
+
+gao / aimd - 98-68 .
+
+washington , d.c.: may 1998 .
+
+high - risk series: information management and technology .
+
+gao / hr - 97-9 .
+
+washington , d.c.: february 1997 .
+
+financial audit: examination of irs's fiscal year 1992 financial statements .
+
+gao / aimd - 93-2 .
+
+washington , d.c.: june 30 , 1993 .
+

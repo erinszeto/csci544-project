@@ -1,0 +1,430 @@
+as part of our audit of the internal revenue service's ( irs ) fiscal year 2004 financial statements , we assessed the effectiveness of irs's information security controls over key financial systems , data , and interconnected networks at one of irs's critical data processing facilities that support the processing , storage , and transmission of sensitive financial and taxpayer data .
+
+in addition , the facility maintains bank secrecy act data on behalf of the financial crimes enforcement network ( fincen ) .
+
+these data are used by federal law enforcement and regulatory agencies , as well as irs , to support their investigations of financial crimes , including terrorist financing and money laundering .
+
+this report describes ( 1 ) the status of irs's actions to correct or mitigate previously reported weaknesses at the facility and ( 2 ) whether controls over key financial and tax processing systems have been effective in ensuring the confidentiality , integrity , and availability of financial and sensitive taxpayer data .
+
+in response to your request , we are addressing this report to you .
+
+separately , we issued a limited official use only report to you detailing the results of our review .
+
+this version of the report , for public release , provides a general summary of the vulnerabilities identified and our recommendations to help strengthen and improve irs's information security controls .
+
+information security is a critical consideration for any organization that depends on information systems and computer networks to carry out its mission or business .
+
+it is especially important for government agencies , where the public's trust is essential .
+
+the dramatic expansion in computer interconnectivity and the rapid increase in the use of the internet are changing the way our government , the nation , and much of the world communicate and conduct business .
+
+without proper safeguards they also pose enormous risks that make it easier for individuals and groups with malicious intent to intrude into inadequately protected systems and use such access to obtain sensitive information , commit fraud , disrupt operations , or launch attacks against other computer systems and networks .
+
+protecting the computer systems that support critical operations and infrastructures has never been more important because of the concern about attacks from individuals and groups , including terrorists .
+
+these concerns are well founded for a number of reasons , including the dramatic increase in reports of security incidents , the ease of obtaining and using hacking tools , the steady advance in the sophistication and effectiveness of attack technology , and the dire warnings of new and more destructive attacks to come .
+
+computer - supported federal operations are likewise at risk .
+
+our previous reports , and those of agency inspectors general , describe persistent information security weaknesses that place a variety of critical federal operations , including those at irs , at risk of disruption , fraud , and inappropriate disclosure .
+
+we have designated information security as a governmentwide high - risk area since 1997 — a designation that remains today .
+
+in december 2002 , congress enacted the federal information security management act of 2002 ( fisma ) to strengthen security of information and systems within federal agencies .
+
+fisma requires each agency to develop , document , and implement an agencywide information security program to provide information security for the information and systems that support the operations and assets of the agency , using a risk - based approach to information security management .
+
+in addition , fisma requires that the secretary of the treasury be responsible for , among other things , ( 1 ) providing information security protections commensurate with the risk and magnitude of the harm resulting from unauthorized access , use , disclosure , disruption , modification , or destruction of the agency's information systems and information ; ( 2 ) ensuring that senior agency officials provide information security for the information and information systems that support the operations and assets under their control ; and ( 3 ) delegating to the agency chief information officer ( cio ) the authority to ensure compliance with the requirements imposed on the agency under the act .
+
+treasury's cio is responsible for developing and maintaining a departmentwide information security program and for developing and maintaining information security policies , procedures , and control techniques that address all applicable requirements .
+
+each treasury bureau , including the irs , is responsible for implementing treasury - mandated security policies within its domain .
+
+in order to implement departmentwide security policies , irs is required to develop its own information security program , including its own security compliance functions .
+
+as the nation's tax collector , irs has the demanding responsibility of collecting taxes , processing tax returns , and enforcing the nation's tax laws .
+
+in fiscal years 2004 and 2003 , irs collected about $2 trillion in tax payments , processed hundreds of millions of tax and information returns , and paid about $278 billion and $300 billion , respectively , in refunds to taxpayers .
+
+irs employs tens of thousands of people in its 10 service campuses , three computing centers , and numerous field offices throughout the united states .
+
+to efficiently fulfill its tax processing responsibilities , irs relies extensively on interconnected networks of computer systems to perform various functions , such as collecting and storing taxpayer data , processing tax returns , calculating interest and penalties , generating refunds , and providing customer service .
+
+because of the nature of its mission , irs also collects and maintains a significant amount of personal and financial data on each american taxpayer .
+
+the confidentiality of this sensitive information must be protected ; otherwise , taxpayers could be exposed to loss of privacy and to financial loss and damages resulting from identity theft or other financial crimes .
+
+to help provide information security for its operations and assets ( including computing resources and taxpayer information ) , irs has developed and is implementing an agencywide information security program .
+
+the commissioner of internal revenue has overall responsibility for ensuring the confidentiality , availability , and integrity of information and information systems supporting the agency and its operations .
+
+the chief of mass is responsible for developing policies and procedures regarding information technology security ; providing assurance services to improve physical , data , and personnel security ; conducting independent testing ; and ensuring security is integrated into its modernization activities .
+
+to help accomplish these goals , irs has developed and published information security policies , guidelines , standards , and procedures in the internal revenue manual , law enforcement manual , and other documents .
+
+in addition to processing its own financial and tax information , irs provides information processing support to fincen , another treasury bureau .
+
+fincen administers and enforces the bank secrecy act ( bsa ) and its implementing provisions .
+
+congress enacted the bsa to prevent banks and other financial service providers from being used as intermediaries for , or to hide the transfer or deposit of money derived from , criminal activity .
+
+since its passage , congress has amended the bsa to enhance law enforcement effectiveness .
+
+today , more than 170 crimes are listed in federal money - laundering statutes .
+
+they cover a broad range , including drug trafficking , gunrunning , murder for hire , fraud , acts of terrorism , and the illegal use of wetlands .
+
+the list also includes certain foreign crimes .
+
+the reporting and record keeping requirements of the bsa regulations create a paper trail for law enforcement to investigate money laundering schemes and other illegal activities .
+
+this paper trail operates to deter illegal activity and provides a means to trace the movements of money through the financial system .
+
+fincen relies on irs to operate and maintain computer systems that process and store a significant amount of fincen's sensitive information .
+
+this information includes reports and filings from banks and other financial institutions that are required under bsa , such as currency transactions , foreign bank and financial accounts , international transportation of currency or monetary instruments , and criminal referrals of suspicious activities reports .
+
+this information is determined by fincen to have a high degree of usefulness in criminal , tax , regulatory , intelligence , and counterterrorism investigations , and in implementing counter money laundering programs and compliance procedures .
+
+this network supports federal , state , and local law enforcement , and intelligence and investigative agencies as part of the federal government's effort to combat terrorism and to investigate and prosecute crime .
+
+the objectives of our review were to determine ( 1 ) the status of irs's actions to correct or mitigate previously reported weaknesses and ( 2 ) whether controls over key financial and tax processing systems located at the facility have been effective in ensuring the confidentiality , integrity , and availability of sensitive financial and taxpayer data .
+
+we concentrated our evaluation primarily on threats emanating from internal sources on irs's computer networks .
+
+to guide our work , we used the audit methodology described in our federal information system controls audit manual , which discusses the scope of such reviews and the type of testing required for evaluating general controls .
+
+we also used fisma to guide our review of irs's implementation of its information security program .
+
+specifically , we evaluated information system controls intended to limit , detect , and monitor logical and physical access to sensitive computing resources and facilities , thereby safeguarding them from misuse and protecting them from unauthorized disclosure and modification ; maintain operating system integrity through effective administration and control of powerful computer programs and utilities that execute privileged instructions ; prevent the introduction of unauthorized changes to application software in the existing software environment ; ensure that work responsibilities are segregated , so that one individual does not perform or control all key aspects of computer - related operations and thereby have the ability to conduct unauthorized actions or gain unauthorized access to assets or records ; minimize the risk of unplanned interruptions and recover critical computer processing operations in the case of disaster or other unexpected interruptions ; and implement an agencywide information security program that includes a continuing cycle of assessing risk , implementing and promoting policies and procedures to reduce such risk , and monitoring the effectiveness of those activities .
+
+to evaluate these controls , we identified and reviewed pertinent irs information security policies and procedures , guidance , security plans , relevant reports , and other documents , and we tested the effectiveness of these controls .
+
+we also discussed with key security representatives and management officials whether information security controls were in place , adequately designed , and operating effectively .
+
+we performed our review at the irs facility , at irs's national office in new carrollton , maryland , and at our headquarters in washington , d.c. , in accordance with generally accepted government auditing standards from august through december 2004 .
+
+we discussed the results of our review with irs , treasury , and fincen officials .
+
+irs has made progress in correcting previously reported information security weaknesses .
+
+the agency has corrected or mitigated 32 of the 53 weaknesses that we reported as unresolved at the time of our last review in 2002 .
+
+for example , irs has improved perimeter security by installing barriers at the facility's entrance to prevent unauthorized vehicles from entering the premises , implemented policies and procedures to ensure that system software products are tested and evaluated prior to installation , discontinued the practice of using shared accounts and passwords to administer its network authentication server and firewall , and implemented procedures to ensure that disaster recovery plans are up - to - date and maintained at the off - site storage facility .
+
+while irs has taken steps to strengthen its information security controls , it had not completed actions to correct or mitigate the remaining 21 previously reported weaknesses .
+
+these weaknesses include granting and authorizing inappropriate access permissions over unix system files , permitting remote access capabilities that expose passwords and user identifications , allowing users to implement easily guessed passwords , and permitting unrestricted physical access to sensitive computing areas .
+
+failure to resolve these issues will leave irs facilities and sensitive data vulnerable to unauthorized access , manipulation , and destruction .
+
+irs has not effectively implemented information security controls to properly protect the confidentiality , integrity , and availability of data processed by the facility's computers and networks .
+
+in addition to the 21 previously reported weaknesses that remain uncorrected , we identified 39 new information security weaknesses during this review .
+
+serious weaknesses related to electronic access to computing resources from sources located on irs's internal computer network place sensitive taxpayer and bank secrecy act data — including information related to financial crimes , terrorist financing , money laundering , and other illicit activities — at significant risk of unauthorized disclosure , modification , or destruction .
+
+in addition , information security weaknesses that exist in other control areas , such as physical security , segregation of duties , and service continuity , further increase risk to the computing environment .
+
+collectively , these weaknesses threaten irs's ability to perform its operational missions , such as processing tax returns and law enforcement information , both of which rely on irs's computer systems and networks to process , store , and transmit data .
+
+a basic management objective for any organization is to protect the data supporting its critical operations from unauthorized access .
+
+organizations accomplish this objective by designing and implementing electronic controls that are intended to prevent , limit , and detect unauthorized access to computing resources , programs , and data .
+
+electronic access controls include user accounts and passwords , access rights and permissions , network services and security , and audit and monitoring of security - related events .
+
+inadequate electronic access controls diminish the reliability of computerized data and increase the risk of unauthorized disclosure , modification , and destruction of these data .
+
+electronic access controls were not effectively implemented to prevent , limit , and detect unauthorized access to the facility's computer systems and data .
+
+numerous vulnerabilities existed in irs's computing environment because of the cumulative effects of control weaknesses in the areas of user accounts and passwords , access rights and permissions , network services and security , and audit and monitoring of security - related events .
+
+a computer system must be able to identify and differentiate among users so that activities on the system can be linked to specific individuals .
+
+unique user accounts assigned to specific users allow systems to distinguish one user from another — a process called identification .
+
+the system must also establish the validity of a user's claimed identity through some means of authentication , such as a password , known only to its owner .
+
+the combination of identification and authentication , such as user account / password combinations , provides the basis for establishing individual accountability and controlling access to the system .
+
+accordingly , agencies should ( 1 ) implement procedures to control the creation , use , and removal of user accounts and ( 2 ) establish password parameters , such as length , life , and composition , to strengthen the effectiveness of account / password combinations for authenticating the identity of users .
+
+irs did not adequately control user accounts and passwords to ensure that only authorized individuals were granted access to its systems and data .
+
+for example , it did not adequately protect mainframe systems files that contain embedded user accounts and passwords .
+
+access to these files was not adequately restricted , and user account and password combinations could have been read by any authorized user — irs , law enforcement , and contractors — of the system .
+
+in addition , irs did not adequately control user accounts and passwords to ensure that only authorized individuals were allowed access to its servers and networks .
+
+as a result , increased risk exists that unauthorized users could gain authorized user id and password combinations to claim a user identity and then use that identity to gain access to sensitive taxpayer or bank secrecy act data .
+
+a basic underlying principle for securing computer systems and data is the concept of least privilege .
+
+this means that users are granted only those access rights and permissions they need to perform their official duties .
+
+organizations establish access rights and permissions to restrict the access of legitimate users to only the specific programs and files that they need to do their work .
+
+user rights are allowable actions that can be assigned to users or groups .
+
+file and directory permissions are rules associated with a file or directory ; they regulate which users can access them and in what manner .
+
+assignment of rights and permissions must be carefully considered to avoid giving users unnecessary access to sensitive files and directories .
+
+irs routinely permitted excessive access to the facility's computer systems — mainframes , unix , and windows — that support sensitive taxpayer and bank secrecy act data and to critical datasets and files .
+
+access controls over the mainframe computing environment did not logically separate irs's data from fincen's data .
+
+for example , irs granted all 7,460 mainframe users — irs employees , non - irs employees , contractors — regardless of their official duties , the ability to read and modify sensitive taxpayer and bank secrecy act data , including information about citizens , law enforcement personnel , and individuals subject to investigation .
+
+in addition , irs also did not adequately restrict access rights and permissions on its windows servers .
+
+for example , it did not adequately restrict access to windows accounts with powerful rights over the operating system .
+
+inappropriate access to accounts with powerful rights can compromise the integrity of the operating system and the privacy of the data that reside on the servers .
+
+networks are series of interconnected devices and software that allow individuals to share data and computer programs .
+
+because sensitive programs and data are stored on or transmitted along networks , effectively securing networks is essential to protecting computing resources and data from unauthorized access , manipulation , and use .
+
+organizations secure their networks , in part , by installing and configuring network devices that permit authorized network service requests and deny unauthorized requests and by limiting the services that are available on the network .
+
+network devices include ( 1 ) firewalls designed to prevent unauthorized access into the network , ( 2 ) routers that filter and forward data along the network , ( 3 ) switches that forward information among parts of a network , and ( 4 ) servers that host applications and data .
+
+network services consist of protocols for transmitting data between computers .
+
+insecurely configured network services and devices can make a system vulnerable to internal or external threats , such as denial - of - service attacks .
+
+since networks often provide the entry point for access to electronic information assets , failure to secure those networks increases the risk of unauthorized use of sensitive data and systems .
+
+irs did not securely control network services to prevent unauthorized access to and ensure the integrity of irs's computer networks and systems at the facility .
+
+for example , irs did not adequately secure its network against known vulnerabilities or misconfigured network services on several of its infrastructure devices .
+
+as a result , an unauthorized user could gain access to these network devices and gain control of the facility's network , placing irs and fincen data at risk .
+
+further , this unauthorized control could seriously disrupt computer operations .
+
+determining what , when , and by whom specific actions were taken on a system is crucial to establishing individual accountability , monitoring compliance with security policies , and investigating security violations .
+
+organizations accomplish this by implementing system or security software that provides an audit trail for determining the source of a transaction or attempted transaction and for monitoring users' activities .
+
+how organizations configure the system or security software determines the nature and extent of audit trail information that is provided .
+
+to be effective , organizations should ( 1 ) configure the software to collect and maintain sufficient audit trails for security - related events ; ( 2 ) generate reports that selectively identify unauthorized , unusual , and sensitive access activity ; and ( 3 ) regularly monitor and take action on these reports .
+
+without sufficient auditing and monitoring , organizations increase the risk that they may not detect unauthorized activities or policy violations .
+
+the risks created by the serious electronic access control weaknesses discussed above were heightened because irs did not effectively audit and monitor system activity on its servers .
+
+for example , not all windows servers at the facility were configured to ensure sufficient retention of security logs .
+
+as a result , there was a higher risk of unauthorized system activity going undetected .
+
+the cumulative effect of inadequate electronic access controls specific to user accounts and passwords , access rights and permissions , network services and security , and audit and monitoring places sensitive taxpayer and bank secrecy act data at risk of unauthorized disclosure , use , modification , or destruction , possibly without detection .
+
+more specifically , electronic access controls over authorized users — irs employees , contractors , and law enforcement officials — were not effectively implemented to restrict these users to the data they needed in order to perform their official duties and to protect sensitive programs and data from unauthorized access , manipulation , and use .
+
+as a result , we were able to view and print bank secrecy act data from datasets containing suspicious activity reports that have been filed under the bank secrecy act .
+
+the information we were able to capture included , among other things , dates of the investigation , the name , social security number , and driver's license number of the individual under investigation , the number and total dollar amount of financial transactions , and suspected terrorist activity , if any .
+
+moreover , the weaknesses in electronic access controls also allowed fincen users , who include federal , state , and local law enforcement officials , the capability to access sensitive irs systems and view taxpayer information .
+
+the internal revenue code prohibits disclosure of taxpayer data generally , and the taxpayer browsing protection act prohibits unauthorized browsing of taxpayer returns or information by federal , state , and local employees .
+
+we have previously reported violations of irs employees browsing taxpayer information and on irs's efforts to monitor employee browsing .
+
+given the weaknesses with its audit and monitoring controls , it is unlikely that irs would be able to detect any illegal browsing of taxpayer information with the systems currently in use .
+
+unless these weaknesses are corrected , sensitive taxpayer and bank secrecy act data will remain at risk of unauthorized disclosure , use , modification , or destruction , possibly without detection .
+
+in addition to the electronic access security controls , other information security controls should be in place to ensure the confidentiality , integrity , and availability of an organization's systems and data .
+
+these controls include policies , procedures , and control techniques that physically secure an organization's computer resources and systems , provide proper segregation of incompatible duties and computer functions among computer users , and ensure continuity of computer processing operations in the event of a disaster or unexpected interruption .
+
+physical security controls are important for protecting computer facilities and resources from vandalism and sabotage , theft , accidental or deliberate alteration or destruction of information or property , attacks on personnel , and unauthorized access to computing resources .
+
+physical security controls should prevent , limit , and detect access to facility grounds , buildings , and sensitive work areas and the agency should periodically review the access granted to computer facilities and resources to ensure that this access continues to be appropriate .
+
+examples of physical security controls include perimeter fencing , surveillance cameras , security guards , and locks .
+
+inadequate physical security could lead to the loss of life and property , the disruption of functions and services , and the unauthorized disclosure of documents and information .
+
+although irs has implemented physical security controls , certain weaknesses reduce the effectiveness of these controls in protecting and controlling physical access to assets at the facility .
+
+for example , guards did not always verify employees' identities as they entered the facility .
+
+failure to check irs photo identifications increases the risk that unauthorized individuals could gain access to the facility .
+
+in addition , irs did not always maintain effective control over the issuance of master keys .
+
+the lack of accountability over master keys increases the likelihood that an unauthorized person could gain possession of a master key and use it to access sensitive areas .
+
+controls that segregate duties are the policies , procedures , and organizational structure that prevent one individual from controlling key aspects of computer - related operations and thereby having the capability to conduct unauthorized actions or gain unauthorized access to assets or records without being promptly detected .
+
+inadequately segregated duties increase the risk that erroneous or fraudulent transactions could be processed , improper program changes implemented , or computer resources damaged or destroyed .
+
+we identified instances in which duties were not adequately segregated to ensure that no individual had complete authority or system access , which could result in fraudulent activity .
+
+for example , developers were routinely granted production level access on the facility's mainframe processing environment by individuals other than those responsible for the security administration of the mainframe .
+
+a review of one month of audit logs showed that 24 users ( including 5 contractors ) who were only granted access to the development mainframe environment had their access privileges elevated to production — several of them on a daily basis .
+
+although user access was being logged , mass employees neither controlled the action that elevated the developers' access permissions nor routinely monitored audit logs .
+
+as a result , mass employees did not detect that users' access had been elevated .
+
+granting developers access to production systems creates the potential for those individuals to perform incompatible functions .
+
+service continuity controls should be designed to ensure that when unexpected events occur , critical operations continue without interruption or are promptly resumed and that critical and sensitive data are protected .
+
+these controls include ( 1 ) environmental controls and procedures designed to protect information resources and minimize the risk of unplanned interruptions and ( 2 ) a well - tested plan to recover critical operations should interruptions occur .
+
+if service continuity controls are inadequate , even relatively minor interruptions can result in lost or incorrectly processed data , which can cause financial losses , expensive recovery efforts , and inaccurate or incomplete financial or management information .
+
+irs has in place environmental controls designed to protect computing resources and personnel ; it also has a program for periodic testing of disaster recovery plans .
+
+however , irs's disaster recovery and business resumption plans for resuming operations following a disruption did not include procedures for unix and windows systems .
+
+in the event of a disaster , the facility may not be able to coordinate appropriate measures to restore critical unix and windows systems .
+
+the weaknesses described in this report are symptomatic of an agencywide information security program that is not fully implemented across irs .
+
+implementing an information security program is essential to ensuring that controls over information and information systems work effectively on a continuing basis , as described in our may 1998 study of security management best practices .
+
+we previously recommended to the irs commissioner that irs complete its implementation of an effective agencywide information security program .
+
+since our last review , irs has made important progress toward improving information security management .
+
+for example , as part of activities required for certification and accreditation of all irs general support systems , it established mass , appointed a senior information security officer to manage the program , and established a task force for conducting risk assessments and security test and evaluations .
+
+however , the recurring and newly identified weaknesses discussed in this report , as well as the similarity of these weaknesses to those we have previously identified at other irs facilities , are indicative of an information security program that is not fully implemented across the agency .
+
+fisma , consistent with our security management best practices guide , requires key elements of an agency's information security program to strengthen information security and to adequately protect the information and systems that support its operations .
+
+these elements include policies and procedures that ( 1 ) are based on risk assessments , ( 2 ) cost - effectively reduce risks , ( 3 ) ensure that information security is addressed throughout the life cycle of each system , and ( 4 ) ensure compliance with applicable requirements ; security awareness training to inform personnel , including contractors and other users of information systems , of information security risks and their responsibilities in complying with agency policies and procedures ; and at least annual testing and evaluation of the effectiveness of information security policies , procedures , and practices relating to the management , operational , and technical controls of every major information system that is identified in the agencies' inventories .
+
+a key element of an effective information security program is establishing and implementing appropriate policies , procedures , and technical standards to govern security over an agency's computing environment .
+
+such policies and procedures should integrate all security aspects of an organization's interconnected environment , including local and wide area networks and interconnections to contractor and other federal agencies that support critical mission operations .
+
+in addition , technical security standards are needed to provide consistent implementing guidance for each computing environment .
+
+establishing and documenting security policies is important because they are the primary mechanism by which management communicates its views and requirements ; these policies also serve as the basis for adopting specific procedures and technical controls .
+
+in addition , agencies need to take the actions necessary to effectively implement or execute these procedures and controls .
+
+otherwise , agency systems and information will not receive the protection that should be provided by the security policies and controls .
+
+although irs has established and documented policies and procedures for specific security areas , including password standards and disaster recovery planning , it frequently has not implemented them .
+
+we continue to report that the facility has not implemented policies and procedures contained in irs's law enforcement manual and internal revenue manual pertaining to user accounts and passwords , access rights and permissions , network services and security , audit and monitoring , and other information system controls .
+
+of the new weaknesses identified , 33 of 39 resulted from irs not implementing its established security policies and procedures .
+
+as a result , irs is at increased risk that sensitive financial , taxpayer , and bank secrecy act data could be exposed to unauthorized access without detection .
+
+another key element of an information security program involves promoting awareness and providing required training so that users understand the risks and their role in implementing related policies and controls to mitigate those risks .
+
+computer intrusions and security breakdowns often occur because computer users fail to take appropriate security measures .
+
+for this reason , it is vital that employees who use computer resources in their day - to - day operations be made aware of the importance and sensitivity of the information they handle , as well as the business and legal reasons for maintaining its confidentiality , integrity , and availability .
+
+fisma mandates that all federal employees and contractors involved in the use of agency information systems be provided periodic training in information security awareness and accepted information security practice .
+
+further , fisma requires agency heads to ensure employees with significant information security responsibilities are provided sufficient training .
+
+irs has established information security awareness programs for its employees and contractors .
+
+these programs include distributing security awareness bulletins and brochures and creating information security poster boards .
+
+as reported by treasury's oig in its 2004 fisma report , 100 percent of irs employees received security awareness training ; however , only 28 percent of irs government and contractor employees with significant security responsibilities received specialized training .
+
+security administration staff at the facility stated that they were largely self - taught in security software and that only one staff member in the past 2 years had received technical mainframe security training .
+
+consequently , the staff was not knowledgeable about some of the more recent technical advances relating to the mainframe operating system and security software .
+
+subsequent to the completion of our fieldwork , the chief of mass informed us that he formally assigned information system security officers for each of the irs campuses and computing centers , and the irs network and held specialized training for these officers .
+
+the final key element of an information security program is ongoing testing and evaluation to ensure that systems are in compliance with policies , and that policies and controls are both appropriate and effective .
+
+this type of oversight is a fundamental element because it demonstrates management's commitment to the security program , reminds employees of their roles and responsibilities , and identifies and mitigates areas of noncompliance and ineffectiveness .
+
+although control tests and evaluations may encourage compliance with security policies , the full benefits of such activities will not be achieved unless the results improve the security program .
+
+analyzing the results of monitoring efforts — as well as security reviews performed by external audit organizations — provides security specialists and business managers with a means of identifying new problem areas , reassessing the appropriateness of existing controls , and identifying the need for new controls .
+
+irs performs periodic testing and evaluation of its unix , windows , and mainframe systems .
+
+specifically , irs uses software tools and monitoring reports to determine if its systems are in compliance with agency information security policies , procedures , and practices .
+
+however , output from these tools was not always reliable and accurate .
+
+further , irs did not effectively audit and monitor the facility's information security systems .
+
+specifically , user activity on critical unix systems were not being logged , full auditing of system user rights was not always occurring , audit logs on windows servers were not always retained , and monitoring reports detailing security - related events on mainframe computers were not always complete .
+
+until irs fully implements an effective program , it will not be able to ensure the security of its highly interconnected computer environment , facilities , and resources .
+
+moreover , irs will not be able to ensure the confidentiality , integrity , or availability of the sensitive financial , taxpayer , and bank secrecy act data that it processes , stores , and transmits .
+
+as a result , irs's operations and assets remain vulnerable to unauthorized disclosure , manipulation , use , or destruction .
+
+significant information security weaknesses exist at irs that place sensitive financial , taxpayer , and bank secrecy act data at risk of disclosure , modification , or loss , possibly without detection , and place irs's operations at risk of disruption .
+
+specifically , irs has not consistently implemented effective electronic access controls , including user accounts and passwords , access rights and permissions , and network security , or fully implemented a program to audit and monitor access activity .
+
+in addition , weaknesses in physical security , segregation of duties , and service continuity increase the level of risk .
+
+although irs continues to make progress in mitigating previously reported information security weaknesses and implementing general controls over key financial and tax processing systems at the facility , it has not taken all the necessary steps to mitigate known information security control weaknesses and to ensure the confidentiality , integrity , and availability of taxpayer and bank secrecy act data .
+
+consequently , taxpayer and bank secrecy act data may have been disclosed to unauthorized individuals .
+
+ensuring that known weaknesses affecting irs's computing resources are promptly mitigated and that general controls are effective to protect the facility's computing environment require top management support and leadership , disciplined processes , and consistent oversight .
+
+until irs takes steps to mitigate these weaknesses and fully implements its agencywide information security program , limited assurance exists that taxpayers' personal information and irs - processed law enforcement information will be adequately safeguarded against unauthorized disclosure , modification , or destruction .
+
+to help fully implement irs's information security program , we recommend that secretary of the treasury direct the irs commissioner to take the following three actions: ensure that established security policies and procedures are consistently followed and implemented .
+
+ensure that employees with significant information security responsibilities are provided the sufficient training and understand their role in implementing security related policies and controls .
+
+implement an ongoing process of testing and evaluating irs's information systems to ensure compliance with established policies and procedures .
+
+in addition , we recommend that the secretary of the treasury direct the irs commissioner to perform an assessment to determine whether taxpayer data has been disclosed to unauthorized individuals .
+
+further , we recommend that the secretary of the treasury direct the fincen director to perform an assessment to determine whether bank secrecy act data have been disclosed to unauthorized individuals .
+
+we are also making recommendations in a separate report designated for “limited official use only.” these recommendations address actions needed to correct the specific information security weaknesses related to electronic access controls and other information system controls at the facility .
+
+in providing written comments on a draft of this report ( reprinted in app .
+
+i ) , the acting deputy secretary of the treasury generally concurred with our recommendations in both the public and limited official use only reports and identified specific corrective actions that irs has taken or plans to take to address the recommendations .
+
+the acting deputy secretary of the treasury concurred with our recommendation to take several actions to fully implement an effective agencywide information security program .
+
+the acting deputy stated that irs continues to make progress in addressing the computer security deficiencies throughout the agency , as noted in our public and limited official use only reports .
+
+the acting deputy stated that in mid - 2004 , irs began an agencywide initiative to complete required security activities , such as the development of security plans and security testing by fiscal year 2005 .
+
+the acting deputy's comments also addressed several completed corrective actions , including properly configuring access rights to the mainframe computing environment , auditing the activity of high - level user access on the mainframe environment , capturing and pursuing all security violations , designating information systems security officers at all irs locations , and establishing the position of director , information technology security to ensure that the overall design of new applications and the operation of current systems adhere to security requirements .
+
+the acting deputy secretary also concurred with our recommendation to direct the irs commissioner to perform an assessment to determine whether taxpayer data have been disclosed to unauthorized individuals .
+
+regarding our recommendation to direct the fincen director to perform an assessment to determine whether bank secrecy act data have been disclosed to unauthorized individuals , the acting deputy stated that it is more appropriate to have irs conduct this review because fincen does not have the legal authority to conduct such an assessment of irs tax information .
+
+this alternative approach meets the intent of our recommendation as long as irs reports the results of its assessment to the director of fincen .
+
+we are sending copies of this report to the chairmen and ranking minority members of the house committee on government reform ; house and senate committees on appropriations ; house and senate committees on budget ; secretary of the treasury ; commissioner of internal revenue ; and treasury's director , financial crimes enforcement network .
+
+we also will make copies available to others upon request .
+
+in addition , this report will be available at no charge on the gao web site at http: / / www.gao.gov .
+
+if you or your office have any questions about this report , please contact gregory c. wilshusen at ( 202 ) 512-3317 or keith a. rhodes at ( 202 ) 512- 6412 ; we can also be reached by e - mail at wilshuseng@gao.gov or rhodesk@gao.gov .
+
+other contacts and key contributors to this report are listed in appendix ii .
+
+in addition to the individual named above , gerald barnes , bruce cain , joseph cruz , joanne fiorino , denise fitzpatrick , ed glagola , david hayes , myong suk kim , harold lewis , mary marshall , duc ngo , ron parker , charles roney , eugene stevens , and henry sutanto made key contributions to this report .
+

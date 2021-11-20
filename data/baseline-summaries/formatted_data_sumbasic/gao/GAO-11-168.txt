@@ -1,0 +1,452 @@
+in administering federal tax laws , the internal revenue service ( irs ) collected approximately $2.35 trillion in 2010 and is projected to collect over $3 trillion beginning in 2013 .
+
+to do so , irs depends heavily on information technology ( it ) systems , including legacy tax processing systems that were developed in the 1960s that are complex and difficult to maintain .
+
+in 1999 , irs initiated the customer account data engine ( cade ) project to replace legacy systems for storing , managing , and accessing taxpayer accounts .
+
+starting in 2005 , cade processed and recorded tax return and tax account information for millions of individual taxpayers with simple returns .
+
+however , irs found that the development of the system was more complex and taking longer than initially anticipated and decided to undertake a broad review of its it systems modernization efforts .
+
+the results of the review led irs to adopt a new strategy for managing individual taxpayer accounts that would provide benefits to irs and the taxpayers sooner than cade .
+
+the new strategy is referred to as cade 2 .
+
+to better understand the implications of moving to the new strategy , you asked us to ( 1 ) determine whether irs has identified the expected benefits of cade 2 and set targets for measuring success , ( 2 ) examine the estimated costs of the program and assess irs's process for developing them , and ( 3 ) assess irs's process for managing the risks associated with cade 2 and describe the risks irs has identified using this process .
+
+to describe the expected benefits , we reviewed relevant documents , including the cade 2 program business case and benefits management plan , and interviewed irs officials from the offices of wage and investment ( w&i ) and modernization and information technology services ( mits ) .
+
+we also used program performance criteria established in our prior reports .
+
+to understand the estimated costs and assess irs's process for developing them , we reviewed agency cost documentation and compared it to the best practices identified in the gao cost estimating and assessment guide and interviewed officials from irs's estimation program office .
+
+to determine cade 2 key risks and irs's management of them , we interviewed officials from the cade 2 program management office ( pmo ) and reviewed documentation associated with the risk management process and the identification of key risks .
+
+we evaluated irs's risk management process against relevant criteria in the software engineering institute's capability maturity model integration ( cmmi ) best practice guidance .
+
+we conducted this performance audit from january 2010 to march 2011 , in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+appendix i contains further details on our objectives , scope , and methodology .
+
+irs's business systems modernization program , which began in 1999 , is a multibillion - dollar , high - risk , highly complex effort that involves the development and delivery of a number of modernized tax administration and internal management systems , as well as core infrastructure projects , which are intended to replace the agency's aging business and tax processing systems and provide improved and expanded service to taxpayers and internal business efficiencies for irs .
+
+cade , one of the core systems of the business systems modernization program , was intended to provide a modernized system of taxpayer accounts , with the ultimate goal of eventually replacing the individual master file ( imf ) , a 1960s legacy tax master file that maintains all taxpayer records for individual taxpayers .
+
+the imf is the authoritative data source for individual tax account data .
+
+tax data and related information pertaining to individual taxpayers are posted to the imf , and the imf is updated annually to incorporate new tax law procedures and changes .
+
+the imf is a critical component of irs's ability to process tax returns , as all the other irs information system applications use data from this source .
+
+according to irs , the imf is a complex computer system that maintains all individual taxpayer records but has inherent limitations that significantly constrain irs's ability to achieve its mission .
+
+the delays in weekly updates of taxpayer accounts , the lack of synchronization of taxpayer data across dozens of systems , the complexity of the data , the large volumes of data , and the ongoing need to embed new tax laws and business rules contribute to irs systems storing , sharing , and processing data that is often incomplete , untimely , or inaccurate .
+
+with cade , irs started establishing a database and related functionality for posting , settlement , maintenance , refund processing , and issue detection for taxpayer account and return data for relatively simple tax returns for individual taxpayers .
+
+since 2005 , cade has processed and recorded tax return and tax account information for increasing numbers of individual taxpayers .
+
+irs reported that , in 2010 , cade processed about 41 million relatively simple returns ( about 30 percent of the total individual income tax returns received ) ; and issued about 36 million refunds that totaled in excess of $66 billion ( approximately 14 percent of total refunds ) , and processed over 7 million taxpayer payments amounting to approximately $90 billion — with zero defects in balancing .
+
+in addition , irs reported that it issues refunds with cade approximately 5 days faster than refunds processed by the imf .
+
+although irs made progress in processing individual taxpayer returns with cade , irs found that each successive release of the system was far more difficult as more complex accounts were to be supported , raising concerns about the effort required to address these increasing complexities .
+
+also , since the cade system operates concurrently with imf processing , work must be done across the two environments , increasing the complexity of filing season operations and resulting in a greater risk for errors in processing taxpayer account information .
+
+irs was concerned that , without a significant change in approach , cade would not be completed until at least 2020 .
+
+these challenges led the irs commissioner to form a team of senior irs technologists and external advisers to review cade and irs's modernization strategy for individual taxpayer accounts .
+
+the review identified six risks with the cade strategy .
+
+as a result of the review , in august 2008 , irs began defining a new strategy to address the challenges confronting cade and deliver improved individual tax processing capabilities sooner .
+
+specifically , the new strategy called for accelerating completion of a modernized database and converting to a single processing system sooner than the current approach would allow .
+
+the new strategy is referred to as cade 2 .
+
+table 1 describes the cade risks reported by irs and how cade 2 intends to address them .
+
+as noted in the table , irs used prototypes to test and prove complex technical and performance concepts early and provide guidance and information needed for detailed design .
+
+these prototypes were completed in 2010 , although some remaining tasks in one of them — the database performance test prototype — will be completed later .
+
+cade 2 is expected to deliver its functionality incrementally through three phases known as transition states .
+
+table 2 shows the target completion dates and key characteristics for transition state 1 ( ts1 ) , transition state 2 ( ts2 ) , and the target state .
+
+ts1 consists of the following two projects: daily processing: according to irs , this project is to enable irs to process and post all individual taxpayer returns filed and other transactions by updating and settling individual taxpayer accounts in 24-48 hours with current , complete , and authoritative data , and provide employees with timely access .
+
+more specifically , through the daily processing project , irs is expected to modify the imf to run daily , i.e. , modify current transaction processing to occur daily versus weekly ; make changes to the integrated data retrieval system ( idrs ) and the notice generation process to support the daily vs. weekly processing cycle ; and prepare daily “loads” to update the cade 2 database for idrs and other downstream systems as they are able to support daily processing .
+
+database implementation: according to irs , this project is to establish the cade 2 database , a relational database that will house data on individual taxpayers and their accounts ; develop a capability to transfer data from imf to the database ; and provide for the transfer of data from the database to downstream irs financial , customer service and compliance systems .
+
+specifically , the project is expected to enable irs to perform a one - time initialization of the database when ts1 begins ( this will involve loading all taxpayer account data from imf and the cade database into the cade 2 database and then validating it ) ; perform daily updates to the database after ts1 begins by extracting , transforming , and loading daily processing changes to imf data ; and utilize the database to provide individual taxpayer account information to selected downstream systems to assist irs service and compliance personnel .
+
+for example , the cade 2 database is intended to provide daily updates to idrs , as well as weekly updates to the integrated production model ( ipm ) — a downstream data repository designed to support irs compliance functions that house imf and business master file data , information returns , and other data .
+
+ipm is expected to include current individual taxpayer data from the cade 2 database .
+
+regarding the status of these two projects , irs completed efforts to define the ts1 projects' logical design in december 2010 and began the detailed design phase , which includes activities such as documenting the physical design of the solution .
+
+irs expects to complete this phase by april 2011 .
+
+irs has also defined overall objectives for ts2 and the target state , but detailed planning of ts2 is in the early stages , with the formation of a planning team that expects to define a high - level approach by early may 2011 .
+
+in december 2009 , the treasury inspector general for tax administration ( tigta ) identified several challenges that irs needed to address to effectively manage identified cade 2 risks , including , among other things , implementing a governance structure for the pmo to provide oversight and direction for the implementation of cade 2 and developing contingency plans in the event that cade 2 cannot be fully implemented .
+
+irs officials completed a contingency strategy in november 2010 .
+
+in may 2010 , we reported that , while much had been done to define cade 2's transition states , irs had not identified time frames for completing key planning activities for ts2 .
+
+consequently , we recommended irs establish these time frames .
+
+in response , irs stated that it would develop a plan for launching ts2 activities that will outline the approach and a high - level plan for the transition state .
+
+irs also noted that business requirements would be completed in parallel with the development of the plan .
+
+in december 2010 , irs initiated ts2 planning activities and set a target of may 2011 for agreeing on the scope and plan for the transition state .
+
+in november 2010 , tigta reported on the prototypes undertaken by irs to gain confidence in the cade 2 solution .
+
+tigta found that the five prototype teams that were established generally managed their objectives effectively , and that the teams also identified risks that faced the successful execution of the prototype plans and took steps to overcome the barriers .
+
+tigta recommended that irs take several actions to reemphasize compliance with the elements of the cade 2 prototype process .
+
+in its response , irs agreed with tigta's recommendations and described steps to address them .
+
+while the mits organization has primary responsibility for developing , managing , and delivering the cade 2 program , irs has established a new governance approach for the program , including the cade 2 pmo that is to manage the program and the relationship with the program's stakeholders , define the solution specifications to meet the requirements and the delivery of the program scope , and specify the roles and responsibilities of all parties .
+
+the new governance approach is intended to foster rapid decision - making and proactive risk management and issue resolution , as well as ensure that the appropriate stakeholders are involved , engaged , and collaborating as a unified team in making cade 2 decisions .
+
+the cade 2 pmo is headed by an associate chief information officer and made up of several groups , each responsible for a different aspect of the program .
+
+these groups include delivery management .
+
+responsible for overseeing and coordinating activities across the projects that are implementing the solution for each of the transition states .
+
+program management and control .
+
+responsible for executing the program management processes , cade 2 solution planning , and governance and control activities .
+
+chief architect .
+
+responsible for setting the overall technical direction in alignment with irs's business and technical architecture , as defined in the enterprise architecture .
+
+chief engineer .
+
+responsible for reviewing detailed design and interfaces to ensure the cade 2 solution will work , is secure , and integrates with other systems and infrastructure .
+
+business operations .
+
+responsible for providing the administrative support for all branches of the pmo .
+
+these groups are to work with ( 1 ) delivery partners who are other mits organizations ( eg , applications development and enterprise operations ) that work to deliver the program scope , ( 2 ) business partners ( eg , w&i and the chief financial officer ) who are organizations who either use the system or define the business requirements and , as such , play a key role in overseeing cade 2 , and ( 3 ) other stakeholder groups who support , influence , or oversee the program .
+
+to oversee and guide the pmo , irs also established several executive - level boards and advisory councils composed of business and it officials .
+
+the executive - level boards include the following: the cade 2 executive steering committee , which consists of senior executives from mits , w&i , and department of the treasury , and serves as an oversight group that ensures the program stays aligned with the irs strategic plan and approves decisions with significant organizational or external impact ; and the cade 2 governance board , which consists of associate chief information officers from cade 2 and applications development and the business modernization executive from w&i , and ensures that objectives are met ; decisions and issues are resolved in a timely manner ; risks are managed appropriately ; and the expenditure of resources allocated is fiscally sound .
+
+the cade 2 governance board also approves program risk response plans , milestone exits , and resolves escalated issues .
+
+the advisory councils include the executive oversight team , which consists of executives from the cade 2 pmo , delivery partners , and senior - level business executives , and serves as the oversight for the day - to - day execution of the cade 2 program ; associate chief information officer advisory council representing leaders of each of the mits technical units ; program leadership advisory council , a broad group of executives from w&i , agency wide shared services , and across mits that consult on key issues , risks , analyses , and recommendations on an as needed basis ; and architecture / engineering review council recently created to provide architectural and engineering leadership across the program to ensure design and development efforts are complete and adhere to solution architecture and engineering best practices .
+
+in addition , while the projects chartered under cade 2 are expected to follow the irs enterprise life cycle methodology that other projects are required to follow , irs also defined a program management framework for cade 2 that defines the phases , activities , deliverables , milestones , and reviews necessary to manage both the program and each of its component projects in a coordinated and integrated manner .
+
+the pmo and supporting boards are to play key roles in reviewing deliverables and approving milestone exits for the program and assuring that the projects are properly aligned and integrated with the program .
+
+finally , irs has also defined and started implementing several processes to support its management of the cade 2 program .
+
+they include processes for managing risks , the integrated master schedule , the prototype process , and other activities .
+
+while several of these processes were already established for projects , irs enhanced them for cade 2 to take into account the complexities associated with integrating projects into a program .
+
+for ts1 , irs has identified 20 benefits .
+
+these benefits span three categories: service ; compliance ; and other benefits , including reduced system costs and improved security benefits .
+
+our past work at irs established that quantitative targets can be useful for tracking program performance .
+
+while it may not always be possible to quantify targets , doing so helps to objectively measure the extent to which expected benefits have been realized .
+
+as shown in table 3 , irs has set quantitative targets for 15 of the 20 benefits for ts1 .
+
+ ( table 7 in app .
+
+ii describes all the benefits irs has identified and the related quantitative targets where they exist. ) .
+
+an example of a benefit with a quantitative target is the percentage of refunds irs will process on a daily basis .
+
+irs expects cade 2 to increase this from 30 to 80 percent , resulting in faster refunds to many taxpayers .
+
+another example is the security benefit of reducing the number of irs databases that contain extracts of data from cade 2 .
+
+irs expects this to be reduced by 20 percent from the 2011 baseline .
+
+irs officials have stated that they have not set quantitative targets for five ts1 benefits for two reasons .
+
+first , officials told us that two benefits related to improved security and updated account information cannot be quantified and therefore do not have numeric targets .
+
+ ( see app .
+
+ii for more details. ) .
+
+second , irs officials stated that competing priorities have impeded their ability to define the remaining targets .
+
+while they stated they plan to define these targets , they have not committed to specific time frames for doing so .
+
+until irs has set quantitative targets where feasible in ts1 , it and other stakeholders including congress will not have complete information on the specific benefits that can be expected from funds spent on this phase .
+
+in addition , it will be more difficult to objectively measure whether expected benefits have been delivered .
+
+in contrast with ts1 , irs has not finalized the benefits expected in ts2 or defined related quantitative targets .
+
+specifically , irs has identified a list of 22 service , compliance , and other benefits including addressing financial material weaknesses it expects to achieve beyond ts1 .
+
+these benefits are summarized in table 4 and described in greater detail in table 7 in appendix ii .
+
+however , irs has not yet determined whether these benefits are to be delivered in ts2 or the target state .
+
+according to irs , committing to what can be delivered in ts2 is contingent upon a number of decisions yet to be made .
+
+specifically , officials stated that irs must first finalize its approach for ts2 ( as noted earlier , the agency expects to do this by may 2011 ) .
+
+officials also stated that funding decisions for the upcoming fiscal year could impact irs's plans for ts2 .
+
+in addition , irs has not finished defining the full range of possible benefits it expects beyond ts1 .
+
+for example , one possible compliance benefit that irs is exploring is requiring providers of information returns to send those returns to irs and taxpayers at the same time , which would allow irs to use this data earlier to conduct some compliance checks .
+
+conducting earlier analyses of tax return information using cade 2 and ipm could allow irs to stop an erroneous refund before it goes out .
+
+irs currently waits until well after the filing season to conduct some compliance checks , such as computerized matching of information returns and tax returns and examinations of taxpayers' books and records .
+
+such compliance checks can lead to costly collection efforts from noncompliant taxpayers .
+
+finally , as summarized in table 4 and shown in greater detail in appendix ii , irs has not yet set quantitative targets for any of the benefits defined or committed to any time frames for doing so .
+
+as noted for ts1 , until irs has set quantitative targets where feasible in ts2 , it and other stakeholders will not have complete information on the specific benefits than can be expected from funds spent , and it will be difficult to objectively measure whether expected benefits have been delivered .
+
+we acknowledge that thinking through the expected ts2 benefits ( including those from the table in app .
+
+ii and other potential benefits ) and related targets as the approach and design are being considered may result in having to make adjustments later .
+
+however , the benefits and targets generated at this stage can influence design decisions and allow irs to identify early how associated systems and business processes might be affected .
+
+in july 2009 , irs reported preliminary life cycle cost estimates for ts1 and ts2 of about $1.3 billion through 2024 , including about $377 million for development and $922 million for operations and maintenance .
+
+the estimates include costs for eight categories of work needed to achieve the goals defined for ts1 and ts2 .
+
+the majority of the costs are for the operational framework category ( $663 million or 51 percent of total costs ) , which is to provide for the infrastructure on which to develop , test , and deploy the new and enhanced applications under the cade 2 program .
+
+the cade 2 preliminary cost estimates are summarized in table 5 .
+
+the estimated annual costs from 2009 through 2024 are shown in figure 1 .
+
+at the time they were developed , irs estimated cade 2 development costs to end in 2015 and total costs to peak during 2011 at about $162 million .
+
+estimated costs between 2015 and 2024 are all recurring operations and maintenance costs .
+
+irs's estimates did not include expected costs for the following items: operations and maintenance of the imf system to include enhancements needed to achieve the cade 2 target state , prototype development and assessments , technical training ( estimated at $1 million to $3 million ) , work required to reach the final target state , and process reengineering costs / business costs associated with implementing the current weekly batch processing of accounts to the daily processing required at the completion of ts1 .
+
+the process irs used to develop the cade 2 preliminary cost estimates was generally consistent with the best practices outlined in the gao cost estimating guide .
+
+specifically , irs followed a well - defined process for developing a comprehensive , documented , accurate , and mostly credible life cycle cost estimate for the first two phases of cade 2 .
+
+for example , the estimation process was performed in accordance with a well - defined plan by an independent estimation program office .
+
+parametric estimation models were used that contained catalogs based on historical data , along with cost estimating relationships , designed to produce estimates analogous to similar programs .
+
+in addition , irs used simulation techniques to incorporate risks and determine confidence bounds on the estimates .
+
+further , irs plans to update its estimates , consistent with the best practice to update estimates to reflect changes in technical or program assumptions .
+
+specifically , since the estimates were prepared , irs has developed a better understanding of the work required to meet cade 2 objectives for ts1 and the current work breakdown structure ( i.e. , definition of work to be performed ) no longer matches the one used to develop the preliminary estimates .
+
+irs officials told us that , consistent with irs's estimation program office estimator's guide , they plan to revise their estimates after detailed design information for the database implementation and daily processing projects is completed and expect them to be available by the completion of our audit .
+
+cade 2 pmo officials stated they did not expect the revised estimates to differ significantly from the current estimate .
+
+it is important to note that , even when all ts1 cost elements have been updated to accurately reflect the current understanding of the work to be performed , the total cost of ownership through ts2 could still significantly differ from the new estimate , given that , as previously noted , the approach for ts2 has yet to be defined .
+
+we identified the following three practices irs did not follow that could strengthen its methods for estimating cade 2 costs to ensure they are more credible: first , according to best practices , items excluded from estimates should be documented and explained .
+
+while irs documented four of the five items that were excluded from the estimates , it did not provide an explanation for excluding these costs .
+
+in addition , irs did not document that it excluded the business costs associated with moving to daily processing .
+
+irs officials stated that , at the time the estimates were developed , these business costs were not well understood by the estimators and now believe that these costs would be relatively small , representing mostly costs for staff already being paid out of existing budgets .
+
+nevertheless , consistently documenting excluded costs and providing a rationale for excluding them would improve credibility .
+
+second , irs's estimates did not include inflation .
+
+according to best practices , adjusting costs for inflation correctly is necessary if the cost estimate is to be credible .
+
+inflation reflects the fact that the cost of an item usually continues to rise over time .
+
+if a mistake is made in applying inflation , or if inflation is not included , cost overruns can result .
+
+third , irs did not conduct a sensitivity analysis to examine the effects of changing assumptions and ground rules on its estimates .
+
+while irs developed risk - adjusted estimates , it did not perform the formal sensitivity analysis necessary to understand which variables most affect the cost estimate .
+
+irs officials stated they intend to include a sensitivity analysis in the revised cost estimates expected to be available by the completion of our audit .
+
+performing this analysis will not only improve the credibility of the estimate , but it will provide management a better understanding of the relationship of key factors to cost , which is important in evaluating different options as part of subsequent risk and issue mitigation strategies and contingency plans .
+
+given the size and significance of the cade 2 program , it is important that irs have an effective risk management process .
+
+according to best practices , an effective risk management process identifies potential problems before they occur , so that risk - mitigating activities may be planned and invoked as needed across the life of the product and project in order to mitigate adverse impacts on achieving objectives .
+
+it includes assigning resources , identifying and analyzing risks , and developing risk mitigation plans and milestones for key mitigation deliverables .
+
+irs's risk management process for cade 2 is generally consistent with best practices .
+
+for example , regarding resources assigned to risk management , the cade 2 pmo's director for program management and control is responsible for “executing” the risk management process .
+
+biweekly meetings are held where the director for delivery management and project officials discuss project status and risks and determine whether risks need to be escalated as candidate risks to the program level .
+
+monthly risk and issue meetings are held to discuss the program - level risks .
+
+finally , those risks that require additional oversight are then presented to the chief technology officer for review .
+
+program - level and project - level risks are scored and tracked in a consistent manner using a risk repository tool .
+
+risk mitigation plans and associated milestones are defined for each risk .
+
+officials from the pmo have also told us that the management structure and processes that have been established for the program are intended to help mitigate the risks associated with developing such a large and complex program .
+
+while irs is generally effectively carrying out the activities associated with the risk management process , the two key documents that support this process are in some cases inconsistent and do not fully reflect actions being taken .
+
+for example , the risk and issue management process document calls for automatically escalating those projects with a high to very high risk exposure score to the next level of management while the risk and issue management plan calls for escalating risks based primarily upon the judgment of the risk owner and responsible manager .
+
+the risk and issue management process identifies a specific set of actions to mitigate risks depending on the risk exposure score while the risk and issue management plan provides high - level guidance describing various alternatives that can be taken to mitigate risks .
+
+as another example , both documents identify the risk management roles but do not specify when in the process these roles are assigned or what the required qualifications are .
+
+irs recognizes its risk management procedures could be strengthened , and the director for program management and control intends to review these procedures by the completion of our audit , to ensure they are consistent and clearly reflect the process in place .
+
+this action will help irs achieve optimal effectiveness in identifying , prioritizing , or managing risks that could affect the cost and schedule of the program .
+
+using its risk management process , irs has identified several significant program risks for cade 2 .
+
+as of november 2010 , six of these were considered “top risks.” these “top risks,” which include ts1 contingency planning and resource contention among irs priorities are listed in table 6 along with the mitigation strategies that have been defined for them .
+
+ ( for a complete list of program risks , see app .
+
+iii. ) .
+
+while irs has taken many steps to reduce the risks associated with cade 2 , the agency will nevertheless be challenged in meeting its january 2012 schedule for delivering the benefits associated with daily processing and database implementation given the amount of work needed to complete ts1 over the next year .
+
+this includes completing logical design and detailed design activities , testing and integration of core daily applications and their development , and testing and population of the database with current cade and imf data .
+
+further , as already noted , waiting to finish ( 1 ) defining targets for the ts1 benefits and ( 2 ) finalizing benefits and related targets for ts2 creates a risk of costly or time - consuming late design changes .
+
+recognizing the challenges it faces , irs has taken additional steps to increase the likelihood of meeting the schedule .
+
+these include moving certain activities up , performing others concurrently and adding checkpoints to monitor the program's status .
+
+in addition , irs has recently completed a ts1 contingency strategy .
+
+while these actions may increase the likelihood of meeting the schedule , some of them , such as performing activities concurrently , could potentially introduce more risk to cade 2's successful development and implementation .
+
+defining benefits and related quantitative targets where feasible is important to understanding what to expect and how to measure performance against expectations .
+
+for ts1 , while irs has identified numerous expected benefits , it has not yet defined quantitative targets for all of them .
+
+given that irs is finalizing the design and preparing to implement ts1 , it is important for the agency to complete defining the targets associated with ts1 benefits .
+
+delaying the setting of targets could result in costly and time - consuming changes to the design and associated requirements .
+
+similarly , addressing ts2 benefits and related targets as the design is being considered could influence design decisions and help identify early on how systems and processes might be affected .
+
+in developing cost estimates for the first two phases of cade 2 , irs did not disclose all excluded costs , provide a rationale for documented excluded costs , adjust for inflation , or perform a sensitivity analysis to examine the effects of changing assumptions and ground rules .
+
+irs stated it would perform a sensitivity analysis in the revised estimates it expects to release by the completion of our audit .
+
+to its credit , irs has established a risk management process that is generally consistent with best practices and has identified mitigation strategies to address each identified risk .
+
+several of the risks identified are significant and will require continued attention from irs .
+
+we recommend that the commissioner of internal revenue direct the appropriate officials to take the following five actions: to provide a better basis for measuring cade 2 performance in achieving ts1 benefits , set the remaining quantitative targets where feasible as soon as possible in 2011 ; in conjunction with developing the approach for ts2 expected in may 2011 , finalize the phase's expected benefits , set quantitative targets where feasible , and identify how related systems and business processes might be affected ; and to ensure the revised estimates for cade 2 are credible , include inflation when calculating costs , include the costs irs explicitly excluded or provide a rationale for excluding them , and include any business costs associated with moving to daily processing or document that these costs were excluded and provide a rationale for excluding them .
+
+irs's commissioner provided written comments on a draft of this report ( reprinted in app .
+
+iv. ) .
+
+in its comments , irs stated that it appreciated that the report recognized the progress the agency had made and that it is following best practices on important disciplines like risk management and cost estimation .
+
+irs also agreed with our recommendations and stated it would provide a detailed corrective action plan addressing each one along with its response to our final report .
+
+irs also provided revised cost estimates for cade 2 that address our finding related to the use of a sensitivity analysis .
+
+we are sending copies of this report to the appropriate congressional committees , and to the chairmen and ranking members of other senate and house committees and subcommittees that have appropriation , authorization , and oversight responsibilities for irs .
+
+we will also send copies to the commissioner of internal revenue , the secretary of the treasury , the chairman of the irs oversight board , and the director of the office of management and budget .
+
+the report also is available at no charge on the gao web site at http: / / www.gao.gov .
+
+if you or your staff members have any questions or wish to discuss the material in this report further , please contact us at ( 202 ) 512-9286 or pownerd@gao.gov or at ( 202 ) 512-9110 or whitej@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made key contributions to this report are listed in appendix v .
+
+as agreed , our objectives were to 1. determine whether the internal revenue service ( irs ) has identified the expected benefits of customer account data engine ( cade ) 2 and set targets for measuring success , 2. examine the estimated costs of cade 2 and assess irs's process for 3. assess irs's process for managing the risks associated with cade 2 and describe the risks irs has identified using this process .
+
+for our first objective , we reviewed relevant documents , including the cade 2 program business case and benefits management plan , and interviewed officials from irs offices: wage and investment and modernization and information technology services ( mits ) .
+
+we also used criteria from our prior work to identify attributes of successful performance measures .
+
+we reviewed documents including the program roadmap , business case and benefits management plan , and benefits roadmap , and the office of management and budget exhibit 300 .
+
+for our second objective , we summarized the estimated costs reported in the july 2009 cade 2 estimate summary / basis of estimate and totaled costs by year for each of the major categories for which estimates were developed .
+
+we reviewed several documents , including the july 2009 cade 2 estimate summary / basis of estimate and the estimation breakdown summary reports and capabilities and solution concept documents ( eg , the integrated master file enhancements: capabilities definition and solution concept document and the financial settlement: capabilities definition and solution concept document ) , which support the basis of estimate .
+
+we also reviewed irs's estimators' reference guide and aspects of the seer - sem methodology that was used to develop the estimates .
+
+we also interviewed staff from the estimation program office , as well as members of the program management and control function of the cade 2 program management office ( pmo ) responsible for tracking the program's cost .
+
+we compared what we learned with the 12 steps for developing well - documented , comprehensive , accurate , and credible cost estimates identified in the gao cost estimating and assessment guide .
+
+for our third objective , we reviewed documented procedures supporting the risk management process , including the risk and issue management process , the risk and issue management plan , the user guide for the item tracking reporting and control system that is used to track risks and the mits risk identification procedure .
+
+we also reviewed artifacts of the risk management process , including program risk logs and detailed risk reports .
+
+we participated in meetings in which risks were discussed and reviewed agendas and meeting minutes for others .
+
+we also interviewed several officials , including the cade 2 program director , the director of the cade 2 pmo program management and control office , and the director of the cade 2 pmo delivery management office .
+
+through document reviews and interviews with appropriate officials , we also examined the following areas in greater depth: ( 1 ) schedule , ( 2 ) contractor oversight , ( 3 ) requirements management , ( 4 ) prototypes , and ( 5 ) human capital .
+
+we selected these areas because , based on our experience , they represent areas of risk or have been problematic for irs in the past .
+
+in addition , we examined irs's prototyping efforts to understand how the agency was using them to mitigate risks .
+
+we evaluated what we learned about irs's risk management process against relevant criteria for software engineering institute's capability maturity model integration ( cmmi ) to determine the effectiveness of the process .
+
+to obtain background information on the program , we reviewed a host of documents developed by the cade 2 pmo , including the cade 2 program charter , solution architecture , program roadmap , program management plan , the charters of the two cade 2 transition state 1 projects ( daily processing and database implementation ) , as well as governance team meeting minutes .
+
+we also observed cade 2 meetings , conducted interviews with and received briefings from cade 2 officials , including the irs chief technology officer , the deputy chief information officer for strategy and modernization , the associate chief information officer who serves as executive - in - charge of the cade 2 program , and the chief architect of the cade 2 program .
+
+we conducted this performance audit from january 2010 to march 2011 primarily at the new carrollton federal building in new carrollton , maryland , where the cade 2 staff are located , and atlanta , georgia , where the wage and investment division staff are located , in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+table 7 shows a list of benefits the irs has defined to date for transition state 1 ( ts1 ) and beyond , a related quantitative target for a benefit if applicable , and the transition state in which irs expects to realize the benefit .
+
+according to irs , defining which benefits will be delivered in transition state 2 ( ts2 ) is contingent upon a number of decisions yet to be made and actual benefits may differ from those currently expected depending on the outcome of these decisions .
+
+the following ( see table 8 ) are the irs's reported cade 2 program risks and their planned mitigation strategies as of november 2010 .
+
+in addition to the individuals named above , sabine r. paul , assistant director ; joanna stamatiades , assistant director ; rebecca eyler ; mary d. fike ; nancy glover ; sairah r. ijaz ; robert kershaw ; paul b. middleton ; john ockay ; and jennifer wong made key contributions to this report .
+

@@ -1,0 +1,822 @@
+the federal aviation administration's ( faa ) mission is to promote the safe , orderly , and expeditious flow of air traffic in the u.s. airspace system — commonly referred to as the national airspace system ( nas ) .
+
+to accomplish this mission , it relies on air traffic control systems to provide such services as controlling takeoffs and landings and managing the flow of traffic between airports .
+
+it also relies on its administrative and mission support systems ( non - nas ) to perform other activities needed to achieve its mission , such as accident and incident investigations and security inspections .
+
+to support its mission performance , faa is modernizing its air traffic control systems .
+
+our research into the practices of successful public - and private - sector organizations has shown that developing and using a well - defined modernization blueprint — an enterprise architecture — is essential to an organization's ability to transform its operations and supporting systems in a way that eliminates duplication , promotes interoperability , reduces costs , and optimizes mission performance .
+
+you asked that we evaluate whether faa is following best practices in key information technology ( it ) management areas , such as enterprise architecture , investment management , and software / system development .
+
+this report is one in a series of reports responding to your request .
+
+as agreed , the objective of our review was to determine whether faa has established effective processes for managing the development and implementation of an enterprise architecture .
+
+to accomplish this objective , we analyzed documents , interviewed agency officials , and compared faa's architecture development , maintenance , and implementation practices against our enterprise architecture management maturity framework .
+
+we performed our work in accordance with generally accepted government auditing standards .
+
+details on our objective , scope , and methodology are in appendix i .
+
+faa's primary mission is to provide a safe , secure , and efficient global airspace system that promotes airspace safety in the united states and contributes to national security .
+
+the agency's roles include regulating civil aviation , developing and operating a system of air traffic control and navigation for civil and military aircraft , and researching and developing the nas , which consists of more than 19,000 airports , 750 air traffic control facilities , and about 45,000 pieces of equipment .
+
+faa's mission performance depends on the adequacy and reliability of the nation's air traffic control system .
+
+the air traffic control system , the primary component of the nas , is a vast network of computer hardware , software , and communications equipment .
+
+this system consists of automated information processing and display , communication , navigation , surveillance , and weather resources that permit air traffic controllers to view key information — such as aircraft location , aircraft flight plans , and prevailing weather conditions — and to communicate with pilots .
+
+these resources reside at , or are associated with , several air traffic control facilities — towers , terminal radar approach control facilities , air route traffic control centers ( en route centers ) , flight service stations , and the system command center .
+
+figure 1 shows a visual summary of the air traffic control system over the continental united states and oceans .
+
+faa's mission performance also depends on the skills and expertise of its work force , composed of over 50,000 staff who provide aviation services — including air traffic control ; maintenance of air traffic control equipment ; and certification of aircraft , airline operations , and pilots .
+
+in fiscal year 2005 , faa's budget authority to support its mission was approximately $14 billion .
+
+according to faa officials , approximately 95 percent of the agency's total spending is in support of the nas .
+
+further , faa estimates that it will spend $7.6 billion over the next two years to complete key modernization projects .
+
+as figure 2 illustrates , faa has twelve staff offices to accomplish its mission — including the office of international aviation and the office of information services / chief information officer — and four lines of business — air traffic organization , commercial space transportation , airports , and regulation and certification .
+
+tables 1 and 2 provide additional information about the responsibilities of these offices and lines of business .
+
+effective use of enterprise architectures , or modernization blueprints , is a trademark of successful public and private organizations .
+
+for more than a decade , we have promoted the use of architectures to guide and constrain systems modernization , recognizing them as a crucial means to a challenging goal: agency operational structures that are optimally defined in both business and technological environments .
+
+the congress , the office of management and budget ( omb ) , and the federal chief information officer ( cio ) council have also recognized the importance of an architecture - centric approach to modernization .
+
+the clinger - cohen act of 1996 mandates that an agency's cio develops , maintains , and facilitates the implementation of an it architecture .
+
+further , the e - government act of 2002 requires omb to oversee the development of enterprise architectures within and across agencies .
+
+generally speaking , an enterprise architecture connects an organization's strategic plan with program and system solution implementations by providing the fundamental business and technology details needed to guide and constrain investments in a consistent , coordinated , and integrated fashion .
+
+as such , it should provide a clear and comprehensive picture of an entity , whether it is an organization ( eg , federal agency ) or a functional or mission area that cuts across more than one organization ( eg , air traffic control ) .
+
+this picture consists of snapshots of both the enterprise's current or “as is” environment and its target or “to be” environment , as well as a capital investment road map for transitioning from the current to the target environment .
+
+these snapshots further consist of “views,” which are basically one or more architecture products that provide conceptual or logical representations of the enterprise .
+
+the suite of products and their content that form a given entity's enterprise architecture are largely governed by the framework used to develop the architecture .
+
+since the 1980s , various frameworks have emerged and been applied .
+
+for example , john zachman developed a structure or “framework” for defining and capturing an architecture .
+
+this framework provides for six windows from which to view the enterprise , which zachman terms “perspectives” on how a given entity operates: those of ( 1 ) the strategic planner , ( 2 ) the system user , ( 3 ) the system designer , ( 4 ) the system developer , ( 5 ) the subcontractor , and ( 6 ) the system itself .
+
+zachman also proposed six abstractions or models associated with each of these perspectives: these models cover ( 1 ) how the entity operates , ( 2 ) what the entity uses to operate , ( 3 ) where the entity operates , ( 4 ) who operates the entity , ( 5 ) when entity operations occur , and ( 6 ) why the entity operates .
+
+in september 1999 , the federal cio council published the federal enterprise architecture framework ( feaf ) , which is intended to provide federal agencies with a common construct for their respective architectures , to facilitate the coordination of common business processes , technology insertion , information flows , and system investments among federal agencies .
+
+feaf describes an approach , including models and definitions , for developing and documenting architecture descriptions for multiorganizational functional segments of the federal government .
+
+similar to most frameworks , feaf's proposed models describe an entity's business , the data necessary to conduct the business , applications to manage the data , and technology to support the applications .
+
+more recently , omb established the federal enterprise architecture ( fea ) program management office to develop a federated enterprise architecture according to a collection of five “reference models , and a security and privacy profile overlaying the five models.” the performance reference model is intended to describe a set of performance measures for the major it initiatives and their contribution to program performance .
+
+version 1.0 of the model was released in september 2003 .
+
+the business reference model is intended to describe the federal government's businesses , independent of the agencies that perform them .
+
+it serves as the foundation for the fea .
+
+version 2.0 of the model was released in june 2003 .
+
+the service component reference model is intended to identify and classify it service ( i.e. , application ) components that support federal agencies and promote the reuse of components across agencies .
+
+version 1.0 of the model was released in june 2003 .
+
+the data reference model is intended to describe , at an aggregate level , the types of data and information that support program and business line operations and the relationships among these types .
+
+version 1.0 of the model was released in september 2004 .
+
+the technical reference model is intended to describe the standards , specifications , and technologies that collectively support the secure delivery , exchange , and construction of service components .
+
+version 1.1 of the model was released in august 2003 .
+
+the security and privacy profile is intended to provide guidance on designing and deploying measures that ensure the protection of information resources .
+
+omb has released version 1.0 of the profile .
+
+although these various enterprise architecture frameworks differ in their nomenclatures and modeling approaches , they consistently provide for defining an enterprise's operations in both ( 1 ) logical terms , such as interrelated business processes and business rules , information needs and flows , and work locations and users and ( 2 ) technical terms , such as hardware , software , data , communications , and security attributes and performance standards .
+
+the frameworks also provide for defining these perspectives for both the enterprise's current or “as is” environment and its target or “to be” environment , as well as a transition plan for moving from the “as is” to the “to be” environment .
+
+the importance of developing , implementing , and maintaining an enterprise architecture is a basic tenet of both organizational transformation and it management .
+
+managed properly , an enterprise architecture can clarify and help to optimize the interdependencies and relationships among an organization's business operations and the underlying it infrastructure and applications that support these operations .
+
+employed in concert with other important management controls , such as portfolio - based capital planning and investment control practices , architectures can greatly increase the chances that an organization's operational and it environments will be configured to optimize its mission performance .
+
+our experience with federal agencies has shown that making it investments without defining these investments in the context of an architecture often results in systems that are duplicative , not well integrated , and unnecessarily costly to maintain and interface .
+
+in november 2003 , we reported the results of our governmentwide survey of agencies' progress — including faa's — in establishing key enterprise architecture management capabilities as described in version 1.1 of our architecture management maturity framework .
+
+this framework associates specific architecture management capabilities with five hierarchical stages of management maturity , starting with creating enterprise architecture awareness and followed by building the enterprise architecture management foundation , developing the enterprise architecture , completing the enterprise architecture , and leveraging the enterprise architecture to manage change .
+
+table 3 provides a more detailed description of the stages of version 1.1 of the framework .
+
+based on information provided by faa , we reported that the agency had not established an architecture management foundation ; as a result , we rated the agency to be at stage 1 of our framework .
+
+specifically , we reported that it had not ( 1 ) allocated adequate resources and ( 2 ) established a framework , methodology , and automated tools to build the enterprise architecture .
+
+according to our framework , effective architecture management is generally not achieved until an enterprise has a completed and approved architecture that is being effectively maintained and is being used to leverage organizational change and support investment decision making .
+
+an enterprise with these characteristics would need to have satisfied all of the stage 2 and 3 core elements and most of the stage 4 and 5 elements .
+
+in august 2004 , we reported that faa had established most — about 80 percent — of the basic practices needed to manage its mission - critical investments , including many of the foundational practices for selecting and controlling it investments .
+
+however , we reported that weaknesses still existed in the process .
+
+for example , faa had not involved its senior it investment board in regular reviews of investments that had completed development and become operational , and had not implemented standard practices for managing its mission - support and administrative investments .
+
+because of these weaknesses , we concluded that agency executives could not be assured that they were selecting and managing the mix of investments that best met the agency's needs and priorities .
+
+accordingly , we made several recommendations , including that the agency develop and implement a plan aimed at addressing the weaknesses identified in our report .
+
+faa generally concurred with our conclusion and recommendations .
+
+in addition , in august 2004 , we reported that faa had made progress in improving its capabilities for acquiring software - intensive systems , but that there were still areas that needed improvement .
+
+specifically , we reported that it had recurring weaknesses in the areas of measurement and analysis , quality assurance , and verification .
+
+we concluded that these weaknesses prevented faa from consistently and effectively managing its mission - critical systems and increased the risk of cost overruns , schedule delays , and performance shortfalls .
+
+we made several recommendations , including that faa address these specific weaknesses and institutionalize its process improvement initiatives by establishing a policy and plans for implementing and overseeing process improvement initiatives .
+
+faa generally concurred with our conclusion and recommendations .
+
+faa has a long and well - documented history of problems with its air traffic control modernization program , including cost overruns , schedule delays , and performance shortfalls .
+
+we first identified this program as an area at high risk in 1995 because of the modernization's size , complexity , cost , and problem - plagued past .
+
+over the past decade , we have continued to report on these problems .
+
+the program remains on our high - risk list today .
+
+in march 1999 , we testified that faa had had some success in deploying new modernization systems over the past two decades , but that the agency had not delivered most of its major air traffic control systems in accordance with its cost , schedule , and performance goals , due largely to its failure to implement established guidelines for acquiring new systems .
+
+specifically , we testified that the agency had not fully implemented an effective process for monitoring the cost , schedule , benefits , performance , and risk of its key projects throughout their life cycles .
+
+we also noted that faa lacked an evaluation process for assessing outcomes after projects had been developed , in order to help improve the selection and monitoring of future projects .
+
+moreover , we testified that the agency's problems in modernizing its systems resulted from several root causes , including the agency's attempt to undertake this modernization without the benefit of a complete nas architecture to guide its efforts .
+
+we concluded that the agency would continue to experience problems in deploying new systems until it had fully implemented solutions that addressed these root causes of its modernization problems and strengthened controls over its modernization investments .
+
+in february and october 2003 , we testified that faa had taken steps to improve the management of its air traffic control modernization , but that systemic management issues , including inadequate management controls and human capital issues , were contributing to the continued cost overruns , schedule delays , and performance shortfalls that major air traffic projects have consistently experienced .
+
+we stated that to overcome these problems , faa would need to , among other things , improve its software capabilities by requiring that all systems achieve a minimum level of progress before they would be funded , and improve its cost estimating and cost accounting practices by incorporating actual costs from related system development efforts in its processes for estimating the costs of new projects .
+
+we testified that until these issues had been resolved , resources would not be spent cost - effectively , and improvements in capacity and efficiency would be delayed .
+
+according to faa , its enterprise architecture initiative is intended to influence the agency's ongoing initiatives in e - government , data management , information systems security , capital planning , investment analysis , and air traffic control and navigation and is to benefit the agency by aligning business processes with it processes ; improving flight safety ; reducing the development and maintenance costs of systems ; decreasing airline delays ; guiding it investments ; and improving the security , interoperability , and data usage of these systems .
+
+faa officials told us that the agency plans by april 2006 to have a comprehensive version of its enterprise architecture to guide and constrain the agency's investment decisions .
+
+the assistant administrator for information services , who is the agency's cio , has been assigned responsibility for developing and maintaining the agency's enterprise architecture .
+
+the cio has designated a program director to oversee this effort .
+
+two project offices are responsible for developing the nas and non - nas segments of the enterprise architecture , respectively , in coordination with the program director .
+
+brief descriptions of the nas and non - nas architecture projects are provided below .
+
+according to faa , the nas architecture is intended to be the agency's comprehensive plan for improving nas operations through the year 2015 and is to address how faa will replace aging equipment and introduce new systems , capabilities , and procedures .
+
+the nas architecture , which faa reports is being developed in collaboration with the aviation community , is intended to achieve several objectives .
+
+for example , it is to ( 1 ) ensure that the nas can handle future growth in aviation without disrupting critical aviation services , ( 2 ) improve flight safety and the use of airspace , ( 3 ) decrease airline delays , and ( 4 ) improve systems integration and investment planning .
+
+the agency is developing the nas architecture in a series of incremental versions .
+
+it released the first version of the nas architecture in september 1995 .
+
+in 1999 , faa released version 4.0 of this architecture , which , according to the agency , was the first version to include a 15 to 20-year view ( a “to be” view ) and support budget forecasts .
+
+according to faa , the current version of the nas architecture ( version 5.0 ) shows how the agency intends to achieve the target system described by 2015 .
+
+the chief operating officer ( coo ) for the air traffic organization is responsible for developing and implementing the nas segment of the architecture .
+
+the coo has tasked the operations planning / systems engineering group within faa's air traffic organization with the day - to - day activities involved in this effort .
+
+this group is headed by the vice president for operations planning , who reports directly to the coo .
+
+the coo has also designated a chief architect , who reports to the director of systems engineering , to develop and maintain the nas architecture and to provide technical leadership and guidance , as necessary , to support investment decision making .
+
+the operations planning / systems engineering group receives input from several faa organizations , but primarily from business units within the air traffic organization .
+
+according to faa , the non - nas architecture will cover the agency's administrative services and mission support activities — the process areas , data , systems , and technology that support such functions as budget and finance , as well as all of the other governmental air transportation missions and functions that are unique to the agency ( eg , certification of aircraft ) .
+
+faa initiated a project to develop the non - nas architecture in march 2002 and , according to faa , the agency plans to have , by january 2005 , an initial baseline architecture that will describe the “as is” and “to be” environments .
+
+according to faa , it plans to incrementally build on this baseline and have a version of the non - nas architecture by april 2006 that will also include a sequencing plan .
+
+according to faa , the information management division within the office of information services / cio is responsible for developing and maintaining the non - nas architecture .
+
+faa has designated a chief architect , who reports to the program director , to oversee the day - to - day program activities for developing and maintaining the non - nas architecture .
+
+to develop the non - nas architecture , this division will receive input from the agency's twelve staff offices and four lines of business .
+
+faa recognizes the need for and has begun to develop an enterprise architecture ; however , it has yet to establish key architecture management capabilities that it will need to effectively develop , maintain , and implement the architecture .
+
+as previously stated , the agency has set up two separate project offices and tasked each with developing one of the two architecture segments ( nas and non - nas ) that together are to compose faa's enterprise architecture .
+
+the agency also reports that it has allocated adequate resources to these project offices and that chief architects have been assigned to head the architecture projects .
+
+however , faa has not established other key architecture management capabilities , such as designating a committee or group representing the enterprise to direct , oversee , or approve the architecture effort ; having an approved policy for developing , maintaining , and implementing the architecture ; and fully developing architecture products that meet contemporary guidance and describe both the “as is” and “to be” environments and a sequencing plan for transitioning between the two .
+
+according to faa officials , attention to and oversight of the enterprise architecture program have been limited in the past , and the agency has not documented its architecture management policies , procedures , and processes ; but this is changing .
+
+for example , by the end of this fiscal year , faa plans to issue a policy governing its enterprise architecture efforts and to establish a steering committee to guide and direct the program .
+
+by april 2005 , the agency also plans to approve an architecture project management plan for the non - nas architecture .
+
+in addition , it plans to have a framework for developing the nas architecture by september 2005 .
+
+based on our experience in reviewing other agencies , not having an effective enterprise architecture program is attributable to , among other things , limited senior management understanding and commitment and cultural resistance to having and using an architecture .
+
+the result is an inability to implement modernized systems in a way that minimizes overlap and duplication and maximizes integration and mission support .
+
+as we first reported in 1997 , it is critical that faa have and use a comprehensive nas architecture to guide and constrain its air traffic control system investment decisions .
+
+to effectively develop , maintain , and implement this architecture , faa will need to employ rigorous and disciplined architecture management practices .
+
+such practices form the basis of our architecture management maturity framework ; the five maturity stages of our version 1.1 framework are described in table 3 .
+
+some of these key practices or core elements associated with each of the stages are summarized below .
+
+for additional information on these key practices or core elements , see the framework .
+
+for stage 2 , our framework specifies nine key practices or core elements that are necessary to provide the management foundation for successfully launching and sustaining an architecture effort .
+
+examples of stage 2 core elements are described below .
+
+establish a committee or group , representing the enterprise , that is responsible for directing , overseeing , or approving the enterprise architecture .
+
+this committee should include executive - level representatives from each line of business , and these representatives should have the authority to commit resources and enforce decisions within their respective organizational units .
+
+by establishing this enterprisewide responsibility and accountability , the agency demonstrates its commitment to building the management foundation and obtaining buy - in from across the organization .
+
+appoint a chief architect .
+
+the chief architect should be responsible and accountable for the enterprise architecture , supported by the architecture program office , and overseen by the architecture steering committee .
+
+the chief architect , in collaboration with the cio , the architecture steering committee , and the organizational head is instrumental in obtaining organizational buy - in for the enterprise architecture , including support from the business units , as well as in securing resources to support architecture management functions such as risk management , configuration management , quality assurance , and security management .
+
+use a framework , methodology , and automated tool to develop the enterprise architecture .
+
+these elements are important because they provide the means for developing the architecture in a consistent and efficient manner .
+
+the framework provides a formal structure for representing the enterprise architecture , while the methodology is the common set of procedures that the enterprise is to follow in developing the architecture products .
+
+the automated tool serves as a repository where architectural products are captured , stored , and maintained .
+
+develop an architecture program management plan .
+
+this plan specifies how and when the architecture is to be developed .
+
+it includes a detailed work breakdown structure , resource estimates ( eg , funding , staffing , and training ) , performance measures , and management controls for developing and maintaining the architecture .
+
+the plan demonstrates the organization's commitment to managing architecture development and maintenance as a formal program .
+
+our framework similarly identifies key architecture management practices associated with later stages of architecture management maturity .
+
+for example , at stage 3 — the stage at which organizations focus on architecture development activities — organizations need to satisfy six core elements .
+
+examples of these core elements are discussed below .
+
+issue a written and approved organization policy for development of the enterprise architecture .
+
+the policy defines the scope of the architecture , including the requirement for a description of the baseline and target architectures , as well as an investment road map or sequencing plan specifying the move between the two .
+
+this policy is an important means for ensuring enterprisewide commitment to developing an enterprise architecture and for clearly assigning responsibility for doing so .
+
+ensure that enterprise architecture products are under configuration management .
+
+this involves ensuring that changes to products are identified , tracked , monitored , documented , reported , and audited .
+
+configuration management maintains the integrity and consistency of products , which is key to enabling effective integration among related products and for ensuring alignment between architecture artifacts .
+
+at stage 4 , during which organizations focus on architecture completion activities , organizations need to satisfy eight core elements .
+
+examples of these core elements are described below .
+
+ensure that enterprise architecture products and management processes undergo independent verification and validation .
+
+this core element involves having an independent third party — such as an internal audit function or a contractor that is not involved with any of the architecture development activities — verify and validate that the products were developed in accordance with architecture processes and product standards .
+
+doing so provides organizations with needed assurance of the quality of the architecture .
+
+ensure that business , performance , information / data , application / service , and technology descriptions address security .
+
+an organization should explicitly and consistently address security in its business , performance , information / data , application / service , and technology architecture products .
+
+because security permeates every aspect of an organization's operations , the nature and substance of institutionalized security requirements , controls , and standards should be captured in the enterprise architecture products .
+
+at stage 5 , during which the focus is on architecture maintenance and implementation activities , organizations need to satisfy eight core elements .
+
+examples of these core elements are described below .
+
+make the enterprise architecture an integral component of the it investment management process .
+
+because the road map defines the it systems that an organization plans to invest in as it transitions from the “as is” to the “to be” environment , the enterprise architecture is a critical frame of reference for making it investment decisions .
+
+using the architecture when making such decisions is important because organizations should approve only those investments that move the organization toward the “to be” environment , as specified in the road map .
+
+measure and report return on enterprise architecture investment .
+
+like any investment , the enterprise architecture should produce a return on investment ( i.e. , a set of benefits ) , and this return should be measured and reported in relation to costs .
+
+measuring return on investment is important in order to ensure that expected benefits from the architecture are realized and to share this information with executive decision makers , who can then take corrective action to address deviations from expectations .
+
+table 4 summarizes our framework's five stages and all of the associated core elements for each .
+
+for its nas architecture project , faa is currently at stage 1 of our maturity framework .
+
+the nas project office has satisfied three of the core elements associated with “building the enterprise architecture management foundation” — stage 2 of our framework - — and three of the elements associated with “developing enterprise architecture products” — stage 3 of our framework .
+
+it has not satisfied other stage 2 and 3 core elements or any core elements associated with stages 4 and 5 .
+
+according to the framework , effective architecture management is generally not achieved until an enterprise has a completed and approved architecture that is being effectively maintained and is being used to leverage organizational change and support investment decision making ; having these characteristics is equivalent to having satisfied all of the stage 3 core elements and many of the stage 4 and 5 elements .
+
+for the stage 2 core elements , faa reports that it has allocated adequate resources for developing a nas architecture .
+
+further , it has established a project office that is responsible for architecture development and maintenance and has assigned a chief architect to the project .
+
+however , the agency has not satisfied other core elements for stage 2 , such as assigning responsibility for directing , overseeing , or approving the architecture to a committee or group representing the enterprise .
+
+without such an entity to lead and be accountable for the architectural effort , there is increased risk that the architecture will not represent a corporate decision - making tool and will not be viewed and endorsed as an agencywide asset .
+
+with respect to stage 3 , according to the cio , faa plans to build on the current version of the nas architecture ( version 5.0 ) to ensure that architecture products are developed that meet contemporary guidance and standards .
+
+according to faa officials , including the cio and the chief scientist for the nas project office , the current nas architecture does not conform to contemporary architecture guidance or standards — including omb's fea reference models and gao's enterprise architecture management maturity framework — because it predates them and has not been updated to comply with them .
+
+however , the cio stated that future versions of the architecture will conform to this guidance .
+
+among other things , this guidance calls for products that describe the “as is” and “to be” business , performance , information / data , applications / services , technology , and security environments as well as a sequencing plan for transitioning from the “as is” to the “to be” states .
+
+other stage 3 core elements nevertheless have not been met , such as having a written and approved architecture development policy .
+
+further , none of the stage 4 and 5 core elements have been met , although the cio stated that faa has recently begun to take steps associated with meeting some of these core elements .
+
+the detailed results of our assessment of the nas project office's progress in implementing the core elements associated with the five maturity stages are provided in appendix ii .
+
+in addition , faa's senior enterprise architecture officials , including the program director , stated that attention to and oversight of the enterprise architecture program have been limited in the past and that the agency has not documented its architecture management policies , procedures , and processes .
+
+these officials stated that the agency recognizes the need to establish an effective nas architecture project and that it intends to do so .
+
+to this end , faa currently plans to have , by september 2005 , a framework for developing the architecture and an approved enterprise architecture policy requiring the development , maintenance , and implementation of an enterprise architecture .
+
+the cio also stated that the agency plans to update its nas architecture to reflect current architecture standards and guidance .
+
+our research of successful organizations and our experience in reviewing other agencies' enterprise architecture efforts show that not having these controls is , among other things , a function of limited senior management understanding of and commitment to an enterprise architecture and cultural resistance to having and using one .
+
+until such barriers are addressed and effective architecture management structures and processes are established , it is unlikely that an agency will be able to produce and maintain a complete and enforceable architecture and thus implement modernized systems in a way that minimizes overlap and duplication and maximizes integration and mission support .
+
+given the size and complexity of faa's air traffic control systems and their importance to faa's ability to achieve its mission , it is critical that faa develop a well - defined architecture that can be used to guide and constrain system investment decisions .
+
+similar to its nas architecture effort , faa's attempt to develop , maintain , and implement its non - nas architecture needs to be grounded in the kind of rigorous and disciplined management practices embodied in version 1.1 of our architecture management maturity framework .
+
+ ( tables 3 and 4 provide a description of the framework's five maturity stages and the key practices or core elements associated with each stage. ) .
+
+for its non - nas architecture project , faa is currently at stage 1 of our maturity framework .
+
+the non - nas project office has satisfied three of the core elements associated with “building the enterprise architecture management foundation” — stage 2 of our framework — and four of the core elements associated with stages 3 and 5 .
+
+according to the framework , effective architecture management is generally not achieved until an enterprise has a completed and approved architecture that is being effectively maintained and is being used to leverage organizational change and support investment decision making ; having these characteristics is equivalent to having satisfied all of the stage 2 and 3 core elements and many of the stage 4 and 5 elements .
+
+for stage 2 core elements , faa reports that it has allocated adequate resources , and it has established a project office and assigned a chief architect .
+
+however , the agency has not satisfied several of the stage 2 core elements that are critical to effective architecture management .
+
+for example , the agency has not established a committee or group representing the enterprise to guide , direct , or approve the architecture .
+
+having such a corporate entity is critical to overcoming cultural resistance to using an enterprise architecture .
+
+as previously stated , the absence of such an entity increases the risk that the architecture will not represent a corporate decision - making tool and will not be viewed and endorsed as an agencywide asset .
+
+concerning stage 3 , faa has not satisfied three of the six core elements .
+
+for example , although the agency is developing architecture products , it does not have a written and approved policy for architecture development .
+
+without such a policy , which , for example , identifies the major players in the development process and provides for architecture guidance , direction , and approval , faa will be challenged in overcoming cultural resistance to using an enterprise architecture and achieving agencywide commitment and support for an architecture .
+
+the agency has not implemented any of the stage 4 core elements , but it has implemented one core element — architecture products are periodically updated — associated with stage 5 of our framework .
+
+for example , faa has not ( 1 ) documented and approved a policy for architecture implementation , ( 2 ) implemented an independent verification and validation function that covers architecture products and architecture management processes , and ( 3 ) made the architecture an integral component of its it investment management process .
+
+the detailed results of our assessment of the non - nas project office's progress in implementing the core elements associated with the five maturity stages are provided in appendix iii .
+
+according to faa's senior enterprise architecture officials , including the chief architect , the attention to and oversight of the enterprise architecture program have been limited in the past , and the agency has not documented its architecture management policies , procedures , and processes .
+
+faa officials , including the cio and the chief architect for the non - nas project , agreed with our assessment of the project office's current architecture management capabilities .
+
+these officials stated that the agency recognizes the need to establish an effective non - nas architecture project , and it intends to do so .
+
+for example , the agency's strategic plan includes the goal of having an approved enterprise architecture policy requiring the development , maintenance , and implementation of an enterprise architecture by september 2005 , and the agency intends to establish a steering committee .
+
+in addition , the chief architect stated that faa plans to have an approved architecture project management plan by april 2005 , and a comprehensive version of the non - nas architecture by april 2006 .
+
+as previously stated , our research and our experience show that not having these controls is , among , other things , attributable to limited senior management understanding of and commitment to an enterprise architecture and cultural resistance to having and using one .
+
+until such barriers are addressed and effective architecture management structures and processes are established , it is unlikely that any agency will be able to develop and maintain a complete and enforceable architecture and thus implement modernized systems in a way that minimizes overlap and duplication and maximizes integration and mission support .
+
+having a well - defined and enforced enterprise architecture is critical to faa's ability to effectively and efficiently modernize its nas and non - nas systems .
+
+to accomplish this , it is important for faa to establish effective management practices for developing , maintaining , and implementing an architecture .
+
+currently , faa does not have these practices in place .
+
+establishing them begins with agency top management commitment and support for having and using an architecture to guide and constrain investment decision making .
+
+to ensure that faa has the necessary agencywide context within which to make informed decisions about its air traffic control system and other systems modernization efforts , we recommend that the secretary of the department of transportation direct the faa administrator to ensure that the following four actions take place .
+
+demonstrate institutional commitment to and support for developing and using an enterprise architecture by issuing a written and approved enterprise architecture policy .
+
+ensure that the cio , in collaboration with the coo , implements , for the nas architecture project , the best practices involved in stages 2 through 5 of our enterprise architecture management maturity framework .
+
+ensure that the cio focuses first on developing and implementing a nas architecture .
+
+ensure that the cio implements , for the non - nas architecture project , the best practices involved in stages 2 through 5 of our enterprise architecture management maturity framework .
+
+in commenting on a draft of this report , the department of transportation's director of audit relations stated via e - mail that faa is continuing its nas architecture efforts .
+
+the director also provided technical comments , which we have incorporated as appropriate in the report .
+
+the director's comments did not state whether the department agreed or disagreed with the report's conclusions and recommendations .
+
+as agreed with your office , unless you publicly announce the contents of this report earlier , we plan no further distribution until 30 days from the report date .
+
+at that time , we will send copies to interested congressional committees , the director of omb , the secretary of the department of transportation , the faa administrator , faa's cio , and faa's coo .
+
+we will also make copies available to others upon request .
+
+in addition , the report will be available at no charge on the gao web site at http: / / www.gao.gov .
+
+if you or your staff have any questions on matters discussed in this report , please contact randolph c. hite at ( 202 ) 512-3439 or hiter@gao.gov , or david a. powner at ( 202 ) 512-9286 or pownerd@gao.gov .
+
+major contributors to this report are acknowledged in appendix iv .
+
+our objective was to determine whether the federal aviation administration ( faa ) has established effective processes for managing the development and implementation of an enterprise architecture .
+
+to address our objective , we used our enterprise architecture management maturity framework , version 1.1 , which organizes architecture management best practices into five stages of management maturity .
+
+specifically , we compared our framework to the ongoing efforts of faa's two project offices to develop the national airspace system ( nas ) and non - nas segments of the architecture .
+
+for example , for the nas architecture , we reviewed program documentation , such as the acquisition management system policy , the joint resources council's investment management guidance for nas investments , and faa's nas architecture development process .
+
+we reviewed , for the non - nas architecture , program documentation , such as the methodology faa is using to develop this architecture , a systems research and applications report on the agency's efforts to implement management processes and controls over its architecture development activities , and the department of transportation's enterprise architecture subcommittee and architecture review board charters .
+
+we then compared these documents with the elements in our framework .
+
+to augment our documentation reviews of faa's architecture management efforts , we interviewed various officials , including the chief information officer , the program director , the chief architects for the nas and non - nas architectures , and the chief scientist for the nas architecture , to determine , among other things , the agency's plans to develop an enterprise architecture .
+
+specifically , we inquired about ( 1 ) the agency's plans for developing an enterprise architecture , including the key milestones and deliverables for completing the two segments of the architecture , ( 2 ) the content of the nas and non - nas architecture segments ( i.e. , architecture products that have been developed to date ) , and ( 3 ) the strategy to be used to align the nas and non - nas architectures .
+
+we conducted our work at faa headquarters in washington , d.c. we performed our work from june 2004 to march 2005 , in accordance with generally accepted government auditing standards .
+
+agency is aware of ea .
+
+the federal aviation administration ( faa ) strategic plan includes the goal of having an approved ea policy requiring the development , maintenance , and implementation of an ea by september 2005 .
+
+adequate resources exist ( funding , people , tools , and technology ) .
+
+according to the chief scientist and the chief architect for the nas architecture , the agency has adequate project funding .
+
+faa reports that fiscal year 2005 funding for the national airspace system ( nas ) architecture is about $2.6 million .
+
+in addition , the agency reports that it has skilled staff , including contractor support , for its nas architecture project .
+
+furthermore , faa is using automated tools and technology , such as rational rose by rational software corporation / ibm software group , core by vitech corporation , and dynamic object oriented requirements system by telelogic .
+
+committee or group representing the enterprise is responsible for directing , overseeing , or approving the ea .
+
+faa has not assigned responsibility for directing , overseeing , or approving a nas architecture to a group or committee representing the enterprise .
+
+program office responsible for ea development and maintenance exists .
+
+in 1997 , faa established a project office that is responsible for developing and maintaining a nas architecture .
+
+chief architect exists .
+
+in february 2004 , faa designated the chief architect for the nas architecture project .
+
+ea is being developed using a framework , methodology , and automated tool .
+
+according to the chief scientist , the nas architecture is being developed using a framework that focuses on strategically supporting faa's investment management process .
+
+the chief scientist stated that , unlike other architecture frameworks , this framework is not fully developed or documented .
+
+further , faa has yet to provide us with any documentation on this framework and on how it is being implemented to support the agency's investment management process .
+
+according to the chief information officer ( cio ) , the agency plans to select an architecture framework by september 2005 .
+
+faa does not have a methodology that defines the standards , steps , tools , techniques , and measures that it is following to develop , maintain , and validate a nas architecture .
+
+as stated above , faa is using automated tools to build a nas architecture .
+
+ea plans call for describing both the “as is” and the “to be” environments of the enterprise , as well as a sequencing plan for transitioning from the “as is” to the “to be.” faa has yet to develop architecture project management plans .
+
+ea plans call for describing both the “as is” and the “to be” environments in terms of business , performance , information / data , application / service , and technology .
+
+faa has yet to develop architecture project management plans .
+
+ea plans call for business , performance , information / data , application / service , and technology descriptions to address security .
+
+faa has yet to develop architecture project management plans .
+
+ea plans call for developing metrics for measuring ea progress , quality , compliance , and return on investment .
+
+faa has yet to develop architecture project management plans and metrics for measuring nas architecture progress , quality , compliance , and return on investment .
+
+written / approved organization policy exists for ea development .
+
+faa has yet to develop a written / approved policy for developing a nas architecture .
+
+however , faa's strategic plan includes the goal of developing an approved enterprise architecture policy by september 2005 .
+
+ea products are under configuration management .
+
+faa has yet to establish a configuration management process .
+
+ea products describe or will describe both the “as is” and the “to be” environments of the enterprise , as well as a sequencing plan for transitioning from the “as is” to the “to be.” according to the chief information officer ( cio ) , future versions of the nas architecture will conform to contemporary guidance .
+
+such guidance describes , among other things , products that describe the “as is” and “to be” environments and a sequencing plan .
+
+both the “as is” and the “to be” environments are described or will be described in terms of business , performance , information / data , application / service , and technology .
+
+according to the cio , future versions of the nas architecture will conform to contemporary guidance .
+
+such guidance describes , among other things , products that describe the “as is” and “to be” environments in terms of business , performance , information / data , application / service , and technology .
+
+business , performance , information / data , application / service , and technology descriptions address or will address security .
+
+according to the cio , future versions of the nas architecture will conform to contemporary guidance .
+
+such guidance includes , among other things , business , performance , information / data , application / service , and technology descriptions that address security in both the “as is” and “to be” environments .
+
+progress against ea plans is measured and reported .
+
+faa has yet to develop architecture project management plans and metrics ; therefore , progress against plans is not measured and reported .
+
+written / approved organization policy exists for ea maintenance .
+
+faa has yet to develop a written / approved policy for maintaining a nas architecture .
+
+however , faa's strategic plan includes the goal of developing an approved enterprise architecture policy by september 2005 .
+
+ea products and management processes undergo independent verification and validation .
+
+faa has yet to establish an independent verification and validation process .
+
+ea products describe both the “as is” and the “to be” environments of the enterprise , as well as a sequencing plan for transitioning from the” as is” to the “to be.” faa has yet to develop nas architecture products that describe both the “as is” and the “to be” environments and a sequencing plan .
+
+both the “as is” and the “to be” environments are described in terms of business , performance , information / data , application / service , and technology .
+
+faa has yet to develop nas architecture products that describe both the “as is” and the “to be” environments in terms of business , performance , information / data , application / service , and technology .
+
+business , performance , information / data , application / service , and technology descriptions address security .
+
+faa has yet to develop business , performance , information / data , application / service , and technology descriptions that address security in both the “as is” and “to be” environments .
+
+organization cio has approved current version of ea .
+
+faa has yet to develop a version of the nas architecture for the cio to approve that conforms to contemporary guidance and standards .
+
+committee or group representing the enterprise or the investment review board has approved current version of ea .
+
+faa has yet to develop a version of the nas architecture that conforms to contemporary guidance and standards for a committee or investment review board to approve .
+
+quality of ea products is measured and reported .
+
+faa has yet to develop nas architecture product metrics ; therefore , product quality is not measured and reported .
+
+written / approved organization policy exists for it investment compliance with ea .
+
+faa has yet to develop a written / approved policy requiring it investments to comply with a nas architecture .
+
+however , faa's strategic plan includes the goal of developing an approved enterprise architecture policy by september 2005 .
+
+process exists to formally manage ea change .
+
+faa has yet to establish a formal process for managing changes to a nas architecture .
+
+ea is integral component of it investment management process .
+
+according to the cio , faa has recently begun to consider architecture compliance as part of its joint resources council process and the cio's approval of exhibit 300 budget exhibits for nas investments , and he anticipates that over the next couple of years the nas architecture will become integral to the investment process .
+
+ea products are periodically updated .
+
+faa has yet to complete development of nas architecture products .
+
+it investments comply with ea .
+
+according to the cio , faa has recently begun to consider investment compliance with the architecture , and the cio expects this compliance determination to expand and evolve over the next couple of years .
+
+organization head has approved current version of ea .
+
+faa has yet to complete development of a nas architecture for the administrator to approve .
+
+return on ea investment is measured and reported .
+
+faa has yet to develop metrics and processes for measuring nas architecture benefits ; therefore , return on investment is not measured and reported .
+
+compliance with ea is measured and reported .
+
+faa has yet to develop metrics for measuring compliance with the nas architecture ; therefore , compliance with an architecture is not measured and reported .
+
+agency is aware of ea .
+
+the federal aviation administration ( faa ) strategic plan includes the goal of having an approved ea policy requiring the development , maintenance , and implementation of an ea by september 2005 .
+
+adequate resources exist ( funding , people , tools , and technology ) .
+
+according to the chief architect , the agency has adequate project funding .
+
+faa reports that fiscal year 2005 funding for the non - national airspace system ( nas ) architecture is $1.5 million .
+
+in addition , the agency reports that it has skilled staff ( two government employees , six full - time contractors , and additional contractor staff as needed ) working to develop its non - nas architecture .
+
+faa is also using automated tools , such as rational rose by rational software corporation / ibm software group , microsoft visio and an oracle portal server .
+
+committee or group representing the enterprise is responsible for directing , overseeing , or approving the ea .
+
+faa has not assigned responsibility for directing , overseeing , or approving the non - nas architecture to any group or committee .
+
+according to the chief architect , faa plans to assign responsibility for directing the non - nas architecture to its information technology executive board by april 2005 .
+
+program office responsible for ea development and maintenance exists .
+
+in january 2003 , faa established a project office that is responsible for developing and maintaining the non - nas architecture .
+
+chief architect exists .
+
+in january 2003 , faa designated a chief architect for the non - nas architecture .
+
+ea is being developed using a framework , methodology , and automated tool .
+
+according to the chief architect , faa is using the federal enterprise architecture framework and the office of management and budget's federal enterprise architecture reference models to develop the non - nas architecture .
+
+faa also has a methodology for developing the architecture , but the methodology does not define the standards , steps , tools , techniques , and measures that it is following to develop , maintain , and validate the non - nas architecture .
+
+however , according to the chief architect , faa will update its methodology to describe management activities by march 2005 .
+
+as stated above , faa is using automated tools to build the non - nas architecture .
+
+ea plans call for describing both the “as is” and the “to be” environments of the enterprise , as well as a sequencing plan for transitioning from the “as is” to the “to be.” faa has yet to develop architecture project management plans .
+
+however , the chief architect stated that the agency intends to have an approved plan by april 2005 and the plan will call for describing both the “as is” and the “to be” environments of the enterprise , as well as a sequencing plan .
+
+ea plans call for describing both the “as is” and the “to be” environments in terms of business , performance , information / data , application / service , and technology .
+
+faa has yet to develop architecture project management plans .
+
+however , the chief architect stated that the agency intends to have an approved plan by april 2005 and the plan will call for describing both the “as is” and the “to be” environments in terms of business , performance , information / data , application / service , and technology .
+
+ea plans call for business , performance , information / data , application / service , and technology descriptions to address security .
+
+faa has yet to develop architecture project management plans .
+
+however , the chief architect stated that the agency intends to have an approved plan by april 2005 and the plan will call for the business , performance , information / data , application / service , and technology descriptions to address security for both the “as is” and “to be” environments .
+
+ea plans call for developing metrics for measuring ea progress , quality , compliance , and return on investment .
+
+faa has yet to develop architecture project management plans and metrics .
+
+according to the chief architect , the agency intends to have an approved plan by april 2005 and the plan will include metrics for measuring non - nas architecture progress , quality , compliance , and return on investment .
+
+written / approved organization policy exists for ea development .
+
+faa has yet to develop a written / approved policy for developing the non - nas architecture .
+
+however , faa's strategic plan includes the goal of developing an approved enterprise architecture policy by september 2005 .
+
+ea products are under configuration management .
+
+faa has yet to develop non - nas architecture products and a configuration management process has not been established .
+
+however , according to the chief architect , faa plans to update its methodology to address how changes to all architecture products will be documented by march 2005 .
+
+ea products describe or will describe both the “as is” and the “to be” environments of the enterprise , as well as a sequencing plan for transitioning from the “as is” to the “to be.” the chief architect stated that the agency intends to have an approved plan by april 2005 and that the plan will call for describing both the “as is” and the “to be” environments of the enterprise , as well as a sequencing plan .
+
+the chief architect also stated that the agency will have a comprehensive non - nas architecture by april 2006 .
+
+both the “as is” and the “to be” environments are described or will be described in terms of business , performance , information / data , application / service , and technology .
+
+the chief architect stated that the agency intends to have an approved plan by april 2005 and that the plan will call for describing both the “as is” and the “to be” environments in terms of business , performance , information / data , application / service , and technology .
+
+the chief architect also stated that the agency will have a comprehensive non - nas architecture by april 2006. business , performance , information / data , application / service , and technology descriptions address or will address security .
+
+the chief architect stated that the agency intends to have an approved plan by april 2005 and that the plan will call for the business , performance , information / data , application / service , and technology descriptions to address security for both the “as is” and “to be” environments .
+
+the chief architect also stated that the agency will have a comprehensive non - nas architecture by april 2006 .
+
+progress against ea plans is measured and reported .
+
+faa has yet to develop architecture project management plans and metrics ; therefore , progress against plans is not measured and reported .
+
+however , according to the chief architect , the agency intends to have an approved plan by april 2005 and progress against the plan will be measured and reported .
+
+written / approved organization policy exists for ea maintenance .
+
+faa has yet to develop a written / approved policy for maintaining the non - nas architecture .
+
+however , faa's strategic plan includes the goal of developing an approved enterprise architecture policy by september 2005 .
+
+ea products and management processes undergo independent verification and validation .
+
+faa has yet to establish an independent verification and validation process .
+
+however , according to the chief architect , the non - nas architecture products and architecture management processes will undergo independent verification and validation by december 2005 .
+
+ea products describe both the “as is” and the “to be” environments of the enterprise , as well as a sequencing plan for transitioning from the” as is” to the “to be.” the current non - nas architecture products do not yet fully describe both the “as is” and the “to be” environments of the enterprise , or a sequencing plan .
+
+however , according to the chief architect , faa will have a comprehensive non - nas architecture that describes both the “as is” and the “to be” environments of the enterprise , as well as the sequencing plan by april 2006 .
+
+both the “as is” and the “to be” environments are described in terms of business , performance , information / data , application / service , and technology .
+
+the current non - nas architecture products do not yet fully describe both the “as is” and the “to be” environments in terms of business , performance , information / data , application / service , and technology .
+
+however , according to the chief architect , faa will have a comprehensive non - nas architecture that describes these terms by april 2006. business , performance , information / data , application / service , and technology descriptions address security .
+
+according to the chief architect , the non - nas architecture does not yet contain complete business , performance , information / data , application / service , and technology descriptions that address security for both the “as is” and “to be” environments .
+
+however , faa will have a comprehensive non - nas architecture comprised of these terms by april 2006 .
+
+organization chief information officer ( cio ) has approved current version of ea .
+
+faa has yet to develop a non - nas architecture for the cio to approve .
+
+according to the chief architect , the first comprehensive version of the non - nas architecture is scheduled for release in april 2006 .
+
+committee or group representing the enterprise or the investment review board has approved current version of ea .
+
+faa has yet to develop a non - nas architecture for the committee or investment review board to approve .
+
+according to the chief architect , the first comprehensive version of the non - nas architecture is scheduled for release in april 2006 .
+
+in addition , faa has yet to establish a committee or investment review board that will be responsible for approving the non - nas architecture .
+
+quality of ea products is measured and reported .
+
+faa has yet to develop metrics and assess the quality of the non - nas architecture products that it is currently developing ; therefore , product quality is not measured and reported .
+
+however , according to the chief architect , the agency intends to have an approved plan by april 2005 and the plan will include metrics for measuring the quality of the non - nas architecture products .
+
+written / approved organization policy exists for it investment compliance with ea .
+
+faa has yet to develop a written / approved policy requiring that it investments comply with the architecture .
+
+however , faa's strategic plan includes the goal of developing an approved enterprise architecture policy by september 2005 .
+
+process exists to formally manage ea change .
+
+faa has yet to establish a formal process for managing changes to the non - nas architecture .
+
+however , according to the chief architect , the agency intends to have an approved architecture project management plan by april 2005 and the plan will include a formal process for managing architecture changes .
+
+ea is integral component of it investment management process .
+
+faa has yet to complete development of a non - nas architecture , and it is not an integral component of the it investment management process .
+
+ea products are periodically updated .
+
+faa updates the non - nas architecture products annually to reflect the agency's investment decisions .
+
+it investments comply with ea .
+
+faa has yet to complete development of a non - nas architecture ; therefore , it investments are not evaluated for compliance with the architecture .
+
+however , the first version of the non - nas architecture is scheduled for release in april 2006 .
+
+organization head has approved current version of ea .
+
+faa has yet to complete development of a non - nas architecture for the administrator to approve .
+
+however , the first version of the non - nas architecture is scheduled for release in april 2006 .
+
+return on ea investment is measured and reported .
+
+faa has yet to develop metrics and processes for measuring non - nas architecture benefits ; therefore , return on investment is not measured and reported .
+
+however , the first version of the non - nas architecture is scheduled for release in april 2006 .
+
+compliance with ea is measured and reported .
+
+faa has yet to develop metrics for measuring compliance with the non - nas architecture .
+
+however , the first version of the non - nas architecture is scheduled for release in april 2006 .
+
+according to the chief architect , these core elements will be addressed in the enterprise architecture policy that faa plans to issue by september 2005 .
+
+staff who made key contributions to this report were kristina badali , joanne fiorino , michael holland , anh le , william wadsworth , and angela watson .
+

@@ -1,0 +1,216 @@
+thank you for inviting us to participate in the subcommittee's hearings on the white house data base .
+
+you requested that we do a technical review of the data base to determine who uses it , to determine the source of information populating the data base , and to evaluate the performance and operational components of the data base .
+
+today i will provide an interim update on data base users and operational components of the data base .
+
+additionally , i will briefly describe how the data base is configured and how it works .
+
+we do not yet have enough information to provide meaningful comments on data source and will provide that information at a later date .
+
+in performing our review , we reviewed technical manuals and other documentation for the products supporting the data base .
+
+we reviewed documentation showing how users are assigned access rights to data base data .
+
+further , we reviewed the data base's process models , computer programs , and directory structures ; toured the computer center where the main data base computer is located ; and ran a small number of data base queries to initially sample the data base population .
+
+we also conducted interviews with the most active data base users as well as with the data administrator and the primary data base administrator .
+
+the white house data base was developed in 1994 to facilitate contacts with individuals and organizations who are important to the presidency .
+
+it replaced a number of existing data bases with a single system which was intended to be easy to use and provide a greater level of service to a variety of users .
+
+the system has been operational since august 1995 .
+
+among other things , the data base is used for developing invitation lists for white house events and for providing information to help prepare thank you notes , holiday cards , and other correspondence .
+
+as such , the information contained on the data base ranges from names , addresses , phone numbers , social security numbers , contributor information , and dates of birth to individual relationships to the first family and political affiliations .
+
+according to the white house , the data base contains personal information on about 200,000 individuals .
+
+in developing the data base , the white house used a widely accepted approach — joint application development .
+
+under this approach , users meet with programmers in a more intensive design session than usual — with the goals of eliminating rewrites of user interfaces and paving the way for faster application development .
+
+development of the data base began with a series of technical interviews with potential users to determine , among other things , the sources of the data for the data base and the extent to which the data would be shared with nonfederal entities or individuals .
+
+once these interviews were concluded , design and development elements were pursued on several fronts .
+
+first , potential users were asked to review functional aspects of the system and provide feedback .
+
+second , the system architecture was developed and implemented based on detailed requirements and joint design elements provided by the customers and others .
+
+the data base operates on and is accessible through the white house's local area network , or lan .
+
+while more than 1,600 users are authorized to access the lan , less than 150 users have been given access to the data base and even fewer actually use the data base .
+
+the products supporting the white house lan , operating system , and data base system are widely used in the government and commercial sectors .
+
+the lan uses version 3.12 of novell's network operating system .
+
+the data base runs on microsoft's windows nt operating system using sybase's system 10 data base management system .
+
+sybase's system 10 is a relational data base management system , which is a system that allows both end - users and application programmers to store data in , and retrieve data from , data bases that are perceived as a collection of relations or tables .
+
+the data base is comprised of 125 tables .
+
+data is input to and retrieved from these tables using simple screens and drop - down menus .
+
+sybase's system 10 is built with published and readily available interface specifications .
+
+it is open to the extent that anyone can write a program that will connect to the server .
+
+this is unlike traditional proprietary data base management systems , which could be accessed only with vendor - supplied tools or programs written with vendor - specific languages and compilers .
+
+in developing the data base , the white house acquired well - established , commercially available products and created a system that users we interviewed were generally satisfied with .
+
+however , as i will discuss in more detail , the design of the data base limits system performance .
+
+further , the system — while having in place some internal controls — needs additional controls to assure the integrity and accuracy of data .
+
+as noted earlier , data base users primarily use the data base as a tool for maintaining contact with individuals and organizations important to the presidency .
+
+users told us that they were generally satisfied with the system .
+
+less than 100 white house staff actually use the system , and only about 25 make moderate to heavy use ( relative to other users ) of the system — with the heaviest users representing the white house social office , personal correspondence office , and outreach office , as well as system administrators .
+
+we examined user accounts and interviewed those staff making heavy use of the system in terms of amount of data both input to and read from the system .
+
+these included two staff in the social office , one in the outreach office , two on the personal correspondence staff , the data base data administrator , and a sybase system administrator .
+
+we also interviewed four other business users and a system administrator who represent less heavy users of the system .
+
+social office personnel use the system to assist in developing invitation lists and planning state dinners and other events .
+
+personal correspondence personnel use the data base to help compose letters for the president .
+
+in doing so , they retrieve information from the data base on addresses , names of family members , white house events attended , and how the correspondent knows the president .
+
+the outreach user we interviewed entered data into the data base for use in generating lists of holiday card recipients .
+
+many users supplement the data base with information from manually accessed address lists .
+
+all those users we interviewed who had used the prior systems believed that the new system was better , and — for some users — the system is critical to their ability to complete their tasks .
+
+system administrators — who account for about 10 percent of all people who have accessed the data base — manage the system and maintain data base information .
+
+for example , they perform system backups , troubleshoot , and perform routine maintenance in the normal course of managing the system .
+
+the individual components supporting the data base — the network , server , and data base engine — are individually well - regarded and could be considered to be leading edge components for business applications similar to those run by the white house .
+
+however , the strength of the individual system components has been diminished by the design of the data base itself .
+
+specifically , in developing the system , the white house attempted to meet all user requirements for a large array of potential information needs .
+
+rather than take advantage of the relational data base capabilities of sybase , the designers established a one - to - one relationship between the logical and physical attributes of the data base resulting in 125 tables .
+
+the data base operates more as an index sequential data base where relationships between and among data elements have to be established across many tables .
+
+this contributes to increased system overhead ( requires the system to process additional steps ) and thus taxes the performance capabilities of the system .
+
+because the data base has relatively few users and is an improvement over what users had been using , individual users have probably not been affected by the data base design .
+
+however , if demand increased , system performance could unnecessarily degrade .
+
+in order to minimize performance impact , system administrators have made compromises which affect the data base's internal controls .
+
+first , system administrators told us that turning on the internal audit trail , which i will discuss later , would seriously slow down system performance ; and that to turn on the audit trail would take several staff weeks of programming effort to minimize the impact on overall system performance .
+
+second , system administrators have chosen not to use the referential integrity capability that sybase offers because of performance issues .
+
+referential integrity is critical to any data base to assure that necessary checks are in place to limit inappropriate data input and assure that output is accurate .
+
+for the white house data base , referential integrity is implemented through the application itself .
+
+because of the complexity of the application structure , it is difficult to assure that all edit checks are in place and work properly across the application .
+
+we found that some checks are not operational which in turn leads to a higher probability of inaccurate information being input or retrieved from the system .
+
+good business systems operate in a controlled environment to ensure that data within these systems is accurate , that data output is reliable , and that data integrity is assured so that only authorized users have access to the data and that such access is appropriate to their needs .
+
+to provide such assurance , an organization needs well - articulated policies and procedures , good training , and an ability to ensure compliance with established processes and procedures .
+
+for the government , these concepts are embodied in the office of management and budget's circular a - 130 which lays out the need for policies , rules of behavior governing system use , training , and the need to incorporate good controls .
+
+circular a - 130 states that accountability is normally accomplished by identifying and authenticating users and subsequently tracing actions on the system to the user who initiated them .
+
+as a system containing sensitive information on up to 200,000 individuals , and , as a system that is important to meet the work needs of several white house offices , data base users and managers need to apply the principles of a - 130 to system operations .
+
+we found that the white house has taken several positive steps to create a controlled environment .
+
+for example: personalized training is available to all users .
+
+users are required to sign a document stating that they will take measures to protect information including establishing and protecting passwords , logging out when leaving their computers , and reporting unauthorized access to the system .
+
+password access is required to enter the system and a warning screen appears to inform the user that information within the data base is for official use only .
+
+the data base has an effective defense against outside intruders or “hackers” breaking into the system .
+
+controls have been established within the system to limit access to certain portions of the data base to only those with a need to know .
+
+additionally , only a limited number of users have authority to print reports .
+
+even with these processes in place , we found that the data base requires additional measures before data integrity and operational effectiveness can be assured .
+
+for example: users do not have well - documented processes and procedures for how and when to use the data base .
+
+written documentation , reinforced with training and operational processes , would provide a better basis for assuring system managers that the data base was being used effectively and that all users were appropriately keeping the data base current .
+
+while users were trained individually by system administrators or other users , only one user out of the nine business users that we interviewed reported having a users manual .
+
+none of these users reported having training concerning the security of the system .
+
+such guidance can help ensure that users are familiar with the system and are entering information correctly .
+
+in talking with users we found that most everyone could navigate the system adequately ; however , we also found that some duplicate information on individuals was being entered into the system and that some information was being entered into the wrong field .
+
+this causes some data base tables to contain more information than necessary and slows down the processing of information .
+
+although the data base has established security policies , procedures necessary to make them effective have not been well - documented .
+
+for example , the system does not require frequent changes in passwords .
+
+only one of the applications users we interviewed has changed their password since the system was initiated .
+
+although controls exist to limit printing of reports , any user having general netware printing capability can print the screen contents .
+
+additionally , all users have the ability to download screen content onto an electronic notebook which could then be mailed electronically to a third party .
+
+none of the users we interviewed stated that they were aware of this capability .
+
+additionally , white house officials told us that every month they review a sample of outgoing e - mail traffic to identify inappropriate use of the electronic mail system and to comply with records management requirements .
+
+most importantly , there is no audit trail .
+
+although sybase 10 has this capability , we were told it has not been turned on because it would inhibit system performance .
+
+the sybase audit capability would allow system administrators to monitor and react to attempts to log on and log off the system ; execution of update , delete , and insert operations ; restarts of the system ; execution of system administration commands ; and changes to system tables .
+
+without this feature , data base administrators are limited in their ability to ensure that users are properly accessing and using the system .
+
+mr. chairman and members of the subcommittee this completes my testimony .
+
+i will be happy to answer any questions you may have .
+
+the first copy of each gao report and testimony is free .
+
+additional copies are $2 each .
+
+orders should be sent to the following address , accompanied by a check or money order made out to the superintendent of documents , when necessary .
+
+visa and mastercard credit cards are accepted , also .
+
+orders for 100 or more copies to be mailed to a single address are discounted 25 percent .
+
+u.s. general accounting office p.o .
+
+box 6015 gaithersburg , md 20884-6015 room 1100 700 4th st. nw ( corner of 4th and g sts .
+
+nw ) u.s. general accounting office washington , dc orders may also be placed by calling ( 202 ) 512-6000 or by using fax number ( 301 ) 258-4066 , or tdd ( 301 ) 413-0006 .
+
+each day , gao issues a list of newly available reports and testimony .
+
+to receive facsimile copies of the daily list or any list from the past 30 days , please call ( 202 ) 512-6000 using a touchtone phone .
+
+a recorded menu will provide information on how to obtain these lists .
+

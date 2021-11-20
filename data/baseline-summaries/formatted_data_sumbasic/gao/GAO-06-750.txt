@@ -1,0 +1,304 @@
+the centers for medicare & medicaid services ( cms ) , a component within the centers for medicare & medicaid services ( cms ) , a component within the department of health and human services ( hhs ) , is responsible for the department of health and human services ( hhs ) , is responsible for overseeing the medicare and medicaid programs — the nation's largest overseeing the medicare and medicaid programs — the nation's largest health insurance programs — which benefit about one in every four health insurance programs — which benefit about one in every four americans .
+
+americans .
+
+cms relies on a contractor - owned and operated network to facilitate cms relies on a contractor - owned and operated network to facilitate communication and data transmission among cms business - related communication and data transmission among cms business - related entities .
+
+effective information security controls are essential to protecting entities .
+
+effective information security controls are essential to protecting the confidentiality , integrity , and availability of sensitive information the confidentiality , integrity , and availability of sensitive information transmitted over the network .
+
+a security breach in this communication transmitted over the network .
+
+a security breach in this communication network could lead to interruptions in the processing of medical claims or network could lead to interruptions in the processing of medical claims or to unauthorized access to personally identifiable medical data , seriously to unauthorized access to personally identifiable medical data , seriously diminishing the public's trust in cms's ability to protect the sensitive diminishing the public's trust in cms's ability to protect the sensitive beneficiary data it is entrusted with .
+
+beneficiary data it is entrusted with .
+
+at your request , we assessed the effectiveness of information security at your request , we assessed the effectiveness of information security controls over the communication network used by cms .
+
+this report controls over the communication network used by cms .
+
+this report summarizes the vulnerabilities and information control weaknesses that summarizes the vulnerabilities and information control weaknesses that we identified during our review and our recommendation to help we identified during our review and our recommendation to help strengthen and improve the communication network .
+
+we also issued a strengthen and improve the communication network .
+
+we also issued a separate report , for limited distribution , that contains sensitive separate report , for limited distribution , that contains sensitive information .
+
+it describes in more detail the information security information .
+
+it describes in more detail the information security weaknesses that we identified and our specific recommendations for weaknesses that we identified and our specific recommendations for correcting them .
+
+correcting them .
+
+information security is a critical consideration for any organization that depends on information systems and computer networks to carry out its mission or business .
+
+it is especially important for government agencies , where the public's trust is essential .
+
+the dramatic expansion in computer interconnectivity and the rapid increase in the use of the internet are changing the way our government , the nation , and much of the world communicate and conduct business .
+
+without proper safeguards , systems are unprotected from individuals and groups with malicious intent who can intrude and use their access to obtain sensitive information , commit fraud , disrupt operations , or launch attacks against other computer systems and networks .
+
+these concerns are well founded for a number of reasons , including the dramatic increase in reports of security incidents , the ease of obtaining and using hacking tools , the steady advance in the sophistication and effectiveness of attack technology , and the dire warnings of new and more destructive attacks to come .
+
+computer - supported federal operations are likewise at risk .
+
+our previous reports , and those of agency inspectors general , describe persistent information security weaknesses that place a variety of federal operations at risk of disruption , fraud , or inappropriate disclosure of sensitive data .
+
+we have designated information security as a governmentwide high - risk area since 1997 — a designation that remains today .
+
+recognizing the importance of securing federal agencies' information systems , congress enacted the federal information security management act ( fisma ) in december 2002 to strengthen the security of information and systems within federal agencies .
+
+fisma requires each agency to develop , document , and implement an agencywide information security program to provide information security for the information and systems that support the operations and assets of the agency , including those operated or maintained by contractors or others on behalf of the agency , using a risk - based approach to information security management .
+
+cms , a component of hhs , is responsible for overseeing two major health programs .
+
+it administers the medicare program — the nation's largest health insurance program — which covers more than 42 million americans .
+
+this program was enacted to extend affordable health insurance coverage to the elderly and was later expanded to cover some people with disabilities who are under the age of 65 years .
+
+cms also works with the states to administer the medicaid program , enacted in 1965 as a jointly funded program , in which the federal government matches state spending according to a formula to provide medical and health - related services to low - income americans .
+
+cms relies extensively on computerized systems to support its mission - critical operations and to transmit and store the sensitive information it collects .
+
+in particular , cms relies on a contractor - owned and operated network from which it purchases networking services to provide connectivity to its business partners .
+
+this network supports communication and data transmission between cms business - related entities , including the cms central office and data center , cms regional offices , financial institutions , medicare intermediaries and carriers , medicare data centers , skilled nursing facilities and home health agencies , cms contractors , state medicaid offices , other federal agencies , quality information organizations , and cms disaster recovery services ( see fig .
+
+1 ) .
+
+the communication network transmits medicare claims data containing personally identifiable information such as name , sex , date of birth , social security number , and address .
+
+it also transmits medical information , such as a patient's diagnosis , prescribed drug and drug dosage , type of treatment facility — which includes substance abuse facilities or psychiatric treatment centers — requested service , and the physician's name and id number .
+
+the communication network also transmits payment information , such as payment amount and billing information .
+
+the communication network does not house either medicare or medicaid data .
+
+the objective of our review was to determine whether cms has implemented information security controls over the communication network to effectively protect the confidentiality , integrity , and availability of its information and information resources .
+
+to evaluate the effectiveness of the security controls over the communication network , we examined routers , network management servers , switches , firewalls , and administrator workstations , at cms headquarters , its business partners , and at several network contractor sites .
+
+our evaluation was based on our federal information system controls audit manual ( fiscam ) , which provides guidance for reviewing information system controls .
+
+specifically , we evaluated information security controls intended to limit , detect , and monitor electronic access to sensitive computing resources , thereby safeguarding them from misuse and protecting them from unauthorized disclosure and modification ; maintain operating system integrity through effective administration and control of powerful computer programs and utilities that execute privileged instructions ; prevent the introduction of unauthorized changes to application or system ensure that work responsibilities are segregated , so that one individual does not perform or control all key aspects of computer - related operations and thereby have the ability to conduct unauthorized actions or gain unauthorized access to assets or records .
+
+we did not evaluate controls over servers used to store medicare or medicaid data .
+
+we performed our work at three network contractor sites and at the cms central office .
+
+this review was performed from january through may 2006 in accordance with generally accepted government auditing standards .
+
+although cms has many information security controls in place that are designed to safeguard the communication network , there were significant weaknesses in electronic access controls and other controls designed to protect the confidentiality , integrity , and availability of the sensitive , personally identifiable medical information it transmits .
+
+our review of the communication network revealed 47 weaknesses in electronic access controls and other controls .
+
+a key reason for these weaknesses was that cms did not always ensure the effective implementation of its security policies and standards .
+
+as a result , sensitive , personally identifiable , medical data traversing this network are vulnerable to unauthorized disclosure , and these weaknesses could lead to disruptions in cms operations .
+
+a basic management objective for any organization is to protect the resources that support its critical operations from unauthorized access .
+
+organizations accomplish this objective by designing and implementing electronic controls that are intended to prevent , limit , and detect unauthorized access to computing resources , programs , and information .
+
+inadequate electronic access controls diminish the reliability of computerized information and increase the risk of unauthorized disclosure , modification , and destruction of sensitive information and disruption of service .
+
+electronic access controls include those related to user identification and authentication , authorization , boundary protection , cryptography , and auditing and monitoring of security - related events .
+
+cms's contractor did not consistently implement effective electronic access controls in each of these areas , as the following sections demonstrate .
+
+a computer system must be able to identify and authenticate different users so that activities on the system can be linked to specific individuals .
+
+when an organization assigns unique user accounts to specific users , the system is able to distinguish one user from another — a process called identification .
+
+the system must also establish the validity of a user's claimed identity by requesting some kind of information , such as a password , that is known only by the user — a process known as authentication .
+
+cms policy requires the implementation of automated identification and authentication mechanisms that enable the unique identification and authentication of individual users or processes acting on behalf of cms information system users .
+
+cms did not ensure that its contractor adequately identified and authenticated users responsible for managing the communication network .
+
+for example , cms's contractor did not enforce sufficiently complex passwords for access to certain network devices .
+
+this increases the risk that unauthorized users could gain access to cms systems and sensitive information .
+
+authorization is the process of granting or denying access rights and privileges to a protected resource , such as a network , system , application , function , or file .
+
+a key component of granting or denying access rights is the concept of “least privilege.” least privilege is a basic principle for securing computer resources and data .
+
+it means that users are granted only those access rights and permissions that they need to perform their official duties .
+
+to restrict legitimate users' access to only those programs and files that they need in order to do their work , organizations establish access rights and permissions .
+
+“user rights” are allowable actions that can be assigned to users or to groups of users .
+
+file and directory permissions are rules that are associated with a particular file or directory , regulating which users can access it — and the extent of that access .
+
+to avoid unintentionally giving users unnecessary access to sensitive files and directories , an organization must give careful consideration to its assignment of rights and permissions .
+
+cms policy requires that each user or process be assigned only those privileges needed to perform authorized tasks .
+
+cms did not ensure that its contractor sufficiently restricted network access and privileges to only those users and processes requiring them to perform authorized tasks .
+
+for example , cms's contractor did not adequately restrict access paths on certain network devices .
+
+in addition , the contractor had several sensitive world - writable files on network management servers , granting inappropriate privileges to these files .
+
+these conditions provide more opportunities for an attacker to escalate their privileges and make unauthorized changes to files .
+
+boundary protections demarcate logical or physical boundaries between protected information and systems and unknown users .
+
+organizations physically allocate publicly accessible information system components to separate subnetworks with separate physical network interfaces , and they prevent public access into their internal networks — except as appropriately mediated .
+
+unnecessary connectivity to an organization's network increases not only the number of access paths that must be managed and the complexity of the task , but the risk of unauthorized access in a shared environment .
+
+cms policy requires that automated boundary protection mechanisms be established to monitor and control communications at the external boundary of the information system and at key internal boundaries within the system .
+
+additionally , cms requires that any connections to the internet or to other external systems be through controlled interfaces .
+
+cms did not ensure that its contractor adequately implemented controls used to protect its external and key internal boundaries .
+
+for example , certain network devices did not adequately restrict external communication traffic .
+
+in addition , although the communication network was considered a secure closed private network , indirect paths existed between it and the internet .
+
+consequently , an unauthorized individual could exploit these vulnerabilities to launch attacks against other sensitive network devices .
+
+cryptography underlies many of the mechanisms used to enforce the confidentiality and integrity of critical and sensitive information .
+
+one primary principle of cryptography is encryption .
+
+encryption can be used to provide basic data confidentiality and integrity for data , by transforming plain text into cipher text using a special value known as a key and a mathematical process known as an algorithm .
+
+cms policy requires that technical controls be established and implemented to protect the confidentiality of sensitive cms data while it is in transit .
+
+cms also requires the encryption of highly sensitive system files .
+
+cms did not consistently apply encryption to protect the sensitive data traversing the communication network .
+
+in addition , its contractor did not consistently apply encryption to protect network configuration data stored on network devices .
+
+for example , medical data and sensitive network management traffic traverse the network unencrypted .
+
+this could allow an attacker to view medical information , or system data transmitted over the network , increasing the risk that malicious users could capture this information and use it to gain unauthorized access to network resources .
+
+to establish individual accountability , monitor compliance with security policies , and investigate security violations , it is crucial to determine what , when , and by whom specific actions have been taken on a system .
+
+organizations accomplish this by implementing system or security software that provides an audit trail that they can use to determine the source of a transaction or attempted transaction and to monitor users' activities .
+
+the way in which organizations configure system or security software determines the nature and extent of information that the audit trails can provide .
+
+cms policy requires the enforcement of auditing and accountability by configuring information systems to produce , store , and retain audit records of specific system , application , network , and user activity .
+
+cms also requires that audit records contain sufficient information to establish what events occurred , when the events occurred , the source of the events , the cause of the events , and the event outcome .
+
+however , cms's contractor did not provide adequate logging or user accountability on the communication network .
+
+for example , certain network devices did not have any users defined , allowing for the execution of unauthorized commands without any means of designating individual accountability for the action .
+
+in addition to electronic access controls , other important controls should be in place to ensure the confidentiality , integrity , and availability of an organization's information and systems .
+
+these controls include techniques designed to ensure the implementation of secure configurations on network devices and to provide sufficient segregation of incompatible duties .
+
+our review of the communication network revealed weaknesses in each of these areas .
+
+these weaknesses increase the risk that unauthorized individuals can gain access to network devices and inadvertently or deliberately disclose financial and medical data needed to process medicare claims , or disrupt operations .
+
+to protect an organization's information , it is important to ensure that only authorized applications and programs are placed in operation .
+
+this process , known as configuration management , consists of instituting policies , procedures , and techniques to help ensure that all programs and program modifications are properly authorized , tested , and approved .
+
+patch management , a component of configuration management , is an important element in mitigating the risks associated with software vulnerabilities .
+
+up - to - date patch installation could help mitigate vulnerabilities associated with flaws in software code which could be exploited to cause significant damage — ranging from web site defacement to the loss of control of entire systems — thereby enabling malicious individuals to read , modify , or delete sensitive information , disrupt operations , or launch attacks against other organizations' systems .
+
+cms policy requires the maintenance of system hardware and software on all cms information systems .
+
+software maintenance includes the installation of all relevant patches and fixes that are required to correct security flaws in existing software and to ensure the continuity of business operations .
+
+cms did not ensure the application of timely and comprehensive patches and fixes to system software .
+
+for example , certain administrative workstations and network management servers reviewed were missing critical patches addressing known vulnerabilities .
+
+in addition , certain network devices used vulnerable operating system software .
+
+failure to keep system patches up to date could lead to denial - of - service attacks or to individuals gaining unauthorized access to network resources .
+
+a malicious user can exploit these vulnerabilities to gain unauthorized access to network resources or disrupt network operations .
+
+as a result , there is increased risk that the integrity of these network devices and administrator workstations could be compromised .
+
+segregation of duties refers to the policies , procedures , and organizational structure that help ensure that no single individual can independently control all key aspects of a process or computer - related operation and thereby gain unauthorized access to assets or records .
+
+often , segregation of duties is achieved by dividing responsibilities among two or more individuals or organizational groups .
+
+this diminishes the likelihood that errors and wrongful acts will go undetected , because the activities of one individual or group will serve as a check on the activities of the other .
+
+inadequate segregation of duties increases the risk that erroneous or fraudulent transactions could be processed , improper program changes implemented , and computer resources damaged or destroyed .
+
+cms policy requires that separation of duties be observed in order to eliminate conflicts of interest in the responsibilities and duties assigned to individuals .
+
+cms did not always ensure that its contractor sufficiently segregate incompatible responsibilities and duties .
+
+for example , the cms network contractor allowed developer and test access to production network management servers , potentially allowing unauthorized and unnecessary access to sensitive network management data .
+
+granting this type of access to individuals who do not require it to perform their specific job responsibilities , increases the risk that sensitive information or programs could be improperly modified , disclosed , or deleted .
+
+consequently , increased risk exists that these individuals could introduce software errors into production or perform unauthorized system activities without being detected .
+
+although cms has developed and documented information security policies , a key reason for the communication network weaknesses was that cms did not always ensure the effective implementation of its security policies and standards .
+
+establishing and implementing appropriate policies and related controls are key elements of an effective information security program .
+
+in order to ensure the implementation of effective information security controls , agencies need to develop comprehensive information security policies that fully address the inherent risks associated with today's highly distributed , interconnected , network - based computing environments .
+
+in addition , agencies need to take actions to ensure that the established policies and controls are fully implemented .
+
+cms has established a set of information security policies , standards , and guidelines that generally provides appropriate guidance to personnel responsible for securing its information systems and data .
+
+for example , it has developed information security policies that address topics such as access controls , configuration management , and system integrity .
+
+however , in some instances , cms did not ensure the effective implementation of its policies and standards .
+
+although cms had developed policies requiring the use of certain network devices , it did not always ensure that the network contractor followed these policies .
+
+in addition , cms had developed configuration requirements for its operating systems and network devices ; however , some of these standards were marked as “draft” and , therefore , had not been distributed to the network contractor .
+
+although cms had many information security controls designed to safeguard the communication network , missing controls and ineffective implementation of certain controls , when considered collectively , threaten the confidentiality and availability of the sensitive , personally identifiable medical information it transmits .
+
+further , cms did not always effectively implement certain information security policies and standards .
+
+until cms ensures that all information security policies are being fully implemented , there is limited assurance that its sensitive data will be adequately protected against unauthorized disclosure and that network services will not be interrupted .
+
+to help strengthen information security controls over the cms communication network , we recommend that the cms administrator direct the chief information officer to take steps to ensure that information security policies and standards are fully implemented .
+
+in providing written comments on a draft of the report , the cms administrator stated that cms is taking steps to ensure that information security policies and standards are fully implemented .
+
+the administrator added that cms had conducted a review of its network security requirements , as well as an evaluation of potential updates in security services requirements provided through its network services contract .
+
+the agency is working to enhance the security requirements defined in the current task order to reflect its expectations more precisely and to provide further assurances that controls follow the most current acceptable guidelines .
+
+in addition , the administrator stated that cms has moved aggressively to implement corrective actions for the reported weaknesses and that corrective action or new compensating controls had already been completed for 22 of the 47 weaknesses .
+
+an additional 19 weaknesses are scheduled for closure .
+
+the remaining six weaknesses are under review to determine what additional resources are needed and their financial impact .
+
+his written comments are reprinted in appendix i. cms also provided technical comments , which we incorporated where appropriate .
+
+as agreed with your office , unless you publicly announce the contents of this report earlier , we plan no further distribution until 30 days from the report date .
+
+at that time , we will send copies to congressional committees with jurisdiction over cms , the secretary of the department of health and human services , the cms administrator and chief information officer , the hhs inspector general , and other interested parties .
+
+we will also make copies available to others upon request .
+
+in addition , this report will be available at no charge on the gao web site at http: / / www.gao.gov .
+
+if you have any questions regarding this report , please contact gregory c. wilshusen at ( 202 ) 512-6244 or keith a. rhodes at ( 202 ) 512-6412 .
+
+we can also be reached by e - mail at wilshuseng@gao.gov and rhodesk@gao.gov , respectively .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+key contributors to this report are listed in appendix ii .
+
+in addition to those named above , idris adjerid , mark canter , lon chin , west coile , jeffrey knott , joanne landesman , duc ngo , ronald parker , and christopher warweg made key contributions to this report .
+

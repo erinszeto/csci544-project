@@ -1,0 +1,714 @@
+pervasive and sustained cyber attacks against the united states continue to pose a potentially devastating impact on federal systems and operations .
+
+the need for a vigilant approach to information security is demonstrated by a dramatic increase in reports of security incidents , the wide availability of hacking tools , and steady advances in the sophistication and effectiveness of attack technology .
+
+as recently as july 2009 , press accounts reported that a widespread and coordinated attack over the course of several days targeted web sites operated by major government agencies , including the departments of homeland security and defense , the federal aviation administration , and the federal trade commission , causing disruptions to the public availability of government information .
+
+in addition , the director of national intelligence testified in february 2009 that foreign nations and criminals had targeted government and private - sector networks to gain a competitive advantage or potentially disrupt or destroy them , and that terrorist groups had expressed a desire to use cyber attacks as a means to target the united states .
+
+such attacks and threats highlight the importance of developing a concerted response to safeguard federal information systems .
+
+to improve the effectiveness of information security across the federal government , in november 2007 , the office of management and budget ( omb ) announced the trusted internet connections ( tic ) initiative , and in 2003 the department of homeland security ( dhs ) established the einstein program , recently incorporated into the national cybersecurity protection system ( ncps ) .
+
+tic is intended to improve security by reducing and consolidating external network connections and by providing centralized monitoring at a select group of access providers , while einstein is an intrusion detection system that provides an automated process for dhs to analyze computer network traffic information from agencies .
+
+in january 2008 , these programs were incorporated into the comprehensive national cybersecurity initiative .
+
+at your request , we evaluated key elements of the implementation of tic and einstein at federal agencies .
+
+for each of these initiatives , we ( 1 ) identified the goals , objectives , and requirements for the initiatives ; ( 2 ) determined the status of the actions federal agencies have taken , or plan to take , to implement the initiatives ; and ( 3 ) identified the benefits , challenges , and lessons learned in implementing the initiatives .
+
+to accomplish our objectives , we examined omb memorandums and dhs guidance in order to identify program requirements , which we confirmed through interviews with omb and dhs officials .
+
+we obtained and analyzed plans , status reports , and other documents and interviewed officials from 23 of the 24 federal agencies listed in the chief financial officers act .
+
+the department of defense was not included in our review because it was not required to implement tic or einstein .
+
+the initiatives include additional agencies which were not included in our review .
+
+we conducted this performance audit between december 2008 and march 2010 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+further details of our objectives , scope , and methodology are included in appendix i .
+
+as computer technology has advanced , federal agencies have become dependent on computerized information systems to carry out their operations and to process , maintain , and report essential information .
+
+virtually all federal operations are supported by computer systems and electronic data , and agencies would find it difficult , if not impossible , to carry out their missions , deliver services to the public , and account for their resources without these cyber assets .
+
+information security is thus especially important for federal agencies to ensure the confidentiality , integrity , and availability of their systems and data .
+
+conversely , ineffective information security controls can result in significant risk to a broad array of government operations and assets , as the following examples illustrate: computer resources could be used for unauthorized purposes or to launch attacks on other computer systems .
+
+sensitive information , such as personally identifiable information , intellectual property , and proprietary business information could be inappropriately disclosed , browsed , or copied for purposes of identity theft , espionage , or other types of crime .
+
+critical operations , such as those supporting critical infrastructure , national defense , and emergency services , could be disrupted .
+
+data could be added , modified , or deleted for purposes of fraud , subterfuge , or disruption .
+
+due to the growing cyber - based threats to federal systems and critical infrastructure , the persistent nature of information security vulnerabilities , and the associated risks , we continue to designate information security as a governmentwide high - risk issue in our most recent biennial report to congress , a designation we have made in each report since 1997 .
+
+in july 2009 , we reported that almost all 24 major federal agencies had weaknesses in information security controls and that an underlying reason for these weaknesses is that agencies have not fully implemented their information security programs as required under the federal information security management act .
+
+as a result , federal systems and sensitive information are at increased risk of unauthorized access and disclosure , modification , or destruction , as well as inadvertent or deliberate disruption of system operations and services .
+
+we have previously reported that federal agencies have experienced security breaches in their networks , potentially allowing sensitive information to be compromised , and systems , operations , and services to be disrupted .
+
+these examples illustrate that a broad array of federal information and critical infrastructures are at risk: the department of state experienced a breach on its unclassified network , which daily processes about 750,000 e - mails and instant messages from more than 40,000 employees and contractors at 100 domestic and 260 overseas locations .
+
+the nuclear regulatory commission confirmed that in january 2003 , the microsoft sql server worm known as “slammer” infected a private computer network at the idled davis - besse nuclear power plant in oak harbor , ohio , disabling a safety monitoring system for nearly 5 hours .
+
+officials at the department of commerce's bureau of industry and security discovered a security breach in july 2006 .
+
+in investigating this incident , officials were able to review firewall logs for an 8-month period prior to the initial detection of the incident , but were unable to clearly define the amount of time that perpetrators were inside its computers , or find any evidence to show that data was lost as a result .
+
+because the threats have persisted and grown , in january 2008 the president issued national security presidential directive 54 / homeland security presidential directive 23 , establishing the comprehensive national cybersecurity initiative , a set of projects with the objective of safeguarding federal executive branch government information systems by reducing potential vulnerabilities , protecting against intrusion attempts , and anticipating future threats against the federal government's networks .
+
+under the initiative , dhs is to lead several projects to better secure civilian federal government networks , while other agencies , including omb , the department of defense , the office of the director of national intelligence , and other agencies have key roles in other projects , including monitoring military systems and classified networks , overseeing intelligence community systems and networks , and spearheading advanced technology research and development .
+
+the initiative's 12 projects can be grouped into three focus areas: establishing front lines of defense .
+
+this focus area includes initiatives intended to protect the perimeter of federal networks , such as consolidating connections and deploying intrusion detection and prevention systems .
+
+defend against full spectrum of threats .
+
+this focus area includes activities intended to protect national security and intelligence - related information and systems across the federal government .
+
+shape the future environment .
+
+the initiatives in this area are focused on expansion of cybersecurity education and research and development efforts for future technologies and cybersecurity strategies .
+
+two primary initiatives under the establishing front lines of defense focus area are tic and einstein .
+
+in november 2007 , omb announced the tic initiative .
+
+directed by omb with assistance from dhs , this effort is intended to improve the federal government's security posture and incident response capability by reducing and consolidating external network connections , including internet connections , currently in use by the government , and by centrally monitoring the traffic passing through these connections for potentially malicious activity .
+
+all federal agencies in the executive branch , except for the department of defense , are required to implement the initiative .
+
+although the initiative is intended to secure connections to the internet , other external connections to potentially unsecured systems must also be routed through an approved tic access point , even if they do not pass through the internet .
+
+agencies may implement tic by serving as their own access provider or by obtaining services from another source .
+
+agencies may choose one of four service options: single service: the agency provides services to its own bureaus and components only .
+
+multi - service: the agency provides services to its own bureaus and components as well as to other agencies .
+
+seeking service: the agency obtains services from a multi - service agency or through the networx program .
+
+this program , managed by the general services administration ( gsa ) , provides an acquisition vehicle for agencies to procure telecommunication , network , wireless , and information technology security services , including tic services , from among multiple vendors .
+
+hybrid: the agency both provides services to its own bureaus and components and obtains additional services from a networx provider .
+
+of the 23 agencies in our review , 16 have chosen to be a tic access provider: specifically , 12 have chosen the single service option , 1 chose the multi - service option , and 3 have chosen the hybrid approach .
+
+the remaining seven agencies have chosen to seek service from another access provider .
+
+ncps , operationally known as einstein , was created in 2003 by the united states computer emergency readiness team ( us - cert ) in order to aid in its ability to help reduce and prevent computer network vulnerabilities across the federal government .
+
+the initial version of einstein provided an automated process for collecting , correlating , and analyzing agencies' computer network traffic information from sensors installed at their internet connections .
+
+the einstein sensors collected network flow records at participating agencies , which were then analyzed by us - cert to detect certain types of malicious activity .
+
+it then coordinated with the appropriate agencies to mitigate those threats and vulnerabilities .
+
+us - cert also used the information from the sensors to create analyses of cross - governmental trends , offering departments and agencies an aggregate picture of external threats against the federal government's networks .
+
+participation in the program was initially voluntary for federal agencies .
+
+in 2008 , dhs developed the current iteration of einstein — einstein 2 — which incorporated network intrusion detection technology into the capabilities of the initial version of the system .
+
+einstein 2 monitors for specific predefined signatures of known malicious activity at federal agency internet connections and alerts us - cert when specific malicious network activity matching the predetermined signatures is detected .
+
+according to us - cert , the signatures are not typically included in commercially available databases of known attack signatures , but are developed by us - cert to look for specific malicious activity based on previous analysis .
+
+in addition , participation in einstein became mandatory as part of the tic initiative .
+
+currently being piloted by dhs , einstein 3 is intended to be an intrusion prevention system that is to automatically detect and respond appropriately to cyber threats before harm is done .
+
+using signatures developed from critical information about foreign cyber threats as determined by the national security agency , the system is to draw on commercial technology and specialized government technology to conduct real - time full packet inspection and threat - based decision making on traffic entering or leaving federal agency networks .
+
+it is also intended to support enhanced information sharing by us - cert with federal agencies by giving dhs the ability to provide agencies with automated alerts of detected network intrusion attempts .
+
+ultimately , tic and einstein are intended to work together to build successive layers of defense mechanisms in the federal government's information technology infrastructures .
+
+when einstein is deployed at a tic location , it monitors inbound and outbound network traffic .
+
+once tic is fully implemented across the federal government , all traffic passing between the federal civilian networks and the internet is to be monitored for malicious activity by us - cert using einstein and its supporting processes .
+
+figure 1 illustrates how tic portals interact with the einstein sensors and the internet .
+
+omb and dhs established requirements to meet the initiative's goals of securing agencies' external connections and improving the government's incident response capability .
+
+however , as of september 2009 , none of the 23 agencies had met all of the requirements .
+
+throughout their efforts , agencies have experienced benefits and challenges as well as learned lessons .
+
+the primary goals of the tic initiative are ( 1 ) to secure federal agency external connections using a common set of security controls and ( 2 ) to improve the federal government's incident response capability .
+
+to achieve these goals , the initiative has the following objectives: reduce and consolidate external connections , including connections to the internet , across the federal government ; define and maintain baseline security capabilities for tic access providers ; establish a compliance program to monitor agency adherence to tic policy .
+
+to achieve these objectives , agencies were required to: inventory agency external connections .
+
+agencies were required to provide their connection inventories to dhs by january 8 , 2008 .
+
+identify and justify target number of external access points .
+
+each agency was to submit their target number to dhs by april 15 , 2008 .
+
+they were also required to provide a justification indicating why the requested number of external access points was necessary to support their missions .
+
+develop and implement plans to consolidate external connections .
+
+omb required agencies to develop and submit initial plans for consolidating their external connections to dhs by january 8 , 2008 .
+
+in addition , agencies were required to update their plans in april 2008 .
+
+access provider agencies were required to provide updated plans to dhs in october 2008 , and all agencies were required to provide updated plans to dhs in september 2009 .
+
+when it announced the initiative in november 2007 , omb required that agencies' initial plans have a target completion date of june 2008 for reducing and consolidating their external connections .
+
+omb later revised its target deadline for implementation of tic across the federal government to december 2009 .
+
+implement security capabilities .
+
+to ensure that each tic access point would be secure , omb required agencies that planned to be an access provider to evaluate their ability to meet 74 security capabilities and to report this information to dhs by april 2008 .
+
+the 74 security capabilities include technical capabilities , such as encryption of internet traffic and the use of firewalls ; capabilities related to availability , such as the presence of an uninterrupted power source ; physical access controls ; and capabilities that describe how an access provider maintains an acceptable level of service .
+
+of the 74 capabilities , 51 are designated as critical , 14 are designated as important , and 9 are categorized as desired .
+
+of the 51 critical capabilities , 40 are required for both single service and multi - service access providers .
+
+the 11 capabilities required only for multi - service access providers address the interaction with external customers , such as service level agreements , communication , and reporting .
+
+omb provided a template for agencies to report whether they currently met each of the capabilities and to indicate their plans for addressing any critical capabilities they did not meet .
+
+once agencies determined whether to be an access provider or to seek service from another provider , they were required to do one of the following: access provider agencies were required to develop plans for implementing any of the critical tic capabilities that they did not yet have in place .
+
+they were required to report on their progress toward implementing the critical capabilities to dhs in october 2008 and september 2009 .
+
+agencies that are seeking service from other access providers were not required to implement the critical capabilities ; however , they were required to acquire tic services from a multi - service access provider or a commercial vendor that had met the security capabilities through the networx contract .
+
+demonstrate consolidation of connections and implementation of tic security capabilities .
+
+access provider agencies , along with networx vendors that offer tic services , are required to undergo a tic compliance validation review , in which dhs assesses the degree to which the access provider meets the critical security capabilities and has consolidated its connections to approved tic access points .
+
+if any capabilities are not fully implemented or if further consolidation is required , the access provider is granted initial operating capability status and is required to develop plans to address the shortcomings and to submit the plans to dhs .
+
+all access providers are required to be re - assessed periodically to ensure the capabilities are still being met .
+
+all access provider agencies were required to schedule the on - site review with dhs by september 25 , 2009 .
+
+none of the 23 agencies has met all of the requirements of the tic initiative , and most agencies have experienced delays in their plans for reducing and consolidating connections .
+
+however , most agencies reported that they have made progress toward reducing and consolidating their external connections and implementing security capabilities .
+
+in addition , several access provider agencies have made more progress toward implementing the capabilities than others .
+
+the following describes the status of each requirement .
+
+the 23 agencies in our review reported that they initially identified a total of 3,482 external connections .
+
+according to dhs , each agency submitted the required inventories , although four submitted the inventories after the january 2008 deadline .
+
+two agencies told us that they discovered additional connections after submitting the initial inventory .
+
+in april 2008 , the 16 access provider agencies requested a total of 73 tic access points .
+
+there were a variety of factors that influenced how agencies decided how many access points to request .
+
+for example , multiple agencies told us that they chose the number and location of their access points based on the location of existing data centers .
+
+agencies also considered the need for redundant connections , geographic separation between connection sites , the business needs of the agency , and cost factors .
+
+in response to these requests , omb approved 2 external access points for each access provider agency , a total of 32 tic access points for the 16 agencies in our review .
+
+omb and dhs established a process for these agencies to request additional access points .
+
+as of october 2009 , one agency had submitted a request to dhs , and seven other agencies indicated that they had plans to do so .
+
+progress reported by individual agencies toward meeting their targeted numbers of connections or access points has been mixed , and the reported overall progress toward consolidation has been slower than expected .
+
+in submitting their plans , which were due to dhs in october 2008 and september 2009 , three agencies reported that they were at their target number of access points and had no further plans to consolidate connections ; in addition , one agency did not report the status of its consolidation efforts .
+
+of the remaining 19 agencies , as of september 25 , 2009 , 6 reported that they had consolidated at least 60 percent of their connections and 9 reported that they had consolidated fewer than 20 percent of their connections .
+
+table 1 shows the consolidation status reported by these 19 agencies as of september 25 , 2009 .
+
+overall , the reported progress toward consolidating connections was slower than projected , and agencies delayed their future plans for consolidation .
+
+in october 2008 , the 16 access provider agencies , which were authorized a total of 32 tic access points by omb , projected in their plans of action and milestones that they would consolidate from their initial reported total of 3,286 external connections to a maximum of 1,528 connections by september 2009 .
+
+however , in their september 2009 plans of action and milestones , these agencies reported that they had consolidated to a maximum of 1,753 connections — 225 more than they had planned .
+
+in addition , agencies projected in their october 2008 plans that they would have consolidated to a maximum of 764 external connections by omb's revised deadline of december 31 , 2009 .
+
+however , in september 2009 they anticipated that they would still have a maximum of 1,374 connections by that date — 610 more than originally planned — and had significantly revised their projections for consolidation through november 2010 .
+
+as agencies continue to consolidate their connections , their future projections for consolidation are likely to be revised further .
+
+figure 2 indicates the estimated overall progress that access provider agencies reported toward reducing connections as of october 2008 and september 2009 , their planned future consolidation , and how both their plans and reported progress have changed between october 2008 and september 2009 .
+
+as of september 2009 , only 3 of the 16 access provider agencies have reported implementing all 40 required critical security capabilities .
+
+the other 13 agencies have implemented most of the capabilities , but their progress in addressing the remaining capabilities has varied .
+
+for example , of those agencies that had not implemented all of the critical capabilities , six reported meeting no additional capabilities between april 2008 and september 2009 .
+
+table 2 describes access provider agencies' reported progress toward implementing the capabilities .
+
+examples of the capabilities that agencies most frequently reported not having implemented included having secure facilities in place to handle classified information , being able to filter specific types of internet traffic , and participating in the einstein program .
+
+between october 2008 and september 2009 , agencies delayed their plans for implementing the critical security capabilities .
+
+of the 13 access provider agencies that had not implemented all of the required capabilities as of september 2009 , 6 agencies delayed their expected planned dates for implementing the remaining critical capabilities between approximately 10 months and 3 years .
+
+as of september 2009 , nine of these agencies were reporting that they expected to complete implementation of the remaining critical security capabilities between september 2009 and december 2010 , one expected to complete its efforts in december 2013 , and three did not project a date by which they expected to complete implementation .
+
+agencies have not demonstrated full compliance with tic capabilities .
+
+as of september 2009 , dhs had conducted tic compliance validation reviews at 6 of the 16 agencies in our review that are required to undergo a review , and the remaining 10 had been scheduled to be evaluated between october 2009 and may 2010 .
+
+the results of the reviews indicated that information that agencies had reported was not always accurate .
+
+specifically , although agencies had reported that certain capabilities were in place , the results for five of the six agencies that completed reviews indicated that several of these capabilities had not been fully implemented .
+
+for example , one agency's results showed that it had not fully implemented 10 critical capabilities , including 7 that it had previously reported as complete .
+
+in addition , the results for another agency showed that it had a large number of connections that it had not previously reported ; the agency originally reported 119 connections , but after the review it identified 403 external connections .
+
+as indicated earlier , agencies are required to develop plans to address any shortcomings identified in the review and to submit their plans to dhs .
+
+while the tic initiative offers benefits to agencies , such as improved network security , agencies have been challenged in complying with the requirements of the initiative , in part because of shortcomings in communication by omb and dhs .
+
+in addition , agencies' experiences in implementing tic offers valuable lessons learned for omb and dhs that may increase the likelihood of the initiative's success .
+
+although agencies are still in the process of implementing tic , the initiative offers benefits to agencies .
+
+improved network security .
+
+tic will improve security at agencies by reducing the number of access points that have to be monitored .
+
+several agencies indicated that consolidating connections and centralizing security monitoring at tic access points should make it easier to monitor traffic and protect their networks from attacks .
+
+in addition , officials from another agency stated that the consolidation of external connections had made the agency's network perimeter more secure .
+
+improved network management .
+
+the initiative has also helped improve agencies' management of their networks .
+
+several agencies stated that implementing tic by consolidating their external connections is beneficial because it has forced them to gain a greater awareness of their overall network environment .
+
+another agency anticipated that tic implementation would reduce complexity in its network , making it simpler to manage .
+
+agencies continue to face challenges in implementing tic , including implementing the initiative with incomplete information about the number of access points for which they have been approved and about the technical security capabilities .
+
+further , dhs will continue to face challenges in knowing whether the access points are adequately secured .
+
+implementing the initiative with incomplete information .
+
+best practices for program management , established by the project management institute in the standard for program management , state that the information that program stakeholders need should be made available in a timely manner throughout the life cycle of a program .
+
+in addition , our internal control management and evaluation tool states that when communicating with other agencies , managers should provide timely information that is relevant to the requester's needs .
+
+however , in some circumstances , agencies have been unable to effectively plan for implementing the initiative because omb did not always consistently communicate the number of tic access points for which agencies had been approved in a timely manner and dhs did not always promptly respond to agencies' questions about the required security capabilities .
+
+omb did not consistently inform agencies about the number of tic access points for which they had been approved until more than a year after it required agencies to submit their requested number .
+
+in a memo issued in september 2009 , omb announced that access provider agencies were each allowed two access points , 17 months after its april 2008 deadline for agencies to submit their requested number of trusted connections .
+
+however , between april 2008 and september 2009 , omb's communication of the number of access points it had approved for agencies was inconsistent .
+
+specifically , several agencies told us that omb , or dhs rather than omb , verbally told them about the number of access points for which they had been approved but did not provide them with written confirmation of the approved number .
+
+one agency said that it received an e - mail from dhs , as opposed to omb , stating that its top two to three locations had been approved ; however , officials from the agency indicated that the agency was not informed of the exact number of approved access points .
+
+a few other agencies stated that omb never informed them of the number of approved access points , either verbally or in writing .
+
+omb addressed these shortcomings by issuing the memo in september 2009 ; however , any further inconsistencies in communication by omb could cause additional challenges for agencies .
+
+in the memo , omb also informed access provider agencies about the process for submitting an evidence - based rationale to dhs to request additional tic access points .
+
+in this process , omb is responsible for notifying agencies of its final decision on how many additional access points the agency is to be allowed .
+
+as described earlier , several agencies indicated that they planned to request additional access points .
+
+however , even with this process in place , agencies may still be uncertain about the number of access points for which they have been approved if prior inconsistencies in communication from omb resurface .
+
+for example , although one agency's request for additional access points was sent to omb in april 2009 , as of december 2009 agency officials indicated that they not been told whether the agency's request had been approved .
+
+without consistent and timely communication of the results of agency requests for additional access points by omb , agencies that requested additional access points will continue to face challenges with implementation of tic .
+
+in addition , dhs often did not promptly respond to agency questions about the technical aspects of securing tic access points , further complicating agency implementation efforts .
+
+although a few agencies that have asked dhs questions about the meaning of specific terms in the security capabilities or about guidance for implementation stated that dhs answered their questions effectively , four agencies stated that dhs has often been slow to respond to questions about the capabilities , or in some cases has not responded at all .
+
+specifically , one agency noted that dhs took a year to produce answers to frequently asked questions that were generated in an inter - agency working group .
+
+three other agencies told us that they still have not received answers to questions that they submitted to dhs on specific security capabilities such as data storage requirements , inspection of encrypted traffic , and participation in the einstein program .
+
+dhs officials acknowledged that its communications with agencies had not been timely because it had limited staff at the beginning of the initiative .
+
+without consistent and timely communication from omb and dhs , agencies may not be able to effectively execute plans for consolidating their external connections and securing their tic access points .
+
+ensuring that critical capabilities have been implemented .
+
+dhs will be challenged to know whether access providers have adequately secured their access points because it does not directly test the capabilities in its compliance validation reviews .
+
+the national institute of standards and technology states that organizations should conduct assessments to determine the extent to which controls are implemented correctly , operating as intended , and producing the desired outcome with respect to meeting the security requirements for the system .
+
+during its reviews , dhs conducts document reviews , interviews , and observation of agency processes , but does not conduct direct testing of the capabilities to determine if they are effectively implemented , operating as intended , and achieving desired results .
+
+even with this limited testing , five of the six reviews that dhs conducted showed that agencies had not fully implemented critical security capabilities that had previously been reported as implemented .
+
+however , without directly testing the capabilities , dhs could be unaware of additional weaknesses that its more limited reviews may not have identified .
+
+in addition , in at least three of the six reviews that it conducted at agencies , dhs did not evaluate all of the trusted connection locations .
+
+specifically , in one agency's review , dhs evaluated only one of the agency's two security operations centers and one of its four tic locations .
+
+according to dhs , the other center and three locations were not evaluated because the agency asserted that its other sites were identical to the ones evaluated .
+
+for another agency , dhs evaluated a security operations center and a telecommunications facility at the agency but did not examine controls at either of the agency's tic access point locations .
+
+a third agency was only evaluated at one of its two tic locations .
+
+dhs officials indicated that in designing the method for tic compliance reviews , it was decided that the initial round of reviews would include only the most mature tic locations and supporting network and operations centers .
+
+without evaluating all agency locations in its compliance reviews , dhs cannot be assured that agencies have implemented critical capabilities at all locations .
+
+agencies' experiences in implementing tic offer valuable lessons learned for omb and dhs .
+
+defining requirements clearly and early prove useful for agency planning .
+
+omb and dhs did not always use sound program management principles when planning the tic initiative .
+
+according to the standard for program management , during the planning phase , program requirements should be developed before schedules are defined .
+
+however , omb and dhs did not define certain fundamental requirements before establishing initial deadlines for the initiative .
+
+for example , dhs did not define the meaning of “external connection” until april 2009 , 17 months after the initiative was announced and 10 months after the initial june 2008 deadline for reducing external connections to authorized levels .
+
+this resulted in dhs determining during a compliance validation review that one agency had not reported a number of external connections that needed to be consolidated .
+
+dhs officials acknowledged that this was due to confusion over the definition of what constituted an external connection .
+
+in addition , the technical security capabilities that would be required for access providers were still being defined when agencies developed their required initial implementation plans and were not finalized until april 2008 , 5 months after the initiative was announced .
+
+as a result , several agencies stated that it was difficult for them to plan for tic implementation .
+
+in going forward , defining any key future requirements prior to establishing deadlines will be critical to the initiative's success .
+
+collaborative meetings aided implementation .
+
+dhs and omb sponsored several collaborative meetings during the initiative that many agencies found beneficial for their implementation of tic .
+
+specifically , several agencies stated that the meetings of the inter - agency tic technical working group were helpful .
+
+for example , one agency said that dhs provided updates about the initiative during the meetings .
+
+another agency noted that the meetings provided additional specificity on aspects of the program .
+
+several agencies also stated that the meetings provided a forum for agencies to discuss issues related to tic with one another , allowing them to gain insight from other agencies .
+
+one of these agencies found the meetings to be helpful because it was able to provide feedback to dhs about the technical capabilities .
+
+another agency noted that it had recently participated in conference calls with dhs that helped to address its technical questions related to implementing the critical capabilities .
+
+in the future , continuing such effective communication increases the chances of the initiative's success .
+
+meeting business needs with a reduced number of connections is complex and time - consuming .
+
+as indicated earlier , the 16 access provider agencies in our review are reporting that they are reducing and consolidating from 3,286 external connections .
+
+reducing to the approved total of 32 tic access points is a complex and time - consuming effort for most agencies .
+
+for example , one agency indicated that implementing the infrastructure required to support its mission would require 4 years to complete .
+
+two other agencies noted that implementing the initiative required them to make significant changes to their existing network architecture .
+
+in addition , for several agencies , determining how to meet their business needs within the technical constraints of tic has been a complex task .
+
+for example , three agencies stated that they needed more than two tic access points to ensure that their networks would remain operational in the event of a disaster .
+
+one of these agencies explained that its high performance and capacity requirements would not be met with only two access points .
+
+the complex effort required for agencies to implement the initiative while still meeting their business needs has led to significant delays in agencies' plans for implementation .
+
+as indicated earlier , the access provider agencies have reported that they have consolidated fewer connections than they originally planned and have significantly revised their future plans for consolidation .
+
+recognizing that agencies may desire more than two access points , as noted earlier , omb and dhs established a process for agencies to submit an evidence - based rationale for obtaining additional access points .
+
+einstein is intended to provide dhs with an increased awareness of activity , including possible security incidents , on federal networks .
+
+as of september 2009 , fewer than half of the 23 agencies had executed the required agreements with dhs , and einstein 2 had been deployed to six agencies .
+
+agencies that participated in einstein 1 improved identification of incidents and mitigation of attacks , but dhs continues to face challenges with meeting the goals of the initiative .
+
+the goal for einstein is to provide us - cert with a higher level of awareness of activity on federal networks .
+
+by implementing this initiative , dhs intended to achieve the following objectives: provide an automated process for collecting , correlating , and analyzing computer network traffic information from participating federal agencies ; provide us - cert with a means to observe potential malicious activity in computer network traffic entering and exiting participating agencies' computer networks ; increase us - cert's situational awareness of federal agency computer networks through correlation of activity across the entire federal enterprise ; and incorporate intrusion detection technology ( i.e. , the einstein sensors and signature - monitoring capabilities ) capable of alerting us - cert to the presence of malicious or potentially harmful computer network activity in federal agencies' network traffic .
+
+to accomplish these objectives , for einstein 2 , agencies are required to meet the following two requirements: execute a memorandum of agreement with dhs .
+
+this agreement establishes the responsibilities of deployment and operation of the sensor between the participating federal agency and dhs .
+
+execute a service level agreement with dhs .
+
+this agreement defines the roles , responsibilities , and points of contact , as well as describes the services , hours of operation , and performance levels provided to the agency .
+
+it also requires agencies to update us - cert regularly on the status of ongoing investigations related to alerts .
+
+agencies were required to report on the status of these agreements to dhs in september 2009 .
+
+in addition , the tic access provider agencies are required to meet two additional requirements: execute an interconnection security agreement with dhs .
+
+describes the interconnection between the agency and dhs and the security controls required and implemented to protect the confidentiality , integrity , and availability of the systems and data .
+
+agencies were required to report on their status in completing this agreement to dhs in september 2009 .
+
+perform a site assessment .
+
+provides a technical description of the agency's network and how the network connects to the agency's internet service providers .
+
+vendors that intend to provide tic services to agencies under the networx contract are also required to complete a memorandum of agreement , an interconnection security agreement , and a site assessment .
+
+with the required agreements in place , dhs is to deploy einstein sensors to access provider agencies and networx vendors .
+
+when deploying the sensors , dhs is to use a site deployment checklist to verify that the einstein equipment is installed and configured appropriately .
+
+after the sensors are operational , us - cert is to begin monitoring and analyzing results .
+
+as of september 2009 , dhs had deployed einstein 2 at six access provider agencies included in our review and at three networx vendors .
+
+according to dhs , the sensors at five of the six agencies were operational as of september 2009 ; it had not activated the sensors at one agency because it was waiting for the agency to complete required agreements .
+
+agencies that had operational sensors had completed certain required agreements , but not all agencies had executed all required agreements .
+
+all five agencies with operational sensors had executed memorandums of agreement and interconnection security agreements with dhs as required .
+
+however , three of the five agencies had not executed service level agreements .
+
+according to dhs officials , these agencies were still in the process of negotiating the agreements .
+
+however , the agreements define key requirements for the initiative , including how us - cert is to notify agencies of potential incidents and how agencies are to respond to these notifications , including what information must be provided to us - cert in support of investigations related to einstein alerts .
+
+without these agreements in place between agencies and dhs , agencies may not receive the information needed to address security incidents detected by einstein , and dhs may not obtain the information it needs from agencies in order to fully meet the objective of improving situational awareness .
+
+dhs and the agencies also did not always complete deployment checklists .
+
+although all five of the agencies had performed required site assessments , the site deployment checklists for two agencies had not been signed by officials from the agency or from dhs verifying that the sensors had been installed and configured appropriately .
+
+as a result , dhs and agency management cannot be assured that the einstein equipment has been installed and configured appropriately .
+
+because these sensors had only recently been deployed , we did not evaluate the extent to which us - cert was collecting and analyzing data and reporting alerts to agencies for einstein 2 .
+
+not all of the remaining 17 agencies reported their status toward submitting required agreements to dhs in september 2009 .
+
+only a few have reported completing required agreements with dhs , while several have not yet reported their plans for submitting agreements .
+
+specifically: four agencies reported that they had completed and submitted their memorandums of agreement to dhs , and 4 reported that they expected to submit them within a year ; however , nine did not project a date by which they expected to submit them .
+
+one agency reported that it had submitted its service level agreement to dhs , and 4 reported that they expected to submit them between december 2009 and september 2010 ; however , 12 did not project a date by which they expected to submit the agreement .
+
+two of the 10 remaining agencies required to execute interconnection security agreements reported that they had submitted them to dhs , and 1 reported that it expected to submit the agreement within the next year ; however , 7 did not project a date by which they expected to submit the agreements .
+
+although dhs required agencies to report their status toward executing required agreements in september 2009 , it did not establish milestones for agencies to submit the agreements .
+
+according to the standard for program management , the actual completion of program activities and milestones should be tracked against a planned timeline in order to ensure that the program produces its required deliverables on time .
+
+however , dhs had not established any milestones for agencies to submit these agreements .
+
+as indicated earlier , these agreements establish key responsibilities and controls that are necessary for successful operation of the sensors .
+
+without establishing milestones for these agreements , dhs could face delays in deploying and activating einstein sensors .
+
+agencies have benefited from einstein alerts , and their experiences have provided dhs with valuable lessons ; however , dhs may be challenged in meeting program goals as the system is deployed at more agencies .
+
+although einstein 2 has only been deployed at 6 agencies , the 12 agencies that participated in einstein 1 realized benefits in the following areas: identifying incidents .
+
+us - cert provided alerts to agencies from its analysis of the data from the einstein 1 sensors , which contained information about potential cyber attacks or incidents against the agency's networks .
+
+several agencies observed that the alerts from us - cert were helpful or contained useful information about potential incidents , including information that could be used to trace potential incidents to specific locations on the network .
+
+for some agencies , einstein identified incidents that agencies' intrusion detection systems had not found , increasing their ability to mitigate potential attacks .
+
+providing cross - agency view .
+
+for einstein 1 , us - cert provided reports based on a correlation of sensor data from all of the participating agencies .
+
+several agencies said us - cert's ability to aggregate einstein data from multiple agencies was beneficial for identifying potential attacks against government networks .
+
+using sensor data .
+
+in addition to receiving alerts generated by us - cert's analysis , agencies had the ability to access the sensor data directly via a web portal .
+
+several agencies indicated that they used this data to look for potential incidents on their own .
+
+as dhs deploys einstein across the government , it faces the following challenges: understanding whether alerts are valid .
+
+although one of the objectives of einstein is to improve situational awareness of activity across the federal government , dhs will be challenged in understanding the extent to which this objective is being met because it lacks performance measures for einstein 2 that address whether or not agencies report that the alerts represent actual incidents .
+
+for einstein 1 , agencies did not always inform us - cert of how they responded to the alerts .
+
+as a result , us - cert did not know whether these alerts represented false positives or actual incidents .
+
+we have previously reported that performance measures are most meaningful when they are linked with organizational goals .
+
+dhs's performance measures for einstein 2 indicate the time required for the system to detect known cyber events and to generate automated notifications once the events are detected , but they do not indicate agencies' responses to alerts .
+
+establishing such measures would help dhs better understand whether the alerts are valid , helping it to better determine the extent to which the initiative is meeting its objective of improving situational awareness .
+
+having staff with required skills to monitor and analyze data .
+
+dhs will be challenged to have staff with the appropriate skills to fulfill its analysis and incident response mission as einstein 2 is deployed across the government .
+
+as more agencies receive sensors , the amount of data that us - cert will be responsible for analyzing will drastically increase .
+
+dhs recognizes that staff with appropriate analytical skills will be required in order to handle the increased workload , but it has not developed a staffing plan to address its need to acquire and retain qualified analysts at us - cert .
+
+although the department announced in october 2009 that it plans to hire up to 1,000 new cybersecurity professionals over the next 3 years , we previously reported in july 2008 that obtaining and retaining adequately trained cyber analysts is an ongoing challenge to us - cert that hinders its ability to respond to increasingly fast , nimble , and sophisticated cyber attacks .
+
+at that time , we recommended that the department address the challenges that have impeded it from expeditiously hiring sufficiently trained cyber analysts and developing strategies for hiring and retaining highly qualified cyber analysts .
+
+although dhs indicated that it plans to expedite the hiring and on - boarding process for new analysts and to offer appropriate training opportunities for its analysts , it has not yet provided evidence that it has taken these actions .
+
+until dhs addresses our prior recommendation by developing strategies for hiring and retaining cyber analysts , us - cert may lack staff with appropriate skills to analyze the einstein data , increasing the risk that attacks against federal networks could go undetected .
+
+agencies' experiences with the initial version of einstein provided dhs with lessons learned for future versions of the initiative .
+
+detailed and timely information from alerts proved useful .
+
+several agencies' experiences with einstein 1 improved over time because information provided by us - cert increased in its timeliness and detail .
+
+although some agencies said that the alerts and reports that us - cert provided were not always timely and useful , a few agencies observed that the information had improved over time .
+
+for example , one agency stated that the alerts lacked sufficient contextual information , making it difficult to determine whether the alerts were identifying false positives or actual incidents ; however , several agencies indicated that the alerts had since improved in their usefulness .
+
+in addition , although several agencies noted that the alerts were not very timely when the sensors were first installed , a few indicated that the timeliness had improved for more recent alerts .
+
+going forward , continuing to provide appropriate and timely information from the alerts will prove useful for agencies .
+
+access to sensor data proved useful for agencies .
+
+further , several agencies that had direct access to the flow records from the einstein sensor found that it was helpful in detecting potential incidents .
+
+dhs stated that all agencies participating in einstein 2 will also have access to the flow data , which could provide similar benefits .
+
+however , not all agencies were aware that they would have access to this data .
+
+making them aware of this and of the data's possible benefits could aid agencies in improving their monitoring of potential incidents .
+
+tic and einstein are ambitious efforts that can help improve security and situational awareness across the federal government .
+
+however , in implementing the initiatives , federal agencies have faced challenges .
+
+for tic , omb did not consistently communicate the number of access points for which agencies had been approved , and dhs did not always provide timely answers to agency questions about technical capabilities .
+
+in addition , because dhs does not conduct direct testing of the capabilities or evaluate all possible locations in its validation reviews , it cannot be assured that all critical capabilities have been implemented .
+
+for einstein , the initiative could fail to fully meet the objective of increasing us - cert's situational awareness because dhs did not always ensure that key agreements were executed with agencies .
+
+dhs could also be challenged in determining whether the initiative is meeting this objective without performance measures that indicate whether the alerts provided to agencies represent actual incidents .
+
+without improvements in program management and communication from omb and dhs , federal agencies will continue to be faced with challenges in implementing these initiatives that could ultimately jeopardize their ability to reduce and secure internet connections .
+
+with agencies still in the process of implementing tic and dhs in the early stages of deploying einstein 2 , the success of such large - scale initiatives will be in large part determined by the extent to which dhs , omb , and other federal agencies work together to address the challenges of these efforts and to apply lessons learned during the initial stages of implementation .
+
+although this will not guarantee the success of tic and einstein , doing so will enhance the chances that the initiatives will meet their goals of reducing , consolidating , and securing federal internet connections .
+
+in order to ensure that federal agencies continue to have adequate information about the number of connections for which they have been approved , we recommend that the director of omb take the following two actions: communicate its final decisions on agency requests for additional tic access points in a consistent and timely manner .
+
+assess the efficacy of , and take steps to apply as appropriate , the lesson learned during the initial implementation of tic regarding the need to define future requirements before establishing deadlines .
+
+in addition , in order to further ensure that federal agencies have adequate , sufficient , and timely information to successfully meet the goals and objectives of the tic and einstein programs , we recommend that the secretary of homeland security take the following six actions: provide agencies with timely responses to their questions seeking clarification on tic security capabilities .
+
+enhance tic compliance validations by including ( 1 ) direct testing and evaluation of the critical capabilities and ( 2 ) evaluation of the capabilities at all agency tic locations .
+
+before activating einstein sensors , ensure that both dhs and participating agencies ( 1 ) execute required service level agreements and ( 2 ) sign site deployment checklists .
+
+establish milestones for agencies to submit required einstein agreements .
+
+to better understand whether einstein alerts are valid , develop additional performance measures that indicate how agencies respond to alerts .
+
+assess the efficacy of , and take steps to apply as appropriate , lessons learned during the initial implementation of these initiatives such as the need to ( 1 ) define future requirements for tic before establishing deadlines and ( 2 ) make agencies aware of their ability to access einstein flow data .
+
+we provided a draft of this report to omb and dhs for their review and comment .
+
+in providing e - mail comments on a draft of this report , the lead information technology policy analyst from omb's office of e - government and information technology stated that omb concurred with the report's findings , conclusions , and two recommendations addressed to omb .
+
+in e - mail comments provided by an audit liaison from dhs's office of cybersecurity and communications , dhs concurred with the six recommendations addressed to dhs .
+
+dhs also provided technical comments , which we have incorporated into this report as appropriate .
+
+we also provided a draft of this report to the 22 other agencies included in our review .
+
+of the 22 , 15 responded that they did not have any comments ; 1 provided technical comments , which we addressed as appropriate ; and 6 did not respond .
+
+as agreed with your office , unless you publicly announce its contents earlier , we plan no further distribution of this report until 30 days after its date .
+
+at that time , we will send copies to interested congressional committees , secretaries of the departments of agriculture , education , energy , health and human services , homeland security , housing and urban development , the interior , labor , state , transportation , the treasury , and veterans affairs ; the attorney general ; the administrators of the environmental protection agency , general services administration , national aeronautics and space administration , small business administration , and the u.s. agency for international development ; the chairman of the nuclear regulatory commission ; the commissioner of the social security administration ; and the directors of the national science foundation , office of management and budget , and office of personnel management .
+
+the report also is available at no charge on the gao web site at http: / / www.gao.gov .
+
+if you or your staff have any questions regarding this report , please contact me at ( 202 ) 512-6244 or at wilshuseng@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+key contributors to this report are listed in appendix ii .
+
+the scope of our review covered two initiatives: trusted internet connections ( tic ) and the national cybersecurity protection system ( ncps ) program , operationally known as einstein .
+
+for each initiative , our objectives were to ( 1 ) identify their goals , objectives , and requirements ; ( 2 ) determine the status of the actions federal agencies have taken , or plan to take , to implement them ; and ( 3 ) identify the benefits , challenges , and lessons learned in implementing each initiative .
+
+for tic , to address the first objective , we obtained and reviewed applicable policies and memorandums issued by the office of management and budget ( omb ) and guidance , reports , and other documentation provided by the department of homeland security ( dhs ) .
+
+we also held discussions with omb and dhs representatives concerning the goals , objectives , and requirements of the initiative .
+
+to understand the options for agencies seeking to acquire tic services through the networx contract , we obtained and reviewed relevant documents regarding networx and interviewed officials from the general services administration .
+
+to address the second objective for tic , we reviewed statements of capability , plans of action and milestones , and other relevant documents for 23 of the 24 agencies listed in the chief financial officers act of 1990 to determine if reporting requirements were met .
+
+we also reviewed these documents to determine reported progress toward the reduction and consolidation of external connections and implementation of critical capabilities and analyzed them to estimate the overall progress reported by agencies .
+
+we also reviewed documentation from dhs to determine whether agencies submitted the required documents .
+
+in addition , we reviewed the results of six tic compliance validation reviews and interviewed officials from dhs to understand how the department assesses agencies' degree of compliance with tic and to determine the extent to which the information reported in agency plans of action and milestones was accurate .
+
+to address the third objective for tic , we interviewed officials from each agency , dhs , and omb .
+
+in addition , we obtained written responses to follow - up questions from each agency .
+
+we also examined plans of action and milestones and other relevant documents from each agency and reviewed policies and guidance from omb and dhs to identify any additional benefits , challenges , or lessons learned .
+
+further , we interviewed officials from agency inspectors general to obtain information on any benefits , challenges , or lessons learned that they had identified related to the initiative .
+
+for einstein , to address the first objective , we obtained and reviewed applicable policies , guidance , and other documentation provided by dhs .
+
+we also held discussions with dhs officials concerning the goals , objectives , and requirements of the initiative .
+
+to address the second objective for einstein , we reviewed plans of action and milestones for each agency to determine whether reporting requirements were met .
+
+in addition , we examined required agreements and site assessments for the six agencies where einstein 2 was deployed to verify their completion .
+
+we also interviewed officials and obtained written information from dhs and from each agency to obtain additional information on the status of implementation .
+
+to address the third objective for einstein , we interviewed officials from dhs and from each agency .
+
+in addition , we obtained and reviewed written responses to follow - up questions from each agency .
+
+we also examined policies , guidance , and other documentation from dhs to identify any additional benefits , challenges , or lessons learned .
+
+further , we interviewed officials from agency inspectors general to obtain information on any benefits , challenges , or lessons learned that they had identified related to the initiative .
+
+we conducted this performance audit from december 2008 to march 2010 in washington , d.c. , in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+in addition to the individual named above , jeffrey knott ( assistant director ) ; john bainbridge ; william cook ; kami corbett ; neil doherty ; rebecca eyler ; nancy glover ; valerie hopkins ; lee mccracken ; zsaroq powe ; and shawn ward made key contributions to this report .
+

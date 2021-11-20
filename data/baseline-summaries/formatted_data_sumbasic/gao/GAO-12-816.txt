@@ -1,0 +1,866 @@
+in recent years , the design and development of certain active medical devices have become increasingly complex .
+
+active implantable medical devices , such as implantable cardioverter defibrillators ( defibrillators ) , and other active devices , such as insulin pumps , use hardware , software , and networks to monitor a patient's medical status and transmit and receive related data using wireless communication .
+
+these features improve physicians' ability to treat patients .
+
+for example , a physician can now wirelessly access a patient's defibrillator and make adjustments to the device as necessary .
+
+however , the growing use of wireless capabilities and software has raised questions about how well these devices are protected against information security risks , as these risks might affect devices' safety and effectiveness .
+
+information security refers to protecting information and information systems from unauthorized access , use , disclosure , disruption , modification , or destruction in order to preserve their federal officials and information confidentiality , integrity , and availability.security experts have recently increased their attention to how information security risks apply to medical devices .
+
+for example , in march 2012 , the information security and privacy advisory board , a public - private federal advisory committee , offered a number of recommendations to the federal government regarding the security of medical devices , including those with wireless capabilities , and in may 2012 the department of homeland security ( dhs ) issued a national security bulletin on security risks to medical devices .
+
+in addition , information security researchers recently manipulated two medical devices with wireless capabilities — a defibrillator and an insulin pump , a type of infusion pump — demonstrating their vulnerabilities to information security threats .
+
+controlled settings and did not involve actual patients , they demonstrated the possibility of intentionally exploiting the vulnerabilities of certain types of active medical devices .
+
+although these incidents occurred in ensuring the safety and effectiveness of medical devices is the responsibility of the food and drug administration ( fda ) — an agency within the department of health and human services ( hhs ) .
+
+according to fda , to the extent that information security threats can adversely affect the safety and effectiveness of medical devices , fda considers relevant mitigation strategies as part of its premarket review process .
+
+for example , d. halperin et al. , “pacemakers and implantable cardiac defibrillators: software radio attacks and zero - power defense,” proceedings of the 2008 ieee symposium on security and privacy ( may 2008 ) ; n. paul et al. , “a review of the security of insulin pump infusion systems,” journal of diabetes science and technology , 5 ( 6 ) : 1557-62 ( november 2011 ) ; and j. radcliffe , “hacking medical devices for fun and insulin: breaking the human scada system,” presentation at 2011 black hat technical security conference ( aug. 4 , 2011 ) .
+
+continues monitoring the use of medical devices through its postmarket efforts .
+
+in the context of information security risks of certain active medical devices , this report ( 1 ) identifies the threats , vulnerabilities , and resulting information security risks associated with active implantable medical devices ; ( 2 ) determines the extent to which fda considered information security risks in its premarket approval ( pma ) review process for certain active medical devices with known vulnerabilities ; and ( 3 ) determines what postmarket efforts fda has in place to identify information security problems involving active implantable medical devices .
+
+to identify the threats , vulnerabilities , and resulting information security risks associated with active implantable medical devices , we reviewed available publications — such as white papers published by information security researchers and peer - reviewed journal articles — to develop an initial list of threats , vulnerabilities , and resulting information security risks .
+
+we interviewed officials from federal agencies — including fda , other offices within hhs , the national institute of standards and technology ( nist ) within the department of commerce , the department of defense , dhs , the department of veterans affairs , and the federal communications commission ( fcc ) — and officials from manufacturers of medical devices .
+
+we also interviewed subject - matter experts , including information security researchers and authors of standards related to information security .
+
+we then validated our list of information security threats , vulnerabilities , and risks by providing it for review and comment to subject - matter experts .
+
+we selected these experts based on their knowledge and familiarity with the information security of medical devices .
+
+we excluded implantable medical devices lacking active components , such as hip implants .
+
+additionally , we limited our scope to the integrity and availability aspects of information security — which generally relate to the safety and effectiveness of medical devices — and we excluded confidentiality , which generally relates to privacy .
+
+that is , we focused on the potential effect information security risks could have on the functionality of fda - regulated devices and not on their ability to securely store or exchange personally identifiable information .
+
+to determine the extent to which fda considered information security risks in its pma review process for two active medical devices with known vulnerabilities , we evaluated fda's responses to a questionnaire we developed on the basis of key information security control areas we selected that are outlined in national guidelines and international standards related to information security .
+
+we focused our work on the devices that were recently identified with vulnerabilities by information security researchers .
+
+we asked fda to complete our questionnaire on the basis of two pma supplemental applications ( supplements ) reviewed by the agency in 2001 and 2006 .
+
+fda confirmed that these were the most recent supplements related to the devices that had been exploited and that involved potential information security issues .
+
+we reviewed the pma supplements rather than the original pma applications in order to capture the most recent information related to these two devices .
+
+we evaluated fda's responses to the questionnaire about its prior review of the two pma supplements as well as supporting documentation , such as fda's review memorandums and other documents submitted by the manufacturer .
+
+for one supplement , fda provided responses and documentation for a defibrillator that has been exploited by researchers as well as the related programming wand ( wand ) and programmer , a specialized computer , that are used together to adjust the defibrillator .
+
+for the second supplement , fda provided responses and documentation for the exploited insulin pump .
+
+we also evaluated additional documentation for another defibrillator reviewed by fda in 2012 that has not been intentionally exploited by researchers , to obtain a more current perspective on fda's review process for information security issues .
+
+because we evaluated documentation for only three devices , our results are not generalizable .
+
+we also interviewed fda officials about the agency's current efforts to address its review of information security risks to medical devices during its premarket review .
+
+to determine what postmarket efforts fda has in place to identify information security problems , we reviewed documents submitted by private entities , such as annual reports submitted to fda by a manufacturer for licensed medical devices , and fda documents related to its adverse event reporting system .
+
+we reviewed data from fda's adverse event reporting system , collected between 2006 and 2012 , to identify potential information security problems associated with these types of devices .
+
+we compared fda's list of adverse event codes that could potentially identify information security issues to our own list of these codes on the basis of our own analysis .
+
+we interviewed fda officials knowledgeable about the agency's adverse event system and these codes to clarify our questions about them .
+
+we also interviewed fda officials to gather information on its postmarket efforts and the extent to which these efforts would be likely to detect events related to information security risks .
+
+appendix i includes additional details on our scope and methodology .
+
+we conducted this performance audit from august 2011 to august 2012 , in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+examining the information security risks of certain active medical devices , especially with respect to intentional threats , is a relatively new field for federal regulators and information security researchers .
+
+however , information security risks have long been previously considered in other contexts , such as federal information systems and the nation's critical infrastructure .
+
+two commonly used active medical devices that incorporate electronics and wireless communications are defibrillators , including the wands and programmers used to set and adjust the defibrillators , and insulin pumps .
+
+a defibrillator is an active medical device that is implanted in a person's chest or abdomen .
+
+the defibrillator monitors a person's heart rhythm and delivers an electric pulse to the heart muscle to reestablish a normal heart rhythm when an abnormal heart rhythm is detected .
+
+a wand is an external device that connects to a programmer — a specialized computer used to transmit data and to check the defibrillator's functionality and usage .
+
+the wand , also called a programmer head , is held within inches of the defibrillator .
+
+the wand facilitates the wireless communication between the programmer and the defibrillator to , for example , make adjustments to the device ( see fig .
+
+1 ) .
+
+an insulin pump is an active medical device used in the treatment of diabetes .
+
+it replaces the need for periodic injections by delivering rapid - acting insulin using tubing that is partially implanted into the body , such as in the abdomen .
+
+certain types of insulin pumps can work in tandem with a continuous glucose monitoring system , which regularly measures glucose levels in the blood .
+
+this monitoring system consists of a sensor inserted under the skin and an external monitor , which can be carried or attached to a person's belt .
+
+for insulin pumps working with a monitoring system , glucose measurements are wirelessly transmitted from the sensor to the monitor or from the sensor to the insulin pump ( see fig .
+
+2 ) .
+
+addressing information security involves the consideration of threats , vulnerabilities , and the resulting risks .
+
+information security threats are any circumstances or events with the potential to adversely affect operations , assets , or individuals by means of unauthorized access , destruction , disclosure , modification of information , denial of service , or a combination of these .
+
+these threats can be either unintentional , such as interference from energy generated by other devices or from the surrounding environment , or intentional , as recently demonstrated by information security researchers .
+
+vulnerabilities are weaknesses in security procedures , internal controls , or implementation that could be exploited or triggered by a threat .
+
+risk is a measure of the extent to which an entity is threatened by a potential circumstance or event , and is typically a function of the adverse effects that would arise if the circumstance or event occurs and the likelihood of occurrence .
+
+medical devices that use electronics , wireless communications , and other features are exposed to a greater number of threats , vulnerabilities , and resulting information security risks .
+
+fda is the federal agency primarily responsible for evaluating the safety and effectiveness of medical devices through its premarket and postmarket efforts .
+
+fda's regulation of medical devices is intended to provide the public with reasonable assurance that medical devices are safe and effective and do not pose a threat to the public's health .
+
+fda reviews thousands of submissions for new devices filed each year , a small subset of which are subject to fda's pma review process.pma review process is the most stringent type of fda device review and the requires manufacturers to submit evidence providing reasonable assurance that a new device is safe and effective .
+
+a pma submission should contain administrative , scientific , and technical elements including , among other things , a description of the device model and components , documentation of clinical and nonclinical studies , and a reference to performance standards .
+
+if fda approves a pma submission , the manufacturer receives a pma approval order .
+
+a multidisciplinary team of fda officials , which includes relevant subject - matter experts , reviews these submissions .
+
+additionally , fda officials can consult with staff from its office of science and engineering laboratories who specialize in electronics , software engineering , and systems engineering .
+
+fda can also consult with external experts , such as relevant advisory committees , which include experts in engineering and physical sciences and industry representatives .
+
+as relevant to the wireless medical devices discussed in this report , fda may contact fcc , as needed , on certain specific , scientific or technical issues .
+
+fcc reviews certain medical devices sold in the united states to ensure that these devices meet its regulations for safe human exposure to radiofrequency energy and to ensure that requirements intended to avoid harmful interference between devices using radio waves are met .
+
+the defibrillator and insulin pump we included in our evaluation were reviewed under fda's pma review process .
+
+fda's postmarket responsibilities include monitoring the safety of thousands of medical devices already on the market and identifying , analyzing , and acting on potential risks the devices might pose to the public .
+
+one of fda's postmarket efforts is its adverse event reporting system , called the manufacturer and user facility device experience database ( maude ) .
+
+fda requires user facilities ( eg , hospitals ) and medical device manufacturers to submit reports to the agency for serious injuries or deaths that were caused or contributed to by their devices .
+
+in addition , fda may require that a manufacturer conduct a study on its device to gather and report additional information on the device's performance after it is available on the market.additional information on fda's adverse event reporting systems .
+
+dhs and nist also have responsibilities related to mitigating information security risks , which could include those affecting medical devices .
+
+dhs's responsibilities include collaborating with public and private entities to analyze and reduce information security threats and vulnerabilities .
+
+dhs also coordinates preparedness activities across 18 critical - infrastructure sectors — one of which is health care — and the response efforts to information security incidents .
+
+it does this through several activities , including a reporting and alerting system of information security risks , which can include medical devices , and research and forensic activities .
+
+for example , dhs has a program where an individual or organization that becomes aware of a vulnerability can share this potentially sensitive information with the agency , which will then coordinate a response in a protected manner with vendors , customers , and other interested parties .
+
+for vulnerability information that is publicly released , dhs also supports the efforts of nist to maintain a national vulnerability database that allows users to search for information security vulnerabilities pertaining to specific products or technologies .
+
+nist is a nonregulatory , federal agency within the department of commerce .
+
+under the federal information security management act , nist is responsible for developing standards and guidelines to assist federal agencies in providing adequate information security for federal information and information systems .
+
+these guidelines , while targeted at federal agencies , can also be used to assess and mitigate security risks for other types of information systems and electronic devices .
+
+in addition to nist , other organizations , such as the international organization for standardization ( iso ) and the international electrotechnical commission ( iec ) , have developed and published similar to nist various standards related to information security.guidelines , these standards describe information security control areas and related criteria that could be applied to certain types of medical devices to assess and mitigate information security risks .
+
+additionally , for the past 30 years , fda has issued guidance documents related to information security risks to medical devices resulting from unintentional threats , such as electromagnetic interference .
+
+more recently , fda has issued draft guidance documents on using wireless technology and software in medical devices , which reference for example , the integrity and availability aspects of information security .
+
+recommends that manufacturers consult its guidance documents when designing and developing medical devices and preparing their submissions for review .
+
+fda's guidance documents also reference national guidelines and international standards developed by external organizations .
+
+fda recommends , though does not require , that manufacturers consult these other guidelines and standards that might be relevant to the design and development of their medical devices .
+
+for example , fda's guidance document on general principles of software validation cites several nist special publications on information technology as references for both staff and manufacturers .
+
+fda , draft guidance for industry and fda staff: radio frequency wireless technology in medical devices ( rockville , md .
+
+: jan. 3 , 2007 ) , guidance for industry and fda staff: guidance for the content of premarket submissions for software contained in medical devices ( rockville , md .
+
+: may 11 , 2005 ) , and draft guidance for industry and fda staff: total product life cycle: infusion pump – premarket notification submissions ( rockville , md .
+
+: apr .
+
+23 , 2010 ) .
+
+national guidelines and international standards identify information security control areas to consider when identifying , assessing , and mitigating information security risks .
+
+full implementation of all information security controls may not be necessary or appropriate for the mitigation of information security risks .
+
+rather , control areas should be considered to determine what benefits should be implemented to obtain an acceptable level of information security risk .
+
+table 1 includes a list of key information security control areas we determined were important to consider for medical devices .
+
+within each information security control area , multiple controls , safeguards , or countermeasures can be selected to protect a system .
+
+implementation of a risk - based approach to information security involves selecting , implementing , and monitoring appropriate controls within each control area .
+
+in cases where it is not feasible to implement a particular control , an organization can either implement compensating controls in other areas or accept a certain level of uncertainty regarding the risk as part of a formal authorization process that balances identified risks with the operational needs of a system .
+
+several information security threats have the potential to exploit different vulnerabilities in active implantable medical devices .
+
+these threats could be unintentional or intentional in nature .
+
+vulnerabilities can include those related to , for example , the design of the device , such as limited battery capacity .
+
+the information security risks resulting from these threats and vulnerabilities could compromise the safety and effectiveness of medical devices .
+
+however , federal officials and information security researchers said efforts to mitigate these risks could adversely affect devices' performance .
+
+information security threats with the potential to exploit vulnerabilities can result from unintentional sources .
+
+table 2 identifies and describes key unintentional threats to active implantable medical devices that could affect their functionality .
+
+threats can also result from intentional sources such as those identified and described below in table 3 .
+
+these key threats could also affect the functionality of active implantable medical devices .
+
+several of the experts we consulted noted that certain intentional information security threats were of greater concern than other threats .
+
+for example , approximately half of the nine experts expressed greater concern regarding the threats of unauthorized access or denial - of - service attacks , with two experts citing their own research related to unauthorized access in controlled settings .
+
+additionally , experts made distinctions among intentional threats and the likelihood of their occurring .
+
+for example , one expert cited malware as one of the greatest threats to active implantable medical devices because his work demonstrated the device could accept unauthentic firmware updates .
+
+however , other experts considered malware as less of a concern because , according to these experts , certain devices are currently designed so that it would be difficult to install and propagate malware .
+
+experts expressed less concern with unintentional threats to medical devices .
+
+for example , some of the experts that commented on our list of key threats considered unintentional interference , such as from electromagnetic signals in the environment , as less of a concern than other threats , in part , because fcc regulates radio use so as to avoid harmful interference .
+
+additionally , fda regulates the potential effects such interference could have on medical devices' performance , and manufacturers have focused on this type of unintentional threat for over 10 years .
+
+various potential vulnerabilities in active implantable medical devices are susceptible to exploitation by the unintentional and intentional threats described above .
+
+table 4 below identifies and describes key potential vulnerabilities in these medical devices .
+
+the experts we consulted also noted that addressing these vulnerabilities in active implantable devices could create additional challenges .
+
+for example , several of the experts with whom we spoke noted that one way in which medical devices are vulnerable is that they have limited or nonexistent authorization and authentication capabilities ; that is , the devices do not distinguish between communications from authorized and unauthorized users .
+
+however , several experts also noted that implementing typical protocols to ensure appropriate authorization creates potential access and safety challenges .
+
+these challenges could arise if enhanced authorization procedures hindered health professionals' ability to provide care to patients in emergency situations .
+
+for example , a physician in the emergency room might not be able to make life - saving modifications to a patient's pacemaker if the physician does not have the appropriate authorization to access the device .
+
+information security risks resulting from the exploitation of vulnerabilities by threats could adversely affect the safety and effectiveness of active implantable medical devices .
+
+as technology evolves and medical devices become more complex in design and functionality , the potential for these risks occurring is also likely to increase .
+
+according to dhs , in order for medical devices to be considered safe , they must also be secure .
+
+key information security risks to these medical devices and related examples are described in table 5 .
+
+several federal officials and information security researchers noted that some information security risks to active implantable medical devices have long been considered by fda and manufacturers , such as device failures resulting from different sources of unintentional interference .
+
+for example , in the late 1960s , concerns were raised regarding the interference of electromagnetic energy on implanted pacemakers , potentially resulting in the device not working properly .
+
+these concerns prompted fda to release guidance on electromagnetic energy and medical devices .
+
+in the late 1990s , fda became aware of interference between electromagnetic energy generated from antitheft systems and metal detectors with other implanted devices , such as neurostimulators , potentially resulting in an inappropriate jolt or shock ( see fig .
+
+3 ) .
+
+fda and manufacturers now recommend that those with neurostimulators avoid lingering near or leaning against such systems and metal detectors .
+
+in contrast , federal officials and information security researchers noted that , to date , there have been no documented information security incidents resulting from the exploitation of vulnerabilities in these types of medical devices by intentional threats in real - world settings .
+
+however , there have been four separate demonstrations in controlled settings , showing that the intentional exploitation of vulnerabilities in certain medical devices is possible .
+
+each of these demonstrations involved laboratory tests and did not result in patient harm or death .
+
+the first demonstration occurred in 2008 , when a team of academic researchers , working in a controlled setting , showed that they could remotely exploit a defibrillator by delivering a command , using the associated wand and programmer .
+
+a second demonstration occurred in 2010 , when a team of academic researchers remotely exploited an insulin pump , preventing it from operating properly .
+
+two additional demonstrations occurred in 2011 , when two security experts , also working in controlled settings , showed on separate occasions that they could also remotely exploit an insulin pump .
+
+both of these experts demonstrated they could manipulate the amount of insulin dispensed by the device .
+
+these demonstrations occurred at varying distances .
+
+for example , one demonstration occurred at a distance of 100 feet , while another occurred at approximately 300 feet .
+
+figure 4 below depicts an example of a demonstration of the exploitation of a medical device's vulnerability .
+
+according to manufacturer officials , medical devices undergo testing for vulnerabilities that could be exploited .
+
+the identified vulnerabilities are then addressed .
+
+however , these officials acknowledged that recent incidents have increased their awareness of potential information security risks resulting from intentional threats and have resulted in changes in testing procedures .
+
+for example , according to officials from one manufacturer , information security risks resulting from malicious intent are now being considered , and officials are incorporating enhanced security procedures into the design of their medical devices .
+
+these officials also stressed that these demonstrations by information security researchers , while informative , should not overshadow the clinical benefits offered by medical devices .
+
+federal officials and information security researchers we spoke with noted that some mitigation strategies could adversely affect certain medical devices' performance .
+
+for example , a pacemaker cannot be immune to all electrical signals because the device needs to be able to detect the electrical signals naturally generated by the patient's heart to determine if the pulses are irregular .
+
+similarly , for the information security risk associated with using older versions of software , a potential mitigation strategy would be to have these medical devices operate using newer versions .
+
+however , according to fda officials , software in implanted medical devices , such as pacemakers , typically is not frequently updated ; rather , the software is updated on an as - needed basis .
+
+as with any device that uses software , such updates or other modifications could introduce unanticipated software problems that could adversely affect the functionality of a device , particularly if the software had not been properly tested prior to being used .
+
+according to fda , the majority of software - related medical device problems occur because devices are using software that has been revised since the medical device was reviewed by fda .
+
+fda officials explained that manufacturers choose to rely on older software because its vulnerabilities are better understood by both manufacturers and regulators .
+
+federal officials and other experts also noted that addressing information security risks for certain medical devices involves additional safety considerations that are not typically necessary for other types of products .
+
+for example , incorporating encryption into the medical device could mitigate the information security risk of unauthorized changes to the settings of the device .
+
+however , experts we spoke with said adding encryption to a device could drain its battery more quickly , making it necessary to change the battery more frequently .
+
+changing the battery for active implantable devices , such as a pacemaker , involves undergoing a surgical procedure , which has its own potential health risks .
+
+in contrast , two information security researchers we spoke with said that , in their opinion , technology has advanced such that encryption can be added to a medical device without using as much energy as before .
+
+however , manufacturers have chosen not to take advantage of this newer technology , in part , because of the potential for increased costs in producing the device , according to other experts .
+
+fda officials and other experts also noted that information security risks could vary for different devices because each device has unique vulnerabilities and a device's susceptibility to threats is based on factors such as its design .
+
+for example , fda officials noted that the wireless capabilities between a defibrillator and the associated wand and programmer are different than those used by certain insulin pumps .
+
+these differences not only affect how these respective devices operate , but also the susceptibility to information security threats .
+
+an increasing awareness of intentional and unintentional information security threats , vulnerabilities , and resulting risks to medical devices now exists .
+
+addressing these risks requires a comprehensive approach that balances mitigating potential information security risks and maintaining a device's safety and effectiveness .
+
+for the two medical devices that have known vulnerabilities , fda considered information security risks from unintentional threats , but not risks from intentional threats during its premarket review of the related supplements .
+
+fda stated that it did not generally consider intentional information security threats in its review process at the time these devices were reviewed .
+
+fda officials also told us the agency intends to enhance its information security efforts by reviewing how it approaches the evaluation of software used in medical devices .
+
+however , the agency has not yet defined specific , information security - related areas it will examine as part of this review , nor has it established specific milestones for completing it .
+
+in the reviews of two pma supplements for medical devices with known vulnerabilities conducted in 2001 and 2006 , fda officials considered information security risks resulting from unintentional threats , but not from intentional threats .
+
+specifically , fda considered information security risks in four of the eight information security control areas we selected — software testing , verification , and validation ; risk assessments ; access control ; and contingency planning ( see table 6 below and app .
+
+iv for more details on our evaluation ) .
+
+we reviewed the pma supplements and supporting documentation for a defibrillator and its associated wand and programmer , and for a specific wireless insulin pump system that incorporates a continuous glucose monitor .
+
+for example , fda reviewed the manufacturer's strategy to mitigate information security risks associated with software testing , verification , and validation resulting from unintentional threats to the wand and insulin pump from radio frequency and electromagnetic energy .
+
+additionally , fda officials told us that the manufacturer addressed access control for the defibrillator , wand , and programmer by requiring that they be used collectively in order to make adjustments .
+
+in order to have its settings changed , the defibrillator must communicate with the programmer .
+
+the wand , which facilitates the communication between the defibrillator and the programmer , is designed to be used within inches of the defibrillator .
+
+all three of these devices are designed to be used together in a health care setting .
+
+however , fda did not consider risks from unintentional threats for the four remaining information security control areas — risk management , patch and vulnerability management , technical audit and accountability , and security - incident response .
+
+additionally , fda did not consider information security risks resulting from intentional threats for any of the eight information security control areas .
+
+specifically , on the basis of the support the agency provided for these two pma supplements , fda did not demonstrate that it had considered the potential benefits of mitigation strategies to protect devices against information security risks from certain unintentional or intentional threats in light of the appropriate level of acceptable risk for medical devices with known vulnerabilities .
+
+fda officials told us that since the agency reviewed these pma supplements in 2001 and 2006 , respectively , their consideration of information security has changed .
+
+to support this , fda provided additional examples from an original pma application for a defibrillator reviewed in 2012 .
+
+this additional evidence showed that the agency had generally enhanced its consideration of information security during its pma review for those four information security control areas previously identified — software testing , verification , and validation ; risk assessments ; access control ; and contingency planning .
+
+for example , fda conducted a more comprehensive review of the manufacturer's software verification and validation documentation , and included software - testing documentation , electromagnetic - compatibility testing , electromagnetic - interference testing , and frequency testing .
+
+fda also provided evidence of its consideration of a fifth information security control area — risk management — in this newer pma application .
+
+however , fda did not provide any evidence showing its consideration of security - specific tests .
+
+for example , fda did not provide evidence showing testing of attempts to enter incorrect or invalid data in the device or the use of fuzzing , an information security - related testing technique that uses random data to discover software errors and security flaws .
+
+fda also did not demonstrate its consideration of information security risks resulting from unintentional threats related to the remaining three information security controls we selected , including patch and vulnerability management , despite guidelines from nist and other sources on the importance of these issues .
+
+additionally , when reviewing the manufacturer's risk management plan , fda did not consider information security risks resulting from intentional threats .
+
+thus , while it continues to consider some information security risks resulting from unintentional threats , such as interference , fda has not begun to consider risks resulting from intentional threats .
+
+fda officials acknowledged the limitations of their review process for information security issues .
+
+they explained that , as part of the agency's pma review process , they consider various risks with a focus on the most relevant risks that could result in harm to patients .
+
+according to officials , they tend to consider the most relevant risks to be clinical risks , such as an increased risk of heart failure from having an implanted defibrillator , and not information security risks , such as the reprogramming of a device by a malicious actor .
+
+fda officials said they also consider the intended use of the device and the type of setting in which the device will be used , both of which are determined by the manufacturer .
+
+for example , fda officials would review a scalpel for potential clinical risks resulting from its intended use in a clinical setting .
+
+however , the agency cannot control how devices are used in other settings , or if devices are misused .
+
+they noted that a scalpel could become a dangerous weapon if misused by a malicious actor .
+
+fda officials also noted that they consider information security risks in the context of a clinical situation .
+
+for example , officials said they have long considered information security risks resulting from unintentional threats , such as from interference or from defective software .
+
+however , they acknowledged they have only recently considered information security risks resulting from intentional threats because they did not previously consider such threats as reasonable and likely at the time of their earlier reviews in 2001 and 2006 .
+
+they noted that , although conducted in controlled settings , researchers' recent demonstrations of vulnerabilities in two medical devices support the possibility that incidents caused by information security risks resulting from intentional threats could occur .
+
+fda officials said that in the future the agency intends to enhance its efforts related to information security .
+
+for example , officials said the agency will consider information security risks resulting from intentional threats when reviewing manufacturers' submissions for new devices .
+
+officials said that they will consider whether the manufacturer identified the appropriate information security risks resulting from intentional threats and , if applicable , what proposed mitigation strategies the manufacturer included .
+
+fda officials also told us that the agency is currently planning to review its approach to evaluating software used in medical devices .
+
+officials said the review of its approach will be conducted by a contractor and will involve an analysis of how the agency considers software in medical devices during premarket reviews .
+
+this review is to include an examination of fda's resources and evaluative tools .
+
+it will also include a comparison of fda's approach to reviewing software in medical devices to the approaches of other sectors that also make or use high - risk and complex software products , such as the aviation and nuclear industries .
+
+according to officials , this effort is also intended to identify external resources the agency can draw upon for evaluating information security risks , such as those supported by other federal agencies .
+
+for example , fda officials said they currently do not utilize information security resources available from dhs and nist , such as the national vulnerability database , but acknowledged that such a database could be a useful tool in identifying vulnerabilities relevant to medical devices .
+
+according to the agency's preliminary planning information , the fda review does not explicitly mention information security issues such as malware , patching and vulnerability management , or the use of security - related testing techniques .
+
+additionally , in commenting on a draft of this report , hhs noted that fda anticipates completing the review on the agency's approach to evaluating software in medical devices in calendar year 2012 .
+
+hhs also noted that fda will include an assessment of information security risks for medical devices .
+
+however , hhs did not provide any milestones , including for when any changes might be implemented , or any description for how this review would address specific aspects of information security .
+
+by not identifying which specific aspects of information security the agency intends to consider in its review or establishing a specific schedule to demonstrate that it is addressing the emerging issue of intentional threats , fda may miss an opportunity to more fully consider information security issues in its medical device review process .
+
+fda has various postmarket efforts in place to identify problems with medical devices , including those related to information security .
+
+despite having postmarket efforts in place , fda faces challenges in using them to identify information security problems .
+
+fda has various postmarket efforts in place to identify problems with medical devices once they have been approved for marketing , including any problems related to information security .
+
+one of these efforts is its adverse event reporting system , maude .
+
+maude stores adverse event reports submitted by reporters , which include manufacturers , user facilities ( eg , hospitals ) , and voluntary reporters .
+
+fda requires manufacturers and user facilities to submit information regarding adverse events involving medical devices and submit reports on these events to fda .
+
+however , fda does not have these same requirements for other medical device users , including consumers and health care providers .
+
+regardless of whether reporters are required to submit adverse event reports , fda must wait for reporters to recognize and submit information on suspected adverse events before the agency can become aware of and identify device problems through this system .
+
+for those adverse events that are reported , fda stated that it is able to conduct systematic reviews and searches of these reports .
+
+according to fda , it systematically reviews all information that it receives in the maude database and follows up with reporters when the agency believes that such follow - up is necessary or would provide additional , useful information .
+
+additionally , fda can search within maude to determine if any of the reporters cited information security issues when submitting details about the adverse events .
+
+searches can be conducted using categories of codes that fda has developed .
+
+these codes are used by reporters to describe types of adverse events .
+
+these codes include device - problem codes that are used to describe details such as the reason behind a device's failure .
+
+according to fda officials , there are 10 codes in maude that reporters primarily could select when reporting an adverse event to indicate — and allow fda to subsequently identify — that an information security problem had occurred .
+
+for example , 3 of these codes are used to describe adverse events that resulted from ( 1 ) an application issue , ( 2 ) the unauthorized access to a computer system , or ( 3 ) a computer - security issue .
+
+using these 10 codes , fda had not identified any information security problems involving active implantable medical devices , as of april 2012 .
+
+in addition to these 10 codes , we identified additional codes that could indicate an information security problem had occurred due to an unintentional threat .
+
+using these additional codes , fda has identified potential information security problems involving active implantable medical devices .
+
+for example , one adverse event involved a pacemaker and a computer - software issue .
+
+specifically , the pacemaker's programmer was slow to start and experienced some errors , but no patient involvement or complications were reported and the programmer was returned for repair .
+
+thus , although fda does not categorize its codes as specifically related to information security problems , it has codes in place that could potentially identify information security problems resulting from both unintentional and intentional threats .
+
+a second postmarket effort that fda has in place to identify problems is its process for requiring manufacturers to conduct postmarket surveillance studies .
+
+manufacturers may be required to conduct postmarket surveillance studies to continue to systematically evaluate device performance while the device is in commercial distribution .
+
+for example , fda officials could order a postmarket surveillance study for a defibrillator because its failure would have serious adverse health effects for a patient .
+
+it is possible these studies could identify vulnerabilities or unintentional threats that might adversely affect medical devices , but postmarket surveillance studies typically focus on clinical outcomes that might affect patients .
+
+at the time of our review , fda officials said that , while they could require manufacturers to conduct postmarket studies to focus on information security risks , they did not currently have plans to request that any manufacturers do so .
+
+fda officials explained that these studies are intended to address residual questions from clinical trials for a medical device .
+
+these lingering questions typically relate to the medical device's clinical risks to patients , such as whether the use of a particular device is appropriate for a specific patient population , rather than to its information security risks .
+
+a third postmarket effort is fda's requirement for manufacturers to prepare annual pma postapproval reports ( annual reports ) .
+
+among the issues manufacturers must include in these reports are the rationales for any changes they made to the medical device during the preceding year , including changes made because of an adverse event .
+
+for example , these annual reports could potentially include information related to a problem due to an information security risk if the problem led the manufacturer to change the device , such as a modification to the device's software .
+
+manufacturers are also required to include any information about defects related to their medical devices that have been identified in scientific literature — including published reports on clinical studies of similar devices or unpublished reports of data from clinical investigations involving their devices — that are known or that reasonably should be known to them .
+
+we reviewed the annual reports for the two active medical devices with known vulnerabilities to determine if the manufacturer had noted the research conducted by information security researchers demonstrating the devices' susceptibility to intentional threats .
+
+for the defibrillator , we found references to other published reports discussing adverse events resulting from unintentional threats , such as from the adverse effect electromagnetic interference had on the defibrillator's functionality .
+
+however , no potential information security problems due to intentional information security threats were included in these reports , including any references to the 2008 exploitation by researchers .
+
+additionally , no potential information security problems were included in the annual reports we reviewed for the insulin pump exploited by researchers in 2010 .
+
+despite having postmarket efforts in place , fda faces challenges with identifying information security problems , should they occur .
+
+we have previously reported on some challenges associated with adverse event reporting , such as the inherent weaknesses associated with passive surveillance systems .
+
+for example , maude is a passive system and fda relies upon reporters to recognize and submit information on suspected adverse events .
+
+according to fda , because of this dependence upon reporters , significant underreporting occurs .
+
+this underreporting affects fda's ability to estimate the magnitude of a problem because the number of reports submitted might not be representative of the total number of patients that experienced the adverse event .
+
+underreporting can also occur because individuals are either unfamiliar with reporting requirements for devices or because reporting can be time - consuming .
+
+additionally , fda and other experts told us that underreporting of information security problems in medical devices could result from a lack of understanding or awareness among adverse event reporters about how information security problems apply to these devices .
+
+they noted that information security is a relatively new issue area with respect to its applicability to medical devices , which could make it a difficult type of problem to understand and report to fda .
+
+some health care providers might not fully understand , and therefore may not report , information security problems whether resulting from unintentional or intentional threats , as providers have instead been trained to focus on clinical problems associated with medical devices .
+
+fda officials said that they were uncertain if reporters would recognize that an information security problem was relevant or even had occurred .
+
+for example , an adverse event report could note that a patient complained of chest pains and experienced an increase in heart rate , but the report might not include any indication that a possible information security issue was a factor ; that is , the reporter might not note that the patient's device had recently been programmed because the health care provider did not consider this information relevant or necessary .
+
+besides underreporting , another weakness inherent in maude is fda's inability to establish causality because reporters might submit insufficient or inadequate information about an adverse event .
+
+for example , a reporter might fail to include specific details about an adverse event — such as that the event occurred while a medical device was being reprogrammed .
+
+because the manufacturer generally conducts any follow - up investigation , if fda wanted more information about an adverse event , fda could notify manufacturers in writing that the agency required additional information about manufacturers' reports .
+
+however , fda officials told us that the more time passes from the time an adverse event occurred to the actual investigation , the more difficult it is to obtain detailed information .
+
+also , officials request additional information from manufacturers on a case - by - case basis .
+
+in addition to the challenge of establishing causality , fda officials told us it would also be difficult to determine the motivation behind an adverse event , such as if it was caused by a malicious actor .
+
+without such details and contextual information related to the cause of and motivation behind an adverse event , fda would be limited in its ability to later identify the problem as related to information security and determine if it resulted from an intentional threat .
+
+because of these inherent weaknesses associated with maude as a passive surveillance system , it is possible that information security problems involving medical devices could have occurred but not have been reported to fda or have not been identified as information security problems by the agency .
+
+fda has two planned initiatives that are intended to improve its postmarket efforts in order to more accurately identify and analyze problems associated with medical devices .
+
+according to fda , these initiatives are not specifically intended to improve fda's ability to identify information security problems ; however , these initiatives might strengthen fda's ability to do so by providing the agency with additional information .
+
+one initiative is the unique device identification effort for the postmarket surveillance of devices , which , according to fda , will allow the agency to aggregate adverse event reports in order to more accurately analyze them when conducting signal analyses .
+
+the initiative will also allow fda to identify specific devices included in adverse event reports , allowing for more rapid and effective corrective actions that can focus on specific devices , according to one agency official.us that although this effort was not specifically designed to help fda identify information security problems involving medical devices , it will help fda identify specific device models that could encounter information security problems .
+
+once operational , this new system will replace maude as fda's passive surveillance system for devices and will be compatible with fda's drug and vaccine adverse event reporting systems to allow for cross - center communication within the agency .
+
+such communication may be useful in handling drug - device or biologic - device issues that may be found in combination products .
+
+the capacity or complexity of medical device adverse event information that exists today .
+
+fda expects the new system — the fda adverse event reporting system — to perform similar functions as maude but also allow for greater capacity for storing adverse events and enhanced search capability compared to maude .
+
+however , according to fda , transitioning from maude to this new system will not automatically make it easier to identify information security problems because , like maude , the system is designed to collect information that indicates that a medical device has caused or contributed to a serious injury or death , which is more closely associated with clinical risks than information security risks .
+
+because this new system will also be a passive surveillance system , fda will still rely on reporters to recognize and submit information on information security problems involving medical devices before the agency can search for and subsequently identify them .
+
+still , fda officials told us that this new system will also include the 10 codes that reporters currently can use to indicate that an information security problem has occurred .
+
+if fda is able to conduct more complex searches under this new system , the search results might strengthen the agency's ability to identify information security problems involving medical devices .
+
+as active implantable medical devices increasingly use newer technologies , such as wireless capabilities , their susceptibility to various information security risks also increases .
+
+although the risks resulting from unintentional threats have long been known , information security risks resulting from intentional threats have only recently been confirmed .
+
+while fda has considered some information security risks associated with unintentional threats during its pma review process , such as interference , it has not considered others , such as patch and vulnerability management .
+
+additionally , fda has not considered information security risks resulting from intentional threats .
+
+fda has also not utilized available resources , such as the national vulnerabilities database sponsored and maintained by dhs and nist .
+
+also , fda's postmarket efforts have several limitations , and it is unclear if the agency could successfully identify information security problems with active implantable medical devices were they to occur .
+
+although fda intends to review its evaluation of software used in medical devices , according to the agency's preliminary planning information , the review does not explicitly mention information security issues such as malware , patching and vulnerability management , or the use of security - related testing techniques .
+
+furthermore fda has not established specific milestones , including for when it will implement any changes , for the review .
+
+to better ensure the safety and effectiveness of active implantable medical devices , we are recommending that the secretary of health and human services direct the commissioner of fda to develop and implement a more comprehensive plan to assist the agency in enhancing its review and surveillance of medical devices as technology evolves , and that will incorporate the multiple aspects of information security .
+
+this plan should include , at a minimum , four actions , such as determining how fda can increase its focus on manufacturers' identification of potential unintentional and intentional threats , vulnerabilities , the resulting information security risks , and strategies to mitigate these risks during its pma review process ; utilize available resources , including those from other entities , such as leverage its postmarket efforts to identify and investigate information security problems ; and establish specific milestones for completing this review and implementing these changes .
+
+hhs , fcc , nist ( within the department of commerce ) , dhs , and the departments of defense and of veterans affairs reviewed a draft of this report .
+
+hhs provided written comments , which we have reprinted in appendix v. hhs , fcc , nist , and the department of veterans affairs provided technical comments , which we have incorporated as appropriate .
+
+dhs and the department of defense did not provide comments on a draft of this report .
+
+a third party also reviewed relevant sections of this report and provided technical comments , which we have incorporated as appropriate .
+
+in its comments , hhs concurred with our recommendation and described relevant efforts fda has initiated .
+
+hhs described fda's efforts to identify and address information security concerns to ensure the safety of medical devices .
+
+for example , hhs noted that fda is establishing collaborative relationships with dhs , nist , and the department of defense , and is engaging other stakeholders to consider the potential applicability of standards from other sectors , such as industrial control , to medical devices .
+
+hhs also noted fda's postmarket efforts to address information security , including evaluating and enhancing surveillance tools to identify and investigate information security problems .
+
+for example , hhs said fda is in the process of releasing its “national postmarket surveillance plan” designed to enhance national coordination of information sharing for adverse events related to medical devices .
+
+as agreed with your offices , unless you publicly announce the contents of this report earlier , we plan no further distribution until 30 days from the report date .
+
+at that time , we will send copies of this report to the chairman of the fcc and the secretaries of commerce , defense , health and human services , homeland security , and veterans affairs and to other interested parties .
+
+the report will also be available at no charge on the gao website at http: / / www.gao.gov .
+
+if you or your staff have any questions about this report , please contact marcia crosse at ( 202 ) 512-7114 or crossem@gao.gov or gregory wilshusen at ( 202 ) 512-6244 or wilshuseng@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made major contributions to this report are listed in appendix vi .
+
+the objectives of our review were to ( 1 ) identify the threats , vulnerabilities , and resulting information security risks associated with active implantable medical devices ; ( 2 ) determine the extent to which the food and drug administration ( fda ) considered information security risks in its premarket approval ( pma ) review process for certain active medical devices with known vulnerabilities ; and ( 3 ) determine what postmarket efforts fda has in place to identify information security problems involving active implantable medical devices .
+
+to identify the threats , vulnerabilities , and resulting information security risks associated with active implantable medical devices , we reviewed available publications , such as white papers published by information security researchers and peer - reviewed journal articles .
+
+we reviewed these publications to identify an initial list of threats , vulnerabilities , and resulting information security risks associated with these types of medical devices .
+
+these publications also included information related to the two devices that researchers have demonstrated are susceptible to intentional threats — an implantable cardioverter defibrillator ( defibrillator ) and an insulin pump .
+
+we also obtained relevant information through interviews with officials from federal agencies , including from fda , the department of health and human services ( hhs ) , the national institute of standards and technology ( nist ) within the department of commerce , the department of defense , the department of homeland security ( dhs ) , the department of veterans affairs , and the federal communications commission ( fcc ) .
+
+we also interviewed manufacturer officials and subject - matter experts , including information security researchers and authors of standards related to information security .
+
+after developing these initial lists of threats , vulnerabilities , and information security risks , we sent them to experts to obtain their concurrence and comments .
+
+we selected these experts on the basis of their knowledge and familiarity with the information security of medical devices .
+
+of the 15 experts to whom we sent our tables , 9 provided us with responses .
+
+we then analyzed these responses to validate our identified threats , vulnerabilities , and resulting information security risks associated with these medical devices .
+
+we did not include implantable medical devices lacking active components , such as hip implants .
+
+we limited our identification of threats , vulnerabilities , and information security risks to those associated with medical devices that deliver medicine , monitor body functions , or provide support to organs and tissues .
+
+additionally , we limited our scope to the integrity and availability aspects of information security — which generally relate to the safety and effectiveness of medical devices — and not confidentiality , which generally relates to privacy .
+
+we focused on the potential effect that information security risks could have on the functionality of fda - regulated devices and not on their ability to store or exchange personally identifiable information .
+
+nist , creating a patch and vulnerability management program , sp 800-40 version 2.0 ( gaithersburg , md .
+
+: november 2005 ) .
+
+iec 62304: 2006 , medical device software — software life cycle processes ; iec 60601-1: 2005 , medical electrical equipment — part 1: general requirements for basic safety and essential performance ; iec standard 80001-1: 2010 , application of risk management for it networks incorporating medical devices — part 1: roles , responsibilities and activities ; iso , international standard 14971: 2007 , medical devices — application of risk management to medical devices ; dhs , recommended practice for patch management of control pci security standards council , payment card industry data security various fda guidance documents .
+
+these documents varied in detail from providing general rules at a high level to specific activities related to information security .
+
+from these documents , we determined the key information security controls and associated criteria that could be used to assess and mitigate information security risks for certain active medical devices .
+
+we did not conduct an extensive analysis of all information security controls that could be used in the evaluation of information security issues for these medical devices .
+
+instead , we focused on eight key information security control areas that included a range of criteria that would be applicable when evaluating fda's review of information security risks in its pma review process .
+
+the specific areas we selected were ( 1 ) software testing , verification , and validation ; ( 2 ) risk assessments ; ( 3 ) risk management ; ( 4 ) access control ; ( 5 ) patch and vulnerability management ; ( 6 ) security - incident response ; ( 7 ) contingency planning ; and ( 8 ) technical audit and accountability .
+
+for each of these information security control areas , we selected the criteria that illustrated the range of activities that could be considered by fda during its pma review process .
+
+we then used these key information security control areas and associated criteria to develop a questionnaire for fda to complete on the basis of its prior review of two pma supplement applications ( supplements ) .
+
+that have recently identified vulnerabilities , such as those devices that information security researchers have exploited in controlled settings , and discussions with fda .
+
+we reviewed the pma supplements rather than the original pma applications in order to capture the most recent information related to these two devices .
+
+after an original pma application is approved , a manufacturer can submit a supplement to the original pma application to fda for approval of changes , such as changes to the device or the manufacturing process used in its production .
+
+in general , subsequent changes that affect the safety or effectiveness of the device must undergo fda's pma review process and manufacturers must submit a supplement to their original application for approval .
+
+we evaluated fda's responses to this questionnaire and supporting documentation , such as fda's review memorandums and other documents submitted by the manufacturer .
+
+fda provided responses for one supplement related to the defibrillator exploited by information security researchers and responses and documentation for the programming wand ( wand ) and the programmer used with the defibrillator .
+
+fda also provided responses and documentation for a second supplement related to the exploited insulin pump .
+
+the particular defibrillator and insulin pump we considered in our evaluation are the only two devices we identified that have been intentionally exploited by researchers .
+
+although the defibrillator - related supplement was reviewed in 2001 and the insulin pump supplement was reviewed in 2006 , fda identified these supplements as being the most recent ones related to the devices involving potential information security issues and the most appropriate for our evaluation .
+
+we also evaluated additional documentation for another defibrillator reviewed by fda in 2012 that has not been intentionally exploited by researchers to obtain a more current perspective on fda's review process for information security issues .
+
+because we evaluated documentation for only three devices , our results are not generalizable .
+
+we also interviewed fda officials about the agency's current efforts to address information security risks in medical devices during its premarket review .
+
+to determine what postmarket efforts fda has in place to identify information security problems involving active implantable medical devices , we obtained and reviewed fda guidance documents related to different postmarket efforts , including medical device reporting for manufacturers , draft guidance for industry and fda staff: annual reports for approved premarket approval applications ( pma ) , and guidance for industry and fda staff: procedures for handling post - approval studies imposed by pma order.information related to its adverse event reporting system , including the different codes fda uses to characterize different types of adverse events .
+
+we requested that fda search its adverse event reporting system for any potential information security problems involving these medical devices using 10 codes that fda had stated could potentially indicate an information security problem had occurred .
+
+we then reviewed fda's other codes on its website to determine whether there were any additional codes that could be used to identify information security problems .
+
+we identified these codes using key words or phrases that we considered possibly related to information security .
+
+we then asked fda to search its adverse event reporting system using the additional codes that we identified as possibly related to information security .
+
+we did not independently verify fda's results for any of its searches .
+
+we obtained and reviewed the manufacturer's annual reports for the defibrillator for the years 2008 through 2011 , after researchers demonstrated the intentional exploitation of the device in controlled settings in 2008 .
+
+we also reviewed manufacturer's annual reports for the insulin pump for 2010 and 2011 , after researchers demonstrated the intentional exploitation of the device in controlled settings in 2010 .
+
+we reviewed these reports to determine whether they included any indication of these demonstrations .
+
+additionally , we interviewed fda officials in its office of surveillance and biometrics and office of device evaluation , among others , on the agency's different postmarket efforts , including its adverse event reporting system and postmarket studies , to determine how fda has identified or might identify information security problems through these and other efforts .
+
+we also interviewed officials from relevant industry associations , including the medical device manufacturers association and advanced medical technology association , and officials from other agencies , including dhs and fcc , about challenges associated with identifying information security problems , including those specific to the issue of information security and those inherent to fda and its adverse event reporting system .
+
+we also reviewed fda we conducted this performance audit from august 2011 to august 2012 , in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+the submission of adverse event reports is intended to enable the food and drug administration ( fda ) to collect information regarding reportable issues with medical devices .
+
+fda seeks to use reports submitted by manufacturers and user facilities , among others , to assess the underlying cause and seriousness of an adverse event .
+
+fda also uses adverse event data to identify issues with medical devices that may require additional investigation .
+
+according to fda , adverse event reports are best used for two purposes .
+
+first , they are used to capture qualitative snapshots of adverse events for a particular device or device type , such as the types of malfunctions or clinical events or both associated with the device .
+
+second , they are used in signal detection , such as for identifying unexpected events associated with a particular device or device type .
+
+adverse event reports are to be submitted to fda through mandatory and voluntary sources .
+
+mandatory adverse event reporting by manufacturers and user facilities enables fda to obtain specific safety data related to medical devices from these reporters .
+
+since 1984 , the medical device reporting regulations have required manufacturers and user facilities who have received complaints of device - related deaths , serious injuries , and malfunctions , such as instances where patients required admission to the ( see table 7 for hospital or became permanently disabled , to notify fda .
+
+summaries of these reporting requirements. ) .
+
+these mandatory adverse event reports are entered into fda's manufacturer and user facility device experience database ( maude ) .
+
+fda also collects data obtained through voluntary adverse event reporting .
+
+21 c.f.r .
+
+pt .
+
+803 .
+
+also , serious injuries are defined as life - threatening events , events that result in permanent impairment of a body function or permanent damage to a body structure , and events that require medical or surgical intervention to preclude permanent impairment or damage .
+
+malfunctions are defined as the failure of a device to meet its performance specifications or otherwise not perform as intended .
+
+device - related means that the event was or may have been attributable to a medical device , or that a device was , or may have been , a factor in an event including those occurring as a result of device failure , malfunction , improper or inadequate design , poor manufacture , inadequate labeling , or use - related error .
+
+a user facility is a hospital , ambulatory surgical facility , nursing home , outpatient diagnostic facility , or outpatient treatment facility that is not a physician's office .
+
+serious injuries are defined as life - threatening events , events that result in permanent impairment of a body function or permanent damage to a body structure , and events that require medical or surgical intervention to preclude permanent impairment or damage .
+
+malfunctions are defined as the failure of a device to meet its performance specifications or otherwise not perform as intended .
+
+user facilities are required to file annual reports that summarize their adverse event reports .
+
+21 c.f.r .
+
+pt .
+
+803 , subpart c. in addition to maude , fda has other adverse event reporting systems in place to capture adverse events associated with medical devices .
+
+one of these is the medical product safety network ( medsun ) system .
+
+medsun collects voluntary report information from a limited number of hospitals and user facilities .
+
+all reports received through medsun are entered into the maude system .
+
+launched in 2002 , the primary goal of medsun is to enable fda to work collaboratively with specific device - user facilities in the clinical community to identify , understand , and solve problems with the use of devices .
+
+medsun user facilities are required to report device problems that result in serious illness , injury , or death .
+
+medsun user facilities are also encouraged to voluntarily report other types of problems with devices , such as “close - calls,” potential for harm , and other safety concerns .
+
+once a problem has been identified , fda works with the medsun user facilities' representatives to clarify and understand the problem .
+
+subsequent reports and lessons learned from these collaborations are then shared with the greater clinical community so that all clinicians may take necessary preventative actions to address device problems .
+
+currently , 350 user facilities participate in the medsun network .
+
+participants are recruited from all regions of the country using the american hospital association membership listing .
+
+fda's voluntary adverse event reporting system , medwatch , was created in 1993 to encourage voluntary reporting by interested parties , such as consumers of medical devices , and health care professionals , such as physicians .
+
+these parties can use medwatch to report serious adverse reactions , product quality problems , therapeutic failure , and product - use errors associated with human medical products , including drugs , biologic products , and medical devices , among other things .
+
+consumers can submit information about their experiences either online or by fax , mail , or phone .
+
+consumers can also request that their physicians either complete the medwatch form for them or help them complete the form , given that these providers have test results and other clinical information that will help fda better evaluate the medwatch reports .
+
+adverse event reports submitted to fda through medsun or medwatch are eventually entered into maude .
+
+maude data consist of voluntary reports since june 1993 , user - facility reports since 1991 , distributor reports since 1993 , and manufacturer reports since 1996 .
+
+maude may not include reports made according to exemptions , variances , or alternative reporting forms authorized by regulation .
+
+fda is in the process of developing a new system to replace maude , the fda adverse event reporting system , which the agency plans to implement by september 2013 .
+
+according to fda , this new system will perform similar functions as maude , but will also allow for ( 1 ) greater capacity for storing adverse event data , and ( 2 ) greater search capability than maude .
+
+two federal entities that have specific responsibilities related to developing and implementing policies with respect to the confidentiality aspect of information security in terms of protected health information .
+
+these entities are the office for civil rights ( ocr ) and the office of the national coordinator for health information technology ( onc ) , both within the department of health and human services ( hhs ) .
+
+ocr is responsible for developing , interpreting , and enforcing the privacy and security rules called for in the health insurance portability and accountability act of 1996 ( hipaa ) .
+
+ocr enforces the privacy and security rules by investigating complaints that individuals have filed with the office in instances where they believe a covered entity violated health information privacy rights or committed another violation of the rules .
+
+ocr may also conduct periodic audits to ensure that covered entities are in compliance with privacy and security rules .
+
+in calendar year 2011 , ocr conducted a total of 3,898 investigations .
+
+of these investigations , ocr determined no violation had occurred in 33 percent of them ( 1,303 investigations ) and , for the remaining 67 percent ( 2,595 investigations ) , obtained corrective action .
+
+ocr has also issued guidance documents for covered entities on how to comply with the hipaa privacy and security rules .
+
+onc was formally established by the health information technology for economics and clinical health act of 2009 ( hitech act ) .
+
+it is charged with promoting the development of a nationwide health information technology ( it ) infrastructure that allows the secure exchange of health information .
+
+for example , onc has developed a federal health it strategic plan for working with the private and public sectors to implement different health it efforts .
+
+in this plan onc addresses , among other things , privacy and security issues related to health it .
+
+the plan also includes strategies related to identifying health it system security vulnerabilities as well as health it privacy and security requirements and best practices .
+
+onc has also developed the nationwide privacy and security framework for electronic exchange of individually identifiable health information in order to establish a policy framework for electronic health information exchange to help guide nationwide adoption of health it and help improve the availability of health information and health care quality .
+
+onc also assesses gaps and weaknesses in current privacy and security policies in light of evolving technology , and works with federal entities to address these issues .
+
+additionally , onc incorporates privacy and security in its programs , which are designed to implement hitech initiatives , including certification of electronic health records , as well as supporting the efforts of several related initiatives to facilitate nationwide adoption of health it .
+
+for example , one initiative relates to developing information security and best practices for safeguarding protected health information in electronic health records , while another initiative relates to identifying standards , protocols , legal agreements , specifications , and services , to enable secure health information exchanges .
+
+table 8 includes the results of our evaluation of the evidence provided by the food and drug administration ( fda ) regarding its consideration of information security in its review of two premarket approval ( pma ) supplements reviewed in 2001 and 2006 related to active medical devices with known vulnerabilities .
+
+specifically , the supplements and supporting materials were for a defibrillator and its associated programming wand ( wand ) and programmer , and a specific insulin pump with wireless capabilities .
+
+this evidence was provided to fda in the respective pma supplements to the original applications by the manufacturer .
+
+although the defibrillator - related supplement was reviewed in 2001 and the insulin pump supplement was reviewed in 2006 , fda officials identified these supplements as being the most recent ones related to the devices involving potential information security issues and the most appropriate for our evaluation .
+
+in addition to the contacts named above , tom conahan , assistant director ; vijay d'souza , assistant director ; kaitlin coffey ; west coile ; neil doherty ; lynn espedido ; nancy glover ; rosanna guerrero ; cathleen hamann ; gay hee lee ; lee mccracken ; and monica perez - nelson made key contributions to this report .
+

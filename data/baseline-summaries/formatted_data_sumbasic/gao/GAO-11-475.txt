@@ -1,0 +1,728 @@
+for more than 20 years , gao has designated medicare as a high - risk program due to its size and complexity , as well as its susceptibility to mismanagement and improper payments .
+
+improper payments are overpayments or underpayments that should not have been made or were made in an incorrect amount .
+
+improper payments may be due to errors , such as the inadvertent submission of duplicate claims for the same service , or misconduct , such as fraud and abuse .
+
+since 2003 , we have also designated medicaid as a high - risk program because of concerns about the adequacy of its fiscal oversight , which is necessary to prevent inappropriate spending .
+
+the department of health and human services ( hhs ) reported about $70 billion in improper payments for the medicare and medicaid programs in fiscal year 2010 .
+
+the centers for medicare and medicaid services ( cms ) within hhs is responsible for administering the medicare and medicaid programs and leading efforts to reduce improper payments .
+
+as part of these efforts , cms conducts reviews to prevent improper payments before claims are paid and reviews of claims potentially paid in error .
+
+these activities are predominantly carried out by contractors who , along with cms personnel , use various information technology ( it ) solutions to consolidate and analyze data in support of efforts to detect improper payments of claims .
+
+for example , these analysts may use software tools to access data about claims to identify patterns of unusual activities by attempting to match services with patients' diagnoses .
+
+in 2006 , cms initiated efforts to centralize and make more accessible the data needed to conduct these analyses , and to improve the analytical tools available to its own and contractor analysts .
+
+among these initiatives are the integrated data repository ( idr ) , which is intended to provide a single source of data related to medicare and medicaid claims , and the one program integrity ( one pi ) system , a web - based portal and suite of analytical software tools used to extract data from idr and enable complex analyses of these data .
+
+you asked us to examine cms's efforts to develop and implement idr and one pi to improve the agency's ability to detect fraud , waste , and abuse in administering these programs .
+
+specifically , our objectives were to 1. assess the extent to which the idr and one pi systems have been developed and implemented , and 2. determine the agency's progress toward achieving defined goals and objectives for using the systems to help detect fraud , waste , and abuse in the medicare and medicaid programs .
+
+to address these objectives , we reviewed idr and one pi program management and planning documentation and held discussions with agency officials and system users .
+
+specifically , to assess the extent to which idr and one pi have been developed and implemented , we compared the functionality that has been implemented to date to estimated schedule milestones and performance measures .
+
+we also reviewed the programs' requirements development and management plans and other project management artifacts and assessed cms's documented processes against criteria established by the software engineering institute .
+
+to supplement the information we collected from agency documents , we met with agency officials to discuss plans for and management of the idr and one pi programs .
+
+to determine the agency's progress toward achieving goals and objectives for improving outcomes of its program integrity initiatives , we reviewed agencywide strategic plans and program planning documents to identify the goals and objectives , and assessed the extent to which idr and one pi supported efforts to achieve them .
+
+we also interviewed agency officials about steps the agency had taken to achieve the goals and objectives .
+
+to determine the extent to which the use of idr and one pi has enabled the agency to meet goals for improving its ability to detect fraud , waste , and abuse , we identified cms program integrity personnel and contractors who actively use the systems by analyzing training information and system login data .
+
+we then held discussions with groups of these users to determine the extent to which and for what purposes they used the system .
+
+we also compared reported system costs and financial benefits to those projected for both idr and one pi .
+
+we assessed the reliability of the agency's data related to project management practices ; cost , schedule , and financial benefit estimates ; and system usage through interviews with agency officials knowledgeable of the management of the programs , methods for tracking and reporting costs of the idr and one pi programs , the programs' user community and training plans , and mechanisms for accessing the systems .
+
+we determined that the data we collected and assessed were sufficiently reliable for the purposes of our study .
+
+we conducted our work in support of this performance audit primarily at cms's headquarters in baltimore , maryland , from june 2010 to june 2011 , in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+detailed information about our objectives , scope , and methodology is discussed in appendix i .
+
+medicare is a federal program that provides health insurance coverage for individuals aged 65 and older and for certain disabled persons .
+
+it is funded by general revenues , payroll taxes paid by most employees , employers , and individuals who are self - employed , and beneficiary premiums .
+
+medicare consists of four parts .
+
+medicare part a provides payment for inpatient hospital , skilled nursing facility , some home health , and hospice services , while part b pays for hospital outpatient , physician , some home health , durable medical equipment , and preventive services .
+
+in addition , medicare beneficiaries have an option to participate in medicare advantage , also known as part c , which pays private health plans to provide the services covered by medicare parts a and b .
+
+further , all medicare beneficiaries may purchase coverage for outpatient prescription drugs under medicare part d , and some medicare advantage plans also include part d coverage .
+
+in 2010 , medicare covered 47 million elderly and disabled beneficiaries and had estimated outlays of about $509 billion .
+
+cms uses contractors to help administer the claims processing and payment systems for medicare .
+
+these administrative contractors are responsible for processing approximately 4.5 million claims per workday .
+
+the contractors review the claims submitted by providers to ensure payment is made only for medically necessary services covered by medicare for eligible individuals .
+
+medicaid is the federal - state program that provides health coverage for acute and long - term care services for over 65 million low - income people .
+
+it consists of more than 50 distinct state - based programs that each define eligibility requirements and administer payment for health care services for low - income individuals , including children , families , the aged , and the disabled .
+
+within broad federal requirements , each state operates its medicaid program according to a state plan .
+
+low - income americans who meet their state's medicaid eligibility criteria are entitled to have payments made on their behalf for covered services .
+
+states are entitled to federal matching funds , which differ from state to state but can be up to three - fourths of their costs of this coverage .
+
+the amount paid with federal funds is determined by a formula established in law .
+
+cms oversees the medicaid program at the federal level , while the states administer their respective programs' day - to - day operations , such as enrolling eligible individuals , establishing payment amounts for covered benefits , establishing standards for providers and managed care plans , processing and paying for claims and managed care , and ensuring that state and federal health care funds are not spent improperly or diverted by fraudulent providers .
+
+the estimated outlays for medicaid for both the federal and state governments were $408 billion in 2010 .
+
+of this cost , approximately $275 billion was incurred by the federal government and $133 billion by the states .
+
+the health insurance portability and accountability act ( hipaa ) of 1996 established the medicare integrity program to increase and stabilize federal funding for health care antifraud activities .
+
+the act appropriated funds for the program as well as amounts for hhs and the department of justice to carry out the health care fraud and abuse control program .
+
+subsequent legislation further outlined responsibilities under the medicare integrity program .
+
+under the medicare integrity program , cms staff and several types of contractors perform functions to help detect cases of fraud , waste , and abuse , and other payment errors , which include reviews of paid claims to identify patterns of aberrant billing .
+
+among these program integrity contractors are program safeguard contractors , zone program integrity contractors , and medicare drug integrity contractors .
+
+the program safeguard and zone program integrity contractors are responsible for ensuring the integrity of benefit payments for medicare parts a and b ( including durable medical equipment ) , as well as the medi - medi data match program .
+
+medicare drug integrity contractors are responsible for monitoring fraud , waste , or abuse in the medicare prescription drug program ( i.e. , part d ) .
+
+these contractors work with the hhs office of the inspector general ( oig ) and law enforcement organizations , such as the department of justice , to help law enforcement pursue criminal or civil penalties when fraudulent claims are detected .
+
+table 1 summarizes the origin and responsibilities of the program integrity contractors who help cms to detect fraud , waste , and abuse .
+
+in addition to provisions of hipaa and other legislation intended to strengthen medicare program integrity functions , in 2006 congress created the medicaid integrity program through the deficit reduction act of 2005 .
+
+its goals are to strengthen the national medicaid audit program and to enhance federal oversight of and support and assistance to state medicaid programs .
+
+the program provides states with technical assistance and support to enhance the federal - state partnership as well as to expand activities that involve data analysis , sharing algorithms of known improper billings , and fraud awareness through education and outreach .
+
+individual states are responsible for ensuring the accuracy of medicaid payments within their state programs , which can involve using their own staff or contractors to analyze claims to detect improper payments .
+
+in addition to the states' efforts , cms employs medicaid program integrity contractors to perform specific activities as part of its efforts to detect fraud , waste , and abuse in the medicaid program , such as reviewing provider claims payments that have been processed by the states .
+
+generally , each state medicaid program integrity unit works independently , using its own data models , data warehouses , and approach to analysis .
+
+as a result , medicaid data are stored in multiple disparate systems and databases throughout the country .
+
+because of the volumes of work , states often augment their in - house capabilities by contracting with companies that specialize in medicaid claims and utilization reviews .
+
+state medicaid program integrity units target their activities to those providers that pose the greatest financial risk to their medicaid programs .
+
+however , the states have limited methods of identifying medicaid fraud in neighboring jurisdictions or by providers who move from state to state .
+
+as stated in a july 2007 report by the hhs oig , the agency intends for program integrity contractors to perform a significant amount of self - initiated , exploratory analysis to seek patterns or instances of fraud and abuse .
+
+one of the specific activities undertaken by these contractors is the analysis of claims data to identify improper billing that may indicate fraud or abuse .
+
+if the billing appears to be potentially fraudulent or abusive , the contractors take further actions , which can include requesting and reviewing medical records associated with the claims and referring the case to law enforcement .
+
+in 2010 , cms created the center for program integrity to serve as its focal point for all national medicare and medicaid program integrity fraud and abuse issues .
+
+the new center is responsible for , among other things , collaborating with other cms components to develop and implement a comprehensive strategic plan , objectives , and measures to carry out the agency's program integrity mission and goals , and ensure program vulnerabilities are identified and resolved .
+
+according to agency documentation describing the program , the center was designed to promote the integrity of the medicare and medicaid programs through provider and contractor audits and policy reviews , identification and monitoring of program vulnerabilities , and support and assistance to states ; collaborate on the development and advancement of new legislative initiatives and improvements to deter , reduce , and eliminate fraud , waste and abuse ; oversee all cms interactions and collaboration with key stakeholders related to program integrity ( eg , the department of justice , hhs oig , and state law enforcement agencies ) for the purposes of detecting , deterring , monitoring , and combating fraud and abuse ; and take action against those who commit or participate in fraudulent or other unlawful activities .
+
+like financial institutions , credit card companies , telecommunications firms , and other private sector companies that take steps to protect customers' accounts , cms uses automated software tools to help predict or detect cases of improper claims and payments .
+
+for more than a decade , cms and its contractors have applied such tools to access data from various sources to analyze patterns of unusual activities or financial transactions that may indicate fraudulent charges or other types of improper payments .
+
+for example , to identify unusual billing patterns and to support referrals for prosecution or other action , cms and program integrity contractor analysts and investigators need , among other things , access to information about key actions taken to process claims as they are filed and specific details about claims already paid .
+
+this includes information on claims as they are billed , adjusted , and paid or denied ; check numbers on payments of claims ; and other specific information that could help establish provider intent .
+
+these data , along with data on regional or national trends on claims billing and payment , support the investigation and potential prosecution of fraud cases .
+
+upon completing investigations , the contractors determine whether to refer the investigations as cases to law enforcement officials .
+
+cms and its program integrity contractors currently use many different means to store and manipulate data and , since the establishment of the agency's program integrity initiatives in the 1990s , have built multiple databases and developed analytical software tools to meet their individual and unique needs .
+
+however , according to cms , these geographically distributed , regional approaches to data analysis result in duplicate data and limit the agency's ability to conduct analyses of data on a nationwide basis .
+
+additionally , data on medicaid claims are scattered among the states in multiple disparate systems and data stores , and are not readily available to cms .
+
+thus , cms has been working for most of the past decade to consolidate program integrity data and analytical tools for detecting fraud , waste , and abuse .
+
+the agency's efforts led to the initiation of the idr program and , subsequently , the one pi program , which are intended to provide cms and its program integrity contractors with a centralized source that consolidates medicare and medicaid data from the many disparate and dispersed legacy systems and databases and a web - based portal and set of analytical tools by which these data can be accessed and analyzed to help detect cases of fraud , waste , and abuse .
+
+the cms office of information services is responsible for agencywide it management .
+
+its initiative to develop a centralized data warehouse began in 2003 as an element of the agency's enterprise data modernization strategy .
+
+according to agency documentation , the strategy was designed to meet the increasing demand for higher quality and more timely data to support decision making throughout the agency , including identifying trends and discovering patterns of fraud , waste , and abuse .
+
+as part of the strategy , the agency established the data warehouse modernization project to develop and implement the technology needed to store long - term data for analytical purposes , such as summary reports and statistical analyses .
+
+cms initially planned for the data warehouse project to be complete by september 30 , 2008 .
+
+however , in 2006 cms expanded the scope of the project to not only modernize data storage technology but also to integrate medicare and medicaid data into a centralized repository .
+
+at that time , program officials also changed the name to idr , which reflected the expanded scope .
+
+the office of information services' enterprise data group manages the idr program and is responsible for the design and implementation of the system .
+
+the program's overall goal is to integrate medicare and medicaid data so that cms and its partners may access the data from a single source .
+
+specific goals for the program are to transition from stove - piped , disparate sets of databases to a highly integrated data environment for the enterprise ; transition from a claim - centric orientation to a multi - view orientation that includes beneficiaries , providers , health plans , claims , drug code data , clinical data , and other data as needed ; provide uniform privacy and security controls ; provide database scalability to meet current and expanding volumes of provide users the capability to analyze the data in place instead of relying on data extracts .
+
+according to idr program officials , cms envisioned that idr would become the single repository for the agency's data and enable data analysis within and across programs .
+
+specifically , idr was to establish the infrastructure for storing data for medicare parts a , b , and d , as well as a variety of other cms functions , such as program management , research , analytics , and business intelligence .
+
+cms envisioned an incremental approach to incorporating data into idr .
+
+specifically , program plans provided to the office of management and budget ( omb ) by the office of information services in 2006 stated that all medicare part d data would be incorporated into idr by the end of that fiscal year .
+
+cms's 2007 plans added the incorporation of medicare parts a and b data by the end of fiscal year 2007 , and medicaid data for 5 states by the end of fiscal year 2009 , 20 states by 2010 , 35 by 2011 , and all 50 states by the end of fiscal year 2012 .
+
+initial program plans and schedules also included the incorporation of additional data from legacy cms claims - processing systems that store and process data related to the entry , correction , and adjustment of claims as they are being processed , along with detailed financial data related to paid claims .
+
+according to program officials , these data , called “shared systems” data , are needed to support the agency's plans to incorporate tools to conduct predictive analysis of claims as they are being processed , helping to prevent improper payments .
+
+shared systems data , such as check numbers and amounts related to claims that have been paid , are also needed by law enforcement agencies to help with fraud investigations .
+
+cms initially planned to include all the shared systems data in idr by july 2008 .
+
+figure 1 shows a timeline of initial plans for incorporating data into idr .
+
+in 2006 , cms's office of financial management initiated the one pi program with the intention of developing and implementing a portal and software tools that would enable access to and analysis of claims , provider , and beneficiary data from a centralized source .
+
+cms's goal for one pi was to support the needs of a broad program integrity user community , including agency program integrity personnel and contractors who analyze medicare claims data , along with state agencies that monitor medicaid claims .
+
+to achieve its goal , agency officials planned to implement a tool set that would provide a single source of information to enable consistent , reliable , and timely analyses and improve the agency's ability to detect fraud , waste , and abuse .
+
+these tools were to be used to gather data about beneficiaries , providers , and procedures and , combined with other data , find billing aberrancies or outliers .
+
+for example , as envisioned , an analyst could use software tools to identify potentially fraudulent trends in ambulance services .
+
+he or she could gather data about claims for ambulance services and medical treatments , and then use other software to determine associations between the two types of services .
+
+if the analyst found claims for ambulance travel costs but no corresponding claims for medical treatment , the analyst may conclude that the billings for those services were possibly fraudulent .
+
+according to agency program planning documentation , the one pi system was to be developed incrementally to provide access to data , analytical tools , and portal functionality in three phases after an initial proof of concept phase .
+
+the proof of concept phase was reportedly begun in early 2007 and focused on integrating medicare and medicaid data into the portal environment .
+
+after its completion , the first development phase focused on establishing a development environment in cms's baltimore , maryland , data center and , according to program officials , was completed in april 2009 .
+
+the second and third phases of development were planned in january 2009 to run concurrently and to focus on the technical and analytical aspects of the project , such as building the environment to integrate the analytical tools using data retrieved from idr , sourcing claims data from the shared systems , conducting data analyses in production , and training analysts who were intended users of the system .
+
+cms planned to complete these two phases and implement the one pi portal and two analytical tools for use by program integrity analysts on a widespread basis by the end of fiscal year 2009 .
+
+cms's office of financial management engaged contractors to develop the system .
+
+responsibility for and management of the one pi program moved from the office of financial management to the center for program integrity in 2010 .
+
+figure 2 illustrates initial plans for one pi .
+
+in our prior work , we have reported on cms's efforts to detect and prevent fraudulent and improper payments in the medicare and medicaid programs and on its management of it to support its mission .
+
+for example , as early as 1995 , we reviewed it systems used in the medicare program to detect and prevent fraud and discussed the availability of other technologies to assist in combating fraudulent billing .
+
+we found it was too early to fully document the cost - effectiveness of such systems , although several potential fraud cases were detected by this technology , indicating that these types of systems could provide net benefits in combating fraud .
+
+we observed that such technology could ultimately be utilized in the claims - processing environment to delay or even prevent the payment of questionable claims submitted by suspect providers .
+
+we have also reported on weaknesses in cms's processes for managing it investments based upon key practices established in our information technology investment management framework .
+
+specifically , in 2005 , we evaluated cms's capabilities for managing its internal investments , described plans the agency had for improving these capabilities , and examined the agency's process for approving and monitoring state medicaid management information systems .
+
+we found that cms had not established certain key practices for managing individual it investments and recommended that the cms administrator develop and implement a plan to address the it investment management weaknesses identified in the report .
+
+we also recommended that at a minimum , the agency should update its investment management guide to reflect current investment management processes .
+
+cms subsequently took actions to implement each of our recommendations .
+
+additionally , our 2007 study of the medicare durable medical equipment , prosthetics , orthotics , and supplies benefit found that it was vulnerable to fraud and improper payments .
+
+we recommended that cms direct its contractors to develop automated prepayment controls to identify potentially improper claims and consider adopting the most cost - effective controls of other contractors .
+
+cms concurred with the recommendation , but has not yet implemented the prepayment controls that we recommended .
+
+in 2009 , we examined the administration of the medicare home health benefit , which we found to leave the benefit vulnerable to fraud and improper payments .
+
+we made several recommendations to the administrator of cms , including directing contractors to conduct post - payment medical reviews on claims submitted by home health agencies with high rates of improper billing identified through prepayment review .
+
+cms stated it would consider two of our four recommendations — to amend regulations to expand the types of improper billing practices that are grounds for revocation of billing privileges , and to provide physicians who certify or recertify plans of care with a statement of services received by beneficiaries .
+
+cms neither agreed nor disagreed with our other two recommendations .
+
+finally , in testifying on medicare and medicaid fraud , waste , and abuse in march 2011 , we described steps that cms could take to reduce improper payments and the agency's recent solicitation for proposals of contracts for the development and implementation of automated tools that support reviews of claims before they are paid .
+
+these predictive modeling tools are intended to provide new capabilities to help prevent improper payments of medicare claims .
+
+cms has developed and implemented idr and one pi for use by its program integrity analysts , but idr does not include all the data the agency planned to have incorporated by the end of 2010 , and one pi is being used by a limited number of analysts .
+
+while cms has developed and begun using idr , the repository does not include all the planned data , such as medicaid and shared systems data .
+
+program officials attribute this lack of data to insufficient planning , which did not consider unexpected obstacles or allow time for contingencies .
+
+in addition , the agency has developed and deployed one pi , but the system is being used by less than 7 percent of the intended user community and does not yet provide as many tools as planned .
+
+according to agency officials , plans to train and deploy the system to a broad community of users were disrupted when resources dedicated to these activities were redirected to address a need to improve the user training program .
+
+further , plans and schedules for completing the remaining work have not been finalized , and cms has not identified risks and obstacles to project schedules that may affect its ability to ensure broad use and full implementation of the systems .
+
+until program officials finalize plans and develop reliable schedules for providing all planned data and capabilities and ensuring that one pi gains broader use throughout the program integrity community , cms will remain at risk of experiencing additional delays in reaching widespread use and full implementation of the systems .
+
+consequently , the agency may miss an opportunity to effectively use these it solutions to enhance its ability to detect fraud , waste , and abuse in the medicare and medicaid programs .
+
+idr has been in use by cms and contractor program integrity analysts since september 2006 and currently incorporates data related to claims for reimbursement of services under medicare parts a , b , and d. specifically , cms incorporated part d data into idr in september 2006 , as planned , and incorporated parts a and b data by the end of fiscal year 2008 .
+
+the primary source of these data is cms's national claims history database , from which data are extracted on a weekly basis .
+
+other supplemental data were incorporated into idr that are used to conduct program integrity analyses , including drug code data that are obtained from daily and weekly updates of data from cms's drug data processing system , and claims - related data about physicians that are retrieved from national provider index databases on a daily basis .
+
+additionally , idr contains data about beneficiaries that are extracted daily from the medicare beneficiary database and health plan contract and benefit data that are obtained on a weekly basis from cms's health plan management systems .
+
+according to idr program officials with the office of information services , the integration of these data into idr established a centralized source of data previously accessed from multiple disparate system files .
+
+cms reported to omb in 2010 that the agency had spent almost $48 million to establish idr and incorporate the existing data since the program was initiated .
+
+table 2 provides the actual costs of developing and implementing idr for each year since fiscal year 2006 , as reported to us by cms officials .
+
+although the agency has been incorporating data from various data sources since 2006 , idr does not yet include all the data that were planned to be incorporated by the end of 2010 and that are needed to support enhanced program integrity initiatives .
+
+specifically , the shared systems data that are needed to allow predictive analyses of claims are not incorporated .
+
+without this capability , program integrity analysts are not able to access data from idr that would help them identify and prevent payment of fraudulent claims .
+
+additionally , idr does not yet include the medicaid data that are critical to analysts' ability to detect fraud , waste , and abuse in the medicaid program .
+
+according to idr program officials , the shared systems data were not incorporated into idr because , although initial program integrity requirements included the incorporation of these data by july 2008 , funding for the development of the software and acquisition of the hardware needed to meet this requirement was not approved until the summer of 2010 .
+
+since then , idr program officials have developed project plans and identified users' requirements , and plan to incorporate shared systems data by november 2011 .
+
+with respect to medicaid data , program officials stated that the agency has not incorporated these data into idr because the original plans and schedules for obtaining medicaid data did not account for the lack of a mandate or funding for states to provide medicaid data to cms , or the variations in the types and formats of data stored in disparate state medicaid systems .
+
+in this regard , program officials did not consider risks to the program's ability to collect the data and did not include additional time to allow for contingencies .
+
+consequently , the idr program officials were not able to collect the data from the states as easily as they expected and , therefore , did not complete this activity as originally planned .
+
+in addition to the idr program , in december 2009 , cms initiated another agencywide program intended to , among other things , identify ways to collect medicaid data from the many disparate state systems and incorporate the data into a single data store .
+
+as envisioned by cms , this program , the medicaid and children's health insurance program business information and solutions program , or macbis , is to include activities in addition to providing expedited access to current data from state medicaid programs .
+
+for example , the macbis initiative is also intended to result in the development of a national system to address the needs of federal and state medicaid partners , along with technical assistance and training for states on the use of the system .
+
+once established , the macbis system data would then be incorporated into idr and made accessible to program integrity analysts .
+
+according to program planning documentation , this enterprisewide initiative is expected to cost about $400 million through fiscal year 2016 .
+
+however , plans for this program are not final , and funds for integrating medicaid data into idr have not yet been requested .
+
+according to agency planning documentation , as a result of efforts to be initiated under the macbis program , cms intends to incorporate medicaid data for all 50 states into idr by the end of fiscal year 2014 .
+
+program integrity officials stated that they plan to work with three states during 2011 to test the transfer and use of medicaid data to help cms determine the data that are available in those states' systems .
+
+the center for program integrity is also working with medicaid officials to establish a test environment to begin integrating state medicaid data into idr .
+
+despite establishing these high - level milestones , the agency has not finalized detailed plans for incorporating the medicaid data that include reliable schedules that identify all the necessary activities and resources for completing these efforts or the risks associated with efforts to collect and standardize data from 50 independent systems that differ in design , technology , and other characteristics dictated by state policies .
+
+table 3 shows the original planned dates for incorporating the various types of data and the data that were incorporated into idr as of the end of fiscal year 2010 .
+
+while cms has identified target dates for incorporating the remaining data , best practices , such as those described in our cost estimation guide , emphasize the importance of establishing reliable program schedules that include all activities to be performed , assign resources ( labor , materials , etc. ) .
+
+to those activities , and identify risks and their probability and build appropriate reserve time into the schedule .
+
+however , the idr schedule we reviewed did not identify all activities and necessary resources or include a schedule risk analysis .
+
+such an analysis could have helped cms identify and prepare for obstacles , such as those previously encountered in trying to incorporate medicaid data into idr and expected to be encountered as cms initiates efforts to collect and standardize data from 50 state systems .
+
+without establishing a reliable schedule for future efforts to incorporate new data sources , the agency will be at greater risk of schedule slippages , which could result in additional delays in cms's efforts to incorporate all the data sources into idr that are needed to support enhanced program integrity efforts .
+
+according to program officials , user acceptance testing of the one pi system was completed in february 2009 , and the system was deployed in september 2009 as originally planned .
+
+this initial deployment of one pi consisted of a portal that provided web - based access to analytical tools used by program integrity analysts to retrieve and analyze data stored in idr .
+
+cms reported to omb that the agency had spent almost $114 million to develop the existing features and functionality of the one pi system by the end of fiscal year 2010 .
+
+table 4 provides information on the actual costs of developing one pi since fiscal year 2006 , as reported to us by cms officials .
+
+as currently implemented , the system provides access to two analytical tools — advantage suite and business objects .
+
+documented specifications of the one pi system described advantage suite as a commercial , off - the - shelf decision support tool that is used to perform data analysis to , for example , detect patterns of activities that may identify or confirm suspected cases of fraud , waste , or abuse .
+
+according to program officials and the one pi users to whom we spoke , program integrity analysts use advantage suite to analyze claims data retrieved from idr and create standard and custom reports that combine data about costs and quality of services , providers , and beneficiaries .
+
+the results of this level of analysis may be used to generate leads for further analysis with business objects , which provides users extended capabilities to perform more complex analyses of data by allowing customized queries of claims data across the three medicare plan types .
+
+it also allows the user to create ad hoc queries and reports for nonroutine analysis .
+
+for example , an analyst could use advantage suite to identify potentially fraudulent trends in ambulance services .
+
+he or she could use the tool to gather data about claims for ambulance services and medical treatments , and then use business objects to conduct further analysis to determine associations between the two types of services .
+
+if the analyst found claims for ambulance travel costs but no corresponding claims for medical treatment , the analyst may conclude that the billings for those services were possibly fraudulent .
+
+figure 3 provides a simplified view of the idr and one pi environment as currently implemented .
+
+while program officials deployed the one pi portal and two analytical tools to cms and contractor program integrity analysts , the system was not being used as widely as planned .
+
+program planning documentation from august 2009 indicated that one pi program officials planned for 639 program integrity staff and analysts to be trained and using the system by the end of fiscal year 2010 ; however , cms confirmed that by the end of october 2010 only 42 of those intended users were trained to use one pi , and 41 were actively using the portal and tools .
+
+these users represent less than 7 percent of the original intended users .
+
+of these , 31 were contractors and 10 were cms staff who performed analyses of claims to detect potential cases of fraud , waste , and abuse .
+
+table 5 describes the analysts planned to be and actually using one pi at the end of fiscal year 2010 .
+
+according to one pi program officials , the system was not being used by the intended number of program integrity analysts because the office had not trained a sufficient number of analysts to use the system .
+
+similarly , although cms contractually requires medicare program integrity contractors to use the system , officials stated that they could not enforce this requirement because they also had not trained enough of their program integrity contractors .
+
+although one pi program plans emphasized the importance of effective training and communications , program officials responsible for implementing the system acknowledged that their initial training plans and efforts were insufficient .
+
+according to the officials , they initially provided training for the all the components of the system — the portal , tools , and use of idr data — in a 3-and - a - half - day course .
+
+however , they realized that the trainees did not effectively use one pi after completing the training .
+
+consequently , program officials initiated activities and redirected resources to redesign the one pi training plan in april 2010 , and began to implement the new training program in july of that year .
+
+the redesigned program includes courses on each of the system components and allows trainees to use the components to reinforce learning before taking additional courses .
+
+for example , the redesigned plan includes a one pi portal overview and data training webinars that users must complete before attending instructor - led training on advantage suite and business objects .
+
+the new plans also incorporate the use of “data coaches” who provide hands - on help to analysts , such as assistance with designing queries .
+
+additionally , the plans require users to complete surveys to evaluate the quality of the training and their ability to use the tools after they complete each course .
+
+as program officials took the initiative and time to redesign the training program , this effort caused delays in cms's plans to train the intended number of users .
+
+since the new training program was implemented , the number of users has not yet significantly increased , but the number of contractor analysts requesting training has increased .
+
+specifically , one pi officials told us that 62 individuals had signed up to be trained in 2011 , and that the number of training classes for one pi was increased from two to four per month .
+
+the officials also stated that they planned to reach out to and train more contractors and staff from the hhs oig and the department of justice to promote one pi .
+
+they anticipated that 12 inspectors general and 12 law enforcement officials would be trained and using one pi by the end of may 2011 .
+
+nonetheless , while these activities indicate some progress toward increasing the number of one pi users , the number of users expected to be trained and to begin using the system represents a small fraction of the population of 639 intended users .
+
+additionally , one pi program officials had not yet made detailed plans and developed schedules for completing training of all the intended users .
+
+further , although program officials had scheduled more training classes , they have not established deadlines for contractor analysts to attend training so that they are able to fulfill the contractual requirement to use one pi .
+
+unless the agency takes more aggressive steps to ensure that its program integrity community is trained , it will not be able to require the use of the system by its contractors , and the use of one pi may remain limited to a much smaller group of users than the agency intended .
+
+as a result , cms will continue to face obstacles in its efforts to deploy one pi to the intended number of program integrity users as the agency continues to develop and implement additional features and functionalities in the system .
+
+additionally , although efforts to develop and implement one pi were initiated in 2006 and the advantage suite and business objects tools are fully developed , implemented , and in use , the one pi system does not yet include additional analytical functionality that cms initially planned to implement by the end of 2010 .
+
+program documentation for the system includes plans for future phases of one pi development to incrementally add new analytical tools , additional sources of data , and expanded portal functionality , such as enhanced communications support , and specifically included the integration of a third tool by the end of fiscal year 2010 .
+
+however , program officials have not yet identified users' needs for functionality that could be provided by another tool , such as the capability to access and analyze more data from idr than the current implementation of the system provides .
+
+according to program officials , they intend to determine users' needs for additional functionality when the system becomes more widely used by agency and contractor analysts who are able to identify deficiencies and define additional features and functionality needed to improve its effectiveness .
+
+additionally , as with idr , in developing the one pi schedule estimate that was provided to omb in 2010 , program officials did not complete a risk assessment for the schedule that identified potential obstacles to the program .
+
+as a result , they lacked information needed to plan for additional time to address contingencies when obstacles arose .
+
+as the program office makes plans for deploying the system to the wide community of program integrity analysts and implementing additional tools , it is crucial that officials identify potential obstacles to the schedules and the risks they may introduce to the completion of related activities .
+
+for example , an analysis that identified the risk that resources would need to be redirected to other elevated priorities , such as user training , could have informed managers of the need to include additional time and resources in the schedule to help keep the development and deployment of one pi on track .
+
+unless program officials complete a risk assessment of schedules for ongoing and future activities , cms faces risks of perpetuating delays in establishing widespread use of one pi and achieving full implementation of the system for increased rates of fraud , waste , and abuse detection .
+
+our prior work emphasized agencies' need to ensure that it investments actually produce improvements in mission performance .
+
+as we have reported , agencies should forecast expected benefits and then measure actual financial benefits accrued through the implementation of it programs .
+
+further , omb requires agencies to report progress against performance measures and targets for meeting them that reflect the goals and objectives of the programs .
+
+to do this , performance measures should be outcome - based , developed with stakeholder input , and monitored and compared to planned results .
+
+additionally , industry experts describe the need for performance measures to be developed with stakeholders' input early in a project's planning process to provide a central management and planning tool and to monitor the performance of the project against plans and stakeholders' needs .
+
+as stated in program planning documentation , idr's overall goal is to integrate medicare and medicaid data so that cms and its partners may access the data from a single source .
+
+specifically , the implementation of idr was expected to result in financial benefits associated with the program's goal to transition from a data environment of stove - piped , disparate databases and systems to an integrated data environment .
+
+officials with the office of information services stated that they developed estimates of financial benefits expected to be realized through the use of idr .
+
+in 2006 , program officials projected financial benefits from idr of $152 million at an estimated cost of $82 million , or a net benefit of about $70 million .
+
+in 2007 these officials revised their projection of total financial benefits to $187 million based on their estimates of the amount of improper payments they expected to be recovered as a result of analyzing data provided by idr .
+
+the resulting net benefit expected from implementing idr was estimated to be $97 million in 2010 due to changes in program cost estimates .
+
+table 6 includes cms's estimated financial benefits , costs , and net benefits reported to omb for the lifecycle of the program from fiscal year 2006 to 2010 .
+
+however , as of march 2011 , program officials had not identified actual financial benefits of implementing idr based on the recovery of improper payments .
+
+in our discussions with the office of information services , program officials stated they determined that deploying idr led to the avoidance of it costs as a result of the retirement of several legacy systems attributable to the implementation of idr .
+
+however , they had not quantified these or any other financial benefits .
+
+until officials measure and track financial benefits related to program goals , cms officials cannot be assured that the use of the system is helping the agency prevent or recover funds lost as a result of improper payments of medicare and medicaid claims .
+
+additionally , while program officials defined and reported to omb performance targets for idr related to some of the program's goals , they do not reflect its goal to provide a single source of medicare and medicaid data for program integrity efforts .
+
+although progress made to date in implementing idr supports the program's goals to transition cms to an integrated data environment , program officials have not defined and reported to omb performance measures to gauge the extent to which the program is meeting this goal .
+
+specifically , idr officials defined performance measures for technical indicators , such as incorporating medicare data into the repository , making the data available for analysis , and reducing the number of databases cms must support , but they have not defined measures and targets that reflect the extent to which all the data needed to support program integrity initiatives are incorporated into a single source , including the medicaid and shared systems data which have not yet been incorporated into idr .
+
+further , the idr performance measures do not reflect indicators that may lead to the program's ability to achieve the financial benefits defined by the agency's program integrity initiatives .
+
+in discussing this matter , idr officials stated that the performance measures for the program are only intended to track progress toward implementing technical capabilities of the system , such as the amount of data from specific sources incorporated into the repository and made available through software tools to analysts .
+
+they do not define performance indicators , measures , and targets for incorporating data from future sources of data until plans are made and funds are provided by the agency's business offices to begin activities to implement new functionalities into idr .
+
+idr program officials also stated that they do not define or track business - related performance indicators for achieving specific program integrity goals ; rather , they depend upon business owners to measure and track these indicators based upon the use of idr data to achieve business goals .
+
+however , without performance measures that reflect business owners' and other stakeholders' needs for the program to deliver a single source of all medicare and medicaid data needed to conduct analyses , and lacking measures that reflect the success of the program toward achieving financial benefits projected for program integrity initiatives , program officials lack key management information needed to ensure that the data and infrastructure components provided by idr enhance cms's ability to meet its program integrity goals and objectives .
+
+without this assurance , the effectiveness of the system's capability to increase rates of fraud , waste , and abuse detection and , consequently , decrease the amount of money lost to improper payments of claims will remain unknown .
+
+the center for program integrity's overall goal for one pi was to provide robust tools for accessing a single source of information to enable consistent , reliable , and timely analyses to improve the agency's ability to detect fraud , waste , and abuse .
+
+achieving this goal was intended to result in the recovery of significant funds lost each year from improper payments of medicare and medicaid claims .
+
+in september 2007 , program officials projected financial benefits from implementing one pi — nearly $13 billion over the 10-year lifecycle of the project .
+
+according to program officials , these benefits were expected to accrue from the recovery of improper payments of medicare and medicaid claims and reduced program integrity contractor expenditures for supporting it required to maintain separate databases .
+
+in september 2007 , one pi officials projected and reported to omb benefits of nearly $13 billion .
+
+they subsequently revised this estimate to approximately $21 billion .
+
+program officials told us that increases in the projected financial benefits were made based on assumptions that accelerated plans to integrate medicare and medicaid data into a central data repository would enable one pi users to identify increasing numbers of improper payments sooner than previously estimated , thus allowing the agency to recover more funds lost due to payment errors .
+
+table 7 provides data cms reported to omb on estimated benefits and costs , actual costs as of the end of fiscal year 2010 , and net benefits projected to be realized as a result of implementing one pi from fiscal year 2007 through 2010 .
+
+however , the current implementation of one pi has not yet produced outcomes that position the agency to identify or measure financial benefits .
+
+therefore , the net financial benefit of developing and implementing one pi remains unknown .
+
+center for program integrity officials stated that at the end of fiscal year 2010 — over a year after deploying one pi — it was too early to determine whether the program has provided any financial benefits because , since the program had not met its goal for widespread use of one pi , there were not enough data available to quantify financial benefits attributable to the use of the system .
+
+these officials anticipated that as the user community is expanded , they will be able to begin to identify and measure financial and other benefits of using the system .
+
+however , the officials also indicated that they had not yet defined mechanisms for determining the amount of money recovered as a result of detecting improper payments through the use of one pi .
+
+as with idr , until the agency quantifies and tracks the progress it is making in delivering benefits intended to be realized through widespread use of one pi , cms officials cannot be assured of the cost - effectiveness of implementing one pi to help the agency meet its goal to enable consistent , reliable , and timely analyses of data to improve the agency's ability to detect fraud , waste , and abuse .
+
+additionally , in discussion groups held with active one pi users , program integrity analysts identified several issues that confirmed the agency's limited progress toward meeting the goals of the program .
+
+for example , while several users told us that the one pi system can support their work , they recognized limited progress toward the establishment of a single source of information and analysis tools for all fraud , waste , and abuse activities .
+
+further , one pi users stated that the system enabled analysts to access national data not otherwise accessible to them and supported analysis across different medicare programs .
+
+they also noted that the tools offered by one pi provided more functionality than other tools they use .
+
+however , of the analysts in the discussion groups , most did not use one pi as their only source of information and analysis for detecting improper payments .
+
+rather , to help conduct their work , they relied on other analysis tools provided by cms or their companies , along with data from cms claims processing contractors or from private databases created by other contractors .
+
+one pi users in the discussion groups also told us that they use other tools because they are more familiar with those tools .
+
+additionally , they stated that other databases sometimes provide data that are not currently accessible through one pi and idr , such as demographic data about providers .
+
+program integrity analysts further stated that they only use one pi as a cross - check of data and analysis from their own systems because they are not yet convinced that one pi can be used as a replacement for or adjunct to those data sources and tools .
+
+further , cms officials have not developed quantifiable measures for meeting the program's goals .
+
+cms officials defined and reported to omb performance measures and targets toward meeting the program's goals for enabling timely analyses of data to detect cases of fraud , waste , and abuse , but have not yet been able to quantify measures for these indicators .
+
+for example , performance measures and targets for one pi include increases in the detection of improper payments for medicare parts a and b claims .
+
+however , according to program integrity officials , measures had not yet been quantified because they had not yet identified ways to determine the extent to which increases in the detection of errors could be attributed to the use of one pi .
+
+additionally , the limited use of the system has not generated enough data to quantify the amount of funds recovered from improper payments .
+
+moreover , measures of one pi's program performance do not accurately reflect the current state of the program .
+
+specifically , indicators to be measured for the program include the number of states using one pi ( for medicaid integrity purposes ) and decreases in the medicaid payment error rate , but one pi does not have access to those data because they are not yet incorporated into idr .
+
+therefore , these performance indicators are not relevant to the current implementation of the system .
+
+finally , cms officials did not consult external system users ( eg , program integrity contractors ) in developing measures of one pi's effectiveness .
+
+according to industry experts , developing performance measures with stakeholder input early in the planning process can provide a mechanism for gauging the effectiveness of outcomes toward meeting business needs and achieving program goals as a program progresses .
+
+however , cms officials did not consult external users of the system about how they would measure its effectiveness .
+
+according to program officials , program integrity stakeholders within cms were involved in the development of the performance measures ; however , external users of the system were not asked to provide input when it may have been used to establish an effective performance tracking tool , such as when defining ways to determine whether one pi meets stakeholders' needs .
+
+for example , program officials told us that they intend to determine user satisfaction , a performance measure reported to omb , by conducting surveys at the end of training sessions .
+
+however , these surveys were conducted before the analysts actually used the system in their work and were focused on satisfaction with the training itself .
+
+in this case , involvement of external stakeholders when defining the measure could have led to more effective ways to determine user satisfaction , such as surveying analysts based on their experiences resulting from the use of one pi after a certain period of time defined by stakeholders .
+
+until they define measurable performance indicators and targets that reflect the goals and objectives of cms's program integrity initiatives , agency officials will continue to lack the information needed to ensure that the implementation of one pi helps improve the agency's ability to identify improper payments and to detect cases of fraud , waste , and abuse .
+
+additionally , when lacking stakeholders' input into the process for determining measures of successful performance , one pi program officials may miss an opportunity to obtain information needed to define meaningful measures that reflect the success of the program toward meeting users' and the agency's needs .
+
+because it lacks meaningful outcome - based performance measures and effective methods for tracking progress toward meeting performance targets , cms does not have the information needed to ensure that the system is useful to the extent that benefits realized from the implementation of one pi help the agency meet program integrity goals .
+
+idr and one pi program officials have made progress in developing and implementing idr and one pi to support cms's program integrity initiatives , but the systems do not yet provide all the data and functionality initially planned .
+
+additionally , cms program integrity officials have not yet taken appropriate actions to ensure the use of idr and one pi on a widespread basis for program integrity purposes .
+
+further , program officials have not defined plans and reliable schedules for incorporating the additional data into idr that are needed to support its program integrity goals .
+
+until the agency takes these steps , it cannot ensure that ongoing development , implementation , and deployment efforts will provide the data and technical capabilities needed to improve program integrity analysts' capabilities for detecting potential cases of fraud , waste , and abuse .
+
+furthermore , because the systems are not being used as planned , cms program integrity officials are not yet in a position to determine the extent to which the systems are providing financial benefits or supporting the agency's initiatives to meet its program integrity goals and objectives .
+
+until it does so , cms officials will lack the means to determine whether the use of the systems contributes to the agency's goal of reducing the number and amounts of improper payments made as a result of fraudulent , wasteful , or abusive claims for medicare and medicaid services .
+
+furthermore , the contribution of idr and one pi to the agency's efforts to save billions of dollars each year attributable to improper payments made due to fraud , waste , and abuse in the medicare and medicaid programs will remain unknown .
+
+to help ensure that the development and implementation of idr and one pi are successful in helping the agency meet the goals and objectives of its program integrity initiatives , we are recommending that the administrator of cms take the following seven actions: finalize plans and develop schedules for incorporating additional data into idr that identify all resources and activities needed to complete tasks and that consider risks and obstacles to the idr program ; implement and manage plans for incorporating data in idr to meet schedule milestones ; establish plans and reliable schedules for training all program integrity analysts intended to use one pi ; establish and communicate deadlines for program integrity contractors to complete training and use one pi in their work ; conduct training in accordance with plans and established deadlines to ensure schedules are met and program integrity contractors are trained and able to meet requirements for using one pi ; define any measurable financial benefits expected from the implementation of idr and one pi ; and with stakeholder input , establish measurable , outcome - based performance measures for idr and one pi that gauge progress toward meeting program goals .
+
+in written comments on a draft of this report , signed by hhs's assistant secretary for legislation and reprinted in appendix ii , cms stated that it concurred with all of our recommendations and identified steps agency officials were taking to implement them .
+
+among these were actions to further refine training plans to better ensure that program integrity contractors are trained and able to meet requirements to use one pi , along with efforts to define measurable financial benefits expected from augmenting the data in idr .
+
+if these and other identified actions are implemented in accordance with our recommendations , cms will be better positioned to meet the goals and objectives of its program integrity initiatives .
+
+the agency also provided technical comments , which were incorporated as appropriate .
+
+as we agreed with your offices , unless you publicly announce the contents of this report earlier , we plan no further distribution of it until 30 days from the date of this letter .
+
+at that time , we will send copies of this report to appropriate congressional committees , the administrator of cms , and other interested parties .
+
+the report will also be available at no charge on the gao web site at http: / / www.gao.gov .
+
+if you or your staffs have questions about this report , please contact me at ( 202 ) 512-6304 or melvinv@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+key contributors to this report are listed in appendix iii .
+
+the objectives of our review were to ( 1 ) assess the extent to which the centers for medicare and medicaid services ( cms ) has developed and implemented the integrated data repository ( idr ) and one program integrity ( one pi ) systems and ( 2 ) determine the agency's progress toward achieving defined goals and objectives for using the systems to help detect fraud , waste , and abuse in the medicare and medicaid programs .
+
+to assess the extent to which idr and one pi have been developed and implemented , we collected and analyzed agency documentation that described planning and management activities .
+
+specifically , we assessed project management plans and artifacts that described the status of the systems , such as program management review briefings to technical review boards , and memoranda approving continued development and implementation of the systems at key decision points in the systems' lifecycles .
+
+we observed the operation of cms's data center where idr is installed and viewed a demonstration of the one pi portal and analytical tools .
+
+we also discussed with officials from cms's office of information services and center for program integrity plans for and progress made toward developing and implementing the systems .
+
+we focused our analysis on the extent to which the development and implementation of idr and one pi met system and business requirements and plans for deploying the systems to cms's program integrity analysts .
+
+to assess the agency's processes for defining system requirements , we reviewed idr and one pi requirements management plans , system requirements , and documentation that traces requirements to functionality provided by the systems at different stages of implementation .
+
+program documents we reviewed include the 2007 idr medicare program integrity requirements , the 2006 one pi startup findings draft , the 2010 one pi requirements management plan , and detailed software requirements specifications for one pi .
+
+in addition , we discussed with idr and one pi program officials their requirements development and management processes and procedures .
+
+we then assessed the department's current approach to requirements development and management against best practices identified in the software engineering institute's capability maturity model integration .
+
+to assess schedule estimates of the idr and one pi programs , we used criteria defined in gao's cost estimating and assessment guide to determine the extent to which relevant schedules were prepared in accordance with best practices that are fundamental to estimating reliable schedules .
+
+we identified information reported to the office of management and budget ( omb ) by cms in fiscal year 2010 that defined program schedule estimates for the remaining lifecycles of the programs through 2016 .
+
+we collected and analyzed program documentation that supported these estimates , such as work breakdown structures and staffing estimates .
+
+to assess each program's schedule estimates , we rated the idr and one pi program management offices' implementation of nine scheduling best practices defined in our guidance .
+
+based on these criteria , we analyzed the one pi integrated master schedule and the idr validation , along with supporting documentation , and used commercially available software tools to assess the schedules .
+
+specifically , we determined whether each schedule was developed by identifying and including critical elements of reliable scheduling best practices , such as identifying all resources needed to conduct activities , and whether risk assessment and contingency plans had been conducted for the schedules .
+
+we shared our guidance , the criteria against which we evaluated the program's schedule estimates , as well as our preliminary findings with program officials .
+
+we then discussed our preliminary assessment results with the program management officials .
+
+when warranted , we updated our analyses based on the agency response and additional documentation provided to us .
+
+we also analyzed changes to the program schedules over time .
+
+to determine the reliability of the data used to assess schedule estimates , we used a scheduling analysis software tool that identified missing logic and constraints , and checked for specific problems that could hinder the schedule's ability to dynamically respond to changes .
+
+we examined the schedule data to identify any open - ended activities ( i.e. , activities with no predecessor or successors ) , and searched for activities with poor logic , such as activities with constraints that keep the schedule rigid ( eg , start no earlier than , finish no later than , etc. ) .
+
+we found the data sufficiently reliable for the purposes of this review .
+
+to determine the number of system end users for one pi , we identified the universe of analysts trained to use one pi by examining documentation provided by cms .
+
+specifically , we obtained a list of trained users from the center for program integrity .
+
+from that list , we selected program integrity analysts whom cms identified as using the system to conduct analyses of idr data to identify potential cases of fraud , waste , and abuse .
+
+we then compared this selection of analysts to data generated by the one pi system that recorded user login data from january 3 , 2010 , through october 16 , 2010 , to identify the current population of one pi users .
+
+through this analysis , we identified 41 trained program integrity analysts who had used the system during the designated time period , including 8 medicare drug integrity contractors , 23 zone program integrity and program safeguard contractors , and 10 cms program integrity analysts .
+
+to ensure that the data that we used to identify one pi users were reliable , we held discussions with cms officials who were knowledgeable of the user community and mechanisms for accessing the system .
+
+we discussed with them the list of trained end users and the computer - generated login information provided by the system .
+
+we also discussed the reliability of the computer - generated system login information .
+
+specifically , agency officials confirmed that the data reported by the system were complete and accurate and that the method we used to identify active users — an analysis of system login data — was valid .
+
+to determine the extent to which the idr and one pi programs have achieved defined goals and objectives for using the systems to help detect fraud , waste , and abuse , we collected cms's analyses of projected costs and benefits for idr and one pi .
+
+we also collected and assessed data reported on the costs and benefits realized through the current implementation of the systems .
+
+to do so , we compared ( 1 ) actual costs and benefits attributed to each system through fiscal year 2010 and ( 2 ) current estimated total lifecycle costs and benefits for each system .
+
+we calculated the expected net benefit by subtracting estimated and actual system costs from estimated and actual system benefits for each system .
+
+to understand how costs and benefits for each system were derived , we met with officials from the office of information services and from the center for program integrity and discussed cms's processes for estimating and tracking costs and benefits of both idr and one pi .
+
+we also obtained from agency officials documentation about and descriptions of qualitative benefits provided by both systems .
+
+additionally , we reviewed planning documents that described the goals and objectives of both programs , along with other documentation that described actions taken to address program goals and objectives .
+
+we reviewed and assessed supporting documentation for the measures , which the agency reported to omb as having been met .
+
+to determine if cms's approach to developing performance measures for idr and one pi was consistent with federal guidance , we examined documents describing cms's approach and held discussions with program officials about practices they followed when defining performance measures and targets .
+
+we compared program officials' practices to guidance defined by omb .
+
+we also compared the performance measures defined for the two programs to cms's goals and objectives for program integrity initiatives to determine if the idr and one pi measures supported intended outcomes of agencywide efforts to better detect fraud , waste , and abuse .
+
+we supplemented our documentation review with interviews of officials from the center for program integrity and the office of information services to obtain additional information about the development of current and future performance measures for idr and one pi .
+
+during our interviews , we discussed performance measures and strategic goals and initiatives for one pi and idr , and the extent to which the agency involved internal and external stakeholders in the development of performance measures .
+
+to obtain information about the extent to which one pi has been deployed and is being used by a broad community of program integrity analysts to meet cms's goals and objectives , we invited the 41 users we identified in addressing the first objective of this engagement to participate in facilitated discussions about the data and tools needed to support fraud , waste , and abuse detection .
+
+thirty - two of those 41 users attended the discussion group meetings .
+
+during those meetings , we discussed the following topics: usage of one pi tools and data from idr , comparison and contrasting of one pi and idr with other tools and data sets , and benefits and challenges of using one pi and idr for detecting fraud , waste , and abuse .
+
+we also discussed users' needs for analytical tools and data and for systems training .
+
+after those discussions , we sent written questions to all 32 discussion group participants to obtain more detailed information about their use of analytical tools and data sources .
+
+thirty - one participants responded and provided additional supplementary information about their use of one pi and idr .
+
+for each of the objectives , we assessed the reliability of the data we analyzed through interviews with agency officials knowledgeable of the user community and training program , mechanisms for accessing the systems , and the methods for tracking and reporting costs and schedules of the idr and one pi programs .
+
+we found the data sufficiently reliable for the purposes of this review .
+
+we conducted this performance audit from june 2010 through june 2011 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+in addition to the contact named above , teresa f. tucker ( assistant director ) , sheila k. avruch ( assistant director ) , april w. brantley , clayton brisson , neil j. doherty , amanda c. gill , kendrick m. johnson , lee a. mccracken , terry l. richardson , karen a. richey , and stacey l. steele made key contributions to this report .
+

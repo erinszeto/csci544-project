@@ -1,0 +1,630 @@
+in 2010 , the federal aviation administration ( faa ) issued a final rule that requires all aircraft — including military aircraft — flying in specified airspace within the national airspace system as of january 1 , 2020 , to be equipped with technology that would transmit flight information to an enabled receiver .
+
+this technology — known as automatic dependent surveillance - broadcast ( ads - b ) out — is a key component of the faa's next generation air transportation system ( nextgen ) , which seeks to modernize the current ground - based radar system to a satellite - derived system for automated aircraft position reporting , navigation , and digital communications .
+
+ads - b out uses an aircraft's avionics equipment to broadcast the aircraft's position , altitude , and velocity to any ground , air , or space - based receiver .
+
+over the years , the department of defense ( dod ) has expressed concern about the operations security risk of openly transmitting flight data from military aircraft .
+
+for example , in dod's 2008 comments about faa's draft rule requiring ads - b out technology , the department informed faa that it was possible to identify and potentially compromise dod aircraft conducting sensitive missions in the united states due to ads - b out technology .
+
+the north american aerospace defense command ( norad ) and dod have also expressed concerns about the faa's plan to decommission faa legacy radar systems on which norad relies to conduct aerospace warning and aerospace control missions , and on which dod relies to conduct its air traffic missions .
+
+in addition , a number of assessments conducted by dod , faa , and others have identified security concerns inherent in ads - b out technology that could leave aircraft , tactical air traffic control systems , and faa radars vulnerable to electronic warfare - and cyber - attacks by individuals , groups , or nation - state actors ( hereinafter referred to as “adversaries” ) and other types of interference .
+
+in addition , according to these assessments , adversaries could create false signals ( that is , “spoofing” ) or jam signals from ads - b out technology to obscure air traffic control and surveillance visibility .
+
+recognizing the importance of participating in the nextgen interagency partnership , the deputy secretary of defense issued a memorandum in 2007 designating the air force as the lead service responsible for representing dod in the partnership , including leading and coordinating associated efforts across the department .
+
+in addition , the memorandum identified key tasks to help ensure and enhance the department's ability to operate seamlessly with civil aviation in both national and international airspace .
+
+senate report 114-255 , accompanying a bill for the national defense authorization act of fiscal year 2017 , included a provision that we assess the national defense implications of faa's implementation of ads - b as part of the agency's nextgen modernization effort .
+
+this report assesses the extent to which ( 1 ) dod and faa have identified security and operations risks and approved solutions to address these risks to military aircraft equipped with ads - b out technology ; and ( 2 ) dod has implemented key tasks in the 2007 deputy secretary of defense memorandum on implementing nextgen ( hereinafter referred to as the 2007 nextgen memorandum ) .
+
+this is a public version of a classified report that we issued in january 2018 .
+
+this report does not identify specific classified details of dod assessments , security risks , and other actions dod is taking to address security risks related to ads - b out or the nextgen system that dod deemed to be sensitive .
+
+although the information provided in this report is less detailed , it addresses the same objectives as our classified report .
+
+in addition , the overall methodology used for both reports is the same .
+
+to assess the extent to which dod and faa have identified risks and approved solutions to address these risks to military aircraft equipped with ads - b out technology , we reviewed policies , procedures , guidance , assessments , and other relevant documents from norad , dod , and faa .
+
+these documents address ads - b implementation , acquisition , operations , cybersecurity , risk management and mitigation , and any other issues that may be pertinent to identifying and addressing operations and security risks resulting from ads - b .
+
+we also reviewed publicly available literature discussing potential ads - b cybersecurity vulnerabilities .
+
+we interviewed officials from norad , dod , and faa about potential risks , vulnerabilities , and mitigation strategies .
+
+we also reviewed classified intelligence reports that assessed the vulnerabilities of ads - b technology .
+
+while military aircraft and existing radar systems may be equipped with other devices ( such as mode s transponders ) that could also pose security risks , this report focused primarily on risks and potential solutions associated with ads - b out technology that faa mandated dod to install on its aircraft by january 1 , 2020 .
+
+to understand dod and faa coordination , we reviewed laws , guidance , and directives related to agency cooperation for the nextgen system and implementation of ads - b technology .
+
+this included the 2010 faa final rule published in the federal register that provided guidelines and requirements for coordination between agencies and the 2007 nextgen memorandum on implementing nextgen .
+
+to assess the extent to which dod has implemented key tasks in the 2007 nextgen memorandum , we compared the actions taken , if any , to implement eight tasks directed by the deputy secretary of defense .
+
+we selected these eight from the list of twenty tasks in the memorandum .
+
+we selected these eight tasks because , if completed , these eight tasks would be significant to the development of plans and policies related to the implementation of the faa's ads - b out technology requirement .
+
+to evaluate completion of the selected tasks , we reviewed documents and interviewed dod officials to determine the degree to which dod has implemented the tasks identified by the 2007 nextgen memorandum .
+
+further details on our scope and methodology can be found in appendix i .
+
+we conducted this performance audit from june 2016 to january 2018 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+in december 2003 congress enacted the century of aviation reauthorization act , laying the foundation for nextgen .
+
+the intent of nextgen is to increase air transportation - system capacity , enhance airspace safety , reduce delays experienced by airlines and passengers , lower fuel consumption , and lessen adverse environmental effects from aviation , among other benefits .
+
+this effort is a multi - year , incrementally iterative transformation that will introduce new technologies and leverage existing technologies to affect every part of the national airspace system .
+
+these new technologies will use an internet protocol - based network to communicate .
+
+nextgen consists of components that provide digital communications between controllers and pilots , and that also use satellite - based surveillance to aid in airspace navigation .
+
+because of these new communication methods , nextgen increases reliance on integrated information systems and distribution of information , digital communication methods , and global positioning system ( gps ) technology that may put the air traffic control system at greater risk for intentional or unintentional information - system failures and breaches .
+
+we have previously reported on progress that faa has made in implementing nextgen .
+
+for example , in 2015 we found that faa faces cybersecurity challenges in at least three areas: ( 1 ) protecting air - traffic control information systems , ( 2 ) protecting aircraft avionics used to operate and guide aircraft , and ( 3 ) clarifying cybersecurity roles and responsibilities among multiple faa offices .
+
+among other recommendations , we recommended — and faa concurred — that the agency should assess developing a cybersecurity threat model .
+
+historically , faa and dod capabilities have allowed both agencies — as well as norad — to monitor and track military aircraft flying in the national airspace .
+
+for example , faa maintains two layers of radar — primary surveillance radar and secondary surveillance radar — to track and identify aircraft flying in the national airspace system .
+
+primary surveillance radar identifies the location of aircraft flying in the national airspace by transmitting a signal and calculating the amount of time that passes until that signal bounces off the aircraft and returns to the radar .
+
+faa also uses secondary surveillance radar that transmits an interrogation signal to aircraft flying in the national airspace .
+
+a receiver on the aircraft receives the interrogation signal and then transmits a broadcast back to this radar with flight information .
+
+table 1 shows the evolution and capabilities of different transponders that broadcast aircraft information to receivers .
+
+the fields identified in the table are critical for identifying and tracking aircraft .
+
+of the different transponder modes and technology , ads - b out provides the most precise and comprehensive data .
+
+ads - b out makes it easier for third parties to identify and track aircraft , as ads - b out broadcasts include registration number , precise location , aircraft dimensions , and other information .
+
+this additional information reduces the need to identify aircraft using private databases and to determine aircraft location by comparing time difference of arrival among receivers .
+
+the content of these aircraft broadcasts varies depending on the type of transmitter providing the information from the aircraft .
+
+for example , earlier broadcast systems , including the mode 3 / a and mode c systems , transmit a temporary four - digit transmit code ( commonly referred to as a squawk code ) assigned by air traffic control that facilitates aircraft tracking during a single flight .
+
+since faa was the sole source of flight data for systems preceding mode s , the agency could filter out military aircraft flight information for security reasons before providing information to the public about other aircraft flying in the national airspace .
+
+mode s transponders provide more information than do the mode 3 / a and mode c transponders .
+
+for example , the mode s transponder broadcast identifies an aircraft - specific , 24-bit fixed address ( commonly known as the icao address ) assigned under international civil aviation organization ( icao ) standards .
+
+an aircraft retains this fixed address based on its registration , and thereby facilitates aircraft identification until the aircraft is reregistered and receives a new icao address .
+
+faa and aviation groups have reported that with the proliferation of commercial and amateur receivers , the public can now track individual aircraft by receiving the aircraft's icao address , squawk code , and altitude .
+
+in addition , these entities have reported that since aviation groups and hobbyists have connected the receivers , the networked receivers can calculate and identify the latitude and longitude of the aircraft they are tracking .
+
+in addition , according to these reports , some groups maintain aircraft information databases and receiver networks that can identify aircraft by icao address and can locate aircraft by comparing the time difference of arrival of mode s signals between three or more receivers .
+
+using data derived from this work , interested parties — including adversaries ( for example , foreign intelligence entities , terrorists , and criminals ) — can identify military aircraft by type and registration number , and can track the aircraft while in flight through mode s fixed address broadcasts .
+
+using this readily available public information , we were able to track various kinds of military aircraft that were equipped with mode s transponders .
+
+ads - b consists of two distinct aircraft information services , ads - b out and ads - b in .
+
+as previously stated , ads - b out technology is one of the main components of faa's nextgen effort .
+
+it is a performance - based surveillance technology using gps - enabled satellites to produce flight information , such as an aircraft's location and velocity , and according to faa , it is more precise than radar .
+
+these precise data provide air traffic controllers and pilots with more accurate information to keep aircraft safely separated in the national airspace .
+
+this technology combines aircraft avionics , a positioning capability , and ground infrastructure to enable accurate transmission of information from aircraft to the air traffic control system .
+
+this technology periodically transmits information without a pilot or operator involved ( that is , automatic ) ; collects information from gps or other suitable navigation systems ( that is , dependent ) ; provides a method of determining 3-dimensional position and identification of aircraft , vehicles , or other assets ( that is , surveillance ) ; and transmits the information available to anyone with the appropriate receiving equipment ( that is , broadcast ) .
+
+using this readily available public information , we were able to track various kinds of military aircraft that were equipped with ads - b transponders .
+
+ads - b in is the technology that enables receivers to have direct access to information broadcasted through ads - b out transponders .
+
+faa's final rule requiring all aircraft that fly in certain categories of airspace to equip with ads - b by january 1 , 2020 , applies to the ads - b out technology .
+
+faa has not issued a rule or requirement for aircraft to equip with the ads - b in technology , as of july 2017 .
+
+however , according to representatives from airlines for america , an airline industry advocacy organization , airlines have begun to install the ads - b in capability on commercial aircraft due to the benefits they anticipate from the capability ( for example , the ability of passenger airliners to reduce separation standards to save time and reduce fuel consumption ) .
+
+in addition , according to air force officials , the air force plans to install ads - b in on future kc - 46 transport / tanker aircraft .
+
+this report focuses on the ads - b out requirement when referencing ads - b technology unless otherwise noted .
+
+according to dod and faa documents and officials , faa has identified ads - b implementation as providing an opportunity to save costs by divesting a number of secondary - surveillance radars .
+
+according to faa officials , as of april 2017 the agency was re - evaluating its original ads - b backup strategy and the need for retaining additional secondary - surveillance radars .
+
+according to these officials , faa plans to maintain all high - altitude secondary - surveillance radars and the low - altitude secondary - surveillance radars around 30 or more of the busiest airports .
+
+the faa and dod are to cooperate in order to regulate airspace use .
+
+specifically , the faa is responsible for providing air navigation services , including air traffic control across most of the united states , and is leading the overall nextgen efforts in the united states .
+
+the faa's air traffic control system works to prevent collisions involving aircraft operating in the national airspace system , while also facilitating the flow of air traffic and supporting national security and homeland defense missions .
+
+in addition , in accordance with international civil aviation organization guidelines , the faa has categorized airspace as controlled , uncontrolled , or not used in the united states .
+
+according to the ads - b out rule , after january 1 , 2020 , no person may operate an aircraft in certain categories of airspace defined by the rule unless otherwise authorized by air traffic control authorities .
+
+dod conducts its missions within the national airspace system as both an aircraft operator and , as delegated by the faa , as provider of air traffic control and other air navigation services .
+
+dod has the authority to certify its own aircraft , manage airspace , and provide air traffic control - related services in accordance with faa requirements .
+
+dod also provides guidance to faa concerning security matters pertaining to the national airspace system .
+
+dod is responsible for ensuring that dod components , such as the military services , have sufficient access to airspace to meet security requirements , and that civilian and military aircraft can operate safely both domestically and abroad .
+
+dod also releases airspace to the faa when it does not need the space for military purposes .
+
+the faa also works with dod to ensure aviation safety between civil and military aircraft .
+
+the faa designates airspace over certain parts of the united states as special use airspace , because the areas may have prohibited airspace , restricted airspace , warning areas , or alert areas .
+
+it might be hazardous for civil aircraft to operate in that restricted airspace due to these designations .
+
+special use airspace allows military aircraft to operate safely in separate , clearly defined airspace in order to conduct missions in support of the national security strategy and the national military strategy .
+
+the faa also issues safety briefings that could identify military - protected , temporarily flight - restricted areas , to prevent civil pilots from flying into the airspace .
+
+these briefings also include information such as flight safety advice and information on air traffic technology , such as ads - b .
+
+the faa also shares radar information with norad to support the defense of north america over areas such as the national capital region surrounding washington , d.c .
+
+the faa is responsible for providing airspace navigation services within the united states and has a particular entity — the faa office of nextgen — that directs its nextgen requirements .
+
+in 2007 the deputy secretary of defense designated the air force as the lead service for representing dod and for leading and coordinating efforts across dod .
+
+to accomplish this responsibility , the air force established a lead service office , hereinafter referred to as the dod lead service office .
+
+these and numerous other entities have a role in implementing nextgen and ads - b , as shown in table 2 below .
+
+since 2008 , dod and faa have identified a variety of ads - b - related risks that could adversely affect military security and missions .
+
+while dod and faa have identified some potential mitigations for these risks , the departments have not approved any solutions .
+
+documents we reviewed and officials we met with identified a variety of operations and physical security risks that could adversely affect dod missions .
+
+these risks arise from information broadcast by ads - b itself , as well as from potential ads - b vulnerabilities to electronic warfare - and cyber - attacks , and from the potential divestment of secondary - surveillance radars .
+
+information broadcasted from ads - b transponders poses an operations security risk for military aircraft .
+
+for example , a 2015 assessment that rand conducted on behalf of the u.s. air force stated that the broadcasting of detailed and unencrypted position data for fighter aircraft , in particular for a stealth aircraft such as the f - 22 , may present an operations security risk .
+
+the report noted that information about the f - 22's precise position is classified secret , which means that unauthorized disclosure of this information could reasonably be expected to cause serious damage to the national security .
+
+similarly , in 2012 mitre issued a report on behalf of the dod lead service office that identified a number of risks — including the ability to track movement in and out of restricted airspaces and changes in operations — to ads - b - equipped aircraft .
+
+in addition to these documents , dod officials identified a number of increased operations and physical security risks associated with aircraft equipped with ads - b technology .
+
+in dod's 2008 comments about faa's draft rule requiring ads - b out technology , the department informed faa that dod aircraft could be identified conducting special flights for sensitive missions in the united states and potentially compromised due to ads - b technology .
+
+such sensitive missions could include low - observable surveillance , combat air patrol , counter - drug , counter - terrorism , and key personnel transport .
+
+while some military aircraft are currently equipped with mode s transponders that provide individuals who have tracking technology the altitude of the aircraft , ads - b poses an increased risk .
+
+specifically , according to documents we reviewed and officials we met with , a confluence of the following three issues has led to ads - b technology presenting more risks to dod aircraft , personnel , equipment , and operations: additional information .
+
+the additional information provided through ads - b technology — including the aircraft's precise location , velocity , and airframe dimensions — increases both direct physical risks to dod aircraft , personnel , and equipment , and long - term risks to dod air operations .
+
+accessibility of information .
+
+ads - b technology also introduces risks to aircraft , personnel , equipment , and operations , because it provides information to the public that was not previously accessible .
+
+faa filters information about dod's flights so that the information is not available to the public via any faa data feed .
+
+according to faa officials , this filtering was effective for protecting such information for mode - s equipped dod aircraft until the 2012 timeframe , when the capability of third - party networked receivers started to allow position determination for such aircraft .
+
+with ads - b , aircraft location and other information is broadcast from the aircraft , where faa cannot filter it .
+
+while individuals and groups could obtain additional information about dod flights operating with mode s , such as an aircraft's fixed address , information such as geographic location and velocity was not included in broadcasts .
+
+individuals could estimate location and velocity of dod flights by locating the signal through privately owned receiver networks .
+
+by equipping military aircraft with ads - b technology , individuals and groups would receive additional identifiers , location information , and airframe information through aircraft broadcasts and , as a result , could identify and track aircraft without the use of fixed address databases and with less receiver infrastructure .
+
+historical data .
+
+ads - b technology better enables individuals and groups to track flights in real time and use computer programs to log ads - b transmissions over time .
+
+therefore , individuals or groups could observe flight paths in detail , identify patterns - of - life , or counter or exploit dod operations .
+
+while norad and dod officials told us that they will benefit from information provided by ads - b technology , norad , dod , and professional organizations' documents and officials also noted that electronic warfare - and cyber - attacks — and the potential divestment of secondary - surveillance radars as a result of reliance on ads - b — could adversely affect current and future air operations .
+
+for example , a 2015 institute of electrical and electronics engineers article about ads - b stated that ads - b is vulnerable to an electronic - warfare attack — such as a jamming attack — whereby an adversary can effectively disable the sending and receiving of messages between an ads - b transmitter and receiver by transmitting a higher power signal on the ads - b frequencies .
+
+the article notes that while jamming is a problem common to all wireless communication , the effect is severe in aviation due to the system's inherently wide - open spaces , which are impossible to control , as well as to the importance and criticality of the transmitted data .
+
+as a stand - alone method , jamming could create problems within the national airspace .
+
+jamming can also be used to initiate a cyber - attack on aircraft or ads - b systems .
+
+according to the article in the 2015 institute of electrical and electronics engineers publication , adversaries could use a cyber - attack to inject false ads - b messages ( that is , create “ghost” aircraft on the ground or air ) ; delete ads - b messages ( that is , make an aircraft disappear from the air traffic controller screens ) ; and modify messages ( that is , change the reported path of the aircraft ) .
+
+the article states that jamming attacks against ads - b systems would be simple , and that ads - b data do not include verification measures to filter out false messages , such as those used in spoofing attacks .
+
+faa officials stated that the agency is aware of these possible attacks , and that it addresses such vulnerabilities by validating ads - b data against primary - and secondary - surveillance radar tracks .
+
+both faa and dod have identified a potential solution to address this vulnerability .
+
+however , this solution has not been tested and as of november 2017 , no testing has been scheduled .
+
+in addition to electronic warfare - and cyber - attacks , both norad and dod officials expressed concerns that the air defense and military air traffic control missions would be affected if faa were to divest secondary - surveillance radars following ads - b implementation .
+
+according to dod and faa documents and officials , faa has identified ads - b implementation as an opportunity to save costs by divesting a number of secondary - surveillance radars .
+
+however , according to norad and dod officials , in those locations where faa divests of radars , the missions would be at higher risk if an aircraft operator were to turn off the aircraft's ads - b technology ; if an adversary were to conduct an electronic or cyber - attack on the ads - b system ; or if the ads - b system were to experience a technical failure .
+
+according to norad command officials , the command relies on information from faa radars to monitor air traffic in the national airspace system .
+
+if an aircraft is operating without ads - b , if a gps or ads - b system fails , or if an adversary has jammed an aircraft's gps signal or ads - b transmissions , then the command will have to rely on primary - and secondary - surveillance radar to track the aircraft's location .
+
+faa officials stated that faa is chiefly responsible for air safety , while norad and dod are chiefly responsible for air defense , and that they believe there will be sufficient radar coverage for dod to conduct its missions .
+
+faa officials stated that they will maintain sufficient backup systems to ensure air traffic safety for all flights , and will maintain radar in excess of their needs to support norad's missions .
+
+faa officials stated that they will maintain all primary - surveillance radar , all high - altitude secondary - surveillance radar , and low - altitude secondary - surveillance radar near at least thirty major flight terminals .
+
+however , according to norad and dod officials , faa has not proposed an updated legacy primary - and secondary - surveillance radar divestment plan since 2012 for use by norad and dod in assessing potential effects on the mission .
+
+norad is a bi - national command that requires support from u.s. federal agencies — not just dod — and relies on faa radar to support its mission , and it will need to ensure that sufficient air surveillance resources are in place .
+
+although dod , faa , and other organizations have identified risks to military security and missions since 2008 , dod and faa have not approved any solutions to address these risks .
+
+this is because dod and faa have focused on equipping military aircraft with ads - b technology and have not focused on solving or mitigating security risks from ads - b .
+
+the approach being taken by faa and dod will not address key security risks that have been identified , and delays in producing an interagency agreement have significantly reduced the time available to implement any agreed - upon solutions before january 1 , 2020 , when the full deployment of ads - b out is required .
+
+federal internal control standards state that federal agencies should make risk - based decisions in a timely manner .
+
+specifically , omb circular a - 123 states that management should evaluate and document internal control issues and determine appropriate corrective actions for internal control deficiencies on a timely basis .
+
+in the case of equipping military aircraft with ads - b technology and addressing any risks associated with it , dod and faa have shared responsibility .
+
+in 2008 dod informed faa that military aircraft would need special accommodations to the ads - b out rule due to national security concerns , such as sensitive missions and electronic warfare vulnerabilities .
+
+in 2010 faa responded to dod's comments to the draft ads - b out rule stating that the agency would collaborate with departments or agencies , including dod and the department of homeland security , to develop memorandums of agreement to accommodate their national defense mission requirements while supporting the needs of all other national airspace system users .
+
+since that time , dod components have identified actions that could mitigate some of the risks .
+
+for example , dod and others have identified such mitigations as masking dod aircraft identifiers , maintaining current inventory of primary - surveillance radars , allowing pilots to turn off ads - b broadcasts , and seeking an exemption from installing ads - b technology on select military aircraft ( for example , fighter and bomber aircraft ) .
+
+however , as of june 2017 — almost 7 years after faa acknowledged that it would address dod's concerns ( and less than 3 years before full deployment of ads - b out is required ) — dod and faa have not approved any solutions to these risks .
+
+the dod's lead service office and faa have focused on developing a memorandum of agreement that they hope will create a framework for future collaboration at the local level .
+
+however , our work and that of norad and other dod components identified a number of limitations to dod's lead service office and faa's dependence on this draft memorandum of agreement .
+
+for example , the draft memorandum does not address the following: the details necessary to establish solutions or mitigations between dod and faa for identified security risks .
+
+the draft memorandum focuses on equipage of ads - b technology on military aircraft , cost estimates , and agency and office responsibilities .
+
+dod acknowledges that it will equip military aircraft with ads - b technology and operate to the greatest extent possible by the january 1 , 2020 , compliance date .
+
+however , the draft memorandum does not identify solutions for the identified operations and physical security risks .
+
+the electronic warfare and cyber - attack concerns and the effect on sensitive defense missions that dod has identified .
+
+the flexibility required by norad to support freedom of movement within the continental united states , alaska , and canada airspace for military missions .
+
+the draft memorandum would place negotiating accommodations for norad's bi - national mission at the local level — an act that norad officials characterized as unfeasible because military aircraft supporting norad missions require uninhibited airspace access throughout the united states and canada , as a response may be required anywhere and at any time .
+
+according to norad officials , the command would incur a significant burden to finalize memorandums of agreement with more than 600 air traffic control facilities and ensure commonality with all facilities in the continental united states and alaska .
+
+furthermore , norad officials stated that these missions should not be limited by local restrictions created by the ads - b out rule .
+
+for example , dod aircraft flying over one state while supporting an operation noble eagle mission could be stationed at a military base in another state and thus not have an agreement with local faa controllers .
+
+potential mission risks associated with the divestment of secondary - surveillance radars .
+
+delays in the completion of a memorandum of agreement have exacerbated uncertainty as to whether security issues will be addressed in any manner .
+
+dod and faa have met to discuss the existing draft memorandum of agreement since december 2016 .
+
+in april 2017 officials from dod lead service office told us that they expected dod and faa to finalize the memorandum of agreement by june 2017 ; however , in may 2017 dod officials informed us that the estimated completion date had slipped to february 2018 .
+
+a significant amount of work will likely need to be accomplished between the eventual approval of the memorandum and implementation in a timely manner .
+
+for example , faa officials acknowledged that the agency would need to issue , update , or both issue and update internal guidance once the memorandum is signed prior to local faa officials being able to negotiate and agree to arrangements with local military commanders .
+
+similarly , the draft memorandum , if approved , would place a significant burden on local dod entities to negotiate agreements .
+
+for example , the army expressed concerns that local negotiations — at 76 locations , according to army estimates — would take from 1 to 2 years to complete after faa and dod have signed the memorandum of agreement .
+
+army officials also highlight concerns that local faa air traffic controllers may not enter into agreements with army units , or that local agreements will be contingent upon the density of local air traffic or the personalities of those negotiating the agreements .
+
+additionally , assuming that actions are agreed upon among the key stakeholders — dod , faa , and norad — to resolve or mitigate the identified security risks , dod , faa and norad will need sufficient time to implement these actions .
+
+this is due to the complexity of the ads - b vulnerabilities and potential mitigations for operations and physical security , electronic warfare , cyber - attack , and potential effects of secondary - radar divestment .
+
+as of june 2017 , dod and faa had not identified any other solutions that could address the risks and concerns identified by dod and others since 2008 .
+
+unless faa and dod approve one or more solutions that address all the risks associated with ads - b technology , dod security and military missions could face unmitigated risks .
+
+these include physical , cyber - attack , and electronic warfare security risks , as well as risks associated with divesting secondary - surveillance radars .
+
+furthermore , unless faa and dod focus on the security risks of ads - b and approve one or more solutions in a timely fashion , they may not have time to plan for and execute any technical , programmatic , or policy actions that may be necessary before all of dod's aircraft are required to be equipped with ads - b technology on january 1 , 2020 .
+
+of the eight tasks associated with the implementation of ads - b out technology in the 2007 dod nextgen memorandum — issued by the deputy secretary of defense to ensure that the nextgen vision for the future national airspace system met dod's requirements and the appropriate management of dod's resources — dod has implemented two , has partially implemented four , and has not implemented two .
+
+specifically , we found that dod has implemented the following two tasks: establishing a joint program office .
+
+the deputy secretary of defense directed the secretary of the air force to establish and provide administrative support for a dod joint program office for nextgen .
+
+according to the 2007 nextgen memorandum , the office is responsible for coordinating dod activities related to the nextgen effort , facilitating technology transfer for those research and development activities with potential nextgen application , and advocate for dod interests , requirements , and capabilities in nextgen .
+
+the air force established a joint program office to provide services to the entire military aviation community on communication navigation surveillance / air traffic management issues in various capacities .
+
+officials from the dod joint program office told us that the office has tested various avionic systems for methods of meeting ads - b requirements .
+
+the office has also established an internet portal for the services to order avionics , including those associated with ads - b technology .
+
+appointing a dod representative to the faa's interagency joint planning and development office .
+
+the 2007 nextgen memorandum directed that the secretary of the air force appoint a dod representative to the joint planning and development office's board of directors responsible for assisting in the development and coordination of dod - wide policies and decisions concerning nextgen .
+
+in march 2012 dod's lead service office appointed an air force officer who also manages the dod lead service office as the dod representative to the faa's interagency joint planning and development office .
+
+dod partially implemented the following four tasks: validating nextgen program requirements .
+
+the 2007 nextgen memorandum directed that the secretary of the air force document and seek validation for nextgen program requirements through the joint capabilities integration development system process .
+
+the air force took the initial step in having its nextgen program requirements validated through dod's joint capabilities integration development system process in october 2014 .
+
+however , the focus of the assessment was on the air force's requirements and not that of other military services or components .
+
+this is not fully consistent with the 2007 memo , which states that the air force — as the lead service — should integrate the needs and requirements of the dod components into cohesive plans and policies for inclusion in nextgen joint planning and development .
+
+establishing guidance on dod nextgen responsibilities and objectives .
+
+the 2007 nextgen memorandum directed the assistant secretary of defense for homeland defense and global security , the dod chief information officer , and the director of administration , in consultation with the dod lead service , to submit a proposed dod directive within 180 days specifying the department's objectives with respect to nextgen and the continuing roles and responsibilities of the lead service and the dod policy board on federal aviation .
+
+in 2013 , about 5 years after the original due date for the180-day requirement , dod updated its dod directive 5030.19 , dod responsibilities on federal aviation .
+
+while the updated directive references the responsibilities of the dod policy board on federal aviation and the secretary of the air force , per the 2007 nextgen memorandum , the directive does not specify dod's objectives with respect to nextgen , as required by the memorandum .
+
+developing an initial plan defining actions , responsibilities , and milestones for dod's nextgen efforts: the 2007 nextgen memorandum required dod's lead service , in coordination with the principal members of the dod policy board on federal aviation , to develop an initial plan defining actions , responsibilities , and milestones for dod's participation in the nextgen efforts and faa's joint planning and development office .
+
+this initial plan was to include an implementation plan for the nextgen joint program office and was to be updated semiannually .
+
+in 2013 the air force , in executing its responsibilities as lead service , issued a dod nextgen implementation plan to describe the strategy , principles , and actions for the transition of dod aviation operations ( air and ground ) to the national airspace system environment defined by faa in its nextgen implementation plan .
+
+we found that the 2013 plan identified responsibilities of dod components and established indicators meant to give a sense of progress made in nextgen implementation .
+
+however , the plan did not include detailed transition planning for ads - b and was not updated semiannually , as required .
+
+incorporating nextgen into the planning , budgeting , and programming process: according to the 2007 nextgen memorandum , the secretary of the air force is to coordinate dod - wide nextgen planning , budgeting , and programing guidance in conjunction with the under secretary of defense for policy and the director of program analysis and evaluation for consideration in the formulation of planning and programming guidance documents .
+
+the memorandum also directed dod components to coordinate with the air force on nextgen programs they agreed to support using inter - service memorandums of understanding , and to fund procurement through service annual program objective memorandum processes .
+
+dod provided evidence that the military departments used the program objective memorandum process to fund ads - b out .
+
+however , the dod lead service office did not provide department - wide planning , budgeting , and programming guidance for ads - b or any other nextgen elements to dod components .
+
+similarly , dod did not provide any inter - service memorandums of understanding that would document nextgen programs that the services agreed to fund .
+
+according to officials from the dod lead service office , this office is not responsible for planning , budgeting , and programming because the office is organizationally located within the air force headquarters office of the deputy chief of staff for operations .
+
+however , while the office may not be responsible for planning , budgeting , and programming within the air force , the office can issue — or coordinate the issuance — of such guidance , as directed by the deputy secretary of defense .
+
+dod had not taken significant action or fully implemented the following two actions: integrating nextgen requirements into plans and policies: the secretary of the air force , in executing the service's responsibilities as lead service , did not integrate the needs and requirements of dod components related to ads - b into cohesive plans and policies for inclusion in nextgen joint planning and development , as directed by the deputy secretary of defense in 2007 .
+
+according to officials from the dod lead service office , they met the intent of these tasks through the 2012 united states air force next generation air transportation system keystone document , the 2013 department of defense ( dod ) mid - term nextgen concept of operations , and the 2013 department of defense ( dod ) mid - term next generation ( nextgen ) implementation plan .
+
+however , the air force nextgen keystone document applies to the air force and not to norad or other dod components .
+
+in addition , the dod mid - term nextgen concept of operations and the dod mid - term nextgen implementation plan do not discuss planning for ads - b out requirements , which are critical to nextgen .
+
+providing periodic and recurring nextgen progress reports: the assistant secretary of defense for homeland defense and global security did not provide periodic and recurring nextgen progress reports to the deputy secretary of defense , as instructed in the 2007 nextgen memorandum .
+
+according to the memorandum , the assistant secretary was designated as the principal staff assistant for nextgen and was responsible for oversight , support , and advocacy for the lead service with respect to the interagency and joint planning and development office .
+
+officials from the office of the deputy assistant secretary of defense for homeland defense integration and from defense support to civil authorities acknowledged that the office of the assistant secretary of defense for homeland defense and global security had not tracked ads - b implementation or provided progress reports to the deputy secretary of defense — with the exception of advocating for ads - b installation exemptions for aircraft that could not comply with the mandate — for retention of ground - based radars , and some minimal advocacy related to compliance with the faa ads - b out rule .
+
+dod could not provide a clear explanation with regard to those requirements that we determined not to have been fully implemented .
+
+officials from the dod lead service office provided a number of potential reasons to explain why the memorandum's tasks might not have been fully implemented .
+
+for example , as noted earlier , officials stated that other documents captured those requirements .
+
+further , officials told us they believe that implementation of many of the preceding tasks was accomplished through other means , although our analysis concluded that the task was either not implemented or was partially implemented , as noted previously .
+
+these officials also noted that — although there is no expiration date on the 2007 nextgen memorandum — many dod officials consider such memorandums to be applicable for 12 to 18 months .
+
+in addition , dod lead service office officials noted that many dod components had not assigned a high level of priority to nextgen implementation .
+
+as a result of dod's not fully implementing the 2007 nextgen memorandum — including developing or revising a dod directive that specifies dod's objectives with respect to nextgen , issuing an implementation plan that includes detailed transition planning for ads - b and is updated semiannually , and providing recurring progress reports to the deputy secretary of defense — dod components have lacked direction and cohesion while trying to address faa's requirement to equip military aircraft .
+
+for example: officials from the air force life cycle management center's fighters and bombers directorate told us that they have not been provided any guidance .
+
+the directorate does not intend to install ads - b technology on air force fighters or bombers until they receive dod guidance .
+
+yet , the deadline to equip dod aircraft that will fly in the national airspace remains january 1 , 2020 .
+
+dod does not have a coordinated or accurate schedule for equipping ads - b technology on military aircraft .
+
+although dod submitted a schedule to congress in june 2015 , officials from the dod lead service office told us that the timeframes for that plan were no longer accurate , and that the plan would be updated as part of the memorandum of agreement in february 2018 .
+
+some dod components have installed or plan to install civilian gps receivers on their aircraft to meet faa's ads - b technical requirements .
+
+according to dod officials , dod aircraft that equip with commercial gps receivers will not be as protected from gps security issues as they would have been had they used a military gps receiver .
+
+according to officials from the office of the dod chief information officer , the office with primary responsibility for gps receiver security policy , no one within dod — including the dod lead service office or other dod components — had made them aware that dod components were installing civilian receivers on aircraft .
+
+since — according to an official within the dod lead service office — neither the office of the assistant secretary of defense for homeland defense and global security nor any other elements of the office of the under secretary of defense for policy were engaged in discussion regarding the draft memorandum of agreement with the dod lead service office and faa , the secretary of defense's senior policy advisor may not be aware of provisions that may be incorporated in the agreement .
+
+for example , the draft memorandum of agreement contains a provision that could result in the department's being financially responsible for sharing the costs of sustaining secondary - surveillance radars .
+
+according to a 2007 faa document , it will cost faa approximately $442 million to maintain these radars from fiscal years 2017 to 2035 .
+
+if dod components do not fully implement key tasks that would facilitate assurance of dod requirements in the future nextgen system and appropriate management of dod resources — such as those tasks that the deputy secretary of defense originally directed in 2007 , or any tasks that the secretary deems appropriate — dod may risk having less efficient and less effective implementation of nextgen requirements , increased costs of implementation , or missed opportunities to address operations risks .
+
+the nextgen system has the potential to increase the efficiency and effectiveness of the nation's expanding air traffic .
+
+as with many such procedural and technological innovations , dod stands to benefit from nextgen's vision .
+
+as is the case with all such electronic and cyber systems in the information age , this must be balanced with sufficient consideration of the operations and security effects for dod .
+
+dod and faa have not approved any solutions that address risks resulting from ads - b on dod aircraft — including operations , physical , cyber , and electronic warfare security risks , as well as risks associated with divesting secondary - surveillance radars .
+
+unless dod and faa focus their efforts on the security aspects of ads - b on dod aircraft and produce one or more solutions to these risks , dod aircraft and missions will be exposed to unmitigated risks that could jeopardize safety , security , and mission success .
+
+also , unless dod fully implements the tasks that would facilitate consistent , long - term planning and implementation of nextgen throughout the department , dod's full integration into the nextgen system and the integrity and security of dod's forces and missions will be hindered .
+
+given the amount of time that has transpired since dod initially raised security concerns in 2008 and the amount of time it will take to formalize , operationalize , and train employees to implement any agreements prior to the january 1 , 2020 , deadline , it is critical that both dod and faa make this a high priority .
+
+we are making two recommendations , including one to the secretaries of defense and transportation , and one to the secretary of defense: we recommend that the secretaries of defense and of transportation address ads - b out security concerns by approving one or more solutions that address ads - b out - related security risks or incorporating mitigations for security risks into the existing draft memorandum of agreement .
+
+these approved solutions should address operations , physical , cyber - attack , and electronic warfare security risks ; and risks associated with divesting secondary - surveillance radars .
+
+the solution or mitigations should be approved as soon as possible in order to allow sufficient time for implementation .
+
+we recommend that the secretary of defense direct dod components to implement key tasks that would facilitate consistent , long - term planning and implementation of nextgen — such as those tasks that the deputy secretary of defense originally directed in 2007 , or any tasks that the secretary deems appropriate based on a current assessment of the original tasks .
+
+we provided a draft of the report to dod and the department of transportation for review and comment .
+
+written comments from dod on the classified draft and from the department of transportation on this report are reprinted in their entirety in appendixes ii and iii , respectively , and summarized below .
+
+dod and the department of transportation also provided technical comments , which we incorporated as appropriate .
+
+the department of transportation concurred and dod partially concurred with the first recommendation to approve one or more solutions that address ads - b out security risks or incorporating mitigations for security risks into the existing draft memorandum of agreement and that these solutions should address operations , physical , cyber - attack , and electronic warfare security risks as well as risks associated with divesting secondary - surveillance radar .
+
+in its written comments , the department of transportation stated that it has recently developed and is now in the process of validating military flight tracking risk mitigation solutions that are technologically viable and operationally effective .
+
+both the department of transportation and dod stated that they would approve one or more solutions to address ads - b out related security risks .
+
+for example , both departments stated that among other actions , they would complete a memorandum of agreement between faa and dod that would incorporate security concerns identified in the report .
+
+dod estimated that the memorandum of agreement will be signed in february 2018 .
+
+we believe the steps identified by both the department of transportation and dod , if implemented as planned , would meet the intent of our recommendation .
+
+dod partially concurred with the second recommendation to implement key tasks that would facilitate consistent , long - term planning and implementation of nextgen — such as those tasks that the deputy secretary of defense originally directed in 2007 or any tasks that the secretary deems appropriate based on a current assessment of the original tasks .
+
+dod stated the secretary of the air force would identify within the next 120 days which relevant key tasks would facilitate the implementation of nextgen to include assessing the status of tasks that were directed in the deputy secretary of defense memorandum , “implementation of the next generation air transportation within the department of defense 2007.” dod stated that the assessment would include a comprehensive review of modernization efforts regarding nextgen and other global initiatives and that includes suitable security and cybersecurity mitigation measures .
+
+dod also stated that the policy board for federal aviation would track key task implementation in coordination with the secretary of the air force and other appropriate dod officials .
+
+this would also include periodic updates to the deputy secretary of defense .
+
+we believe these steps would meet the intent of our recommendation if implemented as planned .
+
+we are sending copies of this report to the appropriate congressional committees ; the secretary of defense ; the secretary of homeland security ; the secretary of transportation ; and the commander of norad .
+
+we are also sending copies to the under secretary of defense for policy ; the under secretary of defense for acquisition , technology , and logistics ; the chairman of the joint chiefs of staff ; the secretaries of the military departments ; and the administrator of faa .
+
+in addition , the report is available at no charge on the gao website http: / / www.gao.gov .
+
+if you or your staff have any questions about this report , please contact me at ( 202 ) 512-9971 or kirschbaumj@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made key contributions to this report are listed in appendix iv .
+
+senate report 114-255 , accompanying a bill for the national defense authorization act of fiscal year 2017 , included a provision that we assess issues related to the defense implications of implementation of the federal aviation administration's ( faa ) next generation air transportation system ( nextgen ) and automatic dependent surveillance — broadcast ( ads - b ) , a main component of nextgen .
+
+this report assesses the extent to which ( 1 ) the department of defense ( dod ) and the faa have identified security and operations risks and approved solutions to address these risks to military aircraft equipped with ads - b out technology ; and ( 2 ) dod has implemented key tasks in the 2007 deputy secretary of defense memorandum on implementing nextgen .
+
+the scope of our review included all dod and department of transportation offices responsible for oversight or administration of ads - b implementation by dod as part of the nextgen program .
+
+our review also included airlines for america , as it represented a significant portion of the civil aviation industry in negotiations with faa on ads - b implementation .
+
+table 3 contains a list of the organizations and offices we contacted during the course of our review .
+
+to assess the extent to which dod and faa have identified security and operations risks and approved solutions to address these risks to military aircraft equipped with ads - b out technology , we reviewed policies , procedures , guidance , assessments , and other relevant documents from dod , faa , and norad that address ads - b out implementation , acquisition , operations , and cybersecurity risk management and mitigation , and any other issues that might be pertinent to identifying and addressing operations and security risks resulting from ads - b out .
+
+we also reviewed publicly available literature discussing potential ads - b out cybersecurity vulnerabilities .
+
+specifically , we conducted a literature review of work related to vulnerabilities in ads - b technology .
+
+to identify studies that potentially highlighted vulnerabilities that we could discuss with agency officials , we conducted key - word searches of government and private databases to identify public , private , academic , and other professional research related to ads - b vulnerabilities .
+
+the government databases we searched included those of gao , the congressional research service , the congressional budget office , and agency inspectors general .
+
+the private databases searched include web of science , proquest , and proquest professional .
+
+to determine relevance to our review , we assessed whether article subjects were related to vulnerabilities or vulnerability mitigations for ads - b systems .
+
+we reviewed those studies cited in our report and found their methodologies to be sufficient .
+
+to further address our objective , we interviewed officials from norad , dod , the military services , and faa on potential risks , vulnerabilities , and mitigation strategies .
+
+we did not conduct independent security and vulnerability assessments of ads - b technology to corroborate or validate security risks identified by norad , dod , faa , and others .
+
+while military aircraft and existing radar systems may be equipped with devices ( including mode s transponders ) that could also pose security risks , this report focused on risks and potential solutions associated with ads - b out technology that faa mandated dod to install on its aircraft by january 1 , 2020 .
+
+we also visited multiple public websites to understand the extent to which the public could track current military flights over the united states .
+
+we met with a representative from one of these websites to understand the underlying sources of information and how the information was used to compile the images .
+
+to understand dod and faa coordination , we reviewed laws , guidance , and directives related to agency cooperation for the nextgen system and implementation of ads - b technology .
+
+this included the 2010 faa federal register entry that provided guidelines and requirements for coordination between agencies and the 2007 deputy secretary of defense memorandum on implementing nextgen , which states that dod components must develop cohesive plans and policies .
+
+to assess the extent to which dod has implemented key tasks in the 2007 deputy secretary of defense memorandum on implementing nextgen , we reviewed the deputy secretary of defense's 2007 nextgen memorandum and identified 20 tasks that were directed by the deputy secretary for the purpose of ensuring that nextgen meets dod requirements , and that dod's resources are appropriately focused and managed .
+
+we focused on the 8 tasks wherein the accomplishment of the task would be significant to the development of plans and policies related to the implementation of the faa's ads - b out technology requirement .
+
+to evaluate the implementation status of these 8 tasks , we collected relevant documentation , interviewed officials from dod , and reviewed this information .
+
+initially , two analysts separately reviewed this information to determine whether each of the 8 tasks was implemented or not implemented .
+
+later , a panel of four analysts collectively reviewed both sets of analyses completed for each task and determined whether a task would be better categorized as partially implemented , instead of implemented , or as not implemented .
+
+we conducted this performance audit from june 2016 to january 2018 , in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+in addition to the contact named above , tommy baril ( assistant director ) , tracy barnes , david beardwood , virginia chanley , benjamin emmel , kevin newak , joshua ormond , matthew sakrekoff , amanda weldon , and edwin yuen made major contributions to this report .
+
+colleen candrl , mark canter , raj chitikila , tracy harris , kirk kiester , amie lesser , nicholas marinos , madhav panwar , john shumann , james tallon , and cheryl weissman also made contributions to this report .
+
+next generation air transportation system: improved risk analysis could strengthen faa's global interoperability efforts .
+
+gao - 15-608 .
+
+washington , d.c.: july 29 , 2015 air traffic control: faa needs a more comprehensive approach to address cybersecurity as agency transitions to nextgen .
+
+gao - 15-370 .
+
+washington d.c.: april 14 , 2015 .
+
+national airspace system: improved budgeting could help faa better determine future operations and maintenance priorities .
+
+gao - 13-693 .
+
+washington , d.c.: august 22 , 2013 .
+
+nextgen air transportation system: faa has made some progress in midterm implementation , but ongoing challenges limit expected benefits , gao - 13-264 .
+
+washington d.c.: april 8 , 2013 .
+
+next generation air transportation system: faa faces implementation challenges .
+
+gao - 12-1011t .
+
+washington , d.c.: september 12 , 2012 .
+
+next generation air transportation: collaborative efforts with european union generally mirror effective practices , but near - term challenges could delay implementation , gao - 12-48 .
+
+washington , d.c.: november 3 , 2011 .
+

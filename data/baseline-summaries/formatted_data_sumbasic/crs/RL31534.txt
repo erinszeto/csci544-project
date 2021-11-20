@@ -1,0 +1,362 @@
+this report addresses the cyber - vulnerability of critical infrastructure industries which regularlyuse industrial control systems .
+
+industrial control systems may be vulnerable to infiltration bydifferent routes , including wireless transmission , direct access to control system computers,exploitation of dial - up modems used for maintenance , or through the internet .
+
+this report willspecifically discuss the potential for access to industrial control systems through the internet .
+
+the vulnerability of u.s. critical infrastructure to cyber - attack and catastrophic failure was brought to light in 1997 in the report of the president's commission on critical infrastructureprotection .
+
+ ( 1 ) among other concerns , the computersystems used to remotely control processequipment were highlighted as specific points of vulnerability .
+
+these systems were updated duringthe y2k crisis , but their cyber - security generally has not been a high priority .
+
+the events ofseptember 11 , 2001 have heightened the public awareness of the nation's vulnerability to terroristattack , and a national research council report has identified "the potential for attack on controlsystems" as requiring "urgent attention. .
+
+ ( 2 ) critical infrastructure is defined in the usa patriot act as those "systems and assets , whether physical or virtual , so vital to the united states that the incapacity or destruction of suchsystems and assets would have a debilitating impact on security , national economic security , nationalpublic health or safety , or any combination of those matters. .
+
+ ( 3 ) several industry sectors consideredto be critical infrastructures use industrial control systems in their daily activities .
+
+these industriescould be significantly affected by a cyber - attack targeting industrial control systems such assupervisory control and data acquisition ( scada ) systems , distributed control systems , and others .
+
+the president's commission on critical infrastructure protection report stated , from the cyber perspective , scada systems offer some of the most attractive targets to disgruntled insiders and saboteurs intent on triggering a catastrophicevent .
+
+with the exponential growth of information system networks that interconnect the business,administrative , and operational systems , significant disruption would result if an intruder were ableto access a scada system and modify the data used for operational decisions , or modify programsthat control critical industry equipment or the data reported to controlcenters .
+
+ ( 4 ) .
+
+the most commonly discussed industrial control systems include supervisory control and dataacquisition ( scada ) systems and distributed control systems ( dcs ) .
+
+ ( 5 ) scada systems are oftenused for remote monitoring over a large geographic area and to transmit commands to remote assets,such as valves and switches .
+
+for example , they can be found in water utilities and oil pipelines,where they monitor flow rates and pressures .
+
+based on the data that these systems provide , computerprograms or operators at a central control center balance the flow of material .
+
+generally , scadasystems process little data internally , instead performing analysis in a more central location , but arethe primary conduits for raw data to and commands from a control center .
+
+they may be vulnerableto implantation of faulty data and to remote access through dial - up modems used for maintenance .
+
+distributed control systems are process control systems , commonly deployed in a single manufacturing or production complex , characterized by a network of computers .
+
+dcs generallyprovide processed information to , or a series of commands from , a central location .
+
+for example,at a chemical plant , a dcs might simultaneously monitor the temperature of a series of reactors andcontrol the rate at which reactants are mixed together , while performing real time processoptimization and reporting the progress of the reaction .
+
+an attack targeting a dcs might causeextensive damage at a single facility , but might not affect more than the single site .
+
+these process control systems can be interconnected within a single industry as well .
+
+this might be the case in an infrastructure which both transports and processes material .
+
+as an example,the oil and gas infrastructures contain both processing and refining sites , as well as holding facilitiesand distribution systems .
+
+refining and processing sites may utilize dcs in discrete locations .
+
+thedistribution and holding facilities might be managed by a scada system which collected data fromand issued commands to different geographic sites from a single location .
+
+ ( 6 ) industrial control system technologies are often employed in critical infrastructure industries to allow a single control center to manage multiple sites .
+
+industrial control systems were originallyimplemented as isolated , separate networks .
+
+ ( 7 ) theywere viewed as secure systems which protectedremote locations from being physically broken into and mistreated .
+
+for example , the establishmentof remote control systems in dams reportedly protected against unlawful release of the dammedwater , as no hand - operable valves and switches were accessible .
+
+ ( 8 ) the networking of industrial control systems on a greater scale has led to increased synergy and efficiency , and , due to market needs ( e.g .
+
+deregulated markets ) , real time information from thesesystems is increasingly important for commercial purposes .
+
+consequently , industrial control systemsare becoming linked to corporate computer systems , potentially making them vulnerable to cyber - attack throughthe internet .
+
+original control systems were designed to be free standing networkswithout internet access .
+
+therefore , it has been necessary to add network access capabilities to theselegacy systems to integrate them into the corporate structure .
+
+this has created , in the worst cases,a labyrinth of connections which is perhaps not rigorously constructed for cyber - security or welldocumented .
+
+many organizations , including the general accounting office , researchers at several department of energy national laboratories , and private security and consulting companies , haveidentified systemic and specific security vulnerabilities in select process control systems .
+
+ ( 9 ) amongthese vulnerabilities are poor cyber - security practices , such as weak passwords , a lack of robustprotocols , and communication in clear text .
+
+while some vulnerabilities arise from the manner bywhich the process control system is operated , others are believed to be integral to the control systemconfiguration itself .
+
+some industrial control systems , including legacy systems , are proprietary , and contain non - standard architectures and command syntax .
+
+this can be considered both an advantage and adisadvantage .
+
+proprietary systems with esoteric command structures are often non - intuitive , andcould be difficult to operate by an untrained individual .
+
+incorrect commands could cause no results,and may increase the probability that the intruder would be noticed and removed from the system.additionally , different companies may have different command sets , even if they are both membersof the same industry , as their proprietary systems may have significantly different structures .
+
+thus,if a hacker or terrorist successfully attacks one company , that experience may not be valuable for useat the next company .
+
+others assert that many new control systems , as well as upgrades to legacysystems , are being assembled from commercial , off - the - shelf equipment and software , providingcommonalities across different industry sectors .
+
+they point to the needs of system maintenance andnew component integration as leading to similar control system architectures both within andbetween critical infrastructure sectors .
+
+by adopting such equipment and software , vulnerabilities thatare identified impact all sectors .
+
+the degree of integration between control system networks and publicly accessible networks is difficult to judge from the open literature .
+
+this makes assessment of the vulnerability of criticalinfrastructure industries from internet based attack difficult to know with certainty .
+
+ ( 10 ) faced with anunclear risk , it may be difficult , from an industry perspective , to justify the additional costs ofupgrading privately - held industrial control systems to higher security standards .
+
+ ( 11 ) current off - the - shelf industrial control systems have been designed foroperational speed and functionality , ratherthan for secure operation , and therefore may not have a high degree of operational security .
+
+ ( 12 ) addition of security requirements may degrade the performance of these components belowoperating standards .
+
+events have shown that utility control system networks may be vulnerable to cyber - based incidents .
+
+computers at an inactive nuclear power plant in ohio were infected by the slammerworm in january 2003 .
+
+the infection disabled some computer functionality , including monitoringsystems for portions of the power plant .
+
+ ( 13 ) also,it has been reported that other control systemcomputers have been compromised by other viruses .
+
+ ( 14 ) given the uncertain vulnerability level and the potential systemic weaknesses involved in current off - the - shelf technology , there appears to be little market incentive to directly increaseindustrial control systems security .
+
+therefore the security systems for the corporate network , whichblock initial intrusion through the internet , may be the sole planned protection for the industrialcontrol systems .
+
+such an approach has been criticized , as while it may provide initial barriers tointrusion , it would not reduce any inherent vulnerabilities in the control system network .
+
+ ( 15 ) security analysts also contend that industrial control systems are less obscure now than when they were initially developed .
+
+foreign utility companies increasingly use current commercial off - the - shelf industrialcontrol systems , increasing the international availability of systems and theirdocumentation .
+
+due to the similarity between these systems and systems installed domestically,potential terrorists need not break into an american utility to test their plans .
+
+ ( 16 ) instead , preliminarytesting might be performed outside of the united states on equipment held in other countries .
+
+some security analysts believe that the industrial control system vulnerability should be addressed before potentially catastrophic events occur , and that techniques for reducing thevulnerability are already known .
+
+they contend that the majority of attacks on industrial controlsystems will come through corporate networks , via the internet .
+
+while standardized informationtechnology protection methods have not yet been developed specifically for industrial controlsystems , these analysts contend that if general network benchmark standards were uniformly appliedacross corporate networks , corporate networks vulnerability to intrusion could be reduced by 80-88% .
+
+ ( 17 ) this would indirectly reduce the industrial controlsystems vulnerability to intrusion , asroutes through the corporate network would no longer be available .
+
+these benchmark standardsinclude disabling unneeded server functionality , patching known security flaws , and updatingprograms to the most recent version .
+
+other security analysts claim that in addition to general network security , specific protection for industrial control systems must also be established .
+
+such protection might be addressed bysuccessfully isolating the control system network from the corporate computer network or byimplementing stronger security measures at known junctions of the two networks .
+
+such an effortmight significantly increase the difficulty of infiltrating the control system network from theinternet .
+
+ ( 18 ) in contrast , control systems may have vulnerabilities unrelated to those associated with corporate networks , and may require more specific protection , including against attacks not transitingthe corporate network .
+
+ ( 19 ) protecting corporatenetworks from intrusion may not address enough ofthe vulnerable access routes into industrial control systems .
+
+joe weiss , executive consultant withkema consulting , asserts that firewalls , intrusion detection , encryption , and other technology needto be developed specifically for control systems .
+
+ ( 20 ) some companies have taken aggressive steps to protect their industrial control systems , and arepossible examples for how secure industrial control systems can be established .
+
+ ( 21 ) while mostsecurity experts agree that critical infrastructure industries which view secure industrial controlsystems as a priority can reduce vulnerabilities , some assert that most critical infrastructure industriesare not willing to voluntarily commit resources , time and effort into reducing these vulnerabilities .
+
+stuart mcclure , president and chief technical officer of the security company foundstone , claims,"[industries] have fallen into the regulation trap .
+
+unless the government regulates it , they're not yettaking [security] seriously. .
+
+ ( 22 ) .
+
+some critical infrastructure industry representatives are skeptical that a cyber - terror attackwould target industrial control systems .
+
+ ( 23 ) sincethere are no reported terrorist cyber - attacks ondomestic critical infrastructure industrial control systems which have caused significant , publiclyreported damage , even in cases where hackers have successfully broken into these systems , industryrepresentatives believe the cyber - threat to be low .
+
+diane van de hei , executive director of theassociation of metropolitan water agencies and contact person for the water utility informationsharing and analysis center ( isac ) , was quoted as saying , "if we had so many dollars to spend ona water system , most of it would go to physical security. .
+
+ ( 24 ) analysts have also doubted that terrorist groups will use cyber - attacks to affect critical infrastructure .
+
+they point to the lack of documented terrorism - related cyber - attacks on criticalinfrastructure as indicative of low threat probability .
+
+"it suggests that , as so many commentatorshave noted , that cyberterror or cyberattacks on infrastructure are an unlikely threat to the security ofthe united states. .
+
+ ( 25 ) some critical infrastructure companies believe that the potential damage likely to be caused by a cyber - attack on control systems would be small and manageable through already existingprocedures .
+
+since fluctuations and equipment failure are part of expected , normal business , plansand procedures for these naturally occurring events are in place .
+
+they assert that the damage causedby cyber - attack would be similar to that already routinely seen .
+
+ ( 26 ) some industry representatives emphasize that the unfamiliar and uncommon commands used in legacy industrial control systems will continue to provide as high a barrier to future destructiveattempts as it has in the past .
+
+ ( 27 ) while utilityindustry leaders agree that they have been the target ofmillions of cyber - security incidents , some do not analyze the origin or method of attack .
+
+will evans,vice president of it services at people's energy corp. , reportedly claimed , "[a large utility] couldhave a million [intrusion] events that need to be analyzed .
+
+i don't think anybody has the capabilityto do that in - house. .
+
+utility industry representatives contend that the vast majority of computer intrusion events are searches for vulnerable computers in the corporate network by inexperienced hackers , and , of thedangerous minority actually performed by experienced crackers , many are focused on economicaspects of the corporate network rather than the industrial control systems network .
+
+ ( 28 ) from theperspective of critical infrastructure industries , discontented employees who possess insideinformation about industrial control systems are a greater security risk than external attempts tobreach security .
+
+there is evidence that al qaeda is interested in the vulnerabilities of the u.s. public and private utilities .
+
+the discovery in afghanistan of a computer containing structural analysis programs fordams , combined with an increase in web traffic relating to scada systems , ( 29 ) prompted thenational infrastructure protection center ( nipc ) to issue a warning information bulletin .
+
+ ( 30 ) ananalysis of cyber - attack data collected during the second half of 2001 showed that the corporatesystems of energy industry companies are attacked twice as often as other industries , and that a largenumber of these attacks originate from the middle east .
+
+ ( 31 ) additionally , according to one expert,these statistics do not reflect intrusions directed at control systems which lack firewalls or intrusiondetection systems , resulting in an under - reporting of the actual number of attacks .
+
+ ( 32 ) there have been examples of individuals specifically breaking into utility companies' control systems .
+
+the most notable event occurred in maroochy shire , australia , where , in spring , 2000 , adiscontented former employee was able to remotely access the controls of a sewage plant anddischarge approximately 264,000 gallons of untreated sewage into the local environment .
+
+ ( 33 ) in 1994,a hacker successfully broke into the computer system of the salt river project in arizona and wasable to gain access to computers monitoring canals .
+
+ ( 34 ) another example , from march , 1997 , occurredwhen a teenager in worcester , ma was able to remotely disable part of the public telephoneswitching network , disrupting telephone service for 600 residents , including the fire department , andcausing a malfunction at the local regional airport .
+
+ ( 35 ) reportedly , an intrusion into the scadasystems of a global chemical company occurred where a former employee attempted to disablechemical operating systems at a production plant .
+
+ ( 36 ) often , it is difficult to assess from public reports to what degree a critical infrastructure industry has been breached .
+
+ ( 37 ) for example , acyber - break - in at the california independent system operator ( cal - iso ) , california's primary electric power grid operator , went undetected for 17 days in april,2001 .
+
+greg fishman , a representative of cal - iso , reported the intruders "never really got close atall to our operational systems that run the grid. .
+
+ ( 38 ) it is not clear what information was compromisedduring the intrusion , who the perpetrators were , or what their goal in gaining access was .
+
+to date,there has been no indication that the perpetrators of this attack were able to access any sensitiveinformation or systems .
+
+the consequences of an attack on the industrial control systems of critical infrastructure couldvary widely .
+
+it is commonly assumed that a successful cyber - attack would cause few , if any,casualties , but might result in loss of infrastructure service while control was wrested from theattacker and damage repaired .
+
+for example , a successful cyber - attack on the public telephoneswitching network might deprive customers of telephone service while technicians reset and repairedthe switching network .
+
+an attack on a chemical or liquid natural gas facility's control systems mightlead to more widespread physical damage .
+
+lower probability events include catastrophic infrastructure failure , where the failure of one part of the infrastructure leads to the failure of other parts , causing widespread effect .
+
+such failuremight occur due to the synergistic effect of infrastructure industries on each other .
+
+a simple examplemight be an attack on electrical utilities where electricity distribution was disrupted ; sewagetreatment plants and waterworks could also fail , as perhaps the turbines and other electricalapparatuses in these facilities shut down .
+
+on august 5 , 2002 , the faulty closure of an emergencyvalve at one of singapore's two natural gas suppliers blocked the flow of natural gas to sevenelectrical power plants .
+
+as an immediate result , power levels dropped 30% , and even after reservepower was employed , there was still a 8% shortfall .
+
+the power outage lasted up to 90 minutes .
+
+ ( 39 ) several chemical production plants were forced to shutdown their facilities during the power outage,and required several days to restore full production .
+
+ ( 40 ) some experts warn of a cascade event , where a terrorist is able to manipulate control systems and cause catastrophic failure within an infrastructure .
+
+cascade events can be very damaging,causing widespread utility outages .
+
+twice in 1996 , arcing between high voltage transmission linesand trees resulted in widespread power outages .
+
+on july 2 , 1996 , a cascade event left 2 millioncustomers in 11 states and 2 canadian provinces without power .
+
+ ( 41 ) most service was restored within30 minutes .
+
+ ( 42 ) on august 10 , 1996 , a similar eventcaused 7.5 million customers in seven westernstates and part of canada to be without power for up to nine hours .
+
+ ( 43 ) the august 2003 blackout of the northeastern united states and parts of canada , also a cascade event , has been invoked as indicative of the potential effects a successful terrorist cyber - attack onelectrical utility control systems .
+
+ ( 44 ) while it wasquickly determined that the power outage was notcaused by terrorism , ( 45 ) there were questionswhether control system failure , computer viruses orworms , or operator - error played roles in the outage .
+
+ ( 46 ) it has been suggested by some that the blasterworm , which had been contributing to congestion of the internet , might have exacerbated theproblems faced by utilities leading up to the blackout event .
+
+ ( 47 ) the scenario which causes the highest degree of concern among experts is the combined use of a cyber - attack on critical infrastructure in conjunction with a physical attack .
+
+ ( 48 ) this use of cyber - terrorism could result in an amplification of the physicalattack's effects .
+
+an example of this mightbe a conventional bombing attack on a building combined with a temporary denial of electrical ortelephone service .
+
+the resulting degradation of emergency response , until back - up electrical orcommunication systems can be brought into place and used , could increase the number of casualtiesand public panic .
+
+others believe that the consequences of a cyber - attack on critical infrastructure would be very limited , and that excessive focus has been given to an unsubstantiated terrorist threat .
+
+ ( 49 ) cyber - security experts who doubt the effectiveness of such an attack rangein opinion regarding an attack'simpact .
+
+some believe that a cyber - attack on critical infrastructure control systems , while havingsome effect , would not be devastating , but rather only have minor impact .
+
+ ( 50 ) for example , securitymanagers in some electric utilities reportedly believe that experience in dealing with natural disastersand power outages may translate well to recovering quickly from a cyber - attack .
+
+ ( 51 ) other believe thatthere could be significant impacts from a successful attack on control systems , but that such successwould be very unlikely .
+
+ ( 52 ) finally , some believethat while it is possible to use computers to generatehigh consequence attacks , it would be much more likely that a terrorist group would resort to asimpler conventional attack which would yield results of a similar magnitude .
+
+ ( 53 ) .
+
+the vulnerability of industrial control systems may be reduced through a range of federalactions .
+
+these include the development of standards , either voluntary or mandatory , forcybersecurity of control systems ; identifying and addressing critical infrastructure interdependencies ; developing encryption methods for control systems ; identifying and establishing technologies toaddress existing vulnerabilities ; funding long - term research into secure scada systems ; providingfor free exchange of risk information between the federal government , private industry , and othercritical infrastructure sectors ; and assessing federal activities in this area .
+
+the federal government could mandate and enforce a uniform security standard for cybersecurity of industrial control systems , or support the development of industry developed andbased standards .
+
+because of the national importance of critical infrastructure systems , a uniformstandard might be developed , with the input of advocates , industries and the federal government,which would include the functionality necessary to protect industrial control systems , whileproviding for more secure operation .
+
+a voluntary , standards - based approach has been developed forserver operating systems with some success , and a similar mechanism might be used to developstandards for commercial off - the - shelf control systems .
+
+ ( 82 ) alternately , processes and specificationscurrently being developed through industry - led programs might be generalized across criticalinfrastructure industries and established as a voluntary standard .
+
+critics of this approach cite themany different uses of industrial control systems in different industry sectors as making such astandard unwieldy .
+
+some experts have expressed concerns that a mandated standard would be lesseffective than a voluntary standard , as solutions to new problems could not be implementedimmediately , but would wait for changes to the standard , and that such a standard may not beuniformly applicable across industry sectors .
+
+others have stated that there is a need for federalrequirements to assure that appropriate attention is focused on process control system security .
+
+identifying the dependencies between critical infrastructure sectors , the vulnerabilities that are present in information technologies in these sectors , and the possible cross - sectoral impacts of acontrol system attack may lead to a greater understanding of the scale of the control system threat .
+
+as shown by the august 2003 blackout , the loss of a single infrastructure sector , here the energysector , may have serious effects in other critical infrastructures , such as public health andtransportation .
+
+both the department of homeland security , in its role of protecting infrastructure,and the department of energy , in its role of ensuring a robust and reliable energy infrastructure,perform activities in determining sectoral dependencies and commonalities .
+
+policymakers may wishto enhance current funding into scada security research , test bed modeling , or criticalinfrastructure vulnerability assessment to further clarify the current vulnerability .
+
+another option would involve supporting encryption research to protect industrial control system data transfer .
+
+encrypting the information transmitted between remote units and theircontrollers would inhibit inclusion of false information to and from industrial control systems .
+
+current encryption technology may not be compatible due to the time required to process theencrypted data and the level of technology built into control system components .
+
+industrial controlsystems have stringent timing requirements and tend to be built out of less computationally robustcomponents , which complicate the use of current encryption technologies .
+
+ ( 83 ) while a prototypeencryption method for industrial control systems has been developed , it is still in the validationprocess ( 84 ) and is only recently being evaluated forimplementation in industry .
+
+ ( 85 ) further researchintoencryption techniques for these processes could provide efficient , market - driven technology forsecuring industrial control systems information .
+
+some experts highlight that securing data transferdoes not assure the security of the control system itself .
+
+they assert that other routes of attack existthat do not rely on the security of the control system communications .
+
+thus , securing thosecommunications , while lowering system vulnerability , may not be addressing the most likely threat .
+
+further research and development into methods for retrofitting existing scada systems with more secure components or communications may be another method to reduce system vulnerability .
+
+this approach has been taken by researchers in both industry and federal government laboratories .
+
+while potentially addressing short term needs to reduce vulnerability , retrofit solutions are not likelyto solve inherent shortfalls in scada security especially with respect to the inclusion of cotsequipment potentially vulnerable to cyber attack .
+
+critics of retrofit solutions cite high costs andpotential compatibility concerns as barriers to easy implementation of such solutions .
+
+a long term approach to limiting the vulnerability of scada systems is to provide further targeted investment into developing "next - generation" secure control systems .
+
+development of asecure scada architecture may provide incentives to replace components in a secure manner duringthe normal replacement cycle , incrementally reducing the present vulnerability .
+
+while some arguesuch product research and development is a responsibility of private industry , others may assert thatcontrol system security is of national import , requiring enhanced federal investment .
+
+several national laboratories have developed complementary testbed facilities to investigate potential vulnerabilities and solutions to scada systems .
+
+such testbed facilities could be used toevaluate and validate the security of commercial scada systems , act as a proving ground for newtechnologies , or be dedicated to the development of federal efforts in secure process control systems .
+
+the new foia exemptions created in the homeland security act of 2002 ( p.l .
+
+107-296 ) may provide a higher volume , freer exchange of information between the federal government andindustry , as industry may become more forthcoming about potential vulnerabilities .
+
+the criticalenergy infrastructure information category for electrical infrastructure information may provide amodel for how regulatory agencies might craft regulations protecting critical infrastructureinformation within a sector .
+
+comments from various groups on the proposed implementation of thehomeland security foia exemption have indicated that industry concern still remains over thepotential release of information given to the federal government by private industry .
+
+ ( 86 ) policymakersmay wish to inquire into whether vulnerabilities transmitted to the federal government are eventuallyreduced , and how the information being provided to the federal government is used .
+
+policymakers may also wish to assess the effectiveness of the department of homeland security in coordinating security enhancements to control systems , promoting government / industrypartnerships , and performing risk and vulnerability assessments .
+
+with the concentration ofpreviously existing agencies into the directorate of information analysis and infrastructureprotection , previous duplication of effort may be removed , but critics have suggested that difficultiesin integrating these agencies may lead to a reduction in effectiveness .
+
+some policymakers haveexpressed concern that the priorities dhs have placed on physical and cyber - security are notappropriate for the risks involved .
+
+ ( 87 ) oversightof dhs's efforts to rectify this potential homelandsecurity vulnerability may provide insight into successful models used within critical infrastructuresectors which might be used across multiple sectors .
+

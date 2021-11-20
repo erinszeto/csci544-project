@@ -1,0 +1,634 @@
+this report discusses weaknesses that we identified during our assessment of general computer controls that support key financial management and benefit delivery operations of the department of veterans affairs ( va ) .
+
+general computer controls affect the overall effectiveness and security of computer operations as opposed to being unique to any specific computer application .
+
+they include security management , operating procedures , software security features , and physical protection designed to ensure that access to data is appropriately restricted , only authorized changes are made to computer programs , computer security duties are segregated , and backup and recovery plans are adequate to ensure the continuity of essential operations .
+
+such controls are critical to va's ability to safeguard assets , maintain the confidentiality of sensitive financial data and information on veteran medical records and benefit payments , and ensure the reliability of financial management information .
+
+our review of va's general computer controls was performed in connection with the department's financial audit conducted under the chief financial officers act of 1990 , as expanded by the government management reform act of 1994 .
+
+the results of our evaluation of general computer controls were shared with va's office of inspector general ( oig ) for its use in auditing va's consolidated financial statements for fiscal year 1997 .
+
+this report does not detail certain serious weaknesses in controls over access to va computer resources .
+
+a separate report on those matters , with limited distribution due to its sensitive nature , is being issued today .
+
+va provides health care and other benefits to veterans in recognition of their service to our country .
+
+as of july 1 , 1997 , 26 percent of the nation's population — approximately 70 million persons who are veterans , veterans' dependents , or survivors of deceased veterans — was potentially eligible for va benefits and services , such as health care delivery , benefit payments , life insurance protection , and home mortgage loan guarantees .
+
+va operates the largest health care delivery system in the united states and guarantees loans on about 20 percent of the homes in the country .
+
+in fiscal year 1997 , va spent more than $17 billion on medical care and processed more than 40 million benefit payments totaling more than $20 billion .
+
+the department also provided life insurance protection through more than 2.5 million policies that represented about $24 billion in coverage at the end of fiscal year 1997 .
+
+in providing these benefits and services , va collects and maintains sensitive medical record and benefit payment information for millions of veterans and their dependents and survivors .
+
+va also maintains medical information for both inpatient and outpatient care .
+
+for example , the department records admission , diagnosis , surgical procedure , and discharge information for each stay in a va hospital , nursing home , or domiciliary .
+
+va also stores information concerning health care provided to and compensation received by ex - prisoners of war .
+
+in addition , va maintains information concerning each of the guaranteed or insured loans closed by va since 1944 , including about 3.5 million active loans .
+
+va relies on a vast array of computer systems and telecommunication networks to support its operations and store the sensitive information it collects in carrying out its mission .
+
+three centralized data centers — located in austin , texas ; hines , illinois ; and philadelphia , pennsylvania — maintain the department's financial management systems ; process compensation , pension , and other veteran benefit payments ; and manage the veteran life insurance programs .
+
+in addition to the three centralized data centers , the veterans health administration ( vha ) operates 172 hospitals at locations across the country that operate local financial management and medical support systems on their own computer systems .
+
+the austin automation center maintains va's departmentwide systems , including centralized accounting , payroll , vendor payment , debt collection , benefits delivery , and medical systems .
+
+in fiscal year 1997 , va's payroll was almost $11 billion and the centralized accounting system generated more than $7 billion in additional payments .
+
+the austin automation center also provides , for a fee , information technology services to other government agencies .
+
+the center currently processes a workers compensation computer application for other federal agencies and plans to expand the computing services it provides to federal agencies .
+
+the other two centralized data centers support va's veterans benefits administration ( vba ) programs .
+
+the hines benefits delivery center processes information from va systems that support the compensation , pension , and education applications for vba's 58 regional offices .
+
+the philadelphia benefits delivery center is primarily responsible for supporting va's life insurance program .
+
+in addition , vha hospitals operate local financial management and medical support systems on their own computer systems .
+
+the medical support systems manage information on veteran inpatient and outpatient care , as well as admission and discharge information , while the main medical financial system — the integrated funds distribution , control point activity , accounting and procurement ( ifcap ) system — controls most of the $17 billion in funds that va spent on medical care in fiscal year 1997 .
+
+the ifcap system also transmits financial and inventory information daily to the financial management system in austin .
+
+the three va data centers , as well as the 172 vha hospitals , 58 vba regional offices , and the va headquarters office , are all interconnected through a wide area network .
+
+all together , va's network serves more than 40,000 on - line users .
+
+our objective was to evaluate and test the effectiveness of general computer controls over the financial systems maintained and operated by va at its austin , hines , and philadelphia data centers as well as selected va medical centers .
+
+general computer controls , however , also affect the security and reliability of nonfinancial information , such as veteran medical , loan , and insurance data , maintained at these processing centers .
+
+at the austin automation center and va medical centers in dallas and albuquerque , we evaluated controls intended to protect data and application programs from unauthorized access ; prevent the introduction of unauthorized changes to application and provide segregation of duties involving application programming , system programming , computer operations , security , and quality assurance ; ensure recovery of computer processing operations in case of a disaster or other unexpected interruption ; and ensure that an adequate computer security planning and management program is in place .
+
+the scope of our work at the hines and philadelphia benefits delivery centers was limited to ( 1 ) evaluating the appropriateness of access granted to selected individuals and computer resources , ( 2 ) assessing efforts to monitor access activities , and ( 3 ) examining the computer security administration structure .
+
+we restricted our evaluation at the hines and philadelphia benefits delivery centers because va's oig was planning to perform a review of other general computer controls at these sites during fiscal year 1997 .
+
+to evaluate computer controls , we identified and reviewed va's information system general control policies and procedures .
+
+through this review and discussions with va staff , including programming , operations , and security personnel , we determined how the general computer controls were intended to work and the extent to which center personnel considered them to be in place .
+
+we also reviewed the installation and implementation of va's operating system and security software .
+
+further , we tested and observed the operation of general computer controls over va's information systems to determine whether they were in place , adequately designed , and operating effectively .
+
+to assist in our evaluation and testing of general computer controls , we contracted with ernst & young llp .
+
+we determined the scope of our contractor's audit work , monitored its progress , and reviewed the related work papers to ensure that the resulting findings were adequately supported .
+
+we performed our work at the va data centers in austin , hines , and philadelphia ; the va medical centers in dallas and albuquerque ; and va headquarters in washington , d.c. , from october 1997 through january 1998 .
+
+our work was performed in accordance with generally accepted government auditing standards .
+
+va provided us with written comments on a draft of this report , which are discussed in the “agency comments” section and reprinted in appendix i .
+
+a basic management objective for any organization is to protect data supporting its critical operations from unauthorized access , which could lead to improper modification , disclosure , or deletion .
+
+our review of va's general computer controls found that the department was not adequately protecting financial and sensitive veteran medical and benefit information .
+
+specifically , va did not adequately limit the access granted to authorized va users , properly manage user ids and passwords , or routinely monitor access activity .
+
+as a result , va's computer systems , programs , and data are at risk of inadvertent or deliberate misuse , fraudulent use , and unauthorized alteration or destruction occurring without detection .
+
+we also found that va had not adequately protected its systems from unauthorized access from remote locations or through the va network .
+
+the risks created by these security issues are serious because in va's interconnected environment , the failure to control access to any system connected to the network also exposes other systems and applications on the network .
+
+due to the sensitive nature of the remote access and network control weaknesses we identified , these issues are described in a separate report with limited distribution issued to you today .
+
+a key weakness in va's internal controls was that the department was not adequately limiting the access of va employees .
+
+organizations can protect information from unauthorized changes or disclosures by granting employees authority to read or modify only those programs and data that are necessary to perform their duties .
+
+va , however , allowed thousands of users to have broad authority to access financial and sensitive veteran medical and benefit information .
+
+at austin , for example , the security software was implemented in a manner that provided all of the more than 13,000 users with the ability to access and change sensitive data files , read system audit information , and execute powerful system utilities .
+
+such broad access authority increased the risk that users could circumvent the security software , and presented users with an opportunity to alter or delete any computer data or program .
+
+the director of the austin automation center told us that his staff had restricted access to the sensitive data files , system audit information , and powerful system utilities that we identified .
+
+in addition , we found several other examples where va did not adequately restrict the access of legitimate users , including the following .
+
+at both the hines and philadelphia centers , we found that system programmers had access to both system software and financial data .
+
+this access could allow the programmers to make changes to financial information without being detected .
+
+at the hines center , we also identified 18 users in computer operations who could update sensitive computer libraries .
+
+update access to these libraries could result in the security software being circumvented with the use of certain programs to alter or delete sensitive data .
+
+at the dallas center , we determined that 12 computer support personnel had access to all financial and payroll programs and data .
+
+although these support staff need access to certain programs , providing complete access weakens the organization's ability to ensure that only authorized changes are allowed .
+
+at the austin center , we found more than 100 users who had an access privilege that provided the ability to bypass security controls and enabled them to use any command or transaction .
+
+access to this privilege should be limited to use in emergencies or for special purposes because it creates a potential security exposure .
+
+the director of the austin automation center told us that the privilege that provided users the opportunity to bypass security controls had been removed from all individual user ids .
+
+the vba cio also said that a task force established to address control weaknesses had evaluated the inappropriate access that we identified at the hines and philadelphia benefits delivery centers and made recommendations for corrective measures .
+
+we also found that va was not promptly removing access authority for terminated or transferred employees or deleting unused or unneeded ids .
+
+at the dallas and albuquerque centers , we found that ids belonging to terminated and transferred employees were not being disabled .
+
+we identified over 90 active ids belonging to terminated or transferred employees at dallas and 50 at albuquerque .
+
+if user ids are not promptly disabled when employees are terminated , former employees are allowed the opportunity to sabotage or otherwise impair va operations .
+
+at the dallas center , we identified more than 800 ids that had not been used for at least 90 days .
+
+we also identified inactive ids at the austin , hines , and albuquerque centers .
+
+for instance , at the hines center , we found ids that had been inactive for as long as 7 years .
+
+allowing this situation to persist poses unnecessary risk that unneeded ids will be compromised to gain unauthorized access to va computer systems .
+
+in january 1998 , the director of the dallas medical center said that a program had been implemented to disable all user ids for terminated employees and those ids not used in the last 90 days .
+
+in addition , the director of the austin automation center and the vba cio told us that ids would be automatically suspended 30 days after the password expired at the austin , hines , and philadelphia centers .
+
+one reason that va's user access problems existed was because user access authority was not being reviewed periodically .
+
+such periodic reviews would have allowed va to identify and correct inappropriate access .
+
+the directors of the austin automation center and the dallas medical center told us that they planned to periodically review system access .
+
+the vba cio also said that the hines and philadelphia benefits delivery centers will begin routinely reviewing user ids and deleting individuals accordingly .
+
+in addition to overseeing user access authority , it is also important to actively manage user ids and passwords to ensure that users can be identified and authenticated .
+
+to accomplish this objective , organizations should establish controls to maintain individual accountability and protect the confidentiality of passwords .
+
+these controls should include requirements to ensure that ids uniquely identify users ; passwords are changed periodically , contain a specified number of characters , and are not common words ; default ids and passwords are changed to prevent their use ; and the number of invalid password attempts is limited .
+
+organizations should also evaluate the effectiveness of these controls periodically to ensure that they are operating effectively .
+
+user ids and passwords at the sites we visited were not being effectively managed to ensure individual accountability and reduce the risk of unauthorized access .
+
+va had issued an updated security policy in january 1997 that addressed local area network user id and password management .
+
+specifically , this policy required users to have separate ids ; passwords to be changed periodically , be at least six characters in length , and be formed with other than common words ; and ids to be suspended after three invalid password attempts .
+
+despite these requirements , we identified a pattern of network control weaknesses because va did not periodically review local area network user ids and passwords for compliance with this policy .
+
+at the albuquerque center , we identified 119 network ids that were allowed to circumvent password change controls , 15 ids that did not have any passwords , and eight ids that had passwords with less than six characters .
+
+at the philadelphia center , we found that approximately half of the network user ids , including the standard network administrator id , were vulnerable to abuse because passwords were common words that could be easily guessed or found in a dictionary .
+
+at the austin and dallas centers , we found that network passwords were set to never expire .
+
+not requiring passwords to be changed increases the risk that they will be uncovered , which could lead to unauthorized access .
+
+in february 1998 , the vba cio told us that the hines and philadelphia benefits delivery centers plan to require that passwords not be common words .
+
+additionally , the directors of both the austin automation center and the dallas medical center said that although their staffs did not control wide area network password management controls , they were working with va technical staff to improve network password management by requiring passwords to be changed periodically .
+
+in addition , va's user id and password management policy only applied to local area networks .
+
+va did not have departmentwide policies governing user ids and passwords for other computer platforms , such as mainframe computers or the wide area network .
+
+although some organizations within va had procedures in these areas , we identified a number of user id and password management problems .
+
+at the philadelphia center , we found that the security software was implemented in a manner that did not disable the master security administration id after a specified number of invalid password attempts .
+
+allowing unlimited password attempts to this id , which has the highest level security authority , increases the risk of unauthorized access to or disclosure of sensitive information .
+
+at the austin center , we determined that more than 100 mainframe ids that did not require passwords , many of which had broad access authority , were not properly defined to prevent individuals from using them .
+
+although system ids without passwords are required to perform certain operational tasks , these ids should not be available to individual users because ids that do not require password validation are more susceptible to misuse .
+
+twenty of these ids were especially vulnerable to abuse because the account identifiers were common words , software product names , or derivations of words or products that could be easily guessed .
+
+at the dallas and albuquerque centers , we discovered that an id established by a vendor to handle various support functions had remained active even though the vendor had recommended that this id be suspended when not in use .
+
+the director of the austin automation center told us that his staff had deleted nearly 50 of the mainframe ids that did not require passwords and reduced the access authority for many of the remaining ids that did not require passwords .
+
+in addition , the chief of the information resources management service at the dallas medical center agreed to take steps to address the system maintenance id problem we identified .
+
+we also found numerous instances where user ids and passwords were being shared by staff .
+
+for example , as many as 16 users at the albuquerque medical center and an undetermined number at the dallas medical center were sharing ids with privileges to all financial data and system software .
+
+at austin , more than 10 ids with high - level security access were being shared by several staff members .
+
+the use of shared ids and passwords increases the risk of a password being compromised and undermines the effectiveness of monitoring because individual accountability is lost .
+
+the director of the austin automation center told us that shared ids had been eliminated and replaced with individually assigned user ids .
+
+in addition , the chief of the information resources management service at the dallas medical center agreed to take steps to address the shared id problem we identified .
+
+the risks created by these access control problems were also heightened significantly because the sites we visited were not adequately monitoring system and user access activity .
+
+routinely monitoring the access activities of employees , especially those who have the ability to alter sensitive programs and data , can help identify significant problems and deter employees from inappropriate and unauthorized activities .
+
+without these controls , va had little assurance that unauthorized attempts to access sensitive information would be detected .
+
+because of the volume of security information that must be reviewed , the most effective monitoring efforts are those that target specific actions .
+
+these monitoring efforts should include provisions to review unsuccessful attempts to gain entry to a system or access sensitive deviations from access trends , successful attempts to access sensitive data and resources , highly - sensitive privileged access , and access modifications made by security personnel .
+
+for va , such an approach could be accomplished using a combination of the audit trail capabilities of its security software and developing computerized reports .
+
+this approach would require each facility to compile a list of sensitive system files , programs , and software so that access to these resources could be targeted .
+
+access reports could then be developed for security staff to identify unusual or suspicious activities .
+
+for instance , the reports could provide information on browsing trends or summarizations based on selected criteria that would target specific activities , such as repeated attempts to access certain pay tables or sensitive medical and benefit information .
+
+despite the thousands of employees who had legitimate access to va computer systems containing financial and operational data , va did not have any departmentwide guidance for monitoring successful and unsuccessful attempts to access system files containing key financial information or sensitive veteran data .
+
+as a result , va's monitoring efforts were not effective for detecting unauthorized access to or modification of sensitive information .
+
+the security staffs at the philadelphia , hines , dallas , and albuquerque centers were not actively monitoring access activities .
+
+at the philadelphia center , available violation reports were not being reviewed , while at the hines center , it was unclear who had specific responsibility for monitoring access .
+
+as a result , no monitoring was being performed at either the hines or philadelphia centers .
+
+in addition , neither the dallas nor albuquerque centers had programs to actively monitor access activities .
+
+also , violation reports at the austin automation center did not target most types of unusual or suspicious system activity , such as repeated attempts to access sensitive files or libraries or attempts to access certain accounts or pay tables .
+
+in addition , the austin automation center had not developed any browsing trends or instituted a program to monitor staff access , particularly access by staff who had significant access authority to critical files , programs , and software .
+
+the director of the austin automation center told us that he plans to establish a new security staff that will be responsible for establishing a targeted monitoring program to identify access violations , ensure that the most critical resources are properly audited , and periodically review highly privileged users , such as system programmers and security administrators .
+
+also , the director of the dallas medical center told us that his staff plan to periodically review user access .
+
+in addition , the chief of the information resources management service told us during follow - up discussions that the dallas medical center will establish a targeted monitoring program to review access activities .
+
+furthermore , none of the five sites we visited were monitoring network access activity .
+
+although logging events on the network is the primary means of identifying unauthorized users or unauthorized usage of the system by authorized users , two of the sites we reviewed were not logging network security events .
+
+unauthorized network access activity would also go undetected at the sites that were logging network activity because the network security logs were not reviewed .
+
+the director of the austin automation center told us that his staff planned to begin a proactive security monitoring program that would include identifying and investigating unauthorized attempts to gain access to austin automation center computer systems and improper access to sensitive information on these systems .
+
+the director of the dallas medical center also told us that his staff planned to implement an appropriate network monitoring program .
+
+in addition to these general access controls , there are other important controls that organizations should have in place to ensure the integrity and reliability of data .
+
+these general computer controls include policies , procedures , and control techniques to physically protect computer resources and restrict access to sensitive information , provide appropriate segregation of duties among computer personnel , prevent unauthorized changes to operating system software , and ensure the continuation of computer processing operations in case of an unexpected interruption .
+
+although we did not review these general controls at the hines and philadelphia centers , we found weaknesses in these areas at the albuquerque , dallas , and austin centers .
+
+important general controls for protecting access to data are the physical security control measures , such as locks , guards , fences , and surveillance equipment that an organization has in place .
+
+at va , such controls are critical to safeguarding critical financial and sensitive veteran information and computer operations from internal and external threats .
+
+we found weaknesses in physical security at each of the three facilities where these controls were reviewed .
+
+none of the three facilities that we visited adequately controlled access to the computer room .
+
+excessive access to the computer rooms at these facilities was allowed because none of the sites had established policies and procedures for periodically reviewing access to the computer room to determine if it was still required .
+
+in addition , the albuquerque medical center was not documenting access to the computer room by individuals who required escort , such as visitors , contractors , and maintenance staff .
+
+at the austin automation center , for instance , we found that more than 500 people had access to the computer room , including more than 170 contractors .
+
+the director of the austin automation center told us that since our review , access to the computer room had been reduced to 250 individuals and that new policies and procedures would be established to further scrutinize the number of staff who had access to the computer room .
+
+in addition , both the dallas and albuquerque medical centers gave personnel from the information resource management group unnecessary access to the computer room .
+
+at the albuquerque medical center , 18 employees from the information resource management group had access to the computer room , while at the dallas medical center , all information resource management staff were allowed access .
+
+at both medical centers , this access included personal computer maintenance staff and certain administrative employees who should not require access to the computer room .
+
+while it is appropriate for information resource management staff to have access to the computer room , care should be taken to limit access to only those employees who have a reasonable need .
+
+our review also identified other physical security control weaknesses .
+
+for example , windows in the dallas medical center computer room were not alarmed to detect potential intruders and sensitive cabling in this computer room was not protected to prevent disruptions to computer operations .
+
+in addition , chemicals that posed a potential hazard to employees and computer operations were stored inside the computer room in austin .
+
+furthermore , a telecommunication panel in the austin automation center computer room was also not protected , increasing the risk that network communications could be inadvertently disrupted .
+
+the director of the austin automation center told us that his staff had removed chemicals from the computer room and protected the telecommunications panel .
+
+in addition , the director of the dallas medical center told us that his staff plan to address the physical security problems when the computer room is moved to a new facility .
+
+another fundamental technique for safeguarding programs and data is to segregate the duties and responsibilities of computer personnel to reduce the risk that errors or fraud will occur and go undetected .
+
+duties that should be separated include application and system programming , quality assurance , computer operations , and data security .
+
+at the austin automation center , we found three system programmers who had been assigned to assist in the security administration function .
+
+under normal circumstances , backup security staff should report to the security administrator and have no programming duties .
+
+because these individuals had both system and security administrator privileges , they had the ability to eliminate any evidence of their activity in the system .
+
+at the time of our review , austin's security software administrator also reported to the application programming division director .
+
+the security software administrator , therefore , had application programming responsibility , which is not compatible with the duties associated with system security .
+
+the director of the austin automation center told us that actions had been taken to address the reported weaknesses .
+
+these actions included removing the master security administration user id and password from system programmers and establishing a new security group to consolidate security software administration .
+
+during a follow - up discussion , the director also said that an emergency id had been established to provide system programmers with additional access when required .
+
+this approach should not only improve access controls but also provide a means to determine if system programmer access authorities need to be expanded .
+
+we also found instances where access controls did not enforce segregation of duties principles .
+
+for example , we found nine users in the information resource management group at the albuquerque medical center who had both unrestricted user access to all financial data and electronic signature key authority .
+
+these privileges would allow the users to prepare invoices and then approve them for payment without creating an audit trail .
+
+a standard computer control practice is to ensure that only authorized and fully tested operating system software is placed in operation .
+
+to ensure that changes to the operating system software are needed , work as intended , and do not result in the loss of data and program integrity , these changes should be documented , authorized , tested , independently reviewed , and implemented by a third party .
+
+we found weaknesses in operating system software change control at the austin automation center .
+
+although the austin automation center security policy required operating system software changes to be approved and reviewed , the center had not established detailed written procedures or formal guidance for modifying operating system software .
+
+there were no formal guidelines for approving and testing operating system software changes .
+
+in addition , there were no detailed procedures for implementing these changes .
+
+during fiscal year 1997 , the austin automation center made more than 100 system software changes .
+
+however , none of these changes included evidence of testing , independent review , or acceptance .
+
+in addition , the austin automation center did not provide any evidence of review by technical management .
+
+furthermore , operating system software changes were not implemented by an independent control group .
+
+the director of the austin automation center told us that his staff planned to document and implement operating system software change control procedures that require independent supervisory review and approval .
+
+in addition , the director said that management approval will be required for each phase of the software change process .
+
+an organization must take steps to ensure that it is adequately prepared to cope with a loss of operational capability due to earthquakes , fires , accidents , sabotage , or any other disruption .
+
+an essential element in preparing for such catastrophes is an up - to - date , detailed , and fully tested disaster recovery plan .
+
+such a plan is critical for helping to ensure that information systems can promptly restore operations and data , such as payroll processing and related records , in the event of disaster .
+
+the disaster recovery plan for the austin automation center consisted of 17 individual plans covering various segments of the organization .
+
+however , there was no overall document that integrated the 17 individual plans and set forth the roles and responsibilities of each disaster recovery team , defined the reporting lines between each team , and identified who had overall responsibility for the coordination of all 17 teams .
+
+we also found that although the austin automation center had tested its disaster recovery plan , it had only performed limited testing of network communications .
+
+this testing included the austin finance center , but did not involve other types of users , such as vha medical centers or vba regional offices .
+
+in addition , the austin automation center had not conducted unannounced tests of its disaster recovery plan , a scenario more likely to be encountered in the event of an actual disaster .
+
+finally , a copy of the disaster recovery plan was not maintained at the off - site storage facility .
+
+in the event of a disaster , it is a good practice to keep at least one current copy of the disaster recovery plan at this location to ensure that it is not destroyed by the same events that made the primary data processing facility unavailable .
+
+the director of the austin automation center told us that he was in the process of correcting each of the deficiencies we identified .
+
+actions he identified included ( 1 ) expanding network communication testing to include an outpatient clinic and a regional office , ( 2 ) conducting unannounced tests of the disaster recovery plan , ( 3 ) incorporating the 17 individual recovery plans into an executive plan , and ( 4 ) maintaining a copy of the disaster recovery plan at the off - site storage facility .
+
+we found deficiencies in the disaster recovery planning at the dallas and albuquerque medical centers as well .
+
+at both locations ( 1 ) tests of the disaster recovery plans had not been conducted , ( 2 ) copies of the plans were not maintained off - site , ( 3 ) backup files for programs , data , and software were not stored off - site , and ( 4 ) periodic reviews of the disaster recovery plans were not required to keep them current .
+
+the director of the dallas medical center told us that he intends to review the disaster recovery plan semiannually , develop procedures to test the plan , and identify an off - site storage facility for both the disaster recovery plan and backup files .
+
+the general computer control weaknesses that we identified are similar to computer security problems that have been previously identified in evaluations conducted by va's oig and in contractor studies .
+
+for example , in a july 1996 report evaluating computer security at the austin automation center , the oig stated that the center's security function was fragmented , user ids for terminated employees were still active and being used , monitoring of access activities was not being performed routinely , over 600 individuals were authorized access to the computer room , and telecommunication connections were not fully tested during disaster recovery plan testing .
+
+similar findings were also identified by contractors hired by the austin automation center to review the effectiveness of certain aspects of its general computer controls .
+
+specifically , austin brought in outside contractors to evaluate security software implementation in november 1995 and network security in april 1997 .
+
+the security software review determined that key operating system libraries , security software files , and sensitive programs were not adequately restricted , that more than 90 ids did not require passwords , and that access activity was not consistently monitored .
+
+in addition , the network security review found that the center had not established a comprehensive system security policy that included network security .
+
+the oig also reported comparable access control and security management problems at the hines benefits delivery center in may 1997 .
+
+for example , the oig determined that access to sensitive data and programs had not been appropriately restricted and that system access activity was not reviewed regularly to identify unauthorized access attempts .
+
+the oig also found that security efforts at the hines benefits delivery center needed to be more focused to meet the demands of the center .
+
+in addition , the oig identified general computer control weaknesses at seven va medical centers as part of a review of the ifcap system conducted from january 1994 to november 1995 .
+
+problems identified at a majority of these medical centers were reported in march 1997 .
+
+these issues included problems with restricting access to the production environment , monitoring access activity , managing user ids and passwords , testing disaster recovery plans , and reviewing user access privileges periodically .
+
+furthermore , the oig included information system security controls as a material weakness in its report on va's consolidated financial statements for fiscal year 1997 .
+
+the oig concluded that va assets and financial data were vulnerable to error or fraud because of significant weaknesses in computer controls .
+
+although the federal managers' financial integrity act ( fmfia ) of 1982 requires agencies to establish controls that reasonably ensure that assets are safeguarded against waste , loss , or unauthorized use , these information system integrity weaknesses were not included in the department's fmfia report as a material internal control weakness in fiscal year 1997 .
+
+a key reason for va's general computer control problems was that the department did not have a comprehensive computer security planning and management program in place to ensure that effective controls were established and maintained and that computer security received adequate attention .
+
+to assist agencies in developing more comprehensive and effective information security programs , we studied the security management practices of eight nonfederal organizations with reputations as having superior information security programs .
+
+we found that these organizations successfully managed their information security risks through an ongoing cycle of risk management activities .
+
+as shown in figure 1 , each of these activities is linked in a cycle to help ensure that business risks are continually monitored , policies and procedures are regularly updated , and controls are in effect .
+
+the risk management cycle begins with an assessment of risks and a determination of needs .
+
+this assessment includes selecting cost - effective policies and related controls .
+
+once policies and controls are selected , they must be implemented .
+
+next , the policies and controls , as well as the risks that prompted their adoption , must be communicated to those responsible for complying with them .
+
+finally , and perhaps most important , there must be procedures for evaluating the effectiveness of policies and related controls and reporting the resulting conclusions to those who can take appropriate corrective action .
+
+in addition , our study found that a strong central security management focal point can help ensure that the major elements of the risk management cycle are carried out and can serve as a communications link among organizational units .
+
+in contrast , va had not instituted a framework for assessing and managing risks or monitoring the effectiveness of general computer controls .
+
+specifically , va's computer security efforts lacked clearly delineated security roles and responsibilities ; regular , periodic assessments of risk ; security policies and procedures that addressed all aspects of va's an ongoing security monitoring program to identify and investigate unauthorized , unusual , or suspicious access activity ; and a process to measure , test , and report on the continued effectiveness of computer system , network , and process controls .
+
+the first key problem at the locations we reviewed was that security roles and responsibilities were not clearly assigned and security management was not given adequate attention .
+
+for example , the computer security administration function at the austin automation center was fragmented between computer security administration staff and other computer security components .
+
+specifically , computer security administration staff reported to the application programming division while other computer security staff reported to a staff function within the center's management directorate .
+
+furthermore , the computer security administration staff was responsible for application programming in addition to supporting security administration .
+
+the director of the austin automation center told us that a new security group would be formed to consolidate staff performing the security software administration and physical security functions into one group .
+
+as part of this effort , roles and responsibilities for security administration were to be explicitly assigned .
+
+the roles and responsibilities for managing computer security at the other facilities we reviewed were also weak .
+
+for instance , computer security administration at the philadelphia benefits delivery center was limited to adding and removing users from the system , while at the hines benefits delivery center the responsibility for day - to - day security monitoring and reviewing the overall effectiveness of the security program was unclear .
+
+and at both the dallas and albuquerque medical centers , security administration was assigned only as a collateral responsibility .
+
+the security administrators at these medical centers reported spending less than a fifth of their time on security - related matters , which was not sufficient to actively manage and monitor access to critical medical and financial systems .
+
+a second key aspect of computer security planning and management is periodically assessing risk .
+
+regular risk assessments assist management in making decisions on necessary controls by helping to ensure that security resources are effectively distributed to minimize potential loss .
+
+these assessments also increase the awareness of risks and , thus , generate support for adopted policies and controls , which helps ensure that the policies and controls operate as intended .
+
+va's policy requires that risk assessments be performed every 3 years or when significant changes are made to a facility or its computer systems .
+
+however , none of the three facilities where risk assessments were reviewed — albuquerque , dallas , and austin — had completed risk assessments on a periodic basis or updated these assessments when significant changes occurred .
+
+for example , there was no indication that a risk assessment had ever been performed at the albuquerque medical center .
+
+the dallas medical center risk assessment had not been updated since 1994 , even though its processing environment had changed significantly since then .
+
+the dallas medical center has upgraded its computer hardware and added network capabilities since 1994 .
+
+furthermore , the austin automation center did not conduct a risk assessment from 1991 through 1996 , even though the center implemented a new financial management computer system during this period .
+
+the director of the austin automation center told us that his staff planned to begin assessing risk on a regular basis .
+
+a third key element of effective security planning and management is having established policies and procedures governing a complete computer security program .
+
+such policies and procedures should integrate all security aspects of an organization's interconnected environment , including local area network , wide area network , and mainframe security .
+
+the integration of network and mainframe security is particularly important as computer systems become more and more interconnected .
+
+va's cio , through the deputy assistant secretary for information resources management ( das / irm ) , is responsible for developing departmentwide security policies and periodically reviewing organizational compliance with the security policies .
+
+on january 30 , 1997 , das / irm issued an updated security policy .
+
+however , this policy is still evolving and does not yet adequately establish a framework for developing and implementing effective security techniques or monitoring the effectiveness of these techniques within va's interconnected environment .
+
+for example , the updated security policy addressed local area networks but did not provide guidance for other computer platforms , such as mainframe computer security .
+
+a fourth key area of an overall computer security management program is an ongoing security monitoring program that helps to ensure that facilities are monitoring both successful and unsuccessful access activities .
+
+as noted above , va did not have overall guidance on monitoring and evaluating access activities at va processing facilities .
+
+security administration staff at the va facilities we visited were not actively monitoring successful or unsuccessful attempts to access sensitive computer system files .
+
+in addition , although va has procedures for reporting computer security incidents , these procedures will not be effective until each facility establishes a mechanism for identifying computer security incidents .
+
+a fifth key element of effective security planning and management is a process for periodically monitoring , measuring , testing , and reporting on the continued effectiveness of computer system , network , and process controls .
+
+this type of security oversight is an essential aspect of an overall security planning and management framework because it helps the organization take responsibility for its own security program and can help identify and correct problems before they become major concerns .
+
+although va had taken some measures to evaluate controls periodically , the department had not established a coordinated program that provided for ongoing local oversight and periodic external evaluations .
+
+in addition , va had not provided technical standards for implementing security software , maintaining operating system integrity , or controlling sensitive utilities .
+
+such standards would not only help ensure that appropriate computer controls were established consistently throughout the department , but also facilitate periodic reviews of these controls .
+
+the austin automation center was the only facility we visited that had attempted to evaluate the effectiveness of its computer controls .
+
+for the last 3 years , the austin automation center has brought in either oig or contractor personnel to evaluate certain aspects of its computer security , including mainframe security software implementation , the network security environment , and physical access controls .
+
+in addition , the director of the austin automation center told us that the center's client server environment and security controls would be reviewed during calendar year 1998 .
+
+however , the austin automation center had not established an ongoing security oversight program to ensure that controls continued to work as intended .
+
+in addition , both the das / irm security group and the vha medical information security service ( miss ) had performed security reviews , but these reviews focused on compliance rather than on the effectiveness of controls .
+
+the das / irm security group evaluated disaster recovery on a departmentwide basis in fiscal year 1997 ; miss reviews computer security at vha processing facilities on a 3-year rotational basis .
+
+despite these efforts , we found control weaknesses due to noncompliance with va policies and procedures .
+
+furthermore , until va establishes a program to periodically evaluate the effectiveness of controls , it will not be able to ensure that its computer systems and data are adequately protected from unauthorized access .
+
+in april 1998 , das / irm officials told us that va is in the process of developing a comprehensive security plan and management program that will incorporate a risk management cycle and include requirements for monitoring access activity , reporting security incidents , and reviewing compliance with policies and procedures .
+
+the director of vha miss also told us in april 1998 that the vha information security program office is addressing all of the security issues identified .
+
+as part of this effort , miss plans to change its on - site security review procedures and vha plans to expand current security policies and guidance .
+
+va's access control problems , as well as other general computer control weaknesses , are placing sensitive veteran medical and benefit information at risk of disclosure , critical financial and benefit delivery operations at risk of disruption , and assets at risk of loss .
+
+the general computer control weaknesses we identified could also adversely affect other agencies that depend on the austin automation center for computer processing support .
+
+especially disturbing is the fact that many similar weaknesses had been reported in previous years , indicating that va's past actions have not been effective on a departmentwide basis .
+
+implementing more effective and lasting controls that protect sensitive veteran information and establish an effective general computer control environment requires that the department establish a comprehensive computer security planning and management program .
+
+this program should provide for periodically assessing risks , implementing effective controls for restricting access based on job requirements and proactively reviewing access activities , clearly defining security roles and responsibilities , and , perhaps most important , monitoring and evaluating the effectiveness of controls and policies to ensure that they remain effective .
+
+we recommend that you direct the va cio to work in conjunction with the vba and vha cios and the facility directors as appropriate to limit access authority to only those computer programs and data needed to perform job responsibilities and review access authority periodically to identify and correct inappropriate access ; implement id and password management controls across all computer platforms to maintain individual accountability and protect password confidentiality and test these controls periodically to ensure that they are operating effectively ; develop targeted monitoring programs to routinely identify and investigate unusual or suspicious system and user access activity ; restrict access to computer rooms based on job responsibility and periodically review this access to determine if it is still appropriate ; separate incompatible computer responsibilities , such as system programming and security administration , and ensure that access controls enforce segregation of duties principles ; require operating system software changes to be documented , authorized , tested , independently reviewed , and implemented by a third party ; and establish controls to ensure that disaster recovery plans are comprehensive , current , fully tested , and maintained at the off - site storage facility .
+
+we also recommend that you develop and implement a comprehensive departmentwide computer security planning and management program .
+
+included in this program should be procedures for ensuring that security roles and responsibilities are clearly assigned and security management is given adequate attention ; risks are assessed periodically to ensure that controls are appropriate ; security policies and procedures comprehensively address all aspects of va's interconnected environment ; attempts ( both successful and unsuccessful ) to gain access to va computer systems and the sensitive data files and critical production programs stored on these systems are identified , reported , and reviewed on a regular basis ; and a security oversight function , including both ongoing local oversight and periodic external evaluations , is implemented to measure , test , and report on the effectiveness of controls .
+
+in addition , we recommend that you direct the va cio to review and assess computer control weaknesses that have been identified throughout the department and establish a process to ensure that these weaknesses are addressed .
+
+furthermore , we recommend that you direct the va cio to monitor and periodically report on the status of actions taken to improve computer security throughout the department .
+
+finally , we recommend that you report the information system security weaknesses we identified as material internal control weaknesses in the department's fmfia report until these weaknesses are corrected .
+
+in commenting on a draft of this report , va agreed with our recommendations and stated that it is taking immediate action to correct computer control weaknesses and implement oversight mechanisms to ensure that these problems do not recur .
+
+va stated that it is also preparing a comprehensive security plan and management program that will incorporate a risk management cycle and include requirements and guidance for monitoring access activity at va facilities .
+
+in addition , the va stated that its cio is working closely with the vba and vha cios to identify computer control weaknesses previously reported in oig reviews and other internal evaluations and develop a plan to correct these deficiencies .
+
+va also informed us that the cio will report periodically to the oig on va's progress in correcting computer control weaknesses throughout the department .
+
+finally , va agreed to consider outstanding computer control weaknesses for reporting as material weaknesses in the department's fiscal year 1998 fmfia report when the department's top management council meets in the first quarter of fiscal year 1999 .
+
+this report contains recommendations to you .
+
+the head of a federal agency is required by 31 u.s.c .
+
+720 to submit a written statement on actions taken on these recommendations to the senate committee on governmental affairs and the house committee on government reform and oversight not later than 60 days after the date of this report .
+
+a written statement also must be sent to the house and senate committees on appropriations with the agency's first request for appropriations made more than 60 days after the date of this report .
+
+we are sending copies of the report to the chairmen and ranking minority members of the house and senate committees on veterans affairs and to the director of the office of management and budget .
+
+copies will also be made available to others upon request .
+
+please contact me at ( 202 ) 512-3317 if you or your staff have any questions .
+
+major contributors to this report are listed in appendix ii .
+
+the following is gao's comment on the department of veterans affairs' letter dated july 16 , 1998 .
+
+1 .
+
+although va only concurred in principle with our recommendation to report the information system security weaknesses we identified as material internal control weaknesses in the department's fmfia report , the department's plans for evaluating computer control weaknesses for reporting as material weaknesses appear reasonable .
+
+va has committed to presenting outstanding control weaknesses to the top management council when it meets in the first quarter of fiscal year 1999 to determine material fmfia weaknesses for fiscal year 1998 .
+
+david w. irvin , assistant director debra m. conner , senior auditor shannon q .
+
+cross , senior evaluator charles m. vrabel , senior auditor the first copy of each gao report and testimony is free .
+
+additional copies are $2 each .
+
+orders should be sent to the following address , accompanied by a check or money order made out to the superintendent of documents , when necessary .
+
+visa and mastercard credit cards are accepted , also .
+
+orders for 100 or more copies to be mailed to a single address are discounted 25 percent .
+
+u.s. general accounting office p.o .
+
+box 37050 washington , dc 20013 room 1100 700 4th st. nw ( corner of 4th and g sts .
+
+nw ) u.s. general accounting office washington , dc orders may also be placed by calling ( 202 ) 512-6000 or by using fax number ( 202 ) 512-6061 , or tdd ( 202 ) 512-2537 .
+
+each day , gao issues a list of newly available reports and testimony .
+
+to receive facsimile copies of the daily list or any list from the past 30 days , please call ( 202 ) 512-6000 using a touchtone phone .
+
+a recorded menu will provide information on how to obtain these lists .
+

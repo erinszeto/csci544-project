@@ -1,0 +1,1162 @@
+our prior work has found that strong preventive controls can help the internal revenue service ( irs ) defend itself against tax fraud .
+
+these controls include taxpayer authentication — in general , the process by which irs verifies people's identities before allowing them access to sensitive data ( such as tax return information from a prior year ) or , in the case of a suspicious tax return , a refund .
+
+irs also uses authentication to verify a person's identity before allowing access to a resource , such as an information technology ( it ) system .
+
+the risk of fraud has increased as more personally identifiable information ( pii ) has become readily available as a result of , for example , large - scale cyberattacks on entities including irs , the office of personnel management ( opm ) , and , recently , equifax .
+
+in may 2015 , irs temporarily suspended its get transcript service after fraudsters used personal information obtained from sources outside irs to pose as legitimate taxpayers and access tax return information from up to 724,000 accounts .
+
+in june and july 2015 , opm announced two data breaches affecting approximately 22.1 million current or former federal employees and contractors and their family members .
+
+among the data stolen were social security numbers ( ssn ) and financial and personal health information .
+
+in september 2017 , equifax announced that criminals had exploited a vulnerability in its systems and obtained pii on 145.5 million individuals including names , ssns , birth dates , addresses , and in some cases , driver's license information .
+
+in march 2018 , equifax announced , after further investigation , that criminals stole partial driver's license information for an additional 2.4 million individuals .
+
+the proliferation of stolen pii poses a threat to the tax system by making it difficult for irs to distinguish legitimate taxpayers from fraudsters .
+
+this threat is particularly acute during the filing season when irs and taxpayers interact the most .
+
+irs estimates that at least $12.2 billion in identity theft ( idt ) tax refund fraud was attempted in calendar year 2016 , and that it prevented the theft of at least $10.5 billion of that amount .
+
+however , irs reports that at least $1.6 billion was paid out to fraudsters .
+
+irs's ability to continuously monitor and improve its approach to taxpayer authentication is a critical step in defending the agency against evolving cyber threats and fraud schemes and in protecting billions of taxpayer dollars .
+
+to further address idt refund fraud , irs held a security summit in march 2015 with state tax administrators and industry partners , including tax preparation and software firms and financial institutions .
+
+this ongoing effort is intended to improve information sharing and collaboratively address critical issues , including authentication and fraud detection .
+
+within this context , you asked us to examine irs's efforts to authenticate taxpayers .
+
+this report ( 1 ) describes the taxpayer interactions that require authentication , including the general rationale behind the requirements , and irs's authentication methods ; ( 2 ) assesses what irs is doing to monitor and improve its authentication methods , both internally and collaboratively through the security summit , to secure taxpayer information and reduce idt refund fraud ; and ( 3 ) determines what else , if anything , irs can do to strengthen its authentication methods while improving services to taxpayers in the future .
+
+to describe the interactions that require taxpayer authentication and irs's authentication methods , we reviewed irs documents , policies and procedures , and irs - reported information related to taxpayer authentication volume and costs per transaction for fiscal years 2016 and 2017 .
+
+we determined that the data were sufficiently reliable for our purposes .
+
+we also interviewed irs officials knowledgeable about the agency's authentication programs and services offered to taxpayers through various channels .
+
+for this report , we focused on the following four irs programs and services because they require taxpayer authentication , verify a significant number of taxpayer identities each year , and illustrate irs's different approaches to authentication: the taxpayer protection program ( tpp ) , identity protection personal identification number ( ip pin ) , and irs's online services .
+
+to assess irs's efforts to monitor and improve authentication internally and through the security summit , we reviewed irs policies , procedures , authentication risk assessments , and information on authentication performance .
+
+to better understand irs's efforts to authenticate taxpayers via telephone and in - person and how customer service representatives ( csr ) record data for authentication , we selected a random , generalizable sample of records from irs's account management services ( ams ) to create estimates about irs's authentication outcome data for tpp .
+
+we determined that these data were sufficiently reliable for the purpose of our review based on discussions with knowledgeable irs officials and by checking key data elements for out - of - range or logically inaccurate data .
+
+ ( see appendix i for more information. ) .
+
+we also compared irs's efforts to applicable activities in the irs identity assurance strategy and roadmap ( roadmap ) , irs's strategic plan fiscal years 2014-2017 ( strategic plan ) , standards for internal control in the federal government , gao's framework for managing fraud risks in federal programs , and relevant national institute of standards and technology ( nist ) guidance .
+
+we interviewed irs officials in return integrity and compliance services ( rics ) , identity assurance office ( iao ) , and it knowledgeable about the agency's taxpayer authentication programs .
+
+we also interviewed irs , state , and industry co - leads from two security summit workgroups to understand irs's collaborative efforts to improve taxpayer authentication .
+
+to evaluate what else , if anything , irs can do to strengthen its authentication methods while improving services to taxpayers , we interviewed irs officials knowledgeable about the agency's plans for taxpayer authentication .
+
+we also met with officials from the general services administration ( gsa ) who are developing a government - wide authentication platform ; officials from the office of management and budget ( omb ) who were involved in developing irs's secure access platform ; and officials from the department of veterans affairs ( va ) who are working with a third - party identity proofing service to authenticate veterans applying for benefits online .
+
+further , we met with knowledgeable officials from the national institute of standards and technology ( nist ) to discuss its guidelines for online identity - proofing and authentication .
+
+based on referrals from nist and security summit workgroup co - leads and our prior work in this area , we also interviewed a nongeneralizable selection of representatives from state revenue offices , industry , and financial institutions .
+
+in total , we met with representatives from five state departments of revenue and one association representing state tax officials , three financial institution organizations , one financial service industry association , three identity - proofing / authentication organizations , and four tax industry organizations .
+
+we compared irs's authentication programs and plans for future improvements to its strategic plan and roadmap , federal internal controls , guidance from nist and omb , principles for project planning , our prior work on the government performance and results act , our information technology investment management framework , and our cost estimating and assessment guide: best practices for developing and managing capital program costs .
+
+for a more detailed description of our objectives , scope , and methodology , see appendix i .
+
+we conducted this performance audit from january 2017 to june 2018 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+irs authenticates taxpayers to provide the agency with reasonable assurance that it is interacting with the legitimate taxpayer .
+
+irs verifies that it is interacting with the legitimate taxpayer through identity proofing and authentication .
+
+identity proofing is the process of first establishing that people are actually who they claim to be .
+
+authentication is the process of verifying that returning users are who they say they are by requiring the use of one or more authenticators — such as a password , a cryptographic key , or a fingerprint — before allowing them access to sensitive data or a resource .
+
+in this report , we refer to both steps collectively as “authentication.” for high - risk interactions , such as access to prior year tax information , authentication can help irs avoid improperly disclosing pii or issuing a fraudulent refund .
+
+authentication is particularly important for combatting idt refund fraud , which occurs when a fraudster obtains an individual's ssn , date of birth , or other pii and uses it to file a fraudulent tax return seeking a refund .
+
+idt refund fraud can also affect businesses .
+
+specifically , fraudsters can use business information to file a fraudulent corporate return requesting a refund .
+
+according to irs officials , fraudsters can file false employer form w - 2 , wage and tax statements ( w - 2 ) to support fraudulent individual returns seeking refunds .
+
+we have previously reported that when irs suspects that a tax return is fraudulent , it will stop the return from further processing , and attempt to notify and authenticate the taxpayer before issuing the refund .
+
+authentication can be accomplished using different methods depending on the risk of the interaction .
+
+single - factor authentication: useful when someone wants to access a low - risk system or service , this method may require only a user name and password .
+
+multi - factor authentication: for high - risk interactions such as access to systems that include pii or financial information , this method requires at least two of the following: “something you know” ( eg , a user name and password ) ; “something you have” ( eg , a mobile phone or cryptographic key ) ; or “something you are” ( eg , a fingerprint or other biometric data ) .
+
+designing authentication programs involves a balancing act — irs needs to prevent fraudsters from passing authentication using stolen taxpayer information , but it must balance that against the burden on legitimate taxpayers who must also authenticate .
+
+if irs makes the authentication process too stringent , legitimate taxpayers may not be able to successfully authenticate to , for example , access their prior year tax information or have irs release a frozen refund .
+
+conversely , if the process is too easy , fraudsters will likely be able to authenticate as easily as legitimate taxpayers .
+
+industry representatives told us that identity proofing and authentication are becoming more difficult with the wide availability of pii .
+
+further , according to nist , it is challenging for organizations to authenticate users remotely via a web application because the processes and technologies to establish and use digital identities offer multiple opportunities for impersonation or other attacks .
+
+these interactions may become even more difficult and risky for organizations like irs , who may interact with a taxpayer only once a year .
+
+as shown by the data breaches discussed at the beginning of this report , fraudsters are persistent in their efforts to exploit weaknesses in online systems and , in the context of irs , access sensitive taxpayer information .
+
+for example , irs reported that , between january and march 2017 , fraudsters were able to use pii to access information from 100,000 taxpayer accounts through irs's data retrieval tool .
+
+according to the treasury inspector general for tax administration , identity thieves may have used pii obtained outside the tax system to start the free application for federal student aid ( fafsa ) application process and access tax information through the data retrieval tool .
+
+further , we have previously reported that fraudsters can use pii obtained in a data breach to more easily create fraudulent returns that resemble authentic tax returns , making it more difficult for irs to detect potential fraud .
+
+even as irs has adapted its idt defenses , fraudsters have developed more complex and sophisticated methods to bypass those defenses and commit fraud undetected .
+
+idt refund fraud affects irs , state revenue offices , tax preparers , tax software companies , and financial institutions .
+
+according to industry representatives , as these entities improve security in one area prone to fraud , fraudsters' methods evolve to target a weaker area .
+
+for example , in march 2016 , irs alerted payroll and human resource professionals of a phishing e - mail scheme in which fraudsters posed as company executives and requested personal information on employees via e - mail , including w - 2s .
+
+with this information , fraudsters can imitate the legitimate taxpayer and file fraudulent tax returns seeking refunds .
+
+in january 2018 , irs reported that the agency received about 100 reports of w - 2 phishing schemes in 2016 and about 900 reports in 2017 .
+
+irs also reported that more than 200 employers , affecting hundreds of thousands of employees , were victimized by w - 2 phishing schemes in 2017 .
+
+irs is working to address these challenges , in part , by collaborating with industry — including tax software companies , the tax preparer community , and financial institutions — as well as state partners .
+
+in march 2015 , the former irs commissioner convened a security summit with industry and states to improve information sharing and fraud detection and to address common challenges .
+
+the summit led to the creation of seven workgroups to combat idt refund fraud across multiple platforms .
+
+each workgroup is led by three co - leads — one each from irs , state departments of revenue or state associations , and industry partners .
+
+these workgroups collaborate on initiatives to improve idt refund fraud prevention and detection , including authentication .
+
+in 2015 , irs also established the identity assurance office ( iao ) to increase insight into authentication and fraud detection needs agency - wide , including authentication services delivered via four channels: telephone , online , in - person , and correspondence ( i.e. , postal mail — hereafter referred to as mail — or fax ) .
+
+among other responsibilities , iao works with stakeholders across irs to review the agency's various authentication programs , including assessing risks of current and planned authentication efforts across the four channels and identifying ways to mitigate these risks .
+
+in december 2016 , iao released its irs identity assurance strategy and roadmap ( roadmap ) for developing a modern and secure authentication environment for all taxpayers , regardless of how they interact with irs .
+
+among other things , the national institute of standards and technology ( nist ) develops and maintains standards , guidelines , recommendations , and research on the security and privacy of information and information systems .
+
+in june 2017 , nist released guidance on digital authentication to help agencies improve the security of their identity - proofing and authentication programs .
+
+in its new guidance , nist breaks down the digital identity environment into three separate components of assurance: 1 .
+
+identity proofing: establishing that the person is actually who they 2 .
+
+authentication: establishing that the person attempting to access a service is in control of one or more valid authenticators associated with that person's identity ; and 3 .
+
+federation: the concept that one set of user credentials can be used to access multiple systems .
+
+the guidance directs agencies to assess the risk for each component of identity assurance , rather than conducting a single risk assessment for the entire process .
+
+according to nist officials , this new approach provides flexibility in choosing identity proofing and authentication solutions ; aligns with existing , standards - based market offerings ; is modular and cost - effective ; and enhances individual privacy .
+
+in addition to nist's new requirements for authentication , recent technology advances and private - sector innovation are providing new options for identity proofing and authenticating users , including in cases where , for example , irs interacts with taxpayers once a year .
+
+some examples of these technologies include physical biometrics , such as facial recognition , as well as behavioral biometrics , such as voice patterns , computer keystroke or mouse use patterns , swipe patterns , and gait analysis .
+
+according to irs documents and discussions with officials , the agency considers risks to both the taxpayer and irs when making decisions about how to approach authentication , which is consistent with federal guidelines .
+
+in making these decisions , irs considers how individuals would be affected by the unauthorized release of sensitive information .
+
+irs also considers the impact on the agency , including the potential for financial loss or harm to irs programs or services , and loss of public trust .
+
+in 2016 , irs identified over 100 interactions between the agency and taxpayers that require authentication .
+
+the interactions range in risk level and irs categorized them based on the potential for incorrect payment of refunds , disclosure of taxpayer information , and critical impacts on irs operations .
+
+high - risk interactions include when an individual taxpayer establishes an online account with irs , which provides access to prior year tax information and other pii , or when a taxpayer is asked to confirm his identify before irs processes what the agency considers to be a potentially fraudulent tax return .
+
+lower - risk interactions include paying a tax bill online .
+
+according to irs , as the risk level of taxpayer interactions increases — for example , interactions that involve sensitive financial information — the authentication process becomes more rigorous .
+
+this enhanced security helps reduce the possibility that a fraudster can successfully authenticate .
+
+further , if tax professionals want to conduct business with irs online , such as when working on behalf of a client to file a return or request a prior year's tax transcript , they must establish an account and authenticate their identity .
+
+according to irs , the agency determines the means by which a taxpayer or tax professional can authenticate his or her identity and what data are required during the authentication process to appropriately minimize risk to the agency .
+
+irs officials told us that the agency works to balance potential risks against its resources and mission to provide all taxpayers access to irs services and support .
+
+irs performs authentication through the following channels .
+
+telephone .
+
+taxpayers can authenticate via telephone with a customer service representative ( csr ) for selected higher - risk interactions with irs , such as in cases of suspected idt refund fraud .
+
+telephone authentication can require taxpayers to respond to knowledge - based questions that a fraudster would not likely know .
+
+for example , for high - risk interactions , taxpayers must answer additional tax return - related questions .
+
+taxpayers who fail to respond correctly to these questions are then required to authenticate in person at a taxpayer assistance center .
+
+for certain lower - risk interactions , taxpayers can authenticate through an automated telephone system .
+
+in - person .
+
+for some interactions with irs , taxpayers can authenticate their identity directly with an irs employee at 1 of irs's approximately 400 taxpayer assistance centers located throughout the country .
+
+taxpayers may need to present one or more government - issued forms of identification and other documents , such as a utility statement , depending on the level of authentication required for the specific interaction .
+
+online .
+
+irs authenticates taxpayers online for both high - risk and lower - risk interactions .
+
+for high - risk interactions such as requesting a tax transcript or looking up an identity protection personal identification number ( ip pin ) , taxpayers must pass a multi - factor authentication process using irs's secure access platform .
+
+irs launched secure access in june 2016 following the get transcript data breach and , as of april 2018 , was using it for 11 applications including authentication for get transcript , ip pin , and the online account .
+
+officials told us they plan to implement secure access for other irs applications in 2018 .
+
+taxpayers authenticating through secure access establish an account by providing irs with a valid e - mail address , basic personal information , and personal financial information .
+
+taxpayers then provide irs a mobile phone number and irs sends the phone an activation code that the taxpayer enters online .
+
+this step validates that the taxpayer possesses the mobile phone .
+
+irs authenticates returning users via a security code .
+
+for lower - risk interactions , taxpayers may authenticate online by answering several knowledge - based questions , such as questions about their current return to learn the status of their refund .
+
+correspondence .
+
+in some cases , taxpayers can submit documents or request tax information via correspondence , which are then reviewed by irs and authenticated by matching against information in irs's systems .
+
+this method can require that irs send the requested documents ( such as a tax transcript ) only to the taxpayer's address of record , or require the taxpayer to include a photocopy of identification .
+
+for example , in some instances , taxpayers who cannot authenticate via telephone and cannot travel to a taxpayer assistance center in person may be able to authenticate by mail .
+
+each authentication channel requires different irs resources .
+
+these resources include irs staff and overhead ; contracts with vendors that provide identity verification services ; and costs inherent to the specific channel , such as mailing costs .
+
+figure 1 summarizes irs's authentication channels and illustrates a number of the interactions that taxpayers or tax professionals can accomplish through one , or several , channels .
+
+it also illustrates the differences in costs per transaction .
+
+according to irs data , in - person authentication at a taxpayer assistance center is the most expensive way to authenticate taxpayers ( about $89 per interaction ) , followed by telephone ( about $54 per interaction ) .
+
+online authentication costs the least , at less than $1 per interaction .
+
+according to the national taxpayer advocate , while requiring the appropriate level of authentication is necessary to protect irs against fraudsters , the agency also needs to offer taxpayers a range of options for interacting with irs .
+
+in this report , we focus on four key irs programs and services that require authentication: taxpayer protection program ( tpp ) .
+
+through tpp , irs reviews tax returns that are flagged by irs's idt filters as potentially fraudulent , such as when a return includes characteristics of known fraud schemes .
+
+irs sends a letter notifying taxpayers that they must authenticate their identity before irs will process the return or issue a refund .
+
+according to irs , in fiscal year 2017 , more than 1.9 million taxpayers received such a notification , and irs authenticated about 1.17 million of them .
+
+these taxpayers could verify their identity via telephone , in - person , and correspondence .
+
+in august 2016 , irs suspended its tpp online authentication service because of potential system security weaknesses .
+
+in mid - march 2018 , irs relaunched the first phase of a more secure tpp online authentication service , which is discussed later in this report .
+
+get transcript .
+
+this service allows individual taxpayers to request and receive a copy of their prior years' tax information .
+
+the transcript contains information from the taxpayer's tax filing history , such as information from form 1040 , u.s .
+
+individual income tax return , that can be used , for example , when applying for a mortgage or student loan , or to electronically file ( e - file ) an upcoming tax return .
+
+taxpayers can request the transcript online or in - person ( to be delivered online or via mail ) ; over the telephone ( to be delivered via correspondence ) ; or by correspondence ( to be delivered via mail ) .
+
+taxpayers must provide authentication information before irs will process their request .
+
+according to irs , in fiscal year 2017 , irs delivered about 26.4 million transcripts , with about 59 percent of transcripts delivered online .
+
+ip pin .
+
+irs assigns each victim of idt a single - use identification number to be used to file a future electronic or paper tax return .
+
+irs also offers taxpayers in florida , georgia , and the district of columbia the option to request an ip pin to help prevent idt in these high tax - related idt locations .
+
+irs automatically rejects e - filed returns if they do not include the ip pin and will delay paper returns for extra examination when taxpayers file without the ip pin .
+
+according to irs , the agency mailed 3.5 million ip pins to be used during the 2017 filing season .
+
+irs's online services .
+
+irs has developed a number of online services that require taxpayers and tax professionals to authenticate before accessing information online .
+
+for example , taxpayers who have established a verified online account can set up an online payment plan .
+
+taxpayers can also check the status of their refund , as well as update their address of record .
+
+taxpayers can also use irs's mobile application for some of these actions , such as checking the status of a refund or making a payment to irs .
+
+similarly , through irs's e - services , tax professionals who have been vetted and approved by irs can manage their e - file accounts , file tax returns on behalf of clients , and view their clients' tax return information .
+
+as noted in figure 2 , the volume of taxpayers authenticated for each irs program or service varies by channel .
+
+further , although tpp costs irs more than get transcript and affects far fewer taxpayers , irs reported that tpp helped prevent $5.3 billion in lost tax revenue in calendar year 2016 .
+
+irs has identified high - level strategic campaigns , or efforts to enhance identity assurance , in its identity assurance strategy and roadmap ( roadmap ) and has established a business process to support these efforts .
+
+however , irs has not articulated relative priorities for the foundational initiatives supporting its strategic efforts or the resources it will require to complete them .
+
+as discussed earlier , irs's 2016 roadmap is the agency's plan for developing a modern and secure authentication environment for all taxpayers regardless of how they interact with irs .
+
+the roadmap outlines six core authentication objectives , followed by 10 high - level strategic efforts , and 14 foundational initiatives to help irs address its authentication challenges and identify opportunities for future investment .
+
+ ( see appendix ii. ) .
+
+further , irs has identified about 90 activities to support its foundational initiatives and the responsible organizations and general duration to complete them .
+
+these initiatives include , for example , implementing a risk assessment framework that can be applied across all authentication channels and services ; developing a framework of identity proofing and authentication requirements for third parties accessing and using irs data and services ; and improving taxpayer assurance by sending automated electronic alerts to taxpayers , such as when they file a return .
+
+to support implementation of these initiatives , irs established a 12- member executive governance board .
+
+board members are senior executives from business units across irs , including the identity assurance office ( iao ) , it applications development , it cyber security , and wage and investment .
+
+the board helps to monitor progress , risks , and challenges associated with implementing its roadmap , and has generally met monthly since january 2017 .
+
+our prior work on government performance has identified several leading practices for planning at the program or initiative level .
+
+among other things , these practices call for strategic plans to contain the goals and objectives of a program and the human , financial , and information resources required to complete them .
+
+leading practices also call for agencies to develop estimates of benefits and costs to help prioritize new investments .
+
+following these practices can help agencies establish priorities in a complex environment .
+
+irs has made progress on some of the strategic efforts identified in its roadmap .
+
+for example , consistent with its core objectives , irs has taken steps to enhance fraud detection by improving telephone authentication procedures and expanding its online authentication services .
+
+in october 2016 , irs implemented a new process for high - risk telephone authentication , which includes generating questions for the taxpayer using data from internal irs systems instead of from third - party data or credit reporting agencies .
+
+in addition , in march 2018 , irs launched the first phase of its improved online authentication service for tpp , called id verify .
+
+according to irs officials , the first phase of the service will be available to taxpayers who did not file the return in question and appear to be victims of idt refund fraud .
+
+the second phase , which irs plans to implement later in 2018 , will expand the service to all taxpayers selected for tpp .
+
+while irs's roadmap demonstrates the breadth of the agency's strategic vision and core objectives , it does not articulate the resources irs needs to implement any of its 14 foundational initiatives and their supporting activities .
+
+for example , one of irs's foundational initiatives is to send event - driven notifications to taxpayers , such as when they file a return or request a tax transcript .
+
+such notifications could help irs detect potentially fraudulent activity at the earliest stage and improve authentication of tax returns .
+
+the roadmap identifies seven supporting activities for this foundational initiative .
+
+one is to provide taxpayers with greater control over their online accounts .
+
+another supporting activity is to determine methods for sending notifications to taxpayers about activity on their account .
+
+however , irs has not identified the resources required to complete these activities , and the roadmap notes that six of the seven activities will take between 6 months to 3 years to complete .
+
+in december 2017 , irs officials stated that they had developed business requirements for the foundational initiative to give taxpayers greater control over their online accounts .
+
+however , irs has not identified funding for the initiative's other supporting activities — such as developing requirements to send push notifications to taxpayers — and implementing them will depend on the availability of future resources .
+
+further , while irs has developed a business process that would help the agency prioritize initiatives , the process has not been fully implemented .
+
+in 2015 , we recommended that irs estimate and document the costs , benefits , and risks of possible options for taxpayer authentication , in accordance with omb and nist guidance .
+
+consistent with our recommendation and its roadmap , irs developed a process to assess the costs , benefits , and risks of current and potential authentication tools .
+
+in may 2017 , irs implemented its business decision model to analyze and improve its online taxpayer authentication services and provided us with results from an analysis for implementing a text - to - voice functionality for irs's secure access online authentication platform .
+
+this function would allow taxpayers the option of receiving an automated voice code for authentication on a verified landline ( instead of a text message on a mobile phone ) .
+
+as a result of this analysis , irs approved the proposal to implement this tool .
+
+however , in december 2017 , irs officials stated that the text - to - voice tool is not moving forward because of other competing it improvements and funding constraints .
+
+further , iao has not yet applied the business decision model to other potential authentication initiatives , such as those identified in its roadmap .
+
+in december 2017 , irs officials stated that each of the strategic efforts and foundational initiatives identified in the roadmap are a high priority , and they are working to address them concurrently while balancing the availability of resources against the greatest threats to the tax environment .
+
+we recognize that a strategy is necessarily high - level and that irs must remain flexible and use necessary resources to respond to unexpected threats .
+
+at the same time , clearly identifying resources and prioritizing its initiatives and activities will help clarify the relationships between irs's authentication efforts and resource needs relative to expected benefits .
+
+further , such efforts may also help irs establish clearer timelines and better respond to unexpected events .
+
+while irs has generally performed regular risk assessments on its online authentication applications , it does not perform comparable assessments to identify , assess , and mitigate risks for its telephone , in - person , and correspondence authentication channels .
+
+federal guidance directs agencies to regularly assess and address the risks of government it systems .
+
+specifically , omb requires agencies to conduct annual risk assessments on it systems performing remote authentication .
+
+the assessments should also be conducted when the agency plans to modify its business processes or technology .
+
+this includes reviewing new and existing electronic transactions to ensure that authentication processes provide the appropriate level of assurance outlined in nist guidance .
+
+while federal guidelines broadly require agencies to identify and manage risks and establish specific requirements for programs using online authentication , no corresponding federal guidelines exist for telephone , in - person , and correspondence authentication , although we have previously reported that federal guidance and standards are applicable to irs's phone authentication .
+
+similarly , our framework for managing fraud risks in federal programs directs agencies to conduct fraud risk assessments at regular intervals and when there are changes to the program operating environment , as assessing fraud risks is an iterative process .
+
+previously , such risk assessments have helped irs identify security weaknesses and , in some cases , have led the agency to take an authentication service offline .
+
+for example , in response to a recommendation we made in may 2016 , irs performed an updated risk assessment on tpp's online authentication service , a key defense against idt refund fraud .
+
+based on the results of this assessment , irs disabled its online authentication service until it could appropriately address the security weaknesses that it identified .
+
+consistent with federal guidance , irs has identified and analyzed risks associated with services and programs requiring online authentication , including tpp , get transcript , and ip pin , among others .
+
+further , irs has made recent progress in updating risk assessments and improving security for its online authentication applications .
+
+specifically , between june 2017 and april 2018 , irs reassessed authentication risk levels for some online applications , mitigated risks by moving additional applications behind its secure access authentication platform , and identified other compensating controls to appropriately protect its systems .
+
+in december 2017 , irs officials stated that they were working to bring remaining authentication applications in line with their most recent risk assessment .
+
+they expected to complete this work by the last quarter of fiscal year 2018 .
+
+irs has efforts underway to identify risks for telephone , in - person , and correspondence authentication , but has made limited progress implementing its process for assessing risks for all taxpayer authentication channels .
+
+as previously discussed , in 2016 , irs identified over 100 interactions that require taxpayer authentication and categorized these into three high - level risk outcomes .
+
+according to irs's risk assessment process , the next step is for irs business units to assess the effects of incorrect authentication for each interaction or program , identify gaps in existing processes , and develop options to address the gaps .
+
+irs officials stated that this process involves conducting scenario - based workshops with subject matter experts .
+
+however , as of march 2018 , this process has only been applied to tpp and one other irs business practice .
+
+in early 2017 , irs conducted a 2- day , internal , scenario - based workshop to assess risks and impacts and to identify gaps for tpp authentication .
+
+workshop participants identified 45 short - , medium - , and long - term potential enhancements to tpp's authentication processes .
+
+however , irs had not performed similar risk impact assessments for other programs that rely on telephone , in - person , and correspondence authentication — including get transcript and ip pin — and officials do not have a plan or timeline for conducting these assessments .
+
+further , irs has not developed a plan with time frames to address the deficiencies it identified for tpp .
+
+in december 2017 , irs officials stated they are reviewing the 45 tpp enhancements identified by workshop participants , but have no clear plans to implement them because of resource constraints .
+
+irs has made limited overall progress on this front because it does not have a policy that requires regular assessments and timely mitigation of identified issues for telephone , in - person , and correspondence authentication , as is required for online authentication programs and services .
+
+irs also does not have guidelines for mitigating authentication risks to these channels in a timely manner .
+
+in late november 2017 , the director of iao stated that iao alone does not have the authority to create and implement a policy that compels other irs business units to use its risk assessment process or mitigate issues in a timely manner .
+
+officials from other irs business units stated that they continually assess risks to telephone , in - person and correspondence authentication , even without a policy to do so .
+
+however , irs could not provide evidence of such prior risk assessments or risk mitigation plans .
+
+irs's roadmap states that it will implement a secure authentication platform for taxpayers regardless of how they interact with irs — online , via telephone , in - person , or correspondence — to help ensure that information is secure and that the agency is interacting with a legitimate taxpayer .
+
+without a policy for conducting risk assessments for these channels and addressing deficiencies in a timely manner , irs may underestimate known risks and overlook emerging threats to the tax environment .
+
+as a result , these channels may be more vulnerable to fraudulent activity , including unauthorized attempts to access taxpayer information .
+
+irs has established internal controls including procedures and mechanisms to monitor performance of online authentication , but does not have similar controls in place to monitor the performance of telephone , in - person , and correspondence authentication .
+
+federal standards for internal control call for agencies to design their information systems in a way that meets operational needs and allows the agency to respond to risks .
+
+further , agencies are to collect and use quality information to make informed decisions .
+
+quality information is appropriate , current , complete , accurate , accessible , and provided on a timely basis .
+
+further , to have an effective internal control system , agencies should also establish procedures to monitor and evaluate the performance of programs and systems as part of the normal course of operations .
+
+to this end , monitoring should be performed on an ongoing basis , and any deficiencies the agency has identified should be addressed in a timely manner .
+
+monitoring activities are even more critical in an environment where the risk of fraud is high because such efforts allow an agency to quickly respond to emerging risks to minimize the impact of fraud .
+
+further , irs's strategic plan calls for its organizations to use analytics and research to improve program effectiveness and foster a timely , data - driven decision - making environment .
+
+according to irs documentation and discussions with officials , the secure access online authentication platform allows irs to conduct near real - time monitoring of taxpayer authentication outcomes .
+
+specifically , for each online service using secure access , irs is able to monitor on a daily basis how many taxpayers registered for an account ; rates of successful and unsuccessful identity proofing and verification ; and suspicious user patterns , such as multiple login attempts .
+
+irs is also able to monitor system error codes for specific steps in the authentication process , such as when the secure messaging process fails .
+
+irs officials stated that this enhanced performance monitoring of online authentication began in june 2016 , and it is helping irs determine where in the authentication process taxpayers may be having difficulties and potential causes of the problem .
+
+however , irs does not have comparable procedures and mechanisms to monitor authentication outcomes for telephone , in - person , and correspondence authentication , particularly for tpp , one of irs's key defenses against idt refund fraud .
+
+further , since august 2016 , taxpayers have been able to authenticate using only these channels .
+
+irs currently uses its account management services ( ams ) to capture telephone and in - person authentication outcomes for tpp ; however , as discussed below , this is not an effective mechanism for monitoring authentication outcomes .
+
+ams is irs's primary application for recording , storing , and retrieving information on all types of taxpayer interactions over time .
+
+irs's customer service representatives ( csr ) use ams to , among other things , record information related to taxpayer authentication performed over the phone or in person for tpp .
+
+according to irs documentation , ams includes a field where the csr is to enter the authentication outcome and also an area where the csr enters notes on the details of the taxpayer interaction .
+
+in the context of tpp , irs officials stated that csrs use the notes field to record , for example , the reason why the taxpayer failed the authentication process , and other information important for other csrs to know .
+
+irs also relies on another application to review the status of tpp cases , such as if a case is open or closed .
+
+to better understand how csrs are implementing procedures to capture tpp authentication outcomes in ams , we analyzed data in ams from january through october 2017 .
+
+the result of our analysis and related discussions with irs officials indicate three primary internal controls issues .
+
+first , irs does not have a reliable , direct mechanism to collect data on the number of taxpayers who pass and fail telephone , in - person , and correspondence authentication .
+
+second , data quality issues make it difficult for irs to understand why taxpayers may be failing these authentication processes .
+
+third , the irs organizations responsible for monitoring these channels do not have access to complete ams data , making it difficult for irs to identify potential authentication issues and develop solutions to address them .
+
+no mechanism to collect reliable , direct data on authentication passes and failures .
+
+as previously discussed , when a taxpayer calls irs or visits a taxpayer assistance center in regard to a tpp letter , the csr is to enter the result of the authentication ( i.e. , pass or fail ) into ams with one of nine codes that accurately reflects the authentication outcome .
+
+however , ams does not have a separate , discrete field where the csr is to enter this information .
+
+the field available to capture authentication information is shared with 68 other issue codes , increasing the likelihood that the csr may select a more generic issue , such as “identity theft” instead of one of the nine codes designated for tpp .
+
+further , one of the tpp outcome codes , called “other issue,” may be too broad for useful analysis .
+
+of the data we reviewed , we found that about one - third of tpp authentication cases were categorized as “other issue,” which provides no information on the authentication outcome .
+
+according to irs's procedures , this category is to be used in various scenarios , including when irs does not have enough information to generate questions for authenticating the taxpayer , and in other cases when a taxpayer fails telephone authentication and must go to a taxpayer assistance center .
+
+however , by combining all of these issues into one broad category , irs has limited insight into the size of each particular problem and may be underestimating the number of taxpayers who fail tpp authentication .
+
+further , irs does not directly capture the results of correspondence - based authentication in ams and is therefore unable to monitor pass and failure rates for this channel .
+
+issues with data quality .
+
+we selected a generalizable random sample of ams cases identified as tpp authentication failures for january through october 2017 and identified several data quality issues based on our analysis .
+
+first , we found that an estimated 19 percent of cases were categorized as an authentication failure , but the content of the csr notes indicated otherwise .
+
+further , we could not determine a clear match between the tpp authentication outcome and the csr notes in an additional estimated 18 percent of cases .
+
+for example , in these instances , the csrs' notes provided no information on why the taxpayer failed authentication , or the notes were clearly unrelated to tpp .
+
+second , we found that csrs do not consistently enter useful information in the notes explaining why a taxpayer failed authentication , which could provide irs management with valuable feedback on characteristics of potential fraud or problem areas for legitimate taxpayers .
+
+specifically , our analysis showed that in an estimated 63 percent of cases , csrs' notes contained information that was useful or somewhat useful for helping irs understand why a taxpayer failed authentication .
+
+in the estimated 37 percent of cases where we determined that the notes were not useful , csrs generally documented the outcome ( i.e. , authentication failure ) but not the details on why the taxpayer failed .
+
+we recognize that a portion of the tpp authentication failures may represent fraudsters trying to authenticate as a legitimate taxpayer .
+
+however , given that irs's fraud detection systems have a history of high false positive rates , these failures may also represent legitimate taxpayers who may be having trouble authenticating .
+
+further , while the csr notes could provide irs potentially valuable information on why taxpayers may be failing authentication , further data analysis may prove difficult .
+
+this is because this information is captured in a free - text notes field , rather than in a drop - down list or other standardized way to record data that can then be analyzed .
+
+further , during our analysis of ams data , we found variation in the way csrs enter notes , particularly in their use of abbreviations and shorthand on why a taxpayer failed authentication .
+
+such variation makes systematic data analysis difficult .
+
+according to irs officials and documents we reviewed , there may be several causes for the data quality issues .
+
+for example , as noted earlier , csrs may not be selecting the correct tpp authentication outcome code because there are too many options and procedures may be unclear .
+
+irs officials also noted that when a taxpayer contacts irs about tpp authentication , they may want to discuss multiple issues .
+
+in these cases , the csr may choose to record information on another issue instead of the authentication outcome .
+
+complete ams data sets are not readily available for analysis .
+
+in addition to the issues described above , the organizations responsible for monitoring tpp telephone and in - person authentication data do not have access to complete ams data for tpp .
+
+irs officials responsible for managing tpp told us that they do not have direct access to ams data reports because they are not the system's business owner .
+
+instead , they receive a weekly extract of ams data from irs's it department .
+
+however , officials stated that this weekly data extract is limited to approximately the first 5,000 records for each issue area or outcome code , including the codes for tpp .
+
+irs it officials stated that they limited the file size of the ams weekly report because it became too large to share internally via e - mail .
+
+it officials stated that the free - text notes entries in ams were the main cause for large file sizes .
+
+however , this procedure of emailing an extract of the data , rather than providing direct access to ams , makes it difficult for irs to perform comprehensive analyses and ongoing monitoring for tpp using ams .
+
+to put this into further context , irs officials reported that in fiscal year 2017 , they authenticated about 1.13 million taxpayers for tpp via telephone and at taxpayer assistance centers .
+
+however , we found only about 471,600 records with a tpp outcome code in the ams data irs provided to us .
+
+this represents only about 42 percent of the records we were expecting to see in ams .
+
+irs officials stated that the discrepancy was likely due to the ams record limit described above .
+
+yet , in the course of our analysis , we found that only a small number of outcome codes over 42 weeks appeared to be affected by this record limit .
+
+ ( see appendix i for details. ) .
+
+irs officials could not confirm additional explanations for the discrepancy in the number of records .
+
+irs's office of research , applied analytics , and statistics ( raas ) performs research and quantitative analysis on tpp and has studied authentication performance .
+
+for example , in april 2017 , raas reported results of a newly implemented tpp authentication procedure and found that while the new procedures helped to reduce call times , csrs were not following the procedures correctly in an estimated 44 percent of the calls .
+
+according to irs officials , raas's research efforts provide irs management with insight into tpp performance and officials have identified areas where tpp can be improved .
+
+however , officials face similar data limitations we described above .
+
+further , officials from irs's raas division stated that they must submit a formal data request with it in order to receive additional data beyond what is included in the ams weekly extract .
+
+while valuable , these research efforts are not a substitute for ongoing monitoring using complete , reliable data , which would allow irs to identify and address potential problems in a more timely manner .
+
+irs officials acknowledged that ams has limitations and stated that they are in the process of planning a new capability in another system to analyze how taxpayers perform on specific questions during the high - risk authentication process .
+
+however , this capability will not address the issues in ams we described above .
+
+further , as of late november 2017 , officials were uncertain when this capability would be implemented because of it funding constraints .
+
+without effective internal control procedures and mechanisms for collecting authentication outcome data , ensuring data quality , and using these data to perform comprehensive analyses and ongoing monitoring of tpp , irs will continue to have limited insight into its taxpayer authentication operations .
+
+as a result , irs may be challenged in identifying current and emerging threats to the tax system .
+
+through the security summit , irs is working with states , software companies , and financial industry partners to identify how best to address idt and refund fraud .
+
+in february 2018 , irs announced that its key indicators for idt dropped for the second year in a row and the number of taxpayers who reported they were victims of idt in 2017 fell by about 40 percent , in part because of the security summit's ongoing efforts to stop suspected fraudulent returns from entering tax processing systems .
+
+irs has also included key efforts led by the security summit in its roadmap .
+
+the security summit's authentication workgroup leads several initiatives aimed at verifying the authenticity of the taxpayer and the tax return at the time of filing .
+
+one initiative involves analyzing data elements that are collected during the tax return preparation and filing process .
+
+in filing season 2017 , the authentication workgroup collected data on 62 elements , 37 of which were new for that year .
+
+these elements included , for example , trusted customer requirements and other characteristics of the return .
+
+in addition , in 2016 the authentication workgroup worked with software providers to improve authentication procedures to protect taxpayers against their accounts being taken over by criminals .
+
+according to irs officials , these improvements were some of the most visible to taxpayers because they included new password standards to access tax software and required the use of security questions .
+
+authentication workgroup leaders also described their efforts to collaborate with industry to address authentication challenges .
+
+for example , in 2017 , irs , payroll service providers , and tax software providers expanded the form w - 2 , wage and tax statements ( w - 2 ) verification code pilot program .
+
+the goal of this program is to verify w - 2 data submitted by taxpayers on e - filed individual tax returns , using a unique 16-character verification code printed on the form .
+
+according to irs , verification codes appeared on more than 60 million w - 2s issued for tax year 2017 , compared with about 27.5 million w - 2s issued for tax year 2016 .
+
+overall , co - leads from each of the sectors expressed positive views about the level of commitment and cooperation guiding the security summit authentication efforts .
+
+officials with whom we spoke stated that they are dedicated to continuing to address authentication issues collaboratively because they all have an interest in improving authentication to reduce tax refund fraud .
+
+as described above , in june 2017 , nist released guidance related to online authentication that agencies will need to implement to ensure they are authenticating users in a secure manner .
+
+nist's guidance is designed to ( 1 ) describe the risk management process for selecting appropriate digital identity services and ( 2 ) help agencies implement authentication programs that provide reasonable risk - based assurances that a returning user is the same user that previously accessed the service .
+
+adherence to the nist guidance will help irs provide reasonable risk - based assurance that the person accessing irs services is who they claim to be .
+
+further , omb guidance states that federal legacy systems have 12 months to comply with a new nist publication , while systems under development or undergoing a major transformation need to use the current revision when deployed .
+
+irs officials told us they have met with nist officials and plan to update irs systems and applications to comply with the new security guidelines .
+
+irs officials also noted that the agency has taken preliminary steps to implement the new guidelines .
+
+for example , in december 2017 , irs implemented a more secure authentication option through its mobile app , irs2go .
+
+after taxpayers link their online account with the mobile app , they can use the app to generate a security code to log into their online account .
+
+this option is in line with nist's new guidance and provides taxpayers with an alternative to receiving the security code via a text message .
+
+irs has also taken other preliminary steps to implement the new nist guidance , including forming a task force to guide the implementation of nist guidance , working with the security summit to develop an authentication framework that incorporates the new guidance for state and industry partners , starting an analysis to identify gaps between irs's current authentication procedures and the new nist guidance , and updating authentication procedures .
+
+however , irs has not yet established detailed plans , including timelines , milestone dates , and resource needs , for fully implementing the new guidance .
+
+irs officials cited several reasons for the delay .
+
+they said the agency will have to balance maintaining current authentication programs with developing it infrastructure to support technologies that are compliant with the new guidance .
+
+in addition , officials stated that they will need to take a slower , incremental approach to updating authentication programs because of resource constraints .
+
+in march 2018 , irs officials provided us a draft , high - level analysis of irs systems relative to the new nist guidance , including some action items to address potential gaps .
+
+this preliminary analysis is a first step to help irs identify gaps between irs's current authentication methods and the new nist guidance .
+
+however , it does not include steps needed to implement the high - level action items , a timeline with milestones , or the resources needed to implement improvements to bring irs into compliance with the new nist guidance .
+
+it officials stated that irs intends to develop its implementation roadmap through 2018 and begin implementing technical solutions in 2019 .
+
+however , those officials did not identify the technical solutions nor did they have a prioritization plan or documentation of a timeline to fully implement the new nist guidance .
+
+implementing the new nist guidance and updating authentication programs to be protected by the appropriate level of assurance is consistent with federal standards for internal control and irs's roadmap .
+
+standards for internal control notes that agencies should identify , analyze , and respond to risks , as well as assess whether risk response actions sufficiently reduce risk to an acceptable level .
+
+further , one of irs's initiatives in its roadmap is to strengthen e - authentication and ensure it is in compliance with federal regulations , which includes guidance from nist .
+
+developing a plan that includes timelines with specific milestones and resource needs to implement the new nist guidance is consistent with leading practices for effective planning and management .
+
+specifically , in our prior work on the government performance and results act , we found that developing and using specific milestones and timelines to guide and gauge progress toward achieving an agency's desired result is a leading practice for effective strategic planning and management .
+
+further , our body of work on irs has noted that developing project plans with measurable goals , schedules , and resources can help the agency more effectively plan new projects and initiatives .
+
+according to irs officials , irs must balance the needs of its existing authentication efforts against potential new investments .
+
+irs's gap analysis on current authentication procedures relative to the nist guidance may help irs prioritize which improvements are most critical .
+
+however , without clear plans , timelines , and milestones for performing this work , irs may not be positioned to address the most vulnerable areas in a timely manner .
+
+irs's timely implementation of nist's new guidance is critical , as it can help the agency mitigate potential security weaknesses in its existing online authentication programs .
+
+while irs has made some progress in improving its authentication programs , the agency lacks a comprehensive , repeatable process to identify and evaluate potential new authentication technologies and approaches .
+
+irs's planning documents have noted a commitment to identify and leverage authentication best practices from outside organizations to protect taxpayer data and support irs business needs .
+
+specifically , irs's roadmap states that the agency will leverage leading technology and implementation practices from the private and public sectors through a repeatable environmental scan process and , when appropriate , collaborate with partners to address its authentication needs .
+
+similarly , irs's strategic plan notes that the agency will invest in innovative , secure technology needed to protect taxpayer data and support the business needs of the agency and its partners .
+
+irs officials told us the agency continuously researches new identity assurance processes and technologies and has talked with other agencies , industry groups , and vendors to better understand how particular technology solutions could apply to irs's environment .
+
+further , according to officials , irs plans to work with an outside organization to analyze third - party identity proofing and authentication services ; however , irs is in the initial phases of this effort .
+
+irs also recently established the commissioner's identity assurance executive steering committee to help oversee irs's authentication efforts agency - wide .
+
+this committee is intended to serve as an advisory body , creating a forum for agency - wide collaboration , as well as providing guidance and direction for identity assurance implementation .
+
+irs provided us documentation that it reviewed some available authentication technologies and their pros and cons in february 2016 , and told us that this research helped them develop their roadmap .
+
+however , irs officials could not provide documentation on more recent evaluations of the broader authentication environment , or evidence of a repeatable , comprehensive process to identify and evaluate available authentication technologies and services .
+
+irs officials stated that one way the agency evaluates potential technologies is through limited pilots or “innovation studies.” for example , from october 2017 to january 2018 , irs conducted a limited pilot to explore the feasibility of having a third - party identity assurance service provider authenticate taxpayers on behalf of irs .
+
+officials stated that this pilot was possible because it required little upfront investment by irs .
+
+specifically , irs received a grant from nist to implement it , and officials stated that it required minimal integration with irs's it infrastructure .
+
+in january 2018 , irs officials stated they were reviewing the results of the pilot , but had not decided on any next steps .
+
+further , irs officials stated that the agency is considering other pilots , including one to assist with irs's telephone authentication and one to enhance security checks during the individual taxpayer identification number application process .
+
+however , while irs has completed preliminary planning for these pilots , it has not established priorities or timelines because each pilot requires it support , for example , to ensure the application can be integrated with irs's infrastructure and to make any technical changes .
+
+further , in december 2017 , irs officials stated that all innovation studies were on hold until resources become available .
+
+irs may benefit from considering new ways of approaching its authentication efforts , as other public and private entities face similar challenges of authenticating users .
+
+our discussions with representatives from industry and financial institutions and with government officials indicate that there is no single , ideal taxpayer authentication solution that will solve irs's challenges related to idt refund fraud .
+
+further , representatives from industry and financial institutions and government officials with whom we spoke advocated a layered approach to authentication that relies on multiple strategies and sources of information , while giving taxpayers options for further protecting their information .
+
+based on our discussions with representatives from industry and state departments of revenue and government officials , some options irs could consider include the following: expanding existing irs services to further protect taxpayers .
+
+as discussed earlier , irs's online account offers taxpayers several services , including the ability to set up a payment plan and make payments to irs and view their tax history .
+
+in fiscal year 2017 , about 808,000 taxpayers created online accounts , and irs expects this number to grow .
+
+irs's roadmap has identified enhancing taxpayer assurance by expanding authentication , such as generating and sending event - driven notifications to taxpayers to help irs authenticate returns , which could help irs quickly validate legitimate returns .
+
+with this option , irs may be able to further protect taxpayers from idt refund fraud .
+
+for example , irs could develop additional functionality for the online account that allows the taxpayer to designate a bank account or a preference for a paper check for receiving a tax refund .
+
+if a fraudster filed a return with different information , the return would automatically be rejected .
+
+in february 2018 , irs officials stated that their strategic vision includes empowering taxpayers to manage their online account ; however , when these services offer the ability to change personal or financial information , there is greater potential for fraudsters to exploit them .
+
+federated model .
+
+a federated authentication approach allows an organization to rely on trusted authentication credentials from another entity to log into its systems , potentially without needing to save information from the trusted source .
+
+ ( see figure 3. ) .
+
+one example of a federated authentication model is when people use their google or facebook credentials to log into a different website or mobile application .
+
+irs could use a trusted authentication credential from the private or public sector , or another federal agency .
+
+the general services administration ( gsa ) has developed a single sign - on authentication platform for federal agencies called login.gov .
+
+in march 2018 , gsa officials told us that the office of personnel management and customers and border patrol were using login.gov and that several other agencies plan to use the authentication platform .
+
+according to irs officials , irs and department of the treasury officials have met with gsa to discuss whether login.gov could meet irs's authentication needs .
+
+in december 2017 , irs it officials said they are tracking login.gov's progress and capabilities and want to ensure that gsa officials understand irs's requirements .
+
+irs officials said that the agency is interested in being able to federate with different organizations , but does not want to limit federating to one entity , since different taxpayers will want to use different credentials .
+
+irs officials also noted that the agency will need to implement additional it infrastructure to support a federated model for authentication .
+
+possession - based authentication .
+
+this type of authentication offers users a convenient , added layer of security when used as a second factor for accessing websites or systems that would otherwise rely on a username and password for single - factor authentication .
+
+as shown in figure 4 , universal authentication framework ( uaf ) solutions use biometrics , such as an embedded fingerprint , facial recognition , or voice recognition sensor on a computer or smart phone , eliminating the need for a password .
+
+similarly , authentication with a universal second factor ( u2f ) uses a trusted device or “security key” for authentication in addition to a username and password .
+
+according to a representative from the fast identity online ( fido ) alliance , uaf standards and u2f devices comply with nist's new guidance for digital authentication .
+
+while irs is not likely to provide the devices to taxpayers , it could enable its systems to accept these types of standards - based authentication technology for taxpayers who elect to use uaf or u2f devices .
+
+for example , taxpayers could use a uaf or u2f device when logging into their irs online account for additional protection .
+
+states' strategies for authentication .
+
+when we met with representatives from five states to discuss how they authenticate taxpayers , representatives from three states volunteered that they use driver's license information to help authenticate taxpayers and tax returns .
+
+one state we met with compares driver's license information to other state agency data to help authenticate returns .
+
+irs could investigate making driver's license information , or other government identification , a requirement when filing a federal return , and work with states and other outside organizations to assist with authentication .
+
+this information could be a key factor in verifying that the legitimate taxpayer is filing the return .
+
+while some industry representatives told us driver's license information is a good credential for identity - proofing , this information can be compromised .
+
+for example , fraudsters can use stolen pii to obtain fraudulent driver's licenses .
+
+contracting with outside organizations .
+
+several private - sector organizations offer identity proofing and authentication services .
+
+we spoke with officials from the department of veterans affairs ( va ) and representatives from the state of alabama's department of revenue , both of which are currently using such services .
+
+va is using a third - party service to identity proof and authenticate veterans accessing services through www.vets.gov .
+
+for the 2018 filing season , alabama has contracted with a third - party organization to offer taxpayers a service that sends them an alert when a return is filed using their name , and authenticates the return as legitimate using a selfie .
+
+this photo is then digitally compared to their driver's license photo .
+
+irs could evaluate these services to see if any meet their needs .
+
+working with trusted partners .
+
+irs could partner with organizations it trusts that are accessible to taxpayers and enable the partners to identity - proof and authenticate taxpayers .
+
+trusted partners could include tax preparers , financial institutions , or other federal agencies .
+
+in november 2017 , irs officials told us that they had been discussing an in - person identity proofing study with the social security administration ( ssa ) , where ssa would identity proof taxpayers and transmit the authentication data to irs .
+
+however , in june 2018 , irs officials stated that discussions with ssa are ongoing , and they have not made a decision about next steps because ssa is concerned about resources .
+
+irs is also exploring working with the u.s .
+
+postal service on an information - sharing initiative that could help irs identify potential idt .
+
+throughout the course of our work , irs officials stated that improving the security of irs's online authentication applications is a high priority and further noted that irs must ensure that the highest - risk authentication improvements are completed first .
+
+in january 2018 , irs officials stated that the agency's priority is implementing tax reform , which will use irs's limited it resources .
+
+further , officials noted that priorities , including resources required to develop project estimates , are determined by irs's appropriate executive steering committees .
+
+developing a repeatable , comprehensive process to identify and evaluate different alternatives for taxpayer authentication , such as the ones described above , is consistent with leading practices and can help irs ensure that it has a sound rationale for its investment decisions .
+
+it can also help ensure that irs has the resources it needs to make authentication improvements in a timely manner .
+
+for example , these evaluations may involve developing and documenting a business case for selected initiatives in irs's roadmap .
+
+such a process could compare options for in - house authentication solutions with solutions available in the private sector based on estimates of cost , schedule , and benefits , as applicable .
+
+by identifying options and performing such an evaluation , irs may find , for example , that an authentication technology available in the private sector already complies with the new nist guidelines , offers irs additional fraud detection capabilities , or is less expensive than developing a similar capability in - house .
+
+on the other hand , the process may show that minor improvements to a technology irs is already using can provide the most secure option in relatively short time , given appropriate resources .
+
+this information could be communicated to irs's executive steering committees , as well as to congress , to help irs identify resource needs and ensure it is pursuing the most efficient and effective authentication improvements to protect irs and taxpayers against evolving threats .
+
+irs's authentication environment is one component of a broad , complex it infrastructure , and the agency faces many challenges as it modernizes its tax systems .
+
+however , given the availability of pii and the prevalence of cyberattacks , developing a repeatable , comprehensive process to identify and evaluate alternative options for taxpayer authentication and implementing improvements can help irs ensure it is authenticating taxpayers in the most secure manner .
+
+irs documentation acknowledges that a hybrid authentication approach using in - house solutions , third - party services , and working with trusted partners is the best approach to implementing the new nist guidance and expanding irs's authentication coverage .
+
+however , without a process to comprehensively identify and evaluate available or emerging authentication technologies and models , irs may be missing an opportunity to implement the most secure , robust technologies to authenticate and protect taxpayers .
+
+further , including these authentication options and prioritizing them with other initiatives included in irs's roadmap would help irs ensure it is working on the highest priority authentication improvements first .
+
+it also provides a way for irs to communicate its strategy and plan for authentication to irs management and external stakeholders .
+
+each year , irs authenticates millions of taxpayers via telephone , online , in - person , or correspondence to verify potentially fraudulent tax returns , provide taxpayers access to a tax transcript , or issue a replacement ip pin .
+
+irs's cost to authenticate taxpayers varies widely , with in - person authentication at a taxpayer assistance center costing about $89 per interaction and online authentication costing less than $1 per interaction .
+
+the challenge for irs is to provide taxpayers with options to interact with the agency , while providing irs with reasonable assurance that it is authenticating the legitimate taxpayer .
+
+in its roadmap , irs has identified high - level strategic efforts and numerous foundational initiatives to address its most pressing authentication challenges .
+
+irs has made progress in several areas identified in its roadmap .
+
+however , identifying the resources the agency will need to complete its foundational initiatives and further prioritizing them would help irs better understand the relationship between its competing priorities and limited it resources .
+
+further , while irs has made progress in identifying risks and establishing internal control activities to monitor online taxpayer authentication , it has not established equally rigorous controls for telephone , in - person , and correspondence authentication .
+
+first , irs does not have a policy for identifying , assessing , and mitigating risks for these authentication channels .
+
+second , irs does not have effective internal controls for collecting reliable , useful data on telephone , in - person , and correspondence authentication outcomes for tpp and for using these data to monitor authentication operations .
+
+without effective controls for collecting these data and using it for monitoring , irs may not be positioned to identify potential vulnerabilities in its operations and the necessary improvements .
+
+given the widespread availability of pii that fraudsters can use to perpetrate tax fraud , it is essential for irs to strengthen taxpayer authentication to stay ahead of fraudsters' schemes .
+
+completing an analysis of irs's current authentication procedures relative to new nist guidance may help irs identify and prioritize which improvements are most critical .
+
+developing a timeline with milestones and resource needs to implement nist's new guidance can help guide irs's implementation and help officials gauge progress and ensure the most critical improvements are made in a timely manner .
+
+further , implementing nist's new guidance can help irs ensure its online authentication applications are appropriately protecting irs information .
+
+while improving irs's current authentication programs would help irs further protect taxpayer information and identify and prevent fraud , irs may not need to conduct all of its taxpayer authentication activities in - house nor build irs - specific authentication solutions: there are many additional tools and partners irs could consider .
+
+further , developing a repeatable , comprehensive process to identify and evaluate potential authentication technologies and services will help irs avoid missing opportunities for improving authentication .
+
+further , including and prioritizing these authentication technologies and services in irs's roadmap could provide useful information to decision makers given irs's concerns over competing it priorities and limited resources .
+
+we are making the following 11 recommendations to irs: the commissioner of internal revenue should direct the identity assurance office , in collaboration with other irs business partners , to estimate the resources ( i.e. , financial and human ) required for the foundational initiatives and supporting activities identified in its identity assurance strategy and roadmap .
+
+ ( recommendation 1 ) based on the estimates developed in recommendation 1 , the commissioner of internal revenue should direct the identity assurance office to prioritize foundational initiatives in its identity assurance strategy and roadmap .
+
+ ( recommendation 2 ) the commissioner of internal revenue should establish a policy for conducting risk assessments for telephone , in - person , and correspondence channels for authentication .
+
+this policy should include , for example , the frequency of assessments to be performed and timeframes for addressing deficiencies .
+
+ ( recommendation 3 ) consistent with the policy developed in recommendation 3 , the commissioner of internal revenue should direct the identity assurance office and irs business owners to develop a plan for performing risk assessments for telephone , in - person , and correspondence channels for authentication .
+
+ ( recommendation 4 ) the commissioner of internal revenue should establish a mechanism to collect data on outcomes for telephone , in - person , and correspondence authentication , consistent with federal standards for internal control .
+
+ ( recommendation 5 ) the commissioner of internal revenue should revise or establish , as appropriate , procedures to ensure data quality in the account management services ( ams ) consistent with federal standards for internal control .
+
+ ( recommendation 6 ) the commissioner of internal revenue should ensure that irs business units have access to complete ams data to monitor authentication performance and identify potential issues .
+
+ ( recommendation 7 ) the commissioner of internal revenue should direct the identity assurance office and other appropriate business partners to develop a plan — including a timeline , milestone dates , and resources needed — for implementing changes to its online authentication programs consistent with new nist guidance .
+
+ ( recommendation 8 ) in accordance with the plan developed in recommendation 8 , the commissioner of internal revenue should implement improvements to irs's systems to fully implement nist's new guidance .
+
+ ( recommendation 9 ) the commissioner of internal revenue should develop a repeatable , comprehensive process to identify and evaluate alternative options for improving taxpayer authentication , including technologies in use by industry , states , or other trusted partners .
+
+ ( recommendation 10 ) based on the approach developed in recommendation 10 , the commissioner of internal revenue should include and prioritize these options , as appropriate , in irs's identity assurance strategy and roadmap .
+
+ ( recommendation 11 ) .
+
+we provided a draft of this report to the commissioner of internal revenue for review and comment .
+
+in its written comments , which are summarized below and reproduced in appendix iii , irs agreed with our 11 recommendations and stated that it is taking action to address them .
+
+irs agreed with our recommendations to identify resources and prioritize the foundational authentication initiatives identified in its roadmap .
+
+irs noted that the roadmap is a concept document outlining potential strategic initiatives and irs has not finalized its approach .
+
+irs stated that once it finalizes its authentication approach , it will estimate the resources required for each initiative and prioritize them , consistent with our recommendation .
+
+as stated earlier , we recognize that a strategy is a high - level plan and may need to change based on agency needs .
+
+nevertheless , irs's timely attention to identifying resources and prioritizing its approved authentication initiatives will better position the agency to respond to known and unknown threats to the tax system .
+
+further , irs agreed with our recommendations to develop a plan for fully implementing nist's new authentication guidance and make the necessary improvements to its systems .
+
+in its written comments , irs noted that its ability to complete these efforts will depend on the availability of resources .
+
+as noted throughout our report , we recognize the challenge of balancing competing it priorities and limited resources , but given the importance of implementing authentication improvements consistent with nist's guidance , we continue to believe it should be a high priority .
+
+additional actions , including addressing our recommendations , will help irs further mitigate potential security weaknesses in its existing online authentication programs and help prevent potentially hundreds of millions of dollars in fraudulent refunds from being issued .
+
+irs also agreed with our other seven recommendations , but did not provide additional details on how it plans to address them .
+
+as agreed with your office , unless you publicly announce the contents of this report earlier , we plan no further distribution until 30 days from the report date .
+
+at that time , we will send copies to the chairmen and ranking members of other senate and house committees and subcommittees that have appropriation , authorization , and oversight responsibilities for irs .
+
+we will also send copies of the report to the commissioner of internal revenue and other interested parties .
+
+in addition , this report will be available at no charge on the gao website at http: / / www.gao.gov .
+
+if you or your staff has any questions about this report , please contact me at ( 202 ) 512-9110 or mctiguej@gao.gov .
+
+contact points for our offices of congressional relations and public affairs are on the last page of this report .
+
+gao staff members who made major contributions to this report are listed in appendix iv .
+
+our objectives were to ( 1 ) describe the taxpayer interactions that require authentication , including the general rationale behind the requirements , and the internal revenue service's ( irs ) authentication methods ; ( 2 ) assess what irs is doing to monitor and improve its authentication methods , both internally and collaboratively through the security summit , to secure taxpayer information and reduce identity theft refund fraud ; and ( 3 ) evaluate what else , if anything , irs can do to strengthen its authentication methods while improving services to taxpayers .
+
+to describe the interactions that require taxpayer authentication and irs's methods to do so , we reviewed irs documents , policies and procedures , irs data and information on the number of taxpayers authenticated by channel , and interviewed knowledgeable irs officials .
+
+irs documents and policies we reviewed included irs's authentication strategy: current state touchpoints , irs's identity assurance strategy and roadmap ( roadmap ) , and internal revenue manuals related to taxpayer authentication .
+
+for this report , we focused on the following four irs programs and services because they require taxpayer authentication , verify a significant number of taxpayer identities each year , and illustrate irs's different approaches to authentication: the taxpayer protection program ( tpp ) , get transcript , identity protection personal identification number ( ip pin ) , and irs's online services .
+
+we reviewed irs - reported data and information on taxpayer authentication volumes and per transaction costs for these programs for fiscal years 2016 and 2017 .
+
+to assess the reliability of this data , we examined it for errors and talked with knowledgeable irs officials .
+
+we determined that the data were sufficiently reliable for our purposes .
+
+we also interviewed knowledgeable irs officials on the agency's authentication programs and services to understand different authentication options offered to taxpayers through various channels: in - person , online , telephone , and correspondence .
+
+to assess irs's efforts to monitor and improve authentication internally and through the security summit , we reviewed irs policies , procedures , authentication risk assessments , and data from irs systems on authentication performance .
+
+we compared irs's efforts to applicable activities in the roadmap , irs's strategic plan fiscal years 2014-2017 ( strategic plan ) , standards for internal control in the federal government , gao's framework for managing fraud risks in federal programs , and relevant national institute of standards and technology ( nist ) guidance .
+
+we interviewed irs officials in irs's return integrity and compliance services ( rics ) , identity assurance office ( iao ) , and information technology ( it ) knowledgeable about the agency's taxpayer authentication programs .
+
+for additional context and informational purposes , we visited irs's andover , massachusetts call center to observe irs customer service representatives ( csr ) authenticating taxpayers for tpp .
+
+we also interviewed irs , state , and industry co - leads from the security summit's authentication workgroup and strategic threat assessment and response workgroup to understand irs's collaborative efforts to improve taxpayer authentication .
+
+to better understand irs's efforts to authenticate taxpayers via telephone and in person , and how csrs record data for tpp authentication , we obtained data from irs's accounts management system ( ams ) for the weeks january 1 , 2017 , through october 23 , 2017 .
+
+this was the most recent and complete set of data at the time of our review .
+
+we reviewed ams records coded with any of the nine tpp authentication outcome codes for tax years 2015 , 2016 , or with “0.” we assessed the reliability of the data by: ( 1 ) performing electronic testing of key data elements , including checks for missing , out - of - range , or logically inaccurate data ; ( 2 ) reviewing documents for information about the data and irs's systems ; and ( 3 ) interviewing officials knowledgeable about the data to discuss any limitations .
+
+during these discussions , irs officials stated that the ams data we received may not include all available records in ams .
+
+this is because the irs office that creates the weekly ams data report includes only the first 5,000 records for each outcome code .
+
+to assess whether this was an issue for our data set , we reviewed record counts for each of the nine tpp outcome codes for the 42 weeks of data irs provided us .
+
+we found 12 out of these 378 instances ( 3 percent ) where the data appeared to be affected by the 5,000 record cutoff .
+
+each of these instances occurred in the “tpp - other – sent to tac” issue code for which we planned no further analysis .
+
+specifically , we did not include this issue code in the generalizable random probability sample described below .
+
+as a result , we determined that the data were sufficiently reliable for the purposes of our report .
+
+to assess the quality and usefulness of the data csrs enter into ams for tpp , we selected a random , generalizable sample of records csrs coded as a tpp authentication failure .
+
+we stratified the population into two groups: ( 1 ) high - risk authentication failures , and ( 2 ) all other authentication failures .
+
+from each population , we drew a random sample of 96 records independently , reflecting the population size of each stratum and to be able to detect a 10 percent difference in absolute value between the sample estimate and true population number with a 95 percent confidence level ; that is , a 1 out of 20 chance of failure .
+
+because we followed a probability procedure based on random selections , our sample is only one of a large number of samples that we might have drawn .
+
+each sample record was subsequently weighted in the analysis to account statistically for all the cases in the population , including those which were not selected .
+
+two analysts independently reviewed each sample record to determine ( 1 ) whether the tpp authentication outcome code generally aligned with the csr's notes and ( 2 ) the extent to which the csr notes were useful in understanding why a taxpayer failed authentication .
+
+first , the analysts categorized each record in the sample as “aligned” ( authentication outcome code and content of csr notes are clearly aligned ) ; “not aligned” ( authentication outcome code and content of csr notes are clearly not aligned ) ; or “cannot determine” ( if the content of the csr notes was unclear and the analyst could not confidently determine that the record was aligned or not aligned ) .
+
+next , for each record in the sample , the analysts categorized the content of the notes as one of the following: useful: csr notes provided a clear explanation of why the taxpayer failed authentication ( eg , question failed ; taxpayer did not have proper identification ; or taxpayer did not have copy of tax return during the call / visit ) .
+
+somewhat useful: csr notes provided some information on where in the process or why a taxpayer failed , but no clear explanation of the specific reason ( eg , taxpayer passed disclosure , but could not answer high risk questions ) .
+
+not useful: csr notes were blank , or provided no useful information on where in the process or why a taxpayer failed authentication .
+
+cannot determine: this was selected when the content of the csr notes was unclear and the analyst could not determine if information was useful .
+
+after the independent review , the analysts discussed their results and resolved any disagreements .
+
+based on these results , we determined how many records in the sample were “aligned,” “not aligned,” or “unable to determine.” further , we analyzed records categorized as “aligned” to determine how many included csr notes that were useful , somewhat useful , or not useful .
+
+to evaluate what else , if anything , irs can do to strengthen its authentication methods while improving services to taxpayers , we interviewed knowledgeable officials from irs and reviewed documentation to understand irs's current authentication methods , future plans for authentication , and challenges irs faces in taxpayer authentication .
+
+we also interviewed knowledgeable officials at the general services administration / 18f to understand their work on a government - wide authentication platform , login.gov , and how irs may be able to use this technology in the future .
+
+we also interviewed department of veterans affairs officials to understand how they authenticate veterans applying for benefits at www.vets.gov .
+
+further , we met with knowledgeable officials from nist on their guidelines for online identity - proofing and authentication , which were released in june 2017 .
+
+to understand current and emerging authentication strategies and technologies , we interviewed representatives from state departments of revenue and from industry .
+
+we also interviewed knowledgeable officials from the office of management and budget's ( omb ) u.s. digital service to understand their work with irs in 2016 in launching irs's secure access online authentication platform and to understand any emerging technologies and standards for authentication .
+
+we interviewed a nongeneralizable selection of knowledgeable state and industry representatives based on referrals from nist officials , and other government and industry representatives knowledgeable on tax issues , including co - chairs from the security summit's authentication workgroup .
+
+in total we met with representatives from five state departments of revenue , one association representing state tax officials , three financial institution organizations , one financial service industry association , three identity - proofing / authentication organizations , and four tax industry organizations .
+
+finally , we compared irs's authentication programs and plans for future improvements to its roadmap , standards for internal control , gao's information technology investment management framework , principles for project planning , gao's prior work on the government performance and results act , gao's cost estimating and assessment guide: best practices for developing and managing capital program costs , and nist and omb guidance to determine ways irs could strengthen its authentication methods , while improving taxpayer service .
+
+we conducted this performance audit from january 2017 to june 2018 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+prioritize technology and processes for e - authentication to enhance identification , verification , and authorization capabilities as taxpayers continue to shift toward electronically filing .
+
+establish a central authentication policy across the enterprise ( i.e. , channels and functions ) .
+
+in addition to the contact named above , neil pinney ( assistant director ) , dawn bidne , matthew bond , mark canter , jehan chase , heather a. collins ( analyst - in - charge ) , michele fejfar , robert gebhart , steven flint , dae park , and robert robinson made significant contributions to this report .
+
+tax fraud and noncompliance: irs can strengthen pre - refund verification and explore more uses .
+
+gao - 18-224 .
+
+washington , d.c.: january 30 , 2018 .
+
+identity theft: improved collaboration could increase success of irs initiatives to prevent refund fraud .
+
+gao - 18-20 .
+
+washington , d.c.: november 28 , 2017 .
+
+financial audit: irs's fiscal years 2017 and 2016 financial statements .
+
+gao - 18-165 .
+
+washington , d.c.: november 9 , 2017 .
+
+information technology: management attention is needed to successfully modernize tax processing systems .
+
+gao - 18-153t .
+
+washington , d.c. , october 4 , 2017 .
+
+2017 annual report: additional opportunities to reduce fragmentation , overlap , and duplication and achieve other financial benefits .
+
+gao - 17-491sp .
+
+washington , d.c.: april 26 , 2017 .
+
+high - risk series: progress on many high - risk areas , while substantial efforts needed on others .
+
+gao - 17-317 .
+
+washington , d.c.: february 15 , 2017 .
+
+2016 filing season: irs improved telephone service but needs to better assist identity theft victims and prevent release of fraudulent refunds .
+
+gao - 17-186 .
+
+washington , d.c.: january 31 , 2017 .
+
+information technology: federal agencies need to address aging legacy systems .
+
+gao - 16-468 .
+
+washington , d.c.: may 25 , 2016 .
+
+identity theft and tax fraud: irs needs to update its risk assessment for the taxpayer protection program .
+
+gao - 16-508 .
+
+washington , d.c.: may 24 , 2016 .
+
+information security: irs needs to further improve controls over taxpayer data and continue to combat identity theft refund fraud .
+
+gao - 16-589t .
+
+washington , d.c.: april 12 , 2016 .
+
+information security: irs needs to further improve controls over financial and taxpayer data .
+
+gao - 16-398 .
+
+washington , d.c.: march 28 , 2016 .
+
+information security: irs needs to continue improving controls over financial and taxpayer data .
+
+gao - 15-337 .
+
+washington , d.c.: march 19 , 2015 .
+
+identity theft and tax fraud: enhanced authentication could combat refund fraud , but irs lacks an estimate of costs , benefits and risks .
+
+gao - 15-119 .
+
+washington , d.c.: january 20 , 2015 .
+
+identity theft: additional actions could help irs combat the large , evolving threat of refund fraud .
+
+gao - 14-633 .
+
+washington , d.c.: august 20 , 2014 .
+
+internal revenue service: 2013 tax filing season performance to date and budget data .
+
+gao - 13-541r .
+
+washington , d.c.: april 15 , 2013 .
+

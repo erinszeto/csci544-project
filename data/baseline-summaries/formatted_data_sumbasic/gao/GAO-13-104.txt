@@ -1,0 +1,724 @@
+medicare is the federal program that helps pay for health care services for individuals aged 65 years and older , certain individuals with disabilities , and those with end - stage renal disease .
+
+in 2011 , medicare covered 48.4 million such eligible individuals with total program expenditures of $565 billion .
+
+for more than 20 years , we have designated medicare as a high - risk program , in part because its complexity makes it particularly vulnerable to fraud .
+
+fraud involves an intentional act or representation to deceive with the knowledge that the action or representation could result in gain .
+
+we have previously reported that the deceptive nature of fraud makes its extent in the medicare program difficult to measure in a reliable way , but it is clear that fraud contributes to medicare's fiscal problems .
+
+the centers for medicare and medicaid services ( cms ) — the agency within the department of health and human services ( hhs ) that administers the medicare program — is responsible for conducting program integrity activities intended to reduce fraud .
+
+in this regard , cms and its contractors who help administer the program use various information technology systems to consolidate and analyze data to detect and investigate potentially fraudulent medicare claims .
+
+to strengthen efforts toward preventing fraud in the program , the small business jobs act of 2010 provided funds for , and directed cms to implement , predictive analytics technologies — a variety of automated systems and tools that can be used to identify particular types of behavior , including fraud , before transactions are completed .
+
+toward this end , cms developed its fraud prevention system ( fps ) which , according to the agency , is intended to be used to analyze medicare claims , provider , and beneficiary data before claims are paid to identify those that are potentially fraudulent .
+
+in doing so , cms intends for fps to support its efforts to move beyond the agency's traditional practice of detecting fraudulent claims and recovering funds after payment — an approach referred to as “pay and chase.” at your request , we conducted a study of cms's fraud prevention system .
+
+specifically , our objectives were to ( 1 ) determine the status of implementation and use of fps within the agency's existing information technology infrastructure , ( 2 ) describe how the agency uses fps to identify and investigate potentially fraudulent payments , ( 3 ) assess how the agency's use of fps compares to private insurers' and medicaid programs' practices , and ( 4 ) determine the extent to which cms defined and measured benefits and performance goals for the system and has identified and met milestones for achieving those goals .
+
+to determine the status of the implementation and use of fps , we reviewed program management and planning documentation for the system .
+
+specifically , to assess the extent to which fps had been implemented , we compared the functionality implemented at the time of our study to requirements and plans defined in project management artifacts such as statements of work , work breakdown structures , and system release notes .
+
+to assess the extent to which fps had been integrated within cms's existing information technology infrastructure , we compared system documentation to agency modernization plans and other agency planning documents .
+
+to supplement this information , we discussed with agency officials their plans for and management of the fps program's implementation efforts .
+
+to describe how the agency uses fps to identify and investigate potentially fraudulent payments , we interviewed cms program integrity staff responsible for implementing fps , observed demonstrations of the system , and reviewed relevant documents .
+
+these documents included the cms medicare program integrity manual , cms guidance and directions to the contractors related to fps , and educational materials for using fps .
+
+we conducted site visits to and interviewed officials by phone from the medicare contractors responsible for fraud investigations in specific geographical zones .
+
+to assess how the agency's use of fps compares to private insurers' and medicaid programs' practices , we examined the use of similar systems by private health insurers and medicaid programs and compared observations from their experiences to cms's current and planned practices for conducting predictive analysis .
+
+our observations are based on interviews with five state medicaid agencies and nine private insurance companies that we identified as having knowledge about predictive data analytics .
+
+to determine the extent to which cms defined and measured benefits and performance goals for the system and identified and met milestones for achieving those goals , we discussed efforts to define benefits and performance measures with relevant agency officials and compared the outcomes of their efforts to information technology program reporting requirements established by the office of management and budget ( omb ) .
+
+to determine the agency's progress toward achieving goals and objectives for improving program integrity outcomes through the use of fps , we reviewed the agency's strategic plan and program planning documents to identify program - level goals , and assessed the extent to which the system's performance plans and objectives supported efforts to achieve program goals .
+
+we also examined reports submitted by cms to omb that included information about the system's expected performance , and interviewed program officials about steps the agency had taken to achieve the goals and objectives .
+
+a more detailed discussion of our objectives , scope , and methodology is included in appendix i .
+
+we conducted this performance audit from october 2011 to october 2012 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+the fee - for - service part of the medicare program processes more than a billion claims each year from about 1.5 million providers of health care or related services and equipment to beneficiaries .
+
+these providers bill medicare for their services and supplies which , among other things , consist of inpatient and outpatient hospital services , physician services , home health care , and durable medical equipment ( such as walkers and wheelchairs ) .
+
+preventing fraud and ensuring that payments for these services and supplies are accurate can be complicated , especially since fraud can be difficult to detect , as those involved are engaged in intentional deception .
+
+for example , fraud may involve providers submitting claims with false documentation for services not provided , which may appear to be valid .
+
+to address medicare's vulnerability to fraud , congress enacted a provision in the health insurance portability and accountability act of 1996 ( hipaa ) that established the medicare integrity program .
+
+hipaa provides this program with dedicated funds to identify and combat improper payments , including those caused by fraud .
+
+in addition , when congress passed the patient protection and affordable care act ( ppaca ) in 2010 , it provided cms with additional authority to combat medicare fraud , and set a number of new requirements specific to the program .
+
+for example , ppaca gave cms the authority to suspend payment of medicare claims pending an investigation of a credible allegation of fraud and required it to conduct certain new provider and supplier enrollment screening procedures intended to strengthen the process , such as checking providers' licensure .
+
+in april 2010 , cms established the center for program integrity ( cpi ) to enable a strategic and coordinated approach to program integrity initiatives throughout the agency and to build on and strengthen existing program integrity efforts .
+
+as the component responsible for overseeing the agency's medicare program integrity efforts , the center's mission is to ensure that correct payments are made to legitimate providers for covered , appropriate , and reasonable services for eligible beneficiaries .
+
+to accomplish its mission , the center has undertaken a strategy to supplement the agency's “pay and chase” approach , which focuses on the recovery of funds lost due to payments of fraudulent claims , with an approach that is directed toward the detection and prevention of fraud before claims are paid .
+
+the strategy has concurrent objectives to ( 1 ) enhance efforts to screen providers and suppliers enrolling in medicare to prevent enrollment by entities that might attempt to defraud or abuse the medicare program and ( 2 ) detect aberrant , improper , or potentially fraudulent billing patterns and take quick actions against providers suspected of fraud .
+
+in addressing the second objective , cpi intends to use predictive analytics technologies to detect potential fraud and prevent payments of claims that are based on fraudulent activities .
+
+accordingly , cpi is the focal point for all activities related to fps .
+
+cpi uses contractor services to support the agency's program integrity initiatives .
+
+among these are contractors tasked with specific responsibilities for ensuring that payments are not made for claims that are filed incorrectly or that are identified as being associated with potentially fraudulent , wasteful , or abusive billing practices .
+
+specifically , medicare administrative contractors ( mac ) are responsible for processing and paying medicare fee - for - service claims , and zone program integrity contractors ( zpic ) are responsible for identifying and investigating potential fraud in the program .
+
+when processing claims , macs review them prior to payment to ensure that payments are made to legitimate providers for reasonable and medically necessary services covered by medicare for eligible individuals .
+
+the systems that the macs use for processing and paying claims , called “shared systems,” execute automated prepayment controls called “edits,” which are instructions programmed into the system software to identify errors in individual claims and prevent payment of incomplete or incorrect claims .
+
+for example , prepayment edits may identify claims for services unlikely to be provided in the normal course of medical care , such as more than one appendectomy on the same beneficiary and other services that are anatomically impossible .
+
+most of the prepayment edits implemented by cms and its contractors are automated , meaning that if a claim does not meet the criteria of the edit , payment of that claim is automatically denied .
+
+however , while these prepayment edits are designed to prevent payment errors that can be identified by screening individual claims , they cannot detect providers' billing or beneficiaries' utilization patterns that may indicate fraud .
+
+specifically , the capability to collect and analyze data that are submitted over a period of time is necessary for a system to be able to identify patterns in behavior .
+
+zpics are responsible for identifying and investigating potential fraud in the medicare fee - for - service program .
+
+cpi directs and monitors their activities .
+
+these contractors identify claims and provider billing patterns that may indicate fraud and investigate leads from a variety of sources , including complaints and tips lodged by beneficiaries .
+
+zpics operate in seven geographical zones across the country , and each zpic is responsible for conducting program integrity activities in its geographic jurisdiction .
+
+ ( fig .
+
+1 depicts the zpic zones and corresponding geographic areas. ) .
+
+varying levels of fraud risk prevail across the zones .
+
+for example , zone 7 includes an area known to be at high risk of fraud , while zone 2 covers a geographically large and predominantly rural area that may be at a lower risk of fraud .
+
+the zpics include about 510 data analysts , investigators , and medical record reviewers .
+
+data analysts use automated tools to analyze data on claims , providers , and beneficiaries in their efforts to identify fraud , support investigations , and search for new fraud schemes .
+
+investigators examine fraud leads by performing a range of investigative actions , such as provider reviews and interviews with beneficiaries and providers .
+
+the medical record reviewers examine medical records and provide clinical knowledge needed to support analysts' and investigators' work .
+
+as a result of their analyses and investigations , zpics may refer to law enforcement and initiate administration actions against providers suspected of fraud .
+
+specifically , if the contractors uncover suspected cases of fraud , they refer the investigation to the hhs office of inspector general ( oig ) for further examination and possible criminal or civil prosecution .
+
+zpics also initiate a range of administrative actions , including revocations of providers' billing privileges and payment suspensions , which allow cms to stop payment on suspect claims and prevent the payment of future claims until an investigation is resolved .
+
+they initiate administrative actions by recommending the actions to cms and coordinating with the macs to carry them out .
+
+for example , zpics recommend payment suspensions to cms and , if cms approves , the macs implement the suspension .
+
+table 1 describes the types of administrative actions zpics can recommend against providers .
+
+while cms had the authority to impose payment suspensions prior to ppaca , the law specifically authorized cms to suspend payments to providers pending the investigation of credible allegations of fraud .
+
+cms is required to consult with the hhs oig in determining whether a credible allegation of fraud exists .
+
+definition provider - specific prepayment edits are used to identify claims for medical review .
+
+beneficiary - or provider - specific prepayment edits are used to prevent payment for non - covered , incorrectly coded , or inappropriately billed services .
+
+a provider's medicare billing privileges are terminated .
+
+payment suspension medicare payments to a provider are suspended , in whole or in part .
+
+medicare payments received by a provider are in excess of amounts due and payable .
+
+in cases of suspected fraud , zpics can recommend the implementation of prepayment edits that apply to specific providers and automatically deny claims or flag claims for prepayment review .
+
+in these cases , prepayment edits are considered by cms to be administrative actions .
+
+cms and its contractors have , for more than a decade , used information technology systems to support efforts to identify potential fraud in the medicare program .
+
+these systems were developed and implemented to analyze claims data in support of program integrity analysts' efforts to detect potentially fraudulent claims after they were paid so that actions could be taken by cms to collect funds for the payments made in error ( i.e. , the pay - and - chase approach ) .
+
+for example , in 2002 cms implemented its next generation desktop to provide data regarding beneficiaries' enrollment , claims , health care options , preventive services , and prescription drug benefits .
+
+this system is also used as an analytical tool during investigations and provides enhanced data to law enforcement personnel , such as data about complaints against providers reported by beneficiaries .
+
+further , in 2006 , cms implemented the one program integrity ( one pi ) system for use in helping to identify claims that were potentially fraudulent and to recover the funds lost because of payments made for claims determined to be fraudulent .
+
+the system was intended to enable cms's program integrity analysts and zpics to access from a centralized source the provider and beneficiary data related to claims after they have been paid .
+
+as a result of our prior study of one pi , in june 2011 we made a series of recommendations regarding the status of the implementation and use of the system.our study , agency officials agreed with all of them , including recommendations that cms define measurable financial benefits expected from the implementation of the system and establish outcome - based performance measures that gauge progress toward meeting program goals that could be attributed to one pi .
+
+in commenting on the results of in addition to systems and tools provided and maintained by cms , the zpics have developed and implemented their own information technology solutions to analyze claims and provider data in their efforts to detect potentially fraudulent claims that were paid by medicare .
+
+for example , the zpics have their own case management systems and custom - developed algorithms for analyzing data from their zone - specific databases that can supplement the data and tools available from cms .
+
+the zpics can also incorporate data from other sources into their databases , including data from state databases on provider licensing and incorporated businesses , and internet searches of research websites .
+
+while the program integrity contractors have been using these systems to support cms's efforts to identify improper and potentially fraudulent payments of medicare claims , they have not previously had access to information technology systems and tools from cms that were designed specifically to identify potentially fraudulent claims before they were paid .
+
+in this regard , cms intends to use predictive analytics as an innovative component of its fraud prevention program .
+
+to advance the use of predictive analytics technologies to help prevent fraud in the medicare program , the small business jobs act of 2010 appropriated $100 million to cms , to remain available until expended , for the development and implementation of a predictive analytics system .
+
+enacted on september 27 , 2010 , the law required cms to implement a system that could analyze provider billing and beneficiary utilization patterns in the medicare fee - for - service program to identify potentially fraudulent claims before they were paid .
+
+to do this , the system was to capture data on medicare provider and beneficiary activities needed to provide a comprehensive view across all providers , beneficiaries , and geographies .
+
+it was also intended to identify and analyze medicare provider networks , provider billing patterns , and beneficiary utilization patterns to identify and detect suspicious patterns or anomalies that represent a high risk of fraudulent activity .
+
+the act further required the system to be integrated into medicare's existing systems and processes for analyzing and paying fee - for - service claims in order to prevent the payment of claims identified as high risk until such claims were verified to be valid .
+
+the act also specified when and how cms should develop and implement the system .
+
+specifically , it required that cms select at least two contractors to complete the work and that the system be developed and implemented by july 1 , 2011 , in the 10 states identified by cms as having the highest risk of fraud .
+
+the act further required the secretary of hhs to issue , no later than september 30 , 2012 , the first of three annual implementation reports that identify savings attributable to the use of predictive analytics , along with recommendations regarding the expanded use of predictive analytics to other cms programs .
+
+the act stated that based on the results and recommendations of the first report , the use of the system was to be expanded to an additional 10 states at the next highest risk of fraud on october 1 , 2012 ; similarly , based on the second report , the use would then be expanded to the remaining states , territories , and commonwealth on january 1 , 2014 .
+
+to meet the act's requirements , cms assigned officials within cpi responsibility for the development , implementation , and maintenance of fps .
+
+these officials included a business process owner , information technology program manager , information technology specialist , and contracting officer .
+
+in defining requirements for the system to address the mandate of the small business jobs act , these program officials planned to implement by july 1 , 2011 , system software for analyzing fee - for - service claims data , along with predictive analytic models that use historic medicare claims and other data to identify high - risk claims and providers .
+
+program officials further planned , by july 2012 , to implement functionality into fps to enable automatic notification to system users of potentially fraudulent claims and to prevent payments of those claims until program integrity analysts determined that they were valid .
+
+in april 2011 , cms awarded almost $77 million to a development contractor to implement , operate , and maintain the system software and to design a first set of models for the initial implementation of fps .
+
+the agency awarded about $13 million to a second contractor in july 2011 to cpi develop additional models that could be integrated into the system.also engaged its internal program integrity analysts to help design the models and test the initial implementation of the system .
+
+fps is a web - based system that is operated from a contractor's data center and accessed by users via the agency's secured private network .
+
+the system is comprised of software that analyzes fee - for - service claims data as the claims are being processed for payment , along with hardware , such as servers that support connections between users' facilities and cms's network , and devices that store the data used and generated by the system .
+
+the system software and predictive models are designed to analyze the claims data and generate alerts to users when the results of analyses identify billing patterns or provider and beneficiary behavior that may be fraudulent and warrant administrative actions .
+
+in september 2011 , cpi established a group that works with and provides training to the zpics on how to use fps to initiate administrative actions more quickly against providers suspected of fraud .
+
+according to cpi officials , they intend to continue to refine the system to provide analysts and investigators with data and statistical information useful in conducting investigations based on input provided during these training sessions .
+
+in response to the small business jobs act , cms implemented its initial release of fps by july 1 , 2011 .
+
+while the act called for cms to first implement the system for use in the 10 states identified by cms as having the highest risk of fraud , the agency chose to deploy the system to all the zpic geographic zones .
+
+in addition , the system was integrated with existing data sources and systems that process claims , but it was not yet integrated with cms's claims payment systems .
+
+as of may 2012 , cms had spent nearly $26 million on the implementation of fps .
+
+of this amount , about $1 million was spent for internal cms staff and $25 million for the development and modeling contractors .
+
+cms's initial release of the system consisted of system software for analyzing fee - for - service claims data and predictive analytic models that use historic medicare claims and other data to identify high - risk claims and providers .
+
+after the initial release , cms implemented three more releases of software through july 1 , 2012 , that incorporated changes or enhancements to the system as well as additional models .
+
+the four system releases yielded a total of 25 predictive analytic models in three different categories and with varying levels of complexity .
+
+specifically , these consisted of the following model types: rules - based models , which are to filter potentially fraudulent claims and behaviors , such as providers submitting claims for an unreasonable number of services .
+
+these models also are intended to target fraud associated with specific services , including those that cms has stated are at high risk for fraud , such as home health agency services and durable medical equipment suppliers .
+
+these are the simplest types of models since the analysis conducted using them only involves counting or identifying types of claims and comparing the results to established thresholds .
+
+anomaly - detection models , which are to identify abnormal provider patterns relative to the patterns of peers , such as a pattern of filing claims for an unreasonable number of services .
+
+these models generate analyses that are more complex because they require identification of patterns of behavior based on data collected over a period of time , and comparisons of those patterns to established behaviors that have been determined to be reasonable .
+
+predictive models , which are to use historical data to identify patterns associated with fraud , and then use these data to identify certain potentially fraudulent behaviors when applied to current claims data .
+
+these models are intended to help identify providers with billing patterns associated with known forms of fraud .
+
+this is the most complex type of model implemented into fps because it not only requires analysis of large amounts of data but may also require detection of several patterns of behavior that individually may not be suspicious but , when conducted together , can indicate fraudulent activity .
+
+of the 25 models that cms had implemented by july 1 , 2012 , 14 were rules - based , 8 were anomaly - detection , and 3 were predictive .
+
+table 2 describes the four releases of fps , including the numbers and types of models .
+
+while the act called for first implementing the system in the 10 states at highest risk of fraud and incrementally assessing and expanding its use throughout the country until january 2014 , program officials stated that analysts in all the zones — and covering all states — were provided the ability to access and use fps when it was initially implemented .
+
+the officials stated that they took this approach because program integrity activities are implemented and managed within the seven zones rather than by states , and the 10 highest - risk states were dispersed across multiple zpic zones .
+
+according to the officials , making the system available to the 10 highest - risk states thus required making it accessible to all of the zones .
+
+program officials further stated that use of the system by zpics in all the zones was intended to provide a national view of claims data and to allow the identification and tracking of fraud schemes that crossed zones .
+
+the fps business owner added that while analysts assigned to the zpics were the primary intended users of fps , the system was also made available to cms's internal program integrity analysts and to investigators with hhs oig .
+
+system reports showed that during the first year of implementation , cms authorized almost 470 analysts and investigators from the zpics , cms , and the hhs oig to use fps , including about 80 from legacy program safeguard contractors ( psc ) .
+
+program officials reported that , of these , almost 400 analysts were actively using the system as of april 2012 .
+
+moreover , program officials told us that the system was being used by almost all the program integrity analysts expected to do so .
+
+to use the system , program integrity analysts access fps via cms's secured network from workstations within their facilities .
+
+as noted during our observation of a demonstration at cms's offices , fps processed and analyzed claims data using the models , then prioritized the claims data for review based on whether they were consistent with scenarios depicted by the models .
+
+when the system identified high - risk claims data , it generated an alert based on that data .
+
+as more claims were screened throughout the day , the system automatically continued to generate alerts associated with individual providers .
+
+it then generated alert summary records ( asrs ) for the providers and scored the risk level of the records based on collective results of the individual alerts .
+
+the system notified fps users of the asrs .
+
+the analysts using the system were to review the asrs and conduct additional research to determine whether further investigation was needed to verify that the related claims were valid .
+
+as required by the act , cms integrated fps with existing data sources and systems that process claims .
+
+to integrate fps with cms's existing information technology infrastructure , the contractors tasked to develop the system and models were required to capture data from several existing sources needed to provide a comprehensive view of activities across providers , beneficiaries , and geographies .
+
+access to these sources was also needed to allow for analysis of medicare provider networks , along with billing and beneficiary utilization patterns , in order to identify suspicious patterns or anomalies that could indicate fraud .
+
+for example , these data provide information about historical activities , including any suspicious activities related to a particular service or provider that had been noted in the past , or about the status of providers' enrollment in the medicare fee - for - service program .
+
+thus , the data are needed by fps to analyze incoming claims data to identify patterns of behavior like those known to indicate fraud .
+
+according to program officials and our review of system specifications , the contractors integrated supporting data from various sources , as identified in table 3 .
+
+to facilitate analyses of claims data , fee - for - service and durable medical equipment claims are first transmitted to fps from cms's common working file and the common electronic data interchange ( both described in table 3 ) .
+
+the system analyzes the claims data based on the types of models integrated into the system and the supporting data extracted from other cms data sources , such as the integrated data repository and the provider enrollment chain and ownership system .
+
+fps's analytical capabilities were integrated with cms's existing systems for processing fee - for - service claims , as required by the act .
+
+in describing this integration , program officials stated that claims data for medical services are transmitted to fps after prepayment edits are applied by the “shared systems” ( systems that the macs use to process claims ) - - usually 3 to 5 days from the time claims are submitted to cms .
+
+all the fee - for - service claims data are transmitted to fps at the same time they are submitted to the payment processing component of the shared systems.figure 2 illustrates the integration of fps claims analysis with cms's existing fee - for - service claims processing systems .
+
+while fps was integrated with existing data sources and systems that process claims , it had not been further integrated with cms's claims payment systems .
+
+specifically , fps had not been integrated with the components of the shared systems that process the payment of claims .
+
+however , this level of integration is required to enable fps to prevent the payment of potentially fraudulent claims until they have been verified by program integrity analysts and investigators .
+
+while the act called for the implementation of fps by july 1 , 2011 , including this capability , the agency's program plans initially indicated that it was to be implemented by july 1 , 2012 .
+
+however , the business process owner of fps stated that planning for the development of this system functionality required extensive discussions regarding design and requirements with entities that maintain and use other systems , particularly the shared systems .
+
+consequently , fps program officials did not complete requirements definition until may 2012 .
+
+the official told us , and high - level program plans and schedules indicate , that cms now intends to complete integration of the capability in january 2013 .
+
+although cms has identified january 2013 as a target date for completing the development , testing , and integration of fps with the claims payment systems , program officials had not yet defined detailed schedules for completing the associated tasks required to carry this out .
+
+best practices , such as those described in our cost estimation guide , emphasize the importance of establishing reliable program schedules that include all activities to be performed ; assign resources ( labor , materials , etc. ) .
+
+to those activities ; identify risks and their probability ; and build appropriate reserve time into the schedule .
+
+however , fps program officials had not yet developed such schedules and did not indicate when they intend to do so .
+
+until it develops reliable schedules for completing associated tasks , the agency will be at risk of experiencing additional delays in further integrating fps with the payment processing system , and cms and its program integrity analysts may lack the capability needed to prevent payment of potentially fraudulent claims identified by fps until they are determined by program integrity analysts to be valid .
+
+while cms has not integrated fps with its claims - payment system , it is using fps to change how potential fraud is identified and investigated as part of its fraud prevention strategy .
+
+cms has directed the zpics to incorporate the use of fps into their processes and investigate high - risk leads generated by the system .
+
+the contractors with whom we spoke stated that investigations based on leads generated by fps are similar to those from other sources .
+
+further , cms has taken steps to address certain initial challenges that zpics encountered in using fps .
+
+cms is using fps to identify providers with aberrant billing patterns and prioritize those providers for investigation as part of its strategy to prevent medicare fraud .
+
+with the implementation of the system , cms directed the zpics to prioritize investigations of leads from the system that meet certain high - risk thresholds .
+
+cms program integrity officials stated that , as of april 2012 , about 10 percent of zpic investigations were initiated as a result of using fps .
+
+by prioritizing these investigations , these officials told us that they intend for zpics to target suspect providers for investigation as soon as aberrant billing patterns that are consistent with fraud are identified , rather than targeting providers that have already received large amounts of potentially fraudulent payments .
+
+in addition , investigations of leads from fps should be faster because the leads provide information about the type of fraud being identified , and the system is designed to provide investigators with data and statistical tools to conduct investigations .
+
+cms program integrity officials also told us that the agency intends to use fps to deny only a small number of claims without further investigation once it completes integration of fps with its claims - payment system and that zpics will continue to coordinate with the macs to take administrative actions against providers .
+
+in addition to directing zpics to investigate leads from fps , cpi also established a working group , referred to as the command center , to work with and provide training to the zpics on how to use the system to initiate administrative actions more quickly against providers suspected of fraud .
+
+on a recurring basis , typically every 2 weeks , select staff from a zpic travel to cms to receive training related to the system and to discuss current fps trends and investigations .
+
+cms officials stated that these training sessions and discussions help the analysts develop new and streamlined approaches for gathering evidence and taking action against providers suspected of potential fraud .
+
+for example , cms conducted training with zpic staff on how to investigate system leads that target certain forms of fraud , such as fraud associated with home health services .
+
+in addition , zpics received training on how best to use the system to ensure that resulting administrative actions , such as revocations of providers' billing privileges , are well supported by the evidence .
+
+for example , zpics received training on medicare revocation policies and processes and were provided with examples of successful revocations that were initiated based on system leads .
+
+finally , based on these training sessions , cms continues to refine the system to provide investigators with data and statistical information useful in conducting investigations .
+
+concurrent with the implementation of fps and to further help move away from its pay - and - chase approach to detecting fraud , cms has directed the zpics to focus on recommending and initiating administrative actions — especially the revocation of medicare billing privileges — against providers suspected of fraud .
+
+as directed by cms , zpics previously focused their investigative efforts on gathering evidence to verify overpayments and developing criminal and civil cases for law enforcement agencies — a lengthy process that often involved many investigative steps .
+
+in particular , cms program integrity and zpic officials cited the large amount of time and resources involved in reviewing medical records — an investigative process in which staff with clinical backgrounds review claims to determine whether billed services are potentially fraudulent or inconsistent with clinical practice .
+
+according to cms program integrity officials , the information provided by fps is well - matched with the evidence necessary for zpics to recommend revocations against providers without having to conduct extensive investigations .
+
+these officials also told us that they have directed the zpics to focus on pursuing revocations because revocations prohibit providers suspected of fraud from billing medicare .
+
+moreover , revoking a provider's enrollment limits the need to expend additional resources tracking their claims or gathering evidence to justify the denial of suspect claims as compared to other administrative actions , such as suspension of payments to suspect providers .
+
+all of the zpics have integrated fps into their existing processes for identifying and investigating potentially fraudulent claims and providers .
+
+all but one of the zpics established fps teams as a way to incorporate the system into their processes .
+
+these teams consist of zpic staff designated as the primary users of the system .
+
+the zpics generally take the following steps when using fps: monitor fps and triage its investigative leads: since cms requires the zpics to conduct preliminary reviews of high - risk leads from the system , staff on the fps teams monitor the system for new investigative leads — asrs — that exceed the high - risk thresholds .
+
+cms requires the zpics to determine whether the providers associated with those leads are “suspect” or “non - suspect.” these reviews are often conducted by the fps teams .
+
+zpic officials told us that they often look for certain patterns associated with fraud when making this determination .
+
+for instance , identification of a provider that bills for a small number of beneficiaries but an excessive number of services may lead to a suspect determination .
+
+refer suspect providers for further investigation: suspect leads become formal investigations of the provider and are generally referred to other zpic investigators for further investigation .
+
+for example , a lead from fps related to home health services may be referred to an investigator with expertise in that area .
+
+conduct investigation: once a lead from the system is assigned to an investigator , it is investigated similarly to other leads .
+
+the investigator can take multiple investigative actions to determine whether the provider is engaged in potential fraud including interviewing the provider and the provider's beneficiaries , conducting onsite audits to review a provider's records and assess whether the provider's facilities are appropriate for the services provided , determining whether there are other complaints against the provider , and conducting additional data analysis using fps and other tools .
+
+the zpics can refer suspect providers to hhs oig or recommend them for administrative actions .
+
+officials from the zpics reported that fps has not fundamentally changed the way in which they investigate fraud .
+
+the system has not , according to zpic officials , significantly sped up investigations or enabled quicker administrative actions in most instances .
+
+instead , officials reported that leads from the system were broad indicators that particular providers were suspect , but did not in all cases provide sufficient evidence of potentially fraudulent billing to allow for faster investigations or resolutions .
+
+fps investigations were similar to those from other sources in that they often required additional investigative steps , such as beneficiary and provider interviews .
+
+on the other hand , zpics reported certain advantages as a result of using fps .
+
+for example , analysts can query the system for specific data to support their analysis of leads and export data from fps into other systems they use to conduct additional analysis of claim lines flagged by fps .
+
+data generated by the system may also notify investigators of information available in other cms databases , such as the national fraud investigation database .
+
+in addition , using fps's near - real - time claims data , some investigators reported identifying and conducting interviews with beneficiaries shortly after they received services from providers under investigation , when beneficiaries can better recall details about their care .
+
+finally , information in fps has also helped substantiate leads from other sources .
+
+for example , one zpic noted that its investigators use information from the system to help verify tips and complaints about suspected fraud .
+
+all zpics that we interviewed told us that they experienced initial challenges using fps .
+
+cms has been responsive to many of these challenges and has developed processes for soliciting and incorporating zpic input and feedback on the system and its use .
+
+certain zpics attributed some early challenges with the system to cms not soliciting their input during the development and initial implementation of fps .
+
+cms has since developed a process in which zpics submit “change requests” to propose changes to the system's functionality and enhancements to the models so that they better target suspect providers .
+
+the command center also serves as a forum for zpics to discuss and provide feedback on fps and its use .
+
+these processes for soliciting and implementing feedback are consistent with key practices we have previously identified for implementing management initiatives .
+
+in particular , feedback can provide important insights about operations from a front - line perspective .
+
+the challenges zpics faced using fps centered on several common themes , and cms has taken steps to address these challenges: impact on continuing proactive data analysis investigations: officials from all of the zpics we interviewed reported that the implementation of the system represented a change in direction that limited some of their own proactive data analysis and investigations .
+
+this happened because the zpics were required to devote more time and resources to following up on leads from the system and less on investigations that were already under way from other sources , including earlier proactive data analysis .
+
+in addition to investigating leads from the system , the zpics investigate leads based on their own data analysis and cited specific advantages of their proactive investigations .
+
+specifically , while fps models address specific types of potential fraudulent activity , the zpics conduct proactive data analysis and investigations to target forms of fraud that are not addressed by those models .
+
+additionally , zpic officials told us that fraudulent activity varies by region and proactive data analysis and investigations are needed to keep up with localized and emerging trends of fraud .
+
+cms officials told us that they plan to have zpics continue their proactive data analysis and investigations in addition to those in response to fps leads .
+
+certain cms directions for using fps: zpics identified certain cms directions for using the system that created workload challenges .
+
+for example , the agency initially directed the zpics to continue tracking and reevaluating providers that were determined to be nonsuspect , which led the zpics to expend resources investigating those providers .
+
+in response to zpic complaints about having to reevaluate providers determined to be nonsuspect , agency program integrity officials told us that they revised the policy so that the zpics only reevaluate nonsuspect providers under certain conditions and also modified fps to alert zpics when such providers should be reexamined .
+
+false positives: zpics told us that certain fps models identified and prioritized the investigation of a relatively high proportion of false positives — i.e. , improper identification of suspect providers that were not engaged in fraud .
+
+some of these false positives related to the nationwide application of models , which did not take into account localized conditions that may help explain certain provider billing patterns .
+
+for example , a physician in a rural area may provide care for beneficiaries dispersed across a large geographic range — something that would raise suspicion for a physician in an urban area .
+
+zpics also told us that the system sometimes prioritized leads that target forms of fraud that are not prevalent in their zone and that investigating such false positive leads has taken time away from other investigations .
+
+in response to zpic feedback that certain models produced a high number of false positive leads , cms changed the way the system generates leads and how it assigns risk scores to providers identified by those models .
+
+according to program integrity officials , cms is also considering approaches to control for geographic variations in fraud .
+
+fps functionality: zpics cited challenges related to aspects of fps's functionality .
+
+for example , when first implemented , the system only provided data directly relevant to the aberrant billing patterns associated with its leads .
+
+zpics , however , told us that determining whether a provider is potentially suspect requires contextual and background information , such as provider profile and billing history information .
+
+because this information was not provided by fps , the zpics had to use other sources to obtain this information .
+
+based on this feedback , cms updated the system so that its leads now provide users with contextual and background information on providers identified by the system .
+
+cms's use of fps has generally been consistent with key practices for using predictive analytics technologies identified by private insurers and state medicaid programs we interviewed .
+
+the use of sophisticated predictive analytics to address health care fraud — including predictive modeling and social network analysis — is relatively new , and not all insurers and programs that we interviewed use these techniques .
+
+the automated provider screening system was implemented by cms in december 2011 .
+
+this system validates data received from providers when enrolling in medicare and identifies providers that may be at high risk for fraud based on those enrollment applications .
+
+process , should enable fps to risk - score providers based on certain public records .
+
+social network analysis is emerging as an important tool to combat organized health care fraud since it can be used to demonstrate linkages among individuals involved in fraud schemes .
+
+one official from a state medicaid program noted that , since organized fraud operations often move from scheme to scheme , identifying the networks of individuals involved in fraud , rather than simply limiting their ability to perpetrate certain schemes , is increasingly important .
+
+while fps does not yet include social network analysis , cms program integrity officials were conducting a pilot to determine how to integrate social network analysis into future model development .
+
+these officials stated that they intend to analyze and implement results of the study , as appropriate , by the end of september 2012 .
+
+close and continuing collaboration between those developing predictive analytics systems and the investigative staff who use the systems improves analysis and helps limit false positives .
+
+predictive analytics systems need effective and continuous feedback on the outcomes of investigations so that they can be refined and updated to better target fraudulent activity and reduce false positives .
+
+for example , investigative staff can guide the development of predictive models by providing information on emerging fraud schemes that they encounter during the course of their investigations .
+
+cms has coordinated with the zpics to develop and refine fps models .
+
+for example , cms has obtained zpics' input on emerging trends in potentially fraudulent activity to generate new ideas for fps models .
+
+according to cms program integrity and zpic officials , zpic staff with experience and expertise investigating particular types of fraud have been involved in developing fps models .
+
+after models have been implemented , zpics have provided feedback on issues or challenges that they have encountered , which has subsequently been used by cms to refine and update the models .
+
+collaboration with external stakeholders , including other insurers and government health programs , can aid in the detection of fraudulent providers and leverages resources .
+
+such collaborations enable information sharing about bad actors and emerging fraud schemes , which can be effective because providers engaged in fraud often do not target just one company or government program , but attempt to defraud many insurers and programs .
+
+cms , along with other agencies involved in ensuring medicare program integrity — specifically the hhs oig , the department of justice , and the federal bureau of investigation — have established a collaborative partnership with a number of private insurers and anti - health care fraud associations .
+
+a cms program integrity official told us that cms's experiences with fps will inform the information it shares with stakeholders and should enable the agency to share lessons learned regarding its use of predictive analytics with private insurers .
+
+publicizing the use of predictive analytics technologies may deter providers from committing fraud .
+
+providers may be more reluctant to commit fraud if they are aware of analytic systems in place to detect aberrant billing patterns .
+
+cms has taken steps to publicize fps among providers .
+
+for example , cms distributed an article on its use of the system to the provider community and presented information on the system at a regional fraud summit and at other meetings attended by medical societies and other national healthcare organizations .
+
+private insurers also noted that predictive analytics also identified vulnerabilities related to waste and abuse .
+
+cms had not resolved or had not taken significant action to resolve nearly 90 percent of the vulnerabilities identified by zpics in 2009 .
+
+the clinger - cohen act of 1996 and omb guidance emphasize the need for agencies to forecast expected financial benefits of major investments in information technology and measure actual benefits accrued through implementation .
+
+doing so is essential to ensure that these investments produce improvements in mission performance .
+
+in addition to the need to define and measure financial benefits , as part of capital planning and investment control processes , omb requires agencies to define and report progress against outcome - based performance measures that reflect goals and objectives of information technology programs .
+
+in doing so , agencies are required to set ambitious but achievable targets once performance measures are defined , establish milestones for meeting performance goals and targets that illustrate how progress toward accomplishing goals will be monitored by the agency , and conduct post - implementation reviews of systems to determine whether or not objectives were met and estimated benefits realized .
+
+omb further requires agencies to submit business plans that address these elements throughout the life of a major investment to , among other things , provide a basis for measuring performance and identify who is the data reported in the accountable for deliverables of the program .
+
+plans are available to the public and are intended to provide congress with critical information needed to conduct oversight of , and make decisions regarding , federal agencies' investments in information technology programs .
+
+with regard to fps , cms had not yet defined an approach for quantifying the financial benefits expected from the use of the system .
+
+cpi officials stated that they had not yet determined how to quantify and measure financial benefits from the system , but that they intend to do so in the future .
+
+these officials stated their intention was to measure benefits based on savings resulting from the system's contributions to the agency's efforts to prevent payments of fraudulent claims .
+
+however , while cms could potentially quantify financial benefits resulting from the amount of suspended payments or other administrative actions based on the results of fps , the capability of the system that could provide benefits through the suspension of payments had not yet been implemented .
+
+the officials further acknowledged the difficulty with determining benefits or return on the agency's investment in fps in part because fraudulent providers' knowledge of cms's use of the system could likely have a deterrent effect and , as intended , prevent fraudulent activity from occurring .
+
+in these cases , the amount of costs avoided would be unknown .
+
+fps program officials told us that they were conducting a study to determine ways to quantify these benefits and planned to include this information in the implementation report that cms was required to issue to congress by september 30 , 2012 .
+
+however , as of october 10 , 2012 , the agency had not yet issued the report .
+
+omb requires agencies to report at least annually on updates to plans or business cases for certain information technology investments and monthly to update the status of agency efforts to complete planned activities and meet established performance metrics .
+
+in addition to the difficulties associated with the agency's efforts to quantify financial benefits of implementing fps , cms has not established or reported to omb outcome - based performance measures , targets , and milestones for gauging the system's contribution to meeting its fraud prevention goals .
+
+as part of the fraud prevention program's long - term vision to stop payment on high - risk claims , program officials defined two goals: implement predictive modeling and other analytic technology systems capable of reporting alerts based on risk scores applied to near - real - time claims data , beginning july 1 , 2011 , and identify potentially fraudulent payments before final payment is authorized by cms .
+
+as required , cms initially reported to omb performance measures , targets , and milestones in a september 2011 investment plan .
+
+according to program officials , fps stakeholders , such as cpi program managers , provided input into the development of these measures .
+
+however , in further discussions , the fps business process owner stated that the information that had been reported to omb in the 2011 plan did not reflect the current direction of the fps program and that another plan was developed in january 2012 .
+
+the official stated that this latter plan was being used to manage the investment and that it identified different performance goals and measures than the one submitted to omb .
+
+specifically , whereas the plan submitted to omb included as a performance target 60 new models to be developed and implemented in the system by july 2012 , the revised plan , which had not been submitted to omb , identified the implementation of 40 new models for the same time frame .
+
+furthermore , the revised plan that cms is using to manage the fps investment does not define outcome - based performance measures that could be used to gauge progress toward the agency's goal to identify potentially fraudulent payments of claims .
+
+some of the performance measures defined in this plan — such as the number of trouble tickets generated or number of defects — can be used to monitor system performance , but cannot be used to measure progress toward meeting program goals .
+
+in this regard , cms did not define measures or targets for meeting them that reflect the extent to which the system identifies potentially fraudulent claims .
+
+for example , such measures could track the number of asrs in certain risk categories that result in investigations , revocations , payment suspensions , or other administrative actions that support the agency's goal to prevent medicare fraud .
+
+however , measures such as these , along with targets and milestones for meeting them , had not yet been defined .
+
+program officials stated that they intended to refine the performance measures , targets , and milestones and submit a new fps investment plan to omb in june 2012 ; however , they have not yet done so , and it is unclear when they intend to submit a revised plan or refine the performance measures .
+
+the officials also said that they intended to present performance measures in the report that cms was required to issue to congress by the end of september 2012 .
+
+however , as noted above , the agency has not yet issued the report .
+
+in refining the performance measures for the system , it will be important that the measures be based on desired outcomes of the overall fraud prevention program to help the agency gauge improvements attributable to the implementation of fps .
+
+further , while cms's technical review board requested fps officials to conduct a post - implementation review 6 months after the system was implemented , program officials have not yet done so .
+
+these types of reviews are to be conducted to evaluate information systems after they become operational and determine whether their implementation resulted in financial savings , changes in practices , and effectiveness in serving stakeholders .
+
+in this regard , quantifiable financial benefits and measureable performance targets and goals provide information needed to conduct post - implementation reviews of systems .
+
+however , agency officials do not yet have the information needed to conduct such a review since they have not yet defined and measured any financial benefits realized as a result of using the system , or ways to measure its overall performance .
+
+until the agency conducts its post - implementation review of fps , cms will be unable to determine whether the use of the system is beneficial and effective in supporting program integrity analysts' ability to prevent payment of fraudulent claims , a key component of the agency's broader strategy for preventing fraud in the medicare program .
+
+as part of its efforts to move beyond a pay - and - chase approach to recovering fraudulent payments , cms has taken important steps toward preventing fraud by implementing fps in response to the small business jobs act of 2010 .
+
+by integrating the system with its existing claims processing systems , the agency has provided most of the intended users an additional tool for conducting analysis of data soon after claims are submitted for payment and the ability to detect and investigate potentially fraudulent billing patterns more quickly .
+
+as implemented , the system provides functionality that supports program integrity analysts across the country in their efforts to identify and prevent payment of potentially fraudulent claims until they are determined to be valid .
+
+cms has also used fps as a tool to better coordinate efforts with zpics , the contractors primarily responsible for investigating fraud .
+
+for example , cms officials have directed the zpics to prioritize the investigation of high - risk leads generated by the system and to use the system as part of their processes for investigating potentially fraudulent claims and providers .
+
+accordingly , the zpics we examined have integrated the use and outcomes of the system into their zone - specific processes .
+
+while they noted both advantages and initial challenges associated with the implementation of fps , cms has taken steps to address those challenges .
+
+specifically , program integrity officials solicited users' feedback and incorporated it into the system design to improve the functionality and use of the system .
+
+further , while the use of sophisticated predictive analytics to address health care fraud is relatively new , cms's use of fps has generally been consistent with key practices identified by private insurers and state medicaid programs we interviewed .
+
+however , these entities leverage the results of predictive analytics to address broader program vulnerabilities , such as closing prepayment edit gaps and policy loopholes , and cms could benefit from using the results of fps to address vulnerabilities in the medicare program that could lead to fraudulent payments .
+
+despite these efforts , agency officials have not yet implemented functionality in the system needed to suspend payment of high - risk claims until they are determined through further investigation to be valid , and have not yet developed detailed schedules for doing so .
+
+additionally , they have not yet determined ways to define and measure financial benefits of using the system , nor have they established outcome - based performance measures and milestones for meeting the performance targets that reflect the goals of the agency's fraud prevention program .
+
+until such performance indicators are established , fps officials will continue to lack the information needed to conduct a post - implementation review of the system to determine its benefits and effectiveness in supporting program integrity analysts' efforts to identify potentially fraudulent claims and providers .
+
+furthermore , cms officials , omb , and congress may lack important information needed to determine whether the use of the system contributes to the agency's goal of predicting and preventing the payment of potentially fraudulent claims for medicare services .
+
+in this regard , the contribution of fps to the agency's effectiveness in preventing fraud will remain unknown .
+
+to help ensure that the implementation of fps is successful in helping the agency meet the goals and objectives of its fraud prevention strategy , we are recommending that the secretary of hhs direct the administrator of cms to define quantifiable benefits expected as a result of using the system , along with mechanisms for measuring them , and describe outcome - based performance targets and milestones that can be measured to gauge improvements to the agency's fraud prevention initiatives attributable to the implementation of fps .
+
+cms officials could consider addressing these two recommendations when reporting to congress on the savings attributable to fps's first year of implementation .
+
+we are also recommending that the secretary direct the administrator of cms to develop schedules for completing plans to further integrate fps with the claims payment processing systems that identify all resources and activities needed to complete tasks and that consider risks and obstacles to the program , and conduct a post - implementation review of the system to determine whether it is effective in providing the expected financial benefits and supporting cms's efforts to accomplish the goals of its fraud prevention program .
+
+in written comments on a draft of this report , signed by hhs's assistant secretary for legislation ( and reprinted in appendix ii ) , the department stated that it appreciated the opportunity to review the report prior to its publication .
+
+additionally , hhs stated that it concurred with all of our recommendations and identified steps that cms officials were taking to implement them .
+
+among these were actions to define quantifiable benefits realized as a result of using fps , which agency officials intend to report in their first annual report to congress .
+
+hhs also stated that cms intends to establish outcome - base performance targets and milestones based on the first year of the system's implementation and use , and that the agency has developed detailed plans and schedules such as those we described for further integrating fps into the medicare fee - for - service claims payment processing systems .
+
+finally , the department stated that cms plans to conduct a formal post - implementation review of the system in accordance with the agency's standard operating procedures .
+
+if these and other actions that hhs identified are effectively implemented to address our recommendations , cms should be better positioned to meet the goals and objectives of its fraud prevention program .
+
+hhs also provided technical comments on the draft report , which we incorporated as appropriate .
+
+as agreed with your offices , unless you publicly announce the contents of this report earlier , we plan no further distribution until 30 days from the report date .
+
+at that time , we will send copies to interested congressional committees , the secretary of health and human services , the administrator of the centers for medicare and medicaid services , and other interested parties .
+
+in addition , this report will be available at no charge on the gao website at http: / / www.gao.gov .
+
+if you or your staff have any questions about this report , please contact us at ( 202 ) 512-6304 or melvinv@gao.gov , or ( 202 ) 512- 5154 or kingk@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made key contributions to this report are listed in appendix iii .
+
+the objectives of our review were to ( 1 ) determine the status of implementation and use of the centers for medicare and medicaid services' ( cms ) fraud prevention system ( fps ) within the agency's existing information technology infrastructure , ( 2 ) describe how the agency uses fps to identify and investigate potentially fraudulent payments , ( 3 ) assess how the agency's use of fps compares to private insurers' and medicaid programs' practices , and ( 4 ) determine the extent to which cms defined and measured benefits and performance goals for the system and has identified and met milestones for achieving those goals .
+
+to determine the status of the implementation and use of the predictive analytics system , we reviewed fps program management and planning documentation and held discussions with officials responsible for developing and implementing the system , including the business process owner , information technology specialist , and contracting officer , and with users of the system .
+
+specifically , to assess the extent to which fps had been developed and implemented , we compared the functionality implemented to date to plans defined in project management artifacts such as statements of work , work breakdown structures , and system release notes .
+
+to determine the number of system users of fps , we held discussions with cms officials about the intended users of the system and obtained data describing the targeted user population and the actual number of users each month from july 2011 , when the system was implemented , through april 2012 .
+
+to assess the extent to which fps had been integrated within cms's existing information technology infrastructure , we compared system documentation to agency modernization plans and other planning documents , such as project schedules and documents describing the system's data flows and sources .
+
+to supplement this information , we discussed with agency officials their plans for and management of the fps program .
+
+we also interviewed officials with the office of information services and the center for program integrity ( cpi ) to discuss the agency's information technology modernization plan and the extent to which elements of the plan have been implemented , the use of agency systems as data sources for fps , and how fps is integrated into the existing it infrastructure .
+
+additionally , we viewed a demonstration of fps given by cpi officials during our site visit to their offices .
+
+we focused our analysis on the extent to which cms implemented and used the predictive analytics system within the existing it infrastructure .
+
+to describe how the agency uses fps to identify and investigate potentially fraudulent payments , we observed demonstrations of fps during site visits to cms and zone program integrity contractors ( zpic ) — the primary users who are contractors responsible for conducting fraud investigations in specific geographical zones and for following up on leads generated by the system — and interviewed cms program integrity staff responsible for implementing fps .
+
+we conducted site visits in two zones and interviewed officials from four other zones — including the legacy program safeguard contractors that are being replaced by zpics — representing all fully operational program integrity contractors at the time of our audit work .
+
+the locations for the site visits were selected based on ( 1 ) whether the zpic had been fully implemented for more than a year and ( 2 ) if the zpic covered geographical areas that have been identified by cms as having high levels of fraud risk .
+
+during these discussions we sought to , among other things , understand how the contractors use fps , the benefits and challenges associated with their use of the system , and how it had been integrated with other tools and approaches used to detect potential fraud .
+
+we also reviewed relevant documents , such as the cms medicare program integrity manual , statements of work for zpics , cms guidance and directions to the contractors , and educational materials related to fps .
+
+to assess how the agency's use of fps compares to private insurers' and medicaid programs' practices , we examined the use of similar systems by private health insurers and medicaid programs .
+
+to identify these users , we employed a methodology often referred to as “snowball sampling”: an iterative process whereby at each interview with knowledgeable stakeholders , we solicited names of insurers and medicaid programs that were using predictive analytics until we had coverage of a broad range of users and perspectives .
+
+our observations are based on interviews with five state medicaid programs and nine private insurance companies .
+
+we selected a nonprobability sample of stakeholders to interview and , therefore , the information gathered from key stakeholders is not generalizable beyond the individuals we interviewed ; however , the interviews provided insights into issues pertaining to all three objectives .
+
+while not all users employed sophisticated predictive analytics — including predictive modeling and social network analysis — at the time of our interviews , they all had experience with data analytics and were able to provide insights into process - oriented strategies for incorporating analytics into their antifraud efforts .
+
+our understanding of predictive analytics and its use was also informed by trade journal articles and interviews with system vendors and health insurance and antifraud organizations .
+
+to determine the extent to which cms defined and measured benefits and performance goals for the system and identified and met milestones for achieving those goals , we reviewed requirements established by the office of management and budget ( omb ) for agencies' management of information technology investments and for reporting the status of those investments .
+
+we assessed efforts taken by cms officials to meet omb's requirements .
+
+specifically , we discussed with the fps business owner and other program officials the steps they had taken and plan to take in efforts to define ways to measure financial and other quantifiable benefits of the system .
+
+we also discussed with them their approach to and processes for developing performance measures , targets , and milestones to determine the extent to which the system was producing outcomes that supported the agency's fraud prevention strategies and goals .
+
+additionally , we reviewed agency - wide strategic plans and program planning documents , and assessed the extent to which the system's performance plans and objectives supported efforts to achieve the goals defined by these plans .
+
+we also examined reports submitted to omb that included information about the system's expected performance , and interviewed program officials about steps the agency had taken to achieve the goals and objectives .
+
+for each of the objectives , we assessed the reliability of the data we obtained from interviews with agency officials and users by comparing them to documents describing fps's program plans and status , information technology infrastructure , system design specifications , system usage reports , and performance goals and measures .
+
+we found the data sufficiently reliable for the purposes of this review .
+
+we conducted this performance audit from october 2011 to october 2012 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+in addition to the contacts named above , teresa f. tucker , assistant director ; thomas a. walke , assistant director ; neil j. doherty ; michael a. erhardt ; amanda c. gill ; lee a. mccracken ; thomas e. murphy ; monica perez - nelson ; kate f. nielsen ; and eden savino made key contributions to this report .
+

@@ -1,0 +1,892 @@
+federal agencies rely extensively on computerized information systems and their software to carry out their missions .
+
+flaws in software code can introduce vulnerabilities that attackers may attempt to exploit and cause significant damage to federal computer systems .
+
+the process of applying software patches to fix flaws , referred to as patch management , is a critical process used to help secure computing systems from attacks .
+
+since 1995 , nearly 13,000 security vulnerabilities in software products have been reported .
+
+with the increasing sophistication of technology , attacks that once took weeks or months to propagate over the internet now take only hours or even minutes .
+
+while federal agencies can mitigate the risk of cyber attacks by keeping their systems up to date with appropriate patches , applying and maintaining these patches is challenging .
+
+on september 10 , 2003 , we testified before the subcommittee on technology , information policy , intergovernmental relations and the census on the role of software patch management in mitigating the risks of cyber incidents .
+
+in that testimony , we stated that patch management is one means to address the increasing vulnerabilities to cybersecurity .
+
+you subsequently asked us to assess the ( 1 ) reported status of 23 of the agencies under the chief financial officers ( cfo ) act of 1990 and the department of homeland security ( dhs ) in performing effective patch management practices , ( 2 ) tools and services available to federal agencies to perform patch management , ( 3 ) challenges to performing patch management , and ( 4 ) additional steps that can be taken to mitigate the risks created by software vulnerabilities .
+
+to address these objectives , we conducted an extensive search of professional information technology ( it ) security literature .
+
+we also reviewed research studies and reports about cybersecurity - related vulnerabilities to update information provided in our testimony and consulted our prior reports and testimonies on information security .
+
+in addition , we interviewed private - sector and federal officials about their patch management experiences , practices , and challenges .
+
+along with these literature searches and interviews , we conducted a web - based survey of 23 cfo agencies and dhs to determine their patch management practices and reviewed corresponding survey documentation .
+
+we did not verify the accuracy of the agencies' responses ; however , we reviewed supporting documentation that agencies provided to validate their responses .
+
+finally , we met with vendors of commercial software patch management tools and services to discuss and examine their products' functions and capabilities .
+
+appendix i contains a description of our objectives , scope , and methodology .
+
+our work was conducted from september 2003 to may 2004 , in accordance with generally accepted government auditing standards .
+
+patch management is a critical process used to help alleviate many of the challenges involved with securing computing systems from attack .
+
+a component of configuration management , it includes acquiring , testing , applying , and monitoring patches to a computer system .
+
+flaws in software code that could cause a program to malfunction generally result from programming errors that occur during software development .
+
+the increasing complexity and size of software programs contribute to the growth in software flaws .
+
+for example , microsoft windows 2000 reportedly contains about 35 million lines of code , compared with about 15 million lines for windows 95 .
+
+as reported by the national institute of standards and technology ( nist ) , based on various studies of code inspections , most estimates suggest that there are as many as 20 flaws per thousand lines of software code .
+
+while most flaws do not create security vulnerabilities , the potential for these errors reflects the difficulty and complexity involved in delivering trustworthy code .
+
+from 1995 through 2003 , the cert coordination center ( cert / cc ) reported just under 13,000 security vulnerabilities that resulted from software flaws .
+
+figure 1 illustrates the dramatic growth in security vulnerabilities over these years .
+
+as vulnerabilities are discovered , attackers may attempt to exploit them and can cause significant damage .
+
+this damage can range from defacing web sites to taking control of entire systems and thereby being able to read , modify , or delete sensitive information , destroy systems , disrupt operations , or launch attacks against other organizations' systems .
+
+attacks can be launched against specific targets or widely distributed through viruses and worms .
+
+the sophistication and effectiveness of cyber attacks have steadily advanced .
+
+according to security researchers , reverse - engineering patches have become a leading method for exploiting vulnerabilities .
+
+reverse engineering starts by locating the files or code that changed when a patch was installed .
+
+then , by comparing the patched and unpatched versions of those files , a hacker can examine the specific functions that changed , uncover the vulnerability , and exploit it .
+
+by using the same tools used by programmers to analyze malicious code and perform vulnerability research , hackers can locate the vulnerable code in unpatched software and build to exploit it .
+
+according to nist , every month skilled hackers post 30 to 40 new attack tools to the internet for others to download , allowing them to launch attacks .
+
+further , cert / cc has noted that attacks that once took weeks or months to propagate over the internet now take just hours , or even minutes .
+
+in 2001 , security researchers reported that the code red worm achieved an infection rate of more than 20,000 systems within 10 minutes , foreshadowing more damaging and devastating attacks .
+
+in 2003 , the slammer worm , which successfully attacked at least 75,000 systems , reportedly became the fastest computer worm in history , infecting more than 90 percent of vulnerable systems within 10 minutes .
+
+the witty worm , released on march 19 , 2004 , reportedly infected as many as 12,000 computers in approximately 45 minutes .
+
+during the last week of february 2004 , a spate of new mass e - mail worms were released , and more than half a dozen new viruses were unleashed .
+
+the worms were variants of the bagle and netsky viruses .
+
+the bagle viruses typically include an infected attachment containing the actual virus , and the most recent versions have protected the infected attachment with a password , which prevents antivirus scanners from examining it .
+
+the recent netsky variants attempt to deactivate two earlier worms and , when executed , reportedly play a loud beeping noise .
+
+the number of computer security incidents within the past decade has risen in tandem with the dramatic growth in vulnerabilities , as the increased number of vulnerabilities provides more opportunities for exploitation .
+
+cert / cc has reported a significant growth in computer security incidents — from about 9,800 in 1999 to over 82,000 in 2002 and to over 137,500 in 2003 .
+
+and these are only the reported attacks .
+
+the director of cert / cc has estimated that as much as 80 percent of actual security incidents go unreported , in most cases because ( 1 ) there were no indications of penetration or attack , ( 2 ) the organization was unable to recognize that its systems had been penetrated , or ( 3 ) the organization was reluctant to report the attack .
+
+figure 2 shows the number of incidents reported to the cert / cc from 1995 through 2003 .
+
+according to cert / cc , about 95 percent of all network intrusions could be avoided by keeping systems up to date with appropriate patches ; however , such patches are often not quickly or correctly applied .
+
+maintaining current patches is becoming more difficult , as the length of time between the awareness of a vulnerability and the introduction of an exploit is shrinking .
+
+for example , the witty worm was released only a day after the announcement of the vulnerability it exploited .
+
+in general , when security vulnerabilities are discovered , a process is initiated to effectively address the situation through appropriate reporting and response — often including the development of a patch .
+
+typically , this process begins when security vulnerabilities are discovered by software vendors , security research groups , users , or other interested parties , including the hacker community .
+
+when a virus or worm is reported that exploits a vulnerability , virus - detection software vendors also participate in the process .
+
+when a software vendor is made aware of a vulnerability in its product , the vendor typically first validates that the vulnerability indeed exists .
+
+if the vulnerability is deemed critical , the vendor may convene a group of experts , including major clients and key incident - response groups such as fedcirc and cert / cc , to discuss and plan remediation and response efforts .
+
+in addition , fedcirc may conduct teleconferences with agency chief information officers ( cio ) to coordinate remediation and omb , through fedcirc , may request the status of agencies' remediation activities for selected vulnerabilities .
+
+after a vulnerability is validated , the software vendor develops and tests a patch or workaround .
+
+a workaround may entail blocking access to or disabling vulnerable programs .
+
+following the development of a patch or workaround , the incident response groups and the vendor typically prepare a detailed public advisory to be released at a set time .
+
+the advisory often contains a description of the vulnerability , including its level of criticality ; systems that are affected ; potential impact if exploited ; recommendations for workarounds ; and web site links from which a patch ( if publicly available ) can be downloaded .
+
+incident - response groups as well as software vendors may continue to issue updates as new information about the vulnerability is discovered .
+
+although the economic impact of a cyber attack is difficult to measure , a recent congressional research service study cites members of the computer security industry as estimating that worldwide major virus attacks in 2003 cost $12.5 billion .
+
+they further project that economic damage from all forms of digital attacks in 2004 will exceed $250 billion .
+
+following are examples of significant damage caused by worms that could have been prevented had the available patches been effectively installed: in september 2001 the nimda worm appeared , reportedly infecting hundreds of thousands of computers around the world , using some of the most significant attack methods of code red ii and 1999's melissa virus that allowed it to spread widely in a short amount of time .
+
+a patch had been made publicly available the previous month .
+
+reported cost estimates of nimda range between about $700 million and $1.5 billion .
+
+on january 25 , 2003 , slammer reportedly triggered a global internet slowdown and caused considerable harm through network outages and other unforeseen consequences .
+
+as discussed in our april 2003 testimony , the worm reportedly shut down a 911 emergency call center , canceled airline flights , and caused automated teller machine failures .
+
+according to media reports , first usa inc. , an internet service provider , experienced network performance problems after an attack by the slammer worm due to a failure to patch three of its systems .
+
+additionally , the nuclear regulatory commission reported that slammer also infected a nuclear power plant's network , resulting in the inability of its computers to communicate with each other , disrupting two important systems at the facility .
+
+in july 2002 , microsoft had released a patch for its software vulnerability that was exploited by slammer .
+
+nevertheless , according to media reports , slammer infected some of microsoft's own systems .
+
+reported cost estimates of slammer range between $1.05 and $1.25 billion .
+
+on august 11 , 2003 , the blaster worm was launched to exploit a vulnerability in a number of microsoft windows operating systems .
+
+when successfully executed , it caused the operating system to fail .
+
+although the security community had received advisories from cert / cc and other organizations to patch this critical vulnerability , blaster reportedly infected more than 120,000 unpatched computers in the first 36 hours .
+
+by the following day , reports began to state that many users were experiencing slowness and disruptions to their internet service , such as the need to frequently reboot .
+
+the maryland motor vehicle administration was forced to shut down , and systems in both national and international arenas were also affected .
+
+experts consider blaster , which affected a range of systems , to be one of the worst exploits of 2003 .
+
+microsoft reported that that at least 8 million windows computers have been infected by the blaster worm since last august .
+
+on may 1 of this year , a new worm , referred to as sasser , was reported , which exploits a vulnerability in the windows local security authority subsystem service component .
+
+this worm can compromise systems by allowing a remote attacker to execute arbitrary code with system privileges .
+
+according to the united states computer emergency readiness team ( us - cert ) , systems infected by this worm may suffer significant performance degradation .
+
+sasser , like last year's blaster , exploits a recent vulnerability in a component of windows by scanning for vulnerable systems .
+
+estimates by internet security systems , inc. place the sasser infections at 500,000 to 1 million machines .
+
+microsoft has reported that 9.5 million patches for the vulnerability were downloaded from its web site in just 5 days .
+
+the federal government has taken several steps to address security vulnerabilities that affect agency systems , including efforts to improve patch management .
+
+specific actions include ( 1 ) requiring agencies to annually report on their patch management practices as part of their implementation of fisma , ( 2 ) identifying vulnerability remediation as a critical area of focus in the president's national strategy to secure cyberspace , and ( 3 ) creating us – cert .
+
+fisma permanently authorized and strengthened the information security program , evaluation , and reporting requirements established for federal agencies in prior legislation .
+
+in accordance with omb's reporting instructions for fisma implementation , maintaining up - to - date patches is part of fisma's system configuration management requirements .
+
+the 2003 fisma reporting instructions that specifically address patch management practices include agencies' status on ( 1 ) developing an inventory of major it systems , ( 2 ) confirming that patches have been tested and installed in a timely manner , ( 3 ) subscribing to a now - discontinued governmentwide patch notification service , and ( 4 ) addressing patching of security vulnerabilities in configuration requirements .
+
+the president's national strategy to secure cyberspace was issued on february 14 , 2003 , to identify priorities , actions , and responsibilities for the federal government as well as for state and local governments and the private sector , with specific recommendations for action to dhs .
+
+this strategy identifies the reduction and remediation of software vulnerabilities as a critical area of focus .
+
+specifically , the strategy identifies the need for a better - defined approach on disclosing vulnerabilities , to reduce their usefulness to hackers in launching an attack ; creating common test beds for applications widely used among federal establishing best practices for vulnerability remediation in areas such as training , use of automated tools , and patch management implementation processes .
+
+in june 2003 dhs created the national cyber security division ( ncsd ) to build upon the existing capabilities transferred to dhs from the former critical infrastructure assurance office , the national infrastructure protection center , fedcirc , and the national communications system .
+
+the mission of ncsd includes patch management - related activities , among them analyzing cyber vulnerabilities and coordinating incident response .
+
+last september , dhs's ncsd — in conjunction with cert / cc and the private sector — established a new service , us - cert , as the center for coordinating computer security preparedness and response to cyber attacks and incidents .
+
+specifically , us - cert is intended to aggregate and disseminate cybersecurity information to improve warning and response to incidents , increase coordination of response information , reduce vulnerabilities , and enhance prevention and protection .
+
+this free service — which includes notification of software vulnerabilities and sources for applicable patches — is available to the public , including home users and both government and nongovernment entities .
+
+us - cert also provides a service through its national cyber alert system to identify , analyze , prioritize , and disseminate information on emerging vulnerabilities and threats .
+
+this alert system was designed to provide subscribers with reliable , timely , and actionable information via e - mail by issuing security alerts , tips , and bulletins containing information on vulnerabilities , exploits , and available patches or workarounds .
+
+it also provides computer security best practice tips , including a discussion of software patches .
+
+this free service is available to all .
+
+in addition to vulnerability analysis and reporting centers such as us - cert and cert / cc , a variety of other resources are also available to provide information related to vulnerabilities and their exploits .
+
+nist's special publication 800-40 , procedures for handling security patches , provides a systematic approach for identifying and installing necessary patches or mitigating the risk of a vulnerability , including steps such as creating and implementing a patch process , identifying vulnerabilities and applicable patches , and patching procedures , among others .
+
+another resource is nist's icat , which offers a searchable index leading users to vulnerability resources and patch information .
+
+icat links users to publicly available vulnerability databases and patch sites , thus enabling them to find and fix vulnerabilities existing on their systems .
+
+it is based on common vulnerabilities and exposures ( commonly referred to as cve ) naming standards .
+
+these are standardized names for vulnerabilities and other information security exposures , compiled in an effort to make it easier to share data across separate vulnerability databases and tools .
+
+cve compatibility is increasingly being incorporated into various security products .
+
+in addition , a variety of internet mailing lists provides a database of vulnerabilities and serves as a forum for announcing and discussing vulnerabilities , including information on how to fix them .
+
+for example , one vendor - provided list monitors thousands of products to maintain a vulnerability database and also provides security alerts .
+
+the sysadmin , audit , network , security ( sans ) institute maintains lists of the top 20 most critical internet security vulnerabilities , commonly known as the sans top twenty , which includes step - by - step instructions and references to additional information on how to remediate vulnerabilities .
+
+in march of this year , the open source vulnerability database ( osvdb ) — a vendor - neutral database operated by security industry volunteers and supported by digital defense , inc. , and winterforce — was made available at no cost to the public .
+
+this database aims to be a comprehensive , single source for providing detailed , current , and accurate information for all known vulnerabilities .
+
+as of june 1 , this database contained information on about 3,000 reported and reviewed vulnerabilities .
+
+in addition , vendors such as microsoft and cisco provide software updates on their products , including notices of known vulnerabilities and their corresponding patches ; they also provide software options for automatically downloading and installing patches .
+
+finally , vendors of patch management tools and services , discussed later , offer central databases of the latest patches , incidents , and methods for mitigating risks before a patch can be deployed or has been released .
+
+according to fedcirc officials , the federal government has on occasion taken additional steps to assist agencies in mitigating known vulnerabilities through patch management .
+
+such steps include issuing security advisories , issuing data calls to obtain status information on agencies' patching efforts , and initiating teleconferences with vendors .
+
+as discussed in our september 2003 testimony , the following are examples of the collaborative efforts by the federal government and private sector security community to respond through patch management to the threat of potential attacks for two critical vulnerabilities identified last july: cisco's internet operation system and microsoft's windows distributed component object model remote procedure call .
+
+cisco systems , inc. , which controls about 82 percent of the worldwide share of the internet router market , discovered a critical vulnerability in its ios software that could allow an intruder to effectively shut down unpatched routers , blocking network traffic .
+
+cisco had informed the federal government of the vulnerability prior to public disclosure and worked with different security organizations and government organizations to encourage prompt patching .
+
+specifically , on july 16 , cisco issued a security bulletin to publicly announce the critical vulnerability in its ios software and provide workaround instructions and a patch .
+
+in addition , fedcirc issued advisories to federal agencies and dhs advised private - sector entities of the vulnerability .
+
+over the next 2 days , omb requested that federal agencies report to cert / cc on the status of their actions to patch the vulnerability , and dhs issued an advisory update in response to an exploit that was posted online .
+
+that same week , fedcirc , omb , and dhs's ncsd held a number of teleconferences with representatives from the executive branch .
+
+the federal government also worked collaboratively with microsoft when the blaster worm was launched last summer .
+
+the federal government's response to this vulnerability included coordination with the private sector to mitigate the effects of the worm .
+
+fedcirc issued the first advisory to encourage federal agencies to patch the vulnerability , followed by several similar advisories from dhs .
+
+the following week , dhs issued its first advisory to heighten public awareness of the potential impact of an exploit of this vulnerability .
+
+four days later , on behalf of omb , fedcirc requested that federal agencies report on the status of their actions to patch the vulnerability .
+
+ncsd also hosted several teleconferences with federal agencies , cert / cc , and microsoft .
+
+common patch management practices — such as establishing and enforcing standardized patch management policies and procedures and developing and maintaining a current technology inventory — can help agencies establish an effective patch management program and , more generally , assist in improving an agency's overall security posture .
+
+survey results show that the 24 agencies are implementing some common practices for effective patch management .
+
+specifically , all report that they have some level of senior executive involvement in the patch management process , perform a systems inventory , and provide information security training .
+
+however , agencies face a number of patch management challenges — as discussed later — and are inconsistent in their development of patch management policies and procedures , patch testing , systems monitoring , and performance of risk assessments .
+
+without consistent implementation of patch management practices , agencies are at increased risk to attacks that exploit software vulnerabilities in their systems .
+
+information on key aspects of agencies' patch management practices could provide data that could better enable an assessment of the effectiveness of an agency's patch management processes .
+
+in our september 2003 testimony , we discussed common practices for effective patch management identified in security - related literature from several groups , including nist , microsoft , patch management software vendors , and other computer security experts .
+
+common elements of effective patch management identified by these groups include centralized patch management support , standardized patch management policies and procedures , monitoring through network and host vulnerability scanning .
+
+nist guidance advocates creating a centralized group in charge of handling patches and vulnerabilities that support the patching efforts of local system administrators .
+
+a systematic , comprehensive , and documented patching process can improve an agency's ability to respond to the large number of software patches .
+
+agencies' centralization of common practices for effective patch management varies .
+
+while some agencies centralize their patch management processes , others use a decentralized approach , and still others a combination of both approaches .
+
+for example , the responsibility for distributing and notifying the agency's component levels of critical patches can be centralized , while the responsibility for testing and applying patches to specific systems may be decentralized to reside at the component level .
+
+specifically , of the 24 agencies surveyed , 7 report using a centralized approach , 8 are decentralized , and 9 use a combination of both .
+
+management's recognition of information security risk and its interest in taking steps to manage and understand risks is important to successfully implementing any information security - related process .
+
+additionally , ensuring that appropriate resources are applied and that appropriate patches are deployed is important .
+
+fisma establishes information security roles and responsibilities for certain agency executives , including the agency head , cio , and senior agency information security officer , sometimes called the chief information security officer ( ciso ) .
+
+under fisma , the agency head is responsible for providing information security protections commensurate with the risk and magnitude of the harm resulting from unauthorized access to , use , disclosure , disruption , modification , or destruction of information .
+
+fisma further states that the agency head shall delegate to the cio the authority to ensure compliance with its requirements and develop and maintain an agencywide information security program , security policies , procedures , and control techniques .
+
+additionally , the cio is responsible for designating a senior agency information security officer or ciso .
+
+this ciso must possess appropriate professional qualifications to administer the functions described in fisma , have information security duties as the primary duty , and head an office with the mission and resources to assist in ensuring agency compliance with fisma .
+
+all 24 agencies indicated that the ciso is the individual most involved in patch management activities .
+
+specifically , the ciso is involved in managing risk , ensuring that appropriate resources are dedicated , training computer security staff , complying with policies and procedures , and monitoring the status of patching activities .
+
+agencies reported that the cio also has a significant level of involvement in these activities .
+
+further , most agencies reported that their agency head was involved in patch management efforts to some degree .
+
+standardized policies and procedures are necessary for effective patch management .
+
+typical policies include elements such as assigning roles and responsibilities , performing risk assessments , and testing patches .
+
+procedures outline the specific steps for carrying out these policies .
+
+without standardized policies and procedures , patch management can be an ad - hoc process — potentially allowing each subgroup within an entity to implement patch management inconsistently or not at all .
+
+survey results indicate that not all agencies have established patch management policies and procedures .
+
+two - thirds ( 16 of 24 ) report having agencywide patch management policies , while 8 have no policies .
+
+regarding patch management procedures , 14 of the 24 agencies reported affirmatively , while 10 do not have procedures in place .
+
+fisma requires agencies to provide security awareness training to inform personnel , including contractors and other users of information systems that support the operations and assets of the agency , of information security risks associated with their activities , and of their responsibilities in complying with agency policies and procedures designed to reduce these risks .
+
+in addition , agencies are required to provide training on information security to personnel with significant security responsibilities .
+
+further , nist recommends that individuals involved in patch management have the skills and knowledge needed to perform their responsibilities and that system administrators be trained in identifying new patches and vulnerabilities .
+
+most of the 24 agencies reported that they provide both on - the - job and classroom training in computer security , including patch management , to system owners , administrators , and it security staff .
+
+survey results also indicated that some of the 24 agencies are providing security awareness training , as well as developing web - based training curricula .
+
+a complete and updated inventory assists agencies in determining the number of systems that are vulnerable and require remediation , as well as in locating the systems and identifying their owners .
+
+fisma requires that the head of each agency maintain and develop an inventory of major information systems .
+
+further , nist's special publication 800-40 , procedures for handling security patches , identifies a systems inventory requirement as a key priority for effective patch management .
+
+without a complete inventory , it is more difficult to implement effective agencywide patch management and maintaining current patches can be riskier , less consistent , and more expensive .
+
+in our september 2003 testimony , we reported that an important element of patch management is the creation and maintenance of a current inventory of hardware equipment , software packages , services , and other technologies installed and used by an organization .
+
+we noted that in their 2003 fisma reports , 13 agencies reported that an inventory of major systems was developed , and 6 reported that the development was in progress .
+
+agencies' inspectors general also assessed the status of agency efforts to develop an inventory of major it systems .
+
+their fisma reports indicated that only 8 had developed an inventory and 9 agencies had started — but not yet completed — one .
+
+all 24 agencies reported that they develop and maintain an inventory of major information systems as required by fisma .
+
+agencies do so by using a manual process , an automated tool , or an automated service .
+
+the majority of agencies maintain this inventory at both the agencywide and component level .
+
+specifically , 9 of the 24 agencies maintain their inventories at the agencywide level only , 14 maintain their inventories at both levels , and 1 agency at the component level only .
+
+risk is the negative impact of a vulnerability's being exploited , considering both the probability and the impact of occurrence .
+
+a risk assessment can be used to determine the extent of the potential threat and the risk associated with it .
+
+performing a patch - focused risk assessment evaluates each system for threats , vulnerabilities , and the criticality of a system to an agency's mission .
+
+it can also measure the level of risk associated with the adverse impact resulting from a vulnerability being exploited .
+
+by not performing a risk assessment , agencies may deploy patches that disrupt critical systems or applications that support an agency's operations .
+
+when a vulnerability is discovered and a related patch and / or alternative workaround is released , the agency should consider the importance of the vulnerable system to operations , the criticality of the vulnerability , and the risk of applying the patch .
+
+because some patches can cause unexpected disruption to agencies' systems , organizations may choose not to apply every patch .
+
+nist recommends that a risk assessment be performed to determine the prioritization of the systems to be patched .
+
+just under half of the 24 agencies said they perform a documented risk assessment of all major systems to determine whether to apply a patch or an alternative workaround .
+
+agencies that do not perform a documented risk assessment reported that they consider which patches to deploy based on factors such as the risk of deploying the patch , the level of system criticality to agency operations , the level of criticality of the vulnerability , or other criteria , such as the adverse impact on applications .
+
+another critical step is to test each patch against the various agency system configurations in a test environment to determine any impact on the network before deploying the patch to the affected systems .
+
+patches can easily produce unintended consequences ; a patch may change the system behavior such that it causes other programs to crash or otherwise fail .
+
+for instance , certain security patches have been recalled — as recently as april of this year — because they caused systems to fail or are too large for a computer's capacity .
+
+other examples of unintended consequences include patches that force other applications to shut down and patches that undo the effects of previously applied patches .
+
+predeployment testing helps determine whether the patch functions as intended and its potential for adversely affecting the agency's systems .
+
+in addition to identifying the potential for unintended consequences , the testing of patches can ensure that agencies have addressed the vulnerability as intended .
+
+testing may also identify other critical vulnerabilities not made public by vendors .
+
+for example , one federal agency's testing revealed that a vendor's patch notification did not identify vulnerabilities in the underlying operating system .
+
+the agency's testing results prompted an advisory informing all federal agencies to patch all machines using that operating system .
+
+survey results showed that although all 24 agencies test some patches against their various systems configurations before deployment , only 10 agencies reported testing all patches , 11 test more than half but not all patches , 2 test half or fewer , and 1 agency did not know .
+
+while all surveyed agencies reported that they test patches to some extent , most agencies do not have testing policies in place .
+
+survey results show that only 7 agencies have testing policies for all patches , and 2 have policies for only testing critical patches .
+
+the remaining 15 agencies reported that they do not have any testing policies in place .
+
+agencies indicated several reasons for not testing all patches , including a determination that the urgency or criticality of a vulnerability required immediate patching and that a patch was anticipated to have a minimal impact on their systems .
+
+some agencies also stated that in most cases they do not test patches issued routinely by microsoft .
+
+in addition to testing , it is important to regularly monitor the status of patches once they are deployed .
+
+networks can be scanned on a regular basis to assess the network environment and determine whether patches have been effectively applied .
+
+by doing so , agencies can ensure that patches are installed correctly and can help maintain a stable computing environment and determine the integrity of a patch .
+
+in addition , monitoring helps ensure that a patched system continues to be in compliance with the agency's network configuration requirements .
+
+survey results show that most agencies do not regularly monitor all systems .
+
+only 4 agencies indicated that they monitor all of their systems on a regular basis .
+
+however , the remaining agencies surveyed indicated that they perform some monitoring activities .
+
+all 24 agencies reported scanning networks and hosts to oversee the deployment of patches and noted that the extent to which systems are monitored and the frequency with which they are monitored varies .
+
+agencies indicated that the frequency of system monitoring is based on two factors — ( 1 ) the criticality of the vulnerability and ( 2 ) the criticality of the computer system .
+
+five agencies stated that they monitor based on the criticality of the vulnerability ; 14 reported that the frequency depends on both the criticality of the vulnerability and the criticality of the computer system .
+
+five agencies indicated that the frequency of monitoring does not vary based on either of these factors .
+
+although omb and federal agencies recognize that implementing common practices for effective patch management can help agencies mitigate the risk of attack and improve their overall security posture , the results of our survey indicate that agencies are not consistently performing these common practices .
+
+more refined information on key aspects of agencies' patch management practices — such as their documentation of patch management policies and procedures , their testing of new patches in their specific computing environments prior to installation , and the frequency with which systems are monitored to ensure that patches are installed — could provide omb , congress , and agencies themselves with data that could better enable an assessment of the effectiveness of an agency's patch management processes .
+
+several automated tools and services are available to assist agencies with patch management .
+
+a patch management tool is an application that automates a patch management function , such as scanning a network and deploying patches .
+
+patch management services are third - party resources that provide services such as notification , consulting , and vulnerability scanning .
+
+tools and services can make the patch management process more efficient by automating otherwise time - consuming tasks , such as manually keeping up with the continuous flow of new patches .
+
+patch management tools can be either scanner - based ( nonagent ) or agent – based .
+
+scanner - based tools can scan a network , check for missing patches , and allow a system administrator to patch multiple computers .
+
+these tools are well suited for smaller organizations due to their inability to serve a large number of users without breaking down or requiring major changes in procedure .
+
+agent - based products place small programs , or agents , on each computer , to periodically poll a patch database — a server on the network — for new updates , giving the system administrator the option of applying the patch .
+
+agent - based products require up - front work to integrate agents into the workstations and in the server deployment process , but are better suited to large organizations due to their ability to generate less network traffic and provide a real - time network view .
+
+finally , some patch management tools are hybrids — allowing the user to utilize agents or not .
+
+agencies can also contract with third parties to develop and maintain their patch management processes .
+
+commercially available tools and services typically include , among others , methods to inventory computers and the software applications and patches identify relevant patches and workarounds and gather them in one group systems by departments , machine types , or other logical scan a network to determine the status of patches and other corrections made to network machines ( hosts and / or clients ) ; assess machines against set criteria , including required system access a database of patches ; report information to various levels of management about the status of the network .
+
+in our september 2003 testimony , we reported on fedcirc's patch authentication and dissemination capability ( padc ) , a service initiated in february 2003 to provide users with a method of obtaining information on security patches relevant to their enterprise and access to patches that had been tested in a laboratory environment .
+
+this service was offered to federal civilian agencies at no cost .
+
+twenty of the 24 agencies we surveyed reported that they had subscribed to the service .
+
+subscribers obtained an account license that allowed them to receive notifications and log into the secure web site to download patches .
+
+they received notification of threats , vulnerabilities , and the availability of patches on the basis of profiles they had created that defined the technologies they used .
+
+they were notified by e - mail or pager message when a vulnerability or patch that affected one or all of their systems had been posted to the secure web site .
+
+last year , omb reported that while many agencies had established padc accounts , actual usage of those accounts was extremely low .
+
+a fedcirc official also stated that there was a general lack of interest from agencies in using padc , and that although agencies were provided with access to the tool , they did not activate available accounts .
+
+many agencies only used the service as a tool to obtain notification of patches — a service that is provided at no cost from vendors such as microsoft .
+
+in an effort to improve the implementation and usefulness of padc , fedcirc officials held meetings with contractor and user groups , visited agencies , and provided web - based training .
+
+interest in improving the service was expressed .
+
+for example , one of the surveyed agencies' officials stated that padc could improve its value by establishing an independent patch test laboratory , which could then advise agencies of test results and provide recommendations .
+
+however , officials indicated that such upgraded services would incur significant costs .
+
+according to agency officials , there were limitations to the padc service .
+
+although free to agencies , only about 2,000 licenses or accounts were available because of monetary constraints .
+
+according to fedcirc officials , this constraint required them to work closely with participating agencies to balance the number of licenses that a single agency required with the need to allow multiple agencies to participate .
+
+for example , the national aeronautics and space administration initially requested more than 3,000 licenses — one for each system administrator .
+
+other limitations of the service cited by the agencies include that it did not support all platforms or technologies within an agency , that notification of patches was not timely , and that the level of services provided was minimal .
+
+according to fedcirc officials , padc was terminated on february 21 , 2004 , because of low levels of usage , the cost to upgrade services , and negative agency feedback on the usefulness of the service .
+
+they also noted that there are no immediate plans for another contractual service .
+
+however , discussions with federal agencies on addressing patch management issues remain ongoing through the recently formed chief information security officers forum , sponsored by dhs .
+
+in the absence of padc , agencies are left to independently perform all components of effective patch management , including functions that may be common across the federal government .
+
+a centralized resource that incorporates lessons learned from padc's limitations could provide standardized services , such as the testing of patches , a patch management training curriculum , and development of criteria for patch management tools and services .
+
+in fact , a fedcirc official stated that the organization is considering providing agencies with a clearinghouse of information on commercially available patch management tools and services .
+
+a governmentwide service could lower costs to — and resource requirements of — individual agencies , while facilitating their implementation of selected patch management practices .
+
+in addition to resources discussed earlier , such as vulnerability databases and analysis and warning centers , agencies can use other tools and methods to assist in their patch management activities .
+
+for example , they can maintain a database of the versions and latest patches for each server and each client in their network and track the security alerts and patches manually .
+
+this method is , however , labor - intensive .
+
+agencies can also employ systems management tools with patch - updating capabilities to deploy the patches .
+
+this method requires that agencies monitor for the latest security alerts and patches .
+
+one agency reported that it developed a program in house to download patches , upgrades , and antivirus files , while another agency reported that it created a tool to apply settings and vendor patches , validate and maintain compliance , and report system status .
+
+one agency indicated that it uses the maintenance contract with its vendors to receive notification of applicable vulnerabilities .
+
+further , software vendors may provide automated tools with customized features to alert system administrators and users of the need to patch and , if desired , to automatically apply patches .
+
+for example , microsoft currently provides software update services , a free service for automating the downloading and deployment of patches .
+
+several agencies indicated that they subscribe to this service for tasks such as receiving notification of known vulnerabilities and obtaining and deploying patches .
+
+survey results show that such tools and services play a large part in the patching practices of federal agencies .
+
+twenty - three of 24 agencies use commercially available patch management tools .
+
+twenty of 24 agencies use commercially available services , 3 do not , and 1 agency did not know the status of services used there .
+
+table 1 summarizes agencies' methods of performing specific patch management functions as reported by the 24 agencies .
+
+according to security experts and agency officials , the federal government faces several challenges to implementing effective patch management practices .
+
+our work identified several additional steps that can be taken to address the risks associated with software vulnerabilities .
+
+agencies face a number of common patch management obstacles , including ( 1 ) quickly installing patches while implementing effective patch management practices , ( 2 ) patching heterogeneous systems , ( 3 ) ensuring that mobile systems receive the latest patches , ( 4 ) avoiding unacceptable downtime when patching high - availability systems , and ( 5 ) dedicating sufficient resources toward patch management .
+
+several of the agencies we surveyed indicated that the sheer quantity and frequency of needed patches posed a challenge to the implementation of the recommended patch management practices — including performing patch - based risk assessments and testing patches to ensure against any adverse effects .
+
+timely patching is critical to maintaining the operational availability , confidentiality , and integrity of agencies' it systems .
+
+as increasingly virulent computer worms have demonstrated , agencies need to keep systems updated with the latest security patches .
+
+however , security experts have noted that malicious code writers have shortened the length of time between disclosure of a vulnerability and the release of an exploit to just a few days .
+
+as previously discussed , the witty worm began to spread the day after the applications' vulnerability was publicized and has been reported to represent the shortest interval between vulnerability disclosure and worm release .
+
+due to the devastating consequences of an attacker's exploiting an unpatched vulnerability , agencies are pressured to install patches as quickly as they are received .
+
+the urgency in patching a security vulnerability can limit or delay implementation of common practices for effective patch management .
+
+for example , nist has noted that there is at best minimal time ( hours to days ) to test patches before implementing them , because attacks attempting to exploit these vulnerabilities are likely to occur as soon as the vulnerability is discovered or publicized .
+
+testing of patches requires significant time ; according to cert / cc , some financial institutions require 6 weeks of regression testing before a patch is deployed .
+
+in addition , third - party vendors often take months after a patch is released to certify that installing it will not break their systems .
+
+in response to our survey , several agencies indicated that the heterogeneity of their systems — variations in platforms , configurations , and deployed applications — complicates their patching processes .
+
+agencies noted that their mixture of legacy systems and commercial - off - the - shelf applications has led to instances in which patches were not applied to all computers due to concerns over their impact on operations .
+
+further , their unique it infrastructures can make it challenging for agencies to determine which systems are affected by a software vulnerability .
+
+for example , it was widely reported that the slammer worm exploited a vulnerability found in two specific microsoft sql server database applications .
+
+however , because those 2 vulnerable applications are utilized in more than 25 of microsoft's other database and desktop applications — and reportedly in about 130 third - party applications , agencies could not easily determine which applications were affected on their networks .
+
+several agencies reported challenges in ensuring that their mobile computers — such as laptops , digital tablets , and personal digital assistants — receive the most current patches as soon as users connect to the network .
+
+mobile computers can be used at physical locations outside an agency's defined network security perimeter .
+
+consequently , they may not be on the network at the right time to receive appropriate patches that an agency deploys and are at significant risk of not being patched .
+
+for example , one private - sector entity stated that its network first became affected by the microsoft rpc vulnerability when remote users plugged their laptops into the network after being exposed to the vulnerability from other sources .
+
+also , users of mobile systems may utilize a remote connection to download the patch file .
+
+depending on the size of the package to be distributed and the bandwidth available to the machine , patches may be improperly downloaded and installed .
+
+when users then physically connect their mobile computers to the agency network , they may introduce a vulnerable system into the network .
+
+however , tools are available to automatically scan and patch mobile systems when they connect to an agency's network .
+
+some critical systems are required to be continuously available , and an agency's ability to fulfill its mission could be significantly affected by the downtime required to install patches .
+
+reacting to new security patches as they are introduced can interrupt normal and planned it activities , and any downtime incurred during the patching cycle interferes with business continuity .
+
+when redundant systems are used , patches can be alternately applied to each system .
+
+however , redundant systems may not be technologically or economically feasible .
+
+for example , critical high - availability systems include control systems , commercial satellite systems , and certain financial systems .
+
+control systems are computer - based systems that are used within many of our nation's infrastructures and industries to monitor and control sensitive processes and physical functions .
+
+these systems are increasingly based on standardized technologies that are vulnerable to cyber attack .
+
+however , because they can be used to perform complex functions , like managing most activities in a municipal water system or even a nuclear power plant , they have high - availability requirements .
+
+frequent downtime is also considered unacceptable for commercial satellite systems , which are also vulnerable to cyber attack .
+
+federal contracts with commercial satellite service providers specify high availability and reliability levels to emphasize the importance of continuous service .
+
+certain financial systems are also required to be continuously available , such as the fedwire funds transfer system that routes and settles federal reserve banks' payment orders .
+
+the fedwire system is expected to be available 99.85 percent of the time and therefore cannot easily be taken off line to install patches .
+
+for example , a fedwire system outage that lasts 2 minutes is considered by the federal reserve to be a “major outage. .
+
+thirteen of the 24 agencies that responded to our survey indicated that dedicating sufficient resources was a significant challenge they faced in implementing an effective patch management process .
+
+despite the growing market of patch management tools and services that can track machines that need patches and automate patch downloads from vendor sites , agencies noted that effective patch management is a time - consuming process that requires dedicated staff to assess vulnerabilities and test and deploy patches .
+
+further , once a patch is deployed , additional efforts are required to ensure that all vulnerable computers have been effectively fixed .
+
+agencies recognized the need to devote time and funding to the patch management process , as well as to the training of skilled system administrators .
+
+for this reason , they may benefit from a shared patch management resource that provides centralized and dedicated functions such as testing and training .
+
+we identified a number of steps that can be taken to address the risk associated with software vulnerabilities and patch management challenges , including ( 1 ) reducing the number of potential vulnerabilities through better software engineering , ( 2 ) incorporating a defense - in - depth strategy into agencies' it infrastructures , ( 3 ) improving currently available tools , ( 4 ) researching and developing new security technologies , and ( 5 ) leveraging the federal government's buying power to demand more secure products .
+
+dhs has begun efforts to implement additional steps through the establishment of collaborative task forces .
+
+more rigorous engineering practices , which include a formal development process , developer training on secure coding practice , and code reviews , can be employed when designing , implementing , and testing software products to reduce the number of potential vulnerabilities and thus minimize the need for patching .
+
+it is much less costly and more secure to identify defects during software development than to patch vulnerabilities after the product has been distributed .
+
+however , cert / cc has reported that because software developers do not devote enough effort to applying lessons learned about the causes of vulnerabilities , the same types of vulnerabilities identified in earlier versions continue to appear in newer versions of products .
+
+buffer overflows , for example , which may allow an attacker to gain control of a machine or mount a denial of service attack , represent a significant proportion of all overall software security vulnerabilities .
+
+for example , the blaster and sasser worms both exploited buffer overflow vulnerabilities in microsoft products .
+
+vendors that are proactive and adopt known effective software engineering practices can drastically reduce the number of flaws in their software products .
+
+for example , as part of its trustworthy computing initiative , microsoft is planning to undertake several steps to strengthen the software development process .
+
+according to microsoft officials , creating secure software starts with a formal design process that verifies the security properties of the software at each well - defined stage of construction .
+
+the need to consider security “from the ground up” is a fundamental tenet of secure systems development .
+
+such a process is intended to minimize the number of security vulnerabilities injected into the design , code , and documentation in the first place and to detect and remove those vulnerabilities as early in the development life cycle as possible .
+
+from inception to release , a development team , along with a central security team , makes plans to evaluate the security of the software .
+
+according to security experts , a best practice for protecting systems against cyber attacks is for agencies to build successive layers of defense mechanisms at strategic points in their it infrastructures .
+
+this approach , commonly referred to as defense - in - depth , entails implementing a series of protective mechanisms such that if one mechanism fails to thwart an attack , another will provide a backup defense .
+
+software vulnerabilities can exist at each of the components of an agency's it infrastructure , and no single technical solution can successfully protect against all attacks that exploit these vulnerabilities .
+
+by utilizing the strategy of defense - in - depth , agencies can reduce the risk of a successful cyber attack .
+
+a layered approach to security can be taken by deploying both similar and diverse cybersecurity technologies at multiple layers of the it infrastructure .
+
+defense - in - depth also entails implementing an appropriate network configuration , which in turn can affect the selection and implementation of cybersecurity technologies — including automated patch management tools and services .
+
+fisma requires each agency to develop specific system configuration requirements that meet its own needs and ensure compliance with them , including maintaining up - to - date patches .
+
+in addition , industry best practices and federal guidance recognize the importance of configuration management when developing and maintaining a system or network to ensure that additions , deletions , or other changes to a system do not compromise the system's ability to perform as intended .
+
+several agencies emphasized the need for a centralized entity within the agency that is responsible for the administration and control of the entire configuration management process , which includes patch management .
+
+in addition to ensuring a uniform and consistent implementation of all patches and updates on a timely basis , a centralized entity can help foster good communication between agency components and ensure implementation of necessary patches .
+
+through effective configuration management , agencies can define and track the composition of a system to ensure that an unauthorized change is not introduced .
+
+fisma also requires that agencies' information security programs include plans and procedures to ensure continuity of operations for information systems that support the operations and assets of the agency .
+
+contingency plans provide specific instructions for restoring critical systems , including such elements as arrangements for alternative processing facilities , in case usual facilities are significantly damaged or cannot be accessed due to unexpected events such as temporary power failure , an accidental loss of files , or a major disaster .
+
+it is important that these plans be clearly documented , communicated to affected staff , and updated to reflect current operations .
+
+security experts have noted the need for improving currently available patch management tools .
+
+several patch management vendors have been working to do just that .
+
+for example , microsoft has plans to improve its patching capabilities .
+
+microsoft's newest version of software update service is to be renamed windows update services ( wus ) .
+
+wus will be a server - based application for downloading and deploying patches .
+
+however , wus has a limited scope and will support only specific applications .
+
+the release of wus has been delayed from this spring to later this year .
+
+other patch management vendors have plans to expand their product capabilities and to support additional operating systems such as linux , unix , and apache .
+
+plans have also been discussed to save bandwidth by deploying patches from local repositories .
+
+software security vulnerabilities can also be addressed through the research and development of automated tools to uncover hard - to - see security flaws in software code during the development phase .
+
+the code base of large commercial software products can literally be millions of lines .
+
+microsoft windows 2000 reportedly contains as many as 35 million lines .
+
+moreover , because large products under development have changes to the code base every day , even during the final phase of development , code needs to be reviewed regularly .
+
+there are currently few automated tools that can be used during the code development phase to find the types of flaws that introduce overall security vulnerabilities to products .
+
+research and development in a wide range of other areas could also lead to more effective technologies to prevent , detect , and recover from attacks , as well as identify their perpetrators .
+
+these include more sophisticated firewalls to keep serious attackers out , better intrusion - detection systems that can distinguish serious attacks from nuisance probes and scans , systems that can isolate compromised areas and reconfigure while continuing to operate , and techniques to identify individuals responsible for specific incidents .
+
+the federal government can use its substantial purchasing power to demand higher quality software that would hold vendors more accountable for security defects in released products and provide incentives for vendors that supply low - defect products and products that are highly resistant to viruses .
+
+the corporate information security working group ( ciswg ) , a group of representatives from it trade and security organizations established last november by representative adam putnam to develop a private - sector plan for improving cybersecurity in corporate america , recommends that federal agencies use their massive buying power to force it vendors to build more secure products .
+
+in addition , ciswg recommends that insurers base the cost of cyber - risk insurance policies on a company's security posture to encourage adoption of best practices .
+
+the federal government has already started to use its purchasing power to influence software vendors to deliver more secure systems .
+
+in september 2003 , the department of energy — along with four other federal agencies and the center for internet security — signed a contract with oracle that requires the vendor to deliver the database to agencies with the security configurations installed .
+
+the contract could serve as a model to other federal agencies for leveraging their buying power with software vendors to require them to better secure their products .
+
+the federal government — in collaboration with representatives from the private sector — have begun efforts in various components of patch management .
+
+in december 2003 , ncsd and the national cyber security partnership , a coalition of leading industry associations , established five task forces that include representatives from academia , trade associations , nonprofit organizations , companies , and federal government employees .
+
+two of the task forces addressed patch management - related issues in their reports , including the need for better software engineering to reduce vulnerabilities , research and development of new technologies to improve software coding , and leveraging the federal government's buying power to promote higher quality software .
+
+in april , the security across the software development life cycle task force issued a report with recommendations for improving software security .
+
+the task force recommended that software providers improve the development process by adopting practices for developing secure software .
+
+it also recommended that providers adhere to best practices that include thoroughly testing patches to confirm that errors are not introduced and to identify any dependencies on previously released patches , updates , or maintenance releases .
+
+moreover , it recommended that providers make patches small , easy to install , and reversible , and that patches not introduce new product features or require reboots .
+
+the taskforce also developed a set of patch management guiding principles that include such criteria as establishing policies and procedures , defining a responsible person to monitor and enforce policy compliance , and adopting new technologies .
+
+in april , the technical standards and common criteria task force also issued a recommendations report .
+
+in the report , the task force's research working group advised the federal government to fund research into the development of better code - scanning tools that can identify software defects .
+
+according to the task force , the tools to be developed should be able to operate on code developed in a variety of programming languages ; handle millions of lines of code daily ; support the development of large , complex applications ; and run on many operating systems to support multiple development environments .
+
+furthermore , the tools must also be suitable for products ranging from it infrastructure to business applications , as well as for security products themselves .
+
+in addition , the working group recommended that the federal government require vulnerability analysis of products as a prerequisite to procuring software .
+
+an ever - increasing number of software vulnerabilities resulting from flaws in commercial software products place federal operations and assets at considerable — and growing — risk .
+
+patch management is an important element in mitigating these risks , as part of overall network configuration management and information security programs .
+
+agencies have implemented common effective patch management practices inconsistently .
+
+automated tools and services are available to facilitate agencies' implementation of selected patch management practices .
+
+however , a number of common patch management obstacles remain .
+
+additional steps can be taken by vendors , the security community , and the federal government to address the risk associated with software vulnerabilities and patch management challenges .
+
+more refined agency reporting on key aspects of agencies' patch management practices could provide management and oversight organizations with better information for measuring the quality of agencies' patch management effectiveness .
+
+this reporting could facilitate agencies' progress in mitigating the risks caused by software vulnerabilities .
+
+further , centralized services could provide a valuable resource for performing effective patch management practices as well as a venue for agencies to share information relevant to the various functionalities provided by different tools , it infrastructures served , cost , effectiveness , and implementation issues and constraints .
+
+we recommend that the director of omb take the following two actions .
+
+first , we recommend that the omb director provide guidance for agencies to report on key aspects of their patch management practices in their annual fisma reports .
+
+this guidance could address measures relating to agencies' implementation of common patch management practices , such as documented policies and procedures , their testing of new patches in their specific computing environments prior to installation , and the frequency with which systems are monitored to ensure that patches are installed .
+
+we also recommend that the omb director determine the feasibility of providing selected centralized patch management services to federal civilian agencies .
+
+omb should coordinate with dhs to build on lessons learned regarding padc's limitations and weigh the costs against potential benefits .
+
+these services could potentially provide patch management functions such as centralized access to available tools and services , testing capabilities , and development of training .
+
+we received oral comments on a draft of our report from representatives of omb's office of information and regulatory affairs and office of general counsel .
+
+these representatives generally agreed with our findings and recommendations .
+
+they plan to address key patch management practices in their fisma reporting guidance to agencies , and believe sound configuration management is fundamental to successful patch management .
+
+in addition , they acknowledge the potential benefits of centralized patch management services and will consider the feasibility of providing such services to federal agencies .
+
+finally , they noted that , whether or not centralized patch management services are provided , ultimately it remains each agency and system owner's responsibility to maintain the security of their systems including ensuring timely patch updates .
+
+as agreed with your offices , unless you publicly announce the contents of the report earlier , we plan no further distribution until 30 days from the report date .
+
+at that time , we will send copies of this report to the ranking minority members of the committee on government reform and the subcommittee on technology , information policy , intergovernmental relations and the census and other interested parties .
+
+in addition , the report will be made available at no charge on gao's web site at http: / / www.gao.gov .
+
+if you have any questions regarding this report , please contact me at ( 202 ) 512-3317 or elizabeth johnston , assistant director , at ( 202 ) 512-6345 .
+
+we can also be reached by e - mail at daceyr@gao.gov and johnstone@gao.gov , respectively .
+
+key contributors to this report are listed in appendix ii .
+
+our objectives were to determine the ( 1 ) reported status of 23 of the agencies under the cfo act and dhs in performing effective patch management practices , ( 2 ) tools and services available to federal agencies to perform patch management , ( 3 ) challenges to performing patch management , and ( 4 ) additional steps that can be taken to mitigate the risks created by software vulnerabilities .
+
+to determine the selected agencies' status in performing these practices , we first determined effective patch management practices by conducting an extensive search of professional it security literature .
+
+we also reviewed research studies and reports about cybersecurity - related vulnerabilities to update information provided in our previous testimony and consulted our prior reports and testimonies on information security .
+
+in addition , we interviewed private - sector and federal officials about their patch management experiences and practices .
+
+we then developed a series of questions that were incorporated into a web - based survey instrument .
+
+we pretested our survey instrument at one federal department , one component agency , and internally at gao through our chief information officer's office .
+
+we also corresponded with omb to obtain and discuss the process for their data call of the microsoft rpc and cisco ios vulnerabilities .
+
+for each agency to be surveyed , we identified the cio office and notified each of our work and distributed a link to access the web - based survey instrument to each via e - mail .
+
+in addition , we discussed the purpose and content of the survey instrument with agency officials when requested .
+
+all 24 agencies responded to our survey .
+
+we did not verify the accuracy of the agencies' responses ; however , we reviewed supporting documentation that agencies provided to validate their responses .
+
+we contacted agency officials when necessary for follow up .
+
+we then analyzed agency responses to determine the extent to which agencies were performing patch management practices .
+
+although this was not a sample survey and , therefore , there were no sampling errors , conducting any survey may introduce errors , commonly referred to as nonsampling errors .
+
+for example , difficulties in how a particular question is interpreted , in the sources of information that are available to respondents , or in how the data are entered into a database or were analyzed can introduce unwanted variability into the survey results .
+
+we took steps in the development of the survey instrument , the data collection , and the data analysis to minimize these nonsampling errors .
+
+for example , a survey specialist designed the survey instrument in collaboration with gao staff with subject - matter expertise .
+
+then , as stated earlier , it was pretested to ensure that the questions were relevant , clearly stated , and easy to comprehend .
+
+when the data were analyzed , a second , independent analyst checked all computer programs .
+
+because this was a web - based survey , respondents entered their answers directly into the electronic questionnaire .
+
+this eliminated the need to have the data keyed into a database , thus removing an additional potential source of error .
+
+to determine the tools and services available to federal agencies to perform patch management , we interviewed patch management software and service vendors as well as computer - security experts to discuss and examine their products' functions and capabilities .
+
+we also conducted literature searches and reviewed available documentation .
+
+we interviewed fedcirc officials to discuss their experiences with padc and other tools and services available to agencies .
+
+in addition , questions regarding patch management tools and services were included in the survey we sent to the 23 cfo agencies and to dhs .
+
+finally , we discussed with agencies the capabilities and limitations of the specific tools and services they utilized .
+
+finally , to determine the challenges to performing patch management and the additional steps that can be taken to mitigate the risks created by software vulnerabilities , we reviewed professional information technology security literature , examined available commercial software patch management tools and services , and solicited agencies' input on patch management challenges in our survey .
+
+we also interviewed relevant federal and private - sector officials and computer security experts .
+
+finally , we reviewed reports prepared by the national cyber security partnership subgroups tasked with identifying patch management challenges and developing recommendations .
+
+we conducted our work in washington , d.c. , charlotte , n.c. , and schaumburg , ill. , from september 2003 through may 2004 , in accordance with generally accepted government auditing standards .
+
+key contributors to this report were michael fruitman , elizabeth johnston , stuart kaufman , anjalique lawrence , min lee , david noone , and tracy pierson .
+
+the general accounting office , the audit , evaluation and investigative arm of congress , exists to support congress in meeting its constitutional responsibilities and to help improve the performance and accountability of the federal government for the american people .
+
+gao examines the use of public funds ; evaluates federal programs and policies ; and provides analyses , recommendations , and other assistance to help congress make informed oversight , policy , and funding decisions .
+
+gao's commitment to good government is reflected in its core values of accountability , integrity , and reliability .
+
+the fastest and easiest way to obtain copies of gao documents at no cost is through the internet .
+
+gao's web site ( www.gao.gov ) contains abstracts and full - text files of current reports and testimony and an expanding archive of older products .
+
+the web site features a search engine to help you locate documents using key words and phrases .
+
+you can print these documents in their entirety , including charts and other graphics .
+
+each day , gao issues a list of newly released reports , testimony , and correspondence .
+
+gao posts this list , known as “today's reports,” on its web site daily .
+
+the list contains links to the full - text document files .
+
+to have gao e - mail this list to you every afternoon , go to www.gao.gov and select “subscribe to e - mail alerts” under the “order gao products” heading .
+

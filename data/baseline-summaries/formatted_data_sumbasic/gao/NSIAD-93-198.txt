@@ -1,0 +1,452 @@
+this report addresses test and evaluation of software - intensive systems and the department of defense's efforts to improve the software process .
+
+it contains recommendations to you .
+
+the head of a federal agency is required under 31 u.s.c .
+
+720 to submit a written statement on actions taken on our recommendations to the house committee on government operations and the senate committee on governmental affairs not later than 60 days after the date of the report .
+
+a written statement must also be submitted to the house and senate committees on appropriations with the agency's first request for appropriations made more than 60 days after the date of the report .
+
+we are sending copies of this report to the chairmen and ranking minority members of the house committee on government operations , senate committee on governmental affairs , and house and senate committees on armed services ; the secretaries of the army , the navy , and the air force ; and the director of the office of management and budget .
+
+we will also make copies available to others upon request .
+
+if you or your staff have any questions concerning this report , please call me at ( 202 ) 512-4587 .
+
+major contributors to this report are listed in appendix iv .
+
+because computer software controls most functions of modern defense systems , the systems' performance depends largely on the quality of that complex and increasingly costly software .
+
+in fact , many major weapon systems may be inoperable if software fails to function as required .
+
+mission - critical computer software , which is integral to most military applications , tends to be more difficult to develop than software for other types of applications primarily because it must operate in real time under very unique environments .
+
+accordingly , software quality has become a primary concern in emerging defense acquisition programs , including weapon systems ; automated information systems ; and command , control , communications , and intelligence systems .
+
+software - intensive systems are , by nature , highly complex and often require millions of lines of code .
+
+these significant factors increase the overall costs of software .
+
+although the department of defense ( dod ) does not know precisely how much it spends on software , the defense systems management college projected that dod would spend about $36.2 billion for software in 1992 .
+
+the management college expects software costs to continue to rise at a rate proportionately higher than computer hardware costs .
+
+according to the dod inspector general , the costs of computer hardware components integral to weapon systems and other critical military and intelligence systems , are expected to remain stable at about $6 billion annually between 1990 and 1995 , whereas corresponding software costs are expected to grow from about $30 billion to $42 billion .
+
+ ( see fig .
+
+1.1. ) .
+
+dod estimates that about 30 percent of its software life - cycle expenditures are for initial development and 70 percent are for post - deployment software support , that is , maintaining , upgrading , and modifying existing software to correct deficiencies , respond to mission changes , or enhance technology .
+
+up - front improvements in the quality of software development processes and more effective software test and evaluation may play a significant role in controlling these costs , which are incurred largely after systems have been fielded .
+
+the primary purpose of test and evaluation during the acquisition process is to reduce the risk that the system or equipment either will not meet performance specifications or cannot be effectively used in its intended operational environment .
+
+test and evaluation is therefore designed to detect errors in both software and hardware before a system is fielded and to provide essential information to decisionmakers for assessing acquisition risk .
+
+early in the acquisition cycle , development test and evaluation ( dt&e ) primarily measures a system's technical performance and compliance with contractual specifications .
+
+dt&e , which starts at the systems requirements phase and proceeds through the design phase , is designed to detect errors in software and hardware prior to operational test and evaluation ( ot&e ) .
+
+later , ot&e focuses on the system's effectiveness and suitability .
+
+ ( see table 1.1. ) .
+
+before a system is certified as ready for ot&e , any major deficiency is expected to be identified and corrected during dt&e .
+
+deficiencies discovered during developmental and operational testing affect a system's cost , schedule , and performance .
+
+however , problems that are not identified and resolved until operational testing and production begins are generally more difficult and costly to correct .
+
+test and evaluation is the key internal control to ensure that decisionmakers have valid , credible information for making development and production decisions .
+
+ot&e results contribute to decisions not only on acquiring new systems but also on modifying systems deployed in the field and upgrading the software or hardware of systems already in production .
+
+the congress and senior dod officials have long been concerned with dod's inability to field software - intensive defense acquisition programs on time and within budget .
+
+because of these concerns , we initiated this review to identify ( 1 ) the extent to which software - related problems affect the performance of defense acquisition programs during ot&e , ( 2 ) pervasive barriers in the acquisition process that limit the effectiveness of test and evaluation of software - intensive systems , and ( 3 ) dod's efforts to resolve software test and evaluation problems .
+
+a wide range of technical and management challenges impact the development , testing , and fielding of software - intensive systems .
+
+however , this report is not intended to address the technical aspects of the software development process , which , at best , is a difficult and complex undertaking .
+
+rather , the report focuses more directly on those barriers that require the attention of dod acquisition and technology management officials and that dod believes limit the effectiveness of ot&e of software - intensive systems .
+
+to accomplish our objectives , we reviewed defense acquisition , software development , and test and evaluation policy documents .
+
+to determine the status of systems' software during ot&e , we analyzed the ot&e results of 27 systems that represented the total population of major programs the services had identified as having undergone ot&e during the 2-year period from january 1990 to december 1992 .
+
+we also visited several prime contractors identified by dod and service officials to obtain an overview of industry practices .
+
+the organizations we visited included the office of the under secretary of defense for acquisition , washington , office of the director , defense research and engineering , washington , office of the director , operational test and evaluation , washington , d.c. ; army's director of information systems for command , control , communications , and computers , washington , d.c. ; test and evaluation management agency , washington , d.c. ; army operational test and evaluation command , alexandria , virginia ; u.s. army communications - electronics command , fort monmouth , new navy operational test and evaluation force , norfolk , virginia ; fleet combat direction support system activity , dam neck , virginia ; marine corps operational test and evaluation activity , quantico , virginia ; air force operational test and evaluation center , albuquerque , sacramento air logistics center , california ; jet propulsion laboratory , pasadena , california ; hughes aircraft corporation , ground systems group , fullerton , hughes aircraft corporation , radar systems group , torrance , california ; general dynamics electronics division , san diego , california ; science applications international corporation , san diego , california ; and trw systems integration group , carson , california .
+
+we conducted our review between april 1992 and april 1993 in accordance with generally accepted government auditing standards .
+
+since the 1970s , software problems discovered during ot&e have adversely affected the cost , schedule , and performance of major defense acquisition systems .
+
+because many systems do not undergo rigorous dt&e and therefore begin ot&e before their software is fully mature ( i.e. , the software is able to satisfy all documented user requirements ) , they often fall short of system performance expectations .
+
+the readiness of such systems for ot&e is therefore questionable .
+
+although dod recognizes these problems , it has made only limited progress in adopting solutions .
+
+fundamentally , dod has not ( 1 ) acknowledged or adequately addressed the criticality of software to systems' operational requirements early enough in the acquisition process ; ( 2 ) developed , implemented , or standardized decision - making tools and processes ( eg , metrics ) to help measure or project weapon system software cost , schedule , and performance risk ; ( 3 ) developed test and evaluation policy that provides specific guidance regarding software maturity ; and ( 4 ) adequately defined and managed requirements for its increasingly complex software ( see ch .
+
+3 ) .
+
+to ensure no surprises during ot&e , defense systems are expected to be subjected to rigorous dt&e .
+
+formal operational test readiness reviews also address the readiness of systems for ot&e .
+
+however , software - intensive systems have repeatedly failed to meet users' requirements during ot&e and , in some cases , during operations in the field .
+
+this has been recognized in dod and industry as a major contributor to dod's “software crisis.” in general , the thoroughness of dt&e and the readiness of such systems for operational testing has been questionable .
+
+according to a 1992 report by the secretary of the air force , virtually all software - intensive defense systems suffer from difficulties in achieving cost , schedule , and performance objectives .
+
+our prior reports , the comments of senior officials responsible for various aspects of software development , and the reports of the services' operational test agencies ( 27 such reports were analyzed during our review ) corroborate the existence of significant software problems .
+
+our review of the services' ot&e reports from january 1990 to december 1992 showed that 23 of 27 , or 85 percent , of the software - intensive systems tested were immature , ineffective in a threat environment , or difficult to maintain in field operations .
+
+table 2.1 contains some typical examples of software problems found in these systems , and appendix i provides a more complete list of the problems .
+
+since the early 1970s , we have reported that defense systems have begun production without timely or realistic ot&e .
+
+more recently , we have reported on software shortfalls in individual systems ( see table 2.2 ) .
+
+for example , in december 1992 we reported that dod's mission - critical computer systems continued to have significant software problems due in part to a lack of management attention , ill - defined requirements , and inadequate testing .
+
+dod officials cited the following reasons for immature software during ot&e: in many cases , rigorous dt&e is not being done before systems begin ot&e ; nonetheless , the systems are being certified as ready before they have achieved appropriate levels of maturity .
+
+problems are not identified until it is too late to address them effectively and economically because some program managers may not fully report program weaknesses that could lead decisionmakers ( i.e. , the office of the secretary of defense , congress , or the military services' acquisition executive ) to adjust program funding .
+
+the career success of participants in the acquisition process is perceived to depend more on getting programs into production than on achieving successful program outcomes .
+
+thus , program managers have incentives to delay testing and take chances that immature systems might succeed in ot&e .
+
+the congressional appropriations process forces programs to be calendar - driven rather than event - driven , causing program managers to prematurely certify systems as ready for ot&e to avoid losing funding or slipping schedules .
+
+some program managers give priority to developing software that will support a system production decision and give less attention to the post - deployment support element of life - cycle costs .
+
+our review identified several pervasive barriers that need the attention of dod acquisition and technology management officials and inhibit the solutions of dod's software test and evaluation problems .
+
+eliminating these barriers will require the difficult process of changing the acquisition culture , a task that must be driven from the top and must be consistent .
+
+the barriers are ( 1 ) failure of the acquisition community to adequately address the critical nature of software ; ( 2 ) lack of credible cost , schedule , and performance data as the basis for decision - making ; ( 3 ) lack of specific software test and evaluation policy ; and ( 4 ) ineffective definition and management of requirements for software .
+
+although major defense acquisition systems depend largely on the quality of computer resources , software has been perceived as secondary to hardware and as a lower priority during development .
+
+due to the traditional mind - set of the prevailing acquisition culture , the acquisition community has not appropriately focused on the criticality of software to cost , schedule , and performance .
+
+also , software , unlike hardware , has lacked a disciplined , systems engineering approach to development .
+
+viewing software as something that can be fixed later , dod's acquisition community has been almost exclusively concerned with the cost and schedule of hardware early in the development life cycle .
+
+historically , program managers have known little about software ; have left software management to technical managers who are not always part of the decision - making process ; and generally have not become involved in software development and testing until problems affected cost and schedule , by which time it was usually too late to resolve these problems cost - effectively .
+
+additionally , program managers have little incentive to alter these practices and to ensure that software is appropriately mature before systems are certified as ready for ot&e based on rigorous dt&e .
+
+dod officials generally believe that test and evaluation should focus on the total system — both software and hardware — rather than two separate systems , as in the past .
+
+they told us that the acquisition process is most effective when development problems are detected and corrected early in the acquisition life cycle , rather than during or after ot&e .
+
+software managers , developers , acquisition officials , and those charged with oversight responsibilities need dependable information and independent techniques for measuring the progress of development efforts and for monitoring the balance of cost , schedule , and performance objectives .
+
+however , the quality of data available to decisionmakers remains largely ad hoc and overly optimistic and may be too dependent on informal channels .
+
+as a result , the ability of decisionmakers to objectively or accurately estimate future costs and schedules of defense systems continues to be limited .
+
+also , the ability to learn from the past has been impaired , as each software development effort has tended to start anew and independent of other , sometimes quite similar efforts .
+
+dod has yet to develop and implement the management processes and tools required to improve the reliability of its data .
+
+for example , the “best practices” in the private sector indicate the following benefits that can be achieved by using software management , quality , and process metrics: management metrics help determine progress against plans .
+
+quality metrics help assess product attributes , such as requirements stability , performance , user satisfaction , and supportability .
+
+process metrics provide indicators evaluating tools , techniques , organization , procedures , and so on .
+
+dod officials told us that software metrics have broad applications for defense acquisition programs because of their usefulness to government and private software developers , the test and evaluation community , and decisionmakers .
+
+some officials believe that software metrics , in combination with prescribed work breakdown structure , are essential for managing cost , schedule , and performance risk in the defense systems acquisition process .
+
+other officials told us that software metrics present a valuable input for independently monitoring the maturity of software and its readiness for ot&e .
+
+however , although they are useful , software metrics cannot substitute for actual test and evaluations .
+
+osd and service officials acknowledge that current osd acquisition and life - cycle support policy does not adequately address planning for software test and evaluation in a logical , structured fashion and that a software policy void exists with respect to test and evaluation of software - intensive systems .
+
+current policy is not definitive and does not adequately address the following critical questions: when is software ready to test ( i.e. , maturity ) ? .
+
+when and how much should modifications or upgrades be retested ( i.e. , regression testing ) ? .
+
+what is the appropriate use of software “patches” ( eg , temporary software programming fixes ) during testing ? .
+
+however , osd does not plan to issue guidelines specifically directing the services how to manage these complex issues .
+
+rather , it plans to issue a series of “expectations” or “evaluation guidelines” for software development and test and evaluation for use by oversight action officers in addressing both maturity and regression testing .
+
+osd is also considering developing an on - line data base for software issues to capture best practices , lessons learned , and some specific guidance from superseded software test and evaluation policy .
+
+although these efforts may prove beneficial , they fall short of providing enforceable criteria for ensuring effective oversight and test and evaluation .
+
+even though many factors contribute to dod's failure to produce systems that meet user needs in a timely , cost - effective manner , one critical factor is defining and managing users' requirements .
+
+effectively defining requirements , along with focused management and appropriate user involvement , is critical to the success of a program .
+
+as discussed earlier , the inability of software - intensive systems to meet users' needs has consistently been demonstrated during ot&e and , in general , has been a pervasive problem in the acquisition process .
+
+the definition of users' requirements , particularly for large , complex systems and for unprecedented systems ( i.e. , those that are unlike any that have already been built ) , is subject to varying interpretations by many different groups .
+
+these groups include field users , users' representatives , program managers , contracting officers , and contractors .
+
+each group brings different expectations and agendas to the contracting , development , and acquisition processes .
+
+ ( see app .
+
+ii for a list of dod organizations responsible for test and evaluation. ) .
+
+in the army , the training and doctrine command establishes the general user requirements for a new system in an operational requirements document .
+
+the army materiel command then transforms these requirements into technical and administrative requests for proposals for contracting , after which the contractor proposes how to meet those requirements .
+
+because this process often does not keep the user appropriately involved during this transformation of original requirements into procurement efforts , top - level operational requirements documents may result in systems that differ from those the user had envisioned .
+
+because these requirements often represent an area of great risk , dod believes a comprehensive requirements management strategy is essential to reducing overall program risk .
+
+in addition to the fact that user requirements may not be well understood , formulated , or articulated at the start of a program , the requirements almost invariably change throughout a system's life cycle .
+
+these changes are often directly related to the length of the development process and include changes in threat , technology , doctrine , unrealistic schedules , and perceived user opportunity .
+
+dod considers early and continuous user involvement in the requirements definition and management process and early testing programs to be essential to successful outcomes of software - intensive development efforts .
+
+to help ensure that a system will meet user requirements and expectations , dod officials believe they need to formally involve the users in the total system development .
+
+they said that system developers should be communicating with the users from the beginning of an acquisition program and throughout its life cycle and allowing the users to influence the development effort .
+
+dod and private sector officials cited the benefits of user involvement in several programs , particularly in automated information systems .
+
+since the 1980s , dod has studied and restudied its inability to field software - intensive systems on time , within cost projections , and in accordance with users' performance requirements .
+
+each succeeding study built upon earlier studies and consistently recommended key actions needed for successful acquisition strategies and effective ot&e .
+
+however , osd has made only limited progress in adopting these long - standing recommendations .
+
+the individual military services have tried to improve their software development processes , but a dod - wide , coordinated approach is lacking .
+
+senior osd officials told us that they believe the creation of a single osd - level office for software would , in part , help to resolve long - standing software problems .
+
+dod's 1983 software test and evaluation project report concluded that solutions to the software test and evaluation problems required more effective management , rather than technological breakthroughs .
+
+the report's recommendations included integrating test and evaluation into software development ; defining clearly testable software requirements and capabilities ; assessing and identifying critical software risks and applying appropriate developing , recording , and using software metrics ; developing and supporting the use of automated test tools and systematic developing and implementing triservice standards for unified software development , testing , and evaluation approaches .
+
+more recently , defense science board ( 1987 ) and software assessment project ( 1990 ) studies have reached conclusions similar with those of the earlier study .
+
+osd has responded to these recommendations by issuing written policy and guidance manuals and instructions .
+
+for example , dod instruction 5000.2 , defense acquisition management policies and procedures , requires the use of a software work breakdown structure , software metrics , and a disciplined development process .
+
+however , according to a 1987 defense science board study , most of the recommendations remained unimplemented .
+
+the board stated that “if the military software problem is real , it is not perceived as urgent.” our work demonstrates that many basic improvements to the dt&e of software - intensive systems remain unimplemented in 1993 .
+
+osd responsibility for oversight of software - intensive systems is shared between the under secretary of defense for acquisition ( computers embedded in weapon systems ) and the assistant secretary of defense for command , control , communications , and intelligence systems ( also responsible for automated information systems ) .
+
+although the acquisition processes are essentially identical for all major defense programs , two different acquisition policy series are used to govern their development .
+
+in its draft software master plan , dod stated that this dual oversight has resulted in duplicative and artificially fragmented acquisition guidance , policies , and oversight for software - intensive systems .
+
+we found that dod officials had been unable to reconcile various test and evaluation resourcing issues that exist , in part , due to this organizational division of responsibility .
+
+according to dod officials , for example , even though the services' operational test agencies are responsible for conducting ot&e of automated information systems , they have not been funded for this testing and have generally not conducted such testing because their focus has been on the traditional testing of weapon systems .
+
+further , dod officials indicated that the ot&e of one automated system was delayed due to lack of test funding and disagreements between osd and the services regarding ot&e policy .
+
+additionally , senior defense officials specifically singled out the lack of dedicated government dt&e of automated information systems as a concern that needed to be addressed .
+
+according to the software engineering institute , all of the services have used ad hoc practices that have resulted in unpredictable costs and schedules and low - quality software products that do not meet users' needs .
+
+to address these problems , the services have taken different approaches to improving software development and test and evaluation and are in various stages of implementing those improvements .
+
+among the services , the army has implemented more of the recommended software development and testing processes in a servicewide , goal - oriented way .
+
+the air force's operational test organization has used a well - documented and consistent metrics process to measure software maturity for ot&e .
+
+a navy software support activity has also established a software development process using metrics similar to the practices in industry .
+
+although the services' operational test agencies have agreed on implementing five common software metrics , osd and the services are generally developing software metrics and making other improvements independently , rather than using the same ones to meet common needs .
+
+osd recently established a software test and evaluation task force to work toward implementing common policies and consensus .
+
+it is too soon , however , to determine if this will effectively address the fragmented , redundant approaches observed during our field work .
+
+in september 1989 , the army convened the software test and evaluation panel to improve software test and evaluation practices and to prevent immature software from being deployed in operational systems .
+
+the army operational test and evaluation command initiated the panel because it believed that software problems were the primary cause of delays in operational testing .
+
+as a result of the panel's 1992 report , the army issued policy guidance on the procedures necessary for effective ot&e of software - intensive systems and on software requirements management .
+
+unlike the other services , the army has made substantial progress in developing enforceable policy guidance .
+
+the army also implemented 12 servicewide requirements , management , and quality software metrics and is in the process of implementing a centralized metrics data base to enable decisionmakers to better monitor the progress made during a system's life cycle .
+
+other improvements include a standard framework for test and evaluation of software , a clear definition of responsibilities under the army process known as continuous evaluation , the involvement of independent test and evaluation personnel from the start of a software development , increased user involvement in defining and refining requirements , and the early and frequent demonstration of software development progress .
+
+in addition , army post - deployment software support agencies have begun to provide such support throughout a system's life cycle .
+
+for example , the communications - electronics command provides ( 1 ) life - cycle software engineering for mission - critical defense systems ; ( 2 ) support in developing and testing command , control , communications , and intelligence systems ; and ( 3 ) hands - on experience and formal training in software engineering for army materiel command interns .
+
+the communications - electronics command also developed the army interoperability network to support software and interoperability throughout army systems' life cycles .
+
+this computer resources network , available for use by developers , testers , and evaluators of command , control , communications , and intelligence systems , is designed to provide for early integration and interoperability assurance , reduced development costs , and more efficient system scheduling for life - cycle software support .
+
+additionally , the command developed ( 1 ) a software life - cycle engineering process , ( 2 ) software process metrics , and ( 3 ) automated tools to manage software support and the software development process .
+
+the overall effect of such tools on dt&e and ot&e is still to be seen .
+
+with the assistance of the software engineering institute , the air force developed a process improvement program in december 1991 and directed its software development activities to implement the program in july 1992 .
+
+the air force is now developing policy intended to encourage all bidders on air force software contracts to improve current operations so that the bids could be assessed at a high software maturity level .
+
+also , the air force is developing standardized procedures for software test and evaluation that will be used in both development and operational tests .
+
+historically , the air force acquisition community has not required the use of metrics due to differences in opinions about which metrics have value and whether attention to the wrong metrics could lead to an incorrect focus and a skewed outcome .
+
+through a limited set of software metrics , the air force operational test and evaluation center has had some success in measuring software maturity for ot&e .
+
+to assess the contribution of software to the system's operational suitability , the center uses software deficiency reports in evaluating software maturity and a structured questionnaire approach to determine software supportability .
+
+this approach has been less than optimal due to the absence of more formal metrics programs in air force acquisition programs .
+
+also , this relatively informal process has focused on projecting weapon systems' suitability but not effectiveness .
+
+however , as part of its software process improvement plan , the air force is developing a software metrics policy on what data are required to support the metrics ( such as contracting how the metrics will be reported , and how to interpret the results .
+
+the policy will require all acquisition programs to use certain software metrics and to report the results of the metrics at every air force program review , thus providing decisionmakers with more current , reliable insights into the status of software development .
+
+the software metrics will include the osd core set and the air force core set .
+
+some air force guidance on using metrics was issued in 1991 .
+
+in september 1991 , the sacramento air logistics center , with the assistance of the software engineering institute , made its first self - assessment of software development and support processes .
+
+the assessment indicated that program results were unpredictable , systems were completed behind schedule and over cost , and customers were often dissatisfied .
+
+also , because the center lacked a unified , structured process for supporting software , it was difficult for management to gain the insight required to effectively plan and control software programs .
+
+to correct these deficiencies , the center plans to establish a documented process for project planning , project management , requirements management , configuration management , and support organization management .
+
+according to center officials , other air force logistics centers are similarly involved in these assessments .
+
+center officials also believe that program managers lack an effective process model and reliable historical data to estimate the cost , schedule , and resource requirements for software development .
+
+such estimates are essential to effectively measure progress against planned performance .
+
+recognizing that software metrics are key to oversight by all decisionmakers , the center has established a software metrics working group .
+
+the group is expected to define the data to be collected and a way to present those data to project managers and first - line supervisors so that the software project management process can be stabilized and be repeated .
+
+also , to improve post - deployment software support , the center has established a team to develop a process model that will provide a comprehensive , structured process for making software changes to improve the maintainability and supportability of software , make software support more cost - effective and more responsive to user be tailorable to all types of software applications , and make managers more responsible and accountable for resources used in software test and evaluation .
+
+the process model is aimed at overcoming all the historical problems common to post - deployment software support , as well as improving ( 1 ) project management visibility , ( 2 ) user productivity through better understanding of responsibilities , and ( 3 ) day - to - day activities .
+
+the navy's software ot&e improvement efforts have been slow compared to the other services , and its primary ot&e focus has been on the total system .
+
+however , as part of its total quality leadership plan , the navy is beginning to take some actions to improve its software development and testing processes .
+
+for example , in august 1992 , the navy tasked a test and evaluation process action team to develop recommendations to improve the navy's test and evaluation process throughout all phases of the acquisition process and readiness of systems for ot&e .
+
+on the basis of a 4-month review that included an analysis of army and air force software management initiatives and policy guidance , the team concluded that the navy needed to implement stronger fleet support for test and evaluation in navy acquisition a formal working group to coordinate and resolve navy test planning a clearer , more timely requirements definition and management process ; a rigorous ot&e certification review process .
+
+the team further concluded that certification and testing of software releases and of mission - critical systems needed additional study .
+
+with respect to metrics , the team concluded that a common set of metrics was needed as a tool to measure software maturity but that metrics alone should not be the determining factor in the certification of systems as ready for ot&e .
+
+in addition , the team concluded that the navy should issue revised policy guidance on the procedures necessary for effective test and evaluation of software - intensive systems , conduct rigorous operational test readiness reviews before systems are certified as ready for operational test , develop and recommend a common set of at least eight metrics to be used by decisionmakers as indicators of software maturity , develop additional metrics that can be used by program managers to measure the progress of development efforts , determine the appropriate level of testing for major and minor releases of develop and recommend methods to streamline the process for testing software releases .
+
+the report concluded that the test and evaluation initiatives and recommendations would work if implemented by instructions , formal policy , and clear command guidance and accompanied with command involvement .
+
+although it is far too soon to tell if these recommendations will be effective for navy acquisition programs , they appear to be consistent with those made by the dod software test and evaluation project report in 1983 .
+
+by contrast , the navy fleet combat direction systems support activity , with the assistance of the software engineering institute , has already developed an improvement program that mirrors the best practices in the private sector and may assist government software development activities in improving their processes .
+
+begun in january 1992 , the program was intended to improve the activity's software development and support processes .
+
+as a result , the activity began using 13 software management metrics to make fact - based decisions about systems' performance during software development .
+
+activity officials said that the indicators provided a clear and concise reporting structure ; improved planning and data collection for future projections ; provided a degree of standardization among projects , contractors , and in - house personnel ; fostered closer adherence to military standards ; greatly improved communication and problem and process definition ; acted as a reliable early - warning system if plans were not met ; and highlighted small problems early so that they could be resolved before they grew .
+
+the activity's software development process , in our view , is structured and measurable and includes relatively open , periodic reporting to management , which is a good foundation for decision - making .
+
+test and evaluation of software and software - intensive defense systems remains among the most difficult , most expensive , and least understood processes in the defense acquisition cycle .
+
+although key software test and evaluation study recommendations have provided a starting point for dod to address and resolve the software crisis , only limited progress has been made in improving the ability of software - intensive systems to meet users' requirements .
+
+some osd officials believe that the lack of a single osd - level office for software has been the primary reason long - standing software problems have not been resolved .
+
+other officials have concluded that osd needs to take a more direct role in ensuring that software - intensive systems are ready for ot&e before this critical process begins .
+
+in our view , consistent adoption across dod of the recommendations in this report could greatly enhance the ot&e of software and better enable dod to accomplish its objectives of developing software - intensive systems on schedule , within cost , and in accordance with required performance capabilities .
+
+dod must go beyond simply reworking the prior studies on software test and evaluation .
+
+moreover , promulgating more policy guidance without ensuring that the guidance is implemented is not the solution .
+
+overall , dod has not ( 1 ) developed an overarching strategy that ensures development and implementation of key software test and evaluation policy throughout dod ; ( 2 ) issued definitive acquisition and life - cycle support policies that focus on software test and evaluation ; and ( 3 ) adopted a focused , disciplined approach to software development and test and evaluation that recognizes the critical nature of software .
+
+to achieve the potential of its mission - critical software and to accomplish its software improvement objectives , dod must overcome the prevailing acquisition culture's failure to react to the problems of modern defense systems ; that is , dod must understand that software is a critical path through which systems achieve performance objectives .
+
+because this message has often been ignored , systems have proceeded into production when software had not yet achieved the appropriate level of maturity to yield valid test results .
+
+because of the acquisition community's bias toward hardware , dod has not adequately ensured that software was fully mature and had undergone thorough and rigorous dt&e before systems were certified as ready for ot&e .
+
+dod does not currently have a high - quality decision - making data base to ensure that decisions concerning mission - critical software are made based on reliable , credible data .
+
+further , dod does not have reasonable assurance that unnecessary duplication and redundancy in software development are being avoided .
+
+dod has not adequately ( 1 ) coordinated its efforts to develop and use software metrics for defense acquisition programs ; ( 2 ) made maximum use of contractors' software development processes that have been favorably assessed by credible , independent evaluation ; ( 3 ) developed team - building efforts to ensure the early and continuous involvement of users with acquisition , post - deployment support and testing personnel ; and ( 4 ) filled in the policy and oversight voids that have contributed to the shortfalls that we have addressed .
+
+osd has recently established a software test and evaluation task force to work toward common policies .
+
+further , some senior defense officials and software development and support personnel at the services' working levels are working independently to resolve some of the pressing software issues .
+
+overall , however , the agency has not adequately responded to the magnitude of the problem .
+
+we are encouraged by the progress the services have made in developing policy guidance to improve the ot&e of its software - intensive systems and of its software requirements .
+
+we are particularly encouraged by the army's implementation of requirements , management , and quality software metrics , as well as a centralized metrics data base .
+
+accordingly , we believe these army initiatives should be watched closely by osd , since these efforts may show potential for application throughout dod .
+
+we are similarly encouraged by senior defense acquisition and technology officials' recognition of the critical need to improve management of the requirements process for software - intensive systems .
+
+effectively defining requirements ; building teams of appropriate users , logisticians , program management , and contractor personnel ; and focusing appropriate management attention is critical to improving software maturity before ot&e begins .
+
+to realize lasting improvements in test and evaluation of software - intensive systems and to enhance the life - cycle affordability of such programs , we recommend that the secretary of defense issue and implement a software test and evaluation policy that defines testing requirements for software maturity , regression testing , and the use of temporary software fixes during testing ; strengthen controls to ensure that operational testing does not begin until results of development test and evaluation demonstrate an appropriate level of software maturity ; require program management officials to define exit criteria for certifying a systems' readiness for operational testing at the beginning of full - scale development ( i.e. , milestone ii ) ; and require the services to develop a common core set of management metrics for software ( i.e. , cost , schedule , and quality ) for major defense programs early in the development cycle to be approved at milestone ii .
+
+in its comments on a draft of this report , dod generally agreed with our findings and recommendations that additional steps can be taken to improve the test and evaluation of software - intensive systems .
+
+accordingly , dod indicated that , during fiscal year 1994 , it will issue revised software policy guidance to address these concerns .
+
+however , we believe that the issuance of revised policy guidance without incentives to change behavior or ensure effective implementation could have little effect in ensuring software maturity .
+
+dod pointed out that many of the reasons for immature software during ot&e were outside the control of the test and evaluation community .
+
+we agree with dod's comment and specifically address this fact in the report .
+
+dod indicated that programs reviewed as part of our analysis preceded dod's most recent acquisition guidance and that the potential benefits of such guidance were therefore not sufficiently acknowledged in the report .
+
+dod indicated that current updates of its acquisition policy series provided improved guidance and stronger program oversight for development strategies , testing , and requirements .
+
+however , this policy has some voids and , more importantly , it remains to be seen whether and to what degree the policy updates will be implemented and whether they will address the long - standing problems .
+
+dod also indicated that the benefits of software metrics for ot&e were not supported .
+
+we did not attempt to quantify the direct benefits of software metrics for ot&e .
+
+we pointed out that experts in dod and in the private sector believe that software metrics could improve the management of the software development process and thus contribute to greater software maturity before ot&e begins .
+
+dod's comments appear in appendix iii .
+

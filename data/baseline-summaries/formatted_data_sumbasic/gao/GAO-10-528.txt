@@ -1,0 +1,546 @@
+the housing and economic recovery act of 2008 established the federal housing finance agency ( fhfa ) on july 30 , 2008 , and charged it with the supervisory and regulatory oversight of federal national mortgage association ( fannie mae ) , federal home loan mortgage corporation ( freddie mac ) , and the 12 federal home loan banks .
+
+the act requires the agency to annually prepare and submit financial statements to the director of the office of management and budget , and requires us to audit the agency's financial statements .
+
+as part of our audit of fhfa's fiscal year 2009 financial statements , we assessed the effectiveness of the agency's information security controls over its financial information .
+
+in our report on the agency's financial statements for fiscal year 2009 , we concluded that fhfa had effective internal control over financial reporting as of september 30 , 2009 .
+
+we also determined that the agency's system of internal control had certain deficiencies , although we did not consider those to be material weaknesses or significant deficiencies for financial reporting purposes .
+
+these deficiencies included matters related to access controls and information security management .
+
+in this report , we provide additional details on fhfa's information security controls , including details on information security deficiencies in the agency's system of internal control over financial reporting .
+
+our specific objective was to assess the effectiveness of the agency's controls for ensuring the confidentiality , integrity , and availability of its financial information .
+
+we performed our work at agency facilities in washington , d.c. , and at financial application servicing and commercial hosting facilities in parkersburg , west virginia , and austin , texas .
+
+our work was conducted from february 2009 to april 2010 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objective .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objective .
+
+see appendix i for additional details on our objective , scope , and methodology .
+
+information security is a critical consideration for any organization that depends on information systems and computer networks to carry out its mission or business .
+
+it is especially important for government agencies , where maintaining the public's trust is essential .
+
+the dramatic expansion in computer interconnectivity and the rapid increase in the use of the internet have revolutionized the way our government , our nation , and much of the world communicates and conducts business .
+
+although this expansion has created many benefits for agencies such as fhfa in achieving their missions and providing information to the public , it also exposes federal networks and systems to various threats .
+
+without proper safeguards , computer systems are vulnerable to individuals and groups with malicious intent who can intrude and use their access to obtain sensitive information , commit fraud , disrupt operations , or launch attacks against other computer systems and networks .
+
+the risks to these systems are well - founded for a number of reasons , including the dramatic increase in reports of security incidents , the ease of obtaining and using hacking tools , and steady advances in the sophistication and effectiveness of attack technology .
+
+the federal bureau of investigation has identified multiple sources of threats , including foreign nation states engaged in intelligence gathering and information warfare , domestic criminals , hackers , virus writers , and disgruntled employees or contractors working within an organization .
+
+in addition , the u.s. secret service and the cert® coordination center studied insider threats in the government sector and stated in a january 2008 report that “government sector insiders have the potential to pose a substantial threat by virtue of their knowledge of , and access to , employer systems and / or databases.” our previous reports , and those by federal inspectors general , describe persistent information security weaknesses that place federal agencies at risk of disruption , fraud , or inappropriate disclosure of sensitive information .
+
+accordingly , we have designated information security as a governmentwide high - risk area since 1997 , most recently in 2009 .
+
+recognizing the importance of securing federal agencies' information systems , congress enacted the federal information security management act ( fisma ) in december 2002 to strengthen the security of information and systems within federal agencies .
+
+fisma requires each agency to develop , document , and implement an agencywide information security program for the information and information systems that support the operations and assets of the agency , using a risk - based approach to information security management .
+
+such a program includes assessing risk ; developing and implementing cost - effective security plans , policies , and procedures ; providing specialized training ; testing and evaluating the effectiveness of controls ; planning , implementing , evaluating , and documenting remedial actions to address information security deficiencies ; and ensuring continuity of operations .
+
+the housing and economic recovery act of 2008 created the fhfa , an independent federal regulatory agency resulting from the statutory merger of the federal housing finance board ( fhfb ) and the office of federal housing enterprise oversight ( ofheo ) .
+
+fhfa absorbed the powers and regulatory authority of both entities , with expanded legal and regulatory authority .
+
+the act also gave fhfa the responsibility for , among other things , the supervision and oversight of fannie mae , freddie mac , and the 12 federal home loan banks .
+
+specifically , the agency was assigned responsibility for ensuring that each of the regulated entities operates in a fiscally safe and sound manner , including maintenance of adequate capital and internal controls , and carries out its housing and community development finance mission .
+
+fhfa is a small government agency with a workforce that includes economists , market analysts , examiners , subject matter experts , technology specialists , accountants , and attorneys .
+
+fhfa had a staff of about 430 employees at the end of fiscal year 2009 .
+
+during fiscal year 2009 , ofheo's and fhfb's personnel , property , and program activities , and certain employees and activities of the department of housing and urban development ( hud ) , were transferred to fhfa .
+
+the assets , liabilities , and financial transactions of ofheo and fhfb were also consolidated into fhfa .
+
+to support these activities , fhfa began unifying the agency's information technology ( it ) infrastructure operations , including integrating its general support systems , and has made substantial progress .
+
+this effort included implementing an integrated e - mail messaging system , consolidating software licenses and services , eliminating duplication of information systems and sources , and unifying internal customer service operations .
+
+fhfa also unified its financial systems .
+
+fhfa uses the national finance center , a service provider within the department of agriculture , for its payroll and personnel processing .
+
+during fiscal year 2009 , the agency coordinated programming and systems changes with the national finance center to achieve a transition from two separate systems into a unified payroll and processing system for the agency with integration completed in july 2009 .
+
+fhfa had been using legacy financial management systems and processes from ofheo and fhfb .
+
+in fiscal year 2009 , fhfa completed outsourcing of its financial management services to the treasury department's bureau of the public debt ( bpd ) administrative resource center and a new financial management system ( fms ) , which became operational in july 2009 .
+
+fms provides the agency with an integrated system for its accounting , procurement , and travel activities .
+
+the system uses oracle corporation's hosting service in austin , texas .
+
+as the commercial hosting facility for the administrative resource center's financial management services , oracle staff serve as database and systems administrators and provide backup and recovery services for fhfa's financial information .
+
+a basic management objective for any organization is to protect the resources that support its critical operations from unauthorized access .
+
+organizations accomplish this objective by designing and implementing controls that are intended to prevent , limit , and detect unauthorized access to computing resources , programs , information , and facilities .
+
+such controls include both logical access and physical access controls .
+
+logical access controls include requiring users to authenticate themselves and limiting the files and other resources that authenticated users can access and the actions that these users can execute .
+
+physical access controls involve restricting physical access to computer resources and protecting these resources from intentional or unintentional loss or impairment .
+
+without adequate access controls , unauthorized individuals , including external intruders and former employees , can surreptitiously read and copy sensitive information and make undetected changes or deletions for malicious purposes or personal gain .
+
+in addition , authorized users can intentionally or unintentionally read , add , delete , modify , or execute changes that are outside their span of authority .
+
+fhfa has multiple deficiencies in the access controls intended to restrict logical and physical access to the agency's information and systems .
+
+a major reason for these control deficiencies was that fhfa did not fully implement key activities of its information security program .
+
+if left uncorrected , the deficiencies increase the risk that unauthorized individuals may gain access to fhfa computing resources , programs , information , and facilities .
+
+authorization is the process of granting or denying access rights and permissions to a protected resource , such as a network , a system , an application , a function , or a file .
+
+a key component of granting or denying access rights is the concept of “least privilege” which is a basic principle for securing computer resources and information .
+
+this principle means that users are granted only those access rights and permissions they need to perform their official duties .
+
+to restrict legitimate users' access to only those programs and files they need to do their work , organizations establish access rights and permissions .
+
+“user rights” are allowable actions that can be assigned to users or to groups of users .
+
+file and directory permissions are rules that regulate which users can access a particular file or directory and the extent of that access .
+
+to avoid unintentionally authorizing users' access to sensitive files and directories , an organization must give careful consideration to its assignment of rights and permissions .
+
+furthermore , national institute of standards and technology ( nist ) special publication 800-53 states that system access should be granted based on a valid access authorization and intended system usage and the most restrictive access needed by users for accounts , files , and directories needs to be enforced .
+
+finally , fhfa policy requires that information systems enforce the most restrictive set of rights needed by users to perform their assigned duties .
+
+fhfa implemented numerous controls to prevent , limit , and detect logical access to its financial systems and information .
+
+for example , it enforced the use of ( 1 ) network user names and complex passwords , and ( 2 ) two - factor authentication for remote access to fhfa's networks .
+
+in addition , wireless access to the network is prohibited inside the fhfa facilities unless approved by the chief information officer or the chief information security officer .
+
+however , deficiencies in controlling logical access diminished the effectiveness of these controls and placed information resources at risk .
+
+for example , fhfa did not always maintain authorization records for network and system access , enforce the most restrictive access needed by users on shared network files and directories , and restrict access to sensitive system resources .
+
+to illustrate: fhfa did not maintain network access authorizations for every agency network user and authorization records contained notes that indicated records were incomplete .
+
+specifically , the agency could not provide authorization for 20 of 30 users reviewed .
+
+if network and system access authorizations are not fully documented and monitored , increased risk exists that users may be granted unauthorized and unintended network and system access .
+
+fhfa established server files and directories that allowed network users to access agency and regulated - entity confidential information even though such users did not have a business need for this information .
+
+to illustrate , using network accounts with access privileges normally granted to all network end users , we were able to access sensitive and confidential regulatory information — including internal meeting notes , a mortgage market analysis , and a liquidity report for a regulated entity — on a server which hosted a fhfa examiner support system .
+
+additionally , we were able to read documents labeled confidential on a shared drive .
+
+the network accounts were also unnecessarily given the rights to access and modify database files on a system the agency uses for financial analysis .
+
+by not restricting access to this confidential information to only personnel with an authorized need for access , fhfa risks the possibility that sensitive information could be used for unintended purposes , which could impact the ability of the agency to carry out its organizational mission .
+
+fhfa did not always sufficiently restrict system rights to only those needed by users to perform their assigned duties .
+
+for example , the agency did not sufficiently restrict user access to privileged accounts .
+
+local user network accounts had rights that permitted the user to create new local workstation accounts and then escalate these accounts to have local administrator privileges .
+
+these accounts could then be used to create privileged accounts on other agency workstations by remotely connecting to them .
+
+this would allow malicious insiders to grant themselves or others access to sensitive information technology and communications resources .
+
+local administrator accounts could also be used to install unauthorized software that could disrupt agency operations and capture various user credentials , such as those used to access the agency's financial applications .
+
+the chief information officer's office stated that this deficiency existed because users were given privileged access to their workstations to facilitate the agency's integration of its general support systems .
+
+it also stated the privileged access was only intended for temporary use and the fact that the access was not removed after the integration phase was completed was an error .
+
+fhfa informed us it is currently developing an access control procedure to revalidate user access levels for network and system access .
+
+fhfa plans to finalize this procedure as part of future phases of integrating its general support systems .
+
+according to agency officials , this should occur by june 2010 .
+
+officials also said that access has been restricted to ( 1 ) administrators , ( 2 ) application users , or ( 3 ) specific agency personnel based on input from information owners .
+
+however , until these control procedures are fully developed , effectively implemented , and continuously monitored , fhfa will remain at increased risk of individuals gaining unauthorized access to information resources .
+
+physical security controls are important for protecting computer facilities and resources from espionage , sabotage , damage , and theft .
+
+these controls involve restricting physical access to computer resources and sensitive information , usually by limiting access to the buildings and rooms in which the resources are housed and periodically reviewing access rights granted to ensure that access continues to be appropriate based on established criteria .
+
+nist policy requires that federal organizations implement physical security and environmental safety controls to protect employees and contractors , information systems , and the facilities in which they are located .
+
+fhfa policy also requires access controls for deterring , detecting , monitoring , restricting , and regulating access to areas housing sensitive it equipment and information .
+
+fhfa effectively secured some of its sensitive areas and computer equipment and took other steps to provide physical security and environmental safety .
+
+for example , fhfa issued electronic badges to help control access to many of its sensitive and restricted areas .
+
+the agency also drafted procedures to guide staff in securing their office space and protecting sensitive information .
+
+in addition , the agency implemented environmental and safety controls such as temperature and humidity controls , as well as emergency lighting to protect its staff and sensitive it resources .
+
+however , fhfa did not effectively ( 1 ) secure areas with it equipment , ( 2 ) complete physical security and environmental control policies , ( 3 ) perform physical security risk assessments , ( 4 ) authorize and control physical access to resources and information , ( 5 ) detect potential security incidents , ( 6 ) implement a visitor control program , ( 7 ) enforce physical security safeguards , ( 8 ) secure locations that support computer operations , or ( 9 ) implement fire protection controls .
+
+sensitive areas at fhfa were not sufficiently secured .
+
+nist special publication 800-53 requires that federal organizations control physical access points , including designated entry and exit points , to the facility where information systems reside .
+
+nist also requires that organizations enforce stringent physical access measures for areas within a facility containing large concentrations of information system components , such as server rooms and communications centers .
+
+nist further requires that organizations position information system components in locations within its facilities to minimize the opportunity for unauthorized access .
+
+in addition , fhfa policy requires that access to its facilities housing sensitive it equipment and information be limited to authorized personnel and that its employees take steps to prevent unauthorized access or disclosure of information .
+
+however , numerous instances existed in which fhfa did not sufficiently secure its facilities .
+
+during our testing , we were able to obtain unauthorized access from outside fhfa facilities into its interior space containing sensitive information and it equipment .
+
+entrance security .
+
+security for building entrances was not sufficient .
+
+we were able to obtain unauthorized access to fhfa's facilities on three different dates when we performed unescorted visits .
+
+guards were either not on duty or did not inspect credentials and verify identities at each of the agency's three downtown washington , d.c. , buildings .
+
+two locations had concierge staff in their lobbies during regular business hours , but they did not require or check credentials .
+
+agency staff were not present at these locations during early morning visits on two separate dates .
+
+a security officer was present during one visit and permitted us access with an expired badge .
+
+guards on duty at one location did not require that we display identification during multiple visits to the facility .
+
+further , no magnetometers or x - ray machines were available , nor did we observe visitors being searched at any location , creating the potential that an adversary could bring dangerous materials ( eg , firearms , explosives , or chemical and biological agents ) into these facilities without being detected , challenged , or hindered from entering .
+
+interior security .
+
+office space at each of the three fhfa washington , d.c. , buildings containing sensitive documents and it equipment was either unsecured or had very weak security features .
+
+we obtained entry to fhfa interior space by pushing on interior doors , using commonly available items to defeat security mechanisms , or walking behind employees .
+
+on one visit to office space at an agency location , we walked past inattentive guards who did not challenge us and walked through unsecured interior doors to obtain access .
+
+inside the secured space , many agency staff left their offices unsecured , including some who left sensitive information on their desks .
+
+computer room security .
+
+fhfa space containing sensitive computer equipment was not appropriately secured .
+
+we were able to obtain entry to an agency server room and storage area on three separate occasions by using commonly available items .
+
+this security deficiency was further compounded because the agency located the server room near an elevator area such that the public could easily obtain access to the general area where the server room is located .
+
+because areas containing sensitive it equipment and information were not appropriately secured , fhfa has less assurance that computing resources are protected from inadvertent or deliberate misuse including fraud or destruction .
+
+nist special publication 800-53 requires that organizations develop formal documented physical security policies and procedures to facilitate the implementation of physical and environmental protection controls .
+
+nist also requires that these policies be consistent with all applicable mandates and regulations .
+
+however , fhfa's physical security and environmental control policies for the protection of its assets — including sensitive computer equipment , as well as employees , contractors , visitors , and the general public — were incomplete .
+
+fhfa policies did not adequately describe requirements for physically protecting it equipment in sensitive locations .
+
+for example , fhfa policies did not describe how to respond to a physical security intrusion or report suspected or confirmed breaches in physical security ; require that computer room authorization lists be periodically reviewed to determine if staff previously authorized access still require access or should be removed from the lists ; and provide clear and consistent guidance for developing and implementing environmental safety controls , such as fire protection and emergency power and lighting for its facilities housing computer rooms .
+
+until such policies are approved and implemented , fhfa has less assurance that its staff has sufficient and appropriate guidance to effectively and consistently protect its computing resources from inadvertent or deliberate misuse , including fraud or destruction .
+
+identifying and assessing physical security risks are essential to determining what controls are required and what levels of resources should be expended on controls .
+
+nist requires that organizations assess physical security risks to their facilities when they perform required risk assessments of their information systems .
+
+according to nist special publication 800-30 , the physical security environment of information systems should be considered when selecting cost - effective security controls .
+
+however , fhfa did not perform physical security risk assessments for its three washington , d.c. , facilities that house computer rooms and sensitive information .
+
+although fhfa officials stated that the landlords of their leased facilities performed risk assessments , they acknowledged that the assessments did not cover the space fhfa uses nor did fhfa obtain and review those assessments .
+
+until risk assessments are performed and used to help determine what physical security controls should be implemented , fhfa has less assurance that computing and other resources are consistently and effectively protected from inadvertent or deliberate misuse .
+
+nist requires that organizations control all physical access points to its computer facilities and verify individual access authorizations .
+
+however , at one of its locations , fhfa did not fully control physical access authorizations to facilities containing sensitive computer resources and information and did not maintain a current list of personnel with authorized access to its facilities' server rooms .
+
+further , fhfa did not periodically review the authorization lists to determine if staff who were previously authorized access to the server rooms still required access or could be removed from the list .
+
+several instances occurred where individuals inappropriately entered sensitive areas .
+
+for example: seven individuals accessed four rooms containing it equipment without seven access cards with generic names were used to access two rooms containing sensitive it equipment .
+
+fhfa was unable to identify who actually used the cards and accessed the rooms ; someone used a terminated employee's access card seven times to access two rooms containing sensitive it equipment .
+
+fhfa was unable to determine who used the card and accessed the rooms ; and fhfa's landlord for one facility had the ability to grant physical access to sensitive it areas , and granted non - fhfa individuals access to the it workroom without the agency's knowledge .
+
+physical access logs showed that five of the landlord's staff were not on fhfa's authorization list , but had entered the workroom without agency knowledge .
+
+as a result of these collective deficiencies , sensitive areas were accessed by unauthorized individuals and are at increased risk of further unauthorized access that could result in critical computing resources and sensitive information being inadvertently or deliberately misused or destroyed .
+
+nist special publication 800-53 requires that organizations monitor physical access to their information systems to detect and respond to physical security incidents .
+
+for higher risk areas such as computer rooms , nist requires organizations to monitor real - time intrusion alarms and surveillance equipment and / or employ automated mechanisms to recognize potential intrusions .
+
+fhfa policy also requires that controls be implemented to detect and monitor access to areas housing sensitive it equipment and information .
+
+however , fhfa did not have processes and procedures , or in some instances , surveillance equipment , to monitor physical access to its washington , d.c. , computer rooms and areas containing sensitive documents so that it could detect and respond to physical security incidents .
+
+fhfa did not have monitoring or surveillance equipment , such as a closed circuit television at entrance doors , nor were the doors centrally or locally alarmed at two of the locations .
+
+additionally , agency staff members were not reviewing access logs to sensitive it areas , as required by nist , and there was no procedure in place to guide such reviews .
+
+if agency staff had reviewed access logs , they may have been able to ascertain that unauthorized individuals were actually accessing agency computer rooms as discussed above .
+
+further , the monitoring system that fhfa was using did not have the ability to generate physical access logs for the primary server room at one location .
+
+as a result , increased risk exists that unauthorized access and physical security incidents would not be detected or effectively investigated .
+
+nist special publication 800-53 requires that organizations properly authenticate visitors before they can access facilities containing sensitive information systems .
+
+fhfa policy also requires that all visitors be escorted and sign in and out while visiting fhfa facilities , with these records being maintained for at least one year .
+
+as required by nist , these records should include the name , signature , and organization of the visitor ; form ( s ) of identification ; date of access ; times of entry and departure ; purpose of the visit ; and name / organization of the person visited .
+
+however , fhfa had no visitor control practices in place at one of its facilities .
+
+during three unaccompanied visits to this location we obtained access to and roamed freely throughout fhfa space without any identification or escort , and were not challenged by any staff .
+
+further , fhfa did not require visitors to sign in or out , nor did it maintain visitor access records to its computer room or office space at one facility and its computer room at another facility .
+
+as a result , the agency was at increased risk of unauthorized visitors gaining access to sensitive areas and inadvertently or deliberately misusing or destroying critical computing resources .
+
+nist special publication 800-53 requires that organizations control physical access to areas containing sensitive information and system devices .
+
+nist also requires that organizations verify individual access authorizations before granting access to its facilities .
+
+however , fhfa employees did not always enforce physical security safeguards .
+
+for example , agency employees did not always use their badges to obtain access to electronically secured interior spaces .
+
+we observed agency staff who piggybacked into secured spaces when another individual held the door open for them on multiple occasions during three separate visits to fhfa locations .
+
+we also piggybacked into secured fhfa interior spaces behind other agency staff numerous times without any visible agency or visitor credentials .
+
+at no time were we challenged by fhfa staff and , in several cases , agency staff held doors open for us to allow our entry without authenticating our identity and authority .
+
+in addition , on three separate visits to one agency location , we easily opened entry doors by applying slight force and a local alarm sounded .
+
+however , agency employees who were in the area either did not notice or disregarded the alarm when we entered the area .
+
+because its employees did not sufficiently enforce effective physical security , fhfa has less assurance that computing resources and sensitive information are protected from inadvertent or deliberate misuse .
+
+nist special publication 800-53 requires that organizations control access to information systems distribution and transmission lines within organizational facilities and protect power equipment and power cabling for information systems from damage and destruction .
+
+however , fhfa did not secure two closets at one of its facilities that contain telecommunications wiring that supports its computer operations .
+
+fhfa also did not secure an electrical closet that contains power equipment and cabling at the same location .
+
+the power equipment controlled electrical power to fhfa's server room and office space .
+
+the electrical closet also contained a large amount of miscellaneous construction materials .
+
+after we notified fhfa of this problem , agency personnel stated that they had secured the closets and agreed to remove the stored materials , but two subsequent reinspections showed that the electrical closet remained unsecured and cluttered with construction materials .
+
+because these spaces were not sufficiently secured , fhfa has less assurance that computer operations are protected from inadvertent or deliberate misuse including fraud or destruction .
+
+fhfa did not adequately establish and implement controls to protect a server room containing sensitive it equipment from potential fire damage .
+
+nist special publication 800-53 requires that organizations employ and maintain fire suppression and detection devices for information systems .
+
+agency policy also requires the use of controls to safeguard assets against various hazards including fire .
+
+however , fhfa did not have adequate fire suppression for its server room at one facility .
+
+according to fhfa staff , a fire suppression system was installed but did not function for over a year prior to our visit because repairs to the server room were required before the system could be activated .
+
+subsequent to our visit , fhfa activated the fire suppression system in august 2009 .
+
+prior to this activation , sensitive it equipment was at risk of damage which threatened the availability of critical information resources and information .
+
+to their credit , senior fhfa officials acknowledged these physical security and environmental safety control shortcomings and told us that they have taken steps or are planning to take steps to mitigate most of the deficiencies .
+
+however , until they fully implement physical security controls , fhfa computer facilities and resources remain vulnerable to espionage , sabotage , damage , and theft .
+
+a key reason for the information security deficiencies in fhfa's information systems discussed previously is that it has not yet fully implemented its agencywide information security program to ensure that controls are appropriately designed and operating effectively .
+
+fisma requires each agency to develop , document , and implement an information security program that , among other things , includes: policies and procedures that ( 1 ) are based on risk assessments , ( 2 ) cost effectively reduce information security risks to an acceptable level , ( 3 ) ensure that information security is addressed throughout the life cycle of each system , and ( 4 ) ensure compliance with applicable requirements ; and plans and procedures to ensure continuity of operations for information systems that support the operations and assets of the agency .
+
+in addition , fisma requires that the agency information security program encompass the information and information systems supporting the operations and assets of the agency that are provided or managed by another agency , contractor , or other source .
+
+fhfa has made important progress in developing and documenting its policies and procedures for the agency's information security program .
+
+for example , it has published an information security policy handbook .
+
+the agency has begun putting procedures from the handbook in place and expects to fully implement these in fiscal year 2010 .
+
+fhfa also developed and issued the agency's breach notification policy and plan for security incidents involving personally identifiable information .
+
+the agency also addressed security - related weaknesses for systems noted in the prior year ofheo and fhfb fisma reviews and completed a review to validate and document system configurations .
+
+fhfa also maintained current security certification and accreditations on major financial systems that we reviewed .
+
+the certification and accreditation packages included evidence that fhfa tested management , operational , and technical controls and prepared security plans for its networks , facilities , and systems .
+
+according to fhfa , the agency also upgraded its security log management system to monitor production servers and network device logs and security events .
+
+in addition , as part of a risk management approach to manage information technology assets , the agency implemented comprehensive scanning of production systems on a monthly basis to identify and correct system vulnerabilities .
+
+during the year , the agency expanded and improved its information security awareness training , providing a required automated training program to all employees and contractors .
+
+however , policies , procedures , plans , and technical standards related to information security did not always reflect the current agency operating environment ; and fhfa did not always effectively monitor its systems .
+
+a key task in developing an effective information security program is to establish and implement policies , procedures , plans , and technical standards that govern security over an agency's computing environment .
+
+developing , documenting , and implementing security policies are the primary mechanisms by which management communicates its views and requirements ; these policies also serve as the basis for adopting specific procedures and technical controls .
+
+according to nist special publication 800-53 , these policies should include separation of incompatible duties , configuration management policies and procedures , and contingency plans .
+
+configuration management is an important control that involves the identification and management of security features for all hardware and software components of an information system at a given point and systematically controls changes to that configuration during the system's life cycle .
+
+establishing controls over the modification of information system components and related documentation helps to prevent unauthorized changes and ensure that only authorized systems and related program modifications are implemented .
+
+this is accomplished by instituting policies , procedures , and techniques that help make sure all hardware , software , and firmware programs and program modifications are properly authorized , tested , and approved .
+
+contingency planning is another critical component of information protection .
+
+if normal operations are interrupted , network managers must be able to detect , mitigate , and recover from service disruptions while preserving access to vital information .
+
+a contingency plan is used to detail emergency response , backup operations , and disaster recovery for information systems .
+
+to be effective , these plans need to be clearly documented , communicated to potentially affected staff , and updated to reflect current operations .
+
+nist also recommends continuity of operations and disaster recovery plans .
+
+if properly implemented , policies and procedures should help reduce the risk that could come from unauthorized access or disruption of services .
+
+technical security standards can provide consistent implementation guidance for each computing environment .
+
+although fhfa made important progress in developing and documenting elements of its information security program , its policies , procedures , plans , and technical standards related to separation of duties , configuration management , and continuity of operations do not reflect the current operating environment .
+
+for example: while fhfa had a separation of incompatible duties policy in place from the former fhfb , the agency did not develop and document procedures for enforcing separation of duties .
+
+agency officials stated that the agency has initiated a project to develop processes for the 18 security control families identified by nist and will integrate separation of duties procedures into these processes ; the expected completion date is june 2010 .
+
+the agency did not finalize and approve configuration management policy and procedures .
+
+fhfa is using an interim change control and configuration process that was used at fhfb and has developed a draft configuration management procedure ; however , it has not been formalized and approved .
+
+agency officials stated that a plan has been developed to train users and implement fhfa configuration management policy and procedures by may 2010 .
+
+although fhfa has developed continuity of operations and disaster recovery plans , it has not formalized and approved them .
+
+agency officials stated that a continuity of operations plan has been submitted to the senior agency leadership for review and comment and will be tested in may 2010 .
+
+based on the test results , it will be updated and finalized during the fourth quarter of fiscal year 2010 .
+
+also , a draft disaster recovery plan was approved in november 2009 .
+
+the agency expects to test the plan in the summer of 2010 .
+
+in addition to actions mentioned above , agency officials indicate that fhfa will develop or update policies and procedures to reflect the current environment and to comply with nist guidance by june 2010 .
+
+until the agency effectively develops , documents , and implements these policies , procedures , plans , and technical standards , it has less assurance that its systems and information are protected from unauthorized access or disruption of services .
+
+fisma states that each agency shall develop , document , and implement an agencywide information security program to provide information security for the information and information systems that support the operations and assets of the agency , including those provided or managed by another agency , contractor , or other source .
+
+the act specifically delineates federal agency responsibilities for ( 1 ) information collected or maintained by or on behalf of an agency and ( 2 ) information systems used or operated by an agency , by a contractor of an agency , or by another organization on behalf of an agency .
+
+appropriate policies and procedures should be developed to ensure that the activities performed by external third parties are documented , agreed upon , implemented , and monitored for compliance .
+
+fhfa did not perform effective oversight of the contractor's implementation of the security controls and program .
+
+although fhfa developed a financial oversight document for fms that outlined the assignment of activities between fhfa and the bpd , it did not develop or implement a procedure to monitor access to agency financial information by bpd or oracle corporation staff and contractors .
+
+as a result , increased risk exists that contractors or other users with privileged access could gain unauthorized access to or improperly use agency financial systems , applications , and information .
+
+in addition , fhfa did not have a procedure to assess security reviews and plans of action and milestones that were conducted and documented by bpd or oracle corporation staff and contractors .
+
+while fhfa officials asserted that the agency randomly investigated some of the security reviews and plans of action and milestones , the agency lacked a documented process for reviewing bpd's and oracle corporation's compliance with fhfa requirements .
+
+as a result , fhfa may not have assurance that the contractors are fully complying with security requirements .
+
+fhfa informed us that it has initiated or has actions planned to fully implement effective oversight of contractors' adherence to its information security program .
+
+specifically , a procedure to monitor security control compliance is under development and fhfa expects it to be finalized in june 2010 .
+
+however , until all key elements of its information security program are fully implemented , fhfa may not have assurance that its controls are appropriately designed and operating effectively .
+
+securing the information systems and information on which fhfa depends to carry out its mission requires that the agency establish , implement , and reinforce policies , procedures , and guidance .
+
+the agency has implemented numerous logical and physical access controls to safeguard financial systems and information and has instituted key components of an information security program .
+
+however , deficiencies in logical and physical access controls unnecessarily increased risk to fhfa's systems and key activities of its information security program were either not fully implemented or were absent .
+
+until the agency strengthens its logical access and physical access controls and fully implements an information security program that includes policies and procedures reflecting the current agency environment , increased risk exists that sensitive information and resources will not be sufficiently protected from inadvertent or deliberate misuse , improper disclosure , or destruction .
+
+to help strengthen access controls and other information system controls over key financial systems , information , and networks , we recommend that the acting director of the federal housing finance agency implement the following 16 recommendations for strengthening logical access controls , physical access controls , and the agency's information security program .
+
+to improve logical access controls , we recommend that the acting director ensures fhfa: ( 1 ) maintains network access authorizations for every agency ( 2 ) reviews current access to network files and directories containing confidential information and restricts access to personnel with an authorized need to access that information ; and ( 3 ) continuously monitors use of privileged accounts on systems throughout the network so inadvertent or extended use of privileged access is promptly detected and removed .
+
+to strengthen controls over physical access , we recommend that the acting director ensures fhfa: ( 4 ) secures areas that contain it equipment and sensitive ( 5 ) completes sufficient physical security policies to address protection of agency assets , including incident response , access authorizations , and environmental safety controls ; ( 6 ) performs physical security risk assessments at key facilities ; ( 7 ) develops , documents , and implements monitoring procedures to ensure that physical access authorizations to secure areas containing sensitive computer resources , including server rooms and sensitive information , are current and controlled ; ( 8 ) develops , documents , and implements monitoring procedures and installs appropriate equipment to ensure that fhfa can detect and respond to potential physical security incidents ; ( 9 ) implements and enforces visitor control practices at all facilities ; ( 10 ) increases employees' awareness of the need to enforce physical security safeguards ; and ( 11 ) secures and removes construction materials from telecommunications and electrical closets that support computer operations .
+
+to improve its information security program , we recommend that the acting director ensures fhfa: ( 12 ) develops , documents , and implements procedures enforcing separation of incompatible duties among personnel ; ( 13 ) finalizes , approves , and implements configuration management ( 14 ) approves and tests continuity of operations and disaster recovery ( 15 ) develops , documents , and implements procedures to monitor access to agency financial information by bpd and oracle corporation staff and contractors ; and ( 16 ) develops , documents , and implements procedures to assess all security reviews and plans of action and milestones developed by bpd and oracle corporation staff and contractors .
+
+in providing written comments ( reprinted in app .
+
+ii ) on a draft of this report , the acting director of the federal housing finance agency stated that fhfa agreed with our findings and will strengthen controls to reduce risk in the areas where we identified control deficiencies .
+
+he also noted that fhfa has already addressed or is in the process of addressing all the recommendations to strengthen controls over key financial systems , information , and networks .
+
+further , the acting director stated that the agency was moving forward to strengthen and complete implementation of its information security program .
+
+this report contains recommendations to you .
+
+as you know , 31 u.s.c .
+
+sec .
+
+720 requires the head of a federal agency to submit a written statement of the actions taken on our recommendations to the senate committee on homeland security and governmental affairs and to the house committee on oversight and government reform not later than 60 days from the date of the report and to the house and senate committees on appropriations with the agency's first request for appropriations made more than 60 days after the date of this report .
+
+because agency personnel serve as the primary source of information on the status of recommendations , gao requests that the agency also provide us with a copy of your agency's statement of action to serve as preliminary information on the status of open recommendations .
+
+we are sending copies of this report to the chairman and ranking member of the senate committee on banking , housing , and urban affairs ; the chairman and ranking member of the house committee on financial services ; the chairman of the federal housing finance oversight board ; the secretary of the treasury ; the secretary of housing and urban development ; the chairman of the securities and exchange commission ; the director of the office of management and budget ; and other interested parties .
+
+in addition , this report will be available at no charge on the gao web site at http: / / www.gao.gov .
+
+if you have any questions about this report or need assistance in addressing these issues , please contact gregory c. wilshusen at ( 202 ) 512- 6244 or dr. nabajyoti barkakati at ( 202 ) 512-4499 or by e - mail at wilshuseng@gao.gov or barkakatin@gao.gov .
+
+contacts for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+key contributors to this report are listed in appendix iii .
+
+the objective of our review was to determine whether controls over key financial systems were effective in ensuring the confidentiality , integrity , and availability of financial information .
+
+this review was performed in connection with our audit of the federal housing finance agency's ( fhfa ) financial statements for the purpose of supporting our opinion on internal controls over the preparation of those statements .
+
+to determine whether controls over key financial systems were effective , we tested information security controls at fhfa .
+
+we concentrated our evaluation primarily on threats focused on critical applications and their general support systems that directly or indirectly support the processing of material transactions that are reflected in the agency's financial statements .
+
+our evaluation was based on our federal information system controls audit manual , which contains guidance for reviewing information systems .
+
+using national institute of standards and technology guidance , and fhfa's policies , procedures , practices , and standards , we evaluated controls by analyzing network and system share authorizations for agency network inspecting key devices to determine whether critical patches had been installed or were up - to - date ; visiting the agency's three office buildings in washington , d.c. , on five different dates between july and september 2009 to observe and test physical access controls to determine if computer facilities and resources were being protected from inappropriate access by unauthorized individuals ; and examining access responsibilities to determine whether incompatible functions were segregated among different individuals .
+
+using the requirements identified by the federal information security management act , which established key elements for an effective agencywide information security program , we evaluated fhfa's implementation of its security program by analyzing agency policies , procedures , practices , and technical standards to determine whether sufficient guidance was provided to personnel responsible for securing information and information systems ; analyzing security plans to determine if management , operational , and technical controls were planned or in place and that security plans were updated ; analyzing test plans and test results for key agency systems to determine whether management , operational , and technical controls were based on risk and tested at least annually ; examining contingency plans for key agency systems to determine whether those plans had been tested or updated ; and analyzing fhfa's risk assessment process and risk assessments for key agency systems to determine whether risks and threats were documented .
+
+we also reviewed or analyzed our previous reports and reports from the department of the treasury office of inspector general ; and discussed with key security representatives and management officials whether information security controls were adequately designed , in place , and operating effectively .
+
+we performed our work at fhfa facilities in washington , d.c. , and at financial application servicing and commercial hosting facilities in parkersburg , west virginia , and austin , texas .
+
+the work was conducted from february 2009 to april 2010 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objective .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objective .
+
+in addition to the individuals named above , charles vrabel ( assistant director ) , edward alexander ( assistant director ) , angela bell , bradley becker , debra conner , kirk daubenspeck , sharhonda deloach , rebecca eyler , rosanna guerrero , kevin metcalfe , eugene stevens iv , michael stevens , and christopher warweg made key contributions to this report .
+

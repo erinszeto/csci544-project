@@ -1,0 +1,628 @@
+as the administrator of the bank secrecy act ( bsa ) , the financial crimes enforcement network ( fincen ) , a bureau within the department of the treasury ( treasury ) , is tasked with the mission of safeguarding the u.s. financial system from money laundering , terrorist financing , and other abuses .
+
+in fulfilling this mission , fincen performs analysis in support of law enforcement ; issues regulations and enforces compliance with the bsa ; facilitates information - sharing of bsa data ; and coordinates with foreign counterparts .
+
+fincen relies extensively on its own information systems , as well as on systems located at the treasury components of the internal revenue service ( irs ) and the treasury communications system ( tcs ) to manage , store , and disseminate the data that financial institutions are required to report under the bsa .
+
+these data contain sensitive information , including transaction amounts , account numbers , and social security numbers , and are used by law enforcement agencies investigating financial crimes , including terrorist financing and money laundering .
+
+the computer systems that support fincen's mission must be properly protected through strong information security controls because a security breach could place sensitive financial and personally identifiable information at risk and allow criminals to subvert law enforcement's ability to detect illegal activity .
+
+our objective was to determine whether information security controls have been implemented that effectively protect the confidentiality , integrity , and availability of the information and systems that support fincen's mission .
+
+to accomplish this objective , we examined the information security controls at fincen and two organizations that operate systems or process and store data on its behalf — specifically , tcs and irs .
+
+we concentrated our evaluation on the applications , databases , and network and mainframe infrastructure that support fincen's mission .
+
+we performed our review at fincen and tcs facilities in the washington , d.c. , metropolitan area and at an irs computing center .
+
+we conducted this performance audit from march 2008 to january 2009 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objective .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objective .
+
+for more details on our objective , scope , and methodology , see appendix i .
+
+information security is a critical consideration for any organization that depends on information systems and computer networks to carry out its mission or business .
+
+it is especially important for government agencies , where the public's trust is essential .
+
+the dramatic expansion in computer interconnectivity and the rapid increase in the use of the internet are changing the way our government , the nation , and much of the world communicate and conduct business .
+
+without proper safeguards , they also pose enormous risks that make it easier for individuals and groups with malicious intent to intrude into inadequately protected systems and use such access to obtain sensitive information , commit fraud , disrupt operations , or launch attacks against other computer systems and networks .
+
+our previous reports , and those by inspectors general , describe serious and widespread information security control deficiencies that continue to place federal assets at risk of inadvertent or deliberate misuse , mission - critical information at risk of unauthorized modification or destruction , sensitive information at risk of inappropriate disclosure , and critical operations at risk of disruption .
+
+accordingly , we have designated information security as a governmentwide high - risk area since 1997 , a designation that remains in force today .
+
+recognizing the importance of securing federal agencies' information systems , congress enacted the federal information security management act ( fisma ) in december 2002 to strengthen the security of information and systems within federal agencies .
+
+fisma requires each agency to develop , document , and implement an agencywide information security program for the information and systems that support the operations and assets of the agency , using a risk - based approach to information security management .
+
+such a program includes assessing risks ; developing and implementing security plans , policies , and procedures ; providing security awareness and specialized training ; testing and evaluating the effectiveness of controls ; planning , implementing , evaluating , and documenting remedial actions to address information security deficiencies ; and ensuring continuity of operations .
+
+the bsa , enacted by congress in 1970 , authorizes the secretary of the treasury to issue regulations requiring financial institutions to retain records and file reports useful in criminal , tax , and regulatory investigations .
+
+following the september 11 , 2001 , terrorist attacks , congress passed the usa patriot act , which , among other things , amended the bsa to expand the number of industries subject to bsa regulation and required financial institutions to establish proactive anti - money laundering programs to combat terrorist financing .
+
+in addition , the usa patriot act expanded reporting requirements and allowed the records and reports collected under the bsa to be used in the conduct of intelligence or counterintelligence activities to protect against international terrorism .
+
+as the administrator of the bsa , fincen , a bureau within treasury , is tasked with the mission of safeguarding the u.s. financial system from money laundering , terrorist financing , and other abuses .
+
+in fulfilling this mission , fincen plays four key roles: ( 1 ) performing analysis in support of law enforcement ; ( 2 ) issuing regulations and enforcing compliance ; ( 3 ) facilitating information - sharing of bsa data ; and ( 4 ) coordinating with foreign counterparts .
+
+providing analysis was fincen's original mission when it was established in 1990 , a role that it continues to perform .
+
+in its capacity as regulator , fincen develops regulations and delegates authority to eight other federal agencies to perform compliance examinations for bsa reporting requirements for referral to fincen , which retains enforcement authority .
+
+in terms of information - sharing , sections 361 and 362 of the usa patriot act mandate that fincen create and maintain networks to enable electronic filing of bsa reports and facilitate dissemination of the data to law enforcement and regulatory agencies .
+
+in addition , fincen participates in and promotes international collaboration and information - sharing among its foreign counterparts to detect and deter illicit financial activities .
+
+between fiscal years 2002 and 2007 , fincen's budget grew from $47.5 million to $73.2 million .
+
+according to fincen , this growth has taken place primarily because of the expansion of its regulatory functions .
+
+fincen relies on information submitted under bsa reporting requirements to fulfill its mission .
+
+specifically , fincen collects information submitted and disseminates it to law enforcement and regulatory agencies .
+
+the information primarily consists of currency transaction reports and suspicious activity reports that are filed by financial institutions .
+
+currency transaction reports must be filed for any account cash withdrawals and deposits , currency exchanges , and wire transfers purchased with cash exceeding $10,000 .
+
+suspicious activity reports must be filed by financial institutions if a transaction involves or aggregates a minimum threshold of funds or other assets and the institution knows , suspects , or has reason to suspect that the transaction is a violation of law .
+
+law enforcement agencies use the information in these reports in combination with other information that they collect to link individuals and their activities , hinder activities , and prosecute criminals .
+
+financial regulators , such as the federal deposit insurance corporation and the national credit union administration , use the information to examine financial institutions for compliance with the bsa .
+
+currency transaction reports and suspicious activity reports contain highly sensitive , detailed information about the financial activity of private individuals that is intended to help federal , state , and local law enforcement agencies in their investigations and , thus , potentially hinder criminal activity .
+
+inappropriate disclosure , modification , or misuse of this information could undermine the ability of the federal government , financial institutions , and law enforcement agencies to combat money laundering and terrorist financing .
+
+information systems located at fincen , tcs , and irs comprise the overall computing environment where bsa information is collected , processed , stored , disseminated , and protected in support of fincen's mission .
+
+in its own computing environment , fincen maintains a web portal by which law enforcement agencies , regulatory agencies , and fincen employees access bsa data .
+
+it also has an analysis tool that it uses to provide analyses to law enforcement customers and a database containing a copy of the bsa database maintained by irs .
+
+these systems reside on fincen's network infrastructure .
+
+additional systems are operated at tcs , including the electronic filing system and the supporting tcs network infrastructure .
+
+fincen's electronic filing system is operated on the tcs network under a hosting agreement .
+
+fincen also relies on systems operated by irs , including the bsa database and the web - based currency banking and retrieval system ( webcbrs ) .
+
+webcbrs and the database reside on a mainframe computer and supporting network infrastructure at an irs computing facility .
+
+the information in bsa reports submitted by financial institutions comprise the data that is stored in the bsa database at irs .
+
+most reports are submitted electronically , either singly or in batch form , over the internet to the electronic filing system ; fincen moves this data through its network infrastructure and passes them to irs .
+
+reports submitted in paper form are mailed directly to irs ; they are then forwarded to a contractor , who converts the reports into digital format and returns them electronically .
+
+irs personnel then manually upload the data to the database .
+
+bsa data are provided to law enforcement and regulatory agencies in multiple ways .
+
+organizations may access the data through fincen's web portal , which provides access to the webcbrs application .
+
+these organizations either have a memorandum of understanding with fincen , which allows them to access the portal remotely through the internet , or participate in fincen's platform program , which allows them to access the portal on - site at fincen .
+
+in addition , certain federal agencies also periodically receive bulk downloads of bsa data for use at their agencies .
+
+fincen also has its own analysis tool that it uses to provide investigative leads to support financial criminal investigations and produce a variety of analytical products that can be used by law enforcement to more effectively target their investigations .
+
+organizations may request that fincen analysts assist with their investigations by conducting queries or analyses on their behalf .
+
+some internal irs analysts and investigators also have direct access to webcbrs to support compliance examinations for nonbank financial institutions and investigations of money laundering and other tax - related crime .
+
+the flow of data through the overall bsa environment is illustrated in figure 1 .
+
+treasury's chief information officer is responsible for developing and maintaining a departmentwide information security program and for developing and maintaining information security policies , procedures , and control techniques that address all applicable requirements .
+
+each treasury bureau , including fincen and irs , is responsible for implementing treasury - mandated security policies within its domain .
+
+in order to implement departmentwide security policies , fincen and irs are required to develop their own information security programs , including their own security compliance functions .
+
+in addition , the organizations operating the systems that support fincen's mission have formalized agreements that define security responsibilities .
+
+for example , fincen's hosting agreement with tcs documents security prerequisites and the responsibilities of tcs as the host network .
+
+additionally , fincen and irs have an interconnection security agreement that identifies the technical requirements of the interconnection between the fincen network and the irs systems that store and process the data .
+
+the agreement specifies that fincen owns the data and indicates that the environment where the data resides is to be logically isolated from the other systems at irs .
+
+although fincen , tcs , and irs had implemented many information security controls to protect the information and systems supporting fincen's mission , weaknesses existed in several critical areas .
+
+specifically , the organizations did not consistently implement effective electronic access controls , including user accounts and passwords , access rights and permissions , encryption of sensitive data , protection of information system boundaries , audit and monitoring of security - relevant events , and physical security to prevent , limit , and detect access to their critical financial and sensitive systems .
+
+in addition , weaknesses in other information system controls , including managing system configurations , patching sensitive systems , and service continuity , further increase the risk to the information and systems that support fincen's mission .
+
+one key reason for these weaknesses was that fincen and irs had not yet fully implemented key elements of their information security programs .
+
+as a result , bsa data — containing highly sensitive personal and financial information about private individuals that is used by the law enforcement community to identify and prosecute illegal activity — are at an increased risk of unauthorized use , modification , or disclosure .
+
+a basic management objective for any organization is to protect the resources that support its critical operations from unauthorized access .
+
+organizations accomplish this objective by designing and implementing controls that are intended to prevent , limit , and detect unauthorized access to computing resources , programs , information , and facilities .
+
+inadequate access controls diminish the reliability of computerized information and increase the risk of unauthorized disclosure , modification , and destruction of sensitive information and disruption of service .
+
+access controls include those related to ( 1 ) user identification and authentication , ( 2 ) authorization , ( 3 ) cryptography , ( 4 ) boundary protection , ( 5 ) audit and monitoring , and ( 6 ) physical security .
+
+weaknesses in each of these areas existed across the bsa environment , as the following sections in this report demonstrate .
+
+a computer system must be able to identify and authenticate different users so that activities on the system can be linked to specific individuals .
+
+when an organization assigns unique user accounts to specific users , the system is able to distinguish one user from another — a process called identification .
+
+the system must also establish the validity of a user's claimed identity by requesting some kind of information , such as a password , that is known only by the user — a process known as authentication .
+
+fincen policy states that user ids and passwords should not be shared .
+
+national institute of standards and technology ( nist ) guidance states that information systems should prohibit passwords from being reused for a specified number of generations and that complex passwords reduce the risk that a password could be guessed by an attacker .
+
+irs requires that passwords not be shared , that each account have a unique user id , and that default mainframe passwords be changed when information systems are installed .
+
+weaknesses in identification and authentication controls existed over the information and systems supporting fincen's mission at fincen , tcs , and irs , including the following: although fincen had established policies for identifying and authenticating users and required complex passwords on its databases , it allowed multiple users to share an account on the dedicated workstation used to download bsa data from irs .
+
+tcs also had not consistently implemented effective password controls .
+
+for example , three accounts on a key database , including an administrative account , had passwords that were not complex , making them easily guessable .
+
+additionally , the electronic filing application did not lock out user accounts after a specific number of unsuccessful log - in attempts .
+
+irs did not always effectively control user identification and authentication .
+
+for example , it did not change easily guessable default passwords for two special purpose accounts that provided interactive mainframe privileges , access to bsa data , and powerful processing capabilities .
+
+as a result of these weaknesses , there is an increased risk that malicious individuals could gain inappropriate access to sensitive bsa applications and data .
+
+authorization is the process of granting or denying access rights and privileges to a protected resource , such as a network , system , application , function , or file .
+
+a key component of authorization and a basic principle for securing computer resources and data is the concept of least privilege .
+
+least privilege means that users are granted access to only those programs and files that they need in order to perform their official duties .
+
+to restrict legitimate users' access in this way , organizations establish access rights and permissions .
+
+user rights are allowable actions that can be assigned to users or to groups of users .
+
+file and directory permissions are rules that regulate which users have access to a particular file or directory and the extent of that access .
+
+to avoid unintentionally giving users unnecessary access to sensitive files , directories , and special machine instructions that programs use to communicate with the operating system , an organization must give careful consideration to its assignment of rights and permissions .
+
+fincen requires that access to resources be given only to users who need it , that managers re - evaluate the system privileges granted to users at least once every 6 months , and that all system privileges and access to information immediately cease when employees leave the organization .
+
+additionally , irs requires that information systems uniquely identify users that access sensitive information and that such access be given only to those employees with a valid need to know .
+
+weaknesses in authorization controls existed at fincen and tcs that could place the information and systems that support fincen's mission at risk , as the following examples indicate: fincen did not always adequately restrict access to sensitive files .
+
+the bureau had assigned rights and permissions to network users ; however , it did not consistently protect all network resources .
+
+for example , it assigned excessive permissions to a shared network drive that stored bsa data received from irs .
+
+in addition , fincen managers did not re - evaluate user privileges every 6 months .
+
+further , two former employees retained access to the web portal for at least 2 weeks after they left fincen .
+
+additionally , tcs did not consistently ensure that access to resources was appropriate .
+
+for example , it did not restrict access to log files and other operating system files associated with the electronic filing application to only those who needed the access to perform their jobs , increasing the risk that data could be accessed by unauthorized users or that malicious activity could potentially go undetected .
+
+in addition , it allowed users direct access to a shared administrative account , making it difficult to establish individual accountability for privileged activities .
+
+more serious authorization control weaknesses existed over the information and systems supporting fincen's mission operated by irs , including the following: irs did not implement controls to restrict access to data and systems to only those who needed it .
+
+irs and fincen created a memorandum of understanding and an interconnection security agreement in which irs agreed to secure the systems and data supporting fincen by isolating them from other systems and controlling irs user access to the systems and data through a dedicated network .
+
+however , irs did not isolate the systems and data from its other systems and had not restricted user access to the systems and data via a dedicated network .
+
+instead , other paths allowed any of its employees to gain access without detection , most of whom did not have a legitimate need for such access: irs allowed more than 600 irs employees to have privileges on the mainframe supporting fincen's mission that they did not need in order to do their jobs ; the privileges allowed them to interactively enter commands into the system and perform activities that are usually associated with programming and system administration .
+
+mainframe files had excessive permissions that could allow their contents to be read or copied by any user able to gain interactive access to the mainframe .
+
+the systems supporting fincen's mission shared their data storage devices with other irs systems , allowing users with interactive access to the mainframe the ability to view information about the bsa related datasets , including their location , even though most of them did not have a job - related need for this information .
+
+additionally , irs did not maintain documentation of approved access privileges allowed to each system resource by each user group on its systems supporting fincen's mission , limiting irs's ability to monitor and verify access privileges .
+
+by allowing access to information and systems to individuals who do not have a legitimate job - related need , fincen , tcs , and irs are placing these data and systems at increased risk of unauthorized access or disclosure , which could hinder fincen's ability to fulfill its mission .
+
+cryptography underlies many of the mechanisms used to enforce the confidentiality and integrity of critical and sensitive information .
+
+one primary principle of cryptography is encryption .
+
+encryption can be used to provide basic confidentiality and integrity for data by transforming plain text into cipher text using a special value known as a key and a mathematical process known as an algorithm .
+
+fincen requires that sensitive information must be encrypted when it is transmitted or stored .
+
+in addition , irs requires the use of insecure protocols to be restricted on its systems in order to protect passwords and other sensitive data .
+
+weaknesses in encryption controls over the information and systems supporting fincen's mission at fincen and irs could place sensitive data at risk , as the following examples indicate: although fincen employed encryption mechanisms to protect data on its network and workstations , not all sensitive data were encrypted .
+
+fincen employed software to encrypt data on removable flash drives .
+
+however , user ids and passwords for a key system were transmitted unencrypted across the fincen network , making them vulnerable to being compromised and used to gain unauthorized access .
+
+additionally , although fincen encrypted the hard drives on its laptop computers , the encryption software did not protect data after the computers had been booted to a running state .
+
+irs did not always secure the transmission of information on its network .
+
+for example , user ids and passwords for the mainframe were transmitted unencrypted over the network , making them vulnerable to being compromised .
+
+in addition , it did not use certificates to ensure that the encrypted communications path between its network and the bsa database could be trusted .
+
+as a result , weaknesses in encryption increased the risk of exposing data at fincen and irs to unnecessary disclosure or misuse by unauthorized individuals .
+
+boundary protections demarcate logical or physical boundaries between unknown users and protected information and systems .
+
+best practices dictate that organizations allocate publicly accessible information system components to separate subnetworks with separate physical network interfaces and that key components within private networks are also adequately segregated as subnetworks .
+
+unnecessary connectivity to an organization's network increases not only the number of access paths that must be managed and the complexity of the task , but also the risk of unauthorized access in a shared environment .
+
+nist guidance states that information systems should establish a trusted communications path between remote users , that firewalls should control both outgoing and incoming network traffic , and that boundary mechanisms separate computing systems and network infrastructures .
+
+in addition , irs requires that test and production environments be kept separate .
+
+although fincen and tcs had employed controls to segregate sensitive areas of their networks and protect them from intrusion , the organizations did not always adequately control the logical and physical boundaries protecting information and systems supporting fincen's mission , as the following examples indicate: fincen had not fully implemented controls to protect the boundaries of its network .
+
+for example , fincen did not configure its virtual private network with controls to validate whether the systems that connected to it were secure .
+
+in addition , it did not employ host - based firewalls on its workstations .
+
+tcs also did not always control the logical and physical boundaries protecting the systems supporting fincen .
+
+for example , tcs stored sensitive files on a network segment that was less secure than other segments .
+
+in addition , the tcs e - mail server allowed spoofed e - mail messages and potentially harmful attachments to be delivered to fincen .
+
+irs did not restrict the processing of sensitive data on its systems that support fincen .
+
+for example , updates to libraries containing key control programs and source code and creation and deletion of datasets containing bsa information were submitted from areas of the mainframe that did not support fincen .
+
+in addition , some of this processing originated from a test environment .
+
+as a result , there is an increased risk that individuals , internal and external to fincen , tcs , and irs , could gain unauthorized access to the information and systems that support fincen's mission .
+
+to establish individual accountability , monitor compliance with security policies , and investigate security violations , it is crucial to determine what , when , and by whom specific actions have been taken on a system .
+
+organizations accomplish this by implementing system or security software that provides an audit trail of needed information in the desired format and locations so they can use it to determine the source of a transaction or attempted transaction and to monitor users' activities .
+
+the way in which organizations configure system or security software determines the nature and extent of information that the audit trails can provide .
+
+a key aspect of this process is managing audit logs .
+
+organizations should periodically review audit log design , review processes and procedures , and implement changes as needed to ensure that logs effectively detect security incidents .
+
+fincen requires audit logs to be maintained for all information systems and for unsuccessful log - in attempts to be recorded ; in addition , it requires intrusion detection systems to be employed to protect the network from external threats .
+
+similarly , irs policy requires that audit records be created , protected , and retained to enable the monitoring , analysis , investigation , and reporting of unlawful , unauthorized , or inappropriate information system activity .
+
+weaknesses in audit and monitoring controls existed over the systems supporting fincen's mission at fincen and irs , including the following: fincen logged user activity for two key applications ; however , it did not always log security events on its databases .
+
+for example , the bureau did not enable auditing on the fincen bsa database and did not log failed log - in attempts to the database's error logs .
+
+in addition , its intrusion detection systems did not capture data from complete sessions or inspect outbound encrypted traffic .
+
+irs did not effectively capture changes to datasets on its mainframe .
+
+specifically , it did not configure its security software to log successful changes to key datasets that contain parameters and procedures used to support production operations of the operating system , system utilities , and user applications , including webcbrs .
+
+as a result of weaknesses in logging and monitoring controls at fincen and irs , there is an increased risk that unauthorized activity would not be effectively detected or investigated .
+
+physical security controls are important for protecting computer facilities and resources from espionage , sabotage , damage , and theft .
+
+these controls restrict physical access to computer resources , usually by limiting access to the buildings and rooms in which the resources are housed and by periodically reviewing the access granted in order to ensure that it continues to be appropriate .
+
+fincen's physical security policy requires that access to sensitive areas be restricted to authorized personnel and that all information system - related items , including laptop computers , are to be monitored and controlled when they enter or leave fincen .
+
+although fincen controlled access to sensitive areas , it did not always implement a physical security control .
+
+fincen implemented an electronic badging system to control access to sensitive areas .
+
+however , at the time of our site visits , security guards at the fincen facility did not inspect laptop computers entering and exiting the facility .
+
+controlling the entry and exit of laptop computers would reduce the risk that a malicious individual could introduce malware onto the fincen network or that sensitive data could be taken off site without authorization .
+
+in addition to access controls , other important controls should be in place to protect the confidentiality , integrity , and availability of an organization's information .
+
+these controls include policies , procedures , and techniques for ( 1 ) ensuring continuity of computer processing operations in the event of a disaster or unexpected interruption ; ( 2 ) securely configuring information systems and preventing unauthorized changes to systems ; and ( 3 ) protecting systems from known vulnerabilities .
+
+weaknesses in these control areas increased the risk of unauthorized use , disclosure , modification , or loss of sensitive information and information systems supporting fincen's mission .
+
+continuity of operations planning , which includes contingency planning , is a critical component of information protection .
+
+continuity planning controls should be designed to ensure that when unexpected events occur , critical operations continue without interruption or are promptly resumed and that critical and sensitive data are protected .
+
+these controls include ( 1 ) environmental controls and procedures designed to protect information resources and minimize the risk of unplanned interruptions and ( 2 ) a well - tested plan to recover critical operations should interruptions occur .
+
+if service continuity controls are inadequate , even relatively minor interruptions can result in lost or incorrectly processed data , which can cause financial losses , expensive recovery efforts , and inaccurate or incomplete financial or management information .
+
+nist guidance states that contingency plans for high - risk systems should be tested at an alternate processing site .
+
+in addition , fincen policy requires contingency plans to be documented for each major system and tested at least annually .
+
+fincen documented and tested contingency plans for each of the three major systems we reviewed , including two high - risk systems .
+
+for the high - risk systems , the plan for the network infrastructure had been tested with a table top exercise , and portions of the web portal plan had been simulated in a functional exercise .
+
+although the plans had not undergone a full functional test at fincen's alternate processing site , the bureau identified this as a weakness and planned to conduct tests at the alternate site once the infrastructure at the site was capable of supporting a full test .
+
+however , until fincen tests the plans at the alternate site , the risk that fincen may not be able to effectively recover these systems and resume normal operations after a disruption is increased .
+
+the purpose of configuration management is to establish and maintain the integrity of an organization's systems .
+
+organizations can better ensure that only authorized applications and programs are placed into operation by establishing and maintaining baseline configurations and by monitoring changes to these configurations .
+
+organizations should ensure that changes to systems are necessary , work as intended , and do not result in the loss of data or program integrity by documenting , authorizing , testing , and independently reviewing changes .
+
+fincen's configuration management policy requires that change control procedures be developed and that documentation be created and retained for configuration changes .
+
+additionally , nist guidance states that change control procedures should address emergency changes .
+
+further , irs policy requires the establishment and maintenance of baseline configurations and inventories of organizational information systems and the establishment and enforcement of security configuration settings for it products employed in organizational information systems .
+
+weaknesses existed in configuration management controls at fincen and irs over the systems that support fincen's mission , including the following: fincen maintained an inventory for its network assets , established configuration management plans for its major systems , and established processes for documenting , authorizing , testing , and reviewing system changes .
+
+however , its configuration management plans were not fully documented and not all system changes included required documentation .
+
+for example , the web portal plan did not describe the documentation that was required for system changes and the electronic filing system plan did not describe a key step in the change control process .
+
+in addition , the web portal and network infrastructure plans did not include procedures for handling emergency changes .
+
+moreover , although its network infrastructure configuration management plan required security assessments to be documented for changes , fincen did not document them for any of the eight infrastructure changes we reviewed .
+
+irs did not always adequately manage the configuration of sensitive systems .
+
+irs had adequately documented and tested the seven changes to the webcbrs application that we reviewed .
+
+however , irs did not maintain or enforce a baseline configuration on the mainframe system that supports the webcbrs system and the bsa database , as well as other critical irs systems .
+
+until fincen fully documents change control procedures and system changes , there is an increased risk that changes to its systems could be unnecessary , may not work as intended , or may result in the unintentional loss of data or program integrity .
+
+moreover , without a baseline configuration , irs is unable to adequately track and monitor changes to its mainframe , potentially placing sensitive bsa data at risk .
+
+patch management is a critical process that can help alleviate many of the challenges of securing computing systems .
+
+as vulnerabilities in a system are discovered , attackers may attempt to exploit them , possibly causing significant damage .
+
+malicious acts can range from defacing web sites to taking control of entire systems , thereby being able to read , modify , or delete sensitive information ; disrupt operations ; or launch attacks against other organizations' systems .
+
+after a vulnerability is validated , the software vendor may develop and test a patch or workaround to mitigate the vulnerability .
+
+incident response groups and software vendors issue information updates on the vulnerability and the availability of patches .
+
+fincen policy requires all of its systems to be patched on a monthly basis , that patches be tested on nonproduction systems before being loaded onto production systems , and a log be maintained of all patches applied to each system .
+
+fincen did not always apply patches in a timely manner , and sensitive systems were missing critical patches .
+
+although the bureau required all of its systems to be patched monthly , it was only applying patches to the web portal application every 3 months .
+
+furthermore , several systems that processed bsa data were missing critical patches or were running software that was out of date .
+
+because the organization was not always applying patches in a timely manner , had not yet installed many critical patches , and had not upgraded software on all of its systems , data were unnecessarily vulnerable to compromise .
+
+a key reason for the information security weaknesses over the information and systems supporting fincen's mission is that fincen and irs had not fully implemented information security program elements required by fisma .
+
+fisma requires agencies to develop , document , and implement an information security program that , among other things , includes periodic assessments of the risk and magnitude of harm that could result from the unauthorized access , use , disclosure , disruption , modification , or destruction of information and information systems ; policies and procedures that ( 1 ) are based on risk assessments , ( 2 ) cost - effectively reduce information security risks to an acceptable level , ( 3 ) ensure that information security is addressed throughout the life cycle of each system , and ( 4 ) ensure compliance with applicable requirements ; plans for providing adequate information security for networks , facilities , and systems ; security awareness training to inform personnel of information security risks and of their responsibilities in complying with agency policies and procedures , as well as training personnel with significant security responsibilities for information security ; periodic testing and evaluation of the effectiveness of information security policies , procedures , and practices , to be performed with a frequency depending on risk , but no less than annually , and that includes testing of management , operational , and technical controls for every system identified in the agency's required inventory of major information systems ; and a process for planning , implementing , evaluating , and documenting remedial action to address any deficiencies in its information security policies , procedures , or practices .
+
+although fincen made progress in implementing its information security program , it had not yet fully implemented key activities .
+
+additionally , although we did not fully evaluate irs's security program separately as a part of this review , in previous reports we have found that key elements of irs's program have shortcomings .
+
+until all key elements of its information security programs are fully and consistently implemented , fincen and irs will not have sufficient assurance that new weaknesses will not emerge and that sensitive data and systems are adequately safeguarded from inadvertent or deliberate misuse , fraudulent use , improper disclosure , or destruction .
+
+identifying and assessing information security risks are essential steps in determining what controls are required to mitigate the risks .
+
+moreover , by increasing awareness of risks , these assessments can generate support for the policies and controls that are adopted in order to help ensure that these policies and controls operate as intended .
+
+nist guidelines state that the identification of risk for an information technology system requires an understanding of the system's processing environment , including data and information , system and data criticality , and system and data sensitivity .
+
+furthermore , according to nist , risk management should identify threats and vulnerabilities , set priorities for actions to reduce risks , identify new controls or countermeasures , and determine risks remaining after implementing the new control , also known as residual risk .
+
+fincen risk assessment policy requires that risk assessments be documented for all systems , conducted in accordance with nist guidance , and updated at least every 3 years as part of the certification and accreditation process .
+
+fincen documented risk assessments for all three of the major systems we reviewed ; they were conducted in accordance with fincen policy and nist guidance for risk assessments .
+
+the assessments were current , documented potential threats , and recommended corrective actions for mitigating or eliminating the vulnerabilities identified .
+
+a key element of an effective information security program is establishing and implementing appropriate policies , procedures , and technical standards to govern security over an agency's computing environment .
+
+moreover , such policies and procedures should integrate all security aspects of an organization's interconnected environment , including local and wide area networks and interconnections to contractors and other federal agencies that support critical mission operations .
+
+establishing and documenting security policies is important because they are the primary mechanism by which management communicates its views and requirements ; these policies also serve as the basis for adopting specific procedures and technical controls .
+
+in addition , agencies need to take the actions necessary to effectively implement or execute these procedures and controls .
+
+otherwise , agency systems and information will not receive the protection that should be provided by the security policies and procedures .
+
+although fincen had made progress toward developing and documenting information security policies and procedures , the policies did not always include key information , and detailed implementing guidance for its policies did not always exist .
+
+fincen updated its policies and approved them in june 2008 ; the policies replaced older ones that had not been updated since 2003 .
+
+however , shortcomings in the updated policies existed .
+
+for example , although fincen established a patch management policy , the implementing guidance for unix patches did not address prioritization of critical patches .
+
+in addition , its policy requiring that the network be protected by an intrusion detection system did not require that outbound network traffic be inspected .
+
+further , the bureau did not have detailed implementation guidance for securely configuring its virtual private network .
+
+the weaknesses we identified in each of these controls demonstrate the need for such guidance .
+
+an information system security plan should provide a complete and up - to - date overview of a system's security requirements and describe the controls that are in place or planned to meet those requirements .
+
+office of management and budget ( omb ) circular a - 130 specifies that agencies develop and implement system security plans for major applications and for general support systems and that these plans address policies and procedures for providing management , operational , and technical controls .
+
+under fisma , federal agencies are required to categorize information systems as low , moderate , or high impact ; apply the appropriate set of baseline security controls in accordance with nist guidance ; and document the security controls in a system security plan .
+
+in addition , nist recommends that security plans include , among other topics , existing or planned security controls , the name of the individual responsible for the security of the system , a description of the system and its interconnected environment , and rules of behavior for individuals accessing the system .
+
+fincen also requires that its system security plans describe the system's security requirements , identify the security controls and whether they are planned or implemented for a system , and that they be reviewed , updated , and reapproved by management at least annually , or whenever a significant change to the system occurs .
+
+additionally , irs requires that system security plans document the security controls for systems , whether planned or in place , as well as rules of behavior for individuals accessing the system .
+
+although fincen documented system security plans for each of its major information systems , it did not always consistently document controls .
+
+while the three system security plans we reviewed documented the status of almost all of the required management , operational , and technical controls , two plans for systems categorized as high impact did not document five required security controls .
+
+during our review , fincen provided updated versions of the plans ; however , one of them still did not document one control or describe how another control was implemented .
+
+irs documented system security plans for each of its three major systems that support fincen's mission .
+
+the plans included information required by omb ; documented the management , operational , and technical controls in place ; and mapped the controls directly to those prescribed by nist .
+
+an important component of an information security program is providing required training so that users understand system security risks and their own role in implementing related policies and controls to mitigate those risks .
+
+fisma mandates that federal employees and contractors who use agency information systems be provided with periodic training in information security awareness .
+
+fisma also requires agencies to provide appropriate training on information security to personnel who have significant security responsibilities .
+
+this training , described in nist guidance , should inform personnel , including contractors and other users of information systems supporting the operations and assets of an agency , of information security risks associated with their activities and their roles and responsibilities to properly and effectively implement the practices that are designed to reduce these risks .
+
+depending on an employee's specific security role , training could include specialized topics , such as incident detection and response , physical security , or firewall configuration .
+
+fincen also requires all of its employees and contractors to complete annual security awareness training and for individuals with significant security responsibilities to complete specialized security awareness training annually .
+
+fincen implemented a security awareness training program and ensured that its employees and contractors completed it annually .
+
+the annual training given to all employees and contractors included topics that were consistent with nist guidance , such as laws and regulations , e - mail security , procedures for handling sensitive information , and security threats such as viruses .
+
+the bureau reported that all of its 471 employees and contractors who were required to do so completed the training between june 2007 and july 2008 .
+
+fincen provided certificates documenting that all 17 of the employees that we selected had completed required training and that all 8 of the employees holding significant it responsibilities that we selected had completed the required specialized training .
+
+an important element of an information security program is ongoing testing and evaluation to ensure that systems are in compliance with policies and controls that are both appropriate and effective .
+
+this type of oversight is a fundamental element because it demonstrates management's commitment to the security program , reminds employees of their roles and responsibilities , and identifies and mitigates areas of noncompliance and ineffectiveness .
+
+although control tests and evaluations may encourage compliance with security policies , the full benefits of such activities will not be achieved unless the results improve the security program .
+
+analyzing the results of monitoring efforts — as well as security reviews performed by external audit organizations — provides security specialists and business managers with a means of identifying new problem areas , reassessing the appropriateness of existing controls , and identifying the need for new controls .
+
+nist requires organizations to scan information systems for vulnerabilities ; in addition , it states that vulnerability analysis for custom software and applications includes specialized approaches such as review of source code .
+
+in addition , according to commercial vendors , running scanning software in an authenticated mode allows the software to detect additional vulnerabilities .
+
+fincen policy also requires periodic scanning of its systems every 3 months to detect potential vulnerabilities .
+
+although fincen conducted periodic vulnerability scans of major systems , the scans were not always comprehensive or timely .
+
+fincen scanned its workstations and network infrastructure , but did not scan databases or applications ; it also did not scan or conduct independent reviews of source code for its internally developed applications .
+
+further , scanning had not been conducted quarterly ; in june 2008 , fincen officials told us that they had not conducted any scans since february 2008 , a period of 4 months .
+
+as a result , fincen could be unaware of many undetected vulnerabilities in its applications , systems , and network in a timely manner .
+
+in its guidance to agencies , omb requires agencies to develop remedial action plans , also known as plans of action and milestones .
+
+a remedial action plan assists agencies in the identification , assessment , prioritization , and monitoring of the progress of corrective efforts for weaknesses found in systems and programs .
+
+fincen policy requires that the agency track vulnerabilities found during security assessments , together with planned and implemented mitigation actions to correct these weaknesses , in each system's respective remedial action plan .
+
+irs has a similar policy , which requires that it track the status of resolution for all weaknesses and verify that each weakness is corrected .
+
+fincen developed a new remedial action management process to manage and mitigate security weaknesses in its systems .
+
+fincen officials told us that the bureau did not have a process to document and validate remedial actions prior to march 2008 and that the new process was developed in order to address this .
+
+the process describes how the bureau plans to identify , prioritize , and track vulnerabilities as they are addressed .
+
+among other things , the new process requires monthly meetings between key staff and the information security system officer in order to review the status of new and existing vulnerabilities ; vulnerabilities to be prioritized according to risk ; and all information concerning remedial actions to be updated at least monthly .
+
+fincen officials told us that they had collected supporting documentation when remedial actions were completed and provided us with examples .
+
+however , fincen's procedure for the new process did not specify that supporting documentation was required .
+
+requiring supporting documentation in the procedure would better ensure that remedial actions are verified as effective .
+
+as we have previously reported , irs's verification process for determining whether remedial actions were implemented was not always effective .
+
+in january 2009 , we reported that irs indicated that it had corrected or mitigated 65 previously reported weaknesses but that 16 still existed at the time of our review ; 3 of these weaknesses affect the systems that support fincen's mission .
+
+we have identified a similar weakness in both our january 2008 and march 2007 reports ; however , this condition continues to exist .
+
+without a sound remediation process , irs will not have assurance that the proper resources will be applied to known vulnerabilities or that those vulnerabilities will be properly mitigated .
+
+we have previously recommended that irs implement a revised remedial action verification process that ensures actions are fully implemented .
+
+fincen , tcs , and irs have taken important steps in implementing numerous controls to protect the information and systems that support fincen's mission .
+
+however , significant weaknesses in access controls and other information security controls existed at all three organizations that impaired their ability to ensure the confidentiality , integrity , and availability of the information and systems .
+
+fincen had made important progress in implementing its information security program ; however , one key reason for many of the weaknesses was that fincen and irs had not yet fully implemented elements of their information security programs .
+
+further actions are needed to address the risk to the information and systems .
+
+until ( 1 ) the organizations act to mitigate identified weaknesses and ( 2 ) fincen and irs fully implement their information security programs , there is an increased risk that sensitive bsa information will not be adequately protected against unauthorized disclosure or modification and that systems could be disrupted .
+
+to better ensure the security of the overall bsa environment , we are recommending that the secretary of the treasury direct the director of fincen to fully implement its information security program by taking the following five actions: update information security policies and procedures to address key missing information such as patch prioritization and inspection of outbound network traffic , as well as to include detailed implementation guidance for issues such as securely configuring the virtual private network .
+
+ensure that system security plans document all required controls and describe how all required controls are implemented .
+
+conduct vulnerability scans on databases , applications , and network infrastructure on a quarterly schedule .
+
+implement vulnerability scanning of custom source code or manual source code reviews .
+
+update remedial action procedures to require that supporting documentation be provided to verify that corrective actions are fully implemented and effective .
+
+in a separate report designated “limited official use only” , we are making 88 detailed recommendations to the secretary of the treasury to strengthen information security controls at fincen , tcs , and irs over the systems supporting fincen's mission .
+
+in providing written comments ( reprinted in app .
+
+ii ) on a draft of this report , treasury's deputy assistant secretary for information systems and chief information officer stated that the department is committed to promoting the nation's security through strengthened financial systems and promoting safer and more transparent u.s. and international financial systems , noting that securely maintaining bsa information significantly contributes to this goal .
+
+he also stated that treasury will provide a detailed corrective action plan for each of the recommendations and that many of the actions required to address the recommendations are already completed or under way .
+
+we are sending copies of this report to interested congressional committees , the secretary of the treasury , the director of fincen , the commissioner of internal revenue , the treasury inspector general , and the treasury inspector general for tax administration .
+
+in addition , the report will be available at no charge on the gao web site at http: / / www.gao.gov .
+
+if you or your staffs have any questions regarding this report , please contact nancy kingsbury at ( 202 ) 512-2700 or gregory c. wilshusen at ( 202 ) 512-6244 .
+
+we can also be reached by e - mail at kingsburyn@gao.gov and wilshuseng@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+key contributors to this report are listed in appendix iii .
+
+the objective of our review was to determine whether information security controls have been implemented that effectively protect the confidentiality , integrity , and availability of the information and information systems supporting the mission of the financial crimes enforcement network ( fincen ) .
+
+to accomplish this , we tested the effectiveness of information security and information technology - based internal controls .
+
+we focused our evaluation on the controls for the applications , databases , and network infrastructure that directly or indirectly support the processing and storage of bank secrecy act ( bsa ) data on behalf of fincen at the department of the treasury ( treasury ) , fincen , and the internal revenue service ( irs ) .
+
+specifically , we evaluated fincen's network infrastructure and web portal used to access bsa data ; the web - based currency and banking retrieval system ( webcbrs ) and the mainframe and network infrastructure supporting it at irs ; and the electronic filing system and related network infrastructure at the treasury communications system ( tcs ) .
+
+our evaluation was based on our federal information system controls audit manual , which contains guidance for reviewing information system controls that affect the confidentiality , integrity , and availability of computerized information .
+
+we also used fincen , irs , and treasury policies and procedures to evaluate the information system controls at the organizations .
+
+additionally , where federal requirements or guidelines were applicable , such as the federal information security management act of 2002 ( fisma ) or national institute of standards and technology ( nist ) guidance , we used them to assess the extent to which the organizations had complied with specific requirements .
+
+to determine whether tcs , fincen , and irs had implemented access controls , contingency planning controls , and configuration controls over the information and systems that support fincen , we evaluated and reviewed the security software password settings to determine if users were appropriately identified and authenticated and if strong password management was enforced ; examined application and system access lists and associated documentation to determine whether users were properly authorized or had more permissions than necessary to perform their assigned job functions ; analyzed network and system configurations to determine if access paths were adequately controlled and if sensitive data were being encrypted ; tested and observed physical access controls and environmental controls to determine if computer facilities and resources were being protected from intentional or unintentional loss or impairment ; evaluated and reviewed backup and recovery procedures to determine if they adequately protected key systems against service interruptions ; examined contingency plans and test results for key fincen systems to determine whether those plans were adequately documented , had been updated , or had been appropriately tested ; inspected key servers , workstations , and network infrastructure devices to determine whether critical patches had been installed or were up - to - date ; and evaluated and reviewed change request documentation to determine if system and application changes were appropriately authorized , tested , and approved .
+
+to assess whether fincen had fully implemented an information security program to ensure that controls were established and maintained for its information systems , we used the requirements of fisma , which establish key elements for an effective agencywide information security program .
+
+to evaluate fincen's implementation of these key elements , we analyzed risk assessments for key fincen systems to determine whether risks and threats were documented ; examined security plans to determine if management , operational , and technical controls were in place or planned and whether these security plans were updated ; analyzed fincen policies , procedures , practices , and standards to determine their effectiveness in providing guidance to personnel responsible for securing information and information systems ; inspected training records for personnel with significant responsibilities to determine if they received training commensurate with those responsibilities ; analyzed test plans and test results for key fincen systems to determine whether management , operational , and technical controls were adequately tested at least annually and were based on risk ; and evaluated fincen's process to correct weaknesses to determine whether remedial action plans complied with federal guidance .
+
+in addition , we examined irs's security plans for webcbrs and the related general support systems to determine if management , operational , and technical controls were in place or planned and whether these security plans were updated .
+
+we also interviewed key security representatives and officials responsible for information security management at fincen , tcs , and irs to help determine whether information system controls were in place , adequately designed , and operating effectively .
+
+we also reviewed a previous report issued by the treasury inspector general's office on fincen information security and previous reports from gao on irs information security .
+
+our work was conducted in the washington , d.c. , metropolitan area and at fincen , tcs , and irs computing facilities in virginia and michigan .
+
+we conducted this performance audit from march 2008 to january 2009 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objective .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objective .
+
+in addition to the contacts named above , edward alexander and jeffrey knott ( assistant directors ) , rebecca alvarez , angela bell , bruce cain , william cook , neil doherty , denise fitzpatrick , myong kim , george kovachick , rebecca lapaze , kevin metcalfe , nancy glover , david plocher , zsaroq powe , matthew snyder , and christopher warweg made key contributions to this report .
+

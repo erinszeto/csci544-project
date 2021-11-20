@@ -1,0 +1,538 @@
+the national nuclear security administration ( nnsa ) provides classified supercomputing capabilities for assessing the performance of nuclear weapons .
+
+in the absence of nuclear weapons testing — which ceased in 1992 — the simulation capabilities of nnsa's supercomputers are a necessary means to determine the effects of changes to current weapons systems and to determine a level of confidence in the performance of future untested systems .
+
+these simulation capabilities also contribute to the enhancement of nnsa's ability to predict the performance of weapons systems to ensure the systems meet all military requirements established by the department of defense ( dod ) .
+
+nnsa's three nuclear weapons laboratories — los alamos national laboratory ( los alamos ) in new mexico , lawrence livermore national laboratory ( livermore ) in california , and the sandia national laboratories ( sandia ) with locations in new mexico and california — use these supercomputing simulation capabilities to obtain a comprehensive understanding of the entire nuclear weapons life cycle , from design to safe processes for dismantlement .
+
+these classified supercomputing capabilities are a considerable investment and serve as a cornerstone for nnsa's stockpile stewardship program .
+
+in addition , classified supercomputing capabilities are essential for informing critical decisions related to the nuclear stockpile , including all stockpile modernization and warhead studies .
+
+nnsa classified supercomputing capabilities are also used to address other areas of national security , including intelligence analyses , nuclear forensics , and emergency response .
+
+because of the importance of these classified supercomputing capabilities to issues central to national security , contingency and disaster recovery planning are key to ensuring that , when unexpected events occur , nnsa can recover and reconstitute its classified supercomputing systems , data , and operations .
+
+our objectives were to assess the extent to which ( 1 ) nnsa has implemented contingency and disaster recovery planning and testing for its classified supercomputing assets , ( 2 ) the three laboratories are able to share classified supercomputing capacity for recovery operations , should service disruptions occur , and ( 3 ) nnsa tracks the costs for ensuring contingency and disaster recovery planning for its classified supercomputing assets .
+
+to accomplish these objectives , we examined contingency and disaster recovery planning controls for the systems within the classified supercomputing environment that are a necessary means for nnsa's achievement of its nuclear weapons mission .
+
+in addition , we performed technical assessments of classified supercomputing capabilities at each weapons laboratory , including each laboratory's ability to share supercomputing capacity .
+
+further , we obtained information from nnsa and laboratory officials to determine how expenditures were tracked for contingency and disaster recovery planning of the classified supercomputing systems at each of the laboratories , as well as projected future cost estimates for ensuring the recovery of these assets .
+
+we conducted this performance audit from december 2009 through december 2010 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+a more detailed description of our objectives , scope , and methodology is contained in appendix i .
+
+nnsa relies on its stockpile stewardship program to ensure the safety , security , and effectiveness of the nuclear weapons stockpile .
+
+the stockpile stewardship program is comprised of various elements , including , but not limited to: ( 1 ) the advanced simulation and computing ( asc ) campaign , which provides the computational science and simulation tools to understand the behaviors and effects of nuclear weapons ; ( 2 ) directed stockpile work , which provides evidence of the health of the nuclear weapons stockpile and involves day - to - day maintenance of these weapons , including life extension efforts ; ( 3 ) the science campaign , which provides tools and capabilities geared toward advancing the general understanding of all nuclear weapons systems ; and ( 4 ) the engineering campaign , which provides a sustained basis for stockpile certification and assessments throughout the life cycle of each weapon .
+
+the coordination among the stockpile stewardship elements is instrumental to increasing nnsa's confidence in the performance of nuclear weapons .
+
+to help accomplish its stockpile stewardship mission , nnsa relies on the three weapons laboratories — los alamos , livermore , and sandia .
+
+los alamos and livermore are the two design laboratories that are responsible for designing the nuclear weapons' explosive package and conducting research to better understand nuclear weapons phenomena .
+
+sandia is an engineering laboratory and has principal responsibility for the research , design , and development of nonnuclear warhead components ; integration of these components with los alamos and livermore ; and overall warhead systems integration with dod .
+
+in accordance with nnsa , management and operations contractors , who are responsible for day - to - day operations of the laboratories , are required to adhere to agency policies .
+
+at the time of our review , nnsa's classified supercomputing resources consisted of 12 classified supercomputing systems .
+
+figure 1 shows the hows the hardware configuration of a supercomputing system .
+
+hardware configuration of a supercomputing system .
+
+nnsa classified supercomputing systems employ a large number of interdependent processors , which are the core unit of a computer that gathers instructions and data .
+
+these processors are mounted onto a compute chip , which is the portion of the system that carries out the instructions of a computer program .
+
+these compute chips are inserted onto a compute card , which also holds memory for the compute chips to use .
+
+a number of compute cards are attached to a node card , which have one or more processors with a common memory and are connected by high - speed interconnection networks .
+
+each node card is inserted into a single cabinet , and that configuration is repeated many times to build a single supercomputing system .
+
+each supercomputing system has a peak performance , which is the maximum rate of floating - point operations per second ( flops ) that the system can sustain .
+
+currently , almost all nnsa classified supercomputer systems operate at the teraflop level , which represents a trillion flops .
+
+according to nnsa , the laboratories have three types of classified supercomputing systems: capacity: small systems that execute parallel problems with more modest computational requirements .
+
+these systems serve as the workhorse for the asc program and are responsible for processing the day - to - day supercomputing workload .
+
+capability: this type of supercomputer is used to solve the largest and most demanding problems that other computing systems cannot manage .
+
+advanced architecture: research and development systems that assist the asc program in preparing to rapidly deploy and exploit the next generation of supercomputing technology .
+
+these systems have a targeted workload and serve as the foundation for the next generation of nnsa supercomputers .
+
+table 1 shows the classified supercomputing systems currently in use at the three weapons laboratories .
+
+nnsa's classified supercomputing capabilities consist of supporting resources , including ( 1 ) parallel files systems , which store transitory data ; ( 2 ) network file systems , which store user and project data for a calculation ; ( 3 ) archival storage systems , which serve as storage for data ; and ( 4 ) visualization systems , which enable users to better comprehend the results of their computations .
+
+nnsa's classified supercomputing systems are connected via its enterprise secure network and the distance computing ( discom ) network , which function as supporting resources for the classified supercomputing environment .
+
+the enterprise secure network provides classified communications across the nuclear weapons complex , including security services and other activities that ensure the flow of nnsa's data sharing and business missions .
+
+discom provides secure , high - speed remote access for intra - and inter - site file transfers and enables users , across the three weapons laboratories , to operate on remote computing resources as if they were local .
+
+discom and the enterprise secure network serve as the backup networks to each other .
+
+figure 2 shows the composition of nnsa's classified supercomputing network infrastructure .
+
+nnsa reported obligating approximately $1.7 billion from fiscal years 2007 through 2009 to support asc program activities at the three weapons laboratories .
+
+the $1.7 billion was predominantly associated with three efforts: weapons codes and models .
+
+this effort is intended to develop and improve weapons simulation models and codes for predicting the behavior of weapons systems and devices in the nuclear stockpile .
+
+computational systems and software environment .
+
+this effort is intended to provide asc users a stable , seamless computing environment for asc - deployed platforms .
+
+it is responsible for procuring , delivering , and deploying asc computational systems and user environments via technology development and integration across the three weapons laboratories .
+
+facility operations and user support .
+
+this effort is intended to provide both the necessary physical facility and operational support for reliable supercomputing and storage environments , as well as a suite of user services for effective use of the three weapons laboratories' computing resources .
+
+facility operations cover physical space , power and other utility infrastructure , and local - and wide - area networking , as well as system administration , cyber security , and operations services for ongoing support .
+
+the user support function includes planning , development , integration and deployment , continuing product support , and quality and reliability activity collaborations .
+
+to strengthen the security of information and information systems across the federal government , including those at nnsa's weapons laboratories , the federal information security management act of 2002 ( fisma ) requires each agency to develop , document , and implement an agencywide information security program that supports the operations and assets of the agency , including those provided or managed by another agency or contractor on its behalf .
+
+this security program is to include plans and procedures to ensure the continuity of operations for information systems that support the agency's operations .
+
+pursuant to its fisma responsibilities , the national institute of standards and technology ( nist ) has issued federal standards and guidelines on information security , such as a contingency planning guide for federal information systems , and recommended security controls , which address contingency and disaster recovery planning and testing .
+
+to further ensure the security of national security systems , the committee on national security systems ( cnss ) requires federal agencies with national security systems to implement a comprehensive set of security controls and enhancements for these systems .
+
+cnss requires that each agency implement a contingency and disaster recovery planning capability that ensures the integrity and availability of its national security information and information systems .
+
+fisma , nist guidelines , and cnss policies all call for contingency and disaster recovery planning — also referred to as continuity of operations for information systems — for critical components of information protection .
+
+doe and nnsa policies also regard contingency and disaster recovery plans as being necessary for information protection .
+
+if normal operations are interrupted , contingency and disaster recovery plans allow senior agency officials to detect , mitigate , and recover operations .
+
+examples of the key components that make up contingency and disaster recovery planning programs include ( 1 ) assessing the criticality and sensitivity of computerized operations and identification of supporting resources such as developing business impact analyses ( bia ) , ( 2 ) taking steps to prevent and minimize potential damage and interruption such as establishing data backup processes , ( 3 ) developing comprehensive contingency and disaster recovery plans , and ( 4 ) conducting periodic testing of contingency and disaster plans .
+
+the extent to which controls — such as contingency and disaster recovery planning — are implemented depends on a level of risk assigned to the system or information maintained on the system .
+
+nist standards and guidelines , cnss instructions , and nnsa policy allow consideration of risk in determining the level of protection of systems and data .
+
+these standards and policies require that organizations consider the impact or consequences of loss as it relates to the confidentiality , integrity , and availability of the information , and assign a value of low , moderate , or high impact levels .
+
+for contingency and disaster recovery planning , consideration of “availability” is the key element .
+
+nnsa policy defines the values for the consequences of loss associated with availability as follows: high — loss of life might result from loss of availability ; information must always be available on request , with no tolerance for delay ; loss of availability will have an adverse effect on national - level interests ; federal requirement ( i.e. , requirement for material control and accountability inventory ) ; or loss of availability will have an adverse effect on confidentiality .
+
+moderate — information must be readily available with minimum tolerance for delay ; bodily injury might result from loss of availability ; or loss of availability will have an adverse effect on organizational - level interests .
+
+low — information must be available with flexible tolerance for delay .
+
+contingency and disaster recovery planning and testing for nnsa's classified supercomputing systems have not been fully implemented at each of the three weapons laboratories — los alamos , sandia , and livermore .
+
+specifically , nnsa did not ensure that the laboratories ( 1 ) developed bias to determine the impact of potential service disruptions , ( 2 ) fully tested data backup processes , and ( 3 ) developed and tested contingency and disaster recovery plans .
+
+these shortcomings existed , at least in part , because nnsa's component organizations were unclear of their roles and responsibilities for providing oversight in the laboratories' implementation of contingency and disaster recovery planning .
+
+until the agency fully implements a contingency and disaster recovery planning program for its classified supercomputing assets at the weapons laboratories , it has limited assurance that vital information can be recovered and made available to meet national security priorities and requirements .
+
+to assess the criticality and sensitivity of computerized operations and identification of supporting resources , nist guidelines state that agencies should determine their recovery strategies by performing business impact analyses of their systems .
+
+a bia is an analysis of information technology system requirements , processes , and interdependencies used to characterize system contingency requirements and priorities in the event of a significant disruption .
+
+nist guidelines state that agencies conduct a bia to identify critical information systems to fully characterize the system's requirements , processes , and interdependencies to determine contingency requirements and priorities .
+
+in addition , according to nist guidelines , the bia process should follow three main steps: ( 1 ) identify critical data and information technology resources , ( 2 ) identify outage impacts and allowable outage times , and ( 3 ) develop recovery priorities and strategies .
+
+nnsa policy also requires a bia to identify systems that provide critical services to site operations and prioritize these systems and their components .
+
+one of the laboratories — los alamos — had conducted a bia that addressed its classified supercomputing systems , generally following the three steps of a bia .
+
+however , the bia was not always specific .
+
+for example , the laboratory identified critical information technology resources for each of its classified supercomputing systems , but did not specifically identify the critical data .
+
+instead , los alamos noted that the systems are not considered mission critical nor mission essential to the business needs of the laboratory , and that the consequence of loss for system availability is low .
+
+additionally , it defined a specific number of days for the allowable time frames for fully and partially disabled systems , but did not provide specifics on allowable outage impacts .
+
+further , the analyses indicated high - level recovery priorities , but did not provide specifics regarding the recovery process or strategies that would be used for recovery efforts .
+
+the other two laboratories did not conduct bias specifically for classified supercomputing systems , but plan to do so .
+
+livermore has a bia in place for its logical assets — the applications and services that provide basic operational support to the livermore computing environment , but the bia did not address any of the classified supercomputing systems .
+
+however , at the time of our site visit , livermore officials stated they were beginning the process of developing a bia that would address their information technology needs for their classified supercomputing systems , but the process was still in the planning stage .
+
+similarly , according to sandia officials , the laboratory has bias that address its unclassified information technology systems , but does not currently have one specifically for its classified supercomputing systems .
+
+however , sandia officials indicated that they plan to conduct a bia for classified supercomputing systems in 2011 .
+
+although the two laboratories have not conducted any bias — in line with the bia conducted by los alamos — they have considered the risk of consequence of loss from availability as low impact .
+
+nnsa also considers the consequence of loss as low impact .
+
+in addition , nnsa and the three laboratories do not consider the classified supercomputers to be “mission critical.” one laboratory categorized the systems as “mission essential,” while another referred to them as “mission support elements , not mission essential elements.” however , nnsa's mission includes maintaining the safety , security , and effectiveness of the nuclear deterrent without nuclear testing .
+
+the supercomputers provide a necessary means to determine the effects of changes to current weapons systems and to determine a level of confidence in the performance of future untested systems .
+
+the classified supercomputing capabilities serve as the computational surrogate to nuclear weapons testing and are central to national security .
+
+regarding recovery priorities and strategies , each of the laboratories indicated that it would likely rely on a process that is currently being used for the capability system shared among the laboratories .
+
+the laboratories generally rely on the capability computing campaign to prioritize the workload and develop priorities for jobs that need to be run on the capability system .
+
+in the event of a service disruption or emergency , laboratory officials told us that they would likely rely on the same process for all of their systems .
+
+however , this process has not been documented as a means for establishing overall recovery priorities across the laboratories .
+
+until all of the laboratories have a bia in place for their classified supercomputing systems that ( 1 ) identifies and categorizes critical data , ( 2 ) identifies acceptable allowable outage impacts and time frames , and ( 3 ) establishes emergency processing priorities and strategies , the potential impact of a system outage will remain unclear .
+
+data backup processes offer a means of taking steps to prevent and minimize potential damage and interruption to computerized services .
+
+nist guidelines , as well as cnss instructions and nnsa policies , call for agencies to conduct backups of user - level information , system - level information , and information system documentation .
+
+in addition , nist , cnss , and nnsa all provide that agencies establish an alternate storage site that is separated from the primary storage site so that both are not susceptible to the same hazards .
+
+to ensure the availability of data stored in the alternate storage site , nist and cnss require that agencies test the backup information to verify the integrity of the data .
+
+all of the laboratories had backup processes in place .
+
+each of the laboratories follows similar data backup processing — both manual and automated procedures — to back up user - level information , system - level information , and information system documentation .
+
+for example , this information can include global directories , user home directories , project directories , desktop systems , and critical systems documentation .
+
+backups occur in increments: daily incremental backups to disk , weekly full backups to tape , and monthly full - system backups to tape ( with a 6- month on - site storage retention policy ) .
+
+the laboratories also have vendor - provided software that takes periodic snapshots of user directories for storage retention purposes .
+
+the snapshot process can be performed manually or can be set up for automatic processing .
+
+users are encouraged to maintain their data in a shared environment on the network and are allowed to make their own determinations regarding what data should be backed up from the classified supercomputing systems .
+
+not all of the laboratories have an alternate storage site sufficiently separated from the primary site to not be susceptible to the same hazards .
+
+two of the three laboratories have alternate storage sites a considerable distance from their primary storage site .
+
+livermore sends its system backups electronically to los alamos every 6 months .
+
+sandia sends its backup data to its alternate site locations ( e.g , the california site sends its data to the new mexico site and the new mexico site sends its data to the california site ) .
+
+however , los alamos maintains its alternate storage facility on - site in a building located less than 1 mile away from the primary local backup storage facility .
+
+consequently , both sites could be susceptible to the same hazards , such as a wildfire .
+
+the laboratories had processes in place to verify the integrity of the backed up data .
+
+however , tests of their backup procedures rely predominantly on ad hoc recovery , rather than periodically planned tests .
+
+los alamos officials indicated that thousands of file recoveries have been performed over the years by end users as part of their testing .
+
+livermore officials stated that the laboratory tests its local backup procedures through actual system usage on almost a daily basis , and tests their remote backup procedures at least once annually .
+
+further , sandia officials told us they had successfully tested a sample of data at their offsite facility .
+
+nist guidelines and cnss policies call for the development and testing of contingency plans and the development of disaster recovery plans for each information system to ensure that , in the event of a service disruption , the work and supporting functions of the agency can continue to be performed .
+
+according to nist guidelines , at a minimum , the contingency plan should address the identification and notification of key personnel , plan activation , system recovery , and system reconstitution to meet the needs of the agency's critical supporting operations .
+
+the guidelines also state that the plan should be tested periodically ; cnss specifies that the frequency of testing should be annually .
+
+nist also notes that the disaster recovery plan should be designed to restore operability of the targeted system , application , or computer facility at an alternate site after a major service disruption .
+
+doe and nnsa policies also require the development of contingency and disaster recovery plans and the testing of these plans in line with nist and cnss .
+
+each of the laboratories had developed contingency plans for their classified supercomputing systems ; however , the plans were not always comprehensive , and at the time of our site visits , these plans had not been tested .
+
+the laboratories addressed disaster recovery planning to a limited extent ; none specifically addressed the supercomputing environment .
+
+for example , two laboratories — los alamos and sandia — had contingency plans that addressed the classified supercomputing systems .
+
+although livermore had an information technology contingency plan and a master security plan , neither specifically addressed the supercomputers .
+
+in addition , the plans for both los alamos and sandia included key components such as the identification and notification of key personnel , plan activation , system recovery , and system reconstitution procedures ; however , the sufficiency of the level of detail varied .
+
+for instance , one plan provided specific details regarding system recovery processes and the notification and identification of key personnel , but provided limited details regarding plan activation and system reconstitution procedures .
+
+at the time of our site visits , none of the laboratories had tested their contingency plans , which were less than a year old .
+
+one of the laboratories — los alamos — had created testing guides but had not yet conducted formal testing .
+
+subsequent to our site visit , los alamos officials indicated that the first test of their plan took place in september 2010 and noted that the results would be finalized in december .
+
+additionally , although sandia had a contingency plan in place , the plan states that testing is not required because , in the event of a service disruption , the laboratory would either wait until the equipment was fully operational or simply acquire new equipment .
+
+this is contrary to nist guidelines , cnss instructions , and doe and nnsa policies .
+
+each of the laboratories had addressed disaster recovery planning to a limited extent .
+
+for example , los alamos included disaster recovery planning as a section within their classified supercomputing system's contingency plans .
+
+although it provided high - level instructions such as directing individuals to call 911 for all emergencies , it did not include information regarding the specifics for restoring operability of the classified supercomputing system at an alternate site after a major service disruption .
+
+none of the plans submitted by livermore specifically addressed the supercomputing environment , although in the disaster recovery section of the master security plan , the laboratory noted that it had no mission - essential systems in the computing environment , and systems may be offline for an extended period for system upgrades .
+
+sandia also had disaster recovery plans in place , designed for emergency preparedness and disease response planning needs for the laboratory .
+
+these plans focused on emergencies involving the facilities , operations , and activities for the laboratory , and provided individuals with emergency information should pandemics plague the laboratory .
+
+however , these plans did not include any information regarding the classified supercomputing systems .
+
+unless each of the laboratories develops and sufficiently tests comprehensive contingency and disaster recovery plans in accordance with applicable policies and guidance for their classified supercomputing systems , they face a risk of not being able to successfully recover their supercomputing assets and operations after a service disruption .
+
+the aforementioned shortcomings existed , at least in part , because nnsa's component organizations were unclear of their roles and responsibilities for providing oversight in the laboratories' implementation of contingency and disaster recovery planning .
+
+fisma requires that the chief information officer , in coordination with other senior agency officials , manage the development and implementation of an agencywide information security program that includes plans and procedures to ensure continuity of operations for information systems that support the operations and assets of the agency .
+
+nist guidelines and doe policies call for individuals with information system or security management and oversight responsibilities to take responsibility for the development , implementation , assessment , monitoring , reviewing , and updating of security planning policies and procedures , which includes contingency and disaster recovery plans .
+
+further , the nnsa safety management function and responsibilities and authorities manual states that the chief information officer is responsible for information technology programs and initiatives and for ensuring the security of the agency's information and systems .
+
+although roles and responsibilities are defined at a high level in fisma , nist guidelines , as well as doe and nnsa policies , nnsa component organizations were confused about their roles in providing oversight of the laboratories' implementation of contingency and disaster recovery planning for the supercomputing systems .
+
+for example , at the beginning of our review , asc officials told us that , although they were responsible for administering and managing the program that uses the classified supercomputing systems , they were not responsible for contingency and disaster recovery planning .
+
+instead , they directed us to the office of the chief information officer ( ocio ) , where officials told us that they were not responsible for contingency and disaster recovery planning for these systems , and noted that they would only provide guidance if requested by asc .
+
+further , ocio officials told us that asc has not requested any assistance .
+
+asc officials subsequently acknowledged that they had responsibility for contingency and disaster recovery planning ; however , this organizational responsibility is contrary to nist guidelines and doe policies , as well as nnsa's own manual , which gives this responsibility to the ocio .
+
+in the absence of effective oversight , the laboratories did not consistently comply with , or fully implement , federal requirements and guidance related to contingency planning and disaster recovery .
+
+until nnsa clearly establishes and carries out defined roles and responsibilities for ocio and asc pertaining to contingency and disaster recovery planning for the classified supercomputing environment , it will not be able to effectively manage and oversee the recovery of its supercomputing operations should service disruptions occur .
+
+technologically , the weapons laboratories have demonstrated the ability to share classified supercomputing capacity using their capacity and capability systems under normal operating conditions .
+
+although these supercomputers process unique workloads and operate independently , they are designed with a similar operating system , resource manager , and job scheduler , which is built on a linux foundation .
+
+these supercomputers also include application codes that are portable across supercomputing systems and a data network , which allows authorized users local and remote access to the systems .
+
+although the weapons laboratories have the ability to share supercomputing capacity , barriers exist .
+
+one barrier to sharing supercomputing capacity is that the weapons laboratories do not know the minimum supercomputing capacity needed to achieve processing priorities in the event of a service disruption .
+
+nist guidelines recommend , and nnsa policy requires , that capacity planning be conducted so that there is adequate capacity for information processing and supporting resources during contingency operations .
+
+although the weapons laboratories have identified the supercomputing processing needed for normal business operations , they have not identified the minimum supercomputing capacity needed to achieve processing priorities in the event of a service disruption .
+
+another barrier to sharing supercomputing processing is the disparity in usable supercomputing processing across the laboratories .
+
+figure 3 depicts this disparity by identifying the amount of total usable supercomputing capacity , in teraflops , for each of the three weapons laboratories for 2010 and 2011 .
+
+for example , in 2010 , total usable capacity at livermore has been 311 teraflops , whereas los alamos and sandia have had 127 teraflops and 76 teraflops , respectively .
+
+should livermore experience service disruptions for a sustained amount of time , neither los alamos nor sandia possesses the necessary usable supercomputing capacity to accommodate the additional workload and nnsa will have to reprioritize the computational workloads across the other two laboratories .
+
+as previously noted , officials at the laboratories told us that , should disruptions occur , they would use the capability computing campaign model for re - prioritizing the workload .
+
+however , this process has not been documented for recovery activities .
+
+further limiting the ability of the weapons laboratories to recover from a service disruption , in 2011 , there will be a significant disparity in projected usable supercomputing capacity .
+
+for example , in 2011 , los alamos' usable capacity is projected to be 1,427 teraflops , whereas usable capacity at livermore and sandia is to be 218 teraflops and 76 teraflops , respectively .
+
+should los alamos' supercomputing systems become unavailable for an extended period of time , neither livermore nor s possesses sufficient usable supercomputing capacity to achieve its workload and accommodate the additional potential computation workload from los alamos .
+
+according to laboratory officials , an additional supercomputer will be deployed at los alamos in 2011 .
+
+this supercomputer is a replacement for the single capability supercomputer currently at livermore that was retired in 2010 .
+
+therefore , a significan amount of usable supercomputing capacity will be centralized at los alamos .
+
+because the weapons laboratories have not determined the minimum supercomputing capacity requirements for their emerge processing priorities , they may not be able to meet the minimum computation al workload required to meet stockpile stewardship milestones .
+
+another barrier to sharing supercomputing capacity across the weap laboratories is that the capability to share usable capacity on an “on - demand” basis has not been fully tested in a recovery scenario .
+
+according to officials at the laboratories , during normal operating conditions , simulation programs have run on other supercomputing systems .
+
+however , consideration has not been given to include and test these abilities in a disaster recovery scenario should a service disru occur .
+
+as a result , nnsa has limited assurance that its disaster recov approach would work effectively should a service disruption occur .
+
+although nnsa reported obligating approximately $1.7 billion from fisc 2007 through 2009 to implement its asc program activities at the three weapons laboratories , the costs for ensuring the recovery of its classifie supercomputing operations are unknown .
+
+under gao's standards for internal control in the federal government , financial information sh be recorded and communicated to program managers who need this information to make operational decisions and to effectively allocate resources for program activities .
+
+nnsa officials reported obligating approximately $390 million for facility operations and user support activities , which include the funds associated with contingency and disaster recovery planning activities , but they w unable to provide detailed financial information for contingency and disaster recovery planning activities .
+
+according to nnsa officials , costs for contingency and disaster recovery planning for classified supercomputing systems are unknown because asc program expenditures are part of the nnsa asc operational budget , whose costs are tracked at an aggregate level .
+
+as a result , neither nnsa nor the three weapons laboratories can track what has been spent since fiscal year 20 for ensuring the recovery of classified supercomputing operations and , consequently , they do not know whether funding levels for these activit have been adequate .
+
+although certain components of contingency and disaster recovery planning are in place at the three weapons laborator nnsa is uncertain as to what funds were spent on these information protection activities .
+
+furthermore , nnsa has not developed contingency planning and disaster recovery cost estimates for its classified supercomputing assets .
+
+for fiscal years 2011 through 2014 , nnsa projects that it needs about $2.2 billion to implement its asc activities , which support its stockpile stewardship program — $984 million for weapons codes and models , $604 million for computational systems and software environment , and $588 million for facility operations and user support .
+
+although nnsa has developed its out - year funding needs over the next 4 years , it has not developed estimates regarding the future costs for ensuring the recovery of its classified supercomputing assets in the event of service disruptions .
+
+until nnsa develops a means for tracking current contingency and disaster recovery costs and for developing estimates of future costs , the agency will not have the information needed to determine whether it is meeting its goals for effective stewardship of public resources .
+
+all three nnsa weapons laboratories have implemented some components of a contingency planning and disaster recovery program .
+
+nnsa , however , has not provided effective oversight to ensure that the laboratories have comprehensive and effective contingency and disaster recovery planning and testing .
+
+for example , b ias that identify critical resources and outage impacts have not been developed for all classified supercomputing systems and existing contingency plans at the laboratories have not been thoroughly tested .
+
+although one laboratory's analysis is not comprehensive and the other two laboratories have not completed a bia , nnsa and the laboratories consider the consequence of loss of availability of the classified supercomputers as a low - risk impact , and do not consider them to be mission critical .
+
+however , it is unclear how nnsa made this determination given that ( 1 ) the analyses have n been completed ; ( 2 ) nnsa's mission includes maintaining the safety security , and effectiveness of the nuclear deterrent without nucleartesting ; ( 3 ) the classified supercomputing capabilities serve as the computational surrogate to underground nuclear weapons testing and are central to our national security ; and ( 4 ) nnsa has obligated about $1.7 billion over 3 fiscal years to support the advanced simulation and computing program , which includes classified supercomputing activities .
+
+beyond the activities undertaken by the laboratories , nnsa has not developed a means for identifying , tracking , or re - prioritizing the classified supercomputing workload across the operating environment .
+
+in addit the laboratories have not tested offsite recovery capabilities and the agency has not tested the laboratories' ability to share “on - demand” capacity if needed or determined the minimum capacity needed to meet stockpile stewardship program requirements , particularly in the event that it may need to establish emergency processing priorities .
+
+furt her , although over a billion dollars have been obligated to support the classified supercomputing capabilities within the last 3 years , nn not tracked the costs for ensuring the recovery of the classified supercomputing systems , data , and supporting resources should a servi disruption occur .
+
+the classified supercomputing program represents a significant investment , and accountability for these systems is esse until nnsa clearly defines its component organizations' roles and responsibilities and fully implements an effective contingency and disaste planning program , it has limited assurance that , in the event of a service disruption , vital information could meet national security priorities .
+
+ntial .
+
+to improve the effectiveness of contingency and disaster recove planning for nnsa's classified supercomputing capabilities , we recommend that the administrator of nnsa direct the weapons laboratories to take the following four actions , where not already implemented: develop business impact analyses that , among other things , ( 1 ) identify and prioritize critical systems , data , and supporting resources ; ( 2 ) id allowable outage times and impacts for classified supercomputi capabilities ; and ( 3 ) identify recovery priorities and strategies .
+
+develop and implement comprehensive contingency and disaster recov plans for all classified supercomputing systems that identify how eac h weapons laboratory's classified supercom recovered following service disruptions .
+
+onduct contingency and disaster recovery plan testing .
+
+test the three weapons laboratories' ability to share “on - demand” classified supercomputing capacity to ensure the event of unexpected service disruptions .
+
+in addition , we recomm following five actions: end that the administrator of nnsa take the document an agencywide means for reprioritizing the workload across nsa's classified supercomputing systems should a disruption occur .
+
+clearly define the oversight responsibilities of the nnsa asc program office and the nnsa office of the chief information officer , as they r to contingency and disaster recovery planning for nnsa's classified s upercomputing operations .
+
+identify , assess , and communicate the minimum classified supercomputing capacity needed to meet stockpile stewardship r equirements in the event of a service disruption .
+
+develop , document , and implement a process that identifies and tracks expenditures for contingency and d classified supercomputing assets .
+
+isaster recovery planning for nnsa's develop and document the total anticipated costs for contingency and disaster recovery planning of nnsa's classified superco which includes the replacement costs for these assets .
+
+in providing written comments ( reprinted in app .
+
+iii ) on a draf report , nnsa's associate administrator for management and administration agreed that improvements can be made in contingency an disaster recovery planning for supercomputing operations .
+
+he indicated that nnsa agreed with six of our nine recommendations and outlined t agency's intent to conduct business impact analyses , develop and test appropriate contingency and disaster recovery plans , document workload prioritization , and clearly define roles and responsibilities .
+
+however , nnsa did not agree with our recommendation related to identifying the minimum capacity needed to meet stockpile stew ardship requirements in the event of a service disruption .
+
+the associate administrator stated that this recommendation did not take into accou that the different types of supercomputers — capacity and capability — serve different functions and are procured and managed differently .
+
+in our report , we recognize that different types of supercomputers exist and that they are used for different purposes , they process unique workloads and operate independently .
+
+however , as we point out in the report , althoug h the weapons laboratories have identified supercomputing processing needed for normal business operations , they have not identified the minimum capacity needed to achieve processing priorities in the event of a service disruption .
+
+we believe that the recommendation appropriately focuses on meeting nnsa's stockpile stewardship mission and that capacity planning is essential to ensure that information processing and supporting resources exist during contingency operations , regar dless of the type of system used .
+
+although nnsa did not agree with the recommendation , the associate administrator stated that the agency will conduct a bia and build appropriate contingency strategies for both types of supercomputers , as well as enhance capacity siz for contingency and disaster recovery operations .
+
+further , nnsa did not agree with two recommendations related to identifying and tracking expenditures for contingency and disaster recovery planning and documenting anticipated recovery planning costs , including replacement costs of the assets .
+
+the associate administrator asserted that this information would not add significant value to managi contingency and disaster recovery planning .
+
+however , we believe such actions reflect good government practices and would add value by providing nnsa program managers with useful expenditure and cost information to aid decision making with regards to contingency and disaster recovery planning .
+
+as our report points out , gao's standards for internal control in the federal government states that financial information should be recorded and communicated to program managers to help them make operational decisions and effectively allocate resource for program activities .
+
+strong financial and internal controls are a major part of managing any organization because they help government program managers achieve desired results through effective stewardship of public resources .
+
+accordingly , we believe our recommendations have merit .
+
+we are sending copies of this report to the secretary of energy ; the administrator of nnsa ; and the directors of los alamos , livermore , and sandia laboratories .
+
+copies of the report will also be available to others at no charge on the gao web site at http: / / www.gao.gov .
+
+if you or your staffs have any questions about this report , please contact gene aloise at ( 202 ) 512-3841 , or aloisee@gao.gov ; nabajyoti barkakati at ( 202 ) 512-6415 or barkakatin@gao.gov ; or gregory c. wilshusen at ( 202 ) 512-6244 or wilshuseng@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made major contributions to this report are included in appendix iv .
+
+the objectives of our review were to assess the extent to which ( 1 ) the national nuclear security administration ( nnsa ) has implemented contingency and disaster recovery planning and testing for its classified supercomputing assets , ( 2 ) the three laboratories are able to share classified supercomputing capacity for recovery operations , should service disruptions occur , and ( 3 ) nnsa tracks the costs for ensuring contingency and disaster recovery planning for its classified supercomputing assets .
+
+to address these objectives , we focused on contingency and disaster recovery planning activities at nnsa headquarters , as well as the operating environment for the 12 classified supercomputing systems at the three weapons laboratories — los alamos national laboratory , livermore national laboratory , and sandia national laboratories .
+
+to assess the extent to which nnsa has implemented contingency and disaster recovery planning and testing for its classified supercomputing assets , we examined contingency and disaster recovery planning controls for the systems within the classified supercomputing environment that are critical to nnsa's achievement of its nuclear weapons mission .
+
+we collected and reviewed policies , procedures , and guidelines from the national institute of standards and technology , the committee on national security systems , the department of energy , and nnsa .
+
+we also reviewed contingency plans and business impact analyses provided by the weapons laboratories and compared them to federal guidelines .
+
+we interviewed nnsa and laboratory officials to determine whether they had documented critical system , data , and supporting resources and whether contingency plans had been tested .
+
+further , we interviewed nnsa officials to determine to what extent they have provided specific guidance and oversight for the laboratories to ensure that contingency and disaster recovery planning requirements are being met .
+
+to determine the extent to which the three weapons laboratories have the ability to share supercomputing capacity for backup and recovery operations , we visited each weapons laboratory and gained an understanding of the overall classified supercomputing infrastructure and identified interconnectivity and control points .
+
+we performed technical assessments of supercomputing capabilities at each weapons laboratory , including each laboratory's ability to share supercomputing capacity under normal operating conditions .
+
+we reviewed the weapons laboratories' efforts to determine the minimal supercomputing capacity needed to meet nnsa stockpile stewardship program requirements along with the ability of the weapons laboratories to share supercomputing capacity on an “on - demand” basis , including the use of advanced architecture systems .
+
+in addition , we obtained documents describing the supercomputing system environment as well as capacity information , along with the views of officials from nnsa and the three weapons laboratories .
+
+to assess the extent to which nnsa tracks costs for ensuring contingency and disaster recovery planning for classified supercomputing assets , we interviewed nnsa and weapons laboratory officials to determine how expenditures were tracked for contingency and disaster recovery planning of the classified supercomputing systems at each of the laboratories .
+
+we also requested the amount of funds nnsa obligated to the three weapons laboratories , and the amount of funds the laboratories spent , in implementing nnsa's classified supercomputing capabilities from fiscal years 2007 through 2009 .
+
+further , we interviewed nnsa and laboratory officials to determine how they projected future cost estimates for ensuring the recovery of these assets for fiscal years 2011 through 2014 .
+
+to assess the reliability of data provided , we reviewed ( 1 ) the fiscal year 2009 financial statement audit for the system and ( 2 ) responses nnsa provided to questions about processes and procedures for ensuring the accuracy and completeness of data .
+
+based on this information , we determined the data are sufficiently reliable for the purposes of this report .
+
+we conducted this performance audit from december 2009 through december 2010 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+nnsa reported obligating approximately $1.7 billion from fiscal years 2007 through 2009 to support advanced simulation and computing ( asc ) program activities at the three weapons laboratories .
+
+the $1.7 billion was used mainly for three efforts: weapons codes and models .
+
+this effort is intended to develop and improve weapons simulation codes and models for predicting the behavior of weapons systems and devices in the nuclear stockpile .
+
+computational systems and software environment .
+
+this effort is intended to provide asc users a stable , seamless computing environment for asc - deployed platforms .
+
+it is responsible for procuring , delivering , and deploying asc computational systems and user environments via technology development and integration across the three weapons laboratories .
+
+facility operations and user support .
+
+this effort is intended to provide both the necessary physical facility and operational support for reliable supercomputing and storage environments , as well as a suite of user services for effective use of the three weapons laboratories' computing resources .
+
+facility operations cover physical space , power and other utility infrastructure , and local - and wide - area networking , as well as system administration , cyber security , and operations services for ongoing support .
+
+the user support function includes planning , development , integration and deployment , continuing product support , and quality and reliability activity collaborations .
+
+figure 4 depicts nnsa's annual obligations for each of the three efforts from fiscal years 2007 through 2009 .
+
+as shown in figure 4 , nnsa annual obligations for its classified supercomputing operations decreased from about $591 million to $529 million between fiscal years 2007 and 2009 .
+
+the largest obligation for the classified supercomputing program was for weapons codes and models , which accounted for approximately $750 million ( or 45 percent ) of total obligations .
+
+obligations for computational systems and software environment accounted for approximately $527 million ( or 32 percent ) of total obligations .
+
+for the period , obligations for this effort decreased from $183 million to $161 million .
+
+the facility operations and user support activities , which includes , among other things , expenditures for contingency and disaster recovery planning , accounted for $390 million ( or 23 percent ) of total obligations over the period .
+
+these obligations ranged from $114 million to $147 million for the 3 fiscal years .
+
+in addition to the individuals named above , glen levis , edward m. glagola , jr. , and jeffrey knott ( assistant directors ) ; and preston s. heard , jennifer r. franks , kevin metcalfe , and zsaroq powe were key contributors to this report .
+
+neil doherty , nancy glover , franklin jackson , and jonathan kucskar also made key contributions to this report .
+

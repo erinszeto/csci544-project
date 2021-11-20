@@ -1,0 +1,782 @@
+in view of the increasing threat of unauthorized intrusions into department of defense computer systems , you asked us to report on the extent to which defense computer systems are being attacked , the actual and potential damage to its information and systems , and the challenges defense is facing in securing sensitive information .
+
+this report identifies opportunities and makes recommendations to the secretary of defense to improve defense's efforts to counter attacks on its computer systems .
+
+we are sending copies of the report to the senate committee on armed services and the house committee on national security ; the senate committee on appropriations , subcommittee on defense , and the house committee on appropriations , subcommittee on national security ; the senate select committee on intelligence and the house permanent select committee on intelligence ; the secretary of defense ; the secretaries of the military services ; and the director , defense information systems agency .
+
+copies will also be made available to others upon request .
+
+if you have any questions about this report , please call me at ( 202 ) 512-6240 .
+
+other major contributors to this report are listed in appendix i .
+
+as a result of the rapid growth in computer technology , the department of defense , like the rest of government and the private sector , has become extremely dependent on automated information systems .
+
+these systems have also become increasingly interconnected worldwide to form virtual communities in cyberspace .
+
+the department calls its portion of this global community the defense information infrastructure .
+
+to communicate and exchange unclassified information , defense relies extensively on a host of commercial carriers and common user networks .
+
+this network environment offers defense tremendous opportunities for streamlining operations and improving efficiency , but also greatly increases the risks of unauthorized access to information .
+
+as depicted in figure 1.1 , the department of defense has a vast information infrastructure of computers and networks to protect including over 2.1 million computers , 10,000 local networks , 100 long - distance networks , 200 command centers , and 16 central computer processing facilities or megacenters .
+
+there are over 2 million defense computer users and an additional two million non - defense users that do business with the department .
+
+as discussed in chapter 2 , defense systems contain very valuable and sensitive information including commercial transactions , payrolls , sensitive research data , intelligence , operational plans , procurement sensitive source selection data , health records , personnel records , and weapons systems maintenance records .
+
+this unclassified but sensitive information constitutes a majority of the information on defense computers .
+
+the systems are attractive targets for individuals and organizations seeking monetary gain , or dedicated to damaging defense and its operations .
+
+generally , classified information such as war planning data or top secret research is safer from attack since it is ( 1 ) protected on computers isolated from outside networks , ( 2 ) encrypted , or ( 3 ) only transmitted on dedicated , secure circuits .
+
+the internet is a global network interconnecting thousands of dissimilar computer networks and millions of computers worldwide .
+
+over the past 20 years , it has evolved from its relatively obscure use by scientists and researchers to its significant role today as a popular , user - friendly , and cost - effective means of communication and information exchange .
+
+millions of people conduct business over the internet , and millions more use it for entertainment .
+
+internet use has been more than doubling annually for the last several years to an estimated 40 million users in nearly every country today .
+
+connections are growing at an ever increasing rate ; the internet is adding a new network about every 30 minutes .
+
+because the internet strives to be a seamless web of networks , it is virtually impossible today to distinguish where one network ends and another begins .
+
+local , state , and federal government networks , for example , are interconnected with commercial networks , which in turn are interconnected with military networks , financial networks , networks controlling the distribution of electrical power , and so on .
+
+defense itself uses the internet to exchange electronic - mail , log on to remote computer sites worldwide , and to download and upload files from remote locations .
+
+during the conflict in the persian gulf , defense used the internet to communicate with u.s. allies and gather and disseminate intelligence and counter - intelligence information .
+
+many defense and information technology experts predict that defense will increase its reliance on internet in the future .
+
+they believe that public messages originating within regions of conflict will provide early warnings of significant developments earlier than the more traditional indications and warnings obtained through normal intelligence gathering .
+
+they also envision the internet as a back - up communications medium if other conventional channels are disrupted during conflicts .
+
+though clearly beneficial , the internet also poses serious computer security concerns for defense and other government and commercial organizations .
+
+increasingly , attempted break - ins and intrusions into their systems are being detected .
+
+federal law enforcement agencies are likewise initiating more investigations of computer systems intrusions , based on the rising level of internet - related security breaches and crimes .
+
+similarly , security technologies and products are being developed and used to enhance internet security .
+
+however , as new security tools are developed , hackers quickly learn how to defeat them or exploit other vulnerabilities .
+
+a variety of weaknesses can leave computer systems vulnerable to attack .
+
+for example , they are vulnerable when ( 1 ) inexperienced or untrained users accidentally violate good security practices by inadvertently publicizing their passwords , ( 2 ) weak passwords are chosen which can be easily guessed , or ( 3 ) identified security weaknesses go uncorrected .
+
+malicious threats can be intentionally designed to unleash computer viruses , trigger future attacks , or install software programs that compromise or damage information and systems .
+
+attackers use a variety of methods to exploit numerous computer system vulnerabilities .
+
+according to defense , the three primary methods described below account for most of the successful attacks .
+
+sendmail is a common type of electronic mail used over the internet .
+
+an attacker can install malicious code in an electronic mail message and mail it to a networked machine .
+
+sendmail will scan the message and look for its address , but also execute the attacker's code .
+
+since sendmail is executing at the system's root level , it has all systems privileges and can , for example , enter a new password into the system's password file which gives the attacker total system privileges .
+
+password cracking and theft is a technique in which attackers try to guess or steal passwords to obtain access to computer systems .
+
+this technique has been automated by attackers ; rather than attackers trying to guess legitimate users' passwords , computers can very efficiently and systematically do the guessing .
+
+for example , if the password is a dictionary word , a computer can quickly look up all possibilities to find a match .
+
+complex passwords comprised of alphanumeric characters are more difficult to crack .
+
+however , even with complex passwords , powerful computers can use brute force to compare all possible combinations of characters until a match is found .
+
+of course , if attackers can create their own passwords in a system , as in the sendmail example above , they do not need to guess a legitimate one .
+
+packet sniffing is a technique in which attackers surreptitiously insert a software program at remote network switches or host computers .
+
+the program monitors information packets as they are sent through networks and sends a copy of the information retrieved to the hacker .
+
+by picking up the first 125 keystrokes of a connection , attackers can learn passwords and user identifications , which , in turn , they can use to break into systems .
+
+once they have gained access , attackers use the computer systems as though they were legitimate users .
+
+they steal information , both from the systems compromised as well as systems connected to them .
+
+attackers also deny service to authorized users , often by flooding the computer system with messages or processes generated to absorb system resources , leaving little available for authorized use .
+
+attackers have varied motives in penetrating systems .
+
+some are merely looking for amusement ; they break in to obtain interesting data , for the challenge of using someone else's computers , or to compete with other attackers .
+
+they are curious , but not actively malicious , though at times they inadvertently cause damage .
+
+others — known as computer vandals — are out to cause harm to particular organizations , and in doing so , attempt to ensure that their adversary knows about the attack .
+
+finally , some attackers are professional thieves and spies who aim to break in , copy data , and leave without damage .
+
+often , their attacks , because of the sophistication of the tools they use , go undetected .
+
+defense is an especially attractive target to this type of attacker , because , for example , it develops and works with advanced research data and other information interesting to foreign adversaries or commercial competitors .
+
+attackers use a variety of tools and techniques to identify and exploit system vulnerabilities and to collect information passing through networks , including valid passwords and user names for both local systems as well as remote systems that local users can access .
+
+as technology has advanced over the past two decades , so have the tools and techniques of those who attempt to break into systems .
+
+figure 1.2 shows how the technical knowledge required by an attacker decreases as the sophistication of the tools and techniques increases .
+
+some of the computer attack tools , such as satan , are now so user - friendly that very little computer experience or knowledge is required to launch automated attacks on systems .
+
+also , informal hacker groups , such as the 2600 club , the legions of doom , and phrackers inc. , openly share information on the internet about how to break into computer systems .
+
+this open sharing of information combined with the availability of user - friendly and powerful attack tools makes it relatively easy for anyone to learn how to attack systems or to refine their attack techniques .
+
+the ranking minority member , senate committee on governmental affairs ; the ranking minority member , permanent subcommittee on investigations , senate committee on governmental affairs ; and the chairman , subcommittee on national security , international affairs and criminal justice , house committee on government reform and oversight requested information on the extent to which defense computer systems are being attacked , the damage attackers have caused , and the potential for more damage .
+
+we were also asked to assess defense efforts to minimize intrusions into its computer systems .
+
+to achieve these objectives , we obtained documentation showing the number of recent attacks and results of tests conducted by defense personnel to penetrate its own computer systems .
+
+we obtained data on actual attacks to show which systems were attacked , and how and when the attack occurred .
+
+we also obtained information available on the extent of damage caused by the attack and determined if defense performed damage assessments .
+
+we obtained documentation that discusses the harm that outsiders have caused and can potentially cause to computer systems .
+
+we also assessed initiatives at defense designed to defend against computer systems attacks .
+
+we reviewed the department's information systems security policies to evaluate their effectiveness in helping to prevent and respond to attacks .
+
+we discussed with defense officials their efforts to provide information security awareness and training programs to defense personnel .
+
+we obtained information on technical products and services currently available and planned to protect workstations , systems , and networks .
+
+we also obtained and evaluated information on obstacles defense and others face in attempting to identify , apprehend , and prosecute those who attack computer systems .
+
+we interviewed officials and obtained documentation from the office of the assistant secretary of defense for command , control , communications , and intelligence , washington , d.c. ; defense information systems agency , center for information systems security , washington , d.c. ; army , navy , and air force headquarters offices , washington , d.c. ; national security agency , ft. meade , maryland ; air force information warfare center , kelly air force base , san antonio , navy fleet information warfare center , norfolk , virginia ; air force office of special investigations , bolling air force base , naval criminal investigative service , navy yard , washington , d.c. ; army criminal investigation command , ft. belvoir , virginia ; rome laboratory , rome , new york ; naval research laboratory , washington , d.c. ; army military traffic management command , falls church , virginia ; pentagon single agency manager , washington , d.c. ; wright - patterson air force base , dayton , ohio ; army intelligence and security command , ft. belvoir , virginia ; army 902d military intelligence group , ft. meade , maryland ; science applications international corporation , mclean , virginia ; and department of justice , washington , d.c. we also interviewed officials and obtained data from the computer emergency response team coordination center , software engineering institute , carnegie - mellon university , pittsburgh , pennsylvania .
+
+in response to computer security threats , defense established the coordination center in 1988 , to support users of the internet .
+
+the center works with the internet community to detect and resolve computer security incidents and to prevent future incidents .
+
+our review was conducted from september 1995 to april 1996 in accordance with generally accepted government auditing standards .
+
+we provided a draft of this report to the department of defense for comment .
+
+on may 15 , 1996 , we discussed the facts , conclusions , and recommendations with cognizant defense officials .
+
+their comments are presented and evaluated in chapter 4 and have been incorporated where appropriate .
+
+to operate more effectively in a technologically sophisticated world , defense is moving from a computing environment of stand - alone information systems that perform specific functions to a globally integrated information structure .
+
+in doing so , it has linked thousands of computers to the internet as well as other networks and increased its dependence on computer and network technology to carry out important military functions worldwide .
+
+as a result , some operations would now be crippled if ( 1 ) the supporting technology failed or ( 2 ) information was stolen or destroyed .
+
+for example: defense cannot locate or deliver supplies promptly without properly functioning inventory and logistics systems ; defense relies heavily on computer technology — especially a network of simulators that emulate complex battle situations — to train staff ; it is impossible to pay , assign , move , or track people without globally networked information systems ; defense cannot control costs , pay vendors , let or track contracts , allocate or release funds , or report on activities without automation ; and defense systems handle billions of dollars in financial transactions for pay , contract reimbursement , and economic commerce .
+
+defense systems are enticing targets for attackers for several reasons .
+
+attackers seeking financial gain may want to access financial systems to direct fraudulent payments , transfer money between accounts , submit fictitious claims , direct orders for unneeded products , or wipe out an entire organization's budget .
+
+companies doing business with defense may want to strengthen their competitive position by accessing systems that contain valuable information about billions of dollars worth of sophisticated research and development data and information on contracts and evaluation criteria .
+
+enemies may want to better position themselves against our military by stealing information on force locations and plans for military campaigns and use this data to locate , target , or misdirect forces .
+
+although no one knows the exact number , disa estimates show that defense may have experienced about 250,000 attacks last year , and that the number of attacks is increasing .
+
+establishing an exact count of attacks is difficult since some attackers take measures to avoid detection .
+
+in addition , the department does not detect or react to most attacks , according to disa , and does not report the majority of attacks it does detect .
+
+estimates of the number of computer attacks are based on disa's vulnerability analysis and assessment program .
+
+under this program , disa personnel attempt to penetrate computer systems at various military service and defense agency sites via the internet .
+
+since the program's inception in 1992 , disa has conducted 38,000 attacks on defense computer systems to test how well they were protected .
+
+disa successfully gained access 65 percent of the time ( see figure 2.1 ) .
+
+of these successful attacks , only 988 or about 4 percent were detected by the target organizations .
+
+of those detected , only 267 attacks or roughly 27 percent were reported to disa .
+
+therefore , only about 1 in 150 successful attacks drew an active defensive response from the organizations being tested .
+
+reasons for defense's poor detection rates are discussed in chapter 3 .
+
+the air force conducts similar vulnerability assessments .
+
+its data shows better success in detecting and reacting to attacks than disa's data .
+
+however , defense officials generally acknowledge that , because the air force's computer emergency response team resources are larger and more experienced , they have had better success in detecting and reacting to attacks than either the navy or army .
+
+disa also maintains data on officially reported attacks .
+
+defense installations reported 53 attacks in 1992 , 115 in 1993 , 255 in 1994 , and 559 in 1995 .
+
+figure 2.2 shows this historical data on the number of officially reported attacks and projections for future attack activity .
+
+according to defense officials , attacks on department computer systems have been costly and considerably damaging .
+
+attackers have stolen , modified , and destroyed both data and software .
+
+they have installed unwanted files and “back doors” which circumvent normal system protection and allow attackers unauthorized access in the future .
+
+they have shut down entire systems and networks , thereby denying service to users who depend on automated systems to help meet critical missions .
+
+numerous defense functions have been adversely affected , including weapons and supercomputer research , logistics , finance , procurement , personnel management , military health , and payroll .
+
+following are examples of attacks to date .
+
+the first attack we highlight , on rome laboratory , new york , was well - documented by defense and of particular concern to committees requesting this report because the attack shows how a small group of hackers can easily and quickly take control of defense networks .
+
+rome laboratory , new york , is air force's premier command and control research facility .
+
+the facility's research projects include artificial intelligence systems , radar guidance systems , and target detection and tracking systems .
+
+the laboratory works cooperatively with academic institutions , commercial research facilities , and defense contractors in conducting its research and relies heavily on the internet in doing so .
+
+during march and april 1994 , more than 150 internet intrusions were made on the laboratory by a british hacker and an unidentified hacker .
+
+the attackers used trojan horses and sniffers to access and control rome's operational network .
+
+as depicted in figure 2.3 , they also took measures to prevent a complete trace of their attack .
+
+instead of accessing rome laboratory computers directly , they weaved their way through various phone switches in south america , through commercial sites on the east and west coast , and then to the rome laboratory .
+
+the attackers were able to seize control of rome's support systems for several days and establish links to foreign internet sites .
+
+during this time , they copied and downloaded critical information such as air tasking ordersystems data .
+
+by masquerading as a trusted user at rome laboratory , they were also able to successfully attack systems at other government facilities , including the national aeronautics and space administration's ( nasa ) goddard space flight center , wright - patterson air force base , some defense contractors , and other private sector organizations .
+
+figure 2.3 illustrates the route the hackers took to get to the rome laboratory computers and the computer sites they successfully attacked from rome .
+
+because the air force did not know it was attacked for at least 3 days , vast damage to rome laboratory systems and the information in those systems could potentially have occurred .
+
+as stated in the air force report on the incident , “we have only the intruders to thank for the fact that no lasting damage occurred .
+
+had they decided , as a skilled attacker most certainly will , to bring down the network immediately after the initial intrusion , we would have been powerless to stop them.” however , the air force really does not know whether or not any lasting damage occurred .
+
+furthermore , because one of the attackers was never caught , investigators do not know what was done with the copied data .
+
+the air force information warfare center ( afiwc ) estimated that the attacks cost the government over $500,000 at the rome laboratory alone .
+
+their estimate included the time spent taking systems off the networks , verifying systems integrity , installing security patches , and restoring service , and costs incurred by the air force's office of special investigations and information warfare center .
+
+it also included estimates for time and money lost due to the laboratory's research staff not being able to use their computer systems .
+
+however , the air force did not include the cost of the damage at other facilities attacked from the rome laboratory or the value of the research data that was compromised , copied , and downloaded by the attacker .
+
+for example , rome laboratory officials said that over 3 years of research and $4 million were invested in the air tasking order research project compromised by the attackers , and that it would have cost that much to replace it if they had been unable to recover from damage caused by the attackers .
+
+similarly , rome laboratory officials told us that all of their research data is valuable but that they do not know how to estimate this value .
+
+there also may have been some national security risks associated with the rome incident .
+
+air force officials told us that at least one of the hackers may have been working for a foreign country interested in obtaining military research data or information on areas in which the air force was conducting advanced research .
+
+in addition , air force information warfare center officials told us that the hackers may have intended to install malicious code in software which could be activated years later , possibly jeopardizing a weapons system's ability to perform safely and as intended , and even threatening the lives of the soldiers or pilots operating the system .
+
+the u.s .
+
+naval academy's computer systems were penetrated by unknown attackers in december 1994 .
+
+the intrusions originated from great britain , finland , canada , the university of kansas , and the university of alabama .
+
+during the attack , 24 servers were accessed and sniffer programs were installed on 8 of these .
+
+a main router was compromised , and a system's name and address were changed , making the system inaccessible to authorized users .
+
+in addition , one system back - up file and files from four other systems were deleted .
+
+six other systems were corrupted , two encrypted password files were compromised , and over 12,000 passwords were changed .
+
+the navy did not determine how much the attack cost and navy investigators were unable to identify the attacker ( s ) .
+
+at a minimum , however , the attack caused considerable disruptions to the academy's ability to process and store sensitive information .
+
+between april 1990 and may 1991 , hackers from the netherlands penetrated computer systems at 34 defense sites .
+
+the hackers browsed directories and modified systems to obtain full privileges allowing them future access .
+
+they read e - mail , in some cases searching the messages for key words such as nuclear , weapons , missile , desert shield , and desert storm .
+
+in several instances , the hackers copied and stored military data on systems at major u.s. universities .
+
+after the attacks , the hackers modified systems logs to avoid detection and to remove traces of their activities .
+
+we testified on these attacks before the subcommittee on government information and regulation , senate committee on governmental affairs , on november 20 , 1991.in 1995 and 1996 , an attacker from argentina used the internet to access a u.s. university system , and from there broke into computer networks at the naval research laboratory , other defense installations , nasa , and los alamos national laboratory .
+
+the systems at these sites contained sensitive research information , such as aircraft design , radar technology , and satellite engineering , that is ultimately used in weapons and command and control systems .
+
+the navy could not determine what information was compromised and did not attempt to determine the cost of the incident .
+
+unknown person ( s ) accessed two unclassified computer systems at the army missile research laboratory , white sands missile range and installed a sniffer program .
+
+the intruder was detected entering the systems a second and third time , but the sniffer program was removed before the intruder could be identified .
+
+the missile range's computer systems contain sensitive data , including test results on the accuracy and reliability of sophisticated weaponry .
+
+as with the case above , the army could not determine what data was compromised .
+
+however , such data could prove very valuable to foreign adversaries .
+
+while these are specific examples , defense officials say they reflect the thousands of attacks experienced every year .
+
+although no one has attempted to determine the total cost of responding to these attacks , defense officials agreed the cost of these incidents is significant and probably totals tens or even hundreds of millions of dollars per year .
+
+such costs should include ( 1 ) detecting and reacting to attacks , repairing systems , and checking to ensure the integrity of information , ( 2 ) lost productivity due to computer shutdowns , ( 3 ) tracking , catching , and prosecuting attackers , and ( 4 ) the cost and value of information compromised .
+
+because so few incidents are actually detected and reported , no one knows the full extent of damage caused by computer attacks .
+
+however , according to many defense and private sector experts , the potential for catastrophic damage is great given ( 1 ) the known vulnerabilities of the department's command and control , military research , logistics , and other systems , ( 2 ) weaknesses in national information infrastructure systems , such as public networks which defense depends upon , and ( 3 ) the threat of terrorists or foreign nationals using sophisticated offensive information warfare techniques .
+
+they believe that attackers could disrupt military operations and threaten national security by successfully compromising defense information and systems or denying service from vital commercial communications backbones or power systems .
+
+the national security agency ( nsa ) has acknowledged that potential adversaries are developing a body of knowledge about the defense's and other u.s. systems , and about methods to attack these systems .
+
+according to nsa , these methods , which include sophisticated computer viruses and automated attack routines , allow adversaries to launch untraceable attacks from anywhere in the world .
+
+in some extreme scenarios , experts state that terrorists or other adversaries could seize control of defense information systems and seriously degrade the nation's ability to deploy and sustain military forces .
+
+the department of energy and nsa estimate that more than 120 countries have established computer attack capabilities .
+
+in addition , most countries are believed to be planning some degree of information warfare as part of their overall security strategy .
+
+at the request of the office of the secretary of defense for command , control , communications and intelligence , the rand corporationconducted exercises known as “the day after .
+
+ .
+
+.” between january and june 1995 to simulate an information warfare attack .
+
+senior members of the national security community and representatives from national security - related telecommunications and information systems industries participated in evaluating and responding to a hypothetical conflict between an adversary and the united states and its allies in the year 2000 .
+
+in the scenario , an adversary attacks computer systems throughout the united states and allied countries , causing accidents , crashing systems , blocking communications , and inciting panic .
+
+for example , in the scenario , automatic tellers at two of georgia's largest banks are attacked .
+
+the attacks create confusion and panic when the automatic tellers wrongfully add and debit thousands of dollars from customers' accounts .
+
+a freight train is misrouted when a logic bomb is inserted into a railroad computer system , causing a major accident involving a high speed passenger train in maryland .
+
+meanwhile , telephone service is sabotaged in washington , a major airplane crash is caused in great britain ; and cairo , egypt loses all power service .
+
+an all - out attack is launched on computers at most military installations , slowing down , disconnecting , or crashing the systems .
+
+weapons systems designed to pinpoint enemy tanks and troop formations begin to malfunction due to electronic infections .
+
+the exercises were designed to assess the plausibility of information warfare scenarios and help define key issues to be addressed in this area .
+
+the exercises highlighted some defining features of information warfare , including the fact that attack mechanisms and techniques can be acquired with relatively modest investment .
+
+the exercises also revealed that no adequate tactical warning system exists for distinguishing between information warfare attacks and accidents .
+
+perhaps most importantly , the study demonstrated that because the u.s. economy , society , and military rely increasingly on a high performance networked information infrastructure , this infrastructure presents a set of attractive strategic targets for opponents who possess information warfare capabilities .
+
+“there is mounting evidence that there is a threat that goes beyond hackers and criminal elements .
+
+this threat arises from terrorist groups or nation states , and is far more subtle and difficult to counter than the more unstructured but growing problem caused by hackers .
+
+the threat causes concern over the specter of military readiness problems caused by attacks on defense computer systems , but it goes well beyond the department .
+
+every aspect of modern life is tied to a computer system at some point , and most of these systems are relatively unprotected .
+
+this is especially so for those tied to the nii ( national information infrastructure ) .” the report added that a large structured attack with strategic intent against the united states could be prepared and exercised under the guise of unstructured activities and that such an attack could “cripple u.s. operational readiness and military effectiveness.” these studies demonstrate the growing potential threat to national security posed by computer attacks .
+
+information warfare will increasingly become an inexpensive but highly effective tactic for disrupting military operations .
+
+as discussed in chapter 3 , successfully protecting information and detecting and reacting to computer attacks presents defense and our nation with significant challenges .
+
+the task of precluding unauthorized users from compromising the confidentiality , integrity , or availability of information is increasingly difficult given the complexity of defense's information infrastructure , growth of and reliance on outside networks including the internet , and the increasing sophistication of the attackers and their tools .
+
+absolute protection of defense information is neither practical nor affordable .
+
+instead , defense must turn to risk management to ensure computer security .
+
+in doing so , however , it must make tradeoffs that consider the magnitude of the threat , the value and sensitivity of the information to be protected , and the cost of protecting it .
+
+in our review of key studies and security documents and discussions with defense security experts , certain core elements emerged as critical to effective information system security .
+
+a good computer security program begins with top management's understanding of the risks associated with networked computers , and a commitment that computer security will be given a high priority .
+
+at defense , management attention to computer security has been uneven .
+
+the defense information infrastructure has evolved into a set of individual computer systems and interconnected networks , many of which were developed without sufficient attention to the entire infrastructure .
+
+while some local area networks and defense installations have excellent security programs , others do not .
+
+however , the overall infrastructure is only as secure as the weakest link .
+
+therefore , all components of the defense infrastructure must be considered when making investment decisions .
+
+in addition , policies and procedures must also reflect this philosophy and guide implementation of the department's overall security program as well as the security plans for individual defense installations .
+
+the policies should set minimum standards and requirements for key security activities and clearly assign responsibility and accountability for ensuring that they are carried out .
+
+further , sufficient personnel , training , and resources must be provided to implement these policies .
+
+while not intended to be a comprehensive list , following are security activities that all of the security studies and experts agreed were important: ( 1 ) clear and consistent information security policies and procedures , ( 2 ) vulnerability assessments to identify security weaknesses at individual defense installations , ( 3 ) mandatory correction of identified network / system security weaknesses , ( 4 ) mandatory reporting of attacks to help better identify and communicate vulnerabilities and needed corrective actions , ( 5 ) damage assessments to reestablish the integrity of the information compromised by an attacker , ( 6 ) awareness training to ensure that computer users understand the security risks associated with networked computers and practice good security , ( 7 ) assurance that network managers and system administrators have sufficient time and training to do their jobs , ( 8 ) prudent use of firewalls , smart cards , and other technical solutions , and ( 9 ) an incident response capability to aggressively detect and react to attacks and track and prosecute attackers .
+
+“the vulnerability to .
+
+ .
+
+ .
+
+systems and networks is increasing .
+
+ .
+
+ .
+
+the ability of individuals to penetrate computer networks and deny , damage , or destroy data has been demonstrated on many occasions .
+
+ .
+
+ .
+
+as our warfighters become more and more dependent on our information systems , the potential for disaster is obvious.” in addition , as part of its federal managers' financial integrity actrequirements , the department identified information systems security as a system weakness in its fiscal year 1995 annual statement of assurance , a report documenting high - risk areas requiring management attention .
+
+in its statement , defense acknowledged a significant increase in attacks on its information systems and its dependence on these systems .
+
+also , defense has implemented a formal defensive information warfare program .
+
+this program was started in december 1992 through defense directive 3600.1 .
+
+the directive broadly states that measures will be taken as part of this program to “protect friendly information systems by preserving the availability , integrity , and confidentiality of the systems and the information contained within those systems.” disa , in cooperation with the military services and defense agencies , is responsible for implementing the program .
+
+the department's december 1995 defensive information warfare management plan defines a three - pronged approach to protect against , detect , and react to threats to the defense information infrastructure .
+
+the plan states that defense must monitor and detect intrusions or hostile actions as they occur , react quickly to isolate the systems under attack , correct the security breaches , restore service to authorized users , and improve security .
+
+disa has also taken a number of actions to implement its plan , the most significant being the establishment of its global control center at disa headquarters .
+
+the center provides the facilities , equipment , and personnel for directing the defensive information warfare program , including detecting and responding to computer attacks .
+
+disa has also established its automated systems security incident support team ( assist ) to provide a centrally coordinated around - the - clock defense response to attacks .
+
+disa also performs other services to help secure defense's information infrastructure , including conducting assessments of defense organizations' vulnerability to computer attacks .
+
+afiwc has developed a computer emergency response capability and performs functions similar to disa .
+
+the navy and army have just established similar capabilities through the fleet information warfare center ( fiwc ) and land information warfare activity ( liwa ) , respectively .
+
+defense is incorporating some of the elements we describe above as necessary for strengthening information systems security and countering computer attacks , but there are still areas where improvement is needed .
+
+even though the technology environment has changed dramatically in recent years , and the risk of attacks has increased , top management at many organizations do not consider computer security to be a priority .
+
+as a result , when resources are allocated , funding for important protective measures , such as training or the purchase of protection technology , take a back seat .
+
+as discussed in the remainder of this chapter , defense needs to establish a more comprehensive information systems security program .
+
+a program which ensures that sufficient resources are directed at protecting information systems .
+
+specifically , ( 1 ) defense's policies for protecting , detecting , and reacting to computer attacks are outdated and incomplete , ( 2 ) computer users are often unaware of system vulnerabilities and weak security practices , ( 3 ) system and network administrators are not adequately trained and do not have sufficient time to perform their duties , ( 4 ) technical solutions to security problems show promise , but these alone cannot guarantee protection , and ( 5 ) while defense's incident response capability is improving , it is not sufficient to handle the increasing threat .
+
+the military services and defense agencies have issued a number of information security policies , but they are dated , inconsistent , and incomplete .
+
+at least 45 separate defense policy documents address various computer and information security issues .
+
+the most significant defense policy documents include defense directive 3600.1 , discussed above , and defense directive 5200.28 , entitled security requirements for automated information systems , dated march 21 , 1988 , which provides mandatory minimum information systems security requirements .
+
+in addition , defense directive 8000.1 , entitled defense information management program , dated october 27 , 1992 , requires disa and the military services to provide technology and services to ensure the availability , reliability , maintainability , integrity , and security of defense information .
+
+however , these and other policies relating to computer attacks are outdated and inconsistent .
+
+they do not set standards , mandate specific actions , or clearly assign accountability for important security activities such as vulnerability assessments , internal reporting of attacks , correction of vulnerabilities , or damage assessments .
+
+shortcomings in defense's computer security policy have been reported previously .
+
+the joint security commission found similar problems in 1994 , and noted that defense's policies in this area were developed when computers were physically and electronically isolated .
+
+consequently , the commission reported that defense information security policies were not suitable for today's highly networked environment .
+
+the commission also found that defense policy was based on a philosophy of complete risk avoidance , rather than a more realistic and balanced approach of risk reduction .
+
+in addition , the commission found a profusion of policy formulation authorities within defense .
+
+this has led to policies being developed which create inefficiencies and implementation problems when organizations attempt to coordinate and interconnect their computer systems .
+
+defense policies do not specifically require the following important security activities .
+
+vulnerability assessments: disa established a vulnerability analysis and assessment program in 1992 to identify vulnerabilities in defense information systems .
+
+the air force and navy have similar programs , and the army plans to begin assessing its systems next year .
+
+under its program , disa attempts to penetrate selected defense information systems using various techniques , all of which are widely available on the internet .
+
+disa personnel attack vulnerabilities which have been widely publicized in their alerts to the military services and defense agencies .
+
+assessment is performed at the request of the targeted defense installation , and , upon completion , systems and security personnel are given a detailed briefing .
+
+typically , disa and the installation develop a plan to strengthen the site's defenses , more effectively detect intrusions , and determine whether systems administrators and security personnel are adequately experienced and trained .
+
+air force and navy on - line assessments are similar to disa vulnerability assessments .
+
+however , there is no specific defensewide policy requiring vulnerability assessments or criteria for prioritizing who should be targeted first .
+
+this has led to uneven application of this valuable risk assessment mechanism .
+
+some installations have been tested multiple times while others have never been tested .
+
+as of march 1996 , vulnerability assessments had been performed on less than 1 percent of the thousands of defense systems around the world .
+
+disa and the military services recognize this shortcoming , but state that they do not have sufficient resources to do more .
+
+this is a concern because vulnerabilities in one part of defense's information infrastructure make the entire infrastructure vulnerable .
+
+correction of vulnerabilities: defense does not have any policy requirement for correcting identified deficiencies and vulnerabilities .
+
+defense's computer emergency response teams — assist , afiwc , fiwc , and liwa — as well as the national computer emergency response team at the software engineering institute routinely identify and broadcast to defense network administrators system vulnerabilities and suggested fixes .
+
+however , the lack of specific requirements for correcting known vulnerabilities has led to no action or inconsistent action on the part of some defense organizations and installations .
+
+reporting attacks: the department also has no policy requiring internal reporting of attacks or guidance on how to respond to attacks .
+
+system and network administrators need to know when and to whom attacks should be reported and what response is appropriate for reacting to attacks and ensuring systems availability , confidentiality , and integrity .
+
+reporting attacks is important for defense to identify and understand the threat , i.e. , size , scale , and type of attack , as well as to measure the magnitude of the problem for appropriate corrective action and resource allocation .
+
+further , since a computer attack on federal facility is a crime , it should be reported .
+
+damage assessments: there is no policy for defense organizations to assess damage to their systems once an attack has been detected .
+
+as a result , these assessments are not usually done .
+
+for example , air force officials told us that the rome laboratory incident was the exception rather than the rule .
+
+they said that system and network administrators , due to lack of time and money , often simply “patch” their systems , restore service , and hope for the best .
+
+however , these assessments are essential to ensure the integrity of the data in those systems and to make sure that no malicious code was inserted that could cause severe problems later .
+
+the software engineering institute's computer emergency response team estimates that at least 80 percent of the security problems it addresses involve poorly chosen or poorly protected passwords by computer users .
+
+according to the institute , many computer users do not understand the technology they are using , the vulnerabilities in the network environment they are working in , and the responsibilities they have for protecting critical information .
+
+they also often do not understand the importance of knowing and implementing good security policies , procedures , and techniques .
+
+defense officials generally agreed that user awareness training was needed , but stated that installation commanders do not always understand computer security risk and , thus , do not always devote sufficient resources to the problem .
+
+the officials told us they are trying to overcome the lack of resources by low cost alternatives such as banners that warn individuals of their security responsibilities when they turn on their computers .
+
+in addition , network and system administrators often do not know what their responsibilities are for protecting their systems , and for detecting and reacting to intrusions .
+
+critical computer security responsibilities are often assigned to personnel as additional or ancillary duties .
+
+we interviewed 24 individuals responsible for managing and securing systems at four military installations .
+
+sixteen stated that they did not have enough time , experience , or training to do their jobs properly .
+
+in addition , eight stated that system administration was not their full - time job , but rather an ancillary duty .
+
+our findings were confirmed by an air force survey of system administrators .
+
+it found that 325 of 709 respondents were unaware of procedures for reporting vulnerabilities and incidents , 249 of 515 respondents had not received any network security training , and 377 of 706 respondents reported that their security responsibilities were ancillary duties .
+
+in addition , defense officials stated that it is not uncommon for installations to lack a full - time , trained , experienced information systems security officer .
+
+security officers generally develop and update the site's security plan , enforce security statutes and policy , aggregate and report all security incidents and changes in the site's security status , and evaluate security threats and vulnerabilities .
+
+they also coordinate computer security with physical and personnel security , develop back - up and contingency plans , manage access to all information systems with sound password and user identification procedures , ensure that audit trails of log - ins to systems are maintained and analyzed , and perform a host of other duties necessary to secure the location's computer systems .
+
+without a full - time security official , these important security activities are usually done in an ad hoc manner or not done at all .
+
+defense officials again cited the low priority installation commanders give security duties as the reason for the lack of full - time , trained , experienced security officers .
+
+defense has developed training courses and curricula which focus on the secure operation of computer systems and the need to protect information .
+
+for example , disa's center for information systems security offers courses on the vulnerability of networks and computer systems security .
+
+each of the military services also provides training in this area .
+
+while we did not assess the quality of the training , it is clear that not enough training is done .
+
+defense officials cite resource constraints as the reason for this limitation .
+
+to illustrate , in its august 1995 command and control protect program management plan , the army noted that it had approximately 4000 systems administrators , but few of these had received formal security training .
+
+the plan stated that the systems administrators have not been taught security basics such as how to detect and monitor an active intrusion , establish countermeasures , or respond to an intrusion .
+
+the plan added that a single course is being developed to train systems administrators , but that no funds are available to conduct the training .
+
+this again demonstrates the low priority top defense management officials often give security .
+
+“because of a lack of qualified personnel and a failure to provide adequate resources , many information systems security tasks are not performed adequately .
+
+too often critical security responsibilities are assigned as additional or ancillary duties.” the report added that the department lacks comprehensive , consistent training for information systems security officers , and that defense's current information systems security training efforts produce inconsistent training quality and , in some cases , a duplication of effort .
+
+the report concluded that , despite the importance of security awareness , training , and education programs , these programs tend to be frequent and ready targets for budget cuts .
+
+according to defense officials , installation commanders may not understand the risks associated with networked computers , and thus may not have devoted sufficient priority or resources to address these problems .
+
+these officials also cite the lack of a professional job series for information security officials as a contributing factor to poor security practices at defense installations .
+
+until systems security is supported by the personnel system — including potential for advancement , financial reward , and professional training — it will not be a full - time duty .
+
+as a result , security will continue to be the purview of part - time , inadequately trained personnel .
+
+as described below , defense and the private sector are developing a variety of technical solutions which should assist the department in preventing , detecting , and reacting to attacks on its computer systems .
+
+however , knowledgeable attackers with the right tools can defeat these technologies .
+
+therefore , these should not be an entity's sole means of defense .
+
+rather , they should be prudently used in conjunction with other security measures discussed in this chapter .
+
+investment in these technologies should also be based on a comprehensive assessment of the value and sensitivity of the information to be protected .
+
+one important technology is a smart card called fortezza .
+
+the card and its supporting equipment , including card readers and software , were developed by the nsa .
+
+the card is based on the personal computer memory card international association industry standard and is a credit card size electronic module which stores digital information that can be recognized by a network or system .
+
+the card will be used by defense and other government agencies to provide data encryption and authentication services .
+
+defense plans to use the card in its defense message systemand other systems around the world .
+
+another technology that defense is implementing is firewalls .
+
+firewalls are hardware and software components that protect one set of system resources from attack by outside network users by blocking and checking all incoming network traffic .
+
+firewalls permit authorized users to access and transmit privileged information and deny access to unauthorized users .
+
+several large commercial vendors have developed firewall applications which defense is using and tailoring for specific organizations' computing and communications needs and environments .
+
+like any technology , firewalls are not perfect ; hackers have successfully circumvented them in the past .
+
+they should not be an installation's sole means of defense , but should be used in conjunction with the other technical , physical , and administrative solutions discussed in this chapter .
+
+many other technologies exist and are being developed today which disa , nsa , and the military services are using and considering for future use .
+
+these include automated biometrics systems which examine an individual's physiological or behavioral traits and use that information to identify an individual .
+
+biometrics systems are available today , and are being refined for future applications , that examine fingerprints , retina patterns , voice patterns , signatures , and keystroke patterns .
+
+in addition , a technology in development called location - based authentication may help thwart attackers by pinpointing their location .
+
+this technology determines the actual geographic location of a user attempting to access a system .
+
+for example , if developed and implemented as planned , it could prevent a hacker in a foreign country , pretending to come from a military installation in the united states , from logging into a defense system .
+
+these technical products show promise in protecting defense systems and information from unauthorized users .
+
+however , they are expensive — firewalls can cost from $5,000 to $40,000 for each internet access point , and fortezza cards and related support could cost about $300 for each computer .
+
+they also require consistent and departmentwide implementation to be successful ; continued development to enhance their utility ; and usage by personnel who have the requisite skills and training to appropriately use them .
+
+once again , no single technical solution is foolproof and , thus , combinations of protective mechanisms should be used .
+
+decisions on which mechanisms to use should be based on an assessment of threat , the sensitivity of the information to be protected , and the cost of protection .
+
+because absolute security is not possible and some attacks will succeed , an aggressive incident response capability is a key element of a good security program .
+
+defense has several organizations whose primary mission is incident response , i.e .
+
+the ability to quickly detecting and reacting to computer attacks .
+
+these organizations — disa's center for information systems security , assist , and the military service teams — as discussed previously in this chapter provide network monitoring and incident response services to military installations .
+
+the afiwc , with its computer emergency response team and countermeasures engineering team , was established in 1993 and has considerably greater experience and capability than the other military services .
+
+recognizing the need for more incident response capability , the navy established the fiwc in 1995 , and the army established its liwa this year .
+
+however , these organizations are not all fully staffed and do not have the capability to respond to all reported incidents , much less the incidents not reported .
+
+for example , when the fiwc was established last year , 30 personnel slots were requested , but only 3 were granted .
+
+similarly , the liwa is just beginning to build its capability .
+
+rapid detection and reaction capabilities are essential to effective incident response .
+
+defense is installing devices at numerous military sites to automatically monitor attacks on its computer systems .
+
+for example , the air force has a project underway called automated security incident measurement ( asim ) which is designed to measure the level of unauthorized activity against its systems .
+
+under this project , several automated tools are used to examine network activity and detect and identify unusual network events , for example , internet addresses not normally expected to access defense computers .
+
+these tools have been installed at only 36 of the 108 air force installations around the world .
+
+selection of these installations was based on the sensitivity of the information , known system vulnerabilities , and past hacker activity .
+
+data from the asim is analyzed by personnel responsible for securing the installation's network .
+
+data is also centrally analyzed at the afiwc in san antonio , texas .
+
+air force officials at afiwc and at rome laboratory told us that asim has been extremely useful in detecting attacks on air force systems .
+
+they added , however , that as currently configured , asim information is only accumulated and automatically analyzed nightly .
+
+as a result , a delay occurs between the time an incident occurs and the time when asim provides information on the incident .
+
+they also stated that asim is currently configured for selected operating systems and , therefore , cannot detect activity on all air force computer systems .
+
+they added that they plan to continue refining the asim to broaden its use for other air force operating systems and enhance its ability to provide data on unauthorized activity more quickly .
+
+afiwc officials believe that a well - publicized detection and reaction capability can be a successful deterrent to would - be attackers .
+
+the army and navy are also developing similar devices , but they have been implemented in only a few locations .
+
+the army's system , known as automated intrusion monitoring system ( aims ) , has been in development since june 1995 , and is intended to provide both a local and theater - level monitoring of computer attacks .
+
+currently , aims is installed at the army's 5th signal command in worms , germany and will be used to monitor army computers scattered throughout europe .
+
+disa officials told us that although the services' automated detection devices are good tools , they need to be refined to allow defense to detect unauthorized activity as it is occurring .
+
+disa's defensive information warfare management plan provides information on new or improved technology and programs planned for the next 1 to 5 years .
+
+these efforts included a more powerful intrusion detection and monitoring program , a malicious code detection and eradication program , and a program for protecting defense's vast information infrastructure .
+
+these programs , if developed and implemented as planned , should enhance defense's ability to protect and react to attacks on its computer systems .
+
+networked computer systems offer tremendous potential for streamlining and improving the efficiency of defense operations .
+
+however , they also greatly increase the risks that information systems supporting critical defense functions will be attacked .
+
+the hundreds of thousands of attacks that defense has already experienced demonstrate that ( 1 ) significant damage can be incurred by attackers and ( 2 ) attacks pose serious risks to national security .
+
+they also show that top management attention at all levels and clearly assigned accountability are needed to ensure that computer systems are better protected .
+
+the need for such attention and accountability is supported by the joint security commission which considers the security of information systems and networks to be the major security challenge of this decade and possibly the next century .
+
+the commission itself believes there is insufficient awareness of the grave risks defense faces in this arena .
+
+we recognize that no organization can anticipate all potential vulnerabilities , and even if one could , it may not be cost - effective to implement every measure available to ensure protection .
+
+however , defense can take some basic steps to vastly improve its position against attackers .
+
+these steps include strengthening ( 1 ) computer security policies and procedures , ( 2 ) security training and staffing , and ( 3 ) detection and reaction programs .
+
+since the level of protection varies from installation - to - installation , the need for corrective measures should be assessed on a case - by - case basis by comparing the value and sensitivity of information with the cost of protecting it and by considering the entire infrastructure .
+
+to better focus management attention on the department's increasing computer security threat and to ensure that a higher priority and sufficient resources are devoted to addressing this problem , we recommend that at a minimum the secretary of defense strengthen the department's information systems security program by developing departmentwide policies for preventing , detecting , and responding to attacks on defense information systems , including mandating that ( 1 ) all security incidents be reported within the department , ( 2 ) risk assessments be performed routinely to determine vulnerability to attacks and intrusions , ( 3 ) vulnerabilities and deficiencies be expeditiously corrected as they are identified , and ( 4 ) damage from intrusions be expeditiously assessed to ensure the integrity of data and systems compromised ; requiring the military services and defense agencies to use training and other mechanisms to increase awareness and accountability among installation commanders and all personnel as to the security risks of computer systems connected to the internet and their responsibility for securing their systems ; requiring information system security officers at all installations and setting specific standards for ensuring that these as well as system and network managers are given sufficient time and training to perform their duties appropriately ; continually developing and cost - effectively using departmentwide network monitoring and protection technologies ; and evaluating the incident response capabilities within disa , the military services , and the defense agencies to ensure that they are sufficient to handle the projected threat .
+
+the secretary should also assign clear responsibility and accountability within the office of the secretary of defense , the military services , and defense agencies for ensuring the successful implementation of this computer security program .
+
+on may 15 , 1996 , we discussed a draft of this report with officials from the office of the secretary of defense , disa , army , navy , and air force who are responsible for information systems security .
+
+in general , these officials agreed with the report's findings , conclusions , and recommendations .
+
+they stated that the report fairly represents the increasing threat of internet attacks on the department's computers and networks and acknowledges the actions defense is taking to address that threat .
+
+in concurring with our conclusions and recommendations , defense officials acknowledged that with increased emphasis and additional resources , more could be done to better protect their systems from attack and to effectively detect and aggressively respond to attacks .
+
+they stressed that accountability throughout the department for implementing policy was as important as the policy itself and that cost - effective technology solutions should be encouraged , particularly in light of the increasing sophistication of the future threat .
+
+defense officials believe that a large part of the department's security problems result from poorly designed systems or the use of commercial off - the - shelf computer hardware and software products that have little or no inherent security .
+
+we agree that this is a serious problem .
+
+they also cited some of the more recent actions being taken to improve security , such as disa's information systems security implementation plan and the joint chiefs of staff instruction on defensive information warfare .
+
+these are positive steps that will help focus attention on the importance of information security .
+
+in this context , it is important that our recommendations be effectively implemented to ensure that sufficient management commitment , accountability , priority , and resources are devoted to addressing defense's serious information security problems .
+
+we have incorporated the department's comments and other points of clarification throughout the report where appropriate .
+

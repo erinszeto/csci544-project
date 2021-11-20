@@ -1,0 +1,1334 @@
+the nation's electric grid delivers the electricity that is essential for modern life .
+
+as a result , the reliability of the grid — its ability to meet consumers' electricity demand at all times — has been of long - standing national interest .
+
+the grid's reliability can be impaired by cyberattacks on the information technology ( it ) systems that support its operations .
+
+cybersecurity and industry experts have expressed concern that cyberattacks could result in widespread loss of electrical services — including long - duration , large - scale blackouts .
+
+the federal government has a significant role in addressing cybersecurity risks facing the grid , even though most of the grid is owned and operated by private industry .
+
+in 2013 , the president directed federal agencies to work with owners and operators of critical infrastructure and with state , local , tribal , and territorial governments to take proactive steps to manage risk and strengthen the security of critical infrastructure from all hazards , including cyberattacks .
+
+the department of energy ( doe ) was designated as the lead agency for federal efforts in the energy sector , which includes the grid .
+
+in addition , the energy policy act of 2005 designated the federal energy regulatory commission ( ferc ) as the regulator for the interstate transmission of electricity with responsibility for reviewing and approving standards to provide for the reliable operation of the bulk power system .
+
+the security of federal cyber assets has been on our high - risk list since 1997 , and we expanded this area to include the protection of critical cyber infrastructure , including the grid , in 2003 .
+
+in september 2018 , we issued an update to this high - risk area that identified actions needed to address cybersecurity challenges facing the nation — including the development of a more comprehensive national strategy and better oversight .
+
+we also have identified ensuring the cybersecurity of the nation as one of nine high - risk areas that need especially focused executive and congressional attention .
+
+you asked us to review the cybersecurity of the electric grid .
+
+our specific objectives were to ( 1 ) describe the cybersecurity risks and challenges facing the grid , ( 2 ) describe federal efforts to address grid cybersecurity risks , ( 3 ) assess the extent to which doe has defined a strategy for addressing grid cybersecurity risks and challenges , and ( 4 ) assess the extent to which ferc - approved cybersecurity standards address grid cybersecurity risks .
+
+to describe the cybersecurity risks and challenges facing the grid , we developed a list of cyber actors that could pose a threat to the grid , identified vulnerable components and processes that could be exploited , reviewed the potential impact of cyberattacks on the grid , and identified key cybersecurity challenges facing the grid .
+
+to develop the list of cyber threat actors , we reviewed our prior work on cyber - based threats facing the grid as well as the threats identified by the 2019 worldwide threat assessment of the u.s. intelligence community .
+
+we also interviewed officials and representatives from key federal and nonfederal entities — 20 federal entities ( eg , doe and its national laboratories , the department of homeland security , ferc ) , nine nonfederal entities ( eg , the north american electric reliability corporation ) , and five grid owners and operators — to confirm , add , or remove cyber threat actors identified in our prior work based on their potential impact on grid operations .
+
+to identify vulnerable components and processes , we reviewed reports produced by key federal and nonfederal entities related to grid vulnerabilities and met with these entities to understand the scale and complexity of these vulnerable components and processes .
+
+with respect to the potential impact of cyberattacks , we interviewed key federal entities and reviewed agency reports on grid incidents .
+
+we also reviewed federal studies assessing the potential for widespread power outages resulting from cyberattacks , and we met with federal officials to discuss the methodologies used to perform these studies .
+
+finally , to identify key cybersecurity challenges , we reviewed our prior reports on such challenges facing the grid , as well as federal and industry reports recommended by entities with whom we met .
+
+we also asked key federal and nonfederal entities , including grid owners and operators , to identify key challenges facing grid entities in addressing cybersecurity risks .
+
+to describe federal efforts to address grid cybersecurity risks , we reviewed federal strategies , plans , and reports and interviewed officials from federal and nonfederal entities to identify critical infrastructure protection and regulatory actions that federal agencies are taking to address grid cybersecurity .
+
+we categorized the critical infrastructure protection activities using the functions and categories in the national institute of standards and technology's ( nist ) framework for improving critical infrastructure cybersecurity ( commonly referred to as the nist cybersecurity framework ) .
+
+to assess the extent to which doe has defined a strategy for addressing grid cybersecurity risks and challenges , we analyzed the agency's efforts to develop approaches for implementing the federal cybersecurity strategy for the energy sector as it relates to the grid .
+
+specifically , we compared doe's grid cybersecurity plans and assessments against leading practices we identified in prior work on key characteristics for a national strategy .
+
+to assess the extent to which ferc - approved cybersecurity standards address grid cybersecurity risks , we compared those standards with the nist cybersecurity framework and reviewed the applicability of the standards for bulk power entities .
+
+we also interviewed ferc officials to obtain information about current and future cybersecurity standards and oversight processes .
+
+additional details on our objectives , scope , and methodology can be found in appendix i .
+
+we conducted this performance audit from january 2018 to august 2019 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+the u.s. electric grid comprises three distinct functions: generation and storage , transmission , and distribution ( see fig .
+
+1 ) .
+
+generation and storage .
+
+power plants generate electric power by converting energy from other forms — chemical , mechanical ( hydroelectric or wind ) , thermal , radiant energy ( solar ) , or nuclear — into electric power .
+
+energy storage , such as batteries or pumped hydroelectric , can improve the operating capabilities of the grid while also regulating the quality and reliability of power .
+
+transmission .
+
+the power transmission system connects geographically distant power plants with areas where electric power is consumed .
+
+substations are used to transmit electricity at varied voltages and generally contain a variety of equipment , including transformers , switches , relays , circuit breakers , and system operations instruments and controls .
+
+distribution .
+
+the distribution system carries electric power out of the transmission system to industrial , commercial , residential , and other consumers .
+
+three large electric grids , or interconnections , exist in the contiguous united states that collectively constitute the u.s. electric grid: the eastern interconnection , western interconnection , and electric reliability council of texas interconnection ( see fig .
+
+2 ) .
+
+these interconnections , which extend into parts of canada and mexico , operate independently with limited ability to move electric power between them ; electric power is produced within an interconnection to meet demand in the same interconnection .
+
+the grid is generally considered to be resilient .
+
+historically , grid operators have been able to respond quickly to the adverse consequences of an incident — whether it is damage from a major hurricane or a falling tree — and quickly restore service .
+
+in some cases , electricity may be restored long before utilities fully recover from an incident .
+
+for example , in instances with physical damage to grid components , such as an event that damages many substations , it could take months or years to fully restore the equipment .
+
+the electricity industry has refined its power restoration processes after decades of experience in responding to disaster - related events , but restoration from a cyber - related event may be more challenging .
+
+for example , disaster - related events — such as hurricanes — may involve significant lead time before the incident .
+
+this allows owners and operators to take preemptive measures to protect their systems , develop restoration plans , and activate personnel .
+
+in contrast , cyberattacks may occur without warning , leaving owners and operators no time to prepare for a response .
+
+in addition , cyberattacks could target and damage specific types of components or facilities across a dispersed geographic area .
+
+responding to such an attack could be more difficult than to a localized disaster - related event since resources may be geographically distributed rather than concentrated in the same area .
+
+industrial control systems are typically network - based systems that monitor and control sensitive processes and physical functions , such as the opening and closing of circuit breakers on the grid .
+
+these systems support the control of electric power generation , transmission , and distribution .
+
+system operators — which are sometimes affiliated with a particular utility or sometimes independent and responsible for multiple utility areas — manage electricity flows through these systems .
+
+early industrial control systems operated in isolation , running proprietary control protocols using specialized hardware and software .
+
+in addition , many industrial control system components were in physically secured areas , and the components were not connected to it systems or the internet .
+
+however , industrial control systems are changing in ways that offer advantages to system operators but that also make them more vulnerable to cyberattacks .
+
+in particular , proprietary devices in these systems are being replaced by cheaper and more widely available devices that use traditional it networking protocols — including those that support remote access .
+
+these newer devices can provide the system operator with more detailed data on the conditions of the transmission and distribution systems and with better tools to observe and manage the grid .
+
+remote access capabilities in the devices can also make them easier to maintain .
+
+further , industrial control systems are being designed and implemented using traditional it computers and operating systems , which allow corporate business and industrial control system networks to be connected more easily .
+
+nonetheless , cyberattacks on industrial control systems supporting grid operations may require a degree of sophistication and knowledge beyond what is needed to conduct cyberattacks on it systems .
+
+for example , industrial control systems often use operating systems and applications that may be considered unconventional to typical it personnel .
+
+federal policy and public - private plans establish roles and responsibilities for the protection of critical infrastructure , including the electric grid .
+
+presidential policy directive 21 , issued in february 2013 , shifted the nation's focus from protecting critical infrastructure against terrorism to protecting and securing critical infrastructure and increasing its resilience against all hazards , including natural disasters , terrorism , and cyber incidents .
+
+the directive identified 16 critical infrastructure sectors , such as the energy sector , which includes the grid .
+
+in addition , the directive identified energy and communications systems as uniquely critical because of the enabling functions they provide across all sectors .
+
+the directive also outlined roles and responsibilities for protecting these sectors .
+
+for example: the directive designated doe as the sector - specific agency for the energy sector .
+
+according to the directive , doe and other sector - specific agencies are responsible for , among other things , collaborating with critical infrastructure owners and operators , identifying vulnerabilities , and helping to mitigate incidents .
+
+in addition , the fixing america's surface transportation act of 2015 codified doe's role as the sector - specific agency for the energy sector and gave doe the authority to order emergency measures , following a presidential declaration of a grid security emergency , to protect or restore the reliability of critical electric infrastructure .
+
+the office of cybersecurity , energy security , and emergency response is the lead for doe's energy sector cybersecurity efforts .
+
+the directive called for dhs to coordinate the overall federal effort to promote the security and resilience of the nation's critical infrastructure .
+
+within dhs , the cybersecurity and infrastructure security agency's national cybersecurity and communications integration center is the lead for cyber and physical infrastructure security .
+
+private - sector critical infrastructure owners and operators are encouraged , but not required , to report cybersecurity incidents to the center .
+
+the directive emphasized that critical infrastructure owners and operators are uniquely positioned to manage risks to their individual operations and assets and to determine effective strategies to make them more secure and resilient .
+
+the national infrastructure protection plan , updated by dhs in december 2013 , among other things , further integrates critical infrastructure protection efforts between government and private sectors .
+
+it describes a voluntary partnership model as the primary means of coordinating government and private - sector efforts to protect critical infrastructure .
+
+as part of the partnership structure , the designated sector - specific agencies serve as the lead coordinators for the security programs of their respective sectors .
+
+the plan also called for each sector to have a government coordinating council , consisting of representatives from various levels of government , and many sectors have a coordinating council consisting of owner - operators of these critical assets or members of their respective trade associations .
+
+for example , the energy sector government coordinating council has been established ( comprising the electricity subsector , as well as the oil and natural gas subsectors ) , and an electricity subsector coordinating council has been established to represent electricity asset owners and operators .
+
+cybersecurity , issued in 2013 , among other things , addresses the need to improve cybersecurity through information sharing and collaboratively developing and implementing risk - based standards .
+
+it called for nist to lead the development of a framework to reduce cybersecurity risks to critical infrastructure .
+
+it also called for sector - specific agencies to develop mechanisms to encourage adoption of the framework .
+
+nist issued its cybersecurity framework in 2014 and updated it in april 2018 .
+
+the framework provides a set of cybersecurity activities , desired outcomes , and applicable references that are common across all critical infrastructure sectors , including the energy sector .
+
+the executive branch has taken steps toward outlining a federal strategy for confronting cyber threats — including those facing critical infrastructure such as the grid .
+
+for example: executive order 13800: strengthening the cybersecurity of federal networks and critical infrastructure , issued in may 2017 , required federal agencies to take a variety of actions aimed at improving the cybersecurity of federal networks and critical infrastructure .
+
+among other things , the order required doe and dhs to assess the potential scope and duration of a prolonged power outage associated with a significant cyber incident , the readiness of the united states to manage the consequences of such an incident , and any gaps or shortcomings in assets or capabilities required to mitigate the consequences of such an incident .
+
+the national cyber strategy , issued in september 2018 , builds upon executive order 13800 and describes actions that federal agencies and the administration are to take to , among other things , secure critical infrastructure .
+
+for example , one of the strategy's seven goals is protecting critical infrastructure .
+
+to achieve this goal , the strategy outlines a number of priority actions , such as prioritizing risk - reduction across seven key areas , including energy and power .
+
+the dhs cybersecurity strategy was released in may 2018 with the intent of providing the department with a framework to execute cybersecurity responsibilities during the next 5 years .
+
+the plan outlines seven goals the department plans to accomplish in support of its mission related to managing national cybersecurity risks .
+
+for example , for the goal of protecting critical infrastructure , the plan outlines a number of objectives and sub - objectives , such as expanding and improving the sharing of cyber threat indicators , defensive measures , and other cybersecurity information .
+
+in our 2018 and 2019 updates on government high - risk areas , we reported that these executive branch strategy documents did not include key elements of desirable characteristics that can enhance the usefulness of a national strategy as guidance for decision makers in allocating resources , defining policies , and helping to ensure accountability .
+
+federal and state authorities play key roles in regulating the reliability of the grid , which can be impaired by cybersecurity attacks .
+
+ferc is the federal regulator of interstate transmission of electricity with responsibility to review and approve standards to provide for the reliable operation of the bulk power system .
+
+in addition , ferc oversees nerc , which is the federally designated u.s. electric reliability organization .
+
+nerc is responsible for conducting reliability assessments and enforcing mandatory standards to ensure the reliability of the bulk power system — a term that refers to ( 1 ) facilities and control systems necessary for operating the electric transmission network and ( 2 ) the output from certain generation facilities needed for reliability .
+
+nerc develops reliability standards collaboratively through a deliberative process involving utilities and others in the electricity industry .
+
+nerc then sends the standards to ferc , which can either approve them or remand them to nerc for revision .
+
+these reliability standards include critical infrastructure protection standards for protecting electric utility - critical and cyber - critical assets from cyberattacks .
+
+ferc has approved 11 such cybersecurity standards , 10 of which are currently enforced .
+
+the standards call for organizations to classify their cyber systems as low - , medium - , or high - impact based on the adverse impact that loss , compromise , or misuse of those systems could have on the reliable operation of the bulk electric system .
+
+the classifications are made based on criteria and associated thresholds for , among others , generation resources and transmission substation operations .
+
+in turn , the standards apply differently to cyber systems based on whether they are classified as low - , medium - , or high - impact systems .
+
+for example: low - impact systems .
+
+systems that affect net aggregate generation capacity of less than 1,500 megawatts at one power plant location within a single interconnection are classified as low - impact systems and are subject to the requirements in two of the 11 cybersecurity standards .
+
+medium - impact systems .
+
+systems that similarly affect net aggregate generation capacity of at least 1,500 megawatts are classified as medium - impact systems and are subject to requirements in the full set of cybersecurity standards .
+
+high - impact systems .
+
+systems that are used by and located at certain control centers are classified as high - impact systems and are subject to the full set of cybersecurity standards .
+
+the standards generally require organizations to implement similar controls for medium - and high - impact systems , with more stringent variations of certain controls for high - impact systems .
+
+as of december 2017 , at most about 20 percent of the nation's generation capacity comes from power plants with medium - impact systems and therefore is subject to requirements in the full set of cybersecurity standards .
+
+both nerc and ferc have authority to enforce reliability standards .
+
+in addition , ferc has the authority to oversee nerc's enforcement of the ferc - approved reliability standards .
+
+cyber incident reporting is also an important part of federal and nonfederal regulatory efforts .
+
+federal law requires grid owners and operators to report bulk power system incidents to doe when certain criteria are met , such as a cyber event that causes interruptions of electrical system operations or that could potentially affect power system reliability .
+
+in addition , ferc - approved reliability standards require certain registered grid owners and operators to report cybersecurity incidents — that is , cybersecurity events that have compromised or disrupted one or more reliability tasks — to nerc .
+
+state regulators generally oversee the reliability of distribution systems , and cybersecurity regulations related to the distribution grid may vary across states .
+
+in 2017 , the national association of regulatory utility commissioners released an updated version of its cybersecurity primer for state utility regulators that aims to provide guidance to state regulators .
+
+the primer highlights the nist cybersecurity framework as well as the ferc - approved cybersecurity standards as helpful tools for utilities and state regulators .
+
+the u.s. electric grid faces significant cybersecurity risks — that is , threats , vulnerabilities , and impacts — and grid owners and operators face significant challenges in addressing these risks .
+
+threat actors are becoming increasingly capable of carrying out attacks on the grid .
+
+at the same time , the grid is becoming more vulnerable to attacks .
+
+with respect to the potential impacts of the threats and vulnerabilities , u.s. cybersecurity incidents reportedly have not caused a domestic power outage .
+
+in addition , federal agencies have performed three assessments of the potential impacts that cyberattacks could have on the grid , but the potential scale of any associated outages is uncertain due to limitations in the assessments .
+
+as grid owners and operators attempt to address cybersecurity risks , they face a number of challenges , such as difficulties in hiring a sufficient cybersecurity workforce and limited public - private information sharing .
+
+a variety of threat actors pose significant cybersecurity threats to the electric grid , and many of these threat actors are becoming increasingly adept at carrying out attacks on industrial control systems , such as those supporting grid operations .
+
+relatedly , the skill needed to attack industrial control systems is decreasing , as tools for exploiting industrial control system vulnerabilities become more available .
+
+according to the 2019 worldwide threat assessment of the u.s. intelligence community , nations , criminal groups , and terrorists pose the most significant cyber threats to u.s. critical infrastructure .
+
+in addition , hackers and hacktivists , as well as insiders , pose significant cyber threats to the grid , according to officials and representatives of key federal and nonfederal entities whom we interviewed .
+
+nations , including nation - state , state - sponsored , and state - sanctioned groups or programs , use cyber tools as part of their information - gathering and espionage activities .
+
+according to the 2019 worldwide threat assessment , china and russia pose the greatest cyberattack threats ; of particular concern , they possess the ability to launch cyberattacks that could cause localized , temporary disruptive effects on critical infrastructure .
+
+for example , the assessment states that china has the ability to disrupt a natural gas pipeline for days to weeks ( which could in turn disrupt grid operations ) , and russia has the ability to disrupt an electrical distribution network for at least a few hours .
+
+the assessment also states that russia is mapping u.s. critical infrastructure with the long - term goal of being able to cause substantial damage .
+
+separately , dhs and the federal bureau of investigation have described russian activities as an intrusion campaign by actors on u.s. government entities and critical infrastructure organizations .
+
+in addition , a nation - state has successfully demonstrated its capability to disrupt the grid of another country .
+
+specifically , according to the office of the director of national intelligence , in december 2015 a state - sponsored actor conducted a cyberattack on the ukrainian power grid that systematically disconnected substations , resulting in a power outage that lasted 3 hours .
+
+officials and representatives of key federal and nonfederal entities we interviewed identified nations as the most capable threat actor but also noted that nations may not take action to disrupt the u.s. grid .
+
+for example , representatives from two utilities stated that nation - state actors are of the most concern because they have the resources to persist in their operations .
+
+however , officials from los alamos national laboratory explained that nation - states may choose not to sponsor an attack because they could be easily identified .
+
+in addition , a representative from one of the utilities that we met with stated that nation - states may not pursue a cyberattack on the u.s. grid because they may be concerned about the potential response by the united states .
+
+federal officials we interviewed noted that nation - states may be interested in gathering information about u.s. critical infrastructure with the intent of conducting a cyberattack at a later date .
+
+criminal groups , including organized crime organizations , seek to use cyberattacks for monetary gain .
+
+according to the 2019 worldwide threat assessment , financially motivated cyber criminals will likely expand their targets in the united states in the next few years , and their actions could disrupt critical infrastructure in non - energy sectors .
+
+the intelligence community does not identify criminal groups as a threat specifically to the energy sector , but these groups could still have a large impact on the grid .
+
+for example , criminal organizations often use ransomware — malicious software used to deny access to it systems or data — to hold systems or data hostage until a ransom is paid .
+
+criminal groups have not used ransomware to target industrial control systems , but ransomware has been used to infect it systems tied to industrial control systems .
+
+for example , the center for internet security reported in march 2019 that the lockergoga ransomware disrupted industrial and manufacturing firms' networks , including a norwegian aluminum company , which had to temporarily move to manual production .
+
+according to dhs's industrial control systems computer emergency response team , ransomware continues to be a major threat to both it and industrial control systems that support the grid .
+
+in addition , officials and representatives of key federal and nonfederal entities we interviewed suggested that nations could hire criminal groups to achieve their objectives .
+
+for example , an official from the national renewable energy laboratory stated that criminal groups could be leveraged by other threat actors that have different incentives , such as nations focused on intelligence - gathering operations .
+
+terrorists seek to destroy , incapacitate , or exploit critical infrastructures in order to threaten national security , inflict mass casualties , weaken the economy , and damage public morale and confidence .
+
+terrorist groups may be highly motivated to disrupt or damage the grid , but they do not currently have the sophisticated tools or skill necessary to execute a cyberattack that could cause a widespread outage or significantly damage the power system , according to the 2019 worldwide threat assessment .
+
+however , terrorist groups could cause disruptive effects , such as defacing websites or executing denial - of - service attacks against poorly protected networks .
+
+hackers break into networks for a challenge , revenge , stalking , or monetary gain , among other reasons .
+
+by contrast , hacktivists are ideologically motivated and use cyber exploits to further political goals , such as free speech or to make a point .
+
+hackers and hacktivists no longer need a great amount of skill to compromise it systems because they can download commonly available attack tools .
+
+officials and representatives of key federal and nonfederal entities we interviewed told us that hackers and hacktivists may have less capability to do harm than the most significant threat actors identified by the intelligence community , but they still pose a threat to the grid .
+
+for example , officials from the national energy technology laboratory explained that while hacktivists generally are less capable than nations , their intent to inflict harm or to damage operations is typically more immediate than nations' longer - term goals .
+
+in addition , representatives from nonfederal entities stated that hacktivists may be capable of causing problems for electric utilities and systems supporting the delivery of power .
+
+insiders are entities ( eg , employees , contractors , vendors ) with authorized access to an information system or enterprise who have the potential to cause harm through destruction , disclosure , modification of data , or denial of service .
+
+such destruction can occur wittingly or unwittingly .
+
+for example , in 2009 , a disgruntled former it employee of a texas power plant allegedly disrupted the company's energy forecast system when the company failed to deactivate the employee's account access and confiscate his company - issued laptop after firing him two days earlier .
+
+by contrast , in another case in 2009 , contractors were reported to have unwittingly introduced malware on a uranium enrichment facility's workstations in iran .
+
+specifically , the attackers introduced malware on the contractor's business network .
+
+the malware then reportedly spread to universal serial bus ( usb ) devices that were used to transfer information between the contractors' business it network and the uranium enrichment facility's workstations .
+
+officials and representatives of key federal and nonfederal entities that we interviewed stated that while the threat posed by insiders varies , they could cause damaging effects .
+
+for example , sandia national laboratories officials explained that insiders could include knowledgeable employees with privileged access to critical systems or contractors with limited system knowledge .
+
+further , representatives from another nonfederal entity explained that insider threats are a concern because of the economically valuable information they could steal .
+
+the electric grid is becoming more vulnerable to cyberattacks via ( 1 ) industrial control systems , ( 2 ) consumer internet of things ( iot ) devices connected to the grid's distribution network , and ( 3 ) the global positioning system ( gps ) .
+
+as previously noted , cheaper and more widely available devices that use traditional it networking protocols are being integrated into industrial control systems .
+
+the use of these protocols , as well as traditional it computers and operating systems , has led to a larger cyberattack surface — the different points in a network where attackers can try to enter or extract information — for the grid's systems .
+
+in particular , many industrial control system devices include remote access capabilities , and industrial control systems are increasingly connected to corporate business networks .
+
+remote access capabilities .
+
+vendors are increasingly including remote access capabilities , including modems and wireless networking , as part of industrial control system devices .
+
+these capabilities are susceptible to exploitation by malicious actors .
+
+for example , malicious actors could scan a range of potential telephone numbers common to an area or published on a company website to find open modem connections to these devices ( referred to as “war dialing” ) .
+
+in addition , malicious actors could scan for unsecured wireless networks connected to industrial control system devices while in close proximity to the devices ( referred to as “war driving” ) .
+
+if implemented effectively , modern cybersecurity practices often protect against techniques used to remotely access industrial control system devices , and only allow trusted connections .
+
+however , to circumvent these practices , a malicious actor could , for example , compromise a vendor's network — which is often trusted by owners and operators — and use the trusted connection to remotely connect to industrial control system devices .
+
+connections to corporate business networks .
+
+industrial control systems , which were once largely isolated from the internet and business it systems , are increasingly connected in modern energy systems , allowing cyberattacks to originate in business it systems and migrate to industrial control systems .
+
+for example , malicious nation - state actors used spear phishing emails to deploy malware on business it networks in the 2015 attack on ukrainian electricity utilities .
+
+after gaining initial access to the business it networks , the attackers reportedly used a variety of techniques to migrate to the industrial control system networks of the utilities .
+
+moreover , even if industrial control systems are not physically connected to business it systems , malicious actors can exploit the use of removable media between the two networks .
+
+for example , as previously mentioned , contractors were reported to have unwittingly introduced malware on uranium enrichment facility workstations in iran by using usb devices that were infected with the malware on the contractors' business it network to transfer information to the uranium enrichment facility's workstations .
+
+figure 3 illustrates how malicious actors could leverage this increasing attack surface to compromise industrial control systems .
+
+compounding the risk associated with the increased attack surface , many legacy industrial control systems were not designed with cybersecurity protections because they were not intended to be connected to networks , such as the internet .
+
+for example , many legacy devices are not able to authenticate commands to ensure that they have been sent from a valid user and may not be capable of running modern encryption protocols .
+
+in addition , some legacy devices do not have the capability to log commands sent to the devices , making it more difficult to detect malicious activity .
+
+additionally , even in the case of more modern devices , the safety and efficiency goals of the grid and the supporting industrial control systems can conflict with the goal of security in the design and operation of industrial control systems .
+
+according to an idaho national laboratory analysis , grid owners and operators may not always be able to identify industrial control system vulnerabilities in a timely manner .
+
+vulnerability scanning is often used in it systems to validate proper system configuration and to identify any vulnerabilities that may be present .
+
+however , conventional it vulnerability scanning can disable or shut down energy delivery systems , and testing may not always detect vulnerabilities deep within industrial control system software .
+
+further , even if owners and operators are able to identify industrial control system cybersecurity vulnerabilities , they may not be able to address those vulnerabilities in a timely manner because certain industrial control system devices may have high availability requirements to support grid operations .
+
+these devices typically need to be taken offline to apply patches to fix cybersecurity vulnerabilities .
+
+in addition , grid owners and operators need to rigorously test the patches before applying them .
+
+security patches are typically tested by vendors , but they can degrade or alter the functionality of industrial control systems , which can have serious consequences for grid operations .
+
+consequently , there is increased risk that malicious actors may be able to exploit vulnerabilities in industrial control system devices before patches can be applied .
+
+according to dhs , the number of vulnerability advisories for industrial control systems devices has steadily increased , from 17 advisories in 2010 to 223 advisories in 2018 ( see fig .
+
+4 ) .
+
+moreover , supply chains for industrial control systems can introduce vulnerabilities that could be exploited for a cyberattack .
+
+for example , there is a potential for manufacturers and developers to — wittingly or unwittingly — include unauthorized code or malware in industrial control system devices and systems that provides a back door into the equipment or that allows the program to “call home” once installed .
+
+further , manufacturers and software developers create their products in many different locations around the world , thus making them potentially susceptible to foreign - based threats .
+
+for example , a capable nation - state could gather useful information on the types of equipment used at a particular utility with the intent to undermine security controls at a later time .
+
+in addition , manufacturers and developers have made sensitive information publicly available regarding the operation of their hardware and software .
+
+for example , manufacturers and developers have published vendor manuals , which include information such as default passwords and operating instructions .
+
+these manuals often appear on the internet and can aid malicious actors in conducting cyberattacks on industrial control systems .
+
+researchers and federal agencies have recently identified concerns about the potential introduction of cyber vulnerabilities to the grid through the connection of consumer iot devices to the grid's distribution network .
+
+for example , university researchers in 2018 used large , real - world grid models to simulate the feasibility and impact on the grid of a coordinated cyberattack on smart home appliances .
+
+specifically , the researchers found that malicious threat actors could compromise a large number of high - wattage iot devices ( eg , air conditioners and heaters ) and turn them into a botnet — a network of devices infected with malicious software and controlled as a group without the owners' knowledge .
+
+the malicious actors could then use the botnet to launch a coordinated attack aimed at manipulating the demand across distribution grids .
+
+for example , according to the researchers , one such attack could involve synchronously switching on all of the compromised devices .
+
+such an attack could disrupt the balance of power generation and consumption and ultimately cause an outage .
+
+an official from the national renewable energy laboratory explained that the likelihood of attacks on the distribution network using iot devices is low but could increase in the future .
+
+in particular , the official explained that the wattage needed to create a significant disruption in the balance of supply and demand would require a botnet of tens of thousands of smart appliances .
+
+botnets of this size have been created , but the laboratory official explained that it would be very difficult to manipulate all of those devices to turn on at precisely the same time .
+
+however , the official cautioned that such an attack could become more plausible in the future as additional high - wattage systems and devices , such as building energy management systems and electric vehicles , are connected to the internet .
+
+the grid is dependent on gps timing to monitor and control generation , transmission , and distribution functions .
+
+according to doe , the gps signal is susceptible to exploitation by malicious actors .
+
+for example , a malicious actor could inject a counterfeit gps signal ( known as gps spoofing ) that could result in disruptions to grid operations .
+
+according to the three entities responsible for collecting information on cybersecurity incidents that affect the electric grid — dhs , doe , and nerc — none of the cybersecurity incidents reported in the united states have disrupted the reliability or availability of the grid , and none have resulted in a power outage .
+
+even though cyber incidents involving the grid reportedly have not caused power outages in the united states , cyberattacks on foreign industrial control systems have resulted in power outages .
+
+for example , in december 2015 , malicious actors linked by ukrainian officials to the russian government conducted cyberattacks on three ukrainian power distribution operators , resulting in a loss of power for about 225,000 customers .
+
+gao did not find evidence that these attacks physically damaged grid components , but cyberattacks on industrial control systems in other sectors demonstrates that this is possible .
+
+for example , in 2014 , malicious cyber actors compromised industrial control systems and caused failures that led to massive damage to a blast furnace at a german steel mill .
+
+further , federal agencies have performed three assessments of the potential impacts of cyberattacks on the industrial control systems supporting the grid .
+
+specifically , doe and ferc have conducted three assessments of the potential impact of cyberattacks on the grid at the scale of multiple system operators through the scale of an interconnection .
+
+the two doe assessments — which according to doe officials are early drafts and have not gone through intra - agency review — focused on the impact of a cyberattack within a single interconnection and produced varying reports of the potential scale of power outages that could result from a cyberattack .
+
+the remaining assessment — which ferc conducted in 2013 — reviewed the impact of a cyber or physical attack on all three interconnections and concluded that an attack could result in a widespread blackout spanning the contiguous united states .
+
+table 1 below describes the three assessments .
+
+however , because of limitations in the three federal assessments , the scale of any power outages that may result from a cyberattack is uncertain .
+
+in particular: federal agencies have conducted one study — ferc's 2013 study — that assesses the potential impact of a coordinated attack in each of the three interconnections .
+
+however , in 2015 , doe officials raised concerns about the scenario and related assumptions used in that study that called into question the findings .
+
+specifically , at that time , doe officials reported that they found several of the scenario's assumptions highly unlikely , including peak capabilities at all targeted generation stations at the time of an attack and the loss of all safety systems designed to prevent the consequences described in the analysis .
+
+further , doe officials reported that they found the study's scenarios even more unlikely to result in a total loss of power or any other consequence that could be reasonably expected to result in damage to national security .
+
+the 2017 assessment conducted by doe's argonne national laboratory was limited in scope to a six - state region .
+
+in addition , the assessment focused on a single cyberattack scenario and noted that many other grid cyberattack methods and outcomes were possible .
+
+the 2017 , 2018 , and 2019 editions of doe's draft electricity subsector risk characterization study have significant methodological limitations .
+
+specifically , officials from lawrence livermore national laboratory who were contracted to perform the analyses cautioned that they used a reduced model of the western interconnection as it existed around 1980 and emphasized that their methodology should not be used to predict the behavior of the actual bulk power system .
+
+for example , those researchers told us that their selected model of the western interconnection had less than a quarter of its actual capacity in 2018 .
+
+the doe official responsible for the studies said that the assumption for the worst - case scenario was from that official's professional judgement , not a documented analysis .
+
+later , officials at sandia national laboratories told us that the worst - case scenario in the doe draft study was a point solution used as a proof of concept , that the study was not of a high level of rigor , and that the assumptions may not represent a vulnerability in the actual bulk power system .
+
+further , the doe methodology assumed that all assets removed from service were treated equally ; accordingly , the researchers did not distinguish the loss of specific assets ( such as a substation or transmission line ) in the calculation of attack difficulty and likelihood .
+
+because of these limitations , some of the draft studies' conclusions may not be realistic .
+
+for example , one of doe's major conclusions in the 2017 risk characterization study — that a cyberattack may result in a relatively small loss of load in the united states about 8 times per year — may not be plausible because there have not been any reported cyberattacks that have caused an outage in the united states .
+
+in addition , the three draft doe studies have widely varying conclusions on the likelihood of cyberattacks across the selected range of loss of load .
+
+for example , the 2018 draft study concluded that a cyberattack resulting in a more substantial loss of load had an average likelihood of occurring nearly once every 10 years , while the 2019 draft study concluded that such an attack would occur about once every 100 years .
+
+according to a doe official , there is no documentation of the technical basis for the significant changes in the assessment outcomes between the 2017 and 2018 draft studies and between the 2018 and 2019 draft studies .
+
+in addition , doe officials told us that all three studies are early drafts and have not gone through intra - agency review .
+
+moreover , none of the federal assessments reviewed the risk associated with a cyberattack involving a botnet of high - wattage consumer iot devices .
+
+as previously mentioned , university researchers demonstrated that malicious actors could use a botnet of iot devices to launch a coordinated attack aimed at manipulating the demand on distribution systems across the grid .
+
+a federal official we interviewed agreed that such an attack could occur and could disrupt grid distribution systems — especially as additional high - wattage systems become connected to the internet — but they said it is unclear what impact , if any , such attacks could have on the reliability of the bulk power system .
+
+officials and representatives of key federal and nonfederal entities we interviewed generally identified five significant challenges grid owners and operators face in addressing cybersecurity risks: ( 1 ) difficulties in hiring a sufficient cybersecurity workforce , ( 2 ) limited public - private information sharing of classified information , ( 3 ) limited resources to invest in cybersecurity protections , ( 4 ) reliance on other critical infrastructure that may be vulnerable to cyberattacks , and ( 5 ) uncertainties about how to implement cybersecurity standards and guidance .
+
+officials and representatives of key federal and nonfederal entities we interviewed identified difficulties in hiring a sufficient cybersecurity workforce as a significant challenge to addressing cybersecurity risks to the grid .
+
+for example , a representative of a nonfederal entity told us that there are a limited number of trained cybersecurity personnel interested in working in the energy sector .
+
+the representative added that there are a large number of vacancies for cybersecurity positions and that they are difficult to fill due to the limited amount of available talent and organizational resource constraints , such as providing salaries that are competitive with other sectors .
+
+a laboratory official commented that larger grid entities are able to attract the majority of skilled cybersecurity professionals , leaving smaller entities with less skilled personnel .
+
+further , an asset owner explained that training personnel so that they have sufficient cybersecurity knowledge and skills is difficult , and the requisite knowledge of industrial control systems further complicates training these personnel .
+
+doe has also identified difficulties in hiring a sufficient cybersecurity workforce as a challenge .
+
+specifically , according to doe's assessment of electricity disruption incident response capabilities , the electricity subsector continues to face challenges in recruiting and maintaining experts with strong knowledge of cybersecurity practices as well as knowledge of industrial control systems supporting the grid .
+
+officials and representatives of key federal and nonfederal entities we interviewed identified limited public - private sharing of classified information , including the sharing of threat intelligence , as a significant challenge to addressing cybersecurity risks to the grid .
+
+for example , a laboratory official told us that many grid owners and operators do not have security clearances .
+
+consequently , the official explained , deeming information on certain cybersecurity threats to the grid to be “classified” leaves many utilities without the awareness to address those threats to the grid .
+
+the official added that when details are removed from classified threat intelligence in order to develop an unclassified alert , that alert often lacks the specific information utilities need to address the threat .
+
+asset owners told us that , even for those grid owners and operators who are permitted to initiate the clearance process , it can take an extended period of time to complete the associated adjudication to obtain that clearance .
+
+in addition , two asset owners noted that , even after clearances have been received and fully adjudicated , it is often difficult to obtain access to secure locations to review classified information .
+
+doe has also identified limited public - private information sharing as a challenge .
+
+specifically , according to doe's assessment of electricity disruption incident response capabilities , the bidirectional flow of information and intelligence between industry and government has been highlighted by stakeholders as a continued challenge for the electricity subsector .
+
+the assessment explains that the sharing of information is impeded by the slow adoption of automated capabilities and the difficultly of sharing classified information between government and industry — particularly in real time during an incident .
+
+officials and representatives of key federal and nonfederal entities identified limited resources for cybersecurity protections as a challenge to addressing cybersecurity risks to the grid .
+
+in particular , most of the asset owners that we met with stated that it can be costly to implement required cybersecurity protections .
+
+in addition , officials and representatives of key federal and nonfederal entities that we spoke with explained that costs — including those for cybersecurity protections — must be recovered through electric rates to customers .
+
+as a result , a laboratory official explained that many utilities prioritize cybersecurity protections that are the most cost - effective over protections that may be needed to address risks .
+
+officials and representatives of key federal nonfederal entities we interviewed identified the grid's reliance on other critical infrastructure ( eg , natural gas pipelines ) that may be vulnerable to cyberattacks as a challenge to addressing cybersecurity risks to the grid .
+
+for example , a representative of a nonfederal entity stated that the electricity subsector inherits cybersecurity risks from other critical infrastructures , since the electricity subsector relies on those critical infrastructures for its own operations .
+
+as such , that representative added that it is difficult to holistically determine how vulnerable the grid may be to a cyberattack .
+
+in addition , as previously mentioned , according to the 2019 worldwide threat assessment , china has the ability to disrupt a natural gas pipeline for days to weeks .
+
+officials and representatives of key federal and nonfederal entities we interviewed identified uncertainties about how to implement cybersecurity standards and guidance as a challenge to addressing cybersecurity risks to the grid .
+
+in particular , several representatives noted that these uncertainties have led their organizations to devote additional resources to implementing the standards and guidance .
+
+for example , one asset owner explained that ferc - approved cybersecurity standards do not always include details that are needed to understand how they apply to that owner's environment .
+
+in addition , another asset owner stated that significant time and effort is required to understand the standards and how they might be implemented .
+
+doe , dhs , and other federal agencies have performed a variety of critical infrastructure protection activities aimed at addressing grid cybersecurity risks , including implementing programs that help protect grid systems from cybersecurity threats and vulnerabilities .
+
+in addition , ferc has performed a variety of regulatory activities aimed at addressing grid cybersecurity risks , such as approving mandatory cybersecurity standards for the bulk power system .
+
+doe , dhs , and other federal agencies have performed a variety of critical infrastructure protection activities aimed at addressing grid cybersecurity risks .
+
+these activities generally align with the functions in the nist cybersecurity framework , which include ( 1 ) protecting systems to mitigate cybersecurity threats and vulnerabilities ; ( 2 ) identifying cybersecurity threats and vulnerabilities and detecting potential cybersecurity incidents ; and ( 3 ) responding to and recovering from such incidents .
+
+protecting systems to mitigate cybersecurity threats and vulnerabilities federal agencies assist grid asset owners and operators in implementing protections that mitigate cybersecurity risks by providing capabilities aimed at preventing cybersecurity intrusions and offering training and guidance on cybersecurity practices .
+
+for example , dhs's enhanced cybersecurity services program provides intrusion - prevention capabilities to u.s. - based entities and to state , local , tribal , and territorial organizations .
+
+to carry out this voluntary program , dhs provides classified and unclassified threat information to designated commercial service providers .
+
+these providers use the information to block access to ( 1 ) specific malicious internet addresses and ( 2 ) email with specific malicious criteria .
+
+nist , dhs , and doe also provide cybersecurity training and guidance .
+
+for example , nist has developed numerous special publications on cybersecurity protections for it and industrial control systems , such as the previously mentioned cybersecurity framework and its guide to industrial control systems .
+
+in addition , dhs provides in - person and online training on leading cybersecurity practices for industrial control systems through its national cybersecurity and communications integration center .
+
+lastly , dhs has taken initial steps to help grid entities manage supply chain cybersecurity risks .
+
+for example , in july 2018 dhs created a public - private partnership , known as the supply chain risk management task force .
+
+the task force aims to examine risks to the global information and communications technology supply chain and develop consensus recommendations to manage such risks .
+
+identifying cybersecurity threats and vulnerabilities and detecting potential cybersecurity incidents federal agencies help grid entities identify cybersecurity risks and detect incidents by providing threat and vulnerability information , performing risk assessments , performing forensic analysis , and conducting research .
+
+for example , doe piloted and launched the cybersecurity risk information sharing program , which is now managed by the electricity information sharing and analysis center .
+
+it provides a voluntary , bi - directional public - private it data sharing and analysis platform .
+
+using both classified and unclassified sources , doe's pacific northwest national laboratory analyzes the information to ( 1 ) identify threat patterns and attack indicators , and ( 2 ) deliver alerts to owners and operators .
+
+in addition , dhs's automated indicator sharing program provides a server housed at each participant's location that can be used to exchange threat indicators with the department's national cybersecurity and communications integration center .
+
+further , the center provides asset owners with alerts , advisories , and situational reports , including information on threats , vulnerabilities , or activity that could affect it or industrial control system networks .
+
+doe and dhs also offer services aimed at helping grid owners and operators assess cybersecurity risks and perform forensic analysis .
+
+for example , doe has an evaluation tool known as the electricity cybersecurity capability maturity model that aims to help the electricity industry evaluate , prioritize , and improve its cybersecurity capabilities .
+
+in addition , dhs offers technical assessments through its national cybersecurity and assessment and technical services team that can help identify vulnerabilities and simulate a malicious adversary .
+
+further , dhs can review potential cybersecurity incident artifacts , such as malware , phishing emails , and network logs , at its national cybersecurity and communications integration center to determine the existence or extent of a cybersecurity threat or incident .
+
+moreover , doe's cybersecurity for energy delivery systems program sponsors grid cybersecurity research through doe's national laboratories .
+
+for example: oak ridge national laboratory has conducted research on mechanisms that could help critical infrastructure entities better detect vulnerabilities in software used in industrial control systems .
+
+four national laboratories have engaged in a project that aims to improve the capability of grid entities to collect and analyze data from their industrial control system networks and detect cybersecurity incidents .
+
+oak ridge national laboratory and pacific northwest national laboratory have a joint project to develop mechanisms for more quickly detecting and eradicating malware on industrial control systems .
+
+responding to and recovering from cybersecurity incidents federal agencies have developed policies , strategies , and plans to define their roles and responsibilities for responding to and recovering from grid cybersecurity incidents .
+
+in particular , dhs has responsibility for leading the federal effort to mitigate or lessen the impact of such incidents , the department of justice has responsibility for the federal law enforcement response to the threats , and doe has authority , in designated emergencies , to impose measures to restore the reliability of critical electric infrastructure .
+
+doe is also responsible for coordinating the energy sector - specific response with dhs and the department of justice .
+
+federal agencies have also taken steps to help prepare asset owners for cyber response and recovery efforts .
+
+for instance , dhs has worked with nonfederal entities to simulate response and recovery efforts to a cyberattack through exercises such as cyber storm .
+
+in addition , doe , in conjunction with the national association of state energy officials , has conducted regional energy assurance exercises .
+
+these exercises aim to promote state and local preparedness and resilience for future energy emergencies stemming from a cyber incident .
+
+ferc has performed a variety of regulatory activities aimed at addressing grid cybersecurity risks .
+
+these activities include ( 1 ) approving mandatory cybersecurity standards for the bulk power system , ( 2 ) enforcing regulatory requirements through imposition of civil penalties , ( 3 ) auditing the performance of the electric reliability organization — nerc — and its regional entities , and ( 4 ) auditing bulk power entities for compliance with the mandatory cybersecurity standards .
+
+approve mandatory cybersecurity standards .
+
+ferc has approved mandatory reliability standards relating to cybersecurity protections .
+
+for example , in october 2018 , ferc approved a new standard to bolster supply chain risk management protections for the nation's bulk electric system .
+
+this new standard , which will become enforceable in july 2020 , is intended to augment existing standards that aim to mitigate cybersecurity risks associated with the supply chain for grid - related cyber systems .
+
+enforce regulatory requirements through imposition of civil penalties .
+
+ferc has referred violations of its approved cybersecurity standards to nerc to impose penalties on the bulk power entities that committed the violations .
+
+for example , such a notification occurred in january 2019 when nerc assessed a $10 million penalty based on 127 violations of the cybersecurity standards made by an undisclosed entity .
+
+audit the performance of the electric reliability organization .
+
+ferc has audited nerc's performance as the electric reliability organization .
+
+in this audit , which it completed in 2012 , ferc evaluated nerc's budget formulation , administration , and execution .
+
+with respect to cybersecurity , ferc recommended that nerc ( 1 ) assess its existing staffing levels to ensure adequate resources to accomplish critical infrastructure protection work related to cybersecurity and ( 2 ) devote greater resources to carrying out its oversight duties .
+
+in 2013 , ferc closed these recommendations after reviewing nerc's plans for evaluating its staffing levels and its commitment to add resources in its business plan .
+
+according to ferc officials , ferc continues to monitor the level of resources nerc devotes to cybersecurity oversight through its annual review of nerc's budget audit bulk power entities for compliance with standards .
+
+ferc has audited bulk power entities' compliance with its approved cybersecurity standards .
+
+from 2016 through 2018 , ferc conducted its own independent audits of eight bulk power entities for compliance with those standards and produced public lessons learned reports based on the results .
+
+according to ferc officials , the agency plans to conduct four such audits every fiscal year starting in fiscal year 2019 and to continue producing annual lessons learned reports based on the results .
+
+in addition , since the first of the cybersecurity standards became enforceable in 2009 , ferc has observed eight nerc regional entity - led audits a year — one in each nerc region — focused on bulk power entity compliance with those standards .
+
+national strategies are critical tools used to help address longstanding and emerging issues that affect national security and economic stability .
+
+in 2004 , we identified a set of desirable characteristics for effective national strategies .
+
+these characteristics include: purpose , scope , and methodology .
+
+addresses why the strategy was produced , the scope of its coverage , and the process by which it was developed .
+
+problem definition and risk assessment .
+
+addresses the particular national problems , assesses the risks to critical assets and operations — including the threats to , and vulnerabilities of , critical operations — and discusses the quality of data available regarding the risk assessment .
+
+goals , subordinate objectives , activities , and performance measures .
+
+addresses what the strategy is trying to achieve ; steps to achieve those results ; and the priorities , milestones , and performance measures that include measurable targets to gauge results and help ensure accountability .
+
+discussion of needed resources and investments .
+
+addresses what the strategy will cost and the types of resources and investments needed .
+
+organizational roles , responsibilities , and coordination .
+
+addresses who will implement the strategy , what their roles will be , and mechanisms to coordinate their efforts .
+
+as previously noted , the executive branch has taken steps toward outlining a federal strategy for confronting cyber threats — including threats to critical infrastructure such as the grid .
+
+in addition , as the sector - specific agency , doe has led the development of approaches to implement the federal cybersecurity strategy for the energy sector , including the grid .
+
+table 2 identifies and describes these approaches — specifically , two agency plans and an assessment — for addressing grid cybersecurity risks and challenges .
+
+the two plans and the assessment do not fully address all of the key characteristics needed for a national strategy .
+
+collectively , the plans and assessment fully address one characteristic — purpose , scope , and methodology — and partially address the other four characteristics of a national strategy ( see table 3 ) .
+
+purpose , scope , and methodology the plans and assessment fully address the characteristic of outlining their purpose , scope , and methodology .
+
+for example , the energy sector - specific plan explains that it was produced to help integrate and guide the sector's continuing effort to improve the security and resilience of critical infrastructure .
+
+in addition , the plan explains that doe worked closely with the energy sector coordinating council and the energy sector government coordinating council , among others , to develop the plan .
+
+problem definition and risk assessment the plans and the assessment partially address the characteristic of defining the problem and performing a risk assessment .
+
+each defines the problems that it was intended to address and assesses cybersecurity risks to the grid .
+
+for example , doe's assessment of electricity disruption incident response capabilities states that it was developed in response to executive order 13800's requirement that doe examine the potential scope and duration of a prolonged power outage associated with a significant cyber incident .
+
+in addition , as previously mentioned , the assessment describes the potential range of load loss resulting from four cyberattack scenarios .
+
+however , the discussion of the quality of data available regarding doe's assessment is inaccurate .
+
+according to the assessment , the potential range of load loss resulting from four cyberattack scenarios was based on rigorous modeling and analysis from multiple doe national laboratory experts .
+
+however , these results were based on the 2017 electricity subsector risk characterization study , which as previously described , has significant limitations affecting the quality of data .
+
+in addition , neither the plans nor the assessment fully analyzed the cybersecurity risks and challenges to the grid .
+
+in particular , none of them analyzed the threat of , and vulnerabilities to , a cyberattack spanning all three interconnections .
+
+in addition , the initiatives did not assess the vulnerability of the grid to a cyberattack involving high - wattage consumer iot devices connected to the grid's distribution system .
+
+goals , subordinate objectives , activities and performance measures the two plans partially address the characteristic of outlining goals , subordinate objectives , activities , priorities , milestones , and performance measures .
+
+both plans outline the goals , objectives , and activities for addressing cybersecurity risks facing the electric grid .
+
+for example , the energy sector - specific plan describes five goals for the energy sector and three related priorities for the electricity subsector .
+
+however , the plans' goals , objectives , and activities do not fully address the cybersecurity risks to the grid .
+
+for example , neither plan includes goals and activities that address the vulnerability of the grid to a cyberattack involving high - wattage consumer iot devices connected to the grid's distribution system .
+
+further , in light of the previously identified gaps in the analysis of cybersecurity risks and challenges , the plans' goals , objectives , and activities are likely not commensurate with grid cybersecurity risks and challenges .
+
+moreover , only one of the plans — doe's multiyear plan for energy sector cybersecurity — includes milestones and performance measures for achieving the goals , objectives , and activities .
+
+additionally , this plan does not include performance measures with measurable targets for all objectives , including those aimed at providing timely cyber threat briefings to energy sector partners and developing cyber incident response processes and procedures .
+
+the two plans partially address the characteristic of describing resource and investment needs .
+
+specifically , although the plans identify many resources and investments needed to achieve their goals and objectives , they do not fully identify resource and investment needs .
+
+for example , one of the objectives of doe's multiyear plan for energy sector cybersecurity is to establish a coordinated national cyber incident response capability for the energy sector .
+
+however , the plan does not describe the resources or investments needed to meet this objective .
+
+this is of particular concern because , as previously mentioned , the fixing america's surface transportation act of 2015 authorized doe to order emergency measures , following a presidential declaration of a grid security emergency , to protect or restore the reliability of critical electric infrastructure .
+
+in addition , the plans do not describe specific investment costs associated with carrying them out .
+
+for example , doe's multiyear plan for energy sector cybersecurity describes the need to develop a laboratory for identifying and analyzing cybersecurity vulnerabilities to energy delivery systems .
+
+however , the plan does not identify the specific costs associated with this investment .
+
+further , given the previously discussed gaps in risk analysis , goals , and objectives , it is unclear to what extent the identified resources and investment needs are sufficient to address electric grid cybersecurity risks and challenges .
+
+roles , responsibilities , and coordination the two plans partially address the characteristic of describing roles , responsibilities , and coordination mechanisms for carrying out the goals , objectives , and activities .
+
+specifically , the plans describe mechanisms for coordinating but do not always identify organizations responsible for achieving the goals , objectives , and activities .
+
+for example , doe's multiyear plan for energy sector cybersecurity states that the department will partner with doe's national laboratories to carry out several activities in the plan .
+
+however , the plan does not indicate which of the 10 national laboratories doe will partner with for each activity .
+
+in a written response , doe explained that executive branch documents that outline the broader federal strategy for confronting cyber threats — such as the national cyber strategy and the dhs cybersecurity strategy — address the key characteristics of a national strategy not addressed in doe's plans and assessment .
+
+in addition , doe stated that the department's plans and assessment for addressing risks and challenges facing the grid support and fit within the context of that broader cybersecurity framework while allowing the agency flexibility to accomplish its goals .
+
+although the broader executive branch strategy documents on confronting cyber threats provide a framework for addressing critical infrastructure cybersecurity risks and challenges , they do not address the specific risks and challenges facing the electric grid .
+
+in addition , as previously mentioned , we have reported that these broader executive branch strategy documents also do not include key characteristics of a national strategy .
+
+until doe ensures it has a plan aimed at implementing the federal cybersecurity strategy relating to the grid that addresses all of the key characteristics of a national strategy — including a full assessment of cybersecurity risks — the guidance the plan provides decision makers in allocating resources to address risks and challenges will likely be limited .
+
+ferc has not ensured that its approved grid cybersecurity standards fully address leading federal guidance for improving critical infrastructure cybersecurity — specifically , the nist cybersecurity framework .
+
+in addition , ferc has not evaluated the risk of a coordinated cyberattack on geographically distributed targets in approving the threshold for which grid cyber systems must comply with requirements in the full set of grid cybersecurity standards .
+
+the nist cybersecurity framework provides a set of cybersecurity activities , desired outcomes , and applicable references that are common across all critical infrastructure sectors .
+
+the framework also states that while it is not exhaustive , it is capable of being extended , allowing organizations , sectors , and other entities to use references that are most appropriate to enable them to manage their cybersecurity risk .
+
+nist recommends that organizations use the cybersecurity framework functions , categories , and subcategories to identify the key controls needed to meet their security objectives ( see table 4 for the functions and categories ) .
+
+to promote widespread adoption of the framework , executive order 13636 called for sector - specific agencies to develop mechanisms to encourage the framework's adoption .
+
+in addition , the order called for regulatory agencies to review the framework and determine if current cybersecurity regulatory requirements are sufficient given current and projected risks .
+
+however , the ferc - approved cybersecurity standards do not fully address the nist cybersecurity framework's five functions and associated categories and subcategories .
+
+more specifically , the cybersecurity standards substantially address two of the five functions and partially address the remaining three functions .
+
+table 5 depicts the extent to which these standards address the framework's five functions and 23 categories .
+
+ ( appendix ii contains more detailed information regarding the extent to which the standards address the framework's 108 subcategories. ) .
+
+legend: ● — fully address: the standards address all of the related subcategories .
+
+◕ — substantially address: the standards address at least two - thirds , but not all , of the related subcategories .
+
+◑ — partially address: the standards address at least one - third , but less than two - thirds , of the related subcategories .
+
+◔ — minimally address: the standards address less than one - third of the related subcategories.○ — do not address: the standards do not address any of the related subcategories .
+
+as shown in table 5 , the ferc - approved cybersecurity standards either fully address or substantially address eight of the 23 categories .
+
+for example: the standards fully address the identity management , authentication , and access control category by fully addressing seven associated subcategories .
+
+for instance , the standards fully address the subcategories for credentials to be issued , managed , verified , revoked , and audited for authorized devices , users , and processes ; network integrity to be protected ; and physical access to assets to be managed and protected .
+
+the standards fully address the response planning category by fully addressing the associated subcategory — a response plan is to be executed during or after an incident .
+
+conversely , the ferc - approved cybersecurity standards partially address or do not address the remaining 15 of 23 categories .
+
+for example: the standards partially address the category for supply chain risk management .
+
+in particular , the standards fully address associated subcategories for establishing supply chain risk management processes , security measures in contracts with suppliers and third - party partners , and evaluations of suppliers and third - party partners to ensure they meet their contractual obligations .
+
+however , the standards do not address subcategories for response and recovery planning and testing with suppliers and third - party providers , and for using the supply chain risk management process to identify , prioritize , and assess suppliers and third - party partners .
+
+the standards do not address the three subcategories associated with the risk management strategy category .
+
+specifically , the standards do not call for risk management processes to be established , organizational risk tolerance to be determined , or for the risk tolerance to be informed by the organization's role in critical infrastructure and sector - specific risk analysis .
+
+in a written response , ferc officials said that the agency did not conduct an assessment to determine how the leading practices identified in the nist cybersecurity framework could be applied to the cybersecurity standards .
+
+in addition , ferc officials stated that , while the commission uses the nist cybersecurity framework as a resource and its approved standards incorporate certain facets of the framework , there is not a one - on - one alignment because the nist cybersecurity framework is not industry specific .
+
+according to ferc officials , the framework addresses certain issues outside ferc's jurisdiction .
+
+for example , ferc officials stated that the commission does not have authority to directly impose obligations on suppliers , vendors , or entities outside its jurisdiction that provide products or services to electric industry stakeholders .
+
+however , full implementation of the nist cybersecurity framework does not require regulatory agencies to impose obligations on entities over which the regulatory agencies do not have authority .
+
+framework categories and subcategories that reference suppliers and vendors call for the organization responsible for implementing the framework to establish and implement processes for managing cybersecurity risks relating to those suppliers and vendors .
+
+in addition , in a written response , nerc officials disagreed with our assessment and stated that a separate comparison by nerc subject matter experts found substantially more overlap between the ferc - approved cybersecurity standards and the nist cybersecurity framework .
+
+moreover , nerc officials said that the intended purpose of the standards differs from the framework's voluntary nature , and that nerc must ensure all mandatory standards are auditable and implemented by electric utilities nationwide .
+
+the officials noted the importance of the nist cybersecurity framework and emphasized that nerc has considered the framework in developing and updating grid cybersecurity standards .
+
+however , we believe our analysis accurately reflects the extent that the ferc - approved standards address the nist cybersecurity framework .
+
+without a full consideration of how the ferc - approved cybersecurity standards address nist's cybersecurity framework , there is increased risk that bulk power entities will not fully implement leading cybersecurity practices intended to help critical infrastructure entities address cybersecurity risks .
+
+as previously mentioned , ferc requires cyber systems affecting a generation capacity of 1,500 megawatts or more to comply with requirements in the full set of approved cybersecurity standards since the loss , compromise , or misuse of those systems could have a medium to high impact on the reliable operation of the bulk electric system .
+
+ferc approved the 1,500-megawatt threshold based on the results of a nerc analysis .
+
+specifically , nerc staff selected a threshold value based on the loss of one large electric grid asset from a single disruptive event and assumed a loss of power could be compensated , in part , by power from a neighboring region .
+
+however , the analysis did not evaluate the potential risk of a coordinated cyberattack on geographically distributed targets .
+
+a coordinated cyberattack could cause multiple power plants , transmission lines , or related grid components in different regions to disconnect from the grid .
+
+such a cyberattack could target , for example , a combination of low - impact systems , each affecting a generation capacity below 1,500 megawatts that , in aggregate , might present a significant risk to the grid .
+
+ferc officials told us that the agency considered but did not evaluate the potential impact of a coordinated cyberattack on geographically distributed targets at the time it approved the threshold because the agency did not have the information it needed to develop a credible threat scenario .
+
+ferc officials said they anticipate that a future update to the approved cybersecurity standards may require the collection of relevant data on suspicious cyber activity that could inform a threat scenario for evaluating the potential impact of a coordinated cyberattack on geographically distributed targets .
+
+further , nerc officials told us that , while nerc has not determined that a modification of the 1,500 megawatt threshold is warranted at this time , they continue to monitor the risk of a coordinated cyberattack against multiple low - impact systems and acknowledged that the ferc - approved standards must adapt with the evolving understanding of cyber threats .
+
+in addition , nerc officials explained in a written response that the intent of the 1,500-megawatt threshold is to ensure that industrial control systems with vulnerabilities that are attributable to a common cause ( eg , cybersecurity vulnerabilities in common hardware or software ) that could result in the loss of 1,500 megawatts or more of generation capacity are adequately protected .
+
+those officials added that nerc encourages entities to disaggregate their industrial control systems so that individual systems operate and maintain less than 1,500 megawatts of generation capacity .
+
+nerc officials noted that the systems associated with the disaggregated generation capacity are very diverse and are therefore less likely to provide any large single point of failure .
+
+nerc officials further explained that this disaggregation minimizes the risk to the grid by requiring a malicious actor to conduct a cyberattack on more facilities to achieve a similar loss of power .
+
+however , encouraging grid entities to design industrial control systems so that individual systems operate and maintain less than 1,500 megawatts of generation capacity could still leave the grid vulnerable to a cyberattack on those systems .
+
+for example , although a malicious actor may need to attack more systems that fall under the threshold at multiple locations to achieve the attacker's objective for loss of power ( when compared with systems that meet or exceed the threshold ) , the difficulty of carrying out an attack on additional systems could be less significant if the attacker identifies and exploits vulnerabilities common across the systems .
+
+in addition , as previously mentioned , systems that fall under the 1,500- megawatt threshold are not required to follow all of the requirements of the ferc - approved cybersecurity standards ; as such , there is increased risk that important security controls have not been implemented for these systems .
+
+according to federal standards for internal control , management should identify , analyze , and respond to risks related to achieving organizational objectives .
+
+for example , management comprehensively identifies risks that affect its objectives and analyzes the identified risks to estimate their significance , which provides a basis for responding to the risks .
+
+without information on the risk of a coordinated cyberattack on geographically distributed targets , ferc does not have assurance that its approved threshold for mandatory compliance with all cybersecurity standards adequately responds to that risk and sufficiently provides for the reliable operation of the grid .
+
+the u.s. electric grid faces an increasing array of cybersecurity risks , as well as significant challenges to addressing those risks .
+
+to their credit , federal agencies have performed a variety of critical infrastructure protection and regulatory activities aimed at addressing those risks .
+
+in particular , doe has developed plans and an assessment aimed at implementing the federal strategy for confronting the cyber threats facing the grid .
+
+however , those documents do not fully address all of the key characteristics needed to implement a national strategy , including a full assessment of cybersecurity risks to the grid .
+
+until doe ensures it has a plan that does , the guidance the plan provides decision makers in allocating resources to address grid cybersecurity risks and challenges will likely be limited .
+
+additionally , ferc has approved mandatory cybersecurity standards for bulk power entities , but those standards address some but not all of the leading cybersecurity practices identified in nist's cybersecurity framework .
+
+without a full consideration of how the ferc - approved cybersecurity standards address nist's cybersecurity framework , there is increased risk that bulk power entities will not fully implement leading cybersecurity practices needed to address current and projected risks .
+
+finally , the threshold for which entities must comply with requirements in the full set of ferc - approved standards is based on the results of an analysis that did not evaluate the potential risk of a coordinated cyberattack on geographically distributed targets .
+
+without information on the risk of such an attack — particularly one that might target low - impact systems that are subject to fewer requirements but in aggregate could affect the grid — ferc does not have assurance that its approved threshold for mandatory compliance adequately responds to that risk and sufficiently provides for the reliable operation of the electric grid .
+
+we are making a total of three recommendations — one to doe and two to ferc .
+
+specifically: the secretary of energy , in coordination with dhs and other relevant stakeholders , should develop a plan aimed at implementing the federal cybersecurity strategy for the electric grid and ensure that the plan addresses the key characteristics of a national strategy , including a full assessment of cybersecurity risks to the grid .
+
+ ( recommendation 1 ) ferc should consider our assessment and determine whether to direct nerc to adopt any changes to its cybersecurity standards to ensure those standards more fully address the nist cybersecurity framework and address current and projected risks .
+
+ ( recommendation 2 ) ferc should ( 1 ) evaluate the potential risk of a coordinated cyberattack on geographically distributed targets and , ( 2 ) based on the results of that evaluation , determine whether to direct nerc to make any changes to the threshold for mandatory compliance with requirements in the full set of cybersecurity standards .
+
+ ( recommendation 3 ) .
+
+we provided a draft of this report for review and comment to doe and ferc — the two agencies to which we made recommendations — as well as dhs , the department of commerce ( on behalf of nist ) , and nerc .
+
+doe and ferc agreed with our recommendations , dhs and the department of commerce stated that they had no comments , and nerc disagreed with one of our findings .
+
+doe and ferc agreed with our recommendations .
+
+in its written comments , reproduced in appendix iii , doe concurred with our recommendation and stated that it is working through an interagency process to develop a national cyber strategy implementation plan that will consider doe's multiyear plan for energy sector cybersecurity .
+
+in its written comments , reproduced in appendix iv , ferc stated that our recommendations were constructive and that it would take steps to implement them .
+
+doe and ferc also provided technical comments , which we incorporated as appropriate .
+
+in its written comments , reproduced in appendix v , nerc stated that it disagreed with our conclusion that the ferc - approved cybersecurity standards do not fully address the nist cybersecurity framework .
+
+nerc recognized the importance of the nist cybersecurity framework and emphasized that nerc has considered the framework in developing and updating its grid cybersecurity standards .
+
+however , nerc stated that a separate analysis by nerc subject matter experts found substantially more overlap between the standards and the framework than our analysis .
+
+in addition , nerc cited a 2011 gao report that found that the ferc - approved standards , in combination with nerc supplementary guidance , mostly addressed the information security controls in certain nist guidance at that time .
+
+we reviewed nerc's analysis comparing the ferc - approved cybersecurity standards to the nist cybersecurity framework and continue to believe our analysis accurately reflects the extent to which the standards address the framework .
+
+further , in this report we assessed the extent to which the ferc - approved standards addressed the nist cybersecurity framework , which is more recent and broader guidance than the nist guidance that we examined in our 2011 report .
+
+in its comments , nerc also stated it has not determined that any changes are needed to the threshold for mandatory compliance with the full set of cybersecurity standards at this time , but it agrees with the concern that low - impact systems may be more vulnerable to a cyberattack and will continue to evaluate whether the current threshold is appropriate given evolving cybersecurity risks .
+
+for example , nerc explained that it is studying cybersecurity supply chain risks , including those associated with low - impact assets not currently subject to its supply chain standards .
+
+we believe that this effort could help to better position electric grid entities to address supply chain cybersecurity risks .
+
+as agreed with your offices , unless you publicly announce the contents of this report earlier , we plan no further distribution until 30 days from the report date .
+
+at that time , we will send copies to the appropriate congressional committees , the secretaries of commerce , energy , and homeland security , the chairman of ferc , and other interested parties .
+
+in addition , the report will be available at no charge on the gao website at http: / / www.gao.gov .
+
+if you or your staff members have any questions about this report , please contact frank rusco at ( 202 ) 512-3841 or ruscof@gao.gov , and nick marinos at ( 202 ) 512-9342 or marinosn@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made major contributions to this report are listed in appendix vi .
+
+our objectives were to ( 1 ) describe the cybersecurity risks and challenges facing the electric grid , ( 2 ) describe federal efforts to address grid cybersecurity risks , ( 3 ) assess the extent to which the department of energy ( doe ) has a defined strategy for addressing grid cybersecurity risks and challenges , and ( 4 ) assess the extent to which federal energy regulatory commission ( ferc ) - approved cybersecurity standards address grid cybersecurity risks .
+
+to address our first objective , we developed a list of cyber actors that could pose a threat to the grid , identified vulnerable components and processes that could be exploited , reviewed the potential impact of cyberattacks on the grid , and identified key cybersecurity challenges facing the grid .
+
+to develop the list of cyber threat actors , we reviewed our prior work on cyber - based threats facing the grid as well as the threats identified by the 2019 worldwide threat assessment of the u.s. intelligence community .
+
+in addition , we interviewed officials or representatives from the following key federal and nonfederal entities to confirm , add , or remove cyber threat actors identified in our prior work based on their potential impact on grid operations: federal agencies .
+
+we interviewed officials from doe , the department of homeland security ( dhs ) , ferc , and the national institute of standards and technology ( nist ) .
+
+nonfederal regulatory organizations .
+
+we interviewed representatives of the north american electric reliability corporation ( nerc ) .
+
+grid owners and operators .
+
+we interviewed five grid owners and operators .
+
+to select these grid owners and operators , we reviewed a membership list of the electricity subsector coordinating council as of may 2018 , divided that list into three categories — investor - owned , municipal , and cooperative utilities — and then randomly selected entities from each of those three categories to interview .
+
+the views of the grid owners and operators we selected are not generalizable to the population of utilities in the united states but provide valuable insight into the cybersecurity risks and challenges grid owners and operators face .
+
+national associations .
+
+we interviewed representatives of national associations that represent various types of asset owners , entities with regulatory or state interests , and those with grid cybersecurity interests generally .
+
+specifically , we interviewed representatives from the american public power association , edison electric institute , electric power research institute , independent system operator / regional transmission operator coordinating council , national rural electric cooperative association , national association of regulatory utility commissioners , national association of state energy officials , and north american transmission forum association .
+
+the views of the association representatives are not generalizable to the industry but provide valuable insight into the cybersecurity risks and challenges facing the grid .
+
+to identify grid cybersecurity vulnerabilities , we reviewed reports developed by key federal and nonfederal entities and others related to grid vulnerabilities and met with the key federal and nonfederal entities to understand the scale and complexity of these vulnerabilities .
+
+we also compiled dhs - provided advisories from 2010 through 2018 related to industrial control system devices .
+
+we then summarized information from the dhs website to determine how many dhs issued per year .
+
+with respect to the potential impact of cyberattacks , we reviewed cybersecurity incidents reported to doe , dhs , and nerc from 2014 through 2018 .
+
+we also asked these agencies for information on any cybersecurity incidents that occurred prior to 2014 or after 2018 that affected the reliability or availability of the grid .
+
+in addition , we reviewed federal reports on cyberattacks that caused power outages in foreign countries and a report developed by the german government regarding a cyberattack on industrial control systems that damaged a german steel mill .
+
+further , we reviewed federal studies assessing the potential for widespread power outages resulting from cyberattacks , and we met with federal officials to discuss the methodologies used to perform these studies .
+
+finally , to identify key cybersecurity challenges facing the grid , we reviewed our prior reports on such challenges as well as federal and industry reports recommended by entities we met with .
+
+we also asked the key federal and nonfederal entities to identify challenges facing grid entities in addressing cybersecurity risks , and we compiled the challenges they most often cited .
+
+to address the second objective , we identified critical infrastructure protection and regulatory actions that federal agencies are taking to address grid cybersecurity risks by reviewing federal strategies , plans , and reports describing activities that have been conducted or that are under way and by interviewing the key federal and nonfederal entities to obtain additional details on these activities .
+
+we also reviewed ferc - approved cybersecurity standards for the bulk power system .
+
+we then categorized critical infrastructure protection activities using the functions in nist's framework for improving critical infrastructure cybersecurity ( commonly referred to as nist's cybersecurity framework ) .
+
+for our third objective , we reviewed two doe - led plans and one assessment aimed at implementing the federal cybersecurity strategy for the energy sector , including the grid .
+
+we then compared those plans and assessment with leading practices identified by gao on key characteristics for a national strategy .
+
+in doing so , we assessed each characteristic as follows: fully addresses — the plan or assessment addresses all aspects of the characteristic , partially addresses — the plan or assessment addresses some but not all of the characteristic , or does not address — the plan or assessment does not address any aspects of the characteristic .
+
+we also provided our analysis to doe officials to review , comment , and provide additional information .
+
+for our fourth objective , we compared the ferc - approved cybersecurity standards with leading federal practices for addressing critical infrastructure cybersecurity risks identified in nist's cybersecurity framework .
+
+specifically , a gao analyst compared the ferc - approved cybersecurity standards with the subcategories in the cybersecurity framework , and another gao analyst reviewed and confirmed the results of that analysis .
+
+we then summarized the results of these assessments for each of the framework's five functions , 23 categories , and 108 subcategories as follows: fully address — the standards address all of the related subcategories ; substantially address — the standards address at least two - thirds , but not all , of the related subcategories ; partially address — the standards address at least one - third , but less than two - thirds , of the related subcategories ; minimally address — the standards address less than one - third of the do not address — the standards do not address any of the related subcategories .
+
+we also provided our analysis to ferc and nerc officials to review , comment , and provide additional information .
+
+we also examined the applicability of the ferc - approved cybersecurity standards to non - nuclear power plants and reviewed ferc and nerc information on the analytical basis for that threshold .
+
+to calculate the number and aggregate capacity of plants that met the 1,500-megawatt threshold for complying with all ferc - approved cybersecurity standards , we used data from form eia - 860 , “annual electric generator report,” which includes u.s. plants with generators having nameplate capacity of 1 megawatt or greater .
+
+as a proxy for the net real power capability specified in the standards , we selected the generator's net summer generating capacity .
+
+to calculate a total capacity for each individual power plant , we combined the data on the capacity of each plant's individual operating electric power generators .
+
+we then filtered these data to identify plants whose primary purpose is generating electricity for sale as reported on the form eia - 860 .
+
+ultimately , we compared the number and capacity of non - nuclear plants exceeding the 1,500-megawatt threshold to the total number and total u.s. capacity for plants .
+
+we used u.s. energy information administration ( eia ) data to estimate the number and capacity of non - nuclear plants exceeding the 1,500- megawatt threshold .
+
+to assess the reliability of these data , we reviewed eia documentation , discussed the quality of the data with eia officials , and electronically tested the data set for missing data , outliers , or obvious errors .
+
+based on this assessment , we determined that the eia data were sufficiently reliable for our purposes .
+
+we conducted this performance audit from january 2018 to august 2019 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+the table below provides additional detail on our assessment of the extent to which federal energy regulatory commission ( ferc ) - approved cybersecurity standards address the national institute of standards and technology's ( nist ) framework for improving critical infrastructure cybersecurity's ( commonly known as the nist cybersecurity framework ) 23 categories and 108 subcategories .
+
+id.am - 1: physical devices and systems within the organization are inventoried .
+
+id.am - 2: software platforms and applications within the organization are inventoried .
+
+id.am - 3: organizational communication and data flows are mapped .
+
+id.am - 4: external information systems are catalogued .
+
+id.am - 5: resources ( eg , hardware , devices , data , time , personnel , and software ) are prioritized based on their classification , criticality , and business value .
+
+id.am - 6: cybersecurity roles and responsibilities for the entire workforce and third - party stakeholders ( eg , suppliers , customers , and partners ) are established .
+
+id.be - 1: the organization's role in the supply chain is identified and communicated .
+
+id.be - 2: the organization's place in critical infrastructure and its industry sector is identified and communicated .
+
+id.be - 3: priorities for organizational mission , objectives , and activities are established and communicated .
+
+id.be - 4: dependencies and critical functions for delivery of critical services are established .
+
+id.be - 5: resilience requirements to support delivery of critical services are established for all operating states ( e.g .
+
+under duress / attack , during recovery , normal operations ) .
+
+id.gv - 1: organizational information security cybersecurity policy is established and communicated .
+
+id.gv - 2: cybersecurity roles and responsibilities are coordinated and aligned with internal roles and external partners .
+
+id.gv - 3: legal and regulatory requirements regarding cybersecurity , including privacy and civil liberties obligations , are understood and managed .
+
+id.gv - 4: governance and risk management processes address cybersecurity risks .
+
+id.ra - 1: asset vulnerabilities are identified and documented .
+
+id.ra - 2: cyber threat intelligence is received from information - sharing forums and sources .
+
+id.ra - 3: threats , both internal and external , are identified and documented .
+
+id.ra - 4: potential business impacts and likelihoods are identified .
+
+id.ra - 5: threats , vulnerabilities , likelihoods , and impacts are used to determine risk .
+
+id.ra - 6: risk responses are identified and prioritized .
+
+risk management strategy ( id.rm ) : the organization's priorities , constraints , risk tolerances , and assumptions are established and used to support operational risk decisions .
+
+id.rm - 1: risk management processes are established , managed , and agreed to by organizational stakeholders .
+
+id.rm - 2: organizational risk tolerance is determined and clearly expressed .
+
+id.rm - 3: the organization's determination of risk tolerance is informed by its role in critical infrastructure and sector - specific risk analysis .
+
+supply chain risk management ( id.sc ) : the organization's priorities , constraints , risk tolerances , and assumptions are established and used to support risk decisions associated with managing supply chain risk .
+
+the organization has established and implemented the processes to identify , assess , and manage supply chain risks .
+
+id.sc - 1: cyber supply chain risk management processes are identified , established , assessed , managed , and agreed to by organizational stakeholders .
+
+id.sc - 2: suppliers and third - party partners of information systems , components , and services are identified , prioritized , and assessed using a cyber supply chain risk assessment process .
+
+id.sc - 3: contracts with suppliers and third - party partners are used to implement appropriate measures designed to meet the objectives of an organization's cybersecurity program and cyber supply chain risk management plan .
+
+id.sc - 4: suppliers and third - party partners are routinely assessed using audits , test results , or other forms of evaluations to confirm they are meeting their contractual obligations .
+
+id.sc - 5: response and recovery planning and testing are conducted with suppliers and third - party providers .
+
+identity management authentication and access control ( pr.ac ) : access to physical and logical assets and associated facilities is limited to authorized users , processes , and devices and is managed consistent with the assessed risk of unauthorized access to authorized activities and transactions .
+
+pr.ac - 1: identities and credentials are issued , managed , verified , revoked , and audited for authorized devices , users , and processes .
+
+pr.ac - 2: physical access to assets is managed and protected .
+
+pr.ac - 3: remote access is managed .
+
+pr.ac - 4: access permissions and authorizations are managed , incorporating the principles of least privilege and separation of duties .
+
+pr.ac - 5: network integrity is protected ( e.g .
+
+network segregation and network segmentation ) .
+
+pr.ac - 6: identities are proofed and bound to credentials and asserted in interactions .
+
+pr.ac - 7: users , devices , and other assets are authenticated ( eg , single - factor , multi - factor ) commensurate with the risk of the transaction ( eg , individuals' security and privacy risks and other organizational risks ) .
+
+awareness and training ( pr.at ) : the organization's personnel and partners are provided cybersecurity awareness education and are adequately trained to perform their information security - related cybersecurity duties and responsibilities consistent with related policies , procedures , and agreements .
+
+pr.at - 1: all users are informed and trained .
+
+pr.at - 2: privileged users understand their roles and responsibilities .
+
+pr.at - 3: third - party stakeholders ( eg , suppliers , customers , and partners ) understand their roles and responsibilities .
+
+pr.at - 4: senior executives understand their roles and responsibilities .
+
+pr.at - 5: physical and information security cybersecurity personnel understand their roles and responsibilities .
+
+pr.ds - 1: data - at - rest is protected .
+
+pr.ds - 2: data - in - transit is protected .
+
+pr.ds - 3: assets are formally managed throughout removal , transfers , and disposition .
+
+pr.ds - 4: adequate capacity to ensure availability is maintained .
+
+pr.ds - 5: protections against data leaks are implemented .
+
+pr.ds - 6: integrity checking mechanisms are used to verify software , firmware , and information integrity .
+
+pr.ds - 7: the development and testing environment ( s ) are separate from the production environment .
+
+pr.ds - 8: integrity checking mechanisms are used to verify hardware integrity .
+
+pr.ip - 1: a baseline configuration of information technology / industrial control systems is created and maintained incorporating security principles ( e.g .
+
+concept of least functionality ) .
+
+pr.ip - 2: a system development life cycle to manage systems is implemented .
+
+pr.ip - 3: configuration change control processes are in place .
+
+pr.ip - 4: backups of information are conducted , maintained , and tested periodically .
+
+pr.ip - 5: policy and regulations regarding the physical operating environment for organizational assets are met .
+
+pr.ip - 6: data are destroyed according to policy .
+
+pr.ip - 7: protection processes are continuously improved .
+
+pr.ip - 8: effectiveness of protection technologies is shared with appropriate parties .
+
+pr.ip - 9: response plans ( incident response and business continuity ) and recovery plans ( incident recovery and disaster recovery ) are in place and managed .
+
+pr.ip - 10: response and recovery plans are tested .
+
+pr.ip - 11: cybersecurity is included in human resources practices ( eg , deprovisioning and personnel screening ) .
+
+pr.ip - 12: a vulnerability management plan is developed and implemented .
+
+maintenance ( pr.ma ) : maintenance and repairs of industrial control and information system components are performed consistent with policies and procedures .
+
+pr.ma - 1: maintenance and repair of organizational assets are performed and logged , with approved and controlled tools .
+
+pr.ma - 2: remote maintenance of organizational assets is approved , logged , and performed in a manner that prevents unauthorized access .
+
+pr.pt - 1: audit / log records are determined , documented , implemented , and reviewed in accordance with policy .
+
+pr.pt - 2: removable media is protected and its use restricted according to policy .
+
+pr.pt - 3: the principle of least functionality is incorporated by configuring systems to provide only essential capabilities .
+
+pr.pt - 4: communications and control networks are protected .
+
+pr.pt - 5: mechanisms ( eg , failsafe , load balancing , hot swap ) are implemented to achieve resilience requirements in normal and adverse situations .
+
+anomalies and events ( de.ae ) : anomalous activity is detected and the potential impact of events is understood .
+
+de.ae - 1: a baseline of network operations and expected data flows for users and systems is established and managed .
+
+de.ae - 2: detected events are analyzed to understand attack targets and methods .
+
+de.ae - 3: event data are aggregated , collected , and correlated from multiple sources and sensors .
+
+de.ae - 4: impact of events is determined .
+
+de.ae - 5: incident alert thresholds are established .
+
+security continuous monitoring ( de.cm ) : the information system and assets are monitored at discrete intervals to identify cybersecurity events and verify the effectiveness of protective measures .
+
+de.cm - 1: the network is monitored to detect potential cybersecurity events .
+
+de.cm - 2: the physical environment is monitored to detect potential cybersecurity events .
+
+de.cm - 3: personnel activity is monitored to detect potential cybersecurity events .
+
+de.cm - 4: malicious code is detected .
+
+de.cm - 5: unauthorized mobile code is detected .
+
+de.cm - 6: external service provider activity is monitored to detect potential cybersecurity events .
+
+de.cm - 7: monitoring for unauthorized personnel , connections , devices , and software is performed .
+
+de.cm - 8: vulnerability scans are performed .
+
+detection processes ( de.dp ) : detection processes and procedures are maintained and tested to ensure awareness of anomalous events .
+
+de.dp - 1: roles and responsibilities for detection are well defined to ensure accountability .
+
+de.dp - 2: detection activities comply with all applicable requirements .
+
+de.dp - 3: detection processes are tested .
+
+de.dp - 4: event detection information is communicated to appropriate parties .
+
+de.dp - 5: detection processes are continuously improved .
+
+response planning ( rs.rp ) : response processes and procedures are executed and maintained , to ensure response to detected cybersecurity events .
+
+rs.rp - 1: response plan is executed during or after an event .
+
+rs.co - 1: personnel know their roles and order of operations when a response is needed .
+
+rs.co - 2: incidents are reported consistent with established criteria .
+
+rs.co - 3: information is shared consistent with response plans .
+
+rs.co - 4: coordination with stakeholders occurs consistent with response plans .
+
+rs.co - 5: voluntary information sharing occurs with external stakeholders to achieve broader cybersecurity situational awareness .
+
+analysis ( rs.an ) : analysis is conducted to ensure effective response and support recovery activities .
+
+rs.an - 1: notifications from detection systems are investigated .
+
+rs.an - 2: the impact of the incident is understood .
+
+rs.an - 3: forensics are performed .
+
+rs.an - 4: incidents are categorized consistent with response plans .
+
+rs - an - 5: processes are established to receive , analyze , and respond to vulnerabilities disclosed to the organization from internal and external sources ( e.g .
+
+internal testing , security bulletins , or security researchers ) .
+
+rs.mi - 1: incidents are contained .
+
+rs.mi - 2: incidents are mitigated .
+
+rs.mi - 3: newly identified vulnerabilities are mitigated or documented as accepted risks .
+
+improvements ( rs.im ) : organizational response activities are improved by incorporating lessons learned from current and previous detection / response activities .
+
+rs.im - 1: response plans incorporate lessons learned .
+
+rs.im - 2: response strategies are updated .
+
+recovery planning ( rc.rp ) : recovery processes and procedures are executed and maintained to ensure timely restoration of systems or assets affected by cybersecurity events .
+
+rc.rp - 1: recovery plan is executed during or after a cybersecurity event .
+
+improvements ( rc.im ) : recovery planning and processes are improved by incorporating lessons learned into future activities .
+
+rc.im - 1: recovery plans incorporate lessons learned .
+
+rc.im - 2: recovery strategies are updated .
+
+rc.co - 1: public relations are managed .
+
+rc.co - 2: reputation after an event is repaired .
+
+rc.co - 3: recovery activities are communicated to internal and external stakeholders as well as to executive and management teams .
+
+legend: ● — fully address: the standards address all of the related subcategories .
+
+◕ — substantially address: the standards address at least two - thirds , but not all , of the related subcategories .
+
+◑ — partially address: the standards address at least one - third , but less than two - thirds , of the related subcategories .
+
+◔ — minimally address: the standards address less than one - third of the related subcategories.○ — do not address: the standards do not address any of the related subcategories .
+
+in addition to the contact named above , kaelin kuhn ( assistant director ) , david marroni ( assistant director ) , andrew moore ( analyst in charge ) , dino papanastasiou ( analyst in charge ) , david aja , christopher businsky , kendall childers , travis conley , rebecca eyler , philip farah , jonathan felbinger , quindi franco , wil gerard , cindy gilbert , mike gilmore , andrew howard , paul kazemersky , lisa maine , carlo mozo , cynthia norris , sukhjoot singh , adam vodraska , and jarrod west made key contributions to this report .
+

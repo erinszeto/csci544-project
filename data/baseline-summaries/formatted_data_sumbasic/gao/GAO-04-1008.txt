@@ -1,0 +1,1508 @@
+the ability to produce the information needed to efficiently and effectively manage the day - to - day operations of the federal government and provide accountability to taxpayers and the congress has been a long - standing challenge for federal agencies .
+
+to address some of these problems , many agencies are in the process of replacing their core financial systems as part of their financial management system improvement efforts .
+
+although the implementation of any major system is not a risk - free proposition , organizations that follow and effectively implement accepted best practices in systems development and implementation ( commonly referred to as disciplined processes ) can reduce these risks to acceptable levels .
+
+the use of the term acceptable levels acknowledges the fact that any systems acquisition has risks and will suffer the adverse consequences associated with defects .
+
+however , effective implementation of the disciplined processes reduces the potential for risks to occur and helps prevent those that do occur from having any significant adverse impact on the cost , timeliness , and performance of the project .
+
+because of the importance of these financial management system improvement efforts and your question as to whether agencies are employing disciplined processes in implementing new systems , you asked us to evaluate the current plans for implementing financial management systems at the chief financial officer act ( cfo ) agencies .
+
+as agreed with your offices , we initiated our review at the department of health and human services ( hhs ) .
+
+hhs has undertaken a multiyear effort to implement its unified financial management system ( ufms ) , a new core financial system , to help hhs management monitor budgets , conduct operations , evaluate program performance , and make financial and programmatic decisions .
+
+as a core financial system , ufms will interface with an estimated 110 other hhs information systems .
+
+hhs envisions the eventual ufms as a departmentwide system that will include core financial systems currently under development at the national institutes of health ( nih ) , the centers for medicare and medicaid services ( cms ) , along with an integrated system for the centers for disease control and prevention ( cdc ) , the food and drug administration ( fda ) , and the program support center ( psc ) , which provides accounting support for the remaining hhs organizations .
+
+this report provides our assessment of hhs' ongoing effort to develop and implement the integrated ufms at cdc , fda , and psc , and focuses on whether the agency has ( 1 ) effectively implemented key disciplined processes in the development of ufms to provide reasonable assurance that ufms meets its cost , schedule , and performance goals ; ( 2 ) implemented effective investment management , enterprise architecture , and security management to support ufms efforts ; and ( 3 ) taken actions to ensure that hhs has the human capital needed to successfully design , implement , and operate ufms .
+
+to achieve these objectives , we reviewed documentation related to the project and interviewed hhs officials and contractors used by hhs to assist with implementation .
+
+we used relevant government and industry standards , such as those from the software engineering institute ( sei ) and the institute of electrical and electronics engineers ( ieee ) , along with key best practice guides such as our executive guide: creating value through world - class financial management , to assess the status of hhs' implementation of disciplined processes .
+
+this report does not assess hhs' other financial management improvement efforts at nih and cms .
+
+we conducted our work in washington , d.c. , rockville , maryland , and atlanta , georgia , from september 2003 through may 2004 in accordance with u.s. generally accepted government auditing standards .
+
+more details on our scope and methodology can be found in appendix i .
+
+hhs is the federal government's principal agency for protecting the health of americans and provides essential human services , such as ensuring food and drug safety and assisting needy families .
+
+hhs disburses almost a quarter of all federal outlays and administers more grant dollars than all other federal agencies combined , providing more than $200 billion of over $350 billion in federal funds awarded to states and other entities in fiscal year 2002 , the most recent year for which these data are available .
+
+for fiscal year 2004 , hhs had a budget of $548 billion and over 66,000 employees .
+
+hhs comprises 11 agencies led by the office of the secretary covering a wide range of activities including conducting and sponsoring medical and social science research , guarding against the outbreak of infectious diseases , assuring the safety of food and drugs , and providing health care services and insurance .
+
+hhs is required by the cfo act of 1990 to modernize its financial management systems and by the federal financial management improvement act ( ffmia ) of 1996 to have auditors — as part of an audit report on the agency's annual financial statements — determine whether the agency's financial management systems comply substantially with three requirements: ( 1 ) federal financial management systems requirements , ( 2 ) applicable federal accounting standards , and ( 3 ) the u.s. government standard general ledger ( sgl ) at the transaction level .
+
+while hhs has received unqualified opinions on its financial statements at the consolidated departmental level since fiscal year 1999 , the underlying financial systems that assist in the preparation of financial statements have not met all applicable requirements .
+
+for fiscal years 1997 through 2003 , hhs auditors reported that the department's systems did not substantially comply with federal financial management systems requirements , and for fiscal year 2003 , they reported that the systems also lacked compliance with the sgl requirement .
+
+in describing the financial management problems in the fiscal year 2003 financial statement audit report , the hhs inspector general ( ig ) stated that the department's lack of an integrated financial system and internal control weaknesses made it difficult for hhs to prepare timely and reliable financial statements .
+
+the ig also noted that preparation of hhs financial statements required substantial “work arounds,” cumbersome reconciliations and consolidation processes , and significant adjustments to reconcile subsidiary records to reported balances on the financial statements .
+
+in june 2001 , the secretary of hhs directed the department to establish a unified accounting system that , when fully implemented , would replace five outdated accounting systems .
+
+hhs considers the ufms program a business transformation effort with it , business process improvement , and operations consolidation components .
+
+according to hhs , the program supports the office of management and budget's ( omb ) requirements for each agency to implement and operate a single , integrated financial management system ( required by omb circular no .
+
+a - 127 ) .
+
+hhs asserts that its approach will require it to institute a common set of business rules , data standards , and accounting policies and procedures , thereby significantly furthering the secretary's management objectives .
+
+table 1 depicts the current accounting systems that will be replaced and the organizations currently served .
+
+in response to the secretary's direction , hhs began a project to improve its financial management operations .
+
+cms and nih had already initiated projects to replace their financial systems .
+
+figure 1 illustrates the systems being replaced , the new configuration , and the approximate known implementation costs .
+
+as shown in figure 1 , hhs plans to pursue a phased approach to achieving the secretary's vision .
+
+the first phase is to implement the system at cdc and , as of may 2004 , cdc was expected to begin using the system for its operations starting in fiscal year 2005 ( october 2004 ) .
+
+fda was expected to implement ufms in may 2005 , and the entities served by psc were to be phased in from july 2005 through april 2007 .
+
+after all of the individual component agency implementations have been completed , ufms and hhs consolidated reporting will be deployed .
+
+this effort involves automating the department's financial reporting capabilities and is expected to integrate the nih business and research support system ( nbrss ) and cms' healthcare integrated general ledger accounting system ( higlas ) into ufms , which are scheduled to be fully implemented in 2006 and 2007 , respectively .
+
+the focus of our review was on the system implementation efforts associated with the hhs entities not covered by the nbrss and higlas efforts .
+
+as shown in figure 1 , the costs for this financial management system improvement effort can be broken down into four broad areas: nih , cms , all other hhs entities , and a system to consolidate the results of hhs' financial management operations .
+
+hhs estimates that it will spend about $713 million as follows: $110 million for its nih efforts ( nbrss ) , $393 million to implement higlas , and $210 million for remaining hhs organizations .
+
+hhs has not yet developed an estimate of the costs associated with integrating these efforts into the hhs unified financial management system envisioned in secretary thompson's june 2001 directive .
+
+hhs selected a commercial - off - the - shelf ( cots ) product , oracle u.s. federal financials software ( certified by the program management office of the joint financial management improvement program ( jfmip ) for federal agencies' use ) , as the system it would use to design and implement ufms .
+
+the department has hired two primary contractors to help implement ufms .
+
+in november 2001 , hhs awarded kpmg consulting ( now bearingpoint ) a contract as system integrator for assistance in planning , designing , and implementing ufms .
+
+as the systems integrator , bearingpoint is expected to provide team members , who are experienced in the enterprise resource planning ( erp ) software and its installation , configuration , and customization , with expertise in software , hardware , business systems architecture , and business process and transformation .
+
+hhs selected titan corporation to act as the project's independent verification and validation ( iv&v ) contractor , tasked with determining the programmatic , management , and technical status of the ufms project and recommending actions to mitigate any identified risks to project success .
+
+when fully implemented , ufms is expected to permit the consolidation of financial data across all hhs component agencies to support timely and reliable departmentwide financial reporting .
+
+in addition , it is intended to integrate financial information from the department's administrative systems , including travel management systems , property systems , logistics systems , acquisition and contracting systems , and grant management systems .
+
+the department's goals in the development and implementation of this integrated system are to achieve greater economies of scale ; eliminate duplication ; provide better service delivery ; and help management monitor budgets , conduct operations , evaluate program performance , and make financial and programmatic decisions .
+
+experience has shown that organizations that adopt and effectively implement best practices , referred to in systems development and implementation efforts as the disciplined processes , can reduce the risks associated with these projects to acceptable levels .
+
+although hhs has adopted some of the best practices associated with managing projects such as ufms , it has adopted other practices that significantly increase the risk to the project .
+
+also , hhs has not yet effectively implemented several of the disciplined processes — requirements management , testing , project management and oversight , and risk management — necessary to reduce its risks to acceptable levels and has exposed the project to unnecessary risk that it will not achieve its cost , schedule , and performance objectives .
+
+the project has been able to obtain high - level sponsorship at hhs with senior financial management and hhs personnel routinely reviewing its progress .
+
+hhs officials maintain that the project is on schedule and that the functionality expected to be available for its first deployment , at cdc in october 2004 , is well known and acceptable to its users .
+
+however , the iv&v contractor identified a number of serious deficiencies that are likely to affect hhs' ability to successfully implement ufms within its current budget and schedule while providing the functionality needed to achieve its goals .
+
+hhs management has been slow to take the recommended corrective actions necessary to address the findings and recommendations of its iv&v contractor .
+
+further , it is not clear that the decision to proceed from one project milestone to the next is based on quantitative data that indicate tasks have been effectively completed .
+
+rather , decisions to progress have been driven by the project's schedule .
+
+with a focus on meeting schedule milestones and without quantitative data , hhs faces significant risk that ufms will suffer the adverse impacts on its cost , schedule , and performance that have been experienced by projects with similar problems .
+
+disciplined processes , which are fundamental to successful systems development and implementation efforts , have been shown to reduce to acceptable levels the risks associated with software development and acquisition .
+
+a disciplined software development and acquisition process can maximize the likelihood of achieving the intended results ( performance ) within established resources ( costs ) on schedule .
+
+although there is no standard set of practices that will ever guarantee success , several organizations , such as sei and ieee , as well as individual experts , have identified and developed the types of policies , procedures , and practices that have been demonstrated to reduce development time and enhance effectiveness .
+
+the key to having a disciplined system development effort is to have disciplined processes in multiple areas , including project planning and management , requirements management , configuration management , risk management , quality assurance , and testing .
+
+effective processes should be implemented in each of these areas throughout the project life cycle because change is constant .
+
+effectively implementing the disciplined processes necessary to reduce project risks to acceptable levels is hard to achieve because a project must effectively implement several best practices , and inadequate implementation of any one may significantly reduce or even eliminate the positive benefits of the others .
+
+acquiring and implementing a new financial management system requires a methodology that starts with a clear definition of the organization's mission and strategic objectives and ends with a system that meets specific information needs .
+
+we have seen many system efforts fail because agencies started with a general need , such as improving financial management , but did not define in precise terms ( 1 ) the specific problems they were trying to solve , ( 2 ) what their operational needs were , and ( 3 ) what specific information requirements flowed from these operational needs .
+
+instead , they plunged into the acquisition and implementation process in the belief that these specifics would somehow be defined along the way .
+
+the typical result was that systems were delivered well past anticipated milestones ; failed to perform as expected ; and , accordingly , were overbudget because of required costly modifications .
+
+figure 2 shows how organizations that do not effectively implement the disciplined processes lose the productive benefits of their efforts as a project continues through its development and implementation cycle .
+
+although undisciplined projects show a great deal of productive work at the beginning of the project , the rework associated with defects begins to consume more and more resources .
+
+in response , processes are adopted in the hopes of managing what later turns out , in reality , to have been unproductive work .
+
+generally , these processes are “too little , too late” and rework begins to consume more and more resources because sufficient foundations for building the systems were not done or not done adequately .
+
+experience has shown that projects for which disciplined processes are not implemented at the beginning are forced to implement them later when it takes more time and they are less effective .
+
+as shown in figure 2 , a major consumer of project resources in undisciplined efforts is rework ( also known as thrashing ) .
+
+rework occurs when the original work has defects or is no longer needed because of changes in project direction .
+
+disciplined organizations focus their efforts on reducing the amount of rework because it is expensive .
+
+fixing a defect during the testing phase costs anywhere from 10 to 100 times the cost of fixing it during the design or requirements phase .
+
+as shown in figure 2 , projects that are unable to successfully address their rework will eventually only be spending their efforts on rework and the associated processes rather than on productive work .
+
+in other words , the project will continually find itself reworking items .
+
+appendix ii provides additional information on the disciplined processes .
+
+we found that hhs has not implemented effective disciplined processes in several key process areas that have been shown to form the foundation for project success or failure including requirements management , testing , project management and oversight , and risk management .
+
+problems with hhs' requirements management practices include the lack of ( 1 ) a concept of operations to guide the development of requirements , ( 2 ) traceability of a requirement from the concept of operations through testing to ensure requirements were adequately addressed in the system , and ( 3 ) specificity in the requirements to minimize confusion in the implementation .
+
+these problems with requirements have resulted in a questionable foundation for the systems' testing process .
+
+in addition , hhs has provided an extremely limited amount of time to address defects identified from system testing , which reflects an optimism not supported by other hhs testing efforts , including those performed to test the conversion of data from cdc's legacy system to ufms .
+
+this type of short time frame generally indicates that a project is being driven to meet predetermined milestones in the project schedule .
+
+while adherence to schedule goals is generally desirable , if corners are cut and there is not adequate quantitative data to assess the risks to the project of not implementing disciplined processes in these areas , the risk of project rework or failure appreciably rises .
+
+ineffective implementation of these processes exposes a project to the unnecessary risk that costly rework will be required , which in turn will adversely affect the project's cost and schedule , and can adversely affect the ultimate performance of the system .
+
+an effective risk management process can be used by an agency to understand the risks that it is undertaking when it does not implement an effective requirements management process .
+
+in contrast , hhs has implemented risk management procedures that close risks before it is clear that mitigating actions were effective .
+
+hhs has agreed to change these procedures so that the actions needed to address risks remain visible and at the forefront .
+
+while the executive sponsor for the ufms project and other senior hhs officials have demonstrated commitment to the project , effective project management and oversight are needed to identify and resolve problems as soon as possible , when it is the cheapest to fix them .
+
+for example , hhs officials have struggled to address problems identified by the iv&v contractor in a timely manner .
+
+moreover , hhs officials lack the quantitative data or metrics to effectively oversee the project .
+
+an effective project management and oversight process uses such data to understand matters such as ( 1 ) whether the project plan needs to be adjusted and ( 2 ) oversight actions that may be needed to ensure that the project meets its stated goals and complies with agency guidance .
+
+whereas , with ineffective project oversight , management can only respond to problems as they arise .
+
+we found significant problems in hhs' requirements management process .
+
+ ( see appendix iii for a more detailed discussion. ) .
+
+we found that hhs had not ( 1 ) developed a concept of operations that can be used to guide its requirements development process , ( 2 ) maintained traceability between the various requirements documents to ensure consistency , and ( 3 ) developed requirements that were unambiguous .
+
+because of these weaknesses , hhs does not have reasonable assurance that the ufms project is free of significant requirement defects that will cause significant rework .
+
+requirements are the specifications that system developers and program managers use to design , develop , and acquire a system .
+
+they need to be unambiguous , consistent with one another , verifiable , and directly traceable to higher - level business or functional requirements .
+
+it is critical that requirements flow directly from the organization's concept of operations , which describes how the organization's day - to - day operations ( 1 ) are being carried out and ( 2 ) will be carried out to meet mission needs .
+
+examples of problems noted in our review include the following .
+
+requirements were not based on a concept of operations .
+
+hhs has prepared a number of documents that discuss various aspects of its vision for ufms .
+
+however , these documents do not accomplish the principal objective associated with developing a concept of operations — specifying the high - level business processes that are expected to form the basis for requirements definition .
+
+one such document , issued april 30 , 2004 , discusses the use of shared service centers to perform financial management functions .
+
+this document was issued well after implementation efforts were under way and about 5 months before the expected deployment date of ufms at cdc .
+
+as discussed in more detail in appendix iii , the april 30 document does not clearly explain who will perform these functions , and where and how these functions will be performed .
+
+requirements were not traceable .
+
+hhs developed a hierarchical approach to defining its requirements .
+
+hhs defined the high - level requirements that were used to identify the requirements that could not be satisfied by the cots product .
+
+once these high - level requirements were defined , a hierarchical requirements management process was developed which included ( 1 ) reviewing and updating the requirements through process design workshops , ( 2 ) establishing the initial baseline requirements , ( 3 ) performing a fit / gap analysis , ( 4 ) developing gap closure alternatives , and ( 5 ) creating the final baseline requirements .
+
+the key in using such a hierarchy is that each step of the process builds upon the previous step .
+
+however , this traceability was not maintained for the 74 requirements we reviewed .
+
+therefore , hhs has little assurance that ( 1 ) requirements defined in the lower - level requirements documents are consistent with and adequately cover the higher - level requirements and ( 2 ) testing efforts based on lower - level requirements documents will adequately assess whether ufms can meet the high - level requirements used to define the overall functionality expected from ufms .
+
+appendix iii provides more details on problems we identified related to the traceability of requirements .
+
+requirements were not always specific .
+
+many requirements reviewed were not sufficiently specific to reduce requirements - related defects to acceptable levels .
+
+for example , one inadequately defined requirement stated that the system “shall track actual amounts and verify commitments and obligations against the budget as revised , consistent with each budget distribution level.” the “define budget distributions” process area was expected to provide the additional specificity needed for this requirement .
+
+however , as of may 2004 , this process document stated that the functionality was “to be determined.” until hhs provides additional information concerning this requirement , it will not be able to determine whether the system can meet the requirement .
+
+items that will need to be defined include the number of budget distribution levels that must be supported and what it means to verify the commitments and obligations against the revised budget .
+
+appendix iii includes more details on the problems related to the specificity of hhs' requirements .
+
+hhs officials plan to use traditional testing approaches , including demonstrations and validations , to show ufms' compliance with hhs high - level requirements as well as the requirements contained in the various other requirements documents .
+
+however , the effectiveness of the testing process is directly related to the effectiveness of the requirements management process .
+
+hhs' iv&v contractor reported that as of april 2004 , the ufms test program had not been adequately planned to provide the foundation for a comprehensive and coordinated process for validating that ufms has the functionality to meet the stated requirements .
+
+for example , the test planning documents reviewed by the iv&v contractor did not have the detail typically found in test plans .
+
+as of may 2004 , the information necessary for evaluating future testing efforts had not been developed for the 44 requirements that we reviewed .
+
+because of the weaknesses noted in the requirements management process , hhs does not yet have a firm foundation on which to base an effective testing program .
+
+complete and thorough testing is essential to provide reasonable assurance that new or modified systems will provide the capabilities in the requirements .
+
+testing activities that can provide quantitative data on the ability of ufms to meet hhs' needs are scheduled late in the implementation cycle .
+
+for example , system testing on the capabilities for the cdc implementation was planned to start in august 2004 and to be completed in a 6-week time frame before the system is expected to become operational there .
+
+this leaves hhs with little time to address any defects identified during the system testing process and to ensure that the corrective actions taken to address the defects do not introduce new defects .
+
+because hhs has allotted little time for system testing and defect correction , problems not corrected before system launch will in the worst case result in system failure , or will have to be addressed during operations , resulting in potentially costly and time - consuming rework .
+
+testing is even more challenging for this system development because hhs had not fully developed its overall requirements traceability matrix before testing to determine whether testing will address the requirements .
+
+hhs is placing a great deal of reliance on system testing to provide reasonable assurance of the functionality included in ufms .
+
+also , with system testing scheduled for august , hhs had not , as of may 2004 , established an effective management framework for testing .
+
+for example , hhs had not ( 1 ) clearly defined the roles and responsibilities of the developers and testers , ( 2 ) developed acceptance criteria , and ( 3 ) strictly controlled the testing environment .
+
+as the iv&v contractor noted , if testing is not properly controlled and documented , there is no assurance that the system has been adequately tested and will perform as expected .
+
+accordingly , hhs will need to develop such documents prior to conducting testing , such as developing test cases and executing the actual tests .
+
+given the issues associated with hhs' requirements management process , even if hhs addresses these testing process weaknesses , evaluating ufms based solely on testing will not ensure that cdc's and hhs' needs will be met .
+
+it is unlikely that the system testing phase will uncover all defects in the ufms system .
+
+in fact , testing , based on well - defined requirements , performed through the system test phase , often catches less than 60 percent of a program's defects .
+
+in hhs' case , problems with its poorly defined requirements make creating test cases more challenging and increase the likelihood that the systems test phase will identify significant defects that are often identified by system testing .
+
+the remaining errors are found through other quality assurance practices , such as code inspections , or by end users after the software has been put into production .
+
+thus , it will be important for hhs to implement a quality assurance program that is both rigorous and well - structured .
+
+the ability of hhs to effectively address its data conversion and system interface challenges will also be critical to the ultimate success of ufms .
+
+in its white paper on financial system data conversion , jfmip identified data conversion as one of the critical tasks necessary to successfully implement a new financial system .
+
+moreover , jfmip stated that data conversion is one of the most frequently underestimated tasks .
+
+jfmip also noted that if data conversion is done right , the new system has a much greater opportunity for success .
+
+on the other hand , converting data incorrectly or entering unreliable data from a legacy system has lengthy and long - term repercussions .
+
+the adage “garbage in garbage out” best describes the adverse impact .
+
+for example , the national aeronautics and space administration ( nasa ) cited data conversion problems as a major reason that it was unable to prepare auditable financial statements from its new financial management system .
+
+hhs officials had initially expected to perform only two data conversion testing efforts , but decided that two additional data conversion testing efforts were needed after identifying 77 issues during the first data conversion test .
+
+while there is no standard number of data conversion tests that are needed , the key to successfully converting data from a legacy system to a new system is that the data conversion test is successfully executed with minimal errors .
+
+in addition , system interfaces had not been fully developed as expected for the conference room pilots held in march and april 2004 .
+
+proper implementation of the interfaces between ufms and the other systems it receives data from and sends data to is essential for the successful deployment of ufms .
+
+hhs had originally expected to perform two data conversion testing efforts ( commonly referred to as mock conversions ) prior to the system being implemented at cdc .
+
+in discussions with hhs officials , we noted that other agencies have found that many more mock conversions are required , but hhs officials told us that the project schedule did not allow for many more conversion efforts .
+
+however , according to hhs , more than 8 months of preparatory activities were completed before beginning the first mock conversion .
+
+they also told us that at least some of these data - cleanup efforts had started about 3 years ago .
+
+as with other efforts on this project , the quantitative data necessary to determine whether hhs' expectations were realistic , such as the number of issues identified during a mock conversion , were not produced until late in the implementation cycle .
+
+in may 2004 , hhs performed the first of its two planned mock conversions .
+
+on the basis of the results of this effort , hhs has now decided that it will need to perform two additional mock conversions before the october 2004 implementation at cdc .
+
+as shown in the following examples of the problems found in the first mock conversion , data cleanup was not sufficient in at least some cases to support the data conversion efforts .
+
+employer identification numbers ( ein ) assigned to customers caused problems because adequate data cleanup efforts had not yet been performed .
+
+for example , multiple customers had the same ein or an ein on the invoice did not have a corresponding customer .
+
+in addition , over 1,300 vendors lacked the necessary banking information .
+
+problems related to data quality and conversion logic were found in the conversions related to general ledger account balances .
+
+a primary cause of the problems was that the legacy system performed its closing activities by appropriation while ufms does it by program .
+
+on the basis of a review of these problems by the project team , one of the team's recommendations was that a substantial data cleanup effort in the legacy system be started to mitigate the problems identified in this mock conversion .
+
+overall , hhs identified 77 issues that applied to 10 of the 11 business activities covered by this mock conversion .
+
+table 2 shows the types of actions hhs identified as necessary to address these issues .
+
+at the conclusion of the first mock conversion , the project team believed that most of the major conversion issues had been identified and that subsequent data conversion efforts would only identify issues that required refinements to the solutions developed for the issues already identified .
+
+on the basis of the results of the first mock conversion , they also agreed to perform two additional mock conversions .
+
+we also noted similar problems in hhs' efforts related to system interfaces .
+
+for example , one purpose of the march / april 2004 conference room pilot was to demonstrate several key system interfaces .
+
+however , a key feature of system interface efforts — error correction — was not available for demonstration since it had not yet been developed .
+
+at the conference room pilot , a user asked about how the error correction process would work for transactions that were not processed between two systems correctly and the user was told that the project team had not yet worked out how errors would be managed .
+
+until hhs defines and implements this functionality , it will be unable to ensure that the processes being used for exchanging data between ufms and more than 30 cdc systems ensures the necessary levels of data integrity .
+
+properly implementing the interfaces will be critical to performing a realistic system test at cdc and ensuring ufms will properly operate when in production .
+
+also , hhs expects ufms to interface with about 110 systems when it is fully implemented .
+
+in our view , a major value of a risk management system is the increased visibility over the scope of work and resources needed to address the risks .
+
+hhs officials have developed a risk assessment and mitigation strategy and have implemented a process for managing ufms risks that meets many of the risk management best practices .
+
+for example , they cited a program to identify risks to the project , such as staffing shortages and training deficiencies , and have hhs management focus on those risks .
+
+our review confirmed that hhs does maintain a risk database and that these risks are available for review and discussion during project oversight meetings .
+
+however , we noted problems with the implementation of the risk management system .
+
+hhs routinely closed its identified risks on the premise that they had been identified and were being addressed .
+
+as of march 2004 , 13 of the 44 project risks identified by hhs were considered “closed,” even though it appeared that actions taken to close the risks were still ongoing .
+
+for example , hhs had identified data conversion as a risk because the conversion might be more complex , costly , and time consuming than previously estimated .
+
+however , this risk was closed in february 2003 because a data conversion strategy was in the project plan that ufms officials considered as adequate to mitigate the risk .
+
+hhs officials characterized this practice as intended to streamline the number of risks for discussion at biweekly meetings .
+
+project officials defended this approach under the premise that if the mitigating actions were not achieving their desired results , then the risk would be “reopened.” after we discussed this with hhs officials , they agreed to revise their procedures to include a resolution column with more information on why a risk was closed .
+
+this change should improve management's ability to oversee the inventory of risks , their status , and the effectiveness of the mitigating strategies .
+
+according to hhs , the project has been able to obtain high - level sponsorship from senior financial management officials who routinely review its progress .
+
+this sponsorship has enabled the project to gain support from individuals critical to the implementation of ufms at organizational units such as cdc .
+
+in addition , senior management officials have received periodic reports from a contractor hired to perform independent verification and validation that help identify issues needing management attention .
+
+because of this strong support and oversight , hhs officials said they believed that the risks associated with the project have been reduced to acceptable levels and that the project can serve as a management model .
+
+while we agree that top management commitment and oversight together comprise one critical factor in determining a project's success , they are not in themselves sufficient to provide reasonable assurance of the project's success .
+
+as noted in our discussion of disciplined processes , the inadequate implementation of any one of the disciplined processes in systems development can significantly reduce or overcome the positive benefits of others .
+
+in this case , it is important to act promptly to address risks so as to minimize their impact .
+
+in this regard , in february 2003 , hhs obtained the services of the current contractor to perform the iv&v function for the ufms project .
+
+as of may 2004 , according to the contractor , its staff has participated in hundreds of meetings at all levels within the project , provided written comments and recommendations on over 120 project documents , and produced 55 project status and assessment reports .
+
+twice a month it produces a report that is sent directly to the executive sponsor of the ufms project .
+
+these reports highlight the iv&v team's view on the overall status of the ufms project , including a discussion of any impacts or potential impacts to the project with respect to cost , schedule , and performance and a section on current iv&v concerns and associated recommendations .
+
+the iv&v contractor reported several project management and oversight weaknesses that increase the risks associated with this project that were not promptly addressed .
+
+examples include the following .
+
+personnel .
+
+although the contractor hired by hhs to perform iv&v services identified the lack of personnel as a major risk factor in june 2003 , it took hhs and its system integrator over 6 months to substantially address this weakness .
+
+in february 2004 , the iv&v contractor reported this issue as closed .
+
+in closing this issue , the iv&v contractor noted that the availability of adequate resources was an ongoing concern , and the issue may be reopened at a later date .
+
+related human capital issues are discussed in a separate section of this report .
+
+critical path analysis .
+
+in august 2003 , the iv&v contractor noted that an effective critical path analysis had not been developed .
+
+a critical path defines the series of tasks that must be finished on time for the entire project to finish on schedule .
+
+each task on the critical path is a critical task .
+
+as of april 2004 , this weakness had not been effectively addressed .
+
+until hhs can develop an effective critical path analysis for this project , it does not have adequate assurance that it can understand the impact of various project events , such as delays in project deliverables .
+
+hhs' critical path report shows planned start and finish dates for various activities , but does not show the actual progress so that the impact of schedule slips can be analyzed .
+
+the iv&v contractor recommended that critical path analysis and discussion become a more prominent feature of ufms project management to monitor the resources assigned to activities that are on the critical path .
+
+earned value management system .
+
+in august 2003 , the iv&v contractor also noted that an effective earned value management system had not been implemented .
+
+earned value management attempts to compare the value of work accomplished during a given period with the work scheduled for that period .
+
+by using the value of completed work as a basis for estimating the cost and time needed to complete the program , earned value can alert program managers to potential problems early in the program .
+
+for example , if a task is expected to take 100 hours to complete and it is 50 percent complete , the earned value management system would compare the number of hours actually spent to complete the task to the number of hours expected for the amount of work performed .
+
+in this example , if the actual hours spent equaled 50 percent of the hours expected , the earned value would show that the project's resources were consistent with the estimate .
+
+as of april 2004 , this weakness had not been effectively addressed .
+
+without an effective earned value management system , hhs has little assurance that it knows the status of the various project deliverables in the context of progress and associated cost .
+
+in other words , an effective earned value management system would be able to provide quantitative data on the status of a given project deliverable , such as a data conversion program .
+
+on the basis of this information , hhs management would be able to determine whether the progress of a task was within the expected parameters for completion .
+
+management could then use this information to determine actions to take to mitigate risk and manage cost and schedule performance .
+
+the following additional significant issues were considered open by the iv&v contractor as of april 2004 .
+
+requirements management .
+
+the project had not produced an overall requirements traceability matrix that identified all the requirements and the manner in which each will be verified .
+
+in addition , hhs had not implemented a consistent approach to defining and maintaining a set of “testable” requirements .
+
+ufms test program adequacy .
+
+the test program for ufms had not been adequately defined and the test documentation reviewed to date lacks the detail typically found in test plans that are developed in accordance with industry standards and best practices .
+
+ufms strategy documents .
+
+a number of key strategy documents that provide the foundation for system development and operations had not been completed as defined in the project schedule .
+
+these documents are used for guidance in developing documents for articulating the plans and procedures used to implement ufms .
+
+examples of the documents that were 2 or more months late include the ufms business continuity strategy , ufms lifecycle test strategy , global interface strategy , and global conversion strategy .
+
+in addition , the iv&v contractor has presented other issues , concerns , and recommendations in its reports .
+
+for example , a may 2004 report noted that the iv&v contractor had expressed some concerns on the adequacy of the project schedule and the status of some data conversion activities .
+
+our review of the iv&v contractor's concerns found that they are consistent with those that we identified in our review of ufms .
+
+the ability to understand the impact of the weaknesses we and the iv&v contractor identified is limited because hhs has not effectively captured the types of quantitative data or metrics that can be used to assess the effectiveness of its management processes , such as identifying and quantifying any weaknesses in its requirements management process .
+
+this information is necessary to understand the risk being assumed and whether the ufms project will provide the desired functionality .
+
+hhs does not have a metrics measurement process that allows it to fully understand ( 1 ) its capability to manage the entire ufms effort ; ( 2 ) how its process problems will affect the ufms cost , schedule , and performance objectives ; and ( 3 ) the corrective actions needed to reduce the risks associated with the problems identified .
+
+without such a process , hhs management can only focus on the project schedule and whether activities have occurred as planned , not whether the activities achieved their objectives .
+
+experience has shown that such an approach leads to rework instead of making real progress on the project .
+
+sei has found that metrics identifying important events and trends are invaluable in guiding software organizations to informed decisions .
+
+key sei findings relating to metrics include the following .
+
+the success of any software organization depends on its ability to make predictions and commitments relative to the products it produces .
+
+effective measurement processes help software groups succeed by enabling them to understand their capabilities so that they can develop achievable plans for producing and delivering products and services .
+
+measurements enable people to detect trends and to anticipate problems , thus providing better control of costs , reducing risks , improving quality , and ensuring that business objectives are achieved .
+
+defect tracking systems are one means of capturing quantitative data that can be used to evaluate project efforts .
+
+although hhs has a system that captures the defects that have been reported , we found that the agency has not effectively implemented a process to ensure that defects are identified and reported as soon as they have been identified .
+
+for example , we noted in the march / april 2004 conference room pilot that one of the users identified a process weakness related to grant accounting as a “showstopper.” however , this weakness did not appear in the defect tracking system until about 1 month later .
+
+as a result , during this interval , the hhs defect tracking system did not accurately reflect the potential problems identified by the users , and hhs management was unable to determine ( 1 ) how well the system was working and ( 2 ) the amount of work necessary to correct the defects .
+
+such information is critical when assessing a project's status .
+
+according to hhs officials at of the end of our fieldwork , the ufms project is on schedule .
+
+however , while the planned activities may have been performed , because there are not quantifiable criteria for assessing progress , it is unclear whether they were performed successfully or whether the activities have been accomplished substantively .
+
+for example , one major milestone was to conduct a conference room pilot in march / april 2004 .
+
+hhs held the conference room pilot in march / april 2004 , and so it considered that the milestone had been met .
+
+however , hhs did not define what constituted success for this event , such as the users identifying no significant defects in functionality .
+
+a discussion of the problems we identified with the march / april 2004 conference room pilot is included in appendix iii and clearly demonstrates that the objective of this activity , to validate the prototype system and test interfaces , was not achieved .
+
+therefore , by measuring progress based on the fact that this conference room pilot was held , hhs has little assurance that the project is in fact on schedule and can provide the desired functionality .
+
+this approach increases the risk that hhs will be surprised by a major malfunction at a critical juncture in the project , such as when it conducts system testing or attempts to implement the system at cdc .
+
+good metrics would enable hhs to assess the risk of moving forward on ufms with a much greater degree of certainty .
+
+hhs will be better able to proactively manage ufms through disciplined processes as opposed to having to respond to problems as they arise .
+
+hhs' inability to effectively implement the types of disciplined processes necessary to reduce risks to acceptable levels does not mean that the agency cannot put in place an effective process prior to the cdc implementation .
+
+however , hhs has little time to ( 1 ) address long - standing requirements management problems , ( 2 ) develop effective test cases from requirements that have not yet been defined at the level necessary to support effective testing efforts , and ( 3 ) develop and implement disciplined test management processes before it can begin its testing efforts .
+
+furthermore , hhs will need to address its project management and oversight weaknesses so that officials can understand ( 1 ) the impact that the defects identified during system testing will have on the project's schedule and ( 2 ) the corrective actions needed to reduce the risks associated with the problems identified .
+
+without effectively implementing disciplined processes and the necessary metrics to understand the effectiveness of the processes that it has implemented , hhs is incurring unnecessary risks that the project will not meet its cost , schedule , and performance objectives .
+
+the kinds of problems we saw at hhs for the ufms project have historically not boded well for successful system development at other federal agencies .
+
+in 1999 we reported on a system at the department of the interior's bureau of indian affairs ( bia ) that had problems similar to those discussed in this report .
+
+as is the case at hhs , interior's deficiencies in requirements management and other disciplined processes meant that interior had no assurance that its newly acquired system would meet its specific performance , security , and data management needs and that it would be delivered on time and on schedule .
+
+to reduce these risks , we recommended that interior develop and implement an effective risk management plan and that interior ensure that all project decisions were ( 1 ) based on objective data and demonstrated project accomplishments and ( 2 ) driven by events , not the schedule .
+
+in subsequent reviews we noted that , like hhs , interior planned to use testing to demonstrate that the system could perform its intended functions .
+
+however , as we reported in september 2000 , bia did not follow sound practices in conducting its system and user acceptance tests for this system .
+
+subsequently , in may 2004 , the agency reported that only one function had been successfully implemented and that it was in the process of evaluating the capabilities and shortcomings of the system to determine whether any other components could be salvaged for interim use while it looked for a new system to provide the desired functionality .
+
+in reports on other agencies , we have also identified weaknesses in requirements management and testing that are similar to the problems we identified at hhs .
+
+examples of problems that have resulted from undisciplined efforts include the following .
+
+in april 2003 , we reported that nasa had not implemented an effective requirements management process and that these requirement management problems adversely affected its testing activities .
+
+we also noted that because of the testing inadequacies , significant defects later surfaced in the production system .
+
+in may 2004 , we reported that nasa's new financial management system , which was fully deployed in june 2003 as called for in the project schedule , still did not address many of the agency's most challenging external reporting issues , such as external reporting problems related to property accounting and budgetary accounting .
+
+in may 2004 , we reported that for two major department of defense ( dod ) systems , the initial deployments for these systems did not operate as intended and , therefore , did not meet component - level needs .
+
+in large part , these operational problems were due to dod not effectively implementing the disciplined processes that are necessary to manage the development and implementation of the systems in the areas of requirements management and testing .
+
+dod program officials have acknowledged that the initial deployments of these systems experienced problems that could be attributed to requirements and testing .
+
+the problems experienced by these other agencies are illustrative of the types of problems that can result when disciplined processes are not properly implemented .
+
+whether hhs will experience such problems cannot be known until the agency obtains the quantitative data necessary to indicate whether the system will meet its needs .
+
+accordingly , hhs will need to ensure it adequately addresses the numerous weaknesses we and the iv&v contractor identified and has reduced the risk to an acceptable level before implementing ufms at cdc .
+
+as we will be discussing in the next section , compounding the risk to ufms from not properly implementing disciplined processes , is the fact that hhs is introducing ufms into an environment with weaknesses in its departmentwide it management practices .
+
+hhs has planned and developed ufms using the agency's existing it investment management processes .
+
+however , we have reported — and hhs has acknowledged — weaknesses in it investment management , enterprise architecture , and information security .
+
+such weaknesses increase the risk that ufms will not achieve planned results within the estimated budget and schedule .
+
+in addition to weaknesses in disciplined processes in the development of ufms , weaknesses in the hhs' it management processes also increase the risks associated with ufms .
+
+hhs is modifying its it investment management policies , developing an enterprise architecture , and responding to security weaknesses with several ongoing activities , but these changes may not be implemented in time to compensate for the increased risks .
+
+it investment management provides for the continuous identification , selection , control , life - cycle management , and evaluation of it investments .
+
+the clinger - cohen act of 1996 lays out specific aspects of the process that agency heads are to implement in order to maximize the value of the agency's it investments .
+
+in addition , omb and gao have issued guidance for agencies to use in implementing the clinger - cohen act requirements for it investment management .
+
+our information technology investment management framework is a maturity model composed of five progressive stages of maturity that an agency can achieve in its it investment management capabilities .
+
+these stages range from creating investment awareness to developing a complete investment portfolio to leveraging it for strategic outcomes .
+
+the framework can be used both to assess the maturity of an agency's investment management processes and as a tool for organizational improvement .
+
+omb circular no .
+
+a - 130 , which implements the clinger - cohen act , requires agencies to use architectures .
+
+a well - defined enterprise architecture provides a clear and comprehensive picture of the structure of any enterprise by providing models that describe in business and technology terms how the entity operates today and how it intends to operate in the future .
+
+it also includes a plan for transitioning to this future state .
+
+enterprise architectures are integral to managing large - scale programs such as ufms .
+
+managed properly , an enterprise architecture can clarify and help optimize the interdependencies and relationships among an organization's business operations and the underlying it infrastructure and applications that support these operations .
+
+employed in concert with other important management controls , architectures can greatly increase the chances that organizations' operational and it environments will be configured to optimize mission performance .
+
+to aid agencies in assessing and improving enterprise architecture management , we issued guidance establishing an enterprise architecture management maturity framework .
+
+that framework uses a five - stage maturity model outlining steps toward achieving a stable and mature process for managing the development , maintenance , and implementation of an enterprise architecture .
+
+the reliability of operating environments , computerized data , and the systems that process , maintain , and report these data is a major concern to federal entities , such as hhs , that have distributed networks that enable multiple computer processing units to communicate with each other .
+
+such a platform increases the risk of unauthorized access to computer resources and possible data alteration .
+
+effective departmentwide information security controls will help reduce the risk of loss due to errors , fraud and other illegal acts , disasters , or incidents that cause systems to be unavailable .
+
+inadequate security and controls can adversely affect the reliability of the operating environments in which ufms and its applications operate .
+
+without effective general controls , application controls may be rendered ineffective by circumvention or modification .
+
+for example , a control designed to preclude users from entering unreasonably large dollar amounts in a payment processing system can be an effective application control , but this control cannot be relied on if general controls permit unauthorized program modifications to allow certain payments to be exempted from it .
+
+ufms is at increased risk because of previously reported weaknesses in the process that hhs uses to select and control its it investments .
+
+in january 2004 , we reported that there were serious weaknesses in hhs it investment management .
+
+notably , hhs had not ( 1 ) established procedures for the development , documentation , and review of it investments by its review boards or ( 2 ) documented policies and procedures for aligning and coordinating investment decision making among its investment management boards .
+
+in addition , hhs had not yet established selection criteria for project investments or a requirement that it investments support work processes that have been simplified or redesigned .
+
+hhs is modifying several of its it investment management policies , including its capital planning and investment control guidance and its governance policies ; but as of may 12 , 2004 , these documents were not final or available for review .
+
+until hhs addresses weaknesses in its selection or control processes , it projects like ufms will face an increased likelihood that the projects will not be completed on schedule and within estimated costs .
+
+in november 2003 , we released a report noting the importance of leadership to agency progress on enterprise architecture efforts .
+
+we reported that federal agencies' progress toward effective enterprise architecture management was limited: in a schedule of five stages leading to a highly effective enterprise architecture program , 97 percent of the agencies surveyed were still in stage 1 — creating enterprise architecture awareness .
+
+in that report , we noted that hhs had reached stage 2 — building the enterprise architecture management foundation — by successfully satisfying all elements of that stage of the maturity framework .
+
+in addition , hhs had successfully addressed three of six elements of the stage 3 maturity level — developing architecture products .
+
+hhs has laid that foundation by ( 1 ) assigning enterprise architecture management roles and responsibilities and ( 2 ) establishing plans for developing enterprise architecture products and for measuring program progress and product quality .
+
+progressing through the next stage would involve defining the scope of the architecture and developing products describing the organization in terms of business , performance , information / data , service / application , and technology .
+
+once the scope is defined and products developed , stage 3 organizations track and measure progress against plans ; identify and address variances , as appropriate ; and report on their progress .
+
+although it has made progress , hhs has not yet established an enterprise architecture to guide and constrain its it projects .
+
+in january 2004 , hhs' acting chief architect told us that the department continues to work on implementing an enterprise architecture to guide its decision making .
+
+he also noted that hhs plans to make ufms a critical component of the enterprise architecture now under development .
+
+however , most of the planning and development of the ufms it investment has occurred without the guidance of an established enterprise architecture .
+
+our experience with other federal agencies has shown that projects developed without the constraints of an established enterprise architecture are at risk of being duplicative , not well integrated , unnecessarily costly to maintain and interface , and ineffective in supporting missions .
+
+hhs has recognized the need to improve information security throughout the department , including in key operating divisions , and has various initiatives under way ; however , it has not yet fully implemented the key elements of a comprehensive security management program .
+
+unresolved general control weaknesses at headquarters and in hhs' operating divisions include almost all areas of information system controls described in our federal information system controls audit manual ( fiscam ) .
+
+these weaknesses are in entitywide security , access controls , system software , application software , and service continuity and they are significant and pervasive .
+
+according to a recent ig report , the underlying cause for most of the weaknesses was that the department did not have an effective management structure in place to ensure that sensitive data and critical operations received adequate attention and that appropriate security controls were implemented to protect them .
+
+hhs has not sufficiently controlled network access , appropriately limited mainframe access , or fully implemented a comprehensive program to monitor access .
+
+weaknesses in other information security controls , including physical security , further increased the risk to hhs' information systems .
+
+as a result , sensitive data — including information related to the privacy of u.s. citizens , payroll and financial transactions , proprietary information , and mission - critical data — were at increased risk of unauthorized disclosure , modification , or loss , possibly without being detected .
+
+overall , the ig concluded that the weaknesses left the department vulnerable to unauthorized access to and disclosure of sensitive information , malicious changes that could interrupt data processing or destroy data files , improper payments , or disruption of critical operations .
+
+extensive information security planning for ufms was based on requirements and applicable guidance set forth in the federal information security management act , omb circular no .
+
+a - 130 appendix iii ( security of federal automated information resources ) , national institute of standards and technology guidance , and our fiscam .
+
+however , that planning was done without complete information from the department and operating divisions .
+
+hhs has not conducted a comprehensive , departmentwide assessment of information security general controls .
+
+further , information security general controls at four operating divisions have not been recently assessed .
+
+ufms officials told us they did not know which operating divisions had conducted or contracted for a review of their individual information security environments .
+
+without departmentwide and operating - division - specific assessments , hhs increases its risk that information security general control weaknesses will not be identified and therefore will not be subject to departmentwide resolution or mitigation by ufms controls .
+
+according to hhs officials , some operating divisions that have been assessed recently have not provided ufms with current information on the status of the outstanding weaknesses in their operating environments .
+
+ufms officials told us that they do not have assurance of the reliability of the control environment of these operating divisions .
+
+without information on control weaknesses in the operating divisions , ufms management has not been in a position to develop mitigating controls that could compensate for departmentwide weaknesses .
+
+as a result , ufms planning for security cannot provide reasonable assurance that the system is protected from loss due to errors , fraud and other illegal acts , disasters , and incidents that cause systems to be unavailable .
+
+serious understaffing and incomplete workforce planning have plagued the ufms project .
+
+human capital management for the ufms project includes organizational planning , staff acquisition , and team development .
+
+it is essential that an agency take the necessary steps to ensure that it has the human capital capacity to design , implement , and operate a financial management system .
+
+however , the ufms project has experienced staff shortages as high as 40 percent of the federal positions that hhs believed were needed to implement ufms .
+
+although the staff shortage has been alleviated to a great extent , the impact of such a significant shortfall lingers .
+
+further , hhs has not yet fully developed key workforce planning tools , such as the cdc skills gap analysis , to help transform its workforce so that it can effectively use ufms .
+
+it is important that agencies incorporate strategic workforce planning by ( 1 ) aligning an organization's human capital program with its current and emerging mission and programmatic goals and ( 2 ) developing long - term strategies for acquiring , developing , and retaining an organization's total workforce to meet the needs of the future .
+
+this incorporates a range of activities from identifying and defining roles and responsibilities to identifying team members to developing individual competencies that enhance performance .
+
+human capital planning should be considered for all stages of the system implementation .
+
+according to jfmip's building the work force capacity to successfully implement financial systems , the roles needed on an implementation team are consistent across financial system implementation projects and include a project manager , systems integrator , functional experts , information technology manager , and it analysts .
+
+many of these project roles require the dedication of full - time staff for one or more of the project's phases .
+
+hhs has identified the lack of resources as a risk to the project and acquired the staff to fill some of the roles needed for a systems implementation project .
+
+the project has a project manager , systems integrator , and some functional experts .
+
+however , on the basis of our review of the hhs organization and staffing plan and the most recent program management office organization chart , many positions were not filled as planned .
+
+for example , as reported in the iv&v contractor's september 2003 report , some key personnel filled multiple positions and their actual available time was inadequate to perform the allocated tasks — commonly referred to as staff being overallocated on the project .
+
+as a result , some personnel were overworked , which according to the iv&v contractor , could lead to poor morale .
+
+the ufms organization chart also showed that the ufms project team was understaffed and that several integral positions were vacant or filled with part - time detailees .
+
+as of january 2004 , 19 of the 47 ufms positions in the ufms program management office identified as needed for the ufms project were not filled .
+
+the vacant positions included key positions such as the enterprise architect , purchasing , testing , and configuration management leads .
+
+while hhs and the systems integrator have taken measures to acquire additional human resources for the implementation of ufms , scarce resources could significantly jeopardize the project's success and have led to several key deliverables being significantly behind schedule , as discussed in the section on disciplined processes .
+
+without adequate resources to staff the project , the project schedule could be negatively affected , project controls and accountability could be diminished , and the successful implementation of ufms could be compromised .
+
+strategic workforce planning is essential for achieving the mission and goals of the ufms project .
+
+as we have reported , there are five key principles that strategic workforce planning should address: involve top management , employees , and other stakeholders in developing , communicating , and implementing the strategic workforce plan .
+
+determine the critical skills and competencies that will be needed to achieve current and future programmatic results .
+
+develop strategies that are tailored to address gaps in the number , deployment , and alignment of human capital approaches for enabling and sustaining the contributions of all critical skills and competencies .
+
+build the capability needed to address administrative , educational , and other requirements important to support workforce planning strategies .
+
+monitor and evaluate the agency's progress toward its human capital goals and the contribution that human capital results have made toward achieving programmatic results .
+
+hhs has taken first steps to address three of the five key principles identified in our report on strategic workforce planning .
+
+to address the first key principle , hhs' top management first communicated the agency's goal to implement a unified financial management system in june 2001 and has continued to communicate the agency's vision .
+
+hhs has developed an organizational change management plan and , according to the ufms project's statement of work , hhs , in undertaking ufms , will seek to ensure that sufficient efforts are made to address communications , human resources , and training requirements .
+
+to meet the second principle of identifying the needed skills and competencies , hhs developed a global organization impact analysis in march 2003 and subsequently prepared an analysis for cdc that identified workforce and training implications associated with the major changes that will occur in its financial management business processes .
+
+however , more work remains .
+
+although a global / cdc pilot competency report was prepared that focuses on preparing and equipping the workforce to function effectively in the new environment , none of the other operating divisions scheduled to implement ufms had prepared a competency report as of may 2004 .
+
+to effectively address the third principle of developing strategies to address the gaps in human capital , hhs must first identify the skills and competencies needed .
+
+hhs has plans to conduct a skills gap analysis on a site - specific basis .
+
+however , as of may 2004 , the cdc skills gap analysis had not been completed .
+
+cdc officials maintain that they intend to wait until after the system is implemented to assess the changes in individuals' workloads and make decisions on staffing changes .
+
+in addition , hhs is currently developing a global workforce transition strategy , which the other operating divisions will use as a model in developing their own strategies .
+
+according to hhs officials , hhs has also prepared a global training strategy .
+
+training plans are to be developed on a site - specific basis using the global strategy as a model .
+
+although cdc has a tentative schedule for planned training , as of may 2004 the cdc training plan was not complete .
+
+as we have previously reported , having staff with the appropriate skills is key to achieving financial management improvements , and managing an organization's employees is essential to achieving results .
+
+hhs already faces challenges in implementing its financial management system due to the lack of adequate resources .
+
+by not identifying staff with the requisite skills to implement such a system and by not identifying gaps in needed skills and filling them , hhs has reduced its chances of successfully implementing and operating ufms .
+
+hhs has not followed key disciplined processes necessary to reduce the risks associated with implementing ufms to acceptable levels .
+
+these problems are similar to those encountered by other agencies that have found themselves under strong pressure to skip steps in their haste to get systems up and running and produce results .
+
+if hhs continues on this path , it runs a higher risk than necessary of finding , as many others have already discovered , that the system may be more costly to operate , take more time and effort to perform needed functions , be more disruptive to the work of the agency , and may not achieve the intended improvement .
+
+ideally , hhs should not continue with its current approach for ufms .
+
+however , if hhs decides for operational reasons to continue its plan to deploy ufms at cdc in october 2004 , then as a precursor to deployment at cdc , there are several key steps that must be taken to mitigate the significant risk related to this deployment .
+
+to begin , hhs must determine the system capabilities that are necessary for the cdc deployment and identify the relevant requirements related to those capabilities .
+
+the associated requirements will have to be unambiguous and adequately express how the system will work , be traceable from their origin through implementation , and be sufficiently tested to confirm that the system meets those functional needs .
+
+validating data conversion efforts and systems interfaces will also be critical to the successful launch of ufms .
+
+hhs will need to ensure that its desire to meet the october 2004 initial deployment of ufms is driven by successful completion of at least these key events based on quantitative data rather than the schedule .
+
+hhs should not deploy ufms at cdc until these critical steps are complete .
+
+before proceeding further with the ufms implementation beyond cdc , hhs should pause to assess whether an appropriate foundation is in place so that ufms will achieve its ultimate goals of a unified accounting system that institutes common business rules , data standards , and accounting policies and procedures .
+
+from our perspective , hhs does not have a fully developed view of how ufms will operate because it moved forward with the project before ensuring that certain key elements , such as a concept of operations and an enterprise architecture , were completed .
+
+without assurances that it is moving ahead with a solid foundation and a fully developed and strongly administered plan for bringing the entire ufms project under the disciplined processes of requirements management , testing , risk management , and the use of quantitative measures to manage the project , hhs risks not achieving its goal of a common accounting system that produces data for management decision making and financial reporting and risks perpetuating its long - standing accounting system weaknesses with substantial workarounds to address any needed capabilities that have not been built into the system .
+
+because we have recently issued reports providing hhs with recommendations to address weaknesses in it investment management processes , we are not making additional recommendations in this report related to those two disciplines other than to reiterate the importance of taking action on our prior recommendations .
+
+it will be important that hhs continue with its ongoing initiatives to strengthen these two areas .
+
+also , hhs has not fully secured its information systems security environment to offer an adequate basis for incorporating adequate security features into ufms as it is being developed .
+
+finally , addressing human capital and staffing shortages that have also increased risks related to ufms is paramount to achieving the agency's objectives for this project .
+
+to help reduce risks associated with deployment of ufms at cdc to acceptable levels , we recommend that the secretary of health and human services direct the assistant secretary for budget , technology , and finance to require that the ufms program staff take the following nine actions: determine the system capabilities that are necessary for the cdc deployment .
+
+identify the relevant requirements related to the desired system capabilities for the cdc deployment .
+
+clarify , where necessary , any requirements to ensure they ( 1 ) fully describe the capability to be delivered , ( 2 ) include the source of the requirement , and ( 3 ) are unambiguously stated to allow for quantitative evaluation .
+
+maintain traceability of the cdc - related requirements from their origin through implementation .
+
+use a testing process that employs effective requirements to obtain the quantitative measures necessary to understand the assumed risks .
+
+validate that data conversion efforts produce reliable data for use in ufms .
+
+verify that systems interfaces function properly so that data exchanges between systems are adequate to satisfy system needs .
+
+measure progress based on quantitative data rather than the occurrence of events .
+
+if these actions are not completed , delay deployment of ufms at cdc .
+
+before proceeding with further implementation of ufms after deployment at cdc , we recommend that the secretary of health and human services direct the assistant secretary for budget , technology , and finance to require that the ufms program staff take the following 14 actions: develop and effectively implement a plan on how hhs will implement the disciplined processes necessary to reduce the risks associated with this effort to acceptable levels .
+
+this plan should include the processes , such as those identified by sei and ieee , that will be implemented and the resources , such as staffing and funding , needed to implement the necessary processes .
+
+develop a concept of operations in accordance with recognized industry standards such as those promulgated by ieee .
+
+the concept of operations should apply to all hhs entities that will be required to use ufms .
+
+this concept of operations should contain a high - level description of the operations that must be performed , who must perform them , and where and how the operations will be carried out , and be consistent with the current vision for the hhs information system enterprise architecture .
+
+implement a requirements management process that develops requirements that are consistent with the concept of operations and calls for each of the resulting requirements to have the attributes associated with good requirements: ( 1 ) fully describing the functionality to be delivered , ( 2 ) including the source of the requirement , and ( 3 ) stating the requirement in unambiguous terms that allows for quantitative evaluation .
+
+maintain traceability of requirements among the various implementation phases from origin through implementation .
+
+confirm that requirements are effectively used for ( 1 ) determining the functionality that will be available in ufms at a given location , ( 2 ) implementing the required functionality , ( 3 ) supporting an effective testing process to evaluate whether ufms is ready for deployment , ( 4 ) validating that data conversion efforts produce reliable data for use in ufms , and ( 5 ) verifying that systems interfaces function properly so that data exchanges between systems are adequate to satisfy each system's needs .
+
+develop and implement a testing process that uses adequate requirements as a basis for testing a given system function .
+
+formalize risk management procedures to consider that ( 1 ) all risks currently applicable to the ufms project are identified and ( 2 ) a risk is only closed after the risk is no longer applicable rather than once management has developed a mitigation strategy .
+
+develop and implement a program that will identify the quantitative metrics needed to evaluate project performance and risks .
+
+use quantitative measures to assess progress and compliance with disciplined processes .
+
+to help ensure that hhs reduces risks in the agencywide it environment associated with its implementation of ufms , we recommend that the secretary of health and human services direct the assistant secretary for budget , technology , and finance to require that the following seven actions are taken by the it program management staff , as appropriate: conduct assessments of operating divisions' information security general controls that have not been recently assessed .
+
+establish a comprehensive program to monitor access to the network , including controls over access to the mainframe and the network .
+
+verify that the ufms project management staff has all applicable information needed to fully ensure a comprehensive security management program for ufms .
+
+specifically , this would include identifying and assessing the reported concerns for all hhs entities regarding key general control areas of the information security management process: ( 1 ) entitywide security planning , ( 2 ) access controls , ( 3 ) system software controls , ( 4 ) segregation of duties , and ( 5 ) application development and change controls .
+
+to help improve the human capital initiatives associated with the ufms project , we recommend that the secretary of health and human services direct the assistant secretary for budget , technology , and finance to require that the following four actions are taken by the ufms program management staff: assess the key positions needed for effective project management and confirm that those positions have the human resources needed .
+
+if needed , solicit the assistance of the assistant secretary for budget , technology , and finance to fill key positions in a timely manner .
+
+finalize critical human capital strategies and plans related to ufms ( 1 ) skills gap analysis , ( 2 ) workforce transition strategy , and ( 3 ) training plans .
+
+in written comments on a draft of this report , hhs described the actions it had taken to date to develop ufms , including some actions related to our recommendations , which if effectively implemented , should reduce project risk .
+
+hhs disagreed with our conclusion that a lack of disciplined processes is placing the ufms program at risk , stating that its processes have been clear and rigorously executed .
+
+hhs characterized the risk in its approach as the result not of a lack of disciplined process but of an aggressive project schedule .
+
+hhs stated that it made a decision early in the program to phase in the deployment of the system to obtain what it referred to as incremental benefits , and said that a core set of requirements will be available for the october 2004 release at cdc .
+
+hhs added that if a system functional capability becomes high risk for the pilot implementation at cdc , it could be deferred to a subsequent release without affecting the overall implementation .
+
+hhs did not provide examples of the functional capabilities that could be deferred under such a scenario , but we understand that at least some functionality associated with grant accounting being deployed at cdc is less than that originally envisioned when we performed our review — less than 6 months before the scheduled cdc implementation date .
+
+hhs stated that it had reached every major milestone to date within the planned timeframes and budget for almost 3 years while managing to mitigate the cost , schedule , and technical risks .
+
+the agency considers this is a testament to ufms management disciplines , notwithstanding known needed improvements .
+
+from our perspective , this project demonstrates the classic symptoms of a schedule - driven effort for which key processes have been omitted or shortcutted , thereby unnecessarily increasing risk .
+
+this is a multiyear project , and it is important that the project adhere to disciplined processes that represent best practices .
+
+we have no problem whatsoever with a phased approach and view it as a sound decision for this project .
+
+there is no doubt that a phased approach can help reduce risks .
+
+however , we do not agree that a phased approach adequately mitigates risk in a project of this magnitude , given the other problems we identified .
+
+as discussed in our report and highlighted in the following sections that further evaluate hhs' comments on our draft report , we identified a number of problems with hhs' methodology , including problems in requirements management , testing , project management and oversight , and it management , that are at the heart of our concern .
+
+also , we are not saying that hhs is not following any disciplined processes , and in this report we have recognized certain hhs actions that we believe represent best practices that reduce risk .
+
+we are saying that hhs has not reduced its risk to an acceptable level because a number of key disciplined processes were not yet in place or were not effectively implemented .
+
+we focused our 34 recommendations on tangible actions that hhs can take to adequately mitigate risk .
+
+risk on a project such as this can never be eliminated , but risk can be much better managed than what we observed for this project .
+
+with respect to hhs' comment that all milestones have been met , as we discussed in detail in this report , we caution that because hhs has insufficient quantifiable criteria for assessing the quality of its progress and the impact of identified defects , it does not have the information it needs to determine whether the milestones have been substantively accomplished and the nature and extent of resources needed to resolve remaining defects .
+
+a best practice is having quantitative metrics and a disciplined process for continually measuring and monitoring results .
+
+we stand firmly behind our findings that hhs had not reduced project risk to an acceptable level because it had not adequately adhered to disciplined processes called for in its stated implementation methodology .
+
+we are somewhat encouraged by the planned actions outlined in hhs' comment letter and the fact that it has now decided to delay initial implementation by at least 2 weeks to address known problems and has indicated it may delay the initial implementation further as needed .
+
+only time will tell how well this project turns out , as the initial implementation at cdc represents just the first phase .
+
+our hope is that the disciplined processes discussed in our report and addressed in our recommendations will be followed and that risks of a project of this magnitude and importance will be reduced to an acceptable level .
+
+if the past is prologue , taking the time to adhere to disciplined processes will pay dividends in the long term .
+
+hhs stated that the underlying premise of our report is that there is one correct way to perform an implementation for a project such as ufms and that this methodology , commonly referred to as the waterfall methodology , is inappropriate for a cots - based system .
+
+our report does not call for the use of this or any other specific methodology .
+
+instead , we have emphasized the importance of following disciplined processes in the development and implementation of large and complex information management systems , including financial management systems such as ufms .
+
+as we have reiterated throughout this report , we view disciplined processes as the key to successfully carrying out a system development and implementation program whatever the methodology .
+
+in the case of hhs' cots - based system development program , we did not question the methodology , but have concerns about hhs' ability to successfully implement its methodology .
+
+for example , as explained in our report and reiterated in hhs' comments , before a cots software package is selected for implementation , requirements need to be more flexible and less specific than custom - developed software because no off - the - shelf product is likely to satisfy all of the detailed requirements for a large , complex organization such as hhs .
+
+once the product is selected , however , a disciplined approach to cots implementation demands that requirements be defined at a level of specificity that allows the software to be configured to fit the system under development and to be implemented to meet the organization's needs .
+
+in discussing the hhs methodology , our report is consistent with how hhs described its methodology in its comments .
+
+as we noted in the report , the methodology selected by hhs requires ( 1 ) reviewing and updating the requirements through process design workshops , ( 2 ) establishing the initial baseline requirements , ( 3 ) performing a fit / gap analysis , ( 4 ) developing gap closure alternatives , and ( 5 ) creating the final baseline requirements .
+
+however , as noted in our report , hhs was unable to successfully implement its methodology for the majority of the requirements we reviewed .
+
+for example , one inadequately defined requirement was linked to the budget distributions process .
+
+however , this process , which should of provided additional specificity to understand how the system needed to be configured , stated that the process was “to be determined. .
+
+in its comments , hhs stated that in july 2002 it had developed a “target business model” that is equivalent to a concept of operations for guiding its development efforts .
+
+the document hhs referenced , which we reviewed during our audit , along with several other requirement - related documents hhs had provided , did not have all the elements associated with a concept of operations document as defined by ieee .
+
+for example , the document did not address the modes of operation ; user classes and how they should interact ; operational policies and constraints ; costs of systems operations ; performance characteristics , such as speed , throughput , volume , or frequency ; quality attributes , such as availability , reliability , supportability , and expandability ; and provisions for safety , security , and privacy .
+
+the document does not address a number of other critical issues associated with the project such as the use of shared services .
+
+we also noted that some hhs officials who had reviewed this document stated that it did not resolve a number of issues that needed to be addressed .
+
+for example , hhs reviewers raised questions about who was responsible for several core functions .
+
+when we performed our review , these types of questions remained unanswered , although hhs said in its comments on our draft report that it is taking steps to address these concerns and has now made certain decisions regarding shared services .
+
+in addition , hhs' comment letter stated that it has developed a requirements database that could be used to track the requirements and that its requirements management process used two broad categories - program management office of jfmip requirements and agency - specific requirements .
+
+hhs also stated that the requirements process has fully defined and documented the expected behavior of ufms and that the agency - specific requirements it had identified had been developed in accordance with industry best practices .
+
+hhs noted that it has also developed a requirements traceability verification matrix since our review .
+
+the result , according to hhs , has been a requirements management process that provides fully traceable requirements that are fully tested by the implementation team .
+
+developing and effectively implementing the kinds of processes described in hhs' comments are positive steps that would reduce the risks associated with requirements related defects .
+
+however , since these key processes , which were called for in our report and during meetings held with hhs during our review , were developed and implemented after our work was complete , we are unable to determine whether hhs has yet fully addressed the weaknesses we observed .
+
+as noted in our report , we found numerous requirements that did not contain the necessary specificity to support a good testing program .
+
+we also note that the hhs comments refer to these processes being used for “testable” requirements but do not provide information on how many of the 2,130 requirements contained in its requirements database were considered testable and , therefore , subject to this improved process .
+
+while hhs stated in its comment letter that it has implemented a more disciplined system testing process , its comments also raised concerns about the thoroughness of the testing .
+
+hhs noted that it has selected an application certified by the program management office of jfmip and that “80% of the requirements have been met out of the box functionality.” accordingly , hhs stated that it has , by design , tested these requirements with less rigor than the agency specific requirements .
+
+as noted in hhs' comments , its requirements management database contains 2,130 requirements that include requirements issued by the program management office of jfmip .
+
+however , according to the program management office of jfmip , its testing efforts encompass about 331 requirements , or only about 16 percent of hhs' stated requirements .
+
+compounding this limitation , while the program management office of jfmip test results can be helpful , as the program management office of jfmip has consistently made it clear to agencies , these tests are not intended to take the place of agency - level tests .
+
+the program management office of jfmip tests are in a controlled environment that is not intended to represent the operating environment of a specific agency .
+
+as the project management office of jfmip points out on its web site , agencies need to ( 1 ) test the installed configured system to ensure continued compliance with the governmentwide core requirements and any agency - specific requirements , ( 2 ) assess the suitability of an application for the agency's operating environment , and ( 3 ) assess the cots computing performance in the agency's environment for response time and transaction throughput capacity .
+
+for example , addressing this last point regarding transaction throughput capacity has proven problematic to some agencies that implemented a cots package .
+
+the system could have properly processed a type of transaction , which is what the test requires in order to be certified .
+
+however , the system may require a number of separate processing steps to accomplish this task .
+
+those steps may be acceptable at an agency that has a relatively low volume of this type of transaction , but may prove problematic for an agency with a high volume of this type of transaction .
+
+as noted in the hhs comments , it had not yet developed the test scripts and other documentation that would have enabled us to assess the adequacy of its system testing activities at the time of our review .
+
+therefore , we cannot conclude on whether its system testing activities will have a reasonable assurance of detecting the majority of the defects .
+
+hhs noted that it had conducted preliminary testing , referred to as conference room pilots , in august 2003 and in march and april 2004 and that these activities were attended by finance , business , and program staff members from across hhs , who will be the ultimate users of the new system .
+
+as noted in our report , our review of the conference room pilot conducted in march and april 2004 found significant weaknesses in the processes being used .
+
+this was the last conference pilot scheduled before the pilot deployment at cdc .
+
+we found that some of the stated requirements in a given conference room pilot test script were not tested and defects identified were not promptly recorded .
+
+this is consistent with observations made by hhs' iv&v contractor on the august 2003 conference room pilots .
+
+furthermore , we observed that when users asked about needed functionality , they were told that the functionality would be developed later .
+
+therefore , we are encouraged by the statement in hhs' comment letter that it will implement a disciplined system testing process .
+
+in our report , we also noted that the system testing activities were scheduled late in the first phase of the ufms implementation process , leaving little time for hhs to address any defects identified during system testing and to ensure that the corrective actions taken to address the defects do not introduce new defects .
+
+hhs agreed that system testing would ideally come earlier in the process and noted that although the testing process is being performed late due to an aggressive time schedule , it believed , based on its level of scrutiny , its testing plan will identify the majority of the defects in the system .
+
+we view this as adding to project risk .
+
+however , we are encouraged that in its comments on our draft report , hhs said it was analyzing system integration test results prior to deploying the system at cdc , and that this assessment may result in revising the current software release strategy .
+
+in its comments , hhs stated that its combined use of software tools , including teamplay from primavera , provides management with information for monitoring the project's critical path and the earned value of completed work and that this action was taken in october 2003 after an august 2003 report from its iv&v contractor .
+
+as with other process areas , the key to reducing risks to acceptable levels is not only the tool that is used but , more importantly , the effective implementation of that tool .
+
+in other words , simply selecting an industry standard practice or tool does not guarantee success .
+
+as noted in a may 2004 iv&v report , as of april 2004 , the iv&v contractor was still raising concerns about hhs' ability to perform critical path and earned value analysis .
+
+hhs acknowledged in its comments on our draft report that it continues to work on improving the information provided in the critical path reports and is executing a plan to implement the remainder of the iv&v suggestions .
+
+as we discussed previously in this report , without an effective critical path analysis and an earned value management system , hhs does not have adequate assurance that it can understand the impact of various project events , such as delays in project deliverables , and that it knows the status of the various project deliverables in the context of progress and associated cost .
+
+we continue to believe that management needs this information to determine actions to take to mitigate risk and manage cost and schedule performance .
+
+hhs also stated that all of the needed improvements in its project execution were identified and documented prior to and during our review by its iv&v contractor and that improvements continue to be implemented .
+
+our report clearly identifies areas of mutual concern by us and the iv&v contractor as well as areas where our work uncovered additional issues .
+
+regardless of who identified the problems , we remain concerned that hhs has been slow to act upon the weaknesses identified by the iv&v contractor and has not yet clearly identified actions planned to address our recommendations .
+
+our report provides examples where it has taken hhs months to address the findings made by its iv&v contractor .
+
+regarding quantitative measures , hhs agreed that quantitative measures are crucial to ufms success and stated that it has struck an adequate balance between the number of measures used to assess ufms progress and the effort and costs required to develop and maintain the measures .
+
+hhs described several measures related to its defect - tracking processes that are associated with its system testing efforts .
+
+we agree with hhs that the measures listed in its comment letter are critical to assessing system stability and readiness , but hhs' comments did not indicate whether it is also capturing metrics on items that can help it understand the risks associated with the processes it is implementing , such as with its requirements management process .
+
+for example , hhs stated that system testing had not identified any requirements problems , which indicated the requirements were defined thoroughly .
+
+however , system testing is normally not designed to capture requirements problems since , as noted in hhs' comment letter , testing is structured to determine whether the system is meeting requirements that have been documented .
+
+therefore , it is not clear whether hhs has fully developed a metric process that will address its needs throughout the phased deployments .
+
+regarding human capital , hhs said that it faces its share of challenges in obtaining full - time federal staff due to the temporary nature of an implementation project and the agency's objective to staff a highly competent program team and not a permanent federal bureaucracy .
+
+we recognize that hhs and the systems integrator it has under contract to assist with the project have taken measures to acquire additional staff for the implementation of ufms .
+
+we also recognize the challenge in finding people with the needed skills .
+
+our concern is that the ufms project has experienced staff shortages as high as 40 percent of the federal positions that hhs believed were needed to implement ufms .
+
+this shortage of staff resources led to several key deliverables being significantly behind schedule .
+
+also , while hhs said that cdc has the vast majority of its required positions filled , we found that many of the positions for this operating division were filled with staff from the program management office for the project , which affects the work that should be done to manage and oversee the project .
+
+as stated in our report , without adequate staff resources , the project schedule can be negatively affected , project controls and accountability can be diminished , and the successful implementation of ufms may be compromised .
+
+with respect to it management , including investment management , enterprise architecture , and information security , hhs elaborated on further activities taken to address weaknesses that we had pointed out in our draft report .
+
+in its comments , hhs referenced a web site that provides its it investment policy dated january 2001 , which we had already reviewed and which agency officials stated was in the process of being updated .
+
+in january 2004 , we recommended 10 actions the department should take to improve its it investment management process .
+
+one action called for hhs to revise the department's it investment management policy to include ( 1 ) how this process relates to other agency processes , ( 2 ) an identification of external and environmental factors , ( 3 ) a description of the relationship between the process and the department's enterprise architecture , and ( 4 ) the use of independent verification and validation reviews , when appropriate .
+
+hhs concurred with our recommendations .
+
+further , although hhs' comments indicated that we made a recommendation related to enterprise architecture , as we stated in our conclusions , we did not make recommendations about enterprise architecture in this report .
+
+we agree with hhs that progress has been made in its information security management .
+
+however , hhs did not address the potential impact that outstanding departmentwide information security controls weaknesses could have on the reliability and integrity of the new financial management system .
+
+hhs will need to ensure effective information security controls departmentwide for ufms operations .
+
+in its response to a draft of this report , hhs stated that the timing of our review of the ufms was not optimal and required significant staff time for meetings and preparation , document requests , and communications .
+
+in hhs' opinion , gao involvement was in itself a significant contributor to project schedule risk .
+
+in our view , we conducted this engagement in a professional , constructive manner in which we worked proactively with hhs to provide timely observations on the implementation of ufms .
+
+the timing of our review was aimed at providing input early in the process so that hhs can act to address weaknesses and reduce the risk of implementing a system that does not meet needs and expectations and requires costly rework and work - arounds to operate .
+
+we have found in our reviews of other agencies' system implementation efforts that effective implementation of disciplined processes can reduce risks that have an adverse impact on the cost , timeliness , and performance of a project .
+
+through early recognition and resolution of the weaknesses identified , hhs can optimize its opportunities to reduce the risks that ufms will not fully meet one or more of its cost , schedule , and performance objectives .
+
+further , in performing our review , we made every effort to reduce inconvenience to hhs .
+
+for example , hhs asked us and we agreed to postpone our initial meetings with hhs staff until after the completion of hhs' fiscal year 2003 financial statement audit .
+
+we also followed hhs' protocols in scheduling meetings and requested documentation that should have been readily available , at this stage of the ufms .
+
+hhs' adoption of several of our recommendations evidences the added value of our review and implementation of all 34 of our recommendations will add even greater value to the project .
+
+as agreed with your offices , unless you announce the contents of this report earlier , we will not distribute it until 30 days after its date .
+
+at that time , we will send copies to the chairman and ranking minority member , senate committee on governmental affairs , and other interested congressional committees .
+
+we are also sending copies to the secretary of health and human services and the director of the office of management and budget .
+
+copies will also be made available to others upon request .
+
+the report will also be available at no charge on gao's web site at http: / / www.gao.gov .
+
+if you or your staff have any questions concerning this report , please contact sally e. thompson , director , financial management and assurance , who may be reached at ( 202 ) 512-9450 or by e - mail at thompsons@gao.gov , or keith a. rhodes , chief technologist , applied research and methods , who may be reached at ( 202 ) 512-6412 or by e - mail at rhodesk@gao.gov .
+
+staff contacts and other key contributors to this report are listed in appendix v .
+
+our review of the department of health and human services' ( hhs ) ongoing effort to develop and implement a unified accounting system focused on one of the three concurrent but separate projects: the ongoing implementation of the unified financial management system ( ufms ) at the centers for disease control and prevention ( cdc ) , the food and drug administration and hhs' program support center ( psc ) .
+
+this project will be carried out in a phased approach .
+
+hhs is currently implementing ufms at cdc , and it is scheduled to go live in october 2004 .
+
+the other two projects are the centers for medicare and medicaid services' ( cms ) implementation of the healthcare integrated general ledger accounting system to replace the financial accounting control system , and the national institutes of health's ( nih ) implementation of the nih business and research support system to replace the central accounting system .
+
+to assess hhs' implementation of disciplined processes , we reviewed industry standards and best practices from the institute of electrical and electronics engineers ( ieee ) , software engineering institute ( sei ) , project management institute , joint financial management improvement program ( jfmip ) , gao executive guides , and prior gao reports .
+
+we reviewed and analyzed ufms planning documents related to project management , testing , data conversion , requirements management , risk management , and configuration management .
+
+we also reviewed minutes from key meetings , such as the information technology investment review board meetings , risk management meetings , and planning and development committee meetings .
+
+in addition , we reviewed reports issued by the independent verification and validation ( iv&v ) contractor and interviewed the systems integrator to clarify the status of issues discussed in the reports .
+
+to assess whether hhs had established and implemented disciplined processes related to requirements management , we reviewed strategy and planning documents , including its financial shared services study concept of operation , dated april 30 , 2004 ; reviewed hhs' procedures for defining its requirements management framework and compared these procedures to its current practices ; reviewed guidance published by ieee and sei and publications by experts to determine the attributes that should be used in developing good requirements and selected over 70 requirements and performed an in - depth review and analysis to determine whether they could be traced between the various process documents ; attended the second conference room pilot ( the session held in rockville , maryland ) to evaluate whether the test scripts demonstrated the functionality of the listed requirements ; and reviewed iv&v contractor reports to obtain its perspective on hhs' requirements management processes .
+
+to assess the risk management process , we reviewed the 44 risks documented in the pmonline risk management tool to determine the current status of the risk and to assess the risk mitigation plan .
+
+we interviewed agency officials to obtain explanations for the status of the risks .
+
+we analyzed the project schedule and iv&v status reports to assess the probability of hhs meeting its projected completion dates for development , implementation , and testing .
+
+to assess information technology ( it ) management practices , we reviewed prior gao reports on governmentwide investment management and enterprise architecture .
+
+we also reviewed and analyzed relevant it policies and plans and hhs documentation on the it investment management processes .
+
+to assess information security practices , we relied on prior years' audit work performed in this area .
+
+we reviewed pertinent hhs security policies and procedures , and reviewed hhs' efforts to minimize potential and actual risks and exposures .
+
+to determine whether hhs had the human resources capacity to successfully design , implement , and operate the financial management system , we reviewed jfmip's core competencies for project managers implementing financial systems in the federal government , building the work force capacity to successfully implement financial systems , and core competencies in financial management for information technology personnel implementing financial systems in the federal government and prior gao reports related to strategic workforce planning .
+
+we analyzed the ufms program management office organization chart and obtained related information on project staffing .
+
+we also interviewed hhs officials and the iv&v contractor to discuss staffing resource issues .
+
+for these areas , we interviewed hhs , ufms , iv&v , and systems integrator officials to discuss the status of the project and their roles in the project .
+
+on april 26 , 2004 , and may 12 , 2004 , we briefed hhs management on our findings so that action could be taken to reduce risks associated with the ufms project .
+
+we performed our work at hhs headquarters in washington , d.c. ; at the ufms site in rockville , maryland ; and at cdc offices in atlanta , georgia .
+
+our work was performed from september 2003 through may 2004 in accordance with u.s. generally accepted government auditing standards .
+
+we did not review the prior implementation of oracle at nih or the ongoing implementation of oracle at cms .
+
+we requested comments on a draft of this report from the secretary of health and human services or his designee .
+
+written comments from the department of health and human services are reprinted in appendix iv and evaluated in the “agency comments and our evaluation” section .
+
+disciplined processes have been shown to reduce the risks associated with software development and acquisition efforts to acceptable levels and are fundamental to successful systems acquisition .
+
+a disciplined software development and acquisition process can maximize the likelihood of achieving the intended results ( performance ) within established resources ( costs ) on schedule .
+
+although a standard set of practices that will guarantee success does not exist , several organizations , such as sei and ieee , and individual experts have identified and developed the types of policies , procedures , and practices that have been demonstrated to reduce development time and enhance effectiveness .
+
+the key to having a disciplined system development effort is to have disciplined processes in multiple areas , including requirements management , testing , project planning and oversight , and risk management .
+
+requirements are the specifications that system developers and program managers use to design , develop , and acquire a system .
+
+they need to be carefully defined , consistent with one another , verifiable , and directly traceable to higher - level business or functional requirements .
+
+it is critical that they flow directly from the organization's concept of operations ( how the organization's day - to - day operations are or will be carried out to meet mission needs ) .
+
+according to ieee , a leader in defining the best practices for such efforts , good requirements have several characteristics , including the following: the requirements fully describe the software functionality to be delivered .
+
+functionality is a defined objective or characteristic action of a system or component .
+
+for example , for grants management , a key functionality includes knowing ( 1 ) the funds obligated to a grantee for a specific purpose , ( 2 ) the cost incurred by the grantee , and ( 3 ) the funds provided in accordance with federal accounting standards .
+
+the requirements are stated in clear terms that allow for quantitative evaluation .
+
+specifically , all readers of a requirement should arrive at a single , consistent interpretation of it .
+
+traceability among various requirement documents is maintained .
+
+requirements for projects can be expressed at various levels depending on user needs .
+
+they range from agencywide business requirements to increasingly detailed functional requirements that eventually permit the software project managers and other technicians to design and build the required functionality in the new system .
+
+adequate traceability ensures that a requirement in one document is consistent with and linked to applicable requirements in another document .
+
+the requirements document contains all of the requirements identified by the customer , as well as those needed for the definition of the system .
+
+studies have shown that problems associated with requirements definition are key factors in software projects that do not meet their cost , schedule , and performance goals .
+
+examples include the following: a 1988 study found that getting a requirement right in the first place costs 50 to 200 times less than waiting until after the system is implemented to get it right .
+
+a 1994 survey of more than 8,000 software projects found that the top three reasons that projects were delivered late , over budget , and with less functionality than desired all had to do with requirements management .
+
+a 1994 study found that the average project experiences about a 25 percent increase in requirements over its lifetime , which translates into at least a 25 percent increase in the schedule .
+
+a 1997 study noted that between 40 and 60 percent of all defects found in a software project could be traced back to errors made during the requirements development stage .
+
+testing is the process of executing a program with the intent of finding errors .
+
+because requirements provide the foundation for system testing , specificity and traceability defects in system requirements preclude an entity from implementing a disciplined testing process .
+
+that is , requirements must be complete , clear , and well documented to design and implement an effective testing program .
+
+absent this , an organization is taking a significant risk that substantial defects will not be detected until after the system is implemented .
+
+as shown in figure 3 , there is a direct relationship between requirements and testing .
+
+although the actual testing occurs late in the development cycle , test planning can help disciplined activities reduce requirements - related defects .
+
+for example , developing conceptual test cases based on the requirements derived from the concept of operations and functional requirements stages can identify errors , omissions , and ambiguities long before any code is written or a system is configured .
+
+disciplined organizations also recognize that planning the testing activities in coordination with the requirements development process has major benefits .
+
+although well - defined requirements are critical for implementing a successful testing program , disciplined testing efforts for projects such as ufms have several characteristics , which include the following: testers who assume that the program has errors .
+
+such testers are likely to find a greater percentage of the defects present in the system .
+
+this is commonly called the “testing mindset.” test plans and scripts that clearly define what the expected results should be when the test case is properly executed and the program does not have a defect that would be detected by the test case .
+
+this helps to ensure that defects are not mistakenly accepted .
+
+processes that ensure test results are thoroughly inspected .
+
+test cases that include exposing the system to invalid and unexpected conditions as well as the valid and expected conditions .
+
+this is commonly referred to as boundary condition testing .
+
+testing processes that determine if a program has unwanted side effects .
+
+for example , a process should update the proper records correctly but should not delete other records .
+
+systematic gathering , tracking , and analyzing statistics on the defects identified during testing .
+
+although these processes may appear obvious , they are often overlooked in testing activities .
+
+project planning is the process used to establish reasonable plans for carrying out and managing the software project .
+
+this includes ( 1 ) developing estimates of the resources needed for the work to be performed , ( 2 ) establishing the necessary commitments , and ( 3 ) defining the plan necessary to perform the work .
+
+effective planning is needed to identify and resolve problems as soon as possible , when it is the cheapest to fix them .
+
+according to one author , the average project spends about 80 percent of its time on unplanned rework — fixing mistakes that were made earlier in the project .
+
+recognizing that mistakes will be made in a project is an important part of planning .
+
+according to this author , successful system development activities are designed so that the project team makes a carefully planned series of small mistakes to avoid making large , unplanned mistakes .
+
+for example , spending the time to adequately analyze three design alternatives before selecting one results in time spent analyzing two alternatives that were not selected .
+
+however , discovering that a design is inadequate after development can result in code that must be rewritten two times , at a cost greater than analyzing the three alternatives in the first place .
+
+this same author notes that a good rule of thumb is that each hour a developer spends reviewing project requirements and architecture saves 3 to 10 hours later in the project .
+
+project oversight can also be a valuable contributor to successful projects .
+
+agency management can perform oversight functions , such as project reviews and participating in key meetings , to help ensure that the project will meet the agency needs .
+
+management can also use iv&v reviews to provide it with assessments of the project's software deliverables and processes .
+
+although independent of the developer , iv&v is an integral part of the overall development program and helps management mitigate risks .
+
+risk and opportunity are inextricably related .
+
+although developing software is a risky endeavor , risk management processes should be used to manage the project's risks to acceptable levels by taking the actions necessary to mitigate the adverse effects of significant risks before they threaten the project's success .
+
+if a project does not effectively manage its risks , then the risks will manage the project .
+
+risk management is a set of activities for identifying , analyzing , planning , tracking , and controlling risks .
+
+risk management starts with identifying the risks before they can become problems .
+
+if this step is not performed well , then the entire risk management process may become a useless exercise since one cannot manage something that one does not know anything about .
+
+as with the other disciplined processes , risk management is designed to eliminate the effects of undesirable events at the earliest possible stage to avoid the costly consequences of rework .
+
+after the risks are identified , they need to be analyzed so that they can be better understood and decisions can be made about what actions , if any , will be taken to address them .
+
+basically , this step includes activities such as evaluating the impact on the project if the risk does occur , determining the probability of the event occurring , and prioritizing the risk against the other risks .
+
+once the risks are analyzed , a risk management plan is developed that outlines the information known about the risks and the actions , if any , which will be taken to mitigate those risks .
+
+risk monitoring is a continuous process because both the risks and actions planned to address identified risks need to be monitored , to ensure that the risks are being properly controlled and that new risks are identified as early as possible .
+
+if the actions envisioned in the plan are not adequate , then additional controls are needed to correct the deficiencies identified .
+
+hhs has not implemented an effective requirements management process to reduce requirements - related defects to acceptable levels or to support an effective testing process .
+
+in reviewing hhs' requirements management process , we found ( 1 ) the requirements were not based on a concept of operations that should provide the framework for the requirements development process , ( 2 ) traceability was not maintained between various requirements documents , and ( 3 ) the requirements contained in the documents do not provide the necessary specificity .
+
+because of these weaknesses , hhs does not have reasonable assurance that it has reduced its requirements - related defects to acceptable levels .
+
+furthermore , the requirements management problems we noted also prevent hhs from developing an effective testing process until they are adequately addressed .
+
+although hhs has performed some functions that are similar to testing , commonly referred to as conference room pilots , to help it determine whether the system will meet its needs , these efforts have not provided the quantitative data needed to provide reasonable assurance that the system can provide the needed capability .
+
+therefore , hhs is depending on system testing , which is not expected to start until less than 2 months before system implementation , to provide it with the quantitative data needed to determine whether the system will meet its needs .
+
+requirements for ufms were not based on a concept of operations .
+
+the concept of operations — which contains a high - level description of the operations that must be performed , who must perform them , and where and how the operations will be carried out — provides the foundation on which requirements definitions and the rest of the systems planning process are built .
+
+normally , a concept of operations is one of the first documents to be produced during a disciplined development effort .
+
+according to the ieee standards , a concept of operations is a user - oriented document that describes the characteristics of a proposed system from the users' viewpoint .
+
+its development is a particularly critical step at hhs because of the organizational complexity of its financial management activities and the estimated 110 other systems hhs expects to interface with ufms .
+
+in response to our requests for a ufms concept of operations , hhs officials provided its financial shared services study concept of operation , dated april 30 , 2004 , that studied several approaches for hhs management to consider for implementing shared services .
+
+while making a decision on whether to operate in a shared services environment is important because it will dictate such items as hardware , network , and software needs , this study lacks many of the essential elements needed for a concept of operations document that can be used to fully inform users about the business processes that will be used by ufms .
+
+without this information , the document cannot serve as the foundation for hhs' requirements management processes .
+
+hhs management has stated that it plans to establish centers of excellence for ufms and has identified four functions as candidates to begin shared services .
+
+these functions are ufms operations and maintenance , customer service ( call center ) , vendor payments , and e - travel .
+
+hhs management also decided that establishing a center of excellence for operations and maintenance should begin right away .
+
+basically , this center of excellence will perform such ufms operations and maintenance functions as maintaining the data tables in the ufms database , managing various periodic closings , and performing various user maintenance functions as well as some security functions .
+
+while hhs officials advised us that they had selected psc to operate the operations and maintenance center of excellence , there is limited time to establish the center before ufms' planned deployment date at cdc .
+
+in addition , hhs has still not identified ( 1 ) who will operate the other centers of excellence and the location ( s ) performing these functions and ( 2 ) how these functions will be performed .
+
+to address these open issues , hhs has asked several hhs operating divisions to submit business plans for operating a center of excellence .
+
+we also analyzed various other strategy and planning documents that are expected to be used in developing ufms .
+
+like the financial shared services study concept of operation , none of these other documents individually or in their totality addressed all of the key elements of a concept of operations .
+
+for example , operational policies and constraints have not been addressed .
+
+moreover , profiles of user classes describing each class of user , including responsibilities , education , background , skill level , activities , and modes of interaction with the current system , have not been developed .
+
+in fact , as of may 2004 , hhs has been unable to get agreement on all the standard processes that it will use .
+
+for example , when hhs attempted to develop a standard way of recording grant - related information , the project team members were unable to get agreement between the various operating divisions on how to develop crosscutting codes that would have to be maintained at the departmental level .
+
+part of the process of developing a concept of operations for an organization includes describing how its day - to - day operations will be carried out to meet mission needs .
+
+the project team tasked with developing and implementing a ufms common accounting system attempted to develop standardized processes that would be used for the ufms project .
+
+they held meetings with several different operating divisions to reach agreement on how the processes should be structured .
+
+unfortunately , an agreement between the various parties could not be reached , and the decision on how these processes would be defined was deferred for further discussion for at least 6 months .
+
+since standardized processes could not be agreed upon at the outset , additional requirements definition and validation activities must be conducted later in the development cycle when they are more costly to implement .
+
+in addition , process modifications will affect all users , including those who have been trained in and perform financial management functions using the original process .
+
+these users may have to undergo additional training and modify their existing understanding of how the system performs a given function .
+
+because hhs has not developed a complete concept of operations , requirements definition efforts have not had the benefit of documentation that fully depicts how hhs' financial system will operate , and so hhs cannot ensure that all requirements for the system's operations have been defined .
+
+without well - defined requirements , hhs cannot be certain that the level of functionality that will be provided by ufms is understood by the project team and users and that the resulting system will provide the expected functionality .
+
+hhs has adopted an approach to requirements development that its officials believe is suited to the acquisition and development of commercial off - the - shelf software ( cots ) .
+
+hhs officials have stated that the requirements management process that we reviewed was adopted based on their belief that for cots development , they do not need to fully define the ufms requirements because ufms is not a traditional system development effort .
+
+therefore , they adopted the following approach .
+
+define high - level requirements that could be used to guide the selection and implementation of the system .
+
+understand how the cots - based system meets the high - level requirements defined for ufms and how hhs must ( 1 ) modify its existing processes to match the cots processes or ( 2 ) identify the areas or gaps requiring custom solutions .
+
+develop specific requirements for the areas that require custom solutions and document those requirements in the requirements repository tool as derived requirements .
+
+hhs used a hierarchical approach to develop the specific requirements from the high - level requirements used to acquire the system .
+
+these high - level requirements and the related supporting documentation were expected to help hhs identify the requirements that could not be satisfied by the cots product .
+
+this approach includes using the high - level requirements to ( 1 ) update the requirements through process design workshops , which generated business processes ; ( 2 ) establish initial baseline requirements ; ( 3 ) perform a fit / gap analysis ; ( 4 ) develop gap closure alternatives ; and ( 5 ) create the final baseline requirements .
+
+the key advantage in using such a hierarchy is that each step of the process builds upon the previous one .
+
+however , unidentified defects in one step migrate to the subsequent steps where they are more costly to fix and thereby increase the risk that the project will experience adverse effects on its schedule , cost , and performance objectives .
+
+hhs recognized that the high - level requirements associated with the cots processes are “by definition , insufficient to adequately define the required behavior of the cots based system.” however , hhs has stated that ufms will be able to demonstrate compliance with these requirements as well as the requirements derived from high - level requirements associated with its custom development through traditional testing approaches including demonstrations and validations .
+
+we agree with hhs' position that requirement statements for cots products need to be more flexible and less specific before a product is selected because of the low probability that any off - the - shelf product will satisfy the detailed requirements of an organization like hhs .
+
+as hhs has noted , cots products are designed to meet the needs of the marketplace not a specific organization .
+
+however , once the product is selected , requirements must be defined at a level that allows the software to be configured to fit the system under development and implemented to meet the organization's needs .
+
+as noted elsewhere , on the basis of the requirements we reviewed , hhs had not accomplished this objective .
+
+furthermore , we identified numerous instances in which each documented requirement used to design and test the system was not traceable forward to the business processes and therefore could not build upon the next step in moving through the hierarchy .
+
+this is commonly referred to as traceability .
+
+furthermore , the requirements ( 1 ) lacked the specific information necessary to understand the required functionality that was to be provided and ( 2 ) did not describe how to determine quantitatively , through testing or other analysis , whether the systems would meet hhs' needs .
+
+one example showing that hhs did not adequately define a requirement and maintain traceability through the various documents is an hhs requirement regarding general ledger entries that was inadequately defined .
+
+the high - level requirement stated that the system “shall define , generate , and post compound general ledger debit and credit entries for a single transaction.” the system was also expected to “accommodate at least 10 debit and credit pairs,” but this information was not included in the process document for the create recurring journals process , to which the requirement was tied .
+
+therefore , someone implementing this functionality from this process document would not know the number of debit and credit pairs that must be supported .
+
+furthermore , in april 2004 , hhs conducted a demonstration for the users to validate that this functionality had been implemented .
+
+although the demonstration documentation stated that this requirement would be covered , none of the steps in the test scripts actually demonstrated ( 1 ) how the system would process a general ledger entry that consisted of 10 debit and credit pairs or ( 2 ) examples of transactions that would require such entries .
+
+since hhs has neither demonstrated the functionality nor defined what entries need to be supported , hhs does not yet have reasonable assurance the system can address this requirement .
+
+hhs expects that ufms will be able to demonstrate compliance with the hhs high - level requirements as well as the derived requirements associated with its custom development through traditional testing approaches including demonstrations and validations .
+
+however , we found that as of may 2004 , the necessary information to evaluate future testing efforts had not been developed for many of the requirements that we reviewed .
+
+hhs has conducted two conference room pilots that were to help determine and validate that the ufms design and configuration meets hhs functional requirements .
+
+such demonstrations , properly implemented , could be used to reduce the risks associated with the requirements management process weaknesses we identified .
+
+however , based on our review of the conference room pilots , the pilots did not ( 1 ) significantly reduce the risks associated with requirements management processes discussed above and ( 2 ) provide hhs with reasonable assurance that the functionality needed by its users had been implemented in ufms .
+
+the first conference room pilot , held in august 2003 , was designed to ( 1 ) demonstrate the functionality present in the cots system that hhs believed could be used without modification and ( 2 ) identify any gaps in the functionality provided by the base system .
+
+the second conference room pilot in march and april 2004 was conducted to demonstrate the functionality present in the system that should be available for the october 2004 implementation at cdc .
+
+this demonstration was expected to show that the gaps in functionality identified in the first conference room pilot had been addressed .
+
+problems with these demonstrations include the following: the iv&v contractor noted that some of the test scripts involved a number of requirements that were only partially addressed or not addressed at all .
+
+the iv&v contractor expressed concern that hhs would not be mapping these requirements designated as “fits” to test cases until system testing .
+
+according to the iv&v contractor , if some of the “fits” turn out to be “gaps” as a result of system testing , hhs may not have enough time to provide a solution without compromising the project schedule .
+
+in our observations of the second conference room pilot held in march and april 2004 , we noted several cases in which the users were told that the system's approach to address a given issue had not yet been defined but that the issue would be resolved before the system was deployed .
+
+one such issue was the process for handling erroneous transactions received from other systems .
+
+for example , procedures to correct errors in the processing of voucher batches had not been fully defined as of the demonstration .
+
+hhs officials stated that this would be addressed after this second conference room pilot .
+
+additionally , during the demonstration it was unclear how five - digit object class codes used in the system will migrate to interfacing systems .
+
+we observed that four - digit object class codes from certain grant systems were cross - walked to five - digit object class codes when interfaced with the oracle system .
+
+however , it was not clear how the data would be converted back to four - digit object class codes to flow back to the grant systems .
+
+the scripts used for the second conference room pilot did not maintain traceability to the associated requirements .
+
+in discussing our observations on the march and april 2004 conference room pilot , hhs officials stated that the conference room pilots were not a phase of formal testing but rather a structured working session ( first conference room pilot ) and a demonstration ( second conference room pilot ) .
+
+however , they stated that the system test in august 2004 — less than 2 months before the system is implemented at cdc — would verify that ufms satisfies all requirements and design constraints .
+
+staff members who made key contributions to this report were linda elmore , amanda gill , rosa harris , maxine hattery , lisa knight , michael laforge , w. stephen lowrey , meg mills , david powner , gina ross , norma samuel , yvonne sanchez , sandra silzer , and william thompson .
+
+the government accountability office , the audit , evaluation and investigative arm of congress , exists to support congress in meeting its constitutional responsibilities and to help improve the performance and accountability of the federal government for the american people .
+
+gao examines the use of public funds ; evaluates federal programs and policies ; and provides analyses , recommendations , and other assistance to help congress make informed oversight , policy , and funding decisions .
+
+gao's commitment to good government is reflected in its core values of accountability , integrity , and reliability .
+
+the fastest and easiest way to obtain copies of gao documents at no cost is through gao's web site ( www.gao.gov ) .
+
+each weekday , gao posts newly released reports , testimony , and correspondence on its web site .
+
+to have gao e - mail you a list of newly posted products every afternoon , go to www.gao.gov and select “subscribe to updates. .
+

@@ -1,0 +1,466 @@
+the increasing use of the internet has promoted a dramatic expansion in the number of users and types of devices that communicate with each other through an internet protocol ( ip ) .
+
+an ip is one of the primary mechanisms used to define how and where information such as text , voice , and video moves across networks .
+
+proper functioning of this protocol is dependent upon devices having unique identifiers , or addresses , to properly transmit and receive information .
+
+without unique addresses , information transmitted to or from these devices could inadvertently be sent to unintended destinations .
+
+these destinations could include individuals or entities with malicious intent .
+
+further , without unique addresses defining each destination , the internet could become unreliable and chaotic .
+
+the department of defense ( dod ) , like many organizations and federal agencies , currently uses an older protocol , known as internet protocol version 4 ( ipv4 ) , to support its mission requirements .
+
+ipv4 is approaching obsolescence due to expanded internet use and the exhaustion of ipv4 addresses available for distribution .
+
+the inadequate supply of ipv4 addresses spurred the development and global adoption of its successor protocol , internet protocol version 6 ( ipv6 ) .
+
+in comparison to ipv4's approximately 4.3 billion addresses , ipv6 provides approximately 340 undecillion ( i.e. , 340 trillion , trillion , trillion or 3.4 × 10 ) possible unique addresses , which is enough to assign many trillions of addresses to every person on earth .
+
+ipv6 is expected to provide improved , more efficient information technology ( it ) services , mobility , and security .
+
+leading technology firms , major corporations , and foreign governments have been implementing the protocol .
+
+for example , china announced its goal to establish the world's largest ipv6 network by the end of 2025 .
+
+further , dod has begun efforts to transition its networks and systems from ipv4 to ipv6 .
+
+senate report 116-48 and house report 116-120 included provisions for us to review dod's continued use of ipv4 and its transition to ipv6 .
+
+this report specifically ( 1 ) identifies dod's past attempts to transition to ipv6 , ( 2 ) examines the extent to which dod has completed office of management and budget ( omb ) transition planning requirements , and ( 3 ) identifies dod's progress in completing its own required activities for transitioning to ipv6 .
+
+the scope of our review focused on dod's department - wide ipv6 transition initiative led by officials within multiple offices and components , including dod's office of the chief information officer ( cio ) and the defense information systems agency .
+
+we did not review the efforts or plans of individual dod component agencies or military services unless they pertained to department - wide transition requirements .
+
+to identify dod's past attempts to transition to ipv6 , we consulted omb's ipv6 implementation guidance to give context and establish a timeline of dod's past transition deadlines .
+
+further , we reviewed dod reports , policies , and other documentation pertaining to the department's past and current ipv6 transition initiatives .
+
+for instance , we reviewed dod's december 2014 inspector general ( ig ) report on dod's ipv6 transition efforts .
+
+further , we interviewed and received written responses from the dod officials leading the transition to ipv6 about the history of dod's transition attempts , as well as the background of the department's current transition initiative .
+
+we then used this information to describe the history of dod's past ipv6 transition efforts .
+
+to examine the extent to which dod has completed omb transition planning requirements , we first reviewed omb guidance related to ipv6 transition planning , including omb memorandum m - 05-22 , “transition planning for internet protocol version 6 ( ipv6 ) .” while our work was ongoing , we confirmed with omb that the criteria were still applicable and that omb had not replaced or rescinded them .
+
+we also requested and reviewed dod's policies and plans related to its department - wide ipv6 transition efforts .
+
+in addition , we reviewed publicly available documentation related to dod's ipv6 planning efforts .
+
+further , we met with , and received written responses from , the dod officials leading the transition to ipv6 about the department's transition planning efforts .
+
+using this information , we first selected the applicable criteria in omb memorandum m - 05-22 that pertained to ipv6 planning .
+
+these criteria called for agencies to: ( 1 ) assign an official to lead and coordinate agency planning , ( 2 ) complete an inventory of existing ip - compliant devices and technologies , and ( 3 ) develop an impact analysis containing both a cost estimate and a risk analysis .
+
+we then requested and analyzed dod's responses and documentation regarding the extent to which it had completed the ipv6 planning activities required by the criteria we selected from the omb memorandum .
+
+to identify dod's progress in completing its own required ipv6 transition activities , we reviewed the department's february 2019 “dod cio ipv6 guidance memo.” according to the memorandum , it provides initial direction and guidance for dod's ipv6 transition .
+
+the memorandum lists 35 transition activities and includes due dates for 27 of them .
+
+over the course of the engagement , we routinely inquired about the progress dod made against all the activities listed in the memorandum , including the activities that did not have specific due dates .
+
+if dod submitted evidence for completing an activity , we evaluated the actions taken and compared them to the specific transition activities .
+
+from our analysis , we determined which activities had sufficient evidence to support completion and which activities were past due .
+
+the full results of this analysis are shown in appendix i .
+
+we conducted this performance audit from june 2019 to june 2020 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+the internet is a worldwide network of networks comprised of backbone networks , servers , and routers .
+
+network addresses are used to help send information from one internet - connected device , such as a computer , to another by routing the information to its final destination .
+
+the protocol that enables the administration of these addresses is the ip .
+
+ip addresses provide a numerical description of the location of networked devices such as computers , routers , and smartphones .
+
+these numerical descriptions allow devices to be distinguished from each other over the internet .
+
+in some ways , an ip address is like a physical street address .
+
+for example , in the physical world , if you want to send a letter from one location to another , the contents of the letter must be placed in an envelope that lists both the sender's and the recipient's addresses .
+
+similarly , if data is transmitted across the internet from one device to another , ip addresses must be placed in an ip header with sender and recipient information .
+
+in addition to containing the addresses of the sender and the receiver , the header also contains a series of fields that provide information about what is being transmitted .
+
+figure 1 provides a simplified illustration of this concept .
+
+the internet engineering task force , the principal body engaged in the development of internet standards , developed ipv6 in the 1990s to address ipv4's limited address space , among other things .
+
+although ipv6 has been available for over 20 years , ipv4 , the older ip , is still more widely deployed .
+
+nevertheless , ipv6 deployment is rising worldwide amidst the exhaustion of available ipv4 addresses .
+
+however , ipv6 is not backwards compatible with ipv4 , which means that organizations such as dod have to change their network infrastructure and systems in order to deploy ipv6 .
+
+dod relies on its current ipv4 networks to fulfill its mission to provide the military forces needed to deter war and ensure our nation's security .
+
+according to dod officials leading the transition to ipv6 , the department utilizes ipv4 for enterprise - wide and mission partner wired and wireless communications , including infrastructure , technologies , and devices supporting large - scale globally dispersed command and control systems , naval vessels , aircraft , satellites , and ground operations .
+
+figure 2 presents a simplified depiction of the department's use of ipv4 .
+
+dod's mission requires considerable ip address space .
+
+the department currently has 300,149,760 ipv4 addresses — more than any other organization in the world .
+
+these approximately 300 million addresses are divided into blocks ; each block contains a series of multiple addresses .
+
+dod has 13 particularly large blocks of addresses , each containing 16,777,216 addresses .
+
+also included in the approximately 300 million addresses are 59,767,040 ipv4 addresses that currently are unused .
+
+these addresses are reserved for future use by dod and its components .
+
+dod has stated that it expects to exhaust its reserve of unused ipv4 addresses by 2030 .
+
+according to the officials leading the ipv6 transition effort , the department expects to have to support ipv4 after it exhausts its ipv4 address space in 2030 due to mission system modernization and replacement timelines , as well as new emerging technologies that may require ipv4 resources while the department transitions to ipv6 .
+
+according to prior government reports and dod documentation , ipv6's improved functionality would benefit the department in many ways .
+
+in addition to the general benefits of eliminating ipv4 address space limitations , enhancing mobility features , and integrating ip security , ipv6 has the potential to enhance dod battlefield operations , improve decision - making with the increased reliance on the internet of things ( iot ) , support u.s. global technological competitiveness , and enhance mission partner interoperability .
+
+ipv6 eliminates address space limitations .
+
+as previously mentioned , ipv6 dramatically increases the amount of possible address space from 4.3 billion addresses in ipv4 to approximately 340 undecillion ( 3.4 × 10in contrast to ipv4 , the massive address space available in ipv6 will allow almost any device to be assigned a unique ip address .
+
+this change fosters greater end - to - end communication abilities between devices with unique ip addresses and can better support the delivery of data - rich content such as voice and video .
+
+enhanced mobility improves connectivity .
+
+ipv6 improves mobility features by allowing each device to have a unique ip address independent of its current network or connection point to the internet .
+
+this enables mobile ipv6 users to move from network to network while keeping the same unique ip address .
+
+the ability to maintain a constant ip address while switching networks is cited as a key factor for the success of a number of evolving capabilities , such as telephone technologies , laptop computers , and internet connected automobiles .
+
+added ip security helps to protect data .
+
+ip security — a means of authenticating the sender and encrypting the transmitted data — is better integrated into ipv6 than it is in ipv4 .
+
+this improved integration , which helps make ip security easier to implement , can help support broader data protection efforts .
+
+this extra security is accomplished through the use of two header extensions that can be used together or separately to improve the authentication and confidentiality of data being sent via the internet .
+
+these headers serve to provide the receiver with a greater assurance of the sender's identity and provide encryption protection for the transmitted data .
+
+enhanced capabilities could improve dod battlefield operations .
+
+according to the 2014 dod ig report on dod's ipv6 transition efforts , use of ipv6 could provide dod with several potential benefits related to battlefield operations , such as improved communication , warfighter mobility , situational awareness , and quality of service .
+
+ipv6 auto - configuration capabilities provide secure ad hoc networking and mobility , as well as improved end - to - end security and simplified network management capabilities .
+
+this could potentially enable individuals and entire units to disconnect from military base networks , travel into theater , and quickly establish communications .
+
+additionally , ipv6 capabilities could allow warfighters and commanders to improve situational awareness and mission execution during deployment and battle operations , allowing units to securely move from one wireless network to another .
+
+increased use of the iot may improve decision - making .
+
+the increased address space available with ipv6 enables the increased connectivity necessitated by the proliferation of the iot .
+
+dod's iot could include any object for which remote communication , data collection , or control might be useful , such as vehicles , appliances , medical devices , electric grids , transportation infrastructure , manufacturing equipment , or building systems .
+
+according to dod's digital modernization strategy from july 2019 , iot could be significant to the department's decision - making processes because the assortment of connected objects that comprise iot could enable technology to gain the ability to sense , predict , and respond to dod's needs .
+
+the department could use computers to track , count , and analyze data from these objects in order to reduce waste , loss , and cost .
+
+dod managers could also know whether these objects were running well or needed replacing , repairing , or recalling .
+
+ipv6 could support u.s. global technological competitiveness .
+
+according to a dod presentation , the transition to ipv6 could allow the department to remain technologically competitive globally .
+
+interest in ipv6 is gaining momentum around the world , particularly in parts of the world that have limited ipv4 address space to meet their industry and consumer communications needs .
+
+regions that have limited ipv4 address space , such as asia and europe , have undertaken efforts to develop , test , and implement ipv6 .
+
+for example , china has been aggressive at deploying ipv6 .
+
+japan has set up an ipv6 promotion council , using tax incentives to encourage research and adoption of ipv6 by its private sector .
+
+europe has a task force that has the dual mandate of initiating country and regional ipv6 task forces across european states and seeking global cooperation around the world .
+
+transitioning to ipv6 may preserve mission partner interoperability .
+
+according to an august 2017 report from dod's cio , deploying ipv6 capabilities is essential to preserve interoperability with mission partners in the private sector and in other countries and to assure future access to technology .
+
+since the pools of unassigned ipv4 addresses are exhausted , dod's mission partners may increasingly rely on ipv6 addresses in the future , furthering the department's need to increase its ipv6 capabilities .
+
+along with the potential benefits , the national institute of standards and technology ( nist ) has indicated that transitioning to ipv6 also could present challenges for organizations such as dod .
+
+these challenges include the complexity added by dual ipv4 and ipv6 operations and the immaturity of ipv6 security products and processes .
+
+complexity added by dual ipv4 / ipv6 operations .
+
+dod plans to deploy ipv6 while still supporting ipv4 for legacy applications , services , and clients .
+
+this will result in a dual protocol environment and increased complexity .
+
+with two protocols , dod would have to ensure the proper functioning of two separate , but interrelated , networks instead of only one network .
+
+further , hackers and other online adversaries could exploit either the department's ipv4 or ipv6 network connections when launching cyberattacks .
+
+immaturity of ipv6 security processes .
+
+while ipv6 could offer enhanced security , nist states that its deployment could also lead to new challenges with respect to the types of threats facing an organization such as dod .
+
+for example , organizations in the process of transitioning to ipv6 may lack robust ipv6 security controls and may have security staff members who lack an overall understanding of ipv6 .
+
+this could allow attackers to exploit ipv6 assets or leverage ipv6 access to exploit ipv4 assets .
+
+while general security concepts are the same for both ipv4 and ipv6 protocols , it may take time and effort for transitioning organizations such as dod to acquire the level of operational experience and practical deployment solutions that have been developed for ipv4 over the years .
+
+in august 2005 , omb issued a memorandum to federal cios specifying a series of ipv6 transition planning and implementation requirements and associated due dates for federal agencies to enable the use of ipv6 .
+
+specific to planning for the transition , the memorandum required agencies to assign an official to lead and coordinate ipv6 transition planning efforts , complete an inventory of ip - compliant devices and technologies , and complete an impact analysis comprised of a cost estimate and a risk analysis by specific due dates during fiscal year 2006 .
+
+table 1 lists the transition planning requirements and due dates defined in the omb memorandum .
+
+aware of the limitations of ipv4 , dod first began planning for the implementation of ipv6 in june 2003 .
+
+at that time , the department's cio issued the memorandum , “internet protocol version 6 ( ipv6 ) .” according to this memorandum , the department's initial goal was to complete its transition to ipv6 by fiscal year 2008 .
+
+within a month of the issuance of dod's june 2003 memorandum , the department designated the defense research and engineering network ( dren ) as the first dod ipv6 pilot network .
+
+dren , being a research and development network , is not connected to dod's operational networks , such as the department's nonclassified ip router network , which transmits nonclassified operations traffic .
+
+according to a dod report about the dren pilot , the entire dren wide - area network was routinely supporting end - to - end ipv6 traffic by july 2005 .
+
+according to the department , dren remains dod's only ipv6-enabled network .
+
+further , dod's ig reported that the department had undertaken an initial transition effort that temporarily satisfied omb's august 2005 implementation requirement to demonstrate ipv6 on its infrastructure by the end of june 2008 .
+
+specifically , dod was able to demonstrate ipv6 within the department's defense information systems network .
+
+however , according to the report , the department's ipv6 transition manager said dod disabled ipv6 functionality due to a lack of trained personnel and potential security risks .
+
+we received additional information about why dod disabled the ipv6 functionality , but we are not including it in the report due to the information being marked as for official use only .
+
+dod began its next effort to plan and implement ipv6 in response to omb's subsequent 2010 guidance .
+
+in this guidance , omb gave agencies — including dod — requirements intended to further their transitions to ipv6 .
+
+two of these requirements stated that agencies were to: upgrade their public - facing it servers and services ( eg , web and email ) to ipv6 by the end of september 2012 ; and upgrade internal client applications that communicate with public internet servers and supporting enterprise networks to ipv6 by the end of september 2014 .
+
+according to dod , the department originally planned to meet the 2010 omb requirements ; however , it decided not to complete the upgrades due to security concerns .
+
+again , we received additional information about the department's security concerns ; however , we are not including those details in this report because they were marked as for official use only .
+
+omb's ipv6 transition guidance requires federal agencies , such as dod , to perform specific tasks as part of their ipv6 planning efforts .
+
+these tasks include: ( 1 ) assigning an official to lead and coordinate agency planning , ( 2 ) completing an inventory of existing ip - compliant devices and technologies , ( 3 ) developing a cost estimate ( as part of an impact analysis ) , and ( 4 ) developing a risk analysis ( as part of an impact analysis ) .
+
+although these requirements were originally due in 2005 or 2006 , they are still applicable ; omb has not replaced or rescinded them .
+
+assigning an official to lead and coordinate agency planning can help agencies better manage their transition to ipv6 .
+
+specifically , a senior - level focal point to lead ipv6 transition efforts can provide assurance that the program is based on a coherent strategy and is well coordinated .
+
+a lead official may also help an agency avoid duplicative , overlapping , and fragmented efforts , which can result in avoidable additional costs .
+
+according to nist , having an inventory of ip - compliant assets is crucial to ipv6 transition planning because it helps determine transition requirements and give an agency a clear understanding of the ip capabilities of the devices on the network .
+
+specifically , an inventory helps determine which assets will transition to ipv6 , the order in which assets will transition , the transition methods selected , and the security controls that would need to be implemented .
+
+further , cost estimates are critical to decision - makers not only because they help establish budgets , but also because they are integral to determining and communicating a realistic view of likely cost and schedule outcomes that could be used to plan the work necessary to develop , produce , install , and support a program .
+
+as we have previously reported , without the ability to generate reliable cost estimates , agencies are at risk of experiencing cost overruns , missed deadlines , and performance shortfalls .
+
+in addition , a risk analysis enables an agency to assess the significance of potential threats to the success of its transition to ipv6 , as well as assess how those threats could be mitigated or avoided .
+
+further , without a risk analysis to help the agency understand the potential threats and obstacles facing the ipv6 transition initiative , agencies run the risk of creating goals and plans that are too optimistic .
+
+according to dod , the department began its most recent effort to transition to ipv6 in april 2017 .
+
+as part of this effort , in november 2019 , the department released its ipv6 implementation strategy , which articulates dod's overarching vision for its ipv6 transition initiative: to provide secure and reliable ipv6 services that enable innovation for competitive advantage .
+
+according to the strategy , dod's goals for the effort include implementing an interim solution of using both ipv4 and ipv6 and then planning for an eventual ipv6-only environment .
+
+as of march 2020 , dod had not yet completed three of the four selected transition planning requirements .
+
+specifically , the department had completed the requirement of appointing an agency lead for its ipv6 transition efforts .
+
+however , it had not yet completed the three other requirements: complete an inventory , develop a cost estimate , and develop a risk analysis .
+
+table 2 summarizes the status of dod's completion of the four selected omb ipv6 transition planning requirements .
+
+dod completed omb's requirement to have an official lead the ipv6 planning efforts by first assigning its joint information environment executive committee responsibility for overseeing the department's transition to ipv6 in august 2017 .
+
+the committee , in turn , established the dod ipv6 working group in november 2017 to coordinate and manage department - wide ipv6 planning , implementation , and testing .
+
+an official in the office of the cio serves as the chair of the working group , and , according to the group's charter , is responsible for leading meetings , soliciting and prioritizing issue topics for review , and overseeing the coordination of working group activities supporting the department - wide transition to ipv6 .
+
+however , dod did not complete the requirement to develop an inventory of existing ip - compliant devices and technologies .
+
+in november 2005 , dod provided a memorandum to omb that indicated that the department would not complete the inventory of ip - compliant devices and technologies ; instead , dod would continue following its existing transition plan , which did not require an inventory .
+
+further , the dod officials leading the ipv6 transition effort informed us that the department had not developed such an inventory and that it still does not plan to do so .
+
+the officials said that conducting a task of this size would be impractical given dod's size and the number of ip - compliant devices in the department .
+
+the officials leading the ipv6 transition also said that dod has been mitigating the risk of not having an inventory by ensuring that the department has only been acquiring ipv6-capable it devices since december 2009 .
+
+however , while only acquiring ipv6-capable devices and applications could help the transition move forward , it would not be as complete as an inventory , given that an inventory would include technology purchased before december 2009 .
+
+dod also did not complete a cost estimate or a risk analysis .
+
+according to the dod officials leading the ipv6 transition effort , the initiative was not a top priority until the cio released the “internet protocol version 6 implementation direction and guidance” memorandum in february 2019 .
+
+this memorandum , which was developed to guide the department's ipv6 transition planning and implementation efforts , gave the transition initiative greater attention in the department .
+
+prior to the issuance of the memorandum , the officials stated that they did not have sufficient resources to conduct the cost estimate and did not have enough understanding to complete the risk analysis .
+
+dod officials leading the ipv6 transition effort explained that the department plans to develop these requirements by the end of may 2020 ; however , we have not received any documentation confirming this deadline .
+
+until dod develops an inventory of ip - compliant technologies and devices , a cost estimate , and a risk analysis , the department's ipv6 transition initiative may have an increased likelihood of cost overruns , schedule delays , and security vulnerabilities .
+
+specifically , not having an inventory of ip - compliant devices and technologies may lead to the department developing plans without being aware of all the system and infrastructure requirements necessary to successfully transition a large organization such as dod to ipv6 .
+
+further , without a cost estimate , dod may be making decisions without the benefit of relevant information on the initiative's potential cost and schedule outcomes , thereby introducing unnecessary risk into the implementation process .
+
+finally , by moving forward without a risk analysis , dod increases the probability that it is not proactively managing potential threats that could disrupt the transition or introduce new it security vulnerabilities .
+
+dod's february 2019 memorandum lists 35 required activities for transitioning to ipv6 that dod's various components or offices , such as the office of the cio , are to complete or work on during fiscal years 2019 through 2021 .
+
+of these 35 activities , 18 were to be completed prior to march 2020 .
+
+however , dod had not completed most of the required activities .
+
+specifically , of the 18 activities that were to be completed by march 2020 , the department had completed six and had not completed 12 .
+
+in addition , the department had completed one of eight other activities that did not have specific due dates .
+
+table 3 outlines the department's seven ipv6 transition activities that had been completed as of march 2020 .
+
+ ( see appendix i for a full list of dod's transition activities and their completion status. ) .
+
+one notable required activity that dod completed was to develop a cio - approved strategy to implement its transition to ipv6 .
+
+dod's strategy outlines , among other things , the overall goals for the ipv6 transition initiative .
+
+these goals include implementing a network that is both ipv4 and ipv6 capable ; planning for an ipv6-only environment ; and establishing and optimizing training for ipv6 .
+
+in addition , dod's defense information systems agency leveraged online training providers to offer on demand ipv6 training courses for network engineers and cybersecurity personnel .
+
+in addition to basic familiarization training for those new to ipv6 , select training courses are labeled as being at the advanced level .
+
+however , the department had not completed 12 of 18 activities that were due prior to march 2020 .
+
+notably , dod missed its original september 2019 deadline to enable ipv6 on all commercially hosted public facing unrestricted services .
+
+according to the department officials leading the ipv6 transition , dod expects to be able to complete this task by the end of july 2021 .
+
+the department also missed its original june 2019 deadline for identifying the public facing unrestricted services hosted by dod .
+
+the officials leading the ipv6 transition initiative stated that dod currently plans to complete this activity by may 2020 .
+
+other activities that were past due in march 2020 include: developing supplemental guidance for the acquisition of ipv6-capable products , updating and maintaining ipv6 standards and implementation profiles , and determining dod's cybersecurity architecture and posture impacts , among others .
+
+dod officials leading the ipv6 transition effort stated that the department had not yet completed its required activities because the original time frames that the department had established were unrealistic .
+
+although the activities were initially thought to have been reasonable , dod adjusted the activities' due dates after the department began executing the tasks and realized that it would take a large amount of work to accomplish their goals and complete the activities .
+
+one contributing factor for the unrealistic due dates is that dod developed this list of required activities without the benefit of an inventory of ip - compliant devices and technologies , a cost estimate , or a risk analysis .
+
+without completing these basic planning requirements , dod significantly reduced the probability that it could have developed a realistic transition schedule .
+
+addressing requirements would supply dod with sources of meaningful information that would enable the department to develop realistic , detailed , and informed transition plans and time frames .
+
+while dod's current ipv6 transition effort is showing progress , the department has not completed most of omb's planning requirements .
+
+notable signs of progress include the appointment of an official to lead the initiative and the development of an overarching strategy document that outlines the transition's scope and goals .
+
+nevertheless , dod had not completed an inventory of ip - compliant technologies , a cost estimate , or a risk analysis before moving ahead with developing its february 2019 guidance and working against the guidance's list of transition activities .
+
+the lack of an inventory is problematic due to the role that it should play in developing transition requirements .
+
+in addition , without a cost estimate to guide decision - makers , dod's current ipv6 transition plans could be based on unrealistic assumptions about costs and resource demands .
+
+further , by moving forward without a risk analysis , dod increases the probability that it is not proactively managing potential threats that could either disrupt the transition or introduce new it security vulnerabilities .
+
+completing these longstanding planning requirements would enable dod to develop realistic plans with accurate transition requirements and proactive risk mitigation strategies , among other things .
+
+we are making three recommendations to dod .
+
+the secretary of defense should direct the dod cio to complete a department - wide inventory of existing ip - compliant devices and technologies to help with planning efforts and requirements development for the transition to ipv6 .
+
+ ( recommendation 1 ) the secretary of defense should direct the dod cio to develop a cost estimate as described in omb memorandum m - 05-22 for the department's transition to ipv6 .
+
+ ( recommendation 2 ) the secretary of defense should direct the dod cio to develop a risk analysis as described in omb memorandum m - 05-22 for the department's transition to ipv6 .
+
+ ( recommendation 3 ) .
+
+we provided a draft of this report to dod and omb for review and comment .
+
+in response , dod agreed with two recommendations and disagreed with one recommendation that we made to the department .
+
+omb did not state whether it agreed or disagreed with the report's findings .
+
+in written comments , dod stated that it agreed with our recommendations to develop a cost estimate and risk analysis for the department's transition to ipv6 ( recommendations 2 and 3 ) .
+
+the department said that it plans to complete both the cost estimate and the risk analysis by the end of may 2020 .
+
+however , dod stated that it did not agree with our recommendation to complete a department - wide inventory of existing ip - compliant devices and technologies ( recommendation 1 ) .
+
+specifically , the department referred to the draft ipv6 guidance that omb developed in march 2020 , stating that the draft guidance will rescind omb's fiscal year 2005 ipv6 guidance , which includes the inventory requirement .
+
+dod also said that creating such an inventory would be impractical given the department's size .
+
+it added that it has been mitigating the risk of not having an inventory by only acquiring ipv6-capable devices since december 2009 .
+
+we acknowledge that omb's march 2020 draft ipv6 guidance , once finalized , would rescind its fiscal year 2005 ipv6 guidance .
+
+however , the draft guidance focuses on completing the operational deployments of ipv6 , not on the initial key transition step of completing an inventory , as required in the 2005 guidance .
+
+the draft guidance also requests information on agencies' completion of certain milestones using the percentage of ip - enabled devices that are ipv6-only as the metric .
+
+dod's completed inventory would be essential to accurately responding to omb's draft requirement .
+
+in addition , nist's current ipv6 transition guidance cites an inventory of ip devices as a key step in transitioning to ipv6 since such information would help identify requirements for transitioning , including which assets would transition and what security controls would be needed .
+
+as dod has acknowledged , however , it has not yet completed an inventory .
+
+accordingly , we believe that our recommendation that dod complete a department - wide inventory of its existing ip - compliant devices and technologies is warranted .
+
+in addition , dod provided a technical comment , which we incorporated as appropriate .
+
+dod's comments are reprinted in appendix ii .
+
+in comments provided via email on may 8 , 2020 , an associate general counsel in omb's office of general counsel expressed omb's appreciation for the opportunity to review and comment on our draft report .
+
+the official did not state whether omb agreed or disagreed with the report's findings .
+
+omb also provided a technical comment , which we incorporated as appropriate .
+
+we are sending copies of this report to the appropriate congressional committees , the secretary of dod , and the acting director of omb .
+
+in addition , the report is available at no change on the gao website at https: / / www.gao.gov .
+
+if you or your staff have any questions about this report , please contact me at ( 202 ) 512-6240 or dsouzav@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made key contributions to this report are listed in appendix iii .
+
+in february 2019 , the department of defense's ( dod ) chief information officer ( cio ) released “internet protocol version 6 implementation direction and guidance,” a memorandum containing guidance and a list of required implementation and planning activities for the department's transition to internet protocol version 6 ( ipv6 ) .
+
+for each activity , the memorandum included information such as the component or office responsible for completing the work and a description of the work to be completed .
+
+out of 35 total activities , seven were completed and 12 were past due as of march 2020 .
+
+one key contributing factor behind the activities' unrealistic deadlines was that the department developed this list of required activities without having completed key planning efforts , such as an inventory of ip - compliant devices and technologies , a cost estimate , or a risk analysis .
+
+table 4 shows the status of the completion of the required transition activities as called for in the department's guidance .
+
+in addition to the contact named above , larry crosland ( assistant director ) , meredith raymond ( analyst in charge ) , amy apostol , chris businsky , west coile , kristi dorsey , vernetta marquis , and evan rapson made key contributions to this report .
+

@@ -1,0 +1,480 @@
+in connection with our requirement to audit the annual u.s. government consolidated financial statements and in support of the army audit agency's audit of the financial statements of the u.s. army corps of engineers , civil works , we tested selected general and application controlsover the corps of engineers financial management system ( cefms ) .
+
+the u.s. army corps of engineers relies on cefms to perform key financial management functions supporting the corps' military and civil works missions .
+
+we previously reported ( for fiscal year 1999 ) on general and application control weaknesses that placed cefms at significant risk of unauthorized disclosure and modification of sensitive data and programs , misuse or damage to computer resources , or disruption of critical operations .
+
+for the current engagement , our objective was to evaluate the design and test the effectiveness of selected corps general and application computer controls over cefms for fiscal year 2001 .
+
+in doing so , we also assessed the corrective actions taken by the corps to address the weaknesses that we identified during our fiscal year 1999 review .
+
+this report also includes a summary ( based on work led by the army audit agency ) of general control weaknesses associated with corps entitywide security management and service continuity .
+
+separately , we issued a “limited official use only” report to you detailing the results of our review .
+
+this version of the report , for public release , provides a general summary of the vulnerabilities identified and our recommendations to help strengthen and improve cefms general and application controls .
+
+ ( the “limited official use only” report provided technical details to assist the corps in implementing the recommendations that we made. ) .
+
+the u.s. army corps of engineers , made up of approximately 34,600 civilian and 650 military personnel , has both military and civil works missions .
+
+the corps' military mission includes managing and executing engineering , construction , and real estate programs for dod components , other federal agencies , state and local governments , and foreign governments .
+
+the corps also provides military support by managing and executing army installation support programs and by developing and maintaining the capability to mobilize in response to national security emergencies .
+
+the corps' civil works program involves investigating , developing , and maintaining the nation's water and related environmental resources ; constructing and operating projects for navigation ; developing hydroelectric power ; and conserving fish and wildlife .
+
+the corps is organized geographically into eight divisions in the united states and 41 subordinate districts throughout the united states , asia , and europe .
+
+the districts oversee project offices throughout the world .
+
+the corps also has eight research laboratories and two data processing centers .
+
+further , the corps conducts business with numerous external customers , including the military departments and various federal government agencies .
+
+external customers require access to the corps' systems for such things as posting and retrieval of information for water management functions .
+
+the corps' finance center has centralized responsibility for issuing checks and electronic funds transfers for the various corps sites and external customers .
+
+during fiscal year 2000 , cefms made about $11 billion in disbursements for corps ( civil works and military fund ) activities .
+
+the corps acquired and owns the corps of engineers enterprise information system ( ceeis ) wide area network , which supports multiple unclassified corps systems , including its key financial management system , cefms .
+
+the ceeis interconnects corps sites worldwide , providing for the exchange of traffic between sites in support of engineering , financial management , e - mail , and real - time data collection .
+
+external customers access corps systems via the internet and dod's unclassified ( but sensitive ) internet protocol router network ( niprnet ) gateways at selected sites .
+
+cefms processes financial and other data at two data processing centers .
+
+each corps site maintains its own database and provides its financial data input to one of the two processing centers .
+
+corps users enter data and update financial transactions in cefms via workstations at the various organizational elements .
+
+our objective was to evaluate the design and test the effectiveness of selected general and application controls over cefms .
+
+our work included assessing ( 1 ) the corrective actions taken by the corps to address the weaknesses that we identified during our fiscal year 1999 general and application control review of cefms ; and ( 2 ) the effectiveness of the corps' computer controls to help ensure the reliability , availability , and confidentiality of financial and sensitive data contained in cefms .
+
+we contracted with an independent public accounting firm , pricewaterhousecoopers ( pwc ) , llp , to assist in the evaluation and testing of cefms computer controls .
+
+we determined the scope of our contractor's audit work , monitored its progress , attended key meetings between pwc and corps personnel , and reviewed the related working papers .
+
+pwc used our federal information system controls audit manual ( fiscam ) to guide the general controls testing .
+
+this testing included four of the six fiscam general control areas: ( 1 ) access controls , ( 2 ) application software development and change control , ( 3 ) systems software , and ( 4 ) segregation of duties .
+
+pwc used a proprietary methodology tailored to cefms to evaluate and test application controls over selected cefms modules .
+
+the army audit agency evaluated the two remaining fiscam areas: entitywide security management and service continuity .
+
+working with the army audit agency for these two fiscam areas , we analyzed dod , department of the army , and corps information assurance documents ; interviewed key personnel to document responsibilities , actions , and plans for corps - wide information security management , information technology , and operations management ; and evaluated corps security program elements against gao , dod , army , and other federal criteria .
+
+the army audit agency plans to issue a report on these two fiscam areas in fiscal year 2002 .
+
+our fiscal year 2001 review also included a network vulnerability assessment of a critical path between two corps network segments .
+
+during the course of our work , we communicated our findings to corps officials , who informed us of the corrective actions they planned or had taken to address many of the weaknesses we identified .
+
+our review was performed from january to october 2001 at the two corps data processing centers ; the corps finance center ; the cefms development center ; and 3 of the 41 corps districts .
+
+these districts were chosen because of the significance of their processing volumes .
+
+we also held interviews with corps officials at the corps headquarters in washington , d.c. our work was performed in accordance with generally accepted government auditing standards .
+
+general controls — the structures , policies , and procedures that apply to an entity's overall computer operations — establish the environment in which application systems and controls operate .
+
+an effective general controls environment would ( 1 ) ensure that an adequate computer security management program is in place ; ( 2 ) protect data , files , and programs from unauthorized access , modification , and destruction ; ( 3 ) limit and monitor access to programs and files that protect applications and control computer hardware ; ( 4 ) prevent unauthorized changes to systems and applications software ; ( 5 ) prevent any one individual from controlling key aspects of computer - related operations ; ( 6 ) ensure the recovery of computer processing operations in case of a disaster or other unexpected interruption ; and ( 7 ) ensure that only authorized individuals can gain network access to sensitive and critical agency data .
+
+of the 75 recommendations that we made on general controls in our fiscal year 1999 audit , the corps had completed action on 41 and had partially completed or was implementing action plans to correct the remaining 34 .
+
+among the actions taken , the corps had ( for example ) reconfigured its network , including implementing firewalls and deploying intrusion detection systems ; deleted certain unneeded / vulnerable services operating on cefms performed auditing on changes made to the cefms access control enforced monitoring of system log files on the cefms servers ; formalized corps policies and procedures for making and documenting cefms changes and for obtaining approvals on user acceptance tests resulting from software changes ; and updated job descriptions at data centers to better address the concept of segregation of duties .
+
+although the corps made substantial progress in correcting vulnerabilities , continuing and newly identified vulnerabilities in general computer controls continue to impair the corps' ability to ensure the reliability , confidentiality , and availability of financial and sensitive data .
+
+in addition to the results of our review , corps records indicate that from october 2000 through june 2001 vulnerabilities in corps systems resulted in several serious compromises .
+
+the numbers in table 1 reflect open recommendations on general controls , including both recommendations remaining from our fiscal year 1999 review and additional recommendations arising from our fiscal year 2001 review .
+
+the foundation of an entity's security control structure is an entitywide program for security management , which should establish a framework for continually ( 1 ) assessing risk , ( 2 ) developing and implementing effective security procedures , and ( 3 ) monitoring and evaluating the effectiveness of security procedures .
+
+a well - designed entitywide security management program helps to ensure that security controls are adequate , properly implemented , and applied consistently across the entity and that responsibilities are clearly understood .
+
+in our may 1998 best practices guide on information security management at leading nonfederal organizations , we reported that leading organizations successfully managed their information security risks through an ongoing cycle of risk management activities .
+
+as we discussed in our fiscal year 1999 report , an underlying cause for the corps' computer control weaknesses was that it did not yet have an effective security management program .
+
+the lack of an effective security management program increases the risk that computer control weaknesses could exist and not be detected promptly so that losses or disruptions could be prevented .
+
+for fiscal year 1999 , the army audit agency identified four weaknesses in the corps' security management program and issued five recommendations to address the weaknesses .
+
+the army audit agency reported that key elements of an entitywide security program were needed , including a more comprehensive program definition in an entitywide security plan , updated network accreditation and risk assessments , and complete and documented background investigations .
+
+also , the army audit agency reported that other key elements were immature , including assignment of security responsibilities , a formal incident response team , computer security training , and security policy assessment and compliance verification .
+
+since our fiscal year 1999 audit , the corps has taken several steps to define and develop an agencywide security program .
+
+it has established a central focal point for information assurance at corps headquarters , consisting of an information assurance program manager and staff reporting to the architecture branch of information technology services under the chief information officer .
+
+the staff includes a coordinator for corps security accreditation activities .
+
+a 5-year budget has been developed for corps - wide investments in information security technologies and services , and several agencywide information assurance initiatives are planned , including public key infrastructure , risk assessment , and automated system vulnerability updates .
+
+the corps has appointed information assurance managers and officers throughout its functional units and assigned them responsibility for implementing the army's security regulations .
+
+it has also identified training requirements for these and other positions .
+
+in addition , the corps has established processes for notification and reporting on dod's information assurance vulnerability alerts and has begun updating system security accreditations under dod's defense information technology security certification and accreditation program .
+
+these elements are necessary to meet federal guidance and dod and army requirements for protection of automated information systems .
+
+although the corps has identified and addressed some near - term security priorities , it has not yet developed a comprehensive management program to ensure that its information security policies and practices are fully defined , consistent , and continuously effective across all systems , facilities , and organizational levels .
+
+specifically , the corps has not yet developed a comprehensive information assurance program plan that ensures appropriate security posture and adequate security resources for all systems , facilities , and programs , and supports agency - level monitoring of progress toward security objectives ; information security policy , plans , and procedures are incomplete in areas such as risk assessment , cyber incident management , and personnel security , and limited guidance has been provided to functional units for implementing policy and plans ; current mechanisms for identifying system vulnerabilities and ensuring appropriate corrective actions are limited , and as a result , systems remain vulnerable to inappropriate access , inadequate physical security , and users with incomplete and missing background investigations ; processes for monitoring and evaluating security measures throughout the corps ( such as command staff inspections , vulnerability assessments , and reviews of the effectiveness of corrective actions taken ) have not been sufficiently frequent or rigorous to be fully effective in identifying security policy violations , system vulnerabilities , and weaknesses in operational controls ; and an agencywide incident response capability has not been fully implemented in areas such as centralized incident tracking , follow - up , and evidence controls .
+
+the army audit agency plans to issue a report in fiscal year 2002 providing additional discussion on these weaknesses .
+
+access controls should be designed to limit or detect unauthorized access to computer programs , data , equipment , and facilities , so that these resources are protected from unauthorized modification , disclosure , loss , or impairment .
+
+such controls include both logical access controls and physical security controls .
+
+logical access controls involve the protection of data supporting critical operations from unauthorized access .
+
+organizations can protect these data by requiring users to input unique user identifications , passwords , or other identifiers that are linked to predetermined access privileges and by providing a log of security events .
+
+logical access controls prevent unauthorized user access to computing resources and restrict the access of legitimate users to the specific systems , programs , and files they need to conduct their work .
+
+physical security controls include surveillance personnel and equipment , locks , guards , id badges , alarms , and similar measures that limit access to the buildings and rooms where computer facilities and resources are housed , thus helping to safeguard them from intentional or unintentional loss or impairment .
+
+a key weakness in corps' controls was that it had not appropriately limited user access .
+
+although the corps developed a security audit script to assist database administrators ( dbas ) in identifying security practices that are inconsistent with user management principles , we found instances of inappropriate user access and weaknesses in user management , including those described below .
+
+weak password management .
+
+sensitive cefms administrative - level accounts had passwords that could be easily guessed , which could allow unauthorized access to cefms data .
+
+inadequate management of user ids .
+
+cefms users were assigned sensitive administrative - level privileges that either could not be justified by the dbas or were not needed to perform the users' job functions .
+
+as a result , the risk is increased that cefms data could be compromised without detection .
+
+inappropriate access privileges .
+
+all cefms users , regardless of their job functions , had access privileges to certain tables on their local databases that allowed them to make changes to cefms data outside the cefms application .
+
+as a result , the risk is increased that cefms users could make inappropriate changes to cefms data .
+
+command line access .
+
+cefms users continued to have the ability to log in directly to the operating system , giving users the ability to execute many commands that are not necessary to access cefms , as well as the opportunity to take advantage of vulnerable programs , files , and directories .
+
+further , since user commands were not audited , there was no method to identify whether users were attempting to issue unauthorized commands .
+
+inadequate monitoring of audit logs .
+
+audit logs were not used to detect and monitor security violations , thereby increasing the risk that violations could occur undetected .
+
+informal procedures for access requests .
+
+access request procedures for privileged or dial - in access to the cefms servers were not adequately enforced , thereby increasing the risk that employees without a legitimate or authorized need could gain such access .
+
+weak passwords on corps dial - in servers .
+
+corps dial - in modems at one site ( non - cefms ) contained easily guessed usernames and passwords .
+
+such access places corps network assets at risk .
+
+lack of monitoring of web server activity .
+
+the corps was not monitoring cefms web server activity or reviewing and analyzing log files , thereby increasing the risk that attempted intrusion or potential degradation of service could go unnoticed .
+
+to protect the overall integrity and reliability of information systems , it is essential to control access to and modifications of system software .
+
+system software controls , which limit and monitor access to the powerful programs and sensitive files associated with computer operations , are important in providing reasonable assurance that access controls are not compromised and that the operating system will not be impaired .
+
+to protect system software , a standard computer control practice is to ( 1 ) configure system software to protect against security vulnerabilities , ( 2 ) periodically review sensitive software to identify potential security weaknesses , and ( 3 ) ensure that only authorized and fully tested system software is placed in operation .
+
+while the corps had corrected many of the system software weaknesses that we identified in our fiscal year 1999 audit , we identified other weaknesses where the corps was not adequately controlling system software .
+
+these weaknesses included the following .
+
+unencrypted usernames and passwords over the network .
+
+corps usernames and passwords continued to be sent unencrypted over the network .
+
+consequently , an individual with physical access to a site's local network could capture usernames and passwords and then use that information to gain unauthorized access to the database .
+
+the attacker might also be able to use this information to gain additional privileges on the local network .
+
+ineffective authentication controls over corps servers .
+
+corps servers continued to allow unauthenticated connections , thereby increasing the risk that an attacker could gather information to gain further access to the system or that other dod networks could be attacked via the corps' network .
+
+lack of formal test plans and procedures for validating operating system upgrades .
+
+the corps had no formal test plans and procedures to ensure system integrity after operating system software upgrades were performed , thereby increasing the risk that some processing functions might not operate properly after a system upgrade .
+
+controls over the design , development , and modification of application software help to ensure that all programs and program modifications are properly authorized , tested , and approved before they are placed in operation and that access to and distribution of programs are carefully controlled .
+
+these controls also help prevent security features from being inadvertently or deliberately turned off , audit logs from being modified , and processing irregularities or malicious code from being introduced .
+
+changes to application software programs were not adequately documented or controlled .
+
+described below are some examples of the application change control weaknesses that we identified .
+
+lack of documented test plans and results .
+
+the corps did not formally document test plans and test results for cefms software changes , increasing the risk that developers might unknowingly introduce processing anomalies or make unauthorized changes .
+
+informal web server change management .
+
+at one data processing center , a web server change management program was not documented or formalized , nor did the center have a lead web administrator to coordinate changes .
+
+also , the other data processing center did not have a current change control program for its web server .
+
+without a strong change management process , unauthorized changes could be made to the web server application .
+
+demonstration files on production web servers .
+
+cefms production web servers contained vendor demonstration files with known vulnerabilities that are easily exploitable , increasing the risk that an attacker could gain unauthorized access to cefms .
+
+a key control for safeguarding programs and data is to ensure that staff duties and responsibilities for authorizing , processing , recording , and reviewing data , as well as for initiating , modifying , migrating , and testing programs , are separated to reduce the risk that errors or fraud will occur and go undetected .
+
+incompatible duties that should be segregated include application and system programming , production control , database administration , computer operations , and data security .
+
+once policies and job descriptions supporting the principles of segregation of duties have been developed , it is important to ensure that adequate supervision is provided and adequate access controls are in place to ensure that employees perform only compatible functions .
+
+although computer duties were generally properly segregated , we identified instances where controls did not enforce segregation of duties principles , as in the following examples .
+
+lack of reviews and training regarding segregation of duties concepts .
+
+we found that training at the data processing centers did not address segregation of duties principles .
+
+if employees are not properly trained in segregation of duties principles , managers may find it difficult to hold employees accountable if they perform incompatible duties .
+
+also , the data processing centers had not performed reviews to determine whether incompatible duties were appropriately segregated .
+
+without periodically reviewing individuals' roles and responsibilities , management cannot be assured that appropriate segregation of duties is being maintained .
+
+they may also find it difficult to hold employees accountable for using their access privileges to carry out inappropriate activity .
+
+development staff given access to production systems .
+
+cefms developers had inappropriate access to the cefms production databases .
+
+we identified several instances in which developers had excessive privileges .
+
+allowing application development staff access to the production environment increases the likelihood that unauthorized changes could be made to the production environment .
+
+an organization's ability to accomplish its mission can be significantly affected if it loses the ability to process , retrieve , and protect information that is maintained electronically .
+
+for this reason , organizations should have established ( 1 ) procedures for protecting information resources and minimizing the risk of unplanned interruptions and ( 2 ) plans for recovering critical operations should interruptions occur .
+
+a contingency and disaster recovery plan specifies backup operations , emergency response , and postdisaster recovery procedures to ensure the availability of critical resources and facilitate the continuity of operations in an emergency .
+
+such a plan addresses how an organization will deal with a full range of contingencies , from electrical power failures to catastrophic events such as earthquakes , floods , and fires .
+
+the plan also identifies essential business functions and ranks resources in order of criticality .
+
+to be most effective , a contingency plan should be periodically tested in disaster simulation exercises , and employees should be trained in and familiar with its use .
+
+for fiscal year 1999 , the army audit agency identified three control weaknesses related to service continuity and issued corresponding recommendations to address them .
+
+the agency reported that the continuity of operations plan for the ceeis was out of date , and that periodic testing would be needed to identify planning and training deficiencies .
+
+it also found that backup tape storage facilities were too close to primary operations centers .
+
+since the fiscal year 1999 audit , the directorate of corporate information has assumed responsibility for development of service continuity plans for agencywide information systems .
+
+a program plan has been drafted for analyzing , defining , and coordinating continuity of operations for the ceeis .
+
+in addition , the corps is gathering information from functional units to develop a continuity of operations plan that would address the roles of cefms and ceeis in headquarters emergency operations and disaster recovery .
+
+nevertheless , the weaknesses noted from 1999 in the continuity plans and activities of corps functional units remained unresolved .
+
+the corps still lacks an overall continuity of operations plan for the ceeis , and plans for its major processing centers were not yet developed or were incomplete and did not meet federal guidance .
+
+furthermore , the draft program plan to establish a ceeis continuity of operations plan did not identify the full set of activities required for effective management of this program or establish milestones and performance measures based on recognized federal directives and best practices .
+
+the corps thus lacks effective mechanisms to track the ceeis service continuity improvement efforts and ensure establishment of integrated plans .
+
+in addition , new weaknesses indicated that the corps had not effectively managed this area of federal requirements across its functional units .
+
+cefms obtained interim approval to operate under the corps' system certification and accreditation process , without detailing the central role of ceeis in cefms service continuity .
+
+the corps' office of internal review found that at least 10 facilities that depend on ceeis and cefms lacked continuity plans for their operations , and 10 more had outdated plans .
+
+for example , the corps did not meet its schedule for obtaining headquarters service continuity planning information from functional units such as the directorate of corporate information , and it had not yet taken follow - up actions to address this delay to its program .
+
+persistent weaknesses in service continuity testing are related to inadequacies in continuity of operations plans .
+
+no service continuity testing has been conducted for the ceeis network or for cefms , which both lack viable continuity of operations plans .
+
+in addition , some existing continuity of operations plans for facilities that rely on ceeis and cefms had not been tested , and no training programs were in place , to ensure that plans could be reliably executed .
+
+finally , the army audit agency's fiscal year 1999 recommendation to relocate the ceeis backup storage centers farther away from primary facilities had not been addressed .
+
+corps officials told us , and these weaknesses confirm , that the corps lacks a strong focal point for continuity of corps business operations .
+
+such a focal point is needed to provide agencywide guidance , coordination , integration , and oversight for cefms and ceeis service continuity and disaster recovery planning and preparation .
+
+agencywide management is required to ensure that individual site plans will operate effectively together and to verify that the corps' response to disruptions will be adequate to support its mission .
+
+the army audit agency plans to issue a report in fiscal year 2002 providing further discussion on these weaknesses .
+
+network security controls are key to ensuring that only authorized individuals can gain access to sensitive and critical agency data .
+
+these controls include a variety of tools , such as user ids and passwords , that are intended to authenticate and allow authorized users access to the network .
+
+in addition , network controls should provide for safeguards to ensure that system software is configured to prevent users from bypassing network access controls or causing network failures .
+
+during our review , we performed preannounced network vulnerability testing , during which we were able to gain access to the corps' internal network and perform some probing of corps systems .
+
+the access obtained allowed us to map the network , but it did not allow us to gain access to any of the cefms production systems .
+
+the corps' intrusion detection team detected our activity and blocked this access once we employed more intrusive techniques .
+
+our review identified network security weaknesses that could allow unauthorized access to corps systems ; these weaknesses included the following: weak logical access controls at the finance center .
+
+logical access controls were not adequately implemented to prevent or detect unauthorized individuals with physical access to the facility from gathering sensitive information , such as user ids and passwords .
+
+extensive “trust” relationships .
+
+the corps has established trust relationships between network segments to conduct corps business ( cefms and non - cefms related ) ; however , additional restrictions could be implemented to more effectively control access .
+
+inadequate restrictions on internal network traffic .
+
+the corps' security model does not employ the control capabilities of certain critical network components to restrict internal network traffic .
+
+consequently , the risk is increased that users could potentially gain unauthorized access to corps systems .
+
+application controls relate directly to the individual computer programs that are used to perform transactions ( such as recording journal entries in the general ledger ) .
+
+in an effective general controls environment , application controls help to ensure that transactions are valid , properly authorized , and completely and accurately processed and reported .
+
+of the 18 recommendations that we made on application controls in our fiscal year 1999 audit , the corps had completed action on 13 and had partially completed or was implementing action plans to correct 5 .
+
+among the actions taken , the corps had ( for example ) required electronic signature on updates to the cefms access control changed the cefms database design to prevent the same user from paying , certifying , and authorizing certain disbursements and to prevent users from creating and certifying the same invoice for payment ; and required weekly authorization of disbursing terminals by the finance center .
+
+although the corps made substantial progress in correcting vulnerabilities , continuing and newly identified vulnerabilities in application computer controls continue to impair the corps' ability to ensure the reliability , confidentiality , and availability of financial and sensitive data .
+
+the numbers in table 2 reflect open recommendations on application controls , including both recommendations remaining from our fiscal year 1999 review and additional recommendations arising from our fiscal year 2001 review .
+
+like general access controls , access controls for specific applications should be established to ensure that ( 1 ) only authorized transactions are entered into the application , ( 2 ) duties are properly segregated and individuals can be held accountable , and ( 3 ) modifications to user access permissions are authorized and audited .
+
+in some instances , proper authorization controls were not enforced , as in the following examples .
+
+user access permissions in cefms did not match authorized access request forms , thereby increasing the risk that a user could process cefms transactions that were not authorized or consistent with management's intent .
+
+electronic signature header records were still not being routinely reviewed and analyzed to detect whether individuals were performing incompatible duties associated with critical transactions ; this increased the risk that unauthorized transactions would go undetected .
+
+cefms development personnel had user ids allowing them to generate invoices at other locations , thereby increasing the risk of inappropriate activity .
+
+user transactions processed on the disbursing terminals were not subject to postpayment audits .
+
+this situation increases the risk that a malicious user could input fraudulent transactions without detection .
+
+for an application system to produce reliable results , the data input to the system must be valid and accurate .
+
+input controls include data validation and editing to identify and correct erroneous data , automatic reporting of erroneous data , and review and reconciliation of output .
+
+cefms user manuals pertaining to the work management module do not reflect current information , including up - to - date input controls .
+
+the corps has determined the manual to be obsolete and is performing a functional review .
+
+outdated manuals increase the risk that employees may follow input procedures that are inadequate or improper .
+
+to identify users associated with certain types of transactions , cefms uses an electronic signature system .
+
+the corps requires the use of the electronic signature system for cefms transactions that lead to an obligation , collection , or disbursement of government funds .
+
+the electronic signature system consists of a smartcard , smartcard reader , cryptographic module , and central database containing all system user ids .
+
+the electronic signature system was designed to provide assurance that a document signed by an authorized person has not been altered .
+
+this assurance relies on corps policy , which assumes that the electronic signature smartcard has only been used by the individual to whom it was issued .
+
+we previously reported that the corps had not adequately used cefms electronic signature capabilities to help ensure data integrity for certain transactions .
+
+for the 35 percent of cefms functions for which electronic signature verification is required , alterations of data would be detected during transaction processing .
+
+however , for some sensitive functions , use of the electronic signature system was not required , including some functions that were financial transactions ( such as general ledger journal authority ) .
+
+such “unsigned” records could be added , modified , or deleted without detection .
+
+the corps had not reevaluated the cefms functions to determine whether other sensitive transactions should require electronic signature .
+
+during the fiscal year 2001 audit , several instances were identified of cefms users sharing their cefms electronic signature smartcards with other corps employees .
+
+one critical requirement in implementing the electronic signature system was that each smartcard be under the sole control of an individual smartcard holder .
+
+however , according to tests performed by the army audit agency at one corps site , card sharing had occurred .
+
+as a result , authentication controls were not effective to provide reasonable assurance that users' electronic signatures are valid .
+
+consequently , the corps cannot ensure that its electronic signature system authenticates transactions and mitigates other computer control weaknesses identified in cefms .
+
+to help maintain the integrity and security of cefms , the corps issued a memorandum on january 17 , 2002 , reinforcing the need to comply with army and corps policies that prohibit sharing of electronic signature cards and passwords .
+
+the army audit agency is continuing to review the effectiveness of authentication controls over cefms electronic signature card users .
+
+the agency plans to issue a separate report to corps management during fiscal year 2002 .
+
+information system general and application controls are critical to the corps' ability to manage its computer security and to ensure the reliability , confidentiality , and availability of its financial and sensitive data .
+
+while the corps has made substantial progress in resolving many of the fiscal year 1999 weaknesses that we identified and has taken other steps to improve security , continuing and newly identified weaknesses were identified in the corps' information system control environment .
+
+specifically , at the general controls level , the corps had not adequately ( 1 ) limited user access ; ( 2 ) developed adequate system software controls to protect programs and sensitive files ; ( 3 ) documented software changes ; ( 4 ) segregated incompatible duties ; ( 5 ) addressed service continuity needs ; and ( 6 ) secured network access .
+
+at the application control level , the corps had not maintained current and accurate cefms access authorizations and maintained cefms current user manuals .
+
+the weaknesses that we identified at the two data processing centers and other sites placed the corps' computer resources , programs , and files at risk from inappropriate disclosure of financial and sensitive data and programs , modification of data , misuse of or damage to computer resources , or disruption of critical operations .
+
+a primary reason for the corps' information system control weaknesses was that it had not yet fully developed and implemented a comprehensive security management program .
+
+a comprehensive program for computer security management is essential for achieving an effective general and application controls environment .
+
+effective implementation of such a program provides for ( 1 ) periodically assessing risks , ( 2 ) implementing effective controls for restricting access based on job requirements and actively reviewing access activities , ( 3 ) communicating the established policies and controls to those who are responsible for their implementation , and ( 4 ) evaluating the effectiveness of policies and controls to ensure that they remain appropriate and accomplish their intended purpose .
+
+in our march 15 , 2002 , “limited official use only” report , we recommended that you instruct the chief information officer and the deputy chief of staff for resource management to implement corrective actions to resolve the general and application computer control weaknesses that we identified in that report .
+
+in its report on the corps' entitywide security management and service continuity , planned for fiscal year 2002 , the army audit agency plans to address recommendations in these areas .
+
+in providing written comments on a draft of this report , the commanding general of the u.s. army corps of engineers agreed with our findings and recommendations and stated that the numerous working meetings concerning the information security weaknesses that we identified will help expedite their corrective actions .
+
+his comments are reprinted in appendix i of this report .
+
+the commanding general also stated that the corps has already completed corrective action on 11 of the open fiscal year 1999 and the new fiscal year 2001 recommendations .
+
+the corps has developed an action plan to correct all but 12 of the remaining recommendations by september 30 , 2002 , and stated that these 12 recommendations would be completed by fiscal year 2003 or beyond .
+
+we are sending copies of this report to the senate committee on armed services ; the senate committee on governmental affairs ; the subcommittee on government efficiency , financial management and intergovernmental relations , house committee on government reform ; the house armed services committee ; the under secretary of defense ( comptroller / chief financial officer ) ; the assistant secretary of defense ( command , control , communications & intelligence ) ; the deputy inspector general , department of defense ; the assistant secretary of the army ( financial management and comptroller ) ; the director of information systems for command , control , communication , and computers ; army auditor general ; the deputy chief of staff operations and plans ; the deputy chief of staff for intelligence ; and the commander , u.s. army intelligence and security command .
+
+in addition , the report will be available at no charge on the gao web site at http: / / www.gao.gov .
+
+if you have any questions regarding this report , please contact me at ( 202 ) 512-3317 .
+
+key contributors to this assignment were lon chin , barbara collier , edward m. glagola , jr. , david hayes , harold lewis , paula moore , duc ngo , eugene stevens , crawford l. thompson , and jenniffer f. wilson .
+
+the general accounting office , the investigative arm of congress , exists to support congress in meeting its constitutional responsibilities and to help improve the performance and accountability of the federal government for the american people .
+
+gao examines the use of public funds ; evaluates federal programs and policies ; and provides analyses , recommendations , and other assistance to help congress make informed oversight , policy , and funding decisions .
+
+gao's commitment to good government is reflected in its core values of accountability , integrity , and reliability .
+
+the fastest and easiest way to obtain copies of gao documents at no cost is through the internet .
+
+gao's web site ( www.gao.gov ) contains abstracts and full - text files of current reports and testimony and an expanding archive of older products .
+
+the web site features a search engine to help you locate documents using key words and phrases .
+
+you can print these documents in their entirety , including charts and other graphics .
+
+each day , gao issues a list of newly released reports , testimony , and correspondence .
+
+gao posts this list , known as “today's reports,” on its web site daily .
+
+the list contains links to the full - text document files .
+
+to have gao e - mail this list to you every afternoon , go to www.gao.gov and select “subscribe to daily e - mail alert for newly released products” under the gao reports heading .
+

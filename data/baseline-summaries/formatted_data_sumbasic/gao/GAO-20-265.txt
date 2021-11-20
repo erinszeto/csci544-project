@@ -1,0 +1,684 @@
+the security of federal information systems and data is critical to the nation's safety , prosperity , and well - being .
+
+to maintain that security , federal laws , policies , and guidelines require agencies to implement sufficient safeguards to protect the confidentiality , integrity , and availability of their information and information systems .
+
+however , threats to the federal information technology ( it ) infrastructure continue to grow in number and sophistication , posing a risk to the reliable functioning of our government .
+
+further , federal systems and networks are inherently at risk because of their complexity , technological diversity , and geographic dispersion .
+
+the federal communications commission ( fcc ) relies extensively on information systems to perform its mission of regulating interstate and international communications .
+
+one important information system is the electronic comment filing system ( ecfs ) , which fcc uses to receive public comments from interested parties ( commenters ) during rulemaking proceedings .
+
+in may 2017 , ecfs experienced a surge in public comments that disrupted the system and affected its availability during a public comment period .
+
+specifically , the commission received more than 22 million comments through ecfs during the public comment period for fcc's 2017 restoring internet freedom notice of proposed rulemaking .
+
+in august 2018 , an fcc office of inspector general ( oig ) investigative report attributed the disruption in ecfs's service to a combination of system capacity and performance issues .
+
+given fcc's critical role in enabling the public to comment on its rulemaking process , you asked us to review the reported disruption to ecfs and the commission's efforts to secure its information systems .
+
+specifically , our objectives were to determine: ( 1 ) the actions fcc took to respond to the may 2017 event that affected ecfs ; and ( 2 ) the extent to which fcc implemented security controls to effectively protect the confidentiality , integrity , and availability of selected systems .
+
+in september 2019 , we issued a report that addressed the two objectives .
+
+in the report , we made nine recommendations to fcc to improve its information security program and 127 additional recommendations to resolve technical control deficiencies in the information systems we reviewed .
+
+we designated that report as “limited official use only” ( louo ) and did not release it to the general public because of the sensitive information it contained about fcc systems' operating environments and shortcomings that could potentially be exploited .
+
+this subsequent report publishes the findings discussed in our september 2019 report , but we have removed all of the sensitive information .
+
+specifically , we deleted the names of the information system software , network devices , and resource tools that we examined ; disassociated identified control deficiencies from named systems ; deleted certain details about information security controls and control deficiencies ; and omitted an appendix contained in the louo report .
+
+that appendix contained sensitive details about the technical security control deficiencies in fcc's information systems and computer networks that we reviewed , and the 127 recommendations we made to mitigate those deficiencies .
+
+we also provided a draft of this report to fcc officials to review and comment on the sensitivity of the information contained herein and to affirm that the report can be made available to the public without jeopardizing the security of the commission's information systems and networks .
+
+in addition , this report addresses a third objective that was not included in the september 2019 report .
+
+specifically , this objective was to determine the extent to which fcc has taken corrective actions to address the previously identified information security program and technical control deficiencies and related recommendations for improvement that we identified in the earlier report .
+
+as noted in the september 2019 report , to address the first objective — to determine the actions fcc had taken to respond to the may 2017 event that affected ecfs — we reviewed the commission's security and incident response policy and procedures , examined fcc and its office of inspector general's reports , reviewed system enhancement and performance artifacts , and interviewed fcc officials , including the system and security staff and oig officials .
+
+we examined the aforementioned documents to determine whether updated incident response policy and procedures , along with system enhancement and performance artifacts , were directly related to changes made subsequent to the may 2017 event .
+
+to address the second objective , we selected three systems for our review .
+
+we selected these systems because they ( 1 ) are essential to fcc's mission and ( 2 ) were assigned a federal information processing standards ( fips ) publication 199 rating of moderate or high impact .
+
+the results of our review are not generalizable to the commission's other systems .
+
+we examined the information security program - related activities implemented for the three selected systems .
+
+for example , we analyzed fcc's information security policies ; procedures ; and artifacts associated with risk assessments , security plans , remedial action plans , and contingency plans .
+
+specifically , we compared the commission's security policies and procedures to national institute of standards and technology ( nist ) special publications to assess the fcc documents' consistency with federal guidelines .
+
+we also examined security - related artifacts , plans , and reports .
+
+additionally , we examined technical security controls implemented for the three systems .
+
+in this regard , we observed and analyzed controls in place to determine if they were appropriately designed , operating as intended , and effective .
+
+we supplemented our analysis with interviews of fcc information technology center personnel and other relevant officials .
+
+we conducted our work at three fcc facilities located in pennsylvania , washington , d.c. , and west virginia .
+
+to accomplish our third objective — our analysis of fcc's actions to address the previously identified information security program and technical control deficiencies and related recommendations — we requested that the agency provide a status report of its actions to implement each recommendation we made in the september 2019 report .
+
+for each recommendation that fcc indicated it had implemented as of november 2019 , we examined supporting documents , observed or tested the associated security control or procedure , and / or interviewed the responsible fcc officials to assess the effectiveness of the actions taken to implement the recommendation or otherwise resolve the underlying control deficiency .
+
+based on this assessment and the fcc status reports , we categorized the status of each recommendation as being “fully implemented,” “partially implemented,” or “not started.” additional details on our objectives , scope , and methodology are provided in appendix i .
+
+we conducted the performance audit for the first two objectives from february 2018 through september 2019 in accordance with generally accepted government auditing standards .
+
+we conducted work supporting the third objective and , where applicable , included updates to our work in the second objective from october 2019 through march 2020 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+established by the communications act of 1934 , fcc regulates interstate and international communications by radio , television , wire , satellite , and cable in all 50 states , the district of columbia , and u.s. territories .
+
+fcc is responsible for , among other things , making available nationwide worldwide wire and radio communication service .
+
+more recently , it has been responsible for promoting competition and reducing regulation of the telecommunications industry in order to secure lower prices and higher quality services for consumers .
+
+fcc's functions include: issuing licenses for broadcast television and radio ; overseeing licensing , enforcement , and regulatory functions of carriers of cellular phones and other personal communication services ; regulating the use of radio spectrum and conducting auctions of licenses for spectrum ; investigating complaints and taking enforcement actions if it finds that there have been violations of the various communications laws and commission rules that are designed to protect consumers ; addressing issues related to public safety , homeland security , emergency management , and preparedness ; educating and informing consumers about communications goods and reviewing mergers of companies holding fcc - issued licenses .
+
+fcc relies extensively on computerized systems to support its mission - related operations , and on information security controls to protect the commission's data .
+
+fcc's information technology center , within the office of the managing director , uses it to perform the commission's business operations .
+
+through its computer network and systems , the commission collects and maintains nonpublic information , including proprietary information of businesses regulated by the commission , as well as information available to the public through rulemaking proceedings .
+
+fcc's chairman , chief information officer ( cio ) , and chief information security officer ( ciso ) each have specific responsibilities for information security .
+
+specifically , the fcc chairman has responsibility for , among other things: 1. providing information security protections commensurate with the risk and magnitude of harm resulting from unauthorized access , use , disclosure , disruption , modification , or destruction of the commission's information systems and information ; 2. ensuring that senior officials provide security for the information and systems that support the operations and assets under their control ; and 3. delegating to the cio the authority to ensure compliance with the information security requirements imposed on the commission .
+
+in addition , the cio is responsible for establishing and enforcing policies and procedures for protecting information resources .
+
+toward this end , the cio has designated and assigned responsibilities to the ciso for managing the cybersecurity program .
+
+the ciso , among other things , is responsible for providing information security protections commensurate with the risk and magnitude of the harm resulting from unauthorized access , use , disclosure , disruption , modification , or destruction of information and information systems that support the operations and assets of the commission .
+
+the federal information security modernization act of 2014 ( fisma ) provides a comprehensive framework for information security controls over information resources that support federal operations and assets .
+
+the law also requires each agency to develop , document , and implement an agency - wide information security program to provide risk - based protections for the information and information systems that support the operations and assets of the agency .
+
+such a program should include assessing risks ; developing and implementing policies and procedures to cost - effectively reduce risks ; developing and implementing plans for providing adequate information security for networks , facilities , and systems ; and providing security awareness and specialized training .
+
+further , the program should include testing and evaluating the effectiveness of controls ; planning , implementing , evaluating , and documenting remedial actions to address information security deficiencies ; developing and implementing procedures for detecting , reporting , and responding to security incidents ; and ensuring continuity of operations .
+
+fisma requires agencies to comply with the federal information processing standards ( fips ) publications issued by nist and office of management and budget ( omb ) circular a - 130 requires agencies to comply with the information security guidelines prescribed in nist special publications .
+
+consequently , nist fips publications and special publications contain many of the cybersecurity - related requirements for federal agencies .
+
+for example , nist fips publication 199 requires agencies to categorize their information and information systems according to the potential harm and impact to agency assets , operations , or individuals should the confidentiality , integrity , or availability of its information and information systems be compromised through unauthorized access , use , disclosure , disruption , modification , or destruction .
+
+in addition , nist fips publication 200 requires agencies to meet minimum security requirements by selecting the appropriate security controls , as described in nist special publication 800-53 .
+
+this special publication provides a catalog of 18 security control areas for federal information systems and a process for selecting controls to protect organizational operations and assets .
+
+the publication provides baseline security controls for low - , moderate - , and high - impact systems , and agencies have the ability to tailor or supplement their security requirements and policies based on agency mission , business requirements , and operating environment .
+
+further , in may 2017 , the president issued an executive order requiring agencies to immediately begin using nist's cybersecurity framework for managing their cybersecurity risks .
+
+the framework , which provides guidance for cybersecurity activities , is based on five core security functions: identify: develop an organizational understanding to manage cybersecurity risk to systems , people , assets , data , and capabilities .
+
+protect: develop and implement the appropriate safeguards to ensure delivery of critical infrastructure services .
+
+detect: develop and implement the appropriate activities to identify the occurrence of a cybersecurity event .
+
+respond: develop and implement the appropriate activities to take action regarding a detected cybersecurity incident .
+
+recover: develop and implement the appropriate activities to maintain plans for resilience and to restore any capabilities or services that were impaired due to a cybersecurity incident .
+
+according to nist , these five functions occur concurrently and continuously , and provide a strategic view of the life cycle of an organization's management of cybersecurity risk .
+
+within the five functions are 23 categories and 108 subcategories that include information security program - related controls and technical controls for achieving the intent of each function .
+
+appendix ii provides a description of the framework categories and subcategories of controls .
+
+on may 7 and 8 , 2017 , fcc experienced a dramatic surge in the number of comments sent to the commission through its ecfs during a public comment period .
+
+this surge led to a disruption of services , which prevented the system from being able to accept additional comments for a period of time .
+
+the fcc office of inspector general determined that the system service disruption was likely due to a combination of the sudden increase in traffic from commenters all trying to access the system's website over a short period of time and system design deficiencies that negatively impacted the capacity and performance of the system to collect and process the increase in traffic .
+
+figure 1 presents a timeline of the may 2017 ecfs service disruption and subsequent related events .
+
+additional details on the timeline are provided in appendix iii .
+
+in response to the ecfs service disruption that occurred on may 7 and 8 , 2017 , fcc information technology center officials took four key actions to reduce the risk of future service disruptions to the system .
+
+1 .
+
+conducted internal assessments in response to the service disruption , in early may 2017 , the fcc cio initially stated that the cause was a cyberattack on the ecfs .
+
+however , upon further assessment , fcc information technology center officials later determined that the disruption was caused by a surge in comment traffic to the system and existing system performance and capacity deficiencies .
+
+in response to multiple congressional inquiries , in late july 2017 , fcc information technology center officials assessed the extent to which malicious intent was involved in causing the disruption based on whether: ( a ) internet protocol ( ip ) addresses from foreign sources were present on the commission's network at the time of the may 2017 event ; ( b ) comment submissions were denied ( i.e. , dropped ) from the commission's network , ( c ) observable botnet traffic was present ; and ( d ) duplicate comment submissions were accepted into ecfs .
+
+the assessment concluded that the commission did not have sufficient information and tools to determine whether there was any malicious intent .
+
+2 .
+
+deployed additional virtual hardware following the disruption , in early may 2017 , fcc deployed additional virtual hardware to address system performance issues and support system stabilization efforts of ecfs during the period in which service was disrupted .
+
+in early july 2017 , the commission installed security sensors and forwarding agents on the ecfs virtual servers .
+
+these devices are intended to provide additional layers of security capability for the system .
+
+in mid - july 2017 , fcc automated the process for deploying virtual hardware resources to support system availability subsequent to the may 2017 service disruption .
+
+3 .
+
+optimized and acquired system software from late may 2017 to early june 2017 , fcc acquired a diagnostic tool to measure system performance .
+
+according to the commission , this tool is used to determine the maximum amount of simultaneous user capacity within ecfs during periods of high web traffic .
+
+in early june 2017 , the commission optimized the search functionality within the ecfs database to reduce the system response time .
+
+in mid - june 2017 , fcc removed redundant internal processes for ecfs web requests to increase the responsiveness of the system .
+
+during late july 2017 , the commission acquired a security information and event management tool to collect and analyze security - related events that may indicate a cybersecurity incident .
+
+in late august 2017 , fcc established rate control limits within ecfs to safeguard against potential distributed denial - of - service attacks aiming to flood one target with network traffic .
+
+4 .
+
+updated incident response policy and procedures in january 2018 and march 2018 , during its annual policy review , fcc information technology center officials updated the commission's incident response and reporting policy and procedures to incorporate lessons learned from the may 2017 ecfs service disruption and clarify their processes .
+
+for example , fcc information technology center officials revised the commission's incident response procedures to document internal escalation time frames for notifying management of potential security incidents and reporting the incidents to the united states computer emergency readiness team within 1 hour of identification of an incident .
+
+figure 2 shows a chronological sequence of the hardware and software improvements that fcc officials implemented after the may 2017 event .
+
+fcc provided evidence that indicated its actions to add additional hardware and software resources increased ecfs's capacity and performance and demonstrated that the system was stable from june 2017 through december 2017 .
+
+for example , fcc acquired a performance diagnostic tool in late may 2017 , which was designed to determine the maximum number of potential simultaneous public users within ecfs during periods of high web traffic .
+
+using the diagnostic tool , fcc information technology center officials determined in june 2017 , that the system became unstable when the number of simultaneous simulated public users reached 500 .
+
+however , by december 2017 , the system had demonstrated that it could accept a capacity of over 3,000 simultaneous public users without a service disruption .
+
+fcc data showed that the increased capacity and improved performance of the ecfs prevented further service disruptions during periods of sharp spikes in the volume of comments received .
+
+for example , on may 8 , 2017 , service was disrupted on the system when it received a peak of about 249,000 comments in 1 day , whereas on july 12 , 2017 , the system accepted and processed at least 1.4 million comments in 1 day without a reported service disruption .
+
+similar spikes in traffic volumes that occurred through december 2017 also did not result in service disruptions .
+
+figure 3 shows the daily comment submissions to ecfs from may 2017 through december 2017 and demonstrates fcc's ability to accept a higher volume of comments without a service disruption .
+
+we reported in september 2019 that fcc had implemented numerous security controls for the three systems we reviewed , but it had not consistently implemented the nist cybersecurity framework's five core security functions to effectively protect the confidentiality , integrity , and availability of these systems and the information maintained on them .
+
+deficiencies existed in the fcc information security program and technical controls for the five core functions that were intended to ( 1 ) identify risk , ( 2 ) protect systems from threats and vulnerabilities , ( 3 ) detect cybersecurity events , ( 4 ) respond to these events , and ( 5 ) recover system operations when disruptions occur .
+
+these deficiencies increased the risk that sensitive information could be disclosed or modified without authorization or be unavailable when needed .
+
+as shown in table 1 , deficiencies existed in all five core security functions for the fcc systems we reviewed .
+
+also shown are the numbers of recommendations we made to fcc to rectify the deficiencies .
+
+activities associated with the identify core security function are intended to help an agency to develop an understanding of its resources and related cybersecurity risks to its organizational operations , systems , and data .
+
+essential elements of a fisma - mandated information security program include assessing risks , developing system security plans , and authorizing information systems to operate .
+
+nist guidance states that agencies should assess risks and authorize systems on an ongoing basis .
+
+additionally , fcc requires that security plans , risk assessments , and system authorizations be reviewed annually or whenever significant changes occur to the information system , computing environment , or business operations .
+
+consistent with its guidance , fcc had developed system security plans for each of the three systems we reviewed and had updated the risk assessments for two of the systems in 2017 and 2018 , respectively .
+
+however , as of march 2019 , the commission had not reviewed or updated the risk assessment for the third system reviewed since may 2017 — a lag of about 22 months .
+
+commission officials stated that they had not reviewed or updated the system's risk assessment because the commission had implemented a new risk assessment process and officials had not yet had time to review and update documentation for this system .
+
+in addition , fcc continued to operate two of the three selected systems on expired authorizations to operate .
+
+although fcc granted a full authorization to operate to one system in may 2018 , the commission allowed the authorizations for the other two systems we reviewed to expire .
+
+both of these systems had received a conditional authorization to operate so that the systems could continue to operate while the commission mitigated known system vulnerabilities .
+
+however , in december 2018 , the conditional authorizations for both systems expired because , according to fcc officials , the commission had not mitigated the vulnerabilities .
+
+nevertheless , fcc continued to operate the systems .
+
+by not regularly updating the risk assessment of one system and continuing to operate another system without a current authorization to operate , fcc unnecessarily exposed the information on these systems to increased risks of unauthorized changes and access to information .
+
+subsequent to our september 2019 report , fcc reviewed and updated the system's risk assessment in accordance with its new risk assessment process .
+
+in addition , fcc granted a full authorization to operate to one of the systems in october 2019 , but does not expect to grant a full authorization to operate for the other system until later in 2020 .
+
+nist sp 800-144 , guidelines on security and privacy in public cloud computing , states that a service - level agreement should define the terms and conditions for access and use of the services offered by the cloud service provider .
+
+in addition , fedramp control specific contract clauses provides security control specifications that may need to be included in the task order for the service and specified in the service level agreement .
+
+these contract clauses include specifications related to data jurisdiction , audit records storage , time frames for reporting security incidents , and system boundary protection .
+
+fcc's task order and service level agreement with its cloud service provider specified activities the provider was to perform , such as providing access and support for products and services , and completing performance deliverables to ensure service availability .
+
+however , fcc had not documented specific contract clauses associated with implementing security control requirements related to retaining audit records , meeting reporting incident time frames , and protecting system boundaries in accordance with fedramp .
+
+according to fcc's associate chief information officer , the commission relied on fedramp's oversight to ensure that its cloud provider implemented security controls that comply with federal data requirements .
+
+however , fedramp assesses and monitors only the security controls that the program and cloud service provider agree that the provider will implement .
+
+these agreed - upon controls may not include an agency's specific security requirements .
+
+thus , responsibility falls on fcc to ensure that its information security requirements are being implemented in cloud computing environments .
+
+nevertheless , by not specifying its specific control requirements when procuring services from its cloud provider , fcc increased the risk that its data and sensitive regulatory information will not be adequately protected in the event that its cloud service provider experiences a security breach .
+
+subsequent to our september 2019 report , fcc developed a plan of action and milestones ( poa&m ) for this deficiency and stated that it plans to rectify the deficiency by may 2020 .
+
+activities associated with the protect core security function are intended to help agencies develop and implement appropriate system safeguards .
+
+these activities include limiting access to computing resources to authorized users , processes and devices ; encrypting data to protect its confidentiality and integrity ; configuring devices securely ; and updating software to protect systems from known vulnerabilities .
+
+fcc implemented activities that established multiple layers of technical controls , including access controls and firewalls , encryption of sensitive data , and system configuration management .
+
+however , we reported in september 2019 that implementation of these technical controls were not consistent .
+
+for example , 37 technical control deficiencies and an information security program - related deficiency diminished the effectiveness of the controls protecting the systems we reviewed .
+
+a brief summary of the results of our tests of fcc's controls for protecting the three systems we reviewed follows .
+
+fcc policy states that , in accordance with nist sp 800-53 guidelines , users should not share the same identifier and the commission should configure its information systems to require users to create complex passwords .
+
+fcc's policy also stipulates that the commission employ the principle of “least privilege” and enforce approved authorizations for controlling the flow of information within the system and between interconnected systems .
+
+however , fcc did not consistently implement technical controls to effectively limit access to the systems we reviewed , as the following examples illustrate .
+
+although fcc policy states that individual user accounts are not to be shared , the commission allowed multiple users to share the credentials of several privileged accounts .
+
+while fcc policy established minimum requirements for password complexity and account lock - out provisions , the commission did not routinely enforce these requirements .
+
+while fcc policy requires limiting access rights for users to only those they need to perform their work , the commission inappropriately granted excessive permissions to users to access server configuration files .
+
+although fcc established a policy for monitoring and controlling access between systems , it did not securely configure network devices to effectively control access and communications between systems .
+
+access control deficiencies existed primarily because fcc network administrators did not adequately monitor configuration settings and did not implement sufficient controls to enforce consistent authentication and authorization across all of the commission's systems that we reviewed .
+
+however , until fcc fully implements those actions and remediates related technical deficiencies , the commission remains at increased risk that unauthorized individuals or attackers could obtain inappropriate access to its network devices , firewalls , and servers , and compromise its network .
+
+as of november 2019 , fcc had acted to address several technical control deficiencies related to access control .
+
+nist sp 800-53 recommends that organizations employ cryptographic mechanisms to prevent the unauthorized disclosure of information during transmission and establish a trusted communications path between users and security functions of information systems .
+
+nist also requires that , when agencies use encryption , they use an encryption algorithm that complies with fips publication 140-2 .
+
+in addition , fcc's system and communication protection policy states that confidentially sensitive data must be encrypted before being transmitted using any nonprotected communication method and that all passwords must be encrypted .
+
+however , in seven instances , the commission did not consistently deploy strong encryption capabilities to protect sensitive data or establish a secure communications path between users and information systems .
+
+for example , fcc sometimes sent data in clear text over the network and did not enable fips 140-2 compliant encryption algorithms on certain devices .
+
+these deficiencies existed primarily because commission personnel did not adequately monitor configuration settings .
+
+by not consistently deploying strong encryption capabilities , fcc limits its ability to protect the confidentiality and integrity of its sensitive information .
+
+according to information technology center officials , as of november 2019 , the commission was still working toward full compliance with federal encryption standards .
+
+nist sp 800-53 states that agencies should configure security settings to the most restrictive mode consistent with operational requirements and disable services within the information system deemed to be unnecessary or non - secure .
+
+fcc policy on risk assessment states that systems and devices should be scanned periodically and software patches should be applied for all known critical security vulnerabilities .
+
+in addition , omb circular a - 130 states that agencies are to implement current updates and patches for all software components of information systems , and prohibit the use of unsupported systems and system components .
+
+although fcc established policies for applying software patches on a prescribed basis , it did not update software in a consistent or timely manner to effectively protect the three systems we reviewed .
+
+for example , fcc did not apply software patches in a timely manner to resolve known security vulnerabilities , and used unsupported or out - of - date system software on multiple network devices , firewalls , and servers .
+
+patching control deficiencies existed because fcc did not adequately monitor configuration settings of devices on its network .
+
+according to information technology center officials , as of february 2019 , the commission was in the process of ( 1 ) migrating and modernizing its systems' portfolio and ( 2 ) implementing an application monitoring and testing tool to reduce patching times .
+
+however , until fcc applies software patches in a timely manner , and replaces unsupported software and devices , it will remain at increased risk that individuals could exploit known vulnerabilities to gain unauthorized access to its computing resources .
+
+as of november 2019 , fcc had taken corrective actions to address certain technical control deficiencies related to configuring servers securely and updating software in a timely manner .
+
+developing , documenting , and implementing information security policies and procedures are essential elements of an agency's fisma - mandated information security program .
+
+fcc's policy for information security and privacy states that fcc shall implement procedures and controls at all levels to protect the confidentiality and integrity of information stored and processed on the commission's systems , and to ensure that the systems and information are available to authorized persons when required .
+
+although fcc developed and documented commission - wide policies addressing the 18 control areas — such as access control , configuration management , security awareness training , and contingency planning — identified in nist sp 800-53 , the commission had not fully developed or documented the detailed operating procedures that are needed to effectively implement its security policies .
+
+for example , fcc had not documented detailed procedures for implementing the following nist - specified control areas: ( 1 ) access control , ( 2 ) configuration management , ( 3 ) identification and authentication , ( 4 ) system maintenance , ( 5 ) media protection , ( 6 ) physical and environmental protection , ( 7 ) information security program management , ( 8 ) risk assessment , ( 9 ) system and services acquisition , ( 10 ) system and communication protection , and ( 11 ) system and information integrity .
+
+the lack of detailed operating procedures likely was an underlying cause for many of the technical control deficiencies we identified .
+
+according to the fcc ciso , as of february 2019 , the commission was in the process of reviewing and revising its information security policies and had issued poa&ms to develop and document the missing procedures .
+
+nevertheless , until fcc fully develops and documents detailed operating procedures for implementing its security policies , the commission faces increased risks that it will not effectively protect its information systems and information from cyber threats .
+
+the detect core security function is intended to allow for the timely discovery of cybersecurity events and deficiencies .
+
+controls associated with this function include logging and monitoring system activities , and assessing security controls in place .
+
+nist sp 800-53 states that agencies should enable system logging features and retain sufficient audit logs to support the investigations of security incidents and monitoring of select activities for significant security - related events .
+
+additionally , nist sp 800-53 and industry leading practices state that organizations should increase their situational awareness through enhanced monitoring capabilities to analyze network traffic data over an extended period of time at external boundaries and inside their internal network to identify anomalous , inappropriate , or unusual malicious activities .
+
+lastly , fisma requires each agency to periodically test and evaluate the effectiveness of its information security controls in place applicable to policies , procedures , and practices .
+
+in september 2019 , we reported that fcc had implemented security monitoring controls , such as performing regular vulnerability scanning and deploying a system information and event management tool , to detect the presence of potential malicious threats .
+
+however , six technical control deficiencies in these capabilities diminished the effectiveness of the controls to detect cybersecurity events in the systems we reviewed .
+
+for example , fcc did not fully capture system log data on certain devices and had limited network monitoring visibility into portions of its data center environment .
+
+according to information technology center officials , fcc had deficiencies in logging , retention , and monitoring because the commission had not fully configured its security information and event monitoring tool to capture and monitor sufficient system log and network traffic data to adequately detect cybersecurity events .
+
+as a result , fcc may not be able to detect or investigate anomalous activities inside its network .
+
+in addition , although the commission established a process for assessing the effectiveness of the security controls for its systems , its control tests and evaluations were not sufficiently robust .
+
+for example , the commission's evaluations did not identify many of the security control deficiencies we identified .
+
+consequently , fcc had limited assurance that the security controls were in place and operating as intended .
+
+as of november 2019 , fcc had acted to address several technical control deficiencies , and associated recommendations , such as capturing network traffic data and providing for real - time network monitoring ; however , other technical control deficiencies remain .
+
+the respond core security function is intended to support the ability to contain the impact of a potential cybersecurity event .
+
+controls associated with this function include implementing an incident response capability and remediating newly identified deficiencies .
+
+we reported in september 2019 that , as part of its information security program , fcc had implemented controls for incident response by developing , documenting , and annually updating its incident handling policy and procedures , along with its guidelines for remediating deficiencies .
+
+however , two information security program - related deficiencies and a technical control deficiency diminished the effectiveness of the controls to respond to cybersecurity events for the systems we reviewed .
+
+for example , the commission did not adequately address security incidents and mitigate known deficiencies in a timely manner .
+
+nist sp 800-53 and sp 800-61 state that agencies should develop , document , and implement incident response policy and procedures , and keep them updated according to agency requirements .
+
+fcc incident response policy also states that all employees are required to report suspected security incidents to the fcc network security operations center ( nsoc ) group within 1 hour of discovery or detection , and all other incidents within 24 hours of discovery .
+
+further , fcc's incident response procedures require internal escalation and external notification to the united states computer emergency readiness team ( us - cert ) within 1 hour .
+
+fcc had developed , documented , and updated its incident response policy and procedures on an annual basis to address security incidents .
+
+the commission also established a nsoc group as the single point of contact for potential security incidents .
+
+however , fcc did not report internally to the nsoc group or externally to us - cert in a timely manner for three of 10 security incidents we reviewed .
+
+specifically , a fcc employee took 2 days to report the existence of an information spillage incident to the nsoc instead of the required 1-hour reporting time frame .
+
+the nsoc group took approximately 4 hours to report a december 2017 distributed denial - of - service attack incident and a february 2018 malicious attack incident to the us - cert , instead of the 1 hour required for each .
+
+according to the fcc ciso , the commission plans to review its incident response policy and procedures , as well as re - train its staff , to ensure that staff consistently follow the commission's policy and us - cert incident notification guidelines .
+
+subsequent to the issuance of our september 2019 report , fcc indicated that it plans to address these matters by october 2020 .
+
+until it does so , the commission may impede its ability to receive timely assistance from appropriate federal agencies and mitigate any harm .
+
+nist 800-53 states that agencies are to develop a poa&m for an information system to document the agencies' planned remedial actions to correct identified deficiencies .
+
+fcc's plan of action and milestone guide also states that the maximum completion time frames for implementing poa&m items related to critical and high severity level deficiencies are 30 and 60 days , respectively .
+
+although fcc developed a remedial action process and maintained a management system to document and track the status of poa&m items , it did not complete remedial actions in a timely manner for the three systems we reviewed .
+
+specifically , fcc did not remedy critical and high severity level deficiencies within the required time frames as stated in its policy .
+
+for example , fcc took an average of approximately 3 months to implement four critical severity level poa&m items for one system .
+
+fcc took an average of more than 1 year to remediate three critical and nine high severity level poa&m items for another system .
+
+additionally , as of october 2018 , this system had seven open critical and four open high severity level poa&m items that exceeded the remediation threshold on average by 1 year , 4 months , and 5 months , respectively .
+
+fcc took an average of more than 3 years to implement two critical and seven high severity level poa&m items for the third system .
+
+fcc officials attributed these delays to operational priorities and resource constraints , such as financial , personnel , and technological factors .
+
+however , such longstanding delays in remediating weaknesses pose a significant threat to the overall security posture of the commission , since the delays could allow intruders to exploit critical and high severity level deficiencies to gain access to fcc's information resources .
+
+as of november 2019 , fcc stated that it planned to address security program deficiencies related to remediating weaknesses in a timely manner by october 2020 .
+
+the recover core security function is intended to support timely recovery of system operations to reduce the impact from a cybersecurity event .
+
+controls associated with this function include developing and testing contingency plans to ensure that , when unexpected events occur , critical operations can continue without interruption or can be promptly resumed , and that information resources are protected .
+
+in september 2019 , we reported that , as part of its information security program , fcc had developed contingency plans for selected systems and established priorities for application disaster recovery .
+
+however , two information security program - related deficiencies diminished the effectiveness of the controls to recover the systems we reviewed .
+
+specifically , the commission did not document detailed procedures for restoring two of the three systems conduct an annual test of its disaster recovery plan for the three selected systems in fiscal year 2018 .
+
+nist sp 800-34 contingency planning guide for federal information systems states that an information system contingency plan should provide detailed procedures to restore the information system or components to a known state .
+
+in addition , fcc's policy for contingency planning states that system contingency plans should reflect the restoration activities required for information systems to recover after an incident .
+
+fcc developed and documented a contingency plan for one system that specified detailed procedures for restoring system operations , data , and supporting applications .
+
+however , fcc did not include detailed procedures for restoring the other two systems we reviewed in their respective contingency plans — both of which are major application systems .
+
+for example , the contingency plans for these two systems did not specify procedures for restoration activities such as restoring critical operating system , application software , and system data to a known state .
+
+according to information technology center officials , they did not consider the two systems as supporting mission essential functions , which would necessitate the inclusion of the applications in the detailed restoration procedures .
+
+however , both of the systems are major application systems and support mission essential functions at fcc .
+
+subsequent to our september 2019 report , fcc documented detailed restoration procedures in the two other systems' contingency plans that included activities associated with restoring critical operating system , application software , and system data to a known state .
+
+by doing so , fcc increased the likelihood that it will be able to restore operations to its mission essential functions in the event of a disaster .
+
+nist sp 800-84 states that a disaster recovery test should assess the ability of an agency to restore it processing capabilities in the event of a disruption .
+
+moreover , fcc's policy for contingency planning states that all information system and facility disaster recovery plans should be tested annually to determine the effectiveness of the plan and the organizational readiness to execute the plan .
+
+in september 2019 , we reported that fcc did not conduct test exercises of the disaster recovery plans for the three systems we reviewed during fiscal year 2018 , nor did it test system backup , recovery , restoration , and reconstitution procedures for these systems .
+
+according to fcc officials , the test exercise did not take place in fiscal year 2018 because other business operation activities took precedence over the exercise since the test exercise requires all mission - essential function applications to be unplugged .
+
+as a result , fcc had limited assurance that it would be able to recover from unexpected disruptions in a timely and efficient manner .
+
+while it did not complete the exercise in fiscal year 2018 , fcc did subsequently conduct a disaster recovery exercise at the beginning of fiscal year 2019 .
+
+by doing so , fcc increased its assurance that it would be able to recover use of its systems from unexpected disruptions in a timely and efficient manner .
+
+in our september 2019 report , we made 136 recommendations to fcc to bolster its agency - wide information security program and strengthen its technical security controls .
+
+specifically , we recommended that fcc take nine actions to improve its information security program by , among other things , authorizing systems to operate , documenting operating procedures , resolving known vulnerabilities and reporting security incidents in a timely manner , and testing disaster recovery plans .
+
+we also recommended that fcc take 127 actions to address technical control deficiencies by implementing stronger access controls , encrypting sensitive data , configuring network devices securely , strengthening firewall rules , implementing audit and monitoring controls more effectively , among other actions .
+
+since the issuance of our september 2019 report , fcc has made significant progress in implementing the recommendations we made to improve its information security program and resolve the technical control deficiencies in the information systems we reviewed .
+
+specifically , as of november 2019 , fcc had implemented 85 ( 63 percent ) of the 136 recommendations we made in the september 2019 report and had effectively resolved the underlying deficiencies associated with the recommendations .
+
+the commission also had partially , but not fully , implemented 10 recommendations .
+
+in these instances , fcc provided evidence that it had resolved a portion of the underlying control deficiency , but had not completed all of the actions necessary to fully resolve the underlying control deficiencies .
+
+fcc did not provide any evidence that it had begun implementing the remaining 41 ( 30 percent ) recommendations .
+
+the status of our recommendations to fcc is illustrated in figure 4 .
+
+table 2 provides additional details on the status of fcc's actions to implement our recommendations to improve its information security program and the technical controls for the systems we reviewed .
+
+by implementing 85 recommendations , fcc ( as of november 2019 ) had reduced risks associated with certain key activities .
+
+specifically , fcc's actions to implement four information security program - related recommendations included conducting a disaster recovery test exercise , documenting detailed system restoration procedures , and updating risk assessments to reflect the commission's current computing environment .
+
+regarding the technical controls , the commission had implemented 81 of our recommendations to rectify technical control - related deficiencies .
+
+for example , fcc strengthened firewall rules and access controls on its information system servers and internal networks — that we highlighted in our september 2019 report as being particularly vulnerable and requiring the commission to take immediate corrective actions .
+
+fcc also had developed a poa&m for each of the identified information security program - related and technical control deficiencies that remained open as of november 2019 .
+
+the poa&m items contained required elements , such as severity levels ( i.e. , high , medium , and low ) for identified weaknesses ; identified estimated costs ; designated points of contact ; and established time frames for resolving those weaknesses and fully implementing the related recommendations .
+
+the commission's plans called for it to implement the majority of the remaining information security program and technical control - related recommendations by may 1 , 2020 , and all recommendations by april 30 , 2021 , as shown in figure 5 .
+
+fully implementing the remaining recommendations is essential to ensuring that the commission's systems and sensitive information are adequately protected from cyber threats .
+
+key actions that remain include: documenting operational procedures , applying security patches and software updates , and enhancing network monitoring capabilities .
+
+until fcc fully implements all of our recommendations and resolves the associated deficiencies , its information systems and information will remain at increased risk of misuse , improper disclosure or modification , and loss .
+
+we received written comments on a draft of this report from fcc .
+
+in its comments , which are reprinted in appendix iv , the commission expressed its commitment to protecting the confidentiality , integrity , and availability of its information systems .
+
+fcc noted our evaluation of its efforts to implement 85 of the 136 recommendations made in our september 2019 report and stated that it had also addressed nine additional recommendations .
+
+the commission further stated that it plans to address the remaining recommendations over the next 14 months with full mitigation anticipated by april 2021 .
+
+as agreed with your offices , unless you publicly announce the contents of this report earlier , we plan no further distribution until 30 days from the report date .
+
+at that time , we will send copies of this report to the appropriate congressional committees .
+
+we are sending copies of this report to the appropriate congressional committees , the federal communications commission , the commission's office of the inspector general , and interested congressional parties .
+
+in addition , the report will be available at no charge on the gao website at http: / / www.gao.gov .
+
+if you or your staff have any questions about this report , our primary point of contact is vijay a. d'souza at ( 202 ) 512-6240 or dsouzav@gao.gov .
+
+you may also contact seto j. bagdoyan at ( 202 ) 512-4749 or bagdoyans@gao.gov .
+
+gao staff who made key contributions to this report are listed in appendix v .
+
+our objectives were to determine 1 ) the actions fcc took to respond to the may 2017 event that affected the electronic comment filing system ( ecfs ) , and 2 ) the extent to which fcc implemented security controls to effectively protect the confidentiality , integrity , and availability of selected systems .
+
+in september 2019 , we issued a report which detailed the findings from our work in response to these two objectives .
+
+in the report , we made 127 recommendations to fcc to resolve the technical security control deficiencies in the information systems we reviewed and nine additional recommendations to improve its information security program .
+
+we designated that report as “limited official use only” ( louo ) and did not release it to the general public because of the sensitive information it contained .
+
+this report publishes the findings discussed in our september 2019 report , but we have removed all references to the sensitive information .
+
+specifically , we deleted the names of the information system software , network devices , and resource tools that we examined , disassociated identified control deficiencies from named systems , deleted certain details about information security controls and control deficiencies , and omitted an appendix that was contained in the louo report .
+
+the appendix contained sensitive details about the technical security control deficiencies in the fcc's information systems and computer networks that we reviewed , and the 127 recommendations we made to mitigate those deficiencies .
+
+we also provided a draft of this report to fcc officials to review and comment on the sensitivity of the information contained herein and to affirm that the report can be made available to the public without jeopardizing the security of the commission's information systems and networks .
+
+in addition , this report addresses a third objective that was not included in the september 2019 report .
+
+specifically , this objective was to determine the extent to which fcc had taken corrective actions to address the previously identified security program and technical control deficiencies and related recommendations for improvement that we identified in the earlier report .
+
+to address the first objective , we reviewed fcc's security and incident response policies and procedures , examined related reports prepared by the commission and its office of inspector general , reviewed an internal assessment of the may 2017 event that was performed by the fcc information technology center , and reviewed artifacts associated with system enhancement and performance such as change requests and email .
+
+we also extracted comment submission data derived from the data.gov application programming interface between may 1 , 2017 and december 31 , 2017 to identify the peak periods of increased comment submissions during and after the may 2017 event .
+
+in addition , we examined the aforementioned documents to assess whether the updated incident response policy and procedures , along with system enhancement and performance artifacts , were directly related to changes made subsequent to the may 2017 event .
+
+lastly , we interviewed fcc information technology center officials , including system and security staff , and office of inspector general officials to identify fcc's actions to respond to the may 2017 event .
+
+to address the second objective , we reviewed fcc's overall network environment , identified interconnectivity and control points , and examined controls for the commission's networks and facilities .
+
+we performed this work at fcc facilities located in west virginia , pennsylvania , and washington , d.c. as noted in our september 2019 report , we determined the extent to which fcc had implemented security controls to effectively protect the confidentiality , integrity , and availability of selected systems .
+
+to do so , we selected three of the commission's information systems for review .
+
+we selected these systems because they ( 1 ) are essential to fcc's mission and ( 2 ) were assigned a federal information processing standards publication 199 rating of moderate or high impact .
+
+the results of our review of these systems is not generalizable to the commission's other systems .
+
+to evaluate fcc's controls for its information systems , we used gao's federal information system controls audit manual , which contains guidance for reviewing information system controls that affect the confidentiality , integrity , and availability of computerized information .
+
+we based our assessment of controls on requirements of the federal information security modernization act of 2014 ( fisma ) , which establishes key elements for an effective agency - wide information security program ; national institute of standards and technology ( nist ) guidelines and standards ; fcc policies and procedures ; and standards and guidelines from relevant security organizations , such as the national security agency , and the center for internet security .
+
+for reporting purposes , we categorized the security controls that we assessed into the five core security functions described in the nist cybersecurity framework .
+
+the five core security functions are: identify: develop the organizational understanding to manage cybersecurity risk to systems , assets , data , and capabilities .
+
+protect: develop and implement the appropriate safeguards to ensure delivery of critical infrastructure services .
+
+detect: develop and implement the appropriate activities to identify the occurrence of a cybersecurity event .
+
+respond: develop and implement the appropriate activities to take action regarding a detected cybersecurity event .
+
+recover: develop and implement the appropriate activities to maintain plans for resilience and to restore any capabilities or services that were impaired due to a cybersecurity event .
+
+these core security functions are described in more detail in appendix ii .
+
+for each of the five core security functions , we examined selected fcc security controls and related documentation: for the identify core security function , we examined fcc's reporting for its hardware and software assets ; analyzed risk assessments for the three selected systems to determine whether threats and vulnerabilities were being identified ; analyzed fcc policies and procedures to determine their effectiveness in providing guidance to personnel responsible for securing information and information systems ; and analyzed security plans for the three selected systems to determine if those plans had been documented and updated according to federal guidance .
+
+for the protect core security function , we examined access controls for the three systems .
+
+these controls included the password complexity and settings to determine if password management was being enforced ; administrative users' system access permissions to determine whether their authorizations exceeded the access necessary to perform their assigned duties ; and firewall configurations , among other things , to determine whether system boundaries had been adequately protected .
+
+we also examined configurations for providing secure data transmissions across the network to determine whether sensitive data were being encrypted .
+
+in addition , we examined configuration settings for routers , network management servers , switches , and firewalls to determine if settings adhered to configuration standards , and we inspected key servers and network devices to determine if critical patches had been installed and / or were up to date .
+
+for the detect core security function , we analyzed security control assessments , and centralized logging and network traffic monitoring capabilities for key assets connected to the network .
+
+for the respond core security function , we reviewed fcc's implementation of incident response practices , including an examination of incident tickets for 10 incidents the commission considered most significant from january 1 , 2017 to may 29 , 2018 ; and examined the commission's process for correcting identified deficiencies for the three selected systems .
+
+for the recover core security function , we examined contingency and disaster recovery plans for the three selected systems to determine whether those plans had been developed and tested .
+
+for the core security functions , as appropriate , we evaluated elements of fcc's information security program .
+
+for example , we analyzed risk assessments , security plans , remedial action plans , and contingency plans for each of the three selected systems .
+
+we also evaluated fcc's security policies and procedures .
+
+in assessing fcc's controls associated with these core functions , we interviewed fcc's information technology center personnel , chief information officer , chief information security officer , general counsel , inspector general , and public safety and homeland security bureau officials , as needed .
+
+to determine the reliability of fcc's computer - processed data for incident response records , we evaluated the materiality of the data to our audit objective and assessed the data by various means , including reviewing related documents , interviewing knowledgeable fcc officials , and reviewing internal controls .
+
+through a combination of these methods , we concluded that the data were sufficiently reliable for the purposes of our work .
+
+to accomplish our third objective — on fcc's actions to address the previously identified security program and technical control deficiencies and related recommendations — we requested that the commission provide a status report of its actions to implement each of the recommendations .
+
+for each recommendation that fcc indicated it had implemented as of november 2019 , we examined supporting documents , observed or tested the associated security control or procedure , and / or interviewed the responsible agency officials to assess the effectiveness of the actions taken to implement the recommendation or otherwise resolve the underlying control deficiency .
+
+based on this assessment and fcc status reports , we defined the status of each recommendation according to three categories: fully implemented — fcc had implemented the recommendation ( i.e. , the commission provided evidence showing that it had effectively resolved the underlying control deficiency ) ; partially implemented — fcc had made progress toward , but had not completed implementing the recommendation ( i.e. , the commission provided evidence showing that it had effectively resolved a portion of the underlying control deficiency ) ; and not started — fcc did not provide evidence that it had acted to implement the recommendation ( i.e. , the commission provided no evidence showing that it had effectively resolved the underlying control deficiency ) .
+
+we conducted the performance audit for the first two objectives from february 2018 through september 2019 in accordance with generally accepted government auditing standards .
+
+we conducted work supporting the third objective and , where applicable , included updates to our work in the second objective , from october 2019 through march 2020 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings .
+
+the national institute of standards and technology's cybersecurity framework consists of five core functions: identify , protect , detect , respond , and recover .
+
+within the five functions are 23 categories and 108 subcategories of security - related controls ( see table 3 ) .
+
+below is a timeline of the federal communications commission's ( fcc ) may 2017 electronic comment filing system ( ecfs ) event and subsequent related events: on april 27 , 2017 , fcc issued the restoring internet freedom notice of proposed rulemaking in the federal register .
+
+the notice directed interested parties to submit comments via fcc's ecfs .
+
+on the evening of may 7 , 2017 , a late night talk show aired a segment on the restoring internet freedom notice and encouraged viewers to submit comments via ecfs .
+
+on the evening of may 7 , 2017 , according to a report by the fcc office of inspector general ( ig ) , ecfs experienced a significant increase in the level of comment traffic attempting to access the system , resulting in the disruption of system availability .
+
+a contractor providing web performance and cloud security solutions to fcc identified a 3,116 percent increase in traffic to ecfs between may 7 and may 8 , 2017 .
+
+in the early morning of may 8 , 2017 , ecfs became unavailable to commenters .
+
+fcc's vendor sent automated alerts indicating a spike in network traffic , in addition to preliminary network statistical data , to fcc .
+
+during the mid - morning of may 8 , 2017 , fcc's information technology center responded to the alerts from the vendor and initiated stabilization efforts to ecfs .
+
+during the afternoon of may 8 , 2017 , fcc issued a press release in which fcc's chief information officer ( cio ) at that time provided a statement about the cause of delays experienced by commenters trying to file comments on the ecfs .
+
+the cio's statement said that fcc was subjected to multiple distributed denial - of - service attacks .
+
+he further stated that , “these were deliberate attempts by external actors to bombard the fcc's comment system with a high amount of traffic.” during may 9-10 , 2017 , fcc restored ecfs but still experienced response - time problems relating to system performance .
+
+on may 10 , 2017 , fcc's information technology center responded to inquiries from the federal bureau of investigations and fcc oig via email and phone .
+
+on june 21 , 2017 , the fcc oig opened a full investigation into the event because of , according to the oig , the importance of fcc's cybersecurity posture and the possibility that cybercrimes had been committed that had the potential of being ongoing threats to the integrity of fcc's computer systems .
+
+on january 4 , 2018 , fcc oig referred the investigation to the justice department .
+
+on august 7 , 2018 , the fcc oig published an investigative report on the ecfs event .
+
+according to the oig report , the allegations of multiple distributed denial - of - service attacks alleged by the fcc cio at that time were not substantiated .
+
+the fcc oig concluded that the spikes in web traffic to ecfs had coincided exactly with the timing of the late night television show where the host discussed the fcc's restoring internet freedom proceeding and encouraged viewers to visit the commission's website and file comments .
+
+the fcc oig's report also indicated that the commission did not define the event ( i.e. , any observable occurrence in a network or system ) as a cybersecurity incident ( i.e. , an imminent threat or violation of computer security policies , or security practices ) .
+
+therefore , according to the oig report , fcc did not take actions to: refer the matter to the united states computer emergency readiness team ( us - cert ) in accordance with federal policy , implement internal incident handling procedures in accordance with its incident handling policy , or conduct a thorough analysis before or after the event to determine if it was an incident .
+
+on august 16 , 2018 , the fcc chairman testified at a senate committee on commerce , science and transportation oversight hearing on the conclusions of the fcc oig investigative report on the ecfs event .
+
+in addition to the contacts named above , gary austin , david bruno , tammi kalugdan , duc ngo , and christopher warweg ( assistant directors ) ; david hong ( analyst - in - charge ) ; breanne cave ; chris businsky , jr. ; saar dagani ; marshall williams , jr. ; corey evans ; andrew howard ; elizabeth kowalewski ; priscilla smith ; henry sutanto ; and april yeaney made significant contributions to this report .
+

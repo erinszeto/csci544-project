@@ -1,0 +1,736 @@
+the federal aviation administration ( faa ) performs critical functions that contribute to ensuring safe , orderly , and efficient air travel in the national airspace system ( nas ) .
+
+effective air traffic control ( atc ) relies on automated systems and networks to provide information to air traffic controllers and aircraft flight crews to work toward ensuring safe and expeditious movement of aircraft .
+
+as a piece of critical infrastructure within the nation's transportation sector , the nas is vitally important in supporting air traffic control operations nationwide , and disruptions could have a significant adverse impact .
+
+cyber - based threats to federal information systems such as those that faa relies on for its atc systems are evolving and growing .
+
+these threats can be intentional or unintentional and can come from a variety of sources , including criminals , foreign nations , terrorists , and other adversarial groups .
+
+for example , advanced persistent threats — where an adversary that possesses sophisticated levels of expertise and significant resources can attack by using multiple means such as cyber , physical , or deception to achieve its objectives — pose increasing risks .
+
+further , the growing interconnectivity among different types of information systems presents increasing opportunities for such attacks .
+
+because of the increasing number of reported information security incidents , coupled with the advancement of security attacks , information and systems at faa and across the government remain at risk .
+
+given the critical role the nas plays in the nation's transportation sector and the growing threats to federal information systems , you asked us to review faa's information security program .
+
+the specific objective of our review was to evaluate the extent to which faa has effectively implemented appropriate information security controls to protect the confidentiality , integrity , and availability of its existing atc systems .
+
+this is a public version of a limited distribution report containing sensitive security information that we provided to you .
+
+some of the information in the prior report has been designated as sensitive security information and must be protected from public disclosure .
+
+therefore , this report does not contain detailed descriptions of the control weaknesses and related recommendations identified during our review .
+
+although the information provided in this report is less detailed , it presents the same overall message as the limited distribution report .
+
+also , the overall methodology used for both reports is the same .
+
+to assess faa's implementation of security controls on its existing atc systems , we compared faa's documented policies , procedures , and practices with the relevant information security law and federal guidance , including national institute of standards and technology ( nist ) standards and guidelines .
+
+we also assessed the implementation of controls over nas supporting systems and interconnections by examining risk assessment processes , security plans , security control assessments , contingency plans , and remedial action plans .
+
+specifically , we observed controls over the faa telecommunications infrastructure ( fti ) , surveillance and broadcast service system ( sbss ) , traffic flow management - infrastructure ( tfm - i ) ; en route automation modernization ( eram ) ; and en route communications gateway .
+
+we performed our work at faa headquarters in washington , d.c. , and other locations supporting key systems , specifically: the air traffic control systems command center in warrenton , virginia ; the faa's william j. hughes technical center in egg harbor township , new jersey ; and at contractor facilities in herndon , virginia ; egg harbor township , new jersey ; and melbourne , florida .
+
+we conducted this performance audit from august 2013 to january 2015 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objective .
+
+a full description of our objective , scope , and methodology can be found in appendix i .
+
+the faa , an agency of the department of transportation , is primarily responsible for the advancement , safety , and regulation of civil aviation , as well as overseeing the development of the air traffic control system .
+
+its stated mission is to provide the safest , most efficient aerospace system in the world .
+
+this system , known as the national airspace system ( nas ) , includes air traffic control systems , atc procedures , operational facilities , aircraft , and the people who certify , operate , and maintain them .
+
+according to faa , the system includes more than 19,000 airports , nearly 600 air traffic control facilities , and approximately 65,000 other facilities , including radar , communications nodes , ground - based navigation aids , computer displays , and radios , intended to provide safe and efficient flight services for the public .
+
+over 46,000 faa personnel and approximately 608,000 pilots operate about 228,000 aircraft within the nas , including up to 2,850 flights at any given moment .
+
+the system operates on a continuous basis , 24 hours a day , every day of the year .
+
+as aircraft move across the nas , controllers at several types of air traffic control facilities manage their movements during each phase of flight .
+
+according to faa , these facilities include the following: more than 500 air traffic control towers supervise flights within about 5 miles from the airport runway .
+
+they give pilots taxiing and take off instructions , air traffic clearance , and provide separation between landing and departing aircraft .
+
+one hundred sixty terminal radar approach control facilities provide air traffic control services for airspace that is located within approximately 40 miles of an airport and generally up to 10,000 feet above the airport .
+
+these facilities handle sequencing and separation of aircraft as they approach major metropolitan areas .
+
+twenty - two air route traffic control centers ( artcc ) control and monitor airplanes over the continental united states and between airports .
+
+controlling traffic usually at or above 17,000 feet , the typical center has responsibility for more than 100,000 square miles of airspace generally extending over a number of states .
+
+three of the centers also control air traffic over the oceans .
+
+controllers at these facilities work with pilots to ensure the flight path is smooth and free of other traffic .
+
+the air traffic control system command center manages the flow of air traffic within the united states .
+
+this facility regulates air traffic when weather , equipment , runway closures , or other conditions place stress on the national airspace system .
+
+in these instances , traffic management specialists at the command center take action to modify traffic demands in order to keep traffic within system capacity .
+
+figure 1 provides a visual summary of air traffic control across the different phases of flight .
+
+the faa's ability to fulfill its mission depends on the adequacy and reliability of its air traffic control systems , a vast network of computer hardware , software , and communications equipment .
+
+the agency relies on more than 100 air traffic control systems to process and track flights around the world .
+
+these complex and highly automated systems process a wide range of information , including radar , weather , flight plans , surveillance , navigation / landing guidance , traffic management , air - to - ground communication , voice , network management , and other information — such as airspace restrictions — that is required to support the agency's mission .
+
+in order to successfully carry out air traffic control operations , it is essential that these systems interoperate , functioning both within and across facilities as one integrated system of systems .
+
+according to faa data available at the time of our review , about one - third of air traffic control systems rely on internet protocol ( ip ) - based networking technologies for communication .
+
+faa's ongoing effort to modernize the atc system is referred to as the next generation air transportation system ( nextgen ) .
+
+nextgen involves changes to many aspects of air transportation , including the acquisition of new integrated systems ( both software and hardware ) , flight procedures , aircraft performance capabilities , and supporting infrastructure to transform the current air transportation system into one that uses satellite - based surveillance and navigation operations instead of ground - based radar .
+
+these changes are intended to increase the efficiency and capacity of the air transportation system while maintaining safety and accommodating anticipated future growth .
+
+as demand for the nation's increasingly congested airspace continues to grow , nextgen improvements are intended to enable the faa to guide and track aircraft more precisely on more direct routes , reduce delays , save fuel , and reduce aircraft exhaust emissions .
+
+the following five key air traffic control systems perform critical air traffic control functions: faa telecommunications infrastructure ( fti ) forms the basic telecommunications infrastructure for nextgen , replacing the agency's legacy networks to provide consolidated telecom services for the nas .
+
+the fti is also intended to reduce costs , improve bandwidth , and offer improved information security services , such as encryption , so that an enterprise - wide approach to information security assurance can be achieved .
+
+surveillance and broadcast service system ( sbss ) provides surveillance services to faa and the aviation community .
+
+most notably , sbss provides the automatic dependent surveillance - broadcast service — one of the six nextgen transformational programs — which is faa's satellite - based successor to radar .
+
+this service makes use of global positioning system technology to determine and share precise aircraft location information , and streams additional flight information to the cockpits of properly equipped aircraft .
+
+en route automation modernization ( eram ) replaces the legacy en route host computer and backup system , developed more than 40 years ago .
+
+according to faa , much of the system has already been deployed .
+
+eram is designed to be at the heart of nextgen and is key to advancing faa's transition from a ground - based system of air traffic control to a satellite - based system of air traffic management .
+
+as eram evolves , it is intended to provide benefits for users and the flying public by increasing air traffic flow and improving automated navigation and conflict detection services , both of which are vital to meeting future demand and preventing gridlock and delays .
+
+en route communications gateway ( ecg ) is a communications system that receives data from sources outside the artcc , such as flight plan information and weather data , and passes it to other systems , including eram .
+
+traffic flow management - infrastructure ( tfm - i ) provides information processing support for faa traffic management personnel as they coordinate the use of the nas and respond to conditions of excess demand .
+
+tfm - i receives information on planned and active flights , generates forecasts of demand up to several hours ahead , presents this information to traffic management personnel , and provides automation support for traffic management initiatives to resolve or ameliorate congestion .
+
+each of these systems , in conjunction with many others that make up the nas computing infrastructure , works to ensure safe flight passageways for aircraft in u.s. airspace from takeoff to landing .
+
+safeguarding federal computer systems and the systems supporting the nation's critical infrastructures , including the nas , is essential to protecting national and economic security , and public health and safety .
+
+for government organizations information security is also a key element in maintaining the public trust .
+
+inadequately protected systems may be vulnerable to insider threats as well as the risk of intrusion by individuals or groups with malicious intent who could use their illegitimate access to obtain sensitive information , disrupt operations , or launch attacks against other computer systems and networks .
+
+accordingly , since 1997 , we have designated information security as a government - wide high - risk area .
+
+in 2003 , we expanded this high - risk area to include protecting systems supporting our nation's critical infrastructure.those of agency inspectors general , describe persistent information security weaknesses that place a variety of federal operations at risk of disruption , fraud , and inappropriate disclosure .
+
+our previous reports , and recent federal guidance demonstrates that securing critical infrastructures from internal and external threats is a national priority .
+
+for example , in february 2013 , the president signed executive order 13636 , “improving critical infrastructure cybersecurity,” to address concerns about better securing critical infrastructure from cyber threats .
+
+this order , among other things , directed executive branch agencies to promote the adoption of cybersecurity practices ; increase the volume , timeliness and quality of cyber threat information sharing ; incorporate privacy and civil liberties protections into every initiative to secure critical infrastructure ; and explore the use of existing regulation to promote cybersecurity .
+
+the order also directed the national institute of standards and technology ( nist ) to develop a technology - neutral voluntary framework for improving critical infrastructure cybersecurity .
+
+the framework , issued in february 2014 , with business requirements , risk tolerances , and resources .
+
+is designed to help organizations align their cybersecurity activities although many legacy air traffic control systems continue to rely on point - to - point communications , nas systems , including nextgen systems , increasingly use ip technologies to communicate over interconnected computer networks .
+
+with the increased use of such technologies , however , comes increased risk: integrating critical infrastructure systems with information technology networks provides significantly less isolation from the outside world than predecessor systems , creating a greater need to secure these systems from remote , external threats .
+
+nist , framework for improving critical infrastructure cybersecurity , version 1.0 ( gaithersburg , md .
+
+: feb. 12 , 2014 ) .
+
+the operational arm of the faa is the air traffic organization ( ato ) , which is responsible for providing safe and efficient air navigation services to the nation's airspace .
+
+ato is led by a chief operating officer who reports directly to the faa administrator .
+
+the ato includes seven service units: air traffic , management , mission support , program management organization , safety and technical training , systems operations , and technical operations .
+
+several entities within ato share responsibility for information security - related activities over air traffic control systems .
+
+the nas security risk executive is the individual with overall responsibility for overseeing all information security - related activities across ato , including the security of air traffic control systems .
+
+ato's information security systems group , within technical operations services , includes nas cyber operations ( nco ) , iss engineering , and an authorization team .
+
+ensuring that each air traffic control system is properly secured and protected is the responsibility of an information systems security officer ( isso ) , and the system owner is responsible for planning , directing , and managing resources for the system , including ensuring that the system meets all security requirements throughout its life cycle .
+
+the security risk executive , authorization team , nco , system owners , and issos are jointly responsible for carrying out security program activities for nas systems , including conducting system risk assessments , documenting system security plans , testing security controls , managing remedial action plans , monitoring and responding to incidents , and planning for contingencies .
+
+the faa office of information and technology ( ait ) is responsible for the security of faa's non - nas information systems .
+
+the office resides within faa's office of finance and management and is headed by the chief information officer ( cio ) , who has overall responsibility to oversee the security of the agency's information and information systems .
+
+the faa chief information security officer is responsible for developing , documenting , and implementing an agency - wide information security program and for assisting the cio in ensuring compliance with federal law pertaining to information security and other applicable policies , standards , requirements and guidelines .
+
+federal law and guidance specify requirements for protecting federal information and information systems .
+
+the federal information security management act of 2002 ( fisma ) requires each agency to develop , document , and implement an agency - wide information security program to provide security for the information and information systems that support operations and assets of the agency , including those provided or managed by another agency , contractor , or another organization on behalf of an agency .
+
+fisma assigns certain responsibilities to nist , which is tasked with developing , for systems other than national security systems , standards and guidelines that must include , at a minimum , ( 1 ) standards to be used by all agencies to categorize all of their information and information systems based on the objectives of providing appropriate levels of information security , according to a range of risk levels ; ( 2 ) guidelines recommending the types of information and information systems to be included in each category ; and ( 3 ) minimum information security requirements for information and information systems in each category .
+
+nist , contingency planning guide for federal information systems , sp 800-34 , revision 1 ( gaithersburg , md .
+
+: may 2010 ) .
+
+nist , managing information security risk: organization , mission , and information system view , sp 800-39 ( gaithersburg , md .
+
+: march 2011 ) .
+
+nist , information security handbook: a guide for managers , sp 800-100 ( gaithersburg , md .
+
+: october 2006 ) .
+
+provides guidance for facilitating a more consistent approach to information security programs across the federal government .
+
+although faa has taken steps to safeguard its air traffic control systems , significant security control weaknesses remain in nas systems and networks , threatening the agency's ability to adequately fulfill its mission .
+
+faa established policies and procedures for controlling access to nas systems and for configuring its systems securely , and it implemented firewalls and other boundary protection controls to protect the operational nas environment .
+
+however , a significant number of weaknesses remain in the technical controls — including access controls , change controls , and patch management — that protect the confidentiality , integrity , and availability of its air traffic control systems .
+
+additionally , significant interconnectivity exists between non - nas systems and the nas operational environment , increasing the risk from these weaknesses .
+
+further , the agency had not yet fully implemented an agency - wide information security program to ensure that controls are appropriately designed and operating effectively .
+
+a key reason for both the technical control weaknesses and the security management weaknesses is that faa had not fully established an integrated , organization - wide approach to managing information security risk that is aligned with its mission .
+
+these shortcomings put nas systems at increased and unnecessary risk of unauthorized access , use , or modification that could disrupt air traffic control operations .
+
+a basic management objective for any agency is to protect the resources that support its critical operations and assets from unauthorized access .
+
+an agency can accomplish this by designing and implementing controls that are intended to prevent , limit , and detect unauthorized access to computer resources ( eg , data , programs , equipment , and facilities ) , thereby protecting them from unauthorized disclosure , modification , and loss .
+
+specific access controls include boundary protection , identification and authentication of users , authorization restrictions , cryptography , and audit and monitoring procedures .
+
+without adequate access controls , unauthorized users , including intruders and former employees , can surreptitiously read and copy sensitive data and make undetected changes or deletions for malicious purposes or for personal gain .
+
+in addition , authorized users could intentionally or unintentionally modify or delete data or execute changes that are outside of their authority .
+
+although faa had issued security policies , it did not consistently protect its network boundary from possible intrusions ; identify and authenticate users ; authorize access to resources ; ensure that sensitive data are encrypted ; or audit and monitor actions taken on nas systems and networks .
+
+boundary protection controls are used to restrict connections into and out of networks and to control connections between network - connected devices .
+
+implementing multiple layers of security to protect an information system's internal and external boundaries can reduce the risk of a successful cyber attack .
+
+for example , multiple firewalls can be deployed to prevent both outsiders and insiders from gaining unauthorized access to systems .
+
+nist special publication 800-53 recommends organizations monitor and control communications both at the external boundary of the system and at key internal boundaries within the system .
+
+nist also recommends information systems connect to external networks or systems only through managed interfaces such as gateways , routers , or firewalls .
+
+faa policy states that connections between nas systems / networks and any non - nas network or non - nas information systems must occur through the nas enterprise security gateway .
+
+while faa implemented numerous controls to separate nas systems from non - nas systems , it did not always sufficiently protect connections between external partners and nas operational systems or limit interconnectivity between operational and mission support environments .
+
+the excessive interconnectivity between nas and non - nas environments increased the risk that faa's mission - critical air traffic control systems could be compromised .
+
+information systems need to be managed to effectively control user accounts and identify and authenticate users .
+
+users and devices should be appropriately identified and authenticated through the implementation of adequate logical access controls .
+
+users can be authenticated using mechanisms such as a password and user id combination .
+
+nist sp 800- 53 recommends , and faa policy requires , strong password controls for authentication , such as passwords that are at least eight alphanumeric characters in length , contain at least one upper - and one lower - case letter , contain numbers and special characters , and expire after a predetermined period of time .
+
+however , faa did not consistently implement identification and authentication controls in accordance with its security policies and nist guidance .
+
+for example , certain servers and applications supporting nas systems did not implement sufficiently strong password controls .
+
+as a result , faa is at increased risk that accounts could be compromised and used by unauthorized individuals to access sensitive information or systems .
+
+authorization encompasses access privileges granted to a user , program , or process .
+
+it is used to allow or prevent actions by that user based on predefined rules .
+
+authorization includes the principles of legitimate use and least privilege.implement controls to ensure that only authorized users can access the system .
+
+this includes , but is not limited to , uniquely identifying all users , periodically reviewing access to the system , disabling accounts that no longer need access to the system , and assigning the lowest level of permission necessary for a task .
+
+nist also recommends that systems and devices be configured so that only the functionality necessary to support organizational operations is enabled in order to prevent unauthorized connection of devices , unauthorized transfer of information , or unauthorized network connectivity .
+
+nist guidance recommends that organizations faa did not always ensure that users' access to key air traffic control systems was authorized in accordance with faa policies and nist guidance .
+
+in several cases , faa and its contractors did not properly document that system users were authorized to access nas systems .
+
+additionally , faa did not always ensure that periodic reviews of user access to nas systems were performed in accordance with faa policies and nist guidance .
+
+as a result , users of these air traffic control systems may have greater access than they need to fulfill their responsibilities , increasing the risk that these systems could be compromised , either inadvertently or deliberately .
+
+cryptographic controls can be used to help protect the integrity and confidentiality of data and computer programs by rendering data unintelligible to unauthorized users and / or protecting the integrity of transmitted or stored data .
+
+cryptography involves the use of mathematical functions called algorithms and strings of seemingly random bits called keys to ( 1 ) encrypt a message or file so that it is unintelligible to those who do not have the secret key needed to decrypt it , thus keeping the contents of the message or file confidential ; ( 2 ) provide an electronic signature that can be used to determine if any changes have been made to the related file , thus ensuring the file's integrity ; and ( 3 ) link a message or document to a specific individual's or group's key , thus ensuring that the “signer” of the file can be identified .
+
+nist guidance states that the use of encryption by organizations can reduce the probability of unauthorized disclosure of information .
+
+nist special publication 800-53 recommends that organizations employ cryptographic mechanisms to prevent unauthorized disclosure of information during transmission , encrypt passwords while being stored and transmitted , and establish a trusted communications path between users and security functions of information systems .
+
+additionally , when federal agencies employ cryptography , nist standards require them to use federal information processing standard ( fips ) 140-2-validated algorithms .
+
+faa did not always ensure that sensitive data were encrypted when transmitted or stored , as called for by its policies and nist guidance .
+
+for example , certain network devices supporting nas systems did not always encrypt authentication data when transmitting them across the network , and other systems did not always encrypt stored passwords using sufficiently strong encryption algorithms in compliance with fips 140-2 .
+
+due to these weaknesses , faa faces an increased risk that attackers could compromise accounts or intercept , view , and modify transmitted data , thereby threatening the confidentiality , integrity , and availability of the nas .
+
+audit and monitoring involves the regular collection , review , and analysis of auditable events for indications of inappropriate or unusual activity , and the appropriate investigation and reporting of such activity .
+
+automated mechanisms may be used to integrate audit monitoring , analysis , and reporting into an overall process for investigation of and response to suspicious activities .
+
+audit and monitoring controls can help security professionals routinely assess computer security , perform investigations during and after an attack , and even recognize an ongoing attack .
+
+audit and monitoring technologies include network - and host - based intrusion detection systems , audit logging , security event correlation tools , and computer forensics .
+
+network - based intrusion detection systems capture or “sniff” and analyze network traffic in various parts of a network .
+
+fisma requires that each federal agency implement an information security program that includes procedures for detecting , reporting , and responding to security incidents .
+
+faa did not consistently implement sufficient audit and monitoring controls .
+
+for example , faa did not always have sufficient capability to monitor network traffic or ensure that nas systems were sufficiently logging security - relevant events .
+
+as a result of these weaknesses , faa faces an increased risk that it will be unable to detect and respond to unauthorized or malicious activities on its systems .
+
+in addition to access controls , other important controls should be in place to ensure the confidentiality , integrity , and availability of an agency's information .
+
+these controls include policies , procedures , and techniques for implementing personnel security and securely configuring information systems .
+
+while faa conducted background investigations in accordance with its policy , weaknesses in its configuration management processes increase the risk of unauthorized use , disclosure , modification , or loss of sensitive information and information systems supporting faa's mission .
+
+policies related to personnel actions , such as hiring , termination , and maintaining employee expertise , are important considerations in securing information systems .
+
+if personnel policies are not adequate , an entity runs the risk of ( 1 ) hiring unqualified or untrustworthy individuals ; ( 2 ) providing terminated employees opportunities to sabotage or otherwise impair entity operations or assets ; ( 3 ) failing to detect continuing unauthorized employee actions ; ( 4 ) lowering employee morale , which may in turn diminish employee compliance with controls ; and ( 5 ) allowing staff expertise to decline .
+
+hiring procedures should include contacting references , performing background investigations , and ensuring that periodic reinvestigations are consistent with the sensitivity of the position , in accordance with criteria from the office of personnel management .
+
+faa policy requires positions to be designated by sensitivity and risk level , and describes requirements for conducting background investigations for employees and contractors , including periodic reinvestigations of individuals in positions of higher risk or sensitivity .
+
+faa ensured that the employees and contractors we sampled on the tfm - i , eram , sbss , and fti programs had appropriate background investigations .
+
+specifically , all of the employees and contractors we sampled had up - to - date background investigations that were consistent with the risk designation of their positions .
+
+as a result , faa reduced its risk that it has employed or contracted for unqualified or untrustworthy individuals on these programs .
+
+configuration management is an important control that involves the identification and management of security features for all hardware and software components of an information system at a given point and systematically controls changes to that configuration during the system's life cycle .
+
+configuration management involves , among other things , ( 1 ) verifying the correctness of the security settings in the operating systems , applications , or computing and network devices and ( 2 ) obtaining reasonable assurance that systems are configured and operating securely and as intended .
+
+in addition , establishing controls over the modification of information system components and related documentation helps to prevent unauthorized changes and ensure that only authorized systems and related program modifications are implemented .
+
+this is accomplished by instituting policies , procedures , and techniques that help make sure that all hardware , software , and firmware programs and program modifications have been properly authorized , tested , and approved .
+
+patch management , a component of configuration management , is important for mitigating the risks associated with software vulnerabilities .
+
+when a software vulnerability is discovered , the software vendor may develop and distribute a patch or work - around to mitigate the vulnerability .
+
+without the patch , an attacker can exploit the vulnerability to read , modify , or delete sensitive information ; disrupt operations ; or launch attacks against other systems .
+
+outdated and unsupported software is more vulnerable to attack and exploitation because vendors may no longer provide updates , including security updates .
+
+according to nist sp 800-53 , configuration management activities should include documenting approved configuration - controlled changes to information systems , retaining and reviewing records of the changes , auditing those records , and coordinating and providing oversight for configuration change control activities through a mechanism such as a change control board .
+
+additionally , nist special publication 800-128states that patch management procedures should define how the organization's patch management process is integrated into configuration management processes , how patches are prioritized and approved through the configuration change control process , and how patches are tested for their impact on existing secure configurations .
+
+faa policy describes detailed requirements for controlling changes to nas systems .
+
+faa did not always ensure that changes to network devices supporting air traffic control systems were managed in accordance with faa policies for configuration change control .
+
+specifically , significant changes were made to a key network device on one nas system without following the system's defined change control process , which requires that changes be documented , analyzed for potential security impacts , tested , and approved before being implemented .
+
+without adequately controlling configuration changes to network devices , an increased risk exists that changes could be unnecessary , may not work as intended , or may result in unintentional side effects that could impact mission - critical operations .
+
+additionally , the agency did not always ensure that security patches were applied in a timely manner to servers and network devices supporting air traffic control systems , or that servers were using software that was up - to - date .
+
+for example , certain systems were missing patches dating back more than 3 years .
+
+additionally , certain key servers had reached end - of - life and were no longer supported by the vendor .
+
+as a result , faa is at an increased risk that unpatched vulnerabilities could allow its information and information systems to be compromised .
+
+an entity - wide information security program is the foundation of a security control structure and a reflection of senior management's commitment to addressing security risks .
+
+the security program should establish a framework and continuous cycle of activity for assessing risk , developing and implementing effective security procedures , and monitoring the effectiveness of these procedures .
+
+without a well - designed program , security controls may be inadequate ; responsibilities may be unclear , misunderstood , or improperly implemented ; and controls may be inconsistently applied .
+
+fisma requires each agency to develop , document , and implement an information security program that , among other things , includes policies and procedures that ( 1 ) are based on risk assessments , ( 2 ) cost - effectively reduce information security risks to an acceptable level , ( 3 ) ensure that information security is addressed throughout the life cycle of each system , and ( 4 ) ensure compliance with applicable requirements ; security awareness training to inform personnel of information security risks and of their responsibilities in complying with agency policies and procedures , as well as training personnel with significant security responsibilities for information security ; periodic testing and evaluation of the effectiveness of information security policies , procedures , and practices , to be performed with a frequency depending on risk , but no less than annually , and that includes testing of management , operational , and technical controls for every system identified in the agency's required inventory of major information systems ; a process for planning , implementing , evaluating , and documenting remedial actions to address any deficiencies in information security policies , procedures , or practices ; procedures for detecting , reporting , and responding to security plans and procedures to ensure continuity of operations for information systems that support the operations and assets of the agency .
+
+to its credit , faa has taken steps to implement an information security program and manage information security risks for its air traffic control systems .
+
+faa produced system security plans for the systems we reviewed which specified the systems' operational contexts , relationships with others systems , general security requirements , and security controls .
+
+additionally , faa policy requires the periodic testing and evaluation of the controls on agency systems , and the agency has a process for planning , implementing , evaluating and documenting remedial actions to address deficiencies in those controls .
+
+faa also documented a risk assessment policy and conducted risk assessments on the major systems we reviewed .
+
+however , faa did not always consistently document incident response policies , ensure that contractors took required training , adequately test security controls , mitigate security weaknesses in a timely manner , ensure that incident response capabilities for nas systems were adequate , or fully document and test contingency plans for its air traffic control systems .
+
+a key element of an effective information security program is to develop , document , and implement risk - based policies , procedures , and technical standards that govern the security over an agency's computing environment .
+
+regarding incident response activities , nist special publication 800-53 recommends agencies create an incident response policy and procedures to facilitate the implementation of the policy and associated incident response controls .
+
+although faa had developed and documented many information security policies and procedures , incident response policies and procedures were not always complete or approved .
+
+for example , although the nco security group operates as the focal point for nas incident response activities , ato's incident response policy establishing nco as the incident response focal point was still in draft at the time of our review .
+
+additionally , although system - level incident response policies had been finalized for four of the nas systems we reviewed , they did not always specify incident reporting timeframes or the need for all incidents to be reported .
+
+without finalized and harmonized incident response policies , faa faces an increased risk that incident response authorities and responsibilities will not be clearly understood by all stakeholders , impeding the agency's ability to efficiently and effectively respond to incidents or to do so in a timely manner .
+
+according to fisma , an agency - wide information security program must include security awareness training for agency personnel , contractors , and other users of information systems that support the agency's operations and assets .
+
+this training must cover ( 1 ) information security risks associated with users' activities and ( 2 ) users' responsibilities in complying with agency policies and procedures designed to reduce these risks .
+
+fisma also includes requirements for training personnel who have significant responsibilities for information security .
+
+additionally , nist special publication 800-53 recommends that agencies provide incident response training to information system users consistent with their assigned roles and responsibilities .
+
+faa officials were unable to tell us when the policy would be finalized .
+
+individuals with significant information system security responsibilities must receive role - based training specific to their responsibilities .
+
+for both security awareness and role - based training , faa policy also states that records must be kept documenting the name and title of the individual receiving training , their security responsibilities , the type of training received , and the training date .
+
+however , faa did not always ensure that its employees and contractors took required information security training , including specialized security training and system - specific training , in a timely manner .
+
+for example: faa contractors supporting certain nas systems did not take the required security awareness training .
+
+additionally , faa did not provide periodic refresher security training to individuals with significant security responsibilities on two nas systems .
+
+although faa stated that the department of transportation security awareness training , combined with on - the - job training , was sufficient , the department of transportation training does not cover security topics specific to these systems , and faa did not define required content for on - the - job training or keep training records , as required by faa policy .
+
+faa had also not sufficiently documented that persons with incident response roles and responsibilities for one of the nas systems we reviewed had taken required training , and did not provide formal incident response training for personnel on another nas system .
+
+without adequately ensuring that personnel take required security training , faa faces an increased risk that employees may not recognize and respond appropriately to potential security threats and vulnerabilities .
+
+further , without sufficiently documenting that incident responders have taken required training , faa faces an increased risk that employees will not receive training on performing their roles and responsibilities on a regular basis .
+
+faa policy , in accordance with nist guidance , states that security control assessments are to determine the extent to which controls are implemented correctly , operate as intended , and produce the desired outcome with respect to meeting the security requirements of the system .
+
+nist special publication 800-53a notes that while a high - level examination of a limited body of evidence can support an assessor's determination that a control is implemented and free of obvious errors , determining whether a control is implemented correctly and operating as intended requires an in - depth analysis of a substantial body of relevant evidence .
+
+while faa prepared assessments of the security controls for the nas systems we reviewed , its control assessments were not always comprehensive enough to identify weaknesses that we found in user account management , configuration management , and security awareness training controls .
+
+for example , faa concluded that the account review control for one system was implemented based on examining the system security plan and interviewing officials , but the testers did not examine artifacts such as audit reports to determine if reviews were being conducted as described in the security plan .
+
+faa also concluded that configuration change control had been implemented for another system after examining the system security plan and interviewing personnel ; however , artifacts such as change tickets and approval documents were not examined to determine if system changes were controlled in accordance with procedures .
+
+further , faa's test results indicated that the security awareness training common control was defined , but the testers did not examine training records to verify that personnel on the systems that rely on the control were taking the training as required .
+
+ato officials stated that control assessments were often supported by additional documentation not described in the security control assessment reports ; however , the agency was unable to provide evidence to corroborate this statement .
+
+by not conducting more comprehensive tests of security controls , faa has decreased assurance that controls are implemented correctly and operating as intended .
+
+additionally , because security control assessments are used by agencies to evaluate whether contractors are implementing information security controls effectively , faa had reduced assurance that its contractors were adequately securing and protecting air traffic control systems .
+
+fisma requires that agency - wide information security programs include a process for planning , implementing , evaluating , and documenting remedial actions to address any deficiencies in the information security policies , procedures , and practices of the agency .
+
+agencies must establish procedures to reasonably ensure that all information security control weaknesses , regardless of how or by whom they are identified , are addressed through the agency's remediation processes .
+
+for each identified control weakness , the agency is required to develop and implement a plan of actions and milestones ( poa&m ) based on findings from security control assessments , security impact analyses , continuous monitoring of activities , audit reports , and other sources .
+
+when considering appropriate corrective actions to be taken , the agency should , to the extent possible , consider the potential agency - wide implications and design appropriate corrective actions to systemically address the deficiency .
+
+while faa established poa&ms for addressing identified security control weaknesses , it did not always complete remedial actions in accordance with established deadlines .
+
+for example , of the 147 poa&ms we reviewed on 4 nas systems , 58 were not completed by their planned completion dates , and the planned completion dates for 50 had been extended from between 8 months to more than 3 years past the dates that they were originally scheduled to be completed .
+
+according to ato officials , one reason that original deadlines are often missed is that the programs lack sufficient resources and funding to address weaknesses by their original due dates .
+
+without resolving identified vulnerabilities in a timely manner , faa faces an increased risk , as continuing opportunities exist for unauthorized individuals to exploit these weaknesses and gain access to sensitive information and systems .
+
+comprehensive monitoring and incident response controls are necessary for rapidly detecting incidents , minimizing loss and destruction , mitigating the weaknesses that were exploited , and restoring computing services .
+
+while strong controls may not prevent all incidents , agencies can reduce the risks associated with these events by detecting and promptly responding before significant damage is done .
+
+nist special publication 800-53 recommends that agencies test incident response capabilities for effectiveness .
+
+nist guidance also notes that the ability to identify incidents using appropriate audit and monitoring techniques enables an agency to initiate its incident response plan in a timely manner .
+
+further , nist guidance also recommends that once an incident has been identified , an agency's incident response processes and procedures should provide the capability to correctly log the incident , properly analyze it , and take appropriate action .
+
+nist guidance also recommends that agencies test their information technology plans , including incident response plans , and document the test results in an after action report .
+
+faa's ato assigned responsibility for incident handling on nas systems to nco , although nas system owners and operators also have a responsibility to coordinate with nco in responding to incidents affecting their systems .
+
+faa has notable shortcomings in security monitoring and incident detection over air traffic control systems .
+
+for example: nco does not have sufficient access to effectively monitor the nas operational environment .
+
+for example , there was no full network packet capture and anomaly detection capability for network traffic at major network interface points at faa operational facilities .
+
+additionally , network traffic flow session data was not integrated into the ad - hoc query systems used by the nco .
+
+further , nco lacked access to data from sensors on key network gateways , including intrusion detection , network packet capture , and network flow data , and so cannot adequately monitor the gateways for security - relevant events .
+
+although nco has been given responsibility for incident response for the nas environment , 26 of the 35 ip - connected nas systems did not provide security event logs to nco , including 3 of the systems we reviewed , severely limiting the ability of nco to effectively monitor the nas environment .
+
+the nco database system containing centralized security logs collected from various nas systems was ineffective due to weaknesses in its searching function .
+
+specifically , the system could not search past any gaps in the log data .
+
+to compensate , nco personnel would manually parse the data from multiple queries together , but there was not sufficient assurance that all data needed for incident investigations had been retrieved .
+
+nco did not have a formal process in place to review and document the potential impact to nas operations from significant incidents identified internally or by faa's cyber security management center .
+
+specifically , nco did not formally assess the potential risks to the nas for any of the incidents we reviewed .
+
+testing of the nas incident response capability has been limited .
+
+specifically , while one system had conducted and documented tests of its incident response capability , nco has not developed after - action reports for all phases of its incident response capability tests , and officials with three systems all indicated they do not test their incident response capabilities .
+
+as a result , there is an increased risk that faa will not be able to adequately detect , contain , eradicate , or recover from incidents affecting air traffic control systems .
+
+losing the capability to process , retrieve , and protect electronically maintained information can significantly affect an agency's ability to accomplish its mission .
+
+if contingency planning controls are inadequate , even relatively minor interruptions can result in lost or incorrectly processed data , which can cause financial losses , expensive recovery efforts , and inaccurate or incomplete information .
+
+nist special publication 800-34 recommends that contingency plans include procedures for diagnosing and addressing problems , notifying recovery personnel when the plan needs to be activated , and procedures to be followed in the event that specific personnel cannot be contacted .
+
+nist also recommends that contingency plans include procedures for notifying users when a system has been reconstituted and normal operations have resumed .
+
+additionally , nist special publication 800-53 notes that contingency plans should be tested to determine the plan's effectiveness and the organization's readiness to execute the plan .
+
+faa did not always ensure that contingency plans for air traffic control systems were complete or that tests of the plans were adequate .
+
+although faa documented contingency plans for three systems , it did not always include important information in these plans .
+
+for example , the contingency plans for two systems did not sufficiently document the means by which key personnel were to be contacted in the event of a disaster or define procedures to follow in the event that specific personnel could not be contacted .
+
+although separate notification procedures were developed for one of the systems , they were not included in the contingency plan either explicitly or by reference .
+
+also , although procedures had been established for notifying users when two of the systems had been reconstituted and normal operations had resumed , the contingency plans for those systems did not include or reference the procedures .
+
+further , the contingency plan for another system did not contain the actual assessment and recovery procedures for the system .
+
+also , faa tested the contingency plans for three nas systems , but the tests did not always address key elements of the plans , including notification procedures , recovering the system on an alternate platform , and system performance on alternate equipment .
+
+without including important information in its contingency plans for air traffic control systems or sufficiently testing its contingency plans , faa is at an increased risk of employees or contractors not following the correct procedures to appropriately recover systems in a timely manner from service disruptions .
+
+one important reason for many of the weaknesses in security controls as well as the security program shortcomings identified in our review is that faa has not yet fully established an integrated , organization - wide approach to managing information security risk .
+
+according to nist , effective risk management requires organizations such as the faa to operate in highly complex , interconnected environments using state - of - the - art and legacy information systems — systems that organizations depend on to accomplish their missions and to conduct important business - related functions .
+
+the complex relationships among missions , mission / business processes , and the information systems supporting those missions and processes require an integrated , organization - wide view for managing risk .
+
+effective management of information security risk is also critical to the success of organizations in achieving their strategic goals and objectives .
+
+fisma requires the head of each federal agency to ensure that information security management processes are integrated with agency strategic and operational planning processes .
+
+nist sp 800-39 provides agencies with guidance for developing and implementing an integrated , organization - wide program for managing information security risk to agency operations ( i.e. , mission , functions , image , and reputation ) , organizational assets , individuals , other organizations , and the nation resulting from the operation and use of federal information systems .
+
+it describes an integrated approach for addressing information security risk at the organization level , the mission / business process level , and the information system level .
+
+nist sp 800-39 states that , in managing information security risk at the organizational level , agencies should establish and implement information security governance , a risk executive function , and risk management strategy in order to ensure that risk management decisions are aligned strategically with the agency's missions and business functions consistent with the organizational goals and objectives .
+
+the publication also states that an organization's mission / business processes should be designed to manage risk in accordance with the organizational information security risk management strategy .
+
+further , nist sp 800-100 notes that agencies should have a strategic plan for information security , which identifies goals and objectives related to the agency's mission , specifies a plan for achieving those goals , and establishes short - and mid - term performance targets and measures that allow the agency to track manage and monitor its progress towards those goals and objectives .
+
+also , in february 2014 , nist established its framework for improving critical infrastructure cybersecurity , which presents a set of industry standards and best practices to help organizations manage cybersecurity risks to critical infrastructure systems , and contains a methodology for organizations to evaluate and strengthen information security programs for critical infrastructure .
+
+while it has taken initial steps , the faa has not yet implemented an effective , organization - wide program for managing information security risk to its mission and operations .
+
+specifically , the faa chief information security officer stated that in november 2013 , the agency established a risk executive function at the agency level in the form of a cyber security steering committee .
+
+the committee includes representatives from across faa , including ato , nextgen , and faa's office of security .
+
+however , faa has not yet fully established the governance structures and practices necessary for ensuring that its information security risk management decisions are aligned strategically with its mission .
+
+specifically: faa has not clearly and consistently established roles and responsibilities for information security for nas systems .
+
+fisma requires the head of an agency to ( 1 ) ensure that senior agency officials provide security for information and information systems that support operations and assets under their control , and ( 2 ) delegate to the agency cio the authority to ensure compliance with fisma requirements .
+
+further , according to nist special publication 800-39 , one of the tasks of the risk executive is to establish risk management roles and responsibilities .
+
+however , existing faa practices , policies , and documentation are inconsistent in establishing responsibility for nas information security .
+
+while faa's security management program policy states that primary responsibility for nas information security rests with the cio , ato officials stated that primary responsibility for nas information security lies with ato rather than the cio .
+
+faa's portion of the president's fiscal year 2014 budget submission states only that the cio is responsible for non - nas systems .
+
+the steering committee has defined updated roles and responsibilities for information security , which state that executive - level responsibility for the organization - wide information security program lies with the cio .
+
+however , these roles and responsibilities have not yet been implemented .
+
+additionally , ait officials and ato officials disagreed about whether the roles and responsibilities had been approved .
+
+better defining roles and responsibilities is important because faa officials in ait and ato expressed diverging opinions about how information security controls should be implemented in the nas environment .
+
+for example , ait officials stated that ato and ait should collaborate to identify and reduce duplicative incident response activities between nco and faa's existing cyber security management center , but ato officials stated that the nco capability should remain separate from the cyber security management center because of the unique security requirements of the nas critical infrastructure .
+
+faa does not have a strategic plan for information security that is up to date and reflects current conditions .
+
+faa's information systems security program policy requires a multiyear information security strategic plan to be developed , maintained , and updated annually .
+
+additionally , nist sp 800-100 states that agencies should revisit the information security strategic plan when a major change in the agency information security environment occurs .
+
+however , the faa information security strategic plan has not been updated since 2010 .
+
+significant changes in the nas environment , such as the increased reliance on ip networks , increased connectivity between systems , the introduction of nextgen systems , and the designation of the nas as part of the nation's critical infrastructure , have changed the level and nature of the information security risks facing air traffic control systems .
+
+the evolution of connectivity for nas systems substantially increases risks of internet - based intrusions and disruptions .
+
+ait officials told us that the cyber security steering committee plans to revise the information security strategic plan during fiscal year 2015 .
+
+because faa lacks an up - to - date information security strategic plan , the ato organization does not have a clear set of goals , objectives , and performance measures around which it can organize its information security program .
+
+responsibility for nas information security in ato is distributed across different entities and programs , and ato officials stated that variation in emphasis on security goals and priorities across the organization makes it challenging to manage information security activities in the nas environment .
+
+for example , according to ato officials , the nas incident response organization , nco , has limited capabilities and available staff because it is required to obtain funding from other program units within ato , which have different priorities .
+
+additionally , ato officials stated that remedial actions are often delayed because the program units do not hold system owners accountable for addressing information security weaknesses in a timely manner .
+
+in the absence of clearly defined roles and responsibilities or an updated strategic plan , ato has begun moving forward with strategic planning activities separately from the steering committee's risk management responsibilities .
+
+during our review , ato evaluated its information security processes and capabilities against the guidance in the nist framework for improving critical infrastructure cybersecurity , with plans to use the results of the evaluation to develop an information security strategic plan for ato .
+
+however , other organizations represented on the steering committee are not involved in this process .
+
+although ato officials told us that they plan to inform the members of the committee about the results of the review , it is not clear whether the committee intends to use the results in its efforts , or whether ato's planned information security strategic plan will reflect the priorities of faa as a whole .
+
+until it fully establishes an integrated , organization - wide approach to managing information security risk and ensures that federal guidance for securing critical infrastructure is incorporated into its risk management processes , faa is likely to continue to face challenges in ensuring that risk management decisions are aligned strategically with the its mission and effectively implementing information security controls for air traffic control systems .
+
+as a result , the weaknesses we identified are likely to persist .
+
+a large , complex , interconnected system like the nas inherently faces many security risks .
+
+although faa took many steps to address these risks , weaknesses remain that challenge the faa in fulfilling its mission of ensuring the safety and efficiency of the nation's airspace operations .
+
+many weaknesses in access controls and configuration management pose risks to the security of the nas .
+
+the effect of these weaknesses is increased by the significant interconnectivity that exists between the fti nas operational environment and the fti mission support network .
+
+additionally , significant shortcomings limit nco's ability to detect and respond to security incidents across nas systems .
+
+these weak controls are mirrored in weak security management processes , such as incomplete policies and procedures for incident response and insufficient testing of security controls .
+
+additionally , actions to mitigate identified security weaknesses are often delayed — sometimes for years .
+
+all of these weaknesses combine to pose increased risks to the confidentiality , integrity , and availability of nas systems and thus put the safe and uninterrupted operation of the nation's air traffic control system at risk .
+
+a fundamental cause for these various weaknesses is that faa has not yet implemented an effective program for managing organizational information security risk to its mission .
+
+although faa established a cyber security steering committee , roles and responsibilities remain unclear , and ait and ato officials continue to disagree on who should be responsible for the security of nas systems .
+
+likewise , an out - of - date information security strategic plan contributes to the lack of an adequate risk - based structure to guide implementation of security controls .
+
+further , due in part to the lack of an up - to - date strategic plan for the agency , ato lacks a clear set of goals , objectives , and performance measures around which it can organize its information security program for nas systems , making it challenging to manage information security activities such as ensuring that controls are effectively implemented and that system owners address identified security weaknesses in a timely manner .
+
+until faa establishes stronger agency - wide information security risk management processes , fully develops its nas information security program , and ensures that remedial actions are addressed in a timely manner , the weaknesses that we identified are likely to continue , placing the safe and uninterrupted operation of the nation's air traffic control system at increased and unnecessary risk .
+
+to fully implement its information security program and ensure that unnecessary risks to the security of nas systems are mitigated , we recommend that the secretary of transportation direct the administrator of faa to implement the following 14 recommendations: finalize the incident response policy for ato and ensure that nas system - level incident response policies specify incident reporting timeframes and the need for all incidents to be reported in accordance with faa guidance .
+
+establish a mechanism to ensure that all contractor staff complete annual security awareness training as required by federal law and faa policy .
+
+establish a mechanism to ensure that all staff with significant security responsibilities receive appropriate role - based training .
+
+establish a mechanism to ensure that personnel with incident response roles and responsibilities take appropriate training , and that training records are retained .
+
+take steps to ensure that testing of security controls is comprehensive enough to determine whether security controls are in place and operating effectively , by , for example , examining artifacts such as audit reports , change tickets , and approval documents .
+
+take steps to ensure that identified corrective actions for security weaknesses are implemented within prescribed timeframes .
+
+provide nco with full network packet capture capability for analyzing provide nco with access to network sensors on key network network traffic and detecting anomalies at major network interface points at faa operational facilities .
+
+integrate network traffic flow data into nco's ad - hoc query systems .
+
+gateways for reviewing intrusion detection , network traffic , and network session data .
+
+provide nco with security event log data for all ip - connected nas systems .
+
+address identified weaknesses in the search function of the nco database event query system to eliminate the need for manual workarounds and ensure that all data relevant for security investigations can be retrieved .
+
+develop a formal process for nco to assess significant identified incidents for potential impact to nas operations .
+
+ensure that nas incident response capabilities are adequately tested , and that test results are sufficiently documented .
+
+ensure that contingency plans for nas systems are sufficiently documented , and that tests of contingency plans address key elements of the contingency plans , including notification procedures , recovering the system on an alternate platform , and system performance on alternate equipment .
+
+further , to establish an integrated organization - wide approach to managing information security risk and to ensure that risk management decisions are aligned strategically with the faa's mission , we recommend that the secretary of transportation direct the administrator of faa to take the following three actions: clearly define organizational responsibilities for information security for nas systems , and ensure that all relevant organizations , including ait and ato , are in agreement with them .
+
+update the faa information security strategic plan to reflect current conditions , including the increased reliance on ip networking and the designation of the nas as one of the nation's critical infrastructures .
+
+create an agency - wide commitment to strategic planning for information security by ensuring that planning activities are coordinated with all relevant organizations represented on the cyber security steering committee .
+
+we are also making 168 recommendations to address 60 findings in a separate report with limited distribution .
+
+these recommendations consist of actions to implement and correct specific information security weaknesses related to access controls and configuration management .
+
+in written comments ( reprinted in appendix ii ) on a draft of this report , the department of transportation stated that faa concurred with our recommendations .
+
+the department also stated that faa recognizes the need to secure the nas environment as part of the nation's critical infrastructure , and that faa has taken several steps to improve nas information security .
+
+additionally , the department stated that faa recognizes that mission assurance requires the integration of all agency cyber capabilities to support operations and is continuing its efforts to establish an integrated organization - wide approach to managing information security risk .
+
+we agree that these actions are important steps for faa to take , and we also believe that addressing our recommendations will result in valuable improvements in information security over air traffic control systems .
+
+as agreed with your offices , unless you publicly announce the contents of this report earlier , we plan no further distribution until 30 days from the report date .
+
+at that time , we will send copies of this report to appropriate congressional committees , the secretary of transportation , and other interested parties .
+
+in addition , this report will be available at no charge on the gao website at http: / / www.gao.gov .
+
+should you or your staffs have questions on matters discussed in this report , please contact gregory c. wilshusen at ( 202 ) 512-6244 , dr. nabajyoti barkakati , ph.d. , at ( 202 ) 512-4499 , or gerald l. dillingham , ph.d. , at ( 202 ) 512-2834 .
+
+we can also be reached by e - mail at wilshuseng@gao.gov , barkakatin@gao.gov and dillinghamg@gao.gov .
+
+gao staff who made major contributions to this report are listed in appendix iii .
+
+the objective of our review was to evaluate the extent to which the federal aviation administration ( faa ) has effectively implemented appropriate information security controls to protect the confidentiality , integrity , and availability of its existing air traffic control ( atc ) systems .
+
+to determine the effectiveness of the faa's security controls , we gained an understanding of the overall national airspace system ( nas ) control environment and examined controls for the agency's systems and facilities .
+
+specifically , we reviewed controls over the network infrastructure and systems that support the faa's mission to provide the safest , most efficient aerospace system in the world .
+
+we performed our work at faa headquarters in washington , d.c. and other locations supporting key systems , specifically: the air traffic control system command center in warrenton , virginia ; the faa's william j. hughes technical center in egg harbor township , new jersey ; and at contractor facilities in herndon , virginia ; egg harbor township , new jersey ; and melbourne , florida .
+
+to select the information systems for our audit , we evaluated each nas information system based on several factors , including its relative importance in supporting faa's mission , expected lifetime , and how widely it is used .
+
+further , we selected only systems that use internet protocol ( ip ) - based communications .
+
+based on this evaluation , we for review: faa selected a non - generalizable sample of five systemstelecommunications infrastructure ( fti ) , surveillance and broadcast service system ( sbss ) , traffic flow management - infrastructure ( tfm - i ) , en route automation modernization ( eram ) , and en route communications gateway ( ecg ) .
+
+gao , federal information system controls audit manual ( fiscam ) , gao - 09-232g ( washington , d.c.: february 2009 ) .
+
+and procedures ; and standards and guidelines from relevant security and it security organizations , such as the national security agency and the center for internet security .
+
+reviewed network access paths to determine if boundaries had been adequately protected ; reviewed the complexity and expiration of password settings to determine if password management was being enforced ; analyzed users' access authorizations for four systems to determine whether system access had been approved and properly documented ; observed configurations for transmitting data across the network to determine whether sensitive data were being encrypted .
+
+for the eram and ecg systems , we reviewed configuration settings for network devices by reviewing the network device builds that are distributed to air route traffic control centers ( artcc ) by the william j. hughes technical center ; reviewed system security settings to determine if sufficient audit and monitoring controls had been implemented ; evaluated configuration change control processes for selected systems to determine whether changes were sufficiently documented , tested , and approved in accordance with system procedures ; and inspected key network devices and servers to determine if critical patches had been installed and / or were up to date .
+
+additionally , our review of boundary protection controls focused on interconnections between nas and non - nas systems .
+
+using the requirements identified by the federal information security management act of 2002 , which establishes key elements for an effective agency - wide information security program , and associated nist guidelines and agency requirements , we evaluated the faa's information security program by analyzing processes and documentation that were part of faa's information security risk management processes to determine the extent to which the process sufficiently supported the agency's mission and operations ; examining system security plans to determine whether they described the security controls in place or planned for meeting the security requirements of the system ; examining security awareness training records to determine whether employees and contractors had received training according to faa policy and federal guidance ; analyzing security testing and evaluation results for four systems to determine whether testing of management , operational , and technical controls was sufficient to conclude that controls were in place and operating effectively ; examining remedial action plans for four systems to determine whether faa addressed identified vulnerabilities in a timely manner ; examining contingency plans and contingency test results for selected systems to determine whether those plans were appropriately documented and had been sufficiently tested ; and reviewing faa's processes for identifying and responding to information security incidents to determine whether faa has implemented an effective incident response capability for its air traffic control systems .
+
+as part of our review of the faa's information security program , we reviewed several sources of computer - generated data .
+
+these included faa's employee background investigation data .
+
+inventory of nas information systems , it security training completion data , and to verify the reliability of these data , we examined them for obvious outliers , omissions , errors , and consulted with faa officials to resolve any identified anomalies .
+
+we also interviewed knowledgeable officials regarding controls on the security training and employee background investigation data , including how and by whom it is input and used .
+
+we determined that these sources of data were sufficiently reliable for our purposes .
+
+we conducted this performance audit from august 2013 to january 2015 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objective .
+
+in addition to the contacts named above , gary austin , lon chin , west coile , john de ferrari , wilfred holloway , nick marinos , and chris warweg ( assistant directors ) ; sher'rie bacon ; chris businsky ; william cook ; saar dagani ; jennifer franks ; lee mccracken ; john ockay ; justin palk ; krzysztof pasternak ; monica perez - nelson ; eugene stevens ; michael stevens ; and adam vodraska made key contributions to this report .
+

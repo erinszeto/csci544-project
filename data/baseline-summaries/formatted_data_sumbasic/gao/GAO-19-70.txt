@@ -1,0 +1,796 @@
+the centers for disease control and prevention ( cdc ) is responsible for protecting america from both foreign and domestic health , safety , and security threats .
+
+its roles include detecting and responding to new and emerging health threats , tackling the biggest health problems causing death and disability for americans , putting science and advanced technology into action to prevent disease , and controlling dangerous and exotic substances that can cause incurable and deadly diseases .
+
+performing these roles may involve tracking diseases and finding out what is making people sick and the most effective ways to prevent diseases .
+
+cdc confronts global disease threats through advanced computing and laboratory analysis of large amounts of data to find solutions , making use of computer systems critical to the process .
+
+however , cyber incidents at federal agencies demonstrate the damage that increasingly sophisticated threats can cause and underscore the importance of effectively protecting federal systems , including those used by cdc to achieve its mission .
+
+since 1997 , we have designated the security of information on federal systems ( i.e. , information security ) to be a government - wide high - risk area .
+
+in 2003 , we expanded the area to include securing the computerized systems supporting the nation's critical infrastructure and , in 2015 , we included protecting the privacy of personally identifiable information .
+
+given the critical role that cdc performs and concerns over the security of federal information systems , you requested that we examine the security controls over key cdc systems .
+
+accordingly , our specific objective was to assess the extent to which cdc had effectively implemented an information security program and controls to protect the confidentiality , integrity , and availability of its information on selected information systems .
+
+in june 2018 , we issued a report that addressed the extent to which cdc had effectively implemented an information security program and controls to protect the confidentiality , integrity , and availability of its information on selected information systems .
+
+in the report , we made 184 recommendations to cdc to resolve the technical security control deficiencies in the information systems we reviewed and 11 additional recommendations to improve its information security program .
+
+we designated that report as “limited official use only” ( louo ) and did not release it to the general public because of the sensitive information it contained .
+
+this subsequent report publishes the findings discussed in our june 2018 report , but we have removed all references to the sensitive information .
+
+specifically , we deleted the names of the information systems and computer networks that we examined , disassociated identified control deficiencies from named systems , deleted certain details about information security controls and control deficiencies , and omitted an appendix that was contained in the louo report .
+
+the appendix contained sensitive details about the technical security control deficiencies in cdc's information systems and computer networks that we reviewed , and the 184 recommendations we made to mitigate those deficiencies .
+
+we also provided a draft of this report to cdc officials to review and comment on the sensitivity of the information contained herein and to affirm that the report can be made available to the public without jeopardizing the security of cdc's information systems and networks .
+
+in addition , this report addresses a second objective that was not included in the june 2018 report .
+
+specifically , this objective was to determine the extent to which cdc has taken corrective actions to address the previously identified security program and technical control deficiencies and related recommendations for improvement that we identified in the earlier report .
+
+as noted in our louo report , to accomplish the first objective — to determine the extent to which cdc had effectively implemented an information security program and controls — we had examined the agency's security policies , procedures , and practices , and evaluated the technical security controls over 24 cdc systems .
+
+these included 10 key systems , 8 of which were mission - essential , that ( 1 ) collect , process , and maintain private or potentially sensitive proprietary business , medical , and personally identifiable information ; ( 2 ) are essential to cdc's mission ; ( 3 ) could have a catastrophic or severe impact on operations if compromised ; or ( 4 ) could be of particular interest to potential adversaries .
+
+we also selected 14 general support systems that were part of the network infrastructure supporting the 10 systems .
+
+to review cdc's information security program , we had examined security policies , procedures , and other documents ; analyzed risk assessments , security plans , security control assessments , remedial action plans , and contingency plans for 8 selected mission - essential systems ; and interviewed personnel at cdc headquarters .
+
+to review controls over the 10 key systems and 14 general support systems , we had examined the agency's network infrastructure and assessed the controls associated with system access , encryption , configuration management , and logging and monitoring .
+
+we conducted site visits to two cdc facilities located in atlanta , georgia .
+
+to accomplish our second objective — on cdc's actions to address the previously identified security program and technical control deficiencies and related recommendations — we requested that the agency provide a status report of its actions to implement each recommendation we made in the june 2018 report .
+
+for each recommendation that cdc indicated it had implemented as of august 3 , 2018 , we examined supporting documents , observed or tested the associated security control or procedure , and / or interviewed the responsible agency officials to assess the effectiveness of the actions taken to implement the recommendation or otherwise resolve the underlying control deficiency .
+
+based on this assessment and cdc status reports , we categorized the status of each recommendation as being closed - implemented , open - partially implemented , or open - not implemented .
+
+additional details on our objectives , scope , and methodology are provided in appendix i .
+
+we conducted this performance audit from december 2016 to december 2018 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+cdc — an operating division of the department of health and human services ( hhs ) — serves as the national focal point for disease prevention and control , environmental health , and promotion and education activities designed to improve the health of americans .
+
+the agency is also responsible for leading national efforts to detect , respond to , and prevent illnesses and injuries that result from natural causes or the release of biological , chemical , or radiological agents .
+
+to achieve its mission and goals , the agency relies on an array of partners , including public health associations and state and local public health agencies .
+
+it collaborates with these partners on initiatives such as monitoring the public's health , investigating disease outbreaks , and implementing prevention strategies .
+
+the agency also uses its staff located in foreign countries to aid in international efforts , such as guarding against global diseases .
+
+table 1 describes the organization of cdc .
+
+cdc is staffed by approximately 20,000 employees across the united states and around the world .
+
+for fiscal year 2017 , according to agency officials , the agency's total appropriation was approximately $12 billion , of which it reported spending approximately $424 million on information technology .
+
+in addition , the officials stated that approximately $31 million ( or about 7.3 percent of the amount spent on information technology ) was for information security across all cdc information technology investments .
+
+cdc relies extensively on information technology to fulfill its mission and support related administrative needs .
+
+among the approximately 750 systems reported in its inventory , the agency has systems dedicated to supporting public health science , practice , and administration .
+
+all of these systems rely on an information technology infrastructure that includes network components , critical servers , and data centers .
+
+at cdc , the chief information officer ( cio ) is responsible for establishing and enforcing policies and procedures protecting information resources .
+
+the cio is to lead the efforts to protect the confidentiality , integrity , and availability of the information and systems that support the agency and its operations , and is to report quarterly to the hhs cio on the overall effectiveness of cdc's information security and privacy program , including the progress of remedial actions .
+
+the cio designated a chief information security officer ( ciso ) , who is to oversee compliance with applicable information security and privacy requirements of the agency .
+
+the ciso , among other things , is responsible for providing information security protections commensurate with the risk and magnitude of the harm resulting from unauthorized access , use , disclosure , and disruption of information and information systems that support the operations and assets of the agency .
+
+to further ensure information security compliance , information systems security officers ( isso ) are responsible for managing the information security program within their respective organizations and report on security program matters to the ciso , including computer security - related incidents .
+
+isso responsibilities include ensuring that vendor - issued security patches are expeditiously installed and that system owners establish processes for timely removal of access privileges when a user's system access is no longer necessary .
+
+in addition , security stewards are to perform operational security analyses supporting the efforts of the isso .
+
+further , business stewards serve as program managers , accepting full accountability for the operations of the systems and ensuring that security is planned , documented , and properly resourced for each aspect of the information security program .
+
+the federal information security modernization act ( fisma ) of 2014 provides a comprehensive framework for ensuring the effectiveness of information security controls over information resources that support federal operations and assets .
+
+fisma assigns responsibility to the head of each agency for providing information security protections commensurate with the risk and magnitude of the harm resulting from unauthorized access , use , disclosure , disruption , modification , or destruction of information systems used or operated by an agency or by a contractor of an agency or other organization on behalf of an agency .
+
+the law also delegates to the agency cio ( or comparable official ) the authority to ensure compliance with fisma requirements .
+
+the cio is responsible for designating a senior agency information security officer whose primary duty is information security .
+
+the law also requires each agency to develop , document , and implement an agency - wide information security program to provide risk - based protections for the information and information systems that support the operations and assets of the agency .
+
+in addition , fisma requires agencies to comply with national institute of standards and technology ( nist ) standards , and the office of management and budget ( omb ) requires agencies to comply with nist guidelines .
+
+nist federal information processing standards ( fips ) publication 199 requires agencies to categorize systems based on an assessment of the potential impact that a loss of confidentiality , integrity , or availability of such information or information system would have on organizational operations , organizational assets , individuals , other organizations , and the nation .
+
+nist fips 200 requires agencies to meet minimum security requirements by selecting the appropriate security controls , as described in nist special publication ( sp ) 800-53 .
+
+this nist publication provides a catalog of security and privacy controls for federal information systems and a process for selecting controls to protect organizational operations and assets .
+
+the publication provides baseline security controls for low - , moderate - , and high - impact systems , and agencies have the ability to tailor or supplement their security requirements and policies based on agency mission , business requirements , and operating environment .
+
+further , in may 2017 , the president issued an executive order requiring agencies to immediately begin using nist's cybersecurity framework for managing their cybersecurity risks .
+
+the framework , which provides guidance for cybersecurity activities , is based on five core security functions: identify: develop the organizational understanding to manage cybersecurity risk to systems , assets , data , and capabilities .
+
+protect: develop and implement the appropriate safeguards to ensure delivery of critical infrastructure services .
+
+detect: develop and implement the appropriate activities to identify the occurrence of a cybersecurity event .
+
+respond: develop and implement the appropriate activities to take action regarding a detected cybersecurity event .
+
+recover: develop and implement the appropriate activities to maintain plans for resilience and to restore any capabilities or services that were impaired due to a cybersecurity event .
+
+according to nist , these 5 functions occur concurrently and continuously , and provide a strategic view of the life cycle of an organization's management of cybersecurity risk .
+
+within the 5 functions are 23 categories and 108 subcategories that include controls for achieving the intent of each function .
+
+appendix ii provides a description of the framework categories and subcategories of controls .
+
+we reported in june 2018 that cdc had implemented numerous controls over the 24 systems we reviewed , but had not always effectively implemented controls to protect the confidentiality , integrity , and availability of these systems and the information maintained on them .
+
+deficiencies existed in the technical controls and agency - wide information security program that were intended to ( 1 ) identify risk , ( 2 ) protect systems from threats and vulnerabilities , ( 3 ) detect cybersecurity events , ( 4 ) respond to these events , and ( 5 ) recover system operations .
+
+these deficiencies increased the risk that sensitive personally identifiable and health - related information , including information regarding the transfer of biological agents and toxins dangerous to public health , could be disclosed or modified without authorization .
+
+as shown in table 2 , deficiencies existed in all 5 core security function areas for the selected systems we reviewed .
+
+controls associated with the identify core security function are intended to help an agency develop an understanding of its resources and related cybersecurity risks to its systems , assets , data , and capabilities .
+
+these controls include identifying and assessing cybersecurity risk and establishing information security policies , procedures , and plans .
+
+we reported in june 2018 that , although cdc had taken steps to implement these controls , it had not ( 1 ) categorized the risk - related impact of a key system , identified threats , or reassessed risk for systems or facilities when needed ; ( 2 ) sufficiently documented technical requirements in policies , procedures , and standards ; and ( 3 ) described intended controls in facility security plans .
+
+cdc categorized systems based on potential impact of compromise , but did not appropriately categorize a key general support system as discussed earlier , fips publication 199 requires agencies to categorize systems based on an assessment of the potential impact that a loss of confidentiality , integrity , or availability of such information or information system would have on organizational operations , organizational assets , individuals , other organizations , and the nation .
+
+for networks and other general support systems , nist sp 800-60 notes that the categorization should be based on the high water mark of supported information systems , and on the information types processed , transmitted across the network , or stored on the network or support system .
+
+further , cdc's architecture design principles state that high - impact systems are to be maintained on dedicated machinery and be physically and logically secured from lower - risk systems .
+
+cdc had categorized the 24 systems we reviewed , but the assigned impact level was not always appropriate .
+
+in this regard , the agency did not ensure that high - impact systems were logically secured from a lower - risk system .
+
+specifically , seven selected high - impact systems relied on a general support system that the agency had categorized as a moderate - impact system ( i.e. , a lower - risk system ) .
+
+as a result , the high - impact systems were relying on controls in a less secure environment .
+
+officials from the office of the chief information officer ( ocio ) explained that the categorization of the supporting system was outdated based on changes to the agency's operating environment and that they planned to re - evaluate the assigned impact level .
+
+cdc assessed risk at the system level , but did not assess threats , document risk - based decisions , or reassess risk when needed according to nist sp 800-30 , risk is determined by identifying potential threats to an organization and vulnerabilities in its systems , determining the likelihood that a particular threat may exploit vulnerabilities , and assessing the resulting impact on the organization's mission , including the effect on sensitive and critical systems and data .
+
+nist also states that assessments should be monitored on an ongoing basis to keep current on risk - impacting changes to the operating environment .
+
+cdc had developed system - level risk assessments for the 8 selected mission - essential systems , and had summarized its risks in a risk assessment report .
+
+however , only two of the eight risk assessments had identified potential threats , and only one of these assessments determined the likelihood and impact of threats to that system .
+
+further , cdc had not always documented risks associated with less secure configuration settings or monitored its assessments to address changes to the operating environment .
+
+for example , among the 94 technical control deficiencies that we identified for the 24 systems we reviewed , ocio officials stated that the agency had not implemented controls for 20 deficiencies due to technical constraints .
+
+however , cdc did not address risks associated with decisions not to implement controls for these reasons in the system risk assessments .
+
+ocio officials also partially attributed 5 of the 94 technical control deficiencies to new cybersecurity threats and to threat vectors that turned initially sound architecture decisions into vulnerabilities .
+
+however , cdc had not addressed such changes in the risk assessments for the affected systems .
+
+by not assessing threats or the likelihood of their occurrence and impact and by not documenting the risks , cdc cannot have assurance that appropriate controls are in place commensurate with the level of risk .
+
+cdc had a process in place to assess risk to systems from an entity - wide perspective beyond the system level , newly discovered threats or vulnerabilities may require an agency to make risk decisions from an entity - wide perspective .
+
+an entity - wide perspective is needed because the threats and vulnerabilities may affect more than specific systems .
+
+cdc had a process in place to assess risk from an entity - wide perspective .
+
+this process included regular meetings among ocio and program office staff to discuss policy , threats , and incidents .
+
+specifically , issos held monthly meetings as a continuous monitoring working group to discuss policy updates .
+
+in addition , an ocio official held quarterly briefings that included presentations on incident response tools , incident statistics , and potential threats .
+
+ocio officials also held ad hoc meetings , as necessary , regarding vulnerability and threat concerns when the agency received email alerts from the federal bureau of investigation , the department of homeland security ( dhs ) , or hhs .
+
+cdc had not updated facility risk assessments in addition to assessing risks for systems , agencies are to assess the risk to their facilities .
+
+the interagency security committee ( isc ) requires agencies to determine the security level for federal facilities , and to conduct risk assessments at least once every 5 years for level i and level ii facilities and at least once every 3 years for level iii , level iv , and level v facilities .
+
+however , the two facility risk assessments that we reviewed had not been updated in a timely manner .
+
+specifically , the risk assessments , covering level iii and level iv facilities that house the 24 reviewed systems , had been last updated in january 2009 and march 2014 — 8 years earlier and just over 3 years earlier , at the time of our review in july 2017 .
+
+according to a cdc physical security official , the agency had previously relied on a third - party assessor to perform the assessments .
+
+the official also said that the agency planned to conduct its own facility risk assessments and had recently developed procedures for conducting these assessments .
+
+until it performs these assessments , cdc may not be aware of new risks to its facilities or the controls needed to mitigate the risks .
+
+fisma requires each agency to develop , document , and implement an information security program that , among other things , includes policies and procedures that ( 1 ) are based on a risk assessment , ( 2 ) cost - effectively reduce information security risks to an acceptable level , ( 3 ) ensure that information security is addressed throughout the life cycle of each system , and ( 4 ) ensure compliance with applicable requirements .
+
+according to nist sp 800-53 , an agency should develop policies and procedures for each of the 18 nist families of security controls to facilitate the implementation of the controls .
+
+cdc had documented numerous policies , procedures , and standards that addressed each of the 18 control families identified in nist sp 800-53 .
+
+for example , the agency had developed policies and procedures governing physical access to cdc facilities , role - based training of personnel with significant security responsibilities , security assessment and authorization of systems , and continuity of operations , in addition to standard operating procedures that covered numerous other controls .
+
+the agency had also developed the cdc it security program implementation standards , which describes the agency's security program requirements and minimum mandatory standards for the implementation of information security and privacy controls .
+
+in addition , the agency had documented configuration standards , which specified minimum configuration settings , for devices such as firewalls , routers , switches , as well as unix and windows servers .
+
+however , these policies and standards sometimes lacked the technical specificity needed to ensure controls were in place .
+
+to illustrate , the agency had not sufficiently documented detailed guidance or instructions to address numerous technical control deficiencies we identified , such as insecure network devices , insecure database configurations , not blocking certain email attachments , and not deploying a data loss prevention capability .
+
+according to ocio officials , the agency's periodic reviews and updates to existing cybersecurity policies and standards did not reveal and address these issues .
+
+nevertheless , without clear and specific guidance or instructions for implementing technical controls , the agency had less assurance that controls were in place and operating as intended .
+
+fisma requires each agency to develop , document , and implement an information security program that , among other things , includes subordinate plans for providing adequate information security for networks , facilities , and systems or a group of information systems , as appropriate .
+
+nist states that plans should be reviewed and updated to ensure that they continue to reflect the correct information about the systems , such as changes in system owners , interconnections , and authorization status , among other things .
+
+hhs and cdc policies require that such plans be reviewed annually .
+
+in addition , the isc requires that agencies develop and implement an operable and effective facility security plan .
+
+cdc standards require the organization to prepare a facility security plan ( or similar document ) .
+
+cdc had developed security plans for the 8 selected mission - essential systems .
+
+with a few exceptions , the plans addressed the applicable security controls for those systems .
+
+the agency also had reviewed and updated the plans annually .
+
+however , cdc had not developed security plans for the facilities housing resources for the selected systems .
+
+physical security officials stated that they had not developed security plans because they did not have a sufficient number of staff to develop them .
+
+without comprehensive security plans for the facilities , cdc's information and systems would be at an increased risk that controls to address emergency situations would not be in place and personnel at the facilities would not be aware of their roles and responsibilities for implementing sound security practices to protect systems housed at these cdc locations .
+
+the protect core security function is intended to help agencies develop and implement the appropriate safeguards for their systems to ensure achieving the agency's mission and to support the ability to limit or contain the impact of a potential cybersecurity event .
+
+controls associated with this function include implementing controls to limit access to authorized users , processes or devices ; encrypting data to protect its confidentiality and integrity ; configuring devices securely and updating software to protect systems from known vulnerabilities ; and providing training for cybersecurity awareness and performing security - related duties .
+
+although cdc had implemented controls that were intended to protect its operating environment , we reported in june 2018 that the agency did not consistently ( 1 ) implement access controls effectively , ( 2 ) encrypt sensitive data , ( 3 ) configure devices securely or apply patches in a timely manner , or ( 4 ) ensure staff with significant security responsibilities received role - based training .
+
+a basic management objective for any agency is to protect the resources that support its critical operations from unauthorized access .
+
+agencies accomplish this objective by designing and implementing controls that are intended to prevent , limit , and detect unauthorized access to computing resources , programs , information , and facilities .
+
+access controls include those related to identifying and authenticating users , authorizing access needed to perform job duties , protecting system boundaries , and physically protecting information system assets .
+
+however , cdc had not consistently implemented these controls .
+
+cdc implemented enterprise - wide identification and authentication controls , but did not consistently and securely configure password controls for certain accounts on devices and systems nist sp 800-53 states that agencies should implement multi - factor authentication for their users of information systems .
+
+multi - factor authentication involves using two or more factors to achieve authentication .
+
+a factor is something you know ( password or personal identification number ) , something you have ( token and personal identity verification ( piv ) card ) , or something you are ( biometric ) .
+
+also , nist and cdc policy state that information systems shall have password management controls established to include minimum password complexity requirements , password lifetime restrictions , prohibitions on password reuse , and user accounts temporarily locked out after a certain number of failed login attempts during a specified period of time .
+
+cdc had applied enterprise - wide solutions to ensure appropriate identification and multi - factor authentication of its general user community through , for example , the use of piv cards .
+
+however , instances of weak password management controls existed for certain accounts on network devices , servers , and database systems .
+
+according to ocio officials , password control deficiencies existed primarily due to technical constraints , administrators not being aware of technical requirements , or administrators not adequately monitoring configuration settings .
+
+without more secure password settings , cdc's information and systems are at an increased risk that unauthorized individuals could have guessed passwords and used them to obtain unauthorized access to agency systems and databases .
+
+cdc authorized users more access than needed to perform their jobs nist sp 800-53 states that agencies should employ the principle of least privilege , allowing only authorized access for users ( or processes acting on behalf of users ) that are necessary to accomplish assigned tasks .
+
+it also states that privileged accounts — those with elevated access permissions — should be strictly controlled and used only for their intended administrative purposes .
+
+cdc had implemented controls intended to ensure that users were granted the minimum level of access permissions necessary to perform their legitimate job - related functions .
+
+however , the agency had granted certain users more access than needed for their job functions , including excessive access permissions on a key server .
+
+according to ocio officials , cdc systems had deficiencies related to restricting access primarily due to technical constraints or administrators not adequately monitoring configuration settings .
+
+by not appropriately restricting access , cdc's information and systems are at an increased risk that individuals could deliberately or inadvertently compromise database systems or gain inappropriate access to information resources .
+
+cdc did not effectively implement boundary controls to ensure network integrity nist sp 800-53 states that agencies should control communications at information systems' external boundaries .
+
+it states that , to manage risks , agencies should use boundary protection mechanisms to separate or partition computing systems and network infrastructures containing higher - risk systems from lower - risk systems .
+
+although cdc had implemented multiple controls that were designed to protect system boundaries , the agency had not sufficiently separated higher - risk systems from lower - risk systems .
+
+according to ocio officials , deficiencies in boundary protection controls existed due to new cybersecurity threats turning initially sound architecture decisions into vulnerabilities , technical constraints , and administrators not being aware of technical requirements or adequately monitoring configuration settings .
+
+without stronger boundary controls , cdc's information and systems are at an increased risk that an attacker could have exploited these boundary deficiencies and leveraged them to compromise cdc's internal network .
+
+cdc physically protected information system assets , but did not consistently ensure access remained appropriate nist sp 800-53 states that agencies should implement physical access controls to protect employees and visitors , information systems , and the facilities in which they are located .
+
+in addition , nist states that agencies should review access lists detailing authorized facility access by individuals at the agency - defined frequency .
+
+in its standards , cdc requires implementation of the nist special publication and requires that access lists detailing authorized facility access by individuals be reviewed at least every 365 days .
+
+cdc had implemented physical security controls .
+
+the agency had implemented physical security measures to control access to certain areas and to ensure the safety and security of its employees , contractors , and visitors to cdc facilities .
+
+for example , cdc had issued piv cards and cardkey proximity cards to its employees and contractors , and had limited physical access to restricted areas based on the permissions it granted via these cards .
+
+however , the agency had not consistently reviewed authorized access lists .
+
+in this regard , cdc did not have a process in place for periodically reviewing the lists of individuals with access to rooms containing sensitive resources to ensure that such access remained appropriate .
+
+without reviewing authorized access lists , cdc has reduced assurance that individual access to its computing resources and sensitive information is appropriate .
+
+nist sp 800-53 states that agencies should encrypt passwords both while stored and transmitted , and configure information systems to establish a trusted communication path between the user and the system .
+
+additionally , nist requires that , when agencies use encryption , they use an encryption algorithm that complies with fips 140-2 .
+
+cdc had used fips - compliant encryption for its piv card implementation , but had not effectively implemented encryption controls in other areas .
+
+according to ocio officials , encryption control deficiencies existed primarily due to technical constraints , administrators not being aware of a technical solution , or configuration settings not being adequately monitored .
+
+by not using encryption effectively , cdc limits its ability to protect the confidentiality of sensitive information , such as passwords .
+
+nist sp 800-53 states that agencies should disable certain services with known security vulnerabilities .
+
+this includes configuring security control settings on operating systems in accordance with publicly available security checklists ( or benchmarks ) promulgated by nist's national checklist program repository .
+
+this repository contains , for example , the security configuration benchmarks established by the center for internet security ( cis ) for windows servers .
+
+nist also states that agencies should test and install newly - released security patches , service packs , and hot fixes in a timely manner .
+
+in addition , cdc policy required that software patches for remediating vulnerabilities designated as critical or high risk be applied to servers within 45 days of being notified that a patch is available or within 7 days of when an exploit is known to exist .
+
+further , agency policy specified that administrators configure windows servers in accordance with the cdc - approved security benchmarks .
+
+cdc had documented security configuration baselines , but had not always securely configured its systems or applied patches .
+
+in addition , the agency had not consistently configured security settings in accordance with prescribed security benchmarks or applied patches in a timely manner .
+
+for example: cdc had configured windows servers to run unnecessary services .
+
+cdc had configured only about 62 percent of the security settings in accordance with prescribed benchmark criteria on the windows and infrastructure servers supporting five systems that we reviewed .
+
+during our site visit in april 2017 , cdc had not installed 21 updates on about 20 percent of the network devices , including 17 updates that the vendor considered to be critical or high - risk .
+
+the oldest of the missing updates dated back to january 2015 .
+
+cdc had not updated database software supporting two selected systems to a more recent version that addressed vulnerabilities with a medium severity rating .
+
+according to ocio officials , cdc had deficiencies in configuration and patching primarily due to administrators not being aware that there was a technical solution or did not adequately monitor configuration settings .
+
+by not securely configuring devices and installing updates and patches in a timely manner , the agency is at increased risk that individuals could have exploited known vulnerabilities to gain unauthorized access to agency computing resources .
+
+according to nist sp 800-53 , agencies should provide adequate security training to individuals in a role such as system / network administrator and to personnel conducting configuration management and auditing activities , tailoring the training to their specific roles .
+
+in addition , one of the cybersecurity cross - agency priority goals requires that agencies implement training that reduces the risk that individuals will introduce malware through email and malicious or compromised web sites .
+
+consistent with nist sp 800-53 , cdc policy required network users to receive annual security awareness training .
+
+accordingly , for fiscal year 2017 , all cdc staff completed the required annual security awareness training .
+
+cdc policy also required that those staff identified as having significant security responsibilities receive role - based training every 3 years .
+
+however , not all staff with significant security responsibilities received role - based training within the defined time frames .
+
+the agency used a tracking system to monitor the status of role - based training for 377 individuals who had been identified as having significant security responsibilities .
+
+as of may 2017 , 56 ( about 15 percent ) of the 377 individuals had not completed the training within the last 3 years , and 246 ( about 65 percent ) of them had not taken training within the last year .
+
+in addition , cdc had not identified at least 30 other staff with significant security responsibilities who required role - based training .
+
+specifically , none of the 18 security and database administrators for four selected systems were included among the individuals being tracked , although these administrators had significant security responsibilities .
+
+further , the agency provided us with a list of 42 individuals whose job series indicated that they required role - based training .
+
+however , 12 of the 42 were not included among the tracked individuals .
+
+furthermore , given the number of deficiencies identified and the rapidly evolving nature of cyber threats , cdc's requirement that staff take role - based training only once every 3 years is not sufficient for individuals with significant cybersecurity responsibilities .
+
+according to ocio officials , managers are responsible for identifying those individuals with significant security responsibilities .
+
+the process used to track training was manual and required an individual's manager to specify training requirements .
+
+the officials noted that the agency plans to implement a new hhs annual role - based training requirement in fiscal year 2018 and that they intend to work to enhance oversight as the new requirement is implemented .
+
+the officials also stated that at least 10 of the 94 technical control - related deficiencies identified in our june 2018 report had resulted , at least in part , from staff not being aware of control requirements or solutions to address the deficiencies .
+
+as a result , cdc's information and systems are at increased risk that staff may not have the knowledge or skills needed to appropriately protect them .
+
+the detect core security function is intended to allow for the timely discovery of cybersecurity events .
+
+controls associated with this function include logging and monitoring system activities and configurations , assessing security controls in place , and implementing continuous monitoring .
+
+in june 2018 , we reported that , although cdc had implemented controls intended to detect the occurrence of a cybersecurity event , it had not sufficiently implemented logging and monitoring capabilities or effectively assessed security controls .
+
+nist sp 800-53 states that agencies should enable system logging features and retain sufficient audit logs to support the investigations of security incidents and the monitoring of select activities for significant security - related events .
+
+in addition , national archives and records administration records retention guidance states that system files containing information requiring special accountability that may be needed for audit or investigative purposes should be retained for 6 years after user accounts have been terminated or passwords altered , or when an account is no longer needed for investigative or security purposes , whichever is later .
+
+nist also states that agencies should monitor physical access to facilities where their information systems reside to detect physical security incidents .
+
+further , nist sp 800-53 states that agencies should monitor and control changes to configuration settings .
+
+although cdc had implemented centralized logging and network traffic monitoring capabilities , the capabilities were limited .
+
+for example , the agency's centralized logging system used for security monitoring had a limited storage capacity and did not meet the national archives and records administration requirements .
+
+in addition , cdc had not centrally collected and monitored security event data for many key assets connected to the network .
+
+as a result , increased risk existed that cdc would not have been able to detect anomalous activities that may have occurred from malware attacks over time .
+
+ocio officials stated that , as a compensating measure , the agency prevents direct communications between workstations .
+
+however , such a measure does not allow the agency to detect potentially inconsistent activities that may have occurred from malware attacks within the same data center .
+
+cdc also had not consistently reviewed physical access logs to detect suspicious physical access activities , such as access outside of normal work hours and repeated access to areas not normally accessed .
+
+program offices responsible for 7 of the 8 selected mission - essential systems did not conduct such a review .
+
+according to ocio officials , the offices were not aware of the need for a review .
+
+however , without reviewing physical access logs , cdc has reduced assurance that the agency would detect suspicious physical access activities .
+
+further , cdc had not routinely monitored the configuration settings of its systems to ensure that the configurations were securely set .
+
+for example , for at least 41 of 94 technical control deficiencies we identified , ocio officials cited quality control gaps where the change management process or system administrators had not discovered deficiencies resulting from insecure configuration settings .
+
+without an effective monitoring process in place for system configurations , the agency was not aware of insecure system configurations .
+
+fisma requires each agency to periodically test and evaluate the effectiveness of its information security policies , procedures , and practices .
+
+the law also requires agencies to test the management , operational , and technical controls for every system identified in the agency's required inventory of major information systems at a frequency depending on risk , but no less than annually .
+
+in addition , nist sp 800- 53a identifies three assessment methods — interview , examine , and test — and describes the potential depth and coverage for each .
+
+assessing a control's effectiveness based on an interview is likely less rigorous than examining a control ; similarly , examining a control is likely less rigorous than testing the control's functionality .
+
+cdc had not sufficiently tested or assessed the effectiveness of the security controls for the 8 mission - essential systems that we reviewed .
+
+although cdc annually assessed security controls of selected systems , the agency had only examined control descriptions in security plans to ensure accuracy .
+
+at least once every 3 years , the agency selected controls for a more in - depth assessment of the 8 mission - essential systems we reviewed .
+
+however , cdc had assessed only 191 ( about 7 percent ) of 2,818 controls described in the security plans for the selected systems .
+
+in addition , the agency used methods for assessing controls that were often not rigorous enough to identify the control deficiencies that we identified .
+
+for example , as depicted in figure 1 , cdc relied exclusively on interviews — a less rigorous method — to assess 20 percent of the 191 controls it assessed for the selected systems .
+
+the security control tests and assessments were insufficient in part because cdc had not developed comprehensive security assessment plans or had not consistently implemented the plans for the 8 selected mission - essential systems we reviewed .
+
+for example , one system's assessment plan indicated that five controls should be assessed using a testing methodology ; instead , however , the assessor conducted interviews to determine whether controls were effective or not .
+
+ocio officials stated that the security control test and assessment process is manual and staffing is limited .
+
+they stated that the agency intends to rely increasingly on automated tools — such as the tools implemented by the continuous diagnostics and mitigation program — for performing the assessments .
+
+nevertheless , by not assessing controls in an in - depth and comprehensive manner , cdc has limited assurance that the security controls are in place and operating as intended .
+
+further , without developing and implementing comprehensive assessment plans , assessments may not be performed with sufficient rigor to identify control deficiencies .
+
+the respond core security function is intended to support the ability to contain the impact of a potential cybersecurity event .
+
+controls associated with this function include implementing an incident response capability and remediating newly - identified deficiencies .
+
+although cdc had implemented controls for incident response to detect cybersecurity events , we reported in june 2018 that the agency had not maintained adequate information to support its incident response capability or taken timely corrective actions to remediate identified control deficiencies .
+
+nist sp 800-53 and sp 800-61 state that agencies should develop and document an incident response policy with corresponding implementation procedures and an incident response plan , and keep them updated according to agency requirements .
+
+nist also states that agencies should implement an incident handling capability , including an incident response team that consists of forensic / malicious code analysts .
+
+in addition , agencies are to provide incident response training for the team and test the incident response capability to determine the effectiveness of the response .
+
+further , nist states that agencies are to monitor incidents by tracking and documenting them and maintain records about each incident , including forensic analysis .
+
+finally , national archives and records administration guidance states that records and data relevant to security incident investigations should be retained for 3 years .
+
+cdc had implemented an incident response capability .
+
+the agency had developed policy , procedures , and a plan that addressed incident response , and updated them annually .
+
+cdc had an incident response team that managed all of the incident handling and response efforts for the agency , and conducted forensic analyses for reported security incidents .
+
+team members had undergone training , such as an advanced network forensic and analysis course offered by a private firm .
+
+in addition , the agency had periodically tested its incident handling capability by conducting penetration testing exercises .
+
+these exercises allowed the team to test its real - time response capabilities .
+
+cdc's incident response procedures state that incident tickets should include a description of actions taken , response time , and whether actions have been completed or not .
+
+the agency's procedures also require that computers affected by an incident be removed from the network immediately .
+
+nevertheless , cdc had shortcomings in implementing its incident response capability and monitoring procedures .
+
+for the 11 security incidents cdc considered most significant over a 19-month period ending in march 2017 , the agency had not consistently described the actions taken , the response times , or whether remedial actions had been completed .
+
+the agency also had not maintained audit log records for its security incidents .
+
+for example , the agency described recommended actions for 10 of the 11 incidents , but did not describe the actions that had been taken .
+
+in addition , although incident response team officials told us that all incident ticket records had been saved , cdc had not retained system log data that supported incident resolution for at least five of the incidents .
+
+the agency's policy did not address record retention in accordance with national archives and records administration guidance .
+
+further , for two of the security incidents , the security incident tickets did not clearly indicate when two compromised workstations had been removed from the network .
+
+according to ocio officials , shortcomings in fully documenting incidents resulted from the organization being understaffed , primarily due to budget limitations and the inability to hire qualified personnel .
+
+without effectively tracking and documenting information system security incidents , cdc's systems are at increased risk that the impact of security incidents would not be fully addressed .
+
+fisma requires each agency to develop , document , and implement an information security program that , among other things , includes a process for planning , implementing , evaluating , and documenting remedial actions to address any deficiencies in information security policies , procedures , or practices .
+
+nist sp 800-53 states that agencies are to develop a plan of action and milestones ( poa&m ) for an information system to document the agency's planned remedial actions to correct identified deficiencies .
+
+cdc policy was consistent with the nist guidelines .
+
+cdc had developed poa&ms for deficiencies identified by its security control assessments , but had not remediated the deficiencies in a timely manner .
+
+for each of the 8 selected mission - essential systems , the agency had created plans for correcting control deficiencies .
+
+however , the agency did not implement several remedial actions by their due date .
+
+for example , expected completion dates had passed for correcting deficiencies associated with 4 of the 8 selected mission - essential systems .
+
+for these 4 systems , the completion dates were 1 to 8 months beyond the due dates at the time of our review in september 2017 .
+
+according to office of the chief information security officer officials , program offices that own the systems did not always communicate updates on the status of remedial actions for their respective systems , noting that deficiencies may have been corrected .
+
+without effective communication to update its poa&ms , cdc was not in a position to effectively manage its remedial actions and correct known deficiencies in a timely manner .
+
+the recover core security function is intended to support timely recovery of normal operations to reduce the impact from a cybersecurity event .
+
+controls associated with this function include developing and testing contingency plans to ensure that , when unexpected events occur , critical operations can continue without interruption or can be promptly resumed , and that information resources are protected .
+
+losing the capability to process , retrieve , and protect electronically maintained information can significantly affect an agency's ability to accomplish its mission .
+
+if contingency planning is inadequate , even relatively minor interruptions can result in lost or incorrectly processed data , which can cause financial losses , expensive recovery efforts , and inaccurate or incomplete information .
+
+nist sp 800-53 states that agency systems should have a contingency plan that includes the identification of key personnel and the systems' essential mission functions and addresses full information system restoration .
+
+for high - impact systems , nist specifies that agencies test contingency plans at an alternate processing site that is separated from the primary processing site to reduce susceptibility to the same threats .
+
+in addition , nist states that organizations should initiate corrective actions based on testing if they are needed .
+
+as we reported in june 2018 , cdc had developed and fully tested contingency plans for each of the 8 selected mission - essential systems that we reviewed .
+
+each plan identified key personnel and their contact information , essential mission functions of the systems , and instructions on how to fully restore the systems in the event of a disruption .
+
+additionally , between january 2015 and may 2017 , cdc had tested whether the 8 systems could be recovered at their respective alternate sites , and had initiated corrective actions based on the results of the tests .
+
+however , the alternate site for 6 of the 8 selected mission - essential systems was located in relatively close proximity to the main processing site .
+
+although 2 systems had alternate sites located in another state , the alternate site for the other 6 systems was within the same metropolitan area .
+
+as a result , an event such as a natural disaster or substantial power outage could affect both the main and alternate sites for these systems , potentially rendering cdc unable to complete functions associated with its mission .
+
+prompt restoration of service is necessary because the required recovery time for these systems ranged from 4 to 24 hours .
+
+security plans for 3 of the systems recognized the hazards of having the sites within the same geographical region , but stated that cdc had accepted this risk .
+
+according to ocio officials , having a site further away was cost prohibitive ; however , the officials had not documented this analysis or the associated risk of having the agency's processing sites located within the same geographical area .
+
+without documenting the analysis and associated risk , cdc had less assurance that senior leadership was aware of the risk of agency systems being unavailable .
+
+as a consequence , senior leadership may not agree whether acceptance of the risk was warranted .
+
+an underlying reason for the information security deficiencies in selected systems was that , although the agency had developed and documented an agency - wide information security program , it had not consistently or effectively implemented elements of the program .
+
+fisma requires each agency to develop , document , and implement an information security program that , among other things , includes the following elements: periodic assessments of the risk and magnitude of the harm that could result from the unauthorized access , use , disclosure , disruption , modification , or destruction of information and information systems that support the operations and assets of the agency ; policies and procedures that ( 1 ) are based on risk assessments , ( 2 ) cost - effectively reduce information security risks to an acceptable level , ( 3 ) ensure that information security is addressed throughout the life cycle of each system , and ( 4 ) ensure compliance with applicable requirements ; plans for providing adequate information security for networks , facilities , and systems or group of information systems , as appropriate ; security awareness training to inform personnel of information security risks and of their responsibilities in complying with agency policies and procedures , as well as training personnel with significant security responsibilities for information security ; periodic testing and evaluation of the effectiveness of information security policies , procedures , and practices , to be performed with a frequency depending on risk , but no less than annually , and that includes testing of management , operational , and technical controls for every system identified in the agency's required inventory of major information systems ; a process for planning , implementing , evaluating , and documenting remedial actions to address any deficiencies in the information security policies , procedures , or practices of the agency ; and plans and procedures to ensure continuity of operations for information systems .
+
+as discussed previously in this report , cdc had implemented aspects of each of these elements .
+
+for example , the agency had conducted risk assessments , developed security plans , assessed security controls , developed remedial action plans , and developed and tested contingency plans for each of the 8 selected mission - essential systems .
+
+in addition , the agency had documented numerous policies and procedures and ensured that staff had completed annual security awareness training .
+
+however , cdc's program had shortcomings .
+
+for example , as discussed earlier in this report , cdc had not consistently or effectively: addressed threats , technical constraints , and the changing threat environment in its system risk assessments , or assessed the risk of having alternate processing sites within close proximity to each other ; documented detailed technical requirements in policies and procedures , or facility controls in facility security plans ; tracked and trained staff with significant security responsibilities ; monitored configuration settings and comprehensively assessed remediated deficiencies in a timely manner ; or documented its cost analysis and associated risk of having an alternate processing site within the same geographical region as its primary processing site .
+
+until cdc addresses these shortcomings and consistently and effectively implements all elements of its information security program , the agency will lack reasonable assurance that its computing resources are protected from inadvertent or deliberate misuse .
+
+in our june 2018 report , we made 195 recommendations to cdc to strengthen its technical security controls and bolster its agency - wide information security program .
+
+specifically , we recommended that the agency take 184 actions to resolve technical control deficiencies by implementing stronger access controls , encrypting sensitive data , configuring devices securely , applying patches in a timely manner , strengthening firewall rules , and implementing logging and monitoring controls more effectively , among other actions .
+
+we also made 11 recommendations for cdc to improve its information security program by , among other things , assessing risks as needed , documenting more detailed technical requirements , monitoring and assessing controls more comprehensively , and remediating deficiencies in a timely manner .
+
+since the issuance of our june 2018 report , cdc has made significant progress in implementing the recommendations we made to resolve the technical security control deficiencies in the information systems we reviewed and to improve its information security program .
+
+in this regard , the agency has implemented many of the recommendations for improving technical security controls for the systems we reviewed and has developed plans to implement recommendations for enhancing its information security program .
+
+specifically , as of august 3 , 2018 , cdc had fully implemented 102 ( 55 percent ) of the 184 recommendations we made to fortify the technical security controls over the systems we reviewed .
+
+in addition , the agency had partially implemented 20 ( 11 percent ) of the 184 recommendations .
+
+in these instances , cdc had made progress toward implementing the recommendations , but had not completed all of the necessary corrective actions for us to close the recommendations .
+
+therefore , these recommendations remain open .
+
+further , cdc did not provide any evidence that it had implemented the remaining 62 technical control - related recommendations .
+
+table 3 summarizes the status of cdc's efforts to implement the 184 recommendations that we made to resolve the technical control deficiencies , as of august 3 , 2018 .
+
+by implementing 102 recommendations , cdc ( as of august 3 , 2018 ) reduced some of the risks associated with certain key activities .
+
+specifically , these efforts included protecting network boundaries and logging and monitoring security events for indications of inappropriate or unusual activity on systems — that we highlighted in our june 2018 report as being particularly vulnerable and requiring the agency's greater priority and attention .
+
+in addition , the agency had implemented several of our recommendations to rectify a number of the security control deficiencies .
+
+these efforts included strengthening firewall rules , implementing stronger access controls , configuring devices securely , and expanding its audit monitoring capabilities .
+
+in addition , cdc had developed a plan of action and milestones ( poa&m ) for each of the identified technical control deficiencies and related recommendations that remained open as of august 3 , 2018 .
+
+the poa&ms assigned organization responsibilities , identified estimated costs , identified points of contact , and established time frames for resolving the deficiencies and closing the related recommendations .
+
+the agency's plans called for it to implement the majority of the remaining open technical control - related recommendations by september 2019 , and all recommendations by september 2020 , as shown in figure 2 .
+
+our june 2018 report also included 11 recommendations to cdc to improve its information security program .
+
+in particular , we recommended that the agency , among other things , evaluate system impact level categorizations to ensure they reflect the current operating environment ; update risk assessments to identify threats and the likelihood of impact of the threat on the environment ; and update the facility risk assessments .
+
+in addition , we recommended that the agency take the necessary steps to make sure staff with significant security roles and responsibilities are appropriately identified and receive role - based training ; monitor the configuration settings of agency systems to ensure the settings are set as intended ; update security control assessments to include an assessment of controls using an appropriate level of rigor ; and remediate poa&ms in a timely manner .
+
+further , we recommended that the agency document the cost - benefit analysis with associated risk of having an alternate site within the same geographical region as the main site .
+
+as of august 3 , 2018 , the agency had partially implemented 1 of the 11 information security program - related recommendations , but had not provided any evidence that it had implemented the remaining 10 recommendations .
+
+regarding the partially implemented recommendation , cdc had provided role - based training to all personnel performing significant security responsibilities .
+
+however , the agency still needed to establish and automate the identification process and the tracking of training records for individuals needing specialized security role - based training .
+
+cdc had developed plans to fully implement this recommendation and each of the remaining 10 information security program - related recommendations by july 2019 .
+
+fully implementing the open recommendations is essential to ensuring that the agency's systems and sensitive information are not at increased and unnecessary risk of unauthorized use , disclosure , modification , or disruption .
+
+we received written comments on a draft of this report from cdc .
+
+in its comments , which are reprinted in appendix iii , the agency stated that it recognizes the risks associated with operating a large , global information technology enterprise and has implemented processes , procedures , and tools to better ensure the prevention , detection , and correction of potential incidents .
+
+cdc also said cybersecurity remains a high priority and that it takes the responsibilities for protecting public health information and data entrusted to it seriously .
+
+to strengthen its cybersecurity program , the agency stated that it is restructuring and streamlining the cyber program and it infrastructure of its office of the chief information officer .
+
+further , cdc stated that it has leveraged gao's limited official use only report , issued in june 2018 , to accelerate its implementation , infrastructure , and software deployments to complete phrases one and two of dhs's continuous diagnostics and mitigation program .
+
+the agency also said it concurred with , and highlighted a number of actions that it had planned or begun taking to remediate , the 11 security program recommendations that we made to cdc in our june 2018 report .
+
+we are sending copies of this report to the appropriate congressional committees , the secretary of health and human services , and the department's office of the inspector general , the director of cdc , and interested congressional parties .
+
+in addition , the report will be available at no charge on the gao website at http: / / www.gao.gov .
+
+if you or your staff have any questions about this report , please contact gregory c. wilshusen at ( 202 ) 512-6244 or wilshuseng@gao.gov , or dr. nabajyoti barkakati at ( 202 ) 512-4499 or barkakatin@gao.gov .
+
+gao staff who made key contributions to this report are listed in appendix iv .
+
+our objective was to assess the extent to which cdc had effectively implemented an information security program and controls to protect the confidentiality , integrity , and availability of its information on selected information systems .
+
+in june 2018 , we issued a report which detailed the findings from our work in response to this objective .
+
+in the report , we made 184 recommendations to cdc to resolve the technical security control deficiencies in the information systems we reviewed and 11 additional recommendations to improve its information security program .
+
+we designated that report as “limited official use only” ( louo ) and did not release it to the general public because of the sensitive information it contained .
+
+this report publishes the findings discussed in our june 2018 report , but we have removed all references to the sensitive information .
+
+specifically , we deleted the names of the information systems and computer networks that we examined , disassociated identified control deficiencies from named systems , deleted certain details about information security controls and control deficiencies , and omitted an appendix that was contained in the louo report .
+
+the appendix contained sensitive details about the technical security control deficiencies in the cdc's information systems and computer networks that we reviewed , and the 184 recommendations we made to mitigate those deficiencies .
+
+we also provided a draft of this report to cdc officials to review and comment on the sensitivity of the information contained herein and to affirm that the report can be made available to the public without jeopardizing the security of cdc's information systems and networks .
+
+in addition , this report addresses a second objective that was not included in the june 2018 report .
+
+specifically , this objective was to determine the extent to which cdc had taken corrective actions to address the previously identified security program and technical control deficiencies and related recommendations for improvement that we identified in the earlier report .
+
+as noted in our june 2018 report , we determined the extent to which cdc had effectively implemented an information security program and controls to protect the confidentiality , integrity , and availability of its information on selected information systems .
+
+to do this , we initially gained an understanding of the overall network environment , identified interconnectivity and control points , and examined controls for the agency's networks and facilities .
+
+we conducted site visits at two cdc facilities in atlanta , georgia .
+
+to evaluate cdc's controls over its information systems , we used our federal information system controls audit manual , which contains guidance for reviewing information system controls that affect the confidentiality , integrity , and availability of computerized information .
+
+we based our assessment of controls on requirements identified by the federal information security modernization act of 2014 ( fisma ) , which establishes key elements for an effective agency - wide information security program ; nist guidelines and standards ; department of health and human services and cdc policies , procedures , and standards ; and standards and guidelines from relevant security organizations , such as the national security agency , the center for internet security , and the interagency security committee .
+
+we had reviewed a non - generalizable sample of the agency's information systems , focusing on those systems that ( 1 ) collect , process , and maintain private or potentially - sensitive proprietary business , medical , and personally identifiable information ; ( 2 ) are essential to cdc's mission ; and ( 3 ) were assigned a federal information processing standard rating of moderate or high impact .
+
+based on these criteria , we had selected eight mission - essential systems for our review .
+
+of these systems , the agency had categorized 7 as high - impact systems and 1 as a moderate - impact system .
+
+for these 8 selected mission - essential systems , we had reviewed information security program - related controls associated with risk assessments , security plans , security control assessments , remedial action plans , and contingency plans .
+
+to assess the safeguards cdc implemented for its systems , we had examined technical security controls for 24 cdc systems , including systems the agency designated as high - value assets .
+
+these included 10 key systems , 8 of which were high - and moderate - impact mission - essential systems just described , 1 additional high - impact system , 1 additional moderate - impact system , and 14 general support systems .
+
+we selected the additional high - impact system because the agency re - categorized it as a high - impact system during our review .
+
+we selected the additional moderate - impact system because the agency used it to control physical access to highly sensitive cdc biologic lab facilities , including facilities that handle dangerous and exotic substances that cause incurable and deadly diseases .
+
+we selected 10 key systems , 8 of which were mission - essential systems , for review that ( 1 ) collect , process , and maintain private or potentially sensitive proprietary business , medical , and personally identifiable information ; ( 2 ) are essential to cdc's mission ; ( 3 ) could have a catastrophic or severe impact on operations if compromised ; or ( 4 ) could be of particular interest to potential adversaries .
+
+we also selected 14 general support systems that were part of the agency's network infrastructure supporting the 10 key systems .
+
+to review controls over the 10 key systems and 14 general support systems , we had examined the agency's network infrastructure and assessed the controls associated with system access , encryption , configuration management , and logging and monitoring .
+
+for reporting purposes , we had categorized the security controls that we assessed into the five core security functions described in the national institute of standards and technology's ( nist ) cybersecurity framework .
+
+the five core security functions are: identify: develop the organizational understanding to manage cybersecurity risk to systems , assets , data , and capabilities .
+
+protect: develop and implement the appropriate safeguards to ensure delivery of critical infrastructure services .
+
+detect: develop and implement the appropriate activities to identify the occurrence of a cybersecurity event .
+
+respond: develop and implement the appropriate activities to take action regarding a detected cybersecurity event .
+
+recover: develop and implement the appropriate activities to maintain plans for resilience and to restore any capabilities or services that were impaired due to a cybersecurity event .
+
+these core security functions are described in more detail in appendix ii .
+
+for the identify core security function , we had examined cdc's reporting for its hardware and software assets ; analyzed risk assessments for the eight selected mission - essential systems to determine whether threats and vulnerabilities were being identified ; reviewed risk assessments for two facilities ; analyzed cdc policies , procedures , and practices to determine their effectiveness in providing guidance to personnel responsible for securing information and information systems ; and analyzed security plans for the eight selected systems to determine if those plans had been documented and updated according to federal guidance .
+
+we also evaluated the risk assessments for two facilities that housed the 8 mission - essential selected systems .
+
+for the protect core security function , we had examined access controls for the 24 systems .
+
+these controls included the complexity and expiration of password settings to determine if password management was being enforced ; administrative users' system access permissions to determine whether their authorizations exceeded the access necessary to perform their assigned duties ; firewall configurations , among other things , to determine whether system boundaries had been adequately protected ; and physical security controls to determine if computer facilities and resources were being protected from espionage , sabotage , damage , and theft .
+
+we also had examined configurations for providing secure data transmissions across the network to determine whether sensitive data were being encrypted .
+
+in addition , we had examined configuration settings for routers , network management servers , switches , firewalls , and workstations to determine if settings adhered to configuration standards , and inspected key servers and workstations to determine if critical patches had been installed and / or were up - to - date .
+
+further , we had examined training records to determine if employees and contractors had received security awareness training according to federal requirements , and whether personnel who have significant security responsibilities had received training commensurate with those responsibilities .
+
+for the detect core security function , we had analyzed centralized logging and network traffic monitoring capabilities for key assets connected to the network ; analyzed cdc's procedures and results for assessing security controls to determine whether controls for the eight selected mission - essential systems had been sufficiently tested at least annually and based on risk .
+
+we also had reviewed the agency's implementation of continuous monitoring practices to determine whether the agency had developed and implemented a continuous monitoring strategy to manage its information technology assets and monitor the security configurations and vulnerabilities for those assets .
+
+for the respond core security function , we had reviewed cdc's implementation of incident response practices , including an examination of incident tickets for 11 incidents ; and had examined the agency's process for correcting identified deficiencies for the eight selected mission - essential systems .
+
+for the recover core security function , we had examined contingency plans for eight selected mission - essential systems to determine whether those plans had been developed and tested .
+
+in assessing cdc's controls associated with this function , as well as the other four core functions , we had interviewed office of the chief information officer officials , as needed .
+
+within the core security functions , as appropriate , we had evaluated the elements of cdc's information security program based on elements required by fisma .
+
+for example , we analyzed risk assessments , security plans , security control assessments , and remedial action plans for each of the 8 selected mission - essential systems .
+
+in addition , we had assessed whether the agency had ensured staff had completed security awareness training and whether those with significant security responsibilities received commensurate training .
+
+we also had evaluated cdc's security policies and procedures .
+
+to determine the reliability of cdc's computer - processed data for training and incident response records , we had evaluated the materiality of the data to our audit objective and assessed the data by various means , including reviewing related documents , interviewing knowledgeable agency officials , and reviewing internal controls .
+
+through a combination of methods , we concluded that the data were sufficiently reliable for the purposes of our work .
+
+to accomplish our second objective — on cdc's actions to address the previously identified security program and technical control deficiencies and related recommendations — we requested that the agency provide a status report of its actions to implement each of the recommendations .
+
+for each recommendation that cdc indicated it had implemented as of august 3 , 2018 , we examined supporting documents , observed or tested the associated security control or procedure , and / or interviewed the responsible agency officials to assess the effectiveness of the actions taken to implement the recommendation or otherwise resolve the underlying control deficiency .
+
+based on this assessment and cdc status reports , we defined the status of each recommendation into the following 3 categories: closed - implemented — cdc had implemented the recommendation ; open - partially implemented — cdc had made progress toward , but had not completed , implementing the recommendation ; and open - not implemented — cdc had not provided evidence that it had acted to implement the recommendation .
+
+we conducted this performance audit from december 2016 to december 2018 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+the national institute of standards and technology's cybersecurity framework consists of five core functions: identify , protect , detect , respond , and recover .
+
+within the five functions are 23 categories and 108 subcategories , as described in the table .
+
+in addition to the individuals named above , gary austin , jennifer r. franks , jeffrey knott , and chris warweg ( assistant directors ) ; chibuikem ajulu - okeke , angela bell , sa'ar dagani , nancy glover , chaz hubbard , george kovachick , sean mays , kevin metcalf , brandon sanders , michael stevens , daniel swartz , and angela watson made key contributions to this report .
+
+edward alexander , jr. and duc ngo ( assistant directors ) ; david blanding , and christopher businsky also provided assistance .
+

@@ -1,0 +1,1476 @@
+the united states and many of its trading partners have established laws to remedy the unfair trade practices of other countries and foreign companies that cause injury to domestic industries .
+
+u.s. law authorizes the assessment of antidumping ( ad ) duties on products exported to the united states at unfairly low prices ( i.e. , dumped ) and countervailing ( cv ) duties on products exported to the united states that are subsidized by foreign governments .
+
+the department of commerce ( commerce ) sets an initial estimated ad / cv duty rate , based on the estimated margin of dumping or amount of the subsidy , and later determines a final duty rate based on actual imports .
+
+u.s. customs and border protection ( cbp ) is then responsible for collecting the duty amount owed .
+
+according to an october 2015 cbp report to congress , cbp identified the accumulated ad / cv duty revenue uncollected as of the time of the report to be $3 billion , including principal and interest .
+
+according to that cbp report , the vast majority of manufacturers , exporters , importers , customs brokers , and other parties involved in shipments of goods subject to ad / cv duties lawfully pay the duties owed .
+
+however , as the cbp report notes , elements of the u.s. system for determining and collecting ad / cv duties create an inherent risk that some importers will not pay the full amount they owe in ad / cv duties .
+
+as we have previously reported , three related factors create a heightened risk of ad / cv duty nonpayment: ( 1 ) the u.s. system for determining such duties involves the setting of an initial estimated duty rate upon the entry of goods , followed by the retrospective assessment of a final duty rate ; ( 2 ) the amount of ad / cv duties for which an importer may be ultimately billed can significantly exceed what the importer pays when the goods enter the country ; and ( 3 ) the assessment of final ad / cv duties can occur up to several years after an importer enters goods into the united states , during which time the importer may cease operations or become unable to pay additional duties .
+
+the persistently large and growing amount of uncollected ad / cv duties has raised concerns in congress and among domestic industries affected by dumped or subsidized imports .
+
+you asked us to conduct a follow - up review to provide an update on our 2008 report , which identified key factors contributing to uncollected ad / cv duties and the steps cbp had taken to address those factors .
+
+this report ( 1 ) examines the status and composition of uncollected ad / cv duties , ( 2 ) the extent to which cbp has taken steps to improve its billing and collection of ad / cv duties , and ( 3 ) the extent to which cbp assesses and mitigates the risk to revenue from potentially uncollectible ad / cv duties .
+
+to examine the status and composition of uncollected ad / cv duties , we analyzed cbp data on all open , delinquent duty bills for entries from fiscal year 2001 through fiscal year 2014 , as of may 12 , 2015 .
+
+for this purpose , we combined three datasets from cbp's automated commercial system ( acs ) containing information on entries and billed amounts associated with entries .
+
+acs is used by cbp to track , control , and process all goods entering the united states .
+
+the first acs dataset contained ad / cv duty entry data ; the second contained final assessed ad / cv duty rate data ; and the third contained importer ad / cv duty billing data .
+
+as part of our examination of the status and composition of uncollected ad / cv duties , we analyzed the extent to which cbp writes off uncollectible bills .
+
+in addition to analyzing data to determine the status and composition of uncollected ad / cv duties , we reviewed relevant statutes , regulations , and agency reports , and interviewed cbp and commerce officials .
+
+to examine the extent to which cbp has taken steps to improve its billing and collection of ad / cv duties , we obtained and analyzed acs data ; reviewed relevant statutes , regulations , and agency reports ; and we interviewed cbp , commerce , and department of the treasury ( treasury ) officials .
+
+customs bonds are used to safeguard revenue , and , according to cbp officials , these bonds play an important role in cbp's efforts to improve ad / cv duty collections .
+
+for that reason , we met with three of the major associations that represent the companies that issue customs bonds .
+
+to examine the extent to which cbp assesses and mitigates the risk to revenue from potentially uncollectible ad / cv duties , we analyzed acs data on all open , delinquent duty bills for entries from fiscal year 2001 through fiscal year 2014 , as of may 12 , 2015 .
+
+we also reviewed cbp's risk assessment and interviewed cognizant cbp officials to determine what risk factors these officials identify in their analysis of ad / cv debts and discuss in cbp reports to congress .
+
+we assessed cbp's risk management efforts with regard to potentially uncollectible ad / cv duties against federal internal control standards , which state that agency managers should comprehensively identify risks and analyze them for their possible effects .
+
+we also developed two regression models to estimate the likelihood of nonpayment for any given entry as well as the size of loss if nonpayment occurred ; mathematically , these are the two components of expected loss .
+
+we did this to show how a statistical model could be constructed that addresses the association between potential risk factors and the potential for nonpayment .
+
+our regression models do not establish whether a given factor causes nonpayment or is merely correlated with this risk .
+
+to be useful for risk management , such a model would need to be able to predict future nonpayment risk .
+
+as a result , to assess the ability of the model to predict future losses , we repeatedly tested its ability to identify nonpayment risk in data not used to construct the model .
+
+we further analyzed the data for two separate 5-year periods and conducted qualitative assessments of parameter stability .
+
+we presented the results of our analysis to cbp officials on two occasions and made adjustments to the methodology based on their feedback .
+
+the models provide an example of how cbp data could be systematically analyzed to provide insights into bill delinquency patterns , but we do not intend them to be prescriptive .
+
+in conducting our review , we assessed the reliability of the acs and commerce data we used .
+
+we did this by ( 1 ) performing electronic testing of required data elements , ( 2 ) reviewing existing information about the data and the systems that produced them , and ( 3 ) interviewing agency officials knowledgeable about the data and the systems that produced the data .
+
+we identified a number of limitations to the data .
+
+as a result , we excluded certain portions of the data from our analysis and included several assumptions .
+
+after making these exclusions and assumptions , we further tested the data and found it to be generally reliable for the purposes of our analysis .
+
+see appendix i for a more complete description of our scope and methodology , including a description of the limitations we found and how we addressed them .
+
+see appendix ii for a technical appendix containing a full description of the regression analysis that we performed .
+
+we conducted this performance audit from january 2015 to july 2016 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+the process for importing goods into the united states generally involves at least two private parties ( exporters and importers ) as well as the u.s. government .
+
+the u.s. ad / cv duty collection process typically involves the five steps summarized below and illustrated in figure 1 .
+
+1 .
+
+commerce communicates the initial estimated duty rate to cbp: commerce issues an ad / cv duty order that specifies the products for which importers must pay ad / cv duties .
+
+the order communicates the initial estimated duty rates applicable to one or more specific exporters , producers , or both , as well as a catchall rate or , if appropriate , a countrywide rate for all other exporters and producers that were not individually investigated and that did not receive a specific rate .
+
+the order also instructs cbp to collect cash deposits at the time of importation for estimated duties owed on all entries of the applicable products .
+
+these duty rates represent commerce's initial estimates of the level of dumping or subsidization .
+
+commerce typically communicates to the public the initial estimated duty rate that must be applied in the federal register .
+
+2 .
+
+cbp reviews importers' assessments of duties owed and collects the initial estimated duty from the importer: the importer determines the value of estimated duties owed by applying the initial rate set in the applicable ad / cv duty order to its imports .
+
+cbp reviews the importer's assertions for correctness and collects the required cash deposits or bonds from the importer .
+
+according to cbp officials , estimated duties are usually due within 10 days after cbp has released the product for entry into the united states .
+
+3 .
+
+commerce determines and communicates the final duty rate to cbp: each year , during the anniversary month of the publication of an ad or cv duty order , an interested party may ask commerce to conduct an administrative review to determine the actual amount of dumping or subsidization and calculate a final duty rate .
+
+this can occur if the party believes that the initial estimated rate is too high or too low .
+
+during the administrative review , commerce analyzes previous imports to determine the actual level of dumping or subsidization for those imports during the period under review .
+
+at the conclusion of the administrative review ( typically about 12 – 18 months after the review began ) , commerce establishes the final duty rate ( also known as the liquidation rate ) for the goods .
+
+if an administrative review is not requested , then the final duty rate is generally the same as the initial estimated duty rate .
+
+commerce typically communicates to the public the final duty rate that must be applied in the federal register .
+
+commerce sends cbp liquidation instructions communicating the final duty rate and designating the importers , producers , or both that are associated with the entries to which the rate must be applied .
+
+according to cbp officials , the liquidation instructions are communicated first to the ad / cv division , a headquarters unit within cbp's office of trade .
+
+4 .
+
+cbp instructs ports to apply the final duty rate and calculate final duties: cbp instructs staff at each applicable u.s. port of entry to assess the final duties on all relevant goods ( i.e. , applying the final rate to the value of applicable goods that have entered since the order was issued ) .
+
+5 .
+
+cbp liquidates the import entry and may issue a refund or a bill: cbp liquidates the entry , which can result in cbp's issuing a bill to the importer ( if the liquidation rate is higher than the initial estimated rate ) or refunding money ( if the initial estimated rate is higher than the liquidation rate ) .
+
+if the initial estimated and final duty rates are the same , cbp liquidates the entry without issuing a bill or refund .
+
+cbp must liquidate these entries within a 6-month time limit that begins when cbp receives a notice , such as final duty rate instructions from commerce or notification from a court or another agency that the suspension of liquidation that was placed on those entries has been lifted .
+
+otherwise , the entry will be liquidated by operation of law at the initial estimated duty rate regardless of whether the final rate has changed .
+
+this is referred to as a “deemed liquidation. .
+
+to ensure payment of unforeseen financial obligations to the u.s. government , most importers are required to post a security , usually a customs bond .
+
+the bond is like an insurance policy protecting the u.s. government against revenue loss if an importer defaults on its financial obligations .
+
+cbp allows importers to provide two types of basic importation and entry customs bonds — a continuous entry bond and a single transaction bond — to secure the duties , taxes , and fees associated with the import of goods into the united states .
+
+continuous entry bonds are used to secure financial obligations for one or more entries for a period of up to 365 days ; single transaction bonds are used to secure financial obligations related to a specific entry .
+
+if an importer fails to pay the full amount owed on a final duty bill for an ad / cv duty entry , cbp will attempt to collect payment from the company that underwrote the bond for the entry ( referred to as the “surety” ) .
+
+the amount cbp may be able to collect from the surety depends on how much the bond covers .
+
+in some cases , the bond issued by the surety may cover the entire amount owed ; in other cases , it may only cover a small portion of the debt — depending on the size of the bond and size of the additional duties resulting from a higher final duty rate .
+
+one of cbp's key challenges is to set an accurate bond amount for any given entry that reasonably protects the amount of revenue that is potentially at risk of loss if the final duty bill for that entry is not paid in full .
+
+an importer who is billed for additional ad / cv duties has 180 days from the date of liquidation to protest the bill amount .
+
+cbp will send the importer monthly bills .
+
+according to cbp officials , if cbp does not receive full payment of the bill for additional duties within approximately 8 months of sending the bill and the importer does not file a protest , cbp sanctions the delinquent importer by requiring full payment of all estimated duties , taxes , and fees before any products subsequently imported by that importer can be released by cbp into u.s. commerce .
+
+separately , if the bill has not been paid 60 days after it was issued , cbp will also request payment from the surety that underwrote the bond that the importer provided when the goods entered the united states .
+
+after cbp has requested payment from a surety , that surety has 180 days to pay the bond amount or protest the bill .
+
+importers are responsible for the full amount of additional duties owed ; sureties will generally cover the cost of a bill only up to the value of the bond .
+
+the ad / cv duty collection process is completed when and if the importer , the surety , or the two together pay the full amount of the duty and interest owed or the duty is written off .
+
+cbp's ports generally handle the bill creation process , including collecting payments for duties that are not delinquent from importers .
+
+however , if a bill becomes delinquent , the revenue division within cbp's office of finance takes the primary responsibility for collecting payment from either the importer or the surety or both .
+
+in general , if cbp does not receive full payment of duties and interest owed , cbp's revenue division researches the account and recommends next steps to cbp's office of chief counsel , which determines whether options for collection are available through the legal process .
+
+the office of chief counsel in turn can refer the matter to the department of justice for prosecution .
+
+when cbp determines that a bill for additional ad / cv duties is uncollectible , the revenue division and the office of chief financial officer , in conjunction with the office of chief counsel , can take steps to write off the bill .
+
+figure 2 illustrates the process for collecting payments on bills for additional ad / cv duties and writing off uncollectible bills .
+
+our analysis shows that the total amount of unpaid ad / cv duty bills issued for goods that entered the united states during fiscal years 2001 through 2014 was about $2.3 billion as of may 12 , 2015 .
+
+however , in its performance and accountability report for fiscal year 2015 , cbp reported that it did not expect to collect about $1.6 billion in outstanding ad / cv duty debt .
+
+most ad / cv duty bills are paid: we estimate that , on average , cbp collected duties owed for about 90 percent of the total number of ad / cv duty bills issued for entries from fiscal years 2001 through 2014 .
+
+however , cbp's collection rate for ad / cv duties measured by the total dollar amount paid as a portion of the total amount owed averaged about 31 percent for bills issued on entries during this time .
+
+our analysis shows that ad / cv duty bills with unpaid amounts are concentrated among a small number of importers , with 20 importers accounting for about 50 percent of the $2.3 billion owed .
+
+cbp continues to face challenges in collecting on ad / cv duty bills , attributable in part to the u.s. government's retrospective and complex process for determining final ad / cv duty rates .
+
+the average lag time between entry of goods and cbp issuing a bill for any additional duties during fiscal years 2001 – 2014 was about 2.6 years .
+
+out of all ad / cv entries during this period that we examined , the final duty rate was higher than the initial estimated rate assessed upon entry about 18 percent of the time , and the final rate was lower than the initial estimated rate about 19 percent of the time .
+
+according to agency officials , cbp is considering the feasibility of contracting with private collection agencies to pursue debts for which the agency has exhausted all administrative collection efforts , including claims against applicable surety bonds .
+
+our analysis of cbp data on ad / cv duty bills for entries occurring in fiscal years 2001 through 2014 identified about 41,000 unpaid bills totaling about $2.3 billion , as of may 12 , 2015 .
+
+antidumping duties account for almost this entire amount , with only about $584,000 related to countervailing duties .
+
+of the $2.3 billion , about $2 billion ( or 86 percent ) is principal , and the remaining $321 million ( or 14 percent ) is accrued interest .
+
+we calculated collection rates for bills issued for goods subject to ad / cv duty orders that entered the united states since fiscal year 2001 .
+
+we found that while cbp's collection rate for ad / cv duties is generally high when measured as the percentage of bills collected , the rate is lower when measured as the percentage of dollars collected .
+
+cbp collected , on average , 90 percent of the bills issued , but about 31 percent of the dollar amount owed , indicating that although cbp collects payment on most bills it issues , it sometimes does not collect payment on bills with large dollar amounts ( see fig .
+
+3 ) .
+
+for the approximately 41,000 unpaid bills for goods subject to ad / cv duty orders and entering the united states in fiscal years 2001 through 2014 , the average unpaid bill was about $57,000 , and the median unpaid bill was about $29,000 .
+
+our analysis identified 127 unpaid bills for at least $1 million , with the largest unpaid bill totaling over $12 million .
+
+figure 4 shows the distribution of unpaid bills by amount of uncollected ad / cv duties for entries during fiscal years 2001 through 2014 .
+
+while only about 26 percent of the bills issued are for $50,000 or more , these bills represent about 77 percent of the total amount unpaid .
+
+importers that import products from china and 20 other countries are responsible for all unpaid ad / cv duty bills as of may 12 , 2015 .
+
+of the $2.3 billion in unpaid bills , china is the country of origin for entries associated with about $2.2 billion of the uncollected amount , or 95 percent .
+
+while products from china represent the majority of the uncollected amount , china is also the largest exporter of goods subject to ad / cv duties .
+
+of the approximately $5.5 billion in total liquidated ad / cv duties for goods imported into the united states in fiscal years 2001 through 2014 , about $3.4 billion , or 62 percent , was for goods imported from china .
+
+in analyzing cbp data for entries in fiscal years 2001 through 2014 , we found that the top six product types — without regard to country of origin — accounted for approximately 89 percent of the total amount of uncollected ad / cv duties .
+
+these six product types were associated with about a third of the 396 ad / cv duty orders in place during this period that resulted in unpaid duties .
+
+figure 5 shows the top product types associated with uncollected ad / cv duties .
+
+cbp data show that about 33,000 importers made entries subject to ad / cv duties in fiscal years 2001 through 2014 .
+
+of those , 818 importers ( or 2.5 percent ) had unpaid ad / cv duty bills as of may 12 , 2015 .
+
+within this group of importers with unpaid bills , the top 20 importers owe about 50 percent of the total $2.3 billion unpaid , and the top 4 importers owe about 26 percent of that amount ( see fig .
+
+6 ) .
+
+of the top 20 importers with unpaid duties , 17 stopped importing before bills for their entries were issued .
+
+for example , the importer with the largest dollar amount unpaid had 4,199 unpaid ad / cv duty bills , amounting to $220 million , or 9.4 percent of the total $2.3 billion in unpaid duties ( see table 1 ) .
+
+this importer , which imported wooden bedroom furniture from china , had not paid about 98 percent of the total amount it was billed for imports subject to ad / cv duties that entered the united states from august 2004 through july 2007 .
+
+cbp issued the first bills to this importer for some of these entries in august 2010 after resolution of litigation .
+
+similarly , importer 18 , which imported preserved mushrooms from china , entered goods into the united states from february through may 2012 , and the first of this importer's 162 delinquent bills for these entries was issued in april 2014 .
+
+all importers in table 1 were sanctioned — meaning that cbp would require full payment of all estimated duties , taxes , and fees before any products subsequently imported by these importers could be released by cbp into u.s. commerce .
+
+in some cases , importers continued to be involved with importing after being placed on sanction .
+
+importer 2 , which imported pure magnesium ingot from china , owed $169 million on 271 delinquent bills .
+
+according to cbp officials , this importer may have subsequently incorporated under a different name , enabling it to resume importing as a new entity .
+
+according to cbp officials , the agency requested single transaction bonds on the new entity's imports .
+
+however , generally when importers reincorporate as new entities , it is extremely difficult and resource - intensive to hold the new entity liable for the previous entity's ad / cv debt .
+
+importer 11 , which imported preserved mushrooms from india , entered goods into the united states from october 2000 through june 2012 .
+
+while most of the 1,061 delinquent bills for these entries were not issued until 2013 , 92 of these bills were issued from july through september 2008 .
+
+the importer was able to continue importing despite these unpaid bills because the importer began making payments that ultimately totaled $2.5 million .
+
+however , after the importer stopped making these payments , cbp sanctioned the importer in january 2010 .
+
+further , in 2008 , we reported the top 20 importers by amount of unpaid ad / cv duties at that time .
+
+in 2015 , cbp determined that all of the top 20 importers we listed in 2008 were no longer actively importing .
+
+however , according to cbp officials , importer 14 from our 2008 report , which at that time owed $10 million on 48 unpaid bills , was put on sanction in 2010 .
+
+while this company no longer acts as an importer of record , it has continued to act as a consignee , meaning that another company imports goods that are delivered to importer 14 .
+
+cbp liquidates an entry with a duty bill , a refund , or closing the entry as paid , depending on the final ad / cv duty rate determined by commerce .
+
+many unpaid duty bills are associated with at least 2 years of lag time between the entry of goods into the united states and when cbp liquidates the entry with a duty bill .
+
+in 2008 , we reported that according to agency officials , a long lag time between entry of ad / cv goods and final duty rate assessment increases the risk of uncollected duties because , in the interim , importers may disappear , cease operations , or declare bankruptcy .
+
+in 2015 , cbp reported that the longer the lag time between entry and liquidation , the more difficult it is to collect any additional duties owed because of an increase in the final rate .
+
+litigation may extend the length of time between entry and liquidation by several years .
+
+from fiscal year 2001 through fiscal year 2014 , cbp liquidated entries subject to ad / cv duties in about 31 months ( or 2.6 years ) on average .
+
+the median time between entry and liquidation was about 24.5 months ( about 2 years ) .
+
+about 10 percent of entries were liquidated at least 66 months ( 5.5 years ) or longer after entry of goods , with 169.1 months ( 14.1 years ) being the longest time between entry and liquidation .
+
+figure 7 shows the percentile distribution of the number of months between entry and liquidation .
+
+in analyzing cbp entry data in fiscal years 2001 through 2014 , we found that the final duty rates increased 18 percent of the time ; decreased 19 percent of the time , and ; remained unchanged 63 percent of the time .
+
+in 2008 , we reported that the retrospective assessment of a final duty rate presents a challenge to cbp efforts to collect ad / cv duties because whenever the final duty rate is higher than the initial estimated duty rate , the importer may be unwilling or unable to pay the additional duties owed .
+
+the average rate change for paid bills was about 48 percent , with a median rate change of 36 percent .
+
+in contrast , however , our analysis of entries that resulted in unpaid bills found that , in general , bills with higher rate changes were more likely to be unpaid .
+
+for example , the average increase for unpaid bills was 198 percent , with a median rate change of 81 percent .
+
+further , bills with a 100 to less than 200 percent increase in the rate went unpaid about 39 percent of the time ; bills with a 200 to less than 500 percent increase in the rate went unpaid about 79 percent of the time .
+
+ ( see fig .
+
+8. ) .
+
+cbp has a process in place to collect delinquent ad / cv duty debt but estimates that a significant portion of debt is likely uncollectible .
+
+when the final duty rate exceeds the initial estimated duty rate , importers are billed for the additional duties owed .
+
+when importers fail to pay their bills , cbp takes several steps to collect .
+
+first , if the importer can be located , cbp contacts the importer and attempts to secure payment .
+
+if necessary , cbp takes steps to obtain valid contact information for the importer .
+
+next , if the entry is secured by a bond , cbp will collect from the surety that issued the bond .
+
+if the surety has paid and the importer is not responsive , then cbp investigates to determine whether the importer responsible for paying the bill has domestic assets or a clear successor entity and refers the bill to the office of chief counsel , if appropriate .
+
+the amount of the bill that remains unpaid after cbp has exhausted all efforts to collect from the importer and the surety is considered uncollectible .
+
+according to cbp officials , once cbp has taken all measures to collect and determined that a bill is uncollectible , cbp terminates collection action .
+
+in its performance and accountability report for fiscal year 2015 , cbp reported that about $1.6 billion of ad / cv duty debt was uncollectible .
+
+as noted earlier , cbp has reported that the length of time between the entry of a product and the issuance of a bill for additional duties poses a challenge to collecting ad / cv duties owed , indicating that the more time that elapses before payment , the more difficult it is to collect .
+
+our analysis of cbp data on ad / cv duty bills for entries occurring in fiscal years 2001 through 2014 shows that , of the approximately 41,000 unpaid bills , the average age was about 4 years , and the median age was 4.5 years .
+
+in addition , 977 unpaid bills were issued between 10 and 13 years ago ; based on cbp's reporting on challenges to collection , then , it seems that cbp would have an extremely low likelihood of collecting those bills .
+
+figure 9 shows the distribution of delinquent ad / cv duty bills by age .
+
+once cbp has exhausted its collection efforts , the next step is for cbp staff to prepare the bill for write - off by documenting what was found during the investigation of the debt and submitting this documentation to the office of chief counsel and the chief financial officer for review and approval .
+
+cbp provides staff guidance on steps and documentation required to prepare an unpaid bill for write - off but does not set specific time frames for writing off uncollectible debt .
+
+while cbp staff may begin the write - off process for uncollectible bills as they are identified , according to agency officials , preparing bills for write - off is generally a lower priority than pursuing debt considered collectible .
+
+as a result , cbp does not consistently write off bills .
+
+figure 10 shows the dollar amount of ad / cv duty bills written off each year since 2001 .
+
+as of october 2015 , cbp had written off about $252 million in ad / cv duties from 2001 through 2014 .
+
+cbp officials stated that the high dollar amount of write - offs in 2013 was not attributable to a specific cause .
+
+currently , according to agency officials , cbp is considering the feasibility of contracting with private collection agencies to pursue debts for which the agency has exhausted all administrative collection efforts , including claims against applicable surety bonds .
+
+according to agency officials , it is not clear whether the proposal to use private collection agencies will go forward .
+
+further , officials stated that cbp's write - off activity has slowed while the agency considers this option .
+
+cbp has undertaken several efforts to improve its collection of ad / cv duties or to protect against the risk of uncollectible final duty bills through enhanced bonding ; however , these efforts had yielded limited results as of may 2016 .
+
+for example , cbp launched an initiative to reduce processing errors that result in cbp closing duty bills at the initial estimated duty rate rather than the final duty rate ; in such cases , the initial duty paid may be significantly higher or lower than the final duty amount owed .
+
+though the initiative has shown positive results , as of may 2016 , its application had been limited .
+
+in addition , cbp had not collected and analyzed data systematically to help it monitor and minimize these duty processing errors .
+
+as a result , cbp does not know the extent of these errors and cannot take timely or effective action and avoid the potential revenue loss they may represent .
+
+in another effort to improve its collection of ad / cv duties , cbp formed a five - person ad / cv duty collections team .
+
+while this team , which focused on collecting delinquent bills , produced some positive results , it has recently been hampered by staffing turnover and unfilled positions .
+
+finally , cbp has taken steps to improve its use of bonding as a tool to protect revenue when cbp believes there is a high likelihood that final duty bills will not be paid .
+
+however , according to cbp officials , a ruling issued by the world trade organization ( wto ) has limited cbp's ability to use bonding to protect ad / cv duty revenue .
+
+as of may 2016 , cbp had not begun a systematic effort to regularly collect , analyze , report , and monitor data and actions taken to help it minimize entries liquidated at the initial estimated duty rate rather than at the final duty rate .
+
+this can happen when an entry is either ( 1 ) liquidated prematurely before cbp receives liquidation instructions or ( 2 ) deemed liquidated .
+
+in either case , the entry is liquidated at the initial estimated duty rate .
+
+thus , when the final duty rate is greater than the initial estimated duty rate , cbp might lose the opportunity to collect additional revenue and may not be fully remedying unfair trade practices .
+
+alternately , when the final duty rate is lower than the initial estimated duty rate , cbp fails to provide importers any refunds owed to them .
+
+from calendar years 2008 through 2015 , commerce issued 6,447 messages containing liquidation instructions .
+
+the process of liquidating entries can be complex , requiring a considerable amount of work for cbp officials to implement .
+
+after receiving commerce's liquidation instructions , among other actions , cbp must ensure that the instructions are sufficiently clear so that cbp officials located across the 338 ports of entry and other locations that process ad / cv entries can identify the affected entries and apply the appropriate rate .
+
+each ad / cv duty order is unique because it pertains to a specific combination of goods ; country or countries of origin ; and exporters , producers , or both .
+
+in addition , cbp officials said that the instructions in an ad / cv duty order may apply to only a few entries at a single u.s. port , or to tens of thousands of entries at multiple ports , and may cover entries over a span of several years .
+
+according to cbp officials and documents , processing errors by officials at the ports have resulted in entries that are liquidated too early , before commerce has issued its final liquidation instructions .
+
+cbp officials attributed the premature liquidations typically to human error , but a december 2015 cbp document also attributed the problem to a lack of uniformity in the way individual ports and offices liquidate ad / cv duty entries .
+
+cbp could not provide us with an analysis that assesses the frequency of premature liquidations and its effects on revenue .
+
+according to cbp officials , they collected some data from the ports about the number of entries liquidated prematurely during the first 5 months of fiscal year 2015 .
+
+however , cbp officials said that the data were incomplete since port participation was voluntary , and not all ports participated .
+
+those ports that did participate did not do so consistently over the 5- month period .
+
+on the basis of our own analysis of data provided by cbp , we confirmed that cbp has liquidated some entries before receiving liquidation instructions from commerce .
+
+we identified 94 ad / cv entries during the october 2000 through september 2014 period we reviewed that were subject to ad / cv duties where all the entry and final liquidation dates had occurred relatively quickly — approximately 30 days apart .
+
+we then asked cbp to determine why the liquidations had occurred so quickly for 20 of these entries , when it typically takes over a year after the goods enter the united states before cbp liquidates entries subject to ad / cv duties .
+
+cbp officials told us that of the 20 entries we provided , 7 ( or about 35 percent ) had been liquidated before cbp received final liquidation instructions from commerce , and 9 were liquidated after cbp received final liquidation instructions .
+
+cbp could not determine whether the remaining 4 entries from our sample had been liquidated before receiving the final liquidation instructions .
+
+while cbp liquidates most ad / cv entries within the 6-month statutory time limit , cbp data show that a number of entries are deemed liquidated .
+
+data cbp provided to us showed that of all the entries that cbp liquidated from fiscal years 2008 through 2014 , approximately 10 percent were deemed liquidated .
+
+however , according to cbp officials , the data provided do not capture all of the entries that were deemed liquidated .
+
+in june 2005 , cbp issued guidance for ports and offices to use a special code to identify all liquidations not completed within the statutory time limit ; however , according to cbp officials , many cbp officials at the ports did not appropriately identify these liquidations using the special code and were using other codes instead .
+
+in response to our request for information on the possible effects that deemed liquidations might have on revenue , in march 2016 cbp provided an estimate for the 3-year period from 2010 through 2012 , explaining that it would be too labor intensive to provide data for the entire 7-year period specified in our request .
+
+according to the cbp officials , from 2010 through 2012 , deemed liquidations resulted in cbp not billing importers for approximately $13.9 million in duties owed because of an increase in the duty rate and not refunding importers approximately $465,000 because of a decrease in the duty rate ; however , because these amounts represent only the entries that were properly coded , they may understate the effects of deemed liquidations during the 3-year period .
+
+in october 2014 , cbp announced an initiative to centrally oversee the ad / cv duty liquidation process and thus reduce the number of liquidation processing errors that occur at the ports .
+
+to staff the pilot , in november 2015 cbp formed a nine - person team known as the antidumping and countervailing duty centralization team ( act ) within its office of trade .
+
+the team was composed of representatives from cbp's centers of excellence and expertise who were on temporary assignments , which were scheduled to end in may 2016 .
+
+according to a cbp document , act is intended to provide uniformity in the interpretation and application of the liquidation instructions and to provide cbp insight into processing errors .
+
+the act's role is to review liquidation instructions communicated from cbp's headquarters , identify affected entries , and communicate this information to the ports and offices to help ensure the ports liquidate entries within the statutory 6-month time limit as well as correct any entries mistakenly liquidated before receiving commerce's liquidation instructions .
+
+as of february 2016 , cbp officials credited act with having identified and liquidated approximately $780,000 associated with entries at one port that otherwise would not have been liquidated in a timely manner .
+
+cbp has estimated that the effort to centrally manage the ad / cv duty liquidation process could save approximately $3.7 million in work hours annually .
+
+according to cbp officials , the number of ports and offices that participated in the act pilot varied over time , since participation was voluntary and inconsistent .
+
+also , a few large ports did not participate .
+
+in addition , cbp officials said that implementation of the act's liquidation advice to the ports was not mandatory .
+
+in april 2016 , cbp issued guidance to make the act a permanent structure , but cbp officials said that , as of may 2016 , cbp had not assigned any staff permanently .
+
+cbp's guidance also made it mandatory for all ports to work with the act , although cbp officials at ports and offices will continue to play the lead role in liquidating ad / cv entries as before .
+
+according to the april 2016 guidance , in the event of disagreement between the act and officials of one or more ports and offices about how to resolve a liquidation question , the relevant officials at the ports and offices are to contact the appropriate officials within the ad / cv division of the office of trade to arrive at a decision .
+
+as part of the act initiative , in february 2015 cbp developed a new data - management act portal based on data from acs and ace to enable team members to identify entries subject to commerce liquidation orders .
+
+according to cbp officials and documents , until the creation of this portal , cbp had a limited ability to accurately identify entries that had been liquidated prematurely or outside the 6-month statutory time limit .
+
+these officials said that they plan to use the act portal to collect and analyze data for management to avoid premature and deemed liquidations and report on progress on a quarterly basis , but have not issued guidance to this effect .
+
+cbp also had no plans to regularly collect data to show the effects of premature and deemed liquidations on revenue .
+
+according to cbp officials , fiscal year 2017 will be the first full year when data from all ports are collected .
+
+federal standards for internal control state that in order for an agency to run and control its operations efficiently and effectively , agency managers must have sufficient information to compare actual performance against planned or expected results .
+
+in addition , managers must collect data to understand the reasons for any differences between the actual performance and the planned or expected results .
+
+finally , managers must take steps to resolve these differences .
+
+for these reasons , internal control standards for federal agencies stress the importance of ( 1 ) obtaining and using quality information , ( 2 ) regularly monitoring that information , and ( 3 ) taking steps to ensure that agencies achieve their objectives .
+
+because cbp does not systematically collect and analyze data on a regular basis , cbp is not able to determine the extent to which premature and deemed liquidations are taking place or take timely and effective action to avoid premature or deemed liquidations and the potential revenue loss they represent .
+
+as discussed previously , cbp's revenue division within its office of finance is responsible for collecting all debt owed to cbp , including ad / cv duty debt .
+
+in march 2014 , cbp formed a dedicated five - person ad / cv collections team within the revenue division to focus strictly on collecting unpaid ad / cv duty bills .
+
+the goals set out for the team include , among other things: enhancing cbp's technical expertise with regard to the unique complexities of the ad / cv duty entry , suspension , liquidation , and collection processes ; enabling cbp to take a more systematic approach to the collection of unpaid ad / cv duty bills rather than treating each unpaid bill as an isolated transaction ; initiating collection activity on ad / cv duty debts earlier through research and analysis ; and assisting port officials in identifying importers that are unable or unwilling to pay outstanding debts at an early stage and helping to determine what actions , if any , cbp can take to reduce the possibility that these importers will not fully pay their bills .
+
+cbp officials credited the ad / cv collections team with several accomplishments .
+
+according to cbp's october 2015 report to congress , the team has enhanced cbp's technical expertise with regard to the complexities of the ad / cv duty entry , suspension , liquidation , and collection processes .
+
+in conjunction with cbp's national targeting center , the office of chief counsel , and the ad / cv national targeting and analysis group , in april 2015 the team initiated operation lost and found , which identified over 100 active importers with links to inactive importers with delinquent bills .
+
+as a result , cbp successfully identified approximately $1.4 million in ad / cv duty refunds that cbp owed to the active importers and applied these funds against the debt owed to the u.s. government by the delinquent importers .
+
+in april 2014 , the team , working with other cbp units and the department of justice , participated in a surge effort that resulted in the liquidation of 72 ad / cv entries associated with inactive importers but secured by bonds worth $14.2 million .
+
+the surge effort enabled cbp to collect revenue on bonds that otherwise would have been lost .
+
+cbp officials also stated that the team has had some success in collecting debt more efficiently and effectively .
+
+according to cbp officials and data , staff turnover has hampered the team's ability to further improve cbp's ad / cv duty collection efforts .
+
+since the formation of the ad / cv collections team , three of the five original collection specialists with in - depth expertise have left their positions .
+
+cbp has hired one specialist , but the team remains understaffed by two positions as of april 2016 .
+
+cbp has initiated efforts to revise the form it uses to obtain information about importers in order to collect more comprehensive information , but cbp officials noted that the revised form may have a limited impact on collections .
+
+cbp's form 5106 , known as the importer identification input record , is an important source of importer information for cbp and must be submitted by an importer or his or her representative before the importer's goods can enter a u.s. port of entry .
+
+the information is used by cbp in decisions involving bond coverage ; the entry and release of goods from the ports ; the payment of taxes , duties , and fees ; and the issuance of bills and refunds .
+
+the revisions to the form are intended to enhance cbp's ability to assess the risk that an importer may not pay all required duties , taxes , and fees .
+
+the current form 5106 requires the importer to provide the company's name , mailing address , and physical address .
+
+for tracking purposes , the form also requires the importer to provide a unique identifying number .
+
+this can be an internal revenue service taxpayer identification number ( for a company ) , a social security number ( for an individual ) , or a unique importer number assigned by cbp .
+
+the revised draft of the form 5106 contains several fields not present in the current form .
+
+for example , it contains fields for importers to submit additional information about the company , such as the names of key company officials , as well as the name of the importer's primary banking institution .
+
+the revised form also asks importers to estimate how many entries they estimate they will have during a given year .
+
+in april 2016 , cbp officials stated that cbp's office of trade was in the process of finalizing the revised form for submission to the office of management and budget .
+
+however , cbp officials did not know when the office of management and budget's approval of the revised form would occur .
+
+cbp officials also did not know when importers would be required to begin using the revised importer identification input record .
+
+while the revised form will provide cbp some additional information about importers that it does not collect now , cbp officials cautioned that the collection and analysis of this information may have only a modest impact on the collection of ad / cv duty debt because cbp will accept revised forms with incomplete information .
+
+moreover , deceptive importers may provide false information .
+
+cbp officials said that by regulation , importers are only required to provide the company's name , mailing and physical addresses , and unique identifying number in order for cbp to process an entry ; no other information is required .
+
+these officials also stated that requiring importers to provide additional information would require a change in the regulation , which cbp does not plan to make .
+
+according to cbp officials , importers who do not provide the additional information in the form will be viewed as high - risk importers , and could be subject to added inspection at the time the import enters the united states .
+
+cbp has undertaken efforts to improve the use of bonds by taking steps to centralize bond management and changing the bond formulas to address the risk of uncollected ad / cv duties .
+
+however , according to cbp officials , challenges such as limitations within acs and an adverse wto ruling limit cbp's ability to use bonds as a tool to protect against the risk of uncollectible final duty bills .
+
+cbp began to centralize the management of continuous entry bonds in june 2005 and plans to centralize the management of single transaction bonds by july 23 , 2016 .
+
+for both types of bonds , centralization moves the responsibilities for managing bonds and maintaining records to a single unit within the revenue division of the office of finance .
+
+as part of the process of transitioning from acs to the automated commercial environment ( ace ) , cbp is also in the process of transitioning from a paper - based customs bond system to an electronic customs bond system called ebonds .
+
+once importers are required to only use ace , cbp expects most bond transactions to occur through ebonds .
+
+according to cbp officials , the creation of a central automated repository for ebonds will make it easier for cbp to collect payments from sureties because it will reduce errors often found in paper bonds , such as missing or incomplete information .
+
+according to cbp officials , such errors are frequently cited by sureties ( the companies that underwrite the bonds ) in litigation and protests as a reason for not having to make payment .
+
+according to surety association officials , cbp's transition to an electronic bond will also enable sureties to more closely control the issuance of such bonds because brokers will now be required to electronically submit all documentation used to underwrite customs bonds to the surety before the surety can submit the bond to cbp .
+
+in addition to facilitating the transition to an electronic bond system , cbp's full transition from acs to ace will also enable cbp to track the existence of multiple bonds for a single entry .
+
+in some instances , an import specialist at a port may decide that additional bond coverage is needed .
+
+for example , a cbp official may determine , based on analysis of the characteristics of an ad / cv duty entry and the importer's record , that the importer should obtain an additional single transaction bond .
+
+ace has fields for recording the existence of more than one bond for a single entry .
+
+by contrast , acs can only record the existence of one bond , and any additional bonds ( such as single transaction bonds ) are recorded by the port officials by entering that information in the “notes” section of acs .
+
+in a june 2011 report , the department of homeland security office of inspector general found that port officials did not consistently record the existence of single transaction bonds in acs .
+
+cbp officials we met with in november 2015 told us that this continues to be a problem .
+
+consequently , cbp does not have an accurate count of single transaction bonds .
+
+cbp plans to complete its transition to ace by december 2016 .
+
+as shown previously in table 1 and as discussed in our 2008 report , cbp's standard continuous entry bond formula provides little protection of ad / cv duty revenue when the final amount of ad / cv duties owed significantly exceeds the amount of the bond .
+
+as part of its efforts to utilize bonds more effectively , cbp updated the guidance it uses to calculate the value of continuous entry bonds and single transaction bonds to better protect against the risk of nonpayment .
+
+continuous entry bonds: cbp's office of finance updated the formula in january 2011 , modifying the bonding requirements for importers subject to ad / cv duties depending on whether they have unpaid bills .
+
+importers who do not have unpaid bills are assessed a bond equal to 10 percent of the amount the importer had to pay in duties , taxes , and fees over the preceding 12 months .
+
+in contrast , importers with unpaid bills are assessed a bond equal to 10 percent of the amount the importer had to pay in duties , taxes , and fees over the preceding 12 months plus an additional amount if the unpaid bill is more than 210 days old .
+
+single transaction bonds: cbp issued guidance to port officials in may 2012 for assessing the requirement for additional bonding as well as determining the value of a single transaction bond in cases where port officials have developed a reasonable belief that acceptance of an entry secured by an existing continuous entry bond would place future financial obligations in jeopardy .
+
+the guidance states that port officials should take into account the amount of the importer's continuous entry bond before making a determination that an additional single transaction bond is required .
+
+the guidance also states that cbp officials must judge each transaction or shipment on a case - by - case basis and cannot depend solely on product , country of origin , general trade data , noncompliance within an industry , or allegations .
+
+cbp has attempted to utilize bonds more effectively to address the risk of nonpayment of future obligations ; however , according to cbp officials , a july 2008 wto ruling has constrained cbp's use of bonds because cbp had to change its methods for increasing bond requirements as a result of the ruling .
+
+because the standard bond formulas for continuous entry bonds in general only cover a portion of the amount of revenue at risk of loss if final ad / cv duties are not paid , cbp attempted an enhanced bonding initiative in 2004 .
+
+this initiative required all shrimp importers from certain countries to obtain a continuous entry bond equal to 100 percent of the estimated ad / cv duties for items imported over the previous 12 months .
+
+however , according to wto documents , in july 2008 the appellate body of the wto reported that it determined that the enhanced bonding initiative was inconsistent with wto obligations .
+
+according to cbp officials and documents , the wto ruling resulted in cbp's having to eliminate the enhanced bonding requirement .
+
+moreover , officials explained that since the wto found that cbp's enhanced bonding practices were not compliant with wto obligations because cbp did not sufficiently link the risk addressed by the bond to the entire shrimp industry , the only option in increasing bond requirements to secure revenue is to target individual importers based on their importing record .
+
+according to cbp officials and reports , although the wto found the manner in which cbp applied its enhanced bonding requirement to be inconsistent with wto principles , it did not disagree with the concept of appropriately addressing risk through revised bonding requirements .
+
+as discussed previously , in january 2011 and may 2012 , respectively , cbp updated its formulas for setting continuous entry bond and single transaction bond requirements .
+
+as of june 2016 , cbp continues to use both continuous entry bonds and single transaction bonds as tools to attempt to ensure the payment of unforeseen obligations to the u.s. government ; however , according to cbp officials , in response to the wto ruling , cbp has exercised more caution in using bonds , concerned about the risk of litigation , which could tax agency resources and result in adverse rulings .
+
+according to cbp officials , cbp now determines the requirement for an importer to obtain both types of bonds on a case - by - case basis .
+
+for continuous entry bonds , in practice , cbp's application of bonding requirements is based not solely on applying the january 2011 guidance described above , but also on an assessment by cbp's revenue division of whether an importer's current continuous entry bond will be sufficient to address his or her estimated ad / cv duty requirements during the previous calendar year or the last 12 months .
+
+based on cbp's assessment of current continuous entry bond sufficiency , from january 2014 through january 2016 cbp issued formal demands to 35 importers of goods subject to ad / cv duties to purchase a larger continuous entry bond .
+
+the increases in the amount of the bond demanded ranged from $20,000 to $550,000 .
+
+for single transaction bonds , cbp required importers to submit an additional single transaction bond on 40 occasions from july 2013 through november 2015 .
+
+the value of the additional single transaction bonds required ranged from $223 to $73,515 .
+
+cbp did not have data for any other period within the period of our review , fiscal years 2001 through 2014 .
+
+cbp's limited analysis of the risk to revenue from potentially uncollectible ad / cv duties ( nonpayment risk ) does not accurately assess country - and product - associated risk or risks associated with other entry characteristics and misses opportunities to identify and mitigate nonpayment risk .
+
+in its 2014 report to congress on ad / cv duties , cbp presented a data analysis to congress that includes a summation of uncollected duties from five cases associated with products from china representing the largest dollar amount of uncollected duties .
+
+cbp officials said that , based on this analysis of uncollected duties , entries of these five products from china comprise the largest current risk of ad / cv duty nonpayment .
+
+the standard definition of risk with regard to a negative event that could occur includes both the likelihood of the event and the significance of the consequences if the event occurs ; however , cbp does not attempt to assess either of these for any given entry of goods subject to ad / cv duties entering u.s. customs .
+
+as our analysis of cbp data demonstrates , a more comprehensive analysis of cbp's available data is feasible and could help cbp better identify key risk factors and mitigate nonpayment risk , predict future risk levels for certain types of entries , and also evaluate the effects of past policy changes , such as bonding requirements , on nonpayment risk .
+
+cbp assesses the general risk of uncollected ad / cv duties retrospectively by examining its tally of the total dollars owed but does not consider factors related to the probability of loss for any given entry , such as the proportion of unpaid bills in that product .
+
+federal internal control standards state that agency managers should comprehensively identify risks and analyze them for their possible effects .
+
+in doing so , managers should consider all significant interactions between the entity and other parties and changes within the agency's external environment .
+
+in this way , managers can estimate the risk's significance , assess the likelihood that the risk will occur , and decide what actions need to be taken to manage the risk .
+
+cbp has a statutory responsibility to collect all revenue due to the u.s. government that arises from the importation of goods .
+
+for entries of goods subject to ad / cv duties , the risk to cbp's revenue collection from duty nonpayment , in terms of expected dollar loss , is the probability of nonpayment ( risk likelihood ) times the net duties owed to cbp ( risk significance ) .
+
+cbp's 2014 report to congress on outstanding ad / cv duties considers total outstanding debt but not risk likelihood or risk significance at the level of individual entries .
+
+it provides summary statistics on open bills — stating that importers of goods from china account for over 90 percent of outstanding ad / cv duties as of april 1 , 2014 , and that the five largest cases in terms of open ad / cv duty bills involve five products from china: fresh garlic , wooden bedroom furniture , freshwater crawfish , honey , and preserved mushrooms .
+
+cbp officials told us that they consider this to be an assessment of how cbp views its ad / cv duty collection risk and that entries of these five products comprise the largest current risk of ad / cv duty nonpayment .
+
+cbp officials stated that their definition of risk , in tallying total amount of duties uncollected , does not consider cbp's total exposure to a product category ( which includes paid and unpaid bills ) or factors related to the probability of loss for individual entries .
+
+however , as illustrated in figure 11 , entities may have substantially different risk profiles even if the total dollar loss — cbp's measurement of risk — is the same .
+
+with regard to assessing the risk associated with entries subject to ad / cv duties , cbp officials said that the agency was concerned only with the total amount of ad / cv duties billed but not paid .
+
+however , these officials also noted that this approach was a policy decision that could be revisited .
+
+while cbp does not presently use its risk analysis to target specific high - risk entries , cbp officials also said that the results of their data analysis have been interpreted by some cbp and commerce officials as guidance that could be used for targeting .
+
+if cbp were to use its current definition of risk to assess the risk level of individual entries , such an analysis could identify entries with a lower probability of nonpayment based on past history as relatively riskier than entries that have a higher probability of nonpayment .
+
+we developed the following examples to illustrate the comparative risk of entries according to this definition of risk as a total of uncollected dollars .
+
+an entry of product c , which is associated with a 1.1 percent overall nonpayment rate and has imports of $100 million per year ( $1.1 million total unpaid ) , would be considered a greater risk to revenue than an entry of product d , which is associated with a 50 percent nonpayment rate and has imports of $2 million per year ( $1 million total unpaid ) , even though a given entry of product d is statistically far likelier to become associated with an uncollected bill .
+
+an entry of product e , a product for which all uncollected duties date from entries occurring 10 years ago , would be considered as presenting a similar risk to revenue as an entry of product f , for which the same amount of uncollected duties exists but from entries occurring 1 or 2 years ago — even if all entries of product e have had duties paid on time over the past 9 years .
+
+analyzing data on entries subject to ad / cv duties provided by cbp , we applied standard statistical methods to explore nonpayment risk and found that controlling for a range of country , product , and other entry characteristics explains much of the risk of ad / cv duty nonpayment for the time periods we evaluated .
+
+while we used a number of diagnostic tests to assess the stability and predictive power of the risk factors estimated by our model , additional data and alternative modeling approaches could produce different results .
+
+specifically , among other things , our analysis shows the following: entries of products from countries other than china were estimated to be likelier to be associated with ad / cv duty nonpayments .
+
+these risk levels vary over time , meaning that some past risks are not contemporary risks .
+
+products other than the five from china associated with cases that cbp identifies as presenting the highest risk of nonpayment of ad / cv duties were both estimated to be likelier to be associated with nonpayments of such duties and to represent greater losses when nonpayment occurs .
+
+these risks also vary over time .
+
+other entry characteristics , such as the dollar value of the importer's goods subject to duties , the use of a bond instead of cash to pay initial estimated duties , and the size of the final duty bill increase over the initial estimated duties were each estimated to be significantly associated with the entry's overall risk level for uncollected duties .
+
+see figure 12 for additional examples , and see appendix ii for further discussion .
+
+because it singles out china , based on cumulative data over many years , and does not control for changes in risk factors over time , cbp's risk analysis may lead cbp officials to misconstrue — overestimate or underestimate — the risk associated with an entry's country of origin .
+
+our analysis estimates that imports of products from china present a risk in terms of the likelihood of nonpayment , as well as the dollar loss of nonpayment , but it also estimates that imports of products from other countries may actually pose a greater risk in some cases — all other entry characteristics being equal .
+
+our analysis also shows that risk factors , including the risk associated with country of origin , vary over time .
+
+while controlling for other entry characteristics , we computed the additional expected loss associated with the country of origin of an entry .
+
+we did this by computing probability of loss and loss given nonpayment using two regression models .
+
+to investigate whether estimated risks change over time , we divided the dataset into two 5-year periods .
+
+for 2009 – 2013 , entries of imports from china accounted for the vast majority of uncollected bills .
+
+however , as figure 13 shows , the estimated risk of nonpayment on a given entry from china was actually lower than for products from other countries , holding all other entry characteristics equal .
+
+specifically , our analysis estimates the following for the time periods we evaluated: for many types of products , entries of imports from china are not likelier to result in unpaid duties than otherwise identical entries of imports from other countries .
+
+while imports from china account for about 84 percent of unpaid ad / cv duties associated with entries during fiscal years 2009 through 2013 , as of may 12 , 2015 , some of the apparent risk from these entries can be explained by the large volume of imports from china subject to ad / cv duties .
+
+in addition , certain products imported in large volume from china in 2009 – 2013 , such as preserved mushrooms , are associated with increased probability of nonpayment .
+
+controlling for such high - risk product types , in addition to the other shipment characteristics discussed below , shows that relatively little risk is associated directly with an entry's being from china .
+
+while the average unpaid ad / cv duty bill associated with imports from china was more than 23 times larger than the average such bill associated with imports from mexico in 2009 – 2013 , the estimated likelihood of nonpayment was somewhat lower for imports from china , and the estimated dollar loss per nonpayment was identical for imports from the two countries ( see fig .
+
+13 ) .
+
+in other words , an entry from mexico with the same characteristics as a given entry from china , such as entry size and product type , had slightly greater estimated risk .
+
+however , this result is not apparent without a comprehensive analysis of data , such as the regression model we developed , because the typical entry from mexico had very different characteristics than the typical entry from china .
+
+figure 13 shows how entries from certain countries have greater estimated risk than those from china in terms of probability of nonpayment .
+
+as shown in the chart , otherwise identical entries of products from denmark , mexico , japan , india , thailand , and vietnam are associated with a greater probability of nonpayment than entries of products from china in the 2009 – 2013 period .
+
+our analysis further shows that the estimated nonpayment risk associated with the country of origin of an import can change considerably over time .
+
+as figure 13 demonstrates , the nonpayment risks associated with country of origin in the two periods we examined were significantly different .
+
+in 2004 – 2008 the estimated nonpayment risks associated with imports from the united arab emirates were nearly identical to the estimated risks associated with imports from china .
+
+in this earlier period , estimated losses per nonpayment were much lower for imports from india and denmark than for imports from china in 2004 – 2008 ; in addition , while the estimated probabilities of nonpayment for imports from thailand and vietnam remained higher , entries of products from these countries were associated with lower estimated losses per nonpayment .
+
+india , thailand , and vietnam all had equal loss per nonpayment and greater probability of nonpayment than china in 2009 – 2013 .
+
+thus , our model shows that imports from several countries became riskier relative to chinese imports over the time periods compared .
+
+most of the products in the five cases that cbp highlights in its 2014 report as presenting the greatest risk of generating unpaid ad / cv duties were not among the products that our models estimated as presenting the greatest risk of duty nonpayment .
+
+controlling for other entry characteristics , we compared the estimated probability of nonpayment and the dollar loss when nonpayment occurs for products associated with more than 15 delinquent bills .
+
+we also controlled for whether a product's country of origin was china or some other country .
+
+figure 14 illustrates the results of our analysis across several products ; see appendix ii for all products included in our model .
+
+two of the five products from china in cases identified by cbp in its 2014 report as presenting the highest risk — crawfish and honey — were not associated with any additional estimated risk of nonpayment in the 2009 – 2013 period compared with other products .
+
+further , the estimated risk posed by wooden bedroom furniture from china was lower than the estimated risk associated with otherwise identical entries of many other products .
+
+our analysis shows that the estimated risk in 2009 – 2013 associated with polyethylene retail carrier bags was greater than the estimated risk associated with all five highest - risk cases from china identified by cbp .
+
+in addition , steel nails from countries other than china and wire hangers from china were associated with a greater estimated probability of nonpayment than three of the five products identified as riskiest by cbp , and woven ribbons from countries other than china were associated with a substantially larger loss per nonpayment than all five .
+
+our analysis further shows that estimated product - associated risk can change over time .
+
+by examining these changes , cbp would be able to more accurately assess risk of loss due to nonpayment of ad / cv duties .
+
+as figure 14 demonstrates , the estimated product - associated risks posed in 2004 – 2008 were very different compared with the same risks in 2009 – 2013 .
+
+during the 2004 – 2008 period , all five products identified by cbp as riskiest were associated with a greater estimated probability of nonpayment than other products .
+
+cbp does not comprehensively examine the extent to which key entry characteristics other than country of origin and product type are associated with nonpayment risk .
+
+this reduces cbp's ability to accurately assess the likelihood of nonpayment risk and the relative significance of risk factors associated with country of origin and product type .
+
+using data provided by cbp , we identified a group of entry characteristics other than country of origin or product type associated with nonpayment risk , such as the length of an importer's entry history and number of previous delinquencies .
+
+because these other entry characteristics correlate with both nonpayment risk and certain product types and countries of origin , controlling for these other characteristics is necessary to avoid incorrectly overstating or understating the risks associated with the characteristics country of origin and product type .
+
+our analysis suggests that , for products entered between 2009 and 2013 , six entry characteristics , in addition to country of origin and product type , were significantly associated with either estimated likelihood of nonpayment or estimated size of the loss per nonpayment , or both .
+
+these six entry characteristics are ( 1 ) the size of the final duty bill , ( 2 ) the dollar value of the goods being imported , ( 3 ) the length of importer history , ( 4 ) the count of previous entries from the importer , and the number of previous delinquent bills from ( 5 ) the same importer and ( 6 ) the same manufacturer .
+
+ ( see fig .
+
+15. ) .
+
+our analysis suggests that these six characteristics stayed largely consistent relative to one another over time — each remained associated with a similar relative likelihood of nonpayment and loss per nonpayment during the 2004 – 2008 period .
+
+in contrast , the estimated risk associated with use of a bond in lieu of cash to pay initial estimated duties was not consistent over time .
+
+bond use was associated with a large decreased risk of nonpayment in 2004 – 2008 compared with 2009 – 2013 , when bond use had no estimated positive or negative association with risk .
+
+cbp does not proactively and routinely use its data to identify entries at risk of potentially uncollectible ad / cv duties , for example , by developing quantitative risk assessment tools that could be used consistently on newly arriving entries to help assess when additional risk mitigation actions may be warranted .
+
+cbp officials said that currently port officials investigate trends unsystematically , such as through anecdotal evidence from port officials about problems with certain importers or products .
+
+when a risk is identified through this process , these officials said that cbp can increase the bonding requirements for an entry , which reduces cbp's exposure to potential losses from unpaid duties .
+
+as previously noted , federal internal control standards state that agency managers should comprehensively identify risks and analyze them for their possible effects , as well as design responses to these risks as necessary to mitigate these risks .
+
+because governmental , economic , industry , regulatory , and operating conditions continually change , the standards also note that risk management efforts should include mechanisms to identify and deal with ongoing changes in the likelihood or significance of risk factors .
+
+to date , however , cbp has undertaken a few limited efforts to use its data to help identify and mitigate the risk of uncollected ad / cv duties .
+
+for example , as discussed previously , cbp's ad / cv collections team initiated operation lost and found in april 2015 to take advantage of specialized databases and information maintained by the national targeting center and the ad / cv national targeting and analysis group to identify active importers with ties to inactive , delinquent ad / cv debtors .
+
+in 2015 , cbp also briefly utilized a department of defense contract with the jet propulsion laboratory and johns hopkins university to examine the use of systematic data analysis techniques to reduce ad / cv duty evasion .
+
+cbp officials said a 3-week trial resulted in significant findings and has determined that systematic data analysis techniques may be useful for identifying importers attempting to evade ad / cv duties ; however , cbp has not yet determined whether and how such analysis might be used to improve ad / cv duty collection .
+
+implementing a more comprehensive risk analysis system , using standard statistical methods such as those we used in building our proof - of - concept model , cbp could better assess nonpayment risk with its current data .
+
+doing so would enable cbp to identify a more complete list of risk factors ranked in order of priority .
+
+such analysis would support a decision - making process enabling cbp to take more effective actions to mitigate the nonpayment risk .
+
+any such actions would also need to take into consideration u.s. international trade obligations as well as relevant u.s. court rulings .
+
+most of the factors we identified that explain nonpayment risk are known to cbp at the time an entry arrives when cbp collects initial ad / cv duties , such as the importer's history and the entry size .
+
+the remaining factors are known to cbp at the time it issues the final ad / cv duty bill , such as the increase in final billed amount relative to initial estimated duties .
+
+we determined that these entry characteristics predict nonpayment risk well when using 4 or more years of historical data and could be used to predict payment outcomes on future bills .
+
+therefore , as figure 16 illustrates , cbp could use regression models similar to what we developed as an empirical tool for weighting the importance of risk factors for ad / cv entries and importers .
+
+for example , for newly arriving entries , these weighted risk factors , updated periodically , would be multiplied by the observed characteristics of the entry to yield estimated values for ( 1 ) probability of nonpayment and ( 2 ) dollar loss if nonpayment occurs .
+
+further multiplying these two estimated values would yield expected loss — an estimate of the risk of uncollected duties constituting a concise risk score that is comparable across all entries of goods subject to ad / cv duties .
+
+cbp could use such a risk score strategically to mitigate nonpayment risk in a variety of ways , including , but not limited to , the following four ways: triggering the need for an entry review by officials .
+
+as described above , when a newly arriving entry's estimated risk score exceeds a predetermined threshold , cbp could begin a process of qualitative review by officials with appropriate expertise to determine whether a larger bonding requirement is appropriate and would be consistent with u.s. international trade obligations and relevant u.s. court rulings .
+
+our analysis shows that a substantial proportion of risk associated with the likelihood of nonpayment and some of the risk associated with the size of the loss can be explained with information available to cbp at the time an entry arrives , even with our limited dataset .
+
+more sophisticated models that could further incorporate cbp's institutional expertise would likely be able to predict risk even more effectively .
+
+such predictive modeling as described above — or a similar approach — has the potential to be a valuable tool because , as cbp officials noted , the time of entry is when cbp has the best opportunity to enforce collection of the duties owed to the u.s. government .
+
+targeting high - risk duty bills .
+
+when final duties are assessed for an entry and a bill is issued , cbp may be able to enhance its collection efforts by targeting high - risk bills using additional data available at that time , recalculating the risk score assigned at time of entry .
+
+as mentioned earlier , these additional data include , for example , risk factors such as the length of the review process and the amount of any increase over the initial estimated duties paid when the entry first arrived .
+
+assessing ongoing aggregate risk posed by specific importers .
+
+as we discussed earlier , many of the importers with the largest total unpaid ad / cv duty bills imported 200 or more entries over a period longer than a year .
+
+cbp may be able to use a predictive model to assess the ongoing aggregate risk posed by an importer , even if final bills have not yet been issued and , if applied in a manner consistent with u.s. international trade obligations and relevant u.s. court rulings , use this information to adjust the importer's continuous entry bond requirements .
+
+this may be particularly useful to mitigate risk from high - volume importers from whom individual entries do not present large expected losses .
+
+assessing the effectiveness of policy changes intended to mitigate risk .
+
+cbp could use regression models such as the one we developed — or similar approaches — to examine its data retrospectively to assess the impact of policy changes intended to mitigate the risk of uncollected ad / cv duties .
+
+for example , cbp could assess whether there is a meaningful change in this risk for a specific group of interest , such as bond users , associated with a particular policy intervention , such as the changes to restrict access to bonds used in lieu of cash to pay initial estimated tariffs in 2006 and 2011 .
+
+cbp officials cited limited staff resources and data systems as obstacles to systematically model and predict risk of ad / cv duty nonpayment .
+
+these officials said that cbp may not have the staff and resources that would be required to engage in such an effort .
+
+they noted that cbp's recent efforts to use data more strategically have been limited and depend on leveraging expertise from different units of cbp .
+
+in addition , these cbp officials said that their data systems store information in a manner that is difficult to access and analyze and that it may be missing certain data necessary to undertake predictive modeling .
+
+moreover , cbp's current information systems make it difficult to do large - scale data runs and cannot generate real - time output .
+
+nonetheless , we found that standard statistical methods were sufficient to predict nonpayment risk , and we were able to combine all necessary data pulled from cbp databases using a commercial computer workstation and software ; such analysis would not necessarily require cbp to invest in special computing systems or prohibitively expensive software .
+
+finally , the risk - score method described above would not require real - time data — only periodic checks to update risk - factor weighting .
+
+as discussed previously , cbp officials said that a past ruling by the wto has constrained cbp's use of bonds because the wto determined that cbp's application of an enhanced bonding policy on all shrimp importers from certain countries was inconsistent with u.s. obligations at the wto .
+
+cbp officials explained that as a result of the wto's ruling , cbp now determines the requirement for an importer to obtain a bond on a case - by - case basis .
+
+however , cbp officials told us that targeting analytics they currently perform , an analysis that is specifically tailored to the individual shipment , would not be a blanket approach like past enhanced bonding efforts on shrimp .
+
+specifically , cbp officials explained that although the wto previously found the manner in which cbp applied its enhanced bonding requirement to be inconsistent with wto principles , the wto did not disagree with the concept of appropriately addressing risk through revised bonding requirements .
+
+cbp officials stated that cbp might be able to make good use of the statistical analysis methods gao presented .
+
+for example , such an analysis could be used to assess a requirement for additional security in the form of bonds as part of an enhanced bonding requirement , according to these officials .
+
+however , they cautioned that the use of bonding in this way would have to be carefully tailored in order to avoid a legal challenge .
+
+we estimate the amount of uncollected duties on entries from fiscal year 2001 through 2014 to be $2.3 billion .
+
+while cbp collects on most ad / cv duty bills it issues , it only collects , on average , about 31 percent of the dollar amount owed .
+
+the large amount of uncollected duties is due in part to the long lag time between entry and billing in the u.s. retrospective ad / cv duty collection system , with an average of about 2-and - a - half years between the time goods enter the united states and the date a bill may be issued .
+
+large differences between the initial estimated duty rate and the final duty rate assessed also contribute to unpaid bills , as importers receiving a large bill long after an entry is made may be unwilling or unable to pay .
+
+in 2015 , cbp estimated that about $1.6 billion in duties owed was uncollectible .
+
+by not fully collecting unpaid ad / cv duty bills , the u.s. government loses a substantial amount of revenue and compromises its efforts to deter and remedy unfair and injurious trade practices .
+
+cbp faces a number of challenges in its efforts to improve its collection of ad / cv duties .
+
+cbp does not know the extent to which it liquidates entries in an untimely manner , nor does it know the effects such liquidations have on revenue .
+
+to mitigate the number of entries liquidated at the initial estimated duty rate instead of the final duty rate set by commerce , cbp has begun an initiative to centralize and improve oversight of liquidation processing at the ports ; however , cbp does not systematically collect and analyze data from this effort or assess impact on revenue .
+
+cbp says it has plans to collect and analyze data for management use once the initiative is fully implemented in the beginning of fiscal year 2017 but as of may 2016 had not issued guidance to this effect .
+
+without systematically collecting and analyzing data on a regular basis to ascertain liquidation trends at ports of entry and offices , cbp cannot determine the extent to which premature and deemed liquidations are taking place or take timely and effective action to avoid premature or deemed liquidations and the potential revenue loss they represent .
+
+in separate but related efforts , cbp has created an ad / cv duty collections team , plans to collect more information about importers , and has taken steps to centralize the management of bonds — after revising its bonding formulas to better enable it to protect ad / cv duty revenue .
+
+these efforts , however , have yielded limited results to date .
+
+though its institutional knowledge about the nature of this risk is deep , cbp has not used its extensive relevant data to conduct a comprehensive risk assessment .
+
+the risk analysis it has presented in reports on ad / cv duties is not useful for mitigating ad / cv duty nonpayment risk because it merely examines a tally of the total dollars in ad / cv duties owed but does not consider factors related to the likelihood of nonpayment for any given entry and the size of revenue loss if nonpayment occurs .
+
+mathematically , the likelihood of nonpayment and the size of the loss if nonpayment occurs are the two components of expected loss .
+
+our analysis shows that a substantial proportion of nonpayment risk can be explained with information available to cbp at the time an entry arrives , and even more could be explained at the time a final bill is issued .
+
+further , we found that cbp's data are suitable for conducting such analyses for risk predictions on future entries .
+
+more sophisticated models that cbp could develop , incorporating its institutional expertise , would likely be able to predict risk even more effectively than ours .
+
+as our analysis demonstrates , a more comprehensive analysis of cbp data related to ad / cv duties is feasible and could help cbp better identify key risk factors associated with nonpayment risk .
+
+without such a risk analysis , cbp is also missing opportunities to take appropriate action consistent with its mission to facilitate compliant trade while collecting revenue .
+
+we recommend that the commissioner of cbp take the following three actions: 1 .
+
+to better manage the ad / cv duty liquidation process , cbp should issue guidance directing act to ( a ) collect and analyze data on a regular basis to identify and address the causes of liquidations that occur contrary to the process or outside the 6-month time frame mandated by statute , ( b ) track progress on reducing such liquidations , and ( c ) report on any effects these liquidations may have on revenue .
+
+2 .
+
+to improve risk management in the collection of ad / cv duties and to identify new or changing risks , cbp should regularly conduct a comprehensive risk analysis that assesses both the likelihood and the significance of risk factors related to ad / cv duty collection .
+
+for example , cbp could construct statistical models that explore the associations between potential risk factors and both the probability of nonpayment and the size of nonpayment when it occurs .
+
+3 .
+
+to improve risk management in the collection of ad / cv duties , cbp should , consistent with u.s. law and international obligations , take steps to use its data and risk assessment strategically to mitigate ad / cv duty nonpayment , such as by using predictive risk analysis to identify entries that pose heightened risk and taking appropriate action to mitigate the risk .
+
+we provided a draft of this report for review and comment to cbp , commerce , treasury , and the united states international trade commission .
+
+cbp was the only agency that provided formal agency comments , which are reproduced in appendix iv .
+
+in its comments , cbp concurred with all three of our recommendations .
+
+cbp also identified several actions it intends to take in response to the recommendations .
+
+for example , in response to our first recommendation , cbp said that its offices of trade and field operations will be employing its annual self - inspection program to identify the causes of premature and deemed ad / cv duty liquidations .
+
+cbp set forth two dates for completing both an initial and expanded analysis of incorrect liquidations and addressing the results of its analysis: september 30 , 2016 , to complete the initial analysis , and september 30 , 2017 , to complete the expanded analysis .
+
+in response to our second and third recommendations , cbp said that it has initiated a comprehensive statistical risk analysis that assesses both the likelihood and significance of risk factors related to ad / cv duty collection and will use this risk analysis to develop a predictive model to identify , and take appropriate action to mitigate , the risk from specific entries that pose a higher likelihood of nonpayment of final ad / cv duties .
+
+while concurring with our second and third recommendations , cbp expressed concern that the statistical methodology we used may have produced results that understate the impact of the duty evasion issues relating to high - risk imports from china .
+
+however , cbp did not identify any specific limitations in our methodology .
+
+cbp said that it will conduct its own analysis using statistical methods based on country of origin and other risk factors to identify high - risk entries and mitigate the risk of nonpayment of final ad / cv duties .
+
+we encourage cbp to conduct its own analysis of risk factors , in keeping with our recommendation .
+
+as discussed in this report , our model is one of many possible models , and risk factors are likely to change over time .
+
+our model estimates that , for the 2009 – 2013 period , entries from china were not associated with additional nonpayment risk relative to otherwise identical entries of most products from other countries ; however , we found that entries of certain specific products from china were associated with substantial increases in nonpayment risk .
+
+cbp , commerce , treasury , and the united states international trade commission all provided technical comments , which we incorporated in the report , as appropriate as agreed with your office , unless you publicly announce the contents of this report earlier , we plan no further distribution until 30 days from the report date .
+
+at that time , we will send copies to appropriate congressional committees , the commissioner of cbp , the secretary of commerce , and other interested parties .
+
+in addition , the report will be available at no charge on the gao website at http: / / www.gao.gov .
+
+if you or your staff have any questions about this report , please contact me at ( 202 ) 512-8612 or gianopoulosk@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made key contributions to this report are listed in appendix v .
+
+this report ( 1 ) examines the status and composition of uncollected antidumping ( ad ) and countervailing ( cv ) duties , ( 2 ) the extent to which the u.s. customs and border protection ( cbp ) has taken steps to improve its billing and collection of ad / cv duties , and ( 3 ) the extent to which cbp uses and could further use its data to assess and mitigate the risk to revenue from potentially uncollectible ad / cv duties .
+
+to examine the status and composition of uncollected ad / cv duties , we analyzed cbp data on all open , delinquent duty bills for entries from fiscal year 2001 through fiscal year 2014 , as of may 12 , 2015 .
+
+for this purpose , we combined three datasets from cbp's automated commercial system ( acs ) containing information on entries and billed amounts associated with entries .
+
+acs is used by cbp to track , control , and process all goods entering the united states .
+
+the first acs dataset contained ad / cv duty entry data ; the second contained final assessed ad / cv duty rate data ; and the third contained importer ad / cv duty billing data .
+
+as part of our examination of the status and composition of uncollected ad / cv duties , we analyzed the extent to which cbp writes off uncollectible bills .
+
+the data for this part of the analysis constitutes a fourth dataset , which was also taken from acs and was provided as of october 2015 .
+
+the definition of “uncollected duties” that we use in this report differs slightly from the definition used in our 2008 report .
+
+that report defined “uncollected duties as including all open , unpaid bills for ad / cv duties.” for this report , we narrowed that definition to all open , delinquent bills for ad / cv duties .
+
+according to statute , amounts due to cbp are considered delinquent if they are unpaid within 30 days after issuance of the bill for such a payment .
+
+similar to our 2008 report , we excluded softwood lumber from canada from our analysis because the ad / cv duty collection processes for this product are established through a binational agreement , which is outside the typical practice .
+
+the cbp data we analyzed to determine collection rates for ad / cv duty bills included key characteristics such as the bill amount , importer information , dates of entry , and dates and amounts of liquidation .
+
+using these data , we calculated two different collection rates: ( 1 ) the weighted average percentage of the number of bills collected and ( 2 ) the weighted average percentage of the dollar amount collected .
+
+to calculate this rate , we included data on entries where the final duty rate was higher than the initial estimated duty rate , indicating that a bill would have been issued .
+
+where a bill was issued but no data existed on an associated delinquent bill , we assumed the bill was paid .
+
+because the entry and billing data used to calculate these rates are a snapshot as of may 12 , 2015 — the date our data request was filled — these collection rates are subject to change .
+
+for example , we included data on entries from 2013 and 2014 ; however , about 42 percent of the entries from 2013 and about 77 percent of the entries from 2014 had not been liquidated as of march 2016 .
+
+as more entries from these years are liquidated , the collection rates may change due to a varying ratio of paid to unpaid duty bills ; in addition , the proportion of liquidations resulting in any bill at all may change .
+
+after combining cbp's data , we also used these data to analyze several other characteristics of unpaid bills , including their distribution by dollar amount , top products associated , importers with the highest amounts of unpaid bills , the average time between entry and liquidation across all entries , the frequency with which large rate changes result in unpaid bills , and the age of the bills .
+
+in each analysis , where relevant , we determined the mean and median amounts for comparison .
+
+our analysis consisted of more than 41,000 delinquent bills .
+
+we determined that these data were sufficiently reliable for the purposes of our report .
+
+in addition to analyzing data to determine the status and composition of uncollected ad / cv duties , we reviewed relevant statutes , regulations , and agency reports and interviewed cbp and department of commerce ( commerce ) officials .
+
+to assess the reliability of the acs data , we ( 1 ) performed electronic testing of required data elements , ( 2 ) reviewed existing information about the data and the systems that produced them , and ( 3 ) interviewed agency officials knowledgeable about the data and the systems that produced them .
+
+our electronic testing consisted of automated checks to determine inconsistencies in the data .
+
+we identified several inconsistencies in the data and performed follow - up interviews and analysis to resolve the inconsistencies .
+
+we found the acs data to be generally reliable for purposes of our analysis , with several limitations that required steps outlined below .
+
+to analyze the status and composition of uncollected ad / cv duties , we made several assumptions in order to process the data .
+
+we consolidated our data by unique combinations of entry number and ad / cv duty case number .
+
+each ad / cv duty case number includes codes that indicate , separately , the relevant product and country of origin .
+
+however , the product code is not consistent between countries .
+
+for example , the product code for lemon juice when an entry is from mexico is the same code used for sodium sulfate when an entry is from canada .
+
+we constructed a database using a large list of case numbers provided by cbp .
+
+we then identified , where available , codes from every country corresponding to a given product description .
+
+we conducted a manual search for several missing case numbers .
+
+because of limitations in cbp's database of open bills from acs , we were unable to determine which case number an open bill was associated with .
+
+therefore , in order to avoid falsely attributing open bills to a given case , we dropped open bills associated with entries containing more than one ad / cv duty case number .
+
+while we found a relatively small number of bills containing more than one case number ( 4,224 , or 8 percent of the data ) , dropping these bills means that our results somewhat understate the amount of uncollected duties .
+
+specifically , our methodology may underestimate the amount of uncollected cv duties because , according to cbp , most cv entries also include goods subject to an ad case , but the reverse is not true .
+
+we restricted our analysis to entries that could have resulted in uncollected duties — that is , entries that were liquidated and billed .
+
+in describing the extent and nature of uncollected duties , we considered the principal amount due and any interest accrued in order to present the most comprehensive total picture of unpaid duties owed to cbp .
+
+however , in estimating the risk of nonpayment , we considered only the principal amount due and treated interest accumulated after liquidation as endogenous to the decision not to pay the bill .
+
+ ( see below for further details on our analysis of nonpayment risk. ) .
+
+we conducted a distinct assessment of the reliability of the write - off data because these data were provided separately .
+
+we interviewed an agency official knowledgeable about the source and uses of these data and reviewed the agency's annual performance and accountability reports for fiscal years 2013 – 2015 , which include cbp's financial statements and are audited by an external accounting firm .
+
+using these data , we calculated the dollar amounts of ad / cv duties that cbp has written off by year .
+
+we determined that these data were sufficiently reliable for our purposes .
+
+to examine the extent to which cbp has taken steps to improve its billing and collection of ad / cv duties , we obtained and analyzed data from acs for entries from fiscal year 2001 through fiscal year 2014 , as of may 12 , 2015 ; reviewed relevant statutes , regulations , and agency reports ; and interviewed cbp , commerce , and department of the treasury ( treasury ) officials .
+
+for example , we obtained cbp data showing the extent to which cbp liquidates entries prematurely as well as those it liquidates beyond the 6-month statutory time frame for liquidating ad / cv entries , and we interviewed cbp officials from the office of trade about these processing errors .
+
+however , as discussed in the report , the data were incomplete .
+
+we also obtained cbp documents about the establishment of the antidumping and countervailing centralization team ( act ) and the portal used by the team to identify applicable ad / cv entries for liquidation .
+
+as discussed in the report , we did a check of cbp data and identified 94 ad / cv entries during the period covered by our review .
+
+the 94 entries were all entries where the entry and final liquidation dates had occurred relatively quickly — approximately 30 days apart .
+
+we then asked cbp to check 20 of these entries to determine why the liquidations had occurred so quickly .
+
+cbp officials told us that 7 ( about 35 percent of the 20 entries ) had been prematurely liquidated .
+
+on the basis of that information , we asked cbp to provide additional information about the number of liquidations that had occurred prematurely and any that had occurred beyond the statutory 6-month time frame for liquidating entries .
+
+cbp provided information from a february 2015 analysis .
+
+however , as discussed in the report , prior to the act portal cbp had no means of accurately tracking the number of premature and deemed liquidations occurring .
+
+for that reason , the february 2015 analysis is not comprehensive in nature .
+
+to follow up on the finding from our 2008 report that cbp collects little information regarding importers of record , we examined cbp's planned revisions to its form 5106 , which cbp uses to collect key importer of record information and make decisions regarding bonding and other matters .
+
+we discussed the planned revisions with cbp officials .
+
+customs bonds are used to safeguard revenue and , according to cbp officials , play an important role in cbp's efforts to improve ad / cv collections .
+
+to follow up on another finding from our 2008 report — that cbp's standard bond formula provides little protection of ad / cv duty revenue , we met with three of the major associations that represent the companies ( known as sureties ) that issue customs bonds .
+
+we discussed , among other topics , how customs bonds are used by importers to pay for ad / cv duties , changes in the sureties' bond underwriting patterns that have occurred since our 2008 report , and cbp's introduction of an electronic bond .
+
+we also met with cbp officials to understand how cbp has made changes to address the concerns discussed in our 2008 report that the standard bonding formula provides little protection of ad / cv duty revenue .
+
+two cbp offices currently play major roles in the management of customs bonds used to pay ad / cv duties: the office of trade and the office of finance .
+
+we discussed with officials from those offices cbp's efforts to centralize the management of all bonds and to change the bonding formulas to address concerns that the standard bonding formulas do not sufficiently protect revenue .
+
+we also obtained data showing how cbp has required ad / cv importers to obtain both continuous entry bonds and single transaction bonds to address the payment of unforeseen obligations to the u.s. government .
+
+as part of our analysis of cbp's ad / cv duty collection process , we examined bond use before and after the april 2006 through june 2009 suspension of the new shipper bonding privilege .
+
+to accomplish this , we combined two separate datasets .
+
+the first was from a commerce database that documents new shipper reviews for fiscal years 2002 through 2015 .
+
+the second was the previously described data from acs containing information on entries and billed amounts associated with entries for fiscal years 2001 through 2014 , as of may 12 , 2015 .
+
+because the commerce and cbp datasets did not always use the same format or spelling for the names of importers , we performed both an automated and a manual matching of importer names in both datasets to identify the universe of entries likely to be associated with a new shipper .
+
+we then produced summary statistics for the amounts of delinquent duties associated with new shippers as a group , with and without bonds , and comparable statistics for the amount of delinquent duties associated with all other shippers , with and without bonds .
+
+we also compared these data for the pre - and post - 2006 through 2009 periods .
+
+because the time frames associated with the commerce and cbp datasets did not exactly coincide , we decided to use in our analysis a timeframe common to both: january 2002 through december 2013 .
+
+we performed tests of the data and determined , based on those tests and interviews , that the data were sufficiently reliable for our analysis .
+
+to examine the extent to which cbp assesses and mitigates the risk to revenue from potentially uncollectible ad / cv duties , we combined the three datasets from acs into a single database .
+
+the database is associated with entries from fiscal year 2001 through fiscal year 2014 , as of may 12 , 2015 .
+
+to develop a reasonable risk measurement for use in addressing the risk of ad / cv duty nonpayment , we first examined agency goals and criteria ( including federal internal controls criteria ) and identified expected loss per shipment ( in terms of uncollected duties ) .
+
+we also reviewed cbp's reports to congress .
+
+to calculate an expected loss score , we mathematically extrapolated expected loss into two measurable components: ( 1 ) likelihood of ad / cv duty nonpayment and ( 2 ) the amount of duties not paid contingent on nonpayment ( loss per nonpayment ) .
+
+in developing a regression model to analyze each of these two risk measures , we created several variables that describe importer and manufacturer characteristics derived from variables in acs .
+
+to determine associations with likelihood of duty nonpayment , we calculated the coefficients of the regression of country , product , and other shipment characteristics on the binary variable “delinquent.” as many of our variables are indicator variables , we found that a linear fit was a good approximation of a logistic regression and had the advantages of being less computationally intensive and producing coefficients that fit intuitively into a risk scorecard .
+
+to determine associations with size of nonpayment , we regressed the same independent variables on the continuous variable “amount delinquent.” to determine whether our models are appropriate for forecasting , we ran a series of regressions over 2-year periods .
+
+we selected several risk factors for review based on the size and statistical significance of their coefficients in the full 2001 – 2014 period regression model .
+
+we found that these risk factors , as evidenced by their coefficients , are generally stable over time in our year - by - year regression models , retaining the same sign and comparable magnitudes .
+
+however , some risk factors also change over time , for example , large changes in magnitude ( eg , vietnam ) or changing sign from positive to negative or vice versa ( eg , mexico ) .
+
+our regression models do not establish whether a given factor causes nonpayment or is merely correlated with this risk .
+
+the models provide an example of how cbp data could be systematically analyzed to provide insights into bill delinquency patterns , but we do not intend them to be prescriptive .
+
+to determine appropriate periods of time for analysis , we examined the effect of including data from a range of periods .
+
+we sequentially expanded the regression analysis to include data from 2011 – 2013 , adding additional years up to and including 2005 – 2013 , as well as groupings of 2005 – 2009 and 2004 – 2008 .
+
+expanding the period of analysis may have several effects .
+
+for example , increasing the available data will generally result in more accurate estimates and therefore more accurate models .
+
+on the other hand , longer periods may be associated with greater amounts of systemic change in risk factors and therefore yield less accurate models .
+
+for each period , we constructed the model on one portion of our data and tested the model's ability to identify the likelihood of nonpayment for entries outside of this sample ( “out - of - sample predictive power” ) .
+
+we measured the model fit for this cross - validation process for each period and found that the model's out - of - sample predictive power improved until we included 5 years of data ( 2010 – 2013 ) , at which point the predictive power roughly plateaued with an r - squared value estimated at 0.75 - 0.77 out of sample for probability of nonpayment .
+
+as a result , we believe that models constructed with 5 – 9 years of past data would be reasonable .
+
+we selected 5-year periods ( 2004 – 2008 and 2009 – 2013 ) for purposes of comparing useful models from distinct periods .
+
+this allowed us to compare datasets from two equal periods , one corresponding to the period of our 2008 report and the other corresponding to the most recent period for which complete data were available .
+
+because fewer data are available to cbp at entry than at liquidation , we also ran out - of - sample tests without the variables for “net billed amount” and “rate review period length.” we found that the model remains useful at entry: our ability to predict probability of nonpayment was unaffected , while our ability to predict the loss per nonpayment was reduced by a moderate amount .
+
+this reduction was expected given that loss per nonpayment is a function of the amount billed , and the amount billed is determined by cbp after entry , based on the final duty rate set by commerce .
+
+using our full set of data , we found that duty rate increases and decreases for many product types were systematically predictable .
+
+we presented the results of our regression analysis to cbp on two occasions .
+
+based on their comments , we adjusted the methodology used to derive our analysis .
+
+as discussed previously , we assessed the reliability of the acs data and had to make several assumptions in order to process the data .
+
+beyond the assumptions discussed above , in order to perform our regression analysis , we had to make several additional assumptions .
+
+these are discussed in appendix ii .
+
+we conducted this performance audit from january 2015 to july 2016 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we conducted a systematic statistical analysis of u.s. customs and border protection ( cbp ) data to identify factors affecting the risk of antidumping ( ad ) and countervailing ( cv ) duty nonpayment .
+
+cbp provided data we requested from its automated commercial system ( acs ) — cbp's data system for tracking , controlling , and processing all goods imported into the united states — as well as from cbp billing data , and we consolidated these data files into a single database .
+
+to demonstrate how a statistical model could be constructed that explores the association between potential risk factors and the potential for nonpayment , we used cbp's data to develop two regression models , one to estimate the likelihood of nonpayment for any given entry and one to estimate the size of revenue loss if nonpayment occurs .
+
+mathematically , the likelihood of nonpayment and the size of the loss if nonpayment occurs are the two components of expected loss .
+
+our regression models do not establish whether a given factor causes nonpayment or is merely correlated with this risk .
+
+to be useful for risk management , such a model would need to be able to predict future nonpayment risk .
+
+as a result , to assess the ability of the model to predict future losses , we aggregated , cross - validated , and analyzed the data for two separate 5-year periods and conducted qualitative assessments of parameter stability .
+
+our models provide a demonstration of how cbp could systematically analyze its data to provide insights into bill delinquency patterns , but we do not intend to be prescriptive .
+
+our analysis merely demonstrates that a substantial proportion of nonpayment risk can be explained with information available to cbp at the time an entry arrives and , later , at liquidation , even with the limited dataset that we used .
+
+more sophisticated models that could further incorporate cbp's institutional expertise would likely be able to predict risk even more effectively .
+
+our analysis is based on data collected in acs , cbp's data storage systems for imports subject to ad / cv duties .
+
+we combined these data with information that cbp stores on open ad / cv duty bills .
+
+our data included information on entries from fiscal year 2001 through fiscal year 2014 .
+
+for this analysis , with the exception of a product codes database that we constructed from cbp sources , we did not incorporate any external or additional databases in our analysis .
+
+prior to conducting our analysis , we assessed cbp's databases and found them to be generally reliable for purposes of our analysis .
+
+while we used a number of diagnostic tests to confirm the stability and predictive power of the risk factors estimated by our model , additional data and alternative modeling approaches could produce different results .
+
+our model is based on a number of statistical assumptions , some of which may not correspond to the underlying process that generates ad / cv duty losses from nonpayment .
+
+these statistical assumptions may include the linearity of risk factors in our functional form , the potential that variables omitted because they were not in cbp's databases or are otherwise difficult to quantify would change estimates of risk , and the potential sensitivity of our statistical inference to deviations from normality .
+
+we processed the data from cbp by taking the following steps , which required several additional assumptions as noted: 1 .
+
+we consolidated our data by unique combinations of entry number and ad / cv duty case number .
+
+2 .
+
+we identified the product type associated with each case number .
+
+each ad / cv duty case number includes codes that indicate , separately , the relevant product type and country of origin .
+
+however , the product code is not consistent between countries .
+
+for example , the product code for lemon juice when an entry is from mexico is the same code used for sodium sulfate when an entry is from canada .
+
+we constructed a database using a large list of case numbers provided by cbp .
+
+we then identified , where available , cases from every country corresponding to a given product description .
+
+we conducted a manual search for several missing case numbers .
+
+3 .
+
+we dropped open bills associated with entries containing more than one ad / cv duty case number in order to avoid falsely attributing open bills to a given case .
+
+because of limitations in cbp's database of open bills , we were unable to determine for any open bill its corresponding case number .
+
+4 .
+
+we removed a small number of entries that did not have information recorded for the dollar value of the product being imported , which is a necessary component of ad / cv duty rate determination .
+
+5 .
+
+we restricted our analysis to entries subject to ad / cv duties that could have resulted in uncollected duties — that is , entries that were liquidated and billed .
+
+because of data limitations , we estimated billed amounts by summing the final assessed duty with accumulated interest and subtracting any initial payment ; we retained only entries where this “net bill” amount was greater than $0 ( zero ) .
+
+while analytically imperfect , this was a reasonable approach , according to cbp officials .
+
+6 .
+
+we considered only the principal amount due for open bills .
+
+in assessing the amount of uncollected duties , we assumed that interest accumulated after liquidation follows from the decision not to pay the bill .
+
+because of limitations in the data provided by cbp , we are unable to account for the proportion of duties owed that may have been covered by surety bonds and thus potentially collectible by cbp in the event of delinquency .
+
+7 .
+
+we logarithmically transformed variables that contained long - tail distributions .
+
+8 .
+
+we identified delinquent bills as those that were 31 days old or older with unpaid amounts , consistent with the requirements of 19 u.s.c .
+
+§ 1505 ( d ) , which allows the charging of interest on billed but unpaid amounts after 30 days .
+
+9 .
+
+in order to reduce noise in our analysis , we did not test for the risk associated with products and countries from which there were fewer than 15 delinquent bills .
+
+because of general policy interest in chinese entries , we controlled for the interaction effect of chinese origin and product type for products that met the volume criteria described above .
+
+we retained these interaction variables for products with more than 15 entries from china , and we removed redundant controls for products entering almost exclusively from china ( i.e. , products for which more than 99.5 percent of the entries originated from china ) .
+
+10 .
+
+we created several variables that describe importer and manufacturer characteristics derived from variables in acs .
+
+all variables included in our model and their derivations are described in tables 2 and 3 .
+
+summary statistics for these variables are included in tables 4 and 5 .
+
+we ran two regression models for each of two 5-year periods — full calendar years 2004 – 2008 and 2009 – 2013 .
+
+in order to determine associations with probability of nonpayment , we regressed country of origin , product , and other shipment characteristics on the binary variable “delinquent.” as many of our variables are indicator variables , we found that a linear fit was a good approximation of a logistic regression and had the advantages of being less computationally intensive and producing coefficients that fit intuitively into a risk scorecard .
+
+in order to determine associations with size of nonpayment , we regressed the same independent variables on the continuous variable “amount delinquent.” see table 6 for regression coefficients from these models for each relevant time period .
+
+we restricted this second model to entries associated with a delinquent bill .
+
+model 1 , run for each 5-year period: delinquent = β0 + β1*loglinevalue + β2*bondind + β3*lognetbill + β4*logentrytimegapman + β5*logentryspanman + β6*logentrytimegapimp + β7*logentryspanimp + β8*logcountman + β9*logcountimp + β10*logprevmeanman +β11*logprevmeanimp + β12*logdelimp + β13*logdelman + β14*loghowlong + β15*earlydelin + β16*initialtar + β* + β* + β* model 2 , run for each 5-year period: logamtdelinquent = β0 + β1*loglinevalue + β2*bondind + β3*lognetbill + β4*logentrytimegapman + β5*logentryspanman + β6*logentrytimegapimp + β7*logentryspanimp + β8*logcountman + β9*logcountimp + β10*logprevmeanman +β11*logprevmeanimp + β12*logdelimp + β13*logdelman + β14*loghowlong + β15*earlydelin + β16*initialtar + β* + β* + β* ( restricted to entries associated with a delinquent bill ) .
+
+in order to determine whether risk factors were generally stable over various periods of time and hence whether our models were in principle appropriate for forecasting , we ran a series of regressions over 2-year time periods .
+
+we selected several risk factors for review based on the size and statistical significance of their coefficients in the full 2001 – 2014 period regression model .
+
+we found that these risk factors , as evidenced by their coefficients , are generally stable over time in our year - by - year regression models , retaining the same sign and comparable magnitudes .
+
+however , some risk factors also change over time , for example , showing large changes in magnitude or changing sign .
+
+these results suggest that in principle models like the one we developed could be useful for forecasting risk of loss and , further , that changes over time suggest risk factor estimates should be updated periodically .
+
+in order to determine appropriate time periods for analysis , we examined the effect of including data from a range of time periods .
+
+we sequentially expanded the regression analysis to include data from 2011 – 2013 , adding additional years up to and including 2005 – 2013 , as well as groupings of 2005 – 2009 and 2004 – 2008 .
+
+expanding the time period of analysis may have several effects .
+
+for example , increasing the available data will generally result in more precise estimates and therefore models that are more likely to capture inherent , underlying risks .
+
+on the other hand , longer time periods may be associated with greater amounts of systemic change in risk factors and therefore models that are less reflective of contemporary underlying risks .
+
+for each time period , we constructed the model on one portion of our data and tested the model's ability to identify the likelihood of nonpayment for entries outside of this sample ( “out - of - sample predictive power” ) .
+
+we measured the model fit for this cross - validation process for each time period and found that the model's out - of - sample predictive power improved until we included 5 years of data ( 2009 – 2013 ) , at which point the predictive power roughly plateaued with an r - squared value estimated at about 0.75-0.77 out of sample for probability of nonpayment ( see table 7 ) .
+
+as a result , we believe that models constructed with 5 – 9 years of past data would be reasonable .
+
+we selected 5-year periods ( 2004 – 2008 and 2009 – 2013 ) for purposes of comparing the results of our models on datasets from distinct time periods .
+
+our selection of these particular 5-year periods allowed us to compare results from two full time periods of data that correspond to the most current data available from cbp and the data from approximately the time of our 2008 report on ad / cv duties .
+
+because fewer data are available to cbp at entry than at liquidation , we also ran out - of - sample tests without the variables for net billed amount ( “netbill” ) and rate review period length ( “loghoqlong” ) .
+
+we found that the model remains useful at entry: our ability to predict probability of nonpayment was unaffected , while our ability to predict the loss per nonpayment was reduced from an r - squared value of 0.985 to a value of 0.27 .
+
+this reduction is to be expected given that loss per nonpayment is a function of the amount billed , and the amount billed is the result of cbp's application of the ad / cv duty rate determined by commerce after entry ; “netbill” almost perfectly explains the size of loss if nonpayment occurs , and we did not include it in this version of the model .
+
+however , we found that the increase or decrease from the initial estimated duty rate to the final duty rate was , to some extent , predictable using the information that cbp has available at entry .
+
+hence , the model works reasonably well for predicting the size of loss if nonpayment occurs before commerce has set the final rate .
+
+using our full set of data , not restricted to entries with netbill > 0 , we found that the coefficients associated with many product types were highly statistically significant , indicating that at least some can meaningfully predict rate increases and decreases ; hence , the lack of information at entry about the liquidation that ultimately will be applied to the entry is mitigated to some extent .
+
+we performed an analysis of importers' use of the new shipper bonding privilege before and after the suspension of the bonding privilege from august 2006 through july 2009 .
+
+our analysis shows the following: after the new shipper bonding privilege was reinstated , importers made much less use of it to pay initial estimated ad / cv duties compared with the period before the privilege was suspended .
+
+most of the importers that obtained the new shipper bonds , including both before and after the suspension of the privilege , were associated with unpaid bills .
+
+new shippers that used a bond to pay estimated ad / cv duties did not account for a significant amount of the total unpaid debt during either of the two periods when the bonding privilege was in effect .
+
+over the entire time frame we examined , from january 2002 through december 2013 , new shippers that paid their estimated ad / cv duties in cash were associated with many fewer unpaid bills than importers that obtained new shipper bonds .
+
+in august 2006 , congress temporarily suspended the “new shipper bonding privilege” that allowed importers purchasing goods from companies undergoing a new shipper review to provide a bond , instead of cash , to cover estimated antidumping ( ad ) and countervailing ( cv ) duties due at entry .
+
+as a result , importers of these goods were required to provide a cash deposit to cover the estimated duties .
+
+however , the temporary suspension expired and the privilege was reinstated in july 2009 .
+
+in february 2016 , the president signed legislation removing the new shipper bonding privilege .
+
+figure 17 shows when the new shipper bonding privilege was and was not in effect for the period of our review .
+
+we performed an analysis of importers' use of the new shipper bonding privilege before and after the suspension of the bonding privilege .
+
+we also examined the extent to which these importers were associated with unpaid bills .
+
+in addition , we examined the extent to which importers that used a new shipper bond to pay for estimated ad / cv duties accounted for the total amount of unpaid debt .
+
+finally , for comparison , we examined the extent to which new shippers that used cash instead of a bond to pay for estimated ad / cv duties due at entry were associated with unpaid bills .
+
+our analysis of the new shipper bonding privilege focused on two periods: from january 2002 through july 2006 ( before the new shipper bonding privilege was suspended ) and from august 2009 through december 2013 ( after the new shipper bonding privilege was reinstated ) .
+
+because the use of a cash deposit was allowed during the entire period from january 2002 through december 2013 , we used this period to analyze how the use of cash deposits by new shippers was associated with unpaid bills .
+
+the analysis shows that after the new shipper bonding privilege was reinstated , importers made much less use of it to pay initial estimated ad / cv duties compared with the period before the privilege was suspended .
+
+from january 2002 through july 2006 , 32 importers used new shipper bonds .
+
+these importers used new shipper bonds to pay duties on 1,558 entries subject to ad / cv duties assessed at approximately $154 million .
+
+by comparison , in the period after the reinstatement of the privilege , from august 2009 through december 2013 , only 1 importer used a new shipper bond .
+
+this importer used new shipper bonds to pay for 3 entries subject to ad / cv duties worth approximately $511,000 .
+
+according to surety officials we interviewed , sureties tightened their underwriting standards in 2009 , and this could account for the vastly reduced number of new shipper bonds issued .
+
+moreover , our analysis also shows that most of the importers that obtained the new shipper bonds , including both before and after the suspension of the privilege , were associated with unpaid bills .
+
+for example , before the suspension ( january 2002 through july 2006 ) , 25 of the 32 importers ( or approximately 78 percent ) that used a new shipper bond had one or more unpaid bills .
+
+approximately 76 percent of the bills issued to these importers during this period went unpaid .
+
+the total amount that went unpaid was approximately $89 million , with a median bill amount of about $13,000 and an average bill amount of about $75,000 .
+
+after the suspension was lifted until december 2013 , the 1 importer that used new shipper bonds did not pay any of its bills and the total amount due was approximately $560,000 .
+
+the median and average bill amounts were approximately $180,000 and $187,000 , respectively .
+
+in addition , our analysis shows that new shippers that used a bond to pay for estimated ad / cv duties did not account for a significant amount of the total unpaid debt during either of the two periods when the bonding privilege was in effect .
+
+for the period from january 2002 through july 2006 , these new shippers accounted for about 11 percent of all unpaid bills .
+
+for the period after the reinstatement of the privilege through december 2013 , the percentage of total unpaid debt associated with new shippers that used a bond to pay for estimated ad / cv duties was less than 1 percent .
+
+our analysis also shows that by comparison , over the entire time frame we examined , new shippers that paid their estimated ad / cv duties in cash were associated with many fewer unpaid bills .
+
+from january 2002 through december 2013 , a total of 42 importers associated with a new shipper review used a cash deposit instead of a bond to pay for estimated ad / cv duties .
+
+of the 42 , only 1 was associated with an unpaid bill .
+
+this importer had two unpaid bills worth a total of about $6,000 .
+
+in addition to the contact named above , christine broderick ( assistant director ) , josé m. peña iii , ( analyst in charge ) , kerri eisenbach , andrew kurtzman , and cristina ruggiero made key contributions to this report .
+
+also contributing were ming chen , gergana danailova - trainor , david dayton , michael hoffman , julia jebo grant , mitchell karpman , grace lui , michael maslowski , marc molino , and eddie uyekawa .
+
+antidumping and countervailing duties: key challenges to small and medium - sized enterprises' pursuit of the imposition of trade remedies .
+
+gao - 13-575 .
+
+washington , d.c.: june 25 , 2013 .
+
+antidumping and countervailing duties: management enhancements needed to improve efforts to detect and deter duty evasion .
+
+gao - 12-551 .
+
+washington , d.c.: may 17 , 2012 .
+
+options for collecting revenues on liquidated entries of merchandise evading antidumping and countervailing duties .
+
+gao - 12-131r .
+
+washington , d.c.: november 2 , 2011 .
+
+agencies believe strengthening international agreements to improve collection of antidumping and countervailing duties would be difficult and ineffective .
+
+gao - 08-876r .
+
+washington , d.c.: july 24 , 2008 .
+
+antidumping and countervailing duties: congress and agencies should take additional steps to reduce substantial shortfalls in duty collection .
+
+gao - 08-391 .
+
+washington , d.c.: march 26 , 2008. international trade: customs' revised bonding policy reduces risk of uncollected duties , but concerns about uneven implementation and effects remain .
+
+gao - 07-50 .
+
+washington , d.c.: october 18 , 2006 .
+
+u.s. - china trade: eliminating nonmarket economy methodology would lower antidumping duties for some chinese companies .
+
+gao - 06-231 .
+
+washington , d.c.: january 10 , 2006 .
+
+u.s. - china trade: commerce faces practical and legal challenges in applying countervailing duties .
+
+gao - 06-231 .
+
+washington , d.c.: june 17 , 2005 .
+

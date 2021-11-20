@@ -1,0 +1,544 @@
+we reviewed information system general controls over the financial systems that process and account for the financial activities of the district of columbia's highway trust fund as part of our annual required audit of the fund's financial statement for fiscal year 1999 .
+
+effective information system general controls are essential to ensure that fund financial information is adequately protected from inadvertent or deliberate misuse , fraudulent use , improper disclosure , and destruction .
+
+this report discusses computer security weaknesses at ( 1 ) the department of public works ( dpw ) , which is responsible for processing , accounting for , and reporting on the fund's financial activities and ( 2 ) the office of the chief financial officer ( ocfo ) and the office of the chief technology officer ( octo ) , which are also responsible for information system general controls that could affect fund financial systems .
+
+because of the serious and pervasive nature of these weaknesses , we reported information system controls as a material weakness in the fund's financial audit report for fiscal year 1999 .
+
+today , we are also issuing a report designated for “limited official use,” which describes each of the 50 computer security weaknesses identified in more detail and offers specific recommendations for correcting each of them .
+
+this version of the report provides a general summary of the weaknesses we identified and the recommendations we made .
+
+after we completed our fieldwork , the district provided us with information regarding corrective actions taken or planned .
+
+these actions are noted in this report ; we intend to evaluate the effectiveness of these corrective actions as part of our follow - up on the district's implementation of our recommendations .
+
+in 1995 , the district of columbia established the highway trust fund , as required by the district of columbia emergency highway relief act .
+
+this dedicated trust fund is required to include amounts equivalent to receipts from motor fuel taxes and to be separate from the district's general fund .
+
+for fiscal year 1999 , motor fuel tax revenues were reported to be almost $31 million .
+
+the fund is used to reimburse the district for local capital appropriated expenditures , which are ( 1 ) the district's share ( normally 20 percent ) of federal aid highway project costs , ( 2 ) the salaries of district personnel working directly on transportation capital projects , ( 3 ) overhead costs associated with federal aid projects , and ( 4 ) other nonparticipating costs .
+
+all federal and local capital appropriated expenditures are paid out of dpw's capital operating account and then reimbursed by either the department of transportation's federal highway administration ( fhwa ) or the fund .
+
+dpw is responsible for processing , accounting for , and reporting on the fund's financial activities .
+
+to accomplish these functions , dpw relies on the system of accounting and reporting ( soar ) , which is developed and maintained by ocfo .
+
+the district also uses soar to manage certain district - wide purchasing and financial reporting activities .
+
+ocfo maintains soar , along with other district payroll , personnel , and tax information , on a computer system at its share computer center .
+
+in fiscal year 1999 , the district's two payroll and personnel applications — the unified pay and personnel system and the centralized automated payroll and personnel system — accounted for more than $1.5 billion in reported expenditures relating to the district payroll and employee benefits .
+
+in addition , tax applications residing on this computer system controlled district sales and use , employer withholding , corporate franchise , unincorporated franchise and hotel , personal property , and individual income tax revenues for fiscal year 1999 .
+
+dpw also relies on its own local area network ( lan ) , the district's wide area network ( wan ) — which is managed by octo — and the internet to transfer fund information to and from the share computer center .
+
+the district's wan not only allows dpw staff to access systems maintained at the share computer center , but also connects other district organizations — such as the metropolitan police department , the district general hospital , and the district public school system — to these systems and systems at the district's other five data centers .
+
+in addition , some district financial information is maintained on the network .
+
+for example , the network - based real property tax 2000 system contains land records , facilitates data analysis for property valuation and tax administration , maintains all district real property tax roll and levy entries , and supports automated management of real property tax accounts receivable adjustments , payment posting , and billing information .
+
+altogether , the district's wan serves about 30 sites , which support approximately 60 district agencies and offices .
+
+to secure , protect , and preserve district information systems , such as those relied on to account for fund and other district financial activities , district law requires the mayor to establish , maintain , and provide consistent computer security policies , principles , and standards for all district departments and agencies .
+
+more specifically , district law tasks octo with coordinating the development of information management plans , standards , systems , and procedures throughout the district government .
+
+our objective was to evaluate the design and test the overall effectiveness of information system general controls over the fund's financial systems , which are maintained and operated by three district organizations: dpw , ocfo , and octo .
+
+these information system general controls , however , also affect the security and reliability of other sensitive data , including district financial , payroll , personnel , and tax information , that is maintained on the same computer system as the fund's financial information .
+
+specifically , we evaluated information system general controls intended to protect data and application programs from unauthorized access ; prevent the introduction of unauthorized changes to application and provide segregation of duties involving application programming , system programming , computer operations , information security , and quality assurance ; assure recovery of computer processing operations in case of a disaster or other unexpected interruption ; and ensure adequate computer security program management .
+
+to evaluate these controls , we identified and reviewed district policies and procedures , conducted tests and observations of controls in operation , and held discussions with dpw , ocfo , and octo staff to determine if information system general controls were in place , adequately designed , and operating effectively .
+
+our evaluation was based on ( 1 ) our federal information system controls audit manual ( fiscam ) , which contains guidance for reviewing information system controls that affect the integrity , confidentiality , and availability of computerized data , and ( 2 ) the results of our may 1998 study of security management best practices at leading organizations , which identifies key elements of an effective information security program .
+
+we performed our work from june through august 2000 in accordance with generally accepted government auditing standards .
+
+because the objective of our work was to assess the overall effectiveness of information system general controls , we did not fully evaluate all computer controls .
+
+consequently , additional vulnerabilities could exist .
+
+we requested comments on a draft of this report from the district's chief technology officer .
+
+she provided us with written comments , which are discussed in the “agency comments” section and reprinted in appendix i .
+
+a basic management objective for any organization is to protect its data from unauthorized access and prevent improper modification , disclosure , or deletion of financial and sensitive information .
+
+our review of the district's information system general controls found that they were not adequately protecting the fund's financial activities or other district financial , payroll , personnel , and tax information that also reside at ocfo's share computer center .
+
+specifically , the district had not adequately limited access granted to authorized users , properly managed user ids and passwords , effectively maintained system software controls , or sufficiently protected its networks and other computer systems from unauthorized users .
+
+in addition , the risks created by these access control weaknesses were compounded because the district was not routinely monitoring access activity to identify and investigate unusual or suspicious access patterns that could indicate unauthorized access .
+
+consequently , district systems , programs , and data maintained at ocfo's share computer center risk inadvertent or deliberate misuse , fraudulent use , and unauthorized alteration or destruction occurring without detection .
+
+district management has recognized the weaknesses we identified and has expressed its commitment to improving information system controls .
+
+subsequent to our fieldwork , district officials provided us with action plans that , if implemented properly , should correct the weaknesses we identified .
+
+the following sections summarize the results of our review of information system general controls over the district financial systems used to manage fund operations .
+
+a key weakness in the district's internal controls was that it was not adequately limiting the access of employees and other authorized users to fund and other district financial , payroll , personnel , and tax information maintained at ocfo's share computer center .
+
+organizations can protect information from unauthorized changes or disclosures by granting employees authority to read or modify only those programs and data necessary to perform their duties .
+
+however , we found several examples where the district had not adequately restricted the access of legitimate users on the computer system that maintains fund and other district financial , payroll , personnel , and tax information .
+
+the district allowed all of the more than 4,300 active user ids full access to 20 system software libraries that are used to perform sensitive system functions that can be used to circumvent all security controls .
+
+such access increased the risk that users could bypass security controls to alter or delete any computer data or programs on this system .
+
+security software on the system that maintains fund and other district financial , payroll , personnel , and tax information was not implemented to automatically deny unauthorized access attempts .
+
+we determined that 689 access rules controlling access to data and program files , including a system software library that could be used to bypass other security controls and a payroll library that contained check processing data , were set to generate a warning message when access violations occurred , but permit the unauthorized access to proceed .
+
+consequently , risk of improper access and changes to critical data files and programs occurring without detection is heightened .
+
+more than 265 user ids on the system used to process fund and other district financial information were granted the tape bypass label processing privilege that allows users to read and alter any tape regardless of other security software controls .
+
+these users included network support staff , database administrators , soar application programmers , payroll staff , department of human services staff , and certain application users .
+
+as a result , these users have unlimited access to all tape files , including system audit logs and backup copies of sensitive financial and tax information .
+
+one reason for the district's user access problems was that access authority was not being reviewed .
+
+such reviews would have allowed the district to identify and correct inappropriate access .
+
+ocfo officials told us that share computer center staff had changed the security software configuration so that all unauthorized attempts are denied and restricted the tape bypass label processing privilege to only those users with a specific business need .
+
+ocfo officials also told us that share computer center staff would complete reviewing and limiting access to sensitive system libraries by march 31 , 2001 .
+
+in addition , ocfo officials stated that procedures to periodically review ( 1 ) access granted to sensitive system files , ( 2 ) security software configuration settings , and ( 3 ) access activity allowed by the tape bypass label processing privilege for appropriateness would be implemented by march 31 , 2001 .
+
+in addition to overseeing user access authority , it is also important to actively manage user ids and passwords to ensure that users can be identified and authenticated .
+
+to accomplish this objective , organizations should establish controls to maintain and protect the confidentiality of passwords .
+
+these controls should include requirements to ensure that ids uniquely identify users ; passwords are changed periodically , contain a specified number of characters , and are not common words ; default ids and passwords are changed to prevent their use ; and the number of invalid password attempts is limited to preclude password guessing .
+
+organizations should also evaluate the effectiveness of these controls periodically to ensure that they are operating effectively .
+
+at the district , however , user ids and passwords were not being managed to sufficiently reduce the risk of unauthorized access to the computer system that maintains fund and other district financial , payroll , personnel , and tax information .
+
+for instance , the system was configured in a manner that did not always require passwords for user authentication .
+
+in addition , passwords that existed were not prevented from being ( 1 ) fewer than six characters , ( 2 ) the same as the user id , or ( 3 ) other easily guessed words .
+
+further , users were allowed the opportunity to circumvent password change requirements by reusing the same password over and over .
+
+consequently , the district faced increased risks that passwords could be compromised to gain unauthorized access to financial and other sensitive information maintained on this computer system .
+
+ocfo officials told us that share computer center staff had changed password control settings to require passwords to contain at least six characters and prevent passwords from being easily guessed words , such as the user id .
+
+we also found instances where the district was not promptly removing unused or unneeded ids or deleting ids for terminated employees .
+
+for example , more than 1,400 user ids had not been used for at least 7 months .
+
+allowing inactive ids to persist poses needless risk that unnecessary ids will be used to gain unauthorized access .
+
+we also found cases where terminated employees were provided the opportunity to sabotage or impair fund and other district financial operations because their user ids were not promptly disabled .
+
+ocfo officials told us that share computer center staff would implement procedures to ensure that inactive ids and ids for terminated employees are promptly disabled no later than march 31 , 2001 .
+
+it is also essential to control access to and modification of system software to protect the overall integrity and reliability of information systems .
+
+system software controls , which limit and monitor access to the powerful programs and sensitive files associated with computer system operation , are important in providing reasonable assurance that access controls are not compromised and that the system will not be impaired .
+
+if controls in this area are not adequate , system software might be used to bypass security controls , gain unauthorized privileges that allow improper actions , or circumvent edits and other controls built into application programs .
+
+the district was not properly controlling system software to prevent access controls on the computer system used to process fund and other district financial , payroll , and tax applications from being circumvented .
+
+the system software control weaknesses we identified diminish the reliability of financial and other sensitive information maintained on this computer system and increase the risk of inadvertent or deliberate misuse , fraudulent use , improper disclosure , and disruption .
+
+in addition , we identified system software configuration weaknesses that could allow users to bypass access controls and gain unauthorized access to fund and other district financial , payroll , personnel , and tax information .
+
+for example , the operating system was set up in a manner that allowed programs in any of the 74 libraries included in the normal search sequence to perform sensitive system functions and operate outside of security software controls .
+
+because users generally have access to such libraries , this greatly increases the risk that unauthorized programs could be introduced to bypass other access controls and improperly access or modify financial , audit trail , or other sensitive information maintained on this computer system .
+
+further , the district had not instituted processes to control changes to system software on this computer system .
+
+in the past 2 years , ocfo had implemented several major system software changes , such as installing new versions of database management , communication , access control , and operating system software .
+
+however , it was not maintaining a comprehensive log of system software changes , consistently documenting these changes and related test results , or independently testing system software changes before implementation .
+
+consequently , the district faces increased risks of unintended operational problems caused by programming errors or the deliberate execution of unauthorized programs that could compromise security controls .
+
+the district was also not adequately reviewing programs in sensitive system libraries to identify and correct weaknesses that could be used to circumvent security controls .
+
+consequently , we found potential problems that , at a minimum , diminish the reliability of system software , but could also be exploited to introduce malicious code or circumvent other access controls .
+
+for example , 13 files capable of performing sensitive system privileges did not exist on the volume specified in the table used to manage such files .
+
+this increases the risk that unauthorized programs could be substituted for these files without management approval and used to bypass other security controls or inappropriately modify audit trails or sensitive data .
+
+until the district begins actively managing programs in sensitive system software libraries , it will not have adequate assurance that other security controls cannot be bypassed .
+
+ocfo officials told us that share computer center staff would implement policies and procedures by june 30 , 2001 , to ( 1 ) review system configuration settings periodically for appropriateness , ( 2 ) ensure that system software changes are authorized , independently tested , documented , and approved prior to implementation , and ( 3 ) evaluate programs in sensitive system libraries to identify and correct potential problems .
+
+the risks associated with the access and system software control problems we identified were also heightened because the district was not adequately protecting access to its networks or restricting access to the system that processes fund and other district financial applications from the internet .
+
+we found several network user id and password management weaknesses that could be exploited to gain unauthorized access to district systems .
+
+for example , a common default account was available on one dpw network server .
+
+in addition , certain network systems on the dpw lan and / or district wan were not set up to require password authentication , ensure that passwords were changed periodically , or disable user ids after a specified number of invalid password attempts .
+
+in addition , network system software configuration weaknesses could allow users to bypass access controls and gain unauthorized access to district networks or cause network system failures .
+
+for instance , certain network servers and routers were set up in a manner that permitted unauthorized users to connect to the network without entering valid user ids and password combinations .
+
+this could allow unauthorized individuals to obtain access to system information describing the network environment , including user ids , password properties , and account details .
+
+these network security weaknesses not only increased the risk of unauthorized access to information maintained on the network , but also heightened the risk that intruders or authorized users with malicious intent could exploit the user id and password management weaknesses described above to misuse , improperly disclose , or destroy fund and other district financial and sensitive information .
+
+dpw officials told us that they planned to correct the network id , password , and system software configuration weaknesses we identified on the dpw lan .
+
+the risks created by the access control problems described above were also heightened significantly because the district was not adequately monitoring system and user activity .
+
+such a program would include ( 1 ) network monitoring to promptly identify attempts by unauthorized users to gain access to district systems and ( 2 ) examining attempts to access sensitive information once entry to district systems is accomplished .
+
+without these controls , the district has little assurance that improper attempts to access sensitive information would be detected in time to prevent or minimize damage .
+
+the district organizations we visited had not implemented proactive network monitoring programs .
+
+such a program would require the district to identify suspicious access patterns , such as repeated failed attempts to log - on to the network , attempts to identify systems and services on the network , connections to the network from unauthorized locations , and efforts to overload the network to disrupt operations , and implement intrusion detection systems to automatically log unusual activity , provide necessary alerts , and terminate sessions when necessary .
+
+the district had not installed intrusion detection software on its wan .
+
+in addition , dpw was using available intrusion detection capabilities on only 2 of its 22 network segments .
+
+further , a network server used to allow access through the internet to the computer system that maintains fund and other district financial and sensitive information was configured to not log any access activity .
+
+dpw officials told us that they would review all network servers and activate intrusion detection capabilities on all servers with these capabilities .
+
+octo officials told us that in conjunction with their implementation of the district security management program planned for october 1 , 2001 , a central security group will be established that , among other things , will implement intrusion detection systems to identify suspicious access activities and notify appropriate agency personnel .
+
+in addition , the district was not actively monitoring user access activity — to identify and investigate failed attempts to access sensitive data and resources or unusual patterns of successful access to such information — on the computer system used to process fund and other district financial , payroll , personnel , and tax information .
+
+routinely monitoring the access activities of authorized users , especially those who have the ability to alter sensitive programs and data , can help identify significant problems and deter users from inappropriate and unauthorized activities .
+
+because the volume of security information available is likely to be too voluminous to review routinely , the most effective monitoring efforts are those that selectively target specific actions .
+
+these monitoring efforts should include provisions to identify and investigate unusual or suspicious patterns of access , such as updates to security files that were not made by security staff , changes to sensitive system files that were not made by system modifications to production application programs that were not initiated by production control staff , revisions to production data that were completed by system or deviations from normal patterns of access to fund and other district financial , payroll , personnel , and tax data .
+
+the district could develop such a program by ( 1 ) identifying sensitive system files , programs , and data files on its computer systems and networks , ( 2 ) using the audit trail capabilities of its security software to document both failed and successful access to these resources , ( 3 ) defining normal patterns of access activity , ( 4 ) analyzing audit trail information to identify and report on access patterns that differ significantly from defined normal patterns , ( 5 ) investigating these potential security violations , and ( 6 ) taking appropriate action to discipline perpetrators , repair damage , and remedy the control weaknesses that allowed improper access to occur .
+
+although the district was maintaining a history log of access activity on the computer system that maintained fund and other district financial information and was producing standard data set access violation reports , these reports were not targeted to specific actions and the district did not follow up to ensure that violations had been appropriately investigated .
+
+in addition , the district had not established a process to identify and investigate failed attempts to gain access to this computer system or suspicious patterns of successful access to sensitive data and resources on this system .
+
+ocfo officials told us that share computer center staff had developed and tested programs to produce the types of targeted monitoring reports described above and plan to fully implement a program to routinely identify and investigate unusual or suspicious patterns of access to sensitive computer resources by march 31 , 2001 .
+
+in addition to the access controls described above , there are other important information system general controls that organizations should have in place to ensure the integrity and reliability of data .
+
+these controls include policies , procedures , and control techniques to physically protect sensitive computer resources and information , provide appropriate segregation of duties among computer personnel , prevent unauthorized changes to application programs , and ensure the continuation of computer processing operations in case of unexpected interruption .
+
+we found weaknesses in each of these areas .
+
+the following sections summarize these weaknesses .
+
+physical security controls are important for protecting computer facilities and resources from espionage , sabotage , damage , and theft .
+
+these controls involve restricting physical access to computer resources , usually by limiting access to the buildings and rooms where these resources are stored .
+
+in the district , physical access control measures , such as locks , guards , badges , and alarms ( used alone or in combination ) , are vital to safeguarding critical financial and sensitive personnel information and computer operations from internal and external threats .
+
+however , we found weaknesses in physical security controls over computer systems at ocfo's share computer center , which processes fund and other district financial , payroll , personnel , and tax applications , and network servers connected to the dpw network .
+
+neither dpw nor ocfo had developed formal procedures for granting and periodically reviewing access to the computer resources they controlled .
+
+as a result , staff could be granted access or continue to have access to sensitive network and system computer areas even though their job responsibilities may not warrant this access .
+
+for example , we identified 60 district employees and contractors who had been granted access to ocfo's share computer center without evidence of formal authorization .
+
+likewise , dpw did not have complete or accurate records of which employees were permitted access to the network server room .
+
+in addition , ocfo staff could not account for 6 of the 95 cards that permitted access to the share computer center computer room .
+
+in addition , neither dpw nor ocfo was adequately controlling access by visitors , such as contractors , to sensitive computer areas .
+
+for example , we were able to enter and move about both dpw's network server room and ocfo's share computer center , including sensitive areas , without providing identification , signing in , or being escorted .
+
+consequently , employees or intruders with malicious intent might also be able to gain improper access to the share computer center or dpw lan and disrupt these operations .
+
+in october 2000 , dpw officials told us that they had corrected the physical security weaknesses we identified .
+
+in november 2000 , ocfo officials told us that they had developed procedures for controlling access to the computer center .
+
+another fundamental technique for safeguarding programs and data is to segregate the duties and responsibilities of computer personnel to reduce the risk that errors or fraud will occur and go undetected .
+
+incompatible duties that should be separated include application and systems programming , production control , database administration , computer operations , and data security .
+
+once policies and job descriptions that support segregation of duties principles have been developed , it is also important to implement access controls to ensure that employees perform only compatible functions .
+
+the district had assigned incompatible duties to certain application and system programmers .
+
+for example , some of the 24 application programmers that developed computer programs for the district's main financial system , soar , were also responsible for supporting its operation .
+
+to perform these incompatible functions , certain application programmers were granted access to soar production programs and data .
+
+further , the district had implemented access controls in a manner that permitted the remaining application programmers , who were not responsible for supporting soar operations , to also access soar production programs and data — a practice that violates basic segregation of duties principles .
+
+allowing application programmers , especially those who have a detailed understanding of the application , to also modify soar production programs and data increases the risk of unauthorized modifications , which could lead to improper payments .
+
+in addition , all of the 13 system programmers responsible for maintaining the computer system that processes fund and other district financial , payroll , personnel , and tax applications were also assigned certain incompatible functions .
+
+some system programmers were also responsible for security administration , while others were also responsible for production control or database administration .
+
+moreover , although each of the 13 system programmers was only responsible for certain incompatible functions , all of the 13 system programmers were granted access privileges that would allow them to also perform security administration , production control , and database administration functions .
+
+allowing system programmers the capability to modify financial and other sensitive data and programs without any compensating controls increases the risks of unauthorized modification of financial information and inappropriate disclosure of sensitive data .
+
+in addition , because these individuals had both system and security administrator privileges , they had the ability to eliminate any evidence of their activity in the system .
+
+although district officials told us that they were aware of the potential problems associated with allowing incompatible computer duties to be performed by the same individual , the district had not implemented compensating controls , such as reviewing access activity , to mitigate increased risks .
+
+until the district either restricts individuals from performing incompatible duties or implements compensating controls , fund and other district financial and sensitive information will face increased risk of inadvertent or deliberate misuse , fraudulent use , improper disclosure , or destruction , possibly occurring without detection .
+
+in november 2000 , ocfo officials told us that they had limited the access of application programmers responsible for soar development to only read production programs and data .
+
+in addition , ocfo staff told us that system programming and security functions had been separated and that a special id would be established to allow system programmers the access required to perform security functions .
+
+these activities would be logged and reviewed to ensure that only authorized activities are performed .
+
+it is also important to ensure that only authorized and fully tested application programs are placed in operation .
+
+to ensure that changes to application programs are needed , work as intended , and do not result in the loss of data and program integrity , these changes should be documented , authorized , tested , independently reviewed , and implemented by a third party .
+
+district policy did not require changes to its main financial system , soar , to ( 1 ) be approved or reviewed prior to implementation or ( 2 ) include guidelines for testing these changes .
+
+while soar application developers maintained a standardized change request form , these forms did not always include authorizing signatures or evidence of testing and independent review .
+
+for example , documentation for about 30 percent of the 26 changes that were made to correct problems with soar programs from october 1 , 1999 , through july 20 , 2000 , did not indicate that the change had been tested prior to implementation .
+
+in addition , documentation for almost 90 percent of these changes did not specify that an independent technical review had occurred .
+
+further , the district had not established procedures for periodically reviewing soar programs to ensure that only authorized program changes had been implemented .
+
+without adequate application change controls , the district faces increased risk that unauthorized or inadequately tested programs or modifications to existing programs could be introduced .
+
+ocfo officials told us that policies and procedures to ensure that changes to soar programs are authorized , tested , independently reviewed , and approved would be implemented by january 2001 .
+
+in addition , ocfo's policies will include a requirement to periodically review changes to soar programs to ensure that only authorized changes are made .
+
+an organization must take steps to ensure that it is adequately prepared to cope with a loss of operational capability due to earthquakes , fires , accidents , sabotage , or any other disruption .
+
+an essential element in preparing for such catastrophes is an up - to - date , detailed , and fully tested disaster recovery plan .
+
+such a plan is critical for helping to ensure that information system operations and data , such as financial processing and related records , can be promptly restored in the event of disaster .
+
+none of the district organizations we visited had a complete and fully tested disaster recovery plan .
+
+for example , dpw had not developed a disaster recovery plan for its lan .
+
+in addition , neither octo nor ocfo had developed comprehensive disaster recovery plans for the district wan or the share computer center , which processes fund and other district financial systems .
+
+specifically , these octo and ocfo disaster recovery plans did not establish disaster recovery teams with specific roles and responsibilities , specify requirements for testing the plan periodically , or institute a process for reviewing and updating the plan based on test results .
+
+ocfo's disaster recovery plan for the share computer center also did not address different types of risks , such as floods , winter storms , or interruptions in power or communications , that could affect the continuity of operations .
+
+furthermore , neither octo nor ocfo had fully tested disaster recovery plans for the district wan or the share computer center , respectively .
+
+ocfo did test the recovery of system software at its share computer center in december 1999 , but this test did not cover the center's critical applications or telecommunications .
+
+until the district develops and fully tests comprehensive disaster recovery plans for the dpw lan , the district wan , and the share computer center , it will not be assured that computer operations critical to the fund and other district financial activities can be restored promptly in the event of a disaster or other unintended interruption .
+
+ocfo officials told us that they had developed a disaster recovery plan for the share computer center , which will use the district's department of human resources' computer center .
+
+they stated that this plan will be fully implemented by june 30 , 2001 .
+
+in addition , dpw officials stated that their staff would develop a comprehensive disaster recovery plan for the dpw lan by april 1 , 2002 .
+
+a key reason for the district's information system control problems was that it did not have a comprehensive computer security management program in place to ensure that effective controls were established and maintained and that computer security received adequate attention .
+
+our study of security management best practices found that leading organizations manage their information security risks through an ongoing cycle of activities coordinated by a central focal point .
+
+this management process involves ( 1 ) assessing risk to determine computer security needs , ( 2 ) developing and implementing policies and controls that meet these needs , ( 3 ) promoting awareness to ensure that risks and responsibilities are understood , and ( 4 ) instituting an ongoing program of tests and evaluations to ensure that policies and controls are appropriate and effective .
+
+in contrast , the district had not adequately accomplished any of these objectives .
+
+the first key problem with the district was that it had not adequately established a central focal point to coordinate computer security management .
+
+due to the interconnectivity of the district's networks , coordination and guidance provided by a central focal point becomes even more important , since a compromise in a single system could impact all district agencies .
+
+according to district law , octo was created to ( 1 ) centralize responsibility for the district's information technology investments and ( 2 ) develop and enforce policy directives and standards regarding information technology throughout the district government .
+
+however , no single district office was overseeing the architecture , operations , configuration , or security of the district's networks and systems .
+
+for example , each of the district's five data centers remains responsible for operating and securing its own computer environment without sufficient district - wide guidance or oversight .
+
+in addition , while octo manages and secures the district wan , other functional units , such as dpw , still manage their own networks .
+
+consequently , security roles and responsibilities were not clearly assigned , security management was not given adequate attention , and no organization was held accountable for security throughout the district .
+
+a second key area of computer security management is assessing risk to determine computer security needs .
+
+risk assessments not only help management to determine which controls will most effectively mitigate risks , but also increase the awareness of risks and , thus , generate support for adopted policies and controls .
+
+in this regard , it is important for organizations to define a process , which can be adapted to different organizational units , to continually manage computer security risk .
+
+however , district policy did not require risk assessments or provide guidance for managing computer security risk on a continuing basis .
+
+consequently , none of the district organizations we visited were adequately managing risk relating to computer security , as evidenced by the serious weaknesses described above .
+
+for example , dpw had not performed a risk assessment for its network .
+
+in addition , octo had not formally assessed computer security risks relating to the district wan , which could affect all district agencies connected to this network .
+
+further , ocfo was not routinely assessing and managing information security risks associated with its share computer center , which processes fund and other district financial , payroll , personnel , and tax systems .
+
+during the past year , the share computer center had updated its computer hardware , upgraded its operating system software , and installed a new financial management system for the district .
+
+although all of these events should have warranted a risk assessment , ocfo only performed an initial risk assessment for the new financial management system .
+
+a third key element of effective security program management is implementing computer security policies and controls that cover all aspects of an organization's interconnected environment .
+
+our study of security management practices at leading organizations found that current , comprehensive security policies , which cover all aspects of an organization's interconnected environment , are important because written policies are the primary mechanism by which management communicates its views and requirements .
+
+we also reported that organizations should develop both high - level organizational policies , which emphasize fundamental requirements , and more detailed guidance or standards , which describe an approach for implementing policy .
+
+although district law tasks octo with coordinating the development of information management plans , standards , systems , and procedures throughout the district government , octo had not yet established district - wide guidance for developing and implementing comprehensive computer security policies and controls .
+
+this , along with the fact that a central focal point had not been established to oversee computer security throughout the district , has contributed to unclear security roles and responsibilities .
+
+in one case , access to the district financial application had been removed for three terminated district employees , but access to the computer system that processes this and other district financial applications , which is maintained by another district organization , had not been disabled .
+
+consequently these terminated employees still had the opportunity to sabotage or impair other district financial operations .
+
+in addition , the district had not developed technical standards for implementing security software , maintaining operating system integrity , or controlling sensitive utilities .
+
+such standards would not only help ensure that appropriate information system controls were established consistently throughout the district , but also facilitate periodic reviews of these controls .
+
+the establishment of appropriate information system controls was also hindered because security administration and system programming staff were not provided with adequate technical training .
+
+specifically , ocfo security administration staff at the share computer center had not received security awareness training and had only been provided minimal training on the security software used by the district .
+
+in addition , ocfo system programmers at the share computer center had not received technical training on important types of system software , such as the tape management system .
+
+a fourth key area of security program management is promoting security awareness .
+
+computer attacks and security breakdowns often occur because computer users fail to take appropriate security measures .
+
+for this reason , it is vital that employees who use computer systems in their day - to - day operations be aware of the importance and sensitivity of the information they handle as well as the business and legal reasons for maintaining its confidentiality and integrity .
+
+in accepting responsibility for security , employees should , for example , devise effective passwords , change them frequently , and protect them from disclosure .
+
+in addition , employees should help maintain physical security over their assigned areas .
+
+however , none of the district organizations we visited were adequately promoting security awareness to ensure that such risks and responsibilities were understood .
+
+several of the computer security weaknesses we discuss in this report indicate that users were either unaware of or insensitive to the need for important information system controls , such as secure passwords .
+
+we also found little evidence that the district had convinced its employees that it was important to prevent unauthorized access to the share computer center and other sensitive computer areas .
+
+as discussed above , we were able to bypass physical security measures and enter and move freely about both ocfo's share computer center and a dpw telecommunications room without detection or challenge .
+
+a fifth key element of effective security management is an ongoing program of tests and evaluations to ensure that computer security policies and controls continue to be appropriate and effective .
+
+this type of oversight is an essential aspect of security management because it ( 1 ) helps the organization take responsibility for its own security program and ( 2 ) can help identify and correct problems before they become major concerns .
+
+in addition , periodic assessments or reports on security activities can be a valuable means of identifying areas of noncompliance , reminding employees of their responsibilities , and demonstrating management's commitment to the security program .
+
+our study of security management best practices at leading organizations found that an effective control evaluation program includes processes for ( 1 ) monitoring compliance with established information system control policies and guidelines , ( 2 ) testing the effectiveness of information system controls , and ( 3 ) improving information system controls based on the results of these activities .
+
+none of the district organizations we visited had established such a program , which could have allowed the district to identify and correct the types of weaknesses discussed in this report .
+
+until the district establishes a program to periodically evaluate the effectiveness of information system controls , it will not be able to ensure that its computer systems and data are adequately protected from unauthorized access .
+
+octo officials told us that they recognize the need for enhanced security and to this end , plan to implement a formal security management program by october 1 , 2001 .
+
+this program will include the key elements described in our study of security management best practices .
+
+information system general controls are critical to the district's ability to ensure the reliability of fund and other district financial information and maintain the confidentiality of sensitive personnel and tax information .
+
+however , the district's information system control problems placed sensitive personnel and tax information at risk of disclosure , critical financial operations at risk of disruption , and assets at risk of loss .
+
+a primary reason for the district's information system control problems is that it did not have a comprehensive security management program .
+
+comprehensive computer security management programs are appropriate for achieving an effective information system general control environment .
+
+effective implementation of such a program provides for periodically assessing risks , implementing effective controls for restricting access based on job requirements and proactively reviewing access activities , communicating the established policies and controls to those who are responsible for their implementation , and , perhaps most important , evaluating the effectiveness of policies and controls to ensure that they remain appropriate and accomplish their intended purpose .
+
+district management stated that it has recognized the seriousness of the weaknesses we identified and expressed its commitment to improving information system controls .
+
+we recommend that you direct the chief financial officer , chief technology officer , and the director of dpw , as appropriate , to take the following actions .
+
+correct the specific access control weaknesses which are summarized in this report and detailed , along with our corresponding recommendations and the district's corrective action plans , in a separate report designated for “limited official use,” also issued today .
+
+report to you , or your designee , periodically on progress in implementing the corrective action plans described in the separate report designated for “limited official use.” we also recommend that you direct the chief technology officer to ensure that an effective entitywide security management program , as described in this report and in our study of security management best practices at leading organizations , is developed and implemented .
+
+such a program would include establishing a central focal point to manage an ongoing cycle of the following security management activities: assessing risk to determine computer security needs , developing and implementing policies and controls that meet these promoting awareness to ensure that risks and responsibilities are understood , and instituting an ongoing program of tests and evaluations to ensure that policies and controls are appropriate and effective .
+
+in commenting on a draft of this report , the district's chief technology officer agreed with our findings and recommendations and stated that the district is giving the highest priority to correcting the information security weaknesses we identified .
+
+the district has developed an action plan to correct all security weaknesses by april 2002 .
+
+specifically , the district is making changes to its security software to reduce the risk of unauthorized access and to strengthen information system controls .
+
+in addition , the district plans to implement standard software and procedures across the appropriate computer platforms and to establish a team to address information security as part of normal business operations .
+
+octo also plans to conduct quarterly reviews to monitor the progress in implementing the corrective action plans associated with our recommendations .
+
+the district also stated that it recognized that the key to information security is a sound security management program .
+
+by october 2001 , with octo as the central focal point , the district plans to implement a security management program that will include conducting risk assessments , developing and implementing security policies and procedures , promoting awareness , and testing and evaluating controls to ensure that they are effective .
+
+this report contains recommendations to you .
+
+the head of the district of columbia government is required by 31 u.s.c .
+
+720 to submit a written statement on actions taken on these recommendations .
+
+you should send your statement to the senate committee on governmental affairs and the house committee on government reform within 60 days of the date of this report .
+
+a written statement must also be sent to the house and senate committees on appropriations with the district's first request for appropriations made more than 60 days after the date of this report .
+
+we are sending copies of this report to senator robert c. byrd , senator richard durbin , senator kay bailey hutchison , senator joseph lieberman , senator ted stevens , senator fred thompson , representative dan burton , representative thomas m. davis , representative ernest j. istook , representative james p. moran , representative eleanor holmes norton , representative david r. obey , representative henry a. waxman , and representative c.w .
+
+bill young .
+
+we will also send copies to kenneth r. wykle , administrator of the federal highway administration ; natwar gandhi , chief financial officer of the district of columbia ; charles maddox , inspector general of the district of columbia ; deborah k. nichols , district of columbia auditor ; leslie hotaling , interim director of the department of public works ; suzanne peck , chief technology officer ; and alice rivlin , chairman of the district of columbia financial responsibility and management assistance authority .
+
+if you have any questions or wish to discuss this report , please contact me at ( 202 ) 512-3317 or dave irvin at ( 214 ) 777-5716 .
+
+key contributors to this report are listed in appendix ii .
+
+the following is gao's comment on the district of columbia's letter dated december 13 , 2000 .
+
+1 .
+
+attachment a is included only in our report designated for “limited official use. .
+
+in addition to the person named above , lon chin , debra conner , edward glagola , david hayes , sharon kittrell , jeffrey knott , west coile , harold lewis , tracy pierson , norman poage , and charles vrabel made key contributions to this report .
+
+the first copy of each gao report is free .
+
+additional copies of reports are $2 each .
+
+a check or money order should be made out to the superintendent of documents .
+
+visa and mastercard credit cards are accepted , also .
+
+orders for 100 or more copies to be mailed to a single address are discounted 25 percent .
+
+orders by mail: u.s. general accounting office p.o .
+
+box 37050 washington , dc 20013 orders by visiting: room 1100 700 4th st. nw ( corner of 4th and g sts .
+
+nw ) u.s. general accounting office washington , dc orders by phone: ( 202 ) 512-6000 fax: ( 202 ) 512-6061 tdd ( 202 ) 512-2537 each day , gao issues a list of newly available reports and testimony .
+
+to receive facsimile copies of the daily list or any list from the past 30 days , please call ( 202 ) 512-6000 using a touchtone phone .
+
+a recorded menu will provide information on how to obtain these lists .
+
+web site: http: / / www.gao.gov / fraudnet / fraudnet.htm e - mail: fraudnet@gao.gov 1-800-424-5454 ( automated answering system ) .
+

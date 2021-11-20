@@ -1,0 +1,468 @@
+to build effective and efficient systems that support an agency's mission , a systems blueprint — commonly called a systems architecture — must be used to guide and constrain the systems' development and evolution .
+
+an effective systems architecture should be derived by systematically and thoroughly analyzing and defining the agency's target operating environment — including its business functions , information needs and flows across functions , and system characteristics required to optimally support these information needs and flows .
+
+furthermore , once an architecture is complete , it must be rigorously enforced to preclude suboptimizing an agency's enormous investment in information technology .
+
+this letter responds to your request that we review the customs service's enterprise information systems architecture .
+
+as agreed with your offices , our objectives were to determine whether ( 1 ) the architecture is complete and ( 2 ) customs has processes and procedures to enforce compliance with the architecture .
+
+to do so , we compared customs' architecture and associated processes to applicable department of treasury and related federal architecture requirements .
+
+we performed our work at customs' headquarters in washington , d.c. , and the newington data center in newington , virginia , from july 1997 through january 1998 in accordance with generally accepted government auditing standards .
+
+details of our scope and methodology are contained in appendix i .
+
+we requested comments on a draft of this report from the acting commissioner of customs or his designee .
+
+customs provided comments that are discussed in the “agency comments and our evaluation” section and are reprinted in appendix ii .
+
+the mission of the customs service is to ensure that all goods and persons entering and exiting the united states do so in compliance with all u.s. laws and regulations .
+
+it does this by ( 1 ) enforcing the laws governing the flow of goods and persons across the borders of the united states and ( 2 ) assessing and collecting duties , taxes , and fees on imported merchandise .
+
+during fiscal year 1997 , customs collected $22.1 billion in revenue at more than 300 ports of entry , and it processed nearly 450 million passengers who entered the united states during the year .
+
+to accomplish its mission , customs is organized into six business areas — trade compliance , outbound , passenger , finance , human resources , and investigations .
+
+each business area is described below .
+
+the trade compliance business area includes enforcement of laws and regulations associated with the importation of goods into the united states .
+
+to enforce compliance with the trade laws and regulations , customs ( 1 ) works with the trade community to promote understanding of applicable laws and regulations , ( 2 ) selectively examines cargo to ensure that only eligible goods enter the country , ( 3 ) reviews documentation associated with cargo entries to ensure that it is properly valued and classified , ( 4 ) collects billions of dollars annually in duties , taxes , and fees associated with imported cargo , ( 5 ) assesses fines and penalties for noncompliance with trade laws and regulation , and ( 6 ) manages the collection of these moneys to ensure that all trade - related debts due to customs are paid and properly accounted for .
+
+the outbound business area includes customs operations related to the enforcement of laws and regulations associated with the movement of merchandise and conveyances from the united states .
+
+to enforce compliance with these laws and regulations , customs ( 1 ) selectively inspects cargo at u.s. ports to guard against the exportation of illegal goods , such as protected technologies , stolen vehicles , and illegal currency , ( 2 ) collects , disseminates , and uses intelligence to identify high - risk cargo and passengers , ( 3 ) seizes and accounts for illegal cargo , ( 4 ) assesses and collects fines and penalties associated with the exportation of illegal cargo , and ( 5 ) physically examines baggage and cargo at airport facilities for explosive and nuclear materials .
+
+in addition , the outbound business includes collecting and disseminating trade data within the federal government .
+
+accurate trade data are crucial to establishing accurate trade statistics on which to base trade policy decisions and negotiate trade agreements with other countries .
+
+by the year 2000 , customs estimates that exports will be valued at $1.2 trillion , as compared to $696 million in 1994 .
+
+the passenger business area includes processing all passengers and crew of arriving and departing ( 1 ) air and sea conveyances and ( 2 ) noncommercial land vehicles and pedestrians .
+
+in fiscal year 1997 , customs processed nearly 450 million travelers , and by the year 2000 , expects almost 500 million passengers to arrive in the united states annually .
+
+many of customs' passenger activities focus on illegal immigration and drug smuggling and are coordinated with other federal agencies , such as the immigration and naturalization service and the department of agriculture's animal and plant health inspection service .
+
+activities include targeting high - risk passengers , which requires timely and accurate information , and physically inspecting selected passengers , baggage , and vehicles to determine compliance with laws and regulations .
+
+the finance business area includes asset and revenue management activities .
+
+asset management consists of activities to formulate customs' budget ; properly allocate and distribute funds ; and acquire , manage , and account for personnel , goods , and services .
+
+revenue management encompasses all customs activities to identify and establish amounts owed customs , collect these amounts , and accurately report the status of revenue from all sources .
+
+sources of revenue include duties , fees , taxes , other user fees , and forfeited currency and property .
+
+the revenue management activities interrelate closely with the revenue collection activities in the trade compliance , outbound , and passenger business areas .
+
+the human resources business area is responsible for filling positions , providing employee benefits and services , training employees , facilitating workforce effectiveness , and processing personnel actions for customs' 18,000 employees and managers .
+
+the investigations business area includes activities to detect and eliminate narcotics and money laundering operations .
+
+customs works with other agencies and foreign governments to reduce drug - related activity by interdicting ( seizing and destroying ) narcotics , investigating organizations involved in drug smuggling , and deterring smuggling efforts through various other methods .
+
+customs also develops and provides information to the trade and carrier communities to assist them in their efforts to prevent smuggling organizations from using cargo containers and commercial conveyances to introduce narcotics into the united states .
+
+to carry out its responsibilities , customs relies on information systems and processes to assist its staff in ( 1 ) documenting , inspecting , and accounting for the movement and disposition of imported goods and ( 2 ) collecting and accounting for the related revenues .
+
+customs' office of information and technology ( oit ) fiscal year 1998 budget is about $147 million for information management and technology activities .
+
+customs expects its reliance on information systems to increase as a result of its burgeoning workload .
+
+for 1995 through 2001 , customs estimates that the annual volume of import trade between the united states and other countries will increase from $761 billion to $1.1 trillion .
+
+this will result in customs processing an estimated increase of 7.5 million commercial entries — from 13.1 million to 20.6 million annually — during the same period .
+
+recent trade agreements , such as the north american free trade agreement ( nafta ) , have also increased the number and complexity of trade provisions that customs must enforce .
+
+customs recognizes that its ability to process the growing volume of imports while improving compliance with trade laws depends heavily on successfully modernizing its trade compliance process and its supporting automated systems .
+
+to speed the processing of imports and improve compliance with trade laws , the congress enacted legislation that eliminated certain legislatively mandated paper requirements and required customs to establish the national customs automation program ( ncap ) .
+
+the legislation also specified certain functions that ncap must provide , including giving members of the trade community the capability to electronically file import entries at remote locations and enabling customs to electronically process “drawback” claims .
+
+in response to the legislation , customs began in 1994 to reorganize the agency , streamline operations , and modernize the information systems that support operations .
+
+as computer - based systems have become larger and more complex over the last decade , the importance of and reliance on information systems architectures have grown steadily .
+
+these comprehensive “construction plans” systematically detail the full breadth and depth of an organization's mission - based “modus operandi” in ( 1 ) logical terms , such as defining business functions and providing high - level descriptions of information systems and their interrelationships , and ( 2 ) technical terms , such as specifying hardware , software , data , communications , security , and performance characteristics .
+
+without an architecture to guide and constrain a modernization program , there is no systematic way to preclude either inconsistent system design and development decisions or the resulting suboptimal performance and added cost associated with incompatible systems .
+
+the congress and the office of management and budget ( omb ) have recognized the importance of agency information systems architectures .
+
+the 1996 clinger - cohen act , for example , requires chief information officers ( cio ) to develop , maintain , and facilitate integrated system architectures .
+
+in addition , omb has issued guidance that among other things , requires agency's information systems investments to be consistent with federal , agency , and bureau architectures .
+
+omb has also issued guidance on the development and implementation of agency information technology architectures .
+
+treasury has also issued to its bureaus , including customs , guidance on developing an information systems architecture .
+
+this guidance , known as treasury information systems architecture framework ( tisaf ) , is also included in omb's guidance .
+
+according to treasury , tisaf is intended to help reduce the cost , complexity , and risk associated with information technology development and operations .
+
+in july 1997 , treasury issued additional guidance to complement tisaf .
+
+this guidance , which was finalized in september 1997 , provides “how to” processes for developing an information systems architecture in accordance with tisaf .
+
+customs has several efforts underway to develop and acquire new information systems and evolve ( i.e. , maintain ) existing ones to support its six business areas .
+
+customs' fiscal year 1998 budget for information management and technology activities is about $147 million .
+
+customs' major information technology effort is its automated commercial environment ( ace ) system .
+
+in 1994 , customs began to develop ace to replace its existing automated import system , the automated commercial system .
+
+ace is intended to provide an integrated , automated information system for collecting , disseminating , and analyzing import - related data and ensuring the proper collection and allocation of revenues , totaling about $19 billion annually .
+
+according to customs , ace is planned to automate critical functions that the congress specified when it established ncap .
+
+customs reported that it spent $47.8 million on ace as of the end of fiscal year 1997 .
+
+in november 1997 , customs estimated it would cost $1.05 billion to develop , operate , and maintain ace over the 15 years from fiscal years 1994 through 2008 .
+
+customs plans to deploy ace to all 342 ports that handle commercial cargo imports .
+
+customs plans to develop and deploy ace in multiple phases .
+
+according to customs , the first phase , known as ncap , is to be an ace prototype .
+
+customs currently plans to deploy ncap in four releases .
+
+the first is scheduled to be deployed for field evaluation at three locations beginning in may 1998 , and the fourth is scheduled for october 1999 .
+
+customs , however , has not adhered to previous ncap deployment schedules .
+
+specifically , implementation of the ncap prototype slipped from january 1997 to august 1997 and then again to a series of four releases beginning in october 1997 , with the fourth release starting in june 1998 .
+
+customs also has several other efforts underway to modify or enhance existing information systems that support its six business areas .
+
+for example , in fiscal year 1998 , customs plans to spend about $3.7 million to enhance its automated export system ( aes ) , which supports the outbound business area and is designed to improve customs' collection and reporting of export statistics and to enforce export regulations .
+
+in addition , customs plans to spend another $4.6 million to modify its administrative systems supporting its finance and human resource business areas .
+
+examples of other systems that customs plans to modify or enhance are the automated commercial system , the treasury enforcement and communication system , and the seized asset and case tracking system .
+
+in may 1996 , we reported that customs was not prepared to select an architecture and develop ace because it was not effectively applying critical management practices that help organizations mitigate the risks associated with modernizing automated systems and better position themselves for success .
+
+specifically , customs ( 1 ) lacked clear accountability for ensuring successful implementation of ncap requirements , ( 2 ) selected an information systems architecture for ace and other systems without first analyzing its business requirements , ( 3 ) lacked policies and procedures to manage ace and other systems as investments , and ( 4 ) did not ensure that systems under development adhere to customs' own system development policies .
+
+as a result of our recommendations , customs took the following actions .
+
+assigned day - to - day responsibility for implementing ncap to the assistant commissioner , office of information and technology .
+
+initiated an effort , with contractor assistance , to develop an enterprise information systems architecture .
+
+designated an information technology investment review board ( irb ) and hired a contractor to develop investment management policies and procedures .
+
+the contractor completed its work in mid - 1997 and the agency is in the process of implementing and institutionalizing these information technology investment management processes and procedures .
+
+revised its systems development life cycle ( sdlc ) , conducted ace cost - benefit analyses , instituted sdlc compliance reviews , and prepared a variety of ace - related project plans .
+
+customs also developed processes to ensure that sdlc compliance is an ongoing activity .
+
+in may 1997 , we reported that significant weaknesses continue to be identified during audits of customs' financial statements that hinder customs' ability to provide reasonable assurance that sensitive data maintained in automated systems , such as critical information used to monitor customs' law enforcement operations , are adequately protected from unauthorized access and modification .
+
+since then , treasury's inspector general has reported that customs' computer systems continue to be vulnerable to unauthorized access .
+
+specifically , the inspector general reported that security weaknesses could allow for unauthorized modification and deletion of application and systems software and data in customs computer systems that support trade , financial management , and law enforcement activities .
+
+treasury and customs officials recognize that customs' systems architecture is not complete and plan to complete it .
+
+for five of its six business areas ( outbound , passenger , finance , human resources , and investigations ) , custom's architecture does not ( 1 ) describe all the agency's business functions , ( 2 ) outline the information needed to perform the functions , and ( 3 ) completely identify the users and locations of the functions .
+
+further , while the architecture and related documentation describe business functions and users and locations for one business area ( trade compliance ) , they do not identify the information needs and flows for all the functions .
+
+nonetheless , customs has defined many characteristics of its information systems' hardware , software , communications , data management , and security components .
+
+because these characteristics are not based on a complete understanding of its enterprisewide functional and information needs , customs does not have adequate assurance that its information systems will optimally support its ability to ( 1 ) fully collect and accurately account for billions of dollars in annual federal revenue and ( 2 ) allow for the expeditious movement of legal goods and passengers across our nation's borders while preventing and detecting the movement of illegal goods and passengers .
+
+reflecting the general consensus in the industry that large , complex systems development and acquisition efforts should be guided by explicit architectures , we issued a report in 1992 defining a comprehensive framework for designing and developing systems architectures .
+
+this framework divides systems architectures into a logical component and a technical component .
+
+the logical component ensures that the systems meet the business needs of the organization .
+
+it provides a high - level description of the organization's mission and target concept of operations ; the business functions being performed and the relationships among functions ; the information needed to perform the functions ; the users and locations of the functions and information ; and the information systems needed to support the agency's business needs .
+
+an essential element of the logical architecture is the definition of the component interdependencies ( eg , information flows and interfaces ) .
+
+the technical component ensures that systems are interoperable , function together efficiently , and are cost - effective over their life cycles ( including maintenance costs ) .
+
+the technical component details specific information technology and communications standards and approaches that will be used to build systems , including those that address critical hardware , software , communications , data management , security , and performance characteristics .
+
+tisaf , treasury's departmentwide architecture framework , is generally consistent with our framework .
+
+according to tisaf , a complete architecture has the following four components , each representing a different perspective or view of the agency: functional: a representation of what the organization does ( i.e. , its mission and business processes ) and how the organization can use information systems to support its business operations .
+
+work: a description of where and by whom information systems are to be used throughout the agency .
+
+information: a description of what information is needed to support business operations .
+
+infrastructure: a description of the hardware and “services” ( eg , software and telecommunications ) needed to implement information systems across the agency .
+
+tisaf's functional , work , and information components together form the logical view of the architecture , while its infrastructure represents the technical view of the architecture .
+
+to develop and evolve systems that effectively support business functions , a top - down process must be followed .
+
+the logical architecture ( eg , business functions and information flows ) is defined first and then used to specify supporting systems ( eg , interfaces , standards , and protocols ) .
+
+treasury endorses this top - down approach .
+
+treasury officials responsible for developing and implementing tisaf stated that development of the architecture begins with defining and describing the agency's major business functions .
+
+once this is accomplished , the agency can identify the relationships among the functions , the information needed to perform the functions , the users and locations of the functions , and the existing and needed applications and related information technology required to execute and support the business functions .
+
+according to treasury guidance , the architecture's infrastructure component ( i.e. , its systems specifications and standards ) should be derived from the other three components .
+
+in addition , the guidance states that each element of the architecture must be integrated and traceable , and the relationships between them must be explicit .
+
+customs does not have a complete systems architecture to effectively and efficiently guide and constrain the millions of dollars it invests each year in developing , acquiring , and maintaining the information systems that support its six business areas .
+
+in summary , for five of customs' six business areas ( outbound , passenger , finance , human resources , and investigations ) , the architecture neither defines all critical business functions nor identifies all information needs ( including information security ) and information flows within and among the business areas .
+
+for the sixth business area ( trade compliance ) , customs has defined all the business functions and users and work locations and some , but not all , of the information and data needs and flows .
+
+with respect to the business functions , customs' architecture provides descriptions of only 29 of 79 collective functions in its six business areas .
+
+the architecture does not describe the other 50 functions in sufficient detail to understand what they are , how they relate , who will perform them , where they will be performed , what information they will produce or consume , and how the information should be handled ( i.e. , captured , stored , processed , managed , distributed , and protected ) .
+
+table 1 summarizes by business area the number of functions defined in the architecture .
+
+examples of undefined functions in the outbound , passenger , investigations , and human resources business areas are as follows: outbound: the architecture names “examine cargo” and “seize and process cargo” as 2 of the 13 functions in this business area .
+
+however , the architecture does not describe how to examine cargo , what cargo to examine , when to examine cargo , what information / data is needed to examine cargo , how the results of the cargo examination are used and by whom , or how cargo examination data should be protected .
+
+similarly , the architecture does not describe when cargo will be seized and by whom , what criteria are used to seize cargo , how cargo will be seized and accounted for , or what information is required to account for the seized cargo ( eg , date of seizure , company name , and commodity ) .
+
+passenger: the architecture names “identify compliance target” and “process non - compliant passengers / conveyances” as 2 of the 13 functions in this business area .
+
+however , the architecture does not describe how targets are identified , who identifies targets , how target information is disseminated , what information is collected to determine compliance , or how target information needs to be protected .
+
+likewise , the architecture does not define compliant passenger / conveyance , how passengers are processed and by whom , or where passengers / conveyances are processed .
+
+investigations: the architecture names “perform interdiction” as 1 of the 10 functions in this business area .
+
+however , the architecture does not describe how an interdiction is conducted , who conducts interdictions , what criteria are used to identify potential passengers or cargo to interdict , what happens to the seized persons or cargo , or how interdiction information needs to be protected .
+
+human resources: the architecture names “manage internal service programs” as 1 of the 22 functions in this business area .
+
+however , the architecture does not describe what services are provided and by whom , who is eligible to receive the services , or where the potential recipients are located .
+
+within the trade compliance business area , even though customs' architecture does not define 10 of 15 trade compliance functions , customs has described these 10 business functions , the relationships among them , and the work to be performed within each function ( including who will perform the work and where it will be performed ) in documents other than the architecture .
+
+further , customs has specified the data needed to support some , but not all , of the trade compliance functions .
+
+for example , customs identified key information sources ( such as cargo manifests and summary declarations ) associated with ncap , the ace prototype that covers a subset of trade compliance activities , and specific data elements associated with each information source .
+
+customs , however , has not defined the information / data needs , including security , and information / data flows among its six business areas .
+
+with respect to information security in particular , customs' architecture does not ( 1 ) specify functional requirements for enterprisewide security , ( 2 ) include a security concept of operations that describes how customs will operate ( eg , what controls will be used ) to satisfy these requirements , or ( 3 ) include a security subarchitecture that specifies how these controls will be implemented , certified , and accredited and how the controls' operational effectiveness will be validated .
+
+given that computer security continues to be a long - standing problem at customs , this issue is particularly troubling .
+
+in our audits of customs' fiscal year 1992 and 1993 principal financial statements , we stated that customs' controls to prevent and detect unauthorized access and intentional or inadvertent unauthorized modifications to critical and sensitive data and computer programs were ineffective , thereby jeopardizing the security and reliability of the operations central to customs' mission .
+
+while customs has since taken meaningful steps toward correcting these access problems , they still remain .
+
+according to the treasury inspector general's report on customs' fiscal years 1997 and 1996 financial statements , computer security weaknesses continue to exist that could allow for unauthorized modification and deletion of application and systems software and data in customs' systems supporting the trade , financial management , and law enforcement activities .
+
+until customs addresses these weaknesses , it will not know the full extent of inter - and intra - business area functional and informational needs and dependencies and thus cannot develop , acquire , and maintain supporting information systems that optimally support the agency's operations and activities .
+
+moreover , until these interdependencies among and within business areas have been fully analyzed and defined and an approach for securing the associated information has been established , the opportunities for incompatibilities and duplications among systems and the information they process and share increase , as do the opportunities for unauthorized access and modification of data .
+
+such opportunities jeopardize , in turn , the completeness , consistency , and integrity of the data customs uses and publishes .
+
+given the importance of reliable data to customs' ( 1 ) billion dollar revenue collection mission , ( 2 ) trade statistics used in developing trade policy and negotiating trade agreements , and ( 3 ) efforts to prevent and detect the illegal movement of goods and services across our nation's borders , such risks must be effectively addressed through an enterprise systems architecture .
+
+with respect to the infrastructure or technical component of customs' architecture , customs has specified much of the information that treasury guidance states should be included in this component ( eg , standards for system and application software , communication interfaces , and hardware ) .
+
+however , as noted previously , this component is not based on a complete analysis of customs' functional and information needs .
+
+for example , the architecture does not address information security requirements , yet its infrastructure specifies network encryption and remote access server products .
+
+because it specified these products without knowing the business needs they support , customs does not have adequate assurance that these products are needed or that they satisfy its true business needs , minimally or optimally .
+
+that is , the list of products cited may be either unnecessary or insufficient to support its real business needs .
+
+experience has shown that attempting to define and build major systems without first completing a systems architecture unnecessarily increases the cost and complexity of these systems .
+
+for example , we reported that faa's lack of a complete architecture resulted in incompatibilities among its air traffic control systems that ( 1 ) required higher - than - need - be system development , integration , and maintenance costs and ( 2 ) reduced overall system performance .
+
+without having architecturally defined requirements and standards governing information and data structures and communications , faa was forced to spend over $38 million to acquire a system dedicated to overcoming incompatibilities between systems .
+
+according to a customs' contractor , customs is also experiencing such inefficiencies and unnecessary costs because it lacks an architecture .
+
+specifically , this contractor reported that in the absence of an enterprise infrastructure , customs' departments have developed and implemented incompatible systems , which has increased modernization risks and implementation costs .
+
+customs awarded a contract in january 1997 to develop , among other things , a “technology architecture.” however , customs did not properly define the scope of this architecture , limiting it to deliverables associated with the infrastructure component without first completing the other components .
+
+customs officials stated that they contracted for the infrastructure without first completing the higher levels of the architecture because they considered the infrastructure component to be the most important and urgently needed part of the architecture .
+
+this “bottom up” approach is fundamentally inconsistent with government and industry architectural frameworks and guidance , including treasury's , and has historically resulted in systems that do not effectively support business operations and waste time and money .
+
+for example , after the internal revenue service ( irs ) spent over $3 billion attempting to modernize its tax systems without a defined logical architecture , it could not demonstrate benefits commensurate with costs and was forced to significantly restructure the effort .
+
+unless it completes its architecture before attempting to develop operational systems like ace , customs runs the risk of repeating failures like those that irs experienced .
+
+customs' cio officials have since acknowledged the need for a complete systems architecture and its value in information technology investment management .
+
+accordingly , customs is developing a statement of work for a tisaf - compliant architecture .
+
+with the help of a contractor , customs plans to use whatever data each business area may have already developed relative to functional , work , and information needs as a starting point in completing an enterprise architecture .
+
+more specifically , by october 1998 , customs plans to identify the functional , work , and information components for each of the six business areas and identify the relationships and interdependencies across the business areas .
+
+customs also plans to reevaluate its enterprise infrastructure .
+
+if an architecture is to be implemented effectively , institutional processes must be established to ( 1 ) require system compliance with the architecture , ( 2 ) assess and enforce such compliance , and ( 3 ) waive this requirement only on the basis of careful , thorough , and documented analysis showing that such deviation is warranted .
+
+according to customs officials , architectural compliance will be assessed and enforced as customs implements its recently defined investment management process .
+
+under this process , customs' investment review board ( irb ) uses four criteria in scoring competing investment options and allocating funding among them .
+
+the four criteria are risk ( eg , technical , schedule , and cost ) ; strategic alignment ( eg , cross - functional benefits , linkage to customs' business plan , and compliance with legislative mandates ) ; mission effectiveness ( eg , contributions to service delivery ) ; and cost / benefit ratio ( eg , tangible and intangible benefits , and costs ) .
+
+customs is in the process of implementing its investment management process for the fiscal year 1999 budget cycle .
+
+according to customs' investment management process , investment compliance with the architecture is considered , but not required , under the technical risk criterion .
+
+as a result , the process does not preclude funding projects that do not comply with the enterprise architecture and does not require that deviations from the architecture be rigorously justified .
+
+according to customs officials , while architectural compliance is not an explicit criterion in the process , it will be considered and documented as part of the irb funding decisions .
+
+without an effective , well - defined process for enforcing the architecture , customs runs the risk that unjustified deviations from the architecture will occur , resulting in systems that do not meet business needs , are incompatible , perform poorly , and cost more to develop , integrate , and maintain than they should .
+
+for example , we reported that faa's lack of an enforced systems architecture for its air traffic control operations resulted in the use of expensive interfaces to translate different data communication protocols , thus complicating and slowing communications , and the proliferation of multiple application programming languages , which increased software maintenance costs and precluded sharing software components among systems .
+
+customs' incomplete enterprise information systems architecture and limitations in its plans for enforcing compliance with an architecture once one is completed impair the agency's ability to effectively and efficiently develop or acquire operational systems , such as ace , and to maintain existing systems .
+
+until customs ( 1 ) performs the thorough analysis and careful decision - making associated with developing all architectural components for interdependent business areas and ( 2 ) ensures that these results are rigorously enforced for its information system development , acquisition , and maintenance efforts , it runs the risk of wasting scarce time and money building and maintaining systems that do not effectively and efficiently support its business operations .
+
+to ensure that the customs service develops and effectively enforces a complete enterprise information systems architecture , we recommend that the commissioner of customs direct the customs cio , in consultation with the treasury cio , to follow through on plans to complete the enterprise information systems architecture .
+
+at a minimum , the architecture should ( 1 ) describe customs' target business operations , ( 2 ) fully define customs' interrelated business functions to support these target operations , ( 3 ) clearly describe information needs ( including security ) and flows among these functions , ( 4 ) identify the systems that will provide these functions and support these information needs and flows , and ( 5 ) use this information to specify the technical standards and related characteristics that these systems should possess to ensure that they interoperate , function together efficiently , and are cost - effective to maintain .
+
+we also recommend that the commissioner direct the deputy commissioner , as chairman of the irb , to establish compliance with the architecture as an explicit requirement of customs' investment management process except in cases where careful , thorough , and documented analysis supports a waiver to this requirement .
+
+in commenting on a draft of this report , customs agreed with our conclusions and recommendations and stated that it will ( 1 ) develop an enterprise systems architecture in accordance with tisaf and in close cooperation with treasury during fiscal year 1998 and ( 2 ) strengthen enforcement of the architecture by being explicit that projects must comply with the architecture and requiring exceptions to be well justified .
+
+additionally , customs committed to not making major system investments prior to developing a tisaf - compliant architecture .
+
+customs raised several additional matters related to systems architecture , none of which affect our conclusions and recommendations and thus are not discussed here .
+
+customs' comments and our responses are reprinted in appendix ii .
+
+we are sending copies of this report to the ranking minority members of the subcommittee on treasury and general government , senate committee on appropriations , and subcommittee on treasury , postal service , and general government , house committee on appropriations .
+
+we are also sending copies to the secretary of the treasury , the commissioner of customs , and the director of the office of management and budget .
+
+copies will also be made available to others upon request .
+
+if you have any questions about this letter , please contact me at ( 202 ) 512-6240 or by e - mail at brockj.aimd@gao.gov .
+
+major contributors to this report are listed in appendix iii .
+
+to accomplish the first objective , we reviewed published architectural guidance , including the treasury information systems architecture framework ( tisaf ) , to identify key requirements .
+
+we also interviewed officials from treasury's office of the deputy assistant secretary for information systems and chief information officer ( the organization responsible for developing , implementing , and maintaining tisaf ) to seek clarification and explanation of tisaf requirements .
+
+further , we asked customs to give us its enterprise information systems architecture and a mapping of all architectural documents to tisaf's four architectural components — functional , work , information , and infrastructure .
+
+in response , customs provided the documents listed in table i.1 .
+
+customs subsequently provided two additional architecture documents that it did not map to any tisaf component .
+
+the two additional documents were the ace technical architecture and the enterprise it architecture strategy - executive overview .
+
+we then analyzed the architecture documents customs provided to identify any variances with the tisaf requirements for each architectural component .
+
+we also interviewed customs and supporting contractor officials to ( 1 ) seek clarification and explanation of the content of the architecture documents , ( 2 ) identify instances where the architectural documents did not satisfy tisaf requirements , and ( 3 ) solicit from customs any additional evidence related to meeting tisaf requirements .
+
+to address the second objective , we reviewed customs' policies and procedures governing information technology investment management to determine architecture enforcement processes and interviewed customs officials to determine organizational roles and responsibilities related to architecture development and enforcement .
+
+we also discussed with customs officials any plans for changing the agency's processes and organizational responsibilities for developing and enforcing the architecture .
+
+the following are gao's comments on the u.s. customs service's letter dated march 31 , 1998 .
+
+1 .
+
+our report neither states nor implies that customs is unable to ensure the proper collection and allocation of revenues totaling about $19 billion annually .
+
+rather , the report states that one of ace's key functions is to ensure the proper collection and allocation of revenues totaling about $19 billion annually .
+
+2 .
+
+customs states that it began developing its enterprise systems architecture prior to treasury's publication of tisaf and is working with treasury to develop a tisaf - compliant architecture .
+
+while these statements are true , they do not address our point that customs' architecture is insufficiently complete to be useful in guiding and constraining major systems investments .
+
+in order to optimize systems investments , the architecture must specify the six elements cited in our report .
+
+furthermore , each element of the architecture must be built upon the preceding ones .
+
+customs' architecture does not include these elements for all business areas and , as we point out in our report , the systems and standards selected were not based on a complete analysis of customs' functional and information needs .
+
+we do not agree with customs' statement that an architecture is never completed .
+
+an architecture must be complete ( i.e. , include the six elements described in our report ) to be useful in building or buying systems .
+
+this does not mean that a completed architecture cannot be modified to reflect changes in organizational missions and business functions or advancements in information technology products .
+
+this process of thoughtful and disciplined change — maintenance — is performed routinely on all information system components ( eg , architectures , documentation , software , and hardware ) .
+
+3 .
+
+while we agree that architectural models used in industry and government vary , all models consistently require the top - down , structured approach described in our report .
+
+customs has not followed this approach and , therefore , does not have adequate assurance that its infrastructure ( i.e. , technical architecture ) will meet its business requirements .
+
+customs states that it has been cautioned against defining an architecture in too much detail lest the business process changes before system development can proceed , but it does not clearly define what it means by too much detail .
+
+customs' architecture neither defines all critical business functions nor identifies all information needs and flows within and among the business areas for five of its six business areas .
+
+as a result , rather than being overly detailed , it lacks the basic , required elements .
+
+4 .
+
+while the treasury inspector general ( ig ) has given customs an unqualified opinion in fiscal year 1997 , the ig also reported that customs lacks adequate assurance that all revenue due is collected and compliance with other trade laws is achieved .
+
+despite the progress that has been made , this lack of assurance has been a persistent issue since we reported on our audit on customs' financial statements for fiscal year 1992.5 .
+
+customs states that we have inaccurately characterized the completeness of its architecture for the finance business area because certain finance business functions have been defined in various other analyses , reports , and strategies .
+
+this assertion reflects a misunderstanding of the purpose and value of a systems architecture .
+
+our report concludes that customs' architecture for its finance business area ( as well as all but one other business area ) is substantially incomplete because it does not ( 1 ) describe all the agency's business functions , ( 2 ) outline the information needed to perform the functions , or ( 3 ) completely identify the users and locations of the functions .
+
+even if other documents contain fragments of the missing information for one business area , which we did not attempt to verify , this does not mitigate the need for a single , comprehensive , maintainable , and enforceable statement of architectural requirements and standards .
+
+rona stillman , chief scientist for computers and telecommunications linda koontz , associate director randolph hite , senior assistant director deborah a. davis , assistant director madhav panwar , senior technical advisor mark bird , assistant director the first copy of each gao report and testimony is free .
+
+additional copies are $2 each .
+
+orders should be sent to the following address , accompanied by a check or money order made out to the superintendent of documents , when necessary .
+
+visa and mastercard credit cards are accepted , also .
+
+orders for 100 or more copies to be mailed to a single address are discounted 25 percent .
+
+u.s. general accounting office p.o .
+
+box 37050 washington , dc 20013 room 1100 700 4th st. nw ( corner of 4th and g sts .
+
+nw ) u.s. general accounting office washington , dc orders may also be placed by calling ( 202 ) 512-6000 or by using fax number ( 202 ) 512-6061 , or tdd ( 202 ) 512-2537 .
+
+each day , gao issues a list of newly available reports and testimony .
+
+to receive facsimile copies of the daily list or any list from the past 30 days , please call ( 202 ) 512-6000 using a touchtone phone .
+
+a recorded menu will provide information on how to obtain these lists .
+

@@ -1,0 +1,590 @@
+i am pleased to appear before the task force today to present the findings on our testing of the voting equipment used in the 2006 general election in florida's 13th congressional district ( florida - 13 ) .
+
+i would like to thank the task force for its overall support of our efforts and specifically for the assistance provided in obtaining resources from the house recording studio that were critical to successfully completing our testing efforts .
+
+in november 2006 , about 18,000 undervotes were reported in sarasota county in the race for florida's 13th congressional district .
+
+after the election results were contested in the house of representatives , the task force met and unanimously voted to seek gao's assistance in determining whether the voting systems contributed to the large undervote in sarasota county .
+
+in our october 2 , 2007 , statement for the task force , we presented the findings of our review of the voting systems and stated that while prior tests and reviews provided some level of assurance that the voting systems in sarasota county — ivotronic direct recording electronic ( dre ) voting systems manufactured by election systems and software ( es&s ) — functioned correctly , they were not enough to provide reasonable assurance that the ivotronic dre voting systems did not contribute to the undervote .
+
+specifically , we found that assurance was lacking in three areas and proposed to the task force that additional tests — firmware verification , ballot , and calibration — be conducted to address these areas .
+
+we stated that successful accomplishment of these tests would provide increased , but not absolute , assurance that the ivotronic dres used in sarasota county during the 2006 general election did not cause the undervote .
+
+the task force requested that we proceed with the proposed additional tests .
+
+our objectives were to ( 1 ) verify that firmware installed in a statistical sample of ivotronic dres was identical to the firmware certified by the state of florida , ( 2 ) perform ballot testing using 112 ways to cast a ballot for the florida - 13 contest to ensure that the voting machines would properly record and count the ballots , and ( 3 ) deliberately miscalibrate voting machines and then cast ballots on those machines to ensure that the voting machines would properly record the ballots .
+
+as part of the first objective , we also validated that the source code , which was held in escrow by the florida division of elections , would produce the firmware used by sarasota county during the 2006 general election .
+
+to conduct our tests , we developed test protocols and detailed test procedures .
+
+we met with officials from the sarasota county supervisor of elections , the florida department of state and division of elections , and es&s to obtain the necessary details about the voting systems and prior tests to document our test procedures .
+
+we also reviewed voting system documentation to develop a testing approach and the test procedures .
+
+to ensure that the certified firmware held in escrow by the florida division of elections corresponded to the source code that was reviewed by a team from florida state university and us , on november 19 , 2007 , we visited es&s's development facility in rockford , illinois , and witnessed the rebuild of the firmware from the escrowed source code .
+
+further details on our test methodology are included in the following sections on each of the three tests .
+
+appendix i outlines the process used to select machines for testing , and appendix ii lists the ivotronic dres that we tested .
+
+we coordinated with the florida division of elections and the sarasota county supervisor of elections to obtain access to the ivotronic dres and other necessary test equipment to conduct our testing .
+
+we conducted the firmware verification , ballot , and calibration tests at the sarasota county voting equipment facility ( vef ) in sarasota , florida .
+
+we established the test environment on november 26 , 2007 , and conducted the tests from november 27 , 2007 , to december 4 , 2007 .
+
+during this time , we completed the steps necessary to conduct the tests and collected the test data .
+
+in addition , we video recorded the tests .
+
+one camera was used to capture a wide angle shot of the test room .
+
+other cameras recorded the conduct of the firmware verification , ballot , and calibration tests .
+
+we provided a draft of this statement to the florida department of state and es&s for their review and comments .
+
+we briefed the sarasota county supervisor of elections on the contents of our statement .
+
+the florida department of state and es&s also conducted a sensitivity review to ensure that business proprietary information is not disclosed in this statement .
+
+we conducted our work from october 2007 to february 2008 in washington , d.c. ; tallahassee and sarasota , florida ; and at es&s facilities in rockford , illinois , and omaha , nebraska .
+
+the 13th congressional district of florida comprises desoto , hardee , sarasota , and parts of charlotte and manatee counties .
+
+in the november 2006 general election , there were two candidates in the race to represent the 13th congressional district: vern buchanan , the republican candidate , and christine jennings , the democratic candidate .
+
+the state of florida certified vern buchanan the winner of the election .
+
+the margin of victory was 369 votes out of a total of 238,249 votes counted .
+
+table 1 summarizes the results of the election and shows that the results from sarasota county exhibited a significantly higher undervote rate than in the other counties in the congressional district .
+
+as seen in table 1 , about 18,000 undervotes were reported in sarasota county in the race for florida's 13th congressional district .
+
+after the election results were contested in the house of representatives , the task force met and unanimously voted to seek gao's assistance in determining whether the voting systems contributed to the large undervote in sarasota county .
+
+on june 14 , 2007 , we met with the task force and agreed upon an engagement plan .
+
+we reported on the status of our review at an interim meeting held by the task force on august 3 , 2007 .
+
+on october 2 , 2007 , we reported that our analysis of election data did not identify any particular voting machines or machine characteristics that could have caused the large undervote in the florida - 13 race .
+
+the undervotes in sarasota county were generally distributed across all machines and precincts .
+
+we found that some of the prior tests and reviews conducted by the state of florida and sarasota county provided assurance that certain components of the voting system in sarasota county functioned correctly , but they were not enough to provide reasonable assurance that the ivotronic dres did not contribute to the undervote .
+
+we proposed three tests — firmware verification , ballot , and calibration — to provide increased assurance , but not absolute assurance , that the ivotronic dres did not cause the large undervote in sarasota county .
+
+we stated that the successful conduct of the tests could reduce the possibility that the voting systems caused the undervote and shift attention to the possibilities that voters intentionally undervoted or voters did not properly cast their ballots on the ivotronic dre , potentially because of issues relating to interaction between voters and the ballot .
+
+in the 2006 general election , sarasota county used voting systems manufactured by es&s .
+
+the state of florida has certified different versions of es&s voting systems .
+
+the version used in sarasota county was designated es&s voting system release 4.5 , version 2 , revision 2 , and consisted of ivotronic dres , a model 650 central count optical scan tabulator for absentee ballots , and the unity election management system .
+
+it was certified by the state of florida on july 17 , 2006 .
+
+the certified system includes different configurations and optional elements , several of which were not used in sarasota county .
+
+the election management part of the voting system is called unity ; the version that was used was 2.4.4.2 .
+
+figure 1 shows the overall election operation using the unity election management system and the ivotronic dre .
+
+sarasota county used ivotronic dres for early and election day voting .
+
+specifically , sarasota county used the 12-inch ivotronic dre , hardware version 1.1 with firmware version 8.0.1.2 .
+
+some of the ivotronic dres are configured to use audio ballots , which are often referred to as americans with disabilities act ( ada ) machines .
+
+the ivotronic dre uses a touch screen — a pressure - sensitive graphics display panel — to display and record votes ( see fig .
+
+2 ) .
+
+the machine has a storage case that also serves as the voting booth .
+
+the operation of the ivotronic dre requires the use of a personalized electronic ballot ( peb ) , which is a storage device with an infrared window used for transmission of ballot data to and from the ivotronic dre .
+
+the ivotronic dre has four independent flash memory modules , one of which contains the program code — firmware — that runs the machine ; the remaining three flash memory modules store redundant copies of ballot definitions , machine configuration information , ballots cast by voters , and event logs ( see fig .
+
+3 ) .
+
+the ivotronic dre includes a vote button that the voter has to press to cast a ballot and record the information in the flash memory .
+
+the ivotronic dre also includes a compact flash card that can be used to load sound files onto ivotronic dres with ada functionality .
+
+the ivotronic dre's firmware can be updated through the compact flash card .
+
+additionally , at the end of polling , the ballots and audit information are to be copied from the internal flash memory module to the compact flash card .
+
+to use the ivotronic dre for voting , a poll worker activates the ivotronic dre by inserting a peb into the peb slot after the voter has signed in at the polling place .
+
+after the poll worker makes selections so that the appropriate ballot will appear , the peb is removed and the voter is ready to begin using the system .
+
+the ballot is presented to the voter in a series of display screens , with candidate information on the left side of the screen and selection boxes on the right side ( see fig .
+
+4 ) .
+
+the voter can make a selection by touching anywhere on the line , and the ivotronic dre responds by highlighting the entire line and displaying an x in the box next to the candidate's name .
+
+the voter can also change his or her selection by touching the line corresponding to another candidate or by deselecting his or her choice .
+
+“previous page” and “next page” buttons are used to navigate the multipage ballot .
+
+after completing all selections , the voter is presented with a summary screen with all of his or her selections ( see fig .
+
+5 ) .
+
+from the summary screen , the voter can change any selection by selecting the race .
+
+the race will be displayed to the voter on its own ballot page .
+
+when the voter is satisfied with the selections and has reached the final summary screen , the red vote button is illuminated , indicating the voter can now cast his or her ballot .
+
+when the vote button is pressed , the voting session is complete and the ballot is recorded on the ivotronic dre .
+
+in sarasota county's 2006 general election , there were nine different ballot styles with between 28 and 40 races , which required between 15 and 21 electronic ballot pages to display , and 3 to 4 summary pages for review purposes .
+
+an election system is based upon a complex interaction of people ( voters , election officials , and poll workers ) , processes ( controls ) , and technology that must work effectively together to achieve a successful election .
+
+the particular technology used to cast and count votes is a critical part of how elections are conducted , but it is only one facet of a multifaceted election process that involves the interplay of people , processes , and technology .
+
+as we have previously reported , every stage of the election process — registration , absentee and early voting , preparing for and conducting election day activities , provisional voting , and vote counting — is affected by the interaction of people , processes , and technology .
+
+breakdowns in the interaction of people , processes , and technology may , at any stage of an election , impair an accurate vote count .
+
+for example , if the voter registration process is flawed , ineligible voters may be allowed to cast votes .
+
+poll worker training deficiencies may contribute to discrepancies in the number of votes credited and cast , if voter information was not entered properly into poll books .
+
+mistakes in using the dre systems could result from inadequate understanding of the equipment on the part of those using it .
+
+as noted in our october statement , we recognize that human interaction with the ballot layout could be a potential cause of the undervote , and we noted that several suggestions have been offered as possible ways to establish that voters are intentionally undervoting and to provide some assurance that the voting systems did not cause the undervote .
+
+for instance , a voter - verified paper trail could provide an independent confirmation that the touch screen voting systems did not malfunction in recording and counting the votes from the election .
+
+the paper trail would reflect the voter's selections and , if necessary , could be used in the counting or recounting of votes .
+
+this issue was also recognized in the source code review performed by the security and assurance in information technology ( sait ) laboratory at florida state university as well as the 2005 and draft 2007 voluntary voting systems guidelines prepared for the election assistance commission .
+
+we have previously reported on the need to implement such a function properly .
+
+explicit feedback to voters that a race has been undervoted and a prompt for voters to affirm their intent to undervote might help prevent many voters from unintentionally not casting a vote in a race .
+
+on the ivotronic dres , such feedback and prompts are provided only when the voter attempts to cast a completely blank ballot , but not when a voter fails to vote in individual races .
+
+offering a “none of the above” option in a race would provide voters with the opportunity to indicate that they are intentionally undervoting .
+
+for example , the state of nevada provides this option in certain races in its elections .
+
+we reported that decisions about these or other suggestions about ballot layout or voting system functions should be informed by human factors studies that assess such measures' effectiveness in accurately recording voters' preferences , making voting systems easier to use , and preventing unintentional undervotes .
+
+we previously reported that having reasonable assurance that all ivotronic dres that recorded votes in the 2006 general election were running the same certified firmware would allow us to have more confidence that the ivotronic dres will behave similarly when tested .
+
+consequently , if we are reasonably confident that the same firmware was running in all 1,499 machines , then we are more confident that the results of other tests , conducted both by gao and by others , on a small number of machines can be used to obtain increased assurance that the ivotronic dres did not cause the undervote .
+
+we also reported that there was a lack of assurance that the source code that was held in escrow by the florida division of elections and that was previously reviewed by florida state university and by us , if rebuilt , would corresponded to the firmware that was certified and held in escrow by the florida division of elections .
+
+we found that the firmware on a statistically selected sample of 115 ivotronic dres was the same as that certified by the florida division of elections .
+
+we also found that the escrowed source code , when rebuilt into executable firmware , corresponded to the 8.0.1.2 firmware that was certified by the florida division of elections .
+
+our methodology to obtain reasonable assurance that the firmware used on sarasota county's ivotronic dres during the 2006 general election was the same as that certified by the state of florida was broken down into two basic steps: ( 1 ) selecting a representative sample of machines , and ( 2 ) verifying that the firmware extracted from the voting machines was the same as the escrowed firmware that had been certified by the florida division of elections .
+
+appendix i details the methodology for selecting the representative sample of machines .
+
+appendix ii contains a list of the serial numbers of the tested ivotronic dres .
+
+to ensure that we would be testing with the ivotronic firmware certified by the florida division of elections , on october 18 , 2007 , we and officials from the florida division of elections made two copies of the escrowed ivotronic 8.0.1.2 firmware on compact discs ( cd ) and placed them in two tamper - evident bags with serial numbers .
+
+the bags were subsequently hand - delivered by a florida division of elections official for our use in the firmware verification test and for the rebuilding of the firmware from the source code .
+
+in order to extract the firmware from an ivotronic dre , the machine was placed on an anti - static mat and the case was opened using a special screwdriver .
+
+after lifting the case , a special extraction tool was used to remove the flash memory module that contains the firmware .
+
+the flash memory module was then inserted in the socket of a needham electronics' emp - 300 device that was connected to the universal serial bus ( usb ) port of a personal computer ( pc ) .
+
+the empwin application running on that pc was used to read the firmware from the flash memory module and save the extracted firmware on the pc .
+
+the florida division of elections loaned us the emp - 300 and empwin application for use in extracting firmware from the flash memory module .
+
+to compare the extracted firmware with the escrowed version , we relied on two commercially available software programs .
+
+first , we acquired a license for prestosoft's examdiff pro software that enables comparison of files .
+
+the examdiff pro software is a commercially available program designed to highlight the differences between two files .
+
+for each selected ivotronic dre , the extracted firmware was compared with the escrowed version with any differences highlighted by the program .
+
+second , to further ensure that the extracted firmware matched the escrowed firmware , we compared the sha - 1 hash value of the extracted firmware to the hash value of the comparable certified firmware .
+
+we computed the sha - 1 hash by using the maresware hash software that was provided by the florida division of elections .
+
+in order to ensure that the commercial maresware hash software properly calculated the sha - 1 hash value , we ( 1 ) created four files and obtained a fifth file that contained executable code , ( 2 ) obtained hash values for each file by either using an external program that generated the hash values using the same hashing algorithm as the commercial product or using known hash values , and ( 3 ) used the commercial program acquired for testing the firmware to ensure that the hash values it generated for these five files were identical to the expected hash values for those files .
+
+in each case , the hash values generated by the commercial program were identical to the expected values .
+
+accordingly , reasonable assurance for the purposes of our review was obtained that the commercial program produced its hash values in accordance with the nist algorithm .
+
+at the end of each day , we ( 1 ) used the commercial maresware software to compute hash values for each of the firmware programs that had been unloaded during that day and all previous days , and ( 2 ) compared each hash created by this program to the expected value that was calculated from the firmware that had been escrowed by the florida division of elections .
+
+this comparison provided further assurance that the extracted firmware was ( 1 ) identical to the version escrowed by the florida division of elections when the hashes agreed , or ( 2 ) different if the hashes did not agree .
+
+we also verified that sequestered machines were not used since the 2006 general election .
+
+for each of these sequestered machines , we used an audit peb to copy the audit logs onto a compact flash card and then used the unity election reporting manager to generate event log reports .
+
+we examined the event logs for the date and time of occurrence of activities that would indicate whether the machine had been used .
+
+lack of such activities since the 2006 general election provided reasonable assurance that the machines had not been used since they were sequestered .
+
+in addition , to verify that the source code for ivotronic dre firmware version 8.0.1.2 previously examined by the florida state university sait source code review team and by gao corresponded with the version certified by the florida division of elections , es&s officials stated that it still had the development environment that could be used to compile , or rebuild , the certified firmware from the source code retained in escrow by the florida division of elections .
+
+as we previously noted , a software review and security analysis of the ivotronic dre firmware was conducted by a team led by florida state university's sait laboratory .
+
+the software review team attempted to confirm or refute many different hypotheses that , if true , might explain the undervote in the race for the 13th congressional district .
+
+in doing so , they made several observations about the source code , which we were able to independently verify .
+
+the rebuilding of the firmware was conducted by es&s at its rockford , illinois , facility on november 19 , 2007 , and witnessed by us .
+
+prior to the rebuild , the florida division of elections provided an unofficial copy of the source code to es&s so that es&s could prepare the development environment and test the rebuild steps .
+
+using the official sealed copy of the source code cd , es&s rebuilt the firmware in front of gao representatives .
+
+es&s described the development environment and we inspected it to satisfy ourselves that the firmware was faithfully rebuilt using the escrowed source code .
+
+after the rebuilding of the firmware , the certified version of 8.0.1.2 firmware was compared with the rebuilt version using prestosoft's examdiff pro .
+
+while the florida audit team had previously confirmed that the firmware running on six ivotronic dres matched the certified version held in escrow by the florida division of elections , we found that the sample size was too small to support generalization to all 1,499 ivotronic dres that recorded votes during the 2006 general election .
+
+accordingly , we conducted a firmware verification test on a statistically valid sample of 115 ivotronic dre machines used by sarasota county during the 2006 general election .
+
+the selected machines fell into two groups — machines that had not been used since the 2006 general election ( referred to as sequestered machines ) and machines that had been used in subsequent elections .
+
+for each machine , we extracted the firmware from a flash memory module in that machine and then compared the extracted firmware with the escrowed version using commercially available file comparison tools to determine whether they agreed .
+
+we found that the firmware installed in the flash memory module of each machine matched the escrowed firmware that had been certified by florida .
+
+the statistical approach used to select these machines lets us estimate with a 99 percent confidence level that at least 1,439 , or 96 percent , of the 1,499 machines used in the 2006 general election used the firmware that was certified by the state of florida .
+
+we witnessed the rebuild of the ivotronic dre's firmware from the source code that was held in escrow by the florida division of elections and that was previously reviewed by florida state university and by us .
+
+at es&s's software development facility , we observed that rebuilding the firmware from the escrowed source code resulted in the same firmware that was certified and held in escrow by the florida division of elections .
+
+the comparison of the escrowed firmware to the version that was rebuilt by the vendor identified no differences and provides us reasonable assurance that the escrowed firmware corresponded to the escrowed source code .
+
+the successful rebuilding of the firmware from the escrowed source code enables us to have greater confidence in the conclusions derived from prior source code reviews by florida state university and us .
+
+in our october 2007 statement , we noted that there were 112 common ways a voter may interact with the system to select a candidate in the florida - 13 race and cast the ballot , and that prior testing of the ivotronic dres covered only 13 of these 112 possible ways .
+
+we developed 224 test ballots to verify that the ivotronic dre could accurately capture ballots using each of these 112 common ways a voter may interact with the system ; 112 test ballots were cast on one machine configured for early voting , and another 112 ballots were cast on nine machines configured for election day voting .
+
+our tests showed that for each of the 224 test ballots , the ivotronic dre correctly captured each vote as cast for the florida - 13 race .
+
+we also conducted firmware verification tests on these machines and verified that they were running the certified firmware .
+
+the methodology for ballot testing can be broken into two major areas — development of the test ballots and execution of the test using those ballots .
+
+the following sections discuss these areas .
+
+in examining how the system allowed voters to make a selection in the florida - 13 race , we found at least 112 different ways a voter could make his or her selection and cast the ballot in the florida - 13 race , assuming that it was the only race on the ballot .
+
+specifically , a voter could ( 1 ) initially select either candidate or neither candidate ( i.e. , undervote ) , ( 2 ) change the vote on the initial screen , and ( 3 ) use a combination of features to change or verify his or her selection by using the page back and review screen options .
+
+accordingly , we tested these 112 ways to select a candidate on the early voting machine and on the election day machines ( 224 test ballots in total ) .
+
+the 112 standard test ballots cover all combinations of the following types of voter behavior: voter makes selection on the initial ballot screen and makes no changes or takes any other action to return to the contest to review or change selection .
+
+voter makes selection on the initial ballot screen and decides before leaving that screen to change the selection because of an error in selecting the candidate or for some other reason .
+
+voter makes selection on the initial ballot screen and then decides to use the page back option to review or change selection .
+
+voter makes selection on the initial ballot screen and continues to the review screen and then decides to use the review screen option to review or change selection .
+
+voter makes selection on the initial ballot screen and uses a combination of page back and review screen options to review or change selection .
+
+in each instance where a selection could be made , three choices were possible for the florida - 13 race: a selection for one of the two candidates , or no selection ( i.e. , an undervote ) .
+
+in developing the standard test ballots , we did not consider all combinations of some other types of voter behavior that would have significantly increased the number of test cases without providing significant benefits .
+
+in most cases , such behavior are variants of the primary voter behavior that we examined .
+
+the following are examples of voter behavior that were not included in the standard test set in order to reduce the number of test cases to practicable levels: using a one - touch or two - touch method to make changes on a ballot page .
+
+varying the number of pages a voter may go back ( “page backs” ) to return to the page containing the florida - 13 race to change or review a selection .
+
+casting a ballot from the review screen selection .
+
+the vote button is not activated until the voter reaches the last review screen .
+
+however , once the vote button has been activated , a ballot may be cast from any screen .
+
+for example , a voter may activate the vote button and then return to a contest to review or change the selection using the review screen option .
+
+once the voter goes to the contest from the review screen and makes any desired changes , the voter can then cast the ballot from that screen rather than going back to the last page of the review screen or even the review screen that was used to return to the selection .
+
+although we did not consider all combinations of these types of voter behavior when developing the standard test ballots , we included some of these user interactions in the execution of applicable test ballots to provide increased assurance that the system would handle these voter behaviors .
+
+for each applicable test ballot , we randomly determined the test procedure that should be used for the following attributes: initial change method – the standard test ballots address voters making changes on the initial ballot screen .
+
+where possible , the method used to change ( one - touch or two - touch ) the selection was randomly selected .
+
+number of page backs – the ballots used by sarasota county included the page back function .
+
+after reviewing the ballots , it appeared reasonable to expect that voters who may have used the page back option would probably decide that they had missed the race by the time they went one or two pages beyond the page with the florida - 13 race .
+
+therefore , when a standard test ballot contained a page back requirement , the number of page backs was randomly selected to determine whether one or two page backs should be used .
+
+page back change method – some test ballots required a change after the page back option was selected .
+
+as with the initial change method , where possible , the method of changing ( one - touch or two - touch ) the selection was randomly assigned .
+
+review screen change method – the system displays a review screen that shows the voter's selections ( or lack of selections ) after the voter has progressed through all contests .
+
+on the review screen , the voter can select a race to go directly to that contest and ( 1 ) review the selection made , and ( 2 ) make any desired corrections .
+
+the standard test ballots were designed to cover this type of event .
+
+where possible , the method used to make the change ( one - touch or two - touch ) was randomly selected .
+
+activate vote button and cast ballots from the review screen – in order to test casting ballots from locations other than the last review screen , the vote button must be activated prior to going to a screen where the ballot is cast .
+
+in order to determine which test ballots should be used for this test , a two - step approach was adopted .
+
+first , a random selection of the ballots that use the review screen option was made to determine which test ballots should have the vote button activated .
+
+then a random selection of these test ballots was made to determine whether the ballot should be cast from the review screen selection .
+
+besides those attributes that directly affect the selection in the florida - 13 race , we varied the other attributes on the ballot in order to complete the ballot test .
+
+for each of the 224 test ballots , we used random values for other attributes , including the following: ballot style – each ballot was randomly assigned one of the nine ballot styles used in the election .
+
+write - in candidate – all ballot styles includes write - in options in at least 2 races — united states senate and state governor / lieutenant governor .
+
+to verify that the ivotronic dre accurately recorded the selection in the florida - 13 race for each test ballot , we needed a way to identify each test ballot in the ballot image log .
+
+to accomplish this , we randomly selected one of these two races , selected the write - in candidate for the race , and entered a unique value ( i.e. , the test ballot number ) in the write - in field .
+
+candidates and selections in other races on the ballot – each ballot style had between 28 and 40 contests on the ballot .
+
+the values for the contests besides the florida - 13 race and the write - in field were also randomly selected .
+
+for example , most items had three possible choices — candidate 1 ( or yes ) , candidate 2 ( or no ) , and undervote .
+
+which of these three values was used for a given contest was randomly determined .
+
+the values used for these attributes were independently determined for the election day and early voting test ballots .
+
+for example , test ballot 2 ( election day ) and test ballot 202 ( early voting ) were designed to test the same standard condition described by one of the 112 standard test ballots .
+
+table 2 illustrates some of the similarities and differences between the two test ballots that result from the random selection process used to determine the other aspects of the ballot .
+
+finally , we selected 10 random machines to be used for the ballot testing .
+
+one machine was selected from those that were used in early voting in the 2006 general election .
+
+the other nine were selected from those that used each of the ballot styles on election day in the 2006 general election .
+
+for each election day machine , the assigned precinct was the same as the precinct where the machine was used during the 2006 general election .
+
+for the early voting machine , we needed to assign precincts for each ballot style .
+
+we used the precinct associated with the back - up machine used for election day testing as the precinct for that ballot style .
+
+if the first back - up machine was assigned the same precinct number as the primary election day machine , then we used the precinct associated with the second back - up machine .
+
+this approach was taken to maximize the number of precincts used in the testing efforts .
+
+a two - person test team conducted the ballot testing .
+
+one tester read out aloud the steps called for in the test ballot while the other tester performed those actions .
+
+in order to ensure that all of the actions relating to the florida - 13 congressional race were performed as laid out in the test ballots , a two - person review team observed a video display of the test and compared the actions taken by the tester to those called for in the test ballot .
+
+furthermore , after the testing was completed , another team reviewed the video recording of these tests to validate that the actions relating to the florida - 13 contest taken by the tester were consistent with those called for by the test ballots .
+
+the criteria used to determine whether the test produced the expected result was derived from the florida voting system standards .
+
+specifically , among other things , these standards require the system to allow the voter to ( 1 ) determine whether the inputs given to the system have selected the candidates that he or she intended to select , ( 2 ) review the candidate selections made by the voter , and ( 3 ) change any selection previously made and confirm the new selection prior to the act of casting the ballot .
+
+furthermore , the system must communicate to the voter the fact that the voter has failed to vote in a race ( undervote ) and require the voter to confirm his or her intent to undervote before casting the ballot .
+
+during the ballot test , the actual system response was compared to the expected results by a review team and after the testing was completed another review team compared the video records to the test ballots to validate that the tests had been performed in accordance with test scripts for the florida - 13 contest .
+
+at the beginning of testing on each ivotronic dre , the machine was opened for voting and a zero tape was printed .
+
+after the casting of all test ballots on the machine , the machine was closed and a results tape was printed .
+
+the closing of the machine also writes the audit data to the compact flash card , including event data and ballot images .
+
+we examined the results tapes and compared the total votes cast for the florida - 13 contest against what was expected from the test ballots .
+
+we also kept track of the total number of ballots handled by the machine , called the “protective count” of an ivotronic dre , before and after the test and confirmed that the increase in protective count matched the number of test ballots cast on that machine .
+
+using the unity election reporting manager , we read the compact flash cards and processed the audit data on each ballot test machine .
+
+we generated the ballot image log and examined the individual test ballots in the ballot image log .
+
+we looked for the unique identifier that was used for each test ballot and then confirmed that the ballot image reflected the correct selection for the florida - 13 race as called for by the test ballot .
+
+for example , the test script for test ballot 1 required the tester to ( 1 ) select a write - in candidate for u.s. senate and ( 2 ) enter the value of “tb1” in the write - in field .
+
+because only this test ballot used this value , we could review the ballot image log to determine what selection the voting machine recorded for the florida - 13 contest for the ballot showing “tb1” as the write - in candidate for u.s. senate .
+
+finally , using the process discussed previously for firmware testing , the firmware on all machines used for ballot testing was validated to ensure these machines used the same firmware that had been certified by the florida division of elections .
+
+after executing the ballot tests on the election day and early voting machines , we found that all 10 ivotronic dres captured the votes for the florida - 13 race on the test ballots accurately .
+
+we used a unique identifier in a write - in field in each test ballot and verified that the ivotronic dre accurately captured the tester's final selections in the florida - 13 race for each test ballot .
+
+testing 112 ways to select a candidate on a single machine also provided us some additional assurance that the volume of ballots cast on election day did not contribute to the undervote .
+
+we noted that casting 112 ballots on a single machine was more than the number of ballots cast on over 99 percent of the 1,415 machines used on election day .
+
+because little was known about the effect of a miscalibrated machine on the behavior of an ivotronic dre , we deliberately miscalibrated two ivotronic dres using 10 different miscalibration methods to verify the functioning of the machine .
+
+although the miscalibration made the machine more difficult to use , the 39 ballots used in this test confirmed that the system correctly recorded the displayed vote for the florida - 13 contest and did not appear to contribute to the undervote .
+
+for the calibration testing , we judgmentally selected five different miscalibration patterns and repeated each pattern twice — once with a small amount of miscalibration and the second time with a large amount of miscalibration .
+
+the amount of miscalibration was also subjective — roughly 0.25 to 0.5 inch for a small amount and about 0.7 to 1 inch for a large miscalibration .
+
+the miscalibration patterns are shown in the following figures .
+
+we conducted calibration testing on two different machines that were used for ballot testing .
+
+as with ballot testing , at the beginning of testing of each machine , we opened the machine for voting and printed a zero tape .
+
+during the opening process , we calibrated the machine with one of the miscalibration patterns .
+
+after the machine was miscalibrated , we then executed at least three of the test ballots that were used during ballot testing on that machine for each test .
+
+the test ballots were rotated among the miscalibration patterns .
+
+for example , one of the machines had eight different ballot test scripts .
+
+the first three were used on one miscalibration pattern , the next three on another miscalibration pattern , and the final two plus the first one would be used on another miscalibration pattern .
+
+after the ballots were cast for one miscalibration pattern , the machine would be miscalibrated with another pattern .
+
+after the needed miscalibration patterns were tested on a machine , the ivotronic dre was closed and a results tape was printed .
+
+the closing of the ivotronic dre also wrote the audit data to the compact flash card .
+
+during the testing , the tester was instructed to take whatever actions were necessary to achieve the desired result .
+
+for example , if the script called for the selection of candidate a , then the tester would keep touching the screen until candidate a was selected .
+
+a review team monitored the testing to ensure that ( 1 ) the proper candidate for the florida - 13 congressional race was ultimately selected and ( 2 ) the review screen showed this candidate selection when it was first presented .
+
+as with the ballot test , we used the unity election reporting manager to read the compact flash cards and processed the audit data or each ballot test machine .
+
+we generated the ballot image log and examined the individual test ballots in the ballot image log .
+
+we looked for the unique identifier that was used for each test ballot and then confirmed that the ballot image reflected the correct selection for the florida - 13 race as called for by the test ballot .
+
+after the testing had been completed , the expected results shown in the test ballot scripts were compared to the actual results contained in the ballot image log and the results tape using the same process discussed in the ballot testing methodology .
+
+the 39 ballots used in this test confirmed that the system correctly recorded the displayed vote for the florida - 13 contest .
+
+we also noted that the miscalibration clearly made the machines harder to use and during an actual election these machines would have probably been either recalibrated or removed from service once the voter brought the problem to the precinct's attention , according to a sarasota county official who observed the tests .
+
+figure 11 shows an example of effects of our miscalibration efforts on the screen that is used to confirm the calibration results .
+
+specifically , the stylus points to where the tester is touching the screen while the “x” on the screen shows where the machine indicated the stylus was touching the screen .
+
+in a properly calibrated machine , the stylus and the “x” are basically at the same point .
+
+figure 12 shows an example of where the tester is touching the screen to make a selection and how this “touch” is translated into a selection .
+
+as can be seen , the finger making the selection is touching a position that in a properly calibrated machine would not result in the selection shown .
+
+however , the machine clearly shows the candidate selected and our tests confirmed that for the 39 ballots tested , the candidate actually shown by the system as selected ( in this example , the shaded line ) was the candidate shown on the review screen , as well as the candidate that received the vote when the ballot was cast .
+
+our tests showed that ( 1 ) the firmware installed in a statistically selected sample of machines used by sarasota county during the 2006 general election matched the firmware certified by the florida division of elections , and we confirmed that when the manufacturer rebuilt the ivotronic 8.0.1.2 firmware from the escrowed source code , the resulting firmware matched the certified version of firmware held in escrow , ( 2 ) the machines properly displayed , recorded , and counted the selections for all test ballots cast during the ballot testing involving the 112 common ways a voter may interact with the system to cast a ballot for the florida - 13 race , and ( 3 ) the machines accurately recorded the test ballots displayed on deliberately miscalibrated machines .
+
+the results of these tests did not identify any problems that would indicate that the ivotronic dres were responsible for the undervote in the florida - 13 race in the 2006 general election .
+
+as we noted when we proposed these tests , even after completing these tests , we do not have absolute assurance that the ivotronic dres did not play any role in the large undervote .
+
+absolute assurance is impossible to achieve because we are unable to recreate the conditions of the election in which the undervote occurred .
+
+although the test results cannot be used to provide absolute assurance , we believe that these test results , combined with the other reviews that have been conducted by florida , gao , and others , have significantly reduced the possibility that the ivotronic dres were the cause of the undervote .
+
+at this point , we believe that adequate testing has been performed on the voting machine software to reach this conclusion and do not recommend further testing in this area .
+
+given the complex interaction of people , processes , and technology that must work effectively together to achieve a successful election , we acknowledge the possibility that the large undervote in florida's 13th congressional district race could have been caused by factors such as voters who intentionally undervoted , or voters who did not properly cast their ballots on the ivotronic dre , potentially because of issues relating to interaction between voters and the ballot .
+
+we provided draft copies of this statement to the secretary of state of florida and es&s for their review and comment .
+
+we briefed the sarasota county supervisor of elections on the contents of this statement and asked for their comments .
+
+the florida department of state provided technical comments , which we incorporated .
+
+es&s and the sarasota county supervisor of elections provided no comments .
+
+mr. chairman , this completes my prepared statement .
+
+i would be happy to respond to any questions you or other members of the task force may have at this time .
+
+for further information about this statement , please contact naba barkakati at ( 202 ) 512-6412 or barkakatin@gao.gov .
+
+contact points for our office of congressional relations and public affairs may be found on the last page of this statement .
+
+other key contributors to this statement include james ashley , stephen brown , francine delvecchio , cynthia grant , geoffrey hamilton , richard hung , douglas manor , john c. martin , jan montgomery , daniel novillo , deborah ortega , keith rhodes , sidney schwartz , patrick tobo , george warnock , and elizabeth wood .
+
+we also appreciate the assistance of the house recording studio in the video recording of the tests .
+
+each of the three tests — firmware verification , ballot , and calibration — was conducted on a sample of the 1,499 ivotronic dres that recorded votes during the 2006 general election in sarasota county , florida .
+
+we selected 115 ivotronic dres for the firmware test , 10 for the ballot test , and 2 for the calibration test .
+
+appendix ii contains the serial numbers of the ivotronic dres that were tested .
+
+we selected a stratified random probability sample of ivotronic dres from the population of 1,499 .
+
+the sample was designed to allow us to generalize the results of the firmware sample to the population of ivotronic dres used in this election .
+
+we stratified the population into two strata based on whether the machines had been sequestered since the 2006 general election .
+
+there were a total of 818 machines that were sequestered and 681 machines that had been used in subsequent elections .
+
+the population and sample are described in table 3 .
+
+we calculated the sample size in each stratum using the hypergeometric distribution to account for the relatively small populations in each stratum .
+
+we determined each sample size to be the minimum number of machines necessary to yield an upper bound of 7.5 percent , at the 99 percent confidence level , if we observed zero failures in the firmware test .
+
+assuming that we found no machines using an uncertified firmware version , these sample sizes allowed us to conclude with 99 percent confidence that no more than 7.5 percent of the machines in each stratum were using uncertified firmware .
+
+further , this sample allowed us to conclude that no more than 4 percent of the 1,499 ivotronic dres were using uncertified firmware , at the 99 percent confidence level .
+
+an additional five sequestered machines and five non - sequestered machines were selected as back - up machines should there be problems in locating the selected machines or some other problem that prevented testing them .
+
+we randomly selected a total of 10 machines from the population of 1,384 machines that were not selected in the firmware test sample .
+
+this sample size is not sufficient to allow us to make direct generalizations to the population .
+
+however , if we are reasonably confident that the same software is used in all 1,499 machines , then we are more confident that the results of the other tests on a small number of machines can be used to obtain increased assurance that the ivotronic dres did not cause the undervote .
+
+we randomly selected one machine from each of the nine ballot styles used during the general election and one machine from the machines used for early voting .
+
+in case of problems in operating or locating the machines , we also selected randomly selected two additional machines for each ballot style and for early voting .
+
+the two ivotronic dres selected for calibration testing were selected from those tested in the ballot test .
+
+because the machines used for the ballot tests included an ada machine and “standard” machines , we selected one of each for calibration testing .
+
+although we did not test the ada capabilities of the ada machine ( eg , the audio ballots ) , we found that the on - screen appearance of selections on the ada machine differed slightly from that on non - ada machines .
+
+for example , the standard non - ada machine displayed a blue bar across the screen and an x in the box next to the candidate's name when a selection was made , while an ada machine only showed an x in the box next to the candidate's name .
+
+table 4 table lists the ivotronic dres that were tested by gao .
+
+for each machine , the table shows whether the machine was sequestered and what type of testing was conducted on the machine .
+

@@ -1,0 +1,684 @@
+the environmental protection agency's ( epa ) mission is to protect human health and the environment by implementing and enforcing the laws and regulations intended to improve the quality of the nation's air , water , and lands .
+
+epa's policies and programs affect virtually all segments of the economy , society , and government .
+
+in meeting its mission , the agency relies extensively on networked computer systems to collect a wealth of environmental data and to disseminate much of this information to the public while also protecting sensitive or confidential information .
+
+protection of mission - critical and sensitive information technology ( it ) resources on information systems remains an ongoing challenge for epa as federal agencies experience evolving and growing cyber attacks .
+
+without a well - designed security program , epa's information and information systems could be subject to unauthorized access , disclosure , disruption , modification , or destruction .
+
+in response to your request , we evaluated epa's information security program .
+
+our objective was to determine whether epa has effectively implemented appropriate information security controls to protect the confidentiality , integrity , and availability of the information and systems that support its mission .
+
+to accomplish this objective , we examined computer security controls over epa's network infrastructure and systems key to the agency's mission .
+
+we also examined information security policies , plans , and procedures ; reviewed testing of controls over key applications ; interviewed key agency officials ; and reviewed epa inspector general reports to identify previously reported weaknesses .
+
+we conducted this performance audit from july 2011 to july 2012 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objective .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objective .
+
+see appendix i for a complete description of our objective , scope , and methodology .
+
+safeguarding government computer systems and the sensitive information that resides on them is an ongoing challenge because of the complexity and interconnectivity of systems , the ease of obtaining and using hacking tools , the steady advances in the sophistication and effectiveness of attack technology , and the emergence of new and more destructive attacks .
+
+without adequate safeguards , systems are vulnerable to individuals and groups with malicious intentions , who may obtain sensitive information , commit fraud , disrupt operations , or launch attacks against other computer systems and networks .
+
+federal agencies have experienced a significant rise in security incidents in recent years , with data from the u.s. computer emergency readiness team showing an increase in security incidents and events from 29,999 in 2009 to 42,887 in 2011 .
+
+epa was established in 1970 in response to concerns about environmental pollution .
+
+to perform its statutory responsibilities , epa develops and enforces regulations and gives grants to and sponsors partnerships with state environmental programs , non - profit organizations , educational institutions , and others .
+
+in addition , the agency conducts research and publishes materials on a variety of environmental topics .
+
+in fiscal year 2011 , epa's appropriation was about $8.6 billion .
+
+the agency has headquarters in washington , d.c. , 10 regional areas , and multiple laboratories and centers that support research and development .
+
+at headquarters , epa develops national programs , policies , and regulations for mission areas , as described in table 1 .
+
+epa's regional offices are responsible for the execution of agency programs within the states , and within some regions , including u.s. territories .
+
+figure 1 shows the distribution of these ten regions .
+
+epa relies on it to support its mission and achieve its goals .
+
+in fiscal year 2011 , the agency reported having 117 agency - operated systems and 12 contractor - operated systems .
+
+these systems include networks , telecommunications , and specific applications .
+
+the office of technology operations and planning within the office of environmental information provides centralized management and control of epa's it resources and services , including the epa wide area network , a primary general support system of epa .
+
+the office of technology operations and planning is located in washington , d.c. , and provides connectivity to epa program offices , regional offices and laboratories , and federal agencies .
+
+it is responsible for the planning , design , operation , management , and maintenance of the epa wide area network with support from on - site contractors and its managed trusted internet protocol services ( mtips ) service provider .
+
+two divisions within the office of technology operations and planning have primary responsibility for carrying out day - to - day operations of these services: the national computer center ( ncc ) , located in research triangle park , north carolina , is responsible for epa's wide area network operations and server operations for systems operated in the ncc .
+
+the enterprise desktop solutions division , located in washington , d.c. , is responsible for the d.c. area local area network , voice , and shared server room operation .
+
+figure 2 depicts a simplified version of epa's network .
+
+epa , in response to the office of management and budget's ( omb ) “cloud first” policy that requires each agency to identify three services that it will migrate to a cloud by june 2012 , has identified two cloud services: enterprise service desk and mtips , which is part of the networx program offered by the general services administration .
+
+epa also operates a virtual hosting infrastructure in four internal data centers with a standardized platform supporting up to 1,750 servers .
+
+officials stated that the goal is to migrate e - mail and collaboration services to a commercial external cloud provider by 2015 .
+
+the federal information security management act of 2002 ( fisma ) requires each federal agency to develop , document , and implement an agencywide information security program to provide security for the information and information systems that support the operations and assets of the agency , including those provided or managed by other agencies , contractors , or other sources .
+
+according to fisma , each agency is responsible for providing information security protections , commensurate with risk , for information collected or maintained by or on behalf of the agency , and information systems used or operated by the agency or on its behalf .
+
+fisma requires that a chief information officer or a comparable official of the agency be responsible for developing and maintaining an agencywide information security program .
+
+the administrator of epa is responsible for ensuring that an information security program is implemented , and that security processes are integrated with strategic and operational planning .
+
+epa is responsible for reporting annually to congressional committees , gao , and to the director of omb on the effectiveness of the agency's information security program and compliance with fisma .
+
+the chief information officer appoints a senior agency information security officer and ensures that epa's information security program follows applicable federal laws .
+
+senior leaders of epa's program offices and regions appoint information security officers to implement agency information security program requirements for the systems and information under their control .
+
+the office of environmental information centrally administers epa's information security program .
+
+the assistant administrator of the office of environmental information serves as the chief information officer for epa .
+
+as described in table 2 , epa has designated key roles in it security according to fisma and agency policy .
+
+although epa has taken steps to safeguard the information and systems that support its mission , security control weaknesses pervade its systems and networks , thereby jeopardizing the agency's ability to sufficiently protect the confidentiality , integrity , and availability of its information and systems .
+
+these deficiencies include those related to access controls , as well as other controls such as configuration management and sensitive media protection .
+
+a key reason for these weaknesses is that epa has not yet fully implemented its agencywide information security program to ensure that controls are appropriately designed and operating effectively .
+
+as a result , epa has limited assurance that its information and information systems are being adequately protected against unauthorized access , use , disclosure , modification , disruption , or loss .
+
+a basic management objective for any organization is to protect the resources that support its critical operations from unauthorized access .
+
+agencies accomplish this objective by designing and implementing controls that are intended to prevent , limit , and detect unauthorized access to computing resources , programs , information , and facilities .
+
+inadequate access controls diminish the reliability of computerized information and increase the risk of unauthorized disclosure , modification , and destruction of sensitive information and disruption of service .
+
+access controls include those related to ( 1 ) protection of system boundaries , ( 2 ) user identification and authentication , ( 3 ) authorization , ( 4 ) cryptography , ( 5 ) audit and monitoring , and ( 6 ) physical security .
+
+boundary protection controls logical connectivity into and out of networks and controls connectivity to and from devices connected to the network .
+
+for example , multiple firewalls can be deployed to prevent both outsiders and trusted insiders from gaining unauthorized access to systems , and intrusion detection technologies can be deployed to defend against attacks from the internet .
+
+unnecessary connectivity to an organization's network increases not only the number of access paths that must be managed and the complexity of the task , but also the risk of unauthorized access in a shared environment .
+
+national institute of standards and technology ( nist ) guidance states that agencies should provide adequate protection for networks and employ information control policies and enforcement mechanisms to control the flow of information between designated sources and destinations within information systems .
+
+epa has established network boundaries , but did not always adequately enforce those boundaries to secure connectivity into and out of its networks .
+
+for example , at one location , network boundaries did not have adequate segregation between a public library and the epa facilities in research triangle park , north carolina .
+
+in addition , epa had allowed unrestricted inbound use of an encrypted protocol that could be used to access epa internal networks .
+
+as a result , epa's networks were vulnerable to unnecessary and potentially undetectable access at these points .
+
+a computer system must be able to identify and authenticate different users so that activities on the system can be linked to a specific individual .
+
+when an organization assigns a unique user account to a specific user , the system is able to distinguish that user from another — a process called identification .
+
+the system must also establish the validity of a user's claimed identity by requesting some kind of information , such as a password , that is known only by the user — a process known as authentication .
+
+the combination of identification and authentication — such as a user account / password combination — provides the basis for establishing individual accountability and for controlling access to the system .
+
+nist 800-53 recommends that information systems uniquely identify and authenticate all users ( or processes on behalf of users ) and that systems establish complex passwords to reduce the likelihood of a successful attack .
+
+nist also recommends using multifactor authentication to access user accounts via a network .
+
+while epa has developed an interim security policy that addresses identification and authentication and a draft procedure that is based on nist guidance , the agency did not always adequately implement these interim requirements .
+
+for example , epa did not authenticate routing protocols on several of its internal network devices , leaving them vulnerable .
+
+in addition , epa did not enforce its own password complexity requirements or change passwords for multiple servers .
+
+further , epa did not require two - factor authentication for remote authentication and access to e - mail accounts .
+
+as a result , epa's networks and systems are at increased risk that an unauthorized individual could guess a legitimate user's identification and password combination and gain access to these devices .
+
+authorization is the process of granting or denying access rights and permissions to a protected resource , such as a network , a system , an application , a function , or a file .
+
+for example , operating systems have some built - in authorization features such as permissions for files and folders .
+
+network devices , such as routers , have access control lists that can be used to authorize a user who can access and perform certain actions on the device .
+
+a key component of granting or denying access rights is the concept of “least privilege.” least privilege is a basic principle for securing computer resources and information .
+
+this principle means that a user is granted only those access rights and permissions needed to perform official duties .
+
+to restrict legitimate user access to only those programs and files needed to perform work , agencies establish access rights and permissions .
+
+“user rights” are allowable actions that can be assigned to a user or to a group of users .
+
+file and directory permissions are rules that regulate which users can access a particular file or directory and the extent of that access .
+
+to avoid unintentionally authorizing user access to sensitive files and directories , an agency must give careful consideration to its assignment of rights and permissions .
+
+nist requires federal agencies to grant a user only the access and rights to information and information systems needed to perform official duties .
+
+national security agency ( nsa ) network security best practice guidance recommends prohibiting root from logging directly into a remote system .
+
+the guidance also recommends creating a set of filtering rules , also known as an access control list , which permits the traffic identified on the list and prohibits other traffic .
+
+although epa has established an access control methodology based on least privilege and need - to - know principles , it did not always limit user access rights and permissions to only those necessary to perform official duties .
+
+for example , epa allowed for a large number of unused accounts across several network domains .
+
+at one location , epa did not have adequate restrictions on a sensitive server to control access in managing and administering network devices either locally or remotely , leaving them vulnerable .
+
+in addition , epa had not removed the accounts of former employees .
+
+the result of these weaknesses is an increased risk of unauthorized access to epa systems and information .
+
+cryptography underlies many of the mechanisms used to enforce the confidentiality and integrity of critical and sensitive information .
+
+cryptographic tools help control access to information by making it unintelligible to unauthorized users and by protecting the integrity of transmitted or stored information .
+
+a basic element of cryptography is encryption .
+
+encryption is the conversion of data into a form , called a cipher text , which cannot be easily understood .
+
+encryption can be used to provide basic data confidentiality and integrity by transforming plain text into cipher text using a special value known as a key and a mathematical process known as an algorithm .
+
+nist guidelines state that agencies should use encryption to protect the confidentiality of remote access sessions and encrypt sessions between host systems .
+
+the nist standard for an encryption algorithm is federal information processing standards ( fips ) 140-2 .
+
+epa did not always effectively encrypt certain sensitive information .
+
+for example , epa did not always encrypt private keys stored on certain servers and had used a weak password encryption feature on network devices .
+
+in addition , the agency allowed the use of insecure network protocols to manage network devices .
+
+the agency also did not always use a fips - compliant algorithm to encrypt passwords on three support servers we reviewed .
+
+these weaknesses expose critical and sensitive information to unnecessary risk of unauthorized access , modification , or destruction .
+
+to establish individual accountability , monitor compliance with security policies , and investigate security violations , it is crucial to determine what , when , and by whom specific actions have been taken on a system .
+
+agencies accomplish this by implementing system or security software that provides an audit trail , or a log of system activity , that can be used to determine the source of a transaction or attempted transaction and to monitor a user's activities .
+
+audit and monitoring involves the regular collection , review , and analysis of auditable events for indications of inappropriate or unusual activity , and the appropriate investigation and reporting of such activity .
+
+automated mechanisms may be used to integrate audit monitoring , analysis , and reporting into an overall process for investigation and response to suspicious activities .
+
+audit and monitoring controls can help security professionals routinely assess computer security , perform investigations during and after an attack , and even recognize an ongoing attack .
+
+audit and monitoring technologies include network and host - based intrusion detection systems , audit logging , security event correlation tools , and computer forensics .
+
+nist guidance states that agencies should retain sufficient audit logs to allow monitoring of key activities , provide support for after - the - fact investigation of security incidents , and meet organizational information retention requirements .
+
+although epa has many useful mechanisms at its disposal to help prevent and respond to security breaches , such as firewalls and intrusion detection systems , it has not consistently implemented integrated and responsive audit and monitoring .
+
+for example , epa had not enabled auditing on a server used for receiving confidential data from commercial entities .
+
+furthermore , more than 150 of epa's network devices had remote logging set to a severity level that was not sufficient for logging important security information .
+
+in addition , the number of error logs on one server database system was set so low that old logs would be overwritten as soon as this number was reached , thus removing the old logs from use .
+
+as a result , epa is limited in its ability to establish accountability , ensure compliance with security policies , and investigate violations .
+
+physical security controls are a key component of limiting unauthorized access to sensitive information and information systems .
+
+these controls are important for protecting computer facilities and resources from espionage , sabotage , damage , and theft .
+
+they involve restricting physical access to computer resources and sensitive information , usually by limiting access to the buildings and rooms in which the resources are housed and periodically reviewing access rights granted to ensure that access continues to be appropriate based on established criteria .
+
+such controls include perimeter fencing ; surveillance cameras ; security guards ; gates ; locks ; environmental controls such as smoke detectors , fire alarms and extinguishers ; and uninterruptible power supplies .
+
+nist guidance states that federal agencies should implement physical security and environmental safety controls to protect employees and contractors , information systems , and the facilities in which they are located .
+
+epa had implemented numerous physical security controls for protecting its information , information systems , and employees .
+
+for example , the agency used electronic badges , guards , magnetometers , and x - ray machines to help control access to computing environments at two locations .
+
+epa had also implemented environmental and safety controls such as temperature and humidity controls as well as emergency lighting to protect its staff and sensitive it resources .
+
+nonetheless , epa did not always ensure that these controls were consistently implemented .
+
+for example , over a period of 5 days , five staff members at one location used their electronic badges to gain access to the computer room , but they were not on the list of staff authorized to enter the area .
+
+two of these staff members were contractors , and the other three were epa staff .
+
+similarly , epa did not always effectively control access to sensitive it equipment kept in server or telecommunication rooms .
+
+to illustrate , visitor logs were incomplete for several rooms that contained sensitive it equipment .
+
+these logs did not always include information such as the visitor's purpose for visiting the room , the time of departure , or the type of identification used to sign in .
+
+as a result , epa has diminished assurance that its computing resources are protected from inadvertent or deliberate misuse including sabotage , vandalism , theft , and destruction .
+
+epa officials stated that the access controls list issue had been resolved and that it equipment in the rooms would be moved as part of its data center consolidation effort .
+
+the agency also provided a subsequent response stating that most of the it equipment had been moved .
+
+we have not yet verified this information .
+
+in addition to access controls , other important controls should be in place to ensure the confidentiality , integrity , and availability of an agency's information .
+
+these controls include policies , procedures , and techniques for securely configuring information systems , sufficiently disposing of media , and implementing personnel security .
+
+weaknesses in these areas increase the risk of unauthorized use , disclosure , modification , or loss of sensitive information and information systems supporting epa's mission .
+
+epa had personnel security controls in place .
+
+configuration management controls ensure that only authorized and fully tested software is placed in operation , software and hardware are updated , patches are applied to these systems to protect against known vulnerabilities , and changes are documented and approved .
+
+to protect against known vulnerabilities , effective procedures must be in place , appropriate software installed , and patches updated promptly .
+
+up - to - date patch installation helps mitigate flaws in software code that could be exploited to cause significant damage and enable malicious individuals to read , modify , or delete sensitive information or disrupt operations .
+
+nist guidance states that agencies should document approved system changes and retain records of configuration changes to systems and that agencies should configure security settings to the most restrictive mode consistent with operational requirements .
+
+both nist and nsa guidance recommend that certain system services be disabled .
+
+epa has developed , documented , and established procedures to manage configuration changes .
+
+for example , although the agencywide configuration management procedure is still a draft document , epa's office of technology operations and planning has developed , documented , and implemented a change management process and procedures document that is intended to provide formal and standardized processes and procedures for identifying , assessing , approving , implementing , and accounting for changes to epa information systems .
+
+in addition , the agency uses a central tool to request , approve , and track the status of configuration change requests .
+
+the system owners or managers have responsibility for documenting these changes .
+
+according to agency officials , epa uses an automated tool for applying patches that are intended to correct software security vulnerabilities .
+
+despite these efforts , epa had not always implemented configuration management controls .
+
+for example , although the agency has an automated tool in place for managing changes , officials could only provide records of approved changes for four of the six systems we reviewed .
+
+information for the other two systems consisted only of e - mails describing the changes .
+
+furthermore , information for only two of the six systems included the unique change request number generated by the tool ; this number could be used to research and determine whether a change had been formally approved .
+
+during a demonstration of the tool , an epa official suggested that we contact system owners for system - specific change reports .
+
+however , change information provided by the system owners varied in content , and the agencywide configuration management guide did not instruct them on how such records should be documented .
+
+similarly , epa had not securely configured its networks and databases in accordance with nist guidance and web applications and operating systems were not always configured to the most restrictive settings in accordance with nist guidance .
+
+moreover , some epa information systems and network devices were running outdated software that was no longer supported by the manufacturer , resulting in epa being unable to effectively patch them for vulnerabilities .
+
+in addition , newly released security patches , service packs , and hot fixes had not been installed in a timely manner , and several critical systems had not been patched or were out of date , and some had known vulnerabilities .
+
+without adequate security controls , epa systems are susceptible to many known vulnerabilities .
+
+the destruction of media and their disposal are key to ensuring the confidentiality of information .
+
+media can include magnetic tapes , optical disks ( such as compact disks ) , and hard drives .
+
+agencies safeguard used media to ensure that the information they contain is appropriately controlled or disposed of .
+
+media that are improperly disposed of can lead to the inappropriate or inadvertent disclosure of an agency's sensitive information , including the personally identifiable information of its employees and customers .
+
+nist guidance states that verifying the selected information sanitization and disposal process and testing of media is an essential step for maintaining confidentiality .
+
+epa has documented a media protection policy through its interim network security policy that states that all it resources scheduled for disposal must be adequately sanitized to protect the confidentiality of agency information and that appropriate security controls such as those prescribed by nist must be applied .
+
+epa has a supplemental disk sanitization procedure , and program offices have the option to develop their own separate procedures if needed .
+
+however , epa did not provide evidence that equipment used for disposal of sensitive information had been tested to ensure that it was working properly .
+
+specifically , epa could not provide documentation or support to verify whether or not media disposal equipment had been tested for three systems .
+
+additionally , both sanitized and unsanitized hard drives were being kept together in the storage area for one system .
+
+none of the drives were labeled to show whether or not they had been sanitized , which could allow intended or unintended access to sensitive data on an unsanitized hard drive .
+
+until epa tests , documents , and implements information security controls for media disposal and sanitization , increased risk exist that the agency's sensitive information may not be adequately protected .
+
+the greatest harm or disruption to a system comes from the actions , both intentional and unintentional , of individuals .
+
+these intentional and unintentional actions can be reduced through the implementation of personnel security controls .
+
+according to nist guidance , personnel security controls help agencies ensure that individuals occupying positions of responsibility ( including third - party service providers ) are trustworthy and meet established security criteria for these positions .
+
+according to nist , personnel security controls include , among other things , that the agency develop a formal personnel security policy and screen individuals prior to authorizing access to an information system .
+
+epa's security policy for personnel screening states that the type of investigation should be based on the sensitivity of the position and the level of public trust .
+
+according to epa policy , all system administrative staff , including contractors , must have an adequate background check .
+
+epa has conducted the appropriate background investigations for all 14 employees and contractors reviewed .
+
+for one system reviewed , we verified that epa has a process in place to track whether personnel who require access to the system have the necessary security clearances .
+
+a key reason for the weaknesses in controls over epa's information and information systems is that it has not yet fully implemented its agencywide information security program to ensure that controls were effectively established and maintained .
+
+fisma requires each agency to develop , document , and implement an information security program that , among other things , includes policies and procedures that ( 1 ) are based on risk assessments , ( 2 ) cost - effectively reduce risks , ( 3 ) ensure that information security is addressed throughout the life cycle of each system , and ( 4 ) ensure compliance with applicable requirements ; plans for providing adequate information security for networks , facilities , and systems ; security awareness training to inform personnel of information security risks and their responsibilities in complying with agency policies and procedures , and information security training for personnel with significant security responsibilities for information security ; periodic testing and evaluation of the effectiveness of information security policies , procedures , and practices , to be performed with a frequency depending on risk , but no less than annually , and that includes testing of management , operational , and technical controls for every system identified in the agency's required inventory of major information systems ; a process for planning , implementing , evaluating , and documenting remedial action to address any deficiencies in its information security policies , procedures , or practices ; and plans and procedures to ensure continuity of operations for information systems that support operations and assets of the agency .
+
+fisma also requires agencies to maintain and update annually an inventory of major information systems and the program requirements that apply to the information and information systems that support the operations and assets of the agency , including those provided or managed by another agency , contractor , or other source .
+
+a key element of an effective information security program is to develop , document , and implement risk - based policies , procedures , and technical standards that govern the security over an agency's computing environment .
+
+if properly implemented , policies and procedures should help reduce the risk that could come from unauthorized access or disruption of services .
+
+developing , documenting , and implementing security policies is important because they are the primary mechanisms by which management communicates its views and requirements ; these policies also serve as the basis for adopting specific procedures and technical controls .
+
+in addition , agencies need to take the actions necessary to effectively implement or execute these procedures and controls .
+
+otherwise , agency systems and information will not receive the protection that the security policies and controls should provide .
+
+fisma requires agencies to develop and implement policies and procedures that support an effective information security program .
+
+although epa has developed information security policies and procedures , most of its agencywide requirements were not finalized .
+
+for example , epa's agencywide information security policy and its security assessment and authorization procedure are both interim documents .
+
+while epa has developed 18 procedures that correspond to nist's “18 families of controls,” such as those for access controls , security training , and contingency planning , 17 of the procedures are still in draft , including 12 that have been in draft since 2008 .
+
+the office of environmental information , the organization with the primary responsibility for implementing epa's security program , has also issued its own information security program manual intended to complement epa's security policy .
+
+however , the office of environmental information program manual has not been revised since 2006 and is not based on the current epa interim security policy issued in august 2011 .
+
+according to epa's office of environmental information web page , the agency is undertaking an extensive it / management policy review and update , but the website does not cite any specific dates for completion .
+
+until epa has finalized and implemented its security policies and procedures , the agency cannot be sure that its information security requirements are being applied consistently and effectively across the agency .
+
+an objective of system security planning is to improve the protection of it resources .
+
+a system security plan provides an overview of the systems' security requirements and describes the controls that are in place or planned to meet those requirements .
+
+omb circular a - 130 directs agencies to develop system security plans for major applications and general support systems , and to ensure that those plans address policies and procedures for providing management , operational , and technical controls.explains that agencies were expected to be in compliance with nist in addition , omb's fiscal year 2011 fisma reporting guidance standards and guidelines within 1 year of publication unless otherwise directed by omb .
+
+epa has developed and documented system security plans , but those plans have not been updated to reflect current policies and procedures .
+
+for example , all six systems we reviewed referenced expired policies and procedures .
+
+in addition , two of the six plans did not reflect controls identified in the current nist special publication 800-53. two controls for moderate systems , publically accessible content and least privilege — allowing only authorized access for users — were not reflected in system security plans .
+
+an epa official with responsibility for one of the system's that had an outdated plan attributed this to the agency not having a security procedure in place to clearly explain how updated federal guidance should be implemented .
+
+in a fiscal year 2010 report,agency's system security plans were not current .
+
+epa's inspector general also indentified instances where the epa officials informed us that the agency was replacing its current automated tool for managing security with one that is intended to improve system security planning , among other activities .
+
+currently in the pilot stage , the new tool is to provide a built - in system security planning capability and a central location to store all system security documentation .
+
+however , until epa updates system security plans and finalizes security plan procedures , the agency may not have assurance that controls are being effectively implemented for its systems .
+
+nist , special publication 800-53. complying with agency policies and procedures designed to reduce these risks .
+
+fisma also includes requirements for training personnel with significant responsibilities for information security .
+
+omb guidance states that personnel should be trained before they are granted access to systems or applications .
+
+the training is intended to ensure that personnel are aware of the system's or application's rules , their responsibilities , and their expected behavior .
+
+in addition , epa interim policy requires annual security awareness training to be completed by all personnel and those personnel with significant network security roles and responsibilities to complete sufficient information system security training and continuing education to ensure compliance with agency policy .
+
+epa has implemented a security awareness training program and maintains training records as part of its e - learning system: users of epa systems are required to complete and pass a web - based course .
+
+according to epa's fiscal year 2011 fisma report , the chief information officer reported that 100 percent of epa's employees had completed the required security awareness training .
+
+epa also uses its e - learning system to deliver training content for employees who have significant network and system security roles .
+
+however , for this group of employees , the chief information officer reported that approximately 81 percent had completed training related to their specialized security responsibilities .
+
+according to epa officials , the agency has been unable to enforce the specialized security training requirement , which has led to reporting a lower percentage .
+
+in addition , officials also noted that formalized standard procedures related to specialized training are not well documented , including to what extent employees should complete specialized training and the specific actions to take if an employee does not complete the training .
+
+to assist with addressing these inconsistencies , the senior agency information security officer distributed a memorandum to information security officials that describes the requirement for employees with significant information security responsibilities .
+
+specifically , epa has determined that , at a minimum , all employees with significant security responsibilities should complete two courses using the e - learning system or through another mechanism .
+
+in addition , epa sent e - mails to its information security officers that denote what positions include the requirement to complete the two - courses .
+
+however , epa's actions did not ensure that all employees with significant security responsibilities met this requirement .
+
+until epa implements a procedure to enforce the completion of specialized security training and tailors the training to specific roles , the agency will not have reasonable assurance that its staff have the adequate knowledge , skills , and abilities consistent with their roles to protect the confidentiality of the information housed within epa systems to which they are assigned .
+
+another key element of an information security program is to test and evaluate policies , procedures , and controls to determine whether they are effective and operating as intended .
+
+this type of oversight is a fundamental element because it demonstrates management's commitment to the security program , reminds employees of their roles and responsibilities , and identifies and mitigates areas of noncompliance and ineffectiveness .
+
+fisma requires that the frequency of tests and evaluations of management , operational , and technical controls be based on risks and occur no less than annually .
+
+omb directs agencies to meet their fisma - required controls testing by drawing on security control assessment results that include , but are not limited to , continuous monitoring activities .
+
+epa's interim security assessment procedure requires that information system security controls be assessed annually to meet fisma's requirements and to support continuous monitoring .
+
+epa had documented that management , operational , and technical controls for five of six systems were tested or reviewed .
+
+assessment results for five systems consisted of self assessments generated by epa's automated system security evaluation and remediation tracking ( assert ) tool , used for continuous monitoring , along with vulnerability assessments for two of the five systems .
+
+however , the agency did not provide any information demonstrating that controls for a clean air markets division system had been tested or reviewed at least annually .
+
+the last assessment for the system had been completed during fiscal year 2009 .
+
+an epa official stated that testing would be completed during fiscal year 2012 .
+
+we also identified data reliability challenges with epa's assert tool .
+
+the data reliability weakness with this tool was previously reported by epa's inspector general in 2010.in 2011 that the agency had not implemented continuous monitoring the inspector general also reported procedures or a strategy .
+
+as a result , epa has less assurance that controls over its information and information systems are adequately implemented and operating as intended .
+
+remedial action plans , also known as plans of action and milestones ( poa&m ) , help agencies identify and assess security weaknesses in information systems , set priorities , and monitor progress in correcting the weaknesses .
+
+nist and omb guidance specify steps that federal agencies should take to address identified security weaknesses .
+
+nist standards state that organizations must periodically assess security controls in their information systems and develop and implement plans of action to correct deficiencies and reduce or eliminate vulnerabilities .
+
+omb guidance specifies information that should be recorded for each poa&m , including a description of the weakness identified , the audit or other source where it was identified , and key milestones with completion dates .
+
+nist guidance also states that poa&ms should be updated to show progress made on current outstanding items and to incorporate the results of the continuous monitoring process .
+
+omb guidance further states that initial milestone and completion dates should not be altered ; rather , changes to dates should be recorded in a separate column .
+
+further , epa procedure states that any it security finding and recommendation that results from a review , audit , assessment , test , or from another source must be assigned a risk level and assessed for appropriate action .
+
+epa uses an automated tool to record and track remediation of vulnerabilities .
+
+this tool contains fields for entering a description of each weakness , where it was reported , the risk level , milestones describing appropriate actions and their completion dates , and the status of actions taken .
+
+however , the manner in which the agency uses the tool can preclude retrieval of specific poa&ms and pose weaknesses with data reliability .
+
+for example , epa officials were unable to locate certain poa&ms pertaining to findings and recommendations in fiscal year 2011 reports from epa , the agency's inspector general , and gao .
+
+these officials could not find the requested information because poa&m entries did not have all the information called for by federal guidance .
+
+in particular , these entries lacked a specific description of each weakness and did not list the report where the weakness had initially been identified .
+
+additionally , the tool does not have built - in safeguards to keep individuals who have access to poa&ms from altering initial milestone and completion dates .
+
+since the chief information officer and other agency officials use poa&m information to track the progress of corrective actions , inaccurate milestone information could hinder their efforts to effectively remediate program and system - level it security weaknesses .
+
+the epa inspector general had also documented weaknesses in the agency's remediation process .
+
+in its fiscal year 2011 fisma report , the inspector general found that epa does not consistently create poa&ms for vulnerabilities and the agency missed remediation deadlines for about 20 percent of the poa&ms that have been created .
+
+another fiscal year 2011 inspector general report found that data in the agency's poa&m tracking tool is unreliable , and that epa lacked the skills and resources needed to identify and remediate ongoing cyber threats .
+
+epa officials noted that deficiencies in the way that the current tool is used are expected to be addressed when the new remediation tool is deployed agencywide in fiscal year 2013 .
+
+until weaknesses with epa's remediation of vulnerabilities have been resolved , they will compromise the ability of the chief information officer and other epa officials to track , assess , and report accurately the status of the agency's information security .
+
+contingency planning is a critical component of information protection .
+
+if normal operations are interrupted , network managers must be able to detect , mitigate , and recover from a service disruption while preserving access to vital information .
+
+contingency plans detail emergency response , backup operations , and disaster recovery for information systems .
+
+to mitigate service disruptions , these plans should be clearly documented , communicated to potentially affected staff , updated to reflect current operations , and regularly tested .
+
+fisma , a nist special publication , and epa procedures specify requirements and guidelines for contingency planning .
+
+fisma requires each agency to develop , document , and implement plans and procedures to ensure continuity of operations for information systems that support the agency's operations and assets .
+
+nist guidance states that contingency plans for information systems in addition , the plans should account for be developed and tested .
+
+primary and alternate contact methods and should discuss procedures to be followed if an individual cannot be contacted .
+
+epa procedures further specify that the plans must be reviewed , tested , and updated at least annually .
+
+epa has taken steps to implement fisma requirements and nist specifications but has not fully met them .
+
+contingency plans were in place for five of the six systems we reviewed .
+
+the contingency needs for the one remaining system were addressed in disaster recovery plans .
+
+however , the agency did not follow its own procedures or nist guidance for approving contingency plans , reviewing them annually , and updating them as necessary .
+
+all six of the plans lacked evidence that they had been signed by the approving officials .
+
+according to epa , an approving official does not need to sign a contingency plan because the plan is included in each system's certification and authorization package and approval of the package applies to all documents within it .
+
+the agency provided documentation indicating that system security plans were part of certification and authorization packages , and two systems had contingency plans embedded in their respective system security plans .
+
+however , epa did not provide clear evidence that contingency plans were included in certification and authorization packages for the other four systems .
+
+in addition , two of the six plans had no evidence of having had an annual review .
+
+without clear dates for initial approvals and subsequent reviews , epa employees and contractors cannot be certain that they have access to current , updated versions of contingency plans .
+
+in addition to providing current information , plans are to provide adequate contact information on personnel who may be needed during an emergency .
+
+for example , the national computer center hosting systems contingency plan states that personal contact information should include home addresses , cell phone numbers , pager numbers , and alternate contact information .
+
+among the six plans reviewed , five did not provide full contact information for some staff listed , giving only office telephone numbers and e - mail addresses or , in some cases , office numbers alone .
+
+having inadequate information could jeopardize the agency's ability to contact key personnel during an emergency .
+
+to help ensure that contingency plans are viable and will meet an agency's needs during an emergency , these plans should be tested at least annually .
+
+while epa provided evidence that it had tested three of the six plans in 2011 , it did not provide the requested test results for the other three plans .
+
+the epa inspector general has also noted deficiencies with the agency's contingency planning .
+
+in reports from fiscal years 2009 through 2011 , the inspector general described plans that lacked approval , were out of date , did not have a record of changes , and did not have evidence that contingency plans had been tested annually .
+
+until epa addresses identified weaknesses in its contingency planning processes , the agency will have less assurance that it can recover important systems in a timely manner when disruptions occur .
+
+fisma requires agencies to maintain and update annually an inventory of major information systems operated by the agency or operated by others on its behalf , such as those operated by a contractor or other third party .
+
+for their fiscal year 2011 fisma reports , agencies were required to report the number of agency and contractor systems by impact levels.fiscal year 2011 , epa reported a total of 129 systems , composed of 117 agency and 12 contractor systems , as shown by impact level in table 3 .
+
+this represents a slight decrease in the total number of systems from for fiscal year 2010 , with the number of agency systems remaining the same and the number of contractor systems decreasing .
+
+epa did not ensure that its inventory of information systems was accurate .
+
+for example , the total number of systems in inventories provided by epa on august 5 , 2011 , and september 26 , 2011 , did not equal each other or equal the number of systems in the agency's fiscal year 2011 fisma report .
+
+specifically , the initial inventory provided listed 59 general support systems and 85 major applications for a total of 144 systems , but a subsequent list reflected 47 general support systems and 85 major applications , for a total of 132 systems .
+
+within that same time , the agency provided another listing that consisted of only general support systems ; that list identified 57 general support systems , a number that did not equal the totals on either of the two inventories .
+
+epa also provided three lists of systems that the agency had determined contained or processed confidential business information , and all three lists differed in the number of systems identified , totaling 19 , 21 , and 24 systems .
+
+one system on the third list was not included on either of the first two inventories provided by epa .
+
+furthermore , three systems were erroneously listed twice , with minor variations of the spelling of the system names as the distinguishing information between the duplicate entries .
+
+these errors could be due to inadvertent data entry errors , as the agency places responsibility on individual information security officers to update the central systems inventory that is maintained in its assert tool .
+
+the agency's inspector general has previously identified issues with the quality of system - related information entered into the tool .
+
+as a result , senior management has reduced assurance that the inventory accurately represents the number of epa systems cited in its annual fisma reporting and reduced assurance that agency information systems have been accounted for properly .
+
+although epa has implemented numerous controls and procedures intended to protect key information and information systems , control weaknesses continue to jeopardize the confidentiality , integrity , and availability of its sensitive information .
+
+the agency has established a framework for its information security program and taken actions toward developing , documenting , and implementing the components of its program .
+
+however , there are weaknesses in access controls and other information security controls over epa's systems .
+
+additionally , some control deficiencies are longstanding , having been identified in past reports by the epa inspector general .
+
+these shortcomings will likely persist until epa ( 1 ) addresses weaknesses such as those for identification and authentication , authorization , cryptography , audit and monitoring , physical security , and configuration management and ( 2 ) fully implements key components of a comprehensive information security program that ensures that policies and procedures are completed and effectively implemented ; security plans are updated to reflect current federal and agency requirements ; remedial actions are effectively managed for all weaknesses ; and management , operational , and technical controls for all systems are tested and evaluated at least annually .
+
+however , until epa fully implements these controls , it will have limited assurance that its information and information systems are being adequately protected against unauthorized access , disclosure , modification , and loss .
+
+to help establish an effective and comprehensive information security program for epa's information and information systems , we recommend that the administrator of epa direct the assistant administrator for the office of environmental information to take the following 12 actions: update configuration management procedures to ensure they include guidance for documenting records of approved changes .
+
+finalize the 17 agencywide interim information security policies and draft procedures .
+
+update system security plans to reflect current policies and procedures .
+
+include current nist special publication 800-53 guidance in system security plans .
+
+develop and finalize a role - based security training procedure that tailors specific training requirements to epa users' role / position descriptions and details the actions information security officers must take when users do not complete the training .
+
+conduct testing of management , operational , and technical controls , based on risks , to occur no less than annually , for the clean air markets division system identified .
+
+include features in the planned remedial action tracking tool that will require users to enter all information required by omb policy , including descriptions of each weakness and the source of the finding .
+
+include features in the planned remedial action tracking tool that block inappropriate alteration of data .
+
+implement an agencywide , uniform method for approving contingency plans .
+
+develop and implement procedures to annually test the viability of contingency plans for agency systems .
+
+develop and implement procedures to ensure that both work and home contact information are included for each individual in a contingency plan's emergency contact list .
+
+implement procedures to verify the accuracy of system inventory information .
+
+in a separate report with limited distribution , we are also making 94 detailed recommendations to correct weaknesses in access controls and in other information security controls .
+
+in providing written comments on a draft of this report ( reprinted in app .
+
+ii ) , epa's assistant administrator stated that the agency's response reflected its continued efforts to ensure that information assets are protected and secured in a manner consistent with the risk and magnitude of the harm resulting from loss , misuse , or unauthorized access to or modification of information .
+
+the assistant administrator also indicated that the agency agreed with 10 of our 12 draft recommendations , and partially agreed with the other 2 recommendations , as discussed below .
+
+epa agreed with implementing our recommendation to implement an agencywide method for approving contingency plans , but did not agree with requiring the approving officials' signature and date to be on the document .
+
+the agency stated that a centralized repository for managing all security documents would be the more appropriate mechanism for ensuring plans are the most recent official versions .
+
+we believe this alternative action meets the intent of our draft recommendation and have modified our recommendation accordingly .
+
+for the second recommendation , epa agreed to implement a uniform method for recording annual contingency plan testing , but did not agree to keep records of contingency plan testing within the contingency plans .
+
+the intent of our draft recommendation was to ensure that epa implements procedures to test contingency plans at least annually .
+
+accordingly , we have clarified our recommendation to emphasize this point .
+
+as agreed with your offices , unless you publicly announce the contents of this report earlier , we plan no further distribution of it until 30 days from the date of this letter .
+
+at that time , we will send copies to interested congressional committees and to the administrator of the environmental protection agency .
+
+in addition , the report will be available at no charge on the gao website at http: / / www.gao.gov .
+
+if you or your staff have any questions about this report , please contact gregory c. wilshusen at ( 202 ) 512-6244 or wilshuseng@gao.gov or dr. nabajyoti barkakati at ( 202 ) 512-4499 or barkakatin@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+key contributors to this report are listed in appendix iii .
+
+the objective of our review was to determine whether the environmental protection agency ( epa ) had effectively implemented appropriate information security controls to protect the confidentiality , integrity , and availability of the information and systems that support its mission .
+
+to determine the effectiveness of epa's security controls , we gained an understanding of the overall network control environment , identified interconnectivity and control points , and examined controls for the agency's networks and facilities .
+
+specifically , we reviewed controls over epa's network infrastructure and systems that support epa's business functions of air , land , and water quality management and process or contain confidential business information .
+
+we performed our work at epa's national computer center in research triangle park , north carolina ; potomac yard data center in arlington , virginia ; and at epa headquarters in washington , d.c. we selected these sites to maximize audit coverage while limiting travel costs , since the majority of epa systems and applications are supported or maintained in these locations .
+
+we used gao's federal information system controls audit manual , which contains guidance for reviewing information system controls that affect the confidentiality , integrity , and availability of computerized information ; national institute of standards and technology ( nist ) standards and guidance ; and epa's policies , procedures , practices , and standards to evaluate the agency's controls over its information systems .
+
+specifically , we reviewed network access paths to determine if boundaries had been adequately protected ; reviewed the complexity and expiration of password settings to determine if password management was being enforced ; analyzed users' system authorizations to determine whether they had more permissions than necessary to perform their assigned functions ; observed methods for providing secure data transmissions across the network to determine whether sensitive data were being encrypted ; reviewed software security settings to determine if modifications of sensitive or critical system resources had been monitored and logged ; observed physical access controls to determine if computer facilities and resources were being protected from espionage , sabotage , damage , and theft ; examined configuration settings and access controls for routers , network management servers , switches , and firewalls ; inspected key servers and workstations to determine if critical patches had been installed and / or were up - to - date ; reviewed media handling procedures to determine if equipment used for clearing sensitive data had been tested to ensure correct performance ; and reviewed personnel clearance procedures to determine whether staff had been properly cleared prior to gaining access to sensitive information or information systems .
+
+using the requirements identified by the federal information security management act of 2002 ( fisma ) , which establishes key elements for an effective agencywide information security program , and associated nist guidelines and epa requirements , we evaluated epa systems and networks by analyzing epa policies , procedures , practices , and standards to determine their effectiveness in providing guidance to personnel responsible for securing information and information systems ; analyzed security plans for six systems to determine if those plans had been documented and updated according to federal guidance ; examined the security awareness training process for employees and contractors to determine whether they had received training according to federal requirements ; examined training records for personnel who have significant responsibilities to determine whether they had received training commensurate with those responsibilities ; analyzed epa's procedures and results for testing and evaluating security controls to determine whether management , operational , and technical controls for six systems had been sufficiently tested at least annually and based on risk ; reviewed epa's implementation of continuous monitoring and use of automated tools to determine the extent to which it uses these tools to manage it assets and monitor the security configurations and vulnerabilities for its it assets ; evaluated epa's process to correct weaknesses and determine whether remedial action plans complied with federal guidance ; and examined contingency plans for six systems to determine whether those plans had been developed and tested .
+
+we also discussed with key security representatives and management officials whether information security controls were in place , adequately designed , and operating effectively .
+
+to determine the reliability of epa's computer - processed data , we performed an assessment .
+
+we evaluated the materiality of the data to our audit objectives and assessed the data by various means , including reviewing related documents , interviewing knowledgeable agency officials , and reviewing internal controls .
+
+through a combination of methods , we concluded that the data were sufficiently reliable for the purposes of our work .
+
+we conducted this performance audit from july 2011 to july 2012 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objective .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objective .
+
+in addition to the individuals named above , the following made key contributions to this report: west coile , anjalique lawrence , duc ngo , and chris warweg , ( assistant directors ) ; gary austin ; angela bell ; larry crosland ; saar dagani ; kirk daubenspeck ; nancy glover ; kevin metcalfe ; mary marshall ; sean mays ; dana pon ; jason porter , sr. ; and eugene stevens .
+

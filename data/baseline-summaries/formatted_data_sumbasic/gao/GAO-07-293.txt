@@ -1,0 +1,476 @@
+since the terrorist attacks of september 11 , 2001 , there has been an increasing focus on the need to prevent and detect terrorist threats through technological means .
+
+data mining — a technique for extracting useful information from large volumes of data — is one type of analysis that has been used increasingly by the government to help detect terrorist threats .
+
+while data mining offers a number of promising benefits , its use also raises privacy concerns when the data include personal information .
+
+federal agency use of personal information is governed primarily by the privacy act of 1974 and the e - government act of 2002 , which prescribe specific activities that agencies must perform to protect privacy , such as ( 1 ) ensuring that personal information is used only for a specified purpose , or related purposes , and that it is accurate for those purposes and ( 2 ) conducting assessments of privacy risks associated with information technology used to process personal information , known as privacy impact assessments .
+
+agencies that wish to reap the potential benefits of data mining are faced with the challenge of implementing adequate privacy controls for the systems that they use to perform these analyses .
+
+you asked us to review the department of homeland security's ( dhs ) development of an analytical tool known as analysis , dissemination , visualization , insight , and semantic enhancement ( advise ) .
+
+specifically , we agreed with your staff that our objectives were to determine ( 1 ) the planned capabilities , uses , and associated benefits of the advise tool and ( 2 ) whether potential privacy issues could arise from using advise to process personal information and how dhs has addressed any such issues .
+
+our review did not include intelligence applications , such as uses of the tool by the dhs office of intelligence and analysis .
+
+to address our first objective , we identified and analyzed the advise tool's planned capabilities , uses , and associated benefits .
+
+we reviewed program documentation , including annual program execution plans , and interviewed agency officials responsible for managing and implementing the program .
+
+we also interviewed officials at dhs components that have begun to implement the tool in order to identify their current or planned uses , the progress of their implementation , and the benefits they hope to gain .
+
+to address our second objective , we searched for potential privacy concerns by reviewing relevant reports , including prior gao reports and the dhs privacy office 2006 report on data mining .
+
+we identified and analyzed actions to comply with the privacy act of 1974 and the e - government act of 2002 .
+
+we also interviewed technical experts within the dhs science and technology directorate and personnel responsible for implementing advise at dhs components to assess privacy controls included in the advise tool , as well as the quality assurance processes for data analyzed using advise .
+
+we performed our work from june 2006 to december 2006 in the washington , d.c. , metropolitan area and laurel , maryland .
+
+our work was performed in accordance with generally accepted government auditing standards .
+
+our objectives , scope , and methodology are discussed in more detail in appendix i .
+
+as defined in a report that we issued in may 2004 , data mining is the application of database technology and techniques — such as statistical analysis and modeling — to uncover hidden patterns and subtle relationships in data and to infer rules that allow for the prediction of future results .
+
+this definition is based on the most commonly used terms found in a survey of the technical literature .
+
+data mining has been used successfully for a number of years in the private and public sectors in a broad range of applications .
+
+in the private sector , these applications include customer relationship management , market research , retail and supply chain analysis , medical analysis and diagnostics , financial analysis , and fraud detection .
+
+in the government , data mining has been used to detect financial fraud and abuse .
+
+for example , we used data mining to identify fraud and abuse in expedited assistance and other disbursements to hurricane katrina victims .
+
+although the characteristics of data mining efforts can vary greatly , data mining generally incorporates three processes: data input , data analysis , and results output .
+
+in data input , data are collected in a central data “warehouse,” validated , and formatted for use in data mining .
+
+in the data analysis phase , data are typically queried to find records that match topics of interest .
+
+the two most common types of queries are pattern - based queries and subject - based queries: pattern - based queries search for data elements that match or depart from a predetermined pattern ( eg , unusual claim patterns in an insurance program ) .
+
+subject - based queries search for any available information on a predetermined subject using a specific identifier .
+
+this could be personal information such as an individual identifier ( eg , an individual's name or social security number ) or an identifier for a specific object or location .
+
+for example , the navy uses subject - based data mining to identify trends in the failure rate of parts used in its ships .
+
+the data analysis phase can be iterative , with the results of one query being used to refine criteria for a subsequent query .
+
+the output phase can produce results in printed or electronic format .
+
+these reports can be accessed by agency personnel and can also be shared with personnel from other agencies .
+
+figure 1 depicts a generic data mining process .
+
+in recent years , data mining has emerged as a prevalent government mechanism for processing and analyzing large amounts of data .
+
+in our may 2004 report , we noted that 52 agencies were using or were planning to use data mining in 199 cases , of which 68 were planned , and 131 were operational .
+
+additionally , following the terrorist attacks of september 11 , 2001 , data mining has been used increasingly as a tool to help detect terrorist threats through the collection and analysis of public and private sector data .
+
+this may include tracking terrorist activities , including money transfers and communications , and tracking terrorists themselves through travel and immigration records .
+
+according to an august 2006 dhs office of inspector general survey of departmental data mining initiatives , dhs is using or developing 12 data mining programs , 9 of which are fully operational and 3 of which are still under development .
+
+one such effort is the advise technology program .
+
+managed by the dhs science and technology directorate , the advise program is primarily responsible for ( 1 ) continuing to develop the advise data mining tool and ( 2 ) promoting and supporting its implementation throughout dhs .
+
+according to program officials , it has spent approximately $40 million to develop the tool since 2003 .
+
+to promote the possible implementation of the tool within dhs component organizations , program officials have made demonstrations ( using unclassified data ) to interested officials , highlighting the tool's planned capabilities and expected benefits .
+
+program officials have established working relationships with component organizations that are considering adopting the tool , including detailing them staff ( typically contractor - provided ) to assist in the setup and customization of their advise implementation and providing training for the analysts who are to use it .
+
+program officials project that implementation of the tool at a component organization should generally consist of six main phases and take approximately 12 to 18 months to complete .
+
+the six phases are as follows: preparing infrastructure and installing hardware and software ; modeling information sources and loading data ; verifying and validating that loaded data are accurate and accessible ; training and familiarizing analysts and assisting in the development of initial research activities using visualization tools ; supporting analysts in identifying the best ways to use advise for their problems , obtaining data , and developing ideas for further improvements ; and turning over deployment to the component organizations to maintain the system and its associated data feeds .
+
+the program has also provided initial funding for the setup , customization , and pilot testing of implementations within components , under the assumption that when an implementation achieves operational status , the respective component will take over operations and maintenance costs .
+
+program officials estimate that the tool's operations and maintenance costs will be approximately $100,000 per year , per analyst .
+
+the program has also offered additional support to components implementing the tool , such as helping them develop privacy compliance documentation .
+
+according to dhs officials , the program has spent $12.15 million of its $40 million in support of several pilot projects and test implementations throughout the department .
+
+currently , the department's interagency center for applied homeland security technologies ( icahst ) group within the science and technology directorate is testing the tool's effectiveness , adequacy , and cost - effectiveness as a data mining technology .
+
+icahst has completed preliminary testing of basic functionality and is currently in the process of testing the system's effectiveness , using mock data to test how well advise identifies specified patterns of interest .
+
+the impact of computer systems on the ability of organizations to protect personal information was recognized as early as 1973 , when a federal advisory committee on automated personal data systems observed that “the computer enables organizations to enlarge their data processing capacity substantially , while greatly facilitating access to recorded data , both within organizations and across boundaries that separate them.” in addition , the committee concluded that “the net effect of computerization is that it is becoming much easier for record - keeping systems to affect people than for people to affect record - keeping systems.” in may 2004 , we reported that mining government and private databases containing personal information creates a range of privacy concerns .
+
+through data mining , agencies can quickly and efficiently obtain information on individuals or groups by searching large databases containing personal information aggregated from public and private records .
+
+information can be developed about a specific individual or a group of individuals whose behavior or characteristics fit a specific pattern .
+
+the ease with which organizations can use automated systems to gather and analyze large amounts of previously isolated information raises concerns about the impact on personal privacy .
+
+further , we reported in august 2005 that although agencies responsible for certain data mining efforts took many of the key steps required by federal law and executive branch guidance for the protection of personal information , none followed all key procedures .
+
+specifically , while three of the four agencies we reviewed had prepared privacy impact assessments ( pia ) — assessments of privacy risks associated with information technology used to process personal information — for their data mining systems , none of them had completed a pia that adequately addressed all applicable statutory requirements .
+
+we recommended that four agencies complete or revise pias for their systems to fully comply with applicable guidance .
+
+as of december 2006 , three of the four agencies reported that they had taken action to complete or revise their pias .
+
+federal law includes a number of separate statutes that provide privacy protections for information used for specific purposes or maintained by specific types of entities .
+
+the major requirements for the protection of personal privacy by federal agencies come from two laws , the privacy act of 1974 and the privacy provisions of the e - government act of 2002 .
+
+the office of management and budget ( omb ) is tasked with providing guidance to agencies on how to implement the provisions of both laws and has done so , beginning with guidance on the privacy act , issued in 1975 .
+
+the privacy act places limitations on agencies' collection , disclosure , and use of personal information maintained in systems of records .
+
+the act describes a “record” as any item , collection , or grouping of information about an individual that is maintained by an agency and contains his or her name or another personal identifier .
+
+it also defines “system of records” as a group of records under the control of any agency from which information is retrieved by the name of the individual or by an individual identifier .
+
+the privacy act requires that when agencies establish or make changes to a system of records , they must notify the public through a “system of records notice”: that is , a notice in the federal register identifying , among other things , the type of data collected , the types of individuals about whom information is collected , the intended “routine” uses of data , and procedures that individuals can use to review and correct personal information .
+
+in addition , the act requires agencies to publish in the federal register notice of any new or intended use of the information in the system , and provide an opportunity for interested persons to submit written data , views , or arguments to the agency .
+
+several provisions of the act require agencies to define and limit themselves to specific predefined purposes .
+
+for example , the act requires that to the greatest extent practicable , personal information should be collected directly from the subject individual when it may affect an individual's rights or benefits under a federal program .
+
+the act also requires that an agency inform individuals whom it asks to supply information of ( 1 ) the authority for soliciting the information and whether disclosure of such information is mandatory or voluntary ; ( 2 ) the principal purposes for which the information is intended to be used ; ( 3 ) the routine uses that may be made of the information ; and ( 4 ) the effects on the individual , if any , of not providing the information .
+
+in addition , the act requires that each agency that maintains a system of records store only such information about an individual as is relevant and necessary to accomplish a purpose of the agency .
+
+agencies are allowed to claim exemptions from some of the provisions of the privacy act if the records are used for certain purposes .
+
+for example , records compiled for criminal law enforcement purposes can be exempt from a number of provisions , including ( 1 ) the requirement to notify individuals of the purposes and uses of the information at the time of collection and ( 2 ) the requirement to ensure the accuracy , relevance , timeliness , and completeness of records .
+
+in general , the exemptions for law enforcement purposes are intended to prevent the disclosure of information collected as part of an ongoing investigation that could impair the investigation or allow those under investigation to change their behavior or take other actions to escape prosecution .
+
+…information is handled: ( i ) to ensure handling conforms to applicable legal , regulatory , and policy requirements regarding privacy ; ( ii ) to determine the risks and effects of collecting , maintaining , and disseminating information in identifiable form in an electronic information system ; and ( iii ) to examine and evaluate protections and alternative processes for handling information to mitigate potential privacy risks .
+
+agencies must conduct pias before ( 1 ) developing or procuring information technology that collects , maintains , or disseminates information that is in a personally identifiable form or ( 2 ) initiating any new data collections involving personal information that will be collected , maintained , or disseminated using information technology if the same questions are asked of 10 or more people .
+
+omb guidance also requires agencies to conduct pias in two specific types of situations: ( 1 ) when , as a result of the adoption or alteration of business processes , government databases holding information in personally identifiable form are merged , centralized , matched with other databases , or otherwise significantly manipulated and ( 2 ) when agencies work together on shared functions involving significant new uses or exchanges of information in personally identifiable form .
+
+dhs has also developed its own guidance requiring pias to be performed when one of its offices is developing or procuring any new technologies or systems , including classified systems , that handle or collect personally identifiable information .
+
+it also requires that pias be performed before pilot tests are begun for these systems or when significant modifications are made to them .
+
+furthermore , dhs has prescribed detailed requirements for pias .
+
+for example , pias must describe all uses of the information , and whether the system analyzes data in order to identify previously unknown patterns or areas of note or concern .
+
+the privacy act of 1974 is largely based on a set of internationally recognized principles for protecting the privacy and security of personal information known as the fair information practices .
+
+a u.s. government advisory committee first proposed the practices in 1973 to address what it termed a poor level of protection afforded to privacy under contemporary law .
+
+the organization for economic cooperation and development ( oecd ) developed a revised version of the fair information practices in 1980 that has , with some variation , formed the basis of privacy laws and related policies in many countries , including the united states , germany , sweden , australia , new zealand , and the european union .
+
+the eight principles of the oecd fair information practices are shown in table 1 .
+
+the fair information practices are not precise legal requirements .
+
+rather , they provide a framework of principles for balancing the need for privacy with other public policy interests , such as national security , law enforcement , and administrative efficiency .
+
+ways to strike that balance vary among countries and according to the type of information under consideration .
+
+advise is a data mining tool under development that is intended to facilitate the analysis of large amounts of data .
+
+it is designed to accommodate both structured data ( such as information in a database ) and unstructured data ( such as e - mail texts , reports , and news articles ) and to allow an analyst to search for patterns in data , including relationships among entities ( such as people , organizations , and events ) and to produce visual representations of these patterns , referred to as semantic graphs .
+
+although none are fully operational , dhs's planned uses of this tool include implementations at several departmental components , including immigration and customs enforcement and other components .
+
+dhs is also considering further deployments of advise .
+
+the intended benefit of the advise tool is to help detect activities that threaten the united states by facilitating the analysis of large amounts of data that otherwise would be prohibitively difficult to review .
+
+dhs is currently in the process of testing the tool's effectiveness .
+
+advise provides several capabilities that help to find and track relationships in data .
+
+these include graphically displaying the results of searches and providing automated alerts when predefined patterns of interest emerge in the data .
+
+the tool consists of three main elements — the information layer , knowledge layer , and application layer ( depicted in fig .
+
+2 ) .
+
+at the information layer , disparate data are brought into the tool from various sources .
+
+these data sources can be both structured ( such as computerized databases and watch lists ) and unstructured ( such as news feeds and text reports ) .
+
+for structured data , advise contains software applications that load the data into the information layer and format it to conform to a specific predefined data structure , known as an ontology .
+
+generally speaking , ontologies define entities ( such as a person or place ) , attributes ( such as name and address ) , and the relationships among them .
+
+for unstructured data , advise includes several tools that extract information about entities and attributes .
+
+as with structured data , the output of these analyses is formatted and structured according to an ontology .
+
+tagging information as specific entities and attributes is more difficult with unstructured data , and advise includes tools that allow analysts to manually identify entities , attributes , and relationships among them .
+
+according to dhs officials , research is continuing on developing efficient and effective mechanisms for inputting different forms of unstructured data .
+
+advise can also include information about the data — known as “metadata” — such as the time period to which the data pertain and whether the data refer to a u.s. person .
+
+advise metadata also include confidence attributes , ranging from 1 to – 1 , which represent subjective assessments of the accuracy of the data .
+
+each data source has a predefined confidence attribute .
+
+analysts can change the confidence attribute of specific data , but changes to confidence levels are tracked and linked to the analysts making the changes .
+
+at the knowledge layer , facts and relationships from the information layer are consolidated into a large - scale semantic graph and various subgraphs .
+
+semantic graphing is a data modeling technique that uses a combination of “nodes,” representing specific entities , and connecting lines , representing the relationships among them .
+
+because they are well - suited to representing data relationships and linkages , semantic graphs have emerged as a key technology for consolidating and organizing disparate data .
+
+figure 3 represents the format that a typical semantic graph could take .
+
+the knowledge layer contains the semantic graph of all facts reported through the information layer interface and organized according to the ontology .
+
+the knowledge layer also includes the capability to provide automatic alerts to analysts when patterns of interest ( or partial patterns ) are matched by new incoming information .
+
+at the application layer , analysts are able to interact with the data that reside in the knowledge layer .
+
+the application layer contains tools that allow analysts to perform both pattern - based and subject - based queries and to search for data that match a specific pattern , as well as data that are connected with a specific entity .
+
+for example , analysts could search for all of the individuals who have traveled to a certain destination within a given period of time , or they could search for all information connected with a particular person , place , or organization .
+
+the resulting output of these searches is then graphically displayed via semantic graphs .
+
+advise's application layer also provides several other capabilities that allow for the further examination and adjustment of its output .
+
+an analyst can pinpoint nodes on a semantic graph to view and examine additional information related to them , including the source from which the information and relationships are derived , the data source's confidence level , and whether the data pertain to u.s. persons .
+
+the advise application layer also provides analysts the ability to monitor patterns of interest in the data .
+
+science and technology directorate staff work with component staff to define patterns of interest and build an inventory of automated searches .
+
+these patterns are continuously being monitored in the data , and an alert is provided whenever there is a match .
+
+for example , an analyst could define a pattern of interest as “all individuals traveling from the united states to the middle east in the next 6 months” and have the advise tool provide an alert whenever this pattern emerges in the data .
+
+the current planned uses of the advise tool include implementations at several dhs components that are planning to use it in a variety of homeland security applications to further their respective organizational missions .
+
+currently none of these implementations is fully operational or widely accessible to dhs analysts .
+
+rather , they are all still in various phases of systems development .
+
+these applications are expected to use the tool primarily to help analysts detect threats to the united states , such as identifying activities and / or individuals that could be associated with terrorism .
+
+the intended benefit of the advise tool is to consolidate large amounts of structured and unstructured data and permit their analysis and visualization .
+
+the tool could thus assist analysts to identify and monitor patterns of interest that could be further investigated and might otherwise have been missed .
+
+none of the dhs components have fully implemented the tool in operational systems and , as discussed earlier , testing of the tool is still under way .
+
+until such testing is complete and component implementations are fully operational , the intended benefit remains largely potential .
+
+use of the advise tool raises a number of privacy concerns .
+
+dhs has added security controls to the advise tool , including access restrictions , authentication procedures , and security auditing capability .
+
+however , it has not assessed privacy risks .
+
+privacy risks that could apply to advise include the potential for erroneous association of individuals with crime or terrorism through data that are not accurate for that purpose , the misidentification of individuals with similar names , and the use of data that were collected for other purposes .
+
+a pia would determine the privacy risks associated with advise and help officials determine what specific controls are needed to mitigate those risks .
+
+although department officials believe a pia is not needed given that the advise tool itself does not contain personal data , the e - government act of 2002 and related federal guidance require the completion of pias from the early stages of development .
+
+further , if a pia were conducted and privacy risks identified , a number of controls exist that could be built into the tool to mitigate those risks .
+
+for example , controls could be implemented to ensure that personal information is used only for a specified purpose or compatible purposes , or they could provide the capability to distinguish among individuals that have similar names ( a process known as disambiguation ) to address the risk of misidentification .
+
+because privacy risks such as these have not been assessed and decisions about mitigating controls have not been made , dhs faces the likelihood that system implementations based on the tool may require costly and potentially duplicative retrofitting at a later date to add the needed controls .
+
+like other data mining applications , the use of the advise tool in conjunction with personal information raises concerns about a number of privacy risks that could potentially have an adverse impact on individuals .
+
+as the dhs privacy office's july 2006 report on data mining activities notes , “privacy and civil liberties issues potentially arise in every phase of the data mining process.” potential privacy risks can be categorized in relation to the fair information practices , which , as discussed earlier , form the basis for privacy laws such as the privacy act .
+
+for example , the potential for personal information to be improperly accessed or disclosed relates to the security safeguards principle , which states that personal information should be protected against risks such as loss or unauthorized access , destruction , use , modification , or disclosure .
+
+further , the potential for individuals to be misidentified or erroneously associated with inappropriate activities is inconsistent with the data quality principle that personal data should be accurate , complete , and current , as needed for a given purpose .
+
+similarly , the risk that information could be used beyond the scope originally specified is based on the purpose specification and use limitation principles , which state that , among other things , personal information should only be collected and used for a specific purpose and that such use should be limited to the specified purpose and compatible purposes .
+
+like other data mining applications , the advise tool could misidentify or erroneously associate an individual with undesirable activity such as fraud , crime , or terrorism — a result known as a false positive .
+
+false positives may be the result of poor data quality , or they could result from the inability of the system to distinguish among individuals with similar names .
+
+data quality , the principle that data should be accurate , current , and complete as needed for a given purpose , could be particularly difficult to ensure with regard to advise because the tool brings together multiple , disparate data sources , some of which may be more accurate for the analytical purpose at hand than others .
+
+if data being analyzed by the tool were never intended for such a purpose or are not accurate for that purpose , then conclusions drawn from such an analysis would also be erroneous .
+
+another privacy risk is the potential for use of the tool to extend beyond the scope of what it was originally designed to address , a phenomenon commonly referred to as function or mission “creep.” because it can facilitate a broad range of potential queries and analyses and aggregate large quantities of previously isolated pieces of information , advise could produce aggregated , organized information that organizations could be tempted to use for purposes beyond that which was originally specified when the information was collected .
+
+the risks associated with mission creep are relevant to the purpose specification and use limitation principles .
+
+to address security , dhs has included several types of controls in advise .
+
+these include authentication procedures , access controls , and security auditing capability .
+
+for example , an analyst must provide a valid user name and password in order to gain access to the tool .
+
+further , upon gaining access , only users with appropriate security clearances may view sensitive data sets .
+
+each service requested by a user — such as issuing a query or retrieving a document — is checked against the user's credentials and access authorization before it is provided .
+
+in addition , these user requests and the tool's responses to them are all recorded in an audit log .
+
+while inclusion of controls such as these is a key step in guarding against unauthorized access , use , disclosure , or modification , such controls alone do not address the full range of potential privacy risks .
+
+the need to evaluate such risks early in the development of information technology is consistently reflected in both law ( the e - government act of 2002 ) and related federal guidance .
+
+the e - government act requires that a pia be performed before an agency develops or procures information technology that collects , maintains , or disseminates information in a personally identifiable form .
+
+further , both omb and dhs pia guidance emphasize the need to assess privacy risks from the early stages of development .
+
+however , although dhs officials are considering performing a pia , no pia or other privacy risk assessment has yet been conducted .
+
+the dhs privacy office instructed the science and technology directorate that a pia was not required because the tool alone did not contain personal data .
+
+according to the privacy office rationale , only specific system implementations based on advise that contained personal data would likely require pias , and only at the time they first began to use such data .
+
+however , guidance on conducting pias makes it clear that they should be performed at the early stages of development .
+
+omb's pia guidance requires pias at the it development stage , stating that they “should address the impact the system will have on an individual's privacy , specifically identifying and evaluating potential threats relating to elements identified [such as the nature , source , and intended uses of the information] to the extent these elements are known at the initial stages of development.” regarding advise , the tool's intended uses include applications containing personal information .
+
+thus the requirement to conduct a pia from the early stages of development applies .
+
+as of november 2006 , the advise program office and dhs privacy office were in discussions regarding the possibility of conducting a privacy assessment similar to a pia but modified to address the development of a technological tool .
+
+no final decision has yet been made on whether or how to proceed with a pia .
+
+however , until such an assessment is performed , dhs cannot be assured that privacy risks have been identified or will be mitigated for system implementations based on the tool .
+
+a variety of privacy controls can be built into data mining software applications , including the advise tool , to help mitigate risks identified in pias and protect the privacy of individuals whose information may be processed .
+
+dhs has recognized the importance of implementing such privacy protections when data mining applications are being developed .
+
+specifically , in its july 2006 report , the dhs privacy office recommended instituting controls for data mining activities that go beyond conducting pias and implementing standard security controls .
+
+such measures could be applied to the development of the advise tool .
+
+among other things , the dhs privacy office recommended that dhs components use data mining tools principally as investigative tools and not as a means of making automated decisions regarding individuals .
+
+the report also emphasizes that data mining should produce accurate results and recommends that dhs adopt data quality standards for data used in data mining .
+
+further , the report recommends that data mining projects give explicit consideration to using anonymized data when personally identifiable information is involved .
+
+although some of the report's recommendations may apply only to operational data mining activities , many reflect system functionalities that can be addressed during technology development .
+
+based on privacy risks identified in a pia , controls exist that could be implemented in advise to mitigate those risks .
+
+for example , controls could be implemented to enforce use limitations associated with the purpose specified when the data were originally collected .
+
+specifically , software controls could be implemented that require an analyst to specify an allowable purpose and check that purpose against the specified purposes of the databases being accessed .
+
+regarding data quality risks , the advise tool currently does not have the capability to distinguish among individuals with similar identifying information , nor does it have a mechanism to assess the accuracy of the relationships it uncovers .
+
+to address the risk of misidentification , software could be added to the tool to distinguish among individuals that have similar names , a process known as disambiguation .
+
+disambiguation tools have been developed for other applications .
+
+additionally , although the advise tool includes a feature that allows analysts to designate confidence levels for individual pieces of data , no mechanism has been developed to assess the confidence of relationships identified by the tool .
+
+while software specifically to determine data quality would be difficult to develop , other controls exist that could be readily used as part of a strategy for mitigating this risk .
+
+for example , anonymization could be used to minimize the exposure of personal data , and operational procedures could be developed to restrict the use of analytical results containing personal information that could have data quality concerns .
+
+to implement anonymization , the tool would need the software capability to handle anonymized data or have a built - in data anonymizer .
+
+dhs currently does not have plans to build anonymization into the advise tool .
+
+until a pia that identifies the privacy risks of advise is conducted and privacy controls to mitigate those risks are implemented , dhs faces the risk that privacy concerns will arise during implementation of systems based on advise that may be more difficult to address at that stage and possibly require costly retrofitting .
+
+the advise tool is intended to provide the capability to ingest large amounts of data from multiple sources and to display relationships that can be discerned within the data .
+
+although the advise tool has not yet been fully implemented and its effectiveness is still being evaluated , the chief intended benefit is to help detect activities threatening to the united states by facilitating the analysis of large amounts of data .
+
+the advise tool incorporates security controls intended to protect the information it processes from unauthorized access .
+
+however , because advise is intended to be used in ways that are likely to involve personal data , a range of potential privacy risks could be involved in its operational use .
+
+thus , it is important that those risks be assessed — through a pia — so that additional controls can be established to mitigate them .
+
+however , dhs has not yet conducted a pia , despite the fact that the e - government act and related omb and dhs guidance emphasize the need to assess privacy risks early in systems development .
+
+although dhs officials stated that they believe a pia is not required because the tool alone does not contain personal data , they also told us they are considering conducting a modified pia for the tool .
+
+until a pia is conducted , little assurance exists that privacy risks have been rigorously considered and mitigating controls established .
+
+if controls are not addressed now , they may be more difficult and costly to retrofit at a later stage .
+
+to ensure that privacy protections are in place before dhs proceeds with implementations of systems based on advise , we recommend that the secretary of homeland security take the following two actions: immediately conduct a privacy impact assessment of the advise tool to identify privacy risks , such as those described in this report , and implement privacy controls to mitigate potential privacy risks identified in the pia .
+
+we received oral and written comments on a draft of this report from the dhs departmental gao / office of inspector general liaison office .
+
+ ( written comments are reproduced in appendix ii. ) .
+
+dhs officials generally agreed with the content of this report and described actions initiated to address our recommendations .
+
+dhs also provided technical comments , which have been incorporated in the final report as appropriate .
+
+in its comments dhs emphasized the fact that the advise tool itself does not contain personal data and that each deployment of the tool will be reviewed through the department's privacy compliance process , including , as applicable , development of a pia and a system of records notice .
+
+dhs further stated that it is currently developing a “privacy technology implementation guide” to be used to conduct a pia for advise .
+
+although we have not reviewed the guide , it appears to be a positive step toward developing a pia process to address technology tools such as advise .
+
+it is not clear from the department's response whether the privacy controls identified based on applying the privacy technology implementation guide to advise are to be incorporated into the tool itself .
+
+we believe that any controls identified by a pia to mitigate privacy risks should be implemented , to the extent possible , in the tool itself .
+
+specific development efforts that use the tool will then have these integrated controls readily available , thus reducing the potential for added costs and technical risks .
+
+the department also requested that we change the wording of our recommendation ; however , we have retained the wording in our draft report because it clearly emphasizes the need to incorporate privacy controls into the advise tool itself .
+
+as agreed with your office , unless you publicly announce the contents of this report earlier , we plan no further distribution until 30 days from the report date .
+
+at that time , we will send copies of this report to the secretary of homeland security and other interested congressional committees .
+
+copies will be made available to others on request .
+
+in addition , this report will be available at no charge on our web site at www.gao.gov .
+
+if you have any questions concerning this report , please call me at ( 202 ) 512-6240 or send e - mail to koontzl@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+key contributors to this report are listed in appendix iii .
+
+our objectives were to determine the following: the planned capabilities , uses , and associated benefits of the analysis dissemination , visualization , insight , and semantic enhancement ( advise ) tool and whether potential privacy issues could arise from using the advise tool to process personal information and how the department of homeland security ( dhs ) has addressed any such issues .
+
+to address our first objective , we identified and analyzed the tool's capabilities , planned uses , and associated benefits .
+
+we reviewed program documentation , including annual program execution plans , and interviewed agency officials responsible for managing and implementing the program , including officials from the dhs science and technology directorate and the lawrence livermore and pacific northwest national laboratories .
+
+we also viewed a demonstration of the tool's semantic graphing capability .
+
+in addition , we interviewed officials at dhs components to identify their current or planned uses of advise , the progress of their implementations , and the benefits they hope to gain from using the tool .
+
+these components included immigrations and customs enforcement and other components .
+
+we also interviewed officials from the interagency center of applied homeland security technology ( icahst ) , who are responsible for conducting testing of the tool's capabilities .
+
+we also visited icahst at the john hopkins applied physics laboratory in laurel , maryland , to view a demonstration of its testing activities .
+
+we did not conduct work or review implementations of advise at the dhs office of intelligence and analysis .
+
+to address our second objective , we identified potential privacy concerns that could arise from using the advise tool by reviewing relevant reports , including prior gao reports and the dhs privacy office 2006 report on data mining .
+
+we identified and analyzed dhs actions to comply with the privacy act of 1974 and the e - government act of 2002 .
+
+we interviewed technical experts within the dhs science and technology directorate and personnel responsible for implementing advise at dhs components to assess privacy controls included in the advise tool .
+
+we also interviewed officials from the dhs privacy office .
+
+we performed our work from june 2006 to december 2006 in the washington , d.c. , metropolitan area .
+
+our work was performed in accordance with generally accepted government auditing standards .
+
+in addition to the individual named above , john de ferrari , assistant director ; idris adjerid ; nabajyoti barkakati ; barbara collier ; david plocher ; and jamie pressman made key contributions to this report .
+

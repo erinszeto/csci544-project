@@ -1,0 +1,682 @@
+in recent years , the risk of fraud has increased as significant amounts of personally identifiable information ( pii ) have been compromised by large - scale cyberattacks .
+
+such attacks have been widespread — impacting federal agencies as well as retailers , hospitals , insurance companies , consumer reporting agencies ( cra ) , and other large organizations .
+
+for example , in june and july 2015 , the office of personnel management ( opm ) announced that it had detected two data breaches affecting approximately 22.1 million current or former federal employees , contractors , and their family members .
+
+further , in 2017 , the consumer reporting agency , equifax , announced that a breach of its online consumer dispute portal had resulted in the compromise of records containing the pii of at least 145.5 million individuals in the united states .
+
+the pii stolen during such cyberattacks can be used to commit identity fraud for financial or other gain .
+
+the equifax breach , in particular , raised concerns about the vulnerability of federal agencies that rely on information maintained by cras to verify the identity of individuals who apply electronically for benefits and services .
+
+among others , the customers of equifax's services included federal agencies such as the internal revenue service ( irs ) ; social security administration ( ssa ) ; and u.s .
+
+postal service ( usps ) .
+
+the process of using an online exchange of information to verify that an individual is who he or she claims to be is known as remote identity proofing .
+
+federal agencies and other entities often rely on the information provided by cras to perform remote identity proofing of individuals who are applying for benefits and services .
+
+the office of management and budget ( omb ) is developing policy guidance on identity management and the national institute of standards and technology ( nist ) has issued technical guidance on identity proofing .
+
+in response to your request , we issued a report on the july 2017 equifax data breach in august 2018 .
+
+the report noted that hackers had accessed people's names , social security numbers , birth dates , addresses , and , in some instances , driver's license numbers .
+
+while there was no breach of federal systems or information , agencies sought to determine which of their customers were directly affected by the breach , recognizing that those individuals could be at heightened risk of identity fraud .
+
+we reported that agency officials had expressed concern about how the breached data could be used to compromise sensitive information or fraudulently procure government services , even from agencies that are not direct customers of equifax .
+
+you also asked us to review federal programs that rely on cras for remote identity proofing .
+
+in conducting this review , our specific objectives were to ( 1 ) describe selected federal agency practices for remote identity proofing of individuals seeking access to major web - based applications using services provided by consumer reporting agencies and the risks associated with those practices ; ( 2 ) assess selected federal agencies' actions to ensure the effectiveness of agencies' remote identity proofing processes ; and ( 3 ) assess the sufficiency of federal identity proofing guidance developed by omb and nist in assuring the security of federal systems .
+
+to address the first objective , we made a non - probability selection of federal agencies with major public - facing web applications that use identity proofing solutions provided by the three nationwide cras ( equifax , experian , and transunion ) .
+
+we considered “major” applications to be those that could involve interaction with millions of individuals across the entire country .
+
+we selected six agencies to review: the centers for medicare and medicaid services ( cms ) , general services administration ( gsa ) , irs , ssa , usps , and the department of veterans affairs ( va ) .
+
+in addition , we reviewed federal identity proofing guidance to obtain detailed information about remote identity proofing concepts and practices .
+
+we also interviewed relevant officials at nist to understand the current federal digital identity guidelines and obtain their views on the risks associated with commonly - used remote identity proofing processes .
+
+further , we interviewed officials responsible for the identity proofing programs at the six selected agencies and at id.me , a commercial provider that offers identity proofing solutions to federal agencies and other entities , to obtain information about identity proofing techniques used to verify remote users of electronic applications .
+
+other than the three nationwide cras , id.me was the only commercial provider of identity proofing solutions used by the agencies selected for this review .
+
+to address the second objective , we compared documentation of the remote identity proofing processes used at the six selected agencies with federal requirements specified in nist's technical guidance on remote identity proofing .
+
+we also interviewed officials at the selected agencies to obtain information on what plans , if any , they have to improve the security of their remote identity proofing processes in light of the equifax data breach and the potential for similar breaches in the future .
+
+to address the third objective , we compared nist's guidance on remote identity proofing to best practices in it governance for providing clear and sufficient guidance .
+
+we also interviewed officials at the selected federal agencies who managed access to major web applications using remote identity proofing about whether the nist guidance provided sufficient direction to assist them in implementing appropriate remote identity proofing methods .
+
+in addition , we interviewed relevant nist officials to discuss the effectiveness of the existing remote identity proofing guidance .
+
+further , we reviewed omb's draft policy that , when issued , is expected to direct agencies to implement nist's guidance for their remote identity proofing processes .
+
+we compared omb's draft policy to the federal information security modernization act of 2014's ( fisma ) requirements for omb to oversee agencies' implementation of information security policies .
+
+we assessed whether omb's draft policy included requirements that would allow omb to monitor agencies' progress in implementing nist's remote identity proofing guidance .
+
+in addition , we interviewed omb staff regarding their plans to finalize the draft policy .
+
+appendix i discusses our objectives , scope , and methodology in greater detail .
+
+we conducted this performance audit from november 2017 to may 2019 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+individuals engage in countless online transactions every day — from checking their bank accounts and making retail purchases to signing up for federal benefits and services .
+
+however , securing such transactions is a complex endeavor .
+
+a key part of this process is verifying that the person who is attempting to interact for the first time with an organization , such as a federal agency or a business , is the individual he or she claims to be .
+
+this process , known as identity proofing , is essential to prevent fraud , which could cause harm to both individuals and organizations .
+
+identity proofing may occur in person or through a remote , online process .
+
+in the case of in - person identity proofing , a trained professional verifies an individual's identity by making a direct physical comparison of the individual's physical features and other evidence ( such as a driver's license or other credential ) with official records to verify the individual's identity .
+
+verification of these credentials can be performed by checking electronic records in tandem with physical inspection .
+
+in - person identity proofing is considered a strong method of identity proofing .
+
+however , it may not always be feasible to require that all applicants appear in person .
+
+in such cases , remote identity proofing is performed .
+
+remote identity proofing is the process of conducting identity proofing entirely through an online exchange of information .
+
+when remote identity proofing is used , there is no way to confirm an individual's identity through their physical presence .
+
+instead , the individual provides the information electronically , or performs other electronically verifiable actions that demonstrate his or her identity .
+
+because many federal benefits and services are offered broadly to large numbers of geographically dispersed applicants , agencies often rely on remote identity proofing to verify the identities of applicants .
+
+remote identity proofing involves two major steps: ( 1 ) resolution and ( 2 ) validation and verification .
+
+during the resolution step , an organization determines which specific identity an applicant is claiming when they first attempt to initiate a transaction , such as enrolling for federal benefits or services , remotely .
+
+the most common form of remote interaction is through an organization's website .
+
+the organization starts the identity resolution process by having the applicant provide identifying information , typically through a web - based application form .
+
+examples of information that an organization may collect for identity resolution include name , address , date of birth , and social security number .
+
+the organization then electronically compares the applicant's identifying information with electronic records that it already has in its databases or with records maintained by another entity , such as a cra , to determine ( or “resolve” ) which identity is being claimed .
+
+for example , if an individual named john smith were applying , the organization would obtain enough identifying information about him to determine which “john smith” he is from among the thousands of john smiths that it may have in its records or that may be documented in the records of the cra that it is using for this process .
+
+once the resolution process is complete , the process of validation and verification occurs .
+
+in this process , steps are taken to verify whether the applicant is really who they claim to be .
+
+for example , in the case of john smith , it is not enough simply to determine which john smith is being claimed , because the claimant may not really be john smith at all .
+
+organizations need to obtain electronic evidence from the remote applicant to verify their identity .
+
+organizations can use a variety of techniques to accomplish this goal .
+
+knowledge - based verification is a technique that commonly has been used for this purpose .
+
+with knowledge - based verification , organizations ask applicants detailed and personal questions , under the presumption that only the real person will know the answers to these questions .
+
+to do this , the organization poses a series of multiple choice questions through an online web form , and the applicant selects the appropriate responses and submits the answers through the web form .
+
+if the applicant has chosen the correct responses , through the remotely accessed web form , their identity is considered to be verified , and the validation and verification step is complete .
+
+figure 1 depicts the typical process that organizations use for remote identity proofing ( including the use of knowledge - based verification ) .
+
+as previously mentioned , to perform knowledge - based verification for remote identity - proofing , federal agencies and other organizations often use services provided by cras .
+
+the cras assemble and evaluate consumer credit and other information from a wide variety of sources .
+
+equifax , experian , and transunion — the three nationwide cras — use the personal information they obtain about individuals from organizations , such as financial institutions , utilities , cell phone service providers , public records , and government sources , to compile credit files containing detailed records about individuals .
+
+they then use the information in these files to offer a variety of services to federal agencies and other entities .
+
+these services can include identity verification , as well as verification of income and employment of a candidate for a job or an applicant for benefits or services .
+
+to support organizations that rely on knowledge - based verification , cras generate multiple choice questions that organizations can use to test applicants' knowledge of information in their credit files .
+
+the organizations using the cra services do not generate the questions themselves , because they do not have access to the credit history information maintained by the cras .
+
+rather , the cras' remote identity proofing systems transmit the questions and multiple choice answers to the organization through an automated electronic connection with the organization's website .
+
+the organization's website then displays the questions and multiple choice answers to the applicant through the web application that the applicant is using to apply for access to benefits or services .
+
+typically , the questions generated by cra identity proofing systems ask about lenders , mortgage details , current and past home addresses , or credit card accounts .
+
+once the applicant has selected answers to the questions and enters them in the online application , the organization's automated system electronically relays the applicant's responses to the cra's remote identity proofing system ; this system then compares the responses with information in the applicant's credit file .
+
+if this comparison determines that the applicant correctly responded to the questions , then the applicant's identity is considered to be verified .
+
+the cra's identity proofing system electronically transmits the results of its comparison to the organization's website to allow the applicant , whose identity is now considered verified , to proceed with applying for benefits or services .
+
+the federal information security modernization act of 2014 ( fisma ) is intended to provide a comprehensive framework for ensuring the effectiveness of security controls over information resources that support federal operations and assets , as well as the effective oversight of information security risks .
+
+fisma assigns responsibility to the head of each agency to provide information security protections commensurate with the risk and magnitude of the harm resulting from unauthorized access , use , disclosure , disruption , modification , or destruction of information systems used or operated by an agency or on behalf of an agency .
+
+fisma assigns responsibility to nist for developing comprehensive information security standards and guidelines for federal agencies .
+
+these include standards for categorizing information and information systems according to ranges of risk levels and guidelines for establishing minimum security requirements for federal information systems .
+
+to fulfill its fisma responsibilities , nist has issued technical guidance on many different aspects of information security , including identity proofing .
+
+nist issued its first guidance related to identity proofing in 2011 .
+
+in 2017 , nist released an updated version of its guidance , which included guidance on identity proofing that outlines technical requirements for resolving , validating , and verifying an identity based on evidence obtained from a remote applicant .
+
+omb requires agencies to implement nist's technical guidance on information security subjects within one year of issuance .
+
+in the case of nist's updated guidelines for remote identity proofing , agencies would have needed to implement the guidance by june 2018 to meet omb's time frames .
+
+fisma assigns responsibility to omb for overseeing agencies' information security policies and practices .
+
+omb , in turn , has established requirements for federal information security programs and has assigned agency responsibilities to fulfill the requirements of statutes such as fisma .
+
+omb policies and guidance require agencies to employ a risk - based approach and decision making to ensure that security and privacy capabilities are sufficient to protect agency assets , operations , and individuals .
+
+omb has not issued guidance to agencies specifically on identity proofing .
+
+however , omb developed a draft policy document in april 2018 that is intended to provide guidance to agencies on strengthening the security of information and information systems to ensure safe and secure access to federal benefits and services .
+
+while it has not yet been issued , the draft policy indicates that omb intends to provide policy - level guidance for agencies to identify , credential , monitor , and manage user access to information and information systems and adopt sound processes for authentication and access control .
+
+the six agencies that we reviewed rely on a variety of remote identity proofing techniques , including knowledge - based verification , to ensure that the individuals who enroll for federal benefits and services are who they claim to be .
+
+these agencies typically use knowledge - based verification services offered by cras , which generate questions for the individuals applying for benefits or services and check the applicants' answers to verify their identity .
+
+however , to the extent that they use knowledge - based verification , these agencies face risks because an attacker could obtain and use an individual's personal information to answer knowledge - based verification questions and successfully impersonate that individual .
+
+although commonly used by federal agencies for remote identity proofing , knowledge - based verification techniques pose security risks because an attacker could obtain and use an individual's personal information to answer knowledge - based verification questions and successfully impersonate that individual .
+
+as such , nist's 2017 guidance on remote identity proofing effectively prohibits the use of knowledge - based verification for sensitive applications .
+
+the guidance states that the ease with which an attacker can discover the answers to many knowledge - based questions and the relatively small number of possible responses cause the method to have an unacceptably high risk of being successfully compromised by an attacker .
+
+in its guidance , nist states that the agency no longer recommends using knowledge - based verification because it tends to be error - prone and can be frustrating for users , given the limitations of human memory .
+
+according to nist officials , private - sector providers of remote identity proofing solutions and officials at the agencies we reviewed , alternative methods for verifying an individual's identity are available that are not knowledge - based and can provide stronger security assurance than knowledge - based verification .
+
+specific examples of such techniques include: remote assessment of physical credentials .
+
+recently developed technology allows an agency to remotely examine a physical credential , such as a driver's license or a passport , to verify an individual's identity .
+
+for example , an agency may have the individual use their mobile device , such as a cell phone , to capture and submit an image of their driver's license to an agency or commercial provider of identity proofing services .
+
+the agency or commercial provider can then compare the image to documentation on file to confirm the authenticity of the credential .
+
+technological advances in how images are captured and processed by mobile devices , such as cell phones , can provide improved assurance that the photos transmitted by these devices are genuine and that the credentials are authentic .
+
+verification of mobile device possession .
+
+many individuals use their cell phones on a near - continuous basis and keep their phones with them .
+
+these actions create a record of the owner's connection with these mobile devices that is difficult for an imposter to falsify .
+
+accordingly , an organization can query records maintained by cell phone carriers to verify the identity of an individual who is in possession of a specific mobile device and phone number .
+
+by doing this , the organization can determine how long the individual has had that particular device , compare unique identifiers , and determine if the location matches the individual's billing information .
+
+the organization can be confident that the individual legitimately possesses the device if the device has been in use for some time and its current location corresponds to one where the device has been known to be used by its owner .
+
+since an individual's location information is obtained directly from the device and compared with cell phone carrier records , data entry errors by the individual , such as mistyping a phone number , are minimized and the risk of impersonation is reduced .
+
+verification through mobile device confirmation codes .
+
+an additional method that organizations use to help verify an individual's identity is to verify that an individual possesses a telephone number that they have supplied as part of the remote identity proofing process .
+
+organizations perform verification of an individual's possession of a phone number by sending a code to that phone number through the short message service ( sms ) or another protocol , and ask the individual to enter the code into the online identity proofing application .
+
+this process can provide additional assurance about the individual's identity because the verification code is transmitted through a separate electronic channel ( specifically , the telephone system ) from the online application where the remote identity proofing process was initiated .
+
+however , unlike the process for verifying the possession of a mobile device , the use of these codes may not prevent an imposter from using a stolen phone or stolen phone number .
+
+an imposter may be able to successfully complete the identity verification process if the applicant's possession of the physical device has not been independently verified .
+
+in its remote identity proofing guidance , nist requires federal agencies to use confirmation codes as a supplement to other identity proofing measures .
+
+verification through postal mail confirmation codes .
+
+another method that organizations use to help verify an individual's identity is to send a confirmation code , such as a personal identification number ( pin ) , through the mail system to the individual's address of record .
+
+the individual then enters the pin in the organization's online application to confirm that they received the code in the mail .
+
+like the use of mobile device confirmation codes , the use of postal mail codes can provide additional assurance about the individual's identity because the code is sent through a separate medium from the online application where the remote identity proofing process was initiated .
+
+even with these alternatives to knowledge - based verification , however , there are limitations to the security assurances that can be provided .
+
+one way to overcome these security limitations is for a trained professional to conduct identity proofing in person .
+
+this is generally considered to be a strong approach because it allows for direct physical comparison of an individual's documentation , including photographic evidence , to the individual attempting to enroll .
+
+verification of the credentials being submitted can be performed by checking electronic records in tandem with physical inspection .
+
+figure 2 provides examples of alternative identity verification and validation methods that federal agencies have reported using .
+
+each of the alternatives to knowledge - based verification has other limitations , including implementation challenges .
+
+for example , in - person identity proofing is expensive to implement because it requires organizations to staff and maintain offices or other physical access points in multiple locations , and it can be inconvenient for applicants because it requires travel to one of these locations .
+
+mobile device verification may not always be viable because not all applicants possess a mobile device that can be used to verify their identity .
+
+in addition , fraudsters can manipulate or “spoof” phone numbers that redirect phone calls and sms confirmation codes to an attacker .
+
+sending confirmation codes by postal mail can result in a delay in an individual being able to gain access to the services or benefits he or she is seeking .
+
+as previously discussed , in 2017 , nist released an updated version of its technical guidance on remote identity proofing .
+
+nist's 2017 guidance effectively prohibits the use of knowledge - based verification for sensitive applications because of the security risks associated with this technique .
+
+for applications where identity verification is important , the guidance prohibits agencies from providing access to online applications based solely on correct responses to knowledge - based questions .
+
+rather , the guidance provides detailed specifications regarding the required features of the identity evidence ( such as driver's licenses and birth certificates ) that an individual is to provide and how agencies are to verify that evidence .
+
+agencies are restricted to using knowledge - based verification only for the very limited role of linking a single piece of identity evidence to an individual and only for applications where the identity verification process is not of critical importance .
+
+as a result , agencies are effectively prohibited from using traditional knowledge - based questions — the type of questions typically used in identity verification services provided by cras — as part of their processes .
+
+thus , in order for agencies to ensure the effectiveness of their remote identity proofing processes , they are required to find ways to eliminate the use of knowledge - based verification .
+
+three of the six agencies we reviewed — gsa , irs , and va — have taken steps to enhance the effectiveness of their remote identity proofing processes .
+
+gsa and irs recently eliminated knowledge - based verification from their login.gov and get transcript services , respectively .
+
+va has implemented alternative methods , but only as a supplement to the continued use of knowledge - based verification .
+
+among the other three agencies , two of them – ssa and usps – are investigating alternative methods and have stated that they intend to reduce or eliminate their use of knowledge - based verification sometime in the future ; however , these agencies do not yet have specific plans for doing so .
+
+one other agency , cms , has no plans to reduce or eliminate knowledge - based verification for remote identity proofing .
+
+gsa has implemented alternative methods to knowledge - based verification for login.gov .
+
+while gsa used knowledge - based verification on its login.gov service in the past , the agency has recently implemented alternative verification techniques that do not rely on knowledge - based verification .
+
+specifically , gsa conducts independent verification of an applicant's possession of a mobile device , an alternative technique we previously discussed .
+
+gsa contracts with a third - party vendor to compare status information about the phone number provided by an individual with telephone company records to confirm the individual's identity .
+
+further , gsa officials responsible for login.gov stated that they plan to include additional alternative verification methods to login.gov in the near future .
+
+specifically , by the end of may 2019 , the agency plans to implement software capable of analyzing and validating photos of documentation , such as driver's licenses , provided by applicants to further enhance the verification of their identities .
+
+in 2018 , the agency tested this technology through a pilot program .
+
+gsa officials responsible for login.gov stated that they are pursuing several other initiatives to further enhance the verification techniques they use for login.gov .
+
+for example , they are researching new software methods for confirming the authenticity of face images and other biometric information that could be transmitted by applicants to confirm their identity .
+
+according to the officials , additional work is needed to ensure that a fraudulent image , such as a photo of a mask , is not being provided in lieu of a live image — a threat known as a “presentation attack.” the gsa officials also said they would like to work with other federal agencies to leverage data that have already been verified , such as usps - validated mailing addresses , passport and visa information maintained by the department of state , and irs tax data .
+
+however , the officials cited legal and regulatory restrictions to sharing agency data as a challenge to being able to make use of resources such as these .
+
+gsa's recent elimination of knowledge - based verification from its login.gov identity proofing process is consistent with nist's 2017 guidance on remote identity proofing and reduces the risk of fraud associated with using login.gov .
+
+the additional enhancements and coordination that the agency is working on , if successful , will likely further improve the effectiveness of its remote identity proofing processes .
+
+irs has implemented alternative methods to knowledge - based verification for get transcript .
+
+while irs used knowledge - based verification on its get transcript service in the past , the agency has recently implemented alternative verification techniques that do not rely on knowledge - based verification .
+
+specifically , irs conducts independent verification of an applicant's possession of a mobile device and uses mobile device confirmation codes , alternative techniques we previously discussed .
+
+irs contracts with a cra to compare status information about the phone number provided by an individual with telephone company records to confirm the individual's identity .
+
+further , irs officials responsible for get transcript's identity proofing and authentication services stated that they plan to continue to add alternative verification methods to get transcript in the future .
+
+they stated that , in june 2017 , in response to the release of nist's updated digital identity proofing requirements , the agency started a task force to examine the updated requirements and make recommendations on possible changes to irs's processes to meet the updated guidance .
+
+according to the officials , the task force developed a digital identity risk assessment process that the agency started using to assess external facing online transactions in october 2018 .
+
+irs's recent elimination of knowledge - based verification from its get transcript identity proofing process and the additional enhancements that the agency is working on , if successful , will likely further improve the effectiveness of its remote identity proofing processes .
+
+va has taken steps to better ensure the effectiveness of its remote identity proofing processes , but it continues to rely on knowledge - based verification for certain categories of individuals .
+
+as previously mentioned , va relies on two different providers , a commercial identity verification service ( called id.me ) and dod's ds logon , to conduct identity proofing for its benefits systems .
+
+these providers use a mix of knowledge - based verification and alternative techniques .
+
+dod's ds logon verifies applicants using knowledge - based verification , while the commercial provider uses both knowledge - based verification processes as well as stronger alternative techniques .
+
+for example , the commercial provider uses cellular phone data to verify an applicant's identity based on the device subscriber's relationship to a claimed identity and the subscriber's tenure with the carrier .
+
+va's commercial provider can also remotely authenticate identity documents .
+
+in this regard , applicants can scan the front and back of driver's licenses , state identification , and passports , and upload the images to the commercial provider , which then analyzes the images to ensure that the documents meet standards and contain valid information .
+
+further , the provider verifies applicants by having them take photos of themselves and then using facial recognition technology to match the applicants' images with their identity documents .
+
+va officials in the agency's information technology and benefits program offices believe that the alternative forms of identity proofing used by its commercial provider as a supplement to knowledge - based verification provide an acceptable level of assurance .
+
+nevertheless , the officials acknowledged that it is important to eventually eliminate knowledge - based verification from the agency's identity - proofing processes .
+
+however , the agency does not have specific plans with time frames and milestones to eliminate the use of knowledge - based verification .
+
+va officials stated that it has not yet established plans for doing so because of its reliance on dod's ds logon service , which still uses knowledge - based verification .
+
+until it develops a specific plan with time frames and milestones to eliminate its reliance on knowledge - based verification , va and the individuals it serves will continue to face a degree of identity fraud risk that could be reduced .
+
+ssa continues to rely on knowledge - based verification for its my social security service , but ssa officials stated that the agency intends to eliminate knowledge - based verification in the future .
+
+according to the ssa chief information security officer , in fiscal year 2019 , the agency intends to pilot alternative verification methods , such as using the commercial id.me service .
+
+in addition , the official said ssa plans to research other alternatives that could be used to replace knowledge - based verification , including modernizing its legacy systems so that they can use login.gov or another shared identity management platform .
+
+the agency has set a goal of eliminating the use of knowledge - based verification in fiscal year 2020 .
+
+as an interim measure to reduce the risks associated with knowledge - based verification , ssa officials stated that they limit the period of time and the number of attempts that an individual has to answer the knowledge - based verification questions .
+
+these limitations are designed to prevent a potential fraudster from researching the answers to the questions .
+
+in addition , ssa also sends a confirmation code via email or sms , which individuals must enter online before being given access to their account .
+
+ssa does not yet have specific plans and milestones to achieve its goal of implementing enhanced remote identity proofing processes by fiscal year 2020 .
+
+ssa officials stated that they cannot develop specific plans until they are able to identify an alternative method or methods that can be used successfully by all members of the public with which the agency interacts .
+
+until ssa develops specific solutions for eliminating knowledge - based verification , the agency and the individuals that rely on its services will remain at an increased risk of identity fraud .
+
+usps has not yet fully implemented alternative methods to better ensure the effectiveness of its remote identity proofing processes .
+
+according to officials responsible for the agency's identity proofing program , usps mitigates the risk of using knowledge - based verification by sending a written confirmation to the physical address associated with each identity - proofing transaction and provides instructions for what to do if the transaction is unauthorized or fraudulent .
+
+in addition to this mitigation measure , the officials reported that they regularly evaluate new capabilities to further increase confidence in their identity - proofing processes and are planning several additional measures to supplement the use of knowledge - based verification .
+
+specifically , in september 2018 , usps began allowing customers to request a confirmation code via the mail to allow them to enroll in informed delivery .
+
+in addition , the agency is planning on implementing verification of mobile device possession and sms enrollment code verification in 2019 and other techniques at a subsequent time .
+
+according to usps officials , these alternative techniques are expected to reduce the agency's use of knowledge - based verification .
+
+the officials said that usps has not completely eliminated the use of knowledge - based verification because available alternatives to the agency's current processes do not satisfactorily address critical factors that they consider when deciding whether to implement alternative processes .
+
+these factors include cost , projected ability to reduce fraud and protect consumers , projected extent of the population that could be covered , and the burden on customers to complete the process .
+
+the officials stated that the agency intends to implement alternative methods in the future for its informed delivery service but does not yet have specific plans with time frames and milestones .
+
+the officials noted that part of the reason for the slow implementation of alternative methods is that nist technical guidance does not provide direction on how alternative methods are to be implemented and that additional guidance from nist would be helpful to the agency for developing and implementing a plan to eliminate knowledge - based verification for the informed delivery service .
+
+while the supplemental processes implemented by usps to date may help to reduce the risks associated with using knowledge - based verification , they do not eliminate such risks .
+
+until it completes a plan with time frames and milestones to eliminate its reliance on knowledge - based verification for informed delivery , usps and its customers will remain at increased risk of identity fraud .
+
+cms has not implemented alternative methods to better ensure the effectiveness of the remote identity proofing processes used for its healthcare.gov service .
+
+cms officials in the office of information technology and the office of consumer information and insurance oversight stated that the agency uses a two - step email verification process to reduce the risks associated with knowledge - based verification .
+
+specifically , individuals applying for an account on healthcare.gov provide basic information ( eg , name , email address , password ) and then are asked to acknowledge an email confirmation they receive from cms .
+
+the email confirmation is intended to prove that the individual applying for a healthcare.gov account is in possession of the email address that same individual provided to cms .
+
+however , this process confirms only the email address that was used to create the account ; it does not confirm the identity of the individual who is applying for the account .
+
+cms stated that it uses this process because other mitigating measures are not cost effective .
+
+however , nist's guidance does not permit agencies to use knowledge - based verification on the basis of cost effectiveness .
+
+further , the agency does not have specific plans with time frames or milestones to eliminate its use of knowledge - based verification for healthcare.gov .
+
+cms officials acknowledge that they do not have a plan to reduce or eliminate the use of knowledge - based verification because they have not yet identified any effective alternatives to knowledge - based verification for healthcare.gov .
+
+according to these officials , based on a user study they conducted , individuals who use the agency's services prefer knowledge - based verification over any available alternatives .
+
+in addition , the officials stated that certain alternatives , such as mobile device verification , may not always be suitable for the population they serve .
+
+as one example , not all applicants have a mobile device that could be used to remotely verify the individual's identity .
+
+the cms officials noted that nist technical guidance does not provide direction on how alternative methods are to be implemented , given that they may not always be suitable for the population served by healthcare.gov .
+
+however , until cms takes steps to develop a plan with time frames and milestones to eliminate the use of knowledge - based verification , cms and healthcare.gov applicants will remain at an increased risk of identity fraud .
+
+while nist has issued guidance to agencies related to identity proofing and omb is drafting identity management guidance , these efforts are not sufficient to ensure that agencies adopt secure methods for remote identity proofing .
+
+as previously discussed , nist's guidance effectively prohibits the use of knowledge - based verification during the validation and verification phases of the remote identity proofing process , but does not provide direction to agencies on how to successfully implement alternative methods for remote identity proofing for large and diverse segments of the population .
+
+further , omb has not issued guidance requiring agencies to report on their implementation of remote identity proofing processes , which is essential for monitoring agencies' progress .
+
+best practices in it management state that organizations should provide clear direction in order to achieve objectives .
+
+specifically , the control objectives for information and related technologies ( cobit ) , a framework of best practices for it governance , states that organizations should provide clear direction for it projects , including relevant and usable guidance , and ensure that those implementing the technology have a clear understanding of what needs to be delivered and how .
+
+however , nist has not issued any supplemental implementation guidance to its 2017 technical guidance to ensure that agencies have a clear understanding of what needs to be done to implement alternative methods of remote identity proofing , as called for in the technical guidance .
+
+for example , nist's technical guidance provides abstract descriptions of identity evidence that individuals must provide , such as a credential containing a photograph or other biometric identifier as well as anti - counterfeiting security features .
+
+the guidance states that such credentials can be provided in person or remotely but does not detail the processes needed for providing credentials remotely .
+
+for example , the guidance does not discuss the advantages and limitations of currently available technologies that agencies could successfully use to remotely verify credentials provided by individuals or to make recommendations to agencies on which technologies should be adopted .
+
+as previously discussed , several potential limitations could make choosing an alternative method difficult .
+
+technologies such as secure , remote verification of a physical credential may not be commercially available .
+
+also , some alternative technologies require that individuals use cell phones and maintain a verifiable record of having them in their possession .
+
+the nist guidance does not discuss how agencies should accommodate segments of the public who do not possess advanced technological devices , such as cell phones , that may be needed for successful remote verification .
+
+because the guidance does not include specific advice or direction on implementing alternative technologies , agencies may be unable to determine what alternative methods are viable for the populations they serve .
+
+as previously discussed , several of the agencies we reviewed send confirmation codes to applicants via cell phone , email , or postal mail , as ways that they believe compensate for risks associated with using knowledge - based verification .
+
+however , nist officials do not consider such methods for remote verification to be effective in compensating for the risks associated with knowledge - based verification .
+
+instead , the nist technical guidance requires agencies to send confirmation codes by mail when they use any remote identity proofing method , including more advanced , alternative verification methods , such as verification of mobile device possession .
+
+officials from cms , ssa , and usps stated that they have not eliminated their use of knowledge - based verification in part because the existing nist technical guidance does not provide direction on how alternative methods are to be implemented , given the various limitations of those alternative methods that agencies have identified .
+
+the officials stated that federal agencies could benefit from additional guidance on implementing the alternative verification techniques called for in the nist technical guidance .
+
+in response to these agencies' comments about being unable to fully implement the remote identity proofing guidance , nist officials stated that agencies were expected to use their own judgment to determine how to meet the remote identity proofing requirements .
+
+the officials added that it was nist's position that the updated guidance was comprehensive enough for agencies to follow .
+
+thus , at the time of our review , nist did not have plans to assist agencies by issuing implementation guidance to supplement its existing technical guidance .
+
+nist officials stated that they are available to provide assistance on an individual basis to agencies that seek their advice .
+
+without additional guidance from nist on how agencies are to implement the alternative identity proofing methods specified in an agency's existing technical guidance , agencies may not be using the most effective and secure identity - proofing methods , thus exposing their systems to risk of fraud .
+
+fisma requires the director of omb to oversee agency information security policies and practices .
+
+however , omb has not provided agencies with guidance establishing reporting requirements for omb to use in monitoring agencies' progress in implementing secure remote identity proofing processes .
+
+for example , omb has not proposed including reporting requirements for remote identity proofing in its draft policy on identity , credential , and access management , nor has it included reporting requirements in its fisma reporting guidance to agencies for fiscal year 2019 .
+
+according to omb staff , omb plans to issue guidance to agencies on the implementation of identity , credential , and access management .
+
+omb issued a draft of this guidance for public comment in april 2018 .
+
+however , the draft guidance does not include a requirement for agencies to report on progress in implementing secure remote identity proofing processes .
+
+because it does not require agency reporting on progress in implementing secure remote identity proofing processes , omb does not have visibility into the extent that agencies rely on insecure methods , particularly knowledge - based verification .
+
+without establishing effective oversight measures , omb cannot adequately monitor agency progress in implementing the secure identity proofing methods called for in nist's 2017 technical guidance .
+
+as a result , agencies may be at risk of implementing weak methods of remote identity - proofing for individuals who seek access to services and benefits from the federal government , which may put both the federal government and individuals at risk for fraud .
+
+the six agencies that we reviewed rely on a variety of remote identity proofing techniques to help ensure that the individuals who enroll for federal benefits and services are who they claim to be .
+
+several of the selected agencies use knowledge - based verification processes that rely on cras to pose questions to individuals and check their answers as a way of verifying their identities before granting them enrollment in a federal benefit or service .
+
+however , given recent breaches of sensitive personal information , these agencies face risks because fraudsters may be able to obtain and use an individual's personal information to answer knowledge - based verification questions and successfully impersonate that individual to fraudulently obtain federal benefits and services .
+
+two agencies we reviewed , gsa and irs , recently implemented remote identity proofing processes for login.gov and get transcript that allow individuals to enroll online without relying on knowledge - based verification .
+
+however , four agencies ( cms , ssa , usps , and va ) were still using knowledge - based verification to conduct remote identity proofing .
+
+moreover , none of the four agencies have developed specific plans to eliminate knowledge - based methods from their processes .
+
+without such plans , these federal agencies and the individuals that rely on such processes will remain at risk for identity fraud .
+
+nist has issued technical guidance regarding remote identity proofing , but it may not be sufficient to help ensure that federal agencies adopt more secure methods .
+
+nist's guidance does not provide direction on how agencies can adopt more secure alternatives to knowledge - based verification while also addressing issues of technical feasibility and usability for all members of the public .
+
+in addition , omb has not issued guidance setting agency reporting requirements that omb could use to track implementation of more secure processes across the federal government .
+
+without additional guidance , federal agencies are likely to continue to rely on risky knowledge - based verification that could be used to fraudulently gain access to federal benefit programs and services .
+
+we are making a total of 6 recommendations to cms , nist , omb , ssa , usps , and va .
+
+specifically: the administrator of the centers for medicare and medicaid services should develop a plan with time frames and milestones to discontinue knowledge - based verification , such as by using login.gov or other alternative verification techniques .
+
+ ( recommendation 1 ) the director of the national institute of standards and technology should supplement the agency's 2017 technical guidance with additional guidance to assist federal agencies in determining and implementing alternatives to knowledge - based verification that are most suitable for their applications .
+
+ ( recommendation 2 ) the director of the office of management and budget should issue guidance requiring federal agencies to report on their progress in adopting secure identity proofing processes .
+
+ ( recommendation 3 ) the commissioner of social security should develop a plan with specific milestones to discontinue knowledge - based verification , such as by using login.gov or other alternative verification techniques .
+
+ ( recommendation 4 ) the postmaster general of the united states should complete a plan with time frames and milestones to discontinue knowledge - based verification , such as by using login.gov or other alternative verification techniques .
+
+ ( recommendation 5 ) the secretary of the department of veterans affairs should develop a plan with time frames and milestones to discontinue knowledge - based verification , such as by using login.gov or other alternative verification techniques .
+
+ ( recommendation 6 ) .
+
+we requested comments on a draft of this report from the eight agencies included in our review .
+
+in response , we received written comments from six agencies — commerce ( on behalf of nist ) , hhs ( on behalf of cms ) , irs , ssa , usps , and va. their comments are reprinted in appendices ii through vii , respectively .
+
+of the six agencies to which we made recommendations , four of them ( commerce , ssa , usps , and va ) agreed with our recommendations , and one agency ( hhs ) did not concur with our recommendation .
+
+one agency ( omb ) did not state whether it agreed or disagreed with our recommendation .
+
+in addition , multiple agencies ( gsa , irs , omb , usps , and va ) provided technical comments on the draft report , which we have incorporated , as appropriate .
+
+the following four agencies agreed with the recommendations that we directed to them: commerce agreed with our recommendation .
+
+the department stated that it will develop additional guidance to assist federal agencies with alternatives to knowledge - based verification and expects to do so within one year from issuance of this report .
+
+comments from commerce are reprinted in appendix ii .
+
+ssa agreed with our recommendation .
+
+the agency stated that it will continue to seek improvements in its existing remote identity proofing process .
+
+ssa also stated that , in addition to a roadmap it developed in fiscal year 2019 to update its knowledge - based verification process to a more secure multi - factor authentication technology , it will take steps to ensure compliance with nist standards for remote identity proofing .
+
+ssa's comments are reprinted in appendix v. usps agreed with our recommendation .
+
+the agency stated that it will be developing a roadmap to implement additional identity - proofing tools and techniques through 2020 .
+
+comments from usps are reprinted in appendix vi .
+
+va agreed with our recommendation .
+
+the department stated that it will develop a specific plan with time frames and milestones to eliminate knowledge - based verification from the aspects of the remote identity proofing process that it controls .
+
+further , in its response , va requested that gao direct a recommendation to the department of defense ( dod ) to discontinue ds logon and consider using login.gov instead .
+
+however , we are not issuing any recommendations to dod because our scope of work did not include auditing dod's remote identity proofing processes .
+
+nevertheless , we have adjusted our recommendations to cms , ssa , usps , and va to clarify that login.gov is one option for identity proofing that they should consider when developing their plans to discontinue the use of knowledge - based verification .
+
+va's comments are reprinted in appendix vii .
+
+one agency did not concur with our recommendation .
+
+specifically , hhs raised several issues related to our findings .
+
+the agency stated that it uses a risk - based approach to designing systems controls and that a unilateral prohibition on the use of knowledge - based verification without alternatives is not a feasible solution .
+
+we agree with this comment and strongly support a risk - based approach to designing security controls , as required by fisma .
+
+however , we believe that alternatives to knowledge - based verification exist that should be assessed and incorporated as appropriate .
+
+similarly , hhs noted that for other applications across the department , it has considered factors such as consumer user experience , cost , and operational feasibility in addition to nist guidelines .
+
+we agree that many factors need to be considered in assessing what method or methods of identity proofing are most appropriate for any given application but believe it is important for agencies to develop plans for addressing those factors that also eliminate the use of risky techniques , such as knowledge - based verification , that could have a negative impact on consumers and agencies .
+
+in response to our specific recommendation to cms , hhs stated that it does not believe that suitable alternative methods exist that would work for cms' population of users , such as those in the rural community , due to distance or individuals without cell phones .
+
+however , we continue to believe that cms should develop a plan to discontinue the use of knowledge - based verification .
+
+we recognize that there are members of the population that may not be reached with certain identity proofing techniques ; however , a variety of alternative methods to knowledge - based verification are available that cms can consider to address the population it serves .
+
+comments from hhs are reprinted in appendix iii .
+
+in addition , omb did not state whether it agreed or disagreed with our recommendation .
+
+further , in an email response , omb staff from the office of the federal chief information officer provided a technical comment , which we incorporated .
+
+however , omb did not otherwise comment on the report findings or our recommendation made to the agency .
+
+the irs also provided written comments on the draft report .
+
+in its comments , the agency described the status of its efforts to strengthen identity verification processes , including the fact that it has eliminated the use of knowledge - based verification .
+
+comments from irs are reprinted in appendix iv .
+
+finally , gsa provided only technical comments on the draft report , as previously mentioned .
+
+as agreed with your offices , unless you publicly announce the contents of this report earlier , we plan no further distribution until 30 days from the report date .
+
+at that time , we will send copies to the appropriate congressional committees , to the administrators of the centers for medicare and medicaid services and general services administration ; the commissioners of internal revenue and social security ; director of the office of management and budget ; the postmaster general of the united states ; and the secretaries of the departments of commerce and veterans affairs .
+
+in addition , the report is available at no charge on the gao website at http: / / www.gao.gov .
+
+if you or your staff have any questions about this report , please contact nick marinos at ( 202 ) 512-9342 or marinosn@gao.gov , or michael clements at ( 202 ) 512-8678 or clementsm@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made major contributions to this report are listed in appendix viii .
+
+our objectives were to ( 1 ) describe selected federal agency practices for remote identity proofing of individuals seeking access to major web - based applications using services provided by consumer reporting agencies and the risks associated with those practices , ( 2 ) assess selected federal agencies' actions to ensure the effectiveness of agencies' remote identity proofing processes , and ( 3 ) assess the sufficiency of federal identity proofing guidance developed by omb and nist in assuring the security of federal systems .
+
+to address the first objective , we made an initial , non - probability selection of federal agencies that ( 1 ) maintained major public - facing web applications to provide access to federal benefits or services and ( 2 ) relied on identity proofing solutions provided by the three nationwide consumer reporting agencies ( cras ) — equifax , experian , and transunion — to verify the identities of individuals applying for such benefits or services .
+
+we considered a “major” application to be one that could involve interaction with millions of individuals across the entire country .
+
+to select six agencies from this group , we reviewed prior gao reports to identify potential agencies for review .
+
+we then interviewed officials at these agencies and at cras to confirm that these agencies use cras as part of their identity proofing processes and to obtain information about additional federal agencies that also employ cras for identity proofing for major applications .
+
+we included gsa in these interviews because its mission is to support federal agencies and it was likely to be aware of additional federal agencies that fit our criteria .
+
+from the information we gained from our interviews and research , we selected these six agencies: the centers for medicare and medicaid services ( cms ) , general services administration ( gsa ) , internal revenue service ( irs ) , social security administration ( ssa ) , united states postal service ( usps ) , and the department of veterans affairs ( va ) .
+
+at each of these agencies , we reviewed documentation that described the current remote identity proofing processes the agencies are using for their major public - facing web applications .
+
+in addition , we interviewed agency officials responsible for identity proofing to obtain details of the techniques used to verify remote users of these applications .
+
+to the extent that these entities used cras to conduct knowledge - based verification as part of their remote identity - proofing processes , we discussed the risks associated with using knowledge - based methods as well as the potential advantages and limitations of using alternative methods that are not knowledge - based .
+
+we also obtained information from officials at nist about the risks of knowledge - based methods and the availability of alternative methods .
+
+to address the second objective , we assessed remote identity proofing processes used by the selected agencies to determine the extent that they rely on knowledge - based verification to enroll online applicants for federal benefits and services .
+
+we also identified alternative methods used by these agencies , either in place of or in addition to knowledge - based verification , and assessed the extent to which agencies had implemented these methods to mitigate the risk of using knowledge - based methods .
+
+we compared the remote identity proofing processes at these agencies with the requirements as specified in nist special publication 800-63 , digital identity guidelines , to determine whether the processes met the requirements of the nist guidance .
+
+we also interviewed officials responsible for these identity proofing programs to obtain information about agencies' plans , if any , to eliminate the use of knowledge - based verification from their remote identity proofing processes in the future and obtained relevant documentation of such plans .
+
+to address the third objective , we reviewed nist special publication 800-63 , digital identity guidelines , to identify federal requirements for remote identity proofing .
+
+we compared the guidance to the control objectives for information and related technologies ( cobit ) , a framework of best practices for it governance , to determine whether the nist guidance contained clear direction , including relevant and usable guidance , to ensure that those implementing the technology have a clear understanding of what needs to be delivered and how .
+
+to assess the sufficiency of this guidance , we consulted with subject matter experts at nist , id.me , a private - sector provider of remote verification technologies , and relevant officials at the selected federal entities .
+
+based on information we had obtained about available alternative methods , we determined the extent to which gaps existed in the nist guidance with regard to implementation of alternative technologies .
+
+we also obtained the views of federal agency officials on the extent to which nist guidance provided sufficient direction to assist them in implementing appropriate remote identity proofing methods .
+
+further , we reviewed omb's draft identity , credential , and access management policy and compared it to the requirements in fisma and identified shortfalls .
+
+we also interviewed omb staff to discuss the sufficiency of the office's current guidance and to determine whether the office planned to issue additional guidance establishing reporting requirements for federal entities or conduct other forms of oversight of federal entities' implementation of the nist identity proofing guidance .
+
+we conducted this performance audit from november 2017 to may 2019 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+in addition to the individuals named above , john de ferrari and john forrester ( assistant directors ) ; tina torabi ( analyst - in - charge ) ; bethany benitez , christina bixby , chris businsky , kavita daitnarayan , nancy glover , andrea harvey , thomas johnson , david plocher , rachel siegel , and winnie tsen made key contributions to this report .
+

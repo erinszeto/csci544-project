@@ -1,0 +1,524 @@
+the federal bureau of investigation ( fbi ) relies on automated systems the federal bureau of investigation ( fbi ) relies on automated systems and networks to electronically communicate , capture , exchange , and and networks to electronically communicate , capture , exchange , and access law enforcement and investigative information .
+
+as part of its access law enforcement and investigative information .
+
+as part of its ongoing efforts to improve information technology capabilities , the bureau ongoing efforts to improve information technology capabilities , the bureau deployed and began operating a network in april 2004 as part of its trilogy deployed and began operating a network in april 2004 as part of its trilogy modernization effort .
+
+misuse or interruption of this network , or disclosure modernization effort .
+
+misuse or interruption of this network , or disclosure of the information traversing it , would impair fbi's ability to fulfill its of the information traversing it , would impair fbi's ability to fulfill its missions .
+
+prior to this network's deployment , misuse was illustrated by missions .
+
+prior to this network's deployment , misuse was illustrated by former agent robert hanssen , who exploited information security former agent robert hanssen , who exploited information security weaknesses at the bureau to track the fbi's most sensitive espionage weaknesses at the bureau to track the fbi's most sensitive espionage investigations .
+
+investigations .
+
+in response to your request as chairman of the house judiciary in response to your request as chairman of the house judiciary committee for the 109th congress , we assessed whether fbi has committee for the 109th congress , we assessed whether fbi has effectively implemented appropriate information security controls on a effectively implemented appropriate information security controls on a critical internal network , deployed as part of the trilogy modernization critical internal network , deployed as part of the trilogy modernization effort , to protect the confidentiality , integrity and availability of its law effort , to protect the confidentiality , integrity and availability of its law enforcement and investigative information .
+
+such controls are essential for enforcement and investigative information .
+
+such controls are essential for ensuring that information technology resources and information are ensuring that information technology resources and information are adequately protected from inadvertent or deliberate misuse , fraudulent adequately protected from inadvertent or deliberate misuse , fraudulent use , disclosure , modification , or destruction .
+
+use , disclosure , modification , or destruction .
+
+this report summarizes shortcomings identified in information security this report summarizes shortcomings identified in information security controls on this critical internal network .
+
+it does not always contain controls on this critical internal network .
+
+it does not always contain specific examples of the weaknesses identified due to the sensitive nature specific examples of the weaknesses identified due to the sensitive nature of the information discussed .
+
+of the information discussed .
+
+information security is critical for any organization that depends on information systems and computer networks to carry out its mission or business .
+
+it is especially important for government agencies , where the public's trust is essential .
+
+the dramatic expansion in computer interconnectivity and the rapid increase in the use of the internet are changing the way our government , the nation , and much of the world communicate and conduct business .
+
+without proper safeguards , systems are vulnerable to individuals and groups with malicious intent who can intrude and use their access to obtain sensitive information , commit fraud , disrupt operations , or launch attacks against other computer systems and networks .
+
+these concerns are well founded for a number of reasons , including a dramatic increase in reports of security incidents , ease of obtaining and using hacking tools , a steady advance in the sophistication and effectiveness of attack technology , and dire warnings of new and more destructive attacks to come .
+
+computer - supported federal operations are similarly at risk .
+
+our previous reports , and those of agency inspectors general , describe persistent information security weaknesses that place a variety of federal operations at risk of disruption , fraud , or inappropriate disclosure of sensitive data .
+
+we have designated information security as a governmentwide high - risk area since 1997 — a designation that remains today .
+
+recognizing the importance of securing federal agencies' information systems , congress enacted the federal information security management act ( fisma ) in december 2002 to strengthen the security of information and systems within federal agencies .
+
+fisma requires each agency , using a risk - based approach to information security management , to develop , document , and implement an agency - wide information security program to provide information security for the information and systems that support the operations and assets of the agency — including those operated or maintained by contractors or others on behalf of the agency .
+
+the federal bureau of investigation ( fbi ) , which is a component of the department of justice ( doj ) , has mission responsibilities that include investigating serious federal crimes , protecting the nation from foreign intelligence and terrorist threats , and assisting other law enforcement agencies .
+
+over 12,000 special agents and 16,000 analysts and mission support personnel are located in the bureau's washington , d.c. , headquarters and in more than 70 offices in the united states and 50 offices in foreign countries .
+
+mission responsibilities at the bureau are divided among the following five major organizational components .
+
+administration: manages the bureau's personnel programs , budgetary and financial services , records , information resources , and information security .
+
+national security: integrates investigative and intelligence activities against current and emerging national security threats , and provides information and analysis for the national security and law enforcement communities .
+
+criminal investigations: investigates serious federal crimes and probes federal statutory violations involving exploitation of the internet and computer systems .
+
+law enforcement services: provides law enforcement information and forensic services to federal , state , local , and international agencies .
+
+office of the chief information officer: develops the bureau's information technology strategic plan and operating budget and develops and maintains technology assets .
+
+the organizational components are further organized into subcomponents , such as divisions , offices , and other groups .
+
+the fbi security division , within the administration component , and the office of the chief information officer collaborated to establish information security initiatives .
+
+one initiative included the establishment of the enterprise security operations center ( esoc ) , which monitors and protects fbi's systems from external attacks and insider misuse and ensures the availability , confidentiality , and nonrepudiation of fbi information .
+
+a second initiative was the deployment of a public key infrastructure , which provided strong authentication of users' identification to applications .
+
+to execute its mission responsibilities , fbi relies extensively on information technology .
+
+the bureau operates and maintains hundreds of computerized systems , networks , databases , and applications .
+
+recognizing the need to modernize its computer systems and networks , fbi proposed a major technology upgrade plan to congress in september 2000 .
+
+the information technology upgrade project , which fbi subsequently renamed trilogy , was fbi's largest automated information systems modernization initiative to date .
+
+trilogy consisted of three parts: ( 1 ) the information presentation component to upgrade computer hardware and software , ( 2 ) the transportation network component to upgrade the communication network , and ( 3 ) the user application component to upgrade and consolidate the most important investigative applications .
+
+fbi completed the first two components — the information presentation and the transportation network — in april 2004 , upgrading its information technology infrastructure with new desktop computers and deploying a wide area network to enhance electronic communication among offices and with other law enforcement organizations .
+
+the data traversing the network includes privacy act and sensitive investigative information .
+
+fbi information system security weaknesses have been exploited by insiders in the past .
+
+the u.s. secret service , along with cert® coordination center , studied insider threats , and stated in a may 2005 report that “insiders pose a substantial threat by virtue of their knowledge of , and access to , employer systems and / or databases.” the espionage of robert hanssen , a former fbi agent , illustrated how an insider can take advantage of inadequacies in the bureau's information system security controls .
+
+after discovery of hanssen's espionage , in 2001 , the attorney general commissioned an outside review of fbi's security program .
+
+the commission found significant deficiencies in bureau information security policies and practices , in areas such as certification and accreditation ( c&a ) , physical security , security awareness training , access control , and auditing .
+
+the report stated that those deficiencies flow from a pervasive inattention to security , which had been at best a low priority .
+
+additionally , shortly after hanssen's arrest in 2001 , the senate select committee on intelligence and the attorney general requested that the doj office of inspector general ( oig ) review fbi's performance in deterring , detecting , and investigating the espionage activities .
+
+the report pointed out that the agent exploited serious weaknesses in fbi's information security and made a specific recommendation on detecting improper computer usage and enforcing “need to know” — granting access only when it is an operational necessity .
+
+according to agency officials , the bureau is addressing this and other recommendations .
+
+the objective of our review was to determine whether the fbi has effectively implemented appropriate information security controls on a critical internal network , deployed as part of the trilogy modernization effort , to protect the confidentiality , integrity , and availability of its law enforcement and investigative information .
+
+to evaluate the effectiveness of the security controls over this critical network , we examined routers , network management servers , switches , firewalls , and controlled interfaces at fbi headquarters .
+
+our evaluation was based on ( 1 ) our federal information system controls audit manual , which provides guidance for reviewing information system controls that affect the confidentiality , integrity , and availability of computerized data ; ( 2 ) previous reports from the doj oig ; and ( 3 ) the federal information security management act , which establishes key elements that are required for an effective information security program .
+
+specifically , we evaluated information system controls that are intended to limit , detect , and monitor access to sensitive network computing resources , thereby safeguarding them from misuse and protecting them from unauthorized disclosure and modification ; encrypt sensitive data on the network ; prevent the introduction of unauthorized changes to application or system protect physical access to network resources ; and ensure completion of appropriate background investigations of bureau personnel with privileged access on the network .
+
+in addition , we evaluated fbi's information security program as it related to the network operating environment .
+
+such a program includes key activities such as assessing risk ; developing and implementing policies , procedures , and security plans ; providing security awareness and training ; testing and evaluating control effectiveness ; planning , implementing , evaluating , and documenting remedial actions to address information security deficiencies ; and ensuring continuity of operations .
+
+to evaluate these controls and activities , we identified and examined pertinent doj and fbi security policies and procedures .
+
+in addition , to determine whether network security controls were in place , adequately designed , and operating effectively , we conducted vulnerability assessments of the network's key servers , routers , and switches .
+
+these assessments included discussions with agency staff to gain an understanding of fbi's processes and controls .
+
+in order to take advantage of prior work in this area , we also held discussions with oig staff and reviewed information security reports pertaining to fbi networks and information systems .
+
+we performed our review at fbi headquarters in washington , d.c. , from march 2006 through december 2006 in accordance with generally accepted government auditing standards .
+
+weaknesses existed in certain access controls and other controls intended to protect the confidentiality , integrity , and availability of the law enforcement and investigative information transmitted by a critical internal network .
+
+our review of the network revealed weaknesses in access controls and patch management .
+
+a key reason for these weaknesses was that , although fbi had developed an information security program , it had not effectively or fully implemented key activities of this program for the network .
+
+as a result , sensitive data traversing this network were vulnerable to unauthorized access , disclosure , and modification and these weaknesses could lead to disruptions in fbi operations .
+
+a basic management objective for any organization is to protect the resources that support its critical operations from unauthorized access .
+
+organizations accomplish this objective by designing and implementing controls that are intended to prevent , limit , and detect unauthorized access to computing resources , programs , and information .
+
+access controls include those related to network devices and services , user identification and authentication , authorization , cryptography , audit and monitoring of security - related events , and physical access to information resources .
+
+inadequate controls diminish the reliability of computerized information and increase the risk of unauthorized disclosure , modification , and destruction of sensitive information , and of disruption of service .
+
+specific examples associated with the weaknesses reported below are described in more detail in a classified version of this report .
+
+networks are collections of interconnected computer systems and devices that allow individuals to share resources , such as computer programs and information .
+
+because sensitive programs and information are stored on or transmitted along networks , effectively securing networks is essential to protecting computing resources and data from unauthorized access , manipulation , and use .
+
+organizations secure their networks , in part , by installing and configuring network devices that permit authorized network service requests , deny unauthorized requests , and limit the services that are available on the network .
+
+devices used to secure networks include ( 1 ) firewalls that prevent unauthorized access to the network , ( 2 ) routers that filter and forward data along the network , ( 3 ) switches that forward information among segments of a network , and ( 4 ) servers that host applications and data .
+
+network services consist of protocols for transmitting data between network devices .
+
+the national security agency ( nsa ) offers guidance for securely configuring devices and services .
+
+insecurely configured network devices and services can make a system vulnerable to internal or external threats .
+
+because networks often include both external and internal access points for electronic information assets , failure to secure these assets increases the risk of unauthorized access to sensitive information and systems , or disruption of service .
+
+fbi used various devices to secure its network ; however , it did not consistently configure network devices and services to prevent unauthorized access to , and ensure the integrity of , the network .
+
+a computer system must be able to identify and authenticate different users so that activities on the system can be linked to specific individuals .
+
+when an organization assigns unique user accounts to specific users , the system needs to be able to distinguish one user from another — a process called identification .
+
+the system must also establish the validity of a user's claimed identity by requesting some kind of information , such as a password , that is known only by the user — a process known as authentication .
+
+doj policy requires that systems control and limit user access based on identification and authentication of the user , and that each user is authenticated before access is permitted .
+
+fbi policy addresses identification and authentication as the foundation for information system access control and for user accountability , with passwords being a means of authentication .
+
+fbi did not adequately control user identification and authentication to ensure that only authorized individuals were granted access to its network devices .
+
+as a result , increased risk of unauthorized access to servers and other network devices exists , particularly by insiders .
+
+authorization is the process of granting or denying access rights and privileges to a protected resource , such as a network , system , application , function , or file .
+
+a key component of granting or denying access rights is the concept of “least privilege.” least privilege is a basic principle for securing computer resources and data .
+
+it means that users are granted only those access rights and permissions that they need to perform their official duties .
+
+to restrict legitimate users' access to only those programs and files that they need in order to do their work , organizations establish access rights and permissions .
+
+“user rights” are allowable actions that can be assigned to users or to groups of users .
+
+file and directory permissions are rules that are associated with a particular file or directory and regulate which users can access it — and the extent of that access .
+
+to avoid unintentionally giving users unnecessary access to sensitive files and directories , an organization must give careful consideration to its assignment of rights and permissions .
+
+doj policy requires that each individual be granted access to information only when such access is an operational necessity , sometimes referred to as “need to know.” also , the policy requires that system security features have the technical ability to restrict the user's access to only that information which is necessary for operations .
+
+further , fbi policy defines least privilege as determining the minimum set of privileges required to perform job functions , and restricting the user to those privileges and nothing more .
+
+fbi granted rights and permissions to network devices that allowed more access to these devices than users needed to perform their jobs .
+
+as a result , increased risk exists that users could perform inappropriate activities .
+
+cryptography underlies many of the mechanisms used to enforce the confidentiality and integrity of critical and sensitive information .
+
+encryption — one type of cryptography — is the process of converting readable or plaintext information into unreadable or ciphertext information using a special value known as a key and a mathematical process known as an algorithm .
+
+the strength of a key and an algorithm is determined by their length and complexity — the longer and more complex they are , the stronger they are .
+
+fbi policy requires that passwords be encrypted before being transmitted over the network .
+
+it also requires that sensitive and classified information be safeguarded such that it is accessible to only those individuals with a “need to know.” fbi did not always safeguard sensitive data using encryption .
+
+as a result , sensitive information may be disclosed to unauthorized individuals who do not have a legitimate need for the information .
+
+to establish individual accountability , monitor compliance with security policies , and investigate security violations , it is crucial to determine what , when , and by whom specific actions have been taken on a system .
+
+organizations accomplish this by implementing system or security software that provides an audit trail that they can use to determine the source of a transaction or attempted transaction and to monitor users' activities .
+
+the way in which organizations configure system or security software determines the nature and extent of information that the audit trails can provide .
+
+doj policy requires that audit records , including all system transactions , be subject to recording and routine review for inappropriate or illegal activity , and that audit trails should be sufficient in detail to facilitate reconstruction of events if compromise or malfunction occurs .
+
+further , fbi policy requires that audit trails be monitored and reviewed for suspicious activity .
+
+fbi established the enterprise security operations center ( esoc ) to monitor and protect the bureau's information systems from external attacks and insider misuse , and to serve as the central point of contact for near real - time security monitoring .
+
+although esoc had established audit and monitoring capabilities , it did not always effectively audit and monitor security - relevant system activity on the network reviewed .
+
+as a result , increased risk exists that suspicious activities may not be detected .
+
+physical security controls are important for protecting computer facilities and resources from espionage , sabotage , damage , and theft .
+
+these controls restrict physical access to computer resources , usually by limiting access to the buildings and rooms in which the resources are housed and by periodically reviewing the access granted , in order to ensure that access continues to be appropriate .
+
+doj physical security policy requires that physical access to facilities where information is stored , processed , or transmitted be restricted to cleared and authorized personnel .
+
+fbi did not always effectively implement physical controls .
+
+for example , in some instances , personnel did not follow physical security policies and procedures for areas containing sensitive information , creating the potential for unauthorized individuals gaining access to these resources and data .
+
+in addition to access controls , other important security controls should be in place to ensure the confidentiality , integrity , and availability of an organization's information and systems .
+
+these controls include techniques designed to ensure the implementation of secure configurations on network devices and the timely completion of background investigations for personnel with access to information systems .
+
+to protect an organization's information , it is important to ensure that only authorized applications and programs are placed in operation .
+
+this process consists of instituting policies , procedures , and techniques to help ensure that all programs and program modifications are properly authorized , tested , and approved .
+
+patch management is an important element in mitigating the risks associated with software vulnerabilities .
+
+up - to - date patch installation could help mitigate vulnerabilities associated with flaws in software code that could be exploited to cause significant damage — including the loss of control of entire systems — thereby enabling malicious individuals to read , modify , or delete sensitive information or disrupt operations .
+
+fbi policy recognizes the need to establish management controls to ensure timely and effective implementation of security patches and software upgrades .
+
+it also specifies that critical patches be evaluated within 24 hours and installed immediately after being tested , with moderate level of criticality considered within 10 days and installed immediately after testing , and with low level of criticality considered within 10 days and installed with the next standard build of the system .
+
+the bureau's patch management for the network was ineffective .
+
+esoc evaluated and provided patches to operations staff for installation on systems ; however , patches were not installed in a timely manner and legacy devices contained obsolete software .
+
+fbi has recognized deficiencies in its patch management process and has identified missing elements needed to implement a more effective patch management process .
+
+also , according to agency officials , the bureau plans to eventually remove legacy devices containing obsolete software from the network .
+
+however , until fbi implements an effective patch management program , it is unable to assure the confidentiality , integrity , and availability of devices on its network .
+
+according to office of management and budget ( omb ) circular a - 130 , it has long been recognized that the greatest harm to computing resources has been done by authorized individuals engaged in improper activities — whether intentionally or accidentally .
+
+personnel controls ( such as screening individuals in positions of trust ) supplement technical , operational , and management controls , particularly where the risk and magnitude of potential harm is high .
+
+background screenings ( or investigations ) help an organization to determine whether a particular individual is suitable for a given position by attempting to ascertain the person's trustworthiness and appropriateness for the position .
+
+the exact type and rigor of screening that takes place depends on the sensitivity of the position and applicable regulations by which the agency is bound .
+
+fbi policy requires that employees and contractors with access to the network have a top secret clearance , and that individuals with a top secret clearance undergo periodic reinvestigation every 5 years .
+
+fbi generally complied with background investigation requirements .
+
+of the 44 individuals reviewed , 41 had current background investigations that had been completed within the last 5 years .
+
+three individuals' investigations were more than 5 years old by a few months , and re - investigations were in process at the time of our review .
+
+weaknesses in access controls and patch management existed , in part , because fbi had not yet effectively or fully implemented key security activities associated with its agencywide information security program for the critical internal network reviewed .
+
+although fbi has developed an information security program , shortcomings exist with certain key elements .
+
+fisma requires agencies to implement an agencywide information security program that includes periodic assessments of the risk and the magnitude of harm that could result from the unauthorized access , use , disclosure , disruption , modification , or destruction of information and information systems ; policies and procedures that ( 1 ) are based on risk assessments , ( 2 ) cost - effectively reduce risks , ( 3 ) ensure that information security is addressed throughout the life cycle of each system , and ( 4 ) ensure compliance with applicable requirements ; plans for providing adequate information security for networks , facilities , security awareness training to inform personnel — including contractors and other users of information systems — of information security risks and of their responsibilities in complying with agency policies and procedures ; at least annual testing and evaluation of the effectiveness of information security policies , procedures , and practices relating to management , operational , and technical controls of every major information system that is identified in the agencies' inventories ; a process for planning , implementing , evaluating , and documenting remedial action to address any deficiencies in their information security policies , procedures , or practices ; and plans and procedures to ensure continuity of operations for information systems that support the operations and assets of the agency .
+
+however , fbi did not fully or effectively implement many of these activities for the critical internal network reviewed .
+
+identifying and assessing information security risks are essential steps in determining what controls are required .
+
+moreover , by increasing awareness of risks , these assessments can generate support for the policies and controls that are adopted in order to help ensure that these policies and controls operate as intended .
+
+further , omb circular a - 130 , appendix iii , prescribes , as does fbi policy , that risk be reassessed when significant changes are made to computerized systems — or at least every 3 years .
+
+the bureau's certification & accreditation handbook incorporates a risk management process by requiring documentation in a risk management matrix throughout the lifecycle of a system .
+
+this matrix is to address such topics as threats , vulnerabilities , impact of a particular threat exploiting a particular vulnerability , existing or recommended countermeasures to mitigate the risk , business impact of implementing the countermeasures , and a schedule for implementing the recommended countermeasures .
+
+the risk assessment for the network was outdated and incomplete .
+
+in 2004 , as part of its c&a process , fbi assessed risk for the network and documented threats and vulnerabilities in a risk management matrix , which addressed many of the weaknesses described in this report .
+
+however , the bureau had not updated the matrix to reflect significant changes , such as additional connectivity , in the network operating environment .
+
+in addition , fbi did not have a comprehensive inventory — an enterprisewide view — that reflected the current operating environment , including new connections as well as interfaces with legacy systems ; as such , although individual risk assessments may have existed for these connections or legacy systems , the bureau may not be able to determine how any risks associated with them affect the overall network .
+
+further , the existing matrix did not address business impact or schedule .
+
+inadequately assessing risk can lead to implementing inadequate or inappropriate security controls that might not address the system's true risk ; it also can lead to costly efforts to subsequently implement effective controls .
+
+also , other organizations connected to the bureau depended on a risk assessment that was outdated and incomplete .
+
+another key task in developing an effective information security program is to establish and implement risk - based policies , procedures , and technical standards that govern security over an agency's computing environment .
+
+if properly implemented , policies and procedures should help reduce the risk that could come from unauthorized access or disruption of services .
+
+technical configuration standards provide consistent implementing guidance for each computing environment .
+
+because security policies and procedures are the primary mechanisms by which management communicates its views and requirements , it is important that policies and procedures be established and documented .
+
+fbi has developed and documented high - level information security guidance , but specific guidance did not always exist for the network environment .
+
+the bureau's security policy manual and certification & accreditation handbook provided guidance on topics such as security officer roles and responsibilities , personnel security , badges , identification and authentication , and system certification requirements .
+
+however , although technical configuration standards existed for topics such as windows configuration , other detailed standards did not always exist .
+
+without effectively developing , documenting , and implementing policies , procedures and standards , the bureau has less assurance that its systems and information are protected from unauthorized access .
+
+the objective of system security planning is to improve the protection of information technology resources .
+
+a system security plan is intended to provide a complete and up - to - date overview of a system's security requirements and describe the controls that are in place or planned to meet those requirements .
+
+fisma requires that agency information security programs include subordinate plans for providing adequate information security for networks , facilities , and systems or groups of information systems , as appropriate .
+
+omb circular a - 130 specifies that agencies develop and implement system security plans for major applications and for general support systems and that these plans address policies and procedures for providing management , operational , and technical controls .
+
+the national institute of standards and technology ( nist ) recommends that security plans include , among other topics , existing or planned security controls , the individual responsible for the security of the system , description of the system and its interconnected environment , and rules of behavior .
+
+fbi policy requires that system security plans be developed as part of its c&a process .
+
+fbi had documented a system security plan for the network , but it was incomplete and not up to date .
+
+the network security plan included many elements required by nist , such as the description of individuals responsible for security and rules of behavior .
+
+although the plan addressed management , operational , and certain technical controls , other specific technical controls , such as for communication protection , were not included .
+
+further , the plan did not reflect the current operating environment because it did not completely address system interconnectivity .
+
+as a result , fbi and other agencies that connect to the network cannot ensure that appropriate controls are in place to protect their systems and critical information .
+
+another fisma requirement for an information security program is that it promote awareness and provide required training for users so that they can understand the system security risks and their role in implementing related policies and controls to mitigate those risks .
+
+computer intrusions and security breakdowns often occur because computer users fail to take appropriate security measures .
+
+for this reason , it is vital that employees and contractors who use computer resources in their day - to - day operations be made aware of the importance and sensitivity of the information they handle , as well as their roles and responsibilities , and what they need to do to protect the confidentiality , integrity , and availability of that information .
+
+fisma mandates that all federal employees and contractors who use agency information systems be provided with periodic training in information security awareness and accepted information security practice .
+
+doj policy requires all personnel who manage , operate , develop , or use automated data processing and telecommunications to take security training and refresher training at least annually .
+
+additionally , fisma requires agency chief information officers to ensure that personnel with significant information security responsibilities receive specialized training .
+
+fbi provided security awareness to most , but not all , employees and contractors ; however , not all individuals with security responsibilities completed the specialized training .
+
+the bureau had implemented a security awareness training program that included computer - based training and a database to track completion .
+
+in fiscal year 2006 , 41 of 44 individuals reviewed completed the training .
+
+additionally , fbi had implemented a specialized security training program that identified a number of roles with significant security responsibilities .
+
+each role had a required computer - based specialized training curriculum , and fbi tracked users' progress and completion of courses .
+
+however , for fiscal year 2006 , only 17 of 44 individuals reviewed had completed the required specialized training for their role ; 11 of 44 individuals had not completed any specialized training ; the remainder had completed some but not all of the training .
+
+fbi officials explained that the specialized training program was new in fiscal year 2006 and that they had initial problems identifying individuals with significant information security responsibilities along with obtaining an appropriate number of licenses for the training .
+
+until fbi fully implements an effective security awareness and training program , it is at increased risk that individuals could accidentally or intentionally allow unauthorized access to sensitive information .
+
+another key element of an information security program is testing and evaluating system controls to ensure they are appropriate , effective , and comply with policies .
+
+an effective program of ongoing tests and evaluations can be used to identify and correct information security weaknesses .
+
+this type of oversight demonstrates management's commitment to the security program , reminds employees of their roles and responsibilities , and identifies and mitigates areas of noncompliance and ineffectiveness .
+
+although control tests may encourage compliance with security policies , the full benefits of testing are not achieved unless the test results are analyzed by security specialists and business managers and used as a means of identifying new problem areas , reassessing the appropriateness of existing controls , and identifying the need for new controls .
+
+fisma requires that agencies test and evaluate the information security controls of their systems and that the frequency of such tests be based on risk , but occur no less than annually .
+
+similarly , the fbi certification & accreditation handbook requires periodic testing to ensure that the accredited system has maintained its documented configuration baseline and to identify new vulnerabilities that may be inherent in the system and not previously identified .
+
+although fbi had various initiatives under way to test and evaluate its network , the tests were not comprehensive .
+
+the network had undergone certification testing as part of fbi's c&a process , and esoc conducts periodic system scans to detect vulnerabilities on its network .
+
+however , the bureau , as noted earlier , did not appropriately consider risks associated with the current operating environment .
+
+further , the scans conducted by the monitoring group were limited in capabilities since the group had not been given administrative access to conduct these tests .
+
+as a result , certain vulnerabilities were not detected .
+
+without appropriate tests and evaluations , the agency has limited assurance that policies and controls are appropriate and working as intended .
+
+additionally , increased risk exists that undetected vulnerabilities could be exploited to allow unauthorized access to sensitive information .
+
+remedial action plans , also known as plans of actions and milestones , can assist agencies in identifying , assessing , prioritizing , and monitoring progress in correcting security weaknesses in information systems .
+
+according to omb circular a - 123 , agencies should take timely and effective action to correct deficiencies that they have identified through a variety of information sources .
+
+to accomplish this , remedial action plans should be developed and progress tracked for each deficiency .
+
+fbi's certification & accreditation handbook requires that plans of actions and milestones serve as a management tool to address corrective actions associated with system deficiencies and any new vulnerabilities .
+
+fbi did not address remedial actions in a timely manner .
+
+for example , the plan of actions and milestones for the network included 15 unresolved weaknesses that were over 2 years old .
+
+eight of these outstanding weaknesses were categorized as “high vulnerability” or “very high vulnerability” weaknesses .
+
+without an effective remediation program , identified vulnerabilities may not be resolved in a timely manner , thereby allowing continuing opportunities for unauthorized individuals to exploit these weaknesses to gain access to sensitive information and systems .
+
+service continuity controls can enable systems to be recovered quickly and effectively following a service disruption or disaster .
+
+such controls include plans and procedures designed to protect information resources and minimize the risk of unplanned interruptions , along with a plan to recover critical operations should interruptions occur .
+
+these controls should be designed to ensure that when unexpected events occur , key operations continue without interruption or are promptly resumed , and critical and sensitive data are protected .
+
+they should also be tested annually or as significant changes are made .
+
+it is important that these plans be clearly documented , communicated to potentially affected staff , tested , and updated to reflect current operations .
+
+fbi policy requires documented procedures to ensure the continuity of essential functions under all circumstances .
+
+in addition , the policy requires regularly scheduled testing of contingency plans .
+
+fbi had not implemented comprehensive continuity of operations plans and procedures for the internal network .
+
+although the bureau had a 2004 contingency plan that reflected the planned trilogy network environment , the plan did not reflect the current internal network operating environment .
+
+fbi also had a contingency plan for its data center , but this plan did not cover the network .
+
+further , there were neither documented test plans nor test results indicating continuity of operations testing had been performed specifically for the network .
+
+according to fbi officials , redundancy has been implemented in the internal network to ensure high availability .
+
+officials also stated that recovery of the internal network has already been exercised in many real - life situations .
+
+however , until the bureau completes actions to address these weaknesses , it is at risk of not being able to recover from certain service disruptions to the internal network in a timely manner .
+
+ineffective controls threaten the confidentiality , integrity , and availability of the sensitive law enforcement and investigative information transmitted by the critical internal network .
+
+certain information security control weaknesses existed in network devices and services , identification and authentication , authorization , cryptography , audit and monitoring , physical security , and patch management .
+
+the bureau's lack of a comprehensive inventory of the current network operating environment — an enterprisewide view — compounds the effect of these weaknesses .
+
+fbi developed an agency - wide information security program ; however , key activities associated with this program had not been fully implemented for the network .
+
+until fbi ensures that the information security program associated with the network is fully implemented , there is limited assurance that its sensitive data will be adequately protected against unauthorized disclosure or modification or that network services will not be interrupted .
+
+these weaknesses leave the bureau vulnerable to insider threats .
+
+we recommend that the fbi director take the following eight actions to fully implement information security program activities for the critical internal network reviewed .
+
+develop a comprehensive inventory of the current network operating environment .
+
+update the network's risk assessment to reflect the current operating environment and ensure that the assessment includes elements required by the fbi certification & accreditation handbook .
+
+develop technical standards that include guidance for addressing the access control weaknesses identified .
+
+update the network security plan to ensure that it reflects the current operating environment and includes sections required by the fbi certification & accreditation handbook .
+
+ensure that all network users receive security awareness training and that all users with significant security responsibilities receive specialized training as defined by their role .
+
+provide comprehensive coverage of system testing and scans .
+
+correct identified weaknesses in a timely manner .
+
+develop a continuity of operations plan that addresses the current network environment , and periodically test the plan .
+
+to help strengthen information security controls over the network , we are recommending in a separate classified report that the fbi director take action to address specific weaknesses associated with network devices and services , identification and authentication , authorization , cryptography , audit and monitoring , physical security , and patch management .
+
+in providing written comments ( reprinted in app .
+
+i ) on a draft of the report , the fbi chief information officer concurred with many of our recommendations to address the weaknesses identified , and noted some instances where weaknesses have already been addressed .
+
+however , he took exception to the report's assertion that the collective result of the weaknesses presents an increased risk to fbi information .
+
+the bureau does not believe that it has placed sensitive information at an unacceptable risk for unauthorized disclosure , modification , or insider threat exploitation .
+
+we believe that until weaknesses identified in network devices and services , identification and authentication , authorization , cryptography , audit and monitoring , physical security and patch management are addressed , increased risk to fbi's critical network remains .
+
+further , as noted in our conclusion , the lack of a comprehensive inventory of the current network operating environment — an enterprisewide view — compounds the effect of these weaknesses .
+
+he also stated that fbi has made significant strides in reducing risk since the robert hanssen espionage investigation .
+
+for example , according to the chief information officer , since its inception in 2002 , the bureau's information assurance section has taken fbi from an agency wherein only 8 percent of information systems were accredited to maintaining 100 percent accreditation of its major systems .
+
+further , he stated that the bureau has increased its monitoring capabilities and established a comprehensive vulnerability assessment program .
+
+as stated in our report , we acknowledged that fbi has developed an agencywide information security program .
+
+however , shortcomings existed in how the bureau implemented certain elements of the program for the network .
+
+for example , the network risk assessment associated with the accreditation process was outdated and incomplete .
+
+other shortcomings included an incomplete security plan , incomplete specialized training , insufficient testing , untimely remediation of weaknesses and inadequate service continuity planning .
+
+although positive efforts have been made , until fbi fully and effectively implements key activities of the information security program associated with its network , security controls will likely remain inadequate or inconsistently applied , and the bureau will have limited assurance that sensitive data will be adequately protected against unauthorized disclosure or modification , or that network services will not be interrupted .
+
+as agreed with your office , unless you publicly announce the contents of this report earlier , we plan no further distribution until 30 days from the report date .
+
+at that time , we will send copies to congressional committees with jurisdiction over fbi and executive branch agencies' information security programs , the attorney general , the fbi director , the doj inspector general , and other interested parties .
+
+we also will make copies available to others on request .
+
+in addition , this report will be available at no charge on the gao web site at www.gao.gov .
+
+if you or your staff have any questions regarding this report , please contact gregory c. wilshusen at ( 202 ) 512-6244 or wilshuseng@gao.gov or keith a. rhodes at ( 202 ) 512-6412 or rhodesk@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+key contributors to this report are listed in appendix ii .
+
+in addition to the persons named above , edward alexander jr. , michael derr , steve gosewehr , jeffrey knott , duc ngo , eugene stevens , and william thompson made key contributions to this report .
+

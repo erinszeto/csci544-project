@@ -1,0 +1,942 @@
+in 2005 , the department of state ( state ) began producing and issuing electronic passports ( e - passports ) .
+
+these new e - passports have an embedded computer chip that stores information identical to that printed in the passport , including the traveler's name , date of birth , photo , passport number , and passport expiration date .
+
+by comparing the information contained on the chip with the information printed in the passport , inspecting officials can more readily identify whether the photo or the biographical information has been altered or counterfeited , which provides greater assurance of the integrity of the passport .
+
+state's bureau of consular affairs is responsible for the design and issuance of passports , and u.s. customs and border protection ( cbp ) in the department of homeland security ( dhs ) inspects the documents at ports of entry to the united states .
+
+by agreement with state , the u.s. government printing office ( gpo ) produces blank e - passport booklets .
+
+among the many components that are used to make e - passport booklets , gpo has contracts with two european companies to produce the e - passport covers , including the manufacturing and inlaying of the computer chips into the e - passport covers .
+
+both european companies use subcontractors in asia for parts of the work .
+
+concerns have been raised that the use of foreign - produced computer chips introduces risks to the integrity of the u.s. e - passport .
+
+in response to your request , this report focuses on potential risks to national security posed by the use of foreign suppliers for u.s. electronic passports .
+
+specifically , it examines the following two risks: ( 1 ) can the computer chips used in u.s. e - passports be altered or forged to fraudulently enter the united states ? .
+
+ ( 2 ) what risk could malicious code on the u.s. e - passport computer chip pose to national security ? .
+
+to determine whether e - passport chips can be altered or forged so that a traveler could fraudulently enter the united states , we interviewed officials from state's bureau of consular affairs and reviewed state department policies , procedures , and guidance documents regarding the public key infrastructure ( pki ) used to protect the data on the e - passport computer chip and assessed them against relevant international civil aviation organization ( icao ) and national institute of standards and technology ( nist ) standards and guidelines .
+
+we interviewed officials at one passport agency and reviewed systems documentation to understand how u.s. e - passports are personalized .
+
+we determined the extent to which information stored on u.s. e - passport computer chips is inspected at u.s. ports of entry by interviewing dhs and cbp officials and reviewing documentation regarding the systems and procedures used to inspect e - passports at the ports of entry .
+
+to determine whether malicious code on the e - passport chips poses a risk to national security , we determined how u.s. e - passport computer chips are manufactured and incorporated into the production of blank u.s. e - passport booklets based on interviews with gpo and manufacturer officials and reviews of gpo documentation .
+
+we met with officials from nist and the national counterterrorism center to determine the level of threat that exists to u.s. e - passports .
+
+we interviewed gpo and state officials and reviewed documentation that describes the u.s. e - passport computer chip architecture and operations .
+
+we reviewed documents governing the manufacturing of the blank e - passport covers .
+
+we identified protections that have been designed into the e - passport computer chip as well as controls that are in place to reduce the possibility of malicious code on the e - passport computer chip .
+
+additional details on our scope and methodology can be found in appendix i .
+
+we conducted this performance audit from june 2008 to january 2010 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+u.s. passports are official documents that are used to demonstrate the bearer's identity and citizenship for international travel and reentry into the united states .
+
+under u.s. law , the secretary of state has the authority to issue passports , which may be valid for up to 10 years .
+
+only u.s. nationals may obtain a u.s. passport , and evidence of citizenship or nationality is required with every passport application .
+
+federal regulations list disqualifying situations under which u.s. citizens are not eligible for a passport , such as those who are subjects of a federal felony arrest warrant .
+
+the security of passports and the ability to prevent and detect their fraudulent use are dependent upon a combination of well - designed security features , solid issuance procedures for the acceptance and adjudication of the application and the production of the document , and inspection procedures that utilize the available security features of the document .
+
+a well - designed document has limited utility if it is not well produced or if inspectors do not utilize the security features to verify the authenticity of the document .
+
+in 2005 , state began issuing e - passports , which introduced an enhanced design and physical security features .
+
+gpo manufactures blank e - passport booklets for state using a variety of materials from different suppliers .
+
+currently , gpo has two suppliers — infineon and gemalto — under contract for the covers of the e - passports .
+
+these covers include the computer chip embedded in the back cover that can communicate using contactless id technology .
+
+security - minded versions of this technology are employed in contactless smart cards used in applications such as automatic banking and identification .
+
+as of february 1 , 2009 , the state department had issued over 30 million e - passports .
+
+to combat document fraud , security features are used in a wide variety of documents , including currency , identification documents , and bank checks .
+
+security features are used to prevent or deter fraudulent alteration or counterfeiting of such documents .
+
+in some cases , an altered or counterfeit document can be detected because it does not have the look and feel of a genuine document .
+
+for instance , in u.s. passports , detailed designs and figures are used with specific fonts and colors .
+
+while these features are not specifically designed to prevent the use of altered or counterfeit documents , inspectors can often use them to identify nongenuine documents .
+
+security features of travel documents are assessed by their capacity to secure a travel document against the following threats: counterfeiting — unauthorized construction or reproduction of a travel forgery — fraudulent alteration of a travel document , and impostors — use of a legitimate travel document by people falsely representing themselves as legitimate document holders while security features can be assessed by their individual ability to help prevent the fraudulent use of the document , it is more useful to consider the entire document design and how all of the security features help to accomplish this task .
+
+layered security features tend to provide improved security by minimizing the risk that the compromise of any individual feature of the document will allow for unfettered fraudulent use of the document .
+
+while most security features in the u.s. e - passport are physical features , the introduction of the computer chip also allows for the use of electronic security features .
+
+in general , at ports of entry , travelers seeking admission to the united states must present themselves and a valid travel document , such as a passport , for inspection to a cbp officer .
+
+the immigration - related portion of the inspections process requires the officer to confirm the identity and determine the admissibility of the traveler by questioning the individual and inspecting the presented travel documents .
+
+in the first part of the inspection process — primary inspection — cbp officers inspect travelers and their travel documents to determine whether they should be admitted or referred for further questioning and document examination .
+
+if additional review is necessary , the traveler is referred to secondary inspection — in an area away from the primary inspection area — where another officer makes a final determination to admit the traveler or deny admission for reasons such as the presentation of a fraudulent or counterfeit passport .
+
+the chips used in the u.s. e - passports are integrated circuits ( ic ) that are essentially complete computers that contain a central processing unit , various types of memory , and other components that perform specialized functions such as random number generation and advanced cryptographic processing .
+
+the chips contain both hardware and software .
+
+the hardware circuitry and the operating system are implanted into the various layers of the chip in a process called photolithography , which employs a technique called masking wherein the chip's circuitry is defined on a series of glass plates called the photomask .
+
+the photomask is used as a template to transfer the pattern of the chip's electronic components into the various layers of the physical chip .
+
+once implanted , the circuitry is considered permanent and not changeable except through physical attack .
+
+while the chip's operating system is implanted into the chip through the photomask at chip creation time , other software needed on the chip — for example , the traveler data — are written to the chip later , during personalization of the chip .
+
+the e - passports are designed as contactless proximity cards , and communication with the embedded chip is only via a radio frequency ( rf ) link established according to standard methods with a device generally called a reader .
+
+to support global acceptance and interoperability of e - passports , icao issued standards that define how data are to be stored on and read from e - passports , including the rf communications .
+
+according to the icao standards , contactless communication with the e - passport is governed by iso / iec 14443 , an international standard that defines the transmission protocol used to transfer data between the reader and the chip .
+
+higher - level reading from and writing to the chip is implemented through the iso / iec 7816-4 command set .
+
+iso 7816-4 is an international standard set of commands used to communicate with the chip and to control all reading from and writing to the chip based on a strict command / response scheme .
+
+the reader initiates all commands to the chip and the chip provides the expected response .
+
+the chip itself cannot initiate any communications with the reader .
+
+iso 7816-4 includes controls to limit read and write access to the chip to authorized parties .
+
+the united states issues e - passports with both iso / iec type a and type b interface connections .
+
+both types use the same transmission protocol , but vary in how communications are established between the chip and the reader and in how information is encoded for transmission .
+
+the chip has no onboard power , but instead pulls the energy it needs from the electromagnetic field emitted by the reader .
+
+the e - passport antenna receives the electromagnetic energy from the reader and converts it to electric current to power the chip .
+
+the chip can be powered and communicate only when it is in close proximity — up to about 10 centimeters — to an appropriate reader .
+
+with both types of chips , the antenna is a component external to the chip and separately attached to it as part of the overall book cover manufacturing process .
+
+while the communication protocols and command set are standardized , the operating system and other software used on the chips are vendor - specific .
+
+as is typical with smart card ics , the software on the e - passport chips is partitioned into three general areas: the ic dedicated software , the basic embedded software , and the application embedded software .
+
+the ic dedicated software contains software used for testing purposes and software to provide other services to facilitate usage of the hardware on the ic .
+
+the ic dedicated software is developed by the ic manufacturer and it is part of the photomasks of the chips .
+
+the basic embedded software is typically not provided by the chip manufacturer , but is usually developed by a third party and delivered to the chip manufacturer for incorporation into the chip's photomask .
+
+an important component of the basic embedded software is the operating system for the chip .
+
+the operating system implements the iso 7816-4 command set and controls all communication between the chip and the outside world .
+
+the third major partition of software on the chip is the application embedded software , which is also typically provided by a third party and provides functionality specific to the particular application for which the chip is intended to be used .
+
+in the case of the u.s. e - passports , the application software is data contained in a file layout using an open , icao - specified logical data structure used for machine - readable travel documents .
+
+in producing e - passport booklets for state , gpo has tapped into the existing global smart card industry , resulting in a wide number of different companies involved in the e - passport chip production and inlay process .
+
+two separate companies were awarded contracts to supply chips for the u.s. e - passports .
+
+infineon , a german company , fabricates its own chips and embeds a commercial operating system from a third - party company on them .
+
+gemalto , a dutch company , obtains chips from nxp , a dutch semiconductor manufacturer .
+
+gemalto provides nxp with its own operating system , which nxp embeds within the chip prior to shipping the chip to gemalto .
+
+although each of these contractors takes a different path to create and provide e - passport covers to gpo , both use a common subcontractor for attachment of the antenna to the chip and the inlaying of the chip into the back cover of the e - passport booklet .
+
+gpo itself finishes production of the e - passport booklet by inserting the paper pages into the covers , installing a metal strip down the inside spine for rf shielding , and , in a process termed pre - personalization , preparing the chip for use by the state department .
+
+state personalizes the e - passport by printing bearer data onto the data page and writing digital data onto the chip as part of its issuance procedures .
+
+as seen in figure 1 , several steps are involved in the production of an e - passport using gemalto's e - passport booklet .
+
+gemalto involves several subcontractors to produce the cover before it is delivered to gpo .
+
+for instance , while the operating system software is created by gemalto , it is implanted on the chip when it is fabricated by nxp .
+
+companies overseas are also involved in the production of the chip and its incorporation into the e - passport cover .
+
+in pre - personalization , gpo tests and formats the chips , preparing them for personalization by state , and finishes overall construction of the e - passport booklet .
+
+gpo then ships the finished , blank e - passport books to the 21 state department passport issuing offices around the country that then personalize and issue them to u.s. citizens , as needed .
+
+similar to gemalto's production process , the production process at infineon also involves several subcontractors to produce the booklet cover before it is delivered to gpo ( see fig .
+
+2 ) .
+
+the operating system and other embedded software used on the infineon chips are developed by a third - party company , and shipped to infineon for incorporation into the photomask pattern .
+
+as with the gemalto production process , gpo tests and pre - personalizes each chip , finishes the books , and distributes the finished , blank e - passport books to the 21 passport - issuing offices .
+
+since 1997 , gao has identified federal information security as a high - risk area .
+
+malicious code is one of the primary threats to federal information security .
+
+nist defines malicious code — sometimes called malware — as “a program that is inserted into a system , usually covertly , with the intent of compromising the confidentiality , integrity , or availability of the victim's data , applications , or operating system or of otherwise annoying or disrupting the victim.” malicious code can be used for many purposes and come in many forms .
+
+for example , malicious code might be designed to delete files on a system or repeatedly attempt access to a system service and thus effectively shut it down .
+
+the effects of malicious code can range from performance degradation to compromise of mission - critical applications .
+
+some common forms of malicious code include viruses , worms , and trojan horses .
+
+viruses infect a system by attaching themselves to host programs or data files .
+
+worms are self - contained programs that can self - replicate and do not require human interaction to spread through a system or network .
+
+trojan horses are nonreplicating programs that appear benign but are designed with a malicious purpose .
+
+malicious code often takes advantage of vulnerabilities in a system's software to either spread or execute .
+
+for example , a common vulnerability , known as a buffer overflow , redirects system control to a malicious program through badly designed software .
+
+inadequate controls on a network's connections or services are another common vulnerability that allows malicious code to spread .
+
+common protections against malicious code include input checking at the boundaries of a system , such as at external interfaces to a system ; network controls to lower the possibility that malicious code could spread within a system ; and patch management to address vulnerabilities in the system's software that malicious code can exploit .
+
+in general , a successful malicious code attack first requires that the malicious code get into a system .
+
+this can occur , for example , by inserting infected media into the computer or through incomplete controls on the system's network connections .
+
+second , the malicious code needs to spread to those areas of a system to which it wants to cause damage .
+
+malicious code can spread in many ways , including various network protocols and services and also in simple file transfers .
+
+finally , malicious code needs to be executed , often by taking advantage of vulnerabilities in a system's software .
+
+therefore , in the case of e - passports , a successful malicious code attack from the chip would first require that malicious code get on the chip .
+
+second , that it get transferred from the chip onto agency computers during the e - passport inspection process and then spread to vulnerable areas within those systems .
+
+and , finally , the malicious code would have to be executed .
+
+although communication with the chips is designed to be via the contactless id interface that complies with the iso 7816-4 standard , which includes an authentication procedure to limit read and write access to the chip to authorized parties , an alternate , illicit way data can be attempted to be read from or written to the chip is through physical tampering techniques .
+
+in general , the aim of such an attack is to discover confidential data stored on the chip — such as cryptographic keys — which can be used to open access to the chip via the contactless interface .
+
+common criteria is an international standard method for evaluating security features of information technology ( it ) components .
+
+the u.s. portion of this effort is coordinated through a partnership of nist and the national security agency ( nsa ) called the national information assurance partnership ( niap ) .
+
+it provides a framework for evaluating security features of it components .
+
+the common criteria program evaluates commercial - off - the - shelf information assurance and information assurance - enabled products .
+
+these products can be items of hardware , software , or firmware .
+
+evaluations are performed by accredited common criteria testing laboratories whose results are then certified by a validation body .
+
+a product is considered common criteria certified only after it is both evaluated by an accredited laboratory and validated by the validation body .
+
+common criteria certifications are expressed in a seven - step assurance scale called evaluation assurance levels .
+
+the seven ordered levels provide an increasing measure of confidence in a product's security functions .
+
+all evaluated products that receive a common criteria certificate appear on a validated products list , which is available on the common criteria web site .
+
+to facilitate the efficient use of testing resources , an international agreement was developed under which one country's common criteria certifications would be recognized by the other participating countries .
+
+this is intended to eliminate unnecessary duplication of testing efforts .
+
+common criteria certifications need to be carefully considered .
+
+we have reported previously that the fact that a product appears on the validated products list does not by itself mean that it is secure .
+
+a product's listing on any common criteria validated products list means that the product was evaluated against its security claims and that it has met those claims .
+
+the extent to which vendor - certified claims provide sufficient security for a given application is another question .
+
+a complex environment has been established to provide reasonable assurance that the data contained on electronic passports can be used to help determine whether an individual should be admitted to the united states .
+
+the overall control environment depends on each party effectively implementing the controls that have been established to govern its operation and utilize the controls implemented by the other agencies .
+
+state uses a technology commonly referred to as public key cryptography to generate digital signatures on the data it writes to the computer chips on the e - passport .
+
+these digital signatures , when effectively implemented , can help provide reasonable assurance that integrity has been maintained over the data placed on the chip by state .
+
+our review found that dhs has not implemented the capabilities needed to completely validate the digital signatures generated by state before relying on the data , which adversely affects its ability to obtain reasonable assurance that the electronic data provided in a chip were the same data that state wrote in the e - passport .
+
+while dhs has some controls that somewhat mitigate this weakness , it does little to ensure that altered or forged electronic data can be detected .
+
+accordingly , until dhs implements this functionality , it will continue to lack reasonable assurance that data found on e - passport computer chips have not been fraudulently altered or counterfeited .
+
+icao has issued e - passport standards that have been adopted by the united states and other countries .
+
+as part of its specifications for e - passports , icao requires the use of digital signatures and a public key infrastructure to establish that the data contents of the computer chip are authentic and have not been changed since being written .
+
+a pki — a system of hardware , software , policies , and people — is based on a sophisticated cryptographic technique known as public key cryptography .
+
+the use of a pki for e - passports primarily serves to provide ( 1 ) data integrity ( the electronic data placed on the passport have not been changed ) , and ( 2 ) authentication ( the country issuing the e - passport was the source of the data ) .
+
+in its standards , icao specifies only the use of well - known cryptographic algorithms for use in e - passports .
+
+as discussed in appendix ii , public key cryptography is used to generate and validate digital signatures .
+
+in particular , the “public key” is used to validate the digital signature that is used to authenticate the data being signed .
+
+however , a means is necessary for the user to reliably associate a particular public key with a document signer .
+
+the binding of a public key to a document signer is achieved using a digital certificate , which is an electronic credential that guarantees the association between a public key and a specific entity .
+
+in agreement with icao standards for e - passports , state generates and writes a digital signature on the chip of each e - passport during the personalization process .
+
+as illustrated in figure 3 , state stores the following information on the e - passport computer chip: biographical information about the traveler , the traveler's facial image , and security data .
+
+the biographical data and facial image are organized into data groups for storage on the e - passport .
+
+each data group is condensed using a hashing algorithm and the resulting hash values are stored in the security data .
+
+a digital signature is generated on these hash values , which represent the data stored on the e - passport computer chip .
+
+hence , the security data on an e - passport consist of three key elements: the data group hash values , the digital signature , and the certificate needed to validate the digital signature .
+
+this certificate — known as the document signer certificate — is associated with a digital signature on a u.s. e - passport's data and is used to validate that the signed data contained in that passport were actually generated by state .
+
+the keys and certificates associated with u.s. e - passports are established in a hierarchical manner to establish a “chain of trust” that a third party , such as dhs , can use to obtain reasonable assurance that the data contained in the passport are the data that were actually written on to the e - passport by state .
+
+state has developed a comprehensive set of controls to govern the operation and management of the pki that generates the digital signatures used to help assure the integrity of the passport data written to the chip .
+
+these controls include the development of policies and practices that are consistent with best practices described in federal guidelines .
+
+for example , state's policies and procedures for generating and storing digital signatures and certificates from cryptographic modules minimize the risk of compromise or unauthorized disclosure .
+
+further , state's procedures require the use of cryptographic modules validated against the level 3 criteria of fips 140-2 , which is consistent with federal best practices and requirements .
+
+if properly validated , the digital signatures on state's e - passports should provide those reading the chip data , including dhs , reasonable assurance that the data stored on the chip were written by state and have not been altered .
+
+proper validation includes verifying that the document signer certificate was issued by the state department .
+
+in july 2007 , we reported that dhs was not fully using a key security feature of the u.s. e - passport — namely the data stored on the chip .
+
+at that time , dhs had not fully deployed e - passport readers to all primary inspection lanes at all ports of entry and did not have a schedule to do so .
+
+we also reported that the implemented e - passport reader solution was not capable of validating e - passport digital signatures , which would help to ensure that the data written to the e - passport chips have not been altered .
+
+since that time , while dhs has begun planning an acquisition for new e - passport readers , dhs has made no further deployments of e - passport readers , nor has it implemented a solution that would allow for the full verification of the digital signatures on e - passport computer chips .
+
+in 2006 , as a part of the united states visitor and immigrant status indicator technology ( us - visit ) system , dhs deployed 237 e - passport readers at 33 air ports of entry — 212 are installed in primary inspection lanes and 25 are installed in training areas .
+
+no e - passport readers are deployed in secondary inspection areas .
+
+while these 33 air ports of entry were chosen because they process the largest volume of travelers — about 97 percent — from visa waiver program countries , the majority of lanes at these airports do not have e - passport readers .
+
+even though the same e - passport readers may be used to read u.s. e - passports , u.s. citizens are primarily processed through lanes at these air ports of entry that are not equipped with e - passport readers .
+
+at equipped primary inspection lanes , cbp officers can use e - passport readers to access the biographical information and digitized photograph stored on the e - passport chip .
+
+to read e - passports , officers place the biographical page of the e - passport on the reader's glass plate .
+
+the reader then electronically scans the biographical information printed on the page and uses it to access the information stored in the e - passport's chip .
+
+once the biographical data and photograph from the chip are displayed on the primary inspection computer screen , the officer is to compare the information displayed with the information on the biographical page of the passport and verify that they match .
+
+the results of any validation activities conducted on the data by the system are also presented to the officer .
+
+any mismatches could indicate fraud .
+
+while a total of 500 e - passport readers were purchased by the us - visit program .
+
+dhs has made no further deployments of e - passport readers since 2006 .
+
+those not deployed are in storage , used for training , or used to support system development activities .
+
+following the deployment at the 33 air ports of entry in 2006 , responsibility for deploying the e - passport readers was shifted from the us - visit program to cbp .
+
+cbp officials partially attributed the lack of progress in deploying e - passport readers to its failure to allocate funding for the activity since it assumed the responsibility from us - visit .
+
+according to dhs officials , the slower than expected times to read data from e - passport chips also influenced its decisions to not further the deployment of the e - passport readers .
+
+in 2008 , dhs transferred $11.4 million of no - year funds from us - visit to cbp for planning , purchasing , and deploying e - passport readers at all cbp primary processing lanes and secondary inspection areas at the ports of entry .
+
+according to cbp officials , it is currently planning an acquisition for new e - passport readers .
+
+as a part of the acquisition planning , cbp also expects to determine whether it will replace the 500 currently deployed or stored e - passport readers with new readers that will likely have better performance than the current readers .
+
+according to dhs , cbp is planning an e - passport reader procurement that will allow for the full deployment of e - passport readers in fiscal year 2011 .
+
+in our prior work , we recommended that dhs develop a deployment schedule for providing sufficient e - passport readers to u.s. ports of entry .
+
+with the identification of funding for the effort , cbp has initiated planning for further deployment of e - passport readers , but has not yet developed a deployment schedule .
+
+until dhs installs e - passport readers in all inspection lanes , cbp officers will not be able to take advantage of the data stored on e - passport chips .
+
+for instance , without e - passport readers , cbp officers are unable to read the photograph and biographic information stored on the e - passport chip , information that would better enable officers to detect many forms of passport fraud , including impostors and the alteration or substitution of the photos and information printed in the passports , and help to determine the traveler's identity and admissibility into the united states .
+
+while dhs's systems conduct some validation activities to ensure the integrity of the data on the e - passport chip , it does not have adequate assurance that the data stored on the chip have not been changed since they were authored by a legitimate issuing authority — in the case of u.s. e - passports , the state department .
+
+in primary inspection lanes that are equipped with e - passport readers , cbp's workstations conduct a series of checks using data read from the e - passport computer chip , including the biographical data , the facial image , and the security data .
+
+first , the cbp workstation verifies that the biographical data read from the computer chip match that read from the printed biographical page .
+
+second , the cbp workstation calculates the hash values of the data groups read from the computer chip and compares them with the hash values stored in the security data .
+
+if available , the cbp workstation will also use the digital certificate to verify the digital signature .
+
+the expiration date of the e - passport and the digital certificate are also checked .
+
+finally , if the e - passport has been previously read by cbp , the hash value of the facial image is compared with the value stored by cbp .
+
+if this is the first time the e - passport has been encountered , the hash value is stored for future comparisons .
+
+any mismatches are to result in an error being displayed to the cbp officer .
+
+further , in october 2008 , dhs began to make u.s. passport data available to cbp officers in primary inspection .
+
+dhs is now receiving u.s. - issued passport data through a datashare initiative with the department of state .
+
+cbp has modified its workstations to retrieve this additional information when u.s. passports , including e - passports , are processed .
+
+when cbp officers enter u.s. passport data into appropriately configured cbp workstations , the photograph of the traveler , as issued by the state department , will be displayed to the officer .
+
+as e - passports are issued by state , the corresponding information is made available to dhs through the datashare .
+
+state worked with dhs to transfer data on all valid historical u.s. passports .
+
+as more historical u.s. passport information becomes available , more photographs will be displayed to primary officers upon processing a u.s. citizen through primary inspection .
+
+however , the key step that is missing is that the cbp workstation does not validate the legitimacy of the public key used to verify the digital signature .
+
+such a validation would provide assurance that the public key in the document signer certificate was generated by the state department .
+
+without this verification , cbp does not have reasonable assurance that the e - passport data being protected by the digital signature were written by the state department because forgers or counterfeiters could simply generate the keys necessary to digitally sign the forged data and include their own certificate in the e - passport for verification purposes .
+
+checking the legitimacy of the certificate containing the public key that is used in the digital signature validation process would effectively mitigate this risk .
+
+when generated , the document signer certificates are themselves digitally signed .
+
+however , cbp does not have access to the public keys necessary to validate these digital signatures .
+
+while dhs tested the functionality of storing and using this information to verify the certificates included by state and other nations on e - passports using the cbp workstation , the functionality was not implemented for operations because the infrastructure to collect and maintain the international certificate database did not exist .
+
+according to dhs officials , this function was a us - visit requirement , but did not get implemented , in part , because a dhs component that would be responsible for operating the public key database was never identified .
+
+dhs officials also stated that the slow performance of reading e - passports diminished the importance of implementing this function .
+
+not being able to check the legitimacy of the document signer certificates affects not only cbp's ability to verify the integrity and authenticity of the data written to u.s. e - passport computer chips , but also its ability to verify the integrity and authenticity of computer chip data on any country's e - passport .
+
+the united states requires all 35 participants in the visa waiver program to issue e - passports , and icao has estimated that over 50 countries issue e - passports .
+
+because cbp does not have the necessary information to fully validate the digital signatures that these countries generate , it does not have reasonable assurance that data signed by those countries were actually generated by the authorized passport issuance agency for that country .
+
+hence , it cannot ensure that the integrity of the data stored on the e - passport's computer chip has been maintained .
+
+two key issues need to be resolved for cbp to be able to rely on data stored on e - passport computer chips .
+
+first , a database needs to be established and populated with the digital certificates needed to fully validate the digital signatures that can be accessed by cbp inspection workstations at the ports of entry .
+
+an approach needs to be developed and implemented to populate the database with the needed information , including state department data for u.s. e - passports , that can be used to fully validate the digital signatures .
+
+according to icao , this information should be distributed only through secure diplomatic channels .
+
+second , cbp needs to develop and implement functionality on its inspection workstations to access the database when e - passport data are read to verify that the legitimate passport - issuing authority signed the data being relied upon .
+
+until these two key issues are addressed , cbp will continue to lack reasonable assurance that data found on e - passport computer chips have the necessary integrity ; hence , the security enhancements that could be provided by e - passport computer chip data against counterfeiting and forgery are not completely realized .
+
+protections designed into the u.s. e - passport computer chip limit the risks of malicious code being resident on the chip , a necessary precondition for a malicious code attack to occur from the chip against computer systems that read them .
+
+gpo and state have taken additional actions to decrease the likelihood that malicious code could be introduced onto the chip .
+
+while these steps do not provide complete assurance that the chips are free from malicious code , the limited communications between the e - passport chip and agency computers significantly lowers the risk that malicious code — if resident on an e - passport chip — could pose to agency computers .
+
+as we previously discussed , the e - passport's digital signature can provide reasonable identification of unauthorized modification of the user data areas — including modifications resulting from the introduction of malicious code .
+
+finally , given that no protection can be considered foolproof , dhs still needs to address deficiencies noted in our previous work on the us - visit computer systems to mitigate the impact of malicious code , should it infect those systems .
+
+security features designed into the e - passport computer chips , including the digital signature , provide protections against the introduction of malicious code onto the chip during the e - passport booklet production process .
+
+for example , among other features , the chips include physical tamper protections that aid in sensing or thwarting physical attacks , a cryptographic authentication procedure to lock the contactless interface against unauthorized access , and incorporation of a digital signature that can be used to identify any unauthorized modification of the user data areas .
+
+as of 2007 , nist had not been able to identify any known cases of a malicious code attack against a computer network from a contactless chip .
+
+nevertheless , both nist and dhs agree that it is possible and have generally identified physical tamper attacks as threats to embedded electronic chips in contactless applications such as e - passports .
+
+physical tamper attacks involve stripping away the chip's outer coverings , exposing the electronic circuitry on the wafer , and analyzing or monitoring chip activity by inserting electronic probes onto components etched into the wafer .
+
+in general , the aim of such an attack is to discover confidential data stored on the chip — such as cryptographic keys — which can be used to open access to the chip via the contactless interface .
+
+in terms of a malicious code threat , the purpose then would be to write malicious code onto the chip via the rf interface .
+
+in its guide to chip - level security for contactless ics , dhs identifies common methods used in physical tamper attacks on contactless ics .
+
+for example , after removing top layers of plastic or other coverings and uncovering the electrical surfaces of the chip , attackers could probe into the various chip layers in an attempt to understand its processing .
+
+common methods of physical attack are those related to ( 1 ) fault introduction , ( 2 ) ic monitoring , and ( 3 ) reverse engineering .
+
+the purpose of each of these attacks is ultimately to uncover secret information — such as cryptographic keys or passwords — that would allow an attacker to open the chip for read / write access via the contactless interface .
+
+in fault introduction , attackers attempt to introduce faults randomly , at specific times during the processing , or in specific locations on the ic circuitry , to gain additional information about the chip processing during such faults , which could provide clues to the memory location of secret keys .
+
+similarly , such clues can be uncovered using ic monitoring , where readers or probes placed on the chip's internal circuitry are used to monitor calculations or flows of data on the chip .
+
+finally , attackers could attempt to reverse engineer the computer chip to decipher its hardware architecture and read the secret information .
+
+in its guide , dhs identifies countermeasures for each of these types of attack .
+
+for example , protections against fault introduction include implementing sensors that detect when parameters , such as light or temperature , vary outside of expected values .
+
+if such variations are sensed , the chip may automatically reset or even disable itself .
+
+protections against ic monitoring might include encrypting the traffic flowing along the internal circuitry so that interpretation would be difficult .
+
+protections against physical analysis include encrypting information stored in memory and scrambling the design of the logic contained in the operating system when laid down in memory during ic creation .
+
+well - designed security microcontrollers , with numerous security features and support for mutual authentication and sophisticated cryptographic functions , can be designed to make it extremely difficult , costly , and time - consuming for attackers to compromise .
+
+in its solicitation for the e - passport covers , which included the computer chips , gpo specified several hardware and software requirements to protect against physical attack , including specific features to assist in protection against power and timing attacks .
+
+it also included requirements for sensors to monitor , for example , temperature and voltage variations , which might be indicative of a physical tamper attack .
+
+the chips used in the u.s. e - passports are considered security microcontrollers designed for applications where security is an important consideration , such as payment , identity , and secure access and , as such , they incorporate several features against physical tamper attacks .
+
+both types of chips used in the e - passports have incorporated some recommended countermeasures for all of the common categories of attack identified by dhs .
+
+for example , the chips incorporate temperature and light sensors to monitor when those operating conditions vary from expected values and employ memory encryption against reverse engineering of the chip .
+
+while it is not possible to provide complete protection against the more invasive physical attacks , the goal is to make the cost of mounting such an attack prohibitive .
+
+while the threat of physical attack to the embedded chips in the e - passport cannot be completely discounted , the security features incorporated into the microcontrollers in u.s. e - passports make a physical tamper attack impractical .
+
+during production of the e - passport covers , the manufacturers , their subcontractors , and at gpo and state — or anywhere en route between these sites — the chips are protected from unauthorized access through the contactless interface by authentication procedures based on cryptography .
+
+the manufacturing and personalization process for the e - passport booklet is complex and involves many handoffs between different sites , companies , and sometimes different countries .
+
+for example , while both e - passport cover contractors originate chip manufacturing in europe , they also send the chips to various third - party companies in asia for additional manufacturing steps .
+
+the overall process can take almost 2 years from the time the chip leaves the fabrication plant until it is finally issued by the state department to a bearer as part of an e - passport .
+
+during the production life cycle of the e - passport book — from chip creation at the chip manufacturers through to personalization by state — contactless access to the chip is controlled by a symmetric cryptography authentication procedure .
+
+cryptographic algorithms provide different measures of strength , depending on the algorithm and the overall length of the keys involved .
+
+according to nist estimates , the version used on the e - passports can , at best , provide protection from a brute force attack until 2030 .
+
+this locking mechanism not only controls access to the chip , but differentially allows only certain functions to be performed .
+
+several other design features limit the chance that malicious code could be placed on the chip .
+
+for example , according to gpo , an additional step used to protect the e - passport chips from unauthorized access during the manufacturing process takes advantage of standard industry practice to not include customer identification with chips during production runs .
+
+during the chip - manufacturing process , an anonymous cataloging scheme is employed that makes it difficult to associate bulk lots of chips with their destined applications .
+
+therefore , on the production floor , it cannot be determined which chips are to be used in u.s. e - passports .
+
+in addition , after the chips are manufactured and incorporated into the e - passport cover , steps are taken by gpo and state to protect the user data areas of the chip from tampering .
+
+first , as part of its formatting procedures to prepare the chips for personalization , gpo ensures that the user data area is free from any data — including malicious code .
+
+during the formatting of the user data area , if any memory cell is found to be defective , then gpo discards the e - passport booklet .
+
+therefore , any malicious code successfully implanted within the user data area after manufacture and through any of the chip's travels through its production cycle up until it arrived at gpo would be erased from the chip .
+
+as we previously discussed , during the e - passport personalization process , a digital signature is applied to the data to help assure the integrity and authenticity of the data written to the chip .
+
+one of the benefits of the digital signature is that any insertion of malicious code into , for example , the bearer's digital image would be caught , provided the digital signature is fully and properly verified .
+
+such a successful check would provide reasonable assurance that malicious code has not been inserted into the user data areas of the chip memory since it was personalized by state .
+
+gpo and state have taken steps to gain confidence that their e - passport computer chips are secure .
+
+while these steps do not provide complete assurance that the chips are free from malicious code , the limited communications between the e - passport chip and agency computers significantly lowers the risk that malicious code that could be resident on an e - passport chip could pose to agency computers .
+
+the chips have been tested for both interoperability and conformance to icao specifications and exercised by gpo as part of their formatting process .
+
+the chips have undergone a formal , independent process to validate some aspects of their security .
+
+gpo and state also periodically conduct security reviews of the chip manufacturer sites .
+
+one key feature that mitigates the risk that malicious code on the chip could pose to agency computers is the highly restricted nature of the data exchange between the chip and agency computers during the reading of the e - passport .
+
+the e - passport computer chip adheres to iso 14443 and iso 7816-4 for communications through the contactless interface .
+
+the standards restrict the computer chip to a slave role whereby it responds only to a specific set of commands with known and limited response data .
+
+because the chip cannot independently initiate communication with a reader , the flow of data from the chip to the reader and host computer can be precisely controlled and limited to only what is expected by the host computer .
+
+the result is that opportunities for the covert embedding of malicious code within data transferred from the chip to agency computers are correspondingly limited .
+
+for example , the passport number , bearer's name , and date of birth are data sets restricted to a well - defined set of characters and are of fixed length .
+
+consequently , if a reader accepts inputs only within these bounds , it will limit the risk posed by malicious code .
+
+the digital image of the bearer is the only data set transferred that is of enough size to provide for opportunities to hide malicious code .
+
+the image is formatted according to a standard graphics format that facilitates integrity checking of its contents .
+
+according to dhs officials , when e - passports are read , the data from the chip are verified both by the e - passport reader as well as by the agency host computer before the data are processed .
+
+testing helps to verify proper functioning of e - passport chip communications prior to contract award , and at various points thereafter , the u.s. e - passport chips have undergone testing for a variety of purposes .
+
+according to gpo officials , the solicitation for the e - passport covers was based on state department requirements for specific functionality , security , performance , and availability .
+
+for example , it included requirements for the chip to meet iso 14443 communications and iso 7816-4 command set standards and other standard specifications .
+
+as part of the award selection process , gpo , state , nist , and nsa conducted testing of sample books from each bidder to determine whether they would meet requirements as specified in the request for proposal .
+
+during pre - award testing , for example , gpo ran initial tests to ensure basic functionality as specified by iso 7816-4 , including the ability to initialize , read , write , and lock the chip .
+
+gpo also ensured that each e - passport cover was of the correct form and thickness so that it could mechanically pass through its production equipment suite .
+
+the sample booklets then went to state , which conducted tests to ensure the books could work with its personalization systems .
+
+according to nist officials , they performed electronic testing that looked at the potential for eavesdropping , jamming , and remote activation ( skimming ) .
+
+for eavesdropping , the test was conducted to determine whether the legitimate communication could be intercepted , but no attempt was made to see if the encrypted communication could be understood .
+
+for jamming , the purpose was to determine whether legitimate communications with the chip could be prevented .
+
+for remote activation , the purpose was to determine the distance from which a reader could elicit a response from the chip , but no attempt was made to test the basic access control or to read the data on the chip .
+
+nist also conducted different types of durability tests including static bend , dynamic bend , climate , chemical resistance , physical protection of the integrated circuit chip , and electromagnetic testing .
+
+none of nist's tests were designed to test for the presence of malicious code on the chip .
+
+while the tests exercised some portions of iso 14443 and iso 7816-4 , nist did not conduct any tests to ensure full conformance with these standards .
+
+nsa officials stated that they conducted electronic testing of the booklet , but this was confined to radio frequency testing and shielding testing specifically tasked by gpo to evaluate the susceptibility of the booklet to skimming by looking at the distance over which the booklet's chip could become energized .
+
+nsa performed no substantive tests of communication with the chip and no testing at all with regard to malicious code .
+
+as part of gpo's normal pre - personalization processing , gpo exercises and tests each chip's functionality to verify , among other things , the correct reading and writing of every chip .
+
+gpo's processing does not systematically exercise every chip function or the full iso 7816-4 command set and associated error handling .
+
+gpo officials said that while they test the basic functionality of the chip as they proceed through the pre - personalization processing , full iso 14443 communications and iso 7816-4 command set processing — including ensuring that all error handling is performed correctly — is done as part of the international icao interoperability and conformance tests held approximately every 2 years .
+
+the state department is the official u.s. representative to these tests , although gpo frequently participates , by request , in support of state .
+
+according to icao , the interoperability and conformance tests are intended to accomplish two things .
+
+first , they ensure that e - passports from different countries can be read by readers provided by multiple vendors .
+
+second , they ensure compliance with various aspects of the iso 14443 communication and iso 7816-4 command set standards .
+
+the u.s e - passport chips have been part of some of the interoperability and conformance tests that have been run in the last several years .
+
+all these tests provide important assurances for their stated purposes by exercising functionality , in particular the limited e - passport chip communications , that helps to protect against the risk of malicious code .
+
+in general though , such testing is limited to verifying functionality and cannot provide absolute assurance that malicious code has not been implanted onto the e - passport computer chip .
+
+the creation of the computer chip used in u.s. e - passports is a complex process that involves many components created by different entities .
+
+because the u.s. government does not control the entire supply chain for all the components on the chip , it relies on security features provided by the chip component suppliers , the extent to which these suppliers test and certify their products , and the extent to which these suppliers develop and produce the chips in a secure manner .
+
+some aspects of the security of the chips were certified using common criteria nist guidelines state that federal agencies should give substantial consideration in it procurements to products that have been evaluated and tested by accredited laboratories against appropriate security specifications and requirements .
+
+one established mechanism for providing security evaluation and testing services for commercial - off - the - shelf hardware , software , or firmware is common criteria .
+
+common criteria certifications are a well - known international standard mechanism for validating and documenting various security aspects of it products .
+
+evaluations are performed by accredited common criteria testing laboratories whose results are then certified by a validation body .
+
+in the case of the chips used in the u.s. e - passports , selected security features of their hardware components were evaluated using common criteria by a recognized european laboratory and certified by germany's common criteria certification body .
+
+in its solicitation for the e - passport covers , including the computer chips , gpo specified that preference will be given to computer chips that are certified at common criteria eal 4+ against a common criteria - compliant protection profile .
+
+according to common criteria definitions , an eal 4 rating is intended to provide a moderate to high level of independently assured security .
+
+to achieve this rating , the testing lab must conduct a variety of structured activities , including an analysis of the security functions of the product using a complete interface specification and both the high - level and low - level design of the specific features of the product being tested , review and confirmation of any vendor testing that was conducted , and conduct of an independent vulnerability analysis demonstrating resistance to penetration attackers with a low attack potential .
+
+the computer chips selected for use in the e - passports each had received an eal 5+ rating against a compliant protection profile .
+
+according to common criteria , an eal 5 rating incorporates all of the eal 4 requirements and , in addition , requires , among other things , semiformal design descriptions , a more structured architecture , covert channel analysis , and improved mechanisms that provide confidence that the particular implementation of the product being evaluated has not been tampered with during development .
+
+specific security features evaluated to achieve the eal 5 rating include many useful in helping to prevent the introduction of malicious code .
+
+examples of these include support for cryptographic functions , protections against physical manipulation , and features to ensure correct operating conditions for the chip .
+
+however , a key software component of the chip — the operating system — was excluded from the evaluation .
+
+the operating system on the chip implements and controls , among other functions , the iso 7816-4 command set that is the primary means of communication between the chip and the outside world — including agency computers .
+
+under common criteria , it is not uncommon for critical components of a product to be excluded for particular evaluations .
+
+in particular , the exclusion of important software components , such as the operating system , from the common criteria evaluation of hardware features is not unusual because the higher - level software embedded on chips is often a third - party product and not designed by the chip manufacturer itself .
+
+the chip manufacturer is typically not responsible for undertaking a common criteria evaluation of third - party embedded software used on its chips .
+
+typically , it would be up to the software provider to get its product certified using common criteria .
+
+however , this is an expensive and time - consuming process .
+
+hence , care needs to be taken with common criteria certifications that can be meaningfully understood only within the context of the specific subset of security functions included in the evaluation .
+
+we have previously noted that one of the challenges in using the national information assurance partnership is the difficulty in matching agencies' needs with the availability of niap - evaluated products .
+
+according to infineon and gemalto officials , back in 2006 when the request for proposal for the e - passport covers was issued , there was no protection profile available that covered the operating systems of such chips .
+
+since that time , however , common criteria operating systems suitable for use on smart cards have become available .
+
+according to gpo officials , infineon provides such chips today , and gpo is in the process of transitioning them into production so that , at least for the infineon line , the e - passports will include a common criteria - certified operating system .
+
+the user operating system contains arguably most of the software functioning on the chip .
+
+therefore , obtaining assurance as to its secure functioning and freedom from malicious code is an important activity .
+
+however , given the highly restricted nature of the current communications between the chip and agency computers , we do not see the lack of common criteria certification of the chip operating system as significantly increasing the risk to agency computers from malicious code .
+
+while common criteria certification confers some assurance regarding the specific security functions included in the evaluation , care must be taken in extending that assurance into confidence in the overall security of the product for its intended use .
+
+gao has previously reported that within its limitations , the common criteria process provides benefits .
+
+however , the lack of performance measures leaves questions unanswered as to its true effectiveness .
+
+the use of commercial products that have been independently tested and evaluated is only a part of a security solution that contributes to the overall information assurance of a product .
+
+gpo has conducted reviews of the e - passport computer chip manufacturing sites prior to contract award , and periodically thereafter , gpo — sometimes accompanied by the state department — conducted on - site security reviews of the companies that manufacture the e - passport chips and the covers , and of some of their subcontractors .
+
+according to gpo officials , its reviews are concerned with not just security risks , but also with other risks — for example , the extent to which a site performs continuity of operations planning or the risk that a single source of supply for one of the components might pose a risk to the delivery of the components .
+
+in conducting the security reviews , gpo officials stated that they make an attempt to visit every vendor involved in the production of the e - passport booklet , including , for example , the security ink suppliers , paper providers , thread providers , and the chip providers .
+
+the sites are spread across several countries , and within some countries there may be multiple sites .
+
+for example , for both infineon and gemalto , production of the chips involves several sites within europe .
+
+these reviews employ an american national standards institute ( ansi ) standard for security product manufacturing that covers a variety of risk areas , including information , it , material , supply chain , physical intrusion , personnel , and disaster recovery .
+
+for example , the standard addresses such concerns as proper controlled access to restricted areas within a facility .
+
+during the security review , gpo generally gets a high - level briefing from the company and talks with staff at the site .
+
+according to gpo officials , they have reviewed almost every site twice since march 2006 .
+
+in recent security reviews of the chip manufacturing sites , both infineon and nxp were found to be in compliance with their own stated security policies and meeting the class 1 level of the ansi standard .
+
+from the security reviews , gpo can get some sense of some of the protections in place at the development sites — for example , access control to development areas and security awareness training .
+
+gpo learned through its reviews , for example , that gemalto has an access control policy wherein development premises are divided into secure and nonsecure zones , and the operating system development is in the secured zone .
+
+this provides some assurance that since physical access to the software destined for the chips is controlled , opportunities for the inclusion of malicious code can be limited .
+
+given that there can be no guarantees against a malicious code attack originating from the e - passport computer chip , agency systems need to have a strong security posture , in accordance with federal government standards .
+
+we have previously reported on weaknesses in dhs's us - visit computer systems , which could increase the ability of malicious code to infect and propagate through agency computers .
+
+weaknesses , such as unpatched software vulnerabilities , can invite a malicious code attack and enhance the ability of the attack to spread across the network by leaving important linkages within the network unprotected .
+
+dhs needs to address these deficiencies to ensure that any malicious code resident on the e - passport chip and read onto dhs computers can be contained and its effect minimized .
+
+one of the strong recommendations from nist is that computer systems run antivirus software , which scans systems' files and memory spaces for known malware .
+
+nist strongly recommends the use of antivirus software to identify and protect against malicious code .
+
+detecting such code prior to its further spread can limit a malicious code infection and protect downstream systems .
+
+according to dhs officials , workstations that control the interface with the chip are protected by antivirus software , which includes access protections , buffer overflow protections , and scanning of files as they are accessed .
+
+one of the key weaknesses in us - visit that we found in 2007 — patch management — is of particular concern with respect to malicious code that could be read from an e - passport .
+
+malicious code often attacks systems by exploiting vulnerabilities in operating systems , services , and applications .
+
+when software vulnerabilities are discovered , the software vendor may develop and distribute a patch or workaround to mitigate the vulnerability .
+
+patch management is , therefore , an important element in mitigating the risks associated with malicious code and the vulnerabilities they depend on .
+
+nist's , nsa's , and dhs's own policies stress the importance of keeping computer systems up to date with security patches .
+
+outdated and unsupported software is more vulnerable to attacks and exploitation .
+
+nist guidelines state that applying patches is one of the most effective ways of reducing the risk of malware incidents .
+
+in our prior report , we noted that while dhs has taken steps to ensure that patches for the workstations' operating system were kept up to date , some workstations at the ports of entry did not consistently maintain secure configurations .
+
+as a result , vulnerabilities left unpatched on those systems increase the chance of malicious code being executed should it get ingested .
+
+according to dhs officials , they are in the midst of upgrading workstations to a version of microsoft windows that contains features to help prevent the execution of malicious code — for example , special services to detect and prevent the execution of code from the data areas .
+
+dhs needs to ensure that it completes the upgrade of the workstations and that such services are enabled on workstations reading data from the e - passport computer chips .
+
+ensuring the integrity of passports requires continual vigilance so that they can continue to be used to support the critical border security mission — facilitating the travel of those who are entitled to enter the united states while preventing the entry of those who are not .
+
+a well - designed passport has limited utility if it is not well produced or border officers do not utilize the available security features to detect attempts to fraudulently enter the united states .
+
+while u.s. e - passport covers , including the embedded computer chip , are manufactured by foreign companies , state's public key infrastructure , which is used to generate digital signatures during the personalization process for each issued passport , can provide reasonable assurance that the data written onto the chip were authored by state and have not been altered .
+
+however , dhs has not implemented the capabilities needed for cbp officers to fully utilize this security feature .
+
+without e - passport readers at the ports of entry or a system that allows for the full validation of digital signatures on e - passports , cbp officers' inspection of not only u.s. e - passports , but also of e - passports issued by foreign countries , including those participating in the visa waiver program , is affected .
+
+without these capabilities , the additional security against forgery and counterfeiting that could be provided by the inclusion of computer chips on e - passports issued by the united states and foreign countries , including those participating in the visa waiver program , is not fully realized .
+
+while the use of e - passports and radio frequency communications represents another potential attack vector to federal computer systems , the risk posed by the transmission of malicious code on u.s. e - passports is not significant .
+
+the u.s. e - passport chips have security features that minimize the threat of tampering during the manufacturing and production process .
+
+gpo and state have also taken steps to assure the security of the embedded computer chips in u.s. e - passports .
+
+because the communications between e - passport computer chips and federal computer systems have been designed to be limited , the opportunities for transfer of malicious code are correspondingly limited .
+
+combined , these measures significantly reduce the risks from someone using e - passport computer chips as a conveyance for malicious code to federal computer systems .
+
+to ensure that border officers can more fully utilize the security features of electronic passports , we recommend that the secretary of homeland security take the following two actions to provide greater assurance that electronic passport data were written by the issuing nation and have not been altered or forged: design and implement the systems functionality and databases needed to fully verify electronic passport digital signatures at u.s. ports of entry .
+
+in coordination with the secretary of state , develop and implement an approach to obtain the digital certificates necessary to validate the digital signatures on u.s. and other nations' electronic passports .
+
+we provided draft copies of this report to the secretaries of state and homeland security and to the public printer at the government printing office for review and comment .
+
+we received formal written comments from the department of homeland security , which are reprinted in appendix iii .
+
+in its comments , dhs concurred with our recommendations .
+
+however , dhs believes that the report incorrectly portrays cbp's ability to detect the fraudulent use of u.s. passports .
+
+dhs cites the ability of cbp's officers to access u.s. passport application data from state and use it to detect impostors and altered data in u.s. passports .
+
+we agree that providing state passport data to cbp officers during the inspection process enhances their ability to detect the fraudulent use of u.s. e - passports .
+
+nevertheless , while state has expended significant resources to produce an e - passport that includes contactless chip technology and public key cryptography to help prevent counterfeiting and forgery , dhs has not implemented the capabilities to fully utilize these security features and is not fully realizing the security benefits of the inclusion of electronic technology on e - passports .
+
+we received informal comments from the state department .
+
+state believes that the draft report presents a comprehensive and balanced assessment of the security of the e - passport design .
+
+we also received technical comments from state , gpo , and dhs , which we incorporated in the report , as appropriate .
+
+as we agreed with your offices , unless you publicly announce the contents of this report earlier , we plan no further distribution of it until 30 days from the report date .
+
+at that time , we will send copies of this report to the secretaries of state and homeland security and the public printer .
+
+in addition , the report will be available at no charge on the gao web site at http: / / www.gao.gov .
+
+if you or your staff have any questions about this report , please contact me at ( 202 ) 512-4499 or barkakatin@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made major contributions to this report are listed in appendix iv .
+
+to determine whether e - passport chips can be altered or forged so that a traveler could fraudulently enter the united states , we interviewed officials from state's bureau of consular affairs and reviewed state department policies , procedures , and guidance documents regarding the public key infrastructure ( pki ) used to protect the data on the e - passport computer chip and assessed them against relevant international civil aviation organization ( icao ) and national institute of standards and technology ( nist ) standards and guidelines .
+
+we interviewed officials at one passport issuance agency and reviewed systems documentation to understand how u.s. e - passports are personalized .
+
+we determined the extent to which u.s. e - passport computer chips are inspected at u.s. ports of entry by interviewing department of homeland security ( dhs ) officials and reviewing documentation regarding the systems and procedures used to inspect e - passports at the ports of entry .
+
+within dhs , we met with officials from the u.s customs and border protection ( cbp ) , the screening coordination office , and the united states visitor and immigrant status indicator technology ( us - visit ) program office .
+
+to determine whether malicious code on the e - passport chips poses a risk to national security , we determined how u.s. e - passport computer chips are manufactured and incorporated into the production of blank u.s. e - passport booklets based on interviews with the government printing office ( gpo ) and manufacturer officials and our reviews of gpo documentation .
+
+we met with officials from nist and the national counterterrorism center to determine the level of threat that exists to u.s. e - passports .
+
+we interviewed gpo and state officials and reviewed documentation that describes the u.s. e - passport computer chip architecture and operations .
+
+we reviewed documents governing the manufacturing of the blank e - passport covers , including gpo contracts with the manufacturers and the memorandum of understanding between gpo and state .
+
+we determined that for malicious code on the e - passport computer chip to be a risk to agency computers , it must first get on the chip , then get transferred off the chip and onto agency computers , and then subsequently get executed .
+
+therefore , we identified and evaluated protections that have been designed into the e - passport computer chip to reduce the possibility of malicious code being introduced onto the chip , controls in place to limit the transfer of malicious code off of the chip and onto agency computers , and the security posture of the agency computer systems interfacing with the e - passport chip .
+
+we also reviewed the results of testing conducted on the e - passport computer chips by gpo , nist , the national security agency , and icao , and through the common criteria program .
+
+we discussed and reviewed the results of security reviews conducted by gpo .
+
+we met with gpo , state , and cbp officials to understand how each agency interacts with the e - passport computer chips and the potential risk that malicious code could pose to these agencies .
+
+we conducted this performance audit from june 2008 to january 2010 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+cryptography is the transformation of ordinary data ( commonly referred to as plaintext ) into a code form ( ciphertext ) and back into plaintext using a special value known as a key and a mathematical process called an algorithm .
+
+cryptography can be used on data to ( 1 ) hide their information content , ( 2 ) prevent their undetected modification , and / or ( 3 ) prevent their unauthorized use .
+
+a basic premise in cryptography is that good systems depend only on the secrecy of the key used to perform the operations rather than on any attempt to keep the algorithm secret .
+
+the algorithms used to perform most cryptographic operations over the internet are well known ; however , because the keys used by these algorithms are kept secret , the process is considered secure .
+
+the basis of pki's security assurances is a sophisticated cryptographic technique known as public key cryptography , which employs algorithms designed so that the key that is used to encrypt plaintext cannot be calculated from the key that is used to decrypt the ciphertext .
+
+these two keys complement each other in such a way that when one key is used for encryption , only the other key can decrypt the ciphertext .
+
+one of these keys is kept private and is known as the private key , while the other key is widely published and is referred to as the public key .
+
+when used as shown in figure 4 , public key cryptography can help to assure data confidentiality because only the private key can be used to decrypt the information encrypted using the public key .
+
+when used as shown in figure 5 , public key cryptography can help provide authentication , nonrepudiation , and data integrity because the public key will only work to decrypt the information if it was encrypted using the private key .
+
+in both cases , ensuring the security of the private key is vital to providing the necessary security protections .
+
+if the private key is compromised , there can be little assurance that data confidentiality , authentication , and data integrity can be provided by the pki .
+
+cryptographic techniques are used to generate and manage the key pairs ( a public key and private key ) , which are in turn used to create electronic “certificates,” which link an individual or entity , such as state , to its public key .
+
+these certificates are then used to verify digital signatures ( providing authentication and data integrity ) .
+
+public key cryptography can be used to create a digital signature for a message or transaction , thereby providing authentication , data integrity , and nonrepudiation .
+
+for example , if bob wishes to digitally sign an electronic document , he can use his private key to encrypt it .
+
+his public key is freely available , so anyone with access to his public key can decrypt the document .
+
+although this seems backward because anyone can rea what is encrypted , the fact that bob's private key is held only by bob provides the basis for bob's digital signature .
+
+if alice can successfully decrypt the document using bob's public key , then she knows that the message came from bob because only he has access to the corresponding private key .
+
+of course , this assumes that ( 1 ) bob has sole control ov er his private signing key and ( 2 ) alice is sure that the validate bob's messages really belongs to bob .
+
+digital signature systems use a two - step process , as shown in figure 6 .
+
+first , a hash algorithm is used to condense the data into a message digest .
+
+first , a hash algorithm is used to condense the data into a message digest .
+
+second , the message digest is encrypted using bob's private signing key to second , the message digest is encrypted using bob's private signing key to create a digital signature .
+
+because the message digest will be different for create a digital signature .
+
+because the message digest will be different for each signature , each signature will also be unique , and using a good hash each signature , each signature will also be unique , and using a good hash algorithm , it is computationally infeasible to find another message that will algorithm , it is computationally infeasible to find another message that will generate the same message digest .
+
+generate the same message digest .
+
+alice ( or anyone wishing to verify the document ) can compute the message digest of the document and decrypt the signature using bob's public key , as shown in figure 7 .
+
+assuming that the message digests matc alice then has three kinds of security assurance .
+
+first , that bob actu ally h , signed the document ( authentication ) .
+
+second , the digital signature ensures that bob in fact sent the message ( nonrepudiation ) .
+
+and third , because the message digest would have changed if anything in the message had been modified , alice knows that no one tampered with the contents of the document after bob signed it ( data integrity ) .
+
+again , this again , thisassumes that ( 1 ) bob has sole control over his private signing key and assumes that ( 1 ) bob has sole control over his private signing key and ( 2 ) alice is sure t ( 2 ) alice is sure that the public key used to validate bob's messages really belongs to bob .
+
+hat the public key used to validate bob's messages really belongs to bob .
+
+a digital certificate is an electronic credential that guarantees the association between a public key and a specific entity .
+
+it is created placing the entity's name , the entity's public key , and certain other identifying information in a s directory or other database .
+
+mall electronic document that is stored in a directories may be publicly available repositories kept on servers that act like telephone books for users to look up others' public keys .
+
+the digital certificate itself is created by a trusted third party called a certification authority , which digitally signs the certificate , thus providing assurance that the public key contained in the certificate does indeed belong to the individual or organization named in the certificate .
+
+a certification authority is responsible for managing digital certificates .
+
+the purpos the certification authority is to oversee the generation , distribut ion , renewal , revocation , and suspension of digital certificates .
+
+the certification authority may set restrictions on a certificate , such as the starting date for which the certificate is valid as well as its expira it is at times necessary to revoke digital certificates before their established expiration dates , for example , when the private key is compromised .
+
+therefore , the certification authority is also responsible providing certificate status information and may publish a certificat revocation list in a directory or maintain an online status - checking mechanism .
+
+the pki software in the user's computer can verify that the certificate is valid by first verifying that the certificate has no then by assuring that it has not been revoked or suspended .
+
+in addition to the contact named above , william carrigg , richard hung , and john c. martin made key contributions to this report .
+
