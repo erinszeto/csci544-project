@@ -6,6 +6,13 @@ This is the official code for paper 'Extractive summarization of Long Documents 
 This code uses a PERL subprocess to calculate ROUGE scores. Thus, you will need to have perl installed on the machine you run the model on. Additionally, you will need to install the XML::DOM perl module to run the training portion. This can be done with the command:
 ```sudo cpan XML::MOD```
 
+If you face this issue, "Cannot open exception db file for reading: //RELEASE-1.5.5/data/WordNet-2.0.exc.db", remove 'RELEASE-1.5.5\data\WordNet-2.0.exc.db'. And then build the 'WordNet-2.0.ex.db' file again.
+To build this file, see example below.
+```
+cd RELEASE-1.5.5/data/
+perl WordNet-2.0-Exceptions/buildExeptionDB.pl ./WordNet-2.0-Exceptions ./smart_common_words.txt ./WordNet-2.0.exc.db
+```
+
 ## Installation
 Make sure you have `python 3` and `pytorch` installed.
 
