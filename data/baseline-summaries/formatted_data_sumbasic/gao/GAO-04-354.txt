@@ -1,0 +1,790 @@
+control systems — which include supervisory control and data acquisition ( scada ) systems and distributed control systems — perform vital functions across many of our nation's critical infrastructures , including electric power generation , transmission , and distribution ; oil and gas refining and pipelines ; water treatment and distribution ; chemical production and processing ; railroads and mass transit ; and manufacturing .
+
+in october 1997 , the president's commission on critical infrastructure protection highlighted the risk of cyber attacks as a specific point of vulnerability in our critical infrastructures , stating that “the widespread and increasing use of scada systems for control of energy systems provides increasing ability to cause serious damage and disruption by cyber means.” on october 1 , 2003 , we testified on the cybersecurity of control systems before the subcommittee on technology , information policy , intergovernmental relations and the census .
+
+further , your committee and subcommittee asked us to identify ( 1 ) significant cybersecurity risks associated with control systems , ( 2 ) potential and reported cyber attacks against these systems , ( 3 ) key challenges to securing control systems , and ( 4 ) efforts to strengthen the cybersecurity of control systems .
+
+to address these objectives , we analyzed research studies and reports , as well as prior gao reports and testimonies on critical infrastructure protection ( cip ) , information security , and national preparedness , among others .
+
+we analyzed documents from and met with private - sector and federal officials who had expertise in control systems and their security .
+
+our work was performed from july to december 2003 , in accordance with generally accepted government auditing standards .
+
+appendix i contains further details on our objectives , scope , and methodology .
+
+dramatic increases in computer interconnectivity , especially in the use of the internet , continue to revolutionize the way our government , our nation , and much of the world communicate and conduct business .
+
+the benefits have been enormous .
+
+vast amounts of information are now literally at our fingertips , facilitating research on virtually every topic imaginable ; financial and other business transactions can be executed almost instantaneously , often 24 hours a day , and electronic mail , internet web sites , and computer bulletin boards allow us to communicate quickly and easily with an unlimited number of individuals and groups .
+
+however , this widespread interconnectivity poses significant risks to the government's and our nation's computer systems and , more important , to the critical operations and infrastructures they support .
+
+for example , telecommunications , power distribution systems , water supplies , public health services , national defense ( including the military's warfighting capability ) , law enforcement , government services , and emergency services all depend on the security of their computer operations .
+
+if not properly controlled , the speed and accessibility that create the enormous benefits of the computer age may allow individuals and organizations to eavesdrop on or interfere with these operations from remote locations for mischievous or malicious purposes , including fraud or sabotage .
+
+table 1 summarizes the key threats to our nation's infrastructures , as observed by the federal bureau of investigation ( fbi ) .
+
+government officials remain concerned about attacks from individuals and groups with malicious intent , such as crime , terrorism , foreign intelligence gathering , and acts of war .
+
+according to the fbi , terrorists , transnational criminals , and intelligence services are quickly becoming aware of and using information exploitation tools such as computer viruses , trojan horses , worms , logic bombs , and eavesdropping sniffers that can destroy , intercept , degrade the integrity of , or deny access to data .
+
+in addition , the disgruntled organization insider is a significant threat , because these individuals often have knowledge about the organization and its system that allows them to gain unrestricted access and inflict damage or steal assets without knowing a great deal about computer intrusions .
+
+as larger amounts of money and more sensitive economic and commercial information are exchanged electronically , and as the nation's defense and intelligence communities increasingly rely on standardized information technology ( it ) , the likelihood increases that information attacks will threaten vital national interests .
+
+as the number of individuals with computer skills has increased , more intrusion or “hacking” tools have become readily available and relatively easy to use .
+
+a hacker can download tools from the internet and literally “point and click” to start an attack .
+
+experts agree that there has been a steady advance in the level of sophistication and effectiveness of attack technology .
+
+intruders quickly develop attacks to exploit vulnerabilities that have been discovered in products , use these attacks to compromise computers , and share them with other attackers .
+
+in addition , they can combine these attacks with other forms of technology to develop programs that automatically scan networks for vulnerable systems , attack them , compromise them , and use them to spread the attack even further .
+
+from 1995 through 2003 , the cert coordination center ( cert / cc ) reported 12,946 security vulnerabilities that resulted from software flaws .
+
+figure 1 illustrates the dramatic growth in security vulnerabilities over these years .
+
+the growing number of known vulnerabilities increases the potential for attacks by the hacker community .
+
+attacks can be launched against specific targets or widely distributed through viruses and worms .
+
+along with these increasing vulnerabilities , the number of computer security incidents reported to cert / cc has also risen dramatically — from 9,859 in 1999 to 82,094 in 2002 and to 137,529 in 2003 .
+
+and these are only the reported attacks .
+
+the director of the cert centers has estimated that as much as 80 percent of actual security incidents goes unreported , in most cases because ( 1 ) there were no indications of penetration or attack , ( 2 ) the organization was unable to recognize that its systems had been penetrated , or ( 3 ) the organization was reluctant to report .
+
+figure 2 shows the number of incidents that were reported to the cert / cc from 1995 through 2003 .
+
+according to the national security agency ( nsa ) , foreign governments already have or are developing computer attack capabilities , and potential adversaries are developing a body of knowledge about u.s. systems and methods to attack these systems .
+
+the national infrastructure protection center ( nipc ) reported in january 2002 that a computer belonging to an individual who had indirect links to osama bin laden contained computer programs that indicated that the individual was interested in the structural engineering of dams and other water - retaining structures .
+
+the nipc report also stated that u.s. law enforcement and intelligence agencies had received indications that al qaeda members had sought information about control systems from multiple web sites , specifically on water supply and wastewater management practices in the united states and abroad .
+
+since the terrorist attacks of september 11 , 2001 , warnings of the potential for terrorist cyber attacks against our critical infrastructures have increased .
+
+for example , in his february 2002 statement for the senate select committee on intelligence , the director of central intelligence discussed the possibility of a cyber warfare attack by terrorists .
+
+he stated that the september 11 attacks demonstrated the nation's dependence on critical infrastructure systems that rely on electronic and computer networks .
+
+further , he noted that attacks of this nature would become an increasingly viable option for terrorists as they and other foreign adversaries become more familiar with these targets and the technologies required to attack them .
+
+james woolsey , a former director of central intelligence , shares this concern , and on october 29 , 2003 , in a speech before several hundred security experts , he warned that the nation should be prepared for continued terrorist attacks on our critical infrastructures .
+
+moreover , a group of concerned scientists warned president bush in a letter that “the critical infrastructure of the united states , including electrical power , finance , telecommunications , health care , transportation , water , defense and the internet , is highly vulnerable to cyber attack .
+
+fast and resolute mitigating action is needed to avoid national disaster.” according to a study by a computer security organization , during the second half of 2002 , the highest rates of global computer attacks were for those aimed at companies that provide critical infrastructures such as power , energy , and financial services .
+
+further , a study that surveyed over 170 security professionals and other executives concluded that , across industries , respondents believe that a large - scale cyber attack in the united states will be launched against their industry by mid - 2006 .
+
+control systems are computer - based systems that are used within many infrastructures and industries to monitor and control sensitive processes and physical functions .
+
+typically , control systems collect sensor measurements and operational data from the field , process and display this information , and relay control commands to local or remote equipment .
+
+in the electric power industry , control systems can manage and control the generation , transmission , and distribution of electric power — for example , by opening and closing circuit breakers and setting thresholds for preventive shutdowns .
+
+employing integrated control systems , the oil and gas industry can control the refining operations at a plant site , remotely monitor the pressure and flow of gas pipelines , and control the flow and pathways of gas transmission .
+
+water utilities can remotely monitor well levels and control the wells' pumps ; monitor flows , tank levels , or pressure in storage tanks ; monitor water quality characteristics — such as ph , turbidity , and chlorine residual ; and control the addition of chemicals .
+
+control systems also are used in manufacturing and chemical processing .
+
+control systems perform functions that vary from simple to complex ; they can be used simply to monitor processes — for example , the environmental conditions in a small office building — or to manage most activities in a municipal water system or even a nuclear power plant .
+
+in certain industries , such as chemical and power generation , safety systems are typically implemented in order to mitigate a potentially disastrous event if control and other systems should fail .
+
+in addition , to guard against both physical attack and system failure , organizations may establish backup control centers that include uninterruptible power supplies and backup generators .
+
+there are two primary types of control systems .
+
+distributed control systems ( dcs ) typically are used within a single processing or generating plant or over a small geographic area .
+
+supervisory control and data acquisition ( scada ) systems typically are used for large , geographically dispersed distribution operations .
+
+for example , a utility company may use a dcs to generate power and a scada system to distribute it .
+
+figure 3 illustrates the typical components of a control system .
+
+a control system typically is made up of a “master” or central supervisory control and monitoring station consisting of one or more human - machine interfaces where an operator can view status information about the remote / local sites and issue commands directly to the system .
+
+typically , this station is located at a main site , along with application servers and an engineering workstation that is used to configure and troubleshoot the other components of the control system .
+
+the supervisory control and monitoring station typically is connected to local controller stations through a hard - wired network or to a remote controller station through a communications network — which could be the internet , a public switched telephone network , or a cable or wireless ( eg , radio , microwave , or wi - fi ) network .
+
+each controller station has a remote terminal unit ( rtu ) , a programmable logic controller ( plc ) , or some other controller that communicates with the supervisory control and monitoring station .
+
+the control system also includes sensors and control equipment that connect directly with the working components of the infrastructure — for example , pipelines , water towers , or power lines .
+
+the sensor takes readings from the infrastructure equipment — such as water or pressure levels , electrical voltage or current — and sends a message to the controller .
+
+the controller may be programmed to determine a course of action and send a message to the control equipment instructing it what to do — for example , to turn off a valve or dispense a chemical .
+
+if the controller is not programmed to determine a course of action , the controller communicates with the supervisory control and monitoring station and relays instructions back to the control equipment .
+
+the control system also can be programmed to issue alarms to the operator when certain conditions are detected .
+
+handheld devices , such as personal digital assistants , can be used to locally monitor controller stations .
+
+experts report that technologies in controller stations are becoming more intelligent and automated and are able to communicate with the supervisory central monitoring and control station less frequently , thus requiring less human intervention .
+
+historically , security concerns about control systems were related primarily to protecting them against physical attack and preventing the misuse of refining and processing sites or distribution and holding facilities .
+
+however , more recently , there has been a growing recognition that control systems are now vulnerable to cyber attacks from numerous sources , including hostile governments , terrorist groups , disgruntled employees , and other malicious intruders .
+
+in october 1997 , the president's commission on critical infrastructure protection discussed the potential damaging effects on the electric power and oil and gas industries of successful attacks on control systems .
+
+moreover , in 2002 , the national research council identified “the potential for attack on control systems” as requiring “urgent attention.” in the first half of that year , security experts reported that 70 percent of energy and power companies experienced at least one severe cyber attack .
+
+in february 2003 , the president clearly demonstrated concern about “the threat of organized cyber attacks capable of causing debilitating disruption to our nation's critical infrastructures , economy , or national security,” noting that “disruption of these systems can have significant consequences for public health and safety” and emphasizing that the protection of control systems has become “a national priority.” several factors have contributed to the escalation of risk to control systems , including ( 1 ) the adoption of standardized technologies with known vulnerabilities , ( 2 ) the connectivity of control systems to other networks , ( 3 ) insecure remote connections , and ( 4 ) the widespread availability of technical information about control systems .
+
+in the past , proprietary hardware , software , and network protocols made it difficult to understand how control systems operated — and therefore how to hack into them .
+
+today , however , to reduce costs and improve performance , organizations have been transitioning from proprietary systems to less expensive , standardized technologies such as microsoft's windows , unix - like operating systems , and the common networking protocols used by the internet .
+
+these widely - used , standardized technologies have commonly known vulnerabilities , and sophisticated and effective exploitation tools are widely available and relatively easy to use .
+
+as a consequence , both the number of people with the knowledge to wage attacks and the number of systems subject to attack have increased .
+
+also , common communication protocols and the emerging use of extensible markup language ( commonly referred to as xml ) can make it easier for a hacker to interpret the content of communications among the components of a control system .
+
+enterprises often integrate their control systems with their enterprise networks .
+
+this increased connectivity has significant advantages , including providing decision makers with access to real - time information and allowing engineers to monitor and control the process control system from different points on the enterprise network .
+
+in addition , the enterprise networks are often connected to the networks of strategic partners and to the internet .
+
+furthermore , control systems are increasingly using wide area networks and the internet to transmit data to their remote or local stations and individual devices .
+
+this convergence of control networks with public and enterprise networks potentially creates further security vulnerabilities in control systems .
+
+unless appropriate security controls are deployed in both the enterprise network and the control system network , breaches in enterprise security can affect the operation of control systems .
+
+vulnerabilities in control systems are exacerbated by insecure connections .
+
+organizations often leave access links — such as dial - up modems to equipment and control information — open for remote diagnostics , maintenance , and examination of system status .
+
+if such links are not protected with authentication or encryption , the risk increases that hackers could use these insecure connections to break into remotely controlled systems .
+
+also , control systems often use wireless communications systems , which are especially vulnerable to attack , or leased lines that pass through commercial telecommunications facilities .
+
+without encryption to protect data as it flows through these insecure connections or authentication mechanisms to limit access , there is little to protect the integrity of the information being transmitted .
+
+public information about infrastructures and control systems is readily available to potential hackers and intruders .
+
+the availability of this infrastructure and vulnerability data was demonstrated last year by a george mason university graduate student who , in his dissertation , reportedly mapped every business and industrial sector in the american economy to the fiber - optic network that connects them , using material that was available publicly on the internet — and not classified .
+
+in the electric power industry , open sources of information — such as product data and educational videotapes from engineering associations — can be used to understand the basics of the electrical grid .
+
+other publicly available information — including filings of the federal energy regulatory commission ( ferc ) , industry publications , maps , and material available on the internet — is sufficient to allow someone to identify the most heavily loaded transmission lines and the most critical substations in the power grid .
+
+many of the electric utility officials who were interviewed for the national security telecommunications advisory committee's information assurance task force's electric power risk assessment expressed concern over the amount of information about their infrastructure that is readily available to the public .
+
+in addition , significant information on control systems is publicly available — including design and maintenance documents , technical standards for the interconnection of control systems and rtus , and standards for communication among control devices — all of which could assist hackers in understanding the systems and how to attack them .
+
+moreover , there are numerous former employees , vendors , support contractors , and other end users of the same equipment worldwide who have inside knowledge about the operation of control systems .
+
+security experts have stated that an individual with very little knowledge of control systems could gain unauthorized access to a control system with the use of a port scanning tool and a factory manual that can be easily found on the internet and that contains the system's default password .
+
+as noted in the following discussion , many times these default passwords are never changed .
+
+there is a general consensus — and increasing concern — among government officials and experts on control systems about potential cyber threats to the control systems that govern our critical infrastructures .
+
+as components of control systems increasingly make vital decisions that were once made by humans , the potential effect of a cyber attack becomes more devastating .
+
+cyber threats could come from numerous sources ranging from hostile governments and terrorist groups to disgruntled employees and other malicious intruders .
+
+based on interviews and discussions with representatives from throughout the electric power industry , the information assurance task force of the national security telecommunications advisory committee concluded that an organization with sufficient resources , such as a foreign intelligence service or a well - supported terrorist group , could conduct a structured attack on the electric power grid electronically , with a high degree of anonymity , and without having to set foot in the target nation .
+
+in july 2002 , nipc reported that the potential for compound cyber and physical attacks , referred to as “swarming attacks,” is an emerging threat to the critical infrastructure of the united states .
+
+as nipc reports , the effects of a swarming attack include slowing or complicating the response to a physical attack .
+
+for instance , a cyber attack that disabled the water supply or the electrical system , in conjunction with a physical attack , could deny emergency services the necessary resources to manage the consequences of the physical attack — such as controlling fires , coordinating response , and generating light .
+
+according to the national institute of standards and technology ( nist ) , cyber attacks on energy production and distribution systems — including electric , oil , gas , and water treatment , as well as on chemical plants containing potentially hazardous substances — could endanger public health and safety , damage the environment , and have serious financial implications such as loss of production , generation , or distribution by public utilities ; compromise of proprietary information ; or liability issues .
+
+when backups for damaged components are not readily available ( eg , extra - high - voltage transformers for the electric power grid ) , such damage could have a long - lasting effect .
+
+entities or individuals with malicious intent might take one or more of the following actions to successfully attack control systems: disrupt the operation of control systems by delaying or blocking the flow of information through control networks , thereby denying availability of the networks to control system operators ; make unauthorized changes to programmed instructions in plcs , rtus , or dcs controllers , change alarm thresholds , or issue unauthorized commands to control equipment , which could potentially result in damage to equipment ( if tolerances are exceeded ) , premature shutdown of processes ( such as prematurely shutting down transmission lines ) , or even disabling control equipment ; send false information to control system operators either to disguise unauthorized changes or to initiate inappropriate actions by system operators ; modify the control system software , producing unpredictable results ; and interfere with the operation of safety systems .
+
+in addition , in control systems that cover a wide geographic area , the remote sites often are not staffed and may not be physically monitored .
+
+if such remote systems are physically breached , attackers could establish a cyber connection to the control network .
+
+department of energy ( doe ) and industry researchers have speculated on how the following potential attack scenario could affect control systems in the electricity sector .
+
+using war dialers to find modems connected to the programmable circuit breakers of the electric power control system , hackers could crack passwords that control access to the circuit breakers and could change the control settings to cause local power outages and even damage equipment .
+
+a hacker could lower settings from , for example , 500 amperes to 200 on some circuit breakers ; normal power usage would then activate , or “trip,” the circuit breakers , taking those lines out of service and diverting power to neighboring lines .
+
+if , at the same time , the hacker raised the settings on these neighboring lines to 900 amperes , circuit breakers would fail to trip at these high settings , and the diverted power would overload the lines and cause significant damage to transformers and other critical equipment .
+
+the damaged equipment would require major repairs that could result in lengthy outages .
+
+control system researchers at doe's national laboratories have developed systems that demonstrate the feasibility of a cyber attack on a control system at an electric power substation where high - voltage electricity is transformed for local use .
+
+using tools that are readily available on the internet , they are able to modify output data from field sensors and take control of the plc directly in order to change settings and create new output .
+
+these techniques could enable a hacker to cause an outage , thus incapacitating the substation .
+
+experts in the water industry consider control systems to be among the primary vulnerabilities of drinking water systems .
+
+a technologist from the water distribution sector has demonstrated how an intruder could hack into the communications channel between the control center of a water distribution pump station and its remote units , located at water storage and pumping facilities , to either block messages or send false commands to the remote units .
+
+moreover , experts are concerned that terrorists could , for example , trigger a cyber attack to release harmful amounts of water treatment chemicals , such as chlorine , into the public's drinking water .
+
+experts in control systems have verified numerous incidents that have affected control systems .
+
+reported attacks include the following: in 1994 , the computer system of the salt river project , a major water and electricity provider in phoenix , arizona , was breached .
+
+in march 1997 , a teenager in worcester , massachusetts , remotely disabled part of the public switching network , disrupting telephone service for 600 residents and the fire department and causing a malfunction at the local airport .
+
+in the spring of 2000 , a former employee of an australian company that develops manufacturing software applied for a job with the local government , but was rejected .
+
+over a 2-month period , the disgruntled rejected employee reportedly used a radio transmitter on as many as 46 occasions to remotely hack into the controls of a sewage treatment system and ultimately release about 264,000 gallons of raw sewage into nearby rivers and parks .
+
+in the spring of 2001 , hackers mounted an attack on systems that were part of a development network at the california independent system operator , a facility that is integral to the movement of electricity throughout the state .
+
+in august 2003 , the nuclear regulatory commission confirmed that in january 2003 , the microsoft sql server worm — otherwise known as slammer — infected a private computer network at the davis - besse nuclear power plant in oak harbor , ohio , disabling a safety monitoring system for nearly 5 hours .
+
+in addition , the plant's process computer failed , and it took about 6 hours for it to become available again .
+
+slammer reportedly also affected communications on the control networks of at least five other utilities by propagating so quickly that control system traffic was blocked .
+
+in addition , in 1997 , the department of defense ( dod ) undertook the first systematic exercise to determine the nation's and dod's vulnerability to cyberwar .
+
+during a 2-week military exercise known as eligible receiver , staff from nsa used widely available tools to show how to penetrate the control systems that are associated with providers of electric power to dod installations .
+
+other assessments of control systems at dod installations have demonstrated vulnerabilities and identified risks in the installations' network and operations .
+
+the control systems community faces several challenges to securing control systems against cyber threats .
+
+these challenges include ( 1 ) the limitations of current security technologies in securing control systems , ( 2 ) the perception that securing control systems may not be economically justifiable , and ( 3 ) the conflicting priorities within organizations regarding the security of control systems .
+
+according to industry experts , existing security technologies , as well as strong user authentication and patch management practices , are generally not implemented in control systems because control systems usually have limited processing capabilities , operate in real time , and are typically not designed with cybersecurity in mind .
+
+existing security technologies such as authorization , authentication , encryption , intrusion detection , and filtering of network traffic and communications , require more bandwidth , processing power , and memory than control system components typically have .
+
+controller stations are generally designed to do specific tasks , and they often use low - cost , resource - constrained microprocessors .
+
+in fact , some control system devices still use the intel 8088 processor , which was introduced in 1978 .
+
+consequently , it is difficult to install current security technologies without seriously degrading the performance of the control system .
+
+for example , complex passwords and other strong password practices are not always used to prevent unauthorized access to control systems , in part because this could hinder a rapid response to safety procedures during an emergency .
+
+as a result , according to experts , weak passwords that are easy to guess , shared , and infrequently changed are reportedly common in control systems , including the use of default passwords or even no password at all .
+
+in addition , although modern control systems are based on standard operating systems , they are typically customized to support control system applications .
+
+consequently , vendor - provided software patches may be either incompatible with the customized version of the operating system or difficult to implement without compromising service by shutting down “always - on” systems or affecting interdependent operations .
+
+another constraint on deploying patches is that support agreements with control system vendors often require the vendor's approval before the user can install patches .
+
+if a patch is installed in violation of the support agreement , the vendor will not take responsibility for potential impacts on the operations of the system .
+
+moreover , because a control system vendor often requires that it be the sole provider of patches , if the vendor delays in providing patches , systems remain vulnerable without recourse .
+
+information security organizations have noted that a gap exists between currently available security technologies and the need for additional research and development to secure control systems .
+
+research and development in a wide range of areas could lead to more effective technologies .
+
+for example , although technologies such as robust firewalls and strong authentication can be employed to better segment control systems from external networks , research and development could help to address the application of security technologies to the control systems themselves .
+
+other areas that have been noted for possible research and development include identifying the types of security technologies needed for different control system applications , determining acceptable performance trade - offs , and recognizing attack patterns for use in intrusion detection systems .
+
+industry experts have identified challenges in migrating system components to newer technologies while maintaining uninterrupted operations .
+
+upgrading all the components of a control system can be a lengthy process , and the enhanced security features of newly installed technologies — such as their ability to interpret encrypted messages — may not be able to be fully utilized until all devices in the system have been replaced and the upgrade is complete .
+
+experts and industry representatives have indicated that organizations may be reluctant to spend more money to secure control systems .
+
+hardening the security of control systems would require industries to expend more resources , including acquiring more personnel , providing training for personnel , and potentially prematurely replacing current systems , which typically have a lifespan of about 20 years .
+
+several vendors suggested that since there have been no reports of significant disruptions caused by cyber attacks on u.s. control systems , industry representatives believe the threat of such an attack is low .
+
+while incidents have occurred , to date there is no formalized process for collecting and analyzing information about control systems incidents , thus further contributing to the skepticism of control systems vendors .
+
+we have previously recommended that the government work with the private sector to improve the quality and quantity of information being shared among industries and government about attacks on the nation's critical infrastructures .
+
+as we discuss in appendix ii , establishing such a process is currently under study .
+
+until industry users of control systems have a business case to justify why additional security is needed , there may be little market incentive for the private sector to develop and implement more secure control systems .
+
+we have previously reported that consideration of further federal government efforts is needed to provide appropriate incentives for nonfederal entities to enhance their efforts to implement cip — including protection of control systems .
+
+without appropriate consideration of public policy tools , such as regulation , grants , and tax incentives , private - sector participation in sector - related cip efforts may not reach its full potential .
+
+finally , several experts and industry representatives indicated that the responsibility for securing control systems typically includes two separate groups: ( 1 ) it security personnel and ( 2 ) control system engineers and operators .
+
+it security personnel tend to focus on securing enterprise systems , while control system engineers and operators tend to be more concerned with the reliable performance of their control systems .
+
+these experts indicate that , as a result , those two groups do not always fully understand each other's requirements and so may not collaborate to implement secure control systems .
+
+these conflicting priorities may perpetuate a lack of awareness of it security strategies that could be deployed to mitigate the vulnerabilities of control systems without affecting their performance .
+
+although research and development will be necessary to develop technologies to secure individual control system devices , existing it security technologies and approaches could be implemented as part of a secure enterprise architecture to protect the perimeters of , and access to , control system networks .
+
+existing it security technologies include firewalls , intrusion - detection systems , encryption , authentication , and authorization .
+
+it security approaches include segmenting control system networks and testing continuity plans to ensure safe and continued operation .
+
+to reduce the vulnerabilities of its control system , officials from one company formed a team composed of it staff , process control engineers , and manufacturing employees .
+
+this team worked collaboratively to research vulnerabilities and to test fixes and workarounds .
+
+government , academia , and private industry have independently initiated multiple efforts and programs focused on some of the key areas that should be addressed to strengthen the cybersecurity of control systems .
+
+appendix ii describes initiatives to secure control systems in greater detail .
+
+these key areas — and illustrative examples of ongoing efforts in these areas — include the following: research and development of new security technologies to protect control systems .
+
+both federal and nonfederal entities have initiated efforts to develop encryption methods for securing communications on control system networks and field devices .
+
+moreover , doe is planning to establish a national scada test bed to test control system vulnerabilities .
+
+development of requirements and standards for control system security .
+
+several entities are working to develop standards that increase the security of control systems .
+
+the process controls security requirements forum ( pcsrf ) , established by nist and nsa , is working to define a common set of information security requirements for control systems .
+
+in addition , the north american electric reliability council ( nerc ) is preparing to draft a standard that will include security requirements for control systems .
+
+increased awareness of security and sharing of information about the implementation of more secure architectures and existing security technologies .
+
+to promote awareness of control system vulnerabilities , doe has created security programs , trained teams to conduct security reviews , and developed cybersecurity courses .
+
+the instrumentation systems and automation society ( isa ) has reported on the known state of the art of cybersecurity technologies as they are applied to the control systems environment , to clearly define what technologies can currently be deployed .
+
+implementation of effective security management programs , including policies and guidance that consider control system security .
+
+both federal and nonfederal entities have developed guidance to mitigate the security vulnerabilities of control systems .
+
+doe's 21 steps to improve cyber security of scada networks provides guidance for improving the security of control systems and establishing underlying management processes and policies to help organizations improve the security of control system networks .
+
+in previous reports , we have recommended the development of a comprehensive and coordinated national plan to facilitate the federal government's cip efforts .
+
+this plan should clearly delineate the roles and responsibilities of federal and nonfederal cip entities , define interim objectives and milestones , set time frames for achieving objectives , and establish performance measures .
+
+the president in his homeland security strategies and congress in enacting the homeland security act designated dhs as responsible for developing a comprehensive national infrastructure plan .
+
+the plan is expected to inform dhs on budgeting and planning for cip activities and on how to use policy instruments to coordinate among government and private entities to raise the security of our national infrastructures to appropriate levels .
+
+according to homeland security presidential directive 7 ( hspd 7 ) , issued december 17 , 2003 , dhs is to develop this formalized plan by december 2004 .
+
+in february 2003 , the president's national strategy to secure cyberspace established a role for dhs to coordinate with other government agencies and the private sector to improve the cybersecurity of control systems .
+
+dhs's recommended role includes: ensuring that there is broad awareness of the vulnerabilities in control systems and the consequences of exploiting these vulnerabilities , developing best practices and new technologies to strengthen the security of control systems , and identifying the nation's most critical control system sites and developing a prioritized plan for ensuring cyber security at those sites .
+
+in addition , the president's strategy recommends that dhs work with the private sector to promote voluntary standards efforts and the creation of security policy for control systems .
+
+dhs recently began to focus on the range of activities that are under way among the numerous entities that are working to address these areas .
+
+in october 2003 , dhs's science and technology directorate initiated a study to determine the current state of security of control systems .
+
+in december 2003 , dhs established the control systems section within the protective security division of its information analysis and infrastructure protection ( iaip ) directorate .
+
+the objectives of this section are to identify computer - controlled systems that are vital to infrastructure functions , evaluate the potential threats to these systems , and develop strategies that mitigate the consequences of attacks .
+
+in addition , iaip's national cyber security division ( ncsd ) is currently planning to develop a methodology for conducting cyber assessments across all critical infrastructures , including control systems .
+
+the objectives of this effort include defining specific goals for the assessments and , based on their results , developing sector - specific recommendations to mitigate vulnerabilities .
+
+they also plan to examine processes , technology , and available policy , procedures , and guidance .
+
+because these efforts have only recently been initiated , dhs has not yet developed a strategy for implementing the functions mentioned above .
+
+as previously discussed , many government and nongovernment entities are spearheading various initiatives to address the challenge of implementing cybersecurity for the vital systems that operate our nation's critical infrastructures .
+
+while some coordination is occurring , both federal and nonfederal control systems experts have expressed their concern that these efforts are not being adequately coordinated among government agencies , the private sector , and standards - setting bodies .
+
+dhs's coordination of these efforts could accelerate the development and implementation of more secure systems to manage our critical infrastructures .
+
+in contrast , insufficient coordination could contribute to delays in the general acceptance of security requirements and the adoption of successful practices for control systems , failure to address gaps in the research and development of technologies to better secure control systems , impediments to standards - creating efforts across industries that could lead to less expensive technological solutions , and reduced opportunities for efficiency that could be gained by leveraging ongoing work .
+
+the systems that monitor and control the sensitive processes and physical functions of the nation's critical infrastructures are at increasing risk from threats of cyber attacks .
+
+securing these systems poses significant challenges .
+
+numerous federal agencies , critical infrastructure sectors , and standards - creating bodies are leading various initiatives to address these challenges .
+
+while some coordination is occurring , the cybersecurity of our critical infrastructures' control systems could benefit from greater collaboration among all entities .
+
+dhs's implementation of its responsibilities outlined in the national strategy to secure cyberspace as well as the coordination of ongoing efforts among the government , industries , and standards - creating bodies could accelerate progress in securing these critical systems .
+
+we recommend that the secretary of the department of homeland security develop and implement a strategy for coordinating with the private sector and other government agencies to improve control system security , including an approach for coordinating the various ongoing efforts to secure control systems .
+
+this strategy should also be addressed in the comprehensive national infrastructure plan that the department is tasked to complete by december 2004 .
+
+dhs's under secretary for iaip transmitted the department's written comments on a draft of this report ( see app .
+
+iii ) .
+
+in his written comments , the under secretary concurred with our recommendation and stated that dhs agrees that improving the security of control systems against cyberattack is a high priority .
+
+he stated that dhs has engaged with the private sector , academia , and other government entities on this matter as required by hspd 7 .
+
+the under secretary further noted that dhs is utilizing iaip's protective services division and ncsd collectively to address both the physical and cyber aspects of control systems security .
+
+we also received technical comments from dhs that we have incorporated into the report , as appropriate .
+
+as agreed with your staff , unless you publicly announce the contents of this report earlier , we plan no further distribution of it until 30 days from the date of this report .
+
+at that time , we will send copies of this report to other interested congressional committees and the heads of the agencies discussed in this report , as well as to the private - sector participants and other relevant agencies .
+
+we will also make copies available to others upon request .
+
+in addition , the report will be available at no charge on the gao web site at http: / / www.gao.gov .
+
+should you or your offices have questions on matters discussed in this report , please contact me at ( 202 ) 512-3317 or elizabeth johnston , assistant director , at ( 202 ) 512-6345 .
+
+we can also be reached by e - mail at daceyr@gao.gov or johnstone@gao.gov , respectively .
+
+key contributors to this report were shannin addison , joanne fiorino , alison jacobs , and tracy pierson .
+
+our objectives were to assess ( 1 ) the significant cybersecurity risks associated with control systems , ( 2 ) potential and reported cyber attacks against these systems , ( 3 ) key challenges to securing control systems , and ( 4 ) efforts to strengthen the cybersecurity of control systems .
+
+we analyzed research studies and reports as well as prior gao reports and testimonies on critical infrastructure protection ( cip ) information security , and national preparedness , among others , to obtain information regarding the risks and vulnerabilities of control systems .
+
+we analyzed documents from and met with manufacturers , users , and federal officials with expertise in control systems and their security to identify the challenges to securing control systems .
+
+finally , we analyzed documents from and met with representatives from control systems manufacturing companies , industry users , and federal officials from the departments of homeland security , defense , and energy , to identify ongoing initiatives to strengthen the security of control systems .
+
+we also reviewed and analyzed technical reports by standards groups to assess the status of efforts to develop guidance and standards for securing control systems .
+
+our work was conducted from july 2003 to december 2003 , in accordance with generally accepted government auditing standards .
+
+following are key initiatives that are aimed at strengthening the security of control systems .
+
+they are led by government , academia , and private industry .
+
+the department of homeland security ( dhs ) has created a national cyber security division ( ncsd ) within its information analysis and infrastructure protection ( iaip ) directorate to identify , analyze , and reduce cyber threats and vulnerabilities ; disseminate threat warning information ; coordinate incident response ; and provide technical assistance in continuity of operations and recovery planning .
+
+iaip coordinates the federal government's initiatives on critical infrastructure assurance and promotes national outreach and awareness campaigns about cip .
+
+on the basis of work conducted by the u.s. - canada power outage task force , ncsd is currently in the process of creating a series of recommended preventive measures to better secure the control systems that manage north america's electric power grid .
+
+in october 2003 , dhs's science and technology directorate ( s&t ) initiated a study of the nation's critical infrastructures to determine which sectors use control systems , what cybersecurity risks they face , and which industry players are focusing on mitigating these risks .
+
+the study , which focuses on control system security , will reach out to two or three representatives from each sector in an attempt to determine what items to include in dhs s&t's research agenda .
+
+in addition , s&t recently issued a solicitation to small businesses seeking research proposals for projects focusing on securing control systems .
+
+the objectives of this program will be to ( 1 ) develop a concept and formal design to better protect scada systems by reducing their vulnerabilities to cyber and physical attacks across industry sectors , ( 2 ) test the design , and ( 3 ) refine the design and perform qualification tests to validate the design and its performance .
+
+in december 2003 , dhs established the control systems section within the protective security division of its iaip directorate .
+
+the objectives of this section are to identify computer - controlled systems that are vital to critical infrastructure functions , evaluate the potential threats to these systems , and develop strategies that can mitigate the consequences of attacks .
+
+iaip's ncsd is currently planning to develop a methodology for conducting cyber assessments across all critical infrastructures , including control systems .
+
+the objectives of this effort include defining specific goals for the assessments and , based on results , developing sector - specific recommendations to mitigate vulnerabilities .
+
+ncsd also plans to examine processes , technology , and available policy , procedures , and guidance .
+
+ncsd has identified a number of its additional efforts , including recently hiring personnel with expertise in control systems .
+
+the department of defense's ( dod ) joint program office for special technology countermeasures ( jpo - stc ) has performed vulnerability assessments on control systems , including the areas of awareness , integration , physical testing , analytic testing , and analysis .
+
+jpo - stc coordinates its assessments with those performed by the u.s. army's first information operations command .
+
+the army's assessments are conducted as part of installation assessments to ( 1 ) analyze potential risks to the installation network from scada infrastructures and ( 2 ) assess the vulnerabilities of scada systems that could negatively affect installation operations .
+
+under the sponsorship of the department of energy's ( doe ) office of energy assurance ( oea ) , the national laboratories have conducted studies of the vulnerabilities of the control systems that are used in the nation's critical infrastructures , and they have developed guidance to help mitigate some of these vulnerabilities .
+
+in september 2002 , doe and the president's critical infrastructure protection board released 21 steps to improve cyber security of scada networks .
+
+these steps provide guidance for improving the security of control systems and establishing underlying management processes and policies to help organizations improve the security of their control networks .
+
+moreover , oea is creating the doe critical infrastructure security standards working group to accelerate the implementation and quality of security standards for those systems that control the energy infrastructure .
+
+this working group is also charged with the responsibility of facilitating , coordinating , leveraging , influencing , and leading industrial and government standards - setting activities .
+
+we describe in the next section the specific activities related to securing control systems that doe sponsors at the national laboratories .
+
+plans are under way to establish the national scada test bed , which will be used to facilitate research by testing control system vulnerabilities and proposed hardware and software security features .
+
+by teaming with industry , the test bed is expected to become a full - scale infrastructure testing facility for control systems that will allow for testing and validating industry products including computer controls , communications , and field systems ; developing new tools to determine the vulnerabilities of control systems ; and testing new standards and protocols .
+
+initially focused on the electricity sector , the test bed will now also include the oil and natural gas pipelines sectors .
+
+there are plans to include other federal agencies in test bed activities in the future .
+
+funding constraints have delayed the implementation of the initial phases of the plans .
+
+according to doe , the pacific northwest national laboratory ( pnnl ) has been integrally involved since 1994 in doe activities that are associated with cip―including leading an electric power research institute research project to characterize the cybersecurity of electric utility systems ; providing technical input to the president's commission on critical infrastructure protection in 1996 ; starting a multilaboratory vulnerability assessment program in 1997 ; and participating on the doe critical infrastructure protection task force in 1998 .
+
+these efforts draw from expertise working with the electric utility industry , which was later embodied in the formation of the north american electric reliability council ( nerc ) critical infrastructure protection forum in 2000 .
+
+pnnl supports a variety of clients that are involved in the security of control systems .
+
+for the last six years , sandia has been involved in various activities to address the security of control systems in our critical infrastructures .
+
+laboratory employees are creating methodologies for assessing risks and have performed vulnerability assessments of control systems within the electric power , oil and gas , transportation , water / wastewater , nuclear power , and manufacturing industries .
+
+to promote awareness of control system vulnerabilities , sandia's staff has created security programs , trained teams to conduct security reviews , developed a threat scenario demonstration system , and developed cybersecurity courses to train those involved in the operation and protection of critical infrastructures .
+
+sandia is also working with standards bodies to include information security in communications protocols .
+
+at sandia's scada security development laboratory , industry can test and improve the security of its scada architectures , systems , and components .
+
+sandia also has initiatives under way to advance technologies that strengthen control systems through the use of intrusion detection , encryption / authentication , secure protocols , system and component vulnerability analysis , secure architecture design and analysis , and intelligent self - healing infrastructure technology .
+
+according to doe , staff at argonne national laboratory ( anl ) are conducting vulnerability assessments of control systems in the oil and gas industry .
+
+anl is also developing a database that includes information from the vendor and user communities in the various energy sectors regarding the different control system operating systems , and it is evaluating these operating systems to determine their vulnerabilities .
+
+the lab is cataloguing various control system failures and their impacts and evaluating them for correlations in order to gather requirements that can be turned into solutions .
+
+in collaboration with sandia , los alamos has established the national infrastructure simulation and analysis center , which provides modeling and simulation capabilities for the analysis of critical infrastructures , including the electricity , oil , and gas sectors .
+
+under the homeland security act , the functions of the center were transferred to dhs .
+
+sandia national laboratories has also collaborated with the environmental protection agency ( epa ) and industry groups to develop a risk assessment methodology for assessing the vulnerability of water systems in major u.s. cities .
+
+in june 2000 , the american water works association research foundation , in collaboration with sandia , began a project to develop a vulnerability assessment methodology for utilities to use to assess the physical and cyber vulnerabilities of their infrastructures and develop plans to minimize the risks they identify .
+
+the first version of the risk assessment methodology – water ( ram - w ) was released in november 2001 .
+
+in addition , epa has provided vulnerability assessment training to many water utilities .
+
+in accordance with epa's water security strategy , security vulnerability self - assessment guides for systems serving fewer than 100,000 people have been issued .
+
+all water systems serving more than 3,300 users are required by law to conduct assessments of their water facilities against the threat of sabotage or other malicious acts .
+
+these water systems are also required to prepare or revise an emergency response plan incorporating the results of the assessment within 6 months of its completion .
+
+epa is responsible for ensuring that the water systems have met these requirements .
+
+in august of 1997 , part 11 of title 21 of the code of federal regulations ( 21 cfr part 11 ) became effective .
+
+it provides criteria for the use of electronic records and electronic signatures in complying with the food and drug administration's ( fda ) reporting requirements for all agencies covered by fda .
+
+in addition , the regulations require companies to limit system access to authorized individuals , use authority checks , and enforce appropriate controls over systems documentation .
+
+the food and pharmaceutical industries use control systems in their manufacturing processes — for example , to track information about products , including histories of operator actions , process measurement , raw materials used , and equipment status , and to generate reports based on this information .
+
+therefore , to ensure the security of this vital information , 21 cfr part 11 requires the authentication of electronic signatures and electronic records in systems used in these industries , including control systems .
+
+the national institute of standards and technology ( nist ) and the national security agency ( nsa ) have organized the process controls security requirements forum ( pcsrf ) to establish security specifications that can be used in the procurement , development , and retrofit of industrial control systems .
+
+pcsrf's membership includes representatives from the water , electric , chemical , and petrochemical industries ; u.s. government laboratories and organizations ; and vendors of control systems .
+
+pcsrf's immediate goal is to increase the security of control systems through the definition and application of a common set of information security requirements for these systems .
+
+this work will be based on nist's and nsa's work to develop the common criteria standard ( iso 15408 ) for it security evaluation .
+
+in addition , the forum has created and is currently using a process control cybersecurity test bed to validate standards for control system security .
+
+the forum also plans to develop protection profiles from the security requirements that new industrial control systems and equipment will be built to .
+
+pcsrf is working to collaborate with other existing activities such as the instrumentation systems and automation society's efforts to establish standards and recommended practices for implementing secure control systems .
+
+the multiagency technical support working group ( tswg ) is supporting several projects that are aimed at enhancing the securing of control systems .
+
+one project , the scada security kit , would develop a self - help security kit ( eg , checklist and operator guide ) and a cd / video training program .
+
+this project has been approved , but it is not yet funded .
+
+in addition , tswg continues to sponsor the work being conducted by the gas industry to develop an encryption standard , which we discuss in more detail later .
+
+tswg is also working with dhs , doe , and nist to further develop aspects of the national test bed .
+
+the national science foundation ( nsf ) is studying research and development areas related to the security of control systems in order to decide which ones to pursue .
+
+in september 2002 , nsf , in collaboration with the white house office of science and technology policy , organized a workshop to gather industry input about long - term research needs for cip .
+
+a particular focus of the workshop was on securing control systems .
+
+participants from academia , industry , and government conducted a research needs assessment of security technologies .
+
+the recommendations resulting from this workshop are expected to lead to a research and development road map for secure control systems .
+
+examples of topics in this road map are ( 1 ) architectures and systems concepts for authority management and ( 2 ) adaptation of security technologies such as encryption , authentication , and intrusion detection for real - time control .
+
+in october 2003 , nsf sponsored a workshop to explore the information infrastructure vulnerabilities of control systems .
+
+the workshop brought together a multidisciplinary team of experts on scada and it from industry , academia , and government to identify both the near - term technology solutions and the longer - term research needed to secure the nation's infrastructure .
+
+the output of the workshop is a set of four prioritized , cross - cutting research and development topics: ( 1 ) standards and methodology , ( 2 ) modeling and analysis , ( 3 ) next generation platforms , and ( 4 ) automated sensing of infrastructure anomalies .
+
+in addition , follow - on activities were recommended to drive the development solutions and their transfer to our critical infrastructures .
+
+finally , on december 3 , 2003 , nsf announced a new program that will fund up to three research center - level collaborations between industry and academia , as well as individual and team awards to foster ideas and train people in cybersecurity to protect the nation's critical infrastructures .
+
+the national academies established a committee of the nation's top engineering , medical , scientific , and policy experts to help the federal government use science and technology strategically to develop a counterterrorism program plan .
+
+shortly after the september 11 attacks , the committee began identifying current threats to the united states , researching the most common vulnerabilities to these threats , and determining strategic opportunities for science and technology to contribute to combating terrorism in both the short and long terms .
+
+the committee's study evolved into the report making the nation safer: the role of science and technology in countering terrorism , published in september 2002 .
+
+in november 2002 , the interagency working group on information technology research and development ( it r&d ) of the national science and technology council , executive office of the president , charged the networking and it r&d grand challenges task force with identifying a set of science , engineering , and societal challenges that will require innovations in it r&d .
+
+high confidence infrastructure control systems is one of the 16 grand challenges that the task force identified .
+
+designated by doe as the electricity sector's information sharing and analysis center ( isac ) coordinator for cip , the north american electric reliability council ( nerc ) receives security data from the electricity sector ; analyzes the data with input from dhs , other federal agencies , and other critical infrastructure sector isacs ; and disseminates threat indications , analyses , and warnings .
+
+nerc has also formed the critical infrastructure protection advisory group ( cipag ) , which guides security activities and conducts security workshops to raise the awareness of cyber and physical security in the electricity sector .
+
+a process control systems security task force within cipag specifically addresses the security of electricity control systems .
+
+in response to the federal energy regulatory commission's june 2002 standard market design notice of public rulemaking , which included cybersecurity standards for the electricity sector , the nerc board of trustees adopted a 1-year urgent action cyber security standard on august 13 , 2003 .
+
+the intent of this cybersecurity standard is to provide a minimal level of assurance that key entities responsible for the reliability of the bulk electric systems of north america — specifically , reliability coordinators and control area operators — identify and protect critical cyber assets that control or could impact the reliability of their systems .
+
+the standard includes such requirements as policies , controls , physical security , training , and recovery plans .
+
+however , it does not apply to control systems or electronic relays ( i.e. , rtus or plcs ) that are installed in generation plants , transmission substations , or distribution substations .
+
+nerc is currently preparing a standards authorization request ( i.e. , a scope document ) , that will be used to solicit nerc board approval to begin drafting of the permanent standard .
+
+a number of industry organizations expect that this will require the compliance of control systems and electronic relays .
+
+members of the nerc balloting body , made up of representatives of electricity organizations from each of the 10 nerc regions , will be able to vote on the draft standard , and , if they approve it , the board of trustees will vote to adopt it .
+
+a nerc representative estimates that the permanent standard would not be formally adopted until 2005 .
+
+for compliance purposes , the standard is not expected to apply to electricity distribution assets or organizations .
+
+the electric power research institute ( epri ) has released scoping study on security processes and impacts , a guide to help utilities identify vulnerabilities in their communications systems and link their associated risks to appropriate levels of security countermeasures .
+
+in addition , epri has launched mock attacks on the control systems of electric utilities to probe for weaknesses and has subsequently provided utilities with reports on their own potential vulnerabilities .
+
+epri has also provided other members with reports on their potential vulnerabilities and insights on security best practices .
+
+the institute is also working on a method to protect the scada network directly by identifying anomalous commands that are caused by malicious activities or human error in time to allow operators to take corrective action .
+
+epri next plans to partner with a major computer vendor to develop ways to secure grid communications , such as by encrypting data at both the control - system network and field - device levels .
+
+the international council on large electric systems ( cigre ) is a nonprofit international association based in france .
+
+it has established several study committees to promote and facilitate the international exchange of knowledge in the electrical industry by identifying best practices and developing recommendations .
+
+three of its study committees focus on control systems .
+
+the objectives of the substations committee include the adoption of technological advances in equipment and systems to achieve increased reliability and availability .
+
+the system operation and control committee focuses on the technical capabilities needed for the secure and economical operation of existing power systems , and it includes within its scope functionalities to assess security , which support control centers and operators .
+
+the information systems and telecommunication for power systems committee monitors emerging technologies in the industry and evaluates their possible impact .
+
+in addition , it focuses on the security requirements of the information systems and services of control systems .
+
+the technical activities of these committees are carried out by working groups that produce reports and technical brochures for publication .
+
+the oil pipeline industry is currently developing an industry standard for the protection of control functions and control systems .
+
+this standard will focus on communications including the confidentiality of protocols , encryption of data , and access controls such as firewall services and intrusion detection systems .
+
+according to a representative from the oil pipeline industry , the standard will provide guidance on managing the sharing of scada information while maintaining security , including defining information classification levels and control of access .
+
+it will address how to provide for the interchange of data .
+
+in addition , the industry is working on issues related to standards for control systems with other organizations , such as the american gas association , the instrument society of america , and the institute of electrical and electronics engineers .
+
+sponsored by the federal government's technical support working group , the gas technology institute and the american gas association ( aga ) have researched a number of potential encryption methods to prevent hackers from accessing natural gas companies' control systems .
+
+this research has led to the development of a proposed industry standard for encryption .
+
+the proposed standard provides energy utilities with a set of standards for protocols , equipment , and procedures to protect the transmission of control systems communications through the data transfer process .
+
+efforts to develop this standard have been under way since october 2001 .
+
+according to the department head of gas supply operations at aga , the testing and final release of the proposed standard is targeted for the second quarter of 2004 .
+
+the chemical sector cybersecurity program is a forum of 13 trade associations and serves as the isac for the chemical sector .
+
+part of this program , the chemical industry data exchange ( cidx ) , has established the cyber - security practices , standards and technology initiative to identify immediate opportunities to improve the base level of cybersecurity within the chemical industry .
+
+the objective of this initiative is to address the practices and standards for both business systems and manufacturing control systems .
+
+in may of 2003 , cidx completed and issued the first version of its guidance for directing cybersecurity in the chemical sector .
+
+in coordinating with prior work that had been issued by the american chemistry council , this guidance provides information on cybersecurity applicability , sample strategies , and available resources .
+
+currently , this document focuses on the security of business systems rather than control systems ; however , in the near future , cidx plans to incorporate issues specific to control systems in this document .
+
+in addition , cidx has plans to start developing prescriptive guidance regarding the risk level for control systems .
+
+in september of 2003 , cidx issued an additional guidance document , cybersecurity vulnerability assessment methodology guidance .
+
+this document compares several methodologies for assessing cybersecurity vulnerabilities .
+
+the objective was to find one methodology that performed well in addressing cybersecurity for both business systems and control systems ; however , it was discovered that while a given methodology may work well for either the business environment or control systems , it may not work well for both .
+
+in addition , cidx is working to align the chemical industry's initiatives to enhance the security of control systems with the ongoing initiatives at the instrumentation systems and automation society , nist , and the american chemistry council .
+
+the instrumentation systems and automation society's ( isa ) manufacturing and control systems security standards committee ( also referred to as the sp99 committee ) is composed of representatives from many industries , including water / wastewater , fossil fuels , nuclear energy , food and beverages , pharmaceuticals , chemicals , petrochemicals ; u.s. government labs and organizations ; and automotive and educational institutions .
+
+the committee is working to establish standards and recommended practices , write technical reports , and develop other information that will define procedures and methodologies for developing , assessing , and implementing effective security practices for manufacturing and control systems and for assessing cybersecurity performance .
+
+the committee's guidance is directed toward those responsible for designing , implementing , or managing control systems , as well as toward users , system integrators , security practitioners , and control systems manufacturers and suppliers .
+
+its focus is on improving the confidentiality , integrity , and availability of control systems and their components and providing criteria for procuring and implementing secure control systems .
+
+two technical reports are expected to be released in march of this year .
+
+the first report , security technologies for manufacturing and control systems ( isa - tr99.00.01 ) , is intended to document the known state of the art of cybersecurity technologies as they are applied to the control systems environment , to clearly define what can reasonably be deployed today , and to define areas where more research is needed .
+
+the purpose of the second report , integrating electronic security into the manufacturing and control systems environment ( isa - tr99.00.02 ) , is to present a consistent approach for developing , implementing , and operating a program that addresses security for control systems .
+
+plans have been made to create a joint project team with isa and the international electrotechnical commission ( iec ) to disseminate isa's technical reports through the iec .
+
+future activities of the committee include updating its technical reports ; continuing to develop a complete standard for manufacturing and control systems security ; developing control systems security requirements ; developing common language and reference models ; and formalizing liaisons and interfaces to government , standards - creating organizations , technical organizations , and other groups working in the area of control systems cybersecurity .
+
+the international electrotechnical commission ( iec ) is a standards organization that prepares and publishes international standards for all electrical , electronic , and related technologies .
+
+these standards serve as a basis for creating national standards and as references for drafting international tenders and contracts .
+
+iec's members include manufacturers , providers , distributors , vendors , consumers , users , all levels of governmental agencies , professional societies , trade associations , and standards developers from over 60 countries .
+
+iec's technical committee 65 has been chartered to produce standards for process control .
+
+in september 2003 , the committee announced its decision to address the cybersecurity of communications for the measurement and control of industrial processes .
+
+this new work encompasses technologies such as firewalls , routers , cryptographic security of communications , and authentication technologies .
+
+as mentioned previously , plans have been made for iec and isa to create a joint project team to advance their efforts to secure control systems .
+
+iec's technical committee 57 is working to develop standards for control systems and control system components , including communications and end devices such as rtus .
+
+it is also establishing data and communication security and communications standards for substations .
+
+the institute of electrical and electronics engineers ( ieee ) is developing standards for defining , specifying , and analyzing control systems in the electric power industry .
+
+in addition , ieee has developed recommended practices for communication between remote terminal units and intelligent electronic devices in a substation .
+
+ieee is also working on a project to develop a standard for substation integrated protection , control , and data acquisition communications .
+
+the project will define standards for communications requirements and will specify message delivery time between intelligent electronic devices .
+
+the partnership for critical infrastructure security ( pcis ) is comprised of government agencies and private - sector associations that represent each of the critical infrastructure sectors .
+
+the partnership coordinates cross - sector initiatives to support cip by identifying legislative issues that affect such initiatives and by raising awareness of issues in cip .
+
+pcis has had a control systems working group whose goal has been to raise awareness of control system security and to discuss the existing initiatives to improve the security of control systems .
+
+cert / cc at carnegie mellon and kema consulting are leading an initiative to establish e - cert , a team to collect and analyze information about cybersecurity incidents in control systems within the nation's critical infrastructures , assess their effects , and share the results with industry .
+
+already initiated , the first step consists of conducting a scoping study and developing a white paper to determine how to manage vulnerabilities and incidents .
+
+kema and cert / cc plan to enlist expertise from the control system community and establish an ongoing rapport with control system vendors .
+
+plans are for doe , dhs , and private industry groups to fund the team .
+
+while this effort , thus far , has been focusing on the energy sector , the issues are applicable to other sectors .
+
+the process control systems cyber security forum ( pcscs ) is a joint effort of kema consulting and logon consulting , inc .
+
+formed in 2003 , pcscs is an annual program to study the cybersecurity issues surrounding the effective operation of control systems .
+
+it focuses on issues , challenges , threats , vulnerabilities , best practices , lessons learned , and solutions .
+
+it currently holds workshops and seminars on control system cybersecurity via the internet , offers consulting services , and publishes bulletins and white papers aimed at helping those in the process control environment to share information and address the issues they are facing in securing their control systems .
+

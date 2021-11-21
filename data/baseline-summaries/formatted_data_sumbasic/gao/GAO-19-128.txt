@@ -1,0 +1,864 @@
+the department of defense ( dod ) plans to spend about $1.66 trillion to develop its current portfolio of weapon systems .
+
+these weapons are essential to maintaining our nation's military superiority and for deterrence .
+
+it is important that they work when needed , yet cyber attacks have the potential to prevent them from doing so .
+
+cyber attacks can target any weapon subsystem that is dependent on software , potentially leading to an inability to complete military missions or even loss of life .
+
+examples of functions enabled by software — and potentially susceptible to compromise — include powering a system on and off , targeting a missile , maintaining a pilot's oxygen levels , and flying aircraft .
+
+an attacker could potentially manipulate data in these systems , prevent components or systems from operating , or cause them to function in undesirable ways .
+
+some advanced threat actors are aware of this and have well - funded units that focus on positioning themselves to potentially undermine u.s. capabilities .
+
+for example , according to the national security agency ( nsa ) , advanced threats are targeting national security systems .
+
+according to the department of homeland security's u.s. computer emergency readiness team and industry reports , advanced threats may conduct complex , long - term cyber attack operations .
+
+these reports show that threats may employ cyber reconnaissance , such as probing systems , and cyber espionage , such as cyber theft , to develop detailed knowledge of the target system to design and deploy more damaging attacks .
+
+furthermore , in 2017 , the director of national intelligence testified that some adversaries remain undeterred from conducting reconnaissance , espionage , influence , and even attacks in cyberspace .
+
+cybersecurity is the process of protecting information and information systems by preventing , detecting , and responding to attacks .
+
+it aims to reduce the likelihood that attackers can access dod systems and limit the damage if they do .
+
+since 1997 , we have designated federal information security — another term for cybersecurity — as a government - wide high - risk area .
+
+we have also reported and made hundreds of recommendations on a wide range of topics related to cybersecurity , such as information security programs across the federal government , privacy of personally identifiable information , critical infrastructure , and federal facility cybersecurity .
+
+we have found that the federal government needs to , among other things , improve its abilities to detect , respond to , and mitigate cyber incidents and expand its cyber workforce planning and training efforts .
+
+you asked us to conduct a series of reviews on dod's efforts to improve the cybersecurity of the weapon systems it develops .
+
+this report addresses ( 1 ) factors that contribute to the current state of dod weapon systems cybersecurity , ( 2 ) vulnerabilities in weapons that are under development , and ( 3 ) steps dod is taking to develop more cyber resilient weapon systems .
+
+we focused primarily on weapon systems that are under development .
+
+to identify factors that contribute to the current state of dod weapon systems cybersecurity , we reviewed reports issued from 1991 to the present on software , information technology ( it ) , networking , and weapon systems from the national research council , the defense science board ( dsb ) , gao , and other organizations as well as key dod policies and guidance .
+
+to identify vulnerabilities in weapon systems under development , we reviewed cybersecurity assessment reports from selected weapon systems that were tested between 2012 and 2017 .
+
+to determine the steps dod is taking to develop more cyber resilient weapon systems , we analyzed dod information assurance / cybersecurity , acquisition , requirements , and testing policies and guidance that have been updated since 2014 , when dod began more concerted efforts to address weapon systems cybersecurity .
+
+to inform each objective , we interviewed office of the secretary of defense officials , including office of the director , operational test and evaluation ; office of the deputy assistant secretary of defense for developmental test and evaluation ; office of the chief information officer including the defense information systems agency ; office of the chairman of the joint chiefs of staff ; office of the under secretary of defense ( acquisition and sustainment ) and office of the under secretary of defense ( research and engineering ) .
+
+we interviewed officials from all military test organizations , nsa , and dod program offices .
+
+to select the program offices , we used a purposeful sample of 9 major defense acquisition programs representing each service , multiple domains , and programs that are extensively connected to other weapons systems .
+
+we also interviewed other organizations with cybersecurity expertise .
+
+see appendix i for additional information on our scope and methodology .
+
+to present information in an unclassified format , we do not disclose details regarding weapon system vulnerabilities , which program offices we interviewed , or which cybersecurity assessments we reviewed .
+
+the examples we cite from cybersecurity assessments are unique to each weapon system and are not applicable to all weapon systems .
+
+furthermore , cybersecurity assessment findings are as of a specific date , so vulnerabilities identified during system development may no longer exist when the system is fielded .
+
+in addition , we illustrated some concepts using fictitious depictions .
+
+in some cases , we were deliberately vague and excluded some details from examples to avoid identifying specific weapon systems .
+
+we also presented examples of publicly known attacks in sidebars to illustrate how poor cybersecurity can enable cyber attacks .
+
+dod conducted a security review of the report and cleared it for public release .
+
+we will provide a classified briefing of our findings to congress .
+
+this is our first report specific to cybersecurity in the context of weapon systems acquisitions .
+
+for that reason , we did not look in depth at related issues in the context of weapon systems , such as the security of contractor facilities , so - called “internet of things” devices , microelectronics , contracting , and industrial control systems .
+
+in addition , we are not making recommendations in this report , but plan to continue evaluating key aspects of dod's weapon systems cybersecurity efforts in the future .
+
+we conducted this performance audit from july 2017 to october 2018 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+cybersecurity issues can vary widely across different types of systems , so weapon systems cybersecurity challenges may be very different than those of some it systems .
+
+despite variation across systems , cybersecurity can be described using common terminology , such as the key terms below used by the national research council .
+
+key concept security controls are safeguards or countermeasures to protect the confidentiality , integrity , and availability of a system and its information .
+
+for example , a firewall is a common control to allow or block traffic based on a set of rules .
+
+because it is impossible to define a rule for every scenario , attackers look for ways to access a system that are not covered by the rules .
+
+for example , a firewall may block traffic from a specific country , but attackers may make it appear that they are in a country that is not blocked .
+
+they may use tools to avoid the firewall , such as embedding malicious software in an e - mail and waiting for a user to open it and inadvertently install the code .
+
+a cyber vulnerability is a weakness in a system that could be exploited to gain access or otherwise affect the system's confidentiality , integrity , and availability .
+
+a cybersecurity threat is anything that can exploit a vulnerability to harm a system , either intentionally or by accident .
+
+cybersecurity risk is a function of the threat ( intent and capabilities ) , vulnerabilities ( inherent or introduced ) , and consequences ( fixable or fatal ) .
+
+although some weapon systems are purely it systems , most — such as aircraft , missiles , and ships — are what the national institute of standards and technology ( nist ) and sometimes dod refer to as “cyber - physical systems.” nist defines these systems as “co - engineered interacting networks of physical and computational components.” these cyber systems can affect the physical world so the consequences of a cyber attack may be greater than those of attacks on other types of systems .
+
+for example , an attack on a weapon system could have physical consequences that may even result in loss of life .
+
+nevertheless , weapon systems share many of the same cyber vulnerabilities as other types of automated information systems .
+
+weapon systems are large , complex , systems of systems that have a wide variety of shapes and sizes , with varying functionality .
+
+despite obvious differences in form , function , and complexity , weapon systems and other types of systems are similar in some important , if not obvious , ways .
+
+for example , dod reports state that many weapon systems rely on commercial and open source software and are subject to any cyber vulnerabilities that come with them .
+
+weapon systems also rely on firewalls and other common security controls to prevent cyberattacks .
+
+weapon system security controls can also be exploited or bypassed if the system is not properly configured .
+
+finally , weapon systems are operated by people — a significant source of cybersecurity vulnerability for any system .
+
+one common way to discuss cybersecurity is through the activities necessary to defend ( or attack ) a system .
+
+system developers and operators take steps to protect the system from cyber attacks , while attackers attempt to defeat those protections as depicted in figure 1 .
+
+the cyber attack sequence is also referred to as a cyber kill chain or cyber attack lifecycle .
+
+there are multiple models for understanding cyber attacks , each with their own terminology and sequence of steps .
+
+the attack sequence below is simpler , but generally consistent with existing cybersecurity models .
+
+we identified the defend sequence below based on the steps included in cybersecurity test reports that we reviewed .
+
+example: importance of patching in a timely manner in the 2017 equifax cyber attack , personal data for over 145 million people were exposed .
+
+attackers took advantage of a vulnerability in a commonly used web application to access equifax's credit reporting system .
+
+a patch for the vulnerability was available in march , but equifax had not applied it by the time of the attack — in mid - may .
+
+a cyber attacker looks for ways to get around security controls in order to obtain full or partial control of the system .
+
+an attacker typically starts by learning as much as possible about the system — potentially through cyber reconnaissance — to identify vulnerabilities in the system .
+
+the more attackers know about the system , the more options they have when designing an attack .
+
+an attacker may identify a previously unknown vulnerability that the system owner is unaware of .
+
+or the attacker could look for system components that had not applied known security updates — also called “patches.” developers of commercial components usually publicly announce any security patches and , ironically , provide a roadmap for an attacker to attack a system or component .
+
+an attack may not happen all at once — an attacker may find the easiest way to gain initial access and then look for ways to expand their access until they reach their ultimate goal .
+
+even once they achieve full access to a system , an attacker may wait for an opportune time to attack the confidentiality , integrity , or availability of a system .
+
+types of attacks are described in appendix ii .
+
+the system owner wants to prevent , or at least limit , attempts to adversely affect the confidentiality , integrity , or availability of the system .
+
+the owner implements security controls such as firewalls , role - based access controls , and encryption to reduce the number of potential attack points .
+
+many controls need to be designed into the system early in the development cycle .
+
+ideally , the controls are designed to work together and there may be layers of controls that an attacker would have to defeat in order to gain control of the system — referred to as “defense in depth.” key concepts role - based access entails allowing users to only access information and features necessary to carry out their job .
+
+encryption is a way of transforming information so that only authorized users are able to read it .
+
+protecting a system also includes administrative processes , such as requiring users to regularly change their passwords and applying patches on a regular schedule — referred to as cyber hygiene .
+
+however , no system can be completely secure , so system owners must also constantly monitor their systems for suspicious activity .
+
+logging is a common system feature that automatically records system activity .
+
+unusual patterns such as numerous failed log - in attempts from a remote location could indicate that an unauthorized person is trying to gain access to the system .
+
+once such a cyber activity is detected , the system owner needs to take steps to end the attack and restore any system capabilities that were degraded as a result of the attacker's actions .
+
+we reported in 2015 that federal and contractor systems face an evolving array of cyber - based threats , including criminals , hackers , adversarial nations , and terrorists .
+
+threats can range from relatively unskilled “script kiddies” who only use existing computer scripts or code to hack into computers , to well - resourced and highly skilled advanced threats who not only have sophisticated hacking skills , but also normally gather detailed knowledge of the systems they attack .
+
+table 1 provides brief descriptions of the terminology dod uses to categorize threats .
+
+weapons systems are developed , acquired , and deployed within the defense acquisition system , a system of statutes and regulations .
+
+subject to control of the dod , the army , air force , navy , and marine corps by law have authority to “organize , train , and equip” their services .
+
+their decisions regarding what to develop and how best to do so are informed by documents and deliberations under dod's requirements and acquisition processes respectively .
+
+early in the acquisition lifecycle , the requirements process identifies what capabilities are needed and evaluates options to best meet those needs .
+
+the acquisition process is a gated review process that assesses programs against established review criteria , such as the program's cost , schedule , performance , and whether the weapon system is ready to move forward in the acquisition process .
+
+numerous military - service entities are involved in these processes .
+
+key enterprise - level organizations include the joint staff and office of the secretary of defense organizations , such as the office of the under secretary of defense ( acquisition and sustainment ) , office of the under secretary of defense ( research and engineering ) , and the director of operational test and evaluation ( dot&e ) .
+
+example: increased reliance on software in the 2015 jeep cherokee cyber attack , researchers remotely took physical control of a jeep , including shutting off the engine and controlling the brakes .
+
+in 2016 , we reported that electronic systems control multiple passenger vehicle functions and that vehicles include multiple interfaces that leave them vulnerable to cyber attacks .
+
+researchers studied a jeep to understand its systems , including the characteristics of its software code and its "can bus," which connects to units that control core vehicle functions .
+
+they remotely accessed an internet - connected component and used it as an initial entry point to access the vehicle's can bus , which then allowed them to control many of the jeep's functions .
+
+just as many dod organizations are responsible for weapon systems acquisitions , many have responsibilities related to cybersecurity during the acquisition process .
+
+for example , program offices are responsible for planning and implementing cybersecurity measures for the system under development .
+
+authorizing officials are responsible for overseeing programs' adherence to security controls and for authorizing a system's entry into operations based on the system having an acceptable level of cyber risk .
+
+at key decision points , the office of the under secretary of defense ( research and engineering ) is responsible for advising the secretary of defense and providing independent technical risk assessments that address a variety of topics , including the system's cybersecurity posture .
+
+military test organizations conduct cybersecurity assessments of weapon systems .
+
+dot&e oversees those tests and is funding research on the cybersecurity of some weapon system components that pose particular cybersecurity challenges .
+
+organizations that are traditionally associated with cybersecurity , such as nsa and cyber command , support some aspects of weapon systems cybersecurity .
+
+however , they are not responsible for reviewing the designs of most weapon systems to identify potential vulnerabilities , although nsa officials said that they will provide advice to acquisition programs if asked to do so .
+
+more information about these roles and responsibilities is included in appendix iii .
+
+multiple factors contribute to the current state of dod weapon systems cybersecurity , including: the increasingly computerized and networked nature of dod weapons , dod's past failure to prioritize weapon systems cybersecurity , and dod's nascent understanding of how best to develop more cyber secure weapon systems .
+
+specifically , dod weapon systems are more software and it dependent and more networked than ever before .
+
+this has transformed weapon capabilities and is a fundamental enabler of the united states' modern military capabilities .
+
+yet this change has come at a cost .
+
+more weapon components can now be attacked using cyber capabilities .
+
+furthermore , networks can be used as a pathway to attack other systems .
+
+we and others have warned of these risks for decades .
+
+nevertheless , until recently , dod did not prioritize cybersecurity in weapon systems acquisitions .
+
+in part because dod historically focused on the cybersecurity of its networks but not weapon systems themselves , dod is in the early stage of trying to understand how to apply cybersecurity to weapon systems .
+
+several dod officials explained that it will take some time , and possibly some missteps , for the department to learn what works and does not work with respect to weapon systems cybersecurity .
+
+dod's weapon systems are increasingly dependent on software and it to achieve their intended performance .
+
+the amount of software in today's weapon systems is growing exponentially and is embedded in numerous technologically complex subsystems , which include hardware and a variety of it components , as depicted in figure 2 .
+
+nearly all weapon system functions are enabled by computers — ranging from basic life support functions , such as maintaining stable oxygen levels in aircraft , to intercepting incoming missiles .
+
+dod has actively sought ways to introduce this automation into weapon systems .
+
+for example , we have reported that for decades , the navy has sought to reduce ship crew size based , in part , on the assumption that some manual tasks could be automated and fewer people would be needed to operate a ship .
+
+yet this growing dependence on software and it comes at a price .
+
+it significantly expands weapons' attack surfaces .
+
+according to dot&e , any exchange of information is a potential access point for an adversary .
+
+even “air gapped” systems that do not directly connect to the internet for security reasons could potentially be accessed by other means , such as usb devices and compact discs .
+
+weapon systems have a wide variety of interfaces , some of which are not obvious , that could be used as pathways for adversaries to access the systems , as is shown in figure 3 .
+
+dod systems are also more connected than ever before , which can introduce vulnerabilities and make systems more difficult to defend .
+
+according to the dsb , nearly every conceivable component in dod is networked .
+
+weapon systems connect to dod's extensive set of networks — called the dod information network — and sometimes to external networks , such as those of defense contractors .
+
+technology systems , logistics , personnel , and other business - related systems sometimes connect to the same networks as weapon systems .
+
+furthermore , some weapon systems may not connect directly to a network , but connect to other systems , such as electrical systems , that may connect directly to the public internet , as is depicted in figure 4 .
+
+these connections help facilitate information exchanges that benefit weapon systems and their operators in many ways — such as command and control of the weapons , communications , and battlespace awareness .
+
+if attackers can access one of those systems , they may be able to reach any of the others through the connecting networks .
+
+many officials we met with stated that including weapon systems on the same networks with less protected systems puts those weapon systems at risk .
+
+furthermore , the networks themselves are vulnerable .
+
+dot&e found that some networks were not survivable in a cyber - contested environment and the dsb reported in 2013 that “the adversary is in our networks.” further complicating matters , weapon systems are dependent on external systems , such as positioning and navigation systems and command and control systems in order to carry out their missions — and their missions can be compromised by attacks on those other systems .
+
+a successful attack on one of the systems the weapon depends on can potentially limit the weapon's effectiveness , prevent it from achieving its mission , or even cause physical damage and loss of life .
+
+we and other organizations have identified risks associated with increased reliance on software and networking since at least the early 1990s , as is shown in table 2 .
+
+nevertheless , dod has only recently begun prioritizing weapon systems cybersecurity .
+
+instead , for many years , dod focused cybersecurity efforts on protecting networks and traditional it systems , such as accounting systems , rather than weapons .
+
+experts we interviewed as well as officials from program offices , the office of the secretary of defense , and some military test organizations explained that , until around 2014 , there was a general lack of emphasis on cybersecurity throughout the weapon systems acquisition process .
+
+others have reported similar findings .
+
+for example , the dsb reported in 2013 that although dod had taken great care to secure the use and operation of the hardware of its weapon systems , it had not devoted the same level of resources and attention to it systems that support and operate those weapons and critical it capabilities embedded within the weapon systems .
+
+the national research council reported in 2014 that much broader and more systematic attention to cybersecurity was needed in the acquisition process and that the navy was in the “crawl” stage of a “crawl - walk - run” journey .
+
+similarly , the navy reported in 2015 that there was a lack of attention to cybersecurity in the acquisition process and platform it systems were not engineered with cybersecurity as a key component .
+
+in the past , consideration of cybersecurity was not a focus of the key processes governing the development of weapon systems .
+
+it was not a focus of key acquisition and requirements policies nor was it a focus of key documents that inform decision - making .
+
+for example , until a few years ago , dod's main requirements policy did not call for programs to factor cyber survivability into their key performance parameters .
+
+key performance parameters are the most important system capabilities , called “requirements,” that must be met when developing weapon systems .
+
+they are established early on in an acquisition program and drive system design decisions .
+
+they are also used as a benchmark to measure program performance and are reviewed during acquisition decisions and other oversight processes .
+
+because cybersecurity key performance parameters were not required , joint staff officials and some program officials said that many current weapon systems had no high - level cybersecurity requirements when they began , which in turn limited emphasis on cybersecurity during weapon system design , development , and oversight .
+
+in addition , joint staff officials said that , historically , cybersecurity was not a factor in analyses of alternatives .
+
+this analysis is an important early step in acquiring a new weapon system and informs decisions about the relative effectiveness , costs , and risks of potential systems that could be developed .
+
+by not considering cybersecurity in these analyses , decisions about which system to develop were made without consideration of whether one proposed system might be more inherently vulnerable from a cyber perspective than others .
+
+programs' lack of cybersecurity requirements may have also contributed to challenges with incorporating cybersecurity into weapon systems testing .
+
+specifically , dot&e and service test agencies said that prior to around 2014 , program offices tried to avoid undergoing cybersecurity assessments because they did not have cybersecurity requirements and therefore thought they should not be evaluated .
+
+furthermore , test officials said that many within dod did not believe cybersecurity applied to weapon systems .
+
+as a result , fewer cybersecurity assessments were conducted at that time in comparison to recent years .
+
+by not incorporating cybersecurity into key aspects of the requirements and acquisition processes , dod missed an opportunity to give cybersecurity a more prominent role in key acquisition decisions .
+
+numerous officials we met with said that this failure to address weapon systems cybersecurity sooner will have long - lasting effects on the department .
+
+due to this lack of focus on weapon systems cybersecurity , dod likely has an entire generation of systems that were designed and built without adequately considering cybersecurity .
+
+bolting on cybersecurity late in the development cycle or after a system has been deployed is more difficult and costly than designing it in from the beginning .
+
+not only is the security of those systems and their missions at risk , the older systems may put newer systems in jeopardy .
+
+specifically , if dod is able to make its newer systems more secure , but connects them to older systems , this puts the newer systems at risk .
+
+furthermore , even if they are not connected , if the newer systems depend on the older systems to help fulfill their missions , those missions may be at risk .
+
+dod is still determining how best to address weapon systems cybersecurity given weapon systems' different and particularly challenging cybersecurity needs .
+
+although there are similarities between weapon systems and traditional it systems , dod has acknowledged that it may not be appropriate to apply the same cybersecurity approach to weapon systems as traditional it systems .
+
+rand reported and several program officials we met with stated that dod's security controls were developed with it systems , and not weapon systems , in mind .
+
+dod policies and guidance acknowledge that tailoring may be warranted , but they do not yet specify how the approaches to the security controls should differ .
+
+key concept industrial control system is a general term that encompasses several types of control systems including supervisory control and data acquisition systems , distributed control systems , and programmable logic controllers .
+
+industrial control systems monitor or control other systems and processes and may be used to automate tasks such as opening and closing valves .
+
+dod is still in the process of determining how to make weapon system components with particular cyber vulnerabilities as secure as possible .
+
+for example , many weapon systems use industrial control systems to monitor and control equipment , and like computers , they include software .
+
+many weapon systems use such systems to carry out essential functions .
+
+for example , a ship may use industrial control systems to control engines and fire suppression systems .
+
+according to nist , industrial control systems were originally designed for use in trusted environments , so many did not incorporate security controls .
+
+government and industry reports state that attacks on these systems are increasing .
+
+however , dod officials said that program offices may not know which industrial control systems are embedded in their weapons or what the security implications of using them are .
+
+over the past few years , dod has begun funding work to improve its understanding of how to best secure these systems .
+
+in addition , office of the secretary of defense officials informed us that , in response to section 1650 of the national defense authorization act for fiscal year 2017 , they are working to better understand the dependency of industrial control systems on mission impact , including other key infrastructure nodes that could be vulnerable to a cyber attack and have significant impact to mission accomplishment .
+
+key concept vulnerability chaining is when attackers take advantage of multiple vulnerabilities — which could be low or moderate risk in isolation — to perform a more significant attack on a system .
+
+several weapon system - specific factors make it important to tailor cybersecurity approaches , but also make cybersecurity difficult .
+
+because weapon systems can be very large , complex , systems of systems with many interdependencies , updating one component of a system can impact other components .
+
+a patch or software enhancement that causes problems in an email system is inconvenient , whereas one that affects an aircraft or missile system could be catastrophic .
+
+officials from one program we met with said they are supposed to apply patches within 21 days of when they are released , but fully testing a patch can take months due to the complexity of the system .
+
+even when patches have been tested , applying the patches may take additional time .
+
+further , weapon systems are often dispersed or deployed throughout the world .
+
+some deployed systems may only be patched or receive software enhancements when they return to specific locations .
+
+although there are valid reasons for delaying or forgoing weapon systems patches , this means some weapon systems are operating , possibly for extended periods , with known vulnerabilities .
+
+exacerbating matters , some program offices may also not yet have a solid understanding of the cybersecurity implications of their systems' designs , including their systems' connectivity .
+
+this situation makes it difficult to secure the system .
+
+experts and officials from some test organizations we met with stated that programs have generally not understood the multitude of ways that information flows in and out of their systems , although this may be improving .
+
+several program officials we met with felt that weapon systems were more secure than other types of systems and noted that they typically did not have direct connections to the internet .
+
+in fact , weapon systems have more potential avenues of attack than may be apparent , such as radio communications receivers and radar receivers .
+
+furthermore , the national research council reported in 2014 that individual warfare domains do not fully grasp risks within their own domain , let alone those that can be introduced through other domains .
+
+for example , if a space system is connected to a land system — even indirectly — an attacker may be able to move from one to the other or limit the operations of one by attacking the other .
+
+we found that from 2012 to 2017 , dod testers routinely found mission - critical cyber vulnerabilities in nearly all weapon systems that were under development .
+
+using relatively simple tools and techniques , testers were able to take control of these systems and largely operate undetected .
+
+in some cases , system operators were unable to effectively respond to the hacks .
+
+furthermore , dod does not know the full scale of its weapon system vulnerabilities because , for a number of reasons , tests were limited in scope and sophistication .
+
+nearly all major acquisition programs that were operationally tested between 2012 and 2017 had mission - critical cyber vulnerabilities that adversaries could compromise .
+
+dot&e's 2017 annual report stated that tests consistently discovered mission - critical vulnerabilities in acquisition programs , echoing a similar finding by the dsb in 2013 about dod it systems and networks .
+
+cybersecurity test reports that we reviewed showed that test teams were able to gain unauthorized access and take full or partial control of these weapon systems in a short amount of time using relatively simple tools and techniques .
+
+we saw widespread examples of weaknesses in each of the four security objectives that cybersecurity tests normally examine: protect , detect , respond , and recover .
+
+key concepts an insider is a user who is authorized to use a system ( eg , has a username and password ) and has physical access to all or parts of a system .
+
+a near - sider is an unauthorized user who has physical access to all or part of a system .
+
+for example , someone taking a tour of a navy ship would be a near - sider .
+
+a remote user is not authorized to use the system and does not have physical access to the system .
+
+test teams were able to defeat weapon systems cybersecurity controls meant to keep adversaries from gaining unauthorized access to the systems .
+
+in one case , it took a two - person test team just one hour to gain initial access to a weapon system and one day to gain full control of the system they were testing .
+
+some programs fared better than others .
+
+for example , one assessment found that the weapon system satisfactorily prevented unauthorized access by remote users , but not insiders and near - siders .
+
+once they gained initial access , test teams were often able to move throughout a system , escalating their privileges until they had taken full or partial control of a system .
+
+in one case , the test team took control of the operators' terminals .
+
+they could see , in real - time , what the operators were seeing on their screens and could manipulate the system .
+
+they were able to disrupt the system and observe how the operators responded .
+
+another test team reported that they caused a pop - up message to appear on users' terminals instructing them to insert two quarters to continue operating .
+
+multiple test teams reported that they were able to copy , change , or delete system data including one team that downloaded 100 gigabytes , approximately 142 compact discs , of data .
+
+example: poor password management the 2016 cyber attack on dyn , a company that serves as a key intermediary in directing internet traffic , disabled websites , such as twitter , netflix , and cnn and brought down the internet in some regions .
+
+the attack used malware to search the internet for unsecured devices , such as those that used factory - default usernames and passwords , and then used those devices to send junk traffic to online targets until they could not function .
+
+the test reports indicated that test teams used nascent to moderate tools and techniques to disrupt or access and take control of weapon systems .
+
+for example , in some cases , simply scanning a system caused parts of the system to shut down .
+
+one test had to be stopped due to safety concerns after the test team scanned the system .
+
+this is a basic technique that most attackers would use and requires little knowledge or expertise .
+
+poor password management was a common problem in the test reports we reviewed .
+
+one test report indicated that the test team was able to guess an administrator password in nine seconds .
+
+multiple weapon systems used commercial or open source software , but did not change the default password when the software was installed , which allowed test teams to look up the password on the internet and gain administrator privileges for that software .
+
+multiple test teams reported using free , publicly available information or software downloaded from the internet to avoid or defeat weapon system security controls .
+
+test reports we reviewed make it clear that simply having cybersecurity controls does not mean a system is secure .
+
+how the controls are implemented can significantly affect cybersecurity .
+
+for example , one test report we reviewed indicated that the system had implemented role - based access control , but internal system communications were unencrypted .
+
+because the system's internal communications were unencrypted , a regular user could read an administrator's username and password and use those credentials to gain greater access to the system and the ability to affect the confidentiality , integrity , or availability of the system .
+
+programs had not addressed some previously identified vulnerabilities program offices were aware of some of the weapon system vulnerabilities that test teams exploited because they had been identified in previous cybersecurity assessments .
+
+for example , one test report indicated that only 1 of 20 cyber vulnerabilities identified in a previous assessment had been corrected .
+
+the test team exploited the same vulnerabilities to gain control of the system .
+
+when asked why vulnerabilities had not been addressed , program officials said they had identified a solution , but for some reason it had not been implemented .
+
+they attributed it to contractor error .
+
+another test report indicated that the test team exploited 10 vulnerabilities that had been identified in previous assessments .
+
+example: poor detection in the 2014 office of personnel management ( opm ) cyber attack , attackers exfiltrated personnel files of 4.2 million government employees , security clearance background information on 21 million individuals , and fingerprint data of 5.6 million of these individuals .
+
+attackers used a contractor's opm credentials to log into the opm system , installed malware , and created a backdoor to the network .
+
+these attackers were in opm's networks for at least 14 months .
+
+over 2,000 pieces of malware were later identified on opm devices .
+
+detection .
+
+one test team emulated a denial of service attack by rebooting the system , ensuring the system could not carry out its mission for a short period of time .
+
+operators reported that they did not suspect a cyber attack because unexplained crashes were normal for the system .
+
+another test report indicated that the intrusion detection system correctly identified test team activity , but did not improve users' awareness of test team activities because it was always “red.” warnings were so common that operators were desensitized to them .
+
+a common way to detect cyber activity is to review logs of system activity looking for unusual occurrences .
+
+multiple test reports indicated that test team activity was documented in system logs , but operators did not review them .
+
+one test report noted that the system had no documented procedures for reviewing logs .
+
+multiple test reports indicated that operators did not effectively respond to test team activities .
+
+in multiple tests , operators did not respond because , as noted above , they were simply unaware of the test team activities .
+
+in some cases , however , operators were unable to effectively respond even when they identified or were notified that the test team had carried out an attack .
+
+one test report indicated that operators identified test team intrusion attempts and took steps to block the test team from accessing the system .
+
+however , the test team was able to easily circumvent the steps the operators took .
+
+in another case , the test team was able to compromise a weapon system and the operators needed outside assistance to restore the system .
+
+dod does not know the full extent of its weapon systems cyber vulnerabilities due to limitations on tests that have been conducted .
+
+cybersecurity assessments do not identify all vulnerabilities of the systems that are tested .
+
+this is , in part , because cybersecurity assessments do not reflect the full range of threats that weapon systems may face in operation .
+
+test teams reported that they portray realistic threats and environments .
+
+however , the nature of tests imposes limitations on testers that do not apply to potential adversaries .
+
+for example , dod officials said that most cybersecurity assessments are conducted over a few days to a few weeks .
+
+one test report indicated that the cybersecurity assessment was cut short due to external factors so the test team only had 41 hours to work with the system .
+
+in contrast , dod officials we spoke to said that a determined adversary could spend months or years targeting our systems .
+
+further , because test teams have a limited amount of time with a system , they look for the easiest or most effective way to gain access , according to dod officials we met with and test reports we reviewed .
+
+they do not identify all of the vulnerabilities that an adversary could exploit .
+
+dot&e noted that longer - term tests generally identify more cyber vulnerabilities than shorter tests .
+
+dod officials we spoke to said that the department has increased the amount of long - term assessments it conducts in recent years .
+
+weapon systems cybersecurity assessments may also be limited in the types of attacks that are portrayed so entire categories of vulnerabilities are not currently addressed in some cyber assessments .
+
+the test reports we reviewed tended to portray nascent to moderate threats and generally did not target special components like industrial control systems and non - internet enabled devices which our adversaries could target .
+
+similarly , counterfeit parts pose cybersecurity risks to weapon systems , but were not within the scope of the cybersecurity tests that we reviewed .
+
+system - specific limitations can also affect test results .
+
+officials from one service test agency noted that in at least one case , they could not fully assess a system's cybersecurity because portions of the system's networks and data were proprietary .
+
+the system utilized the contractor's corporate networks , which the test team was not allowed to attack .
+
+in several tests , a weapon system's connections to external systems were either limited or had to be simulated .
+
+one test report we reviewed noted that the test team was not allowed to use classified networks to attack a weapon system due to security concerns .
+
+another test was conducted in a lab environment so the test team had to simulate external communications .
+
+although there are practical reasons for limiting the duration and scope of cybersecurity assessments , these limitations mean that dod may not fully understand the extent of weapon system cyber vulnerabilities , as is reflected in figure 5 .
+
+many program officials we met with indicated that their systems were secure , including some with programs that had not had a cybersecurity assessment .
+
+some systems have not yet undergone testing either because they are not far enough along in the acquisition process , because they were fielded prior to dod's emphasis on penetration testing , or out of concern that cybersecurity tests would interfere with operations .
+
+systems that have not been tested are not necessarily more or less secure than systems that have been assessed .
+
+dod does not know the extent to which these systems have cyber vulnerabilities .
+
+program officials cited the security controls they applied as the basis for their belief that their systems were secure .
+
+for example , officials from a dod agency we met with expressed confidence in the cybersecurity of their systems , but could not point to test results to support their beliefs .
+
+instead , they identified a list of security controls they had implemented .
+
+however , security controls must be properly designed and implemented in order to be effective .
+
+as we noted earlier , test teams routinely found and defeated poorly implemented security controls .
+
+officials we spoke to stated that controls are necessary , but not sufficient , and penetration test results — rather than compliance documentation — are better indicators of a system's security .
+
+for programs that have had cybersecurity assessments , some program officials we met with questioned the validity of the results because of concerns about the realism of the assessments .
+
+for example , officials from one program noted that the testers were given more system information and access than an adversary would have .
+
+officials from another program noted that testers asked for detailed information about the system's design .
+
+these officials stated that cyber assessments were unrealistic if they relied on the program office to identify problem areas for the test team .
+
+however , test organizations and nsa officials we met with dismissed these observations , noting that adversaries are not subject to the types of limitations imposed on test teams , such as time constraints and limited funding — and this information and access are granted to testers to more closely simulate moderate to advanced threats .
+
+over the past few years , dod has taken several major steps to improve weapon systems cybersecurity .
+
+dod issued and updated numerous policies and guidance to improve the department's development of cyber resilient systems .
+
+these include improvements such as specifying that cybersecurity policies apply to weapon systems and requiring more focus on cybersecurity throughout a weapon system's acquisition life cycle .
+
+dod and congress have also begun promising initiatives to help dod improve its understanding of its weapon systems cyber vulnerabilities and take steps to mitigate their risks .
+
+however , dod faces barriers that may limit its ability to achieve desired improvements .
+
+for example , dod is struggling to hire and retain cybersecurity personnel , who are essential to implementing these changes .
+
+in addition , dod faces barriers to information sharing , which hinder its ability to share vulnerability and threat information within and across programs .
+
+to improve the state of weapon systems cybersecurity , it is essential that dod sustain its momentum in developing and implementing key initiatives .
+
+since 2014 , dod has issued or updated at least 15 department - wide policies , guidance documents , and memorandums intended to promote more cyber secure weapon systems , some of which are highlighted in table 3 .
+
+one of the more significant changes is that dod's existing cybersecurity policies now explicitly apply to weapon systems .
+
+dod officials said the department has had cybersecurity policies in place for decades , but applied them to weapon systems only in the past few years .
+
+for example , dod's risk management framework ( rmf ) is similar to its predecessor — dod's information assurance certification and accreditation process — which called for application of an extensive series of controls to protect dod networks and information systems .
+
+however , rmf applies these controls more widely to weapon systems cybersecurity .
+
+another important change is that , in recognition that systems cannot be 100 percent secure , dod has begun to emphasize cyber resiliency in some of its policies .
+
+the idea behind cyber resiliency is to identify and protect key elements of a system to ensure that they can continue to operate , possibly with limited capabilities , during a cyber attack .
+
+this entails designing in features such as durability , redundancy , and added protections for certain components .
+
+lastly , key policies that govern the requirements and acquisition processes now address cybersecurity .
+
+these changes have the potential to bring greater attention to cybersecurity in weapon systems acquisitions .
+
+rather than being treated as distinct from the acquisition process , cybersecurity is to be integrated into key acquisition activities , such as requirements development , technology maturation , and testing .
+
+examples of this , as called for in various policies , include the following: requirements .
+
+identify cybersecurity requirements and how the information flows into , out of , and through the systems .
+
+this helps identify the system's attack surface and informs the system's design and cybersecurity controls .
+
+cybersecurity should become part of the requirements trade space .
+
+technology maturation .
+
+focus early prototyping in part on buying down cybersecurity risks prior to system development .
+
+cybersecurity controls should be applied and assessed during prototyping to evaluate cyber risks and inform down - selection and adjustment of requirements .
+
+department of defense , dod program manager's guidebook for cybersecurity ( sept. 2015 ) .
+
+developmental testing .
+
+test the cybersecurity of weapon systems as they are developed , including integration of larger subsystems and , ultimately , the entire system .
+
+perform cybersecurity assessments in representative operating environments during developmental testing .
+
+operational testing .
+
+conduct operational cybersecurity testing of weapon systems to include other systems that exchange information with the system under test ( system - of - systems to include the network environment ) , end users , administrators , and cyber defenders .
+
+reflect representative cyber threats .
+
+these extensive changes to policies and guidance , which adopt a similar risk - based framework to that already generally in place government - wide , appear to be a step in the right direction to increase the department's emphasis on weapon systems cybersecurity .
+
+however , they are also relatively new for dod , so it is too early to assess whether they are resulting in improved weapon systems cybersecurity .
+
+for example , changes to the requirements process apply primarily to new programs so it could be many years before systems that have gone through the new process undergo operational testing and are fielded .
+
+section 1647 of the national defense authorization act for fiscal year 2016 requires the secretary of defense to evaluate the cyber vulnerabilities of each dod weapon system by the end of 2019 and develop strategies to mitigate risks stemming from those vulnerabilities .
+
+in response to this direction and the dod cyber strategy , which also calls for dod to assess and initiate improvements to the cybersecurity of current and future weapons systems , dod is taking steps to improve its understanding of its weapon systems' vulnerabilities , determine how to mitigate risks from those vulnerabilities , and inform future development of more secure systems .
+
+the office of the under secretary of defense ( acquisition and sustainment ) is leading this initiative in collaboration with military test organizations .
+
+dod is compiling existing vulnerability information and conducting some new tests to provide information about the cybersecurity posture of individual systems , concentrating mostly on fielded systems .
+
+these assessments are important , in part because some of those systems did not undergo cybersecurity testing prior to fielding and dod does not have a permanent process in place to periodically assess the cybersecurity of fielded systems .
+
+furthermore , vulnerabilities and risks can change after fielding as system software becomes obsolete .
+
+as part of this initiative , for two mission areas , the office of the under secretary of defense ( acquisition and sustainment ) has been trying to incorporate cybersecurity into large scale military exercises to take a more integrated look at impacts of vulnerabilities across systems .
+
+the goal is to understand how vulnerabilities in some systems may affect dod's ability to achieve its mission and to identify what other options are available to complete a mission if certain capabilities were disabled or degraded .
+
+this work is also important , but for different reasons .
+
+dod's developmental and operational tests focus primarily on vulnerabilities in individual systems rather than across broader mission areas .
+
+however , as previously discussed , attackers do not necessarily limit themselves to one system and may move from one system to others .
+
+furthermore , dod has not previously had a process in place to examine how cyber attacks on one system could affect entire missions .
+
+taken together , the system - specific and mission - focused activities could help dod develop a more comprehensive understanding of its cybersecurity posture — the overall strength of its cybersecurity .
+
+officials working on these assessments plan to use what they learn to help inform the acquisition of future weapon systems .
+
+specifically , they plan to share lessons with dod test organizations , the office of the chief information officer , office of the under secretary of defense ( research and engineering ) , and others in the office of the under secretary of defense ( acquisition and sustainment ) .
+
+similarly , the military services have established weapon system cybersecurity - focused offices to improve their cybersecurity posture , which are described briefly in table 4 .
+
+although all of these activities promise to help dod improve its cybersecurity posture over time , they are also relatively new for dod .
+
+they will need sustained momentum to achieve changes over the lifecycle of acquisition programs , so it is too early to tell if they will be successful over the long term .
+
+according to multiple agency officials and our analysis of policy and guidance changes since 2014 , dod leadership has become more aware of cybersecurity issues over the past several years and has driven many of these cybersecurity activities .
+
+however , our prior work has found sustained leadership support of dod initiatives to be key to maintaining their momentum .
+
+we also reported that there is risk that dod will not fully implement some tasks it has begun to improve weapon systems cybersecurity if leadership does not continue to monitor their progress .
+
+for example , we reported in 2017 that dod's principal cyber advisor closed out the task on assessing weapon systems called for under the dod cyber strategy .
+
+we recommended that the cyber advisor modify criteria for closing tasks to reflect whether tasks have been implemented and re - evaluate tasks that have been previously determined to be completed .
+
+dod faces barriers that will challenge its ability to develop more cyber resilient weapon systems and make it more difficult for dod's recent policy changes and new initiatives to be as effective as possible .
+
+dod struggles to hire and retain cybersecurity personnel , particularly those with weapon systems cybersecurity expertise .
+
+our prior work has shown that maintaining a cybersecurity workforce is a challenge government - wide and that this issue has been a high - priority across the government for years .
+
+program officials from a majority of the programs and test organizations we met with said they have difficulty hiring and retaining people with the right expertise , due to issues such as a shortage of qualified personnel and private sector competition .
+
+test officials said that once their staff members have gained experience in dod , they tend to leave for the private sector , where they can command much higher salaries .
+
+according to a 2014 rand study , personnel at the high end of the capability scale , who are able to detect the presence of advanced threats , or finding the hidden vulnerabilities in software and systems , can be compensated above $200,000 to $250,000 a year , which greatly exceeds dod's pay scale .
+
+even when cybersecurity positions are filled , it may not necessarily be with the right expertise .
+
+officials from some program offices said that general cybersecurity expertise is not the same as weapon systems cybersecurity expertise .
+
+for example , officials said that professional it certifications are not the same as systems security engineering expertise , which is essential to designing cyber - resilient systems .
+
+according to various program officials , weapon systems cybersecurity is a specialized area .
+
+cybersecurity subject matter experts require knowledge of ( 1 ) dod's acquisition process ; ( 2 ) technical knowledge of the specific weapon system — such as radar or aircraft , and ( 3 ) cybersecurity knowledge .
+
+however , it is difficult to hire and maintain a workforce with the needed knowledge due to its highly specialized nature .
+
+without this expertise , it will be difficult for programs to effectively implement cybersecurity policies and guidance .
+
+for example , the rmf allows programs to determine which controls are most appropriate to apply , but a knowledgeable workforce is necessary for making such decisions .
+
+dod has various efforts underway to recruit and develop the skills of dod's cybersecurity workforce , according to several dod officials .
+
+for example , the services are aiming to recruit cybersecurity analysts by using internships and engaging in partnerships with secondary schools and universities .
+
+in addition , the services are developing and offering courses to grow expertise within their existing acquisition workforce .
+
+dod is determining how to share specialized expertise related to weapon systems cybersecurity .
+
+specific efforts related to this include the cyber developmental test cross service working group that meets quarterly and invites industry expertise to present cutting edge techniques as well as a “capture the flag” competition , which will now be offered to other services as well .
+
+in addition , navy systems commands employees participate in periodic regional cyber competitions to hone knowledge learned in classroom environments and use training funds to pursue additional or higher degrees and cyber certificate programs .
+
+officials from many of the offices we interviewed , as well as the national research council , dsb , and rand have expressed concerns about barriers to information sharing .
+
+it is difficult to find the correct balance between protecting information , so that it is not accessible to potential adversaries , and sharing it , so that dod has an informed workforce .
+
+for example , classification is important because it protects information about vulnerabilities , and in some cases , intelligence methods .
+
+access to information about vulnerabilities makes it easier for potential adversaries to attack dod systems .
+
+similarly , limiting the distribution of classified information to those who have the need to know is likewise important because it reduces the likelihood that internal and external threats will access it .
+
+although dod officials explained that there is no dod - wide cybersecurity classification guidance , air force guidance and dod officials indicated that vulnerabilities in fielded systems are typically classified as at least top secret or top secret / sensitive compartmented information , and details of threats are more restricted .
+
+this high level of classification for weapon systems cyber vulnerabilities and threats helps protect sensitive information , but it makes it difficult for dod to share information about aspects of weapon systems cybersecurity with cybersecurity personnel across dod .
+
+for example , some experts told us that flawed designs can still be found in new systems if their designers were not aware that they resulted in vulnerabilities in other systems .
+
+more generally , because they are not sharing vulnerability and threat information across programs , programs are unaware of their full risk exposure and dod may have less insight into vulnerabilities across its weapon systems portfolio .
+
+officials from most organizations we spoke to , including nsa , acknowledged challenges with sharing information across all levels within dod .
+
+examples of these challenges are listed in table 5 .
+
+although limitations to information sharing can lead to inefficiencies and other challenges , dod has so far opted to favor protection of information — perhaps because the stakes are so high if it does not .
+
+as we mentioned previously , one of the reasons potential adversaries collect information on weapon systems is because the better they understand a weapon system , and especially what vulnerabilities it may have , the more options they have to attack it .
+
+reports over the years about cyber espionage attacks on defense contractors show that concerns about protecting sensitive information are warranted .
+
+we provided a draft of this report to dod for review and comment .
+
+dod provided technical comments , which we incorporated where appropriate .
+
+we are sending copies of this report to the appropriate congressional committees ; the secretary of defense ; and the secretaries of the army , navy , and air force .
+
+in addition , the report will be available at no charge on gao's website at http: / / www.gao.gov .
+
+if you or your staff have any questions about this report , please contact me at 202-512-4841 or chaplainc@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made major contributions to this report are listed in appendix iv .
+
+to identify factors that contribute to the current state of department of defense ( dod ) weapon systems cybersecurity , we reviewed reports published from 1991 to the present on software , information technology , networking , and weapon systems from the national research council , the defense science board , gao , dod's director of operational test and evaluation , dod's joint chiefs of staff , and the rand corporation .
+
+to inform our discussion of networking , we also reviewed concepts of operations for selected systems of systems .
+
+to determine the extent to which dod focused on cybersecurity in weapon system acquisitions , we analyzed selected information assurance , acquisition , requirements , and testing policies and guidance .
+
+for this and all other objectives , we conducted interviews with or obtained written responses from the following organizations: office of the secretary of defense organizations: office of the director , operational test and evaluation ; office of the deputy assistant secretary of defense for developmental test and evaluation ; office of the chief information officer including the defense information systems agency ; office of the chairman of the joint chiefs of staff ; office of the under secretary of defense ( acquisition and sustainment ) ; and office of the under secretary of defense ( research and engineering ) .
+
+military service test organizations: air force operational test and evaluation center , army operational test and evaluation command , navy's commander operational test and evaluation force , and marine corps operational test and evaluation activity .
+
+selected program offices reflecting a purposeful sample of nine major defense acquisition program offices .
+
+we identified a variety of program offices to represent each service , multiple domains , and programs that are extensively connected to other weapons systems .
+
+we are not listing the names of these offices for sensitivity reasons .
+
+other key dod organizations with cybersecurity responsibilities: the national security agency , defense information systems agency , and u.s. cyber command .
+
+selected organizations with cybersecurity expertise , referred to as “experts” in the report: carnegie melon's software engineering institute , the mitre corporation , the rand corporation , pacific northwest national laboratory , sandia national laboratory , and renaissance strategic advisors .
+
+we selected these based on their research or roles advising dod on weapon systems cybersecurity - related topics .
+
+to identify vulnerabilities in weapon systems under development , we reviewed cyber assessment reports of selected weapon systems conducted between 2012 and 2017 .
+
+we selected at least one program from each service as well as different types of weapon systems ( eg , aircraft vs ships vs communication systems ) .
+
+to gain further insights into assessment findings and understand their limitations , we interviewed officials from the office of the secretary of defense and military test service organizations .
+
+we discussed the cybersecurity of individual programs , implementation of controls , and assessment findings with program offices .
+
+we also interviewed officials from several organizations with cybersecurity expertise to discuss weapon system vulnerabilities and test limitations .
+
+vulnerabilities for specific weapon systems are classified , so we have not identified the programs covered in these test reports .
+
+the examples we cite are unique to each weapon system and are not applicable to all weapon systems .
+
+furthermore , cybersecurity assessment findings are as of a specific date so vulnerabilities identified during system development may no longer exist when the system is fielded .
+
+to determine the steps dod is taking to develop more cyber resilient weapon systems , we analyzed key dod information assurance / cybersecurity , acquisition , requirements , and testing policies and guidance that have been updated since 2014 to better address weapon systems cybersecurity .
+
+we selected 2014 because dod began revising several policies at that time .
+
+these include dod's risk management framework , department of defense instruction 8500.01 , cybersecurity ; the department of defense instruction 5000.2 , operation of the defense acquisition system ; dod program manager's guidebook for integrating the cybersecurity risk management framework into the system acquisition lifecycle ; the joint capabilities integration and development system manual ; the cyber survivability endorsement implementation guide ; and the dod cybersecurity test and evaluation guidebook .
+
+to identify barriers dod faces in developing cyber resilient systems and implementing updated cybersecurity policies and guidance , we interviewed office of the secretary of defense , military service test organizations , selected program offices , other dod organizations , experts , and operators .
+
+we took additional precautions to avoid revealing sensitive information .
+
+we illustrated some concepts using notional depictions .
+
+in some cases , we were deliberately vague and excluded details from examples to avoid identifying specific weapon systems .
+
+we also presented examples of publicly known attacks in sidebars to illustrate how poor cybersecurity can enable cyber attacks .
+
+dod conducted a security review of the report and approved it for public release .
+
+the department of defense ( dod ) is responsible for defending the u.s. homeland and interests from attack , including those that occur in cyberspace and has developed capabilities for cyber operations .
+
+in order to achieve this objective , the department must be able to defend its own networks , systems , and information from cyber attack .
+
+to establish a cybersecurity program to protect and defend dod information and information technology , dod has assigned some of its components and senior officials with a variety of cybersecurity responsibilities , some of which are described below .
+
+cristina t. chaplain ( 202 ) 512-4841 or chaplainc@gao.gov .
+
+in addition to the contact named above , raj chitikila ( assistant director ) , brandon booth , laura greifner , l.t .
+
+holliday , katherine pfeiffer , james tallon , jacqueline wade , and robin wilson made key contributions to this report .
+
+assistance was also provided by tommy baril , nabajyoti barkakati , mark canter , virginia chanley , kurt gurka , joseph kirschbaum , jeff knott , duc ngo , and gregory wilshusen .
+

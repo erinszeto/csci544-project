@@ -1,0 +1,492 @@
+during the last year , certain air traffic control ( atc ) centers have experienced a series of major outages , some of which were caused by the display channel complex or dcc — a mainframe computer system that processes radar and other data into displayable images on controllers' screens .
+
+for example , four major dcc outages occurred at the chicago center from may through september 1995 , including one that lasted roughly 5 days and another one that produced 234 flight delays .
+
+because the permanent replacement for dcc and other aging center atc systems has been delayed until the end of the century , the federal aviation administration ( faa ) recently decided to acquire an interim replacement , calling it the dcc rehost ( dccr ) , and deploy it to all affected centers by early 1998 .
+
+in light of the importance of dcc — and its to be short - lived replacement ( dccr ) — to faa's atc mission , as well as faa's limited success in delivering promised atc system capabilities on time and within budget , we reviewed the dccr project .
+
+our objectives were to determine ( 1 ) the portion of the recent major outages experienced at the five dcc - equipped en route centers that were attributable to dcc , ( 2 ) whether dcc was meeting its system availability requirement , ( 3 ) faa's projections of future dcc outages and availability , and ( 4 ) whether faa was effectively managing the dccr acquisition to ensure delivery of specified capabilities on schedule and within estimated cost .
+
+appendix i provides more detailed information on our objectives , scope , and methodology .
+
+faa's air traffic management mission is to promote the safe , orderly , and expeditious flow of air traffic in the national airspace .
+
+to accomplish this mission , faa employs a vast network of atc and traffic flow management computer hardware , software , and communications equipment to ( 1 ) prevent collisions between aircraft and obstructions and ( 2 ) facilitate the efficient movement of aircraft through the air traffic system .
+
+automated information processing and display , communication , navigation , surveillance , and weather resources permit air traffic controllers to view key information , such as aircraft location , aircraft flight plans , and prevailing weather conditions , and to communicate with pilots .
+
+these resources reside at , or are associated with , several atc facilities — flight service stations , air traffic control towers , terminal radar approach control ( tracon ) facilities , and air route traffic control centers ( en route centers ) .
+
+these facilities' atc functions are described below .
+
+about 90 flight service stations provide pre - flight and in - flight services , primarily for general aviation aircraft , such as flight plan filing and weather report updates .
+
+airport towers control aircraft on the ground and before landing and after take - off when they are within about 4 nautical miles of the airport .
+
+air traffic controllers rely on a combination of technology and visual surveillance to direct aircraft departures and approaches , maintain safe distances between aircraft , and communicate weather - related information , clearances , and other instructions to pilots and other personnel .
+
+approximately 180 tracons sequence and separate aircraft as they approach and leave busy airports , beginning about 4 nautical miles and ending about 50 nautical miles from the airport , where en route centers' control begins .
+
+twenty en route centers control planes over the continental united states in transit and during approaches to some airports .
+
+each en route center handles a different region of airspace , passing control from one to another as respective borders are reached until the aircraft reaches tracon airspace .
+
+en route center controlled airspace usually extends above 18,000 feet for commercial aircraft .
+
+two en route centers — oakland and new york — also control aircraft over the ocean .
+
+controlling aircraft over oceans is radically different from controlling aircraft over land because radar surveillance only extends 175 to 225 miles offshore .
+
+beyond the radars' sight , controllers must rely on periodic radio communications through a third party — aeronautical radio incorporated ( arinc ) , a private organization funded by the airlines and faa to operate radio stations — to determine aircraft locations .
+
+see figure 1 for a visual summary of the processes for controlling aircraft over the continental united states and oceans .
+
+although en route centers' specific hardware and software configurations may differ slightly , the centers rely on over 50 systems to perform mission critical information processing and display , navigation , surveillance , communications , and weather functions .
+
+examples include the systems that display aircraft situation data for air traffic controllers , the system that collects data from various weather sources and distributes them to weather terminals , radars for aircraft surveillance , radars for wind and precipitation detection , ground - to - ground and ground - to - air communication systems , and systems to back - up primary systems .
+
+ ( see appendix ii for a simplified block diagram of an en route center's systems environment. ) .
+
+dcc is one of the 50-plus en route center systems .
+
+dcc runs on 1960s vintage ibm 9020e mainframe computers , and its software is written in two languages , assembly and jovial .
+
+it is used at 5 of the 20 en route centers .
+
+ ( see figure 2 for the locations of the 20 en route centers and identification of the five that are dcc - equipped. ) .
+
+dcc's purpose is to accept data from the host computer system ( hcs ) and process it to form the alphanumeric , symbolic , and map data that appear for air traffic controllers on their plan view displays ( pvd ) .
+
+ ( see figure 3 for a simplified block diagram of dcc and the en route center systems with which it interfaces. ) .
+
+in response to expected increases in the frequency and severity of dcc problems and the possibility of delays in the system intended to permanently replace dcc as well as other en route display - related systems , faa awarded a roughly $30 million contract in september 1994 for development of “a single , deployment - ready” interim replacement ( i.e. , dccr ) unit .
+
+faa officials characterized this development effort as an “insurance policy” to protect faa against delays in the permanent replacement , then called the initial sector suite system ( isss ) and now called the display system replacement ( dsr ) .
+
+ ( see appendix iii for more information on dsr. ) .
+
+in july 1995 , following a flurry of dcc problems and outages and known delays with isss , faa decided that there was an urgent and compelling need to replace dcc at all five dcc - equipped en route centers in the interim before dsr is ready .
+
+in making such capital investment decisions , faa uses four criteria: sponsor ( i.e. , user ) support ; mission importance ; information technology architectural conformance and maturity ; and cost - effectiveness .
+
+each criterion carries a standard weighting factor that is to be consistently applied to all proposed projects .
+
+ ( see figure 4 for these weighting factors. ) .
+
+according to dccr documentation and faa officials , sponsor support and mission need ( i.e. , aviation safety ) drove the july 1995 decision to produce and deploy dccr .
+
+in particular , faa's air traffic services organization , the air traffic controllers association , and the air transport association strongly endorsed dccr .
+
+also , faa officials told us that extensive media attention to the dcc outages , considerable congressional interest , and public safety concern were major considerations .
+
+for example , one official stated that faa was “taking too much heat in the papers for dcc outages and wanted dccr to solve the problem.” in faa's view , the need to quickly replace dcc was urgent and compelling , and dccr was the only practical alternative to sustaining safe , orderly , and efficient air traffic services in the near - term .
+
+faa considered two cost estimates in analyzing dccr's costs versus benefits .
+
+however , the results of this analysis were inconclusive , and according to faa officials , were not relevant to the decision to produce and deploy dccr because of the urgent need to replace dcc .
+
+one of the cost estimates was done by the dccr project office and the other by the program analysis and operations research office .
+
+using the two cost estimates , the faa analyzed three dccr life expectancy scenarios .
+
+under the “most likely” scenario , the project office's cost estimate produced a dccr net present value of negative $37 million and a benefit - to - cost ratio of 0.7 to 1 .
+
+in contrast , the program analysis and operations research office's lower cost estimate under the same scenario placed these values at $29 million and 1.4 to 1 , respectively .
+
+neither estimate considered maintenance costs .
+
+given the expense of dcc maintenance , including it would likely have made dccr more cost - effective under both estimates .
+
+while faa officials agreed with our assessment of the impact of including maintenance costs , they did not quantify this impact .
+
+the month following its july 1995 decision , faa awarded a roughly $34 million contract to produce five dccr systems and has publicly committed to having the first site operational in october 1997 and the fifth and last site in february 1998 .
+
+ ( see figure 5 for the respective sites' publicly announced delivery and operational readiness demonstration dates. ) .
+
+dccr's installation and operation will not change the air traffic controllers' current system interface and thus will be transparent to them .
+
+it consists of two components — the display channel rehost processor ( dcrp ) and the display controller and switch ( dc&s ) .
+
+dcrp will use a commercial , off - the - shelf ibm processor to execute about 120,000 lines of rehosted dcc code and 60,000 lines of new code .
+
+the primary contractor is developing the new code , and a subcontractor is rehosting the dcc code .
+
+dc&s uses custom - developed hardware and about 65,000 lines of new code implemented in firmware to perform keyboard , trackball , and display control functions .
+
+ ( see figure 6 for a simplified block diagram of dccr and the systems with which it interfaces. ) .
+
+according to faa , a major system outage is one which significantly delays air travel or produces significant media interest .
+
+most of the recent major system outages at the five dcc - equipped centers have been dcc - related .
+
+our analysis of faa major outage data from september 1994 through may 1996 at the chicago , dallas - ft. worth , new york , washington , and cleveland en route centers showed that dcc accounted for 10 of the 21 outages , or about 48 percent .
+
+moreover , these dcc outages were responsible for 195 of 225 hours , or about 87 percent , of unscheduled system downtime at these centers during this time .
+
+ ( see figures 7 and 8. ) .
+
+system availability is defined as the time that a system is operating satisfactorily , expressed as a percentage of the time the system is required to be operational .
+
+faa has specified a dcc system availability requirement of 99.9 percent .
+
+dcc exceeded that requirement from fiscal year 1990 through 1993 , but failed to meet it in fiscal years 1994 and 1995 , with availability of 99.83 and 99.81 percent , or 0.07 and 0.09 percent below the requirement , respectively .
+
+ ( see figure 9. ) .
+
+according to faa officials , dcc's acceptable history of availability has been attained through the extraordinarily hard work , commitment , and ingenuity of its highly skilled , but small , workforce of technicians .
+
+for example , to obtain replacement circuit boards for the 9020e , which is out of production , faa officials told us that technicians scavenged parts from a computer used by the faa air traffic training academy and cannibalized parts from two scrapped computers at the faa supply depot .
+
+two factors determine a system's availability — the frequency of unscheduled outages and the time to recover from each outage ( i.e. , mean time to restore or mttr ) .
+
+according to faa data , the number of dcc outages annually has increased by about 55 percent since calendar year 1990 , from 22 to 34 , and faa predicts that this number will hold relatively steady through calendar year 2000 .
+
+ ( see figure 10. ) .
+
+in contrast , the dcc mttr grew by over 434 percent in calendar years 1994 and 1995 over previous years , and faa predicts that dcc mttr will grow at an average annual rate of 13 percent through the year 2000 .
+
+ ( see figure 11. ) .
+
+faa attributes increasing mttr to depleted inventories of out - of production dcc spare parts and a shortage of experienced dcc repair technicians .
+
+decreases in dcc availability will result in costly delays for airlines and passengers .
+
+thus far , faa has made good progress on its dccr acquisition , but much remains to be accomplished .
+
+to faa's credit , the fourth and final software build has completed integration testing , and some formal system - level test and demonstration activities have occurred .
+
+however , the number of software defects being found is slightly higher than projections , and despite the fact that faa's defect fix rate has kept pace with the higher numbers and its dccr defect trend lines are favorable when considering defect severity , unresolved defects delayed the start of concurrent system - level testing at the technical center and the first site by several weeks .
+
+notwithstanding this delay , dccr's operational readiness date may nevertheless be accelerated by several more months if faa is successful in conducting system acceptance and operational tests concurrently .
+
+also to faa's credit , it has prudently made formal risk management and quality assurance integral components of the acquisition .
+
+however , two risks associated with concurrent test plans are not being formally addressed — managing contention for limited test staff among three concurrent test activities , and controlling and synchronizing changes to three dccr system test configurations .
+
+dccr involves both converting and migrating existing code written for dcc's ibm 9020e platform , and writing new code .
+
+in sum , dccr consists of about 245,000 lines of code — 120,000 lines of rehosted dcc code ( of which about 20,000 are modified and 100,000 are unchanged ) and 125,000 lines of new code .
+
+of this newly developed software , about 60,000 lines of code relate to the dcrp component of dccr and 65,000 lines relate to the dc&s component .
+
+to faa's credit , it has thus far completed the fourth and final dcrp software build as well as formal software integration and software testing activities .
+
+also , the dc&s subcontractor has completed formal installation and integration testing of the dc&s firmware , and dc&s has been accepted by the dccr prime contractor .
+
+in addition , a demonstration of dccr was held on may 1 , 1996 , for the faa deputy administrator , and formal system - level testing of the initial version of dccr was completed on september 24 , 1996 , 2 months ahead of schedule .
+
+one measure of software quality is the severity and density ( number per one thousand lines of code ) of software errors or defects .
+
+defects are managed by ( 1 ) documenting them via program trouble reports ( ptr ) , when they are discovered , and submitting them to a change control board , ( 2 ) determining whether they are valid , ( 3 ) assigning valid ptrs a priority on the basis of severity , and ( 4 ) resolving the valid ptrs and closing them .
+
+dccr's severity categories are emergency , test critical , high , medium , and low .
+
+according to the dccr prime contractor , an emergency ptr causes test progress to stop and requires an immediate resolution in the form of a fix or an adequate workaround ; a test critical ptr severely impedes test progress , and resolution is required prior to the next scheduled accumulation and reporting of valid ptrs ; a high ptr must be resolved before an integration and test activity is completed ; a medium ptr is a significant system or application problem , but it does not require resolution for integration and test completion ; and a low ptr is a minor or insignificant system or application problem that does not require resolution for integration and test completion .
+
+one way to gauge progress in the software maturation process is to compare the number of defects being found to projections in the number of defects expected .
+
+these projections are normally made on the basis of models that consider defect experience on like or similar software development efforts .
+
+in the case of dccr , the actual number of cumulative ptrs discovered is slightly higher than projected .
+
+ ( see figure 12. ) .
+
+specifically , as of july 1996 , actual cumulative defects were about 17 percent over expectations .
+
+considering the possibility of variability in model results as well as faa's track record during this same period in “working - off” defects at a pace consistent with defect discovery , we see no cause for alarm at this time .
+
+another measure of software maturation is the trend in the number of open ( i.e. , unresolved ) ptrs over time adjusted for the ptrs' severity mix .
+
+using a simple weighting scale of one through five , which corresponds to the dccr ptr severity categories , we analyzed the change in open ptrs from march 1996 through august 1996 and found a downward trend .
+
+ ( see figure 13. ) .
+
+according to software engineering guidance , a downward slope over time is ideal .
+
+according to the publicly announced dccr schedule , the first site is to be operationally ready on october 1997 .
+
+however , on the basis of our analysis of dccr plans , contractual terms , completed activities , and discussions with project officials , dccr could be operationally ready as early as december 1996 , 10 months ahead of schedule .
+
+currently , dccr's development is about 4 months ahead of the published schedule , having completed dcrp software build four integration and testing as well as formal testing of the initial version of dccr earlier than planned .
+
+an additional 6 months may also be saved if faa technical center acceptance testing , faa technical center operational test and evaluation , and first site acceptance testing can be successfully accomplished concurrently , as faa plans for dccr , rather than sequentially , as is normally the case .
+
+concurrent testing will be successful , however , only if the software has no significant problems .
+
+with respect to dccr's financial status , faa estimates dccr's project cost to be about $64 million , $48 million of which are contract costs and $16 million are other project - related activities , such as support contractors , field support , and training .
+
+of the $48 million for contract costs , spending plans show that as of july 1996 , $31.8 million was to be spent ; and of the $16 million for other activities , obligation plans show that $12.4 million was to be obligated by the end of fiscal year 1996 .
+
+on the basis of the latest monthly contractor reports , cumulative contract costs through july 19 , 1996 , are $29.1 million , which is about $2.7 million below spending plans .
+
+however , these cost reports have not been independently verified by faa or its support contractors , which is faa's normal practice on large contracts .
+
+project officials stated that other , more costly contracts , such as dsr development and deployment , are consuming cost verification resources .
+
+on the basis of faa internal financial management system reports,cumulative obligations for other project - related activities through july 31 , 1996 , are $11.5 million , which is about $600,000 under the obligation plan with only 2 months left in the plan period .
+
+however , these obligation figures are not complete because neither the planned nor actual obligations include all project - related activities , such as faa personnel compensation , benefits , and travel .
+
+acquisition of software - intensive systems , like dccr , is inherently risky .
+
+best practices used in government and private sector acquisition and development activities include the use of formal risk management to proactively and continually identify , assess , track , control , and report risks .
+
+carnegie mellon university's software engineering institute recommends a joint contractor / government risk management approach in its guide team risk management: a new model for customer supplier relationships .
+
+for dccr , faa and the prime contractor have a formal , collaborative risk management process that includes a risk management plan and an operational process that is consistent with this plan .
+
+they maintain a single “risk watch list” that is updated periodically on the basis of the joint faa / contractor risk management team's biweekly evaluation of risk information sheets submitted by faa or contractor staff .
+
+the team assigns a severity category to each risk ( high , medium , and low ) , develops a mitigation strategy for each risk , and tracks and reports on the strategies' implementation .
+
+currently , the dccr risk watch list contains four low risks: ( 1 ) contention for faa technical center laboratory resources ( facilities and systems ) during concurrent test activities , ( 2 ) costly updates to the dc&s firmware to correct latent errors after it is delivered to the technical center and the five en route centers , ( 3 ) yet - to - be - tested ability of a fully integrated dccr to meet system - level performance parameters , and ( 4 ) increased system maintenance time , and thus system downtime , due to the lack of a remote monitoring and maintenance connection to each site's dcrp component .
+
+the watch list also contains one medium risk , which is lack of dccr training course materials and actual training before dccr's operational readiness demonstration date .
+
+a quality assurance program exists to ensure that ( 1 ) products and processes fully satisfy established standards and procedures and ( 2 ) any deficiencies in the product , process , or their associated standards are swiftly brought to management's attention .
+
+the quality assurance plan is the centerpiece of an effective quality assurance program .
+
+the plan defines the activities necessary to ensure that software development processes and products conform to applicable requirements and standards .
+
+to encourage and protect its objectivity and candor , the quality assurance group should be organizationally independent of project management ( i.e. , have an independent reporting line to senior managers ) .
+
+both faa and the dccr prime contractor have implemented quality assurance programs .
+
+the faa quality reliability officer , who is independent from the dccr project office , has been actively monitoring contractor performance .
+
+quality assurance activities performed thus far include preparing a quality assurance plan , auditing the hardware manufacturing process , monitoring project office software peer reviews , monitoring software inspections and walkthroughs , and monitoring the contractor's configuration management activities .
+
+throughout a system's development cycle , various types of test activities occur that incrementally build on earlier tests and progressively reveal more and more about the system's ability to meet specified functional , performance , and interface requirements .
+
+early test activities focus on smaller system components , such as software strings and modules , and later tests address integrated software modules , eventually building toward different types of system - level test and evaluation activities .
+
+as such , each increment of tests is designed to sequentially test for and disclose different information about the system's ability to perform as intended .
+
+under faa's normal progression of system - level testing , technical center acceptance testing would occur first , followed first by technical center operational test and evaluation , and then by first site acceptance testing.according to faa test officials familiar with dccr , some overlap between the conclusion of one of these tests and the beginning of another of these tests in sequence is normal .
+
+however , the degree of overlap occurring on dccr , which is complete concurrency of all three tests , is unusual .
+
+faa plans to concurrently conduct technical center acceptance tests , technical center operational test and evaluation , and first site acceptance test as a way of saving time and thus implementing dccr sooner .
+
+this approach assumes that no significant problems will arise during the test activities .
+
+according to project officials , this should be the case for dccr because , in their opinion , ( 1 ) the system is virtually free of material defects and thus is mature , ( 2 ) faa has experience with the dccr commercial hardware , which is similar to that being used on another operational en route system ( peripheral adapter module replacement item ) , and ( 3 ) dccr provides the same functionality as dcc .
+
+test concurrency , particularly the 100 percent overlap planned by faa , carries with it additional risks that must be managed closely and carefully .
+
+for example , concurrency will increase contention for test resources , in particular technical center system and human resources .
+
+also , concurrency introduces the possibility of problems being found and corrected independently during the different test activities , resulting in more than one baseline test configuration .
+
+should this occur , the results of testing activities could be meaningless .
+
+both dccr project and contractor officials acknowledged both risk items .
+
+however , faa is only formally managing contention for technical center system resources during testing as part of its risk management program .
+
+according to faa officials , both ( 1 ) contention for technical center human resources during testing and ( 2 ) test baseline change control are being managed informally and outside the framework of the formal risk management program .
+
+by not formally managing these risks , faa is increasing the chances that they will be overlooked and adversely affect dccr .
+
+for example , by not formally managing the latter , faa has not ensured that the contractor's dccr configuration management plan expressly defines the process for controlling changes across multiple baselines during testing , an inherently more difficult configuration management scenario than is normally encountered during single baseline system testing .
+
+although contractor representatives described for us the process they plan to use for controlling changes over multiple baselines , the configuration management plan does not reflect this .
+
+by not having a documented configuration management process that addresses the change control complications introduced by concurrent testing , faa is unnecessarily increasing the risk of introducing more than one test baseline configuration and thereby rendering concurrent test results meaningless .
+
+finally , concurrent testing will save time only if no significant system problems are found .
+
+correcting significant problems requires stopping all tests , correcting the baseline , and then restarting testing .
+
+if all tests are not stopped and restarted using the same , corrected baseline , inconsistent configurations would be tested , producing potentially meaningless results and wasted effort .
+
+dcc outages caused by old , out - of - production equipment have disrupted air traffic , producing costly airline delays as air traffic control centers must reduce traffic volumes to compensate for lost system capability .
+
+the outages are likely to become increasingly disruptive as the availability of dcc spare parts and repair technicians shrink .
+
+faa has thus far made good progress in its efforts to replace dcc with dccr .
+
+although key acquisition milestones , events , and risks remain , faa is currently on track to deliver promised capabilities ahead of schedule and within budget .
+
+how successful faa will ultimately be , however , depends on how effectively it performs key remaining tasks , such as system - level testing , and how effectively it manages known acquisition risks .
+
+while faa has formal strategies and efforts underway to address some of these risks , two risks associated with upcoming concurrent system - level testing — contention for human test resources and test baseline configuration change control — are not being formally managed .
+
+as a result , faa has no assurance that either risk will be carefully and effectively mitigated .
+
+to maximize the likelihood of delivering promised dccr capabilities on time and within contract budgets , we recommend that you direct the faa administrator to ensure that ( 1 ) contention for human test resources during dccr concurrent test activities and ( 2 ) change control over system test configuration baselines during concurrent test activities are managed as formal program risks .
+
+at a minimum , this formal risk management should include definition , implementation , and tracking of risk mitigation strategies .
+
+on september 17 , 1996 , we discussed a draft of this report with department of transportation and faa officials , including faa's dccr deputy project manager and faa's program director for airway facilities requirements .
+
+these officials agreed with the report's conclusions and recommendations , and commented that both risk areas have been added to the dccr risk watch list .
+
+our review of the latest risk watch list confirmed that the risks are now being formally managed .
+
+this report contains recommendations to you .
+
+the head of a federal agency is required by 31 u.s.c .
+
+720 to submit a written statement on actions taken on these recommendations .
+
+you should send your statement to the senate committee on governmental affairs and the house committee on government reform and oversight within 60 days after the date of this report .
+
+you must also send the written statement to the house and senate committees on appropriations with the agency's first request for appropriations made over 60 days after the date of this report .
+
+we are sending copies of this letter to relevant congressional committees and subcommittees , the director of the office of management and budget , the administrator of the federal aviation administration , and other interested parties .
+
+we will send copies to others upon request .
+
+if you have questions or wish to discuss the issues in this report , please contact me at ( 202 ) 512-6412 .
+
+major contributors to this report are listed in appendix iv .
+
+because dccr is a critical , yet short - lived , system and because of faa's poor track record in acquiring atc systems , we reviewed the dccr acquisition .
+
+our objectives were to determine ( 1 ) the portion of the recent major outages experienced at the five dcc - equipped en route centers that were attributable to dcc , ( 2 ) whether dcc was meeting its system availability requirement , ( 3 ) faa's projections of future dcc outages and availability , and ( 4 ) whether faa was effectively managing the dccr acquisition to ensure delivery of specified capabilities on schedule and within estimated cost .
+
+to determine what portion of recent major outages at the five dcc - equipped en route centers were attributable to dcc , we used information from a may 21 , 1996 , faa report entitled summary of major outages at centers to calculate by cause the number of major outages and the amount of down time associated with these outages .
+
+we also interviewed the faa airway facilities service official who collected the data used in the report to clarify their meaning and define the term “major outage.” we did not verify the information contained in this report concerning the number and cause of the outages or the amount of downtime resulting from the outages .
+
+to determine whether dcc was meeting its system availability requirement , we collaborated with faa to calculate dcc's required availability using data from the system specification .
+
+we then compared required availability to dcc's actual availability for fiscal years 1990 through 1995 , which we obtained from faa's national airspace performance analysis system .
+
+we did not verify the reliability of dcc's actual availability data generated by the performance analysis system .
+
+to assess future dcc outages and availability , we obtained faa projections of the number of dcc outages and the associated mttr for these outages for calendar years 1996 through 2000 , reviewed faa's supportability review of display channel complex ( dcc ) and computer display channel ( cdc ) ( initial report ) , dated may 1995 , and supportability review update of display channel complex ( dcc ) hardware , dated march 1996 , and interviewed air traffic services officials responsible for these reports .
+
+we also interviewed national transportation safety board officials about the findings in their special investigation report , air traffic control equipment outages , dated january 1996 .
+
+to determine whether faa is effectively managing the dccr acquisition , we analyzed project and contractor documentation concerning ( 1 ) key acquisition and development process areas , such as test and evaluation , risk management , configuration management , and quality assurance , and ( 2 ) indicators of product quality , such as trends in reported defects .
+
+we also interviewed dccr project officials and contractor representatives , and analyzed project office and contractor reports addressing progress against cost and schedule plans and budgets .
+
+we did not evaluate the reliability of the systems that produced these reports .
+
+on the basis of our analysis , we assessed the dccr risk watch list to ensure that all significant risks were being formally managed .
+
+in support of all four objectives , we visited one of the five en route centers that is dcc - equipped to observe the system in operation and discuss with controller and maintenance technician representatives dcc functions , mission importance , and performance .
+
+we requested comments on a draft of this product from the secretary of transportation .
+
+on september 17 , 1996 , we obtained oral comments from transportation and faa officials .
+
+these comments have been incorporated in the report as appropriate .
+
+we performed our work at faa headquarters in washington , d.c. , the faa technical center in atlantic city , new jersey , and the washington en route center in leesburg , virginia .
+
+our work was performed from march 1996 through september 1996 , in accordance with generally accepted government auditing standards .
+
+ ( naracs ) .
+
+collects surface observations data from awos and asos and distributes these data to weather processing and display systems .
+
+provides capability for real - time and nonreal - time monitoring of en route center systems , remote control of equipment and facilities , communications / coordination , and system security .
+
+provides backup air - to - ground radio voice communications service in the event of a failure of the primary or secondary air - to - ground radio system .
+
+provides fdio print capability .
+
+provides display capability that will be replaced by dsr .
+
+provides display capability that will be replaced by dsr .
+
+provides display capability that will be replaced by dccr , which will in turn be replaced by dsr .
+
+provides display capability that will replace dcc .
+
+provides character and image display capability that will be replaced by dsr .
+
+provides an interfacility multiplexed data transmission network .
+
+controls local and remote air - to - ground radios .
+
+make legal recordings of all voice communications between air traffic controllers and pilots .
+
+provides a backup to hcs for radar processing , and radar track and display processing .
+
+provides flight data input / output capability by transferring flight data inter - / intrafacility .
+
+provides the processing capability to support afss workstations and automated pilot briefings , and maintains a national flight service database .
+
+processes radar surveillance data , associates flight plans with tracks , processes flight plans , performs conflict alerts , and processes weather data .
+
+provides capability for data entry and display and provides a standard serial data interface to connect to a rms .
+
+provides capability for real - time monitoring and alarm notification , certification parameter data logging , automatic record keeping and information retrieval , and trend analysis , failure anticipation , remote control of equipment and facilities , diagnostic and fault isolation , remote adjustments , and system security .
+
+provides weather data processing and display .
+
+make legal recordings of all voice communications between air traffic controllers and pilots .
+
+ ( continued ) systems within the en route center and their functions ( continued ) provides minimum essential command , control , and communications capabilities to direct the management , operation , and reconstitution of the national airspace system during a national or local emergency .
+
+provides interfacing capability to hcs .
+
+provides communication network for transmitting data via addressed packets .
+
+provides the capability to request and display nexrad weather data .
+
+provides aircraft situation display capability for the controller that is to be replaced by dsr .
+
+controls local and remote air - to - ground radios .
+
+provides fdio remote print capability .
+
+provides national radio communications system emergency communications essential during and after earthquakes , hurricanes , and tornadoes .
+
+provides air - to - ground voice communication services and ground - to - ground voice communication services between controllers , other atc personnel , and others at the same and different en route centers and other atc facilities .
+
+provides track generation and traffic display as part of the oceanic traffic planning system .
+
+oceanic system that displays aircraft position based on extrapolations from flight plans .
+
+provides a display showing the location of aircraft across the country that is used for strategic planning purposes .
+
+provides national level management and monitoring of the airspace system , including air traffic flow , aircraft operations , and en route sector and airport utilization and loading .
+
+systems and facilities outside but interfacing with an en route center automated flight service station workstation air route surveillance radar - 1 air route surveillance radar - 2 air route surveillance radar - 3 air route surveillance radar - 4 ( continued ) explanatory notes to simplified block diagram of an en route center's systems environment systems and facilities outside but interfacing with an en route center ( continued ) .
+
+faa's display system replacement ( dsr ) is precisely what its name suggests — a system to replace air traffic controllers' existing display - related systems in each of the en route centers , including pvds , channel complexes ( i.e. , dcc , dccr , and cdc ) , multiplexors , display generators , and various other peripheral devices .
+
+accordingly , dsr consists of controller workstations connected via a local area network to three interfacing systems ( hcs , edarc , and weather and radar processor ) .
+
+while providing controllers a modern atc system interface ( i.e. , aircraft situation monitor ) , dsr is not intended to introduce new situation data , images , displays , or functions .
+
+thus , faa anticipates that dsr will minimally impact how atc operations are performed .
+
+however , dsr is expected to provide significant improvements in display system reliability ( via fault tolerant software and redundant hardware and networks ) , maintainability ( via high level application languages and integrated monitoring and control functions ) , and expandability ( via an open system architecture ) .
+
+faa currently plans to deploy dsr to all 20 en route centers in the continental united states , as well as atc facilities in anchorage and potentially in honolulu .
+
+according to faa's air traffic systems development status report dated june 1996 , dsr's project cost estimate is about $1.06 billion , and as of may 31 , 1996 , $379 million has been obligated .
+
+the operational readiness date for the first site ( seattle ) is october 1998 and the last site ( anchorage ) is june 2000 .
+
+harold j. brumm , economist the first copy of each gao report and testimony is free .
+
+additional copies are $2 each .
+
+orders should be sent to the following address , accompanied by a check or money order made out to the superintendent of documents , when necessary .
+
+visa and mastercard credit cards are accepted , also .
+
+orders for 100 or more copies to be mailed to a single address are discounted 25 percent .
+
+u.s. general accounting office p.o .
+
+box 6015 gaithersburg , md 20884-6015 room 1100 700 4th st. nw ( corner of 4th and g sts .
+
+nw ) u.s. general accounting office washington , dc orders may also be placed by calling ( 202 ) 512-6000 or by using fax number ( 301 ) 258-4066 , or tdd ( 301 ) 413-0006 .
+
+each day , gao issues a list of newly available reports and testimony .
+
+to receive facsimile copies of the daily list or any list from the past 30 days , please call ( 202 ) 512-6000 using a touchtone phone .
+
+a recorded menu will provide information on how to obtain these lists .
+

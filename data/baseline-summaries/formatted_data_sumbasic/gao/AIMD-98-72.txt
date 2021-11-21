@@ -1,0 +1,628 @@
+the year 2000 problem results from the inability of computer systems at the year 2000 to interpret the century correctly from a recorded or calculated date having only two digits to indicate the year .
+
+time is running out to correct department of defense systems that could malfunction or produce incorrect information when the year 2000 is encountered during automated data processing .
+
+the impact of these failures could be widespread , costly , and potentially disruptive to military operations worldwide .
+
+for an organization as large as defense — with over 1.5 million computers , 28,000 systems , and 10,000 networks — addressing its year 2000 problem is a formidable task .
+
+several defense components are larger than most civil agencies and , in addition to the computers themselves , thousands of embedded microprocessors used in a variety of equipment such as telephone switches , traffic control , security , and elevator control systems , and some weapons systems must be checked for year 2000 vulnerabilities .
+
+in view of the impact this problem can have on warfighting and military support missions , you requested that we review the department of defense's program for solving the year 2000 computer systems problem .
+
+in response to your request , we have separately reviewed year 2000 efforts being carried out by the army , navy , and air force ; the defense logistics agency ( dla ) ; the defense finance and accounting service ( dfas ) ; the defense information systems agency ( disa ) ; and three central design activities .
+
+this report assesses ( 1 ) the overall status of defense's effort to identify and correct its date - sensitive systems and ( 2 ) the appropriateness of defense's strategy and actions to correct its year 2000 problems .
+
+our objectives were to determine ( 1 ) the overall status of defense's effort to identify and correct its date sensitive systems and ( 2 ) the appropriateness of defense's strategy and actions to correct these systems .
+
+in conducting our review , we used our year 2000 assessment guide to assess defense's year 2000 efforts .
+
+this guide addresses common issues affecting most federal agencies and presents a structured approach and a checklist to aid in planning , managing , and evaluating year 2000 programs .
+
+the guidance , which is consistent with defense's year 2000 management plan describes five phases — supported by program and project management activities — with each phase representing a major year 2000 program activity or segment .
+
+the phases and a description of each follows .
+
+awareness - define the year 2000 problem and gain executive - level support and sponsorship for a year 2000 program .
+
+establish a year 2000 program team and develop an overall strategy .
+
+ensure that everyone in the organization is fully aware of the issue .
+
+assessment - assess the year 2000 impact on the enterprise .
+
+identify core business areas and processes , inventory and analyze systems supporting the core business areas , and prioritize their conversion or replacement .
+
+develop contingency plans to handle data exchange issues , lack of data , and bad data .
+
+identify and secure the necessary resources .
+
+renovation - convert , replace , or eliminate selected platforms , applications , databases , and utilities .
+
+modify interfaces .
+
+validation - test , verify , and validate converted or replaced platforms , applications , databases , and utilities .
+
+test the performance , functionality , and integration of converted or replaced platforms , applications , databases , utilities , and interfaces in an environment that faithfully represents the operational environment .
+
+implementation - implement converted or replaced platforms , applications , databases , utilities , and interfaces .
+
+implement data exchange contingency plans , if necessary .
+
+during our review , we concentrated on defense's department - level year 2000 program , managed by the assistant secretary of defense , command , control , communications and intelligence ( asd c3i ) , who is also the defense chief information officer .
+
+to determine how defense components and their organizations were implementing defense policy and managing their year 2000 program efforts , we also reviewed year 2000 efforts being carried out by army , navy , and air force headquarters , three defense agencies , and three central design activities .
+
+we also visited a number of other organizations including the joint chiefs of staff , the global command control system ( gccs ) program office , and the national security agency .
+
+the scope and methodology of these individual reviews are detailed in the following gao reports: defense computers: air force needs to strengthen year 2000 oversight ( gao / aimd - 98-35 , january 16 , 1998 ) .
+
+defense computers: technical support is key to naval supply year 2000 success ( gao / aimd - 98-7r , october 21 , 1997 ) .
+
+defense computers: lssc needs to confront significant year 2000 issues ( gao / aimd - 97-149 , september 26 , 1997 ) .
+
+defense computers: ssg needs to sustain year 2000 progress ( gao / aimd - 97-120r , august 19 , 1997 ) .
+
+defense computers: issues confronting dla in addressing year 2000 problems ( gao / aimd - 97-106 , august 12 , 1997 ) .
+
+defense computers: dfas faces challenges in solving the year 2000 problem ( gao / aimd - 97-117 , august 11 , 1997 ) .
+
+reports on the army and navy year 2000 programs are being developed .
+
+we also reviewed efforts by the department to improve the defense integration support tools database ( dist ) , which serves as the defense inventory of automated information systems and is intended to be used as a tool to help defense components in correcting year 2000 date problems .
+
+the scope and methodology of this work is further detailed in our report , defense computers: improvements to dod systems inventory needed for year 2000 effort ( gao / aimd - 97-112 , august 13 , 1997 ) .
+
+in conducting the individual component reviews and assessing oversight efforts from defense headquarters , we reviewed and analyzed official memoranda and other documents discussing defense and component year 2000 policy and procedures ; the june 1996 and february 1997 defense and component responses to year 2000 questions from the house government operations committee , subcommittee on oversight ; the january 1997 action plan for year 2000 information technology compliance ; defense's may 1997 , august 1997 , november 1997 , and february 1998 component quarterly reports on year 2000 program status to asd c3i , and defense's subsequent department - level reports to the office of management and budget ; year 2000 status briefings to the deputy secretary of defense by the military services , the joint chiefs of staff , disa , dfas , and dla ; early drafts and the final april 1997 versions of the defense year 2000 management plan ; and year 2000 inventory data compiled by asd c3i , defense components , and their subcomponents .
+
+we also reviewed and monitored year 2000 internet homepages maintained by various contractors , government agencies , asd c3i , disa , the army , the navy , the air force , the marine corps , and subcomponents ; and minutes of federal , defense , and air force year 2000 working groups .
+
+in addition , we held discussions with various defense department , component and subcomponent officials concerning year 2000 problems , corrective actions , and related operational and programmatic impacts of the program .
+
+we conducted structured interviews on program policies and practices with defense department and component - level year 2000 program officials .
+
+we also reviewed the output of various defense computer generated databases and management information systems related to year 2000 activities , but did not verify the integrity of the data in these systems .
+
+our audit work on this overview report was conducted from august 1997 through february 1998 in accordance with generally accepted government auditing standards .
+
+we requested written comments on a draft of this report from defense .
+
+the acting principal deputy of the office of the assistant secretary of defense for command , control , communications and intelligence provided written comments , which are discussed in the “agency comments and our evaluation” section and reprinted in appendix ii .
+
+most of defense's automated information systems and weapon systems computers are vulnerable to the year 2000 problem , which is rooted in the way dates are recorded , computed , and transmitted in automated information systems .
+
+for the past several decades , systems have typically used two digits to represent the year , such as “97” representing 1997 , in order to conserve electronic data storage and reduce operating costs .
+
+with this two - digit format , however , the year 2000 is indistinguishable from 1900 , or 2001 from 1901 , etc .
+
+as a result of this ambiguity , systems or application programs that use dates to perform calculations , comparisons , or sorting may generate incorrect results when working with years after 1999 .
+
+for example , the defense logistics agency's standard automated material management system is used to manage defense's vast inventory of supplies .
+
+because it uses dates to automatically target items for deletion , the system erroneously targeted more than 90,000 items for deletion before defense discovered the problem in 1996 .
+
+in addition , any electronic device that contains a microprocessor or is dependent on a timing sequence may be also vulnerable to year 2000 problems .
+
+this includes computer hardware , telecommunications equipment , building and base security systems , street lights at military installations , elevators , and medical equipment .
+
+for example , defense components reported to asd c3i in february 1998 that more than half of the over 730,000 personal computers they had checked had a year 2000 problem .
+
+for defense , the year 2000 effort is a significant management challenge because it relies heavily on computers to carry out aspects of all operations , and time for completing year 2000 fixes is short .
+
+for example , the department is responsible for more than 1.5 million computers , 28,000 automated information systems , and 10,000 networks .
+
+its information systems are linked by thousands of interfaces that exchange information within defense and across organizational and international lines .
+
+successful operation after january 1 , 2000 , requires that defense's systems and all of the systems that they interface with be year 2000 compliant .
+
+should defense fail to successfully address the year 2000 problem in time , its mission - critical operations could be severely degraded or disrupted .
+
+for example: in an august 1997 operational exercise , the global command control system failed testing when the date was rolled over to the year 2000 .
+
+gccs is deployed at 700 sites worldwide and is used to generate a common operating picture of the battlefield for planning , executing , and managing military operations .
+
+the u.s. and its allies , many of whom also use gccs , would be unable to orchestrate a desert storm - type engagement in the year 2000 if the problem is not corrected .
+
+the global positioning system ( gps ) is widely used for aircraft and ship navigation ( commercial and military ) and for precision targeting and “smart” bombs .
+
+the ground control stations use dates to synchronize the signals from the satellites and maintain uplinks to the satellites .
+
+failure to correct year 2000 problems could cause these stations to lose track of satellites and send erroneous information to the millions of users who rely on gps .
+
+the defense message system ( dms ) is being developed to replace the aging automated digital network ( autodin ) .
+
+these systems provide critical capabilities such as secure messaging for important operations such as intelligence gathering , diplomatic communications , and military command and control .
+
+should year 2000 problems render dms or autodin inoperable or unreliable , it would be difficult to monitor enemy operations or conduct military engagements .
+
+aircraft and other military equipment could be grounded because the computer systems used to schedule maintenance and track supplies may not work .
+
+defense could incur shortages of vital items needed to sustain military operations and readiness — such as food , fuel , medical supplies , clothing , and spare and repair parts to support its over 1,400 weapons systems .
+
+billions of dollars in payments could be inaccurate because the computer systems used to manage thousands of defense contracts may not correctly process date - related information .
+
+active duty soldiers and military retirees may not get paid if the systems used to make calculations and prepare checks are not repaired in time .
+
+defense plans to resolve its year 2000 problem using a five - phased process comparable to that in our year 2000 assessment guide .
+
+in keeping with its decentralized approach to information technology management , defense has charged its components with responsibility for making sure that all of their systems correctly process dates .
+
+the assistant secretary of defense for command , control , communications and intelligence ( asd c3i ) , as the department's chief information officer , is responsible for leading defense efforts to solve the year 2000 problem .
+
+further , defense is requiring the components to reprogram existing funds to correct their systems and will provide no additional funds for year 2000 fixes .
+
+as of february 1998 , defense estimated that it would cost $1.9 billion to address its year 2000 problem , but as discussed later , we question the reliability of this estimate .
+
+to increase the awareness of the year 2000 problem and to foster coordination among components , defense has taken the following actions: in a november 27 , 1995 , memo , the asd c3i alerted components to the problem and called on them to begin corrective actions if they had not already done so .
+
+in december 1996 , defense established the year 2000 steering committee , chaired by the deputy secretary of defense , to oversee progress , provide departmentwide guidance , and make decisions related to the year 2000 .
+
+members , which include the department's chief information officers , chief financial officer , general counsel and the acquisition executive also discuss year 2000 issues and exchange information on their programs .
+
+the steering committee began meeting in september 1997 .
+
+defense established a year 2000 working group to support the activities and deliberations of the steering committee .
+
+the group is chaired by an asd c3i staff member .
+
+each component has assigned a representative to the group to investigate year 2000 and cross - functional issues , provide recommendations , identify and share lessons learned , and avoid duplication of effort within defense .
+
+in october 1996 , the asd c3i began a series of interface workshops intended to better coordinate year 2000 efforts in various functional areas .
+
+these workshops are intended to ensure information systems and processes that exchange data are assessed and will be year 2000 compliant .
+
+workshops are conducted for specific functional areas and will continue until year 2000 problems are resolved .
+
+in april 1997 , defense issued its year 2000 management plan , which formalized its year 2000 strategy and delineated the activities involved in each phase of its five - phased approach to remediation .
+
+the plan also identified responsibilities of the year 2000 steering committee , the year 2000 working group , the asd c3i , the defense information systems agency , and the assistant secretary of defense for intelligence systems ; established reporting requirements , target completion dates , and exit criteria for each of the program phases ; provided guidance on estimating costs ; and provided a compliance checklist .
+
+in may 1997 , defense enlisted its inspector general to help oversee the department's year 2000 program , validate the data on year 2000 status being reported by each component , identify problems areas , and recommend corrective actions .
+
+in july 1997 , a defense science board panel was convened to determine whether the department's strategy , priorities , resources , and funding are sufficient to ensure that all mission - critical systems will be corrected in time .
+
+defense has extensively used the internet to establish year 2000 home pages , information libraries , and links to other federal and nongovernment year 2000 organizations , to enhance awareness and understanding of the year 2000 problem .
+
+in february 1998 , defense reported to omb that it had 2,915 mission - critical systems and 25,671 nonmission - critical systems .
+
+according to defense , 1,886 mission - critical systems need to be repaired and about half of these are in the renovation phase and a third in the validation phase .
+
+in addition , defense now reports that 15,786 nonmission - critical systems need to be repaired , an increase of over 6,500 systems from the number reported by components in november 1997 .
+
+like the mission - critical systems , about half of these nonmission - critical systems are reported to be in the renovation phase .
+
+defense has taken a long time in the early phases of its year 2000 program and its progress in fixing systems has been slow .
+
+for example , defense took 16 months to issue its year 2000 management plan , 1 year to establish the year 2000 steering committee , and an additional 9 months for the committee to hold its first meeting .
+
+in addition , defense is still assessing systems even though it originally anticipated that this would be done in june 1997 .
+
+in february 1998 , defense reported that only about 130 mission - critical systems had completed repairs since november 1997 .
+
+technology experts like the mitre corporation and the gartner group , estimate that about 70 percent of an organization's total effort will be required for the renovation , validation , and implementation phases .
+
+with less than 20 months remaining and most mission - critical systems in these three phases , defense is running out of time to make the necessary repairs before the year 2000 deadline .
+
+specific reported totals for february 1998 are shown in table 1 .
+
+as discussed later in this report , we question the reliability of this information .
+
+information on personal computers and communications and facility equipment reported by components is provided in table 2 .
+
+we have separately reported on year 2000 efforts being carried out by the military services , three defense agencies , and three central design activities .
+
+our reviews have shown that individual components have also taken positive actions to increase awareness .
+
+for example , the air force established an air force year 2000 working group comprised of focal points from each major command , field operating agency , and direct reporting unit .
+
+the group has focused on such matters as sharing lessons learned , eliminating duplicative efforts , sharing resources , and tracking component progress .
+
+also , the air force and other components , such as dfas and dla , each developed written year 2000 plans that adopted the five - phased approach .
+
+in addition , these components , as well as some other organizations , such as the central design activities we reviewed , established year 2000 program offices and designated program managers .
+
+however , there were systemic weaknesses in component year 2000 programs .
+
+for example , many of the components failed to develop contingency plans during the assessment phase to ensure that critical operations can continue in the face of unforeseen problems or delays .
+
+they also were not effectively planning to ensure the availability of needed testing facilities and resources .
+
+and they had not fully identified interfaces or communicated their year 2000 plans to their interface partners .
+
+finally , none of the three military services had developed accurate and reliable cost estimates as their systems were assessed .
+
+our findings with regard to these reviews are noted throughout this report and are detailed in appendix i .
+
+in view of the magnitude of the year 2000 problem , our assessment guide recommends that agencies plan and manage the year 2000 program as a single large information system development effort and promulgate and enforce good management practices on the program and project levels .
+
+the guide also recommends that agencies appoint a year 2000 program manager and establish an agency - level year 2000 program office .
+
+defense has not supported its decentralized approach to the year 2000 effort with a program manager or an agency - level year 2000 program office .
+
+instead of establishing a department - level program office , defense assigned five full - time staff members in the office of the asd c3i to oversee the progress of 23 major components and over 28,000 information systems .
+
+the group does not have authority to enforce good management practices , direct resources for special needs , or even to question the validity of the data being reported from components .
+
+in addition , this group is not supported by an executive that can focus on the year 2000 problem full - time .
+
+for example , the asd c3i , who has been assigned to lead the effort , is also responsible for ( 1 ) providing guidance and oversight for all command , control , communications , and intelligence projects , programs , and systems being acquired by defense and its components , ( 2 ) chairing the major automated information system review council , ( 3 ) serving as the principal defense official responsible for software policy and practices , and ( 4 ) establishing and implementing information management policy , processes , programs , and standards .
+
+furthermore , defense has not promulgated and enforced good management practices for year 2000 corrective efforts .
+
+for example , defense has not provided guidance and authoritative direction needed to ensure that components effectively ( 1 ) identify “a system” for purposes of year 2000 reporting , ( 2 ) communicate year 2000 plans to interface partners , ( 3 ) address conflicts between interface partners , and ( 4 ) identify common standards and procedures to use in testing .
+
+in addition , it has not been validating the information being reported by its components for completeness and accuracy or tracking component progress in completing important year 2000-related activities , such as contingency planning , acquiring additional test facilities , and prioritizing systems .
+
+because it lacks strong management and oversight controls over year 2000 remediation efforts , defense has failed to successfully address a number of steps that are fundamental to correcting mission - critical systems on time .
+
+first , defense does not yet have a complete inventory of systems .
+
+without this , it cannot reliably determine what resources it needs or identify problems requiring greater management attention .
+
+second , defense has not ensured that mission - critical systems are receiving a higher priority than nonmission - critical systems .
+
+third , defense has neither identified all system interfaces nor ensured that its components are effectively working with their interface partners to correct the interfaces .
+
+fourth , defense has not ensured that facilities are available for year 2000-related testing or that component testing requirements are consistent .
+
+fifth , defense does not know if components have developed contingency plans necessary to ensure that essential mission functions can be performed even if critical mission systems are not corrected in time .
+
+sixth , defense does not have a reliable estimate of year 2000 problem correction costs .
+
+these weaknesses and their impact on defense's year 2000 remediation efforts are discussed in the following sections .
+
+our assessment guide noted that a key part of the assessment phase is to conduct an enterprisewide inventory of information systems for each business area .
+
+such an inventory should include specific information such as the business processes that systems support , the potential impact on those business processes if systems are not fixed on time , and the progress components are making in correcting their systems .
+
+this provides the necessary foundation for year 2000 program planning .
+
+defense , however , does not yet have a complete and accurate inventory of its systems and other equipment needing repair .
+
+as a result , it does not have a clear picture of its overall year 2000 correction efforts and it cannot reliably determine what resources it needs or identify problems that require greater management attention .
+
+defense is requiring its components to submit quarterly year 2000 progress reports and to input system information into the departmentwide database of automated information systems , known as the defense integration support tools ( dist ) database .
+
+however , many components are still identifying their systems , interfaces , and / or other equipment that may be affected by the year 2000 problem , such as telecommunications equipment , elevators , and security systems .
+
+for example , defense components are still adding systems to the inventory ; the total number of nonmission - critical systems increased by over 3,700 systems between november 1997 and february 1998 .
+
+the air force , the national reconnaissance office , the national security agency , and the under secretary of defense for acquisition and technology have not yet identified other equipment needing repair such as personal computers and telecommunications equipment .
+
+eleven components , including the defense information systems agency and the joint chiefs of staff , have not yet identified interfaces .
+
+in addition , defense headquarters does not validate the information it is receiving from its components for accuracy or completeness before reporting its status quarterly to the office of management and budget .
+
+similarly , navy headquarters does not validate the information being reported by its components and system managers .
+
+the army and the air force have enlisted their audit agencies to help validate information being reported by components .
+
+these audits have identified large discrepancies between information maintained by the services and information maintained by individual system owners .
+
+further , defense has not provided sufficient guidance to components to ensure they use a common definition of a “system” for reporting purposes .
+
+this has further degraded the accuracy of defense's inventory reporting .
+
+if not precisely defined , one “system” can be interpreted to mean a small application comprised of a few hundred lines of code or the entire collection of systems aboard a major weapon system .
+
+at defense , a variety of interpretations are being used .
+
+for example , in august 1997 , the air force's f - 16 and f - 15 weapon system programs reported each system aboard an aircraft ( 86 and 32 systems , respectively ) while the c - 17 and b - 2 programs treated all onboard systems as a single system .
+
+since each system must be corrected individually , aggregating onboard systems into a single system causes defense's inventory to be understated .
+
+in addition , while some organizations reported these smaller applications that downloaded and processed information from their major automated information systems , the defense logistics agency did not consider these programs as systems .
+
+with some organizations reporting on these systems and others , like dla , not reporting them , defense's inventory is further understating the number of systems that need to be corrected .
+
+on february 4 , 1998 , due to concerns that extensive and detailed information on all of the department's mission critical systems was available on the internet , the asd c3i classified dist as “secret” — meaning that anyone requiring access to the database must have a validated security clearance and access to secure computer and communications equipment .
+
+dist was removed from the internet and will remain unavailable until detailed access and security procedures are developed and put in place .
+
+as a result , at the close of our review , dist was not available for system managers to update the year 2000 status of their systems or determine the status of interfaces or interfacing systems , and defense and component year 2000 officials could not use it as a program management tool .
+
+in addition , organizations such as the navy , which rely on the dist for their only source of inventory information , were directed to create separate databases to meet their quarterly inventory reporting and program management requirements .
+
+in commenting on our draft report , defense officials told us that asd c3i was in the process of defining options for a new database to replace dist .
+
+the new inventory , which defense intends to be unclassified , would not have as much detailed information on systems as dist ; instead , it would only contain year 2000-relevant data .
+
+asd c3i officials plan to have the new system in place by mid - summer 1998 .
+
+until this new system is in place , defense will lack a central source for inventory and status information on defense's year 2000 program .
+
+in addition , the new database will be as ineffective as dist unless components ensure that the information they submit is accurate and complete and defense headquarters validates their submissions .
+
+according to our assessment guide , an important aspect of the assessment phase is prioritizing the remediation of the systems that have the highest impact on an agency's mission and thus need to be corrected first .
+
+this helps an agency ensure that its most vital systems are corrected before systems that do not support the agency's core business .
+
+defense's year 2000 plan states that the highest priority should be given to systems that are critical to warfighting and peacekeeping missions and the safety of individuals .
+
+the plan makes each component responsible for prioritizing its own systems .
+
+this approach is flawed .
+
+since all components' functions are not equally essential to defense's core missions , defense cannot define its priorities simply by aggregating components' priorities .
+
+for example , as noted in a defense science board report , defense has no means of distinguishing between the priority of a video conferencing system listed as mission - critical by one component and a logistics system listed as mission - critical by another component .
+
+if it had such a means , the board estimated that the number of “priority mission - critical systems” would be reduced by a factor of 10 or greater .
+
+once defense decides the relative priority of its mission - critical systems , it will still need to ensure that its mission - critical rather than nonmission - critical systems receive focused management attention and resources .
+
+however , according to its status reports , defense is correcting nonmission - critical systems nearly as quickly as its mission - critical systems .
+
+in february 1998 , it reported that 83 percent of its mission - critical systems being repaired were in the renovation or validation phases versus about 80 percent of it nonmission - critical systems .
+
+defense systems interface with each other as well as with systems belonging to contractors , other federal agencies , and international organizations .
+
+for example , supply orders originating from the military services are filled and payments to contractors are made through automated interfaces .
+
+therefore , it is essential that defense agencies ensure that external noncompliant systems not introduce and / or propagate year 2000-related errors to compliant defense systems and that interfaces function after january 1 , 2000 .
+
+defense has held a series of interface assessment workshops for individual functional areas such as finance , logistics , and intelligence in order to raise awareness of the interface problem .
+
+while these workshops have helped to acquaint high - level managers with the nature and extent of interface problems , much more effort is needed to assist system managers in making corrections .
+
+first , as noted earlier , the department does not know how many interfaces exist among its systems .
+
+seven of 28 components ( 25 percent ) including the joint chiefs of staff did not report interface information on their february 1998 inventory .
+
+in addition , four components , including the national security agency and the national reconnaissance office reported their interfaces as “to be determined.” three additional components — including the navy , defense intelligence agency and air force intelligence — reported interfaces , but had not yet determined whether they were affected by the year 2000 problem .
+
+the longer it takes defense to identify all interfaces and determine which ones need to be corrected , the greater the risk will be that it will discover too late in its year 2000 effort that systems will not be able to accommodate the year 2000 changes from a connecting system .
+
+second , defense has not provided sufficiently definitive guidance to establish ( 1 ) who is responsible for correcting interfaces and ( 2 ) how conflicts — for example , who should fund corrective actions — between interface partners will be resolved .
+
+such guidance is necessary since interface problems will likely cut across command , functional , and component lines and may involve contractors , other government agencies , and international organizations .
+
+finally , in order for interfaces to work , both ends need to know what to send and what to expect .
+
+this requires formal documentation of the details on data formats , the timing of format changes , etc .
+
+while the april 1997 management plan directed components to prepare written agreements with their interface partners , defense has not provided guidance to its components on what the content of interface agreements should be .
+
+components have been slow in responding to the management plans direction .
+
+for example , at the time of our review , none of the components we reviewed had completed preparation of all required interface agreements .
+
+the army year 2000 project office reported that its components were behind in their efforts to do so .
+
+defense components have concurred with our recommendations to date concerning the need to develop interface agreements .
+
+however , they are still not being uniformly required across the department .
+
+until these agreements are prepared , defense components will run the risk that key interfaces will not work .
+
+the validation ( testing ) phase of the year 2000 effort is expected to be the most expensive and time - consuming .
+
+experts estimate that it will account for 45 percent of the entire effort .
+
+as defense's year 2000 management plan notes , the testing phase will be complex since “components must not only test year 2000 compliance of individual applications , but also the complex interactions between scores of converted or replaced computer platforms , operating systems , utilities , , databases , and interfaces.” in some instances , the plan notes , defense components may not be able to shut down their production systems for testing , and may have to operate parallel systems implemented on a year 2000 test facility .
+
+also , because over 17,500 systems will require testing prior to the march 1999 testing deadline , it will be important to plan for the use of testing resources carefully .
+
+to mitigate risks associated with testing , our year 2000 assessment guide calls on agencies to develop validation strategies and test plans , and to ensure that resources , such as facilities and tools , are available to perform adequate testing .
+
+validation strategies are developed at an organization - wide level to ensure that common testing requirements are used by all locations .
+
+our assessment guide further notes that this planning should begin in the assessment phase since agencies may need over a year to adequately validate and test converted or replaced systems for year 2000 compliance .
+
+defense lacks an overall validation strategy that specifies uniform criteria and processes which components should use in testing their systems .
+
+defense's management plan includes a checklist for certifying year 2000 compliance , but does not require components to use it .
+
+likewise , a number of major components — including dfas , the navy , the air force , and the army — have not developed such strategies nor were they ensuring that the organizations reporting to them did so .
+
+as a result , defense runs the risk that all systems and interfaces will not be thoroughly and carefully tested .
+
+another important aspect of planning for the test phase is to define requirements for test facilities .
+
+as our year 2000 assessment guide notes , agencies may have to acquire additional facilities in order to provide an adequate testing environment .
+
+because of the length and complexity of the testing phase and the potential that facilities may not be available , our guide recommends that this planning begin in the assessment phase .
+
+we found that the navy , the air force , the army had not yet begun this planning .
+
+the defense information systems agency , which operates the department's central computer centers , has only recently begun assessing what the demand for its facilities will be .
+
+the longer defense waits to begin assessing the demand for and the adequacy of test facilities , the less time it will have to acquire additional facilities or otherwise ensure that all mission - critical systems can be tested before the year 2000 deadline .
+
+to mitigate the risk that year 2000-related problems will disrupt operations , defense's year 2000 management plan and our year 2000 assessment guide recommend that agencies perform risk assessments and develop realistic contingency plans for critical systems and activities .
+
+recent omb directives require quarterly reporting of contingency planning activities .
+
+contingency plans are important because they identify the manual or other fallback procedures to be employed should systems miss their year 2000 deadline or fail unexpectedly in operation .
+
+contingency plans also define the specific conditions that will cause their activation .
+
+since many of its systems are critical to mission performance and defense has fallen behind its own year 2000 schedule , defense must develop contingency plans now for essential mission functions .
+
+however , although defense's year 2000 management plan identifies the need for contingency planning to ensure continuity of core processes , defense is not routinely tracking the status of contingency plans or ensuring that its components are developing them .
+
+the need for oversight is serious since many of the components we reviewed were not developing contingency plans until we recommended that they do so .
+
+for example: at the time of our review of their programs , dla and the naval supply systems command ( navsup ) had no contingency plans because they expected that all of their systems would be completed by the year 2000 deadline and would function correctly .
+
+this assumption is not well founded because even if systems are replaced or corrected on time , there is no guarantee that they will operate correctly .
+
+in addition , in the event that replacement schedules slip , components may not have enough time to renovate , test , and implement a legacy system or identify other alternatives , such as manual procedures or outsourcing .
+
+for example , one system used to help manage dla's mission - critical $5-billion a year fuel commodity operations had already slipped 4 to 5 months behind its october 1998 scheduled replacement date .
+
+both dla and navsup began developing contingency plans after we raised these concerns .
+
+the air force was not tracking the extent to which these plans were being developed by its components for mission - critical systems , and , at the time of our review , five system program offices we surveyed had not prepared such plans .
+
+in response to our report , the air force began ensuring that contingency plans were developed through air force audit agency spot checks and management reviews .
+
+it also plans to develop contingency plans at crisis response centers as well as incorporate year 2000 scenarios into existing contingency plans .
+
+dfas was preparing contingency planning for noncompliant systems to be replaced before the year 2000 .
+
+however , it was not requiring contingency plans for systems being renovated .
+
+we noted that dfas faced a risk that systems being renovated may not be corrected by january 1 , 2000 , and may not operate correctly even if completed .
+
+in response , dfas began developing contingency strategies for these systems .
+
+in january 1998 , the military services briefed the defense's year 2000 steering committee on the status of contingency planning for mission - critical systems .
+
+the army and air force reported that they had completed contingency plans for 49 percent and 30 percent of their mission - critical systems respectively .
+
+the navy is only requiring contingency plans for systems planned to be renovated after june 30 , 1998 , or implemented after january 1 , 1999 .
+
+using this criteria and the navy's current schedule , less than 2 percent of the navy's 812 mission - critical systems are required to have contingency plans .
+
+as defense's year 2000 management plan and our assessment guide state , a primary purpose of the assessment phase is to determine the size and scope of the year 2000 problem and to prioritize remediation activities .
+
+reliable cost estimates are needed to ensure that adequate resources will be available for year 2000 activities .
+
+once reliable estimates have been established , they can provide a baseline to measure program progress and to improve future program management .
+
+in addition , because defense is funding year 2000 efforts from existing budgets , reliable year 2000 cost estimates are needed to assess the impact on future information technology budgets .
+
+defense relies on its components to estimate the cost of their year 2000 efforts , but it has not required that they use a consistent estimating methodology or that they update the estimates when more reliable cost information becomes available during the assessment phase .
+
+defense merely sums up the cost estimates it receives from components to produce the estimate it provides to omb .
+
+as a result , defense's year 2000 cost estimate is neither reliable nor complete , and does not provide a useful management tool for assessing the impact of the year 2000 problem or determining if sufficient resources will be available to complete its fixes .
+
+to make a first rough estimate , defense suggested that components use a cost formula derived from the gartner group and the mitre corporation , which recommends multiplying the number of lines of code by $1.10 for automated information systems and by $8 for weapons systems .
+
+this rough estimate was to be refined by conducting a detailed cost analysis based on more than 30 cost factors as the component progressed through the assessment phase and learned more about its systems and the resources that would be required to fix them .
+
+these include such factors as: the age of systems , the skill and expertise of in - house programmers , the strategy that the agency is pursuing ( strategies that involve keeping the two - digit code , for example , may be much less expensive than those that involve changing the two - digit code to a four - digit code ) , the clarity and completeness of documentation on systems , the availability of source code , and the programming language used by the systems .
+
+however , defense did not require that components use these factors in preparing their quarterly cost estimates or that they refine their rough estimates as more reliable information became available during assessment .
+
+the difference between an estimate based on a more reliable analysis of data collected during the assessment phase and an estimate based on the gartner formula and similar methodologies can be significant .
+
+for example , in august 1996 , the army's logistics systems support center used the gartner formula to project year 2000 costs for its huge commodity command standard system .
+
+based on this formula , it estimated that it would cost $8.4 million to correct the system .
+
+in april 1997 , the center conducted a detailed cost analysis based on data collected during the assessment phase , and found that year 2000 costs would actually be about $12.4 million — a 50 percent increase over the original estimate .
+
+while defense's management plan suggested that components revise their cost estimates as more reliable information becomes available , it has not ensured that components are doing so .
+
+while some components may have refined their estimates with each report to the office of the secretary of defense ( osd ) , the army , the air force , and the navy continue to provide only rough order - of - magnitude estimates using the gartner formula or other formulas provided by contractors , or have omitted significant cost items from their estimates .
+
+for example: the army's november 1997 estimate of $429 million did not include costs for 36 systems .
+
+the navy's november 1997 estimate of $293 million did not include cost information from about 95 percent of the program managers in the naval sea systems command .
+
+naval air systems command also indicated that many program managers were not reporting costs .
+
+the navy estimate also did not include an estimated $15 million associated with fixing telephone switches .
+
+the air force's november 1997 estimate did not include the cost of fixing telephone switches , which was estimated to be between $70 million and $90 million .
+
+until defense has a complete and reliable cost estimate , it will not be able to effectively allocate resources , track progress , make trade - off decisions , or resolve funding disputes .
+
+defense operations hinge on the department's ability to successfully fix its mission - critical computer systems before the year 2000 deadline .
+
+yet defense has left it up to its components to solve the problem themselves without establishing a project office , led by a full - time top - level executive , to ( 1 ) enforce good management practices , ( 2 ) prioritize systems across the department based on criticality to core missions , ( 3 ) provide guidance on areas that components should be addressing consistently and ensure that they are doing so , ( 4 ) direct resources for special needs , and ( 5 ) ensure that data being reported to the office of management and budget and the congress is accurate .
+
+as a result , defense lacks complete and reliable information on systems , interfaces , and costs .
+
+it is allowing nonmission - critical systems to be corrected even though only a small percentage of mission - critical systems have been completed .
+
+it lacks assurance that facilities will be available for testing .
+
+and , it has not ensured that essential mission functions can be performed if critical mission systems are not corrected in time .
+
+until defense supports remediation efforts with adequate centralized program management and oversight , its mission - critical operations may well be severely degraded or disrupted as a result of the year 2000 problem .
+
+we recommend that the secretary of defense: establish a strong department - level program office led by an executive whose full - time job is to effectively manage and oversee the department's year 2000 efforts .
+
+the office should as a minimum have sufficient authority to enforce good management practices , direct resources to specific problem areas , and ensure the validity of data being reported by components on such things as progress , contingency planning , and testing .
+
+expedite efforts to establish a comprehensive , accurate departmentwide inventory of systems , interfaces , and other equipment needing repair .
+
+require components to validate the accuracy of data being reported to osd .
+
+provide guidance that clearly defines a “system” for year 2000 reporting purposes .
+
+clearly define criteria and an objective process for prioritizing systems for repair based on their mission - criticality and ensure that the “most” mission - critical systems will be repaired first .
+
+ensure that system interfaces are adequately addressed by ( 1 ) taking inventory and assigning clear responsibility for each , ( 2 ) tracking progress in year 2000 problem resolution , ( 3 ) requiring interface agreement documentation , and ( 4 ) providing guidance on the content of interface agreements and who should fund corrective actions .
+
+develop an overall , departmentwide testing strategy and a plan for ensuring that adequate resources , such as test facilities and tools , are available to perform necessary testing .
+
+ensure that the testing strategy specifies the common criteria and processes that components should use in testing their systems .
+
+require components to develop contingency plans to ensure that essential operations and functions can be performed even if mission - critical systems are not corrected in time or fail due to year 2000 problems .
+
+track component progress in completing these plans .
+
+prepare complete and accurate year 2000 cost estimates so that the department can assess the full impact of the year 2000 problem , ensure adequate resources are available , and effectively make trade - off decisions to ensure that funds are properly allocated .
+
+in reviewing a draft of this report , the acting principal deputy of the office of the assistant secretary of defense for command , control , communications and intelligence concurred with all of our recommendations to improve defense's year 2000 program .
+
+specifically , defense agreed with the need to establish a strong central year 2000 program office and has appointed a full - time executive to lead the department's efforts to solve the year 2000 challenge .
+
+defense stated that this office will have sufficient authority to enforce good management practices .
+
+in addition , defense stated that the dod year 2000 management plan is being revised to ( 1 ) define criteria and processes for prioritizing systems , ( 2 ) formalize guidance on identification and documentation of interfaces , ( 3 ) establish common testing conditions and dates for attaining year 2000 compliance , and ( 4 ) provide for development of contingency plans in accordance with gao's recently issued guidance .
+
+the revised management plan is scheduled to be issued in april 1998 .
+
+however , in concurring with several of our recommendations , defense did not indicate how it would implement them .
+
+instead , it reiterated current practices which to date have not resulted in reliable and complete inventory , progress , and cost data .
+
+for example , defense concurred with our recommendation to establish an accurate departmentwide inventory of its systems and a clear definition of the term “system.” but , it then said that components will continue to validate the accuracy of data submitted for its new database using audit agencies and other independent validation techniques recommended by omb and claimed that it had already clearly defined the term “system” in a march 1997 memorandum from asd c3i and in dod's dictionary of military and associated terms .
+
+components have not submitted accurate data to defense to date , and these actions do not indicate that defense will validate these data to ensure their accuracy in the future as we recommended .
+
+further , the documents cited do not define the term “system” effectively and , as we reported , components have interpreted the term inconsistently .
+
+likewise , defense concurred with our recommendation that the secretary of defense prepare complete and accurate year 2000 cost estimates , but then cited current cost estimating guidance and procedures , and noted that it had “requested the components to improve their estimated costs by using actual figures as they became available.” it added that the secretary of defense , through the year 2000 steering committee , will use these estimates to assess the impact of year 2000 problems , make trade - off decisions , and ensure adequate resources are available .
+
+again , these actions describe current practices which have resulted in incomplete and inaccurate cost estimates .
+
+despite requests from defense that they refine their cost analyses and prepare complete cost estimates , components continued to provide unreliable and incomplete cost data .
+
+until defense takes additional action to implement our recommendation to require and ensure that components use a more reliable methodology and report complete costs , it will not have the reliable information it needs to allocate resources , track progress , make trade - off decisions , and resolve funding disputes .
+
+we are providing copies of this letter to the ranking minority members of the senate committee on governmental affairs and the subcommittee on government management , information and technology , house committee on government reform and oversight ; the chairmen and ranking minority members of the subcommittee on oversight of government management , restructuring and the district of columbia , senate committee on governmental affairs ; the subcommittee on defense , senate committee on appropriations ; the senate committee on armed services ; the subcommittee on national security , house committee on appropriations ; and the house committee on national security .
+
+we are also sending copies to the deputy secretary of defense ; the acting secretary of defense for command , control , communications and intelligence ; the director of the office of management and budget ; the assistant to the president for year 2000 ; and other interested parties .
+
+copies will be made available to others on request .
+
+if you have any questions on matters discussed in this letter , please call me at ( 202 ) 512-6240 .
+
+other major contributors to this report are listed in appendix iii .
+
+the following is gao's comment on the department of defense's march 27 , 1998 , letter .
+
+1 .
+
+defense's additional comments have been incorporated as appropriate but have not been included in the report .
+
+george l. jones , senior information systems analyst denice m. millett , senior evaluator michael w. buell , staff evaluator karen s. sifford , staff evaluator the first copy of each gao report and testimony is free .
+
+additional copies are $2 each .
+
+orders should be sent to the following address , accompanied by a check or money order made out to the superintendent of documents , when necessary .
+
+visa and mastercard credit cards are accepted , also .
+
+orders for 100 or more copies to be mailed to a single address are discounted 25 percent .
+
+u.s. general accounting office p.o .
+
+box 37050 washington , dc 20013 room 1100 700 4th st. nw ( corner of 4th and g sts .
+
+nw ) u.s. general accounting office washington , dc orders may also be placed by calling ( 202 ) 512-6000 or by using fax number ( 202 ) 512-6061 , or tdd ( 202 ) 512-2537 .
+
+each day , gao issues a list of newly available reports and testimony .
+
+to receive facsimile copies of the daily list or any list from the past 30 days , please call ( 202 ) 512-6000 using a touchtone phone .
+
+a recorded menu will provide information on how to obtain these lists .
+

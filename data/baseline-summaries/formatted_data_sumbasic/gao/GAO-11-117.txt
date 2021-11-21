@@ -1,0 +1,698 @@
+the electric power industry is increasingly incorporating information technology ( it ) systems and networks into its existing infrastructure ( eg , electricity networks including power lines and customer meters ) as part of nationwide efforts — commonly referred to as smart grid — aimed at improving reliability and efficiency and facilitating the use of alternative energy sources ( eg , wind , solar ) .
+
+despite these anticipated benefits , cybersecurity and industry experts have expressed concern that if smart grid systems are not implemented securely , they will be vulnerable to attacks that could result in widespread loss of electrical services essential to maintaining our national economy and security .
+
+experts have also expressed concern about how well smart grid systems will work together ( i.e. , interoperate ) , whether modifications will be needed to achieve interoperability , and the extent to which the cost of modifications will be passed to consumers .
+
+the energy independence and security act of 2007 ( eisa ) directed the national institute of standards and technology ( nist ) to coordinate development of a framework of , among other things , it standards for ensuring that smart grid systems and networks are interoperable .
+
+as part of its efforts to accomplish this , nist planned to identify interoperability and cybersecurity standards to ensure such systems and networks interoperate properly and are cybersecure .
+
+in addition to these undertakings , nist also identified the need to develop cybersecurity guidelines , for organizations such as electric companies , on how to securely implement smart grid systems .
+
+eisa also directed the federal energy regulatory commission ( ferc ) — the primary federal regulator of the electricity system — to adopt those standards ( identified as part of the nist efforts ) that it deemed necessary to ensure smart grid functionality and interoperability .
+
+as agreed , our objectives were to ( 1 ) assess the extent to which nist has developed smart grid cybersecurity guidelines ; ( 2 ) evaluate ferc's efforts to adopt smart grid cybersecurity and other standards and monitor their use by industry ; and ( 3 ) identify challenges associated with ensuring the cybersecurity of the smart grid .
+
+to accomplish the first objective , we analyzed nist's plans to develop smart grid cybersecurity guidelines ; assessed the agency's efforts to date to carry out the plans ; and then compared this information to identify any variances , causes , and potential negative impacts ; we also interviewed nist officials responsible for developing the guidelines and industry stakeholders who are to use them .
+
+to accomplish the second objective , we collected and analyzed documentation of ferc plans ; interviewed ferc officials ; and interviewed representatives from seven state electricity regulatory organizations with smart grid activities of interest and varied locations , sizes , and regulatory structures .
+
+for the third objective , we convened , with the assistance of the national academy of sciences , a panel of 23 experts in smart grid cybersecurity , including experts from utilities , vendors , manufacturers , researchers , and trade associations .
+
+we conducted this performance audit from november 2009 to january 2011 , in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+appendix i contains additional details on our objectives , scope , and methodology .
+
+the electricity industry , as shown in figure 1 , is composed of four distinct functions: generation , transmission , distribution , and system operations .
+
+once electricity is generated — whether by burning fossil fuels ; through nuclear fission ; or by harnessing wind , solar , geothermal , or hydro energy — it is generally sent through high - voltage , high - capacity transmission lines to local electricity distributors .
+
+once there , electricity is transformed into a lower voltage and sent through local distribution lines for consumption by industrial plants , commercial businesses , and residential consumers .
+
+because electric energy is generated and consumed almost instantaneously , the operation of an electric power system requires that a system operator constantly balance the generation and consumption of power .
+
+utilities own and operate electricity assets , which may include generation plants , transmission lines , distribution lines , and substations — structures often seen in residential and commercial areas that contain technical equipment such as switches and transformers to ensure smooth , safe flow of current and regulate voltage .
+
+utilities may be owned by investors , municipalities , and individuals ( as in cooperative utilities ) .
+
+system operators — sometimes affiliated with a particular utility or sometimes independent and responsible for multiple utility areas — manage the electricity flows .
+
+these system operators manage and control the generation , transmission , and distribution of electric power using control systems — it - and network - based - systems that monitor and control sensitive processes and physical functions , including opening and closing circuit breakers .
+
+as we have previously reported , the effective functioning of the electricity industry is highly dependent on these control systems .
+
+see the list of related past gao products at the end of this report .
+
+however , for many years aspects of the electricity network lacked adequate technologies — such as sensors — to allow system operators to understand key information to detect how much electricity was flowing on distribution lines , communications networks to further integrate parts of the electricity grid with control centers , and computerized control devices to automate system management and recovery .
+
+as the electricity industry has matured and technology has advanced , utilities have begun taking steps to update the electricity grid — the transmission and distribution systems — by integrating new technologies and additional it systems and networks .
+
+though utilities have regularly taken such steps to upgrade their electricity systems , industry and government stakeholders have begun to articulate a broader , more integrated vision for transforming today's electricity grid into one that is more reliable and efficient , facilitates alternative forms of generation — including renewable energy , and gives consumers real - time information about fluctuating electricity costs .
+
+this vision — commonly referred to as smart grid — would increase the use of it systems and networks and two - way communication to automate actions that system operators formerly had to make manually .
+
+these efforts are designed to , among other things , improve transmission of electricity from power plants to consumers , provide grid operators with more information about conditions on the electricity system , integrate new and improved technologies into the grid , and allow consumers to receive more information about electricity prices and availability from the electricity system .
+
+smart grid modernization is an ongoing process and initiatives have commonly involved installing advanced metering infrastructure ( smart meters ) on homes and commercial buildings that enable two - way communication between the utility and the customer .
+
+for example , ferc estimated advanced metering use in the united states at 4.7 percent in 2008 , compared to 0.7 percent in 2006 .
+
+initiatives have also involved adding “smart” components to provide the system operator with more detailed data on the conditions of the transmission and distribution systems and better tools to observe the overall condition of the grid ( called wide - area situational awareness ) .
+
+these include advanced , “smart” switches on the distribution system that communicate with each other to reroute electricity around a troubled line ; and high - resolution , time synchronized monitors – – called phasor measurement units – – on the transmission system .
+
+figure 2 illustrates one possible smart grid configuration .
+
+utilities making actual smart grid investments may choose alternative configurations using different technologies and communications media depending on factors such as cost , customer needs , and local conditions .
+
+future smart grid applications may also include key roles for energy storage , in particular , storing electricity that is generated when it is inexpensive to produce .
+
+this may involve using improved battery technology , including the batteries in plug - in electric and hybrid - electric vehicles .
+
+furthermore , smart grid systems may be used to encourage consumers to lower their demand for electricity during periods of high usage — called peaks .
+
+this could occur using home networks that automatically control appliances' electricity consumption in response to programmed consumer preferences and information about prices and demand received from the utility .
+
+according to the national energy technology laboratory , a department of energy ( doe ) national laboratory with a key role in supporting doe smart grid efforts , smart grid systems fall into several different categories , as outlined in table 1 .
+
+the use of smart grid systems may have a number of benefits , including improved reliability from fewer and shorter outages , downward pressure on electricity rates due to the ability to shift peak demand , an improved ability to transmit power from alternative energy sources such as wind , and an improved ability to detect and respond to potential attacks on the grid .
+
+it could also help consumers make more informed choices about when to use electricity ; for example , how much to use when demand and prices are high .
+
+on the other hand , upgrading the grid would require major investments whose costs would ultimately be passed to utility consumers .
+
+some electricity stakeholders , particularly those representing consumers , question whether the benefits of smart grid investments would be fully realized and have suggested that less costly approaches could achieve similar benefits .
+
+state utility regulators are to evaluate applications for smart grid investments on a case - by - case basis .
+
+a number of these regulators have approved specific smart grid investments after determining that their benefits to consumers outweigh their costs .
+
+according to the ferc - proposed smart grid policy statement , to achieve the smart grid characteristics and functions outlined in eisa , it is essential that these systems be interoperable — able to work with each other without special effort on the part of the customer .
+
+nist officials explained that the electricity grid has historically relied on proprietary technology which is difficult to integrate with the technology of other manufacturers .
+
+in the case of smart grid upgrades , utilities have sought devices and systems that are interoperable and easily integrated with technologies from different vendors .
+
+the smart grid vision and its increased reliance on it systems and networks expose the electric grid to potential and known cybersecurity vulnerabilities associated with using such systems , which in turn increase the risk to the smooth and reliable operation of the electricity grid .
+
+as we and others have previously reported , these potential vulnerabilities include: increasing the use of systems and networks increases the number of entry points and paths that can be exploited by potential adversaries and other unauthorized users ; increasing the use of new system and network technologies can introduce new , unknown vulnerabilities ; interconnecting systems and networks can allow adversaries wider access and the ability to spread malicious activity ; and increasing the amount of customer information being collected on systems ( and transmitting it via networks ) provides monetary incentive for adversaries to attack these systems , and could lead to the unauthorized disclosure and use of private information .
+
+in addition to these potential vulnerabilities , we and others have also reported that smart grid and related systems have known cyber vulnerabilities .
+
+for example , cybersecurity experts have demonstrated that certain smart meters can be successfully attacked , and the impact of such attacks includes the ability to disrupt the electricity grid .
+
+in addition , we reported in 2007 that certain smart systems — commonly referred to as control systems — used in industrial settings such as electric generation have cybersecurity vulnerabilities that , if exploited , could result in serious damages and disruption .
+
+further , in 2009 , the department of homeland security , in cooperation with a doe national laboratory , ran a test that demonstrated that a vulnerability , commonly referred to as “aurora,” had the potential to allow unauthorized users to remotely control , misuse , and cause damage to a small commercial electric generator .
+
+moreover , in 2008 , the central intelligence agency reported that malicious activities against it systems and networks have caused disruption of electric power capabilities in multiple regions overseas , including a case that resulted in a multicity power outage .
+
+both the federal government and state governments have authority for overseeing the electricity industry .
+
+with respect to the electricity prices and rates of investor - owned utilities , wholesale electricity sales and transmission of electricity in interstate commerce are regulated by the federal government , specifically ferc .
+
+this involves approving whether to allow utilities to recover the costs of investments they make to the transmission system .
+
+state public utility commissions ( puc ) generally have authority to regulate local distribution and retail sales of electricity by investor - owned utilities in their state , including whether to allow these utilities to recover the costs of investments made to the distribution system .
+
+for cooperative and some municipal utilities , whose rate regulation by ferc and many state public utility commissions is limited , municipal city councils or cooperative boards of directors will generally approve cost recovery for electric investments .
+
+with respect to smart grid initiatives , individual utilities can choose to invest in smart grid devices on their own .
+
+however , as noted above , depending on the type of utility and where cost recovery is sought , either ferc , the state puc , or another entity will have authority for deciding whether to allow that utility to recover the costs of smart grid investments from customers .
+
+state and federal authorities also play key roles with respect to reliability , which can be affected by a system's cybersecurity .
+
+state regulators generally have authority to oversee the reliability of the local distribution system .
+
+the north american electric reliability corporation ( nerc ) is the federally designated u.s. electric reliability organization overseen by ferc .
+
+nerc has responsibility for conducting reliability assessments and enforcing mandatory standards to ensure the reliability of the bulk power system — a term that refers to facilities and control systems necessary for operating the electric transmission network and certain generation facilities needed for reliability .
+
+nerc develops reliability standards collaboratively through a deliberative process involving utilities and others in the electricity industry — which are then sent to ferc for approval .
+
+these reliability standards include critical infrastructure protection standards for protecting electric utility - critical and cyber - critical assets .
+
+in 2008 , ferc approved eight critical infrastructure standards developed by nerc .
+
+these standards established requirements to help ensure the secure electronic exchange of information needed to operate and support the reliability of the bulk power system , and to help prevent unauthorized physical or electronic access to critical cyber assets .
+
+the eight standards require certain users , owners , and operators of the bulk power system to establish policies , plans , and procedures to safeguard physical and electronic access to control systems ; identify and protect critical cyber assets ; train personnel on security matters ; report security incidents ; and be prepared to recover from a cyber incident .
+
+nerc staff is engaged in the nist - facilitated process , in particular , to address whether new or modified reliability standards will be necessary to ensure the continued reliability of the bulk power system as new smart grid technologies and systems are developed and integrated with existing systems and networks .
+
+in 2007 , eisa established that it is federal policy to support the modernization of the electricity grid and required actions by a number of federal agencies , including nist , ferc , and doe .
+
+specifically , the act directed nist's director , who reports to the secretary of commerce , to coordinate development of a framework of , among other things , it standards for achieving the interoperability of smart grid systems .
+
+to accomplish this , nist , starting in 2009 , facilitated a process with stakeholders ( eg , utilities , smart grid technology vendors , standards development organizations , and others ) to identify interoperability and cybersecurity standards related to smart grid .
+
+in january 2010 , nist reported that this process resulted in the identification of 75 standards that support smart grid interoperability .
+
+of these , 11 involved cybersecurity .
+
+in addition to the nist efforts to develop a framework for identifying interoperability and cybersecurity standards , the agency also identified the need to institute an initiative to develop cybersecurity guidelines for organizations such as electric companies , it system vendors , and others involved in developing and implementing smart grid systems .
+
+to carry out the above tasks ( i.e. , developing the standards framework and drafting the cybersecurity guidelines ) , nist planned to establish two key working groups that are described in table 2 .
+
+with regard to ferc , under eisa the commission is to adopt those standards ( identified as part of the nist efforts ) that it deemed necessary to ensure smart grid systems operate as intended .
+
+the act calls for ferc to institute a rule - making proceeding to accomplish this .
+
+further , with regard to doe , eisa authorized the department to establish two initiatives to facilitate development of industry smart grid efforts – – the smart grid investment grant program and the smart grid regional demonstration initiative .
+
+doe made $3.5 billion and $685 million of american recovery and reinvestment act ( recovery act ) funds available for these respective initiatives .
+
+in october 2009 , under the smart grid investment grant program , doe announced awards for 100 grants to utilities in multiple states to stimulate the rapid deployment and integration of advanced digital technology needed to modernize the nation's electric grid .
+
+in november 2009 , under doe's smart grid regional demonstration initiative , the department announced awards for 32 grants to fund regional demonstrations to verify technology viability , quantify costs and benefits , and validate new business models for the smart grid at a scale that can be readily adopted around the country .
+
+in addition to these recent actions , the federal government has undertaken other initiatives to facilitate the implementation of industry smart grid efforts , including funding technical research and development , data collection , and coordination activities ( for more details on these efforts see appendix iii ) .
+
+most of these initiatives have been led by doe .
+
+nist developed , and issued in august 2010 , a first version of its smart grid cybersecurity guidelines .
+
+to do this , nist established in march 2009 , the smart grid cyber security working group to , among other things , develop guidelines for entities ( eg , utilities , equipment manufacturers , and regulators ) to secure their smart grid systems .
+
+nist intended the guidelines to , among other things , provide a process for entities to follow for developing solutions to address the security of their smart grid systems .
+
+to develop the guidelines , nist planned to have the working group perform an assessment of the cybersecurity risks associated with existing and planned smart grid systems and then use the risk information , and an assessment of the privacy implications of these systems , to identify security requirements ( i.e. , controls ) essential to securing such systems .
+
+as part of this assessment , nist planned to address other key elements of cybersecurity , including the impact of coordinated cyber - physical attacks , and identifying smart grid system vulnerabilities .
+
+the working group intended to complete these efforts and issue the guidelines in june 2010 .
+
+the working group has largely completed these steps , including issuing the guidelines .
+
+specifically , during 2009 and 2010 , the working group defined and then performed a high - level risk assessment of existing and planned smart grid systems — such as for transporting and storing electricity , and for advanced metering infrastructure .
+
+the risk assessment included identifying assets , vulnerabilities , and threats as well as specifying impacts for these and other systems as a means to identify security requirements ( i.e. , controls ) — such as access control policies and procedures , employee training programs , incident response , and risk management — for securing such systems .
+
+using the results of the risk assessment and other efforts , the working group issued the smart grid cybersecurity guidelines in august 2010 .
+
+the guidelines include important elements , such as a high - level strategy that organizations can use to develop an approach to securing their smart grid systems , including identifying appropriate security requirements .
+
+in addition , the guidelines identified potential cryptography issues that entities may encounter and solutions for resolving these issues ; included a privacy impact assessment for the smart grid with a discussion of mitigating factors ; identified potential smart grid vulnerabilities , as well as the possible impacts to organizations should the vulnerabilities be exploited ; identified smart grid security problems , including how to ensure that access can be gained to critical devices and systems by personnel when ordinary authentication fails for any reason , and how to ensure that updates utilities send to smart meters are secure ; detailed cybersecurity design issues , such as for password complexity identified smart grid cybersecurity areas requiring further research and development .
+
+nist stated in the guidelines that this initial version was to be updated periodically to incorporate any emerging issues .
+
+while nist largely addressed the key elements in developing its guidelines , it did not address an important element essential to securing smart grid systems and networks that nist had planned to include .
+
+specifically , it did not address the risk of combined cyber - physical attacks .
+
+nist also identified other key elements that surfaced during its development of the guidelines that need to be addressed in future guideline updates .
+
+these include identifying research and development that needs to be performed , such as for synchrophasor security ; cryptography issues , and solutions to resolve cryptography issues ; and additional smart grid system design issues , such as managing vulnerabilities incurred in the supply chain .
+
+nist officials said they did not address the cyber - physical and other above topics in the guidelines because , in part , they had not yet fully developed these sections by the planned june 2010 issuance date .
+
+consequently , if nist had taken the time to address and incorporate these topics , it would have caused the agency to have been even further behind schedule , meaning the guidelines would have been issued later than august 2010 .
+
+nist officials also said that the working group intends to update the guidelines to , among other things , address these missing elements .
+
+to do so , nist drafted a plan and schedule for updating the cybersecurity guidelines periodically .
+
+while a positive step , the plan and schedule , as of october 2010 , were still in draft form .
+
+nist officials stated that they are in the process of rewriting the plan and schedule and intend to have them finalized by the end of the year .
+
+having a finalized plan and schedule with specific milestones is critical for ensuring the guidelines fully address key cybersecurity elements that have not been incorporated thus far .
+
+without it , there is increased risk that important cybersecurity elements will not be addressed by entities implementing smart grid systems , thus making these systems vulnerable to attack .
+
+in 2010 , ferc began reviewing for adoption an initial set of smart grid interoperability and cybersecurity standards developed through the nist standards process .
+
+however , ferc has not developed a coordinated approach with other regulators to monitor the extent to which industry follows these voluntary standards , because , according to officials , it has not yet determined whether or how to perform such a task .
+
+without a documented approach to coordinate with state and other regulators on this issue , ferc will not be well positioned to promptly begin monitoring the results of any standards it adopts or quickly respond if gaps arise .
+
+in october 2010 , ferc began its process of reviewing for adoption smart grid standards related to interoperability and cybersecurity , but authority to enforce these standards is divided among multiple regulators .
+
+the five standards being initially reviewed were identified by nist as ready for regulator consideration and represent a subset of those identified through the nist - facilitated smart grid standards process .
+
+ferc designated a docket for a proceeding to review these five standards and adopt those that it believes are necessary to ensure smart grid functionality and interoperability in interstate transmission of electric power and regional and wholesale electricity markets .
+
+ferc staff were uncertain when the initial set of standards would be adopted , but both ferc and nist officials told us that , because smart grid standards are continually evolving , they expect multiple rounds of standards to be reviewed and adopted by ferc .
+
+ferc staff have suggested various criteria that they believe the commissioners should use when considering whether to adopt the standards , including recommending relying on the assessment of the nist cyber security working group and rule making comments to determine if cybersecurity has been adequately incorporated .
+
+ferc also provided guidance to help nist prioritize interoperability standards development .
+
+in a july 2009 smart grid policy statement , ferc proposed prioritizing two crosscutting issues — system security ( including cybersecurity ) and intersystem communication — along with four key functionalities — wide area situational awareness , demand response , electric storage , and electric transportation .
+
+while eisa gives ferc authority to adopt smart grid standards , it does not provide ferc with specific enforcement authority .
+
+in particular , eisa gives ferc the authority to adopt standards once it finds the nist process has led to sufficient consensus .
+
+however , according to ferc officials , the statute did not provide specific additional authority to allow ferc to require utilities or manufacturers of smart grid technologies to follow these standards .
+
+as a result , any standards identified and developed through the nist - led process are voluntary unless regulators use other authorities to indirectly compel utilities and manufacturers to follow them .
+
+stakeholders we spoke with — federal electricity officials , participants in the smart grid standards development process , and other electricity and cybersecurity experts — noted that , while voluntary industry - developed standards have historically been used in the electricity industry , some factors could limit the extent to which they are followed .
+
+although some explained that economic and market pressure should encourage manufacturers and utilities to follow voluntary standards , others noted that there could still be gaps in the extent to which the standards are followed , particularly if the cost of following standards is high or if utilities have varying levels of familiarity with and interest in implementing them .
+
+according to ferc officials , ferc's only authority to require utilities to follow standards or use standards - compliant devices would derive from its existing reliability and cost - recovery authorities under the federal power act , which generally apply to transmission assets .
+
+for example , ferc could require that utilities subject to its rate regulation use standards - compliant smart grid devices as a condition of allowing them to recover the costs of smart grid investments on the transmission system .
+
+additionally , to the extent that interoperability and cybersecurity standards are deemed necessary to ensure the reliability of the bulk power system , such standards could be considered through the nerc standards - setting process , and if approved , would be considered mandatory and enforceable by both nerc and ferc .
+
+however , ferc officials noted that nerc's reliability standards - setting process involves extensive deliberation by industry ; that it is possible that nerc could choose not to develop a mandatory reliability standard that ferc had adopted through its separate process for smart grid standards ; and that ferc is prohibited from adopting reliability standards on its own outside of the nerc process .
+
+the fragmented nature of electricity industry regulation further complicates enforcement of smart grid standards and oversight of smart grid investments using ferc and other regulators' existing authorities .
+
+oversight responsibility is divided among various regulators at the federal , state , and local level , and ferc's authority is limited to certain parts of the grid , generally the transmission system .
+
+as a result , state regulatory bodies and other regulators with authority over the distribution system will play a key role in overseeing the extent to which interoperability and cybersecurity standards are followed since many smart grid upgrades will be installed on the distribution system .
+
+such regulatory fragmentation can make it difficult for individual regulators to develop an industry - wide understanding of whether utilities and manufacturers are following voluntary standards .
+
+this is due to the large number of regulators in the industry — ferc , electricity regulators in 50 states and the district of columbia , and regulators of thousands of cooperative and municipal utilities — and their potentially limited visibility over parts of the grid outside their jurisdiction .
+
+the state public utility commissions we spoke with were at different points in developing their approach to monitoring smart grid interoperability and cybersecurity .
+
+multiple state regulators told us that , while they have not imposed any formal requirements on utilities with respect to the interoperability and cybersecurity of smart grid technologies , their offices have ongoing conversations with regulated utilities about the issue .
+
+others have established requirements in puc rule makings outlining minimum functionalities that smart meters must achieve , and in the case of the public utility commission of texas , audits that smart meter manufacturers must obtain to demonstrate that smart meter data can be securely accessed by customers and others .
+
+additionally , the california and colorado commissions have opened proceedings to initiate discussion with the public about how to best address topics like the interoperability and cybersecurity of smart grid technologies .
+
+finally , most puc staff were uncertain what approach their commissions would take to enforce any standards that ferc decides to adopt , and three said that limited resources and technical expertise made their roles in overseeing interoperability and cybersecurity , including participating in the nist standards process , more challenging .
+
+a number of cooperatively and municipally owned utilities fall partially out of the purview of federal and state regulators , and as such , it will be up to their regulators — often utility boards of directors — to oversee the interoperability and cybersecurity of their smart grid efforts .
+
+in nebraska , for example , the state is entirely composed of consumer owned utilities , including municipal and cooperative utilities and public power districts .
+
+this means that , in part , oversight of smart grid interoperability and cybersecurity in this state will fall to the numerous individual regulators of these utilities .
+
+in addition , there are thousands of cooperatively and municipally owned utilities located across the country .
+
+despite the importance of ensuring manufacturers and utilities follow smart grid standards , ferc has not developed an approach coordinated with other regulators to monitor at a high level the extent to which industry will follow the voluntary smart grid standards it adopts .
+
+there have been some initial efforts by regulators to share views .
+
+for example , a collaborative dialogue between ferc and the national association of regulatory utility commissioners ( naruc ) to facilitate the transition to a smart electric grid — the ferc - naruc collaborative on smart response — has discussed the standards - setting process in general terms .
+
+however , according to ferc and naruc officials , ferc and the state pucs have not established a joint approach for monitoring how widely voluntary smart grid standards are followed in the electricity industry or developed strategies for addressing any gaps .
+
+according to ferc officials and others representing municipal and cooperative utilities , ferc also has not coordinated in such a way with groups representing public power and cooperative utilities — utilities not routinely subject to ferc's or the states' jurisdiction for rate - setting purposes .
+
+such groups include the american public power association , which represents municipally owned utilities , and the national rural electric cooperative association , which represents cooperatively owned utilities .
+
+ferc has not developed such an approach , because , according to officials , it has not yet determined whether or how to conduct high - level monitoring of compliance with smart grid standards it adopts under eisa .
+
+adherence to standards is an important step toward achieving an interoperable and secure electricity system .
+
+unless ferc and other regulators have a good understanding of whether utilities and manufacturers are following smart grid standards , it will be difficult to know whether a voluntary approach to standards setting is effective or if changes are needed .
+
+according to federal internal control guidance , managers need to compare actual performance — in this case , the extent to which manufacturers and utilities follow voluntary standards — to planned or expected results throughout the organization and analyze significant differences .
+
+given the fragmented nature of electricity regulation , it may not be possible for ferc to perform such a review alone , and the agency may have to collaborate with other regulators .
+
+past gao work highlights that when carrying out activities to enhance interagency collaboration , it is critical to involve nonfederal partners — in this case , state and other regulators with responsibility for overseeing key components of the electricity industry — in decision making .
+
+without a documented approach established in advance to coordinate with state and other regulators on this issue , ferc will not be well positioned to promptly begin monitoring the results of any standards it adopts — including a high - level assessment of whether industry follows them — and quickly respond if gaps arise .
+
+such a delay could result in a patchwork of approaches across the united states and lead to incompatibilities between systems , higher costs , and a less secure electricity grid .
+
+a number of activities are under way that may result in information to inform a ferc assessment of the extent to which voluntary standards are followed , but these efforts are not coordinated or complete .
+
+according to doe officials , as a part of doe's broader effort to publish a smart grid system report every 2 years as required by eisa , the department expects to report some information about the progress and effectiveness of smart grid interoperability and cybersecurity standards .
+
+additionally , nist has efforts under way to establish a process for vendors to certify their smart grid products as complying with standards and coordinate industry development of additional standards as needed .
+
+however , it is unclear to what extent these planned activities will specifically focus on assessing industry compliance with voluntary standards across regulatory jurisdictions and options to address any gaps that exist .
+
+moreover , unlike ferc , the state pucs , and other electricity regulators , neither doe nor nist has the authority to routinely require industry to follow standards should gaps exist .
+
+leveraging the views of experts ( by means of panel discussions ) , we identified the following six challenges that are key to ensuring the cybersecurity of the systems and networks that support our nation's electricity grid .
+
+aspects of the current regulatory environment make it difficult to ensure the cybersecurity of smart grid systems .
+
+in particular , jurisdictional issues and the difficulties associated with responding to continually evolving cyber threats are a key regulatory challenge to ensuring the cybersecurity of smart grid systems as they are deployed .
+
+regarding jurisdiction , our experts expressed concern that there was a lack of clarity about the division of responsibility between federal and state regulators , particularly regarding cybersecurity .
+
+while jurisdictional responsibility has historically been determined by whether a technology is located on the transmission or distribution system , experts raised concerns that smart grid technology may blur these lines .
+
+for example , devices such as smart meters deployed on parts of the grid traditionally subject to state jurisdiction could , in the aggregate , have an impact on those parts of the grid that federal regulators are responsible for — namely the reliability of the transmission system .
+
+there is also concern about the ability of regulatory bodies to respond to evolving cybersecurity threats .
+
+for example , one expert questioned the ability of government agencies to adapt to rapidly evolving threats , while another highlighted the need for regulations to be capable of responding to the evolving cybersecurity issues .
+
+in addition , our experts expressed concern with agencies developing regulations in the future that are overly specific in their requirements , such as those specifying the use of a particular product or technology .
+
+consequently , unless steps are taken to mitigate these challenges , regulations may not be fully effective in protecting smart grid technology from cybersecurity threats .
+
+consumers are not adequately informed about the benefits , costs , and risks associated with smart grid systems .
+
+specifically , there is concern that consumers are not aware of the benefits , costs , and risks associated with smart grid systems .
+
+this lack of awareness may limit the extent to which consumers are willing to pay for secure and reliable systems , which may cause regulators to be reluctant to approve rate increases associated with cybersecurity .
+
+as a result , until consumers are more informed about the benefits , costs , and risks of smart grid systems , utilities may not invest in , or get approval for , comprehensive security for smart grid systems , which may increase the risk of attacks succeeding .
+
+utilities are focusing on regulatory compliance instead of comprehensive security .
+
+the existing federal and state regulatory environment creates a culture within the utility industry of focusing on compliance with cybersecurity requirements , instead of a culture focused on achieving comprehensive and effective cybersecurity .
+
+specifically , experts told us that utilities focus on achieving minimum regulatory requirements rather than designing a comprehensive approach to system security .
+
+in addition , one expert stated that security requirements are inherently incomplete , and having a culture that views the security problem as being solved once those requirements are met will leave an organization vulnerable to cyber attack .
+
+consequently , without a comprehensive approach to security , utilities leave themselves open to unnecessary risk .
+
+there is a lack of security features being built into smart grid systems .
+
+security features are not consistently built into smart grid devices .
+
+for example , our experts told us that certain currently available smart meters have not been designed with a strong security architecture and lack important security features , including event logging and forensics capabilities which are needed to detect and analyze attacks .
+
+in addition , our experts stated that smart grid home area networks — used for managing the electricity usage of appliances and other devices in the home — do not have adequate security built in , thus increasing their vulnerability to attack .
+
+without securely designed smart grid systems , utilities will be at risk of not having the capacity to detect and analyze attacks , which increases the risk that attacks will succeed and utilities will be unable to prevent them from recurring .
+
+the electricity industry does not have an effective mechanism for sharing information on cybersecurity and other issues .
+
+the electricity industry lacks an effective mechanism to disclose information about smart grid cybersecurity vulnerabilities , incidents , threats , lessons learned , and best practices in the industry .
+
+for example , our experts stated that while the electricity industry has an information sharing center , it does not fully address these information needs .
+
+in addition , president obama's cyberspace policy review , released in may 2009 , also identified challenges related to cybersecurity information sharing within the electric and other critical infrastructure sectors and issued recommendations to address the areas .
+
+according to our experts , information regarding incidents such as both unsuccessful and successful attacks must be able to be shared in a safe and secure way to avoid publicly revealing the reported organization and penalizing entities actively engaged in corrective action .
+
+such information sharing across the industry could provide important information regarding the level of attempted cyber attacks and their methods , which could help grid operators better defend against them .
+
+if the industry pursued this end , it could draw upon the practices and approaches of other industries when designing an industry - led approach to cybersecurity information sharing .
+
+without quality processes for information sharing , utilities will not have the information needed to adequately protect their assets against attackers .
+
+the electricity industry does not have metrics for evaluating cybersecurity .
+
+the electricity industry is also challenged by a lack of cybersecurity metrics , making it difficult to measure the extent to which investments in cybersecurity improve the security of smart grid systems .
+
+experts noted that while such metrics are difficult to develop , they could help compare the effectiveness of competing solutions and determine what mix of solutions combine to make the most secure system .
+
+furthermore , our experts said that having metrics would help utilities develop a business case for cybersecurity by helping to show the return on a particular investment .
+
+until such metrics are developed , there is increased risk that utilities will not invest in security in a cost - effective manner , or have the information needed to make informed decisions on their cybersecurity investments .
+
+the electricity industry is in the midst of a major transformation as a result of smart grid initiatives , and this transformation has led to significant financial investment by many entities , including utilities , private companies , and the federal government .
+
+for their part , nist and ferc have efforts planned and under way to carry out their smart grid roles and responsibilities , although limitations exist in the planning and coordination efforts of these two key agencies .
+
+specifically , nist does not have a definitive plan and schedule , including specific milestones , for updating and maintaining its cybersecurity guidelines to address key missing elements .
+
+furthermore , ferc has not established an approach coordinated with other regulators to monitor the extent to which industry is following the smart grid standards it adopts .
+
+the voluntary standards and guidelines developed through the nist and ferc processes offer promise .
+
+however , a voluntary approach poses some risks when applied to smart grid investments , particularly given the fragmented nature of regulatory authority over the electricity industry .
+
+currently , nist and ferc's efforts are hindered by their lack of an approach to ( 1 ) updating voluntary cybersecurity guidelines and ( 2 ) monitoring whether voluntary standards are being followed by manufacturers and utilities and periodically reporting to congress on whether additional authorities are needed .
+
+not having such an approach could result in gaps being recognized too late to avoid incompatibilities between systems , costly equipment replacements , or unnecessarily long periods of vulnerability to cyber attack .
+
+the lack of an approach to monitoring compliance with standards also limits the information available to congress on how widely the smart grid standards are being followed and whether additional regulatory authorities are needed to address any gaps .
+
+in addition to the challenges being faced by nist and ferc , the electricity industry faces its own set of challenges that are critical to ensuring smart grid systems and networks are implemented securely .
+
+addressing these challenges will involve participation by private sector organizations and government agencies , including nist and ferc .
+
+because these two agencies are key to addressing the challenges , it is especially important that nist and ferc when addressing their planning and coordination limitations also consider whether the challenges should be addressed in their current and planned cybersecurity efforts .
+
+to reduce the risk that nist's smart grid cybersecurity guidelines will not be as effective as intended , we recommend that the secretary of commerce direct the director of nist to finalize the agency's plan for updating and maintaining the cybersecurity guidelines , including ensuring it incorporates ( 1 ) missing key elements identified in this report , and ( 2 ) specific milestones for when efforts are to be completed .
+
+we also recommend that nist , as a part of finalizing the plan , assess whether any cybersecurity challenges identified in this report should be addressed in the guidelines .
+
+to improve coordination among regulators and help congress better assess the effectiveness of the voluntary smart grid standards process , we recommend that the chairman of ferc , making use of existing smart grid information , develop an approach to coordinate with state regulators to ( 1 ) periodically evaluate the extent to which utilities and manufacturers are following voluntary interoperability and cybersecurity standards and ( 2 ) develop strategies for addressing any gaps in compliance with standards that are identified as a result of this evaluation .
+
+to the extent that ferc determines it lacks authority to address any gaps in compliance that cannot be addressed through this coordinated approach with other regulators , the chairman should report this information to congress .
+
+coordinate with groups that represent utilities subject to less ferc and state regulation ( such as municipal and cooperative utilities ) to ( 1 ) periodically evaluate the extent to which utilities and manufacturers are following voluntary interoperability and cybersecurity standards and ( 2 ) develop strategies for addressing any gaps in compliance with standards that are identified as a result of this evaluation .
+
+to the extent that ferc determines it lacks authority to address any gaps in compliance that cannot be addressed through this coordinated approach , the chairman should report this information to congress .
+
+we also recommend that the chairman of ferc , working with nerc as appropriate , assess whether any cybersecurity challenges identified in this report should be addressed in commission cybersecurity efforts .
+
+in written comments — signed by the secretary of commerce and the chairman of ferc ( see appendixes iv and v , respectively ) — on a draft of this report , both agencies stated that they agreed with our recommendations .
+
+although commerce agreed with the recommendations , the department ( 1 ) offered three related comments on a finding in the report , and ( 2 ) suggested rewording part of our recommendations based on those comments .
+
+specifically , in the first two comments , the department wanted to replace wording we used in the report ( i.e. , replacing “missing key elements” with “nist's follow - on cyber - physical activity” ) and delete two report sentences which , in its view , incorrectly implied that nist planned to complete its cyber - physical activity and report its work results in the issuance of the august 2010 guidelines .
+
+in its third comment , commerce agreed that the risk of combined cyber - physical attacks needs to be addressed in the guidelines , but reiterated its disagreement with our report statement that nist was planning to cover this in the august 2010 guidelines .
+
+based on these comments , the department suggested wording changes to part of our recommendations to reflect its view .
+
+however , our review of drafts of the guidelines , including one issued by nist to the public in february 2010 , coupled with discussions with nist officials responsible for developing the guidelines , show that that the agency had planned to address this topic in the august 2010 version of the guidelines .
+
+based on this evidence , we did not make any changes to our report .
+
+in addition to agreeing to our recommendations , ferc also ( 1 ) commended the draft report's discussion of cybersecurity for the electric industry , ( 2 ) said it appreciated the report's conclusions , and ( 3 ) described steps it intended to take to implement the recommendations .
+
+specifically , with regard to our recommendation to improve coordination among regulators , ferc stated that it intends to direct commission staff to evaluate possible approaches to improving coordination among regulators .
+
+in addition , ferc stated that if the commission finds that it lacks authority to address gaps in electric industry compliance with voluntary interoperability and cybersecurity standards , it intends to report this information to congress as our report recommends .
+
+further , in response to our recommendation to assess whether any of the challenges identified in our report should be addressed in commission cybersecurity efforts , ferc said it had directed commission staff to develop procedures to perform such an assessment .
+
+in addition to the above comments , ferc also presented two general issues with the report .
+
+the first is that while ferc agreed with the challenge associated with the lack of cybersecurity metrics , identified in the draft , it commented that developing valid metrics also presents a separate challenge of its own .
+
+we agree with this view and believe it is consistent with our report findings .
+
+the second issue is that according to ferc , our report appeared to assume that all relevant manufacturers and utilities are to comply with the voluntary standards being developed through the process specified in eisa .
+
+to clarify , we neither stated this assumption in our report nor was it our intent to imply such an assumption .
+
+nonetheless , it is important to note that the findings described in our report show it is critical for ferc to determine the extent to which these standards are being followed , and that is why we included a recommendation for the agency to coordinate with state regulators and others to achieve this goal .
+
+we also provided a copy of the draft report for review and comment to doe .
+
+in an e - mail from the team lead for strategic planning and daily operations within doe's office of electricity delivery and energy reliability , the department provided technical comments on the report , which we incorporated as appropriate .
+
+we are sending copies of this report to the appropriate congressional committees , secretary of commerce , director of nist , chairman of ferc , and other interested parties .
+
+the report is also available at no charge on the gao web site at http: / / www.gao.gov .
+
+if you or your staffs have questions about matters discussed in this report , please contact david powner at ( 202 ) 512-9286 or david trimble at ( 202 ) 512-3841 , or by e - mail at pownerd@gao.gov or trimbled@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made key contributions to this report are listed in appendix vi .
+
+our objectives were to ( 1 ) assess the extent to which the national institute of standards and technology ( nist ) has developed smart grid cybersecurity guidelines , ( 2 ) evaluate the federal energy regulatory commission's ( ferc ) efforts to adopt smart grid cybersecurity and other standards and monitor their use by industry , and ( 3 ) identify challenges associated with ensuring the cybersecurity of the smart grid .
+
+for our first objective , we analyzed applicable laws to determine nist's responsibilities with respect to the smart grid .
+
+then we analyzed agency plans and related documentation and interviewed responsible officials to determine the steps nist was planning to take or had taken to meet those responsibilities .
+
+specifically , we analyzed nist's plans for developing smart grid cybersecurity guidelines , and compared them with the issued guidelines to identify any differences .
+
+where there was a difference between nist's plans and what had been completed , we analyzed the impact of the difference and its cause .
+
+for the second objective , we analyzed ferc documentation , including their interim and final smart grid policy statement , and reviewed relevant laws and regulations .
+
+we interviewed ferc staff to better understand their authority with respect to smart grid standards , expected approach to standards adoption , and the extent of coordination with other regulators .
+
+we also interviewed state electricity regulators to understand their regulatory approach and perspectives on smart grid standards being identified and developed through the nist process .
+
+the state regulators we sought the views of included the alabama public service commission , california public utilities commission , colorado public utilities commission , nebraska power review board , public utilities commission of ohio , pennsylvania public utility commission , and the public utility commission of texas .
+
+these states were selected because they had smart grid activities of interest and were generally varied in terms of location , size , and regulatory structure .
+
+as part of this work , we identified the steps taken by these states to oversee interoperability and cybersecurity of smart grid investments , although we did not evaluate their adequacy .
+
+in nebraska , because all utilities are consumer - owned , state electricity regulators do not have authority to oversee whether smart grid investments are interoperable or cyber secure .
+
+as a result , we excluded nebraska from any summaries of state responses presented in the body of this report .
+
+we also met with staff from two groups representing public and cooperatively owned utilities: the american public power association and the national rural electric cooperative association .
+
+additionally , we reached out to various electricity experts , including representatives of standards development organizations , participants in the nist standards development process , and others , to gather their opinions on the strengths and limitations of the nist approach and standards setting .
+
+for our third objective , we convened a panel of experts in coordination with the national academy of sciences .
+
+specifically , we worked iteratively with the national academy of sciences' computer science and telecommunication board to choose a group of panel members with expertise in subjects most applicable to our objective .
+
+the selected experts included representatives from electric utilities responsible for implementing and securing smart grid systems , public utility commissions , trade associations , smart grid technology vendors , and cybersecurity experts .
+
+a full list of the expert panelists can be found in appendix iii .
+
+a key topic discussed by the panel was the major cybersecurity challenges facing the grid , and related issues , such as the potential consequences of security failures , adequacy of current cybersecurity technology , effectiveness of regulatory frameworks and enforcement mechanisms , potential benefits for key stakeholder groups , and additional steps regulators could take to ensure that smart grid investments are secure .
+
+we then analyzed the results of the panel , and from that analysis developed a list of the major challenges and a summary of each .
+
+we then had the panelists review the list and our accompanying summary to make sure we accurately captured their views .
+
+we conducted this performance audit from november 2009 to january 2011 , in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+in addition to efforts discussed in this report , the federal government has undertaken other efforts to facilitate smart grid implementation , including conducting and funding technical research and development , data collection , and coordination activities .
+
+most of these initiatives have been led by the department of energy ( doe ) .
+
+table 3 describes 10 of these other key efforts , including the federal agency involved and the purpose of the effort .
+
+the names and affiliation of the experts who participated in the panel discussion held june 2-3 , 2010 , in washington , d.c. , are: sharla artz , director of government affairs , schweitzer engineering laboratories , inc. david baker , director of services , ioactive , inc. david batz , manager , cyber & infrastructure security , edison electric w. earl boebert , sandia national laboratories ( retired ) michael butler , senior analyst , national institute of standards and matthew carpenter , senior security analyst , inguardians jeffrey e. dagle , chief electrical engineer , energy technology development , pacific northwest national laboratory david dunn , manager , organizational governance support , independent robert former , principal security engineer , itron , inc .
+
+in addition to the individuals named above , key contributions were made to this report by gary n. mountjoy , assistant director , it ; jon r. ludwigson , assistant director , nre ; nabajyoti barkakati ; scott f. borre ; camille m. chaires ; neil j. doherty ; rebecca e. eyler ; paige m. gilbreath ; lee a. mccracken ; thomas e. murphy ; andrew s. stavisky ; walter k. vance ; and maria p. vargas .
+
+critical infrastructure protection: update to national infrastructure protection plan includes increased emphasis on risk management and resilience .
+
+gao - 10-296 .
+
+washington , d.c.: march 5 , 2010 .
+
+defense critical infrastructure: actions needed to improve the identification and management of electrical power risks and vulnerabilities to dod critical assets .
+
+gao - 10-147 .
+
+washington , d.c.: october 23 , 2009 .
+
+critical infrastructure protection: omb leadership needed to strengthen agency planning efforts to protect federal cyber assets .
+
+gao - 10-148 .
+
+washington , d.c.: october 15 , 2009 .
+
+critical infrastructure protection: current cyber sector - specific planning approach needs reassessment .
+
+gao - 09-969 .
+
+washington , d.c.: september 24 , 2009 .
+
+critical infrastructure protection: sector - specific plans' coverage of key cyber security elements varies .
+
+gao - 08-64t .
+
+washington , d.c.: october 31 , 2007 .
+
+critical infrastructure protection: multiple efforts to secure control systems are under way , but challenges remain .
+
+gao - 07-1036 .
+
+washington , d.c.: september 10 , 2007 .
+
+critical infrastructure protection: sector plans and sector councils continue to evolve .
+
+gao - 07-706r .
+
+washington , d.c.: july 10 , 2007 .
+
+critical infrastructure: challenges remain in protecting key sectors .
+
+gao - 07-626t .
+
+washington , d.c.: march 20 , 2007 .
+
+critical infrastructure protection: challenges in addressing cybersecurity .
+
+gao - 05-827t .
+
+washington , d.c.: july 19 , 2005 .
+
+cybersecurity: continued efforts are needed to protect information systems from evolving threats .
+
+gao - 10-230t .
+
+washington , d.c.: november 17 , 2009 .
+
+cybersecurity: continued federal efforts are needed to protect critical systems and information .
+
+gao - 09-835t .
+
+washington , d.c.: june 25 , 2009 .
+
+transmission lines: issues associated with high - voltage direct - current transmission lines along transportation rights of way .
+
+gao - 08-347r .
+
+washington , d.c.: february 1 , 2008 .
+
+meeting energy demand in the 21st century: many challenges and key questions .
+
+gao - 05-414t .
+
+washington , d.c.: march 16 , 2005 .
+
+electricity markets: consumers could benefit from demand programs , but challenges remain .
+
+gao - 04-844 .
+
+washington , d.c.: august 13 , 2004 .
+
+energy markets: additional actions would help ensure that ferc's oversight and enforcement capability is comprehensive and systematic .
+
+gao - 03-845 .
+
+washington , d.c.: august 15 , 2003 .
+
+electricity markets: ferc's role in protecting consumers .
+
+gao - 03-726r .
+
+washington , d.c.: june 6 , 2003 .
+
+electricity restructuring: ferc could take additional steps to analyze regional transmission organizations' benefits and performance .
+
+gao - 08-987 .
+
+washington , d.c.: september 22 , 2008 .
+
+electricity restructuring: key challenges remain .
+
+gao - 06-237 .
+
+washington , d.c.: november 15 , 2005 .
+
+electricity restructuring: 2003 blackout identifies crisis and opportunity for the electricity sector .
+
+gao - 04-204 .
+
+washington , d.c.: november 18 , 2003 .
+
+electricity restructuring: action needed to address emerging gaps in federal information collection .
+
+gao - 03-586 .
+
+washington , d.c.: june 30 , 2003 .
+
+lessons learned from electricity restructuring: transition to competitive markets under way , but full benefits will take time and effort to achieve .
+
+gao - 03-271 .
+
+washington , d.c.: december 17 , 2002 .
+
+restructured electricity markets: california market design enabled exercise of market power .
+
+gao - 02-828 .
+
+washington , d.c.: june 21 , 2002 .
+
+restructured electricity markets: three states' experiences in adding generating capacity .
+
+gao - 02-427 .
+
+washington , d.c.: may 24 , 2002 .
+
+information security: tva needs to address weaknesses in control systems and networks .
+
+gao - 08-526 .
+
+washington , d.c.: may 21 , 2008 .
+

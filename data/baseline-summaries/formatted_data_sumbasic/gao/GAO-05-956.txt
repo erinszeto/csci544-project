@@ -1,0 +1,1816 @@
+after the 2000 elections , congress , the media , and others cited numerous instances of problems with the election process .
+
+in light of these concerns , we produced a series of reports in which we examined virtually every aspect of the election process , including challenges associated with electronic voting systems .
+
+in these reports , we emphasized the contributions and necessary interactions of people , process , and technology to address these challenges .
+
+subsequently , in october 2002 , congress passed the help america vote act ( hava ) , which authorized funding for local and state governments to make improvements in election administration , including upgrading antiquated voting systems .
+
+in addition , hava created the election assistance commission ( eac ) to provide support for election improvements and to administer payments to states under the act .
+
+as states have expanded their use of electronic voting systems , the media and others have reported problems with these systems that have caused some to question whether they are secure and reliable .
+
+in view of the importance and growing role of electronic voting systems , you asked us to ( 1 ) determine the significant security and reliability concerns that have been identified about these voting systems ; ( 2 ) identify recommended practices relevant to ensuring the security and reliability of such systems ; and ( 3 ) describe the actions that federal agencies and other organizations have taken , or plan to take , to improve their security and reliability .
+
+to determine concerns and recommended practices , we analyzed over 80 recent and relevant reports related to the security and reliability of electronic voting systems .
+
+we focused on systems and components associated with vote casting and counting , including those that define electronic ballots , transmit voting results among election locations , and manage groups of voting machines .
+
+we assessed the various types of voting system issues reported to determine categories of concerns .
+
+we discussed the reports , concerns , and recommended practices with elections officials , citizen advocacy groups , and system security and testing experts , including members of gao's executive council on information management and technology .
+
+to describe actions to improve the security and reliability of electronic voting systems , we reviewed and analyzed pertinent documentation , such as eac's draft voluntary voting system guidelines ( which are expected to replace the 2002 voting system standards ) , and we attended public meetings and interviewed officials from eac , its technical guidelines development committee ( tgdc ) , and the department of commerce's national institute of standards and technology ( nist ) .
+
+we also identified activities being performed by citizen advocacy groups , academic and standards bodies , and others that are intended to improve the security and reliability of electronic voting systems , reviewed materials from these activities , and discussed them with representatives of these groups .
+
+appendix i provides additional details on our objectives , scope , and methodology .
+
+we performed our work from january through august 2005 in the washington , d.c. , metropolitan area , in accordance with generally accepted government auditing standards .
+
+all levels of government share responsibility in the u.s. election process .
+
+at the federal level , congress has authority under the constitution to regulate presidential and congressional elections and to enforce prohibitions against specific discriminatory practices in all federal , state , and local elections .
+
+congress has passed legislation that addresses voter registration , absentee voting , accessibility provisions for the elderly and handicapped , and prohibitions against discriminatory practices .
+
+at the state level , individual states are responsible for the administration of both federal elections and their own elections .
+
+states regulate the election process , including , for example , the adoption of voluntary voting system guidelines , the state certification and acceptance testing of voting systems , ballot access , registration procedures , absentee voting requirements , the establishment of voting places , the provision of election day workers , and the counting and certification of the vote .
+
+in total , the u.s. election process can be seen as an assemblage of 55 distinct election systems — those of the 50 states , the district of columbia , and the 4 u.s. territories .
+
+further , although election policy and procedures are legislated primarily at the state level , states typically have decentralized voting processes , so that the details of administering elections are carried out at the city or county levels , and voting is done at the local level .
+
+as we reported in 2001 , local election jurisdictions number more than 10,000 , and their sizes vary enormously — from a rural county with about 200 voters to a large urban county , such as los angeles county , where the total number of registered voters for the 2000 elections exceeded the registered voter totals in 41 states .
+
+administering an election is a year - round process involving the following stages: voter registration .
+
+local election officials register eligible voters and maintain voter registration lists .
+
+this includes updating registrants' information and deleting the names of registrants who are no longer eligible to vote .
+
+absentee and early voting .
+
+election officials design ballots and other systems to permit eligible people to vote in person or by mail before election day .
+
+election officials also educate voters on how to vote by these methods .
+
+election administration and vote casting .
+
+election officials prepare for an election by arranging for polling places , recruiting and training poll workers , designing ballots , and preparing and testing voting equipment for use in casting and tabulating votes .
+
+election day activities include opening and closing polling places and assisting voters in casting votes .
+
+vote counting and certification .
+
+election officials tabulate the cast ballots , determine whether and how to count ballots that cannot be read by the vote counting equipment , certify the final vote counts , and perform recounts , if required .
+
+as shown in figure 1 , each stage of an election involves people , processes , and technology .
+
+electronic voting systems hold promise for improving the efficiency and accuracy of the election process by automating a manual process , providing flexibility for accommodating voters with special needs , and implementing controls to avoid errors by voters and election workers .
+
+in the united states today , most votes are cast and counted by one of two types of electronic voting systems: optical scan systems and direct recording electronic ( dre ) systems .
+
+such systems include the hardware , software , and firmware used to define ballots , cast and count votes , report or display election results , and maintain and produce audit trail information — as well as the documentation required to program , control , and support the equipment .
+
+a description of both technologies follows .
+
+optical scan systems .
+
+optical scan voting systems use electronic technology to tabulate paper ballots .
+
+although optical scan technology has been in use for decades for such tasks as scoring standardized tests , it was not applied to voting until the 1980s .
+
+according to election data services , inc. , a firm specializing in election data statistics , about 31 percent of registered voters voted on optical scan systems in the 2000 election , and about 35 percent of registered voters voted on optical scan systems in the 2004 election .
+
+an optical scan system is made up of computer - readable paper ballots , appropriate marking devices , privacy booths , and a computerized tabulation device .
+
+the ballot , which can be of various sizes , lists the names of the candidates and the issues .
+
+voters record their choices using an appropriate writing instrument to fill in boxes or ovals , or to complete an arrow next to a candidate's name or the issue .
+
+in some states , the ballot may include a space for write - ins to be entered directly on the ballot .
+
+optical scan ballots are tabulated by optical - mark - recognition equipment ( see fig .
+
+2 ) , which counts the ballots by sensing or reading the marks on the ballot .
+
+ballots can be counted at the polling place — referred to as a precinct - count optical scan — or at a central location .
+
+if ballots are counted at the polling place , voters or election officials put the ballots into the tabulation equipment , which tallies the votes ; these tallies can be captured in removable storage media that are transported to a central tally location , or they can be electronically transmitted from the polling place to the central tally location .
+
+if ballots are centrally counted , voters drop ballots into sealed boxes and election officials transfer the sealed boxes to the central location after the polls close , where election officials run the ballots through the tabulation equipment in the presence of observers .
+
+software instructs the tabulation equipment how to assign each vote ( i.e. , to assign valid marks on the ballot to the proper candidate or issue ) .
+
+in addition to identifying the particular contests and candidates , the software can be configured to capture , for example , straight party voting and vote - for - no - more - than - n contests .
+
+precinct - based optical scanners can also be programmed to detect overvotes ( where the voter votes for two candidates for one office , for example , invalidating the vote ) and undervotes ( where the voter does not vote for all contests or issues on the ballot ) and to take some action in response ( rejecting the ballot , for instance ) .
+
+in addition , optical scan systems often use vote - tally software to tally the vote totals from one or more vote tabulation devices .
+
+if election officials program precinct - based optical scan systems to detect and reject overvotes and undervotes , voters can fix their mistakes before leaving the polling place .
+
+however , if voters are unwilling or unable to correct their ballots , a poll worker can manually override the program and accept the ballot , even though it has been overvoted or undervoted .
+
+if ballots are tabulated centrally , voters would not be able to correct any mistakes that may have been made .
+
+direct recording electronic ( dre ) systems .
+
+first introduced in the 1970s , dres capture votes electronically , without the use of paper ballots .
+
+according to election data services , inc. , about 12 percent of voters used this type of technology in the 2000 elections and about 29 percent of voters used this technology in the 2004 elections .
+
+dres come in two basic models: pushbutton or touchscreen .
+
+the pushbutton model is the older technology and is larger and heavier than the touchscreen model ( see fig .
+
+3 ) .
+
+pushbutton and touchscreen models also differ significantly in the way they present ballots to the voter .
+
+with the pushbutton model , all ballot information is presented on a single “full - face” ballot .
+
+for example , a ballot may have 50 buttons on a 3- by 3-foot ballot , with a candidate or issue next to each button .
+
+in contrast , touchscreen dres display the ballot information on an electronic display screen .
+
+for both pushbutton and touchscreen models , the ballot information is programmed onto an electronic storage medium , which is then uploaded to the machine .
+
+both models rely on ballot definition files to tell the voting machine software how to display ballot information on the screen , interpret a voter's touches on a button or screen , and record and tally those selections as votes .
+
+local jurisdictions can program these files before each election or outsource their programming to a vendor .
+
+for touchscreens , ballot information can be displayed in color and can incorporate pictures of the candidates .
+
+because the ballot space on a touchscreen is much smaller than on a pushbutton machine , voters who use touchscreens must page through the ballot information .
+
+despite their differences , the two dre models have some similarities , such as how the voter interacts with the voting equipment .
+
+for pushbutton models , voters press a button next to the candidate or issue , which then lights up to indicate the selection .
+
+similarly , voters using touchscreens make their selections by touching the screen next to the candidate or issue , which is then highlighted .
+
+when voters have finished making their selections on a touchscreen or a pushbutton model , they cast their votes by pressing a final “vote” button or screen .
+
+until they hit this final button or screen , voters can change their selections .
+
+both models also allow voters to write in candidates .
+
+while most dres allow voters to type write - ins on a keyboard , some pushbutton types require voters to write the name on paper tape that is part of the device .
+
+further , although these systems do not use paper ballots , they retain permanent electronic images of all the ballots , which can be stored on various media , including internal hard disk drives , flash cards , or memory cartridges .
+
+according to vendors , these ballot images can be printed and used for auditing and recounts .
+
+some of the newer dres use smart cards as a security feature .
+
+smart cards are plastic devices — about the size of a credit card — that use integrated circuit chips to store and process data , much like a computer .
+
+these cards are generally used as a means to open polls and to authorize voter access to ballots .
+
+for instance , smart cards for some systems store program data on the election and are used to help set up the equipment ; during setup , election workers verify that the card is for the proper election .
+
+other systems are programmed to automatically activate when the voter inserts a smart card ; the card brings up the correct ballot onto the screen .
+
+in general , the interface with the voter is very similar to that of an automated teller machine .
+
+like optical scan devices , dres require the use of software to program the various ballot styles and tally the votes , which is generally done through the use of memory cartridges or other media .
+
+the software is used to generate ballots for each precinct in the voting jurisdiction , which includes defining the ballot layout , identifying the contests in each precinct , and assigning candidates to contests .
+
+the software also is used to configure any special options , such as straight party voting and vote - for - no - more - than - n contests .
+
+in addition , for pushbutton models , the software assigns the buttons to particular candidates , and , for touchscreen models , the software defines the size and location on the screen where the voter makes the selection .
+
+vote - tally software is often used to tally the vote totals from one or more units .
+
+dre systems offer various configurations for tallying the votes .
+
+some contain removable storage media that can be taken from the voting device and transported to a central location to be tallied .
+
+others can be configured to electronically transmit the vote totals from the polling place to a central tally location .
+
+these systems are also designed not to allow overvotes .
+
+for example , if a voter selects a second choice in a two - way race , the first choice is deselected .
+
+in addition to this standard feature , different types of systems offer a variety of options , including many aimed at voters with disabilities .
+
+in our prior work , we reported that the following features were available on some models of dre: a “no - vote” option .
+
+if allowed by the state , this option helps avoid unintentional undervotes .
+
+this provides the voter with the option to select “no vote” ( or abstain ) on the display screen if the voter does not want to vote on a particular contest or issue .
+
+a “review” feature .
+
+this feature requires voters to review each page of the ballot before pressing the button to cast the vote .
+
+visual enhancements .
+
+these features include , for example , color highlighting of ballot choices and candidate pictures .
+
+accommodations for voters with disabilities .
+
+examples of options for voters who are blind include braille keyboards and audio interfaces .
+
+at least one vendor reported that its dre accommodates voters with neurological disabilities by offering head movement switches and “sip and puff” plug - ins .
+
+another option is voice recognition capability , which allows voters to make selections orally .
+
+an option to recover spoiled ballots .
+
+this feature allows voters to recast their votes after their original ballots are cast .
+
+for this option , every dre at the poll site could be connected to a local area network .
+
+a poll official would void the original “spoiled” ballot through the administrative workstation , which is also connected to the local area network .
+
+the voter could then cast another ballot .
+
+an option to provide printed receipts .
+
+this option , provided by a voter - verified paper audit trail system , provides the voter with a paper printout or ballot when the vote is cast .
+
+this feature is intended to provide voters and / or election officials with an opportunity to check what is printed against what is recorded and displayed .
+
+in october 2002 , congress passed the help america vote act ( hava ) to provide states with organizations , processes , and resources for improving the administration of future federal elections .
+
+the act also specified time frames for the availability of these organizations , processes , and resources .
+
+the act was intended , among other things , to encourage states to upgrade antiquated voting systems and technologies and to support the states in making federally mandated improvements to their voting systems , such as ensuring that voters can verify their votes before casting their ballot , providing records for manual auditing of voting systems , and establishing maximum error rates for counting ballots .
+
+organizations .
+
+hava established the election assistance commission ( eac ) and gave this commission responsibility for activities and programs related to the administration of federal elections .
+
+this independent federal agency consists of four presidential appointees confirmed by the senate , as well as support staff , including personnel inherited from the former office of election administration of the federal election commission .
+
+eac commissioners were appointed in december 2003 , and the commission began operations in january 2004 .
+
+eac is intended to serve as a national clearinghouse and resource for the compilation of information and procedures on election administration .
+
+its responsibilities relative to voting systems include adopting and maintaining voluntary voting system guidelines ; managing a national program for testing , certification , decertification , and recertification of voting system hardware and software ; maintaining a clearinghouse of information on the experiences of state and local governments in implementing the guidelines and operating voting systems ; and conducting studies and other activities to promote effective administration of federal elections .
+
+hava also established three organizations and levied new requirements on a fourth to assist eac in establishing voting system standards and performing its responsibilities , including standards and responsibilities involving the security and reliability of voting systems: the technical guidelines development committee ( tgdc ) is to assist eac in developing voluntary voting system standards ( which are now called guidelines ) .
+
+this committee includes selected state and local election officials and representatives of professional and technical organizations .
+
+it is chaired by the director of the national institute of standards and technology .
+
+the standards board brings together one state and one local official from each of the 55 states and territories to review the voluntary voting system guidelines developed by tgdc and provide comments and recommendations on the guidelines to eac .
+
+the board of advisors is made up of 37 members — many from various professional and specialty organizations .
+
+like the standards board , the board of advisors reviews the voluntary voting system guidelines developed by tgdc and provides comments and recommendations to eac .
+
+the department of commerce's national institute of standards and technology ( nist ) provides technical support to tgdc , including research and development of the voting system guidelines .
+
+nist is also responsible for monitoring and reviewing the performance of independent testing laboratories ( previously known as independent testing authorities ) and making recommendations for accreditation and revocation of accreditation of the laboratories by eac .
+
+nist's responsibilities for improving the security and reliability of electronic voting systems include identification of security and reliability standards for voting system computers , networks , and data storage ; methods to detect and prevent fraud ; and protections for voter privacy and remote voting system access .
+
+processes .
+
+hava provides for three major processes related to the security and reliability of voting systems: updating voluntary standards , accrediting independent testing laboratories , and certifying voting systems to meet national standards .
+
+hava specifies the organizations involved , activities to be undertaken , public visibility for the processes , and , in some cases , work products and deadlines .
+
+these processes are described below .
+
+updating standards .
+
+eac and tgdc were given responsibility for evaluating and updating the federal election commission's voluntary voting system standards of 2002 .
+
+tgdc is to propose standards changes within 9 months of the appointment of all of its members , and eac is to hold a public hearing and a comment period for the standards changes and allow at least 90 days for review and comment by the standards and advisory boards before voting on the standards .
+
+eac and its boards are also to consider updates to the standards on an annual basis .
+
+accrediting laboratories .
+
+nist's director is charged with evaluating the capabilities of independent nonfederal laboratories to carry out certification testing of voting systems within 6 months after eac adopts the first update to the voluntary voting system standards .
+
+through its national voluntary laboratory accreditation program , nist is to recommend qualified laboratories for eac's accreditation , provide ongoing monitoring and reviews of the accredited laboratories , and recommend revocation of accreditation , if necessary .
+
+certifying systems .
+
+eac is to establish processes for certifying , decertifying , and recertifying voting systems .
+
+hava allows the current processes ( as conducted under the national association of state election directors ) to continue until the laboratory accreditation processes to be developed by nist are established and laboratories are accredited by eac to conduct certification testing .
+
+states may also use the nationally accredited testing laboratories for testing associated with certification , decertification , and recertification of voting systems to meet state certification requirements .
+
+the majority of states currently rely on federal standards , but do not require national certification testing to ensure that voting systems meet functional , performance , and quality goals .
+
+on the basis of an april 2005 review of state statutes and administrative rules , eac identified at least 30 states that require their voting systems to meet federal standards issued by the federal election commission , eac , or both ( see fig .
+
+4 ) .
+
+as for certification , the majority of states require state certification of voting systems , but do not require national testing .
+
+only 13 states currently require their systems to be tested against the federal standards by independent testing authorities and certified by the national association of state election directors ( see fig .
+
+4 ) .
+
+in commenting on a draft of this report , eac noted that some state and local jurisdictions can choose to exceed state statute and administrative rules — and may be using federal standards and national certification testing .
+
+resources .
+
+hava authorized federal payments to help states improve their voting systems in two ways: by replacing punch card and lever voting systems in time for the november 2004 federal election unless a waiver authorizing a delay is granted by the administrator of the general services administration .
+
+in the event of a waiver , states are required to replace the systems in time for the first federal election held after january 1 , 2006 .
+
+eac reports that approximately $300 million was distributed to 30 states under this hava provision — all in fiscal year 2003 .
+
+by incorporating new voting system functions required by hava ( for instance , ballot verification by voters , producing printed records for election auditing , and meeting vote counting error rates ) ; upgrading systems in general ; improving the administration of elections ; or educating voters and training election workers ( among other things ) .
+
+eac reported that as of august 31 , 2005 , approximately $2.5 billion had been disbursed to the 50 states , 4 u.s. territories , and the district of columbia , for these and other election improvements .
+
+time frames .
+
+hava specifies time frames for several key activities .
+
+specifically , it requires that eac commissioners be appointed no later than 120 days after the law a program to distribute payments to states to replace antiquated voting systems be in place no later than 45 days after the law was enacted , the first set of recommendations for revising the voluntary voting system standards be submitted to eac no later than 9 months after the appointment of tgdc members , eac approve voluntary guidance for certain voting system standards by nist conduct evaluations of independent testing laboratories for accreditation within 6 months of the adoption of updated voting standards , states receiving federal payments replace their lever or punch card voting machines in time for the november 2004 federal election , or the first federal election after january 2006 , with a waiver , and states meet requirements for federally mandated improvements to voting systems , such as voter verification of ballots , records for manual audits , and maximum error rates for ballot counts ( hava section 301 ) by january 1 , 2006 .
+
+eac commissioners were appointed in december 2003 — over a year after the law was enacted — and the commission began operations in january 2004 .
+
+it received $1.2 million in funding in fiscal year 2004 increasing to $14 million in fiscal year 2005 .
+
+thus , the commission got a late start on its initiatives .
+
+as discussed later in this report , key activities are currently under way .
+
+electronic voting systems are typically developed by vendors and then purchased commercially off the shelf and operated by state and local election administrators .
+
+viewed at a high level , these activities make up three phases of a system life cycle: product development , acquisition , and operations ( see fig .
+
+5 ) .
+
+key processes that span these life cycle phases include managing the people , processes , and technologies within each phase , and testing the systems and components during and at the end of each phase .
+
+additionally , voting system standards are important through all of the phases because they provide criteria for developing , testing , and acquiring voting systems , and they specify the necessary documentation for operating the systems .
+
+as with other information systems , it is important to build principles of security and reliability into each phase of the voting system life cycle .
+
+the product development phase includes activities such as establishing requirements for the system , designing a system architecture , and developing software and integrating components .
+
+activities in this phase are performed by the system vendor .
+
+design and development activities related to security and reliability of electronic voting systems include such things as requirements development and hardware and software design .
+
+the acquisition phase covers activities for procuring voting systems from vendors such as publishing a request for proposal , evaluating proposals , choosing a voting technology , choosing a vendor , and writing and administering contracts .
+
+for voting systems , activities in this phase are primarily the responsibility of state and local governments , but entail some responsibilities that are shared with the system vendor ( such as establishing contractual agreements ) .
+
+acquisition activities affecting the security and reliability of electronic voting systems include such things as specifying provisions for security controls in contracts and identifying evaluation criteria for prospective systems .
+
+the operations phase consists of activities for operating the voting systems , including the setup of systems before voting , vote capture and counting during elections , recounts and system audits after elections , and storage of systems between elections .
+
+responsibility for activities in this phase typically resides with local jurisdictions .
+
+security and reliability aspects of this phase include physical security of the polling place and voting equipment , chain of custody for voting system components and supplies , system audit logs and backups , and the collection , analysis , reporting , and resolution of election problems .
+
+standards for voting systems were developed at the national level by the federal election commission in 1990 and 2002 and are now being updated by eac , tgdc , and nist .
+
+voting system standards affect all life cycle phases .
+
+in the product development phase , they serve as guidance for developers to build systems .
+
+in the acquisition phase , they provide a framework that state and local governments can use to evaluate systems .
+
+in the operations phase , they specify the necessary documentation for operating the systems .
+
+current and planned national standards include explicit requirements for ensuring the security and reliability of voting systems .
+
+testing processes are conducted throughout the life cycle of a voting system .
+
+voting system vendors conduct product testing during development of the system and its components .
+
+national testing of products submitted by system vendors is conducted by nationally accredited independent testing authorities .
+
+states may conduct evaluation testing before acquiring a system to determine how well products meet their specifications , or may conduct certification testing to ensure that a system performs its functions as specified by state laws and requirements .
+
+once a voting system is delivered by the system vendor , states and local jurisdictions may conduct acceptance testing to ensure that the system satisfies functional requirements .
+
+finally , local jurisdictions typically conduct logic and accuracy tests related to each election , and sometimes subject portions of the system to parallel testing during each election to ensure that the system components perform accurately .
+
+all of these tests should address system security and reliability .
+
+management processes ensure that each life cycle phase produces desirable outcomes .
+
+typical management activities that span the system life cycle include planning , configuration management , system performance review and evaluation , problem tracking and correction , human capital management , and user training .
+
+these activities are conducted by the responsible parties in each life cycle phase .
+
+management processes related to security and reliability include program planning , disaster recovery and contingency planning , definition of security roles and responsibilities , configuration management of voting system software and hardware , and poll worker security training .
+
+in 2004 , we reported that the performance of electronic voting systems , like any type of automated information system , can be judged on several bases , including how well its design provides for security , accuracy , ease of use , efficiency , and cost .
+
+we also reported that voting system performance is a function of how it was designed and developed , whether the system performs as designed , and how the system is implemented .
+
+in implementing a system , it is critical to have people with the requisite knowledge and skills to operate it according to well - defined and understood processes .
+
+electronic voting systems hold promise for improving the efficiency and accuracy of the election process by automating a manual process , providing flexibility for accommodating voters with special needs , and implementing controls to avoid errors by voters and election workers .
+
+however , in a series of recent reports , election officials , computer security experts , citizen advocacy groups , and others have raised significant concerns about the security and reliability of electronic voting systems , citing instances of weak security controls , system design flaws , inadequate system version control , inadequate security testing , incorrect system configuration , poor security management , and vague or incomplete standards , among other issues .
+
+most of the issues can be viewed in the context of the voting system life cycle , including ( 1 ) the development of voting systems , including the design of these systems and the environments in which they were developed ; ( 2 ) the nature and effectiveness of the testing program for electronic voting systems ; ( 3 ) the operation and management of electronic voting systems at the state and local levels ; and ( 4 ) the voluntary voting systems standards , which govern different activities at different phases .
+
+the aspects of the life cycle are interdependent — that is , a problem experienced in one area of the life cycle will likely affect the other areas .
+
+for example , a weakness in system standards could result in a poorly designed system during the development phase , which then malfunctions in the operational phase .
+
+also , each of the life cycle phases depends on the management of people , processes , and technology to ensure that they are executed in a manner that adequately ensures reliable and secure results .
+
+because of these multiple interdependencies , it is sometimes difficult to determine the root cause of some problems .
+
+table 1 provides a summary of the different types of concerns identified .
+
+in viewing these concerns , it is important to note that many involved vulnerabilities or problems with specific voting system makes and models or circumstances in a specific jurisdiction's election , and that there is a lack of consensus among elections officials , computer security experts , and others on the pervasiveness of the concerns .
+
+nevertheless , there is evidence that some of these concerns have been realized and have caused problems with recent elections , resulting in the loss and miscount of votes .
+
+in light of the recently demonstrated voting system problems ; the differing views on how widespread these problems are ; and the complexity of assuring the accuracy , integrity , confidentiality , and availability of voting systems throughout their life cycles , the security and reliability concerns raised in recent reports merit the focused attention of federal , state , and local authorities responsible for election administration .
+
+common concerns as well as examples of the problems identified during recent elections are discussed in more detail below .
+
+multiple recent reports , including several state - commissioned technical reviews and security assessments , voiced concerns about the development of secure and reliable electronic voting systems by system vendors .
+
+three major areas of concern are weak security controls , audit trail design flaws , and weak security management practices .
+
+weak system security controls .
+
+some electronic voting systems provided weak system security controls over key components ( including electronic storage for votes and ballots , remote system access equipment , and system event and audit logs ) , access to the systems , and the physical system hardware .
+
+regarding key software components , several evaluations demonstrated that election management systems did not encrypt the data files containing cast votes ( to protect them from being viewed or modified ) .
+
+evaluations also showed that , in some cases , other computer programs could access these cast vote files and alter them without the system recording this action in its audit logs .
+
+two reports documented how it might be possible to alter the ballot definition files on one model of dre so that the votes shown on the touch screen for one candidate would actually be recorded and counted for a different candidate .
+
+in addition , one of these reports found that it was possible to gain full control of a regional vote tabulation computer — including the ability to modify the voting software — via a modem connection .
+
+more recently , computer security experts working with a local elections supervisor in florida demonstrated that someone with physical access to an optical scan voting system could falsify election results without leaving any record of this action in the system's audit logs by using altered memory cards .
+
+if exploited , these weaknesses could damage the integrity of ballots , votes , and voting system software by allowing unauthorized modifications .
+
+regarding access controls , many security examinations reported flaws in how controls were implemented in some dre systems .
+
+for example , one model failed to password - protect the supervisor functions controlling key system capabilities ; another relied on an easily guessed password to access these functions .
+
+in another case , the same personal identification number was programmed into all supervisor cards nationwide — meaning that the number was likely to be widely known .
+
+reviewers also found that values used to encrypt election data ( called encryption keys ) were defined in the source code .
+
+several reviews reported that smart cards ( used to activate the touch screen on dre systems ) and memory cards ( used to program the terminals of optical scan systems ) were not secured by some voting systems .
+
+reviewers exploited this weakness by altering such cards and using them to improperly access administrator functions , vote multiple times , change vote totals , and produce false election reports in a test environment .
+
+some election officials and security experts felt that physical and procedural controls would detect anyone attempting to vote multiple times during an actual election .
+
+nevertheless , in the event of lax supervision , the privileges available through these access control flaws could allow unauthorized personnel to disrupt operations or modify data and programs that are crucial to the accuracy and integrity of the voting process .
+
+regarding physical hardware controls , several recent reports found that many of the dre models under examination contained weaknesses in controls designed to protect the system .
+
+for instance , one report noted that all the locks on a particular dre model were easily picked , and were all controlled by the same keys — keys that the reports' authors were able to copy at a local store .
+
+however , the affected election officials felt that this risk would be mitigated by typical polling - place supervisors , who would be able to detect anyone picking the lock on a dre terminal .
+
+in another report , reviewers were concerned that a particular model of dre was linked together with others to form a rudimentary network .
+
+if one of these machines were accidentally or intentionally unplugged from the others , voting functions on the other machines in the network would be disrupted .
+
+in addition , reviewers found that the switches used to turn a dre system on or off , as well as those used to close the polls on a particular dre terminal , were not protected .
+
+design flaws in the voter - verified paper audit trail systems .
+
+voter - verified paper audit trail systems involve adding a paper printout to a dre system that a voter can review and verify .
+
+some citizen advocacy groups , security experts , and elections officials advocate these systems as a protection against potential dre flaws .
+
+however , other election officials and researchers have raised concerns about potential reliability and security flaws in the design of such systems .
+
+critics of the systems argue that adding printers increases the chance of mechanical failure and disruption to the polling place .
+
+critics also point out that these systems introduce security risks involving the paper audit trail itself .
+
+election officials would need to safeguard the paper ballots .
+
+if voting system mechanisms for protecting the paper audit trail were inadequate , an insider could associate voters with their individual paper ballots and votes , particularly if the system stored voter - verified ballots sequentially on a continuous roll of paper .
+
+if not protected , such information could breach voter confidentiality .
+
+weak security management practices .
+
+selected state elections officials , computer security experts , and election experts view the reported instances of weak controls as an indication that the voting system vendors lack strong security management and development practices .
+
+security experts and local election officials cite the position of trust that vendors occupy in the overall election process , and say that to ensure the security and reliability of electronic voting systems — as well as improve voters' confidence in the electoral process — vendors' practices need to be above reproach .
+
+specific concerns have been expressed about ( 1 ) the personnel security policies used by vendors , including whether vendors conduct background checks on programmers and systems developers ; ( 2 ) whether vendors have established strict internal security protocols and have adhered to them during software development ; and ( 3 ) whether vendors have established clear chain of custody procedures for handling and transporting their software securely .
+
+a committee of election system vendors generally disagrees with these concerns and asserts that their security management practices are sound .
+
+several reports raised concerns about the operational practices of local jurisdictions and the performance of their electronic voting systems during elections .
+
+these include incorrect system configurations , poor implementation of security procedures , and operational failures during an election .
+
+incorrect system configuration .
+
+some state and local election reviews have documented cases in which local governments did not configure their voting systems properly for an election .
+
+for instance , a county in california presented some voters with an incorrect electronic ballot in the march 2004 primary .
+
+as a result , these voters were unable to vote on certain races .
+
+in another case , a county in pennsylvania made a ballot programming error on its dre system .
+
+this error contributed to many votes not being captured correctly by the voting system , evidenced by that county's undervote percentage , which reached 80 percent in some precincts .
+
+poor implementation of security procedures .
+
+several reports indicated that state and local officials did not always follow security procedures .
+
+reports from maryland found that a regional vote tabulation computer was connected to the internet , and that local officials had not updated it with several security patches , thus exposing the system to general security threats .
+
+in another example , election monitors in florida described how certain precincts did not ensure that the number of votes matched the number of signatures on the precinct sign - in sheets , thus raising questions as to whether the voting systems captured the correct number of votes .
+
+a report from california cited a number of counties that failed to follow mandatory security measures set forth by the secretary of state's office that were designed to compensate for potential security weaknesses in their electronic voting systems .
+
+system failures during elections .
+
+several state and local jurisdictions have documented instances when their electronic voting systems exhibited operational problems during elections .
+
+for example , california officials documented how a failure in a key component of their system led to polling place disruptions and an unknown number of disenfranchised voters .
+
+in another instance , dre voting machines in one county in north carolina continued to accept votes after their memories were full , effectively causing over 4,000 votes to be lost .
+
+the same system was used in pennsylvania , where the state's designated voting system examiner noted several other problems , including the system's failure to accurately capture write - in or straight ticket votes , screen freezes , and difficulties sensing voters' touches .
+
+a florida county experienced several problems with its dre system , including instances where each touch screen took up to 1 hour to activate and had to be activated separately and sequentially , causing delays at the polling place .
+
+in addition , election monitors discovered that the system contained a flaw that allowed one dre system's ballots to be added to the canvass totals multiple times without being detected .
+
+in another instance , a malfunction in a dre system in ohio caused the system to record approximately 3,900 votes too many for one presidential candidate in the 2004 general election .
+
+while each of these problems was noted in an operational environment , the root cause was not known in all cases .
+
+in 1990 , the federal election commission issued a set of voluntary voting systems standards , which were later revised in 2002 .
+
+these standards identify minimum functional and performance requirements for electronic voting systems such as optical scan and dre voting equipment .
+
+the functional and performance requirements address what voting equipment should do and delineate minimum performance thresholds , documentation provisions , and security and quality assurance requirements .
+
+these standards also specify testing to ensure that the equipment meets these requirements .
+
+the standards are voluntary — meaning that states are free to adopt them in whole or in part , or reject them entirely .
+
+computer security experts and others have criticized the 2002 voting system standards for not containing requirements sufficient to ensure secure and reliable voting systems .
+
+common concerns with the standards involve vague and incomplete security provisions , inadequate provisions for some commercial products and networks , and inadequate documentation requirements .
+
+vague and incomplete security provisions .
+
+security experts and others have criticized the security provisions in the voting system standards for being vague and lacking specific requirements .
+
+although the standards require the presence of many kinds of security controls , the concern is that they are not specific enough to ensure the effective and correct implementation of the controls .
+
+one of the independent testing authorities agreed and noted that the broad terms of the standards do not provide for consistent testing because they leave too much room for interpretation .
+
+computer security and testing experts have also noted that the current voting system standards are not comprehensive enough and that they omit a number of common computer security controls .
+
+for example , an independent testing authority expressed a concern that the standards do not prohibit many software coding flaws , which could make the voting system software susceptible to external attack and malicious code .
+
+in addition , nist performed a review of the voting system standards and found numerous gaps between its own security guidance for federal information systems and those prescribed by the standards .
+
+others have argued that the standards are simply out of date , and contain no guidance on technologies such as wireless networking and voter - verified paper audit trails .
+
+inadequate provisions for commercial off - the - shelf ( cots ) systems and telecommunications and networking services .
+
+computer security experts have raised concerns about a provision in the voting system standards that exempts unaltered cots software from testing , and about voting system standards that are not sufficient to address the weaknesses inherent in telecommunications and networking services .
+
+specifically , vendors often use cots software in their electronic voting systems , including operating systems like microsoft windows .
+
+security experts note that cots software could contain defects , vulnerabilities , and other weaknesses that could be carried over into electronic voting systems , thereby compromising their security .
+
+regarding telecommunication and networking services , selected computer security experts believe that relying on any use of telecommunications or networking services , including wireless communications , exposes electronic voting systems to risks that make it difficult to guarantee their security and reliability — even with safeguards such as encryption and digital signatures in place .
+
+inadequate requirements for documentation .
+
+computer security experts and some elections officials have expressed concerns that the documentation requirements in the voting system standards are not explicit enough .
+
+for instance , computer security experts warn that the documentation requirements for source code are not sufficient for code that is obscure or confusing , nor do they require developers to sufficiently map out how software modules interact with one another .
+
+this could make it difficult for testers and auditors to understand what they are reviewing , lessening their ability to detect unstable or hidden ( and potentially malicious ) functionality .
+
+in addition , election officials and a security expert raised concerns that the standards do not require sufficient documentation for local officials with respect to proper operation and maintenance procedures .
+
+for instance , election officials in one state noted that when voting machines malfunctioned and started generating error messages during an election , state technicians were unable to diagnose and resolve the problems because the vendor's documentation provided no information about what the error messages meant , or how to fix the problems .
+
+security experts and some election officials have expressed concerns that tests currently performed by independent testing authorities and state and local election officials do not adequately assess electronic voting systems' security and reliability .
+
+these concerns are amplified by what some perceive as a lack of transparency in the testing process .
+
+inadequate security testing .
+
+many computer security experts expressed concerns with weak or insufficient system functional testing , source code reviews , and penetration testing .
+
+illustrating their concerns , most of the systems with weak security controls identified earlier in this report ( see product development issues ) had previously been certified by the national association of state election directors after testing by an independent testing authority .
+
+security experts and others point to this as an indication that both the standards and the testing program are not rigorous enough with respect to security .
+
+regarding the functional testing conducted by independent testing authorities and state and local officials , election and security experts expressed concern that this testing may not reveal certain security flaws in electronic voting systems .
+
+they argue that functional tests only measure a system's performance when it is used as expected , under normal operating conditions .
+
+as a result , this testing cannot determine what might happen if a voter acts in unexpected ways , or how the system would react in the face of an active attack .
+
+specifically , security experts argue that functional testing is unlikely to ever trigger certain types of hidden code .
+
+as a result , malicious code could be present in a system and evade testing as long as the triggering commands were not entered .
+
+security and testing experts also expressed concern that the source code reviews called for in the voting system standards and conducted by independent testing authorities are too general and do not take into account the unique nature of voting systems .
+
+for instance , several experts noted that malicious code could be hidden in source code and be obscure enough to avoid detection by the general reviews , which currently focus on coding conventions , comments , and line length .
+
+moreover , there is concern that these code reviews may not adequately inspect how voting system software interacts with key election data .
+
+specifically , security experts say that a testing authority's source code review should include checks for unique elements of the election contest , including ( 1 ) software modules with inappropriate access to vote totals , ballot definition files , or individual ballots ; ( 2 ) functionality with time or date dependent behavior ; and ( 3 ) software modules that retain information from previous screen touches or previous voters — all potentially indicative of improper and malicious voting system behavior .
+
+as for penetration testing , experts expressed concerns that voting system testing does not include such explicit security tests .
+
+an official from an independent testing authority generally agreed and said that the security - related parts of their testing use a checklist approach , based on what is called for in the voluntary voting system standards .
+
+this official recommended more rigorous security testing .
+
+another testing authority official said that their testing does not guarantee that voting systems are secure and reliable .
+
+this official has called for local jurisdictions to conduct additional security testing and risk analyses of their own .
+
+lack of transparency in the testing process .
+
+security experts and some elections officials have raised concerns about a lack of transparency in the testing process .
+
+they note that the test plans used by the independent testing authorities , along with the test results , are treated as protected trade secrets and thus cannot be released to the public .
+
+ ( designated election officials may , in fact , obtain copies of test results for their systems , but only with the permission of the vendor. ) .
+
+as a result , critics argue , the rigor of the testing process is largely unknown .
+
+critics say that this lack of transparency hinders oversight and auditing of the testing process .
+
+this in turn makes it harder to determine the actual capabilities , potential vulnerabilities , and performance problems of a given system .
+
+despite assertions by election officials and vendors that disclosing too much information about an electronic voting system could pose a security risk , one security expert noted that a system should be secure enough to resist even a knowledgeable attacker .
+
+numerous studies raised concerns about the security management practices of state and local governments in ensuring the security of electronic voting systems , citing poor version control of system software and inadequate security management programs .
+
+poor version control of system software .
+
+security experts and selected election officials are concerned about the configuration management practices of state and local jurisdictions .
+
+specifically , the voting system software installed at the local level may not be the same as what was qualified and certified at the national or state levels .
+
+these groups raised the possibility that either intentionally or by accident , voting system software could be altered or substituted , or that vendors or local officials might ( knowingly or not ) install untested or uncertified versions of voting systems .
+
+as a result , potentially unreliable or malicious software might be used in elections .
+
+for example , in separate instances in california and indiana , state officials found that two different vendors had violated regulations and state law by installing uncertified software on voting systems .
+
+inadequate security management programs .
+
+several of the technical reviews mentioned previously also found that states did not have effective information security management plans in place to oversee their electronic voting systems .
+
+the reports noted that key managerial functions were not in place , including ( 1 ) providing appropriate security training , ( 2 ) ensuring that employees and contractors had proper certifications , ( 3 ) ensuring that security roles were well defined and staffed , and ( 4 ) ensuring that pertinent officials correctly configure their voting system audit logs and require them to be reviewed .
+
+in addition , several reports indicated that some state and local jurisdictions did not always have procedures in place to address problems with their electronic voting systems .
+
+for instance , one county in pennsylvania reported that neither its election staff nor its technical division knew how to deal with several problems that occurred on election day .
+
+the report also cited ( 1 ) a lack of preparation and contingency planning for significant problems , ( 2 ) inadequate communication means between precincts and the county election office for problem reporting , and ( 3 ) the absence of paper ballots held in reserve as a backup .
+
+in addition , this and other reports indicated that poll workers might not receive sufficient training , or possess adequate technical skills or knowledge of their particular systems to manage , administer , and troubleshoot them .
+
+while the concerns listed above are numerous , it is important to note that many involved problems with specific voting system makes and models or with circumstances in a specific jurisdiction's election .
+
+further , there is a lack of consensus among election officials , computer security experts , and others on the pervasiveness of the concerns .
+
+on one hand , both vendors and election officials express confidence in the security of their current products .
+
+election officials note that their administrative procedures can compensate for inherent system weaknesses , and they point out that there has never been a proven case of fraud involving tampering with electronic voting systems .
+
+alternatively , citizen groups and computer security experts note that administrative procedures cannot compensate for all of the weaknesses and that if electronic voting system security weaknesses are exploited , particularly by those with insider access to the systems , changes to election results could go undetected .
+
+nevertheless , there is evidence that some of these concerns — including weak controls and inadequate testing — have caused problems with recent elections , resulting in the loss and miscount of votes .
+
+in light of the recently demonstrated voting system problems , the differing views on how widespread these problems are , and the complexity of assuring the accuracy , integrity , confidentiality , and availability of voting systems throughout their life cycles , the security and reliability concerns raised in recent reports merit attention .
+
+several federal , academic , and nongovernmental organizations have issued guidance to help state and local election officials improve the election and voting processes .
+
+this guidance includes recommended practices for enhancing the security and reliability of voting systems .
+
+for example , in mid - 2004 , eac issued a compendium of practices recommended by elections experts , including state and local jurisdictions .
+
+this compendium , among many suggested practices , includes activities to help ensure a secure and reliable voting process throughout a voting systems' life cycle .
+
+as another example , in july 2004 , the california institute of technology and the massachusetts institute of technology issued a report recommending immediate steps to avoid lost votes in the 2004 election , including suggestions for testing equipment , retaining audit logs , and physically securing voting systems .
+
+in addition to this election - specific guidance , the federal government and other entities have published extensive guidance intended to help organizations address , evaluate , and manage the security and reliability of their information technology systems .
+
+this guidance includes practices in the product development phase of the system life cycle that may assist voting system vendors in adopting appropriate standards and practices for designing and developing secure and reliable voting systems .
+
+in addition , this guidance includes practices in the areas of acquisition , testing , operation , and management that may help state governments and local election officials in acquiring technologies and services ; assessing security risks ; selecting , applying , and monitoring security controls ; auditing systems ; and adopting security policies .
+
+the following is a high - level summary of common practices identified in both general and election - specific reports that address the security and reliability of electronic voting systems in the context of the system life cycle phases and cross - cutting activities .
+
+the recommended practices in both election - specific and it - focused guidance documents provide valuable guidance throughout a voting system's life cycle that , if implemented effectively , should help improve the security and reliability of voting systems .
+
+appendix ii provides a more detailed summary of the election - specific publications' guidance on voting system security and reliability practices , and appendix iii provides summaries of general guidance on information systems security .
+
+voting system developers should define security requirements and specifications early in the design and development process .
+
+the security requirements for voting systems should consider the unique security needs of elections and the voting environment , as well as applicable laws , national standards , and other external influences and constraints that govern systems .
+
+voting systems should contain audit logs that record all activity involving access to and modifications of the system , particularly of sensitive or critical files or data , including the time of the event , the type of event and its result , and the user identification associated with the event .
+
+voting systems should employ adequate logical access controls over software and data files .
+
+systems should require that passwords be changed periodically , and that they not use names or words from the dictionary .
+
+further , the use of vendor - supplied or generic passwords should be prohibited .
+
+vendors should review lessons learned from recent elections and implement relevant mitigation steps to address known security weaknesses ( see app .
+
+ii , table 16 ) .
+
+election officials should focus on the security issues related to electronic voting equipment before purchasing or implementing voting systems .
+
+requests for proposals should include security requirements and evaluation and test procedures .
+
+election officials should review lessons learned from recent elections and implement relevant mitigation steps to address known security weaknesses ( see app .
+
+ii , table 16 ) .
+
+state and local authorities should ensure that sensitive activities in the election process , such as vote tabulation and the transporting of ballots or election results , are performed by more than one person or observed by representatives of both major parties .
+
+procedures should be developed and followed to identify and document the chain of custody for every instance when sensitive election items ( such as memory cards , ballots , and voting machines ) change hands .
+
+voting machines , ballots , memory cartridges , election supplies , and offices should be physically secured against unauthorized access before , during , and after an election .
+
+a postelection audit of voting systems should be conducted to reconcile vote totals and ballot counts , even if there is no recount scheduled .
+
+an audit of the election system and process should be conducted after election day to verify that the election was conducted correctly and to uncover any evidence of security breaches or other problems that may not have surfaced on election day .
+
+states should adopt the most current version of the national voluntary voting standards or guidelines .
+
+during the product development phase , electronic voting system developers should verify and validate the security controls on the system before deployment in order to ensure that the controls are working properly and effectively and that they meet the operational security needs of the purchasing jurisdiction .
+
+during the acquisition phase , states and local governments should require that voting systems be certified against federal standards .
+
+during the operations phase , localities should conduct logic and accuracy testing on voting machines before the election to ensure that they accurately record votes .
+
+voting system developers should establish a sound security policy that identifies the security goals of their system ; the procedures , standards , and controls needed to support the system security goals ; the critical assets ; and the security - related roles and responsibilities .
+
+voting system developers should conduct appropriate background screening on all employees before granting them access to sensitive information or placing them into sensitive positions .
+
+election officials should plan for poll worker training early in the process and ensure that all training classes and materials include information on the security of voting systems and on election security procedures .
+
+election officials , not vendors , should control the administration and use of the voting equipment .
+
+to that end , the election administration team should include persons with expertise in both computer security and voting system oversight .
+
+election officials should conduct a risk analysis of voting systems and address any identified vulnerabilities and points of failure in the election process .
+
+election officials should ensure that vendors provide tested and certified versions of voting system software by requiring that software be submitted to nist's national software reference library , and by verifying that the systems , including hardware , software , and software patches , have met all required standards through required testing .
+
+procedures and plans should be established for handling election day equipment failure , including backup and contingency plans .
+
+if voting machines malfunction during voting , they should not be repaired or removed from the polling place on election day .
+
+since the implementation of hava in 2002 , the federal government has begun a range of actions that are expected to improve the security and reliability of electronic voting systems .
+
+eac , with the support of tgdc and nist , is in the process of updating voluntary voting system standards , is establishing federal processes to accredit independent test laboratories and certify voting systems to national standards , and is supporting state and local election management by providing a library for certified software and acting as a clearinghouse for information on voting system problems and recommended election administration and management practices .
+
+however , a majority of these efforts either lack specific plans for implementation in time to affect the 2006 general election or are not expected to be completed until after the 2006 election .
+
+as a result , it is unclear when these initiatives will be available to assist state and local election officials .
+
+in addition to the federal government's activities , nongovernmental initiatives are under way to ( 1 ) define international voting system standards ; ( 2 ) develop designs for open voting system products ; ( 3 ) provide a framework of acquisition questions to use in acquiring voting systems ; and ( 4 ) support management of voting systems by collecting and analyzing problem reports .
+
+eac , in collaboration with nist and tgdc , has initiated efforts on several of its key responsibilities relating to the security and reliability of electronic voting systems , including improving voting system standards , developing a process to facilitate testing systems against the standards , and supporting state and local governments' election management .
+
+table 2 summarizes federal initiatives — both those required by hava and those initiated by eac to support hava requirements .
+
+standards .
+
+tgdc and nist have been working on behalf of eac to improve the 2002 federal election commission voluntary voting system standards and their impact on the acquisition , testing , operations , and management processes of the voting system life cycle .
+
+tgdc approved 41 resolutions between july 2004 and april 2005 , many of which directed nist to research and develop recommendations for changing various voting system capabilities and assurance processes .
+
+of the 41 resolutions , 24 relate to the security and reliability of voting systems .
+
+appendix iv contains the relevant resolutions and their status .
+
+tgdc's initial priorities have been to correct errors and fill gaps in the 2002 standards and to supplement them with provisions that address hava requirements .
+
+in may 2005 , tgdc approved a first set of recommended changes and delivered them to eac .
+
+subsequently , eac published these changes as proposed voluntary voting system guidelines and requested public comment by september 30 , 2005 .
+
+eac plans to review and address the comments it receives from the public and its standards and advisory boards during october 2005 , and to issue the 2005 voluntary voting system guidelines shortly thereafter , depending on the nature and volume of comments .
+
+eac is proposing that the 2005 voluntary voting system guidelines will become effective 24 months after they are adopted by the eac , although individual states will be free to adopt the standards at any time during the 24 month period .
+
+according to the eac , the 24 month period is intended to give vendors the time to design and develop systems that comply with the new guidelines ; to give testing laboratories the opportunity to develop testing protocols , train laboratory staff , and be prepared to test the systems against the new guidelines ; and to allow states time to adopt the standards , adjust their certification and acceptance testing processes , and acquire systems in plenty of time for future election cycles .
+
+key security and reliability standards of the proposed 2005 guidelines include a method for distributing voting system software , protocols for generating and distributing software reference data for the nist repository of certified voting system software , a method for validating the proper setup of voting systems , controls for the use of wireless communications by voting systems , and optional specifications for a voter - verified paper audit trail .
+
+however , nist reported that several of the topics listed in the proposed guidelines ( including software distribution , validation of system setup , and wireless communications ) will not be fully addressed in the 2005 update , and will need to be updated in a future version of the guidelines .
+
+furthermore , key security and reliability improvements to the existing standards ( including guidance for the security of cots software ; ensuring the correctness of software , testing , and documentation for system security ; enhancements to the precision and testability of the standards ; and the usability of error messages ) have been deferred until the subsequent set of guidelines is developed .
+
+eac officials acknowledged that these changes will not be made in the initial set of guidelines , and reiterated that they are focusing on what can be done in time to meet the hava - mandated delivery date for the initial set of guidelines .
+
+testing .
+
+eac and nist have initiatives under way to improve voting system testing , including efforts to evaluate and accredit independent testing laboratories ( which test voting systems against the national standards ) and efforts to define both an interim process and a long - term program for voting system certification .
+
+nist is in the process of establishing plans and procedures to conduct an evaluation of independent , nonfederal laboratories through its national voluntary laboratory accreditation program .
+
+nist solicited feedback from interested laboratories concerning its accreditation program , drafted a handbook that documents the accreditation process , and accepted applications from its first cadre of candidate laboratories through august 2005 .
+
+the evaluation of candidate laboratories is planned to begin in fall 2005 .
+
+once this evaluation is completed , nist plans to submit for eac accreditation a proposed list of laboratories to carry out the testing of voting systems .
+
+in light of the time required to publicize the accreditation process and requirements and to evaluate the first set of candidates , nist officials estimated that they would recommend laboratories for accreditation in late 2006 or early 2007 .
+
+laboratories that are currently accredited by the national association of state election directors can continue to operate as independent testing authorities until june 2008 , but are expected to complete nist's new accreditation program by that time .
+
+in addition , eac officials stated that they are in the process of developing plans and procedures with nist and the independent testing authorities to upgrade existing accreditations to address the 2005 voting system standards , when these standards are approved .
+
+eac is working to establish a program to certify , decertify , and recertify voting systems .
+
+with the assistance of a consulting firm , eac is in the process of defining certification policies and procedures , both for systems undergoing testing with existing federal voluntary voting system standards and for those that will be tested against eac's voluntary voting system guidelines .
+
+eac officials expect to define the scope and framework for the certification process and to begin to accept vendor registrations during fall 2005 .
+
+it also expects to begin accepting applications for certification of voting systems by january 2006 .
+
+eac has not yet determined when it will have a national program for voting system certification in place .
+
+management support .
+
+to address its responsibilities related to providing election management support to state and local jurisdictions , eac and nist have been working to establish a software library and to act as a clearinghouse for information on both problems and recommended practices involving elections and systems .
+
+in anticipation of the 2004 elections , eac and nist established a software library for voting systems within nist's national software reference library that allows state and local governments to verify that their voting system software is the certified version ( based on testing by independent testing laboratories ) and to manage the configuration of that software for their systems .
+
+the library was established before the 2004 general election with software from approximately a half dozen major voting system vendors .
+
+nist derived digital signatures for the software and published them on the library's public web site for states and local jurisdictions to compare with the signatures of software used by their systems .
+
+in january 2005 , tgdc requested that nist define a process and specification for sharing information among jurisdictions regarding nonconformities , problems , and vulnerabilities in voting systems , to specifically address the security and reliability of those systems .
+
+such information could be used to alert state and local election officials to known problems with their systems and to develop additional recommended practices for their use .
+
+tgdc designated this task as a third - tier priority and has deferred working on it until after the publication of the 2005 voting system standards .
+
+in addition , eac surveyed state and local election officials to identify problems they encountered during the 2004 election .
+
+however , election officials often interpreted the survey questions differently , so not all of the information resulting from this survey was complete or usable .
+
+eac plans to enhance its survey activities in the future .
+
+eac is charged by hava with conducting periodic studies of election administration issues with the goal of providing the most accurate , secure , and expeditious system for voting and tabulating election results .
+
+toward this end , eac compiled the experiences of a select group of elections experts into a tool kit to help states and local jurisdictions prepare for the 2004 general election .
+
+it was published on eac's web site in august 2004 and publicized to state and local jurisdictions before the election .
+
+the tool kit provides recommendations for methods to manage and operate voting systems to help ensure accurate and secure election results and includes general practices for all voting systems and environments , as well as controls for specific types of voting equipment .
+
+since developing the tool kit , eac has included additional best practices proposed by tgdc and nist in the appendixes of its draft voting system guidelines .
+
+these practices recommend that election officials establish procedures for their jurisdictions to ensure , among other things , that voting systems are physically secured against tampering and intentional damage , cryptographic keys for wireless encryption are actively managed , actions taken when using wireless communication are logged , and the authenticity of certified software is confirmed using the national software reference library .
+
+eac plans to update the practices in the voting system guidelines and to compile a broader framework of guidance for election administration and management practices that incorporates the best practices tool kit and further promotes security and reliability for voting systems .
+
+eac has begun working with the national association of state elections directors to establish a working group to develop additional guidelines and procedures for election management and operations and has identified the personnel who will support this effort .
+
+this fall , eac expects the working group to develop a comprehensive outline for the election management guidelines document and to prioritize the topics to be developed for the initial version scheduled to be released in december 2006 .
+
+a final report is expected in december 2007 .
+
+while eac has begun several important initiatives to improve the security and reliability of voting systems , more remains to be done on these initiatives , and specific tasks and time frames for performing them are not fully defined .
+
+standards .
+
+eac recognizes that its planned 2005 update to the standards does not fully address known weaknesses .
+
+eac and nist are developing an outline for the next iteration of the guidelines , but no date has been set for nist to deliver the next guidelines draft to tgdc .
+
+this rewrite is expected to extensively change the existing standards and include , among other features , quality management for system development , more testable standards , and specifications for ballot formats .
+
+however , neither tgdc nor nist has defined specific tasks , measurable outcomes , milestones , or resource needs for addressing the next draft of standards .
+
+consequently , the time frame for states and local jurisdictions to implement the security and reliability improvements associated with the next version of the standards is unknown .
+
+the undefined time frame for completing the standards is likely to cause concern for states required to comply with the federal standards by statute , administrative rule , or condition of hava payments , and will further delay the adoption of widely acknowledged capabilities needed for secure and reliable systems .
+
+voting system certification .
+
+while eac is working to define the scope of a system certification process , much remains to be done before such a process is put in place .
+
+specifically , eac still needs to establish policies , criteria , and procedures to govern certification reviews and decisions for existing standards , as well as the proposed 2005 standards .
+
+however , the specific steps and time frames for eac to execute each stage of its certification responsibilities have not yet been decided .
+
+until eac establishes a comprehensive system certification program , its processes may be inconsistent or insufficiently rigorous to ensure that all certified systems meet applicable standards .
+
+software library .
+
+nist established a software reference library for voting systems , but the usefulness of this library is questionable .
+
+the initial set of voting system software deposited into the library was not comprehensive , no additional voting system software has been submitted to the reference library since the 2004 general election , and neither eac nor nist has identified specific actions to encourage participation from states , local jurisdictions , vendors , or independent testing authorities for the 2006 federal election cycle .
+
+additionally , state and local jurisdictions require specialized tools and technical support to verify that reference library software signatures match those of their own software versions , but no consolidated and easily accessible list of sources for these tools and services is currently available to state and local jurisdictions .
+
+further , nist did not keep statistics on the extent to which state and local jurisdictions used the library during the 2004 election cycle to verify installation of certified software by their vendors , and thus , it could not determine whether its service was meeting state and local needs .
+
+without the continuous incorporation of certified software into the library and processes that can be effectively implemented by state and local governments , these entities are likely to face difficulty in ensuring that their tested and operational voting systems are the same as those that were certified .
+
+further , without a mechanism for determining how the library is being used and how it can be improved , the potential benefits of the library may be greatly diminished .
+
+clearinghouse for information on problems and leading practices .
+
+to fulfill its role as a clearinghouse for information on voting system problems , eac continues to explore issues of data collection for problems with voting systems through enhancing its survey instrument to collect problem information from election officials and working with nist to determine how to share this information .
+
+however , neither eac nor nist has defined specific tasks or time lines for establishing procedures for sharing problems or a repository for collecting them .
+
+the continued absence of a national clearinghouse for voting system problems means that segments of the election community may continue to acquire and operate their systems without the benefit of critical information learned by others regarding the security and reliability of those systems .
+
+regarding its efforts to develop broad guidance on election administration practices , eac has initial plans for moving forward , but lacks a process and schedule for compiling and disseminating this information on a regular basis .
+
+until eac puts such a process in place , there is a risk that the guidance it provides may become outdated and of little value to election officials .
+
+although eac initiatives are expected to eventually provide more secure and reliable systems and more rigorous and consistent quality assurance processes for the states and jurisdictions that choose to use them , how , when , and to what degree this will be accomplished is not clear .
+
+specific steps have not been identified to implement some of the initiatives in time to affect the 2006 general election , and others are not expected to be completed until after the 2006 election .
+
+this situation is due , in part , to delays in the appointment of eac commissioners and in funding the commission .
+
+as a result , it is unclear when the results of these initiatives will be available to assist state and local election authorities .
+
+in addition to federal initiatives , initiatives by various nongovernmental organizations nationwide have been established to address the security and reliability of voting systems .
+
+professional organizations , academic institutions , and citizen advocacy groups have initiatives that affect several areas of the voting system life cycle , particularly product development , acquisition , standards , and management .
+
+selected initiatives include ( 1 ) developing open designs for voting system products ; ( 2 ) identifying issues and key questions to be considered by consumers of electronic voting systems ; ( 3 ) defining international standards ; and ( 4 ) supporting more effective management , including collecting , cataloging , and analyzing problems experienced during elections .
+
+table 3 summarizes key initiatives .
+
+electronic voting systems hold promise for improving the efficiency , accuracy , and accessibility of the elections process , and many are in use across the country today .
+
+the american public needs to feel confident using these systems — namely , that the systems are secure enough and reliable enough to trust with their votes .
+
+however , this is not always the case .
+
+numerous recent studies and reports have highlighted problems with the security and reliability of electronic voting systems .
+
+while these reports often focused on problems with specific systems or jurisdictions , the concerns they raise have the potential to affect election outcomes .
+
+the numerous examples of systems with poor security controls point to a situation in which vendors may not be uniformly building security and reliability into their voting systems , and election officials may not always rigorously ensure the security and reliability of their systems when they acquire , test , operate , and manage them .
+
+these concerns have led to action .
+
+multiple organizations have compiled recommended practices for vendors and election officials to use to improve the security and reliability of voting systems , and eac has initiated activities to improve voluntary voting system standards , system testing programs , and management support to state and local election authorities .
+
+however , important initiatives are unlikely to affect the 2006 elections due , at least in part , to delays in the appointment of eac commissioners and in funding the commission .
+
+specifically , key security - related improvements to voting system standards will not be completed in time , improvements to the national system certification program are not yet in place , and efforts to provide management support to state and local jurisdictions through a software library and information sharing on problems and recommended practices remain incomplete .
+
+further , eac has not consistently defined plans , processes , and time frames for completing these activities , and as a result , it is unclear when their results will be available to assist state and local election officials .
+
+until these efforts are completed , there is a risk that many state and local jurisdictions will rely on voting systems that were not developed , acquired , tested , operated , or managed in accordance with rigorous security and reliability standards — potentially affecting the reliability of future elections and voter confidence in the accuracy of the vote count .
+
+to improve the potential for benefits to states and local election jurisdictions , we recommend that the election assistance commission take the following five actions: 1 .
+
+collaborate with nist and the technical guidelines development committee to define specific tasks , measurable outcomes , milestones , and resource needs required to improve the voting system standards that affect security and reliability of voting systems .
+
+2 .
+
+expeditiously establish documented policies , criteria , and procedures for certifying voting systems that will be in effect until the national laboratory accreditation program for voting systems becomes fully operational , and define tasks and time frames for achieving the full operational capability of the national voting system certification program .
+
+3 .
+
+improve management support to state and local election officials by collaborating with nist to establish a process for continuously updating the national software reference library for voting system software ; take effective action to promote use of the library by state and local governments ; identify and disseminate information on resources to assist state and local governments with using the library ; and assess use of the library by states and local jurisdictions for the purpose of improving library services .
+
+4 .
+
+improve management support to state and local election officials by collaborating with tgdc and nist to develop a process and associated time frames for sharing information on the problems and vulnerabilities of voting systems .
+
+5 .
+
+improve management support to state and local election officials by establishing a process and schedule for periodically compiling and disseminating recommended practices related to security and reliability management throughout the system life cycle ( including the recommended practices identified in this report ) and ensuring that this process uses information on the problems and vulnerabilities of voting systems .
+
+eac and nist provided written comments on a draft of this report ( see apps .
+
+v and vi ) .
+
+eac commissioners agreed with our recommendations and stated that actions on each are either under way or intended .
+
+nist's director agreed with the report's conclusions that specific tasks , processes , and time frames must be established to improve the national voting systems standards , testing capabilities , and management support available to state and local election officials .
+
+in addition to its comments on our recommendations , eac commissioners expressed three concerns with our use of reports produced by others to identify issues with the security and reliability of electronic voting systems .
+
+first , they noted that the draft lacked citations linking security problems and vulnerabilities to the reports in the bibliography and lacked context when referring to experts .
+
+we have since provided citations and context , where applicable .
+
+second , commissioners expressed concern that the report portrays voting system problems as systemic , but does not provide context for evaluating the extent of the problems — that is , how frequently these issues arise or whether the problems occur in a large percentage of electronic voting systems or jurisdictions .
+
+we do not agree that we portray the problems as systemic .
+
+our report states that many of the issues involved specific voting system makes and models or circumstances in the elections of specific jurisdictions , and that there is a lack of consensus on the pervasiveness of the concerns .
+
+this is due in part to a lack of comprehensive information on what system makes and models are used in jurisdictions throughout the country .
+
+nonetheless , the numerous examples of systems with poor security controls point to a situation in which vendors may not be uniformly building security and reliability into their voting systems , and election officials may not always rigorously ensure the security and reliability of their systems when they acquire , test , operate , and manage them .
+
+third , commissioners expressed concern that our report relies on reports produced by others without substantiation of the claims made in those reports , and provides specific examples that they felt should be verified with election officials .
+
+while our methodology focused on identifying and grouping problems and vulnerabilities identified in issued reports and studies , where appropriate and feasible , we sought additional context , clarification , and corroboration from the authors , election officials , and security experts .
+
+in one of the specific examples offered by eac , we understand that the florida demonstration may not have offered an accurate assessment of the system's vulnerabilities to outsiders , but it has value in identifying vulnerabilities to knowledgeable insiders .
+
+in another example , eac takes issue that we found no concerns with the security and reliability during the acquisition phase of the voting system life cycle and noted that they learned from state and local officials that a number of voting equipment units have recently been rejected during the acceptance testing phase of the acquisition process demonstrating quality assurance or reliability concerns .
+
+we do not question eac's point , but this issue did not surface in the reports we analyzed and the interviews we held — so we did not include it in our report .
+
+this issue , however , shows that there could be security and reliability issues that are not documented in existing reports .
+
+assessing security and reliability issues and determining their pervasiveness are items that eac can explore and share in its role as a clearinghouse for information on problems with electronic voting systems .
+
+eac commissioners also commented that our report focuses exclusively on eac as the answer to the questions surrounding electronic voting , and stated that eac is but one participant in the process of ensuring the reliability and security of voting systems .
+
+they noted that while eac , tgdc , and nist are working to develop a revised set of voting system guidelines ( standards ) , it is the voting system vendors that must design and configure their systems to meet those guidelines and the state and local election officials that must adopt the guidelines and restrict their purchases of voting systems to ones that conform to the guidelines .
+
+while we agree that eac is one of many entities with responsibilities for improving the security and reliability of voting systems , given its leadership role in defining voting system standards , in establishing programs both to accredit laboratories and to certify voting systems , and in acting as a clearinghouse for improvement efforts across the nation , we believe that our focus on eac is appropriate and addresses the objective of our requesters regarding the actions that federal agencies have taken .
+
+eac and nist officials also provided detailed technical corrections , which we incorporated throughout the report as appropriate .
+
+as agreed with your offices , unless you publicly announce the contents of this report earlier , we plan no further distribution of it until 30 days from the report date .
+
+at that time , we will send copies of this report to the chairman and ranking member of the committee on house administration and to the chairman and ranking member of the senate committee on rules and administration .
+
+we are also sending copies to the commissioners and executive director of the election assistance commission , the secretary of commerce , the director of the national institute of standards and technology , and other interested parties .
+
+in addition , the report will be available without charge on gao's web site at http: / / www.gao.gov .
+
+should you have any questions about matters discussed in this report , please contact dave powner at ( 202 ) 512-9286 or at pownerd@gao.gov or randy hite at ( 202 ) 512-3439 or at hiter@gao.gov .
+
+contact points for our offices of congressional relations and public affairs can be found on the last page of this report .
+
+gao staff who made major contributions to this report are listed in appendix vii .
+
+our objectives were to ( 1 ) determine significant security and reliability concerns that have been identified for electronic voting systems ; ( 2 ) identify recommended practices relevant to the security and reliability of such systems ; and ( 3 ) describe the actions that federal agencies and other organizations have taken , or plan to take , to improve the security and reliability of electronic voting systems .
+
+our work focused on the security and reliability of optical scanning and direct recording electronic voting systems , which includes equipment for defining ballots , casting and counting ballots , managing groups of interconnected electronic components , and transmitting voting results and administrative information among the locations supporting the voting process .
+
+to determine significant security and reliability concerns and identify recommended practices , we conducted a broad literature search for existing published electronic voting studies .
+
+our search included the use of internet sources , technical libraries , professional and technical journals , and bibliographic information from articles and documents we obtained .
+
+we also collected citations and contacts during interviews with relevant officials and experts .
+
+to corroborate and provide context for identified concerns and recommended practices , we interviewed federal officials , election officials , computer and information security experts , industry officials , and citizen advocacy groups .
+
+our interviews also included officials from nongovernmental organizations involved with elections and electronic voting issues , as well as members of our executive council on information management and technology .
+
+in addition , we examined testimony made before pertinent federal bodies and other source material to provide supporting information .
+
+through our literature search , we identified a number of reports that addressed electronic voting issues .
+
+we organized these reports into several content areas , including system security assessments , reliability issues , general security issues , practices and recommendations , and statistical analyses .
+
+to identify the most relevant sources for our work , we then selected those reports that best met selection criteria that we developed .
+
+the selection criteria included the extent to which the report specifically addressed the security and reliability of electronic voting systems and recommended practices relevant to these systems ; whether original data analysis was conducted ; author knowledge and experience ; endorsements by pertinent government organizations ( which were often sponsors of reports ) ; and the authenticity of available copies of the report .
+
+we were interested in targeting the more recent literature , but we included earlier reports that were deemed particularly relevant to the objectives of our work .
+
+to assist in our assessment of the reliability of each report's findings , we also conducted reviews of a report's methodology , including its limitations , data sources , and conclusions .
+
+we also obtained permission to use and report on any documents that were marked as confidential or otherwise sensitive .
+
+the final lists of the selected literature we relied on for our work are shown in the bibliography .
+
+some reports were not selected .
+
+for the most part , these reports did not directly focus on our work objectives , and the selected reports presented a more thorough treatment of the issues related to our work .
+
+from the selected literature and corroborating interviews , we extracted and summarized findings to create a list of security and reliability concerns for electronic voting systems .
+
+we also identified and summarized recommended practices for improving the security and reliability of electronic voting systems .
+
+additionally , we included generally recommended practices issued by the federal government and other organizations that promote security and reliability for information systems engineering and management .
+
+we examined these general practices to confirm their applicability to the voting environment .
+
+however , our review of the recommended practices did not include validating the quality or assessing the effectiveness of the practices , or the extent to which the practices have been implemented by states or local jurisdictions .
+
+finally , using a systems life cycle framework , we organized our list of concerns and recommended practices according to the activities in the voting system life cycle model that we developed .
+
+to describe the actions that federal agencies and other organizations have taken , or plan to take , to improve the security and reliability of electronic voting systems , we reviewed the help america vote act to determine federal responsibilities and requirements for improving the security and reliability of electronic voting systems .
+
+we attended public meetings of the election assistance commission , the national institute of standards and technology , and the technical guidelines development committee ; conducted interviews with officials from these organizations and others ; and obtained and analyzed supporting documents , including the voluntary voting system guidelines and the resolutions of the technical guidelines development committee .
+
+we evaluated the resolutions to identify those relevant to security and reliability and identified the committee's priorities and plans for implementing the resolutions .
+
+additionally , we identified activities being performed by nongovernmental organizations to improve the security and reliability of electronic voting systems through a broad literature search and interviews with electronic voting experts .
+
+these organizations , including citizen advocacy groups as well as academic and standards bodies , were selected based upon the degree to which their initiative's goal addressed our objective ( to improve the security and reliability of electronic voting systems ) , the demonstrated progress toward achieving the goal , the existence of plans for specific products or activities , and willingness to discuss and confirm each of these areas with us .
+
+we conducted interviews with members of the nongovernmental organizations and analyzed supporting documentation provided by them or available on their web sites .
+
+we did not evaluate the quality or effectiveness of these nongovernmental initiatives .
+
+we conducted our work at the election assistance commission , the national institute of standards and technology , the national academies of science , and several nongovernmental organizations in the washington , d.c. , area .
+
+our work was performed from january through august 2005 in accordance with generally accepted government auditing standards .
+
+multiple organizations have issued collections of recommended practices for establishing secure and reliable electronic voting systems .
+
+for example , the election assistance commission's best practices tool kit is a central document for guidance on this topic .
+
+developed under hava for use by state and local election officials , this web - based resource presents guidance compiled from experienced representatives of the election community , with links to web - based references from a variety of organizations where additional recommended practices are documented .
+
+the tool kit references practices and studies from other organizations , including the national institute of standards and technology , the brennan center for justice at new york university , the leadership conference on civil rights , the caltech / mit voting technology project , and the election center .
+
+other organizations have also issued their own sets of recommended practices .
+
+many of the reports and studies that we reviewed to identify concerns with electronic voting systems also offered recommendations for mitigating the weaknesses they found .
+
+the descriptions below summarize the aspects of this guidance pertaining to the security and reliability of voting systems .
+
+election assistance commission: best practices tool kit .
+
+the help america vote act ( hava ) tasked the eac with promoting , among other things , accurate , convenient , and efficient methods of voting and election administration in a variety of areas , including voting technology , ballot design , and poll worker training .
+
+as part of its efforts to address this requirement , eac assembled a team of elections officials for a 2-day working session in mid - 2004 to create a “best practices tool kit.” the tool kit is a compendium of practices recommended by elections experts , including state and local jurisdictions .
+
+the immediate goal of the tool kit was to help local election administrators in their management of the 2004 elections .
+
+the practices and recommendations in the tool kit address the life cycle activities of acquisition , operations , testing , and management .
+
+the tool kit also includes practices that are specific to ensuring the security and reliability of different types of electronic voting systems in the areas of testing , operations , and management .
+
+example practices from the tool kit are provided in the following tables: table 4 identifies practices that pertain to all types of voting systems , table 5 identifies practices that pertain to optical scan voting systems , and table 6 identifies practices that pertain to direct recording electronic ( dre ) voting systems .
+
+national bureau of standards: accuracy , integrity , and security in computerized vote - tallying ( nbs sp 500-158 ) .
+
+in august 1988 , the national bureau of standards ( the prior name for nist ) issued a report authored by a well - known elections expert .
+
+the report is referenced by eac's tool kit .
+
+it makes recommendations regarding the life cycle activities of product development , operations , testing , and management that are intended for state and local elections officials .
+
+the recommendations are largely related to implementation of administrative controls and operational procedures , although the recommendations related to system design are more specific .
+
+example recommendations from the report are given in table 7 .
+
+brennan center for justice: recommendations of the brennan center for justice and the leadership conference on civil rights for improving reliability of direct recording electronic voting systems .
+
+in 2004 , the brennan center for justice at new york university and the leadership conference on civil rights assembled a group of election and technology experts to independently assess the security of dre systems and to develop recommendations for improving dre reliability .
+
+the group issued its recommendations in june 2004 .
+
+the recommendations are high - level policy recommendations and broad procedural statements rather than low - level practices , and are focused primarily in the life cycle area of management , with one recommendation each in the areas of operations and testing .
+
+they were intended for use by elections officials in jurisdictions planning to use dres in the 2004 elections .
+
+the eac cited this report in its tool kit .
+
+example practices from the report are listed in table 8 .
+
+election center: election preparation checklists .
+
+in may 2004 , the election center issued a series of five checklists designed to help state and local election officials prepare for the november 2004 elections .
+
+the checklists include specific guidance in the areas of polling place accessibility , security of paper ballots , polling place preparations , voting systems , and procedures for recounts .
+
+the eac tool kit references the checklists as a group , and specifically notes the accessibility and voting systems checklists .
+
+taken together , the checklists include recommendations in the life cycle areas of operations , testing , and management .
+
+example recommendations are listed in table 9 .
+
+national task force on election reform: election 2004: review and recommendations by the nation's elections administrators .
+
+in early 2005 , the national task force on election reform within the election center began to assemble its report on the 2004 election .
+
+the task force was divided into three subcommittees in the areas of voter registration , election technology , and redesigning elections ; the recommendations of each subcommittee were combined to produce the final report and recommendations that were issued in may 2005 .
+
+the recommendations relevant to the security and reliability of electronic voting systems are directed to nist , the eac , state governments , and state and local election officials .
+
+they address the life cycle activities of acquisition , standards , testing , and management , with one recommendation in the area of operations .
+
+examples of the task force's recommendations relevant to the security and reliability of voting systems are listed in table 10 .
+
+caltech / mit voting technology project: voting — what is , what could be .
+
+the caltech / mit voting technology project issued its first report in july 2001 .
+
+its recommendations are intended for all u.s. officials with a role in the voting process .
+
+the report provides an overview of the problems with election recounts and system failure that were exposed during the 2000 presidential election controversy ; makes recommendations related to voting equipment , voter registration , polling place operations , absentee and early voting , ballot security , and the cost and financing of elections ; and makes recommendations for the future of the voting environment , such as proposing a new voting system architecture , calling on the federal government to establish a national elections research laboratory , and calling for the greater national collection and reporting of election administration data .
+
+the recommendations in the report are primarily high - level policy proposals and apply to each area of the voting system life cycle , including product development , acquisition , operations , standards , testing , and management activities .
+
+some example recommendations from the report are listed in table 11 .
+
+caltech / mit voting technology project: immediate steps to avoid lost votes in the 2004 presidential election .
+
+in july 2004 , the caltech / mit voting technology project issued a report containing immediate recommendations intended to help the eac improve the election process for 2004 , along with additional recommendations that could have proven more difficult to implement in time for the november 2004 election .
+
+while the recommendations were directed at the eac , many of them were specific enough to be used by state and local election officials ; the eac referenced the report in its tool kit .
+
+the report included security and reliability recommendations in the life cycle areas of operations , testing , and management .
+
+some example recommendations from the report are listed in table 12 .
+
+league of women voters: safeguarding the vote .
+
+in july 2004 the league of women voters produced a report containing recommendations to local election officials that were intended to advance security through , for example , enhanced transparency of the elections and improved voting system testing and physical security .
+
+in addition , this report provided advice specific to different types of voting systems .
+
+the recommendations related to the security and reliability of electronic voting systems fall in the life cycle activities of operations , testing , and management .
+
+example recommendations from the report are listed in tables below .
+
+table 13 provides examples relevant to all voting systems , table 14 provides examples relevant to optical scan systems , and table 15 provides examples relevant to dre systems .
+
+numerous reports recommended mitigation steps .
+
+in addition to highlighting problems and concerns , several of the reports we reviewed identified specific measures designed to mitigate or otherwise address the weaknesses in the security and reliability of electronic voting systems .
+
+some reports called on states and local governments to implement both administrative and procedural safeguards to address security and reliability on a comprehensive basis , as well as policies to address specific weaknesses .
+
+in other cases , reports indicated that vendors needed to redesign their systems in order to fix identified technical deficiencies or physical security weaknesses in their products .
+
+table 16 lists mitigation measures identified in the reports we reviewed .
+
+the federal government and other entities have published broad guidance intended to help organizations develop , evaluate , and manage information technology systems in a secure and reliable manner .
+
+we have identified examples of such guidance issued by ourselves and six other organizations: national institute of studies and technology ( nist ) , the information systems security engineering association , the computer emergency response team ( cert ) coordination center at the software engineering institute ( sei ) , the sysadmin , audit , network , security ( sans ) institute , the institute for electrical and electronics engineers ( ieee ) , and the american institute of aeronautics and astronautics ( aiaa ) .
+
+these are summarized below .
+
+as technology continues to evolve and these guidance documents are updated to address emerging issues , stakeholders in voting systems must ensure that their own standards and practices are upgraded to keep pace .
+
+federal information system controls audit manual ( fiscam ) .
+
+in january 1999 , we issued guidance for reviewing information system controls that affect the integrity , confidentiality , and availability of computerized data .
+
+designed for use by information system auditors , fiscam defines six major categories of general controls: entitywide security program planning and management ; access controls ; application software development and change controls ; system software ; segregation of duties ; and service continuity .
+
+for each category , fiscam identifies critical elements essential for establishing adequate controls .
+
+state and local jurisdictions acquiring new voting systems or evaluating controls associated with existing systems may use the guidance from fiscam to make purchasing decisions or to set administrative policy or procedures .
+
+gao: information security risk assessment: practices of leading organizations .
+
+our information security risk assessment guide is intended to help federal managers implement an ongoing information security risk assessment process by providing case studies containing examples of practical risk assessment procedures that have been successfully adopted by organizations .
+
+it also identifies critical success factors important to the success of a risk assessment program , such as the involvement of senior management , defined procedures for conducting the assessments , and documenting and maintaining the risk assessment results .
+
+nist: computer security special publications .
+
+the nist computer security division has published several guides promoting information security development and management practices .
+
+these guides address topics such as information security management , acquisition practices , design and development principles , and operation of information systems .
+
+such guides could be used by vendors and developers for the design and development of secure and reliable voting systems , as well as by states and localities for acquisition practices and information management principles .
+
+examples of nist publications that address system security and reliability are listed in table 17 .
+
+cert / cc: security improvement modules .
+
+the cert coordination center ( cert / cc ) at the software engineering institute at carnegie mellon university provides a series of security improvement modules and associated practices intended to help system and network administrators improve the security of their information systems and networks .
+
+the modules contain practices and recommendations in such areas as the outsourcing of security services , implementing system security , detecting and responding to intrusions , and securing system hardware .
+
+international systems security engineering association: systems security engineering capability maturity model ( iso / iec 21827 ) .
+
+the international systems security engineering association promotes and maintains the systems security engineering capability maturity model ( sse - cmm ) ® .
+
+version 3.0 of the sse - cmm was issued in june 2003 .
+
+the sse - cmm is a process reference model describing the requirements for implementing security in information systems .
+
+it describes security engineering activities for secure product definition , design , development , and operation and requirements for developers , system integrators , information security providers , and engineers .
+
+it identifies a comprehensive framework with associated security engineering activities designed to help provide a method by which system developers can measure and improve performance in the application of security engineering principles .
+
+sans institute: resources and guidance .
+
+the sans institute , established in 1989 as a cooperative research and education organization , provides a variety of resources to help organizations implement and improve system security .
+
+its web site provides guidance on writing information security policies and offers templates for organizations to use in developing their own policies .
+
+sans also offers the information security reading room , a collection of research documents on various aspects of information security .
+
+the documents address a variety of information security topics , such as security basics , information assurance , wireless access , physical security , and disaster recovery .
+
+they could be used by states and local election administrators as a resource to set security policies or create procedures for handling security and reliability problems .
+
+sans also offers a security awareness training program and publishes a list of common security vulnerabilities .
+
+ieee std 1332-1998: ieee standard reliability program for the development and production of electronic systems and equipment .
+
+this standard is intended to encourage suppliers and customers to cooperatively integrate their reliability processes and to establish a contractual or obligatory relationship that promotes reliability management .
+
+it is intended to help guide suppliers in developing a reliability program that meets the needs of the customer through meeting three objectives: determining the customer's requirements , determining a process to satisfy those requirements , and verifying that the customer's requirements and product needs are met .
+
+further , it describes activities that both the customer and the supplier should perform to meet these objectives .
+
+ansi / aiaa r - 013-1992: recommended practice for software reliability .
+
+this recommended practice defines a methodology for software reliability engineering .
+
+it describes activities and qualities of a software reliability estimation and prediction program , presents a framework for risk assessment and failure rate prediction , recommends models for estimation and prediction of software reliability , and specifies mandatory as well as recommended software reliability data collection requirements .
+
+it is intended to support the design , development , and testing of software , including activities related to software quality and software reliability , as well as to serve as a reference for research on the subject of software reliability .
+
+the election assistance commission's ( eac ) technical guidelines development committee ( tgdc ) has approved 41 resolutions to improve current voluntary voting system standards .
+
+of the 41 resolutions , 24 have potential to improve the security and reliability of electronic voting systems .
+
+table 18 provides information on these 24 resolutions including our determination of their relevance to security and reliability goals , tgdc's priorities for resolutions related to the development of voluntary voting system guidelines ( vvsg ) , and the version of guidelines that is expected to address each resolution .
+
+the table shows that the majority of the 24 resolutions — including three high - priority resolutions — are not expected to be fully addressed in the 2005 update to the voting standards .
+
+instead , most are expected to be addressed in a future version .
+
+mr. david a. powner , director information technology management issues mr. randolph c. hite , director information technology architecture and systems united states government accountability office re: draft report gao 05-956 , elections: federal efforts to improve security and reliability of electronic voting systems are under way , but key activities need to be completed thank you for the opportunity to comment on draft gao report 05-956 .
+
+the eac appreciates the time and effort put forth by gao during the preparation of this document and the willingness of gao staff to discuss pertinent issues at length with the eac , nist and other key players in the election community .
+
+as you know this letter follows a combined exit conference and discussion of gao's draft report .
+
+because our meeting was scheduled late in the process , there may be some comments set forth below that have already been addressed .
+
+it is apparent from our review of the draft report that gao has taken steps in this engagement to understand the election process in addition to evaluating the electronic voting systems in use in that process .
+
+eac is also pleased that gao recognizes and highlights the decentralized nature of the election process in the united states , the intricacies this decentralization brings to our election system and the critical roles played by local , state and federal election officials in this process .
+
+while the overall quality of the report is quite high , the eac does have some issues we feel need to be addressed prior to the final publication of this document .
+
+during our september 7 , 2005 meeting , we highlighted and provided to you a list of technical corrections to the facts as stated in the draft report .
+
+for your convenience , a copy of that list , as amended based upon the conversations in that meeting , has been attached to this letter .
+
+ ( appendix “1” ) gao's draft report does not refer to sources .
+
+although the bibliography in appendix v of the report lists numerous studies on the security and reliability of electronic voting , few if any , of these studies are cited or footnoted within the body of the report .
+
+the report generally refers to “security experts and others” without providing any specific reference to the individual sources or the reports on which the statements that follow such generalities are based .
+
+including specific citations where appropriate would lend much needed support to various broad statements and generalizations made throughout the report regarding the lack of security and reliability of electronic voting systems .
+
+gao's draft report does not give context to the identified security and reliability issues .
+
+gao identifies several incidences of voting system security or reliability problems .
+
+however , the report does not provide a context of the pervasiveness or relative obscurity of these issues .
+
+there is no statistical evidence offered as to how frequently these issues arise or whether problems occur in a large or small percentage of electronic voting system usage .
+
+while it has been offered by gao that these reported problems or issues systemic , the report fails to identify whether the identified problems are voting system specific , jurisdiction specific , or cross lines of both manufacturers and voting jurisdictions .
+
+gao's draft report reflects significant reliance on reports produced by others without substantiation of the claims made in those reports .
+
+the eac is concerned about instances of electronic voting system failures highlighted in the report that do not appear to have been thoroughly researched and analyzed .
+
+as an example page 26 or the report states , in part , that: “…computer security experts working with a local election supervisor in florida demonstrated that someone with access to an optical scan voting system could falsify election results without leaving any record of this action in the system's audit logs by using altered memory cards.” this statement should be verified with election officials and voting systems experts at the state level in florida to assure its accuracy , and to get a full understanding of the details and validity of this so - called “demonstration.” in another example , on page 25 of the draft report , gao relies on the reports contained in its bibliography to state that there are no significant concerns with security or reliability at the acquisition phase of the voting system life cycle .
+
+conversations with state and local election officials that have recently purchased electronic voting equipment would reveal that a significant number of voting systems are rejected during the acceptance testing phase of acquisition .
+
+while this may not point to a security concern , it does demonstrate a quality assurance or reliability concern .
+
+eac is but one participant in the process of assuring reliability and security of voting systems .
+
+while gao has done a good job with recognizing that the decentralization of elections in this country - - that is federal elections as well as state elections are administered by state and local election officials – the report fails to capture eac's role in the improvement to security and reliability of electronic voting systems .
+
+eac is the federal agency responsible for establishing a uniform set of guidelines ( testing standards ) against which voting systems can be measured .
+
+eac , its advisory committee – the technical guidelines development committee - - , and the national institute of standards and technology are working diligently to develop a revised set of voting system guidelines .
+
+however , the guidelines are only one piece of the puzzle .
+
+it is the voting system vendors that must design and configure their systems to meet those guidelines and the state and local election officials that must adopt these guidelines and restrict their purchases of voting systems to those that conform to the guidelines .
+
+gao's draft report focuses exclusively on eac as the answer to the questions surrounding electronic voting .
+
+in reality , eac simply cannot change the security and reliability of voting systems alone .
+
+at our meeting on september 7 , 2005 , eac identified a number of technical corrections related to specific facts or statements made in the report .
+
+in addition to the items enumerated in writing , our discussions produced several other technical errors that needed correction .
+
+for your convenience , an updated list of technical comments has been attached to this letter as appendix “1” .
+
+the eac agrees with gao that the implementation of the five recommendations presented in this report will improve the voting process and the public perception regarding the security and reliability of electronic voting systems .
+
+prior to the issuance of this report and prior to eac receiving a draft of this report , eac took significant steps toward accomplishing the very processes , procedures and methods recommended by gao .
+
+provided below is additional information concerning eac's efforts relative to each of the five recommendations .
+
+recommendation 1: collaborate with nist and the technical guidelines development committee to define specific tasks , measurable outcomes , milestones , and resource needs required to improve the voting system standards that affect security and reliability of voting systems .
+
+nist and eac have begun to define specific tasks and outcomes for subsequent iterations of the vvsg document .
+
+these issues will be discussed in detail during the tgdc plenary session on september 29 , 2005 in boulder , colorado .
+
+a crucial task which will allow both eac and nist to most effectively direct scarce resources and to prioritize upcoming tasks is the development of a comprehensive vulnerability analysis of electronic voting systems .
+
+nist and the u.s. election community will begin gathering threat analysis material and information during the upcoming meeting on this topic scheduled for october 7 , 2005 at the nist complex in gaithersburg , maryland .
+
+recommendation 2: expeditiously establish documented policies , criteria , and procedures for certifying voting systems that will be in effect until the national laboratory accreditation program for voting systems becomes fully operational ; define tasks and time frames for achieving the full operational capability of the national voting system certification program .
+
+eac began the initial transition of the voting system testing and certification program as required by hava by adopting at its august 23 , 2005 public meeting a frame work for the interim and future voting system certification processes .
+
+a copy of the document describing the processes that was adopted by the commission is attached as appendix “2” .
+
+the initial task in the interim certification process will be a two - part transition of the current nased accredited ita's to the eac .
+
+part one will be a simple documentation and transition process which will allow the current ita's to continue testing voting systems to the 2002 vss .
+
+part two of this task will provide for an interim accreditation process to ensure that these labs are competent to test to the new requirements of the 2005 vvsg once that document has been adopted by eac .
+
+by october 1 , 2005 , eac will begin registering those vendors who intend to have systems evaluated through the eac conformance testing process .
+
+an integral component of the eac's vendor registration process will be a requirement that vendors notify eac of problems encountered with their certified products in the field and to suggest solutions to any problem encountered .
+
+resources permitting , eac will consider options to enhance this program to include investigation and analysis of reported voting system problems and methods of communicating these issues to the entire election community .
+
+during this same timeframe , eac will initiate contractual agreements with a group of technical experts for the review of voting system test reports .
+
+by january 1 , 2006 , eac will be in a position to fully implement conformance testing of voting systems and to begin the process of issuing voting system certifications .
+
+recommendation 3: improve management support to state and local election officials by collaborating with nist to establish a process for continuously updating the national software reference library for voting system software ; take effective action to promote the library to state and local governments ; identify and disseminate information on resources to assist state and local governments with using the library ; and assess use of the library by states and local jurisdictions for the purpose of improving library services .
+
+in 2005 , eac contracted with nist to develop an interface to the national software reference library ( nsrl ) that would be more readily usable by the state and local election officials .
+
+see mou with nist attached as appendix “3” .
+
+in addition , eac and nist seek through the same agreement to expand the capabilities of the nsrl to allow users to verify not only ems software but also software that has been installed and used on a voting system .
+
+in 2004 , eac began the effort of encouraging voting system vendors to submit their software versions to the nsrl for cataloguing .
+
+upon the transition of voting system certification to eac , eac will require all vendors who submit voting systems for certification to file their software with nsrl .
+
+recommendation 4: improve management support to state and local election officials by collaborating with tgdc and nist to develop a process and associated timeframes for sharing information on the problems and vulnerabilities of voting systems .
+
+in its framework for the voting system certification process , eac has contemplated the need for information relative to the strengths and weaknesses , certification and decertification of voting systems .
+
+as such , eac will introduce additional transparency to the process of voting system certification and decertification .
+
+in addition , eac has demonstrated its desire to gather and disseminate data regarding voting system problems in its 2004 election day survey .
+
+results of that survey will be released this month and will identify voting system problems that occurred on election day , as reported by the 50 states and 5 territories .
+
+recommendation 5: improve management support to sate and local election officials by establishing a process and schedule for periodically compiling and disseminating recommended practices related to security and reliability management throughout the system life cycle ( including the recommended practices identified in this report ) and ensuring that this process uses information on the problems and vulnerabilities of voting systems .
+
+in 2005 and 2006 , eac and the national association of state election directors ( nased ) will work together to develop a comprehensive set of management guidelines that will accompany the voluntary voting system guidelines .
+
+testing voting systems for conformance to uniform standards is only half of the equation involved with administering secure elections .
+
+the management processes , physical security , and protocols used to accept , program , test and maintain voting systems is an equally important part of conducting fair and accurate elections .
+
+the management guidelines to be developed by eac and nased will focus on these issues .
+
+the united states election assistance commission would like to take the opportunity to thank gao for its work , dedication and concern about the technology and processes that underlie one of america's most precious freedoms , the right to vote .
+
+eac and gao join the legions of election officials throughout the country that work tirelessly to conduct free , fair and accurate elections .
+
+it has been our pleasure to work with gao on this historic study and analysis of our country's voting systems .
+
+it is critical that the federal government and our state and local counterparts analyze the means by which we conduct elections with the goal of always improving public confidence and security in our election process .
+
+we hope that the comments offered today will be of assistance to gao and lend to the applicability and credibility of its report .
+
+congress and the nation can rest assured that eac will continue is vigilant efforts to help our nation's election officials implement the requirements of the help america vote act of 2002 and to work to continually improve our elections .
+
+in addition to those named above , mark braza , barbara collier , william cook , dan gordon , richard hung , kevin jackson , stanley kostyla , linda lambert , paula moore , colleen phillips , jay smale , amos tevelow , and jessica waselkow made key contributions to this report .
+
+we selected the following reports , analyses , testimonies , and other documents because of their relevance to the security and reliability of electronic voting systems .
+
+we used this literature to identify concerns and recommended practices involving the security and reliability of voting systems .
+
+the first list comprises reports and studies that include concerns about the security and reliability of voting systems ; the second list comprises reports and studies that include recommended practices for improving the security and reliability of voting systems .
+
+there was some overlap between the lists in that some of the reports that identified concerns also suggested mitigating measures to address these concerns .
+
+these mitigating measures are summarized in appendix ii , table 16 .
+
+the two lists of studies and reports are not intended to be an exhaustive compilation of available information or literature in this area , nor does the presence of a document in these lists imply that it is endorsed or otherwise recommended .
+
+these lists identify primary sources .
+
+supplementary and corroborating information was gathered from other reports , testimonies , and through interviews with experts .
+
+coggins , carolyn , and gail audette , systest labs , llc .
+
+“nased independent test authority qualification testing” ( testimony before the environment , technology , and standards subcommittee of the u.s. house of representatives' committee on science , may 2004 ) .
+
+http: / / www.house.gov / science / hearings / ets04 / jun24 / coggins.pdf ( downloaded july 18 , 2005 ) .
+
+compuware corporation .
+
+direct recording electronic ( dre ) technical security assessment report ( prepared for the ohio secretary of state , november 2003 ) .
+
+http: / / www.sos.state.oh.us / sos / hava / files / compuware.pdf ( downloaded october 1 , 2004 ) .
+
+compuware corporation .
+
+diebold direct recording electronic ( dre ) technical security re - assessment report ( prepared for the ohio secretary of state , august 2004 ) .
+
+http: / / www.sos.state.oh.us / sos / / hava / files / dieboldreassessment.pdf ( downloaded july 18 , 2005 ) .
+
+coulter , michael ( chair ) , independent election committee .
+
+restoring confidence to voters: findings and recommendations of the independent election committee ( mercer county , penn. , february 2005 ) .
+
+http: / / elections.ssrc.org / data / mercer_co_commission_findings.pdf ( downloaded july 20 , 2005 ) .
+
+department of state ( pennsylvania ) , reexamination results of unilect corporation's patriot direct recording system ( april 2005 ) .
+
+http: / / www.dos.state.pa.us / dos / lib / dos / 20 / dos_report_unilect_system.pdf ( downloaded august 8 , 2005 ) .
+
+franklin county board of elections .
+
+election 2004: a report to the community ( franklin , county , ohio , undated ) .
+
+http: / / www.electionline.org / portals / 1 / resource%20library / franklin.county .oh.2004.pdf ( downloaded july 18 , 2005 ) hursti , harri .
+
+the black box report: security alert july 4 , 2005 , critical security issues with diebold optical scan design ( renton , wash. , july 2005 ) .
+
+http: / / www.blackboxvoting.org / bbvreport.pdf ( downloaded july 5 , 2005 ) infosentry services , inc .
+
+computerized voting systems security assessment: summary of findings and recommendations , volume 1 ( prepared for the ohio secretary of state , november 2003 ) .
+
+http: / / www.sos.state.oh.us / sos / hava / files / infosentry1.pdf ( downloaded october 1 , 2004 ) .
+
+international foundation for election systems .
+
+unified monitoring report to the center for democracy ( cfd ) : international foundation for election systems ( ifes ) team members , miami - dade county , florida ( washington , d.c. , november 2002 ) .
+
+http: / / www.reformcoalition.org / ressources / cfd%20miami%20dade%20fina l%20report.pdf ( downloaded july 18 , 2005 ) .
+
+jones , douglas w. comments on the fec's draft voting system standards as revised , dec 13 , 2001 ( submitted to the federal election commission , jan. 2002 ) .
+
+http: / / www.cs.uiowa.edu / ~jones / voting / fec1.html ( downloaded june 3 , 2005 ) .
+
+jones , douglas w. added comments on the fec's voting system standards ( submitted to the federal election commission , feb. 2002 ) .
+
+http: / / www.cs.uiowa.edu / ~jones / voting / fec2.html ( downloaded june 3 , 2005 ) .
+
+jones , douglas w. voting systems standards work that remains to be done ( testimony before the federal election commission , april 2002 ) .
+
+http: / / www.cs.uiowa.edu / ~jones / voting / fec3.html ( downloaded june 3 , 2005 ) .
+
+kohno , tadayoshi , adam stubblefield , aviel d. rubin , and dan s. wallach .
+
+analysis of an electronic voting system ( paper prepared for the ieee symposium on security and privacy , february 2004 ) .
+
+http: / / avirubin.com / vote.pdf ( downloaded july 18 , 2005 ) .
+
+marendt , candace ( chairman ) ; steve eichholtz ( vice - chairman ) ; doris anne sadler ( secretary ) : marion county board of elections .
+
+marion county election board minutes: emergency meeting ( marion county , ind. , april 2004 ) .
+
+http: / / www.indygov.org / nr / rdonlyres / emkiqfxphochfss2s5anfuxbgj3zgpkv 557moi3rb6f3ne44mcni2thdvoywyjcigyeoykwru53mopaa6kt2uxh7ofe / 2004 0422.pdf ( downloaded july 18 , 2005 ) .
+
+mercuri , rebecca .
+
+the fec proposed voting systems standard update: a detailed comment by dr. rebecca mercuri ( submitted to the federal election commission , sept. 2001 ) .
+
+http: / / www.notablesoftware.com / papers / fecrm.html ( downloaded june 2 , 2005 ) .
+
+miami - dade election reform coalition .
+
+get it right the first time: poll closing observation , ballot accounting , and electronic voting security ( miami , fla. , may 2005 ) .
+
+http: / / www.reformcoalition.org / ressources / getitrightthefirsttime.pdf ( downloaded july 20 , 2005 ) .
+
+miami - dade county office of inspector general .
+
+oig final report: miami - dade county voting systems contract no .
+
+326 ( miami , fla. , may 2003 ) .
+
+http: / / www.miamidadeig.org / reports / voting%20final%20report.pdf ( downloaded december 13 , 2004 ) .
+
+office of the secretary of state ( california ) .
+
+secretary of state's ad hoc touch screen task force report ( july 2003 ) .
+
+http: / / www.ss.ca.gov / elections / taskforce_report_entire.pdf ( downloaded october 1 , 2004 ) .
+
+office of the secretary of state ( california ) .
+
+report on the march 2 , 2004 statewide primary election ( april 2004 ) .
+
+http: / / www.ss.ca.gov / elections / ks_dre_papers / march_2_report_final.pdf ( downloaded may 10 , 2005 ) .
+
+office of the secretary of state ( california ) .
+
+staff report on the investigation of diebold election systems , inc. ( april 2004 ) .
+
+http: / / www.ss.ca.gov / elections / ks_dre_papers / diebold_report_april20_final.pdf ( downloaded august 22 , 2005 ) .
+
+raba technologies llc .
+
+trusted agent report: diebold accuvote - ts voting system ( report prepared for department of legislative services , maryland general assembly , annapolis , md. , january 2004 ) .
+
+http: / / www.raba.com / press / ta_report_accuvote.pdf ( downloaded october 1 , 2004 ) .
+
+science applications international corporation ( saic ) .
+
+risk assessment report: diebold accuvote - ts voting system and processes ( report prepared for state of maryland , department of budget and management , office of information technology , annapolis , md. , september 2003 ) .
+
+http: / / www.dbm.maryland.gov / dbm_publishing / public_content / dbm_search / technology / toc_voting_system_report / votings ystemreportfinal.pdf ( downloaded october 1 , 2004 ) .
+
+selker , ted , and jon goler , caltech / mit voting technology project .
+
+security vulnerabilities and problems with vvpt ( cambridge , mass. , april 2004 ) .
+
+http: / / www.vote.caltech.edu / media / documents / vtp_wp13.pdf ( downloaded october 1 , 2004 ) .
+
+shamos , michael .
+
+“testimony of michael i. shamos before the environment , technology , and standards subcommittee of the u.s. house of representatives' committee on science” ( washington , d.c. , june 2004 ) .
+
+http: / / www.house.gov / science / hearings / ets04 / jun24 / shamos.pdf ( downloaded july 18 , 2005 ) .
+
+shamos , michael .
+
+unilect corporation patriot voting system: an evaluation ( paper prepared for the secretary of the commonwealth of pennsylvania , april 2005 ) .
+
+http: / / www.dos.state.pa.us / dos / lib / dos / 20 / shamos_report - _unilect200502apr05.pdf ( downloaded july 18 , 2005 ) .
+
+state board of elections ( maryland ) .
+
+response to: department of legislative services trusted agent report on diebold accuvote - ts voting system ( annapolis , md. , january 2004 ) .
+
+http: / / mlis.state.md.us / other / voting_system / sbe_response.pdf ( downloaded august 20 , 2005 ) .
+
+wallach , dan s. , democracy at risk: the 2004 election in ohio .
+
+section vii: electronic voting: accuracy , accessibility and fraud .
+
+ ( democratic national committee voting rights institute , june 2005. ) .
+
+http: / / a9.g.akamai.net / 7 / 9 / 8082 / v001 / www.democrats.org / pdfs / ohvrireport / s ection07.pdf ( downloaded july 15 , 2005 ) .
+
+brennan center for justice and leadership conference on civil rights .
+
+recommendations of the brennan center for justice and the leadership conference on civil rights for improving reliability of direct recording electronic voting systems ( washington , d.c. , june 2004 ) .
+
+http: / / www.votingtechnology.org / docs / finalrecommendations.doc ? phpse ssid=9138d73beb5274b0277759bf57330169 ( downloaded august 22 , 2005 ) .
+
+browning , kurt s. , supervisor of elections , pasco county , florida .
+
+election security procedures , ver .
+
+1.9 ( dade city , fla. , january 2004 ) .
+
+http: / / www.eac.gov / bp / docs / pascosecurity.pdf ( downloaded july 18 , 2005 ) .
+
+caltech / mit voting technology project .
+
+voting — what is , what could be ( july 2001 ) .
+
+http: / / www.vote.caltech.edu / media / documents / july01 / july01_vtp_voting_ report_entire.pdf ( downloaded october 1 , 2004 ) .
+
+caltech / mit voting technology project .
+
+immediate steps to avoid lost votes in the 2004 presidential election: recommendations for the election assistance commission ( pasadena , calif. , july 2004 ) .
+
+http: / / www.vote.caltech.edu / media / documents / eac.pdf ( downloaded october 1 , 2004 ) .
+
+caltech / mit voting technology project .
+
+insuring the integrity of the electoral process: recommendations for consistent and complete reporting of election data ( pasadena , calif. , october 2004 ) .
+
+http: / / www.vote.caltech.edu / media / documents / auditing_elections_final.pdf ( downloaded july 18 , 2005 ) .
+
+election center .
+
+accessibility preparations checklist ( houston , tex. , may 2004 ) .
+
+http: / / www.electioncenter.org / electionprep / accessibility.pdf ( downloaded august 18 , 2005 ) .
+
+election center .
+
+checklist for ballot security ( houston , tex. , may 2004 ) .
+
+http: / / www.electioncenter.org / electionprep / ballotsecurity.pdf ( downloaded august 18 , 2005 ) .
+
+election center .
+
+checklist for polling place preparations ( houston , tex. , may 2004 ) .
+
+http: / / www.electioncenter.org / electionprep / pollingplaceprep.pdf ( downloaded august 18 , 2005 ) .
+
+election center .
+
+recount procedures ( houston , tex. , may 2004 ) .
+
+http: / / www.electioncenter.org / electionprep / recount.pdf ( downloaded august 18 , 2005 ) .
+
+election center .
+
+voting systems checklist ( houston , tex. , may 2004 ) .
+
+http: / / www.electioncenter.org / electionprep / votingsystems.pdf ( downloaded august 18 , 2005 ) .
+
+federal election commission .
+
+usability testing of voting systems ( washington , d.c. , october 2003 ) .
+
+http: / / www.eac.gov / bp / docs / usability%20testing%20of%20voting%20syste ms.pdf ( downloaded july 18 , 2005 ) .
+
+federal election commission .
+
+developing a user - centered voting system ( washington , d.c. , october 2003 ) .
+
+http: / / www.eac.gov / bp / docs / developing%20a%20user_centered%20voting %20system.pdf ( downloaded july 18 , 2005 ) .
+
+federal election commission .
+
+procuring a user - centered voting system ( washington , d.c. , october 2003 ) .
+
+http: / / www.eac.gov / bp / docs / procuring%20a%20user_centered%20voting%2 0system.pdf ( downloaded july 18 , 2005 ) .
+
+fischer , eric a. , congressional research service .
+
+election reform and electronic voting systems ( dres ) : analysis of security issues ( november 2003 ) .
+
+http: / / www.congress.gov / erp / rl / pdf / rl32139.pdf ( downloaded october 18 , 2004 ) .
+
+jones , douglas w. recommendations for the conduct of elections in miami - dade county using the es&s ivotronic system ( may 30 , 2004 , revised june 7 , 2004 ) .
+
+http: / / www.cs.uiowa.edu / ~jones / voting / miami.pdf ( downloaded july 18 , 2005 ) .
+
+kennedy school of government , harvard university .
+
+voting , vote capture and vote counting symposium: electronic voting best practices ( summary of the symposium on voting , vote capture and vote counting , june 2004 ) .
+
+http: / / designforvalues.org / voting / votingabp_final.pdf ( downloaded december 13 , 2004 ) .
+
+national task force on election reform .
+
+election 2004: review and recommendations by the nation's elections administrators ( houston , tex. , election center , may 2005 ) .
+
+http: / / www.electioncenter.org / frontdocs / task%20force %20report%20book%202005.pdf ( downloaded august 18 , 2005 ) .
+
+saltman , roy g. , national bureau of standards .
+
+nbs special publication 500-158: accuracy , integrity , and security in computerized vote - tallying ( gaithersburg , md. , august 1988 ) .
+
+schmidt , connie , election commissioner , johnson county kansas election office .
+
+implementing a voting system from a local election administrator's viewpoint ( olathe , kans. , 2003 ) .
+
+http: / / www.eac.gov / bp / docs / implementation%20guidebook.pdf ( downloaded july 18 , 2005 ) .
+
+shelley , kevin , california secretary of state .
+
+security measures for touch screen ( dre ) voting systems for the march election ( document sent to all county clerks / registrars of voters , sacramento , calif. , february 2004 ) .
+
+http: / / www.ss.ca.gov / elections / ks_dre_papers / security_measures_impleme nted_mar04.pdf ( downloaded august 22 , 2005 ) .
+
+united states election assistance commission .
+
+best practices tool kit ( july 2004 ) .
+
+http: / / www.eac.gov / bp / docs / bestpracticestoolkit.doc ( downloaded october 1 , 2004 ) .
+
+voter protection project , verifiedvoting.org , electronic frontier foundation .
+
+electronic voting machine information sheet and glossary , ver .
+
+0.4 ( august 2004 ) .
+
+http: / / www.eff.org / activism / e - voting / 20040818_infosheetglossary_v0.4.pdf ( downloaded july 18 , 2005 ) .
+
+warren , tracy , kelly ceballos , lloyd leonard , and jeanette senecal , league of women voters .
+
+helping america vote: safeguarding the vote ( washington , d.c. , july 2004 ) .
+
+http: / / www.lwv.org / elibrary / pub / voting_safeguarding_color.pdf ( downloaded december 13 , 2004 ) .
+

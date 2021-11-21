@@ -1,0 +1,900 @@
+on october 6 , 2015 , the u.s. census bureau ( bureau ) released the first version of its 2020 census operational plan , which is intended to outline the design decisions that drive how the 2020 decennial census will be conducted .
+
+these design decisions are expected to significantly transform how the bureau conducts the decennial census , in an effort to save approximately $5.2 billion .
+
+the redesign largely depends on implementing new technology and systems to modernize and automate many parts of the census .
+
+accordingly , concurrent with the overhaul of the 2020 census , the bureau is significantly redesigning the information technology ( it ) systems that support each of its surveys , including the 2020 decennial census , american community survey ( acs ) , and economic census .
+
+specifically , for the 2020 decennial census , the bureau plans to significantly change the methods and technology it uses to count the population , such as offering an option for households to respond to the survey via the internet , providing mobile devices for field enumerators to collect survey data from households , and automating the management of field operations .
+
+the bureau's redesign of the census relies on the acquisition and development of many new and modified it systems .
+
+several of these systems are expected to be provided by an enterprise - wide initiative called census enterprise data collection and processing ( cedcap ) .
+
+this initiative is a large and complex modernization program intended to deliver a system - of - systems for all the bureau's survey data collection and processing functions , rather than continuing to rely on unique , survey - specific systems with redundant capabilities .
+
+given cedcap's importance to achieving the 2020 decennial census redesign , you asked us to review the bureau's efforts to implement it .
+
+the specific objectives of our review were to ( 1 ) describe the status of the 12 cedcap projects , ( 2 ) evaluate the extent to which the bureau is implementing best practices in monitoring and controlling selected projects , ( 3 ) determine the extent to which the bureau is adequately managing the interdependencies between the cedcap and 2020 census programs , and ( 4 ) describe the key information security challenges the bureau faces in implementing the 2020 census design .
+
+to address the first objective , we reviewed relevant cedcap program and project documentation , such as the transition plan , segment architecture , project charters , and monthly progress reports , and interviewed bureau officials on the status and plans of all 12 projects .
+
+to address the second objective , we selected three of the cedcap projects based on those that bureau officials identified as being the highest priority for the 2020 census — ( 1 ) centralized operational analysis and control project , ( 2 ) internet and mobile data collection project , and ( 3 ) survey ( and listing ) interview operational control project .
+
+we analyzed project schedules , risk registers , and management reports for these three projects and interviewed bureau officials on their efforts to manage these projects .
+
+we compared the bureau's approach against best practices for project monitoring and control identified by the software engineering institute's capability maturity model® integration for acquisition ( cmmi® - acq ) and for development ( cmmi - dev ) .
+
+to address the third objective , we analyzed relevant documentation from the cedcap program and the 2020 census program , such as risk management plans , program - level risk registers , master schedules , program management plans , and requirements management documentation , and compared them against best practices identified in cmmi - acq and cmmi - dev , as well as by gao for managing interdependencies .
+
+we also interviewed bureau officials from the cedcap and 2020 census programs on their approach to managing interdependencies between the two programs .
+
+to address the fourth objective , we reviewed relevant documents , such as cedcap and 2020 census program risk registers and relevant gao reports on information security challenges .
+
+we analyzed and aggregated this information to develop an initial list of information security challenges the bureau faces in implementing the 2020 census design .
+
+we validated the list of key challenges by obtaining input from internal and external experts in information security and / or decennial census operations .
+
+we also reviewed documentation regarding the bureau's progress in implementing our 2013 information security recommendations .
+
+appendix i contains further details on our objectives , scope , and methodology .
+
+we conducted this performance audit from october 2015 to august 2016 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+the bureau's mission is to collect and provide comprehensive data about the nation's people and economy .
+
+its core activities include conducting decennial , economic , and government censuses ; conducting demographic and economic surveys ; managing international demographic and socioeconomic databases ; providing technical advisory services to foreign governments ; and performing other activities such as producing official population estimates and projections .
+
+one of the bureau's most important functions and largest undertakings is conducting the decennial census , which is mandated by the constitution and provides data that are vital to the nation .
+
+the information collected is used to apportion seats in the house of representatives , realign the boundaries of legislative districts , and allocate billions of dollars in federal financial assistance .
+
+the bureau is part of the department of commerce and is headed by a director .
+
+it is organized into directorates corresponding to key programmatic and administrative functions , including the it directorate led by the associate director for it and chief information officer , and the 2020 census directorate , led by the associate director for decennial census programs .
+
+the bureau's october 2015 2020 census operational plan outlines 350 redesign decisions that the bureau has either made or is planning to make largely by 2018 .
+
+the bureau has determined that about 51 percent of the design decisions are either it - related or partially it - related ( 84 it - related and 94 partially it - related ) and the bureau reported that , as of april 2016 , it had made about 58 percent of these decisions ( 48 it - related and 55 partially it - related ) .
+
+ ( see fig .
+
+1 below. ) .
+
+examples of decisions that have been made include the following: internet response — for the first time on a nationwide scale , the bureau will allow individuals / households to respond to the census on the internet from a computer , mobile device , or other devices that access the internet .
+
+non - id processing with real - time address matching — the bureau will provide each household with a unique id by mail .
+
+however , users may also respond to the online survey without the unique id by entering their address .
+
+this operation includes conducting real - time matching of respondent - provided addresses .
+
+non - response follow - up — if a household does not respond to the census by a certain date , the bureau will send out employees to visit the home .
+
+these enumerators will use a census application , on a mobile device provided by the bureau , to capture the information given to them by the in - person interviews .
+
+the bureau will also manage the case workload of these enumerators using an operational control system that automatically assigns , updates , and monitors cases during non - response follow - up .
+
+administrative records — as we reported in october 2015 , the bureau is working on obtaining and using administrative records from other government agencies , state and local governments , and third - party organizations to reduce the workload of enumerators in their non - response follow - up work .
+
+for example , the bureau plans to use administrative records to identify vacant housing units to remove from enumerators' workloads , count households that did not return census questionnaires , predict best times to complete non - response follow - up , and help process responses it receives either on paper or over the internet that do not have a census id number on them ( non - id processing ) .
+
+mobile devices — the bureau plans to award a contract that would provide commercially available mobile phones and the accompanying service contract on behalf of the census bureau to enumerators , who will use these devices to collect census data .
+
+this approach is referred to as the device - as - a - service strategy .
+
+cloud computing — the bureau plans to use a hybrid cloud solution where it is feasible , and has decided it will use cloud services for the internet response option as well as for non - id processing with real - time address matching .
+
+address canvassing — the bureau has decided to reengineer its address canvassing process to reduce the need for employing field staff to walk every street in the nation in order to update its address list and maps .
+
+for example , the bureau plans to first conduct in - office address canvassing using aerial imagery , administrative records , and commercial data before sending staff into the field .
+
+figure 2 provides an overview of additional decisions and assumptions for the 2020 census , resulting from the october 2015 operational plan .
+
+examples of decisions that have not been finalized as of may 2016 include the following .
+
+invalid return detection and non - id response validation — the bureau has not decided on its approach for identifying whether fraudulent returns have been submitted for the 2020 census or the criteria and thresholds to decide whether further investigation may be needed , such as field follow - up .
+
+solutions architecture — while the bureau has established a notional solutions architecture for the 2020 census , it has not decided on the final design .
+
+internet response for island areas — the bureau has not decided on the extent to which the internet self - response option will be available for island area respondents .
+
+additional uses of cloud — while bureau officials have decided on select uses of cloud - based solutions , decisions remain on additional possible uses .
+
+for example , the bureau is exploring whether it will use a cloud service provider to support a tool for assigning , controlling , tracking , and managing enumerators' caseloads in the field .
+
+the bureau's redesign of the census relies on the acquisition and development of many new and modified systems .
+
+several of the key systems are expected to be provided as cedcap enterprise systems under the purview of the it directorate .
+
+according to bureau officials , the remaining systems ( referred to as non - cedcap systems ) are to be provided by the 2020 census directorate's it division or other bureau divisions .
+
+the 2020 census directorate established a systems engineering and integration program office that is to serve as the technical arm of the 2020 census program and is responsible for ensuring that all the system capabilities needed for the 2020 census are developed and delivered , including integration of the cedcap and non - cedcap systems .
+
+the cedcap program is intended to provide data collection and processing solutions , which include systems , interfaces , platforms and environments , to support the bureau's entire survey life cycle , including survey design ; instrument development ; sample design and implementation ; data collection ; and data editing , imputation , and estimation .
+
+the program consists of 12 projects , which have the potential to offer numerous benefits to the bureau's survey programs , including the 2020 census program , such as enabling an internet response option ; automating the assignment , controlling , and tracking of enumerator caseloads ; and enabling a mobile data collection tool for field work .
+
+eleven of these projects are intended to deliver one or more it solutions .
+
+the twelfth project — it infrastructure scale - up — is not intended to deliver it capabilities , solutions , or infrastructure ; rather , it is expected to provide funding to the other relevant projects to acquire the necessary hardware and infrastructure to enable 2020 census systems to scale to accommodate the volume of users .
+
+table 1 describes the objectives of each project .
+
+the eleven projects are to provide functionality incrementally over the course of 13 product releases .
+
+the product releases are intended to support major tests and surveys at the bureau through 2020 .
+
+of the 13 product releases , 7 are intended to support 6 remaining major tests the 2020 census program is conducting as it prepares for the 2020 census , as well as 2020 census live production .
+
+the remaining 6 releases support the other surveys such as the acs and economic census .
+
+most recently , the cedcap program had been working on delivering the functionality needed for the third product release which was to support a major census test , referred to as the 2016 census test — conducted by the 2020 census program to inform additional decennial design decisions .
+
+the 2018 census end - to - end test , noted below , is critical to testing all production - level systems and operations in a census - like environment to ensure readiness for the 2020 census .
+
+the 2020 census program plans to begin this test in august 2017 .
+
+figure 3 identifies which of the 13 cedcap product releases support the 2020 census versus other surveys , as of may 2016 .
+
+each product release is decomposed into increments which follow a 40- day delivery schedule .
+
+each of these 40-day increments focuses on a subset of functionality to deliver at the end of the increment .
+
+the bureau determined that iterative deliveries of increments of functionality would best suit the cedcap program , instead of a “big bang” delivery approach for all solutions across all census and survey operations .
+
+officials reported that such an approach would be impractical given the complexity of the program .
+
+to manage this complex program , the cedcap program management office consists of three distinct functions: program governance , planning , and execution: this function is led by the program manager and is responsible for strategically leading , integrating , and managing the 12 projects .
+
+business operations: led by the assistant chief of business operations , this function is responsible for project management , risk , issue , schedule , and budget activities .
+
+it focuses on the processes that are critical to ensuring seamless integration across projects .
+
+technical integration: this function is led by the chief program architect , chief program engineer , and chief security engineer , and is responsible for supporting integration and execution of projects , participating in technical reviews , and establishing technical processes related to design , development , testing , integration , and it security .
+
+in addition to the program management office , the bureau established the office of innovation and implementation to articulate the overall business needs across the enterprise and ensure they are fulfilled by the capabilities to be delivered by cedcap .
+
+the office of innovation and implementation is responsible for gathering and synthesizing business requirements across the bureau , including for the 2020 census directorate , and delivering them to cedcap .
+
+our prior work has identified the importance of having sound management processes in place to help the bureau as it manages the multimillion dollar investments needed for its decennial census .
+
+for the last decennial , we issued multiple reports and testimonies from 2005 through 2010 on weaknesses in the bureau's acquisition , management , and testing of key 2010 census it systems .
+
+for example , we reported on significant issues with the census bureau's field data collection automation program , which was intended to develop custom handheld mobile devices to support field data collection for the census , including in - person follow - up with those who did not return their census questionnaires ( nonresponse follow - up ) .
+
+however , as we testified in march 2008 , the program was experiencing significant problems , including schedule delays and cost increases from changes in requirements .
+
+due in part to these technology issues the bureau was facing , we designated the 2010 census a high - risk area in march 2008 .
+
+in april 2008 , the bureau decided not to use the handheld devices for nonresponse follow - up .
+
+dropping the use of handheld devices for nonresponse follow - up and replacing them with a paper - based system increased the cost of the census by up to $3 billion .
+
+although the bureau worked aggressively to improve the paper - based system that replaced the handheld computers , we reported in december 2010 that the paper - based system also experienced significant issues when it was put in operation .
+
+since the 2010 census , we have issued additional reports and testimonies on weaknesses in the bureau's efforts to institutionalize it and program management controls for the 2020 census .
+
+relevant reports include the following: in september 2012 , we reported that the bureau had taken steps to draft new processes to improve its ability to manage it investments and system development , and to improve its it workforce planning .
+
+however , we found that additional work was needed to ensure that these processes were effective and successfully implemented across the bureau , such as finalizing plans for implementing its new investment management and systems development processes across the bureau , conducting an it skills assessment and gap analysis , and establishing a process for directorates to coordinate on it workforce planning .
+
+the bureau has fully addressed our recommendations to address these weaknesses by , for example , finalizing its investment management process , conducting an enterprise - wide it competency assessment and gap analysis , and developing action plans to address the identified gaps .
+
+as we reported in november 2013 , the bureau was not producing reliable schedules for two efforts related to the 2020 census: ( 1 ) building a master address file and ( 2 ) 2020 census research and testing .
+
+for example , the bureau did not include all activities and required resources in its schedules , or logically link a number of the activities in a sequence .
+
+we recommended that the bureau take actions to improve the reliability of its schedules , including ensuring that all relevant activities are included in the schedules , complete scheduling logic is in place , and a quantitative risk assessment is conducted .
+
+we also recommended that the bureau undertake a robust workforce planning effort to identify and address gaps in scheduling skills for staff that work on schedules .
+
+the bureau has taken steps to implement these recommendations , but has not fully implemented them .
+
+in april 2014 and february 2015 we reported on the bureau's lack of prioritization of it decisions related to the 2020 census .
+
+specifically , in april 2014 , we reported that the bureau had not prioritized key it research and testing needed for its 2020 census design decisions .
+
+accordingly , we recommended that the bureau prioritize its it - related research and testing projects .
+
+the bureau had taken steps to address this recommendation , such as releasing a plan in september 2014 that identified research questions intended to inform the 2020 census operational design decisions .
+
+in february 2015 , however , we reported that the bureau had not determined how key it research questions that were identified in the september 2014 plan would be answered — such as the expected rate of respondents using its internet response option or the it infrastructure that would be needed to support this option .
+
+we recommended that the bureau , among other things , develop methodologies and plans for answering key it - related research questions in time to inform design decisions .
+
+the bureau has taken steps to implement the recommendations , such as releasing a preliminary 2020 census operational plan that documents many key it - related decisions ; however , many other it - related questions , including the ones that were identified in our report , are to remain unanswered until 2016 through 2018 .
+
+as a result of the bureau's challenges in key it internal controls and its looming deadline , we identified cedcap as an it investment in need of attention in our february 2015 high - risk report .
+
+further , we testified in november 2015 , that key it decisions needed to be made soon because the bureau was less than 2 years away from end - to - end testing of all systems and operations to ensure readiness for the 2020 census and there was limited time to implement it .
+
+we emphasized that that bureau had deferred key it - related decisions , and that it was running out of time to develop , acquire , and implement the systems it will need to deliver the redesign and achieve its projected $5.2 billion in cost savings .
+
+in addition , we stated that while the bureau had made improvements in some key it management areas , it still faced challenges in the areas of workforce planning and information security because it had yet to fill key positions — most concerning was the lack of a permanent chief information officer .
+
+we have also reported extensively on the increasing security risks facing federal agencies' systems and data .
+
+these risks were recently illustrated by the data breaches at the office of personnel management , which affected millions of current and former federal employees .
+
+as we have reported , protecting the information systems and the information that resides on them and effectively responding to cyber - incidents is critical to federal agencies because the unauthorized disclosure , alteration , and destruction of the information on those systems can result in great harm to those involved .
+
+since 1997 , we have designated federal information security as a government - wide high - risk area .
+
+in the february 2015 update to our high - risk list , we further expanded this area to include protecting the privacy of personally identifiable information that is collected , maintained , and shared by both federal and nonfederal entities .
+
+the data collected from the census bureau , or shared with the bureau from other federal agencies , contains personally identifiable information and is protected by federal law .
+
+the wrongful disclosure of confidential census information could lead to criminal penalties .
+
+the 12 cedcap projects are at varying stages of planning and design .
+
+nine of the projects began when the program was initiated in october 2014 , two of the projects began later in june 2015 , and the twelfth project — it infrastructure scale - up — has not yet started .
+
+the 11 ongoing projects have efforts under way to deliver 17 solutions , which are in different phases of planning and design .
+
+for 8 of the 17 solutions , the bureau recently completed an analysis of alternatives to determine whether it will acquire commercial - off - the - shelf ( cots ) solutions or whether they will be built in - house in order to deliver the needed capabilities .
+
+on may 25 , 2016 , the bureau issued a memorandum documenting its decision to acquire the capabilities using a cots product .
+
+the memorandum also described the process used to select the commercial vendor .
+
+prior to this decision , the bureau had developed several pilot systems to provide functionality to support the ongoing survey tests , such as the 2016 census test .
+
+for example , the survey ( and listing ) interview operational control project has been developing a pilot system referred to as mojo that serves as an operational control system for field operations that assigns , controls , tracks , and manages cases .
+
+the mojo pilot was used in the field in the 2015 census test and the 2016 census test .
+
+for the remaining 9 it solutions , the bureau has identified the sourcing approach ( eg , buy , build , or use / modify existing system ) and has either identified the solution to be implemented or is in the process of evaluating potential solutions .
+
+for example , the electronic correspondence portal project is working on combining an existing government - off - the - shelf product with an existing cots product .
+
+according to program officials , these projects are expected to deliver their final production solutions in support of the 2020 census from march 2019 to march 2020 , except for the centralized development and test environment project , which has not yet determined when it will deliver the final production solution for the 2020 census .
+
+all projects are scheduled to end by september 2020 ( see table 2 for more detail ) .
+
+in 2013 , the cedcap program office estimated that the program would cost about $548 million to deliver its projects from 2015 to 2020 .
+
+in july 2015 , the bureau's office of cost estimation , analysis , and assessment completed an independent cost estimate for cedcap that projected the projects to cost about $1.14 billion from 2015 to 2020 ( $1.26 billion through 2024 ) .
+
+bureau officials reported that as of march 2016 , the projects have collectively spent approximately $92.1 million — 17 percent of the total program office estimate and 8 percent of the independent cost estimate .
+
+according to bureau officials , the cedcap program is currently budgeting its projects to the 2013 program office estimate .
+
+table 2 summarizes the status of the 12 cedcap projects and their associated actual or potential it solutions , and provides the cost estimates for each project , as well as the amount project officials reported spending as of march 2016 .
+
+according to cmmi - acq and cmmi - dev , an effective project monitoring and control process provides oversight of the program's performance , in order to allow appropriate corrective actions if actual performance deviates significantly from planned performance .
+
+key activities in project monitoring and control include determining progress against the plan by comparing actual cost and schedule against the documented plan for the full scope of the project and communicating the results ; identifying and documenting when significant deviations in cost and schedule performance ( i.e. , deviations from planned cost and schedule that , when left unresolved , preclude the project from meeting its objectives ) have occurred ; taking timely corrective actions , such as revising the original plan , establishing new agreements , or including additional mitigation activities in the current plan , to address issues when performance deviates significantly from the plan ; monitoring the status of risks periodically , which can result in the discovery of new risks , revisions to existing risks , or the need to implement a risk mitigation plan ; and implementing risk mitigation plans that include sufficient detail such as start and completion dates and trigger events and dates , which provide early warning that a risk is about to occur or has just occurred and are valuable in assessing risk urgency .
+
+however , the three selected cedcap projects — centralized operational analysis and control project , internet and mobile data collection project , and survey ( and listing ) interview operational control project — did not fully implement these practices .
+
+specifically , the centralized operational analysis and control project fully met two of the practices in monitoring and controlling but did not meet the three other practices .
+
+the internet and mobile data collection project and survey ( and listing ) interview operational control project fully met one of the best practices in monitoring and controlling , but partially met the other four best practices .
+
+determining progress against the plan — each of the three projects partially met this practice .
+
+specifically , the three projects meet weekly to monitor the current status of each project and produce monthly reports that document cost and schedule progress .
+
+however , the projects' planning documents lacked sufficient detail against which to monitor progress because their plans did not include details about the full scope of their projects for their entire life cycles .
+
+for example , while project officials have provided key information , such as when build - or - buy decisions were to be made , when the production systems are to be initially released , and when the final systems are to be released to support the 2020 census , project planning documents for the three projects do not consistently include this information .
+
+this is especially problematic when the production systems that these projects are expected to produce need to be implemented in time for the 2018 end - to - end system integration test , which is to begin in august 2017 ( in about a year ) .
+
+bureau officials agreed with our concerns and in june 2016 they stated that they were in the process of updating the project plans and expect to be done by august 2016 .
+
+it will be important that these plans include the full scope of these projects to enable the project managers and the cedcap program manager to determine progress relative to the full scope of the projects .
+
+document significant deviations in performance — each of the three selected projects partially met this practice .
+
+specifically , the bureau's monthly progress reports capture schedule and cost variances and document when these variances exceed the threshold for significant deviation , which is 8 percent .
+
+for example , the internet and mobile data collection project had a cost variance of 20 percent in september 2015 and the survey ( and listing ) interview operational control project had a cost variance of 25 percent in september 2015 , which were flagged by the projects as exceeding the significant deviation threshold .
+
+however , the projects do not have up - to - date cost estimates with which to accurately identify significant deviations in cost performance .
+
+specifically , the projects are measuring whether there are significant deviations in costs against their budgeted amounts , which are based on a 2013 cedcap program office estimate .
+
+this estimate was prepared well before the program began in october 2014 and , according to program officials , is out of date and was developed based on very early assumptions and limited details about the projects .
+
+for example , key information such as program requirements was not available when the 2013 program cost estimate was prepared .
+
+however , since then more information about the program has become available .
+
+for example , program requirements were finalized in may 2015 .
+
+program officials recognized that the program office estimate needs to be updated and stated that they planned to update their estimate once the program and its projects are better understood and more complete information is available , including the recently completed build - versus - buy decisions .
+
+however , until the program cost estimate is updated , the program lacks a basis for monitoring true cost variances for these three projects .
+
+taking corrective actions to address issues when necessary — each of the three selected projects met this practice .
+
+specifically , the cedcap program has established a process for taking corrective actions to address issues when needed and , as of april 2016 , bureau officials stated they have not needed to take any corrective actions to address cedcap program issues .
+
+for example , while we found several significant deviations in cost and schedule for the three projects in the monthly progress reports , these did not require corrective actions because they were due to , for example , delays in contract payments , contract awards , and other obligations for hardware and software outside the control of the cedcap program office .
+
+monitoring the status of risks periodically — one project ( the centralized operational analysis and control project ) fully met this practice and the other two projects partially met this practice .
+
+specifically , the three projects monitor the status of their risks in bi - weekly project status meetings and monthly risk review board meetings , have established risk registers , and regularly update the status of risks in their registers .
+
+however , while according to bureau officials the projects are to document updates on the status of their risks in their respective risk registers , the internet and mobile data collection and survey ( and listing ) interview operational control projects do not consistently document status updates .
+
+for example as of april 2016 , all four of the internet and mobile data collection project's medium - probability , medium - impact risks had not been updated in its risk register in 9 months .
+
+also as of april 2016 , two of five of the survey ( and listing ) interview operational control project's medium - probability , medium - impact risks had not been updated in the risk register in 4 months .
+
+bureau officials recognized the need to document updates in the risk registers more consistently and stated that efforts were under way to address this .
+
+in may 2016 , bureau officials provided updates on the internet and mobile data collection project risk list that showed improvement in documenting the status of risks for that project for 1 month .
+
+in june 2016 , bureau officials stated that they had taken additional steps to improve how risk registers are updated by , for example , conducting training sessions for project managers on the cedcap program's expectations for monitoring and updating the status of risks , and reviewing project risk registers monthly to ensure compliance .
+
+bureau officials also stated that they planned to release an updated version of the cedcap risk management plan that more clearly outlines the process and expectations for monitoring and updating project risk registers by the end of august 2016 .
+
+while the officials have taken positive steps , until actions are fully implemented to ensure that the projects are consistently documenting updates to the status of risks in a repeatable and ongoing manner , they will not have comprehensive information on how risks are being managed .
+
+implementing risk mitigation plans — each of the three selected projects partially met this practice .
+
+as of october 2015 , the three projects had developed basic risk mitigation steps for each of the risks associated with the projects that required a mitigation plan .
+
+however , contrary to industry best practices and the bureau's risk management guidance , these risk mitigation plans lacked important details .
+
+specifically , none of the mitigation plans for the three projects contained start or completion dates .
+
+additionally , the centralized operational analysis and control and the internet and mobile data collection projects did not have any trigger events for their risks that require risk triggers ( eg , those risks that exceed a predefined exposure threshold ) .
+
+for example , the centralized operational analysis and control project had an active issue in march 2016 that if late requirements were given to the project , it would face delays in delivering for the 2016 census test .
+
+this risk did not contain a detailed risk mitigation plan or a trigger date or description .
+
+in february 2016 , bureau officials recognized that there were issues with their risk management process and stated that they were working on addressing them .
+
+in april 2016 , bureau officials stated that they had revised their risk management process to increase the threshold for requiring risk mitigation plans and trigger events .
+
+however , the april 2016 risk registers did not contain any risks that exceeded the new risk threshold and , therefore , none of the risks required risk mitigation plans and trigger events .
+
+as a result , it is unclear to what extent the bureau has improved its practices in developing detailed risk mitigation plans and assigning trigger events when required .
+
+until the three projects establish detailed risk mitigation plans and trigger events for all of their risks that require both , they will not be able to identify potential problems before they occur and mitigate adverse impacts to project objectives .
+
+the cedcap and 2020 census programs are intended to be on parallel implementation tracks and have major interdependencies ; however , the interdependencies between these two programs have not always been effectively managed .
+
+specifically , cedcap relies on 2020 census to be one of the biggest consumers of its enterprise systems , and 2020 census relies heavily on cedcap to deliver key systems to support its redesign .
+
+thus , cedcap is integral to helping the 2020 census program achieve its estimated $5.2 billion cost savings goal .
+
+accordingly , as reported in the president's budget for fiscal year 2017 , over 50 percent of cedcap's funding for fiscal year 2017 ( $57.5 million of the requested $104 million ) is expected to come from the 2020 census program .
+
+nevertheless , while both programs have taken a number of steps to coordinate , such as holding weekly schedule coordination meetings and participating in each other's risk review board meetings , the two programs lack processes for effectively integrating their schedule dependencies , integrating the management of interrelated risks , and managing requirements .
+
+without effective processes for managing these interdependencies , the bureau is limited in its ability to understand the work needed by both programs to meet agreed upon milestones , mitigate major risks , and ensure that requirements are appropriately identified .
+
+according to gao's schedule assessment guide , major handoffs between programs should be discussed and agreed upon and all interdependencies in the programs' schedules should be clearly identified and logically linked so that dates can be properly calculated .
+
+the guide also specifies that changes in linked activities can automatically reforecast future dates , resulting in a dynamic schedule , and that attempting to manually resolve incompatible schedules in different software can become time - consuming and expensive , and thus should be avoided .
+
+moreover , constantly updating a schedule manually defeats the purpose of a dynamic schedule and can make the schedule particularly prone to error .
+
+according to best practices , if manual schedule reconciliation cannot be avoided , the parties should define a process to preserve integrity between the different schedule formats and to verify and validate the converted data whenever the schedules are updated .
+
+about half of cedcap's major product releases ( 7 of 13 ) are intended to align with and support the major tests and operations of the 2020 census .
+
+accordingly , the cedcap and 2020 census programs have both established master schedules that contain thousands of milestones and tens of thousands of activities through 2020 census production and have identified major milestones within each program that are intended to align with each other .
+
+in addition , both program management offices have established processes for managing their respective master schedules .
+
+however , the cedcap and 2020 census programs maintain their master schedules using different software where dependencies between the two programs are not automatically linked and are not dynamically responsive to change .
+
+consequently , the two programs have been manually identifying activities within their master schedules that are dependent on each other , and rather than establishing one dependency schedule , as best practices dictate , the programs have each developed their own dependency schedule and meet weekly with the intent of coordinating these two schedules .
+
+in addition , the programs' dependency schedules only include near - term schedule dependencies , and not future milestones through 2020 census production .
+
+for example , as of february 2016 , the dependency schedules only included tasks associated with the cedcap product release in support of the 2020 census program's 2016 census test through july 2016 .
+
+according to bureau officials , they are currently working to incorporate activities for the next set of near - term milestones in the dependency schedules , which are to support the 2016 address canvassing test .
+
+nonetheless , this process has proven to be ineffective , as it has contributed to the misalignment between the programs' schedules .
+
+for example: the cedcap program originally planned to complete build - or - buy decisions for several capabilities by october 2016 , while the 2020 census timeline specified that these decisions would be ready by june 2016 .
+
+in november 2015 , cedcap officials stated that they recognized this misalignment and decided to accelerate certain build - or - buy decisions to align with 2020 census needs .
+
+as of april 2016 , while cedcap's major product releases need to be developed and deployed to support the delivery of major 2020 census tests , cedcap's releases and 2020 census major test milestones were not always aligned to ensure cedcap releases would be available in time .
+
+for example , development of cedcap release 7 , which was intended to support the 2017 census test , was not scheduled to begin until almost a month after the 2017 census test was expected to begin ( december 2016 ) , and was not planned to be completed until about 2 months after the 2017 census test was expected to end ( july 2017 ) .
+
+bureau officials acknowledged that cedcap release dates needed to be revised to accurately reflect the program's current planned time frames and to appropriately align with 2020 census time frames .
+
+officials provided updated documentation in june 2016 which was intended to better align cedcap and 2020 census time frames .
+
+however , officials also stated in june that following the may 2016 decision to acquire many of the cedcap solutions , the implementation schedule is being negotiated with the selected vendor and is subject to change .
+
+adding to the complexity of coordinating the two programs' schedules , as we testified in november 2015 , several key decisions by the 2020 census program are not planned to be made until later in the decade , which may impact cedcap's ability to deliver those future requirements and have production - ready systems in place in time to conduct end - to - end testing , which is to begin in august 2017 .
+
+for example , the bureau does not plan to decide on the full complement of applications , data , infrastructure , security , monitoring , and service management for the 2020 census — referred to as the solutions architecture — until september 2016 .
+
+the bureau also does not plan to finalize the expected response rates for all self - response modes , including how many households it estimates will respond to the 2020 survey using the internet , telephone , and paper , until october 2017 .
+
+figure 4 illustrates several it - related decisions which are not scheduled to be made until later in the decade and may impact cedcap's ability to prepare for the end - to - end test and 2020 census .
+
+further exacerbating the difficulties with the two programs managing separate dependency schedules is that , as of may 2016 ( a year and a half into the cedcap program ) , their process for managing the dependencies had not been documented .
+
+in response to our draft report , program officials provided documentation of this process .
+
+however , as previously mentioned , the current process is ineffective , thus documenting the as - is process does not help the bureau .
+
+further , while the programs intend to revise their respective schedules to correct the existing misalignments identified in this report , continuing to rely on an ineffective process for manually aligning their milestones will likely lead to future misalignment as changes occur .
+
+thus , until the bureau modifies its current process to ensure complete alignment between the 2020 and cedcap programs by , for example , maintaining a single dependency schedule , it will be limited in its ability to ensure that both programs are planning and measuring their activities according to the same agreed upon time frames .
+
+moreover , until program officials document the modified process for managing the schedule dependencies , the bureau cannot ensure that it has a repeatable process and that an integrated dependency schedule ( if established ) will stay current and help avoid future misalignments .
+
+according to gao best practices on enhancing and sustaining collaboration among federal agencies , to achieve a common outcome , stakeholders should work together to jointly define and agree on their respective roles and responsibilities , and establish strategies that work in concert with each other or are joint in nature .
+
+additionally , according to cmmi - acq and cmmi - dev , effective risk management calls for stakeholder collaboration on identifying and mitigating risks that could negatively affect their efforts .
+
+both the cedcap and 2020 census programs have taken steps to collaborate on identifying and mitigating risks .
+
+for example , both programs have processes in place for identifying and mitigating risks that affect their respective programs , facilitate risk review boards , and have representatives attend each other's risk review board meetings to help promote consistency .
+
+however , these programs do not have an integrated list of risks ( referred to as a risk register ) with agreed - upon roles and responsibilities to jointly track risks that heavily impact them and instead separately track these risks .
+
+this decentralized approach introduces two key problems .
+
+first , there are inconsistencies in tracking and managing interdependent risks .
+
+specifically , selected risks were recognized by one program's risk management process and not the other .
+
+this included the following examples as of march 2016: the cedcap program identified the lack of real - time schedule linkages as a high probability , high - impact risk in its risk register , which as of march 2016 had been realized and was considered an issue for the program .
+
+however , the 2020 census program had not recognized this as a risk in its risk register .
+
+while cedcap had identified the ability to scale systems to meet the needs of the decennial census as a medium - probability , high - impact risk in its risk register , the 2020 census program had not recognized this as a risk in its risk register .
+
+the cedcap program had identified the need to define how the bureau will manage and use cloud services to ensure successful integration of cloud services with existing infrastructure as a low probability , high - impact risk in its risk register ; however , the 2020 census program had not recognized the adoption of cloud services as a formal risk in its risk register .
+
+this is especially problematic as the 2020 census program recently experienced a notable setback regarding cloud implementation .
+
+specifically , the 2020 census program was originally planning to use a commercial cloud environment in the 2016 census test , which would have been the first time the bureau used a cloud service in a major census test to collect census data from residents in parts of the country .
+
+however , leading up to the 2016 census test , the program experienced stability issues with the cloud environment .
+
+accordingly , in march 2016 , the 2020 census program decided to cancel its plans to use the cloud environment in the 2016 census test .
+
+officials stated that they plan to use the cloud in future census tests .
+
+according to 2020 census program officials , they did not consider the lack of real - time schedule linkages to be a risk because they were conducting weekly integration meetings and coordinating with cedcap on their schedules to ensure proper alignment .
+
+however , as stated previously , attempting to manually resolve incompatible schedules in different software can be time - consuming , expensive , and prone to errors , and the bureau's process for managing schedule dependencies between the cedcap and 2020 census programs is ineffective .
+
+regarding the lack of scalability and cloud services risks in the 2020 census risk log , 2020 census program officials acknowledged that it was an oversight and that they should have been recognized by the program as formal risks .
+
+the second problem of not having an integrated risk register is that tracking risks in two different registers can result in redundant efforts and potentially conflicting mitigation efforts .
+
+for example , both programs have identified in their separate risk registers several common risks , such as risks related to late changes in requirements , integration of systems , human resources , build - or - buy decisions , and cybersecurity .
+
+these interdependent risks found in both risk registers can introduce the potential for duplicative or inefficient risk mitigation efforts and the need for additional reconciliation efforts .
+
+until the bureau establishes a comprehensive list of risks facing both the cedcap and 2020 census programs , and agrees on their respective roles and responsibilities for jointly managing this list , it will continue to have multiple sets of inconsistent risk data and will be limited in its ability to effectively monitor and mitigate the major risks facing both programs .
+
+according to cmmi - acq and cmmi - dev , requirements management processes are important for enabling programs to ensure that its set of approved requirements is managed to support the planning and execution needs of the program .
+
+such a process should include steps to review and obtain commitment to the requirements from stakeholders and manage changes to requirements as customer needs evolve .
+
+the bureau's office of innovation and implementation serves as the link in managing requirements between the 2020 census and cedcap programs .
+
+this office is responsible for gathering and synthesizing business requirements across the bureau , including from the 2020 census program , and delivering them to cedcap .
+
+additionally , for the 2020 census program , the bureau established the 2020 census systems engineering and integration program office , which is responsible for delivering 2020 census business requirements to the office of innovation and implementation .
+
+cedcap receives the requirements on an incremental basis , and as mentioned previously , cedcap builds functionality containing subsets of the requirements in the 40-day cycles .
+
+cedcap has delivered 12 increments of system functionality to support the first three releases .
+
+however , as of april 2016 , the office of innovation and implementation's process for collecting and synthesizing requirements , obtaining commitment to those requirements from stakeholders , and managing changes to the requirements had been drafted , but not yet finalized .
+
+in july 2016 , bureau officials stated that due to the recent selection of a commercial vendor to deliver many of the cedcap capabilities , they do not plan to finalize this process until january 2017 .
+
+additionally , as of april 2016 , the 2020 census systems engineering and integration program had not yet finalized its program management plan , which outlines , among other things , how it is to establish requirements to be delivered to the office of innovation and implementation , which are then to be delivered to cedcap .
+
+according to program officials , they have been working on a draft of this plan and expect it to be finalized by the end of august 2016 .
+
+as a result , the bureau has developed three cedcap releases without having a fully documented and institutionalized process for collecting those requirements .
+
+in addition , the 2020 census program identified about 2,500 capability requirements needed for the 2020 census ; however , there are gaps in these requirements .
+
+specifically , we determined that of the 2,500 capability requirements , 86 should be assigned to a test prior to the 2020 census , but were not .
+
+these included 64 requirements related to redistricting data program , 10 requirements related to data products and dissemination , and 12 requirements related to non - id response validation .
+
+bureau officials stated that the 74 redistricting data program and data products and dissemination requirements have not yet been assigned to a census test because they have not yet gone through the bureau's quality control process , which is planned for later this calendar year .
+
+regarding the 12 non - id response validation requirements , bureau officials stated that once this area is better understood , a more complete set of requirements will be established , and then they will assign the requirements to particular tests , as appropriate .
+
+as of april 2016 , the bureau was in the early stages of conducting research in this area .
+
+thus , it has not tested non - id response validation in the 2013 , 2014 , or 2015 census tests .
+
+these tests were intended to , among other things , help define requirements around critical functions .
+
+with about a year remaining before the 2018 census end - to - end test begins , the lack of experience and specific requirements related to non - id response validation is especially concerning , as incomplete and late definition of requirements proved to be serious issues for the 2010 census .
+
+specifically , leading up to the 2010 census , we reported in october 2007 that not fully defining requirements had contributed to both cost increases and schedule delays experienced by the failed program to deliver handheld computers for field data collection — contributing to an up to $3 billion overrun .
+
+increases in the number of requirements led to the need for additional work and staffing .
+
+moreover , we reported in 2009 and 2010 that the bureau's late development of an operational control system to manage its paper - based census collection operations resulted in system outages and slow performance during the 2010 census .
+
+the bureau attributed these issues , in part , to the compressed development and testing schedule .
+
+as the 2020 census continues to make future design decisions and cedcap continues to deliver incremental functionality , it is critical to have a fully documented and institutionalized process for managing requirements .
+
+additionally , until measures are taken to identify when the 74 requirements related to the redistricting data program and data products and dissemination will be tested , and to make developing a better understanding of , and identifying requirements related to , non - id response validation a high and immediate priority , or to consider alternatives to avoid late definition of such requirements , the bureau is at risk of experiencing issues similar to those it experienced during the 2010 census .
+
+while the bureau plans to extensively use it systems to support the 2020 census redesign in an effort to realize potentially significant efficiency gains and cost savings , this redesign introduces numerous critical information security challenges .
+
+developing policies and procedures to minimize the threat of phishing — phishing is a digital form of social engineering that uses authentic - looking , but fake , e - mails , websites , or instant messages to get users to download malware , open malicious attachments , or open links that direct them to a website that requests information or executes malicious code .
+
+phishing attacks could target respondents , as well as census employees and contractors .
+
+the 2020 census will be the first one in which respondents will be heavily encouraged to respond via the internet .
+
+the bureau plans to highly promote the use of the internet self - response option throughout the nation and expects , based on preliminary research , that approximately 50 percent of u.s. households will use this option .
+
+this will likely increase the risk that cyber criminals will use phishing in an attempt to steal personal information .
+
+a report developed by a contractor for the bureau noted that criminals may pretend to be a census worker , caller , or website , to phish for personal information such as social security numbers and bank information .
+
+further , phishing attacks directed at census employees , including approximately 300,000 temporary employees , could have serious effects .
+
+the u.s. computer emergency readiness team ( us - cert ) has recently reported on phishing campaigns targeting federal government agencies that are intended to install malware on government computer systems .
+
+these could act as an entry point for attackers to spread throughout an organization's entire enterprise , steal sensitive personal information , or disrupt business operations .
+
+to minimize the threat of phishing , organizations such as us - cert and the national institute of standards and technology ( nist ) recommend several actions for organizations , including communicating with users .
+
+additionally , as we previously reported , in 2015 the white house and the office of management and budget identified anti - phishing as a key area for federal agencies to focus on in enhancing their information security practices .
+
+ensuring that individuals gain only limited and appropriate access to 2020 census data — the decennial census plans to enable a public - facing website and mobile devices to collect personally identifiable information ( pii ) ( eg , name , address , and date of birth ) from the nation's entire population — estimated to be over 300 million .
+
+in addition , the bureau is planning to obtain and store administrative records containing pii from other government agencies to help augment information that enumerators did not collect .
+
+further , the 2020 census will be highly promoted and visible throughout the nation , which could increase its appeal to malicious actors .
+
+specifically , cyber criminals may attempt to steal personal information collected during and for the 2020 decennial census , through techniques such as social engineering , sniffing of unprotected traffic , and malware installed on vulnerable machines .
+
+we have reported on challenges to the federal government and the private sector in ensuring the privacy of personal information posed by advances in technology .
+
+for example , in our 2015 high risk list , we expanded one of our high - risk areas — ensuring the security of federal information systems and cyber critical infrastructure — to include protecting the privacy of pii .
+
+technological advances have allowed both government and private sector entities to collect and process extensive amounts of pii more effectively .
+
+however , the number of reported security incidents involving pii at federal agencies has increased dramatically in recent years .
+
+because of these challenges , we have recommended , among other things , that federal agencies improve their response to information security incidents and data breaches involving pii , and consistently develop and implement privacy policies and procedures .
+
+accordingly , it will be important for the bureau to ensure that only respondents and bureau officials are able to gain access to this information , and that enumerators and other employees only have access to the information needed to perform their jobs .
+
+adequately protecting mobile devices — the 2020 census will be the first one in which the census bureau will provide mobile devices to enumerators to collect pii from households who did not self - respond to the survey .
+
+the bureau plans to use a contractor to provide approximately 300,000 census - taking - ready mobile devices to enumerators .
+
+the contractor will be responsible for , among other things , the provisioning , shipping , storage , and decommissioning of the devices .
+
+the enumerators will use the mobile devices to collect data from non - response follow - up activities .
+
+many threats to mobile devices are similar to those for traditional computing devices ; however , the threats and attacks to mobile devices are facilitated by vulnerabilities in the design and configuration of mobile devices , as well as the ways consumers use them .
+
+common vulnerabilities include a failure to enable password protection and operating systems that are not kept up to date with the latest security patches .
+
+in addition , because of their small size and use outside an office setting , mobile devices are easier to misplace or steal , leaving their sensitive information at risk of unauthorized use or theft .
+
+in 2012 we reported on key security controls and practices to reduce vulnerabilities in mobile devices , protect proprietary and other confidential business data that could be stolen from mobile devices , and ensure that mobile devices connected to the organization's network do not threaten the security of the network itself .
+
+for example , we reported that organizations can require that devices meet government specifications before they are deployed , limit storage on mobile devices , and ensure that all data on the device are cleared before the device is disposed of .
+
+doing so can help protect against inappropriate disclosure of sensitive information that is collected on the mobile devices .
+
+accordingly , we recommended , among other things , that the department of homeland security , in collaboration with the department of commerce , establish measures about consumer awareness of mobile security .
+
+in september 2013 , the department of homeland security addressed this recommendation by developing a public awareness campaign with performance measures related to mobile security .
+
+ensuring adequate control in a cloud environment — the bureau has decided to use cloud solutions whenever possible for the 2020 census ; however , as stated previously , it has not yet determined all of the needed cloud capabilities .
+
+in september 2014 , we reported that cloud computing has both positive and negative information security implications for federal agencies .
+
+potential information security benefits include the use of automation to expedite the implementation of secure configurations on devices , reduced need to carry data on removable media because of broad network access , and low - cost disaster recovery and data storage .
+
+however , the use of cloud computing can also create numerous information security risks for federal agencies , including that cloud service vendors may not be familiar with security requirements that are unique to government agencies , such as continuous monitoring and maintaining an inventory of systems .
+
+thus , we reported that , to reduce the risks , it is important for federal agencies to examine the specific security controls of the provider the agency is evaluating when considering the use of cloud computing .
+
+in addition , in april 2016 , we reported that agencies should develop service - level agreements with cloud providers that specify , among other things , the security performance requirements — including data reliability , preservation , privacy , and access rights — that the service provider is to meet .
+
+without these safeguards , computer systems and networks , as well as the critical operations and key infrastructures they support , may be lost ; information — including sensitive personal information — may be compromised ; and the agency's operations could be disrupted .
+
+adequately considering information security when making decisions about the it solutions and infrastructure supporting the 2020 census — design decisions related to the 2020 census will have security implications that need to be considered when making decisions about future 2020 census design features .
+
+as described previously , as of april , the census bureau still had to make 350 decisions about the 2020 census , and half of those have an it component .
+
+for example , the bureau has not yet made decisions about key aspects of its it infrastructure to be used for the 2020 census , including defining all of the components of the solution architecture ( applications , data , infrastructure , security , monitoring , and service management ) , deciding whether it will develop a mobile application to enable respondents to submit their survey responses on their mobile devices , and deciding how it plans to use cloud providers .
+
+we have previously reported on challenges that the bureau has had in making decisions in a timely manner .
+
+specifically , in april 2014 , and again in april 2015 , we noted that key decisions had yet to be made about the 2020 census , and noted that as momentum builds toward census day 2020 , the margin for schedule slippages is getting increasingly slim .
+
+the chief information security officer echoed these concerns , stating that any schedule slippage can affect the time needed to conduct a comprehensive security assessment .
+
+as key design decisions are deferred and the time to make such decisions becomes more compressed , it is important for the bureau to ensure that information security is adequately considered and assessed when making design decisions about the it solutions and infrastructure to be used for the 2020 census .
+
+making certain key it positions are filled and have appropriate information security knowledge and expertise — as our prior work and leading guidance recognize , having the right knowledge and skills is critical to the success of a program , and mission - critical skills gaps in such occupations as cybersecurity pose a high - risk to the nation .
+
+whether within specific federal agencies or across the federal workforce , these skills gaps impede federal agencies in cost - effectively serving the public and achieving results .
+
+because of this , we added strategic human capital management , including cybersecurity human capital , to our high risk list in 2001 , and it remains on that list today .
+
+these skills gaps are also a key contributing factor to our high - risk area of ensuring the security of federal information systems .
+
+as we reported in february 2015 , although steps have been taken to close critical skills gaps in the cybersecurity area , it remains an ongoing problem and additional efforts are needed to address this issue government - wide .
+
+we also reported in february 2015 , that the bureau continues to have critical skills gaps , such as in cloud computing , security integration and engineering , enterprise / mission engineering life - cycle , requirements development , and internet data collection .
+
+the bureau has made some progress in addressing its skills gaps and continues to work toward ensuring that key information security skills are in place .
+
+however , it has faced longstanding vacancies in key it positions , such as the chief information officer ( vacant from july 2015 to june 2016 ) and the cedcap chief security engineer ( vacant since october 2015 ) .
+
+ensuring that key positions are filled with staff who have the appropriate expertise will be important to ensure that security controls are adequately designed in the systems used to collect and store census data .
+
+ensuring that contingency and incident response plans are in place that encompass all of the it systems to be used to support the 2020 census — because of the brief time frame for collecting data during the decennial census , it is especially important that systems are available for respondents to ensure a high response rate .
+
+contingency planning and incident response help ensure that if normal operations are interrupted , network managers are able to detect , mitigate , and recover from a service disruption while preserving access to vital information .
+
+implementing important security controls including policies , procedures , and techniques for contingency planning and incident response helps to ensure the confidentiality , integrity , and availability of information and systems , even during disruptions of service .
+
+however , we have reported on weaknesses across the federal government in these areas .
+
+specifically , in april 2014 we estimated that federal agencies ( including the department of commerce ) had not completely documented actions taken in response to detected incidents reported in fiscal year 2012 in about 65 percent of cases .
+
+we made a number of recommendations to improve agencies' cyber incident response practices , such as developing incident response plans and procedures and testing them .
+
+adequately training bureau employees , including its massive temporary workforce , in information security awareness — the census bureau plans to hire an enormous temporary workforce during the 2020 census activities , including about 300,000 temporary employees to , among other things , use contractor - furnished mobile devices to collect personal information from households that have not yet responded to the census .
+
+because uninformed people can be one of the weakest links when securing systems and networks , information security awareness training is intended to inform agency personnel of the information security risks associated with their activities and their responsibilities in complying with agency policies and procedures designed to reduce these risks .
+
+however , ensuring that every one of the approximately 300,000 temporary enumerators is sufficiently trained in information security will be challenging .
+
+providing training to agency personnel , such as this new and temporary staff , will be critical to securing information and systems .
+
+making certain security assessments are completed in a timely manner and that risks are at an acceptable level — according to guidance from nist , after testing an information system , authorizing officials determine whether the risks ( eg , unaddressed vulnerabilities ) are acceptable and issue an authorization to operate .
+
+each of the systems that the 2020 census it architecture plans to rely on will need to undergo a security assessment and obtain authorization to operate before it can be used for the 2020 census .
+
+properly configuring and patching systems supporting the 2020 census — configuration management controls ensure that only authorized and fully tested software is placed in operation , software and hardware are updated , information systems are monitored , patches are applied to these systems to protect against known vulnerabilities , and emergency changes are documented and approved .
+
+we reported in september 2015 that for fiscal year 2014 , 22 of the 24 agencies in our review ( including the department of commerce ) had weaknesses in configuration management controls .
+
+moreover , in april 2015 , us - cert issued an alert stating that cyber threat adversaries continue to exploit common , but unpatched , software products from vendors such as adobe , microsoft , and oracle .
+
+without strong configuration and patch management , an attacker may exploit a vulnerability not yet mitigated , enabling unauthorized access to information systems or enabling users to have access to greater privileges than authorized .
+
+the bureau's acting chief information officer and its chief information security officer have acknowledged these challenges and described the bureau's plans to address them .
+
+for example , the bureau has developed a risk management framework , which is intended to ensure that proper security controls are in place and provide authorizing officials with details on residual risk and progress to address those risks .
+
+in addition , the bureau has also embedded three security engineers in the 2020 census program to provide assistance and guidance to project teams .
+
+bureau officials also stated that they are in the process of filling — or plan to fill — vacancies in key positions and intend to hire staff with expertise in key areas , such as cloud computing .
+
+to minimize the risk of phishing , bureau officials note that they plan to contract with a company to monitor the internet for fraudulent sites pretending to be the census bureau .
+
+continued focus on these considerable challenges will be important as the bureau begins to develop and / or acquire systems and implement the 2020 design .
+
+we have previously reported on census bureau weaknesses that are related to many of these information security challenges .
+
+specifically , we reported in january 2013 that the bureau had a number of weaknesses in its information security controls due , in part , to the fact that it had not fully implemented a comprehensive information security program .
+
+thus , we made 13 public recommendations in areas such as security awareness training , incident response , and security assessments .
+
+we also made 102 recommendations to address technical weaknesses we identified related to access controls , configuration management , and contingency planning .
+
+as of june 2016 , the bureau had made significant progress in addressing these recommendations .
+
+specifically , it had implemented all 13 public recommendations and 92 of 102 technical recommendations .
+
+for example , the bureau developed and implemented a risk management framework with a goal of better management visibility of information security risks ; this framework addressed a recommendation to document acceptance of risks for management review .
+
+we have work under way to evaluate whether the 10 remaining recommendations have been fully addressed .
+
+these recommendations pertain to access controls and configuration management , and are related to two of the security challenges we previously mentioned — ensuring individuals gain only limited and appropriate access , and properly configuring and patching systems .
+
+the bureau's progress toward addressing our recommendations is encouraging ; however , completing this effort is necessary to ensure that sensitive information is adequately protected and that the challenges we outline in this report are overcome .
+
+the cedcap program's 12 projects have the potential to offer numerous benefits to the bureau's survey programs , including the 2020 census program , such as enabling an internet response option ; automating the assignment , controlling , and tracking of enumerator caseloads ; and enabling a mobile data collection tool for field work .
+
+while the bureau has taken steps to implement these projects , considerable work remains between now and when its production systems need to be in place to support the 2020 census end - to - end system integration test — in about a year .
+
+although the three selected cedcap projects had key project monitoring and controlling practices in place or planned , such as producing monthly progress reports , gaps exist in other important ways to monitor and control projects , such as the lack of detailed project plans , documentation of risk status updates , and complete risk mitigation plans .
+
+while officials plan to update the project plans with more detail , until the program and the selected projects address these other gaps , they are at risk of not adequately monitoring these projects .
+
+given the numerous and critical dependencies between the cedcap and 2020 census programs , their parallel implementation tracks , and the 2020 census' immovable deadline , it is imperative that the interdependencies between these programs are effectively managed .
+
+however , this has not always been the case .
+
+while actions such as weekly meetings to discuss the programs' respective schedules demonstrate that the programs are trying to coordinate , additional actions would help better align the programs .
+
+specifically , until the two programs establish schedules that are completely aligned , develop an integrated list of all interdependent risks , and finalize processes for managing requirements , both programs are at risk of not delivering their programs as expected .
+
+finally , while the large - scale technological changes for the 2020 decennial census introduce great potential for efficiency and effectiveness gains , it also introduces many information security challenges , including educating the public to offset inevitable phishing scams .
+
+continued focus on these considerable security challenges and remaining open recommendations will be important as the bureau begins to develop and / or acquire systems and implement the 2020 census design .
+
+to ensure that the bureau is better positioned to deliver cedcap , we are recommending that the secretary of commerce direct the director of the census bureau to take the following eight actions: update the cedcap program office cost estimate to reflect the current status of the program as soon as appropriate information becomes available .
+
+ensure that updates to the status of risks are consistently documented for cedcap's internet and mobile data collection and survey ( and listing ) interview operational control projects .
+
+ensure that cedcap's internet and mobile data collection , survey ( and listing ) interview operational control , and centralized operational analysis and control projects establish detailed risk mitigation plans on a consistent basis and that the internet and mobile data collection and centralized operational analysis and control projects establish trigger events for all relevant risks .
+
+define , document , and implement a repeatable process to establish complete alignment between cedcap and 2020 census programs by , for example , maintaining a single dependency schedule .
+
+establish a comprehensive and integrated list of all interdependent risks facing the cedcap and 2020 census programs , and clearly identify roles and responsibilities for managing this list .
+
+finalize documentation of processes for managing requirements for cedcap .
+
+identify when the 74 requirements related to redistricting data program and data products and dissemination will be tested .
+
+make developing a better understanding of and identifying requirements related to non - id response validation a high and immediate priority , or consider alternatives to avoid late definition of such requirements .
+
+we received written comments on a draft of this report from the department of commerce , which are reprinted in appendix ii .
+
+in its comments , the department agreed with all eight of our recommendations and indicated that it will be taking actions in response to our recommendations .
+
+the department also stated that for several of the recommendations it believed that some additional context should be included in our report , which we discuss below .
+
+first , the department reported that the census bureau decided on may 25 , 2016 , to use a commercial off - the - shelf solution in combination with in - house solutions for the data collection component of the 2020 census , which is to be delivered by the cedcap program .
+
+we updated relevant statements in our report to reflect this recent decision .
+
+in response to our first recommendation to update the cedcap program office cost estimate to reflect the current status of the program as soon as appropriate information becomes available , the department agreed and noted that with the recent may 2016 decision , the bureau has begun work on new program life cycle cost estimates .
+
+this is a positive step forward , and it will be important that the bureau prepares a reliable estimate in a timely manner in order to have a basis for monitoring true cost variances for the three selected cedcap projects we reviewed .
+
+the department agreed with our fourth recommendation to define , document , and implement a repeatable process to establish complete alignment between cedcap and the 2020 census program by , for example , maintaining a single dependency schedule .
+
+specifically , the department stated that the bureau must maintain schedule alignment between the 2020 census and cedcap programs through a single integrated schedule .
+
+the department further stated that the 2020 census is the program of interest and , as such , it must and will drive the schedule for all solutions that support it , including cedcap solutions .
+
+the department also stated that the 2020 census manages its master schedule through the primavera software package , as recommended earlier in the decade by gao .
+
+however , gao does not make recommendations on the use of specific software packages , and thus did not make such a recommendation to the bureau .
+
+the bureau's selection of a software tool should have been based on an assessment of the costs , benefits , and risks associated with alternative solutions .
+
+regardless of the software packages used , the 2020 census schedule is dependent on the delivery of cedcap solutions and , as we state in the report , the process for integrating the schedule dependencies between these two programs is ineffective .
+
+thus , we maintain that until the bureau modifies its current process to ensure complete alignment between the 2020 census and cedcap programs by , for example , maintaining a single dependency schedule , it will be limited in its ability to ensure that both programs are planning and measuring their activities according to the same agreed - upon time frames .
+
+in response to our fifth recommendation to establish a comprehensive and integrated list of all interdependent risks facing the cedcap and 2020 census programs , the department agreed and stated that the 2020 census program should better monitor interdependent risks through an integrated risk register .
+
+the department further stated that it uses an enterprise risk management tool to enable access to an integrated list of all active risks , including interdependent risks .
+
+it also stated that linkages between the two programs' risk registers can be flagged and tracked using these processes and then used to ensure the same process for responding to emerging risks are followed .
+
+however , although the bureau's comments discuss capabilities of its enterprise risk management tool that could help address our recommendation , during our review the two programs' interdependent risks were not being linked or tracked in an integrated manner , and we have not received additional evidence to demonstrate that further actions had been taken by the bureau to address this .
+
+the department agreed with our seventh recommendation to identify when the 74 requirements related to redistricting data program and data products and dissemination will be tested .
+
+in its letter , the department stated that the bureau had been conducting research on the highest - priority areas and activities relative to core operational and cost - efficiency requirements due to budget limitations this decade , but that planning and requirements development for these two areas are now under way .
+
+the bureau intends to ensure that any testing needs are prioritized for inclusion in the 2018 end - to - end census test .
+
+full implementation of our recommendation should help ensure that the requirements are sufficiently tested prior to the 2020 census .
+
+in response to our eighth recommendation to make identifying requirements related to non - id response validation a high and immediate priority , or consider alternatives to avoid late definition of such requirements , the department agreed that non - id response requirements should continue to receive attention and priority .
+
+the department also noted that non - id response validation operations have been conducted for several censuses , using a paper process , and that they validated these responses prior to tabulating the data to ensure that the response was legitimate and not duplicative .
+
+however , while the bureau has prior experience conducting non - id response validation operations in a controlled , small - scale paper - based environment , 2020 will be the first decennial census that the bureau introduces an internet response option on a wide scale , as well as the first time the bureau attempts non - id response collection via the internet .
+
+according to bureau officials , the use of the internet to collect non - id responses introduces the potential for a much higher volume of responses that will need to be validated than if the bureau were to use a paper - based non - id approach .
+
+the bureau has also reported that internet - based non - id response collection increases the likelihood of fraudulent responses .
+
+given that the bureau is in the early stages of conducting research and developing requirements in this area and there is only a year remaining before the 2018 census end - to - end test begins , we maintain that the lack of experience and specific requirements related to non - id response validation is highly concerning , and our recommendation to make this a high and immediate priority or consider alternative approaches needs to be implemented .
+
+the department also stated that the bureau has a long history of and demonstrated commitment to ensuring the confidentiality of the information provided by the public .
+
+it stated that implementing strong protections for all of its solutions and conforming to leading cybersecurity and fraud prevention best practices will be paramount for the self - response and field data collection operations .
+
+we agree and are encouraged by the significant progress the bureau has made in addressing our prior recommendations on information security weaknesses .
+
+as agreed with your offices , unless you publicly announce the contents of this report earlier , we plan no further distribution until 30 days from the report date .
+
+at that time , we will send copies to the secretary of commerce , the director of the u.s. census bureau , and interested congressional committees .
+
+in addition , the report will be available at no charge on the gao website at http: / / www.gao.gov .
+
+if you or your staff have any questions about this report , please contact me at ( 202 ) 512-4456 or chac@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made key contributions to this report are listed in appendix iii .
+
+our objectives were to ( 1 ) describe the status of the 12 census enterprise data collection and processing ( cedcap ) projects , ( 2 ) evaluate the extent to which the u.s. census bureau ( bureau ) is implementing best practices in monitoring and controlling selected cedcap projects , ( 3 ) determine the extent to which the bureau is adequately managing the interdependencies between the cedcap and 2020 census programs , and ( 4 ) describe the key information security challenges the bureau faces in implementing the 2020 census design .
+
+to describe the status of the 12 cedcap projects , we reviewed relevant cedcap program and project documentation , such as the transition plan , segment architecture , project charters , monthly progress reports , and the program office cost estimate and independent cost estimate .
+
+we used the information in this documentation to summarize the 12 projects in terms of project objectives , overall time frames , estimated costs , and amount spent to date , among other things .
+
+we also interviewed bureau officials , including the cedcap program manager , on the status and plans of all 12 projects .
+
+to evaluate the extent to which the bureau is implementing best practices in monitoring and controlling selected cedcap projects , we selected three projects based on those that bureau officials identified as being the highest priority for the 2020 census — ( 1 ) centralized operational analysis and control project , ( 2 ) internet and mobile data collection project , and ( 3 ) survey ( and listing ) interview operational control project .
+
+we reviewed program management documentation for the selected projects against project monitoring and controlling best practices identified by the software engineering institute's capability maturity model® integration for acquisition ( cmmi® - acq ) and for development ( cmmi - dev ) .
+
+these key practices included determining progress against the plan , documenting significant deviations in performance , taking corrective actions to address issues when necessary , monitoring the status of risks periodically , and implementing the risk mitigation plan .
+
+specifically , we analyzed program management documentation , including the program management plan , schedule management plan , risk management plan , transition plan , and segment architecture .
+
+we also analyzed documentation for each of the three selected projects , including project charters , schedules , risk registers , and monthly progress reports .
+
+further , we interviewed bureau officials , including the cedcap program manager and the project managers for each of the selected projects , on their efforts to manage these projects .
+
+we assessed the evidence against the best practices to determine whether each project fully , partially , or did not meet the best practices .
+
+specifically , “met” means that the bureau provided complete evidence that satisfies the entire criterion , “partially met” means the bureau provided evidence that satisfies some but not all of the criterion , and “not met” means the bureau provided no evidence that satisfies any of the criterion .
+
+to determine the extent to which the bureau is adequately managing the interdependencies between the cedcap and 2020 census programs , we compared program documentation related to managing interdependencies against best practices identified in cmmi - acq and cmmi - dev , as well as by gao .
+
+specifically , we analyzed relevant documentation from both programs , such as risk management plans , program - level risk registers , master schedules , dependency schedules , program management plans , and requirements management documentation .
+
+we also reviewed the 2020 census operational plan , artifacts from meetings of the cedcap and 2020 census executive steering committees , and presentations from the 2020 census program management review meetings .
+
+for assessing schedule dependencies between the cedcap and 2020 census programs , we reviewed both programs' master schedules and other program planning documents that contained major milestones and compared the dates against each other .
+
+we identified any potential misalignment in major milestones between the two programs and discussed these with cedcap and 2020 census program officials .
+
+we summarize these misalignments in our report .
+
+we also interviewed bureau officials from the cedcap and 2020 census programs , including the cedcap program manager , associate director of decennial census programs , the chief of the bureau's office of innovation and implementation , and the bureau's acting chief information officer , on their approach to managing schedule , risk , and requirement interdependencies between the two programs .
+
+to describe the key information security challenges the bureau faces in implementing the 2020 census design , we reviewed documentation on the 2020 census design — including the 2020 census operational plan , cedcap and 2020 census program risk registers , and a report developed by a contractor for the 2020 census — and interviewed staff within the bureau's office of the chief information security officer .
+
+we developed a list of key assumptions on the design of the 2020 census based on the documentation and input from bureau officials .
+
+we also reviewed reports by gao and others on information security challenges faced across the federal government .
+
+we synthesized the information in these reports to determine which security practices were most important given the design assumptions of the 2020 census , to develop an initial list of key challenges .
+
+we then obtained input on our initial list of challenges from relevant experts and the census bureau .
+
+specifically , we identified relevant experts within two of the bureau's key advisory groups — the national academy of sciences and census scientific advisory committee .
+
+these advisory groups consist of academic and industry experts from various fields , including information technology , and they meet with the bureau regularly to provide feedback on various areas , including the 2020 census program .
+
+we also identified relevant experts within the information security field on gao's executive council on information management and technology , including the chair of the association for computing machinery's committee on computers and public policy ; the executive director for the national association of state chief information officers ; and the executive director of the center for education and research in information assurance and security .
+
+we provided our list of key information security challenges to these experts , and obtained their perspectives .
+
+finally , we provided the list to the census bureau's acting chief information officer and the chief information security officer , to gain their feedback on our list and allow them the opportunity to respond with the bureau's plans for the challenges .
+
+we also determined the bureau's progress in addressing recommendations from our 2013 public and limited official use only reports by reviewing bureau documentation , such as the bureau's risk management framework , it security program policy , and guidelines and procedures for incident response plan tests .
+
+we compared the agency documentation to the relevant information security best practices for each of the recommendations , to determine how many recommendations had been implemented .
+
+we conducted this performance audit from october 2015 to august 2016 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+in addition to the contact named above , the following staff made key contributions to this report: shannin g. o'neill ( assistant director ) , jeanne sung ( analyst in charge ) , andrew beggs , chris businsky , juana collymore , lee mccracken , and kate sharkey .
+

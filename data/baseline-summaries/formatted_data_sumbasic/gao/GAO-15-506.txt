@@ -1,0 +1,880 @@
+since 2004 , the united states department of agriculture's ( usda ) farm service agency ( fsa ) has spent about $423 million through march 2015 to modernize the information technology ( it ) systems that deliver benefits to farmers and ranchers through its modernize and innovate the delivery of agricultural systems ( midas ) program .
+
+midas was originally envisioned to replace aging hardware and associated software applications by developing a single platform to manage all of fsa's farm programs .
+
+however , the agency has experienced significant challenges in managing this program , including problems in developing requirements , establishing reliable cost and schedule estimates , and implementing sound governance mechanisms .
+
+we have previously reported on fsa's shortfalls and made recommendations to address them .
+
+after nearly a decade of planning and development , in april 2013 , fsa deployed initial midas functionality .
+
+however , senior managers expressed concerns regarding the program's performance and delays in defining the cost , schedule , and scope for the remaining elements of midas .
+
+as a result , in july 2014 , the secretary of agriculture halted any new development on midas after its second software release ( in december 2014 ) and fsa deferred remaining development to future it projects .
+
+subsequently , you asked us to review the circumstances surrounding the decision to halt further development on usda's midas program .
+
+our objectives are to ( 1 ) describe what led to the decision to halt further midas development , ( 2 ) compare the functionality that midas has implemented to its original plans , and ( 3 ) evaluate the adequacy of key program management disciplines in place for midas and successor programs .
+
+to describe what led to the decision to halt further midas development , we reviewed documentation such as program planning artifacts , status reports , key milestone reviews , and departmental or external reviews of midas .
+
+we identified events and decisions that had significant impacts on midas's cost , schedule , scope , and performance from the program's initial requirements review in december 2011 through the july 2014 decision to halt further development on midas .
+
+to compare the intended functionality that midas has implemented to its original plans , we identified what features were delivered by obtaining a demonstration of the midas system , interviewing service center employees , and reviewing program artifacts — such as system test reports , program milestone documentation , and requirements artifacts .
+
+we compared the features that were delivered to those outlined in the program's initial set of requirements .
+
+to evaluate the extent to which fsa has implemented key it program management disciplines , we assessed the implementation of key practices and standards identified by the project management institute , the software engineering institute at carnegie mellon university , and gao in the areas of ( a ) requirements development and management , ( b ) system testing , ( c ) project planning and monitoring , and ( d ) executive governance.and fsa policies and guidance related to these practices ; the requirements traceability matrix and other requirements artifacts ; baseline program plans and reports used in monitoring the program's progress ; system test plans and final test reports ; and governance board charters , governance board meeting minutes , and reviews to identify lessons learned .
+
+for our assessment of each management discipline , we assessed the extent to which usda and fsa had implemented , partially implemented , or not implemented key practices .
+
+for each objective , we interviewed cognizant program and contractor officials .
+
+in doing so , we reviewed documentation such as usda we conducted this performance audit from october 2014 to june 2015 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+additional details on our objectives , scope , and methodology are provided in appendix i .
+
+among other missions , usda manages benefit programs that support farm and ranch production , natural resources and environmental conservation , and rural development .
+
+fsa is one of three usda service center agencies that manage benefit programs for farmers and ranchers .
+
+currently , fsa manages 23 farm benefit programs identified by , among other legislation , the agricultural act of 2014 ( commonly referred to as the 2014 farm bill ) .assistance for livestock , honeybees , and farm - raised fish to providing incentives for resource conservation .
+
+appendix ii provides a brief description for each of the 23 farm benefit programs .
+
+fsa benefit programs fall into four core categories: farm loan programs , which are to provide direct loans or loan guarantees to family farmers who could not otherwise obtain agricultural credit ; income support and disaster assistance programs , which are to provide farmers and ranchers with an economic safety net to help them maintain their operations during difficult times ; commodity operations programs , which are to expand market opportunities for farmers ; and conservation programs , which are to help maintain and enhance the nation's natural resources and environment .
+
+over the last two decades , fsa has provided services to customers supporting the farm benefit programs at its approximately 2,100 local offices .
+
+to participate in fsa programs , customers may need to visit local service center offices multiple times throughout the year because certain transactions cannot be done electronically via e - mail or the internet .
+
+a new customer would typically go through several steps to enroll in a benefit program: at first , a customer needs to establish a relationship with the agency by providing certain basic information about his operation that will be used in determining eligibility .
+
+based on this information , an fsa agent is to create a master farm record for the customer .
+
+the farm record is to include specific information about the farm such as identification numbers for fields and tracts ( a tract is one or more contiguous fields ) , location information , and a list of commodities that the farm is able to produce .
+
+once a customer has established a relationship , customers learn about available fsa programs , receive information on eligibility and estimated benefits under a particular program , and generate a draft agreement for participation in a particular program .
+
+the next step is for the customer to submit a final agreement to fsa for their participation .
+
+subsequently , throughout the year , the customer documents information about crops in an acreage report , which must be prepared for each applicable tract and growing season .
+
+the customer brings acreage reports and other forms to the fsa service center in person .
+
+because different crops have different reporting deadlines , a customer may need to visit the service center multiple times to fill out reports for different crops .
+
+in addition to establishing relationships and administering benefits programs , there are two other key activities that service centers perform: handling acreage reports and printing maps .
+
+handling acreage reports .
+
+this is one of the most critical functions for a service center .
+
+the fsa agent verifies that a customer is eligible for a benefit and compares the acreage amount in the acreage report against the acreage amount in the master farm record .
+
+the agent then computes the payment amount and authorizes the payment to be made to the customer .
+
+printing maps .
+
+customers also often request maps of their tracts from fsa service centers to help plan for the next growing season because the maps can only be produced in hard copy .
+
+according to fsa service center officials , this is one of the customer's most requested services .
+
+in order to provide these services , fsa staff use a variety of computing environments and software applications , including a central “web farm,” consisting of an array of interconnected computer servers that exchange data in support of data storage and web - based applications ; a central ibm mainframe that hosts non - web applications and data ; a distributed network of ibm application system 400 computers and a common computing environment of personal and server computers at each local office .
+
+in early 2004 , fsa began planning the midas program to streamline and automate farm program processes and to replace obsolete hardware and software .
+
+fsa identified these goals for the program: replace aging hardware: replace application system 400 computers , which date to the 1980s and are obsolete and difficult to maintain , with a hosting infrastructure to meet business needs , internal controls , and security requirements .
+
+reengineer business processes: streamline outmoded work processes by employing common functions across farm programs .
+
+for example , determining benefits eligibility could be redesigned ( using business process reengineering ) as a structured series of work steps that would remain consistent regardless of the benefits requested .
+
+improve data management: make data more readily available to fsa personnel and farmers and ranchers — including online self - service capabilities — and increase data accuracy and security .
+
+improve interoperability with other usda and fsa systems: integrate with other usda and fsa modernization initiatives , including the financial management modernization initiative for core financial services that meet federal accounting and systems standards , the geospatial information systems to obtain farm imagery and mapping information , and the enterprise data warehouse to provide enterprise reporting .
+
+from 2004 through 2010 , fsa went through several changes in direction before selecting a technical solution for midas: fsa drafted initial requirements for midas in january 2004 .
+
+fsa halted requirements development in early 2006 when program officials decided that the proposed customized solution would not meet future business needs .
+
+fsa subsequently changed its approach in the summer of 2006 from acquiring customized software to acquiring commercial off - the - shelf enterprise resource planning software .
+
+the program estimated that it would cost $305 million to implement midas , but this estimate had a high degree of uncertainty .
+
+in february 2008 , fsa analyzed how its farm program functions would map to functions available in a commercial off - the - shelf enterprise resource planning software suite from vendor sap , which had been selected for two other usda modernization initiatives — the financial management modernization initiative and the web based supply chain management program .
+
+this analysis concluded that midas processes generally mapped to the sap software .
+
+based on that analysis and a software alternatives analysis conducted in mid - 2008 , fsa decided to proceed with sap enterprise resource planning software as the solution for midas .
+
+fsa also decided to accelerate the time frame for implementing the solution from the 10 years originally planned to 2 years .
+
+to accomplish this , fsa planned to compress the requirements analysis phase from 4 years to 5 months , and reduce the analysis and design phase from 3.5 years to 9 months .
+
+a request for quotations for the midas system integrator contract was released in july 2009 , and a contract based on this request was awarded to sra international in december 2009 .
+
+after a short delay due to a bid protest , the system integrator began work in may 2010 with an initial firm fixed price task order for $4.4 million through december 2010 .
+
+by this point , fsa had also awarded six other contracts for services to support additional aspects of this initiative , including software licenses , project management support , and technical support .
+
+as of october 2010 , fsa planned to spend $169 million — more than half of the program's $305 million estimate — on the system integrator contract through fiscal year 2012 .
+
+figure 1 depicts a timeline of key milestones for midas from its inception through the initiation of work by the system integrator .
+
+in the years after the system integrator began to work on developing midas , the program ran into cost , schedule , and technical problems .
+
+these issues ultimately resulted in a july 2014 decision to halt further development on the midas program .
+
+we discuss the events that led to this decision later in this report .
+
+in september 2007 , fsa established a midas executive program manager and a program office to oversee the program and its supporting contracts .
+
+according to fsa officials , the program office reported to a senior management oversight committee on a regular basis .
+
+the committee was chaired by the usda under secretary for farm and foreign agricultural services and included the usda chief information officer , usda chief financial officer , and administrator of the farm service agency as additional board members .
+
+the committee had the following responsibilities , among others , in providing departmental oversight and support for the midas program: communicating and providing strategic direction for fsa's enterprise modernization ; approving the midas acquisition strategy ; approving the program's cost , schedule , and requirements baseline ; ensuring midas integration with departmental requirements and related initiatives and significant interdependencies ; approving updates to business cases ; and addressing issues escalated by a program - level review board .
+
+at the department level , usda had an it governance process that was overseen by the executive information technology investment review board , which was chaired by the department's chief operating officer and included the department's under secretary for farm and foreign agricultural services , chief information officer , chief financial officer , and other senior executives .
+
+the board was to approve it investments that aligned with usda's mission and enterprise it goals ; provide executive management oversight , approval , and commitment to selected it investments ; and recommend to the secretary a ranked group of it investments proposed for funding .
+
+in addition to usda governance , the office of management and budget ( omb ) was involved in providing routine oversight for this program .
+
+omb requested monthly status briefings on midas's progress after usda's office of the chief information officer conducted a techstat review of the program in november 2012 .
+
+these monthly briefings continued until october 2014 , when the program was preparing to deploy its second and final software release .
+
+in may 2008 , at the request of the house and senate committees on appropriations , we reported that midas was in the planning phase and that fsa had begun gathering information and analyzing products to integrate its existing systems.adequately assessed the program's cost estimate , in that the estimate had been based on an unrelated usda it investment .
+
+moreover , the agency had not adequately assessed its schedule estimate because business requirements had not been considered when fsa reduced the implementation time frame from 10 years to 2 years .
+
+we determined that the agency had not as a result , we reported that it was uncertain whether the department could deliver the program within the cost and schedule time frames it had proposed and recommended that fsa establish effective and reliable cost estimates using industry leading practices and establish a realistic and reliable implementation schedule that was based on complete business requirements .
+
+usda generally agreed with our recommendations and implemented our recommendation to improve its tracking of user problems and clarifying roles and responsibilities between fsa and usda's information technology services .
+
+however , it did not implement our other recommendations to establish reliable cost and schedule estimates based on complete business requirements .
+
+subsequently , in july 2011 , we reported that midas was in the proof - of - concept and system design phase , and noted that the scope included modernization of fsa's systems for all of its ( at that time ) 37 farm programs by march 2014 .
+
+we determined that the program's cost estimate had a large degree of uncertainty .
+
+in particular , it did not yet reflect decisions that had occurred since the estimate was developed in 2007 and that the completion date of its current development phase was uncertain because of delays to key system design milestones .
+
+in addition , we found that fsa had plans in place for midas that incorporated selected leading practices and had defined governance bodies to provide oversight , but it had not implemented other key management practices , including forming an integrated team with representatives from it programs that midas depended on for its success , developing a schedule that reflected dependencies with relevant it programs , and tracking the status of risks as planned .
+
+moreover , it had not clearly defined the roles and coordination among the program's governance bodies .
+
+we recommended that usda update cost and schedule estimates , address management weaknesses in plans and program execution , and clarify the roles and coordination among the governance bodies .
+
+the department agreed with our recommendations and identified plans to address them .
+
+however , the agency did not complete efforts to address these recommendations before the decision was made to halt the program .
+
+in a july 2014 memo , the secretary of agriculture decided to halt the midas program after deploying minimal functionality due to performance challenges in the early months after the system became operational , and delays in determining the remaining scope , schedule , and cost for the program .
+
+our analysis similarly found that the key factors that led to this decision were poor program performance — characterized by rising costs , schedule overruns , reduced functionality , and problems with the system after it was deployed — as well as uncertainty regarding future plans for midas .
+
+poor program performance: fsa experienced significant cost and schedule delays in developing midas , which led it to defer or remove expected functionality and to eliminate key system tests prior to deploying the system .
+
+once the initial midas functionality was deployed , fsa employees encountered serious problems in using the system .
+
+a timeline of key events and decisions that factored into midas's poor program performance include: in december 2011 , midas was envisioned to deliver significant functionality in phases , with the majority of functions to be delivered in the first phase .
+
+in further designing the system in march 2012 , fsa decided to remove selected functionality from the first phase , and to deliver the remaining functionality in two deployments .
+
+as of june 2012 , fsa estimated that development costs would be $330 million .
+
+as fsa began to develop the system , however , it experienced cost and schedule overruns .
+
+for example , by august 2012 , fsa had overrun its cost estimates by 11 percent and schedule estimates by 10 percent .
+
+these overruns were due , in part , to delays in completing customization of the commercial software , redesign work on interfaces , delays in testing individual system components as a result of including more customization than planned , and delays in data conversion and remediation efforts .
+
+in order to help meet cost and schedule demands , in september 2012 , fsa decided to split the two deployments into three deployments and to focus primarily on the first deployment .
+
+after continuing to experience schedule delays as it moved into system testing , fsa decided to remove additional functionality from the first deployment ( including acreage reporting and customer records functions ) .
+
+to try to stay on schedule , the midas program also obtained approval from senior usda and fsa management in early 2013 to defer key testing activities — including performance testing and user acceptance testing — until after the system became operational .
+
+these tests were not performed after deployment .
+
+when fsa implemented its first software release in april 2013 , midas experienced significant technical problems , which is not surprising given its lack of testing .
+
+for example , users experienced significant problems with the system such as the geospatial information system ( gis ) functionality , accuracy of farm record data , and system response time .
+
+also , within 3 months after the deployment , there were 62 critical , 172 major , 236 average , and 69 minor defects that needed to be addressed .
+
+as a result , the time allotted to fix problems doubled in length — from 3 to 6 months — to accommodate the fixes required by the system .
+
+uncertainty regarding future plans: fsa was unable to establish a revised baseline for the program after experiencing cost and schedule overruns in developing the initial system release because the proposals were too costly or not aligned with the department's budget and it plans .
+
+a timeline of key events include: after conducting a techstat review in november 2012 , usda's office of the chief information officer ( cio ) directed fsa to establish a new program baseline by january 2013 .
+
+however , fsa did not deliver a new baseline by the deadline .
+
+according to fsa officials , the agency made three different attempts to salvage what it could from midas: in may 2013 , the program submitted a proposed baseline to fsa management that included delivering the full set of envisioned midas functionality by late 2016 at an increased cost .
+
+at $659 million , this new cost estimate was almost twice as expensive as the earlier baseline estimate of $330 million .
+
+fsa management did not approve the proposed baseline due to the cost .
+
+in august 2013 , fsa submitted a proposal to usda for delivering less than the full set of midas functionality at a reduced cost to implement and with a shorter development schedule .
+
+specifically , the program's scope no longer included applications for the 2014 farm bill programs , which fsa decided to transfer to its web farm .
+
+the cost estimate was reduced to $583 million through fiscal year 2015 and development was to be completed by mid - 2015 .
+
+however , usda's office of the cio rejected this rebaseline request because it required revisions in order to align with the department's budget plans .
+
+in february 2014 , fsa submitted a proposal for the same functionality as the prior proposal at roughly the same cost and with a shorter development schedule .
+
+under this new proposal , development was to be completed in mid - 2015 at a cost of $584 million .
+
+this proposal also included a life cycle cost estimate for midas of $1.026 billion through fiscal year 2021 .
+
+however , in june 2014 , the department's executive information technology investment review board placed the program's third rebaseline request on hold .
+
+the board wanted fsa to build the remaining functionality in smaller increments and to work in partnership with other agencies to develop an enterprisewide solution for acreage reporting and customer portal tools consistent with the 2014 farm bill and department priorities .
+
+after the third rebaseline proposal was not approved , the department's review board recommended to the secretary of agriculture that midas halt development after the completion of the customer records release .
+
+in july 2014 , the secretary decided to approve the board's recommendation .
+
+fsa deployed its customer records release in december 2014 .
+
+as of march 2015 , fsa had spent about $423 million on midas , which was $93 million higher than the 2012 baseline estimate of $330 million .
+
+of the $423 million , about half was spent on the system integrator contract .
+
+moving forward , fsa estimates that it will cost roughly $50 million to $60 million to continue to operate and maintain the system each year .
+
+as a result , midas could cost approximately $825 million through the end of its useful life in 2021 .
+
+figure 2 illustrates the key events and decisions affecting midas that led to the decision to halt further development , and table 1 identifies changes in midas cost and schedule estimates over time .
+
+fsa has delivered a fraction of what was originally planned for midas .
+
+fsa first documented high - level plans for the functionality that midas was to deliver when it completed a system requirements review in december 2011 .
+
+at that time , midas was envisioned to provide a single sap platform to host data , applications , and business processes for administering farm program benefits , and advanced tools for customers and fsa employees.seamlessly with other usda systems , including usda's financial system , in addition , it was expected to integrate geospatial information system , and enterprise data warehouse .
+
+figure 3 provides an overview of fsa's planned key features for midas .
+
+however , as the program ran into problems , fsa continued to remove planned features .
+
+specifically , in june 2013 , the midas senior management oversight committee decided to develop applications for administering farm program benefits on fsa's web farm rather than on the sap platform , as originally intended , because it could no longer wait to transition from legacy systems .
+
+in addition , the ability for fsa employees to use critical acreage reporting tools with the data — a function that affects 85 percent of tasks — was removed from the program's scope .
+
+other key features were also removed from midas , such as an online portal for farmers and other customers as well as integration with usda's financial system and enterprise data warehouse .
+
+as a result of removing key features from midas , fsa delivered a fraction of the originally envisioned functionality .
+
+midas currently provides farm and customer record data on a sap platform that is integrated with usda's geospatial information system .
+
+as a result of this partial implementation , fsa employees currently access , visualize , and edit data in midas .
+
+they then turn to the web farm to run acreage reporting , administer benefits , and process payments .
+
+fsa did not quantify what percentage of the originally envisioned midas functions were delivered , and this task is complicated by the fact that there is not a complete set of requirements .
+
+however , if one were to weigh the key features equally , midas has delivered about 20 percent of what fsa planned .
+
+that figure would be lower if one were to include the comparative importance of the functionality .
+
+for example , fsa has cited acreage reporting as a key feature affecting 85 percent of what fsa employees do and this is not included in midas .
+
+in addition , integration with the financial system was one of the key reasons for going with the sap solution , and this , too , was not delivered .
+
+figure 4 compares the functionality planned for midas in 2011 to what has been delivered .
+
+fsa did not adequately implement program management disciplines on midas in four key areas — requirements development and management , project planning and monitoring , system testing , and executive - level governance — and lacks the demonstrated capacity to manage successor programs .
+
+leading government and industry organizations call for best practices such as obtaining commitment to a requirements baseline and ensuring requirements are prioritized and traceable ; managing changes to project plans and conducting progress monitoring ; testing the system to determine whether it is acceptable to users ; and implementing executive - level governance to include comparing performance against expectations and assessing maturity at key checkpoints based on predefined criteria .
+
+usda and fsa policies are consistent with these best practices .
+
+however , in developing midas , fsa did not adequately develop and manage requirements , effectively manage project plan changes , conduct meaningful progress monitoring , execute critical tests before the system became operational , and implement effective executive - level governance to prevent midas from falling short of expectations .
+
+fsa and contractor officials explained that key practices were not always implemented because , among other things , the program's scope was not well - understood , usda and fsa did not follow its own policies , and management allowed the program to continue despite known weaknesses .
+
+moreover , while fsa officials have acknowledged weaknesses in each of these management disciplines , the agency has not established plans to improve its management of successor programs .
+
+until fsa addresses shortfalls in key program management disciplines on successor programs to midas , the agency will be at an increased risk of producing additional projects with cost overruns and schedule slippages while contributing little to mission - related outcomes .
+
+further , until fsa establishes improvement plans , it will be difficult for the agency to demonstrate that it has the capacity to effectively manage it acquisitions and it will be at a higher risk of failure for any new or ongoing it initiatives .
+
+requirements establish what the system is to do , how well it is to do it , and how it is to interact with other systems .
+
+leading industry organizations such as the software engineering institute have recommended practices for the effective development and management of requirements such as eliciting stakeholder needs , ensuring that requirements are complete and unambiguous , prioritizing them , obtaining formal commitment to them , assessing any gaps with the proposed solution , and ensuring that each requirement traces back to the business need and forward to its design and testing .
+
+fsa has established policies and guidance for developing and managing requirements that are consistent with these recognized practices .
+
+of six key practices in requirements development and management , fsa implemented one practice , partially implemented two practices , and did not implement three practices .
+
+specifically , fsa documented requirements for midas based on needs gathered from stakeholders prior to a system requirements review in december 2011 and throughout the development of the system .
+
+the agency also identified its process for addressing software gaps with the sap solution and documented workarounds for certain capabilities .
+
+however , fsa did not adequately develop and manage midas requirements because the agency did not always develop complete requirements , prioritize its requirements , obtain commitment on a requirements baseline , document solutions to gaps with sap software that had been known for years and were required for the program's success , and ensure that requirements were traceable to development products .
+
+table 2 identifies the extent to which fsa implemented key practices for developing and managing requirements for midas .
+
+fsa officials and supporting documentation show several reasons for the lack of requirements development and management discipline on midas .
+
+for example: fsa officials noted that problems with the completeness and specificity of requirements persisted because guidance on how to ensure requirements completeness and specificity was not implemented until shortly before the system requirements review and it took time for changes to be made to the requirements .
+
+also , officials cited challenges in the complexity of writing requirements for business processes related to gis capabilities .
+
+for selected key milestone reviews and decision points , the program's executive governance board did not verify that key requirements artifacts and processes were mature enough to proceed because usda and fsa did not establish a governance process that required the board to perform such reviews .
+
+in august 2012 , the iv&v contractor reported that the program's gap analysis lacked specific details to fully understand activities for identifying , reviewing , assessing , and validating gaps .
+
+in addition , gis was not part of the system integrator's initial scope and additional resources and expertise had to be acquired during midas's development .
+
+fsa and contractor staff had ongoing trouble getting access to one of the program's two requirements management tools because system access rights were controlled by a different usda agency .
+
+while fsa worked on this issue , it continued to be a problem throughout the development of release 1 .
+
+the iv&v contractor reported in march 2012 that this lack of access limited their ability to perform requirements traceability .
+
+this made it more difficult to manage the baseline scope and configuration of the release .
+
+in addition , the iv&v contractor reported in february 2014 that the program office did not follow adequate document configuration management processes to control changes , thereby making it difficult to maintain traceability between requirements and design documents .
+
+fsa officials noted that the program did not obtain a requirements baseline approval or prioritize its requirements because the program lacked the necessary discipline and rigor for requirements management activities during the first software release .
+
+fsa's lack of requirements development and management discipline on midas impacted the program in several ways .
+
+for example , by not establishing a requirements baseline the agency did not have a firm commitment on the mission - related outcomes midas would satisfy .
+
+in addition , not having prioritized requirements limited the agency's ability to make decisions on which scope to defer or remove from the program when faced with cost and schedule overruns .
+
+both fsa and iv&v contractor officials noted that the program had demonstrated improvements in practices associated with requirements management for the second software release in december 2014 .
+
+for example , an official for the iv&v contractor stated that requirements traceability was significantly better and that a requirements baseline was established for the second release .
+
+unless fsa ensures that successor programs to midas are fully implementing key requirements development and management practices , the agency will not have reasonable assurance that its it modernization efforts will meet stakeholder needs and contribute to mission - related outcomes .
+
+leading organizations such as the project management institute and software engineering institute have recommended best practices for project planning and monitoring .
+
+fsa also has policies and guidance that are consistent with recognized practices .
+
+project planning maintains plans as the basis for managing the project's activities .
+
+recommended best practices call for documenting and evaluating changes to established project plans to determine whether they require updates to initial planning estimates for cost , schedule , and scope .
+
+project monitoring provides an understanding of the project's progress by comparing actual work completed to a plan consisting of predefined expectations for cost , schedule , and deliverables .
+
+best practices state that monitoring progress is important because it helps project managers take timely corrective actions when performance deviates significantly from plans .
+
+of three key practices in project planning and monitoring , fsa partially implemented one practice and did not implement two practices .
+
+the agency established a project plan for midas with predefined expectations for cost , schedule , and scope based on its integrated baseline review in march 2012 .
+
+for several months following this review , the program executed to these plans and tracked certain technical and programmatic changes in its change control log .
+
+however , the agency did not effectively manage plan changes or monitor progress .
+
+for example , fsa did not update its baseline plans when it revised the solution architecture and when it deferred planned testing activities before the initial software release .
+
+in addition , fsa continued to develop deferred functionality for approximately 20 months without an approved rebaseline for these efforts .
+
+also , fsa's initial monitoring of contractor performance lacked insight into the progress of deliverables and contractor performance reporting was halted from december 2012 through october 2014 .
+
+table 3 identifies the extent to which fsa implemented key practices for project planning and monitoring for midas .
+
+usda and fsa officials provided several explanations for the agency's shortfalls in project planning and monitoring .
+
+fsa officials acknowledged that they did not update baseline project plans to reflect changes in the solution architecture and testing phases prior to the initial software release , but noted that they briefed the senior management oversight committee on these changes .
+
+the usda cio noted that midas halted progress monitoring of contractors in december 2012 because managers were already aware that the program was performing poorly and was in need of a rebaseline .
+
+also , the director of the midas business management office stated that while the program's cost baseline was not at a detailed level , the contractors' cost estimates included additional details on work products and deliverables .
+
+however , the program was not monitoring progress based on those details .
+
+by not revising the project plan after making significant revisions to its approach , the program's cost , schedule , and scope were no longer effective benchmarks for measuring performance .
+
+without meaningful progress monitoring initially and as the program shifted its focus , program managers and executive stakeholders had less insight into the deliverables being produced by contractors and less control over the program's outcomes .
+
+according to fsa and iv&v contractor officials , the program provided a baselined cost , schedule , and scope for its second software release and executed improved discipline in managing plan changes .
+
+however , until fsa ensures that successor programs to midas are fully implementing key project planning and monitoring practices , the agency will be at an increased risk that future projects will experience cost and schedule overruns and achieve less than expected outcomes .
+
+according to relevant leading industry practices and government guidance , system testing should be progressive , meaning that it should consist of well - defined test plans and a series of test events that build on and complement previous events in the series .
+
+testing should first focus on the performance of individual system components , then on the performance of integrated system components , followed by system - level tests that focus on whether the system ( or major system increments ) is acceptable , interoperable with related systems , and operationally suitable to users .
+
+fsa established policies and guidance for system testing on midas that are consistent with recognized practices .
+
+of four key practices in system testing , fsa implemented one practice , partially implemented two , and did not implement one .
+
+fsa defined test plans for midas , but the agency did not execute critical performance and user testing before the system became operational .
+
+fsa had test plans in place that generally defined key elements , such as the roles and responsibilities of groups that were to conduct testing , hardware and software to support testing , and a schedule that defined how long and in what order test events were to occur .
+
+in addition , fsa conducted testing on individual and integrated components .
+
+however , midas's test plans were missing a key element — traceability between system test events and requirements .
+
+also , integration testing took longer than planned and the program decided to defer testing that was to validate whether system performance met requirements and was acceptable to users until after the system went live .
+
+table 4 identifies the extent to which fsa implemented key system testing practices for midas .
+
+fsa's shortfalls in system testing were due in part to technical problems and delays in developing gis capabilities and a desire by department and agency management to keep the target deadline for the initial release of midas .
+
+early in the development of the gis capabilities , fsa ran into technical problems that required additional time and resources to address .
+
+since gis development had been delayed , integration testing with the gis capabilities also had to be delayed .
+
+by april 2013 , integration testing was still ongoing and fsa had to make a decision whether to delay the implementation of midas or allow the system to go live while accepting the risk of not conducting performance / stress , regression , and user acceptance testing .
+
+while the program warned of the risks of deploying midas with outstanding defects and incomplete testing , senior department and agency officials decided to accept these risks in order to deploy the system by april 2013 .
+
+incomplete testing on midas did not provide users an opportunity to identify key problems with the system and whether it met their needs before it went live .
+
+after the system went live , users experienced significant problems such as gis functionality , accuracy of farm record data , and system response time .
+
+within 3 months after the initial midas release , there were 62 critical , 172 major , 236 average , and 69 minor defects that needed to be addressed .
+
+the program had a plan in place to address performance problems after the system went live , but , due to the number of problems , it had to extend the contract for addressing system defects from 3 months to 6 months .
+
+fsa officials and the program's iv&v contractor have acknowledged the shortfalls in system testing practices and stated that the program has taken steps to improve system testing on the second and final midas release .
+
+for example , fsa and iv&v contractor officials noted that the program conducted user acceptance testing prior to deploying functionality for managing customer records ( also called business partner functionality ) .
+
+while the agency recognized the need to improve its testing on the second midas release , it has not demonstrated that it has institutionalized sound system testing practices .
+
+until it does so , the agency will be at higher risk of delivering systems that have performance issues and do not fully meet users' expectations .
+
+we assessed best practices used in industry , academia , and government to develop the it investment management framework to provide a method for evaluating and assessing how well an agency is selecting and managing its it resources .
+
+efforts to build a foundation for it governance involve establishing specific critical processes , such as instituting investment boards , selecting investments , controlling investments as they are developed and deployed , and reviewing investments after they are deployed .
+
+instituting investment boards .
+
+successful organizations establish an it investment board comprised of senior executives who are responsible for operating according to documented guidance , policies , and procedures that align with existing it governance processes , identify decision gates to be reviewed and approved by the board , and establish entry / exit criteria to be reviewed at each decision gate .
+
+the board is also responsible for ensuring that investment decisions address stakeholder needs and are made in the best interest of the organization .
+
+selecting it investments .
+
+successful organizations identify , use , and store comprehensive data — including a business case that defines the life cycle cost estimate and benefits to be realized — in order to support investment decision making .
+
+reselecting ongoing projects is an important part of this critical process ; if a project is not meeting established goals and objectives , the organization must make a decision on whether or not to continue to fund it .
+
+controlling it investments .
+
+organizations should have a documented , well - defined process for overseeing ongoing investments once they have been selected .
+
+effective investment oversight and evaluation involves , among other things , ( 1 ) comparing actual performance against cost and schedule estimates ; and ( 2 ) assessing whether projects are meeting expectations against developmental milestones using predefined criteria and decision gates , and taking corrective actions when expectations are not being met .
+
+reviewing it investments after deployment .
+
+once the project has transitioned from the development phase to the operations and maintenance phase , organizations should conduct a post - implementation review to compare actual investment results with decision makers' expectations for cost , schedule , performance , and mission improvement outcomes .
+
+the lessons learned from these reviews can be used to modify future investment management decision making .
+
+in 2013 , usda issued updated policies and guidance that are generally consistent with these practices .
+
+of five key practices in executive - level it governance , fsa partially implemented two practices and did not implement three practices .
+
+specifically , fsa partially implemented steps to institute a governance board .
+
+it established a governance structure and process for midas ; however , its governance process was ineffective in preventing midas from falling short of expectations .
+
+specifically , fsa did not implement key steps for selecting and controlling investments , including establishing a comprehensive business case or life cycle cost estimate and comparing actual performance against estimates .
+
+also , fsa partially implemented post - implementation review practices .
+
+the agency tasked a contractor with assessing the results and lessons learned from portions of midas that were implemented ; however , it did not conduct a comprehensive review of the lessons learned on the program as a whole .
+
+table 5 identifies the extent to which usda and fsa implemented key executive governance practices for midas .
+
+the governance of midas was ineffective , in part , because usda's office of the cio did not ensure that midas followed its policies and guidance for it governance .
+
+in 2011 , we reported that governance boards had not been reviewing midas at key decision points using criteria defined in department guidance and recommended that the department and agency collaborate to document how the department is meeting its policy for it investment management for midas , to include investment reviews.not address it while midas was in development .
+
+according to fsa officials , usda did not have guidance for it governance providing defined decision gates with standard criteria and documentation while the department agreed with our recommendation , it did requirements .
+
+fsa officials noted that from 2011 until 2013 , the agency used a governance process involving a program - specific gate review plan for midas based on sap's system development methodology .
+
+usda's under secretary for farm and foreign agriculture services and the chief financial officer stated that there was a breakdown in the governance process for midas , particularly on its initial development .
+
+the under secretary noted that the senior management oversight committee made the best decisions it could based on the information it had , but the information that fsa had reported to the committee did not adequately portray the extent of the cost , schedule , and technical problems or decisions that had been made on scope changes .
+
+for example , the under secretary and the chief financial officer stated that they were not informed that fsa had been developing key functions in both midas and on the agency's web farm — a key change in the original scope — until early 2013 .
+
+in addition , the under secretary and the chief financial officer noted that they were not informed until early 2013 that fsa had made decisions to remove or defer additional scope — including acreage reporting — from the first software release .
+
+subsequently , in 2013 , midas began piloting usda's new it governance process , called the integrated it governance framework .
+
+this framework required midas to report its performance to and obtain approval from a department - level investment review board .
+
+in following this new governance framework , the investment review board approved the final decision to implement the second midas software release and recommended to the secretary of agriculture to halt further development on midas .
+
+while the recently updated governance framework established by usda has potential for improving fsa's it modernization efforts , unless usda and fsa take additional steps or develop a mechanism to help ensure that successor programs to midas programs are fully implementing key executive it governance practices — including practices for selecting , controlling , and reviewing investments — department and agency management will not have reasonable assurance that oversight is effective in preventing future it investments from falling short of expectations .
+
+required by law to automate , integrate , and modernize its farm program services , fsa has begun planning how it will do so .
+
+in an explanatory statement accompanying the 2015 appropriations act , congress directed usda to , among other things , deliver a modernized functional system that builds existing farm program applications into an integrated system , delivers increased efficiency and security , retires redundant legacy systems , eliminates the path of siloed legacy applications , capitalizes on the investment that usda has already made in the enterprise platform , addresses the new requirements of the 2014 farm bill , and improves on the capabilities originally proposed to congress and the nation's farmers and ranchers .
+
+the appropriations act also mandated that fsa develop a plan for it related to midas and other farm program delivery systems prior to obligating more than 50 percent of the $132 million made available in fiscal year 2015 .
+
+this plan is to identify each investment's capabilities and mission benefits , estimated life cycle cost , key milestones , and alignment with fsa's it roadmap .
+
+in addition , the 2014 farm bill includes provisions for streamlining acreage reporting to reduce the administrative burden on farmers and producers .
+
+this is to be done by , among other things , requiring the secretary of agriculture to ensure that producers may report information electronically ( including geospatial data ) and that improvements are made in the areas of coordination , information sharing , and administrative work with fsa , the risk management agency , and the natural resources conservation service .
+
+fsa has begun planning how it will move forward in its modernization efforts to fulfill the functionality that was envisioned — but not delivered — by midas .
+
+according to fsa officials , the agency plans to document its decisions for addressing acreage reporting tools , online customer tools , and other functionality that was removed from midas in its it roadmap by the end of spring 2015 .
+
+those plans may include decisions to partner with other usda agencies , acquire new commercial off - the - shelf software , and / or develop and enhance functionality on the agency's web farm .
+
+in its fiscal year 2016 budget request , fsa noted that , while the mix of investments may fluctuate based on its prioritization process and business requirements , the agency intends to pursue incremental , modular investments such as the following .
+
+customer self - service tools: expanding on existing online services and partnering with other usda agencies ( including the acreage crop reporting streamlining initiative ) to provide farmers and ranchers online access to relevant information , including remote and / or mobile access to their data and programs .
+
+expanded customer service: piloting a program to find new ways to deliver programs and service support through the agency's repository of geospatial and farm information .
+
+increased it investments to support fsa process improvements: delivering incremental improvements to address pain points and inefficiencies identified by field office staff as impacting their effectiveness in servicing customers .
+
+improvements in the pipeline could range from simple items such as simplifying the printing of farm maps or customized reports to continuing the incremental integration of stove - piped systems through establishing or enhancing common eligibility , payment , and obligation frameworks .
+
+in addition , fsa officials stated that the agency is incorporating lessons learned into future plans , including building smaller , incremental releases with a defined scope , cost , and schedule and defined benefits for the customer ; extending an organizational change agency network to provide input on pain points and process improvements ; driving the prioritization of investments through business needs instead of technology ; and integrating technology capabilities , including sap , into decision - making processes and alternatives analyses , so the technologies for each project will be determined based on what best matches the business requirements .
+
+however , fsa has not established plans to improve its ability to successfully manage major it investments .
+
+specifically , fsa officials have not committed to improving agency practices in the four areas we reviewed because they believe that they have already addressed the problems .
+
+while agency officials acknowledge that mistakes were made on the first midas release , they stated that they did a better job delivering the second release .
+
+for example , the midas program executive reported that the agency established requirements for the second release , established a schedule for developing and deploying the release , performed adequate testing prior to deploying the release , and that oversight bodies were kept informed .
+
+while the second release was more successful than the first , it was much less complex .
+
+the second release involved a limited amount of functionality that had been in development for several years before it was deferred from the first release .
+
+further , the relatively discrete amount of work involved and the establishment of baseline plans 3 months prior to the release allowed the project to deliver near cost and schedule estimates .
+
+these efforts , however , are not sufficient to demonstrate that fsa will adhere to departmental policy or that it has practices in place to successfully plan , develop , and oversee future complex it investments .
+
+usda's under secretary for farm and foreign agriculture services and chief financial officer agreed that plans are needed to improve fsa's ability to successfully manage it investments .
+
+until fsa establishes and implements improvement plans , it will be difficult to demonstrate that it has the capacity to manage it acquisitions and the agency will have a higher risk of failure in future it initiatives .
+
+after spending about $423 million through march 2015 , the midas program was halted about 10 years after it was initiated .
+
+key factors that led to the decision to halt the program included cost overruns totaling $93 million more than planned , schedule delays , performance issues , and management's inability to decide on how to restructure the program for success .
+
+in deploying the two midas releases , fsa delivered about one - fifth of the functionality it had planned to deliver .
+
+midas was envisioned to provide a seamless , integrated system that would allow farmers and ranchers to submit information electronically and allow fsa employees to process farm program benefits with built - in tools and access to gis and other enterprise systems .
+
+however , due to the limited functionality that midas provided , farmers and ranchers continue to submit information to fsa service centers in person while employees continue to use separate systems for processing acreage reports , farm program applications , and payments .
+
+even though usda and fsa have system acquisition policies that are consistent with best practices in the areas of requirements development and management , project planning and monitoring , system testing , and executive - level governance , fsa did not implement the majority of these policies and practices in developing midas and has not established plans to improve its approach .
+
+until fsa establishes and implements a plan to adhere to agency policies and best practices , it will be difficult to demonstrate that it has the capacity to effectively manage it acquisitions .
+
+further , until the agency adheres to system acquisition policies and sound it practices , it will have a higher risk of failure in future it initiatives .
+
+in order to institutionalize sound it management practices and build fsa's it management capacity while improving service to the nation's farmers and ranchers , we are making five recommendations to the secretary of agriculture to: direct the fsa administrator to establish and implement an improvement plan to guide the agency in adopting recognized best practices and following agency policy .
+
+direct the fsa administrator to adhere to recognized best practices and agency policy in developing and managing system requirements before proceeding with any further system development to deliver previously envisioned midas functionality .
+
+specifically , the administrator should ensure that requirements are complete , unambiguous , and prioritized ; commitment to requirements is obtained through a formal requirements baseline ; differences ( or gaps ) between the requirements and capabilities of the intended solution ( including commercial off - the - shelf solutions ) are analyzed ; strategies to address any gaps are developed ; and requirements are traced forward and backward among development products .
+
+direct the fsa administrator to adhere to recognized best practices and agency policy in planning and monitoring projects .
+
+specifically , the administrator should ensure that project plans include predefined expectations for cost , schedule , and deliverables before proceeding with any further system development ; updates to the project plan are made through change control processes ; and progress against the project plan , including work performed by contractors , is monitored .
+
+direct the fsa administrator to adhere to recognized best practices and agency policy in system testing .
+
+specifically , the administrator should establish well - defined test plans before proceeding with any further system development , and ensure that testing of ( a ) individual system components , ( b ) the integration of system components , and ( c ) the end - to - end system are conducted .
+
+direct the fsa administrator to adhere to recognized best practices and agency policy in executive - level it governance before proceeding with any further system development .
+
+specifically , an executive - level governance board should review and approve a comprehensive business case that includes a life cycle cost estimate , a cost - benefit analysis , and an analysis of alternatives for proposed solutions that are to provide former midas requirements prior to their implementation ; ensure that any programs that are to accommodate former midas requirements are fully implementing the it program management disciplines and practices identified in this report ; conduct a post - implementation review and document lessons learned for the midas investment ; and reassess the viability of the midas technical solution before investing in further modernization technologies .
+
+we sought comments on a draft of this report from usda .
+
+we subsequently received written comments from the fsa administrator .
+
+while the agency did not explicitly agree or disagree with the recommendations , it cited steps it had taken and plans to take to implement best practices in the areas of requirements management , project planning and monitoring , system testing , and executive it governance .
+
+however , the agency did not cite steps it would take to establish and implement an improvement plan to guide the agency in adopting recognized best practices and following agency policy .
+
+because the agency is moving to implement best practices , we continue to believe that a plan — with steps , milestones , and performance measures — is warranted .
+
+without such a plan , it will be difficult for the agency to demonstrate its progress and ensure that it has the capacity to manage it acquisitions .
+
+in its overall comments , fsa noted the following: fsa stated that it has taken active steps to address the issues raised in the draft report by selecting a new cio and initiating steps to acquire a third party assessor to holistically evaluate the technology solution for midas and to make recommendations to inform a coherent it strategy .
+
+we agree that selecting a cio and obtaining recommendations on how to improve fsa's it strategy are sound steps .
+
+however , these steps are not enough to address the issues raised in this report .
+
+fsa must take additional steps to establish an improvement plan , and to implement practices and follow agency policy .
+
+fsa stated that the recommendation by the usda executive it governance board and the july 2014 decision by the secretary of agriculture to halt midas development beyond release 2 ( which fsa established to deliver the residual portion of the customer records functionality ) allowed the agency to ( 1 ) focus attention and resources on applying lessons learned from release 1 and ( 2 ) apply program management best practices across key disciplines such as planning , requirements management , cost and schedule management , and system testing .
+
+we agree that the decision to halt midas was a sound one , and that it allowed the agency to focus on the residual deliverables provided by release 2 .
+
+however , we identified several management shortfalls that continued to persist after release 1 was deployed in april 2013 .
+
+for example , fsa did not update its baseline cost , schedule , and scope plans from march 2012 to october 2014 , even though it made significant decisions affecting scope and schedule .
+
+also , from november 2012 through october 2014 , the program did not have a project plan for monitoring progress due to numerous scope and schedule changes and relied on status reporting from draft schedules .
+
+in addition , while the usda cio gave the investment a “red” ( high - risk ) rating on the federal it dashboard in december 2012 , the midas senior management oversight committee allowed midas to continue until july 2014 without any improvement to the cio's rating .
+
+these findings are discussed in this report .
+
+fsa stated that the organizational alignment around comprehensive improvement and quality of the midas program ( associated with release 2 ) is a clear demonstration of the agency's capability to properly manage and deliver it systems .
+
+however , until fsa establishes and implements a plan to adhere to agency policies and best practices , we believe the agency has not yet demonstrated that it has the capacity to effectively manage it acquisitions .
+
+fsa noted that the midas program demonstrated an improvement in testing practices on release 2 .
+
+specifically , fsa stated that the period of time for transitioning from deployment to steady state concluded with zero critical defects and five major defects .
+
+we agree and acknowledged the agency's improvements on system testing associated with the development of customer records in the report .
+
+specifically , we noted that the program conducted user acceptance testing prior to deploying functionality for managing customer records .
+
+however , it has been our experience that it takes time to change an organization's culture to adopt best practices .
+
+the agency will need to build upon this experience to ensure it consistently implements sound practices and follows agency policies in all future it initiatives .
+
+we continue to believe that establishing and implementing an improvement plan , as we recommended , will aid the agency in doing so .
+
+fsa stated that , since the first deployment of midas functionality in april 2013 , the agency implemented top - down organizational transformation to bolster fsa's ability to consistently deliver it investments that provide their intended business value , within the targeted schedule and budget .
+
+the agency also stated that the midas initiative identified a number of best practices that are being emulated to improve it management agencywide .
+
+however , fsa did not provide supporting evidence for these efforts and our previously stated findings show that fsa did not sufficiently monitor project progress well beyond the first midas release .
+
+fsa stated that while our report acknowledges some of its improvements , our assessment of the extent to which usda and fsa had implemented each management discipline reflects findings based on midas release 1 activities , and therefore is not truly representative of fsa's capacity to more broadly manage it initiatives .
+
+we believe our report accurately evaluates the implementation of key program management disciplines on the midas acquisition .
+
+our review assessed processes and practices over roughly 3 years ( from december 2011 to october 2014 ) , which included a significant amount of work on the customer records functionality .
+
+specifically , the customer records functionality represented 1 of the 24 unique features fsa had originally planned for midas as of december 2011 .
+
+fsa had begun working on customer records in december 2011 , and delivered about 30 percent of the customer records functionality with the initial midas software release in april 2013 .
+
+when faced with the firm commitment to deploy release 1 in april 2013 , the agency decided to defer the remaining customer records functionality to release 2 .
+
+further demonstrating the limited scope of release 2 , fsa established baseline project plans for release 2 in october 2014 , just 3 months before deploying it in december 2014 .
+
+while our report acknowledges that fsa improved selected practices in developing and deploying release 2 , we do not believe that the scope or timeframe associated with this initiative provides sufficient evidence that fsa has established the capacity to manage large , complex acquisitions .
+
+in addition , fsa provided the following comments regarding our recommendations: with respect to our recommendation to establish and implement an improvement plan to guide the agency in adopting recognized best practices and following agency policy , fsa stated that the agency has undergone leadership transformation efforts over the last 12 months , including appointing a new administrator , cio , midas program executive , and midas program director .
+
+fsa noted that it gave additional reporting authority to the midas program executive and moved the fsa cio position from kanas city , missouri to washington , d.c. to improve communication with the administrator on agencywide initiatives .
+
+fsa stated that over the past year , fsa leadership placed additional emphasis , funding , and staff resources on ensuring that it investments , decisions , dependencies , and operational plans are driven by business needs across the agency .
+
+the agency also stated that with its business strategy and it strategy , it is maturing it planning and management capabilities needed for integrated it solutions for farm programs and all of fsa's lines of business .
+
+finally , fsa noted that it is using a strategic it roadmap to ensure it programs are supporting the business strategy .
+
+we agree that fsa has taken steps over the past year to improve its it management capabilities as we discuss in the report .
+
+however , these actions do not establish and implement an improvement plan to guide the agency in adopting recognized best practices and following agency policy .
+
+until fsa does so , it will be difficult to demonstrate that it has the capacity to manage it acquisitions .
+
+thus , as previously discussed , we believe the agency should continue to establish and implement such an improvement plan .
+
+regarding our recommendation to adhere to recognized best practices and agency policy in developing and managing system requirements before proceeding with any further system development to deliver previously envisioned midas functionality , fsa stated that the midas program implemented all of the key practices for release 2 .
+
+as previously stated , our report acknowledges that fsa improved selected practices in developing and deploying release 2 .
+
+however , we do not believe that the scope or timeframe associated with this initiative provide sufficient evidence that fsa has improved its capacity to manage large , complex acquisitions .
+
+further , we identified selected shortfalls in requirements management for release 2 , including weaknesses in requirements traceability and prioritization .
+
+moving forward , fsa stated that it will improve the rigor and adherence to key requirements management processes for all it projects .
+
+we will continue to monitor the agency's efforts to implement our recommendation .
+
+regarding adhering to recognized best practices and agency policy in planning and monitoring projects , fsa stated that the midas program implemented all of the key practices for release 2 .
+
+as previously stated , our report acknowledges that fsa improved selected practices in developing and deploying release 2 .
+
+however , we do not believe that the scope or timeframe associated with this initiative provide sufficient evidence that fsa has improved its capacity to manage large , complex acquisitions .
+
+further , our report identified shortfalls in program monitoring in the run up to deploying release 2 , including weaknesses in updating project baselines to reflect program changes and in monitoring progress against a defined project plan .
+
+moving forward , fsa stated that it would continue to mature and strengthen its project planning and monitoring practices through a partnership with a third - party capital planning center of excellence and through corrective action plans to address identified weaknesses .
+
+it also stated that it is implementing earned value management practices on midas going forward .
+
+we will continue to monitor the agency's efforts to implement our recommendation .
+
+with respect to our recommendation to adhere to recognized best practices and agency policy in system testing , fsa stated that it established renewed commitment to midas testing efforts and implemented all of the key practices for release 2 .
+
+as previously stated , our report acknowledges that fsa improved selected practices in developing and deploying release 2 .
+
+however , we do not believe that the scope or timeframe associated with this initiative provide sufficient evidence that fsa has improved its capacity to manage large , complex acquisitions .
+
+moving forward , fsa noted that it plans to adhere to recognized best practices and agency policy in pursuing consistent or increased rigor around system testing to demonstrate the agency's testing capabilities are consistent and repeatable across all it projects .
+
+we will continue to monitor the agency's efforts to implement our recommendation .
+
+regarding our recommendation to adhere to best practices and agency policy in executive - level it governance before proceeding with any further system development , fsa stated that it is evaluating its governance structure to potentially include establishing work groups that would evaluate it initiatives at a more granular level of detail .
+
+fsa also stated that it is working with usda's office of the cio to determine how midas will align with the department's governance framework and to identify the appropriate gate reviews , artifacts , and level of oversight .
+
+we will continue to monitor the agency's efforts to implement our recommendation .
+
+overall , fsa's poor performance and lack of results for more than 2 years contributed to its inability to deliver most of the intended functionality and led the secretary of agriculture to direct the agency to halt further development after release 2 .
+
+the efforts that continued after usda decided to halt further development on midas in july 2014 and through the delivery of release 2 in december 2014 were to salvage a feature ( customer records ) that was almost fully developed by the time the department made this decision .
+
+our assessments of project planning and monitoring and executive it governance practices already include fsa's efforts to manage the overall program and to continue developing customer records through october 2014 .
+
+nonetheless , if we were to consider fsa's efforts on release 2 beginning in october 2014 , we would have altered just 1 of the 18 key practices ( conducting user testing ) due to weaknesses that persisted beyond the deployment of release 1 in april 2013 .
+
+to its credit , fsa has ( 1 ) acknowledged that management improvements are needed and identified steps the agency plans to take ; ( 2 ) made changes in key leadership positions ; and ( 3 ) committed to delivering smaller , iterative it projects going forward .
+
+however , our experience in reviewing federal it acquisitions has shown that it takes time to build repeatable , robust processes .
+
+implementing improvements during the last few months of a 3-year effort is not enough to demonstrate repeatable it management capacity .
+
+as we recommended , fsa needs an improvement plan to guide the agency in adopting recognized best practices and following agency policy as well as a long - term institutional commitment to comprehensively build these processes going forward .
+
+given the complexity and challenges in reengineering and improving fsa services , the agency also needs to demonstrate on an ongoing basis that it can follow policy , manage acquisitions , and deliver needed functionality .
+
+fsa's comments are reprinted in appendix iii .
+
+the agency also provided technical comments , which we incorporated as appropriate .
+
+we are sending copies of this report to interested congressional committees , the secretary of agriculture , the director of the office of management and budget , and other interested parties .
+
+in addition , this report will be available on the gao web site at http: / / www.gao.gov .
+
+if you or your staffs have any questions on the matters discussed in this report , please contact me at ( 202 ) 512-9286 or at pownerd@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made major contributions to this report are listed in appendix iv .
+
+our objectives were to ( 1 ) describe what led to the recent decision to halt further development on midas , ( 2 ) compare the functionality that midas has implemented to its original plans , and ( 3 ) evaluate the adequacy of key program management disciplines in place for midas and successor programs .
+
+to describe what led to the decision to halt further midas development , we reviewed documentation such as program planning artifacts , status reports , key milestone reviews , and departmental or external reviews of midas .
+
+we identified key events and decisions from the program's december 2011 requirements review through the july 2014 decision to halt further development on midas .
+
+we analyzed the impact of these events and decisions on midas's cost , schedule , scope , and performance .
+
+based on our analysis of key events and decisions , we summarized the data in a timeline and identified key factors that led to the decision to halt further development .
+
+we compared our assessments with rationale provided by usda for its decision to determine whether it was similar to the factors we identified .
+
+we also interviewed relevant agency and contractor officials to obtain their perspectives on what led to the decision to halt further development of midas .
+
+we compared the functionality that midas has implemented to its original plans by reviewing the program's december 2011 requirements and identifying 24 unique features planned for midas across 6 categories: architecture , data , employee tools , customer tools , system integration , and applications .
+
+we confirmed the delivered functionality by reviewing program artifacts — including system test reports ; program design documentation ; requirements traceability matrices ; change request logs ; system architecture illustrations ; status reports to the program's senior management oversight committee , the office of management and budget , and congress ; exhibit 300 updates ; budget requests ; assessments by the program's independent verification and validation contractor ; and proposals to rebaseline program scope — for evidence that the features had been implemented , deferred , or removed from scope .
+
+we also obtained a live demonstration of the midas system in a fsa service center .
+
+we then compared the delivered functionality with what was originally planned and developed graphics to illustrate what was planned , delivered , and removed from the program .
+
+we also interviewed relevant agency officials to discuss the original plans for midas and obtain clarification on functionality that fsa implemented .
+
+to evaluate the extent to which usda and fsa implemented key it program management disciplines , we assessed the implementation of key practices and standards identified by the project management institute , the software engineering institute at carnegie mellon university , and gao in the areas of ( a ) requirements development and management , ( b ) project planning and monitoring , ( c ) system testing , and ( d ) executive governance .
+
+specifically , we assessed the extent to which usda and fsa had implemented each of the following 18 practices on the program from december 2011 through october 2014 .
+
+requirements development and management: elicit stakeholder needs and expectations , ensure requirements are complete and unambiguous , ensure requirements are prioritized , obtain commitment to requirements through a formal requirements analyze differences between the requirements and capabilities of the intended solution ( including commercial off - the - shelf solutions ) and address gaps , and ensure that requirements trace forward and backward among development products .
+
+project planning and monitoring: establish a project plan with predefined expectations for cost , schedule , and deliverables ; update the project plan through change control procedures ; and monitor progress against the project plan , including work performed by contractors .
+
+establish well - defined test plans to include key elements such as roles and responsibilities , test environment and infrastructure , tested items and approach , a requirements traceability matrix linked to test cases , risk and mitigation strategies , a testing schedule , and quality assurance procedures ; test individual system components ; test the integration of system components ; and perform end - to - end system testing to determine whether the system is acceptable , interoperable with related systems , and operationally suitable to users .
+
+establish a board and document a well - defined structure and process for investment oversight ; ensure that investments have a comprehensive business case and use it to compare and select among alternative investments ; compare actual performance against estimates ; assess whether projects are meeting expectations using predefined criteria and checkpoints and take corrective action when expectations are not being met ; and conduct post - implementation reviews to validate actual investment results as compared to decision makers' expectations for cost , schedule , performance , and mission improvement outcomes and to identify lessons learned that can be applied to future investments .
+
+we reviewed relevant usda and fsa policies and guidance to determine whether they were consistent with the best practices .
+
+we then assessed the extent to which usda and fsa implemented , partially implemented , or did not implement the practices .
+
+to do so , we analyzed the following .
+
+requirements development and management artifacts such as requirements traceability matrices , analyses of software gaps and needed workarounds , gate review documentation on the status of requirements , a usda decision memorandum for the system requirements review , letters from the system integrator , and assessments of requirements practices by the program's independent verification and validation contractor .
+
+project planning and monitoring artifacts such as cost , schedule , and scope baselines defined at the program's march 2012 integrated baseline review ; earned value management reports from contractors , program office status reports , federal it dashboard updates ; exhibit 300 updates ; change request logs ; an assessment of project management practices by the program's independent verification and validation contractor ; and a techstat review by the usda office of the cio .
+
+system testing artifacts such as the program's testing strategy and more detailed test plans , program status reports on key phases of testing , the program's independent verification and validation contractor's assessment of integration testing adherence to best practices , the program's risk and issue list , senior management oversight committee briefings that discussed deferment of performance and user testing , reports on system defects prior to and after the system was operational , and summary reports by usda and contractor experts on key problems with the system after it became operational .
+
+executive governance artifacts such as the program's governance concept of operations ; review board charters ; program business cases and associated life cycle cost estimates ; monthly status briefings to the senior management oversight committee on the program's performance against estimates ; documentation from the program's system requirements review , critical design review , test readiness review , go - live ( implementation ) review for the first software release , including conditions and corrective actions identified in decision memoranda ; a post - implementation review by the program's independent validation and verification contractor ; and draft plans to identify lessons learned .
+
+we also interviewed relevant agency and contractor officials to discuss the implementation of management disciplines on midas .
+
+we performed our work at usda , fsa , and contractor offices in fredericksburg and hanover , virginia , and in the washington , d.c. area .
+
+we conducted this performance audit from october 2014 to june 2015 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+appendix ii: fsa farm programs description makes payments related to the difference between commodity crop market prices and farm program prices .
+
+provides a financial incentive to produce bio - energy crops .
+
+provides a financial incentive to environmentally conserve farm or ranch land .
+
+provides a financial incentive to environmentally conserve farm or ranch land .
+
+provides a financial incentive to environmentally conserve farm or ranch land .
+
+provides a financial incentive to environmentally conserve farm or ranch land .
+
+offers assistance for transferring environmentally conserved farm or ranch land to beginning , veteran , or socially disadvantaged producers .
+
+makes payments related to transitioning certain cotton crops to other alternatives .
+
+grants compensation for livestock , honeybee , and fish production losses related to weather , disease , or other emergencies .
+
+furnishes payments and technical assistance to rehabilitate farmland damaged by natural disaster .
+
+emergency forest restoration program makes payments to restore forest land damaged by natural disaster .
+
+offers loans related to building or improving farm storage and handling facilities .
+
+grants compensation for transportation costs related to disadvantaged farm or ranch geography .
+
+implements voluntary practices taken to environmentally protect source water .
+
+grants compensation for ranching losses due to drought or fire on grazing land .
+
+grants compensation for livestock losses due to weather or certain predators .
+
+makes payments in lieu of applying for loans for which the producer is eligible .
+
+makes payments related to the difference in actual and threshold dairy margins .
+
+offers loans using commodity crops as collateral .
+
+makes payments related to uninsurable crops lost to natural disaster .
+
+offers loans to processors of domestically produced sugarcane and sugar beets .
+
+offers loans to construct or upgrade sugar cane and sugar beet storage facilities .
+
+makes payments for replanting or rehabilitating eligible trees , bushes , and vines damaged by natural disaster .
+
+in addition to the contact named above , the following staff made key contributions to this report: colleen phillips ( assistant director ) , christopher businsky , claudia fletcher , nancy glover , joshua leiling , jamelyn payan , and edward varty .
+

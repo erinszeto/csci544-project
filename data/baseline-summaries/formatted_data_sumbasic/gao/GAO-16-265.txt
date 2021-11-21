@@ -1,0 +1,646 @@
+the patient protection and affordable care act ( ppaca ) , signed into law on march 23 , 2010 , includes provisions to reform aspects of the private health insurance market and expand the availability and affordability of health care coverage .
+
+it required the establishment of health insurance exchanges , now commonly referred to as “marketplaces,” in each state by january 1 , 2014 .
+
+these marketplaces are required to allow consumers and small employers to compare , select , and purchase health insurance offered by participating private issuers of qualified health plans .
+
+the department of health and human services' ( hhs ) centers for medicare & medicaid services ( cms ) is responsible for overseeing the establishment and operation of these marketplaces , including creating a federally facilitated marketplace in states not establishing their own .
+
+states choosing to implement their own marketplaces are responsible for securing the information systems that support the marketplace and their connections to the federal marketplace and for protecting the data collected and processed by the marketplace .
+
+given the high degree of congressional interest in the development and launch of the marketplaces , gao has conducted a body of work in this area in order to assist congress with its oversight responsibilities , of which this is the final report .
+
+this report examines the privacy and security issues related to the implementation of the federal services data hub ( data hub ) — a portal for exchanging information between the federal marketplace and cms's external partners — and cms's oversight of the state - based marketplaces .
+
+our specific objectives were to ( 1 ) describe the extent to which security and privacy incidents were reported for healthcare.gov or key supporting systems ; ( 2 ) assess the effectiveness of the controls implemented by cms to protect the data hub and the information it transmits ; and ( 3 ) assess the effectiveness of cms's oversight of key program elements and controls implemented by state - based marketplaces and the effectiveness of those elements at selected state - based marketplaces to protect the information they contain .
+
+this is a public version of a limited official use only report we issued in march 2016 .
+
+sensitive information , such as detailed descriptions of information security weaknesses , has been omitted .
+
+nevertheless , it addresses the same objectives and scope as the limited official use only report .
+
+also , the overall methodology used for both reports is the same .
+
+to address our first objective , we reviewed and analyzed data on information security and privacy incidents reported by cms affecting healthcare.gov and its supporting systems .
+
+specifically , we reviewed a list of reported incidents and the information in cms records associated with each incident , such as the incident reports and documentation of actions taken to mitigate the incidents .
+
+we analyzed this information to identify relevant statistics on the reported incidents .
+
+to address our second objective , we analyzed the overall network control environment , identified interconnectivity and control points , and reviewed controls for the network and servers supporting the data hub .
+
+specifically , we reviewed controls over the data hub and its supporting software , as well as the operating systems , network , and computing infrastructure provided by the contractor .
+
+in order to evaluate cms's controls over its information systems supporting healthcare.gov , we used our federal information system controls audit manual , which contains guidance for reviewing information system controls that affect the confidentiality , integrity , and availability of computerized information ; national institute of standards and technology ( nist ) standards and guidelines ; and cms policies , procedures , practices , and standards .
+
+we performed our work at cms contractor facilities in columbia , maryland , and chantilly , virginia .
+
+to address our third objective , we selected three states for review by concentrating on states that received a high amount of ppaca grant funding through 2014 , while ensuring a mix of both population size and contractors used .
+
+to assess the effectiveness of the three selected states' key management controls , we compared their documented policies , procedures , and practices to the provisions and requirements contained in cms security and privacy standards for state - based marketplaces .
+
+to evaluate the technical controls implemented for their marketplaces , we analyzed the overall network control environment , identified control points , and reviewed controls for the supporting network and servers and compared these controls to those specified in our federal information system controls audit manual , nist guidance , and cms guidance for state - based marketplaces .
+
+lastly , to determine the effectiveness of cms oversight of the states' program elements and controls , we reviewed and analyzed cms policies and procedures regarding oversight of the state - based marketplaces and compared them to federal guidance on security controls testing and gao's standards for internal control in the federal government .
+
+we also obtained and reviewed oversight - related documentation that cms provided to the three selected states .
+
+we conducted this performance audit from december 2014 to march 2016 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+a full description of our objectives , scope , and methodology can be found in appendix i .
+
+ppaca directed each state to establish and operate a state - based health insurance marketplace by january 1 , 2014 .
+
+these marketplaces were intended to provide a seamless , single point - of - access for individuals to enroll in private health plans , apply for income - based financial assistance established under the law , and , as applicable , obtain an eligibility determination for other health coverage programs , such as medicaid or the children's health insurance program ( chip ) .
+
+in states electing not to establish and operate a marketplace , ppaca required the federal government to establish and operate a marketplace in that state , referred to as a federally facilitated marketplace .
+
+thus , the federal government's role with respect to a marketplace for any given state — in particular whether it established a marketplace or oversees a state - based marketplace — was dependent on a state decision .
+
+for plan year 2016 , 13 states had a state - based marketplace , 4 had a state - based marketplace using the federal marketplace platform , 27 had a federally facilitated marketplace , and 7 had a state partnership marketplace .
+
+figure 1 shows the states and the types of marketplaces they use .
+
+ppaca requires that cms and the states establish automated systems to facilitate the enrollment of eligible individuals in appropriate health care coverage .
+
+many systems and entities exchange information to carry out this requirement .
+
+the cms center for consumer information and insurance oversight ( cciio ) has overall responsibility for the federal systems supporting healthcare.gov and for overseeing state - based marketplaces , which vary in the extent to which they exchange information with cms .
+
+other entities also connect to the network of systems that support enrollment in healthcare.gov .
+
+figure 2 shows the major entities that exchange data in support of marketplace enrollment and how they are connected .
+
+regardless of whether a state established and operated its own marketplace or used the federally facilitated marketplace , ppaca and hhs regulations and guidance require every marketplace to have capabilities that enable them to carry out four key functions , among others: eligibility and enrollment .
+
+the marketplace must enable individuals to assess and determine their eligibility for enrollment in health care coverage .
+
+in addition , the marketplace must provide individuals the ability to obtain an eligibility determination for other federal health care coverage programs , such as medicaid and chip .
+
+once eligibility is determined , individuals must be able to apply for and enroll in applicable coverage options .
+
+plan management .
+
+the marketplace is to provide a suite of services for state agencies and health plan issuers to facilitate activities such as submitting , monitoring , and renewing qualified health plans .
+
+financial management .
+
+the marketplace is to facilitate payments of advanced premium tax credits to health plan issuers and also provide additional services such as payment calculation for risk adjustment analysis and cost - sharing reductions for individual enrollments .
+
+consumer assistance .
+
+the marketplace must be designed to provide support to consumers in completing an application , obtaining eligibility determinations , comparing coverage options , and enrolling in health care coverage .
+
+the data hub is a cms system that acts as a single portal for exchanging information between the federally facilitated marketplace and cms's external partners , including other federal agencies , state - based marketplaces , other state agencies , other cms systems , and issuers of qualified health plans .
+
+the data hub was designed as a “private cloud” service supporting the following primary functions: real - time eligibility queries .
+
+the federally facilitated marketplace , state - based marketplaces , and medicaid / chip agencies transmit queries to various external entities , including other federal agencies , state agencies , and commercial verification services , to verify information provided by applicants , such as immigration and citizenship data , income data , individual coverage data , and incarceration data .
+
+transfer of application and taxpayer information .
+
+the federally facilitated marketplace or a state - based marketplace transfers application information to state medicaid / chip agencies .
+
+conversely , state agencies also use the data hub to transfer application information to the federally facilitated marketplace .
+
+in addition , the internal revenue service ( irs ) transmits taxpayer information to the federally facilitated marketplace or a state - based marketplace to support the verification of household income and family size when determining eligibility for advance payments of the premium tax credit and cost - sharing reductions .
+
+exchange and monitoring of enrollment information with issuers of qualified health plans .
+
+the federally facilitated marketplace sends enrollment information to appropriate issuers of qualified health plans , which respond with confirmation messages back to cms when they have effectuated enrollment .
+
+state - based marketplaces also send enrollment confirmations , which cms uses to administer the advance premium tax credit and cost - sharing reductions and to track overall marketplace enrollment .
+
+further , cms , issuers of qualified health plans , and state - based marketplaces exchange enrollment information on a monthly basis to reconcile enrollment records .
+
+submission of health plan applications .
+
+issuers of qualified health plans submit “bids” for health plan offerings for validation by cms .
+
+connections between external entities and the data hub are made through an internet protocol that establishes an encrypted system - to - system web browser connection .
+
+encryption of the data transfer between the two entities is designed to meet nist standards , including federal information processing standard 140-2 .
+
+this type of connection is intended to ensure that only authorized systems can access the data being exchanged , thus safeguarding against cyber attacks attempting to intercept the data .
+
+the data hub is designed to not retain any of the data that it transmits in permanent storage devices , such as hard disks .
+
+according to cms officials , data are stored only momentarily in the data hub's active memory .
+
+the entities that transmit the data are responsible for maintaining copies of their transmissions in case the data need to be re - transmitted .
+
+as a result , cms does not consider the data hub to be a repository of personally identifiable information .
+
+state - based marketplaces generally perform the same functions that the federally facilitated marketplace performs for states that do not maintain their own marketplace .
+
+however , in certain cases , known as state partnership marketplaces , states may elect to perform one or both of the plan management and consumer assistance functions while the federally facilitated marketplace performs the rest .
+
+the specific functions performed by each partner vary from state to state .
+
+figure 3 shows what functions are performed by each type of marketplace .
+
+regardless of whether a state operates its own marketplace , most states need to connect their state medicaid and chip agencies to either their state - based marketplace or the federally facilitated marketplace to exchange data about enrollment in these programs .
+
+such data exchanges are generally routed through the cms data hub .
+
+in addition , states may need to connect with the irs ( also through the data hub ) in order to verify an applicant's income and family size for the purpose of determining eligibility for or the amount of the advance payment of the premium tax credit and cost - sharing reductions .
+
+finally , state - based marketplaces are to send enrollment confirmations to the federally facilitated marketplace so that cms can administer advance payments of the premium tax credit and cost - sharing payments and track overall marketplace enrollment .
+
+federal laws and guidance specify requirements for protecting federal systems and data .
+
+this includes systems used or operated by a contractor or other organization on behalf of a federal agency .
+
+the federal information security modernization act of 2014 ( fisma ) requires each agency to develop , document , and implement an agency - wide information security program to provide security for the information and information systems that support operations and assets of the agency , including those provided or managed by another agency , contractor , or another organization on behalf of an agency .
+
+fisma assigns certain responsibilities to nist , which is tasked with developing , for systems other than national security systems , standards and guidelines that must include , at a minimum , ( 1 ) standards to be used by all agencies to categorize all of their information and information systems based on the objectives of providing appropriate levels of information security , according to a range of risk levels ; ( 2 ) guidelines recommending the types of information and information systems to be included in each category ; and ( 3 ) minimum information security requirements for information and information systems in each category .
+
+accordingly , nist has developed a risk management framework of standards and guidelines for agencies to follow in developing information security programs .
+
+relevant publications include: federal information processing standard 199 , standards for security categorization of federal information and information systems , requires agencies to categorize their information systems as low - impact , moderate - impact , or high - impact for the security objectives of confidentiality , integrity , and availability .
+
+the potential impact values assigned to the respective security objectives are the highest values from among the security categories that the agency identifies for each type of information resident on those information systems .
+
+federal information processing standard 200 , minimum security requirements for federal information and information systems , specifies minimum security requirements for federal agency information and information systems and a risk - based process for selecting the security controls necessary to satisfy these minimum security requirements .
+
+federal information processing standard 140-2 , security requirements for cryptographic modules , requires agencies to encrypt agency data , where appropriate , using nist - certified cryptographic modules .
+
+this standard specifies the security requirements for a cryptographic module used within a security system protecting sensitive information in computer and telecommunication systems ( including voice systems ) and provides four increasing , qualitative levels of security intended to cover a wide range of potential applications and environments .
+
+nist special publication 800-53 , security and privacy controls for federal information systems and organizations , provides a catalog of security and privacy controls for federal information systems and organizations and a process for selecting controls to protect organizational operations , assets , individuals , other organizations , and the nation from a diverse set of threats including hostile cyber attacks , natural disasters , structural failures , and human errors .
+
+the guidance includes privacy controls to be used in conjunction with the specified security controls to achieve comprehensive security and privacy protection .
+
+nist special publication 800-37 , guide for applying the risk management framework to federal information systems: a security life cycle approach , explains how to apply a risk management framework to federal information systems , including security categorization , security control selection and implementation , security control assessment , information system authorization , and security control monitoring .
+
+nist special publication 800-160 , systems security engineering: an integrated approach to building trustworthy resilient systems ( draft ) , recommends steps to help develop a more defensible and survivable it infrastructure — including the component products , systems , and services that compose the infrastructure .
+
+while agencies are not yet required to follow these draft guidelines , they establish a benchmark for effectively coordinating security efforts across complex interconnected systems , such as those that support healthcare.gov and state - based marketplaces .
+
+while agencies are required to use a risk - based approach to ensure that all of their it systems and information are appropriately secured , they also must adopt specific measures to protect personally identifiable information ( pii ) and must establish programs to protect the privacy of individuals whose pii they collect and maintain .
+
+agencies that collect or maintain health information also must comply with additional requirements .
+
+in addition to fisma , major laws and regulations establishing requirements for information security and privacy in the federal government include the following: the privacy act of 1974 places limitations on agencies' collection , access , use , and disclosure of personal information maintained in systems of records .
+
+the act defines a “record” as any item , collection , or grouping of information about an individual that is maintained by an agency and contains his or her name or another individual identifier .
+
+it defines a “system of records” as a group of records under the control of any agency from which information is retrieved by the name of the individual or other individual identifier .
+
+the privacy act requires that when agencies establish or make changes to a system of records , they must notify the public through a system of records notice in the federal register that identifies , among other things , the categories of data collected , the categories of individuals about whom information is collected , the intended “routine” uses of data , and procedures that individuals can use to review and contest its content .
+
+the e - government act of 2002 strives to enhance protection for personal information in government information systems by requiring that agencies conduct , where applicable , a privacy impact assessment for each system .
+
+this assessment is an analysis of how personal information is collected , stored , shared , and managed in a federal system .
+
+more specifically , according to office of management and budget ( omb ) guidance , a privacy impact assessment is an analysis of how information is handled to ( 1 ) ensure handling conforms to applicable legal , regulatory , and policy requirements regarding privacy ; ( 2 ) determine the risks and effects of collecting , maintaining , and disseminating information in identifiable form in an electronic information system ; and ( 3 ) examine and evaluate protections and alternative processes for handling information to mitigate potential privacy risks .
+
+agencies must conduct a privacy impact assessment before developing or procuring it that collects , maintains , or disseminates information that is in an identifiable form or before initiating any new data collections involving identifiable information that will be collected , maintained , or disseminated using it if the same questions or reporting requirements are imposed on 10 or more people .
+
+the health insurance portability and accountability act of 1996 establishes national standards for electronic health care transactions and national identifiers for providers , health insurance plans , and employers , and provides for the establishment of privacy and security standards for handling health information .
+
+the act calls for the secretary of hhs to adopt standards for the electronic exchange , privacy , and security of health information , which were codified in the security and privacy rules .
+
+the security rule specifies a series of administrative , technical , and physical security practices for “covered entities” and their business associates to implement to ensure the confidentiality of electronic health information .
+
+the privacy rule reflects basic privacy principles for ensuring the protection of personal health information , such as limiting uses and disclosures to intended purposes , notification of privacy practices , allowing individuals to access their protected health information , securing information from improper use or disclosure , and allowing individuals to request changes to inaccurate or incomplete information .
+
+the privacy rule establishes a category of health information , called “protected health information,” which may be used or disclosed to other parties by “covered entities” or their business associates only under specified circumstances or conditions , and generally requires that a covered entity or business associate make reasonable efforts to use , disclose , or request only the minimum necessary protected health information to accomplish the intended purpose .
+
+cms's cciio has overall responsibility for developing and implementing policies and rules governing state - based marketplaces , overseeing the implementation and operations of state - based marketplaces , and administering federally facilitated marketplaces for states that elect not to establish their own .
+
+state - based marketplaces and the federal government must share data and otherwise integrate it systems for the implementation and operation of the marketplaces .
+
+according to federal regulations , state - based marketplaces are responsible for protecting and ensuring the confidentiality , integrity , and availability of marketplace enrollment information , and must also establish and implement certain privacy and security standards .
+
+cms oversees state - based marketplaces and compliance with those standards .
+
+additionally , federal statutes , guidance , and standards require the federal government to protect its it systems and the information contained within these systems .
+
+as part of its oversight responsibilities , cms developed a suite of documents — known as the minimum acceptable risk standards for exchanges ( mars - e ) — that addresses security and privacy standards for the state - based marketplaces .
+
+the documents define a risk - based security and privacy framework for state - based marketplaces and their contractors to use in the design and implementation of their it systems and provide guidance regarding the minimum level of security controls that must be implemented to protect information and information systems .
+
+the mars - e is designed to facilitate marketplaces' compliance with fisma , the health insurance portability and accountability act of 1996 , and the privacy act of 1974 , among other relevant laws .
+
+over the past 2 years , we have issued a number of reports highlighting challenges that cms has faced in implementing and operating the health insurance marketplaces' it systems .
+
+in september 2014 , we reported that while cms had taken steps to protect the security and privacy of data processed and maintained by the complex set of systems and interconnections that support healthcare.gov , weaknesses remained in both the processes used for managing information security and privacy as well as the technical implementation of it security controls .
+
+specifically , we noted that healthcare.gov and the related systems had been deployed despite incomplete security plans and privacy documentation , incomplete security tests , and the lack of an alternate processing site to avoid major service disruptions .
+
+we recommended that cms implement 6 management controls and 22 information security controls to help ensure that the systems and information related to healthcare.gov are protected .
+
+the management recommendations were aimed at ensuring system security plans were complete , privacy risks were analyzed and documented , computer matching agreements were developed with the office of personnel management and the peace corps , a comprehensive security assessment of the federally facilitated marketplace was performed , the planned alternate processing site made operational in a timely fashion , and detailed security roles and responsibilities for contractors were established .
+
+hhs concurred fully or partially concurred with our information security program - related recommendations and all 22 of the recommendations to improve the effectiveness of its information security controls .
+
+as of december 2015 , cms had taken steps to address all 6 information security program - related recommendations and was in the process of addressing the security control - related recommendations .
+
+in march 2015 , we reported that several problems with the initial development and deployment of healthcare.gov and its supporting systems had led to consumers encountering widespread performance issues when trying to create accounts and enroll in health plans .
+
+we noted , for example , that cms had not adequately conducted capacity planning , adequately corrected software coding errors , or implemented all planned functionality .
+
+in addition , the agency did not consistently apply recognized best practices for system development , which contributed to the problems with the initial launch of healthcare.gov and its supporting systems .
+
+in this regard , weaknesses existed in the application of requirements , testing , and oversight practices .
+
+further , we noted that hhs had not provided adequate oversight of the healthcare.gov initiative through its office of the chief information officer .
+
+we made recommendations aimed at improving requirements management , system testing processes , and oversight of development activities for systems supporting healthcare.gov .
+
+hhs concurred with all of our recommendations and subsequently took or planned steps to address the weaknesses , including instituting a process to ensure functional and technical requirements are approved , developing and implementing a unified standard set of approved system testing documents and policies , and providing oversight for healthcare.gov and its supporting systems through the department - wide investment review board .
+
+in september 2015 , we reported that cms established a framework for oversight of it projects within state - based marketplaces , but the oversight was not always effectively executed .
+
+for example , cms tasked various offices with responsibilities for overseeing states' marketplace it projects , but the agency did not always clearly document , define , or communicate its oversight roles and responsibilities to states as called for by best practices for project management .
+
+in addition , cms did not involve all relevant senior executives in decisions to approve federal funding for states' it marketplace projects .
+
+lastly , cms established a process that required the testing of state marketplace systems to determine whether they were ready to be made operational , but the systems were not always fully tested , increasing the risk that they would not operate as intended .
+
+we recommended that cms define and communicate its oversight roles and responsibilities , ensure senior executives are involved in funding decisions for state it projects , and ensure that states complete testing of their systems before they are put into operation .
+
+hhs concurred with all of our recommendations and stated it had taken various actions that were focused on improving its oversight and accountability for states' marketplace efforts .
+
+most recently , in february 2016 , we reported that cms should take actions to strengthen enrollment controls and manage fraud risk .
+
+we noted , for example , cms does not , according to agency officials , track or analyze aggregate outcomes of data hub eligibility and enrollment queries — either the extent to which a responding agency delivers information responsive to a request , or whether an agency reports that information was not available .
+
+in addition , cms did not have an effective process for resolving inconsistencies for individual applicants for the federal health insurance marketplace .
+
+lastly , cms approved subsidized coverage for 11 of 12 fictitious gao phone or online applicants for 2014 and the applicants obtained a total of about $30,000 in annual advance premium tax credits , plus eligibility for lower costs at time of service .
+
+we made 8 recommendations aimed at strengthening enrollment controls and managing fraud risk , including that cms consider analyzing outcomes of the verification system , take steps to resolve inconsistencies , and conduct a risk assessment of the potential for fraud in marketplace applications .
+
+hhs concurred with all of gao's recommendations .
+
+nist defines an information security incident as a violation or imminent threat of violation of computer security policies , acceptable use policies , or standard security practices .
+
+a security incident can occur under many circumstances and for many reasons .
+
+it can be inadvertent , such as from the loss of an electronic device , or deliberate , such as from the theft of a device , or a cyber - based attack by a malicious individual or group , agency insider , foreign nation , terrorist , or other adversary .
+
+protecting federal systems and the information on them is essential because the loss or unauthorized disclosure or alteration of the information can lead to serious consequences and can result in substantial harm to individuals and the federal government .
+
+fisma requires the establishment of a federal information security incident center to , among other things , provide timely technical assistance to agencies regarding cyber incidents .
+
+the united states computer emergency readiness team ( us - cert ) , established in 2003 , is the federal information security incident center that fulfills the fisma mandate .
+
+us - cert consults with agencies on cyber incidents , provides technical information about threats and incidents , compiles the information , and publishes it on its website , https: / / www.us - cert.gov / .
+
+us - cert also issues guidelines for agencies to use when reporting incidents .
+
+for the time period under our review , us - cert defined seven categories of incidents for federal agencies to use in reporting incidents , and cms added two categories of its own , which are described below in table 1 .
+
+between october 6 , 2013 , and march 8 , 2015 , cms reported 316 incidents affecting healthcare.gov or key supporting systems .
+
+these included — among others — incidents which involved pii and attempts by attackers to compromise part of the healthcare.gov system .
+
+none of the incidents described in the data included any evidence that an attacker had compromised sensitive data , including pii , from healthcare.gov .
+
+figure 4 shows the 316 reported incidents grouped according to the us - cert and cms - defined incident categories .
+
+cat 1 unauthorized access incidents made up 17 percent of the incidents logged during the time period under review .
+
+of those , only one incident — which cms publicly disclosed last year — involved a confirmed instance of an attacker gaining access to a healthcare.gov - related server .
+
+in that incident , the attacker installed malware on a test server that held no pii .
+
+the rest of the cat 1 incidents involved occurrences such as pii being disclosed because of physical mail being sent to an incorrect recipient or unencrypted pii being transmitted via e - mail to a limited number of individuals .
+
+cms also assessed incidents' impact , categorizing incidents as having an impact of “extensive / widespread,” “significant / large,” “moderate / limited,” or “minor / localized.” more than 98 percent of the reported incidents were assessed as “moderate / limited” impact , and the remainder , less than 2 percent , as “minor / localized” impact .
+
+see figure 5 for a breakdown of incidents by cms - assigned level of impact .
+
+cms did not classify any of the incidents we reviewed as having “extensive / widespread” impact , and classified only one incident as having “significant / large” impact .
+
+in that incident , a list of cms employee account ids , including passwords that had not yet been assigned to employees and phone numbers , was transmitted to cms staff via an unencrypted e - mail message .
+
+in order to mitigate the incident , cms created new passwords for the affected employees and advised the employees to log on and change their passwords .
+
+a privacy incident generally refers to the unauthorized or unintentional exposure , disclosure , or loss of sensitive information , including pii .
+
+according to cms , 41 of the 316 incidents were reported to involve pii either not being secured properly or being exposed to an unauthorized individual , as opposed to other security issues affecting healthcare.gov and key supporting systems .
+
+of the 41 pii incidents in the cms data , the agency classified 40 as being of “moderate / limited” impact , and one as being of “minor / localized” impact .
+
+the number of individuals affected by these incidents was not fully documented .
+
+while cms , as of october 2014 , began including an estimate of the number of affected individuals in incident reports , several of the reports we reviewed were from earlier incidents and did not contain estimates of the number of affected individuals .
+
+see figure 6 for a breakdown of the privacy incidents by cms - assigned level of impact .
+
+as noted above , none of these incidents were the result of an attacker compromising data , but were rather the result of errors such as information being sent to the incorrect recipient , pii being transmitted in an unencrypted format , or system configuration errors causing pii to be recorded to system logs or displayed in places it should not have been .
+
+a basic management objective for any organization is to protect the confidentiality , integrity , and availability of the information and systems that support its critical operations and assets .
+
+organizations accomplish this by designing and implementing access and other controls that are intended to protect information and systems from unauthorized disclosure , modification , and loss .
+
+specific controls include , among other things , those related to identification and authentication of users , authorization restrictions , and configuration management .
+
+as required by fisma , nist has issued guidance for agencies on how to select and implement controls over their information systems .
+
+additionally , in june 2015 , omb directed agencies to take steps to strengthen their controls in the areas of scanning and monitoring for attackers , patching vulnerabilities in a timely manner , limiting the use of administrative accounts , and requiring the use of two - factor authentication , especially for administrators .
+
+as we previously reported , cms took steps to protect the security and privacy of data processed and maintained by the complex set of systems and interconnections that support healthcare.gov , including the data hub .
+
+the steps included developing required security program policies and procedures , establishing interconnection security agreements with its federal and commercial partners , and instituting required privacy protections .
+
+for example , it assigned overall responsibility for securing the agency's information and systems to appropriate officials , including the agency chief information officer and chief information security officer , and designated information system security officers to assist in certifying information systems of particular cms components .
+
+additionally , cms documented information security policies and procedures to safeguard the agency's information and systems and to reduce the risk of and minimize the effects of security incidents .
+
+while cms has taken steps to secure the data hub , we identified weaknesses in the technical controls protecting the data flowing through the system .
+
+specifically , cms did not effectively implement or securely configure key security tools and devices to sufficiently protect the users and information on the data hub system from threats to confidentiality , integrity , and availability .
+
+for example: cms did not appropriately restrict the use of administrative privileges for data hub systems .
+
+nist special publication 800-53 recommends that agencies follow the concept of “least privilege,” giving users and administrators only the privileges and access necessary to perform their assigned duties .
+
+omb has also instructed agencies to tighten policies and procedures for privileged users , including limiting the functions privileged users can perform with their administrative accounts .
+
+however , cms did not consistently restrict administrator accounts to perform only the functions necessary to perform their assigned duties .
+
+cms officials stated they are working to further restrict administrative privileges and are reviewing accounts to ensure permissions and roles are appropriate .
+
+by not enforcing least privilege , cms faces an increased risk that a malicious insider or an attacker using a compromised administrator account could access sensitive data flowing through the data hub .
+
+cms did not consistently implement patches for several data hub systems .
+
+nist special publication 800-53 recommends that organizations test and install newly released security patches , service packs , and hot fixes , and omb has instructed agencies to patch critical vulnerabilities without delay .
+
+however , cms did not consistently apply patches to critical systems or applications supporting the data hub in a timely manner .
+
+cms officials stated they are reviewing the patch histories on all servers and are directing staff to bring them up - to - date or provide a business rationale for not applying specific patches .
+
+by not keeping current with security patches , cms faces an increased risk that servers supporting the data hub could be compromised through exploitation of known vulnerabilities .
+
+cms did not securely configure the data hub's administrative network .
+
+nist special publication 800-53 recommends how such a network should be configured .
+
+cms officials stated that they are reviewing the network's configurations to identify a plan for remediation .
+
+without adhering to nist recommendations , cms may face an increased risk of unauthorized access to the data hub network .
+
+in addition to the above weaknesses , we identified other security weaknesses in controls related to boundary protection , identification and authentication , authorization , encryption , audit and monitoring , and software updates that limit the effectiveness of the security controls on the data hub and unnecessarily place sensitive information at risk of unauthorized disclosure , modification , or exfiltration .
+
+according to cms officials , in response to the identified weaknesses , they have formed a task force , comprised of the deputy chief information security officer , system maintainers and administrators , database administrators , and security personnel , to work with the stakeholders responsible for the data hub applications and the underlying platform and infrastructure .
+
+the same officials stated that meetings will be held on at least a weekly basis to monitor milestone dates , discuss activities , and identify potential barriers to resolution of any given weakness .
+
+the control weaknesses we identified during this review are described in greater detail in a separate report with limited distribution .
+
+cms has taken various actions to oversee the security and privacy controls implemented at the state - based marketplaces , including assigning roles and responsibilities for oversight entities , conducting regular meetings with state officials to discuss pending issues , and establishing a new reporting tool to monitor marketplace performance .
+
+however , cms has not fully documented procedures that define its oversight responsibilities .
+
+further , while cms has set requirements for annual testing of a subset of security controls implemented within the state - based marketplaces , it does not require continuous monitoring or annual comprehensive testing .
+
+until cms documents its oversight procedures and requires continuous monitoring of security controls , it does not have reasonable assurance that the states are promptly identifying and remediating weaknesses and therefore faces a higher risk that attackers could compromise the confidentiality , integrity , and availability of the data contained in state - based marketplaces .
+
+the need for better assurance that controls are working was highlighted by the results of the reviews we conducted of security and privacy controls at three state - based marketplaces .
+
+for those three marketplaces , we identified significant weaknesses that placed the data they contained at risk of compromise .
+
+effective organizational policies and procedures define key management activities in detail , establish time frames for their completion , and specify follow - up actions that must be taken to correct deficiencies .
+
+according to gao's standards for internal control in the federal government , an organization's policies should identify internal control responsibilities and each unit's responsibility for designing and implementing those controls .
+
+moreover , each policy should specify the appropriate level of detail to allow management to effectively monitor the control activities and define day - to - day procedures , which may include the timing of when an activity is to occur and any follow - up corrective actions to be performed if deficiencies are identified .
+
+while cms has developed policies for overseeing security and privacy controls at the state - based marketplaces , it has not defined specific oversight procedures , the timing for when each activity should occur , or what follow - up corrective actions should be performed if deficiencies are identified .
+
+cms has assigned roles and responsibilities for oversight entities , conducted regular meetings with state officials to discuss pending issues , and established a new reporting tool to monitor marketplace performance .
+
+for example , as we reported in september 2015 , cms outlined oversight roles and responsibilities .
+
+three key offices — cciio , office of technology solutions ( ots ) , and center for medicaid and chip services ( cmcs ) — were identified as having responsibility for overseeing states' efforts in establishing the marketplaces .
+
+their primary roles and duties included the following: cciio led the marketplace implementation , and within that office , state officers were assigned to be accountable for day - to - day communications with state marketplace officials .
+
+ots was responsible for systems integration and software development efforts to ensure that the functions of the marketplaces were carried out .
+
+a primary participant within ots was the it project manager , who was the individual responsible for monitoring , among other things , state - based marketplaces' it development activities .
+
+cmcs was the office responsible for coordinating and approving implementation of medicaid activities related to the health insurance marketplaces .
+
+the office carried out these responsibilities in conjunction with cciio .
+
+while cms outlined general oversight roles , it did not define or document the specific day - to - day activities of these offices and staff that are responsible for the oversight .
+
+for example , according to cciio officials , the state officers conduct oversight through weekly meetings with state - based marketplace officials .
+
+the same officials stated that the meetings do not have a defined agenda or procedures , but that identified control weaknesses or other security issues are discussed .
+
+further , there are no documented procedures that outline the specific responsibilities of the it project manager , who was the individual responsible for monitoring state - based marketplaces' it development activities .
+
+in 2015 , cms began using a new reporting tool to monitor state performance .
+
+the state based marketplace annual reporting tool ( smart ) is intended to collect information to be used as the basis for evaluating a state - based marketplace's compliance with regulations and cms standards .
+
+information collected through smart includes performance metrics , summaries from independent programmatic audits , and an attestation to the submission of the most recent required security and privacy documentation .
+
+the first submissions from the states were due on april 1 , 2015 .
+
+according to cms officials , they received the submissions and , as of december 2015 , were still reviewing them .
+
+while smart is intended to collect information on compliance with regulations and cms standards , including security and privacy controls , cms has not defined specific follow - up procedures or time frames , including identifying corrective actions to be performed if deficiencies are identified .
+
+cms officials stated smart is a reporting mechanism used to provide a comprehensive picture of state - based marketplaces and that cms does not use it to identify corrective actions to be performed if deficiencies are identified .
+
+however , until cms defines and documents its specific day - to - day procedures , the timing of when control activities are to occur , and what follow - up corrective actions are to be performed if deficiencies are identified , the agency does not have reasonable assurance that it is providing effective oversight of security and privacy at state - based marketplaces .
+
+fisma requires that an agency develop , document , and implement an agency - wide information security program .
+
+the program should provide security for the information and information systems that support the operations of the agency , including those provided or managed by a contractor or other source .
+
+as part of the information security program , the agency should require periodic testing and evaluation of the effectiveness of information security policies , procedures , and practices , to be performed with a frequency depending on risk , but no less than annually .
+
+fisma requires this testing to be comprehensive , including testing of management , operational , and technical controls of every information system identified in the inventory .
+
+further , in november 2013 omb issued guidance to federal agencies on managing information security risk on a continuous basis , which includes the requirement to continually monitor the security controls in information systems and the environments in which they operate .
+
+omb noted that managing information risk on a continuous basis allows agencies to maintain awareness of information security vulnerabilities and threats to support risk management decisions and improve the effectiveness of safeguards and countermeasures .
+
+rather than enforcing a static , point - in - time reauthorization process , agencies were encouraged by omb to conduct ongoing authorizations of their information systems and the environments in which they operated , including common controls , through the implementation of their risk management programs .
+
+although cms has set requirements for periodic testing of the security controls at the state - based marketplaces , it requires neither continuous monitoring nor comprehensive annual testing .
+
+any state seeking to gain an “authority to connect” to the data hub is required to submit documentation that it has properly secured its planned connection .
+
+the standard “authority to connect” to the data hub is issued for a 3-year period .
+
+following the approval of the initial “authority to connect,” every state is required to conduct reviews of the documentation on a yearly basis , submit quarterly plan of action and milestone reports , and re - sign the interconnection security agreement every 3 years or whenever a significant change has occurred to the interconnected systems .
+
+as part of the signed agreement , each state must specify the security controls it has implemented and attest that the state it system is designed , managed , and operated in compliance with cms standards .
+
+according to the mars - e , all security controls are required to be assessed over a 3-year period and to meet this requirement a subset is to be tested each year so that all security controls are tested during a 3-year period .
+
+however , according to cms officials , during the time of our review , the states were not required to submit evidence that they had tested subsets of controls each year .
+
+cms officials stated that they monitor the effectiveness of security controls on an ongoing basis by reviewing documents that contain information on reported weaknesses .
+
+the same officials stated that they perform quarterly reviews of state marketplaces' plan of action and milestone reports , and changes to the system boundaries , hardware , software , and data centers .
+
+these officials added that if serious deficiencies are noted in their review , such as a large number of open high or moderate findings , or findings that have been open for a long time , they have the ability to terminate a state's connection to the data hub if the deficiencies are not remediated or sufficient progress is not made in a timely manner .
+
+however , according to cms officials , they have not yet terminated any state's connection to the data hub because states have remediated deficiencies to their satisfaction in a timely manner .
+
+numerous significant security weaknesses have been identified in state - based marketplaces .
+
+for example , in the second quarter of fiscal year 2015 , the 14 states that maintained their own state - based marketplaces reported a total of 27 high open findings , 288 moderate open findings , and 259 low open findings from their own internal assessments .
+
+one state reported 20 of the 27 high open findings during that time period .
+
+according to cms officials , while they do not require comprehensive annual testing or continuous monitoring of security controls , they perform annual reviews of the system security plans for the state - based marketplaces and require the states to submit new security assessments anytime they make significant changes to the systems .
+
+cms officials also stated that they monitor various state - generated documents on a weekly , monthly , or yearly basis depending on when the reports are being required .
+
+states are advised to include any new assessment , audit , or weakness discovered during normal day - to - day operations in those documents .
+
+however , for the plan of action and milestones reports and state - based marketplaces we reviewed , the cms oversight process has not resulted in timely identification and mitigation of security weaknesses .
+
+without more frequently monitoring of the full set of security controls in the state - based marketplaces and the environments in which they operate , cms does not have reasonable assurance that the states are promptly identifying and remediating weaknesses and therefore faces a higher risk that attackers could compromise the confidentiality , integrity , and availability of the data contained in state - based marketplaces .
+
+the need for better assurance that security and privacy controls are working properly was highlighted by the results of our reviews of technical controls at three state - based marketplaces , which identified significant weaknesses in those systems .
+
+in september 2015 , we reported on our reviews of three state - based marketplaces that assessed the effectiveness of key program elements and controls implemented to protect the information they contain .
+
+we identified weaknesses in key elements of each state's information security and privacy controls , such as security management , privacy policies and procedures , security awareness training , background checks , contingency planning , incident response , and configuration management .
+
+further , we identified security weaknesses in technical controls related to access controls , cryptography , and configuration management that limit the effectiveness of the security controls on the systems .
+
+for example: one state did not encrypt connections to the authentication servers supporting its system .
+
+the mars - e requires passwords to be encrypted when they are being transmitted across the network .
+
+however , the authentication servers we reviewed were configured to accept unencrypted connections .
+
+as a result , an attacker on the network could observe the unencrypted transmission to gather usernames and password hashes , which could then be used to compromise those accounts .
+
+one state did not filter uniform resource locator ( url ) requests from the internet through a web application firewall to prevent hostile requests from reaching the marketplace website .
+
+nist special publication 800-53 requires the enforcement of access controls through the use of firewalls .
+
+however , the state did not fully configure its filtering to block hostile url requests from the internet .
+
+as a result , hostile url requests could potentially scan and exploit vulnerabilities of the portal and potentially gain access to remaining systems and databases of the marketplace .
+
+one state did not enforce the use of high - level encryption on its windows servers .
+
+nist special publication 800-53 and mars - e require that if an agency uses encryption , it must use , at a minimum , a federal information processing standards 140-2 – compliant cryptographic module .
+
+however , the state did not configure its windows active directory and domain name system servers to require the use of federal information processing standards – compliant algorithms .
+
+as a result , the servers may employ weak encryption for protecting authentication and communication , increasing the risk that an attacker could compromise the confidentiality or integrity of the system .
+
+for each of the security and privacy weaknesses we identified , we also identified potential activities to mitigate those weaknesses .
+
+in total , we identified 24 potential mitigation activities to address weaknesses in the three states' security and privacy programs and 66 potential mitigation activities to improve the effectiveness of their information security controls .
+
+the results of our work were reported separately in “limited official use only” correspondences .
+
+the three states generally agreed with the potential mitigation activities and have plans to address them .
+
+healthcare.gov and its key supporting systems have experienced information security incidents which involved both pii not being secured properly and attempts by attackers to compromise the healthcare.gov system .
+
+however , for the incidents we reviewed , we did not find evidence that an outside attacker with malicious intent had compromised sensitive data .
+
+although cms continues to make progress in correcting or mitigating previously reported weaknesses within healthcare.gov and its key supporting systems , the information security weaknesses found in the data hub will likely continue to jeopardize the confidentiality , integrity , and availability of healthcare.gov .
+
+the information that is transferred through the data hub will likely remain vulnerable until the agency addresses weaknesses pertaining to boundary protection , identification and authentication , authorization , encryption , audit and monitoring , software updates , and configuration management .
+
+while cms has taken steps to ensure that the information processed and maintained by stated - based marketplaces is protected from unauthorized access or misuse , it lacks a documented oversight program to ensure that each state is implementing security and privacy controls properly .
+
+given the significant number of control weaknesses found during our review of selected states , cms not requiring continuous monitoring of security controls at the state level may pose unnecessary and increased security risks to the data hub and other healthcare.gov systems .
+
+to improve the oversight of privacy and security controls over the state - based marketplaces , we recommend that the secretary of health and human services direct the administrator of the centers for medicare & medicaid services to take the following three actions: define procedures for overseeing state - based marketplaces , to include day - to - day activities of the relevant offices and staff ; develop and document procedures for reviewing the smart tool , including specific follow - up timelines and identifying corrective actions to be performed if deficiencies are identified ; and require continuous monitoring of the privacy and security controls over state - based marketplaces and the environments in which those systems operate to more quickly identify and remediate vulnerabilities .
+
+in a separate report with limited distribution , we are also making 27 recommendations to resolve technical information security weaknesses within the data hub related to boundary protection , identification and authentication , authorization , encryption , audit and monitoring , and software updates .
+
+we sent draft copies of this report to the department of health and human services ( hhs ) and received written comments in return .
+
+these comments are reprinted in appendix ii .
+
+hhs concurred with all of gao's recommendations .
+
+further , it also provided information regarding specific actions the agency has taken or plans on taking to address these recommendations .
+
+we also received technical comments from hhs , which have been incorporated into the final report as appropriate .
+
+in its written comments , hhs noted that the department and its federal partners comply with relevant laws and use processes , controls , and standards to secure consumer data maintained within healthcare.gov and its supporting systems .
+
+further , it described the process it uses to mitigate information security risks associated with the data hub , manage security incidents , and oversee the security and privacy of data transmitted by the state - based marketplaces .
+
+we are sending copies of this report to the department of health and human services .
+
+in addition , the report is available at no charge on the gao website at http: / / www.gao.gov .
+
+if you or your staffs have questions about this report , please contact gregory c. wilshusen at ( 202 ) 512-6244 or dr. nabajyoti barkakati at ( 202 ) 512-4499 .
+
+we can also be reached by e - mail at wilshuseng@gao.gov and barkakatin@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made major contributions to this report are listed in appendix iii .
+
+our objectives were to ( 1 ) describe the extent to which security and privacy incidents were reported for healthcare.gov or key supporting systems ; ( 2 ) assess the effectiveness of the controls implemented by the centers for medicare & medicaid services ( cms ) to protect the federal data services hub ( data hub ) and the information it transmits ; ( 3 ) assess the effectiveness of cms's oversight of key program elements and controls implemented by state - based marketplaces and the effectiveness of those elements at selected state - based marketplaces to protect the information they contain .
+
+to address our first objective , we reviewed and analyzed data on information security and privacy incidents reported by cms that occurred between october 6 , 2013 , and march 8 , 2015 , affecting healthcare.gov and its supporting systems .
+
+specifically , we reviewed a list of reported incidents and the information associated with each incident , such as the incident reports and actions taken to mitigate the incidents .
+
+we also reviewed the reported impact of each incident .
+
+in order to ensure the reliability of the data , we reviewed related documentation , interviewed knowledgeable agency officials , and performed manual data testing for obvious errors .
+
+we then analyzed the information to identify statistics on the reported incidents .
+
+lastly , we interviewed knowledgeable officials and reviewed cms policies and procedures for incident handling .
+
+to address our second objective , we reviewed relevant information security laws and national institute of standards and technology ( nist ) standards and guidance to identify federal security and privacy control requirements .
+
+further , we analyzed the overall network control environment , identified interconnectivity and control points , and reviewed controls for the network and servers supporting the data hub .
+
+specifically , we reviewed controls over the data hub and its supporting software , the operating systems , network , and computing infrastructure provided by the supporting platform - as - a - service .
+
+in order to evaluate cms's controls over its information systems supporting healthcare.gov , we used our federal information system controls audit manual , which contains guidance for reviewing information system controls that affect the confidentiality , integrity , and availability of computerized information ; office of management and budget ( omb ) guidance ; nist standards and guidelines ; and cms policies , procedures , practices , and standards .
+
+reviewed network access paths to determine if boundaries had been adequately protected ; analyzed system access controls to determine whether users had more permissions than necessary to perform their assigned functions ; observed configurations for providing secure data transmissions across the network to determine whether sensitive data were being encrypted ; reviewed software security settings to determine if modifications of sensitive or critical system resources had been monitored and logged ; and inspected the operating system and application software on key servers and workstations to determine if critical patches had been installed and / or were up - to - date .
+
+we performed our work at cms contractor facilities in columbia , maryland , and chantilly , virginia .
+
+to address our third objective , we selected three states by concentrating on states who received a high amount of federal grant funding through 2014 , while ensuring a mix of both population size ( i.e. , large , medium , and small ) and contractors used to ensure we reviewed a variety of approaches to system development and operation .
+
+to assess the effectiveness of the three selected states' key program elements and management controls , we compared their documented policies , procedures , and practices to the provisions and requirements contained in cms security and privacy standards for state - based marketplaces .
+
+we also reviewed the results of testing of security controls ; analyzed system and security documentation , including information exchange agreements ; and interviewed state officials .
+
+to determine the effectiveness of the information security controls the three states implemented for information systems supporting their marketplaces , we reviewed risk assessments , security plans , system control assessments , contingency plans , and remedial action plans .
+
+to evaluate the technical controls for the marketplaces , we analyzed the overall network control environment , identified control points , and reviewed controls for the supporting network and servers .
+
+we compared the aforementioned items to our federal information system controls audit manual ; nist standards and guidelines ; cms security and privacy guidance for state - based marketplaces ; and center for internet security guidance .
+
+to determine the effectiveness of cms oversight of the states' program elements and controls , we reviewed cms policies and procedures regarding oversight of the state - based marketplaces and compared them to federal information security modernization act of 2014 requirements , omb guidance on security controls testing , and gao's standards for internal control in the federal government .
+
+we also obtained and reviewed oversight - related information that cms provided to the three selected states .
+
+lastly , we interviewed officials from the relevant cms offices that had oversight responsibilities .
+
+we conducted this performance audit from december 2014 to march 2016 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+in addition to the contacts named above , john de ferrari , edward alexander jr. , lon chin , west coile and duc ngo ( assistant directors ) ; christopher businsky ; mark canter ; marisol cruz ; lee mccracken ; monica perez - nelson ; justin palk ; michael stevens ; and brian vasquez made key contributions to this report .
+

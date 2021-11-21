@@ -1,0 +1,828 @@
+this report contains information on actions taken to address year 2000 issues for electronic data exchanges .
+
+electronic data exchanges are used extensively to transfer information between computer systems .
+
+consequently , as computer systems are converted to process year 2000 dates , the associated data exchanges must also be made year 2000 compliant .
+
+as requested , our objectives were to identify ( 1 ) the key actions taken to date to address electronic data exchanges among federal , state , and local governments , ( 2 ) the actions the federal government has taken to minimize the adverse economic impact of noncompliant year 2000 data from other countries' information systems corrupting critical functions of our nation , and ( 3 ) international forums where the worldwide economic implications of this issue have been or could be addressed .
+
+to obtain this information , we developed and sent a data collection instrument to survey 42 federal departments and agencies , all states , the district of columbia , and puerto rico .
+
+all the federal agencies and 39 of the state - level organizations responded to our survey during the first quarter of 1998 .
+
+many of the respondents were not able to provide consistent or complete data because they had only recently begun inventorying and assessing data exchanges and this data generally had not been centrally tracked and managed .
+
+we contacted the respondents to resolve instances of inconsistent or incomplete data ; however , we did not independently audit and validate any of the data reported by the federal agencies and states .
+
+we also collected data from federal and state organizations that are coordinating activities to resolve year 2000 computer problems and from organizations that were identified as potential forums for international year 2000 data exchange issues from october 1997 through march 1998 .
+
+we performed our work between september 1997 and april 1998 in accordance with generally accepted government auditing standards .
+
+details of our objectives , scope , and methodology are presented in appendix i .
+
+we requested comments on a draft of this report from the national association of state information resource executives ( nasire ) , the president's council on the year 2000 conversion , and the office of management and budget ( omb ) for comment .
+
+nasire and omb provided written comments that are discussed in the “agency comments and our evaluation” section .
+
+omb's comments are reprinted in appendix viii .
+
+exchanging data electronically is a common method of transferring information among federal , state , and local governments ; private sector organizations ; and nations around the world .
+
+as computers play an ever - increasing role in our society , more information is being exchanged regularly .
+
+federal agencies now depend on electronic data exchanges to execute programs and facilitate commerce .
+
+for example , federal agencies routinely use data exchanges to transfer funds to contractors and grantees ; collect data necessary to make eligibility determinations for veterans , social security , and medicare benefits ; gather data on program activities to determine if funds are being expended as intended and the expected outcomes achieved ; and share weather information that is essential for air flight safety .
+
+to facilitate commerce , federal agencies regulate or provide oversight to organizations that use data exchanges extensively to process payments through the banking system ; purchase or sell securities through stock exchanges and futures markets ; and facilitate import and export shipments through ports of entry .
+
+we have reported on potential data exchange issues that could affect many of these activities ( see the list of related products at the end of this report ) .
+
+an electronic data exchange is the transfer ( sending or receiving ) of a data set using electronic media .
+
+electronic data exchanges can be made using various methods , including direct computer - to - computer exchanges over a dedicated network ; direct exchanges over commercially available networks or the internet ; or exchanges of magnetic media such as computer tapes or disks .
+
+the information transferred in a data set often includes at least one date .
+
+because many computer systems have been using a 2-digit year in the date format , the data exchanges have also used 2-digit years .
+
+now that many formats are being changed to use 4 digits to correctly process dates beyond 1999 , data exchanges using 2-digit year formats must also be changed to 4 digits or bridges must be used to convert incoming 2-digit years to 4-digit years or convert outgoing 4-digit years to 2-digits .
+
+these conversions generally involve the use of algorithms to distinguish the century ( for example , 2-digit years less than 50 may be considered 2000 dates and 2-digit years of 50 or more may be considered 1900 dates ) .
+
+in addition to using bridges , filters may be needed to screen and identify incoming noncompliant data to prevent it from corrupting data in the receiving system .
+
+these conversions are not necessary if the data exchanges are designed to employ certain electronic data interchange standards ( see appendix ii for a glossary of data exchange standards used by some federal agencies ) .
+
+a data exchange standard defines the format of a specific data set for transmission .
+
+some of these standards specify a 4-digit year format .
+
+federal agencies often use exchanges that do not involve a standard format .
+
+instead , the data exchanges consist of individual text files with a structure that is established by agreement between the exchange partners .
+
+files using these formats are generally referred to as flat files .
+
+as part of their year 2000 correction efforts , organizations must identify the date formats used in their data exchanges , develop a strategy for dealing with exchanges that do not use 4-digit year formats , and implement the strategy .
+
+these efforts generally involve the following steps .
+
+assess information systems to identify data exchanges that are not year 2000 compliant .
+
+contact the exchange partner and reach agreement on the date format to be used in the exchange .
+
+determine if data bridges and filters are needed .
+
+determine if validation processes are needed for incoming data .
+
+set dates for testing and implementing new exchange formats .
+
+develop and test bridges and filters to handle nonconforming data .
+
+develop contingency plans and procedures for data exchanges and incorporate into overall agency contingency plans .
+
+implement the validation process for incoming data .
+
+test and implement new exchange formats .
+
+the testing and implementation of new data exchanges must be closely coordinated with exchange partners to be completed effectively .
+
+in addition to an agency testing its data exchange software , effective testing involves end - to - end testing — initiation of the exchange by the sending computer , transmission through intermediate communications software and hardware , and receipt and acceptance by receiving computer ( s ) , thus completing the exchange process .
+
+resolving data exchange issues will require significant efforts and costs according to federal and state officials .
+
+at an october 1997 summit , federal and state information technology officials estimated that about 20 percent of year 2000 efforts will be directed toward correcting data exchange problems .
+
+this could be significant considering the magnitude of expected year 2000 costs .
+
+according to omb's february 15 , 1998 , year 2000 status reports of 24 federal agencies , the federal government's year 2000 costs are estimated to be about $4.7 billion .
+
+based on estimates provided by states to nasire , the states' year 2000 costs are estimated to be about $5.0 billion .
+
+if year 2000 data exchange problems are not corrected , the adverse impact could be severe .
+
+federal agencies exchange data with thousands of external entities , including other federal agencies , state agencies , private organizations , and foreign governments and private organizations .
+
+if data exchanges do not function properly , data will not be exchanged between systems or invalid data could cause receiving computer systems to malfunction or produce inaccurate computations .
+
+for example , such failures could result in the social security administration not being able to determine the eligibility of applicants or compute and pay benefits because it relies on data exchanges for eligibility information and payment processing .
+
+this could have a widespread impact on the public since the agency processes payments to more than 50 million beneficiaries each month , which in fiscal year 1997 totaled about $400 billion ; national highway traffic safety administration not being able to provide states with information needed for driver registrations , which could result in licenses being issued to drivers with revoked or suspended licenses in other states ; department of veterans affairs not being able to determine correct benefits and make payments to eligible veterans ; u.s. coast guard not receiving weather information necessary to plan search and rescue operations ; and nuclear regulatory commission not receiving information from nuclear reactors that is needed to trigger emergency response actions .
+
+the overall responsibility for tracking and overseeing actions by federal agencies to address year 2000 issues rests with omb and the president's council on year 2000 conversion that was established in february 1998 .
+
+omb has been tracking major federal agencies' year 2000 activities by requiring them to submit quarterly status reports .
+
+efforts to address data exchange issues are in early stages .
+
+federal and state coordinating organizations reached initial agreements in 1997 on the steps to address data exchanges issues ; however , many federal agencies and states have not yet finished assessing their data exchanges to determine if they are year 2000 compliant .
+
+further , little progress has been made in completing key steps such as reaching agreements with partners on exchange formats , developing and testing bridges and filters , and developing contingency plans .
+
+federal and state coordinating organizations began to address year 2000 data exchange problems in 1997 .
+
+initial agreements on steps to address data exchange issues were reached at a state / federal summit in october 1997 that was hosted by the state of pennsylvania and sponsored by the federal chief information officer council ( cio council ) and nasire .
+
+at the summit , federal agency and state representatives agreed to establish a contiguous 4-digit year date as a default standard for exchanges .
+
+they also agreed that federal agencies will take the lead in providing information on exchanges with states , any planned date format changes , and timeframes for any changes .
+
+in addition , joint federal and state policy and working groups were established to continue the dialogue on exchange issues .
+
+to implement these agreements , omb issued instructions in january 1998 for federal agencies to inventory all data exchanges with outside parties by february 1 , 1998 , and coordinate plans for transitioning to year 2000 compliant data exchanges with exchange partners by march 1 , 1998 .
+
+omb also set march 1999 as the target date to complete the data exchange corrections .
+
+in addition , for the february 15 , 1998 , quarterly reports , omb required the federal agencies to describe the status of their efforts to inventory all data exchanges with outside entities and the method for assuring that those organizations will be or have been contacted , particularly state governments .
+
+however , omb did not require the agencies to report their status in completing key steps for data exchanges , such as those listed earlier in this report .
+
+according to its year 2000 coordinator , nasire plans to continue implementing the agreements reached at the october 1997 summit through active participation in joint policy and working groups and by holding additional state / federal meetings on data exchange issues .
+
+these activities will supplement nasire's continuing efforts to provide states with access to information on vendors , software , and methodologies for resolving year 2000 problems .
+
+the federal cio council's state interagency subgroup also plans to continue pursuing the agreements reached at the october 1997 summit through joint state and federal meetings on data exchange issues and by hosting a state / federal meeting in april 1998 .
+
+the federal cio council also designated an official in the state department to act as the focal point for international exchange issues .
+
+the designee plans to work through federal agencies that have international operations to increase our foreign data exchange partners' awareness of year 2000 issues .
+
+for example , we were told that the state department will add year 2000 issues to bilateral and multilateral discussion agendas , such as the summit of the americas and the asian - pacific economic cooperation meetings .
+
+twenty of the 42 federal agencies we surveyed reported having finished inventorying and assessing data exchanges for mission - critical systems as of the first quarter of 1998 .
+
+eighteen agencies have not completed their assessments and the status of one federal agency is not discernable because it was not able to provide information on their total number of exchanges and the number assessed .
+
+the remaining three federal agencies said they do not have external data exchanges .
+
+federal agencies reported that they have a total of almost 500,000 data exchanges with other federal agencies , states , local governments , and the private sector for their mission - critical systems .
+
+almost 90 percent of the exchanges were reported by the federal reserve and the department of housing and urban development ( hud ) which reported having 316,862 and 133,567 , respectively .
+
+the federal reserve exchanges data with federal agencies and the private sector using software it provides to these entities .
+
+the federal reserve reported that it has assessed all of these exchanges.similarly , hud has exchanges with housing authorities , states agencies , and private sector organizations .
+
+hud has determined that 92 percent of these exchanges are not year 2000 compliant .
+
+the other agencies reported their mission - critical systems have about 49,000 data exchanges with other federal agencies , states , local governments , and the private sector , as shown in figure 1 .
+
+these agencies reported that they have assessed about 39,000 , or about 80 percent , of the exchanges .
+
+ ( see appendix iii for the status of assessments and other actions for each of the federal agencies. ) .
+
+significant federal actions will be needed to address year 2000 problems with data exchanges .
+
+of the 39,000 exchanges that federal agencies said they assessed , they reported about 27 percent as not being year 2000 compliant .
+
+only six federal agencies told us that all their data exchanges are year 2000 compliant and these represent only 123 of the approximately 39,000 data exchanges that have been assessed .
+
+as discussed previously , dealing with data exchanges involves a number of steps .
+
+for each noncompliant exchange , the agency must reach agreement with the exchange partners on whether they will ( 1 ) change the date format to make it compliant or ( 2 ) agree to retain the existing 2-digit format and use bridges as an interim measure .
+
+to resolve year 2000 data exchange problems , all federal agencies have chosen to adopt a contiguous 4-digit year format ; however , some agencies plan to continue using a 2-digit year format for some of their exchanges in the near term .
+
+if a 2-digit exchange format is retained but the agency's system will be using 4-digit years , the agency must develop , test , and implement ( 1 ) bridges to convert dates to a useable form and ( 2 ) filters to recognize 2-digit years and prevent them from entering agency systems .
+
+in addition , the agencies should identify the exchanges where there is a probability that , even though agreements have been reached to exchange 4-digit years , one partner may not be compliant .
+
+in these cases , agencies must develop contingency plans to ensure that mission - critical operations continue .
+
+the status of activities to contact and reach agreement on year 2000 readiness with exchange partners varies significantly among federal agencies .
+
+only one federal agency reported having reached agreements with all its exchange partners .
+
+while on average the other federal agencies reported having reached agreements on about 24 percent of their exchanges , almost half of federal agencies reported that they have reached agreements on 10 percent or less of their exchanges , as shown in figure 2 below .
+
+few federal agencies reported having taken actions to install bridges or filters .
+
+seventeen federal agencies responding to our survey have identified the need to install 988 bridges or filters .
+
+in total , the agencies reported having developed and tested 203 , or 21 percent , of the needed bridges or filters .
+
+in addition , only 38 percent of the federal agencies reported having developed contingency plans for data exchanges .
+
+the need for bridges , filters , and contingency plans may increase as agencies continue assessing data exchanges and contacting and reaching agreements with exchange partners .
+
+only two states reported to us that they have finished inventorying and assessing data exchanges for mission - critical systems .
+
+the status of 15 of the 39 states that responded to our survey is not discernable because they were not able to provide us with information on their total number of exchanges and the number assessed .
+
+in addition , all but two states were able to provide only partial responses or estimates on the status of exchanges .
+
+for the 24 states that provided actual or estimated data on the status of their exchanges , an average of 47 percent of the exchanges had not been assessed .
+
+similar to the federal agencies , states reported that the largest number of exchanges were with the private sector , as shown in figure 3 below .
+
+ ( see appendix iv for the status of assessments and other actions for each state. ) .
+
+significant state actions will be needed to address year 2000 data exchange issues .
+
+of the 12,262 total exchanges that states reported as having assessed , 5,066 exchanges ( 41 percent ) are reported as not being year 2000 compliant .
+
+none of the states reported that all their data exchanges are year 2000 compliant .
+
+for each of the noncompliant exchanges , the states must take the same types of actions , as described earlier for federal agencies , to reach agreements with the exchange partners , develop , test , and implement bridges and filters , and develop data exchange contingency plans .
+
+similar to federal agencies , states reported having made limited progress in reaching agreement with exchange partners on addressing changes needed for year 2000 readiness , installing bridges and filters , and developing contingency plans .
+
+however , we can draw only limited conclusions on the status of the states actions because data were provided on only a small portion of states' data exchanges .
+
+officials from several states told us that they were unable to provide actual , statewide data on their exchanges because the states do not collect and maintain such information centrally and the state agencies did not provide the data requested in our survey .
+
+according to nasire's year 2000 committee chairman , individual state agencies are aware of data exchange issues and have started taking action to address them , but few state chief information officers have begun monitoring these actions on a statewide basis .
+
+in addition to working with their exchange partners to resolve year 2000 issues , some federal agencies are providing year 2000 guidance to the organizations that they regulate or oversee and monitoring their year 2000 activities .
+
+sixteen federal agencies reported that they have regulatory or oversight responsibilities .
+
+seven of the agencies focus on the financial services area , including banks , thrifts , and security exchanges .
+
+the others regulate or provide oversight to organizations performing government services , such as housing authorities and grantees , and private organizations in a variety of industry sectors such as the import and export industry , the maritime industry , manufacturers of medical devices and pharmaceuticals , and the oil , gas , and mineral industries .
+
+all but 3 of the 16 agencies reported providing guidance or establishing working groups addressing year 2000 issues for the organizations for which they have regulatory or oversight responsibility .
+
+in total , 11 of the 16 federal agencies provided guidance on year 2000 issues and the guidance from all but two addressed data exchange issues , 10 agencies have sponsored year 2000 working groups , 12 agencies have monitored progress in resolving year 2000 problems , and 5 have established inspection or validation programs .
+
+of the 12 agencies that have been monitoring progress on the resolution of year 2000 problems , 10 reported that they have data on the corrective action status of the organization they regulate or oversee .
+
+see appendix v for year 2000 activities undertaken by each federal regulatory or oversight agency .
+
+federal agencies in the financial services area reported having initiated efforts domestically and internationally to address year 2000 problems with international data exchanges , but other federal agencies reported that they are still in the initial stages of addressing these issues .
+
+ten federal agencies reported having 702 data exchanges with foreign governments or the foreign private sector .
+
+these 702 foreign data exchanges reported by federal agencies represent less than 1 percent of all federal data exchanges .
+
+the federal agencies reported reaching agreement on formats for 98 , or 14 percent , of the foreign exchanges .
+
+three federal agencies — the departments of the interior , treasury , and defense — have the bulk of the reported foreign data exchanges .
+
+for its 416 reported foreign exchanges , interior plans to notify its foreign data exchange partners that it will continue to use a 2-digit year in data exchanges and use bridges with algorithms to compute the century .
+
+treasury has reached agreement on year formats for 71 of its 107 reported foreign exchanges and advised us that it is using bank examiners to monitor the activities to make all the exchanges year 2000 compliant .
+
+the department of defense reported reaching agreement on 18 of its 103 data exchanges with foreign entities .
+
+the remaining seven federal agencies reported having reached agreement on 9 of their 76 foreign data exchanges .
+
+interior was the only agency that reported having developed and tested bridges and filters to convert dates and prevent the corruption of its systems .
+
+none of the agencies reported having developed contingency plans to process transactions if the exchange partners' systems were not year 2000 compliant .
+
+nine federal agencies — six in the financial services area — said they have regulatory or oversight responsibility for organizations with international data exchanges .
+
+three agencies in the financial services area said they are relying on bank examiners to monitor progress and one is providing guidance to exchange partners for addressing year 2000 problems .
+
+four of the nine agencies stated that they are also addressing year 2000 problems by working with international organizations , such as the bank for international settlements , the international organization of securities commissions , and the securities industry association .
+
+two of the nine agencies reported having no ongoing international year 2000 activities .
+
+international organizations identified by federal agencies as forums for year 2000 activities were primarily in the financial services area including the bank for international settlements , international organization of securities commissions , securities industry association , and futures industry association .
+
+the department of transportation also identified the international civil aviation organization as a potential international forum for the resolution of year 2000 problems .
+
+in addition , from our search of the internet for year 2000 activities by international organizations , we identified eight other potential international forums .
+
+the activities of these organizations are highlighted in table 1 and the reported current and planned activities of each organization are summarized in appendix vi .
+
+the primary efforts cited by the international organizations are increasing awareness and providing information and guidance on resolving year 2000 problems , including posting the information on their internet web sites .
+
+six organizations also reported that they are sponsoring conferences or workshops to discuss year 2000 issues and six reported that they are monitoring or surveying the status of their members' year 2000 activities .
+
+organizations in the financial services area are the most active in year 2000 efforts .
+
+according to the bank for international settlements , payment and settlement systems are essential elements of financial market infrastructures through which clearing organizations , settlement agents , securities depositories , and the various direct and indirect participants in these systems are intricately connected .
+
+it is therefore imperative that the systems be adapted and certified early enough to ensure that they are year 2000 compliant and to allow for testing among institutions .
+
+to address these issues , officials at the bank for international settlements told us that it is coordinating with the international organization of securities commissions and the international association of insurance supervisors to draw attention to year 2000 issues .
+
+in september 1997 , the bank for international settlements issued a technical paper for banks which sets out a strategic approach for the development , testing , and implementation of system solutions as well as defining the role that central banks and bank supervisors need to play in promoting awareness of the issue and enforcing action .
+
+other organizations have also used the bank for international settlements' technical framework to stimulate activities of their members .
+
+for example , the securities industry association used the framework to develop a project plan with target dates for completing various tasks and posted the plan on its internet web site for members to use in planning their year 2000 activities .
+
+the securities industry association also used the framework as the basis for a survey instrument for assessing the status of its members' year 2000 activities .
+
+the european commission has been publishing issue papers and conducting workshops to increase awareness of year 2000 computer problems among its member countries .
+
+these issue papers and workshops also addressed the implication of european countries' efforts to convert to the new euro currency .
+
+because this conversion is taking place at about the same time as the year 2000 date conversion activities , the two are in competition for financial , technical , and management resources .
+
+to identify how businesses are approaching the euro conversion and the inter - relationship with activities to resolve year 2000 problems , the european commission sponsored a survey of more than 1,000 senior information technology managers in 10 countries .
+
+the result of this survey , as well as the issue papers and workshop results , are posted on the european commission's web site ( www.ispo.cec.be / y2keuro ) .
+
+in addition to assisting their members , several of the international organizations reported having programs to ensure that their own systems will be able to process international data exchanges for their members in the year 2000 .
+
+for example , the bank for international settlements , the international air transport association , and interpol told us that they have information systems that process transactions and information exchanges for their member organizations .
+
+each of these organizations said that their year 2000 programs are on schedule and that they will be able to support international data exchanges with year 2000 dates .
+
+unless federal agencies take action to reach date format agreements with their data exchange partners and deal with data exchanges that will not be year 2000 compliant , some of the agencies' mission - critical systems may not be able to function properly .
+
+the data reported to us by federal agencies and state governments suggest that the full extent of the managerial and operational challenges posed by the heavy reliance on others for data needed to sustain government activity is not yet known .
+
+for the vast majority of data exchanges , including those with international entities , federal agencies have not reached agreement with their exchange partners and , therefore , do not know if the partners will be able to effectively exchange data in the year 2000 .
+
+without knowing the status of activities or reaching agreements with exchange partners , federal agencies can not identify all the exchanges requiring ( 1 ) filters to prevent incoming invalid data from corrupting mission - critical systems or ( 2 ) provisions in the agencies' business continuity and contingency plans to ensure the continuation of mission - critical operations .
+
+in addition , without extensive coordination with exchange partners , federal agencies will not be able to develop and test new data exchange formats , bridges , and filters to ensure that they will function properly .
+
+because federal agencies and states are still in the early stages of resolving year 2000 problems for data exchanges and the status of exchange partner activities is generally unknown , federal agencies need to take the lead in setting target dates for critical activities to prevent disruptions to their operations .
+
+these include setting target dates for testing and implementing new exchange formats and decision points for initiating the development and implementation of contingency plans .
+
+international forums for year 2000 issues are available for a few economic sectors and primarily in north america and western europe .
+
+only recently have any federal activities been directed at international issues and these have been limited to increasing awareness .
+
+we recommend that the director , omb , in consultation with the chair of the president's council on year 2000 conversion , issue the necessary guidance to require federal agencies to take the following actions .
+
+establish schedules for testing and implementing new exchange formats prior to the march 1999 deadline for completing all data exchange corrections ; such schedules may include national test days that could be used for end - to - end testing of critical business processes and associated data exchanges affecting federal , state , and / or local governments .
+
+notify exchange partners of the implications to the agency and the exchange partners if they do not make date conversion corrections in time to meet the federal schedule for implementing and testing year 2000 compliant data exchange processes .
+
+give priority to installing the filters necessary to prevent the corruption of mission - critical systems from data exchanges with noncompliant systems .
+
+develop and implement , as part of their overall business continuity and contingency planning efforts , specific provisions for the data exchanges that may fail , including the approaches to be used to mitigate operational problems if their partners do not make date conversion corrections when needed .
+
+report , as part of their regular year 2000 status reports , their status in completing key steps for data exchanges , such as the percent of exchanges that have been inventoried , the percent of exchanges that have been assessed , the percent of exchanges that have agreements with exchange partners , the percent of exchanges that have been scheduled for testing and implementation , and the percent of exchanges that have completed testing and implementation .
+
+we also recommend that the director , omb , ensure that the federal cio council ( 1 ) identifiy the areas in which adequate forums on year 2000 issues are not available for our international trade partners and ( 2 ) develop an approach to promote year 2000 compliance activities by these trading partners .
+
+we provided a draft of this report to nasire , the president's council on the year 2000 conversion , and omb for comment .
+
+nasire stated that its year 2000 committee had reviewed the draft and had no suggested changes .
+
+the nasire president also commented that the information and recommendations seemed reasonable and should assist federal agencies and states in their year 2000 efforts .
+
+the president's council on year 2000 conversion did not provide comments on the report .
+
+omb provided comments that are reproduced in appendix viii and summarized and evaluated below .
+
+omb provided updated information on the initial steps taken by federal agencies to address data exchange issues , described actions taken to partially implement three of our recommendations , cited plans to implement one recommendation , and gave reasons for disagreeing with the remaining two recommendations .
+
+omb commented that our survey results would have been markedly different if the data had been collected 1 month later .
+
+omb stated that , after our survey , 24 of the largest federal agencies reported that they had completed their assessments of data exchanges , and that virtually all of these agencies had now reached agreements with their exchange partners on exchange formats .
+
+we agree with omb that these steps would represent a good start ; however , many essential actions are yet to be completed .
+
+our recommendations focus on the actions needed to ensure that federal agencies appropriately build on these fundamental steps to comprehensively address data exchange issues .
+
+in commenting on our recommendation concerning the establishment of schedules for testing and implementation of new exchange formats , omb listed the actions that the cio council had taken in cooperation with nasire to ( 1 ) establish lists of exchanges and a contact point for each exchange and ( 2 ) develop a reporting format for federal agencies to report monthly on the status of each data exchange with states starting in july 1998 .
+
+omb stated that this information will be posted on an internet web site and be available for federal and state officials to review and determine whether testing is being conducted successfully .
+
+while these are positive steps toward implementation of our recommendation , they do not address the need to establish schedules for testing and implementing new exchange formats .
+
+schedules with target dates for testing and implementation of new exchanges are needed for coordinating efforts and measuring progress toward specific milestones .
+
+in addition , the actions described by omb apply only to states and thus do not address exchanges with other federal agencies , local governments , and the private sector that constitute over 80 percent of the total reported exchanges .
+
+as to our recommendation concerning the development and implementation of contingency plans for data exchanges that may fail , omb stated that on april 28 , 1998 , it directed federal agencies to ensure that their continuity of business plans address all risks to information flows , including those with external organizations .
+
+omb plans to evaluate this guidance and amplify it as necessary based on its review of agencies' may 15 , 1998 , year 2000 status reports .
+
+omb has taken an important step by issuing this directive .
+
+however , the may progress reports showed that federal agencies are making slow progress in their year 2000 activities and this reinforces the need for omb to provide clear directions on this critical issue .
+
+because of the risk that exchange partners may not be able to make their systems and exchanges year 2000 compliant and the importance of developing effective contingency plans , omb should provide explicit directions to ensure that agencies devote sufficient management attention and resources to this critical activity .
+
+such directions should clearly require agencies to perform the key tasks associated with initiating the project , preparing business impact analysis , developing contingency plans , and testing the plans .
+
+regarding our recommendation that omb require agencies to report their status in completing key steps for data exchanges as part of the regular year 2000 status reports , omb stated that the posting of data exchange status information on a web site , as discussed above , will be used rather than imposing an additional reporting requirement on agencies .
+
+omb explained that it and nasire have agreed to this approach because it ( 1 ) provides sufficient information at a policy level to ensure that the work is getting done , ( 2 ) promotes the greatest exchange of information at the working level , and ( 3 ) minimizes duplication of reporting .
+
+as we previously stated , establishing this status reporting process is a positive step ; however , the website will contain information on thousands of data exchanges with states and must be summarized and analyzed for it to be useful in managing and monitoring the time - critical activities to resolve data exchange issues .
+
+also , as previously noted , this reporting requirement only covers the status of exchanges with states and thus excludes the other data exchanges that constitute over 80 percent of the total exchanges .
+
+omb agreed with our recommendation that agencies should give priority to installing the filters necessary to prevent the corruption of mission - critical systems and said that it plans to update its guidance to agencies to make sure they recognize this priority as well .
+
+omb did not agree that agencies need to notify their exchange partners of the implications to the agency and the exchange partners if they do not make date conversions in time to meet the schedule for testing and implementing year 2000 compliant data exchange processes .
+
+omb stated that exchange partners are well aware of the implications of failing to make date conversions .
+
+although exchange partners are aware of the general implications of date exchange failures , the partners will not know the implications if they do not meet testing and implementation schedules for specific exchanges , unless the agencies notify their exchange partners .
+
+knowledge of these implications is important because the exchange partners have many competing demands for year 2000 resources and may have to decide which activities will be completed on time and which will be deferred .
+
+therefore , exchange partners need to know the implications of data exchange failures , including the actions that will be needed under contingency plans if the partners do not meet key milestones for testing and implementing data exchanges .
+
+omb also disagreed with our recommendation that the federal cio council ( 1 ) identify the areas in which adequate forums on year 2000 issues are not available for our international trade partners and ( 2 ) develop an approach to promote year 2000 compliance activities by these trading partners .
+
+omb said that the chair of the president's council on year 2000 conversion agreed that international implications of the year 2000 problems are of the gravest concern , but disagreed that the cio council would be the right place to begin addressing these problems .
+
+according to omb , the chair has met with representatives from two international organizations to encourage them to be more involved in year 2000 activities and with the secretary of state who agreed to have ambassadors conduct outreach efforts in each country .
+
+omb also said that the chair has asked agency heads to encourage international organizations to cooperate in addressing year 2000 problems .
+
+the steps taken by the chair to promote international actions on year 2000 problems represent progress but much more organized , concerted , and continuous effort are needed to adequately address this far - reaching and complex issue — one that the chair has acknowledged as being of gravest concern .
+
+because the cio council includes representatives of agencies that regulate or influence private sector organizations that operate internationally in every economic sector , it could , and should , play an important role in providing the president's council with the support needed to deal effectively with year 2000 issues worldwide .
+
+as agreed with your offices , unless you publicly announce its contents earlier , we plan no further distribution of this report until 30 days from the date of this letter .
+
+at that time , we will send copies to the chairman of the committee on science ; the ranking minority member of the committee on science ; the chairman of the subcommittee on technology ; other interested congressional committees ; the director , office of management and budget ; and other interested parties .
+
+copies will also be made available to others upon request .
+
+i can be reached at ( 202 ) 512-6408 or by e - mail at willemssenj.aimd@gao.gov , if you or your staff have any questions .
+
+major contributors to this report are listed in appendix ix .
+
+as requested by the ranking minority member of the subcommittee on technology , house committee on science , our overall objectives for the review were to identify ( 1 ) the key actions taken to date to address electronic data exchanges among federal , state , and local governments , ( 2 ) actions the federal government has taken to minimize the adverse economic impact of noncompliant year 2000 data from other countries' information systems corrupting critical functions of our nation , and ( 3 ) international forums where the worldwide economic implications of this issue have been or could be addressed .
+
+to identify the key actions taken to date to address electronic data exchanges among federal , state , and local governments , we contacted federal and state organizations responsible for coordinating year 2000 activities to identify their approaches for addressing data exchange issues .
+
+we obtained information on the status of actions of federal agencies and states using a data collection instrument ( dci ) .
+
+the dci contains questions based on our year 2000 computing crisis: an assessment guide ( a copy of the dci is reproduced in appendix vii ) .
+
+the dci was pretested by having it reviewed for clarity and reasonableness by three agencies' representatives who are knowledgeable about data exchanges .
+
+we revised the dci based on their comments and further tested it by sending it to six federal agencies and three states .
+
+five of the six federal agencies responded with a completed dci in november and december 1997 and the other agency did not respond until february 1998 .
+
+the three states provided oral comments , but did not respond with a completed dci .
+
+based on the five agencies' responses and our subsequent follow - up questions concerning inconsistent or incomplete data , we revised the dci by adding additional definitions and cross references .
+
+the dci was sent to an additional 36 federal departments and major agencies ( referred to collectively as federal agencies ) and the remaining 47 states , the district of columbia , and puerto rico .
+
+all 36 federal agencies and 39 of the 52 state - level organizations responded to our survey between january and march 1998 .
+
+three of the federal agencies reported that they did not have external data exchanges .
+
+in cases involving incomplete responses or inconsistent data on responses , we contacted the respondents to request additional data or clarification , as appropriate .
+
+responses to follow - up questions were received in february , march , and april 1998 .
+
+the dci was also used to identify the federal government's actions taken to minimize the adverse economic impact of noncompliant year 2000 data from other countries' information systems corrupting critical functions of our nation .
+
+in this regard , we collected information from federal and state organizations that have , or oversee entities that have , international data exchanges using the dci .
+
+to identify international forums where the worldwide economic implications of this issue have been or could be addressed , we collected information from federal agencies using the dci and researched international organization and year 2000 internet sites .
+
+we contacted the organizations identified as potential forums for international year 2000 data exchange issues from october 1997 through march 1998 and ascertained their current and planned year 2000 activities .
+
+five of the international organizations that we contacted did not have year 2000 activities or did not respond to our request for information .
+
+these organizations were the international monetary fund , organization for economic cooperation and development , european monetary institute , asia - pacific economic cooperation , and association of southeast asian nations .
+
+we did not independently verify the data provided in the dci .
+
+we performed our work between september 1997 and april 1998 in accordance with generally accepted government audit standards .
+
+american national standards institute accredited standards committee x12: an ansi committee that formulates electronic data interchange standards governing transaction sets , segments , data elements , code sets , and interchange control structure .
+
+standards define the format for specific electronic data interchange messages .
+
+in june 1997 , the committee approved the use of a 8-digit date in x12 that includes the first 2 digits of the year .
+
+the clearing house interbank payments system: a computerized network for the transfer of international dollar payments .
+
+chips links 115 depository institutions which have offices in new york city .
+
+ansi asc x12 standards for the formatting and transmission of medicare electronic transmissions involving enrollments , claims , reimbursements , and other payments .
+
+federal reserve's electronic funds and securities transfer service .
+
+fedwire is used by federal reserve banks and branches , the department of the treasury , other government agencies , and depository institutions .
+
+federal information processing standards publication 4-1 , representation for calendar date and ordinal date for information interchange .
+
+fips 4-1 strongly encourages agencies to use a 4-digit year format for data exchanges .
+
+a standard for electronic data exchange in certain health care applications involving patient , clinical , epidemiological , and regulatory data .
+
+hl7 standards are not used in healthcare insurance administration applications .
+
+united nations - supported international electronic data exchange standard for administration , commerce , and transport .
+
+department / agency ( response date ) agency for international development ( 1 / 22 / 98 ) commodity futures trading commission ( 1 / 23 / 98 ) department of agriculture ( 3 / 12 / 98 ) department of commerce ( 4 / 2 / 98 ) department of defense ( 4 / 7 / 98 ) department of education ( 4 / 1 / 98 ) department of energy ( 1 / 29 / 98 ) department of health and human services ( 3 / 26 / 98 ) department of housing and urban development ( 4 / 8 / 98 ) department of the interior ( 3 / 18 / 98 ) department of justice ( 4 / 9 / 98 ) department of labor ( 1 / 26 / 98 ) department of state ( 3 / 4 / 98 ) department of the treasury ( 3 / 25 / 98 ) department of transportation ( 3 / 5 / 98 ) department of veterans affairs ( 1 / 21 / 98 ) environmental protection agency ( 2 / 11 / 98 ) federal communications commission ( 4 / 7 / 98 ) federal deposit insurance corporation ( 3 / 13 / 98 ) federal emergency management agency ( 1 / 23 / 98 ) federal maritime commission ( 3 / 31 / 98 ) federal reserve ( 3 / 26 / 98 ) federal trade commission ( 1 / 23 / 98 ) general services administration ( 3 / 27 / 98 ) national aeronautics and space administration ( 1 / 23 / 98 ) national archives and records administration ( 3 / 6 / 98 ) national credit union administration ( 1 / 23 / 98 ) national science foundation ( 1 / 26 / 98 ) national transportation safety board ( 3 / 9 / 98 ) nuclear regulatory commission ( 3 / 31 / 98 ) office of personnel management ( 1 / 27 / 98 ) overseas private investment corporation ( 1 / 22 / 98 ) pension benefit guaranty corporation ( 1 / 27 / 98 ) railroad retirement board ( 3 / 4 / 98 ) securities and exchange commission ( 3 / 18 / 98 ) 18 ( continued ) department / agency ( response date ) small business administration ( 1 / 30 / 98 ) social security administration ( 3 / 9 / 98 ) u.s. international trade commission ( 2 / 2 / 98 ) u.s .
+
+postal service ( 1 / 26 / 98 ) the date that the agency supplied the most recent information , including new data supplied as the result of follow - up questions .
+
+these states were not able to provide information for all state organizations and a significant amount of data were not available .
+
+these states provided estimates .
+
+ ( no activities reported ) .
+
+information on the year 2000 activities of international organizations was obtained by interviews with their officials and research of information posted on internet web sites .
+
+there may be other organizations addressing international year 2000 issues that we did not identify .
+
+the bank for international settlements ( bis ) has undertaken a worldwide campaign to increase awareness , provide guidance , and identify the status of year 2000 efforts by central banks and major international banking organizations .
+
+bis hosts the basle committee on banking supervision and the committee on payment and settlement systems that are sponsored by the group of ten governors .
+
+according to bis , payment and settlement systems are an essential element of financial market infrastructures through which clearing organizations , settlement agents , securities depositories , and the various direct and indirect participants in these systems are intricately connected .
+
+it is therefore imperative that such systems be adapted and certified early enough to ensure that they are year 2000 compliant and , very importantly , to allow inter - institution testing .
+
+this information is available on the bis web site ( www.bis.org ) .
+
+to increase awareness , in september 1997 , the basle committee on banking supervision issued a technical paper for banks that sets out a strategic approach for the development , testing , and implementation of system solutions as well as defining the role that central banks and bank supervisors need to play in promoting awareness of the issue and enforcing action .
+
+the committee on payment and settlement systems is collecting and publishing information on the state of preparedness of payment and settlement systems around the world with respect to the year 2000 issue .
+
+for this purpose , a special reporting framework has been developed that operators of payment and settlement systems can use to indicate the state of internal testing as well as testing with external participants for key components of their information technology infrastructure .
+
+the framework distinguishes between the key components of such infrastructures — the central system , the networks and network interfaces , the participants' front - end systems , and other main components .
+
+for each of these components , information is provided on the start and completion dates for internal testing as well as testing with external participants .
+
+an indication is also given as to the connections of the respective payment or settlement systems with other external systems , on the coordinated effort with other payment systems and / or major participants , and where more information can be obtained from the respective operator .
+
+the basle committee also plans to survey the efforts that banking supervisors have underway in each country as well as the state of readiness of the local banking system .
+
+they expect to complete these surveys during the first half of 1998 .
+
+in april 1998 , the basle committee , the committee on payment and settlement systems , the international organization of securities commissions , and the international association of insurance supervisors held a round table on the year 2000 in order to provide a global platform for the sharing of relevant strategies and experiences across key industries by international bodies representing both the public and the private sector .
+
+as the principal international organization of securities regulators , the international organization of securities commissions ( iosco ) has taken a leadership role in promoting awareness of the year 2000 computer problem and in encouraging its membership and all market participants to take swift and aggressive action to address year 2000 issues .
+
+iosco is the largest international organization of securities regulators with 99 members — principally domestic government agencies entrusted with securities regulation .
+
+among other things , iosco has called for regular monitoring of year 2000 readiness and global , industrywide testing to take place in sufficient time to address any weaknesses or deficiencies that are revealed .
+
+iosco currently exchanges information , periodically engages in joint work with , and to some extent coordinates its ongoing work with , the basle committee on banking supervision and the international association of insurance supervisors .
+
+iosco has a working relationship and / or exchanges information on a regular basis with bis , the international accounting standards committee , the international federation of accountants , the fédération internationale des bourses de valeurs , the international monetary fund , and members of the world bank group .
+
+iosco also maintains a liaison relationship with the international organization for standards .
+
+information on iosco's current work program is regularly provided to the group of seven .
+
+iosco is surveying and obtaining information on a regular basis about measures being taken by industry and regulators to address year 2000 computer issues .
+
+iosco is also encouraging global , industrywide testing .
+
+iosco's current work builds on its public statement of june 1997 , exhorting all members and market participants in their jurisdictions to take all necessary and appropriate action to address the critical challenges presented by the year 2000 issue .
+
+iosco's technical committee , which consists of regulators of the most developed and internationalized markets , is currently surveying its members to ascertain what actions are being taken within member jurisdictions to avoid year 2000 problems .
+
+because of the critical nature of this project , the technical committee decided to conduct similar surveys on industry readiness every 6 months .
+
+each technical committee member was requested to supply the following information to the iosco secretary general by january 15 , 1998 .
+
+1 .
+
+awareness: what actions has your organization taken to impress upon relevant entities ( self - regulatory organizations , industry groups , financial firms ) the importance of addressing the year 2000 issues identified in the technical committee statement ? .
+
+2 .
+
+guidance: what specific policies and / or procedures are being used by your organization and other relevant organizations within your jurisdiction to prepare markets and market participants for year 2000 ? .
+
+3 .
+
+progress: what steps ( including the use of specific interim goals ) are being taken by your organization and by the other relevant organizations in your jurisdiction to monitor the progress of relevant entities in addressing year 2000 problems ? .
+
+4 .
+
+testing: what plans have been made by your organization or other relevant organizations in your jurisdiction for industrywide systems testing for year 2000 problems ? .
+
+iosco added a specific section on the year 2000 issue to its internet web site ( www.iosco.org ) that contains a substantive reference list on this topic .
+
+the securities industry association's ( sia ) activities are primarily directed at increasing awareness ; however , it is taking a leadership role in its efforts to establish a testing schedule .
+
+sia staff have been making presentations at conferences to increase international awareness of year 2000 problems .
+
+for example , sia staff gave year 2000 awareness presentations at iosco conferences in kenya , taipei , and european cities .
+
+sia is also conducting scenario planning sessions at international conferences to stimulate planning .
+
+these sessions focus on priorities for resolving year 2000 problems .
+
+to identify year 2000 readiness in the securities industry , sia is conducting an industrywide survey .
+
+the survey form is posted on its internet web site ( www.sia.com / year_2000 ) .
+
+if sufficient response is received , sia will post a summary of the results on its web site .
+
+sia has also developed and posted on its web site a conversion and testing schedule for its members to use in coordinating their year 2000 activities .
+
+in addition , sia is developing a checklist to help chief executive officers focus on key year 2000 activities .
+
+sia has coordinated extensively with other international organizations , including the investment dealer association , iosco , international insurance association , futures industry association , institute internationale finance , and fédération internationale des bourses de valeurs .
+
+sia is considering a coordinated effort with multilateral development banks , such as the world bank , asian development bank , and the european development bank , to promote awareness .
+
+the focus of the futures industry association's ( fia ) year 2000 activities is information sharing and test coordination among its 200 members .
+
+its members include futures commissions merchants , international exchanges , and others interested in the futures market .
+
+fia compiled a “conditions catalog” of products and transactions to be tested on an exchange - by - exchange basis in the united states .
+
+it is making this available to international members and encouraging members to adopt the same format for testing between exchanges and intermediaries .
+
+fia has posted this information on its internet web site ( www.fiafii.org ) .
+
+fia has also placed information about various exchanges on the web site and plans to include additional information about international exchanges in the future .
+
+fia met with brokerage firms , exchanges , the london clearing house , and key service providers in june and december 1997 to raise awareness of year 2000 issues and discuss possible test scenarios .
+
+fia also hosted an international meeting at its futures & options expo in october 1997 to discuss various year 2000 activities around the world .
+
+at the fia international futures industry conference in march 1998 , fia asked key members to support an industrywide test .
+
+fia is surveying 20 of the member exchanges with the highest trade volume to identify their year 2000 activities .
+
+at a global technology forum held in london march 30-april 1 , 1998 , fia will request that the 20 member exchanges provide information about the scope of their year 2000 activities , including their current status , interfaces with intermediaries , plans for individual testing with intermediaries , and willingness to participate in an industrywide test .
+
+the international association of insurance supervisors' year 2000 activities are primarily directed at increasing awareness of year 2000 issues among its insurance supervisor members from over 70 countries .
+
+it is also working cooperatively with other international organizations to increase awareness .
+
+in november 1997 , it issued a joint statement with the basle committee on banking supervision and the international organization of securities commissions that emphasized the importance of the year 2000 issue .
+
+the joint statement urged the development of action plans to resolve year 2000 problems , including data exchange problems with financial institutions and clients .
+
+in december 1997 , the international civil aviation organization sent a letter to its members to increase their awareness of year 2000 computer problems .
+
+the letter explained that air traffic service providers may need to perform assessments on operational air traffic control systems and nonoperational systems that provide business and commercial support .
+
+air traffic service operational systems may be date dependent and subject to local implementation .
+
+such systems include aeronautical fixed telecommunication networks , radar data processing , and flight data processing systems .
+
+in addition , operational systems often use date information for logging performance information .
+
+the letter also suggested a schedule for assessing , implementing solutions , and testing systems .
+
+the international civil aviation organization requested that members advise it on remedial actions they have taken .
+
+the international air transport association ( iata ) represents and serves 259 members in the airline industry .
+
+in addition to the airlines , iata works with airline industry suppliers , including airports , air traffic controls , aircraft / avionics manufacturers , travel agencies , global distribution systems , and information technology suppliers .
+
+iata serves as a clearing house between its airline members to process their debit / credit notes .
+
+iata has an internal year 2000 project that includes four major steps: software / hardware inventory , year 2000 compliance analysis , software modification , and contingency planning .
+
+iata has set a target date of december 25 , 1998 , for year 2000 compliance for all of its products and services .
+
+as an association of international airlines , iata has established a group to coordinate and synchronize efforts within the industry to ensure timely solutions to year 2000 issues .
+
+specifically , the date format of interline messages ( messages airlines exchange among themselves and other parties as a part of business processes ) has been frozen .
+
+the member airlines' applications will have to handle date conversion , if required .
+
+in addition , iata has conducted year 2000 conferences and seminars to exchange information among members .
+
+to monitor the status of year 2000 activities , iata has conducted surveys of airline members and industry suppliers .
+
+the survey of member airlines showed that ( 1 ) very few organizations claim to be fully compliant , ( 2 ) the majority of the organizations are well aware of the problem and have already initiated year 2000 compliance activities , and ( 3 ) the typical target date for full compliance is the end of 1998 .
+
+the results of the survey are available on iata's web site ( www.iata.org / y2k ) .
+
+the european commission has declared that it is concerned about the vulnerability of enterprises , infrastructures , and public administrations to the year 2000 computer problem as well as the possible consequences of this problem for consumers .
+
+the commission had extensive consultations with the public and private sectors during workshops in 1997 to identify the main priorities for action and the roles for enterprises , associations , administrations , and the commission itself .
+
+as a result of these consultations , the commission adopted a course of action and published it in an official communication on february 25 , 1998 .
+
+the purpose of the communication was to raise awareness and set out the commission's steps to address year 2000 issues , including encouraging and facilitating the exchange of information and experience on year 2000 initiatives undertaken by the commission's member states and european associations , with a view to identifying how synergies can be established to reduce duplication of effort and increase the overall impact ; serving as a liaison with the european and international organizations that are responsible for regulating or supervising infrastructural sectors with significant cross - border effects ( finance , telecommunications , energy , transportation ) in order to exchange information about respective activities and identify where cooperation may be required .
+
+an area of particular concern is the planning and implementation of coordinated cross - border testing activities in those sectors that are likely to involve organizations in different member states .
+
+the commission will initiate discussions between relevant organizations and member states ; discussing the year 2000 and its implications through all the relevant contacts available to the commission services in industry and member states .
+
+in particular , attention will be paid to the impact on and preparation of infrastructural sectors , the impact on consumers and small and medium size enterprises , and the potential impact on the functioning of the internal market ; and maintaining a internet web site on the year 2000 computer problem ( www.ispo.cec.be / y2keuro ) .
+
+this site provides access to information about activities in different economic sectors and member states , points to sources of advice on specific aspects of the problem , and links to other sites as well as to all documents and reports produced by the commission on the subject .
+
+the commission also plans to monitor progress , exchange information , and benchmark best practices while reporting regularly on the progress towards year 2000 readiness and its related issues .
+
+in the context of its policies such as those on industry , small and medium size enterprises , consumers , and training , the commission will examine whether a further contribution could be made towards helping raise awareness and address year 2000-related problems .
+
+in addition to its year 2000 activities , the commission is also addressing the information technology implications of european countries' conversion to the new euro currency .
+
+because this conversion is taking place about the same time period as the year 2000 date conversion activities , the two activities are in competition for financial , technical , and management resources .
+
+to identify how businesses are approaching the euro conversion and the interrelationship with activities to resolve year 2000 problems , the commission sponsored the survey of over 1000 senior information technology managers in 10 countries .
+
+the results of this survey , as well as the issue papers and workshop results , are posted on the commission's web site .
+
+the world bank is conducting an awareness campaign directed toward its client governments and implementing agencies that are responsible for world bank - financed projects in developing countries .
+
+the bank wants to ensure the continued success and viability of its clients and avoid problems with development projects , many of which comprise information technology systems and embedded logic components that may be vulnerable to the year 2000 problem .
+
+in this effort , however , the bank limits its role to raising awareness and pointing clients toward ways of evaluating and remediating the problem .
+
+to begin this effort , the bank is ( 1 ) distributing an information packet on the year 2000 problem , ( 2 ) pointing recipients to further sources on the internet , and ( 3 ) providing some advice on ascertaining year 2000 compliance in the procurement process .
+
+in the near future , the bank plans to provide year 2000 information on the bank's internet web site ( www.worldbank.org ) .
+
+the bank also is hiring a contractor to develop a guide for developing country governments on creating a national year 2000 policy .
+
+when ready , this guide will be placed on the bank's internet web site and will be conveyed to governments via seminars to be held around the world .
+
+in november 1997 , the united nations' information technology services division posted information on its internet web site ( www.un.org / members / yr2000 ) to increase awareness of the actions needed to resolve year 2000 computer problems .
+
+this included information on the actions being taken concerning the computer systems operated by united nations' organizations and references to issue papers and guidance documents that member countries could use in developing their own year 2000 program .
+
+it also circulated a letter to member countries that recommended dates for year 2000 compliance and contained references to reading materials and companies providing year 2000 services .
+
+at that time , the united nations was considering a program to encourage member countries that have not already begun a year 2000 assessment to take aggressive action in the development of strategic plans to deal with year 2000 problems .
+
+it also circulated a letter to member countries that recommended dates for year 2000 compliance and contained references on reading materials and companies providing year 2000 services .
+
+the steering committee is sponsored by the group of seven and its objective is to promote the international sharing of information on the resolution of year 2000 computer problems .
+
+to achieve this objective , the steering committee has established an internet web site ( www.itpolicy.gsa.gov ) that includes ( 1 ) links to year 2000 web sites of various countries and ( 2 ) databases showing the year 2000 compliance status of commercial - off - the - shelf software , telecommunications , facilities , and biomedical equipment .
+
+the steering committee is also planning to use the web site to conduct a virtual year 2000 international conference .
+
+the international council sponsored a workshop in august 1997 with the objectives of exchanging information among members on year 2000 issues related to each member country and identifying areas of common interest .
+
+the workshop was attended by representatives from 14 countries ( a report on the workshop is located at www.ogit.gov.au / ica / icay2k ) .
+
+the international council has scheduled a second workshop for june 1998 .
+
+interpol operates an international network that its 177 member countries use to exchange law enforcement information .
+
+member countries connect to telecommunication hubs that are located around the world and their information systems transmit data through the network .
+
+interpol has a project underway to ensure that its network will be ready well before the year 2000 .
+
+according to project officials , interpol has been working with suppliers to ensure that the network's hardware and software will be year 2000 compliant .
+
+it has also sent its year 2000 plans to each member country .
+
+a key part of these plans is the testing of the network .
+
+this testing is scheduled to be performed in october 1998 and january 1999 .
+
+year 2000 computing crisis: continuing risks of disruption to social security , medicare , and treasury programs ( gao / t - aimd - 98-161 , may 7 , 1998 ) .
+
+year 2000 computing crisis: potential for widespread disruption calls for strong leadership and partnerships ( gao / aimd - 98-85 , april 30 , 1998 ) .
+
+department of the interior: year 2000 computing crisis presents risk of disruption to key operations ( gao / t - aimd - 98-149 , april 22 , 1998 ) .
+
+year 2000 computing crisis: federal regulatory efforts to ensure financial institution systems are year 2000 compliant ( gao / t - aimd - 98-116 , march 24 , 1998 ) .
+
+year 2000 computing crisis: strong leadership needed to avoid disruption of essential services ( gao / t - aimd - 98-117 , march 24 , 1998 ) .
+
+year 2000 computing crisis: business continuity and contingency planning ( gao / aimd - 10.1.19 , exposure draft , march 1998 ) .
+
+year 2000 computing crisis: faa must act quickly to prevent systems failures ( gao / t - aimd - 98-63 , february 4 , 1998 ) .
+
+faa computer systems: limited progress on year 2000 issue increases risk dramatically ( gao / aimd - 98-45 , january 30 , 1998 ) .
+
+defense computers: air force needs to strengthen year 2000 oversight ( gao / aimd - 98-35 , january 16 , 1998 ) .
+
+social security administration: significant progress made in year 2000 effort , but key risks remain ( gao / aimd - 98-6 , october 22 , 1997 ) .
+
+defense computers: technical support is key to naval supply year 2000 success ( gao / aimd - 98-7r , october 21 , 1997 ) .
+
+veterans affairs computer systems: action underway yet much work remains to resolve year 2000 crisis ( gao / t - aimd - 97-174 , september 25 , 1997 ) .
+
+year 2000 computing crisis: an assessment guide ( gao / aimd - 10.1.14 , september 1997 ) .
+
+defense computers: improvements to dod systems inventory needed for year 2000 effort ( gao / aimd - 97-112 , august 13 , 1997 ) .
+
+defense computers: issues confronting dla in addressing year 2000 problems ( gao / aimd - 97-106 , august 12 , 1997 ) .
+
+defense computers: dfas faces challenges in solving the year 2000 problem ( gao / aimd - 97-117 , august 11 , 1997 ) .
+
+veterans benefits computer systems: uninterrupted delivery of benefits depends on timely correction of year - 2000 problems ( gao / t - aimd - 97-114 , june 26 , 1997 ) .
+
+veterans benefits computer systems: risks of vba's year - 2000 efforts ( gao / aimd - 97-79 , may 30 , 1997 ) .
+
+medicare transaction system: success depends upon correcting critical managerial and technical weaknesses ( gao / aimd - 97-78 , may 16 , 1997 ) .
+
+the first copy of each gao report and testimony is free .
+
+additional copies are $2 each .
+
+orders should be sent to the following address , accompanied by a check or money order made out to the superintendent of documents , when necessary .
+
+visa and mastercard credit cards are accepted , also .
+
+orders for 100 or more copies to be mailed to a single address are discounted 25 percent .
+
+u.s. general accounting office p.o .
+
+box 37050 washington , dc 20013 room 1100 700 4th st. nw ( corner of 4th and g sts .
+
+nw ) u.s. general accounting office washington , dc orders may also be placed by calling ( 202 ) 512-6000 or by using fax number ( 202 ) 512-6061 , or tdd ( 202 ) 512-2537 .
+
+each day , gao issues a list of newly available reports and testimony .
+
+to receive facsimile copies of the daily list or any list from the past 30 days , please call ( 202 ) 512-6000 using a touchtone phone .
+
+a recorded menu will provide information on how to obtain these lists .
+

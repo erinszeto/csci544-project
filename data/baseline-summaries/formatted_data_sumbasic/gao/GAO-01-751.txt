@@ -1,0 +1,942 @@
+the department of commerce generates and disseminates some of the nation's most important economic information that is of paramount interest to u.s. businesses , policymakers , and researchers .
+
+because the dramatic rise in the number and sophistication of cyberattacks on federal information systems is of growing concern , your committee requested that we determine if the department of commerce has effectively implemented ( 1 ) logical access and other information system controls over its computerized data , ( 2 ) incident detection and response capabilities , and ( 3 ) an information security management program and related procedures .
+
+this report provides a general summary of the computer security weaknesses we identified in the unclassified information systems of the seven commerce organizations we reviewed as well as in the management of the department's information security program .
+
+because of the sensitivity of specific weaknesses , we plan to issue a report designated for “limited official use,” which describes in more detail the logical access control weaknesses identified and offers specific recommendations for correcting them .
+
+we conducted penetration testing of sensitive commerce systems from both inside commerce headquarters and from a remote location through the internet during a 2-month period .
+
+using readily available software and common techniques , we attempted to penetrate systems and exploit identified control weaknesses to verify the vulnerability they presented .
+
+appendix i contains further details on our objectives , scope , and methodology .
+
+information security is an important consideration for any organization that depends on information systems to carry out its mission .
+
+the dramatic expansion in computer interconnectivity and the exponential increase in the use of the internet are changing the way our government , the nation , and much of the world communicate and conduct business .
+
+however , risks are significant , and they are growing .
+
+the number of computer security incidents reported to the cert coordination center® ( cert / cc ) rose from 9,859 in 1999 to 21,756 in 2000 .
+
+for the first six months of 2001 , 15,476 incidents have been reported .
+
+as the number of individuals with computer skills has increased , more intrusion or “hacking” tools have become readily available and relatively easy to use .
+
+a potential hacker can literally download tools from the internet and “point and click” to start a hack .
+
+according to a recent national institute of standards and technology ( nist ) publication , hackers post 30 to 40 new tools to hacking sites on the internet every month .
+
+the successful cyber attacks against such well - known u.s. e - commerce internet sites as ebay , amazon.com , and cnn.com by a 15-year old “script kiddie” in february 2000 illustrate the risks .
+
+without proper safeguards , these developments make it easier for individuals and groups with malicious intentions to gain unauthorized access to systems and use their access to obtain sensitive information , commit fraud , disrupt operations , or launch attacks against other organizations' sites .
+
+government officials are increasingly concerned about federal computer systems , which process , store , and transmit enormous amounts of sensitive data and are indispensable to many federal operations .
+
+the federal government's systems are riddled with weaknesses that continue to put critical operations at risk .
+
+since october 1998 , the federal computer incident response center's ( fedcirc ) records have shown an increasing trend in the number of attacks targeting government systems .
+
+in 1998 fedcirc documented 376 incidents affecting 2,732 federal civilian systems and 86 military systems .
+
+in 2000 , the number of attacks rose to 586 incidents affecting 575,568 federal systems and 148 of their military counterparts .
+
+moreover , according to fedcirc , these numbers reflect only reported incidents , which it estimates do not include as many as 80 percent of actual security incidents .
+
+according to fedcirc , 155 of the incidents reported , which occurred at 32 agencies , resulted in what is known as a “root compromise.” for at least five of the root compromises , government officials were able to verify that access to sensitive information had been obtained .
+
+how well federal agencies are addressing these risks is a topic of increasing interest in the executive and legislative branches .
+
+in january 2000 , president clinton issued a national plan for information systems protection and designated computer security and critical infrastructure protection a priority management objective in his fiscal year 2001 budget .
+
+the new administration , federal agencies , and private industry have collaboratively begun to prepare a new version of the national plan that will outline an integrated approach to computer security and critical infrastructure protection .
+
+the congress , too , is increasingly interested in computer security , as evidenced by important hearings held during 1999 , 2000 , and 2001 on ways to strengthen information security practices throughout the federal government and on progress at specific agencies in addressing known vulnerabilities .
+
+furthermore , in october 2000 , the congress included government information security reform provisions in the fiscal year 2001 national defense authorization act .
+
+these provisions seek to ensure proper management and security for federal information systems by calling for agencies to adopt risk management practices that are consistent with those summarized in our 1998 executive guide .
+
+the provisions also require annual agency program reviews and inspector general ( ig ) evaluations that must be reported to the office of management and budget ( omb ) as part of the budget process .
+
+the federal cio council and others have also initiated several projects that are intended to promote and support security improvements to federal information systems .
+
+over the past year , the cio council , working with nist , omb , and us , developed the federal information technology security assessment framework .
+
+the framework provides agencies with a self - assessment methodology to determine the current status of their security programs and to establish targets for improvement .
+
+omb has instructed agencies to use the framework to fulfill their annual assessment and reporting obligations .
+
+since 1996 , our analyses of information security at major federal agencies have shown that systems are not being adequately protected .
+
+our previous reports , and those of agency igs , describe persistent computer security weaknesses that place a variety of critical federal operations at risk of inappropriate disclosures , fraud , and disruption .
+
+this body of audit evidence has led us , since 1997 , to designate computer security a governmentwide high - risk area .
+
+our most recent summary analysis of federal information systems found that significant computer security weaknesses had been identified in 24 of the largest federal agencies , including commerce .
+
+during december 2000 and january 2001 , commerce's ig also reported significant computer security weaknesses in several of the department's bureaus and , in february 2001 , reported information security as a material weakness affecting the department's ability to produce accurate data for financial statements .
+
+the report stated that there were weaknesses in several areas , including entitywide security management , access controls , software change controls , segregation of duties , and service continuity planning .
+
+moreover , a recent ig assessment of the department's information security program found fundamental weaknesses in the areas of policy and oversight .
+
+also , the ig designated information security as one of the top ten management challenges for the department .
+
+commerce's missions are among the most diverse of the federal government's cabinet departments , covering a wide range of responsibilities that include observing and managing natural resources and the environment ; promoting commerce , regional development , and scientific research ; and collecting , analyzing , and disseminating statistical information .
+
+commerce employs about 40,000 people in 14 operating bureaus with numerous offices in the u.s. and overseas , each pursuing disparate programs and activities .
+
+information technology ( it ) is a critical tool for commerce to support these missions .
+
+the department spends significant resources — reportedly over $1.5 billion in fiscal year 2000 — on it systems and services .
+
+as a percentage of total agency expenditures on it , commerce ranks among the top agencies in the federal government , with 17 percent of its $9-billion fiscal year 2000 budget reported as spent on it .
+
+a primary mission of commerce is to promote job creation and improved living standards for all americans by furthering u.s. economic growth , and the seven bureaus we reviewed support this mission through a wide array of programs and services .
+
+commerce uses it to generate and disseminate some of the nation's most important economic information .
+
+the international trade administration ( ita ) promotes the export of u.s. goods and services — which amounted to approximately $1.1 trillion in fiscal year 2000 .
+
+millions of american jobs depend on exports , and with 96 percent of the world's consumers living outside u.s. borders , international trade is increasingly important to supporting this mission .
+
+the economics and statistics administration ( esa ) develops , prepares , analyzes , and disseminates important indicators of the u.s. that present basic information on such key issues as economic growth , regional development , and the u.s. role in the world economy .
+
+this information is of paramount interest to researchers , business , and policymakers .
+
+the bureau of export administration ( bxa ) , whose efforts supported sales of approximately $4.2 billion in fiscal year 1999 , assists in stimulating the growth of u.s. exports while protecting national security interests by helping to stop the proliferation of weapons of mass destruction .
+
+sensitive data such as that relating to national security , nuclear proliferation , missile technology , and chemical and biological warfare reside in this bureau's systems .
+
+commerce's ability to fulfill its mission depends on the confidentiality , integrity , and availability of this sensitive information .
+
+for example , export data residing in the bxa systems reflect technologies that have both civil and military applications ; the misuse , modification , or deletion of these data could threaten our national security or public safety and affect foreign policy .
+
+much of these data are also business proprietary .
+
+if it were compromised , the business could not only lose its market share , but dangerous technologies might end up in the hands of renegade nations who threaten our national security or that of other nations .
+
+commerce's it infrastructure is decentralized .
+
+although the commerce it review board approves major acquisitions , most bureaus have their own it budgets and act independently to acquire , develop , operate , and maintain their own infrastructure .
+
+for example , commerce has 14 different data centers , diverse hardware platforms and software environments , and 20 independently managed e - mail systems .
+
+the bureaus also develop and control their own individual networks to serve their specific needs .
+
+these networks vary greatly in size and complexity .
+
+for example , one bureau has as many as 155 local area networks and 3,000 users spread over 50 states and 80 countries .
+
+some of these networks are owned , operated , and managed by individual programs within the same bureau .
+
+because commerce does not have a single , departmentwide common network infrastructure to facilitate data communications across the department , the bureaus have established their own access paths to the internet , which they rely on to communicate with one another .
+
+in april 2001 , the department awarded a contract for a $4 million project to consolidate the individual bureaus' local area networks within its headquarters building onto a common network infrastructure .
+
+however , until this project is completed , each of the bureaus is expected to continue to configure , operate , and maintain its own unique networks .
+
+recognizing the importance of its data and operations , in september 1993 commerce established departmentwide information security policies that defined and assigned a full set of security responsibilities , ranging from the department level down to individual system owners and users within the bureaus .
+
+since 1998 , the commerce cio position has been responsible for developing and implementing the department's information security program .
+
+an information security manager , under the direction of the cio's office of information policy , planning , and review , is tasked with carrying out the responsibilities of the program .
+
+the cio's responsibilities for the security of classified systems have been delegated to the office of security .
+
+in the last 2 years , the cio introduced several initiatives that are essential to improving the security posture of the department .
+
+after a 1999 contracted evaluation of the bureaus' security plans determined that 43 percent of commerce's most critical assets did not have current information system security plans , the cio issued a memorandum calling for the bureaus to prepare security plans that comply with federal regulations .
+
+also , in may 2000 , the office of the cio performed a summary evaluation of the status of all the bureaus' information security based on the bureaus' own self - assessments .
+
+the results determined that overall information security program compliance was minimal , that no formal information security awareness and training programs were provided by the bureaus , and that incident response capabilities were either absent or informal .
+
+the commerce ig indicated that subsequent meetings between the office of the cio and the bureaus led to improvements .
+
+the office of the cio plans to conduct another evaluation this year and , based on a comparison with last year's results , measure the bureaus' success in strengthening their security postures .
+
+finally , for the past year , the cio attempted to restructure the department's it management to increase his span of control over information security within the bureaus by enforcing his oversight authority and involvement in budgeting for it resources .
+
+the cio resigned in may 2001 and , in june 2001 , after completion of our fieldwork , the secretary of commerce approved a high - level it restructuring plan .
+
+the acting cio stated that commerce is developing a more detailed implementation plan .
+
+a basic management objective for any organization is the protection of its information systems and critical data from unauthorized access .
+
+organizations accomplish this objective by establishing controls that limit access to only authorized users , effectively configuring their operating systems , and securely implementing networks .
+
+however , our tests identified weaknesses in each of these control areas in all of the commerce bureaus we reviewed .
+
+we demonstrated that individuals , both external and internal to commerce , could compromise security controls to gain extensive unauthorized access to commerce networks and systems .
+
+these weaknesses place the bureaus' information systems at risk of unauthorized access , which could lead to the improper disclosure , modification , or deletion of sensitive information and the disruption of critical operations .
+
+as previously noted , because of the sensitivity of specific weaknesses , we plan to issue a report designated for “limited official use,” which describes in more detail each of the computer security weaknesses identified and offers specific recommendations for correcting them .
+
+effective system access controls provide mechanisms that require users to identify themselves and authenticate their identity , limit the use of system administrator capabilities to authorized individuals , and protect sensitive system and data files .
+
+as with many organizations , passwords are commerce's primary means of authenticating user identity .
+
+because system administrator capabilities provide the ability to read , modify , or delete any data or files on the system and modify the operating system to create access paths into the system , such capabilities should be limited to the minimum access levels necessary for systems personnel to perform their duties .
+
+also , information can be protected by using controls that limit an individual's ability to read , modify , or delete information stored in sensitive system files .
+
+one of the primary methods to prevent unauthorized access to information system resources is through effective management of user ids and passwords .
+
+to accomplish this objective , organizations should establish controls that include requirements to ensure that well - chosen passwords are required for user authentication , passwords are changed periodically , the number of invalid password attempts is limited to preclude password guessing , and the confidentiality of passwords is maintained and protected .
+
+all commerce bureaus reviewed were not effectively managing user ids and passwords to sufficiently reduce the risk that intruders could gain unauthorized access to its information systems to ( 1 ) change system access and other rules , ( 2 ) potentially read , modify , and delete or redirect network traffic , and ( 3 ) read , modify , and delete sensitive information .
+
+specifically , systems were either not configured to require passwords or , if passwords were required , they were relatively easy to guess .
+
+for example , powerful system administrator accounts did not require passwords , allowing anyone who could connect to certain systems through the network to log on as a system administrator without having to use a password , systems allowed users to change their passwords to a blank password , completely circumventing the password control function , passwords were easily guessed words , such as “password,” passwords were the same as the user's id , and commonly known default passwords set by vendors when systems were originally shipped had never been changed .
+
+although frequent password changes reduce the risk of continued unauthorized use of a compromised password , systems in four of the bureaus reviewed had a significant number of passwords that never required changing or did not have to be changed for 273 years .
+
+also , systems in six of the seven bureaus did not limit the number of times an individual could try to log on to a user id .
+
+unlimited attempts allow intruders to keep trying passwords until a correct password is discovered .
+
+further , all commerce bureaus reviewed did not adequately protect the passwords of their system users through measures such as encryption , as illustrated by the following examples: user passwords were stored in readable text files that could be viewed by all users on one bureau's systems .
+
+files that store user passwords were not protected from being copied by intruders , who could then take the copied password files and decrypt user passwords .
+
+the decrypted passwords could then be used to gain unauthorized access to systems by intruders masquerading as legitimate users .
+
+over 150 users of one system could read the unencrypted password of a powerful system administrator's account .
+
+system administrators perform important functions in support of the operations of computer systems .
+
+these functions include defining security controls , granting users access privileges , changing operating system configurations , and monitoring system activity .
+
+in order to perform these functions , system administrators have powerful privileges that enable them to manipulate operating system and security controls .
+
+privileges to perform these system administration functions should be granted only to employees who require such privileges to perform their responsibilities and who are specifically trained to understand and exercise those privileges .
+
+moreover , the level of privilege granted to employees should not exceed the level required for them to perform their assigned duties .
+
+finally , systems should provide accountability for the actions of system administrators on the systems .
+
+however , commerce bureaus granted the use of excessive system administration privileges to employees who did not require such privileges to perform their responsibilities and who were not trained to exercise them .
+
+for example , a very powerful system administration privilege that should be used only in exceptional circumstances , such as recovery from a power failure , was granted to 20 individuals .
+
+these 20 individuals had the ability to access all of the information stored on the system , change important system configurations that could affect the system's reliability , and run any program on the computer .
+
+further , commerce management also acknowledged that not all staff with access to this administrative privilege had been adequately trained .
+
+on other important systems in all seven bureaus , system administrators were sharing user ids and passwords so that systems could not provide an audit trail of access by system administrators , thereby limiting accountability .
+
+by not effectively controlling the number of staff who exercise system administrator privileges , restricting the level of such privileges granted to those required to perform assigned duties , or ensuring that only well - trained staff have these privileges , commerce is increasing the risk that unauthorized activity could occur and the security of sensitive information could be compromised .
+
+access privileges to individual critical systems and sensitive data files should be restricted to authorized users .
+
+not only does this restriction protect files that may contain sensitive information from unauthorized access , but it also provides another layer of protection against intruders who may have successfully penetrated one system from significantly extending their unauthorized access and activities to other systems .
+
+examples of access privileges are the capabilities to read , modify , or delete a file .
+
+privileges can be granted to individual users , to groups of users , or to everyone who accesses the system .
+
+six of the seven bureaus' systems were not configured to appropriately restrict access to sensitive system and / or data files .
+
+for example , critical system files could be modified by all users to allow them to bypass security controls .
+
+also , excessive access privileges to sensitive data files such as export license applications were granted .
+
+systems configured with excessive file access privileges are extremely vulnerable to compromise because such configurations could enable an intruder to read , modify , or delete sensitive system and data files , or to disrupt the availability and integrity of the system .
+
+operating system controls are essential to ensure that the computer systems and security controls function as intended .
+
+operating systems are relied on by all the software and hardware in a computer system .
+
+additionally , all users depend on the proper operation of the operating system to provide a consistent and reliable processing environment , which is essential to the availability and reliability of the information stored and processed by the system .
+
+operating system controls should limit the extent of information that systems provide to facilitate system interconnectivity .
+
+operating systems should be configured to help ensure that systems are available and that information stored and processed is not corrupted .
+
+controls should also limit the functions of the computer system to prevent insecure system configurations or the existence of functions not needed to support the operations of the system .
+
+if functions are not properly controlled , they can be used by intruders to circumvent security controls .
+
+to facilitate interconnectivity between computer systems , operating systems are configured to provide descriptive and technical information , such as version numbers and system names , to other computer systems and individuals when connections are being established .
+
+at the same time , however , systems should be configured to limit the amount of information that is made available to other systems and unidentified individuals because this information can be misused by potential intruders to learn the characteristics and vulnerabilities of that system to assist in intrusions .
+
+systems in all bureaus reviewed were not configured to control excessive system information from exposure to potential attackers .
+
+the configuration of commerce systems provided excessive amounts of information to anyone , including external users , without the need for authentication .
+
+our testing demonstrated that potential attackers could collect information about systems , such as computer names , types of operating systems , functions , version numbers , user information , and other information that could be useful to circumvent security controls and gain unauthorized access .
+
+the proper configuration of operating systems is important to ensuring the reliable operation of computers and the continuous availability and integrity of critical information .
+
+operating systems should be configured so that the security controls throughout the system function effectively and the system can be depended on to support the organization's mission .
+
+commerce bureaus did not properly configure operating systems to ensure that systems would be available to support bureau missions or prevent the corruption of the information relied on by management and the public .
+
+for example , in a large computer system affecting several bureaus , there were thousands of important programs that had not been assigned unique names .
+
+in some instances , as many as six different programs all shared the same name , many of which were different versions of the same program .
+
+although typically the complexity of such a system may require the installation of some programs that are identically named and authorized programs must be able to bypass security in order to operate , there was an excessive number of such programs installed on this system , many of which were capable of bypassing security controls .
+
+because these different programs are identically named , unintended programs could be inadvertently run , potentially resulting in the corruption of data or disruption of system operations .
+
+also , because these powerful programs are duplicated , there is an increased likelihood that they could be misused to bypass security controls .
+
+in this same system , critical parts of the operating system were shared by the test and production systems used to process u.s. export information .
+
+because critical parts were shared , as changes are made in the test system , these changes could also affect the production system .
+
+consequently , changes could be made in the test system that would cause the production system to stop operating normally and shut down .
+
+changes in the test system could also cause important commerce data in the production system to become corrupted .
+
+commerce management acknowledged that the isolation between these two systems needed to be strengthened to mitigate these risks .
+
+operating system functions should be limited to support only the capabilities needed by each specific computer system .
+
+moreover , these functions should be appropriately configured .
+
+unnecessary operating system functions can be used to gain unauthorized access to a system and target that system for a denial - of - service attack .
+
+poorly configured operating system functions can allow individuals to bypass security controls and access sensitive information without requiring proper identification and authentication .
+
+unnecessary and poorly configured system functions existed on important computer systems in all the bureaus we reviewed .
+
+for example , unnecessary functions allowed us to gain access to a system from the internet .
+
+through such access and other identified weaknesses , we were able to gain system administration privileges on that system and subsequently gain access to other systems within other commerce bureaus .
+
+also , poorly configured functions would have allowed users to bypass security controls and gain unrestricted access to all programs and data .
+
+networks are a series of interconnected it devices and software that allow groups of individuals to share data , printers , communications systems , electronic mail , and other resources .
+
+they provide the entry point for access to electronic information assets and provide users with access to the information technologies they need to satisfy the organization's mission .
+
+controls should restrict access to networks from sources external to the network .
+
+controls should also limit the use of systems from sources internal to the network to authorized users for authorized purposes .
+
+external threats include individuals outside an organization attempting to gain unauthorized access to an organization's networks using the internet , other networks , or dial - up modems .
+
+another form of external threat is flooding a network with large volumes of access requests so that the network is unable to respond to legitimate requests , one type of denial - of - service attack .
+
+external threats can be countered by implementing security controls on the perimeters of the network , such as firewalls , that limit user access and data interchange between systems and users within the organization's network and systems and users outside the network , especially on the internet .
+
+an example of perimeter defenses is only allowing pre - approved computer systems from outside the network to exchange certain types of data with computer systems inside the network .
+
+external network controls should guard the perimeter of the network from connections with other systems and access by individuals who are not authorized to connect with and use the network .
+
+internal threats come from sources that are within an organization's networks , such as a disgruntled employee with access privileges who attempts to perform unauthorized activities .
+
+also , an intruder who has successfully penetrated a network's perimeter defenses becomes an internal threat when the intruder attempts to compromise other parts of an organization's network security as a result of gaining access to one system within the network .
+
+for example , at commerce , users of one bureau who have no business need to access export license information on another bureau's network should not have had network connections to that system .
+
+external network security controls should prevent unauthorized access from outside threats , but if those controls fail , internal network security controls should also prevent the intruder from gaining unauthorized access to other computer systems within the network .
+
+none of the commerce bureaus reviewed had effective external and internal network security controls .
+
+individuals , both within and outside commerce , could compromise external and internal security controls to gain extensive unauthorized access to commerce networks and systems .
+
+bureaus employed a series of external control devices , such as firewalls , in some , but not all , of the access paths to their networks .
+
+however , these controls did not effectively prevent unauthorized access to commerce networks from the internet or through poorly controlled dial - up modems that bypass external controls .
+
+for example , four bureaus had not configured their firewalls to adequately protect their information systems from intruders on the internet .
+
+also , six dial - up modems were installed so that anyone could connect to their network without having to use a password , thereby circumventing the security controls provided by existing firewalls .
+
+our testing demonstrated that , once access was gained by an unauthorized user on the internet or through a dial - up modem to one bureau's networks , that intruder could circumvent ineffective internal network controls to gain unauthorized access to other , connected networks within commerce .
+
+such weak internal network controls could allow an unauthorized intruder or authorized user on one bureau's network to change the configuration of other bureaus' network controls so that the user could observe network traffic , including passwords and sensitive information that commerce transmits in readable clear text , and disrupt network operations .
+
+the external and internal security controls of the different commerce bureau networks did not provide a consistent level of security in part because bureaus independently configured and operated their networks as their own individual networks .
+
+for example , four of the bureaus we reviewed had their own independently controlled access points to the internet .
+
+because the different bureaus' networks are actually logically interconnected and perform as one large interconnected network , the ineffective network security controls of one bureau jeopardize the security of other bureaus' networks .
+
+weaknesses in the external and internal network controls of the individual bureaus heighten the risk that outside intruders with no prior knowledge of bureau user ids or passwords , as well as commerce employees with malicious intent , could exploit the other security weaknesses in access and operating system controls discussed above to misuse , improperly disclose , or destroy sensitive information .
+
+in addition to logical access controls , other important controls should be in place to ensure the confidentiality , integrity , and availability of an organization's data .
+
+these information system controls include policies , procedures , and techniques to provide appropriate segregation of duties among computer personnel , prevent unauthorized changes to application programs , and ensure the continuation of computer processing operations in case of unexpected interruption .
+
+the commerce bureaus had weaknesses in each of these areas that heightened the risks already created by their lack of effective access controls .
+
+a fundamental technique for safeguarding programs and data is to segregate the duties and responsibilities of computer personnel to reduce the risk that errors or fraud will occur and go undetected .
+
+omb a - 130 , appendix iii , requires that roles and responsibilities be divided so that a single individual cannot subvert a critical process .
+
+once policies and job descriptions that support the principles of segregation of duties have been established , access controls can then be implemented to ensure that employees perform only compatible functions .
+
+none of the seven bureaus in our review had specific policies documented to identify and segregate incompatible duties , and bureaus had assigned incompatible duties to staff .
+
+for example , staff were performing incompatible computer operations and security duties .
+
+in another instance , the bureau's security officer had the dual role of also being the bureau's network administrator .
+
+these two functions are not compatible since the individual's familiarity with system security could then allow him or her to bypass security controls either to facilitate performing administrative duties or for malicious purposes .
+
+furthermore , none of the bureaus reviewed had implemented processes and procedures to mitigate the increased risks of personnel with incompatible duties .
+
+specifically , none of the bureaus had a monitoring process to ensure appropriate segregation of duties , and management did not review access activity .
+
+until commerce restricts individuals from performing incompatible duties and implements compensating access controls , such as supervision and review , commerce's sensitive information will face increased risks of improper disclosure , inadvertent or deliberate misuse , and deletion , all of which could occur without detection .
+
+also important for an organization's information security is ensuring that only authorized and fully tested software is placed in operation .
+
+to make certain that software changes are needed , work as intended , and do not result in the loss of data and program integrity , such changes should be documented , authorized , tested , and independently reviewed .
+
+federal guidelines emphasize the importance of establishing controls to monitor the installation of and changes to software to ensure that software functions as expected and that a historical record is maintained of all changes .
+
+we have previously reported on commerce's lack of policies on software change controls .
+
+specific key controls not addressed were ( 1 ) operating system software changes , monitoring , and access and ( 2 ) controls over application software libraries including access to code , movement of software programs , and inventories of software .
+
+moreover , implementation was delegated to the individual bureaus , which had not established written policies or procedures for managing software changes .
+
+only three of the seven bureaus we reviewed mentioned software change controls in their system security plans , while none of the bureaus had policies or procedures for controlling the installation of software .
+
+such policies are important to ensure that software changes do not adversely affect operations or the integrity of the data on the system .
+
+without proper software change controls , there are risks that security features could be inadvertently or deliberately omitted or rendered inoperable , processing irregularities could occur , or malicious code could be introduced .
+
+organizations must take steps to ensure that they are adequately prepared to cope with a loss of operational capability due to earthquakes , fires , sabotage , or other disruptions .
+
+an essential element in preparing for such catastrophes is an up - to - date , detailed , and fully tested recovery plan that covers all key computer operations .
+
+such a plan is critical for helping to ensure that information system operations and data can be promptly restored in the event of a service disruption .
+
+omb circular a - 130 , appendix iii , requires that agency security plans assure that there is an ability to restore service sufficient to meet the minimal needs of users .
+
+commerce policy also requires a backup or alternate operations strategy .
+
+the commerce bureaus we reviewed had not developed comprehensive plans to ensure the continuity of service in the event of a service disruption .
+
+described below are examples of service continuity weaknesses we identified at the seven commerce bureaus .
+
+none of the seven bureaus had completed recovery plans for all their sensitive systems .
+
+although one bureau had developed two recovery plans , one for its data center and another for its software development installation center , the bureau did not have plans to cover disruptions to the rest of its critical systems , including its local area network .
+
+systems at six of the seven bureaus did not have documented backup procedures .
+
+one bureau stated that it had an agreement with another commerce bureau to back it up in case of disruptions ; however , this agreement had not been documented .
+
+one bureau stated in its backup strategy that tapes used for system recovery are neither stored off - site nor protected from destruction .
+
+for example , backup for its network file servers is kept in a file cabinet in a bureau official's supply room , and backup tapes for a database and web server are kept on the shelf above the server .
+
+in case of a destructive event , the backups could be subject to the same damage as the primary files .
+
+two bureaus had no backup facilities for key network devices such as firewalls .
+
+until each of the commerce bureaus develops and fully tests comprehensive recovery plans for all of its sensitive systems , there is little assurance that in the event of service interruptions , many functions of the organization will not effectively cease and critical data will be lost .
+
+as our government becomes increasingly dependent on information systems to support sensitive data and mission - critical operations , it is essential that agencies protect these resources from misuse and disruption .
+
+an important component of such protective efforts is the capability to promptly identify and respond to incidents of attempted system intrusions .
+
+agencies can better protect their information systems from intruders by developing formalized mechanisms that integrate incident handling functions with the rest of the organizational security infrastructure .
+
+through such mechanisms , agencies can address how to ( 1 ) prevent intrusions before they occur , ( 2 ) detect intrusions as they occur , ( 3 ) respond to successful intrusions , and ( 4 ) report intrusions to staff and management .
+
+although essential to protecting resources , commerce bureau incident handling capabilities are inadequate in preventing , detecting , responding to , and reporting incidents .
+
+because the bureaus have not implemented comprehensive and consistent incident handling capabilities , decision - making may be haphazard when a suspected incident is detected , thereby impairing responses and reporting .
+
+thus , there is little assurance that unauthorized attempts to access sensitive information will be identified and appropriate actions taken in time to prevent or minimize damage .
+
+until adequate incident detection and response capabilities are established , there is a greater risk that intruders could be successful in copying , modifying , or deleting sensitive data and disrupting essential operations .
+
+accounting for and analyzing computer security incidents are effective ways for organizations to better understand threats to their information systems .
+
+such analyses can also pinpoint vulnerabilities that need to be addressed so that they will not be exploited again .
+
+omb circular a - 130 , appendix iii , requires agencies to establish formal incident response mechanisms dedicated to evaluating and responding to security incidents in a manner that protects their own information and helps to protect the information of others who might be affected by the incident .
+
+these formal incident response mechanisms should also share information concerning common vulnerabilities and threats within the organization as well as with other organizations .
+
+by establishing such mechanisms , agencies help to ensure that they can more effectively coordinate their activities when incidents occur .
+
+although the commerce cio issued a july 1999 memorandum to all bureau cios outlining how to prevent , detect , respond to , and report incidents , the guidance has been inconsistently implemented .
+
+six of the seven bureaus we reviewed have only ad hoc processes and procedures for handling incidents .
+
+none have established and implemented all of the requirements of the memo .
+
+furthermore , commerce does not have a centralized function to coordinate the handling of incidents on a departmentwide basis .
+
+two preventive measures for deterring system intrusions are to install ( 1 ) software updates to correct known vulnerabilities and ( 2 ) messages warning intruders that their activities are punishable by law .
+
+first , federal guidance , industry advisories , and best practices all stress the importance of installing updated versions of operating systems and the software that supports system operations to protect against vulnerabilities that have been discovered in previously released versions .
+
+if new versions have not yet been released , “patches” that fix known flaws are often readily available and should be installed in the interim .
+
+updating operating systems and other software to correct these vulnerabilities is important because once vulnerabilities are discovered , technically sophisticated hackers write scripts to exploit them and often post these scripts to the internet for the widespread use of lesser skilled hackers .
+
+since these scripts are easy to use , many security breaches happen when intruders take advantage of vulnerabilities for which patches are available but system administrators have not applied the patches .
+
+second , public law 99-74 requires that a warning message be displayed upon access to all federal computer systems notifying users that unauthorized use is punishable by fines and imprisonment .
+
+not only does the absence of a warning message fail to deter potential intruders , but , according to the law , pursuing and prosecuting intruders is more difficult if they have not been previously made fully aware of the consequences of their actions .
+
+commerce has not fully instituted these two key measures to prevent incidents .
+
+first , many bureau systems do not have system software that has been updated to address known security exposures .
+
+for example , during our review , we discovered 20 systems with known vulnerabilities for which patches were available but not installed .
+
+moreover , all the bureaus we reviewed were still running older versions of software used on critical control devices that manage network connections .
+
+newer versions of software are available that correct the known security flaws of the versions that were installed .
+
+second , in performing our testing of network security , we observed that warning messages had not been installed for several network paths into commerce systems that we tested .
+
+even though strong controls may not block all intrusions , organizations can reduce the risks associated with such events if they take steps to detect intrusions and the consequent misuse before significant damage can be done .
+
+federal guidance emphasizes the importance of using detection systems to protect systems from the threats associated with increasing network connectivity and reliance on information systems .
+
+additionally , federally funded activities , such as cert / cc , the department of energy's computer incident advisory capability , and fedcirc are available to assist organizations in detecting and responding to incidents .
+
+although the cio's july memo directs commerce bureaus to monitor their information systems to detect unusual or suspicious activities , all the bureaus we reviewed were either not using monitoring programs or had only partially implemented their capabilities .
+
+for example , only two of the bureaus had installed intrusion detection systems .
+
+also , system and network logs frequently had not been activated or were not reviewed to detect possible unauthorized activity .
+
+moreover , modifications to critical operating system components were not logged , and security reports detailing access to sensitive data and resources were not sent to data owners for their review .
+
+the fact that bureaus we reviewed detected our activities only four times during the 2 months that we performed extensive external testing of commerce networks , which included probing over 1,000 system devices , indicates that , for the most part , they are unaware of intrusions .
+
+for example , although we spent several weeks probing one bureau's networks and obtained access to many of its systems , our activities were never detected .
+
+moreover , during testing we identified evidence of hacker activity that commerce had not previously detected .
+
+without monitoring their information systems , the bureaus cannot know how , when , and who performs specific computer activities , be aware of repeated attempts to bypass security , or detect suspicious patterns of behavior such as two users with the same id and password logged on simultaneously or users with system administrator privileges logged on at an unexpected time of the day or night .
+
+as a result , the bureaus have little assurance that potential intrusions will be detected in time to prevent or , at least , minimize damage .
+
+the cio's july memo also outlines how the bureaus are to respond to detected incidents .
+
+instructions include responses such as notifying appropriate officials , deploying an on - site team to survey the situation , and isolating the attack to learn how it was executed .
+
+only one of the seven bureaus reviewed has documented response procedures .
+
+consequently , we experienced inconsistent responses when our testing was detected .
+
+for example , one bureau responded to our scanning of their systems by scanning ours in return .
+
+in another bureau , a commerce employee who detected our testing responded by launching a software attack against our systems .
+
+in neither case was bureau management previously consulted or informed of these responses .
+
+the lack of documented incident response procedures increases the risk of inappropriate responses .
+
+for example , employees could take no action , take insufficient actions that fail to limit potential damage , take overzealous actions that unnecessarily disrupt critical operations , or take actions , such as launching a retaliatory attack , that could be considered improper .
+
+the cio's july memo specifically requires bureau employees who suspect an incident or violation to contact their supervisor and the bureau security officer , who should report the incident to the department's information security manager .
+
+reporting detected incidents is important because this information provides valuable input for risk assessments , helps in prioritizing security improvement efforts , and demonstrates trends of threats to an organization as a whole .
+
+the bureaus we reviewed have not been reporting all detected incidents .
+
+during our 2-month testing period , 16 incidents were reported by the seven bureaus collectively , 10 of which were generated to report computer viruses .
+
+four of the other six reported incidents related to our testing activities , one of which was reported after our discovery of evidence of a successful intrusion that commerce had not previously detected and reported .
+
+however , we observed instances of detected incidents that were not reported to bureau security officers or the department's information security manager .
+
+for example , the commerce employees who responded to our testing by targeting our systems in the two instances discussed above did not report either of the two incidents to their own bureau's security officer .
+
+by not reporting incidents , the bureaus lack assurance that identified security problems have been tracked and eliminated and the targeted system restored and validated .
+
+furthermore , information about incidents could be valuable to other bureaus and assist the department as a whole to recognize and secure systems against general patterns of intrusion .
+
+the underlying cause for the numerous weaknesses we identified in bureau information system controls is that commerce does not have an effective departmentwide information security management program in place to ensure that sensitive data and critical operations receive adequate attention and that the appropriate security controls are implemented to protect them .
+
+our study of security management best practices , as summarized in our 1998 executive guide , found that leading organizations manage their information security risks through an ongoing cycle of risk management .
+
+this management process involves ( 1 ) establishing a centralized management function to coordinate the continuous cycle of activities while providing guidance and oversight for the security of the organization as a whole , ( 2 ) identifying and assessing risks to determine what security measures are needed , ( 3 ) establishing and implementing policies and procedures that meet those needs , ( 4 ) promoting security awareness so that users understand the risks and the related policies and procedures in place to mitigate those risks , and ( 5 ) instituting an ongoing monitoring program of tests and evaluations to ensure that policies and procedures are appropriate and effective .
+
+however , commerce's information security management program is not effective in any of these key elements .
+
+establishing a central management function is the starting point of the information security management cycle mentioned above .
+
+this function provides knowledge and expertise on information security and coordinates organizationwide security - related activities associated with the other four segments of the risk management cycle .
+
+for example , the function researches potential threats and vulnerabilities , develops and adjusts organizationwide policies and guidance , educates users about current information security risks and the policies in place to mitigate those risks , and provides oversight to review compliance with policies and to test the effectiveness of controls .
+
+this central management function is especially important to managing the increased risks associated with a highly connected computing environment .
+
+by providing coordination and oversight of information security activities organizationwide , such a function can help ensure that weaknesses in one unit's systems do not place the entire organization's information assets at undue risk .
+
+according to commerce policy , broad program responsibility for information security throughout the department is assigned to the cio .
+
+department of commerce organization order 15-23 of july 5 , 2000 , specifically tasks the cio with developing and implementing the department's information security program to ensure the confidentiality , integrity , and availability of information and it resources .
+
+these responsibilities include developing policies , procedures , and directives for information security ; providing mandatory periodic training in computer security awareness and accepted practice ; and identifying and developing security plans for commerce systems that contain sensitive information .
+
+furthermore , the cio is also formally charged with carrying out the secretary's responsibilities for computer security under omb circular a - 130 , appendix iii , for all commerce bureaus and the office of the secretary .
+
+an information security manager under the direction of the office of the cio is tasked with carrying out the responsibilities of the security program .
+
+these responsibilities , which are clearly defined in department policy , include developing security policies , procedures , and guidance and ensuring security oversight through reviews , which include tracking the implementation of required security controls .
+
+commerce lacks an effective centralized function to facilitate the integrated management of the security of its information system infrastructure .
+
+at the time of our review , the cio , who had no specific budget to fulfill security responsibilities and exercised no direct control over the it budgets of the commerce bureaus , stated that he believed that he did not have sufficient resources or the authority to implement the department information security program .
+
+until february 2000 , when additional staff positions were established to support the information security manager's responsibilities , the information security manager had no staff to discharge these tasks .
+
+as of april 2001 , the information security program was supported by a staff of three .
+
+commerce policy also requires each of its bureaus to implement an information security program that includes a full range of security responsibilities .
+
+these include appointing a bureauwide information security officer as well as security officers for each of the bureau's systems .
+
+however , the commerce bureaus we reviewed also lack their own centralized functions to coordinate bureau security programs with departmental policies and procedures and to implement effective programs for the security of the bureaus' information systems infrastructure .
+
+for example , four bureaus had staff assigned to security roles on a part - time basis and whose security responsibilities were treated as collateral duties .
+
+in view of the widespread interconnectivity of commerce's systems , the lack of a centralized approach to the management of security is particularly risky since there is no coordinated effort to ensure that minimal security controls are implemented and effective across the department .
+
+as demonstrated by our testing , intruders who succeeded in gaining access to a system in a bureau with weak network security could then circumvent the stronger network security of other bureaus .
+
+it is , therefore , unlikely that the security posture of the department as a whole will significantly improve until a more integrated security management approach is adopted and sufficient resources allotted to implement and enforce essential security measures departmentwide .
+
+as outlined in our 1998 executive guide , understanding the risks associated with information security is the second key element of the information security management cycle .
+
+identifying and assessing information security risks help to determine what controls are needed and what level of resources should be expended on controls .
+
+federal guidance requires all federal agencies to develop comprehensive information security programs based on assessing and managing risks .
+
+commerce policy regarding information security requires ( 1 ) all bureaus to establish and implement a risk management process for all it resources and ( 2 ) system owners to conduct a periodic risk analysis for all sensitive systems within each bureau .
+
+commerce bureaus we reviewed are not conducting risk assessments for their sensitive systems as required .
+
+only 3 of the bureaus' 94 systems we reviewed had documented risk assessments , one of which was still in draft .
+
+consequently , most of the bureaus' systems are being operated without consideration of the risks associated with their immediate environment .
+
+moreover , these bureaus are not considering risks outside their immediate environment that affect the security of their systems , such as network interconnections with other systems .
+
+although omb circular a - 130 , appendix iii , specifically requires that the risks of connecting to other systems be considered prior to doing so , several bureau officials acknowledged that they had not considered how vulnerabilities in systems that interconnected with theirs could undermine the security of their own systems .
+
+rather , the initial decision to interconnect should have been made by management based on an assessment of the risk involved , the controls in place to mitigate the risk , and the predetermined acceptable level of risk .
+
+the widespread lack of risk assessments , as evidenced by the serious access control weaknesses revealed during our testing , indicates that commerce is doing little to understand and manage risks to its systems .
+
+once risks have been assessed , omb circular a - 130 , appendix iii , requires agencies to document plans to mitigate these risks through system security plans .
+
+these plans should contain an overview of a system's security requirements ; describe the technical controls planned or in place for meeting those requirements ; include rules that delineate the responsibilities of managers and individuals who access the system ; and outline training needs , personnel controls , and continuity plans .
+
+in summary , security plans should be updated regularly to reflect significant changes to the system as well as the rapidly changing technical environment and document that all aspects of security for a system have been fully considered , including management , technical , and operational controls .
+
+none of the bureaus we reviewed had security plans for all of their sensitive systems .
+
+of the 94 sensitive systems we reviewed , 87 had no security plans .
+
+of the seven systems that did have security plans , none had been approved by management .
+
+moreover , five of these seven plans did not include all the elements required by omb circular a - 130 , appendix iii .
+
+without comprehensive security plans , the bureaus have no assurance that all aspects of security have been considered in determining the security requirements of the system and that adequate protection has been provided to meet those requirements .
+
+omb also requires management officials to formally authorize the use of a system before it becomes operational , when a significant change occurs , and at least every 3 years thereafter .
+
+authorization provides quality control in that it forces managers and technical staff to find the best fit for security , given technical constraints , operational constraints , and mission requirements .
+
+by formally authorizing a system for operational use , a manager accepts responsibility for the risks associated with it .
+
+since the security plan establishes the system protection requirements and documents the security controls in place , it should form the basis for management's decision to authorize processing .
+
+as of march 2001 , commerce management had not authorized any of the 94 sensitive systems that we identified .
+
+according to the more comprehensive data collected by the office of the cio in march 2000 , 92 percent of all the department's sensitive systems had not been formally authorized .
+
+the lack of authorization indicates that systems' managers had not reviewed and accepted responsibility for the adequacy of the security controls implemented on their systems .
+
+as a result , commerce has no assurance that these systems are being adequately protected .
+
+the third key element of computer security management , as identified during our study of information security management practices at leading organizations , is establishing and implementing policies .
+
+security policies are important because they are the primary mechanism by which management communicates its goals and requirements .
+
+federal guidelines require agencies to frequently update their information security policies in order to assess and counter rapidly evolving threats and vulnerabilities .
+
+commerce's information security policies are significantly outdated and incomplete .
+
+developed in 1993 and partially revised in 1995 , the department's information security policies and procedures manual , information technology management handbook , chapter 10 , “information technology security,” and attachment , “information technology security” does not comply with omb's february 1996 revision to circular a - 130 , appendix iii , and does not incorporate more recent nist guidelines .
+
+for example , commerce's information security policy does not reflect current federal requirements for managing computer security risk on a continuing basis , authorizing processing , providing security awareness training , or performing system reviews .
+
+moreover , because the policy was written before the explosive growth of the internet and commerce's extensive use of it , policies related to the risks of current internet usage are omitted .
+
+for example , commerce has no departmentwide security policies on world wide web sites , e - mail , or networking .
+
+further , commerce has no departmental policies establishing baseline security requirements for all systems .
+
+for example , there is no departmental policy specifying required attributes for passwords , such as minimum length and the inclusion of special characters .
+
+consequently , security settings differ both among bureaus and from system to system within the same bureau .
+
+furthermore , commerce lacks consistent policies establishing a standard minimum set of access controls .
+
+having these baseline agencywide policies could eliminate many of the vulnerabilities discovered by our testing , such as configurations that provided users with excessive access to critical system files and sensitive data and expose excessive system information , all of which facilitate intrusions .
+
+the director of the office of information policy , planning , and review and the information security manager stated that commerce management recognizes the need to update the department information security policy and will begin updating the security sections of the information technology management handbook in the immediate future .
+
+the fourth key element of the security management cycle involves promoting awareness and conducting required training so that users understand the risks and the related policies and controls in place to mitigate them .
+
+computer intrusions and security breakdowns often occur because computer users fail to take appropriate security measures .
+
+for this reason , it is vital that employees who use computer systems in their day - to - day operations are aware of the importance and sensitivity of the information they handle , as well as the business and legal reasons for maintaining its confidentiality , integrity , and availability .
+
+omb circular a - 130 , appendix iii , requires that employees be trained on how to fulfill their security responsibilities before being allowed access to sensitive systems .
+
+the computer security act mandates that all federal employees and contractors who are involved with the management , use , or operation of federal computer systems be provided periodic training in information security awareness and accepted information security practice .
+
+specific training requirements are outlined in nist guidelines,which establish a mandatory baseline of training in security concepts and procedures and define additional structured training requirements for personnel with security - sensitive responsibilities .
+
+overall , none of the seven bureaus had documented computer security training procedures and only one of the bureaus had documented its policy for such training .
+
+this bureau also used a network user responsibility agreement , which requires that all network users read and sign a one - page agreement describing the network rules .
+
+officials at another bureau stated that they were developing a security awareness policy document .
+
+although each of the seven bureaus had informal programs in place , such as a brief overview as part of the one - time general security orientation for new employees , these programs do not meet the requirements of omb , the computer security act , or nist special publication 800-16 .
+
+such brief overviews do not ensure that security risks and responsibilities are understood by all managers , users , and system administrators and operators .
+
+shortcomings in the bureaus' security awareness and training activities are illustrated by the following examples .
+
+officials at one bureau told us that they did not see training as an integral part of its security program , and provided an instructional handbook only to users of a specific bureau application .
+
+another bureau used a generic computer - based training course distributed by the department of defense that described general computer security concepts but was not specific to commerce's computing environment .
+
+also , this bureau did not maintain records to document who had participated .
+
+another bureau had limited awareness practices in place , such as distributing a newsletter to staff , but had no regular training program .
+
+officials at this bureau told us that they were in the process of assessing its training requirements .
+
+only one commerce bureau that we reviewed provided periodic refresher training .
+
+in addition , staff directly responsible for information security do not receive more extensive training than overviews since security is not considered to be a full - time function requiring special skills and knowledge .
+
+several of the computer security weaknesses we discuss in this report indicate that commerce employees are either unaware of or insensitive to the need for important information system controls .
+
+the final key element of the security management cycle is an ongoing program of tests and evaluations to ensure that systems are in compliance with policies and that policies and controls are both appropriate and effective .
+
+this type of oversight is a fundamental element because it demonstrates management's commitment to the security program , reminds employees of their roles and responsibilities , and identifies and corrects areas of noncompliance and ineffectiveness .
+
+for these reasons , omb circular a - 130 , appendix iii , directs that the security controls of major information systems be independently reviewed or audited at least every 3 years .
+
+commerce policy also requires information security program oversight and tasks the program manager with performing compliance reviews of the bureaus as well as verification reviews of individual systems .
+
+the government information security reform provisions of the fiscal year 2001 national defense authorization act require annual independent reviews of it security in fiscal years 2001 and 2002 .
+
+no oversight reviews of the commerce bureaus' systems have been performed by the staff of commerce's departmentwide information security program .
+
+the information security manager stated that he was not given the resources to perform these functions .
+
+furthermore , the bureaus we reviewed do not monitor the effectiveness of their information security .
+
+only one of the bureaus has performed isolated tests of its systems .
+
+in lieu of independent reviews , in may 2000 , the office of the cio , using a draft of the cio council's security assessment framework , requested that all commerce bureaus submit a self - assessment of the security of their systems based on the existence of risk assessments , security plans , system authorizations , awareness and training programs , service continuity plans , and incident response capabilities .
+
+this self - assessment did not require testing or evaluating whether systems were in compliance with policies or the effectiveness of implemented controls .
+
+nevertheless , the office of the cio's analysis of the self - assessments showed that 92 percent of commerce's sensitive systems did not comply with federal security requirements .
+
+specifically , 63 percent of commerce's systems did not have security plans that comply with federal guidelines , 73 percent had no risk assessments , 64 percent did not have recovery plans , and 92 percent had not been authorized for operational use .
+
+the information security manager further stated that , because of the continued lack of resources , the office of the cio would not be able to test and evaluate the effectiveness of commerce's information security controls to comply with the government information security reform provisions requirement of the fiscal year 2001 national defense authorization act .
+
+instead , the information security manager stated that he would ask the bureaus to do another self - assessment .
+
+in future years , the information security manager intends to perform hands - on reviews as resources permit .
+
+the significant and pervasive weaknesses that we discovered in the seven commerce bureaus we tested place the data and operations of these bureaus at serious risk .
+
+sensitive economic , personnel , financial , and business confidential information is exposed , allowing potential intruders to read , copy , modify , or delete these data .
+
+moreover , critical operations could effectively cease in the event of accidental or malicious service disruptions .
+
+poor detection and response capabilities exacerbate the bureaus' vulnerability to intrusions .
+
+as demonstrated during our own testing , the bureaus' general inability to notice our activities increases the likelihood that intrusions will not be detected in time to prevent or minimize damage .
+
+these weaknesses are attributable to the lack of an effective information security program , that is , lack of centralized management , a risk - based approach , up - to - date security policies , security awareness and training , and continuous monitoring of the bureaus' compliance with established policies and the effectiveness of implemented controls .
+
+these weaknesses are exacerbated by commerce's highly interconnected computing environment in which the vulnerabilities of individual systems affect the security of systems in the entire department , since a compromise in a single poorly secured system can undermine the security of the multiple systems that connect to it .
+
+we recommend that the secretary direct the office of the cio and the bureaus to develop and implement an action plan for strengthening access controls for the department's sensitive systems commensurate with the risk and magnitude of the harm resulting from the loss , misuse , or modification of information resulting from unauthorized access .
+
+targeted timeframes for addressing individual systems should be determined by their order of criticality .
+
+this will require ongoing cooperative efforts between the office of the cio and the commerce bureaus' cios and their staff .
+
+specifically , this action plan should address the logical access control weaknesses that are summarized in this report and will be detailed , along with corresponding recommendations , in a separate report designated for “limited official use.” these weaknesses include password management controls , operating system controls , and network controls .
+
+we recommend that the secretary direct the office of the cio and the commerce bureaus to establish policies to identify and segregate incompatible duties and to implement controls , such as reviewing access activity , to mitigate the risks associated with the same staff performing these incompatible duties .
+
+we recommend that the secretary direct the office of the cio and the commerce bureaus to establish policies and procedures for authorizing , testing , reviewing , and documenting software changes prior to implementation .
+
+we recommend that the secretary direct the office of the cio to require the commerce bureaus to develop and test , at least annually , comprehensive recovery plans for all sensitive systems .
+
+we recommend that the secretary direct the office of the cio to establish a departmentwide incident handling function with formal procedures for preparing for , detecting , responding to , and reporting incidents .
+
+we recommend that the secretary direct the office of the cio and the commerce bureaus to develop intrusion detection and incident response capabilities that include installing updates to system software with known vulnerabilities , installing warning banners on all network access paths , installing intrusion detection systems on networks and sensitive systems , and implementing policies and procedures for monitoring log files and audit trails on a regular schedule commensurate with risks for potentially unauthorized access to computer resources .
+
+we recommend that the secretary direct the office of the cio to develop and implement an effective departmentwide security program .
+
+such a program should include establishing a central information security function to manage an ongoing cycle of the following security activities: assessing risks and evaluating needs , which include developing security plans for all sensitive systems that comply with federal guidelines as outlined in omb a - 130 , appendix iii , and nist sp 800-18 and formally authorizing all systems before they become operational , upon significant change , and at least every 3 years thereafter .
+
+updating the information security program policies to comply with current federal regulations regarding risk assessments , specific security controls that must be included in security plans , management authorization to process , audits and reviews , security incidents , awareness and training , and contingency planning , address vulnerabilities associated with commerce's widespread use of internet technologies , and provide minimum baseline standards for access controls to all networked systems to reduce risk in commerce's highly interconnected environment .
+
+developing and implementing a computer security awareness and training program .
+
+developing and implementing a management oversight process that includes periodic compliance reviews and tests of the effectiveness of implemented controls .
+
+this process should include audits and reviews and establish clear roles , responsibilities , and procedures for tracking identified vulnerabilities and ensuring their remediation .
+
+we also recommend that the secretary of commerce , the office of the cio , and the bureau cios direct the appropriate resources and authority to fulfill the security responsibilities that commerce policy and directives task them with performing and to implement these recommendations .
+
+in addition , we recommend that the secretary take advantage of the opportunity that the installation of the new network infrastructure will provide to improve security .
+
+specifically , by establishing strong departmental control over the network , commerce could require all bureaus using this common network to meet a minimum level of security standards .
+
+this would help to ensure that weaknesses in one bureau's security will not undermine the security of all interconnecting bureaus , as is now the case .
+
+in providing written comments on a draft of this report , which are reprinted in appendix ii , the secretary of commerce concurred with our findings and stated that commerce is committed to improving the information security posture of the department .
+
+according to the secretary , the bureaus we reviewed have developed and are currently implementing action plans to correct the specific problems we identified .
+
+he further stated that the heads of the commerce bureaus have been directed to give priority to information security and to allocate sufficient resources to ensure that adequate security is in place .
+
+moreover , the secretary of commerce said that he had approved an it management restructuring plan on june 13 , 2001 , that would give the department cio , as well as the bureau cios , new authority to strengthen the departmentwide information security program .
+
+he further stated that on july 23 , 2001 , he had established a task force on information security to develop a comprehensive and effective program for the department .
+
+as agreed with your office , unless you publicly announce the contents of this report earlier , we will not distribute it until 10 days from the date of this letter .
+
+at that time , we will send copies to the ranking minority member of the committee ; the chairmen and ranking minority members of the senate committee on governmental affairs ; senate committee on commerce , science , and transportation ; and house committee on government reform ; as well as to other interested members of the congress .
+
+we will also send copies to the honorable johnnie e. frazier , inspector general , department of commerce , and the honorable mitchell e. daniels , jr. , director , office of management and budget .
+
+if you have any questions regarding this report , please contact me at ( 202 ) 512-3317 or elizabeth johnston , assistant director , at ( 202 ) 512-6345 .
+
+we can also be reached by e - mail at daceyr@gao.gov and johnstone@gao.gov respectively .
+
+key contributors to this report are listed in appendix iv .
+
+our objectives were to determine if the department of commerce has effectively implemented ( 1 ) logical access and other information system controls over its computerized data , ( 2 ) incident detection and response capabilities , and ( 3 ) an effective information security management program and related procedures .
+
+to accomplish these objectives , we applied appropriate sections of our federal information system controls audit manual ( gao / aimd - 12.19.6 ) , which describes our methodology for reviewing information system controls that affect the integrity , confidentiality , and availability of computerized data associated with federal agency operations .
+
+as requested by the committee , the scope of our review was focused on seven commerce bureaus: the bureau of export administration , the economic development administration , the economics and statistics administration , the international trade administration , the minority business development agency , the national telecommunications and information administration , and the office of the secretary .
+
+all of these bureaus are based at the hoover building in washington , dc and have missions related to or support for trade development , reporting , assistance , regulation , and oversight .
+
+in reviewing key logical access controls over commerce's computerized data , we included in the scope of our testing systems that commerce defined as critical to the mission of the department in that their disruption would jeopardize the national interest or national requirements relating to securing the u.s. economy , national security , and the delivery of essential private sector services .
+
+we also included systems that fit omb circular a - 130 , appendix iii's criteria for requiring special protection , i.e .
+
+general support systems , such as local area networks , and major applications .
+
+in addition , we included ( 1 ) applications that support the department and are important for the operations of the office of the secretary and ( 2 ) important web servers that support the missions of the bureaus .
+
+we examined the configuration and control implementation for each of the computer operating system platforms and for each of the bureaus' computer networks that support these bureaus' mission - critical operations .
+
+in total , we assessed 120 systems , including 8 firewalls , 20 routers , 15 switches , and over 50 other network support or infrastructure devices .
+
+we conducted penetration tests of commerce's systems from both inside the hoover building using an internal commerce address and from a remote location through the internet .
+
+we attempted to penetrate commerce's systems and exploit identified control weaknesses to verify the vulnerability they presented .
+
+we also met with commerce officials to discuss possible reasons for vulnerabilities we identified and the department's plans for improvement .
+
+to evaluate incident detection and response capabilities , we focused on commerce's ability to prevent , detect , respond to , and report incidents .
+
+we examined whether commerce bureaus ( 1 ) installed the latest system software patches , warning banners , and intrusion detection systems to deter intruders , ( 2 ) activated and reviewed access logs to ensure that incidents were detected , ( 3 ) implemented procedures to ensure that bureaus responded to incidents in an appropriate manner , and ( 4 ) generated and reviewed incident reports .
+
+to review security program management and related procedures , we reviewed pertinent departmentwide policies , guidance , and security plans for each of the bureaus' sensitive systems and held discussions with officials responsible for developing and implementing these policies and plans throughout commerce .
+
+this included analyzing departmentwide and bureau policies to determine ( 1 ) their compliance with omb and nist guidance and ( 2 ) whether they incorporated the management best practices identified in our executive guide information security management: learning from leading organizations ( gao / aimd - 98-68 , may 1998 ) ; meeting with officials in commerce's office of the chief information officer , which is responsible for managing commerce's information security program , to determine what actions commerce has taken to ensure effective security program implementation ; discussing security plan development and implementation with officials in commerce's office of the chief information officer and the seven bureaus ; and reviewing system security plans from the seven bureaus to determine if they complied with commerce's departmentwide policies and omb and nist guidance .
+
+we performed our audit work from august 2000 through may 2001 in accordance with generally accepted government auditing standards .
+
+because our work was focused on performing tests of selected computer - based security controls , we did not fully evaluate all computer controls .
+
+consequently , additional vulnerabilities could exist that we did not identify .
+
+the office of the secretary ( o / s ) is the department's general management arm and provides the principal support to the secretary in formulating policy and providing advice to the president .
+
+o / s provides program leadership for the department's functions and exercises general oversight of its operating agencies .
+
+this office includes subordinate offices that have departmentwide responsibilities or perform special program functions directly on behalf of the secretary .
+
+the bureau of export administration ( bxa ) is primarily responsible for administering and enforcing the nation's system for controlling exports of sensitive dual - use goods and technologies in accordance with the export administration act and regulations .
+
+bxa's major functions include formulating and implementing export control policy ; processing export license applications ; conducting various policy , technical , and economic analyses ; promulgating regulations ; conducting industry outreach ; and enforcing the export administration act and regulations .
+
+the economics and statistics administration ( esa ) produces , analyzes , and disseminates some of the nation's most important economic and demographic data .
+
+important economic indicators produced by esa include retail sales , housing starts and foreign trade .
+
+esa houses the economic bulletin board , a dial - up bulletin board system which delivers major u.s. government economic indicators from the bureau of the census , the bureau of economic analysis , the federal reserve board and the labor department .
+
+esa issues federal export information and international economic data of interest to business , policy makers and researchers .
+
+esa also provides the public with stat - usa / internet , an online resource updated daily that offers both domestic u.s. economic information and foreign trade information .
+
+the economic development administration ( eda ) provides grants to economically distressed communities to generate new employment , help retain existing jobs , and stimulate industrial and commercial growth .
+
+eda programs help fund the construction of public works and development facilities , and are intended to promote industrial and commercial growth .
+
+one eda program is designed to help states and local areas design and implement strategies for adjusting to changes that cause or threaten to cause serious economic damage .
+
+another program awards grants and cooperative agreements for studies designed to increase knowledge about emerging economic development issues , determine the causes of economic distress , and locate ways to alleviate barriers to economic development .
+
+twelve trade adjustment assistance centers around the country receive funds to provide technical assistance to certified businesses hurt by increased imports .
+
+the international trade administration ( ita ) is responsible for promoting u.s. exports of manufactured goods , nonagricultural commodities , and services and associated trade policy issues .
+
+ita works closely with u.s. businesses and other government agencies , including the office of the u.s. trade representative and the department of treasury .
+
+through its market access and compliance unit , ita formulates and implements international economic policies to obtain market access for american firms and workers as well as compliance by foreign nations with u.s. international trade agreements .
+
+ita also advises on international trade and investment policies pertaining to u.s. industrial sectors , carries out programs to strengthen domestic export competitiveness , and promotes u.s. industry's increased participation in international markets .
+
+through its import administration , it administers legislation that counters unfair foreign trade practices .
+
+finally , ita's u.s. & foreign commercial service , which has 105 domestic offices and 157 overseas posts in 84 countries , promotes the exports of u.s. companies and helps small and medium - sized businesses market their goods and services abroad .
+
+the minority business development agency's ( mbda ) mission is to promote growth and competitiveness of the nation's minority - owned and operated businesses .
+
+mbda seeks to improve minority business enterprise access to domestic and international marketplaces and improved opportunities in financing for business startup and expansion .
+
+mbda provides management and technical assistance to minority individuals who own or are trying to establish a business through a network of business development centers in areas with large concentrations of minority populations and businesses .
+
+this includes assistance with planning , bidding , estimating , bonding , construction , financing , procurement , international trade matters , franchising , accounting , and marketing .
+
+mbda has agreements with banks and other lending institutions that are intended to help minority entrepreneurs gain access to capitol for business expansion or development purposes .
+
+national telecommunications and information administration the national telecommunications and information administration ( ntia ) serves as the president's principal adviser on domestic and international communications and information policies pertaining to the nation's economic and technological advancement and to regulation of the telecommunications industry .
+
+in this respect , ntia develops and presents u.s. plans and policies at international communications conferences and related meetings , coordinates u.s. government position on communication with federal agencies , and prescribes policies that ensure effective and efficient federal use of the electromagnetic spectrum .
+
+ntia's program activities are designed to assist the administration , the congress , and regulatory agencies in addressing diverse technical and policy questions .
+
+key contributors to this assignment were edward alexander , gerald barnes , lon chin , west coile , debra conner , nancy defrancesco , denise fitzpatrick , edward glagola , david hayes , brian howe , sharon kittrell , harold lewis , suzanne lightman , duc ngo , tracy pierson , kevin secrest , eugene stevens , and william wadsworth .
+

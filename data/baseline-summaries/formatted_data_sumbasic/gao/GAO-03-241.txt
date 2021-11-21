@@ -1,0 +1,338 @@
+over the past decade , the department of education has spent millions of dollars to modernize and integrate its disparate financial aid systems in an effort to improve the administration of its programs and provide more information and greater service to its customers — students , parents , schools , and lenders .
+
+however , as we reported last year , the department's efforts had achieved limited success .
+
+in january 1993 , for example , the department awarded a 5-year , $39 million contract for the development and maintenance of the national student loan data system , which was to provide information on systems across programmatic boundaries , yet it often lacks the most recent information from other financial aid systems .
+
+to address such systems problems and other long - standing management weaknesses , in 1998 , as you know , the congress created the federal government's first performance - based organization , currently called the office of federal student aid ( fsa ) .
+
+under the performance - based organization concept , fsa is a discrete organizational unit within the department of education , led by its own chief operating officer .
+
+fsa focuses on managing the operation of the student financial assistance programs , while the department of education focuses on policy - making functions .
+
+fsa subsequently adopted a systems integration approach that uses middleware and extensible markup language ( xml ) technologies .
+
+in november 2001 , we reported that in selecting middleware , fsa adopted a viable , industry - accepted mechanism for addressing its long - standing systems integration problems .
+
+we also reported that fsa's first use of middleware and xml as part of a process for delivering direct loan and pell grant aid to students was expected in early 2002 .
+
+this process , called the common origination and disbursement ( cod ) process , was expected to use a new system , also called cod , and be supported by a new information technology ( it ) infrastructure and various existing systems .
+
+in the summer of 2002 , we initiated a follow - up review to our november 2001 report .
+
+our objective was to assess fsa's progress in implementing the cod process .
+
+in doing this work , we reviewed applicable fsa and accenture ( the prime contractor ) documentation , including fsa's modernization blueprint , the cod business case , the cod system's requirements , the cod and enterprise application integration implementation timelines , accenture project status briefings , and test guides and results .
+
+in addition , we reviewed reports by an independent verification and validation contractor .
+
+we also interviewed applicable officials from fsa it and program offices and accenture .
+
+we performed our work at fsa headquarters in washington , d.c. , between august and november 2002 , in accordance with generally accepted government auditing standards .
+
+the department of education's fsa manages and administers student financial assistance programs authorized under title iv of the higher education act of 1965 , as amended .
+
+these postsecondary programs include the william d. ford federal direct loan program ( often called the direct loan program ) , the federal family education loan program ( often called the guaranteed loan program ) , the federal pell grant program , and campus - based programs .
+
+annually , these programs together provide about $50 billion in student aid to approximately 8 million students and their families .
+
+during the past three decades , the department of education has created many disparate information systems to support these various student financial aid programs .
+
+in many cases , these systems — run on multiple operating platforms using different network protocols and maintained and operated by a host of different contractors — were unable to easily exchange the timely , accurate , and useful data needed to ensure the proper management and oversight of the various student financial aid programs .
+
+for example , as we reported in 1997 , neither the national student loan data system nor other systems were designed for efficient access to reliable student financial aid information , since many systems were incompatible and lacked data standards and common identifiers .
+
+in addition , because fsa used three separate systems to originate and / or disburse title iv funds , access to student and school data was fragmented and unreliable .
+
+as a result , fsa found it increasingly difficult to quickly access data to support day - to - day operational and management decisions , and schools could not easily access data to obtain a clear picture of the title iv student aid that had been disbursed .
+
+in september 1999 , fsa issued its initial modernization blueprint , which was subsequently updated in july 2000 , to transform the title iv student financial aid systems using technology .
+
+cod is one of four school service business processes in fsa's blueprint and is intended to implement a simplified process for the operation of the direct loan and pell grant programs .
+
+according to fsa's modernization blueprint , the common origination and disbursement process is composed of seven steps involving students , the department of education , and schools: ( 1 ) obtain applicant data , ( 2 ) determine eligibility , ( 3 ) determine award , ( 4 ) notify the department of education of the intent to disburse , ( 5 ) obtain funds from education , ( 6 ) disburse funds to student , and ( 7 ) close out .
+
+a common process to support origination and disbursement is considered critical to fsa's goal of achieving an enterprisewide solution that provides real - time data to students , schools , and financial partners via web portals .
+
+to implement cod , fsa is using middleware and xml technologies .
+
+specifically , middleware is being used to integrate fsa systems that support the cod process .
+
+traditionally , systems integration would require building separate point - to - point interfaces between every two applications .
+
+although this approach can be effective , it creates several problems , such as ( 1 ) every connection between two applications requires custom programming ; ( 2 ) a lot of connections have to be developed when there are multiple data sources ; and ( 3 ) whenever the logic or data in one application changes , the accompanying interface often also needs to be altered .
+
+middleware represents an alternative means to the traditional approach , and it can provide a quicker and more robust solution to systems integration .
+
+in essence , middleware separates the business application from the technical details of interapplication communications .
+
+thus , middleware can simplify and reduce the number of interfaces for multiple systems because it can handle differences in data formats and record layouts .
+
+as part of the cod process , xml is being used to consolidate multiple legacy record formats previously used by schools to submit data on the pell grant and direct loan programs .
+
+by using an xml - based common record , schools can transmit one file with all of the student's data instead of submitting separate legacy records with redundant student and school information .
+
+appendix i provides a high - level depiction of the systems and technologies supporting the cod process as of november 2002 .
+
+as depicted , the cod system can translate or convert legacy records by using middleware .
+
+in addition , middleware has been built into several existing systems so that they can establish connectivity and exchange data with the cod system through a common it infrastructure .
+
+this it infrastructure , called the enterprise application integration ( eai ) bus , is also implemented using middleware to route data between systems in a correct format .
+
+in addition , as part of the cod process , some schools have begun submitting pell grant and direct loan data using the xml - based common record .
+
+fsa hired accenture as its “modernization partner” to help carry out its modernization blueprint , including the implementation of the cod process .
+
+accenture is the prime contractor providing leadership of critical planning activities that are essential to the success of fsa's modernization .
+
+regarding the cod system part of fsa's modernization , fsa also hired an independent verification and validation contractor to review the initial release of this system , which was completed earlier this year .
+
+fsa has made progress in implementing the new cod process .
+
+in particular , it has begun implementing ( 1 ) its middleware solution in its it infrastructure and various existing systems , ( 2 ) the cod system , and ( 3 ) an xml - based common record .
+
+however , fsa's implementation of cod is behind schedule , and critical work remains to be completed .
+
+for example , the basic cod system was to be completed by mid - october 2002 ; however , only about three - quarters of the cod basic system requirements had been implemented as of october 23 , 2002 .
+
+in addition , fsa is not tracking whether it is achieving certain benefits because it is still in the process of defining applicable metrics to measure progress .
+
+without such tracking processes , fsa lacks critical information about whether it is achieving expected benefits .
+
+finally , fsa lacks assurance that it has captured and disseminated important lessons learned related to schools' implementation of the common record because it believes that its current ad hoc process is adequate .
+
+accordingly , the thousands of schools that have not yet implemented the common record may not benefit from the experience of those that have .
+
+fsa has made progress in implementing cod .
+
+the following are significant elements of the cod process that have been implemented: deployment of the eai bus .
+
+as a prerequisite to implementing cod , in late october 2001 , fsa deployed its middleware solution in an eai “bus” — an it infrastructure that uses middleware to access data from disparate systems , transform the data formats as necessary , and route the data to the appropriate requesting systems , thus enabling data exchange among disparate systems .
+
+the eai bus provides the set of technical capabilities necessary to integrate fsa's disparate systems .
+
+initial implementation of basic cod system ( release 1.x ) .
+
+on april 29 , 2002 , fsa went live with version 1.0 of the basic cod system .
+
+as of mid - november 2002 , fsa had released an additional five sub - versions of the cod system ( eg , version 1.1 ) .
+
+the cod system replaces the direct loan origination system and the recipient financial management system , and it currently processes files for all schools participating in the pell grant and direct loan programs .
+
+according to fsa , in the first 6 months of its operation , the cod system processed just under 16 million transactions , representing pell grant and direct loan awards totaling almost $10 billion to over 5 million recipients .
+
+implementation of middleware in selected systems .
+
+as of mid - november 2002 , fsa had built middleware into seven systems so that these systems can interact with the cod system through the eai bus .
+
+these systems include ( 1 ) the central processing system , which determines students' eligibility and award levels , and ( 2 ) the national student loan data system , which contains loan - and grant - level information and is used by schools to screen student aid applicants to identify ineligible borrowers .
+
+development and implementation of the common record .
+
+using xml , fsa developed and began implementing a common record that schools can use to submit student financial aid data to the cod system .
+
+the common record , designed with assistance from members of the national council of higher education loan programs and the postsecondary electronic standards council , consolidates multiple legacy file formats previously used by the pell grant and direct loan programs .
+
+although fsa has made progress in implementing the cod process , critical work remains to be completed .
+
+first , fsa is behind schedule in implementing the basic cod system .
+
+although fsa had planned to complete the basic cod system by mid - october 2002 , only about three - quarters of the cod basic system requirements had been implemented as of october 23 , 2002 .
+
+for example , as of early november 2002 , one of the basic business functions that remains to be implemented is to enable fsa to make automated adjustments in batches to school current funding levels .
+
+fsa now estimates that most of the remaining functionality will be completed by the end of september 2003 .
+
+according to fsa it and program officials , the implementation of the basic cod functionality was delayed to allow adequate time for testing to ensure the quality of the system .
+
+second , as of november 19 , 2002 , accenture reported several operational problems that needed to be addressed .
+
+for example , in some cases , the cod system was incorrectly processing school batch data that contained multiple change records for an individual student .
+
+according to cod and contractor officials , the causes of operational problems included unclear requirements and software design defects .
+
+an independent verification and validation contractor also found problems with the requirements and design aspects of release 1.0 .
+
+the cod contracting officer's representative characterized these operational problems as very serious and stated that they could impede operations and the delivery of future cod releases .
+
+this same official noted that fsa and accenture are currently undertaking efforts to address these problems .
+
+for example , fsa has established production teams composed of agency and contractor staff to address problems in specific areas .
+
+in addition , fsa has established a continuous improvement process to more rigorously manage its relationship with accenture .
+
+third , fewer postsecondary schools than planned have implemented the common record .
+
+fsa had estimated that 50 schools ( out of about 5,500 ) would implement the common record in fiscal year 2002 .
+
+however , as of november 26 , 2002 , only 22 schools had implemented and tested the common record with fsa .
+
+fsa cod officials attributed the fewer - than - expected number of schools using the common record to schools and vendors not being ready to implement it .
+
+fsa expects that the number of schools using the common record will be considerably higher during the next award year ( 2003 – 2004 ) because , by april 2003 , it plans to implement and test the common record with edexpress , a software application fsa distributes free of charge to about 3,000 schools for use in submitting data .
+
+in addition , fsa expects that all schools will be using the common record format by march 2004 , in time for the 2004 – 2005 award year .
+
+in its cod business case , fsa outlined five expected benefits: ( 1 ) reduced cost , ( 2 ) increased customer satisfaction , ( 3 ) increased employee satisfaction , ( 4 ) increased financial integrity , and ( 5 ) the integration and modernization of legacy systems .
+
+an important aspect of implementing an it investment cited by the office of management and budget and our it investment management guide is evaluating the results of the investment by determining whether such expected benefits are being achieved .
+
+however , as illustrated in table 1 , at this time fsa has only some of the data necessary to determine whether it is achieving all expected benefits .
+
+in particular , for the increased customer satisfaction and financial integrity benefits , fsa ( 1 ) has not fully defined the performance metrics to be used , ( 2 ) does not have all baseline data , and / or ( 3 ) is not fully tracking whether the benefits are being achieved .
+
+in these cases , fsa cod officials stated that they were in the process of developing relevant metrics , which would be tracked to measure the project's performance against expected benefits .
+
+however , until fsa develops these data and begins tracking actual benefits and comparing them with expected benefits , it will lack vital data with which to demonstrate actual investment results .
+
+fsa it officials also stated that they plan to have a contractor conduct a postimplementation review of the cod basic system in fiscal year 2003 , which is expected to look at the achievement of expected benefits .
+
+while this is an important initiative that could provide fsa with valuable information , it does not take the place of a continuing and systematic process of tracking actual benefits .
+
+according to our it investment management guide , another critical activity is establishing a process for developing and capturing lessons learned in a written product or knowledge base and disseminating them to decision - makers .
+
+lessons - learned mechanisms serve to communicate acquired knowledge more effectively and to ensure that beneficial information is factored into planning , work processes , and activities .
+
+lessons learned can be based on positive experiences that save money or on negative experiences that result in undesirable outcomes .
+
+fsa has recognized the importance of generating lessons learned in certain areas .
+
+for example , it has implemented a process for developing lessons related to managing the relationship between the agency and its prime contractor .
+
+however , fsa lacks such a process for capturing or disseminating lessons related to school migration to the common record .
+
+fsa cod officials stated that lessons learned pertaining to school migration to the common record are addressed through periodic discussions during biweekly conference calls with schools undergoing testing with fsa and during portions of various fsa - sponsored conferences .
+
+fsa cod officials stated that they believed this process for capturing and disseminating lessons learned was adequate .
+
+however , by relying on such an ad hoc process , fsa lacks assurance that it has captured and disseminated all key lessons learned related to schools' implementation of the common record and could overlook important improvements that could be made .
+
+in addition , schools that do not attend the conferences may not receive and benefit from the lessons identified in the initial phase of implementation .
+
+as a result , schools may encounter problems that could have been avoided or mitigated had they known of other schools' experiences .
+
+this could hamper fsa's ability to facilitate the transition of schools to the new common record and thus the agency's ability to fully implement the new cod process and achieve the expected benefits .
+
+in commenting on a draft of this report , fsa stated that it plans to provide lessons learned as part of a planned update to its school testing guide .
+
+while this is a positive step , it does not replace the need for mechanisms to continuously capture and disseminate acquired knowledge as schools implement the common record .
+
+table 2 includes examples of lessons learned provided by fsa at our request that were drawn from schools' initial implementation of the common record for the 2002 – 2003 award year .
+
+such information would be important for the thousands of schools that have not yet implemented the common record so that they can avoid problems during the common record implementation and testing processes .
+
+fsa has taken important steps toward achieving full implementation of the new cod process .
+
+however , critical actions , such as completing the basic functionality of the cod system and the implementation of the common record at thousands of affected schools , must still be undertaken .
+
+in addition , fsa has not yet fully established the metrics and processes to track actual benefits related to all of its expected benefits or the lessons that have been generated by the few schools that have implemented the common record thus far .
+
+by not tracking actual benefits , fsa lacks information that is critical to determining whether it is meeting all of its goals .
+
+further , not capturing and disseminating information to schools regarding lessons learned could make achieving these goals more difficult .
+
+to determine the extent to which the new cod process is achieving expected results related to customer satisfaction and financial integrity , we recommend that you direct fsa's chief operating officer to expeditiously develop metrics and baseline data to measure these benefits and develop a tracking process to assess the extent to which the expected results are being achieved .
+
+to ensure that the schools that have not yet implemented the common record benefit from the experiences of those that have , we recommend that you direct fsa's chief operating officer to establish a process for capturing lessons learned in a written product or knowledge base and for disseminating them to these schools .
+
+in providing written comments on our draft report , fsa's chief operating officer provided technical comments and updated information , but did not comment on our recommendations .
+
+specifically , the chief operating officer did not believe the report adequately portrayed the level of cod progress that had been made .
+
+in particular , she took issue with our using the completion of 75 percent of cod requirements as an indication of progress .
+
+although the chief operating officer did not disagree with the accuracy of this figure , she stated that fsa's informal analysis indicated that between 85 to 90 percent of cod functions had been implemented , which she believed was a better gauge of progress .
+
+we believe that we have accurately portrayed fsa's progress in implementing the cod process .
+
+first , since fsa's analysis was “informal,” and fsa's supporting documentation had limited detail that we could not validate , we do not agree that this should be the primary basis for an analysis of cod's progress .
+
+second , we included both the percentage of cod's requirements that had been implemented and fsa's estimate in our report .
+
+nevertheless , we modified our report to include additional data provided by fsa regarding the number of transactions processed by the cod system to further indicate progress .
+
+the chief operating officer agreed that the tracking of all of the expected benefits is not in place at this time , but stated that work is under way in this area .
+
+fsa also provided updated information and supporting documentation related to the tracking of some of the expected benefits .
+
+we made changes to the report reflecting this new information , as appropriate .
+
+the chief operating officer agreed that it is important and beneficial to communicate lessons learned , but stated that fsa's informal method for communicating lessons related to school migration to the common record worked well in the first year of cod implementation .
+
+fsa also noted that it plans to include lessons learned in a planned update to its school testing guide .
+
+we modified the report to reflect this initiative , but we do not agree that fsa's informal method or its plan to include lessons learned in its testing guide is adequate because these approaches do not provide a continuous process for actively capturing and disseminating lessons learned .
+
+as a result , some important lessons may be overlooked , and all schools may not be aware of potential problems associated with implementing the common record .
+
+fsa's written comments , along with our responses , are reproduced in appendix ii .
+
+we are sending copies of this report to the appropriate congressional committees , the secretary of education , the chief operating officer of education's office of federal student aid , and the director of the office of management and budget .
+
+this report will also be available at no charge on the gao web site at http: / / www.gao.gov .
+
+if you have any questions on matters discussed in this report , please contact me at ( 202 ) 512-9286 or linda j. lambert , assistant director , at ( 202 ) 512-9556 .
+
+we can also be reached by e - mail at pownerd@gao.gov and lambertl@gao.gov , respectively .
+
+other individuals making key contributions to this report included jason b. bakelar and anh q .
+
+le .
+
+legacy records ( mqseries ) ( mqseries ) ( mqseries ) single common record file ( xml ) 18 legacy files ( secured ftp ) ftp file transfer protocol loweb loan origination web nslds national student loan data system peps postsecondary education participants system xml extensible markup language this is a temporary interface .
+
+dlos is targeted to be retired in fiscal year 2003 .
+
+mqseries is ibm's proprietary message format .
+
+cthis is an information technology infrastructure that enables data exchange among disparate systems .
+
+the following are gao's comments on the department of education's office of federal student aid's letter dated december 18 , 2002 .
+
+1 .
+
+we revised the draft report title to clarify that our follow - up review was focused on assessing fsa's progress in implementing the cod process .
+
+2 .
+
+information related to operational problems was contained in the draft report .
+
+we asked the cod contracting officer's representative to characterize these problems , and he stated that they were very serious .
+
+in addition , we confirmed the seriousness of these problems at the conclusion of our review with fsa it and program officials .
+
+3 .
+
+we modified this report to include data on the number of transactions processed .
+
+we also modified our report to clarify that all schools participating in the pell grant and / or direct loan programs currently use the cod system .
+
+4 .
+
+we do not agree that the report implies that fsa's use of a phased - in approach in implementing the common record increases risks .
+
+instead , this report notes that the implementation is not yet complete .
+
+5 .
+
+we believe that we have accurately portrayed fsa's progress in implementing the cod process .
+
+first , since fsa's analysis was “informal,” and fsa's supporting documentation had limited detail that we could not validate , we do not agree that the cod development manager's functionality estimate should be the primary basis for an analysis of cod's progress .
+
+second , we included both the percentage of cod's requirements that had been implemented and fsa's estimate in our report .
+
+6 .
+
+we modified our report to reflect this updated information as appropriate .
+
+7 .
+
+we do not agree that fsa's informal process for capturing and disseminating lessons learned was adequate because ( 1 ) it may lead to important lessons being overlooked and ( 2 ) all schools may not be aware of potential problems associated with implementing the common record .
+
+8 .
+
+we modified this report to reflect that fsa plans to include lessons learned in a planned update to its school testing guide .
+
+while this is a positive step , it does not replace the need for mechanisms to continuously capture and disseminate acquired knowledge as schools implement the common record .
+

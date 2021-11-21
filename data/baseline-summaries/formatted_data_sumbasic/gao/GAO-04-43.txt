@@ -1,0 +1,940 @@
+to improve its ability to manage its contractors , which is an area that we designated as high risk in 1990 , and continue to do so today , the national aeronautics and space administration ( nasa ) began its third attempt at modernizing its financial management systems in april 2000 .
+
+this modernization effort , known as the integrated financial management program ( ifmp ) , is expected to produce an integrated , nasa - wide business systems environment by acquiring and incrementally implementing commercial hardware and software components .
+
+our research of successful public - and private - sector organizations shows that attempting a modernization program , like ifmp , without having and using a well - defined modernization blueprint , commonly called an enterprise architecture , results in operations and systems that are duplicative , are not well integrated , are unnecessarily costly to maintain and interface , and do not effectively optimize mission performance .
+
+in april 2003 , we issued the first in a series of reports on the program , in which we concluded that nasa's approach to acquiring and implementing ifmp components had and would continue to introduce risk and increase the chances that the agency would fall short of meeting its program goal .
+
+because of the importance of ifmp to overall mission performance , you asked us to continue our review .
+
+specifically , you requested that we determine whether ( 1 ) nasa has been acquiring and implementing ifmp in the context of an enterprise architecture , ( 2 ) the core financial module as implemented in june 2003 would satisfy nasa's key external reporting requirements , and ( 3 ) nasa's life - cycle cost estimate , program schedule , and funding reserves for ifmp were reasonable .
+
+we are responding to the second two issues in separate reports , as well as summarizing our findings on all three areas in an additional report .
+
+this report addresses the first issue — whether nasa had and was using an enterprise architecture to acquire and implement ifmp .
+
+to accomplish this , we compared the architecture documents that nasa provided us , and represented as being used to manage ifmp , against published guidance governing the content of a well - defined architecture .
+
+we also compared nasa's architecture development , maintenance , and implementation practices against our enterprise architecture management maturity framework .
+
+details on our objective , scope , and methodology are in appendix i .
+
+nasa's mission encompasses human exploration and development of space , the advancement and communication of scientific knowledge , and research and development of aeronautics and space technologies .
+
+its activities span a broad range of complex and technical endeavors — from investigating the composition , evaluation , and resources of mars ; to working with the agency's international partners to complete and operate the international space station ; to providing satellite and aircraft observations of earth for scientific and weather forecasting purposes ; to developing new technologies designed to improve air safety .
+
+nasa's workforce comprises over 19,000 civil service employees , primarily located at its headquarters and 10 major field centers , and more than 40,000 contractors and grantees , who collectively perform a wide range of roles and responsibilities .
+
+table 1 describes the roles and responsibilities of nasa's headquarters and field centers .
+
+transcending nasa's organizational components are six strategic mission enterprises or business areas , each with a unique set of strategic goals , objectives , and implementation strategies focused on the requirements of the agency's customers .
+
+each enterprise draws on the capabilities of several centers so that each center contributes to multiple enterprises .
+
+table 2 summarizes nasa's strategic enterprises and the contributing centers .
+
+to execute its mission responsibilities , nasa performs numerous management functions , such as contract management , financial management , and human capital management , relying heavily on information technology ( it ) to assist it in performing these functions .
+
+for fiscal year 2003 , the agency estimated that it would spend approximately $2.3 billion on it systems and services .
+
+of this amount , nasa anticipated spending $32.5 million on it security and $11 million on enterprise architecture .
+
+in january 2003 , we reported that nasa faced challenges that threaten its ability to effectively run its largest programs .
+
+we also reported that because these challenges are rooted in nasa's culture and long - standing ways of doing business , the agency needed to make a major transformation .
+
+in particular , we identified the following four performance and accountability challenges facing the agency: strengthening strategic human capital management .
+
+nasa is facing shortages in its workforce , which could likely worsen as the workforce continues to age and the pipeline of talent shrinks .
+
+this dilemma is more pronounced among areas crucial to nasa's ability to perform its mission , such as engineering , science , and it .
+
+nasa is addressing this challenge through strategic planning , through a new workforce planning and analysis system , and by requesting additional personnel flexibilities , among other initiatives .
+
+controlling international space station costs .
+
+development costs for this project have soared to the point where nasa has had to cut back the program substantially , including reducing construction , the number of crew members , and scientific research .
+
+these cutbacks have raised concern among nasa's international partners , who have a large stake in the scientific research to be performed on the station .
+
+although nasa is instituting management and cost - estimating reforms , it still needs to reach agreement with its partners on its planned cutbacks .
+
+reducing costs of space launches .
+
+the administration submitted an amendment to nasa's fiscal year 2003 budget request , which ( 1 ) extends the life of the space shuttle and enhances its reliability , ( 2 ) funds the development of a new vehicle for ferrying crew to and from the space station , and ( 3 ) alters the time frame for a shuttle replacement .
+
+accomplishing these and other goals related to space launches will be difficult and risky in light of the technology advances that nasa would like to pursue and the high degree of communication and coordination required among industry and government partners .
+
+improving contract management .
+
+nasa spends most of its funds on acquisitions .
+
+yet , for many years , the agency has been unable to oversee contracts effectively , principally because it lacked accurate and reliable information on contract spending and placed little emphasis on end results , product performance , and cost control .
+
+nasa has addressed many acquisition - related weaknesses and is beginning to tackle one of its most formidable barriers to sound contract management — the lack of a modern , integrated financial management system .
+
+considerable work remains to be done since nasa is only in the early stages of designing and implementing this new system , and nasa reported that it is already facing challenges in terms of cost , interoperability , and security .
+
+we also reported that nasa's ability to collect , maintain , and report the full cost of its projects and programs is weakened by diverse and often incompatible and nonintegrated center - level accounting systems ; uneven and nonstandard cost - reporting capabilities ; decentralized policies , procedures , and practices that are unique to its field centers ; nonstandard data formats ; and online financial information that is not readily available to program managers .
+
+thus , it is difficult to ensure that contracts are being efficiently and effectively implemented and that budgets are executed as planned .
+
+this lack of integration and standardization also impedes the agency's ability to provide data required for external reporting purposes .
+
+recognizing the need for change , nasa's administrator articulated a new vision for the agency — one that is science - driven , not destination - driven .
+
+to better enable nasa to fulfill this vision , the agency is taking on a major transformation aimed at eliminating stovepipes , becoming more integrated and results - oriented , and reducing risks while working more economically , efficiently , and effectively .
+
+a key transformation effort is ifmp , which is nasa's third attempt in more than 12 years to modernize its financial management processes and systems .
+
+nasa spent about $180 million on its two prior failed efforts , and nasa's data indicate that the agency will spend approximately $983 million through 2010 for its current effort , ifmp , which it began in april 2000 .
+
+ifmp is expected to produce an integrated , nasa - wide financial management system by acquiring and incrementally implementing commercial software packages and related hardware and software components .
+
+the main objective of ifmp is to improve the financial , physical , and human capital management processes throughout the agency .
+
+according to nasa , once fully implemented , ifmp will reengineer nasa's business operations around industry “best practices” and use enabling technology to provide necessary management information to support implementation of the agency's strategic plan .
+
+to meet this objective and support these crosscutting activities , nasa has identified the following business drivers for the program: providing timely , consistent , and reliable information for management improving nasa's accountability and enabling full cost management ; achieving increased efficiencies and operating effectively ; exchanging information with customers and stakeholders in a timely and reliable way ; and attracting and retaining a world - class workforce .
+
+the ifmp system is to consist of nine modules supporting a range of functionality ( see table 3 ) .
+
+as structured , nasa is the ifmp system integrator and thus is responsible for acquiring and integrating the multiple commercial components and ensuring that they collectively perform in a manner that meets the defined requirements .
+
+table 4 describes the key ifmp program management positions / entities and their respective responsibilities .
+
+in april 2003 , we reported that nasa was not following key best practices for acquiring and implementing ifmp .
+
+for example , the agency had not established an analytical capability to understand and proactively manage the dependencies among ifmp commercial components .
+
+further , in implementing the core financial module component , nasa had deferred addressing the needs of key systems users and had not properly developed detailed system requirements .
+
+we concluded that the agency was at risk of making a substantial investment in a system that would fall far short of its stated goal of providing meaningful and reliable information to support effective program management and congressional oversight .
+
+to address its problems , we recommended that nasa ( 1 ) develop and implement a short - term plan to identify and mitigate the risks currently associated with relying on already deployed ifmp commercial components and to expeditiously stabilize these components' operational capability and performance ; ( 2 ) as part of the short - term plan , develop and properly document requirements , reengineer acquisition management processes , and fully engage stakeholders — including program managers , cost estimators , and the congress — in the development of user requirements ; and ( 3 ) develop a longer - term strategy for acquiring additional ifmp components that includes implementing a methodology for analyzing commercial system component dependencies .
+
+nasa concurred with the need for a short - term plan but disagreed with most of our findings and recommendations related to user needs and requirements and testing .
+
+nasa also agreed with the importance of having an approach for acquiring additional ifmp components , but stated that it already has an effective strategy in place .
+
+in may 2003 , nasa's oig reported that the core financial module software , which had been deployed at six nasa centers , had the capability to implement full cost accounting .
+
+however , before this implementation could take place , nasa needed to resolve several complex accounting and costing issues .
+
+these issues involved how to allocate service and general and administrative costs , civil service costs , and unassigned costs .
+
+once these accounting and costing issues were resolved , the oig reported that nasa would have to configure the ifmp software to reflect the changes .
+
+the oig recommended that nasa revise the ifmp plans to include ( 1 ) time frames and milestones for completing steps to implement full cost accounting , including addressing and resolving the cost issues identified above ; ( 2 ) identification of the personnel and other resources necessary to perform the steps within the established time frames ; and ( 3 ) senior management approval and support of these additional procedures .
+
+ifmp officials concurred with the recommendations and plan to have all phases of full cost accounting implemented by october 1 , 2003 .
+
+ ( nasa reported that full implementation of the core financial module at all centers was completed in june 2003. ) .
+
+effective use of enterprise architectures , or modernization blueprints , is a trademark of successful public and private organizations .
+
+for a decade , we have promoted the use of architectures to guide and constrain systems modernization , recognizing them as a crucial means to a challenging goal: agency operational structures that are optimally defined in both business and technological environments .
+
+the congress , the office of management and budget ( omb ) , and the federal chief information officer ( cio ) council have also recognized the importance of an architecture - centric approach to modernization .
+
+the clinger - cohen act of 1996 mandates that an agency's cio develop , maintain , and facilitate the implementation of architectures as a means for managing the integration of business processes and supporting systems .
+
+further , omb has issued guidance that , among other things , requires system investments to be consistent with these architectures .
+
+an enterprise architecture provides a clear and comprehensive picture of an entity , whether it is an organization ( eg , federal department or agency ) or a functional or mission area that cuts across more than one organization ( eg , financial management ) .
+
+this picture consists of snapshots of both the enterprise's current or “as is” operational and technological environment and its target or “to be” environment , as well as a capital investment road map for transitioning from the current to the target environment .
+
+these snapshots further consist of “views,” which are basically one or more architecture products that provide conceptual or logical representations of the enterprise .
+
+the suite of products and their content that form a given entity's enterprise architecture are largely governed by the framework used to develop the architecture .
+
+since the 1980's , various frameworks have emerged and been applied .
+
+for example , john zachman developed a structure or “framework” for defining and capturing an architecture .
+
+this framework provides for six windows from which to view the enterprise , which zachman terms “perspectives” on how a given entity operates: those of ( 1 ) the strategic planner , ( 2 ) the system user , ( 3 ) the system designer , ( 4 ) the system developer , ( 5 ) the subcontractor , and ( 6 ) the system itself .
+
+zachman also proposed six abstractions or models associated with each of these perspectives: these models cover ( 1 ) how the entity operates , ( 2 ) what the entity uses to operate , ( 3 ) where the entity operates , ( 4 ) who operates the entity , ( 5 ) when entity operations occur , and ( 6 ) why the entity operates .
+
+in september 1999 , the federal cio council published the federal enterprise architecture framework ( feaf ) , which is intended to provide federal agencies with a common construct for their respective architectures , thereby facilitating the coordination of common business processes , technology insertion , information flows , and system investments among federal agencies .
+
+feaf describes an approach , including models and definitions , for developing and documenting architecture descriptions for multiorganizational functional segments of the federal government .
+
+similar to most frameworks , feaf's proposed models describe an entity's business , data necessary to conduct the business , applications to manage the data , and technology to support the applications .
+
+more recently , omb established the federal enterprise architecture program management office to develop a federated enterprise architecture according to a collection of five “reference models:” the business reference model is intended to describe the business operations of the federal government independent of the agencies that perform them , including defining the services provided to state and local governments .
+
+the performance reference model is to provide a common set of general performance outputs and measures for agencies to use to achieve business goals and objectives .
+
+the data and information reference model is to describe , at an aggregate level , the types of data and information that support program and business line operations , and the relationships among these types .
+
+the service component reference model is to identify and classify it service ( i.e. , application ) components that support federal agencies and promote the reuse of components across agencies .
+
+the technical reference model is to describe how technology is supporting the delivery of service components , including relevant standards for implementing the technology .
+
+these various enterprise architecture frameworks differ in their nomenclatures and modeling approach .
+
+however , the frameworks consistently provide for defining an enterprise's operations in both ( 1 ) logical terms , such as interrelated business processes and business rules , information needs and flows , and work locations and users , and ( 2 ) technical terms , such as hardware , software , data , communications , and security attributes and performance standards .
+
+the frameworks also provide for defining these perspectives for both the enterprise's current or “as is” environment and its target or “to be” environment , as well as a transition plan for moving from the “as is” to the “to be” environment .
+
+the importance of developing , implementing , and maintaining an enterprise architecture is a basic tenet of both organizational transformation and it management .
+
+managed properly , an enterprise architecture can clarify and help optimize the interdependencies and relationships among an organization's business operations and the underlying it infrastructure and applications that support these operations .
+
+employed in concert with other important management controls , such as portfolio - based capital planning and investment control practices , architectures can greatly increase the chances that organizations' operational and it environments will be configured to optimize mission performance .
+
+our experience with federal agencies has shown that investing in it without defining these investments in the context of an architecture often results in systems that are duplicative , not well integrated , and unnecessarily costly to maintain and interface .
+
+nasa has thus far acquired and deployed ifmp without a sufficiently complete enterprise architecture to guide and constrain program investment decisions .
+
+during the course of our review of ifmp , nasa took steps to correct this situation by establishing key architecture management capabilities and undertaking the development of an initial version of an enterprise architecture that , according to the chief technology officer , will provide some missing contextual information ( operational and technical ) .
+
+however , nasa has not established other key architecture management capabilities , such as designating an accountable corporate entity to lead the architecture effort , having an approved policy for developing and maintaining the architecture , and implementing an independent verification and validation function to provide needed assurance that architecture products and architecture management processes are effective .
+
+the chief technology officer agreed that nasa needs an effective enterprise architecture program and stated that efforts are under way to establish one .
+
+based on our experience in reviewing other agencies , not having an effective enterprise architecture program is attributable to , among other things , limited senior management understanding and commitment and cultural resistance to having and using an architecture .
+
+the result is an inability to implement modernized systems in a way that minimizes overlap and duplication and maximizes integration and mission support .
+
+as previously discussed , the various frameworks used to develop architecture products consistently provide for describing a given enterprise in both logical ( eg , business , performance , application , information ) and technical ( eg , hardware , software , data ) terms , and for doing so for the enterprise's current or “as is” environment and its target or “to be” environment ; these frameworks also provide for defining a capital investment sequencing plan to transition from the “as is” to the “to be” environment .
+
+however , the frameworks do not prescribe the degree to which the component parts should be described to be considered correct , complete , understandable , and usable — essential attributes of any architecture .
+
+this is because the depth and detail of the descriptive content depends on what the architecture is to be used for ( i.e. , its intended purpose ) .
+
+nasa's stated intention is to use an architecture as the basis for agencywide business transformation and systems modernization , including ifmp .
+
+this purpose necessitates that nasa's architecture products provide considerable depth and detail , as well as logical and rational structuring and internal linkages .
+
+more specifically , it means that these architecture products should contain sufficient scope and detail so that , for example , ( 1 ) duplicative business operations and systems are eliminated ; ( 2 ) business operations are standardized and integrated , and supporting systems are interoperable ; ( 3 ) use of enterprisewide services is maximized ; and ( 4 ) related shared solutions are aligned , like omb's e - government initiatives .
+
+moreover , this scope and detail should be accomplished in a way that ( 1 ) provides flexibility in adapting to changes in the enterprise's internal and external environments ; ( 2 ) facilitates its usefulness and comprehension by varying perspectives , users , or stakeholders ; and ( 3 ) provides for properly sequencing investments to recognize , for example , the investments' respective dependencies and relative business value .
+
+the architecture artifacts that nasa's chief technology officer provided to us and represented as those used to date in acquiring and implementing ifmp do not contain sufficient context ( depth and scope of agencywide operational and technical requirements ) to effectively guide and constrain agencywide business transformation and systems modernization efforts .
+
+more specifically , these artifacts do not satisfy the most basic characteristics of architecture content , such as clearly distinguishing between artifacts that represent the “as is” and the “to be” environments .
+
+the agency's chief technology officer agreed that these existing architecture products do not clearly distinguish between the two environments .
+
+therefore , for purposes of our analyses , the chief technology officer told us to treat the architecture products as descriptive of the “to be” environment , and to assume that any “as is” content in these products represented capability intended for reuse in the future environment .
+
+this characterization is consistent with nasa contractual documents associated with developing these architecture products .
+
+on the basis of this characterization , we did not assess these artifacts for their “as is” content and accepted the chief technology officer's acknowledgment that this content was missing .
+
+instead , we focused on the “to be” content and the transition plan .
+
+to assess the “to be” architecture products , we divided them into five architectural components similar to those in omb's architecture reference models: the business , information / data , services / applications , technical , and performance components ; we added security as a sixth component because of its recognized importance and relevance to the other five .
+
+we then compared architecture products nasa used to date for ifmp to relevant criteria governing the content of key architectural elements for the transition plan and these six components of the “to be” architecture .
+
+based on this comparison , we determined whether the architecture products generally satisfied , did not satisfy , or partially satisfied each architectural element .
+
+overall , we found that nasa's “to be” architecture products did not satisfy 18 of 35 ( 51 percent ) key elements and partially satisfied the remaining 17 ( 49 percent ) , and its transition plan partially satisfied 1 ( 25 percent ) of 4 elements and did not satisfy the remaining 3 ( 75 percent ) ( see fig .
+
+1 ) .
+
+this means that the architecture products that nasa used to date in acquiring and implementing ifmp have not provided an adequate context in which to wisely invest in the program .
+
+in general , these products were limited to descriptions of ( 1 ) technology characteristics , which is one of many enterprise architecture elements , and ( 2 ) one of nine business operations ( finance and accounting ) .
+
+our specific analysis of “to be” and transition plan products follows .
+
+“to be” products: a “to be” architecture is intended to capture the vision of future business operations and supporting technology .
+
+it should describe the desired capabilities , structures ( eg , entities , activities , and roles ) , and relationships among these structures at a specified point ( s ) in the future .
+
+the “to be” architecture should show , for example , future business processes , information needs , and supporting infrastructure and be fiscally and technologically achievable .
+
+according to relevant guidance , the “to be” architecture should contain , among other things , a description of ( 1 ) the future business operations that will be performed to support the organization's mission , including the entities or people that will perform the functions , processes , and activities , and the locations where the functions , processes , and activities will be performed ; ( 2 ) the logical database model that is to be used to guide the creation of the physical databases where information will be stored ; ( 3 ) the systems to be developed or acquired to support the business operations ; ( 4 ) the physical infrastructure ( eg , hardware and software ) that will be needed to support the business systems ; ( 5 ) the organizations that will be accountable for implementing security and the tools to be used to secure and protect systems and data ; and ( 6 ) the metrics that will be used to evaluate the effectiveness of mission operations and supporting system performance in achieving mission goals and objectives .
+
+by including these elements , the architecture would provide nasa with the necessary frame of reference for engineering business processes and systems in a manner that supports agencywide goals and objectives , such as ensuring that decision makers routinely receive timely , accurate , and reliable information .
+
+the “to be” architecture products used to date in acquiring and implementing ifmp provide minimal descriptive content .
+
+on the positive side , they contain a description of one future business operation ( i.e. , finance and accounting ) .
+
+however , they do not describe other future business operations ( eg , asset management and human resources ) .
+
+in addition , they do not describe ( 1 ) finance and accounting in terms of the entities or people who will perform the functions , processes , and activities and the locations where the functions , processes , and activities will be performed ; ( 2 ) the logical database model to be used to create the physical databases ; ( 3 ) the actual systems to be developed or acquired to support future business operations ; ( 4 ) the physical infrastructure ( eg , hardware and software ) that will be needed to support the business systems ; ( 5 ) the organizations that will be accountable for implementing security and the tools to be used to secure and protect systems and data ; and ( 6 ) the metrics that will be used to evaluate the effectiveness of mission operations and supporting system performance in achieving mission goals and objectives .
+
+without this information , the organization will not have a common vision and frame of reference for defining a transition plan to guide and constrain the transformation of business operations and associated capital investments and , thus , will be unable to effectively leverage technology to orchestrate logical and systematic change and optimize enterprisewide mission performance .
+
+detailed results of our analysis are provided in appendix ii .
+
+transition plan products: according to relevant guidance and best practices , the transition plan should provide a temporal road map for moving from the “as is” to the “to be” environment .
+
+an important step in developing a well - defined transition plan is a gap analysis — comparison of the “as is” and “to be” architectures to identify differences .
+
+other important steps include analyzing technology opportunities and marketplace trends , as well as assessing fiscal and budgetary realities and institutional acquisition and development capabilities .
+
+with the use of such analyses and assessments , options are explored and decisions are made regarding which legacy systems to retain , modify , or retire and which new systems to introduce on a tactical ( temporary ) basis or to pursue as strategic solutions .
+
+accordingly , transition plans identify legacy , migration , and new systems and sequence them to show , for example , the phasing out and termination of systems and capabilities and the timing of the introduction of new systems and capabilities , and they do so in light of resource constraints , such as budget , people , acquisition / development process maturity , and associated time frames .
+
+the transition plan artifacts that nasa relied on in acquiring and implementing ifmp generally do not possess these attributes .
+
+specifically , they do not ( 1 ) provide a gap analysis identifying the needed changes to current business processes and systems ; ( 2 ) identify all of the systems that will not become part of the “to be” architecture , as well as the time frames for phasing out these systems ; ( 3 ) show a time - based strategy for replacing legacy systems , including identifying intermediate ( i.e. , migration ) systems that may be temporarily needed ; and ( 4 ) define the resources ( eg , funding and staff ) needed to transition to the target environment .
+
+the result is that nasa has not had a meaningful and reliable basis for managing the disposition of its systems or for sequencing the introduction of modernized business operations and supporting systems .
+
+detailed results of our analysis appear in appendix ii .
+
+the chief technology officer agreed that the architecture products used to date to acquire and implement ifmp do not provide sufficient scope and content to constitute a well - defined enterprise architecture .
+
+based on our experience in reviewing other agencies , not having an effective enterprise architecture program is attributable to , among other things , limited senior management understanding and commitment and cultural resistance to having and using an architecture .
+
+our experience with federal agencies has shown that attempting to define and build major it systems without first completing an enterprise architecture often results in it systems that are duplicative , are not well integrated , are unnecessarily costly to maintain and interface , and do not effectively optimize mission performance .
+
+in fact , nasa's oig recently reported that the agency would need to resolve several accounting and costing issues before the ifmp core financial module , which is to implement nasa's finance and accounting business process , would be able to provide full cost - accounting capabilities as envisioned .
+
+to accomplish this , the agency will have to reconfigure the ifmp software to reflect these changes , resulting in system rework and additional associated costs that could have been prevented .
+
+beyond this known rework , additional corrective action could be necessary to address any misalignment between already implemented ifmp system components and nasa's just - released initial version of an enterprise architecture .
+
+specifically , the chief technology officer provided us with an initial version of a nasa enterprise architecture on september 24 , 2003 , which was after we completed our audit work .
+
+according to this official , although this initial version of the architecture is incomplete , it does provide some of the missing contextual information ( operational and technical ) that we had identified during our review .
+
+the official also stated that future versions of the architecture are to be issued quarterly through june 2004 and semiannually thereafter , and that plans are currently being developed for assessing ifmp's alignment with the architecture .
+
+the ifmp deputy program manager affirmed these plans for assessing ifmp's alignment .
+
+in the likely event that any misalignment is found , nasa will be faced with additional system rework demands .
+
+as nasa proceeds with its enterprise architecture effort , it is critical that it employs rigorous and disciplined management practices in doing so .
+
+such practices form the basis of our architecture management maturity framework , which specifies by stages the key architecture management controls that are embodied in federal guidance and best practices , provides an explicit benchmark for gauging the effectiveness of architecture management , and provides a road map for making improvements .
+
+each of the five stages is described below .
+
+1 .
+
+creating enterprise architecture awareness .
+
+the organization does not have plans to develop and use an architecture , or it has plans that do not demonstrate an awareness of the value of having and using an architecture .
+
+while stage 1 agencies may have initiated some architecture activity , these agencies' efforts are ad hoc and unstructured , lack institutional leadership and direction , and do not provide the management foundation necessary for successful architecture development .
+
+2 .
+
+building the enterprise architecture management foundation .
+
+the organization recognizes that the architecture is a corporate asset by vesting accountability for it in an executive body that represents the entire enterprise .
+
+at this stage , an organization assigns architecture management roles and responsibilities and establishes plans for developing enterprise architecture products and for measuring program progress and product quality ; it also commits the resources necessary for developing an architecture — people , processes , and tools .
+
+3 .
+
+developing the enterprise architecture .
+
+the organization focuses on developing architecture products according to the selected framework , methodology , tool , and established management plans .
+
+roles and responsibilities assigned in the previous stage are in place , and resources are being applied to develop actual enterprise architecture products .
+
+the scope of the architecture has been defined to encompass the entire enterprise , whether organization - based or function - based .
+
+4 .
+
+completing the enterprise architecture .
+
+the organization has completed its enterprise architecture products , meaning that the products have been approved by the architecture steering committee or an investment review board , and by the cio .
+
+further , an independent agent has assessed the quality ( i.e. , completeness and accuracy ) of the architecture products .
+
+additionally , evolution of the approved products is governed by a written architecture maintenance policy approved by the head of the organization .
+
+5 .
+
+leveraging the enterprise architecture to manage change .
+
+the organization has secured senior leadership approval of the enterprise architecture products and a written institutional policy stating that it investments must comply with the architecture , unless granted an explicit compliance waiver .
+
+further , decision makers are using the architecture to identify and address ongoing and proposed it investments that are conflicting , overlapping , not strategically linked , or redundant .
+
+also , the organization tracks and measures architecture benefits or return on investment , and adjustments are continuously made to both the architecture management process and the enterprise architecture products .
+
+for stage 2 , our framework specifies nine key practices or core elements that are necessary to provide the management foundation for successfully launching and sustaining an architecture effort .
+
+examples of stage 2 core elements are described below .
+
+establish a committee or group representing the enterprise that is responsible for directing , overseeing , or approving the enterprise architecture .
+
+this committee should include executive - level representatives from each line of business , and these representatives should have the authority to commit resources and enforce decisions within their respective organizational units .
+
+by establishing this enterprisewide responsibility and accountability , the agency demonstrates its commitment to building the management foundation and obtaining buy - in from across the organization .
+
+appoint a chief architect .
+
+the chief architect should be responsible and accountable for the enterprise architecture , supported by the architecture program office , and overseen by the architecture steering committee .
+
+the chief architect , in collaboration with the cio , the architecture steering committee , and the organizational head , is instrumental in obtaining organizational buy - in for the enterprise architecture , including support from the business units , as well as in securing resources to support architecture management functions , such as risk management , configuration management , quality assurance , and security management .
+
+use a framework , methodology , and automated tool to develop the enterprise architecture .
+
+these elements are important because they provide the means for developing the architecture in a consistent and efficient manner .
+
+the framework provides a formal structure for representing the enterprise architecture , while the methodology is the common set of procedures that the enterprise is to follow in developing the architecture products .
+
+the automated tool serves as a repository where architectural products are captured , stored , and maintained .
+
+develop an architecture program management plan .
+
+this plan specifies how and when the architecture is to be developed .
+
+it includes a detailed work breakdown structure ; resource estimates ( eg , funding , staffing , and training ) ; performance measures ; and management controls for developing and maintaining the architecture .
+
+the plan demonstrates the organization's commitment to managing architecture development and maintenance as a formal program .
+
+allocate adequate resources .
+
+an organization needs to have the resources ( funding , people , tools , and technology ) to establish and effectively manage its architecture .
+
+this includes , among other things , identifying and securing adequate funding to support architecture activities , hiring and retaining the right people , and selecting and acquiring the right tools and technology to support activities .
+
+our framework similarly identifies key architecture management practices associated with later stages of architecture management maturity .
+
+for example , at stage 3 , the stage at which organizations focus on architecture development activities , organizations need to satisfy six core elements .
+
+examples of these core elements are discussed below .
+
+issue a written and approved organization policy for development of the enterprise architecture .
+
+the policy defines the scope of the architecture , including the requirement for a description of the baseline and target architecture , as well as an investment road map or sequencing plan specifying the move between the two .
+
+this policy is an important means for ensuring enterprisewide commitment to developing an enterprise architecture and for clearly assigning responsibility for doing so .
+
+ensure that enterprise architecture products are under configuration management .
+
+this involves ensuring that changes to products are identified , tracked , monitored , documented , reported , and audited .
+
+configuration management maintains the integrity and consistency of products , which is key to enabling effective integration among related products and for ensuring alignment between architecture artifacts .
+
+at stage 4 , during which organizations focus on architecture completion activities , organizations need to satisfy eight core elements .
+
+examples of these core elements are described below .
+
+ensure that enterprise architecture products and management processes undergo independent verification and validation .
+
+this core element involves having an independent third party — such an as internal audit function or contractor that is not involved with any of the architecture development activities — verify and validate that the products were developed in accordance with architecture processes and product standards .
+
+doing so provides organizations with needed assurance of the quality of the architecture .
+
+ensure that business , performance , information / data , application / service , and technology descriptions address security .
+
+an organization should explicitly and consistently address security in its business , performance , information / data , application / service , and technology architecture products .
+
+because security permeates every aspect of an organization's operations , the nature and substance of institutionalized security requirements , controls , and standards should be captured in the enterprise architecture products .
+
+at stage 5 , during which the focus is on architecture maintenance and implementation activities , organizations need to satisfy eight core elements .
+
+examples of these core elements are described below .
+
+make the enterprise architecture an integral component of the it investment management process .
+
+because the road map defines the it systems that an organization plans to invest in as it transitions from the “as is” to the “to be” environment , the enterprise architecture is a critical frame of reference for making it investment decisions .
+
+using the architecture when making such decisions is important because organizations should approve only those investments that move the organization toward the “to be” environment , as specified in the road map .
+
+measure and report return on enterprise architecture investment .
+
+like any investment , the enterprise architecture should produce a return on investment ( i.e. , a set of benefits ) , and this return should be measured and reported in relation to costs .
+
+measuring return on investment is important to ensure that expected benefits from the architecture are realized and to share this information with executive decision makers , who can then take corrective action to address deviations from expectations .
+
+table 5 summarizes our framework's five stages and the associated core elements for each stage .
+
+the state of nasa's implementation of key enterprise architecture management practices , conditions , and structures currently places the agency at stage 1 of our maturity framework .
+
+specifically , it has satisfied all but one of the core elements associated with building the architecture management foundation — stage 2 of our framework — but only about 23 percent ( 5 of the 22 ) of the core elements associated with stages 3 , 4 , and 5 .
+
+according to our framework , effective architecture management is generally not achieved until an enterprise has a completed and approved architecture that is being effectively maintained and is being used to leverage organizational change and support investment decision making ; having these characteristics is equivalent to having satisfied all stage 3 core elements and many stage 4 and 5 elements .
+
+regarding stage 2 core elements , nasa has , for example , recently established a program office , assigned a chief architect , and selected a framework ( zachman ) and automated tools ( eg , the rational rose by rational software corporation / ibm software group ) .
+
+however , the agency has not satisfied a stage 2 core element that is critical to effective architecture management .
+
+specifically , a committee or group representing the enterprise has not yet been established to guide , direct , or approve the architecture .
+
+instead , the cio is guiding the architecture development effort .
+
+having such a corporate entity is critical to overcoming cultural resistance to using an enterprise architecture .
+
+without such an entity to lead and be accountable for the architectural effort , there is increased risk that the architecture will not represent a corporate decision - making tool and will not be viewed and endorsed as an agencywide asset .
+
+concerning stage 3 , nasa has not satisfied three of six core elements .
+
+for example , the agency does not have a written and approved policy for architecture development , which is a stage 3 core element .
+
+without such a policy that , for example , identifies the major players in the development process and provides for architecture guidance , direction , and approval , nasa will be challenged in overcoming cultural resistance to using an enterprise architecture and achieving agencywide architecture commitment and support .
+
+the agency also has yet to implement numerous stage 4 and 5 core elements .
+
+for example , nasa has not ( 1 ) documented and approved a policy for architecture maintenance , ( 2 ) implemented an independent verification and validation function that covers architecture products and architecture management processes , and ( 3 ) made the architecture an integral component of its it investment management process .
+
+ ( the detailed results of our assessment of nasa's satisfaction of each of the stages and associated core elements are provided in app .
+
+iii. ) .
+
+according to the chief technology officer , the agency recognizes the importance of having rigorous and disciplined architecture management controls and is in the process of establishing them .
+
+our research of successful organizations and experience in reviewing other agency enterprise architecture efforts shows that not having these controls is , among other things , a function of limited senior management understanding of and commitment to an enterprise architecture and cultural resistance to having and using one .
+
+until such barriers are addressed , and effective architecture management structures and processes are established , it is unlikely that any agency will be able to produce and maintain a complete and enforceable architecture or implement modernized systems in a way that minimizes overlap and duplication and maximizes integration and mission support .
+
+nasa's acquisition and implementation of six major ifmp system components outside the context of an enterprise architecture was not a prudent decision .
+
+such a systems modernization approach unnecessarily increases the risk that system components will not effectively and efficiently support agencywide operations , which in turn leads to costly system rework .
+
+it is critical for nasa to discontinue this approach and adopt the best practice of managing its ifmp system investments within the context of a well - defined enterprise architecture .
+
+in order to do so , it is important for nasa to establish an effective means for developing and implementing an architecture , which includes gaining top management understanding and support to lead the way in overcoming any cultural resistance .
+
+it is equally important that the agency ensure that the architecture contains sufficient depth and scope , quickly determine whether existing and planned ifmp component systems align with initial and subsequent versions of the architecture , and limit further investment in these systems until such determinations are made .
+
+to do less risks introducing additional system rework to that already facing the agency on already implemented system components .
+
+to ensure that nasa has the necessary agencywide context within which to make informed ifmp and other systems modernization decisions , we recommend that the nasa administrator demonstrate an institutional commitment to developing and using an enterprise architecture by establishing a nasa enterprise architecture policy and designating a nasa architecture board , or comparable body , that is made up of agency executives who are responsible and accountable for developing and maintaining the architecture .
+
+in carrying out its responsibility , we recommend that the administrator direct the architecture board , in collaboration with the cio , to ensure that the architecture content requirements identified in this report are satisfied by first determining the extent to which nasa's initial release of an enterprise architecture satisfies these content requirements and then developing and approving a plan for incorporating any content that is missing .
+
+we further recommend that the administrator direct the ifmp program executive officer to appropriately limit acquisition and implementation activities until the agency ensures that the program's plans are aligned with the initial and subsequent versions of the enterprise architecture .
+
+in addition , we recommend that the administrator direct the architecture board , in collaboration with the cio , to immediately map already implemented ifmp components to the agency's enterprise architecture and report to the program executive officer any instances of misalignment , the associated risks , and proposed corrective actions .
+
+moreover , we recommend that the administrator direct the program executive officer to develop corrective action plans , as appropriate , that include specific milestones , cost estimates , and detailed actions to be taken to align the program with the enterprise architecture .
+
+to further assist nasa , we recommend that the administrator direct the board , in collaboration with the cio , to ensure that the best practices involved in stages 3 through 5 of our enterprise architecture management maturity framework are implemented .
+
+more specifically , we recommend that the board and the cio ( 1 ) establish a written and approved policy for architecture development , ( 2 ) place enterprise architecture products under configuration management , and ( 3 ) ensure that progress against architecture plans is measured and reported .
+
+in completing the architecture , we recommend that the board and cio ( 1 ) establish a written and approved policy for architecture maintenance ; ( 2 ) ensure that enterprise architecture products and management processes undergo independent verification and validation ; ( 3 ) ensure that architecture products describe the enterprise's business and the data , application , and technology that supports it ; ( 4 ) ensure that enterprise architecture products describe the “as is” environment , the “to be” environment , and a sequencing plan ; ( 5 ) ensure that business , performance , data , application , and technology descriptions address security ; ( 6 ) ensure that the cio approves the enterprise architecture ; ( 7 ) ensure that the steering committee and / or the investment review board has approved the current version of the enterprise architecture ; and ( 8 ) measure and report on the quality of enterprise architecture products .
+
+in implementing the architecture , we recommend that the board and cio ( 1 ) establish a written and approved policy for it investment compliance with the enterprise architecture , ( 2 ) ensure that the enterprise architecture is an integral component of it investment management processes , ( 3 ) ensure that it investments comply with the enterprise architecture , ( 4 ) obtain administrator approval of each enterprise architecture version , ( 5 ) measure and report enterprise architecture return on investment , and ( 6 ) measure and report on enterprise architecture compliance .
+
+in written comments on a draft of this report signed by the deputy administrator ( reprinted in app .
+
+iv ) , nasa concurred with our recommendations and described recently completed , ongoing , or planned efforts to address them .
+
+for example , the agency stated that it has developed a 3-year plan for refining the latest version of its architecture , as well as a plan to guide the agency in using the architecture to achieve nasa's strategic goals .
+
+in addition , the agency stated that it has adopted our architecture management maturity framework and is currently working to satisfy the framework's core elements , including establishing architecture policies and a function for independently verifying and validating architecture artifacts and management practices .
+
+additionally , it stated that it plans to continually validate ifmp against its architecture on a quarterly basis .
+
+nasa also stated that its cio board , which is chaired by nasa's cio and composed of the cios from the agency's six major lines of business and its ten field centers , serves as the nasa architecture board or steering committee .
+
+while we support cio representation on an architecture steering committee , recognized best practices and our maturity framework both advocate that architecture ownership and accountability be vested with an enterprise's business owners .
+
+thus , we state in our framework that the architecture steering committee should be composed of executive - level representatives from each line of business and that these representatives should have the authority to commit resources and enforce decisions for their respective organizational units .
+
+without such an entity to lead and be accountable for the architectural effort , there is increased risk that the architecture will be viewed solely as an it tool and not represent a corporate , business - driven decision - making tool and will not be viewed and endorsed as an agencywide asset .
+
+accordingly , it is important for nasa to ensure that its architecture board's membership includes business owner representation .
+
+as agreed with your offices , unless you announce its contents earlier , we will not distribute this report further until 30 days from its date .
+
+at that time , we will send copies to interested congressional committees as well as to the nasa administrator and the director of omb .
+
+we will make copies available to others upon request .
+
+in addition , the report will be available at no charge on the gao web site at http: / / www.gao.gov .
+
+if you or your staff have any questions concerning this report , please contact me at ( 202 ) 512-3439 or hiter@gao.gov .
+
+key contributors to this report are acknowledged in appendix v .
+
+to determine whether the national aeronautics and space administration ( nasa ) had and was using an enterprise architecture to guide and constrain its investment in its integrated financial management program ( ifmp ) , we requested all nasa enterprise architecture artifacts and related documentation that had been used to date to guide and constrain ifmp and , based on what we were provided by nasa's chief technology officer , compared them to relevant guidance .
+
+in doing so , we first segmented our analysis of artifacts and guidance into the three primary component parts of any architecture: the “as is” architecture , the “to be,” and the transition plan .
+
+we then further divided the “as is” and “to be” architectures into five architectural components similar to the office of management and budget's architecture reference models: business , information / data , services / applications , technical , and performance .
+
+we also added security as a sixth component because of its recognized importance in the various architecture frameworks and relevance to the other five architectural components .
+
+because nasa had not clearly distinguished between its “as is” and “to be” environments , the chief technology officer told us to treat the architecture products provided as the “to be” environment and assume that any “as is” content would be intended for reuse in the future environment .
+
+as a result , we did not analyze whether nasa's architecture products satisfied relevant “as is” guidance ; instead , we accepted the chief technology officer's acknowledgment that nasa did not have any “as is” artifacts .
+
+to augment our documentation reviews and analyses of architecture products used to date in acquiring and implementing ifmp , we also interviewed various officials , including the chief information officer and chief technology officer , to determine , among other things , the agency's plans to develop an enterprise architecture .
+
+specifically , we inquired as to nasa's basis for selecting already acquired ifmp commercial products and its plans for selecting future ifmp modules , including whether the agency had developed an enterprise architecture to guide and constrain its future investment in ifmp .
+
+we also requested information on ongoing efforts to develop the initial version of nasa's enterprise architecture , such as detailed program plans , updated policies and procedures , and the architecture itself , but this information was not provided until september 24 , 2003 , which was after we had completed our audit work .
+
+as a result , our review did not include an assessment of the initial version of nasa's enterprise architecture , which the chief technology officer stated addressed some , but not all , of the limitations discussed in this report .
+
+to determine whether nasa's initial and subsequent versions of its enterprise architecture were supported by effective management structures and processes , we used our enterprise architecture management maturity framework , which describes the five stages of management maturity , and determined the extent to which nasa has adopted key elements of architecture management best practices embodied in the framework .
+
+to make this determination , we reviewed program documentation , such as program policies and procedures , an ibm report on the agency's efforts to implement management processes and controls over its architecture development activities , and the architecture products used to date in acquiring ifmp system components , and we compared them to the elements in our framework .
+
+we did not independently validate the cost and budget information provided by the chief technology officer .
+
+we conducted our work at nasa headquarters in washington , d.c. we performed our work from june to mid - september 2003 in accordance with generally accepted government auditing standards .
+
+detailed analysis of nasa's “to be” architecture products element satisfied ? .
+
+the available architecture products contain a high - level description of the agency's onenasa vision , which focuses on how technology will be managed to improve services ( eg , providing secure and highly interoperable information systems in support of all nasa operations ) .
+
+it lists mission statements for both the agency and the lines of business .
+
+the architecture also lists business architecture drivers , which can be considered business goals .
+
+however , the available architecture products do not contain a description of the strategic goals , objectives , missions , and implementing strategies established to support nasa lines of business .
+
+in addition , the architecture products do not explain what the onenasa vision encompasses since it appears to be technology - centric , as opposed to business - centric ( i.e. , it addresses business , information / data , services / applications , and technology ) .
+
+the available architecture products list business strategies , such as implementing the integrated financial management program ( ifmp ) .
+
+however , they do not describe how these strategies will be implemented .
+
+the available architecture products contain a description of the finance and accounting processes ( i.e. , the processes to be supported by the ifmp core financial module ) .
+
+this description also identifies the subprocesses within these processes and includes detailed diagrams of process flows .
+
+however , these products do not identify the organizational units responsible for performing the finance and accounting business processes nor the locations where they will be performed .
+
+moreover , the architecture products do not contain a description of other business processes , such as asset management , human resource management , and budget .
+
+element satisfied ? .
+
+the available architecture products recognize the need for an implementing strategy to streamline financial operations and identify ifmp as that strategy .
+
+however , the products do not describe specific opportunities for improving weaknesses in the “as is” financial systems or processes or how ifmp will be implemented to achieve this unification / simplification .
+
+the available architecture products contain a description of the management reporting lines for the agency's chief information officer ( cio ) organization as it relates to managing the architecture products and standards .
+
+however , they do not describe the roles and responsibilities of other organizations .
+
+for example , these products do not have a model for roles and an organization chart that shows the lines of communication and reporting responsibilities for financial management operations .
+
+the available architecture products contain a description of technical standards currently being used .
+
+however , these products do not state whether these standards are still relevant or will need to be updated to reflect changes to the current environment .
+
+in addition , the architecture products do not identify data standards upon which business rules can later be developed .
+
+x element satisfied ? .
+
+the available architecture products contain a description of an enterprise application system that supports finance and accounting ( ifmp core financial module ) functions .
+
+they also identify legacy systems that interface with this application system .
+
+however , this description is limited to this one system .
+
+element satisfied ? .
+
+the available architecture products list several architectural principles for system development and acquisition ( eg , modular design , open system approach ) and identify a strategy ( i.e. , a hub - spoke configuration ) for integrating legacy systems .
+
+they also identify a minimum set of technical standards for hardware and software .
+
+in addition , the architecture products contain policies and guidance for implementing systems .
+
+however , these products do not describe a common technical approach .
+
+in addition , the products did not state whether the existing policies and procedures are common , complete , and sufficient to effectively implement the architecture .
+
+they do recognize the need to revise existing policies and procedures .
+
+the available architecture products recognize the need for a trm and contain a generic description of the trm .
+
+these products also note that technology services needed to support the application portfolio should be defined and identify several of these services .
+
+however , according to nasa's chief technology officer , the trm is incomplete and flawed .
+
+in addition , the list of technology services identified is incomplete .
+
+the available architecture products note that these standards should be identified and documented .
+
+they also contain a list of specific standards .
+
+however , the architecture products do not state whether these standards are for the current or future environment .
+
+in addition , the architecture products do not identify the technical standards to be implemented for specific enterprise services , such as query processing .
+
+element satisfied ? .
+
+the available architecture products contain a high - level description ( i.e. , diagrams without supporting narrative ) of the ifmp core financial network , onenasa network backbone , and nasa's information system services utility ( nissu ) network architecture .
+
+however , these networks do not encompass the entire enterprise , but rather a subset of activities .
+
+the available architecture products contain a list of policies and procedures for implementing systems .
+
+however , the products do not state whether these policies and procedures are common , complete , and sufficient to effectively implement the architecture .
+
+the available architecture products contain a high - level description of security goals and strategies and identify some security requirements .
+
+they also note that an “information assurance trust model” is needed and will be developed .
+
+the architecture products do not contain a description of security policies and procedures .
+
+they also do not identify important security requirements ( eg , availability and access control ) , nor do they link identified security requirements to security services .
+
+moreover , the architecture products do not define the “information assurance trust model” or address plans for its completion .
+
+finally , regarding the strategies , they do not identify and summarize the agency's most significant security risks .
+
+according to nasa's chief technology officer , a clear computer security policy does not exist within the agency , and there is a lack of understanding as to how such a policy could be integrated into the network infrastructure .
+
+the available architecture products contain definitions for some security - related terms ( eg , authentication , confidentiality , and intrusion detection ) ; however , they do not define other key terms listed ( eg , integrity , physical security , and encryption services ) .
+
+in addition , the definitions for these terms are inconsistent with the definitions shown in current standards ( eg , firewalls ) .
+
+element satisfied ? .
+
+the available architecture products contain high - level descriptions of enterprise security services ; however , in most instances , these products describe the technology components that will be implemented to provide the security service , and not the security service .
+
+for example , the architecture products classify “audit logs” as a security service ; however , audit logs are generally the function / component within an “auditing service.” the architecture products also do not link the security services to security policies , procedures , goals , strategies , and requirements .
+
+the available architecture products contain a description of various security standards , but it is unclear if these standards are relevant to the “as is” or “to be” environment or both .
+
+in addition , the architecture products do not contain a traceability matrix that links goals , strategies , requirements , and services to the security standards and security products ( eg , smartcard ) .
+
+they also do not clearly state whether the list of security standards for enterprise services is complete .
+
+element satisfied ? .
+
+the available architecture products contain a high - level description of protection mechanisms ( eg , firewalls ) .
+
+however , they do not describe the level of protection needed and the types of services the protection mechanisms will provide to protect ifmp applications that access information / data , business services / applications , and the various networks .
+
+in addition , the architecture products do not contain a traceability matrix that links goals , strategies , requirements , and services to the security standards , so it is unclear whether this is the definitive list of protection mechanisms .
+
+a crud ( create , read , update , and / or delete ) matrix shows the specific business functions and applications that create , read , update , and / or delete specific data elements , which enables the organization to develop applications .
+
+business and operational rules define specific constraints for the data , such as security needs ( eg , confidentiality and accessibility of data ) and actions that should or should not occur , such as updating or deleting data .
+
+although the framework that nasa is using identifies a logical database model as a work product , the available architecture products do not include such a model , and there was contradictory evidence in the architecture products that stated that nasa considered this model to be nonessential .
+
+as a result , it is unclear whether the agency plans to produce a logical database model as part of its architecture description .
+
+metadata is “data about data” that enables automation and consistent management and use of information , such as rules and standards .
+
+the framework that nasa is using does not identify the metadata model as a type of work product nor does the agency's action plan address the development of a metadata model for later inclusion in the architecture description .
+
+while the framework that nasa is using does identify the application portfolio as a type of work product , the agency's action plan does not address the development of this portfolio for later inclusion in the architecture description .
+
+the technical reference model ( trm ) describes how technology is supporting the delivery of service components , including relevant standards for implementing the technology .
+
+the trm is a generally accepted representation of the generic components of an information system .
+
+it allows designers , developers , and users to agree on definitions , have a common understanding of the services to be provided , and identify and resolve issues affecting such requirements as interoperability , portability , reliability , scalability , and serviceability .
+
+examples of enterprise services include application services , such as web services , and collaboration services , such as instant messaging and video conferencing .
+
+technical standards are strict rules and protocols governing how a given enterprise service is to be implemented .
+
+element satisfied ? .
+
+the transition plan identifies only the core financial legacy systems that have been or will be retired .
+
+it does not identify all legacy systems or provide a schedule for terminating these systems .
+
+the transition plan provides a high - level description of a training strategy and references a change management strategy for ifmp .
+
+it also identifies a business driver for improving human capital management within the organization .
+
+however , the architecture does not ( 1 ) address training needs for nonfinancial business operations , ( 2 ) contain training plans , ( 3 ) identify changes to existing policies and procedures , or ( 4 ) estimate resource needs .
+
+moreover , this generic strategy was developed without the benefit of a gap analysis .
+
+the transition plan notes that there is a list of project development initiatives , such as core financial and travel manager , but it does not provide a complete list of systems to be developed or acquired to achieve business needs ( eg , human resources and budget ) .
+
+the transition plan contains a description of an eai strategy for ifmp applications .
+
+however , the transition plan does not state whether this strategy would be applied to other agencywide application systems .
+
+element satisfied ? .
+
+acquisition / business strategy is a plan or action for achieving a specific goal or result through contracting for software products and services .
+
+satisfied ? .
+
+stage 1: ea awareness agency is aware of ea .
+
+in december 2002 , the cio issued a memorandum stating the agency's intent to develop and use an ea .
+
+adequate resources exist ( funding , people , tools , and technology ) .
+
+according to the chief technology officer ( cto ) , the agency has adequate program funding .
+
+nasa estimates that it will cost $750,000 to develop its ea for fiscal years 2001 through 2003 .
+
+further , the agency reports that it has skilled staff ( government employees and contractors ) for its architecture program .
+
+in addition , nasa is using automated tools and technology , such as rational rose by rational software corporation / ibm software group .
+
+committee or group representing the enterprise is responsible for directing , overseeing , or approving the ea .
+
+nasa has not assigned responsibility for directing , overseeing , or approving the ea to a committee or group comprising representatives from across the agency .
+
+program office responsible for ea development and maintenance exists .
+
+in december 2002 , nasa established a program office that is responsible for ea development and maintenance .
+
+chief architect exists .
+
+in january 2003 , nasa designated the cto as the chief architect .
+
+ea is being developed using a framework , methodology , and automated tool .
+
+the ea is being developed using the zachman framework .
+
+according to the cto , the agency is also using a defined methodology to develop the ea .
+
+in addition , nasa is using automated tools , such as rational rose by rational software corporation / ibm software group , to build the ea .
+
+according to the cto , the plans for the ea “as is” and the “to be” environments of the enterprise , as well as a sequencing plan for transitioning from the “as is” to the “to be.” provide for describing both the “as is” and the “to be” environments and a sequencing plan .
+
+according to the cto , the plans for the ea “as is” and the “to be” environments in terms of business , performance , information / data , application / service , and technology .
+
+provide for describing both the “as is” and the “to be” environments in terms of business , performance , information / data , application / service , and technology .
+
+ea plans call for business , performance , information / data , application / service , and technology descriptions to address security .
+
+according to the cto , the plans for the ea provide for addressing security for the “as is” and “to be” environments .
+
+ea plans call for developing metrics for measuring ea progress , quality , compliance , and return on investment .
+
+according to the cto , the plans for the ea provide for developing metrics to measure progress , quality , compliance , and return on investment .
+
+satisfied ? .
+
+written / approved organization policy exists for ea development .
+
+according to the cto , the agency is revising its existing policy to require the development of an ea .
+
+as written , the policy requires the cio to develop an information technology ( it ) architecture , which is one aspect of an ea .
+
+ea products are under configuration management .
+
+according to the cto , ea products are not currently under configuration management .
+
+ea products describe or will describe both the “as is” and the “to be” environments of the enterprise , as well as a sequencing plan for transitioning from the “as is” to the “to be.” according to the cto , the plans for the ea products provide for describing the “as is” and the “to be” environments , as well as a sequencing plan .
+
+both the “as is” and the “to be” environments are described or will be described in terms of business , performance , information / data , application / service , and technology .
+
+according to the cto , the plans for the ea provide for describing both the “as is” and “to be” environments in terms of business , performance , information / data , application / service , and technology .
+
+business , performance , information / data , application / service , and technology descriptions address or will address security .
+
+according to the cto , the plans for the ea provide for the business , performance , information / data , application / service , and technology descriptions addressing security for the “as is” and “to be” environments .
+
+progress against ea plans is measured and reported .
+
+according to the cto , the agency is measuring and reporting progress against ea plans ; however , nasa was unable to provide evidence of these reports .
+
+written / approved organization policy exists for ea maintenance .
+
+there is no written / approved policy for ea maintenance .
+
+ea products and management processes undergo independent verification and validation .
+
+according to the cto , management processes are independently verified and validated , but ea products do not undergo independent verification and validation .
+
+according to the cto , ea products will be subject to independent verification and validation in the future .
+
+according to the cto , the plans for the ea provide for describing both the “as is” and the “as is” to the “to be.” “to be” environments of the enterprise , as well as a sequencing plan for transitioning from the “as is” to the “to be.” however , the initial version of nasa's ea was not provided to us in time to determine if its products address this core element .
+
+therefore , our analysis is based on the products that were used to date to guide and constrain ifmp .
+
+satisfied ? .
+
+both the “as is” and the “to be” environments are described in terms of business , performance , information / data , application / service , and technology .
+
+according to the cto , the plans for the ea provide for describing both the “as is” and “to be” environments in terms of business , performance , information / data , application / service , and technology .
+
+however , the initial version of nasa's ea was not provided to us in time to determine if its products address this core element .
+
+therefore , our analysis is based on the products that were used to date to guide and constrain ifmp .
+
+business , performance , information / data , application / service , and technology descriptions address security .
+
+according to the cto , the plans for the ea provide for the business , performance , information / data , application / service , and technology descriptions addressing security .
+
+however , the initial version of nasa's ea was not provided to us in time to determine if its products address this core element .
+
+therefore , our analysis is based on the products that were used to date to guide and constrain ifmp .
+
+organization cio has approved current version of ea .
+
+the cio approved the initial version of the ea .
+
+however , the initial version of nasa's ea was not provided to us in time to determine if its products address this core element .
+
+therefore , our analysis is based on the products that were used to date to guide and constrain ifmp .
+
+committee or group representing the enterprise or the investment review board has approved current version of ea .
+
+according to the cto , the plans for the ea do not provide for approval by a committee or group representing the enterprise or the investment review board .
+
+quality of ea products is measured and reported .
+
+according to the cto , the quality of ea products is not measured and reported .
+
+written / approved organization policy exists for it investment compliance with ea .
+
+there is no written / approved policy requiring it investment compliance with the ea .
+
+the current policy requires the cio to ensure that new it investments are in alignment with technology architectures , which are one aspect of an ea .
+
+according to the cto , this policy is being revised .
+
+process exists to formally manage ea change .
+
+according to the cto , there is a process for formally managing ea change .
+
+ea is integral component of it investment management process .
+
+since the ea is currently being developed and has not been used to date in acquiring and implementing ifmp , it is not part of the investment management process .
+
+ea products are periodically updated .
+
+according to nasa , it plans to update the ea quarterly through june 2004 , and semiannually thereafter .
+
+satisfied ? .
+
+it investments comply with ea .
+
+since the ea is currently being developed and has not been used to date in acquiring and implementing ifmp , it is not part of the investment management process .
+
+organization head has approved current version of ea .
+
+the organization head has not approved the current version of the ea .
+
+return on ea investment is measured and reported .
+
+metrics and processes for measuring ea benefits have not been developed , and an initial version of the ea has not been completed , thus precluding return - on - investment measurement .
+
+compliance with ea is measured and reported .
+
+metrics for measuring ea compliance have not been developed , and an initial version of the ea has not been completed , thus precluding measuring and reporting on compliance .
+
+staff making key contributions to this report were sophia harrison , anh le , randolph tekeley , william wadsworth , and lillian whren .
+
+the general accounting office , the audit , evaluation and investigative arm of congress , exists to support congress in meeting its constitutional responsibilities and to help improve the performance and accountability of the federal government for the american people .
+
+gao examines the use of public funds ; evaluates federal programs and policies ; and provides analyses , recommendations , and other assistance to help congress make informed oversight , policy , and funding decisions .
+
+gao's commitment to good government is reflected in its core values of accountability , integrity , and reliability .
+
+the fastest and easiest way to obtain copies of gao documents at no cost is through the internet .
+
+gao's web site ( www.gao.gov ) contains abstracts and full - text files of current reports and testimony and an expanding archive of older products .
+
+the web site features a search engine to help you locate documents using key words and phrases .
+
+you can print these documents in their entirety , including charts and other graphics .
+
+each day , gao issues a list of newly released reports , testimony , and correspondence .
+
+gao posts this list , known as “today's reports,” on its web site daily .
+
+the list contains links to the full - text document files .
+
+to have gao e - mail this list to you every afternoon , go to www.gao.gov and select “subscribe to e - mail alerts” under the “order gao products” heading .
+

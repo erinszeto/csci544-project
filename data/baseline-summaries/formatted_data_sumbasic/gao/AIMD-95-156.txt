@@ -1,0 +1,798 @@
+this report critiques the effectiveness of the internal revenue service's ( irs ) efforts to modernize tax processing .
+
+the report , which reflects our briefing to you in april 1995 , discusses irs's progress to implement its modernization and describes serious remaining management and technical weaknesses that must be corrected if tax systems modernization is to succeed .
+
+it makes over a dozen specific recommendations to you for improving irs's business management and information systems management and development capabilities .
+
+the head of a federal agency is required by 31 u.s.c .
+
+720 to submit a written statement on actions taken on these recommendations to the senate committee on governmental affairs and the house committee on government reform and oversight not later than 60 days after the date of this report .
+
+a written statement must also be sent to the house and senate committee on appropriations with the agency's first request for appropriations made more than 60 days after the date of this report .
+
+we are sending copies of this report to the chairmen and the ranking minority members of ( 1 ) the subcommittee on treasury , postal service and general government , senate and house appropriations committee , ( 2 ) the senate and house committee on the budget , ( 3 ) the subcommittee on oversight , house committee on ways and means , ( 4 ) the subcommittee on taxation and irs oversight , senate committee on finance , ( 5 ) the senate committee on governmental affairs , and ( 6 ) the house committee on government reform and oversight .
+
+we are also sending copies to the secretary of the treasury and the director of the office of management and budget , and will make copies available to others upon request .
+
+this work was performed under the direction of dr. rona b. stillman , chief scientist for computers and communications , who can be reached at ( 202 ) 512-6412 .
+
+the receipt , processing , and retrieval of vast quantities of paper forms and documents is one of irs's most critical problems .
+
+irs annually receives over 200 million tax returns with multiple attachments , about 1 billion information documents ( for example , w2s and 1099s ) , and several hundred million pieces of taxpayer correspondence .
+
+to process this enormous volume of paperwork , irs uses labor - intensive processes and systems to ( 1 ) convert data from tax returns into machine usable form , ( 2 ) maintain taxpayer accounts , including current and historical data , ( 3 ) ensure refunds are prompt , and ( 4 ) prepare bills for tax payments due .
+
+retrieving paper forms and documents involves over 1.2 billion tax returns stored in over 1 million square feet of space .
+
+also , irs collects most of the government's revenue , currently over $1.25 trillion annually , and it employs over 113,000 people , more than any other civilian agency .
+
+irs is headquartered in washington , d.c. , and has 7 regional offices , 63 district offices , 10 service centers , and 2 computer centers .
+
+upon receipt at irs's service centers , paper - based tax returns and related supporting and information documents are manually extracted from envelopes , sorted , batched , coded , and transcribed into electronic format .
+
+the service centers send electronically formatted data to irs's main computer center in martinsburg , west virginia .
+
+irs stores nearly all the paper supplied by taxpayers as part of , or in support of , their tax filings .
+
+tax return processing at irs service centers was designed in the late 1950s .
+
+today , nearly 4 decades later , irs still processes tax return data using the processes instituted when automated systems were first installed in the service centers .
+
+in today's technological climate , taxpayers have come to expect faster , better , more convenient service in virtually every facet of their lives .
+
+to meet these expectations , irs's outdated tax processes and systems are being used to electronically capture and provide more and more information .
+
+at the same time , the number of tax - related documents is greatly expanding .
+
+between the late 1960s and the early 1980s , irs began several efforts to modernize its operations .
+
+these efforts did not succeed , and on numerous occasions the congress expressed concern about the cost of the redesign efforts , the inadequacy of security controls over taxpayer information , the lack of clear management responsibility for the programs , and the paucity of technical and managerial expertise .
+
+in late 1986 , irs produced plans for a new modernization effort , known today as tax systems modernization ( tsm ) .
+
+irs estimates that tsm could cost between $8 billion and $10 billion through 2001 .
+
+through fiscal year 1995 , irs will have spent or obligated $2.5 billion for tsm , which comprises 36 systems development projects .
+
+about $1.1 billion more has been requested for fiscal year 1996 .
+
+irs has developed a business vision to guide its modernization efforts .
+
+this vision calls for a work environment that is virtually paper - free , where taxpayer account updates are rapid and taxpayer information is readily available to irs employees for purposes such as customer service and compliance activities .
+
+irs's overall redesign of its tax processing system is key to achieving this vision .
+
+an important component of the redesign is maximizing the receipt of electronic information to reduce the receipt of paper documents .
+
+irs plans , for example , to expand the electronic receipt of tax returns .
+
+however , irs believes the requirement to process large volumes of paper documents will exist for the foreseeable future .
+
+as a result , irs is designing the document processing system to scan paper documents and electronically capture data for subsequent processing and retrieval at workstations .
+
+this system will require staff using personal computers to correct and add data that the system cannot accurately capture from paper documents .
+
+like its electronic filing system counterparts , the document processing system is to capture 100 percent of the numeric data submitted on tax returns , compared to about 40 percent captured from paper returns today .
+
+throughout the modernization , we have reported on critical issues related to the need to build an effective organization structure for managing technology ; problems in developing specific tsm systems and the reliability of reported weak internal , computer security , and fraud controls ; and antiquated systems that were not designed to provide the meaningful and reliable financial information needed to effectively manage and report on irs's operations .
+
+because of problems such as these , in february 1995 , we designated tsm a high - risk systems modernization effort .
+
+in general , these major efforts experience cost over - runs , are prone to delays , and often fail to meet intended mission objectives .
+
+appendix ii is a list of our prior reports and testimonies pertinent to tsm .
+
+our objective was to review the business and technical practices irs has established to develop , manage , and operate its information systems and , in particular , the tsm initiative .
+
+we examined irs's business strategy for reducing paper tax return submissions , strategic information management processes , software development capability , systems development accountability and responsibility .
+
+to review irs's business strategy for reducing paper tax return submissions , we interviewed irs officials who have responsibility for submission processing and electronic filing .
+
+we analyzed various task force studies on electronic filing and summaries of issues compiled by an irs task team charged with promoting electronic filing .
+
+in addition , we examined irs internal audit reports on the performance and development of systems designed to handle paper returns , reports of problems from the service centers responsible for processing tax returns , and a risk assessment and critical design review of operational and developmental systems .
+
+further , we reviewed project plans and technical charters for paper processing systems , and we discussed systems requirements and performance test results with the contractor developing the document processing system .
+
+to assess irs's strategic information management processes , we interviewed irs officials who have responsibility for systems development .
+
+we also analyzed irs planning documents , including irs's business master plan , future concept of operations , and integrated transition plan and schedule .
+
+we obtained and analyzed irs documentation and task force studies related to ( 1 ) planning and managing information technology , ( 2 ) analyzing systems development costs and benefits , ( 3 ) reengineering business processes , and ( 4 ) training staff in the use of new information technology .
+
+in analyzing irs's strategic information management practices , we drew heavily from our research on the best practices of private and public sector organizations that have been successful in improving their performance through strategic information management and technology .
+
+these fundamental best practices are discussed in our report , executive guide: improving mission performance through strategic information management and technology ( gao / aimd - 94-115 , may 1994 ) , and our strategic information management ( sim ) self - assessment toolkit ( gao / version 1.0 , october 28 , 1994 , exposure draft ) .
+
+to evaluate irs's software development capability , we validated irs's august 1993 assessment of its software development maturity based on the capability maturity model ( cmm ) developed in 1984 by the software engineering institute at carnegie mellon university .
+
+cmm establishes standards in key software development processing areas and provides a framework to evaluate a software organization's capability to consistently and predictably produce high - quality products .
+
+we discussed with irs software development officials irs's cmm rating and actions initiated to improve it .
+
+we also identified and assessed irs's initiatives to improve software development capability in key process areas , including ( 1 ) requirements management , ( 2 ) project planning , tracking , and oversight , and ( 3 ) configuration management .
+
+in another key process area , software quality assurance , we examined , in particular , irs's use of metrics to control software development projects .
+
+to assess irs's technical infrastructures , we discussed security and data standards with systems architects and technical specialists .
+
+in addition , we obtained and analyzed integrated systems architecture documents ; systems development documents for security and data standards ; and project plans , quality measurement plans , and technical charters for all tsm projects .
+
+to assess accountability and responsibility for developing systems , we identified the irs organizational components involved in developing and operating information systems .
+
+we discussed with irs's modernization executive , chief information officer , and research and development division officials their respective systems development roles , responsibilities , and accountability .
+
+we performed our work at irs headquarters in washington , d.c. , and at facilities in cincinnati , ohio , and nashville , tennessee .
+
+on april 28 , 1995 , we briefed the irs commissioner and other senior irs executives on the results of our review and made recommendations to them for overcoming the management and technical problems impeding successful systems modernization efforts .
+
+our work was performed between february 1995 and june 1995 , in accordance with generally accepted government auditing standards .
+
+irs provided written comments on a draft of this report , which are included as appendix i .
+
+irs is currently drowning in paper — a serious problem irs can mitigate only through electronic tax filings .
+
+but irs will not achieve the full benefits that electronic filing can provide because it does not have a comprehensive business strategy to reach or exceed its electronic filing goal , which is 80 million electronic filings by 2001 .
+
+today , irs's estimates and projections for individual and business returns suggest that , by 2001 , as few as 39 million returns may be submitted electronically , less than half of irs's goal .
+
+maximizing electronic filings is important because tax returns filed electronically do not have to move through irs's labor - intensive operations .
+
+paper filings have to be opened , sorted , reviewed , transcribed , shipped and stored , and then physically retrieved if irs employees later need data on the returns that are not transcribed .
+
+irs recognizes that increasing the number of electronic filings is essential to both improve its tax return processing and advance toward the virtually paperless environment envisioned by irs under tsm .
+
+creating a paperless environment , though , will involve making significant changes to improve irs's information management and will require new processes and new ways of doing business .
+
+private and public sector organizations that have successfully improved their performance have found that to move away from the status quo , an organization must recognize opportunities to change and improve its fundamental business processes .
+
+without well - conceived business strategies to capitalize on opportunities , meaningful change may be slow , the quality of service may not improve , and modernization may be impossible .
+
+consequently , one of irs's most pressing modernization issues is the efficient processing of vast quantities of information received on tax returns , which in 1994 , amounted to about 205 million returns .
+
+in 1995 , irs expects total tax returns from individuals and businesses to increase by 2 million , and by 2001 , to reach 224 million filings .
+
+to help process its avalanche of paperwork more efficiently , in 1990 , irs introduced nationwide electronic filing to selected groups of taxpayers as a means of using modern technology to streamline its business processes .
+
+looking to the future , irs set a goal to receive 80 million tax filings electronically by 2001 .
+
+irs based this goal , which accounts for about 35.7 percent of all tax filings expected in 2001 , on a projection of electronic filing of 70 million individual returns and 10 million business returns .
+
+in working toward this goal , in 1994 , about 16 million tax returns , or 7.8 percent of all returns , were filed electronically , with about 50 percent of these being 1040a forms .
+
+in 1995 , irs expects that electronic filings will decrease to about 15 million , or 7.2 percent of all tax returns .
+
+on the basis of the current rate of electronic filings for individuals , irs now estimates that in 2001 only about 29 million electronic returns will by filed by individuals .
+
+combined with the projected 10 million electronic filings from businesses , irs may receive only 39 million electronic returns in 2001 .
+
+this is only about 17.4 percent of the 224 million tax returns anticipated in 2001 , less than half of irs's goal .
+
+table 2.1 summarizes irs's electronic filing activity for 1994 and projections for the future .
+
+irs's current business strategy focuses primarily on promoting faster refunds to clients of businesses that prepare and electronically transmit tax returns .
+
+tax return preparers and transmitters do not pay a fee to irs for electronic filings , but they charge a fee to taxpayers .
+
+consequently , irs's business strategy for promoting electronic filing is directed primarily at taxpayers who file using third parties , are willing to pay to file electronically , file simple tax returns , and are due refunds .
+
+irs has no comprehensive business strategy for promoting the benefits of electronic filing to other taxpayers .
+
+in doing this , irs should consider all segments of the taxpaying population , including those who ( 1 ) are unwilling to pay for tax preparer and transmitter services , ( 2 ) owe irs for balances due , and ( 3 ) file complex tax returns .
+
+these taxpayers represent considerable potential for making substantially greater use of electronic filing .
+
+moreover , irs is not taking advantage of opportunities afforded by personal computers to increase electronic filings .
+
+in recent years , these computers have become a common fixture in many households .
+
+in this regard , when personal computers are used to prepare tax returns , taxpayers who are not willing to pay commercial transmitting fees must print their electronically produced returns on paper and mail them to irs to be manually processed .
+
+this results in the redundant , counterproductive conversion of the same data by both taxpayers and irs: taxpayers convert electronic data to paper returns , irs then laboriously converts information on the paper returns back to electronic data .
+
+unless irs attracts all potential electronic filers , it will never achieve its vision of virtually paperless processing and will be forced to process increasingly large workloads of paper tax returns .
+
+further , irs's paper processing systems are not planned to accommodate the large volume of paper returns that will result if taxpayers file fewer returns electronically .
+
+for example , irs is designing the document processing system for use at five service centers based on the assumption that , by 2001 , at least 61 million of the 224 million returns will be filed electronically , that is , 163 million paper returns will be processed through the document processing system .
+
+as table 2.1 shows , by 2001 , since only 39 million tax returns may be filed electronically , 185 million taxpayers could submit paper returns , or about 22 million more returns than irs is designing the document processing system to process .
+
+thus , irs's most recent estimates on individual filings for 2001 indicate that irs may fall far short of its electronic filing goal , which will result in an increasing struggle to process paper filings .
+
+to better achieve its virtually paperless processing environment , we recommend that irs refocus its electronic filing business strategy to target , through aggressive marketing and education , those sectors of the taxpaying population that can file electronically most cost beneficially .
+
+irs agreed with our recommendation regarding its electronic filing strategy .
+
+irs said it has convened a working group , chaired by the electronic filing executive , to develop a detailed , comprehensive strategy to broaden public access to electronic filing , while also providing more incentives for practitioners and the public to file electronically .
+
+irs said the strategy will include approaches for taxpayers who are unwilling to pay for tax preparer and transmitter services , who owe irs for balances due , and / or who file complex tax returns .
+
+irs said further that the strategy will also address that segment of the taxpaying population that would prefer to file from home by personal computers .
+
+we believe that , by developing a more comprehensive electronic filing strategy , irs will help to maximize the benefits possible through greater use by taxpayers of electronic filing .
+
+these benefits are central to more efficiently processing the vast quantities of information irs receives on tax returns and , thus , to achieve the virtually paperless tax processing environment irs hopes to attain through modernization .
+
+irs is not yet effectively using a strategic information management process to plan , build , and operate its information systems .
+
+tsm has been underway for almost a decade and will require years of further development effort and substantial human and financial resources .
+
+irs , however , does not yet have in place an effective process for selecting , prioritizing , controlling , and evaluating the progress and performance of major information systems investments .
+
+a sound strategic information management process involves several fundamental practices: ( 1 ) applying strategic planning , ( 2 ) managing information technology as investments , ( 3 ) analyzing costs and benefits and measuring performance , ( 4 ) using business process analysis , and ( 5 ) upgrading skills and training .
+
+this process focuses on results and emphasizes simplifying and redesigning complex mission processes , which is essential to meeting mission goals and satisfying customers' needs .
+
+irs recognizes the importance to tsm's success of implementing a sound strategic information management process and has assessed its strategic information management using gao's strategic information management self - assessment toolkit .
+
+irs's self - assessment identified improvements for better managing information systems .
+
+we too found serious shortcomings that underscore the urgency of irs bolstering the strategic information management process it has begun .
+
+we also identified irs efforts to upgrade skills and training .
+
+although irs has developed several types of plans for carrying out its current and future operations , these plans are neither complete nor consistent .
+
+moreover , irs's various planning documents are not linked to each other or to tsm budget requests .
+
+even though tsm has been underway for 10 years , complete , clear , and concise planning for tsm and its multibillion dollar investment is not evident .
+
+as a result , it is difficult for irs to identify and effectively focus on completing priority aspects of tsm .
+
+public and private sector organizations that have been successful in developing major systems have found that , to be successful , once the organization has made a serious commitment to change its management of information and technology , it is paramount to adopt a strategic planning approach .
+
+their experience is that strategic business and information system plans must have a tight link to mission goals and must be predicated on satisfying explicit , high - priority customer needs .
+
+this orientation helps to ensure that information technology projects are delivered on time and within budget and that they produce meaningful improvements in cost , quality , or timeliness of service .
+
+we identified several different efforts by irs to prepare plans to delineate a vision for the future and actions required to realize that vision .
+
+these planning documents include the business master plan , which reflects the business priorities set by irs's top executives and links irs's strategic objectives and business vision with the tactical actions needed to implement them ; the irs future concept of operations , which articulates irs's future business vision so that the congress , irs employees , and the public can see and better understand irs's plans for serving the public ; and the integrated transition plan and schedule , which provides a top - level view of the modernization program's tasks , activities , and schedules and is the primary tool used for accountability for delivering the products and services necessary to implement modernization .
+
+we found , however , that these documents are incomplete and inconsistent .
+
+for example , as of may 1995 , 4 volumes of the 10 volume irs future concept of operations had not been completed .
+
+these volumes covered ( 1 ) national and regional offices , ( 2 ) workload distribution management , ( 3 ) area distribution centers , and ( 4 ) process flows .
+
+while the six completed volumes include critical areas , the incomplete documents are necessary for a comprehensive vision of irs's future operations .
+
+also , of the 27 action items identified in the business master plan that relate to information systems , 15 could not be identified in the integration transition plan and schedule .
+
+further , the business master plan's actions and performance measures have not been changed to reflect recent electronic filing trends , which indicate that irs will fall far short of its electronic filing goal .
+
+we found other indications of weak planning processes as well .
+
+specifically , irs did not have a fully integrated planning and budgeting process for tsm , although the office of economic analysis is moving in that direction .
+
+for example , this office is developing a new tsm cost model for irs .
+
+steps such as this are positive because a strong tie between tsm plans and irs budgets will be especially important to ensure that information is available to irs managers and the congress to show tsm's future funding needs and the results of past investments .
+
+while irs has undertaken fundamental tsm planning , stronger overall strategic planning for tsm is still needed .
+
+this would involve ( 1 ) defining the information technology capabilities required to support reengineered business processes , ( 2 ) identifying , assessing , and mitigating the risks involved in developing both tsm as a whole , as well as individual component projects , ( 3 ) formulating schedules and milestones for development , and ( 4 ) allocating needed resources .
+
+currently , irs does not have a process to manage tsm information systems projects as investments , even though irs expects the government's past and future investment in tsm to exceed $8 billion .
+
+foremost , at the time of our review , irs lacked comprehensive decision criteria for controlling and evaluating tsm projects throughout their life cycles .
+
+when organizations use strategic information management best practices , they manage information systems projects as investments , rather than expenses .
+
+these organizations view projects as efforts to improve mission performance , not as efforts to implement information technology .
+
+for public and private sector organizations that have been successful in developing major systems , the basis for making decisions on information technology investments has been an explicit set of criteria that are used to evaluate the expected mission benefits , potential risks , and estimated cost of each project .
+
+this investment focus systematically reduces inherent risks while maximizing benefits of complex projects .
+
+irs maintains that all tsm projects have equal priority and must be completed or the modernization will fail .
+
+an “all - or - nothing” approach to large information technology projects is usually unrealistic and generally unattainable .
+
+instead , a reasoned and an explicit framework for managing information technology investments is essential .
+
+irs currently holds program control meetings to assess and control information technology .
+
+however , these meetings have generally focused on the costs and implementation schedules of individual projects , rather than on comprehensively evaluating and prioritizing risks and returns expected from these investments .
+
+instead of using explicit criteria to measure risks and returns , irs evaluates each project's progress using a time - line .
+
+at the completion of our review , irs had developed draft criteria for tsm projects .
+
+these criteria included risk and return factors ( eg , cost , project size , and mission benefit ) , which it plans to use for the first time during top management's review of the fiscal year 1997 budget .
+
+however , these factors were not defined so they could be used consistently to assess projects .
+
+for instance , irs characterized project size as small , medium , large , and very large , but did not quantify these terms .
+
+similarly , irs has not yet defined decision criteria and quantifiable measures to assess mission benefits , risk , and cost , all of which are important to enable irs managers to adequately select , control , and evaluate information systems projects .
+
+irs is currently developing better decision criteria .
+
+managing tsm as an investment would require irs to assess , prioritize , control , and evaluate its investment in current and planned tsm information technology projects based on explicit and consistently applied decision criteria .
+
+by adopting this approach , top management's attention would be drawn to assessing and managing risk and making the tradeoffs between continued funding of existing operations and developing new capabilities .
+
+most important , with a disciplined process , irs could promptly identify , and thus avoid investing in , higher - risk projects that have little potential to provide significant mission benefits .
+
+moreover , this would reenforce accountability for improved performance .
+
+contrary to best practices used by leading private and public organizations , irs's tsm costs and benefits analysis is inadequate .
+
+as a result , irs and the congress do not know whether tsm information systems projects will really make a difference .
+
+until an adequate analysis is performed and measures are defined , irs will not know whether investments in tsm are worthwhile .
+
+in january 1995 , irs advised the house budget committee that , including operating costs for the next 10 years , tsm will cost about $13 billion and will provide over $32 billion in benefits .
+
+however , irs's overall cost projection is unreliable for several reasons .
+
+for example , irs based the projection on an october 1992 tsm cost model , which irs did not adequately update to reflect systems that have since been added to tsm , irs's more recent business visions , and changes in tsm systems development methods .
+
+the benefits estimate also had shortcomings .
+
+for instance , in some cases , irs attributed to tsm the savings associated with reducing staff resources ; in other cases , irs computed benefits based on additional revenues expected if staff were reassigned to tax collection .
+
+although a decision to use these staff for collections may increase revenue , the additional staff — not the system — will provide this benefit .
+
+this point becomes clear when the following scenarios are considered: ( 1 ) irs could assign additional staff to collections independent of the information system and ( 2 ) if irs reassigns to other nonrevenue producing activities the staff years saved , the revenue benefits would evaporate even though the information system would not change .
+
+a convincing benefits analysis for a system must compare operational costs with and without the system , other variables being held constant .
+
+irs recognizes that it has not adequately assessed tsm costs and benefits and is currently working with a contractor on an economic analysis to better reflect the cost and benefits of tsm .
+
+irs expects another cost and benefit analysis to be completed by september 1995 .
+
+we will continue to monitor irs's progress in analyzing tsm cost and benefits .
+
+after many automated systems design and development efforts were already underway , irs started business process reengineering , which involves critically reexamining core business processes and redesigning them to achieve significantly better performance .
+
+compounding this problem is irs's lack of a comprehensive plan and schedule defining how and when to integrate these business reengineering efforts with on - going tsm projects .
+
+organizations that successfully develop systems do so only after analyzing and redesigning critical business processes .
+
+information systems projects that do not consider business process redesign typically fail or reach only a fraction of their potential .
+
+accomplishing significant improvement in performance nearly always requires streamlining or redesigning critical work processes .
+
+irs has identified six core business areas and defined 11 business processes that support these areas .
+
+of these 11 , 3 were selected to begin reengineering efforts .
+
+those selected for initial redesign are ( 1 ) processing returns , ( 2 ) responding to taxpayers , and ( 3 ) enforcement actions .
+
+overall , we found irs's reengineering methods to be consistent with generally recognized business process reengineering principles .
+
+irs had , for example , assessed some existing data on customer values , analyzed current processes , and designed target processes and plans to validate the target designs .
+
+further , irs has a project management structure consisting of process owners , an executive steering committee , project managers , cross - functional teams , and contractor support to ensure that all stakeholders can participate .
+
+however , these efforts are not yet complete , and irs did not assess the actual steps needed to implement these efforts .
+
+irs officials acknowledge that reengineering efforts began after the start of many tsm systems projects .
+
+until reengineering is sufficiently completed to drive tsm projects , there is no assurance that the projects will achieve the desired business objectives and result in improved operations .
+
+irs is currently reassessing its skill and competency base to ensure that its personnel and training programs will meet future needs .
+
+operating and maintaining progressively sophisticated systems , such as those comprising tsm , requires continuously higher skill levels and updated knowledge — an additional critical factor for success , according to best - practice organizations .
+
+antiquated skill bases can inhibit an organization's ability to change .
+
+irs has several initiatives planned and underway to upgrade the skills of its personnel .
+
+for example , irs has defined positions needing competency assessments ; plans to assess staff skills using competency assessment instruments , which are currently being developed ; and is reorganizing and strengthening its training program by establishing a corporate education unit .
+
+we are currently assessing irs's human resource planning for modernization and will continue to monitor progress in this area .
+
+to address irs's strategic information management weaknesses , we recommend that the irs commissioner take immediate action to implement a complete process for selecting , prioritizing , controlling , and evaluating the progress and performance of all major information systems investments , both new and ongoing , including explicit decision criteria .
+
+we also recommend that irs use these criteria to review all planned and ongoing systems investments by june 30 , 1995 .
+
+meeting this time frame is important so that the congress has a sound basis for determining irs's fiscal year 1996 appropriations .
+
+irs agreed with our recommendations to improve its strategic information management .
+
+in addition , irs said that it had recently completed a self - assessment of its practices compared to gao's best practices for strategic information management .
+
+according to irs , its self - assessment confirmed gao's findings and will help strengthen irs's overall response to gao's concerns .
+
+in response to our recommendations , irs said that it will continue to work on simplifying and ensuring the consistency of all its has initiated a priority setting process for meeting business needs through has developed an initial set of investment evaluation criteria for use as part of an ongoing process to evaluate spending plans for information systems ; has completed a comprehensive review of the proposed fiscal year 1996 budget for tsm , which will enable irs to rescope its program objectives , set priorities , and adjust funding levels for tsm ; will continue to refine the investment evaluation criteria and also institutionalize a formal process based on the use of this criteria ; and is developing and implementing the use of an information technology investments alternative to select , prioritize , control , and evaluate information technology investments to achieve reengineered program missions .
+
+actions such as these could provide irs the underpinnings it needs for strategic information management .
+
+irs indicated that progress toward implementing these improvements will be monitored by the irs's associate commissioner .
+
+we believe that this is essential to ensure prompt and effective implementation .
+
+regarding a cost and benefits analysis , irs said that the september 1995 analysis will address the costs and benefits of tsm and allow irs to identify and focus on competing priorities .
+
+in particular , irs expects the new analysis to reflect a much more extensive benefit estimate than irs currently has available .
+
+we believe an adequate cost and benefits analysis will help irs to know whether investments in tsm are worthwhile .
+
+regarding skills and training , irs said that it is taking steps to ensure that personnel and training programs meet future needs , especially those relating to information systems .
+
+these steps include ( 1 ) establishing a training steering committee to consolidate all information systems training currently underway , with the goal of increasing the skill level of irs employees and ( 2 ) identifying job requirements for information systems professionals , which irs will use in developing training and education programs that are directly linked to mission needs and critical occupational performance goals .
+
+although irs is in the process of identifying job requirements , we believe that , until reengineering is complete , irs can only incorporate prototype job requirements into its training and development efforts .
+
+in addition , irs's current plans do not address how job requirements created as a result of reengineering efforts will be incorporated into its training environment .
+
+irs's software development activities are inconsistent and poorly controlled because irs has few detailed procedures for its engineers to follow in developing software .
+
+irs's software development deficiencies can greatly affect the quality , timeliness , and cost - effectiveness of tsm .
+
+unless irs improves its software development capability , it is unlikely to build tsm timely or economically and systems are unlikely to perform as intended .
+
+to assess its software capability , in september 1993 , irs rated itself against a capability maturity model ( cmm ) designed by the software engineering institute , a nationally recognized authority in the area .
+
+irs found that , even though tsm is a world - class undertaking , its software development capability is immature .
+
+irs placed its software development capability at the lowest level , described as ad hoc and sometimes chaotic and indicating significant weaknesses in software development capability .
+
+realizing that its software development capability needed improvement , irs initiated process action teams to address software development weaknesses in key process areas .
+
+these teams have made varying degrees of progress to improve irs's software development capability and define uniform procedures in the key process areas .
+
+their progress notwithstanding , substantial additional improvement is necessary before irs's software development capability can be upgraded to at least the next cmm level , where its activities would be more disciplined and considered to be repeatable .
+
+whether software development is done by irs , which has nearly 2,000 people working in the area , or by contractors , mature software development capabilities are key to quality , timely , and cost - effective tsm software development .
+
+closely associated with one key software development process area , software quality assurance , is the use of software metrics , which are numerical measures used to predict an aspect of software quality .
+
+in this regard , we found that irs has not adequately defined a suite of metrics .
+
+moreover , irs is not consistently or effectively using even its limited metrics for assessing the quality of software development projects throughout their life cycles .
+
+the software engineering institute was established at carnegie mellon university in 1984 primarily to address the defense department's software development problems .
+
+in 1991 , the institute developed cmm for use by organizations to evaluate their capability to consistently and predictably produce high - quality software .
+
+table 4.1 describes cmm's five maturity levels .
+
+irs rated itself at cmm level 1 because its assessment showed significant weaknesses in all key process areas prescribed for an organization to attain a level 2 capability .
+
+the key process areas designated by the institute as necessary to reach cmm level 2 include ( 1 ) requirements management , ( 2 ) software project planning , ( 3 ) software project tracking and oversight , ( 4 ) software quality assurance , and ( 5 ) software configuration management .
+
+further , the national research council also identified irs's software development weaknesses and , in its fall 1994 report on tsm , stated that irs needed to develop a mature software development organization .
+
+the council reported that , compared to accepted modern standards , irs's internal development capability is largely out of date and rudimentary .
+
+to improve its software development capability and attain a higher cmm rating , the irs information systems organization's applications design and development management group initiated five process action teams to address the weaknesses identified by irs's assessment and the national research council's review .
+
+table 4.2 identifies the teams and describes the key process areas each was to address .
+
+the following discussion highlights the work of these teams , which we found in various stages of completion .
+
+although the teams have generally made progress , irs's software development capabilities remain weak in each of the key process areas they were to address .
+
+the requirements management team ( 1 ) studied and flow charted the process for requesting information services and ( 2 ) generated and is delivering related training materials .
+
+however , the requirements management process developed by the team is currently being applied to only legacy systems ( i.e. , existing irs systems ) .
+
+an equivalent requirements management process for tsm systems was still under development .
+
+also , customer involvement with the team's requirements management process has been limited .
+
+the software quality assurance team adopted the peer review portion of a planning , review , and inspection process developed by irs's quality assurance group .
+
+the team is applying this process to selected projects and has developed training for using the process , which irs is giving to its systems engineers .
+
+however , irs has not yet decided whether to conduct the team's peer review approach on all projects .
+
+also , irs has yet to define detailed procedures for performing other software quality assurance functions , such as ( 1 ) ensuring compliance of software products and processes with defined standards , ( 2 ) independent verification of product quality , ( 3 ) periodic audits and reviews by the software quality assurance group , and ( 4 ) feedback of the software quality assurance activities and findings to facilitate improvement of the process .
+
+the project planning and tracking team selected a software tool for planning and tracking the progress of software development projects .
+
+because the team did not prepare guidelines specifying the minimum planning and tracking elements to apply to projects , project managers who use the software must define the details to track .
+
+as a result , this tool is being inconsistently used and , thus , irs has been unable to consistently track the progress of their projects .
+
+the testing team has issued guidance on unit testing .
+
+however , there are no procedures for systems and acceptance testing .
+
+the configuration management team is waiting for configuration management of the corporate - level to be defined in order to define lower - level processes and procedures .
+
+the only configuration management in place is version control of software .
+
+as a result , important items are not yet under configuration management , including documentation , and software development folders .
+
+although the teams have made progress , their accomplishments have not significantly improved irs's software development capability .
+
+foremost , irs has not developed and implemented consistent guidelines and procedures in the key process areas essential at cmm level 2 .
+
+unless irs's weaknesses in software quality assurance and software configuration management are corrected , irs faces a much greater risk of extensive rework , schedule slippage , and cost overruns in developing software .
+
+this risk is present whether irs or a contractor develops tsm software .
+
+in this regard , to effectively oversee a contractor's work to develop software , and thereby help to ensure prompt and successful completion of the software , it is important for irs's software project managers to understand the practices needed to develop software at cmm level 2 .
+
+to further mitigate the risk of potential problems in developing software under contracts , it is critical that irs's software development contractors not be at cmm level 1 .
+
+irs does not , however , require all of its software development contractors to be at least at cmm level 2 .
+
+although not a specific key process area for rating an organization's software capabilities , it is nonetheless crucial that a set of quality indicators , and their associated measures , called metrics , be used to assess the quality of software development throughout a project .
+
+irs has not yet effectively established such a measurement process .
+
+early detection and avoidance of problems and control of software development projects are possible through the collection , validation , and analysis of metrics , which are numerical measures presumed to predict an aspect of software quality .
+
+useful metrics include numbers of defects found at various stages of development , costs to repair defects , and the extent of test coverage .
+
+basically , metrics , such as the number and frequency of errors associated with a specific section of software , are taken to analyze the quality of software .
+
+such analyses can identify situations where quality is unacceptable or questionable .
+
+in this way , the metrics are validated against quality factors throughout a software development project .
+
+according to irs officials responsible for software development , irs has not yet defined a complete suite of metrics to be used in the software development program to assess the on - going quality of tsm projects .
+
+irs's present use of metrics allows for only one type of metric , collectively called function points .
+
+even so , irs's use of function points for assessing all software development projects is inconsistent , and irs does not have a firm schedule for full implementation throughout the agency .
+
+in addition to function points , the following metrics , would , at a minimum , also be necessary: ( 1 ) complexity , ( 2 ) personnel and effort , ( 3 ) problems / defects by development phase , and ( 4 ) cost per defect .
+
+further , irs's use of function points does not trace back to quality improvement goals derived from irs's business objectives .
+
+in this regard , irs could use the following metrics to measure software attributes related to business goals: fewer product defects found by customers .
+
+earlier identification and correction of defects .
+
+fewer defects introduced during development .
+
+faster time to market .
+
+better predictability of project schedules and resources .
+
+without clearly establishing a suite of metrics that trace back to business objectives through quality improvement goals , and that are implemented organizationwide in a uniform and consistent manner , irs will be hampered in assessing the progress and quality of its software projects .
+
+moreover , the absence of a suite of metrics makes it difficult for irs to identify the reasons certain software development practices perform well while others perform poorly .
+
+metrics , therefore , when used organizationwide in developing software , would provide irs a means to better ensure uniform software development , thus avoiding the potential for repeating problems that could be costly and time - consuming to correct .
+
+to address irs's software development weaknesses , we recommend that the irs commissioner immediately require that all future contractors who develop software for the agency have a software development capability rating of at least cmm level 2 .
+
+to further upgrade irs's software development capability , we also recommend that the commissioner take action before december 31 , 1995 , to define , implement , and enforce a consistent set of requirements management procedures for all tsm projects that goes beyond irs's current request for information services process , and for software quality assurance , software configuration management , and project planning and tracking and define and implement a set of software development metrics to measure software attributes related to business goals , such as those outlined in this chapter .
+
+completing these actions by the end of 1995 is essential so that the congress , in monitoring tsm's progress and acting on tsm budget requests , has assurance that irs will be able to effectively develop , and / or oversee contractors' development of , software associated with systems modernization projects .
+
+irs agreed with our recommendations for improving its software development capability , and is taking steps to do so .
+
+irs said that it is committed to developing consistent procedures addressing requirements management , software quality assurance , software configuration management , and project planning and tracking .
+
+regarding metrics , irs said that it is developing a comprehensive measurement plan to link process outputs to external requirements , corporate goals , and recognized industry standards .
+
+irs said also that it has “baselined” all legacy systems using an accepted software engineering institute metric .
+
+we believe these steps , if implemented and institutionalized effectively , would provide irs the disciplined approach necessary to improve its software development capability .
+
+mature software development capabilities are key to quality , timely , and cost - effective tsm software development .
+
+irs also stated its belief that most government agencies and private organizations are not far along in raising their software development maturity profiles .
+
+we have identified several government organizations that have adopted cmm and are moving toward higher cmm levels .
+
+for example , the department of the army's information systems software development center in virginia and the department of the air force's sacramento air logistics center were both assessed by sei authorized assessors as cmm level 3 .
+
+the air force also has a deadline for all its software activities to reach cmm level 3 by 1998 .
+
+the software development capabilities of other organizations notwithstanding , we believe that a complex and costly systems development project , such as tsm , at a minimum , would warrant a ccm level 2 .
+
+irs is not adequately performing and managing key tsm technical activities critical to the success of a large and complex systems modernization effort .
+
+in particular , irs has not ( 1 ) defined and completed a tsm architecture , ( 2 ) established effective processes for configuration management , ( 3 ) defined the interfaces and standards needed to ensure that tsm components successfully integrate and interoperate , and ( 4 ) defined and completed tsm testing plans and established a testing facility .
+
+irs recognizes that , for modernization to succeed , tsm's technical activities must be better defined , performed , and managed .
+
+until irs improves these areas , it is at increased risk of developing systems that are unreliable , do not meet user needs , cannot work together effectively , and require significant and costly redesign and reprogramming to correct weaknesses .
+
+irs has adopted a systems development methodology , known as information engineering , which is a formal , structured system development methodology widely used in the public and private sectors to provide a disciplined approach to information systems development .
+
+the principal deliverable of information engineering's first stage , information strategic planning , is an integrated systems architecture .
+
+an integrated systems architecture ( 1 ) guides and constrains system design and development by providing a balanced , top - down view of the system , which system designers need to build the system and ( 2 ) organizes system functionality and defines relationships among those functions .
+
+in establishing this guidance and functionality , it is key to define security and data architectures and standard application program interfaces .
+
+in july 1993 , irs published an initial version of its integrated system architecture .
+
+according to this document , the tsm integrated systems architecture will be completed as other modernization work progresses .
+
+this approach defeats the purpose of an integrated systems architecture , which is to guide a system's development , not to merely document its development without formal guidance .
+
+further , tsm security and data architectures and standard application program interfaces are incomplete and , thus , designers and developers do not have sufficient guidance to build individual tsm systems .
+
+because tsm's security architecture is incomplete , systems designers do not have sufficient guidance on how to incorporate restricted access to irs systems and data .
+
+irs has made progress in defining its security requirements , but it continues to develop and implement systems without first completing the necessary security architecture and security applications .
+
+in february 1994 , irs issued a risk assessment that identified potential security risks , determined their severity , and identified areas needing safeguards , and in october 1994 , issued an information security policy .
+
+since then , irs has completed security documents relating to high - level security requirements , including mission , management , and technical security requirements ; functional security requirements , which specify user security needs ; a preliminary data sensitivity analysis , which is used to determine data sensitivity ( eg , sensitive but unclassified , etc .
+
+ ) ; and a draft information system target security architecture , which specifies tsm information security goals .
+
+in addition , an irs infrastructure and engineering task group has defined a set of preliminary security applications program interfaces that will guide application developers in requesting systems security functions .
+
+irs officials told us that once these interfaces have been completed and thoroughly tested , irs will mandate their use .
+
+this progress notwithstanding , the tsm security architecture and security applications interfaces remain incomplete and unavailable to systems designers and developers .
+
+without this crucial systems security guidance , irs has no assurance that taxpayer data will be adequately protected .
+
+key security guidance that has not yet been developed includes a disaster recovery and contingency plan , which would ensure that information systems can restore operations and data in the case of sabotage , natural disaster , or other operational disruption ; a security concept of operations , which would define irs plans for operating in tsm's new security environment ; a security test and evaluation plan , which would validate the operational effectiveness of system security controls ; a security certification and accreditation plan , which would provide irs managers and system security officers adequate assurance that the system will protect information as required by the security policy ; a communications security plan , which would define how security controls will be implemented when sending and receiving sensitive information electronically between and among distributed tsm subsystems and external agencies that must provide tax - related information to irs ; and an identification and authentication plan , which would define processes to verify user identities when accessing sensitive tax data .
+
+security has been a serious problem with irs's current systems .
+
+our audits of irs's financial statements under the chief financial officers act ( public law 101-576 ) have shown that irs's controls do not yet ensure that taxpayer data are adequately protected from unauthorized access , change , disclosure , or disaster .
+
+specifically , irs has not adequately ( 1 ) restricted access to taxpayer data to only those employees who need it , ( 2 ) monitored the activities of thousands of employees who were authorized to read and change taxpayer files , and ( 3 ) limited the use of computer programs to only those that have been authorized .
+
+we have reported that , as a result , irs did not have reasonable assurance that the confidentiality and accuracy of these data were protected and that the data were not manipulated for purposes of personal gain .
+
+irs's own reviews have identified instances where irs employees ( 1 ) manipulated taxpayer records to generate unauthorized refunds , ( 2 ) accessed taxpayer records to monitor the processing of fraudulent returns , and ( 3 ) browsed taxpayer accounts that were unrelated to their work , including those of friends , relatives , and neighbors .
+
+irs is perpetuating its current data weaknesses by continuing to build tsm systems without the guidance afforded by a data architecture that reflects reengineered processes .
+
+an irs analysis of its current systems identified the following data weaknesses: updated data on one system are not immediately available to users of other systems .
+
+master data files are updated once a week , and it can take up to 2 weeks for data in a taxpayer account to be changed .
+
+inconsistent and incomplete data on different systems can affect fundamental computations and can result , for example , in inconsistent calculations of interest and penalties .
+
+data are stored in unique formats on different systems and are accessed using various techniques .
+
+in 1994 , to address data weaknesses , irs initiated the corporate accounts processing system project .
+
+irs is developing this project in phases over 7 years , with each phase adding new tsm functionality .
+
+through the corporate accounts processing system , irs expects to provide more efficient access to data , reduce data redundancy , and improve data integrity .
+
+nonetheless , the success of the corporate accounts processing system project depends on improving current business processes through reengineering .
+
+at the time of our review , however , the project was modeling irs's existing business processes because irs had not completed its reengineering .
+
+to effectively correct existing data weaknesses that irs identified and that the corporate accounts processing system project is to address , irs must first define how its business processes will be reengineered .
+
+only then will irs be in a strong position to build new systems based on a data architecture that reflects reengineered business processes .
+
+standard application program interfaces are essential to guide systems development because they define how applications software can access and use standard functions and services ( eg , communications services ) .
+
+these interfaces provide many systems development benefits , including improved interoperability , consistent implementation , less complex applications , standardized software coding , and simplified maintenance .
+
+realizing the benefits of providing standard application program interfaces for system development , irs has established an interface task group and initiated an effort to define , code , test , and document standard application program interfaces for tsm .
+
+irs has drafted an infrastructure services manual to provide an explanation of infrastructure services that will be available to systems developers .
+
+irs also expects to prepare a more comprehensive and detailed manual describing application processing interfaces .
+
+however , many tsm standard application program interfaces are not yet defined , implemented , or documented .
+
+nonetheless , irs is continuing to build tsm projects .
+
+as a result , these projects are likely to require modification once standard application program interfaces are defined and required .
+
+systems change throughout their life cycle to ( 1 ) improve systems designs and operations and facilitate maintenance , ( 2 ) reflect changing mission requirements , and ( 3 ) respond to changes in the budget and schedules .
+
+these changes must be controlled through configuration management to ensure that they are cost - effective and properly implemented , documented , and tested .
+
+configuration management ensures that the integrity and stability of a system are preserved as it is designed , built , operated , and changed .
+
+configuration management is also important for making engineering and trade - off decisions , maintaining up - to - date systems descriptions , and tracking every system component .
+
+in 1994 , irs established an information system configuration control board to manage and control all systems changes .
+
+however , the board has focused on monitoring individual project costs and schedules and developing configuration management guidance .
+
+a process has not yet been established to manage systems changes .
+
+further , irs does not have a configuration management plan that precisely defines the processes to be implemented , how and when they will be implemented , and who will be responsible for performing specific configuration management functions .
+
+in 1992 , irs initiated an effort to design and develop both a comprehensive integration strategy and a programwide integration plan to help irs successfully transition from its current environment to one that meets tsm - defined objectives and capabilities .
+
+a preliminary strategy described by irs's executive for systems architecture was for ( 1 ) an integration approach that included a methodology to integrate current and future initiatives into the tsm systems architecture , ( 2 ) an associated problem detection and resolution process , and ( 3 ) the analysis processes ( eg , testing and quality assurance ) required to ensure projects are being , and have been , successfully integrated .
+
+the preliminary strategy addressed both the integration of individual projects and the transition of all projects to an integrated processing environment .
+
+since then , little has been done to complete a comprehensive integration strategy or develop an integration plan that defines implementation guidance and processes .
+
+in 1994 , irs planned to perform further work on integration management , but did not fund this effort in either fiscal year 1994 or fiscal year 1995 .
+
+until there is an effective integration process and a completed integration plan in place , irs will have little assurance that its systems modernization components will operate effectively together .
+
+an organization performs system testing to detect system design and development errors and correct them before putting a system into operation .
+
+inadequate testing increases the likelihood that errors will be undetected , reduces the extent to which a system can provide accurate and reliable processing services and information , and , because the discovery of errors is likely to be delayed , increases the cost of modifying the system .
+
+a testing plan ensures that sufficient testing is done during system development and prior to deployment .
+
+the plan defines , for example , what is to be accomplished during testing , who is to do the testing , where it is to be performed , and what constitutes success .
+
+irs acknowledges the importance of testing in the development of tsm systems , but has not yet developed a complete and comprehensive testing plan for tsm .
+
+in addition , individual tsm system development projects are developing their own testing plans .
+
+irs describes these individual testing plans as rudimentary and inadequate .
+
+as a result , irs has no assurance that its individual systems will be thoroughly and consistently tested or that systems will perform correctly or effectively .
+
+currently , irs performs system development testing in an operational environment using taxpayer data at its service centers or computer centers .
+
+because tax processing production work at these facilities has a higher priority than testing , the time , computer , and human resources applied to testing , as well as the resulting depth of testing , are limited .
+
+this limitation seriously affects testing quality and completeness .
+
+this testing environment also introduces the possibility that testing can , under unforeseen circumstances , affect and disrupt production .
+
+to help overcome this situation , irs plans to establish an integration test and control facility to provide an environment that will more effectively support the testing and integration of legacy and tsm systems .
+
+by establishing this testing facility , irs expects to ( 1 ) improve the quality of delivered software , ( 2 ) provide information resources needed for testing and integration , and ( 3 ) reduce risks in integrating and transitioning from current legacy systems to tsm .
+
+in september 1994 , irs developed a concept of operations for the integrated testing facility , which describes its functions and responsibilities .
+
+irs has been working with a contractor to define the facility's functions and responsibilities .
+
+irs is also working with the general services administration to select a facility site .
+
+however , until irs completes its testing plans , implements effective testing processes , and establishes its integration test and control facility , it has little assurance that systems will be adequately and effectively tested .
+
+to address irs's technical infrastructure weaknesses , we recommend that , before december 31 , 1995 , the irs commissioner complete an integrated systems architecture , including security , telecommunications , network management , and data management ; institutionalize formal configuration management for all newly approved projects and upgrades and develop a plan to bring ongoing projects under formal configuration management ; develop security concept of operations , disaster recovery , and contingency plans for the modernization vision and ensure that these requirements are addressed when developing information system projects ; develop a testing and evaluation master plan for the modernization ; establish an integration testing and control facility ; and complete the modernization integration plan and ensure that projects are monitored for compliance with modernization architectures .
+
+completion of these actions in 1995 is essential so that the congress , in carrying out its oversight role and making tsm funding decisions , has assurance that the government's tsm investment is adequately protected through effective management of the technical aspects of tax processing modernization .
+
+irs agreed with our recommendations to improve its systems architectures , testing , and integration .
+
+irs commented that it is identifying the necessary actions to ensure that defined systems development standards and architectures are enforced agencywide .
+
+irs said also that it is planning for its 1996 irs information system architecture to reflect a total system view ; is reviewing existing documentation to determine how best to incorporate our security architecture recommendation ; is in the process of improving its configuration management process by implementing change control , as well as developing guidance ; has initiated a series of assessments for major tsm systems to review and baseline existing requirements for each deliverable , including documented interfaces ; will merge integration testing , systems testing , and other testing - related personnel in one facility , and is planning to establish an interim test and control capability ; and has developed a release engineering approach to transition from its current environment to one meeting tsm - defined objectives and capabilities .
+
+we believe that actions to improve tsm's technical infrastructure , such as those irs has outlined in its comments , are necessary prerequisites to adequately develop and implement new systems .
+
+in addition , while release engineering can facilitate the transition from irs's current environment to one meeting tsm - defined objectives and capabilities , to be successful , it must be closely coordinated with requirements and configuration management .
+
+effective overall systems modernization management is important because tsm is not a one - time , turnkey replacement of all current subsystems ; rather , it is a target system that will be reached by incrementally upgrading or replacing operational subsystems .
+
+consequently , to successfully implement irs's systems modernization , an organizational structure must be in place to consistently manage and control all systems development efforts .
+
+this organizational structure would provide accountability and responsibility for all systems investments , including prioritizing new modernization systems and upgrades and maintaining all operational systems .
+
+however , below the commissioner's office , the management authority and control needed to modernize tax processing has been fragmented .
+
+until recently , irs's modernization executive was responsible for developing tsm information systems until they became operational .
+
+under this executive , each tsm system was managed by a program control group that was tasked with reviewing the project , making milestone decisions , and mitigating project risks .
+
+in addition , the chief information officer was responsible for developing non - tsm systems and for the operation of all irs systems .
+
+this included the tsm systems that were developed by the modernization executive and that had been in operation for about 1 year .
+
+in addition to systems development and operations being managed and controlled by the modernization executive and the chief information officer , several systems development projects were managed and controlled by irs's research and development division .
+
+for example , this division's staff of 30 information specialists developed both telefile and the filing fraud system , which are tsm systems .
+
+neither the modernization executive nor the chief information officer had decision - making responsibility for these systems or the authority to ensure compliance with irs system development standards and practices .
+
+during our april 28 , 1995 , meeting with the irs commissioner , we recommended that she establish consolidated , organizationwide control over all information systems investments , including all new systems in research and development and operational systems being upgraded and replaced .
+
+in may 1995 , the modernization executive was named associate commissioner and given responsibility to manage and control all system development efforts that had previously been the responsibility of the modernization executive and the chief information officer .
+
+however , the research and development division still does not report to the associate commissioner .
+
+it is critical that the associate commissioner now establish organizationwide system modernization accountability and address the problems this report discusses .
+
+this entails ensuring strategic planning documents are complete and consistent ; developing a comprehensive plan and schedule for linking reengineering efforts to systems development projects ; exercising consolidated control over all information systems investments , including all new systems in research and development and operational systems being upgraded and replaced ; and ensuring that defined systems development standards and architectures are enforced .
+
+to fully strengthen systems development accountability and responsibility , we recommend that the irs commissioner give the associate commissioner management and control responsibility for all systems development activities , including those of irs's research and development division .
+
+in commenting on a draft of this report , irs reiterated that the associate commissioner is responsible for all aspects of modernization program planning and management , budget formulation and execution , and information systems development and management .
+
+further , irs said that it was considering whether the associate commissioner's systems development responsibilities are to include those of the research and development division .
+
+we strongly urge irs to also place with the associate commissioner accountability and responsibility for the research and development division's systems development activities .
+
+by doing so , irs will help to ensure that systems development efforts are consistently managed and controlled organizationwide .
+

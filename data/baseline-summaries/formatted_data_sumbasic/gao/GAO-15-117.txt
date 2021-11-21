@@ -1,0 +1,412 @@
+in carrying out its mission of serving the nation's veterans , the department of veterans affairs ( va ) relies extensively on information technology ( it ) systems to , among other things , collect , process , and maintain personal information on veterans .
+
+protecting information and systems is a major challenge for the federal government , and both gao and the inspectors general have reported on the persistent information security weaknesses that place federal agencies at risk of disruption , fraud , or inappropriate disclosure of sensitive information .
+
+we first designated the protection of federal information systems as a government - wide high - risk area in 1997 and continued to do so in the most recent update to our high - risk series .
+
+moreover , as we recently testified , va has faced long - standing challenges in ensuring the security of its systems and information .
+
+you asked us to examine va's efforts to address information security vulnerabilities .
+
+our specific objective for this review was to determine the extent to which selected , previously identified vulnerabilities continue to exist on va computer systems .
+
+to accomplish our objective , we reviewed actions taken to address vulnerabilities that had been identified by va's network and security operations center ( nsoc ) .
+
+specifically , we reviewed the details of a critical incident that nsoc had detected in which va's network had been compromised and the department's efforts to respond to it .
+
+this incident was highlighted in a june 2013 testimony by va's former chief information security officer .
+
+we also reviewed vulnerabilities nsoc had identified in two key va web applications that process veterans' sensitive personally identifiable information .
+
+further , we examined vulnerabilities identified on devices connected to va's network .
+
+to assess the department's efforts in remediating these vulnerabilities , we reviewed tests performed by nsoc , including tests of the two key web applications and network vulnerability test results ; interviewed va officials , including nsoc staff , information security officials , software developers , and va office of inspector general officials ; and reviewed va security policies and guidance , national institute of standards and technology guidance , and prior gao reports .
+
+we conducted this performance audit from february 2014 to november 2014 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings based on our audit objective .
+
+appendix i provides additional details on our scope and methodology .
+
+va's mission is to promote the health , welfare , and dignity of all veterans in recognition of their service to the nation by ensuring that they receive medical care , benefits , social support , and memorials .
+
+va is one of the largest federal departments , with more than $150 billion in obligations and a workforce of approximately 313,000 employees for fiscal year 2013 .
+
+va is responsible for administering health care and other benefits that directly affect the lives of about 22 million veterans and eligible members of their families .
+
+the department is to provide these services through the veterans health administration , veterans benefits administration , and the national cemetery administration .
+
+va serves over 6 million patients at 151 medical centers , provides compensation and benefits for about 4 million veterans and beneficiaries , and maintains about 3 million gravesites at 131 properties .
+
+in carrying out its mission , va collects and maintains sensitive medical records and personally identifiable information ( pii ) of veterans through the use of medical , administrative , and financial computer applications .
+
+for example , the department stores veterans' admission , diagnosis , surgical procedure , and discharge information for each stay at a va medical center , nursing home , or domiciliary , as well as storing pii such as social security numbers .
+
+each of the medical centers , which are located around the country , uses local computer systems to run these standard applications .
+
+in addition , in providing oversight for disability assistance and economic opportunity to veterans , va maintains information such as compensation , pension , insurance , and benefits assistance services , as well as educational , loan , and vocational rehabilitation and employment services data .
+
+in providing health care and other benefits to veterans and their dependents , va relies on a vast array of information technology systems and networks , which supports its operations and stores sensitive information , including medical records and pii .
+
+without proper safeguards , these computer systems are vulnerable to significant risks , including loss or theft of resources ; inappropriate access to and disclosure , modification , or destruction of sensitive information ; use of computer resources for unauthorized purposes or to launch attacks on other computer systems ; and embarrassing security incidents that erode the public's confidence in the agency's ability to accomplish its mission .
+
+cyber - based threats are evolving and growing and arise from a wide array of sources .
+
+these threats can be unintentional or intentional .
+
+unintentional threats can be caused by software upgrades or defective equipment that inadvertently disrupt systems , as well as user error .
+
+intentional threats can come from sources both internal and external to the organization .
+
+internal threats include fraudulent or malevolent acts by employees or contractors .
+
+external threats include the ever - growing number of cyber - based attacks that can come from hackers , criminals , foreign nations , and other sources .
+
+these threat sources can exploit vulnerabilities such as those resulting from flaws in software code that could cause a program to malfunction .
+
+reports of incidents affecting va's systems and information highlight the serious impact that inadequate information security can have on , among other things , the confidentiality , integrity , and availability of veterans' personal information .
+
+for example: in january 2014 , a software defect in va's ebenefits system — a web application used by over 2.8 million veterans to access information and services — improperly allowed users to view the personal information of other veterans .
+
+according to an official from va's office of information and technology , this defect potentially allowed 5,399 users to view data of 1,301 veterans or their dependents .
+
+in june 2013 , va's former chief information security officer testified that in 2010 va's network had been compromised by uninvited visitors — nation - state - sponsored attackers — and that attacks had continued .
+
+he stated that these attackers were taking advantage of weak technical controls within va , including those for web applications that contained common exploitable vulnerabilities .
+
+he further stated that these resulted in unchallenged and unfettered access to and exploitation of va systems and information by this specific group of attackers .
+
+the federal information security management act of 2002 ( fisma ) sets forth a comprehensive framework for ensuring the effectiveness of information security controls over information resources that support federal operations and assets.other things , develop , document , and implement an agency - wide information security program , using a risk - based approach to information security management .
+
+such a program includes planning , implementing , evaluating , and documenting remedial actions to address information security deficiencies .
+
+fisma requires each agency to , among the act also assigned the national institute of standards and technology ( nist ) responsibility for developing standards and guidelines that include minimum information security requirements .
+
+for example , nist specifies requirements for testing vulnerabilities , remediating them , and developing plans of action and milestones for information systems .
+
+at va , the assistant secretary for information and technology , who serves as the agency's chief information officer ( cio ) , is responsible for ensuring that information systems operate at an acceptable level of risk .
+
+the cio reports annually to the head of va on the overall effectiveness of va's information security program , including the progress of remedial actions .
+
+the cio designated a chief information security officer ( ciso ) who , among other things , manages the development and maintenance of information security policies , procedures , and control techniques to address applicable requirements .
+
+the ciso also heads the department's office of information security , which is responsible for the department's system authorization process , including ensuring plans of action and milestones are maintained .
+
+also within the office of information security , nsoc is responsible for performing vulnerability and compliance scans .
+
+among other things , nsoc may detect incidents such as network intrusions , test web applications for security vulnerabilities , and scan va's network to test devices connected to the network for known vulnerabilities .
+
+in addition , under the direction of the cio , the deputy cio for service delivery and engineering and system owners are responsible for the overall procurement , development , integration , modification , daily operation , maintenance , and disposal of va information and information systems .
+
+these responsibilities include ensuring ( 1 ) that the secure baseline configuration for each system is documented and approved by the authorizing official prior to implementation ; ( 2 ) compliance with federal security requirements and va security policies ; and ( 3 ) remediation and updating of plans of action and milestones and completion of other reviews .
+
+as we recently testified , va has faced long - standing challenges in effectively implementing its information security program .
+
+specifically , from fiscal year 2007 through 2013 , va has consistently had weaknesses in key information security control areas .
+
+in addition , in fiscal year 2013 , the department's independent auditor reported , for the 12th year in a row , that weaknesses in information system controls over financial systems constituted a material weakness .
+
+further , the department's inspector general has identified development of an effective information security program and system security controls as a major management challenge for va .
+
+these findings are consistent with challenges gao has identified in va's implementation of its security program going back to the late 1990s .
+
+while va has taken actions to mitigate previously identified security vulnerabilities , they were insufficient to ensure that these weaknesses were fully addressed .
+
+specifically , va took steps to contain and eradicate an incident involving intrusion of its network , but these activities were not fully effective .
+
+in addition , va took insufficient actions to address vulnerabilities in two key web applications .
+
+finally , weaknesses identified on va's workstations ( eg , laptop computers ) had not been corrected in a timely manner .
+
+collectively , these weaknesses increase the risk that sensitive data — including veterans' personal information — could be compromised .
+
+upon detection of an incident , nist requires that agencies document actions taken in analyzing , containing , eradicating , and recovering from the incident .
+
+specifically , agencies should create follow - up reports for each incident and keep them for a period of time as specified in record retention policies .
+
+organizations should establish a policy for how long evidence from an incident should be retained , taking into account factors such as providing evidence for law enforcement , data retention policies , and cost .
+
+moreover , nist directs agencies to follow national archives and records administration ( nara ) guidance , which states that agency records related to computer security incident handling should be maintained for 3 years .
+
+nist guidance also notes the importance of agencies having tools in place to aid in incident response .
+
+va took actions to contain and eradicate an incident detected in 2012 involving an attack by malicious outsiders .
+
+va's nsoc had analyzed the scope of the incident and documented actions taken in response .
+
+for example , center staff identified hosts that they believed were affected by the event and took actions to eradicate the effects from these hosts .
+
+they documented the actions taken to address the incident to the point where they believed the incident had been successfully remediated .
+
+however , va could not provide sufficient documentation to demonstrate that these actions were effective .
+
+this is consistent with our findings from a recent government - wide review , in which we estimated that agencies were not able to effectively demonstrate actions taken in response to detected incidents in about 65 percent of cases .
+
+for this particular incident at va , staff could not locate the associated forensic analysis report or other key materials .
+
+officials explained that digital evidence was only maintained for 30 days due to storage space constraints .
+
+as a result , we could not determine the effectiveness of actions taken to address this incident .
+
+subsequent to this incident , va established a standard operating procedure that requires the forensic analysis report and related documentation to be maintained for 6 years but allows digital evidence collected during a forensic analysis to be purged 1 month after the completion of the associated forensic analysis report .
+
+however , purging such evidence after 1 month is not consistent with nist - recommended nara guidance , which calls for records related to computer security incident handling to be maintained for at least 3 years .
+
+without maintaining evidence of incidents , va cannot demonstrate the effectiveness of its incident response activities and will be unable to use these records to assist in handling future incidents or aiding law enforcement authorities in investigating and prosecuting crimes .
+
+in addition , va has not yet addressed an underlying vulnerability that contributed to the intrusion .
+
+specifically , va had planned to implement a solution that would have corrected the weakness in february 2014 , but at the time of our review , the solution had not been implemented .
+
+va did take other actions to mitigate the weakness — specifically , limiting the use of the affected system .
+
+however , this is insufficient to prevent recurrence of a similar incident .
+
+until this weakness is fully addressed , or additional mitigating controls are applied , unnecessary risk exists that an incident of this type could recur .
+
+more broadly , nsoc did not have sufficient visibility into va's computer networks .
+
+nist special publication 800-61 states that incident response policies should identify the roles , responsibilities , and levels of authority for those implementing incident response activities .
+
+however , va's policies did not define the authority for nsoc's access to logs of activity on va's network that are collected at va's data centers .
+
+as a result , the nsoc cannot be assured that the incident was effectively contained and eradicated from va's network .
+
+as we reported in april 2014 , va's incident response policies defined roles and responsibilities but did not include authorities for the incident response team .
+
+accordingly , we recommended , among other things , that va revise its policies for incident response by including requirements for defining the incident response team's level of authority .
+
+va concurred with this recommendation .
+
+implementing this recommendation should include providing the nsoc with appropriate authority to review logs of activity on va's network .
+
+nsoc has initiatives under way to further improve incident response capabilities .
+
+for example , it is performing an analysis to determine how best to further restrict access to the va network and is planning to purchase new incident response tools .
+
+however , it has not established a time frame for completing these actions .
+
+as noted in our prior work , elements such as specific actions , priorities , and milestones are desirable for evaluating progress , achieving results within specific time frames , and ensuring effective oversight and accountability .
+
+until va's nsoc establishes such elements , it remains to be seen whether the initiatives will improve its incident response capabilities .
+
+without assurance that incidents have been effectively contained and eradicated , or the underlying weaknesses effectively mitigated , va is at increased risk that veterans' pii and other sensitive data may be illicitly modified , disclosed , or lost .
+
+nist guidance and va policy both require applications to be tested prior to authorization in order to detect security weaknesses or vulnerabilities .
+
+nist also recommends that organizations develop plans of action and milestones to address these weaknesses .
+
+such plans provide a prioritized approach to risk mitigation and can be used by officials to monitor progress in correcting identified weaknesses .
+
+nsoc tests va's web applications as part of va's system authorization process and also conducts tests to validate that corrective actions have been taken to remediate identified vulnerabilities .
+
+for two high - impact web applications we reviewed , nsoc had identified four vulnerabilities that it considered high risk for each of the applications .
+
+for one of the applications , it also identified a critical vulnerability affecting the protection of pii .
+
+as of june 2014 , va had corrected six of the nine identified vulnerabilities , including the critical pii vulnerability , which it had corrected within 1 week of discovery .
+
+however , correction of one of the vulnerabilities had not yet been validated by nsoc for one of the web applications — and had been outstanding for over a year — and two had not yet been validated for the other application .
+
+table 1 shows the status of the nine identified critical and high - risk vulnerabilities .
+
+va did not provide evidence that it had developed plans of action and milestones for the identified vulnerabilities for which mitigation activities had not been completed .
+
+without plans of action and milestones for correcting high - risk vulnerabilities , va has less assurance that these weaknesses will be corrected in a timely and effective manner .
+
+this , in turn , could lead to unnecessary exposure of veterans' sensitive data that are maintained by these applications .
+
+various tools , such as “static analysis” tools , can scan software source code , identify root causes of software security vulnerabilities , and correlate and prioritize results .
+
+nist states that vulnerability analyses for custom software applications may require additional approaches , such as static analysis .
+
+this type of analysis can help developers identify and reduce or eliminate potential flaws .
+
+however , va did not conduct such analyses for both of the web applications we reviewed .
+
+according to va officials from the office of cybersecurity , the department began conducting source code reviews using a static analysis tool in january 2013 .
+
+although developers for both of the applications had received the scanning tool , only developers for one of the applications had begun performing source code scans at the time of our review .
+
+according to va officials , they have drafted a policy requiring the use of static analysis tools and it is in the executive approval process .
+
+until va ensures that its key web applications undergo source code scanning , it risks not detecting critical security vulnerabilities .
+
+nist guidance and va policy both require periodic vulnerability scanning , including scanning for patch levels ; assessment of risk and risk - based decisions ; and tracking and verifying remedial actions , such as applying patches to identified vulnerabilities .
+
+in addition , a 2012 va memo requires that critical patches be applied within 30 days .
+
+va reiterated this requirement in a february 2014 memorandum on patch management and elaborated on its policy .
+
+specifically , the 2014 memorandum states , among other things , that in cases where patches cannot be applied or impact availability , features , or functionality , the department will work with system personnel to develop short - term compensating controls and longer - term plans to migrate to newer platforms , hardware , and / or technologies where security patches can be applied and new security features enabled .
+
+va periodically scans its network devices — predominantly workstations ( eg , laptop computers ) — to identify vulnerabilities that have been identified by software vendors .
+
+the department's nsoc scans workstations across va's network at least monthly and develops executive summaries that show , among other things , the most critical vulnerabilities , such as those requiring patches to remediate them .
+
+however , va has not always addressed these vulnerabilities in a timely fashion consistent with department policy .
+
+as of may 2014 , the 10 most prevalent critical vulnerabilities identified by va's scans were software patches that had not been applied .
+
+regarding these missing patches , they had been available for periods ranging from 4 to 31 months ; there were multiple occurrences of each of the 10 missing patches , ranging from approximately 9,200 to 286,700 ; and each patch is intended to mitigate multiple potential known vulnerabilities , ranging from 5 to 51 vulnerabilities , with an average of about 30 and a total of 301 vulnerabilities .
+
+one reason that some of these vulnerabilities continued to exist is that va decided not to apply patches for the top three vulnerabilities until further testing could determine the effect the patches would have on various applications .
+
+however , this decision was not timely .
+
+the decision memorandum was dated april 2014 , even though the patches covered by the decision had been available from 3 to 10 months , exceeding the 30- day period for critical patches .
+
+in this decision memo , the department did not describe whether it had developed compensating controls to address instances where patches were not applied or discuss longer - term plans to migrate to newer platforms , hardware , and / or technologies where security patches can be applied and new security features enabled , as called for by its 2014 patch management memorandum .
+
+for the other patches , va did not provide any documentation of decisions not to apply them .
+
+at the end of our audit , va officials told us they had implemented compensating controls , but did not provide sufficient detail for us to evaluate their effectiveness .
+
+without applying patches or developing compensating controls , va increases the risk that known vulnerabilities could be exploited , potentially exposing veterans' information to unauthorized modification , disclosure , or loss .
+
+our findings are consistent with those of va's office of inspector general ( oig ) , which identified patch management as an issue in its fiscal year 2013 fisma report .
+
+specifically , the report identified significant deficiencies in configuration management controls intended to ensure that va's critical systems have appropriate security baselines and up - to - date vulnerability patches .
+
+the oig found that va had unsecure web application servers , excessive permissions on database platforms , a significant number of outdated and vulnerable third - party applications and operating system software , and a lack of common platform security standards across the department .
+
+to address these issues , the oig recommended that va implement a patch and vulnerability management program .
+
+in its response to the report , va stated that in february 2013 it had implemented vulnerability scanning and continued to build on and improve its patch and vulnerability program and that the oig's recommendation should therefore be closed .
+
+however , as our findings suggest , the department has not yet effectively implemented a program to manage vulnerabilities and apply associated patches .
+
+until it does so , it will remain at increased risk that known vulnerabilities could be exploited .
+
+in addition , the scanning procedures that va used may not detect certain vulnerabilities .
+
+specifically , for windows systems , va scanned in “authenticated” mode , but for other systems , such as linux , its scans were performed in “unauthenticated mode.” the vendor of the scanning tool used by va recommends scanning in authenticated mode .
+
+the unauthenticated scans cannot check for certain patches , potentially allowing for multiple vulnerabilities on these systems to go undetected .
+
+this increases the risk that va would not detect vulnerabilities and take steps to mitigate them , which could allow users to escalate privileges , crash the system , gain administrator access , or manipulate network traffic .
+
+va also has an initiative under way to facilitate the remediation of known vulnerabilities .
+
+in may 2013 , it established an organization tasked with overseeing the service delivery and engineering group's process for identifying , prioritizing , and remediating vulnerabilities on va information systems ; ensuring baseline configurations and security standards are updated as new vulnerabilities are discovered and remediated ; ensuring software standards are continually reviewed and updated and that installed software versions comply with these standards ; identifying , collecting , analyzing , and reporting performance metrics to measure the effectiveness of the patch and vulnerability management , baseline configuration maintenance , and software standards maintenance processes ; and proposing changes to improve these processes .
+
+this organization has taken initial steps to carry out its responsibilities .
+
+for example , it plans to create a database to track remediation and patch implementation .
+
+however , va has yet to identify specific actions , priorities , and milestones for accomplishing these tasks .
+
+as noted previously , elements such as specific actions , priorities , and milestones are desirable for evaluating progress , achieving results in specific time frames , and ensuring effective oversight and accountability .
+
+until va establishes these elements for the new organization , it does not have assurance that these efforts will be effective .
+
+ensuring effective security over its information and systems continues to be a challenge for va .
+
+while the department has taken steps to respond to incidents and identify and mitigate vulnerabilities , more can be done to fully address these issues .
+
+specifically , by not keeping sufficient records of its incident response activities , va lacks assurance that incidents have been effectively addressed and may be less able to effectively respond to future incidents .
+
+in addition , without fully addressing an underlying vulnerability that allowed a serious intrusion to occur , increased risk exists that such an incident could recur .
+
+while va has efforts under way to improve its incident response capabilities , until it identifies specific actions , priorities , and milestones for completing these efforts , it will be difficult to gauge its progress .
+
+further , limitations in va's approach to identifying and addressing vulnerabilities in key web applications , such as not developing plans of action and milestones to address identified vulnerabilities and not scanning all application source code for defects , put veterans' sensitive information at greater risk of compromise .
+
+moreover , va has yet to fully implement an effective program for identifying and mitigating vulnerabilities in workstations and other network devices , including applying security patches , performing an appropriate level of scanning , and identifying compensating controls and mitigation plans .
+
+these shortcomings leave its networks and devices susceptible to exploitation of known security vulnerabilities .
+
+while the department has established an organization intended to improve remediation efforts , without identifying specific actions , priorities , and milestones for accomplishing these tasks , this organization's effectiveness will be limited .
+
+to address previously identified security vulnerabilities , we are recommending that the secretary of veterans affairs take the following eight actions: update the department's standard operating procedure to require evidence associated with security incidents to be maintained for at least 3 years , consistent with nara guidance .
+
+fully implement the solution to address the weaknesses that led to the 2012 intrusion incident .
+
+establish time frames for completing planned initiatives to improve incident response capabilities .
+
+develop plans of action and milestones for critical and high - risk vulnerabilities affecting two key web applications .
+
+finalize and implement the policy requiring developers to conduct source code scans on key web applications .
+
+apply missing critical security patches within established time frames , or in cases where security patches cannot be applied , document compensating controls or , as appropriate , longer - term plans to migrate to newer platforms , hardware , and / or technologies where security patches can be applied and new security features enabled .
+
+scan non - windows network devices in authenticated mode .
+
+identify specific actions , priorities , and milestones for accomplishing tasks to facilitate vulnerability remediation .
+
+we provided a draft of this report to va for review and comment .
+
+in its written comments ( reprinted in appendix ii ) , va stated that it generally agreed with our conclusions and concurred with our recommendations .
+
+va also stated that it has already taken actions to address six of our eight recommendations and has plans in place to address the remaining two .
+
+although we have not yet validated the actions described or determined whether they effectively address the issues raised in this report , we are concerned that the actions va described as completed for at least two of the six recommendations may not comprehensively address the weaknesses we identified .
+
+specifically , for our recommendations related to applying critical security patches and establishing milestones and priorities for facilitating vulnerability remediation , va's comments focus on its monthly scans , among other things , but do not address application of patches , or identification of milestones and priorities .
+
+in this report , we recognize the importance of the monthly scans conducted by the department in accordance with nist guidance and va policy .
+
+while we acknowledge that va has efforts underway to address previously identified weaknesses , until it comprehensively and effectively addresses the weaknesses , sensitive personal information entrusted to the department will be at increased risk of unauthorized access , modification , disclosure , or loss .
+
+we believe that our recommendations , if effectively implemented , should help the department improve its security posture .
+
+we intend to monitor va's implementation of our recommendations .
+
+as agreed with your office , unless you publicly announce the contents of this report earlier , we plan no further distribution until 4 days from the report's date .
+
+at that time , we will send copies of this report to the appropriate congressional committees , the secretary of veterans affairs , and other interested parties .
+
+in addition , the report will be available at no charge on the gao website at http: / / www.gao.gov .
+
+if you or your staff have any questions about this report , please contact gregory c. wilshusen at ( 202 ) 512-6244 or dr. nabajyoti barkakati at ( 202 ) 512-4499 .
+
+we can also be reached by e - mail at wilshuseng@gao.gov and barkakatin@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made major contributions to this report are listed in appendix iii .
+
+our objective was to determine the extent to which selected , previously identified vulnerabilities continue to exist on department of veterans affairs ( va ) computer systems .
+
+to address this objective , we reviewed actions taken to address vulnerabilities that had been identified by va's network and security operations center ( nsoc ) .
+
+specifically , we reviewed the details of a critical incident that nsoc had detected in which va's network had been compromised and the department's efforts to respond to it .
+
+we selected this incident because it was highlighted in a june 2013 testimony by va's former chief information security officer .
+
+we reviewed a detailed investigation report prepared by nsoc and interviewed center officials regarding actions taken to detect , analyze , contain , eradicate , and recover from this incident .
+
+we also reviewed an internal memorandum related to an underlying vulnerability that contributed to this incident .
+
+we compared va's efforts to address this incident to national institute of standards and technology ( nist ) guidance on security controls and incident handling .
+
+we also reviewed va's standard operating procedure for forensics analysis and compared it to guidance issued by the national archives and records administration .
+
+we also reviewed a prior gao report on agencies' ( including va's ) incident response practices .
+
+further , we interviewed nsoc officials to determine what initiatives the department has planned or under way to further improve incident response capabilities .
+
+we also reviewed vulnerabilities nsoc had identified in two key va web applications .
+
+we selected these applications based on their processing of veterans' sensitive personally identifiable information .
+
+for these web applications , we reviewed the results of nsoc testing , particularly findings that the testers had categorized as critical or high risk , and compared the dates the vulnerabilities were identified and the dates corrective actions were validated .
+
+we also met with va information security officials and web application developers to determine ( 1 ) if plans of actions and milestones had been developed for uncorrected vulnerabilities and ( 2 ) the extent to which the department was using tools to conduct software code reviews in order to identify root causes of software vulnerabilities .
+
+we evaluated va actions in accordance with nist guidance on security testing , developing plans of actions and milestones , and vulnerability analysis and va's policy on testing applications prior to authorization .
+
+nist , special publication 800-53 , rev .
+
+4 .
+
+we conducted this performance audit from february 2014 to november 2014 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings based on our audit objective .
+
+in addition to the contacts named above , jeffrey knott , lon chin , harold lewis , and chris warweg ( assistant directors ) ; jennifer r. franks ; lee mccracken ; and tyler mountjoy made key contributions to this report .
+

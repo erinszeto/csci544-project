@@ -1,0 +1,1030 @@
+over the past decade , federal agencies have increasingly used internet - based computing services ( commonly referred to as cloud services ) to address their information technology needs .
+
+according to the office of management and budget ( omb ) , cloud services offer agencies a number of benefits , including reduced information technology ( it ) procurement and operating costs , and increased efficiency and effectiveness in delivering services .
+
+however , as we have previously reported , the use of cloud computing also poses cybersecurity risks .
+
+these risks arise when agencies and cloud service providers do not effectively implement security controls over cloud services .
+
+weaknesses in these controls could lead to vulnerabilities affecting the confidentiality , integrity , and availability of agency information .
+
+to facilitate the adoption and use of cloud services , omb established the federal risk and authorization management program ( fedramp ) in 2011 .
+
+the program is intended to provide a standardized approach for selecting and authorizing the use of cloud services that meet federal security requirements .
+
+managed by the general services administration ( gsa ) , the program aims to ensure that cloud computing services have adequate information security , while also eliminating duplicative efforts and reducing operational costs .
+
+fedramp establishes security requirements and guidelines that are intended to help secure cloud computing environments used by agencies and meet the provisions of the federal information security modernization act of 2014 ( fisma ) and implementing guidance .
+
+fedramp's requirements and guidelines specify the actions agencies and cloud service providers should take in order to authorize cloud services through the program .
+
+further , omb requires agencies to authorize information systems prior to their operation and periodically thereafter .
+
+this requirement also applies to the use of cloud services .
+
+omb required that by june 2014 , all executive branch agencies use fedramp for authorizing all cloud services .
+
+you requested that we review the progress and challenges associated with the fedramp program .
+
+our objectives were to determine the extent to which ( 1 ) federal agencies used fedramp to authorize the use of cloud services , ( 2 ) selected agencies addressed key elements of the program's authorization process , and ( 3 ) program participants identified fedramp benefits and challenges .
+
+to address the first objective , we examined data reported by gsa to determine whether fedramp authorizations for the 24 agencies covered by the chief financial officers ( cfo ) act of 1990 ( hereafter referred to as the cfo act agencies ) increased or decreased in fiscal year 2019 compared to the number of authorizations issued in fiscal year 2017 .
+
+in addition , we administered web - based surveys to the 24 cfo act agencies and to 83 cloud service providers participating in fedramp to gather information about their use of the program .
+
+we also interviewed knowledgeable officials from the 24 agencies , the fedramp program management office ( pmo ) , and the joint authorization board ( jab ) about the extent to which agencies were using the program .
+
+further , we reviewed omb's annual guidance on fisma to agencies and agencies' annual fisma reports to determine the reporting of fedramp usage .
+
+to address the second objective , we selected four agencies from the 24 cfo act agencies .
+
+these agencies were the department of health and human services ( hhs ) , the environmental protection agency ( epa ) , gsa , and the united states agency for international development ( usaid ) .
+
+because hhs is a large federated agency , we selected three of its operating divisions for a more detailed review .
+
+these three divisions were the centers for disease control and prevention ( cdc ) , the centers for medicare and medicaid services ( cms ) , and the national institutes of health ( nih ) .
+
+we selected these divisions based on their extensive usage of cloud service providers authorized through fedramp .
+
+from these agencies , we selected 10 authorization packages for it systems that the agencies reported as being supported by cloud services approved through fedramp .
+
+we selected these services and their corresponding authorization packages based on data from the pmo which indicated that , as of june 15 , 2017 , these cloud services were the most used by the 24 agencies .
+
+our findings related to the four agencies and 10 authorization packages we selected , but were not generalizable to all of the agencies in our review .
+
+to determine whether the four selected agencies were effectively implementing the fedramp authorization process , we collected authorization artifacts , including ( 1 ) control implementation summaries , ( 2 ) system security plans , ( 3 ) security assessment reports , ( 4 ) remedial action plans , and ( 5 ) letters authorizing the systems using cloud services .
+
+we then compared these documents to omb's guidance on cloud computing ; national institute of standards and technology ( nist ) special publication 800-53 ; and pmo guidance on using fedramp .
+
+we also reviewed and compared cloud service provider documentation to agency documentation to identify whether there were inconsistencies between the agency and cloud service provider responsibilities for implementing security controls .
+
+using a risk - based approach , we identified and selected 24 security controls from the 97 core controls identified in fedramp guidance and determined whether these controls were addressed in the selected agencies' and components' system security plans .
+
+further , we interviewed relevant agency officials to obtain their views on the effectiveness of the program's authorization process .
+
+we also interviewed officials and obtained documentary evidence from the pmo and jab to obtain information on their process for reviewing authorization packages .
+
+for the third objective , we reviewed the responses from the 24 cfo act agencies and 47 cloud service providers to our two surveys to identify information on the usefulness of fedramp policies , procedures , and guidance , as well as the benefits , challenges , and areas of improvement .
+
+in addition , we interviewed officials from the fedramp pmo , jab , and the 24 cfo act agencies , including the four selected agencies and their operational divisions .
+
+to assess the reliability of the data used to select agencies for our review and other data used to address the three objectives , we reviewed the following: fedramp pmo points of contact list for active cloud service providers and federal agency users of fedramp , fedramp pmo data on the 24 cfo act agencies' fiscal years 2017 , 2018 , and 2019 jab and agency authorizations , fedramp pmo data on cloud service provider participation and agency usage of fedramp as of june 15 , 2017 , agency inventories of systems relying on selected cloud services , cloud service provider authorization documentation contained within cloud service provider and agency reported third - party assessment organizations' security assessment reports , and agency plans of actions and milestones .
+
+we evaluated the materiality of the data to our audit objectives and assessed the data reliability by reviewing related documents , interviewing knowledgeable agency officials , and reviewing internal controls such as agency policies and procedures .
+
+based on our assessment of this information , we concluded that the data were sufficiently reliable for the purposes of our reporting objectives .
+
+see appendix i for additional details on our objectives , scope , and methodology .
+
+we conducted this performance audit from november 2016 to december 2019 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+federal agencies and our nation's critical infrastructures rely on information technology systems that are highly complex and dynamic , technologically diverse , and often geographically dispersed .
+
+this complexity increases the difficulty in identifying , managing , and protecting the numerous operating systems , applications , and devices comprising their systems and networks .
+
+further , federal systems and networks are at an increased risk of attack .
+
+this is due to those systems often being interconnected with other internal and external systems and networks , including the internet .
+
+cloud computing relies on internet - based interconnectivity and resources to provide computing services to customers , while intending to free customers from the burden and costs of maintaining the underlying infrastructure .
+
+as federal agencies increasingly use cloud computing to perform their missions , the implementation of effective information security controls becomes more important .
+
+the effective implementation of a standardized process for securing cloud environments could reduce risks to agency systems and information maintained on an agency's behalf .
+
+the federal information security modernization act of 2014 ( fisma ) was enacted to provide a comprehensive framework for ensuring the effectiveness of information security controls over information resources that support federal operations and assets .
+
+the act requires federal agencies to develop , document , and implement an information security program , and evaluate the program's effectiveness .
+
+fisma also requires omb to develop and oversee the implementation of policies , principles , standards , and guidelines on information security in federal agencies , except with regard to national security systems .
+
+the law assigns omb the responsibility of requiring agencies to identify and provide information security protections commensurate with assessments of risk to their information and information systems .
+
+in addition to implementing an agencywide security program , fisma requires agencies to ensure the security of information and systems maintained by or on behalf of the agency .
+
+the law also applies to systems used or operated by a contractor or other organization on behalf of the agency , such as it resources provided via cloud services .
+
+in december 2010 , omb issued a plan for improving it management that included provisions for a decision framework to migrate it services to cloud environments .
+
+since then , omb has developed cloud computing requirements , issued a number of cloud - related documents , and established fedramp .
+
+omb cloud - related documents include: federal cloud computing strategy , which was intended to accelerate the government's use of cloud computing by requiring agencies to evaluate safe , secure cloud computing options before making any new investments .
+
+security authorization of information systems in cloud computing environments , which established fedramp in december 2011 .
+
+2019 federal cloud computing strategy , issued in june 2019 , updates the 2011 federal cloud computing strategy and provides agencies with additional guidance on implementing cloud solutions and emphasizes cloud security as one of the three pillars of successful cloud adoption .
+
+in addition , the fedramp pmo established a framework for authorizing cloud services and guidance to help participants , including all agencies , implement it .
+
+according to the program management office , the framework is based on nist guidance that agencies are supposed to follow .
+
+in addition to the framework , the program management office issued guidance on how agencies can leverage existing security authorization packages .
+
+agencies can select different cloud services to support their missions .
+
+these services can range from a basic computing infrastructure on which agencies run their own software , to a full computing infrastructure that includes software applications .
+
+in defining cloud service models , nist identifies three primary models , as follows: infrastructure as a service ( iaas ) .
+
+the cloud service provider delivers and manages the basic computing infrastructure of servers , software , storage , and network equipment .
+
+the agency provides the operating system , programming tools and services , and applications .
+
+platform as a service ( paas ) .
+
+the cloud service provider delivers and manages the infrastructure , operating system , and programming tools and services , which the agency can use to create applications .
+
+software as a service ( saas ) .
+
+the service provider delivers one or more applications and all the resources ( operating system and programming tools ) and underlying infrastructure , which the agency can use on demand .
+
+in addition , agencies can choose from a variety of arrangements for obtaining cloud services ( called cloud deployment models ) , ranging from a private cloud for one organization to sharing a public cloud .
+
+nist identified the following four cloud deployment models: private cloud .
+
+the service is set up specifically for one organization , although there may be multiple customers within that organization and the cloud may exist on or off the customer's premises .
+
+community cloud .
+
+the service is set up for organizations with similar requirements .
+
+the cloud may be managed by the organizations or a third - party and may exist on or off the organization's premises .
+
+public cloud .
+
+the service is available to the general public and is owned and operated by the service provider .
+
+hybrid cloud .
+
+the service is a composite of two or more of the three deployment models ( private , community , or public ) that are bound together by technology that enables data and application portability .
+
+these deployment models differ from each other in the number of consumers they serve , the nature of various consumers' data that may be present in the cloud environment , and the amount of control consumers have over their data .
+
+a private cloud can allow for its consumers to have ultimate control in selecting who has access to that cloud environment .
+
+community clouds and hybrid clouds allow for a mixed degree of consumers' control and knowledge of other consumers .
+
+a public cloud allows access by all interested consumers , but , in doing so , should not allow one consumer who uses it to know or control data that belong to other consumers of that environment .
+
+established by omb and managed by gsa , the fedramp program is intended to provide a standardized approach to securing systems , assessing security controls , and continuously monitoring cloud services used by federal agencies .
+
+according to gsa , this approach is a “do once , use many times” framework that potentially lowers government costs , eliminates duplications , and ensures the consistent application of federal security requirements .
+
+the goals of fedramp are to: ensure that cloud - based services used by government agencies have adequate safeguards in place ; eliminate the duplication of effort to assess security controls , and reduce risk management costs ; and enable rapid and cost - effective procurement of information systems / service for federal agencies .
+
+the program's key participants are the fedramp pmo , jab , federal agencies , cloud service providers , and third - party assessor organizations .
+
+fedramp pmo .
+
+fedramp's pmo is headed by gsa and serves as the facilitator of the program .
+
+the office's responsibilities include managing the program's day - to - day operations , creating guidance and templates for agencies and cloud service providers to use for developing , assessing , authorizing , and continuously monitoring cloud services per federal requirements ( eg , fisma ) .
+
+jab .
+
+the jab is made up of chief information officers from the department of defense ( dod ) , dhs , and gsa .
+
+it is the primary governing and decision - making body of the program .
+
+the jab is responsible for defining and establishing fedramp baseline security controls and accreditation criteria for third - party assessment organizations .
+
+the jab is also responsible for issuing a provisional authorization to operate ( p - ato ) for cloud services it determines will be leveraged across most of the federal government .
+
+federal agencies .
+
+they are consumers and , in some cases , providers of cloud services .
+
+agencies are responsible for ensuring that cloud services which process , transmit , or store government information , use fedramp's baseline security controls before they issue subsequent authorizations for using those cloud services .
+
+cloud service providers ( csp ) .
+
+these providers include commercial firms and some federal agencies that offer cloud services to agencies .
+
+providers are required to meet the fedramp security requirements and implement the program's baseline security controls .
+
+providers work with an independent third - party assessment organization to conduct an initial system assessment , create security assessment documentation per the program's requirements , and comply with federal requirements for incident reporting , among others .
+
+third - party assessment organizations .
+
+these fedramp accredited assessors perform initial and periodic assessments of cloud providers' controls to ensure they meet the program's requirements .
+
+in addition , these assessors must be accredited through fedramp if they are assessing a cloud provider seeking a provisional authorization from the jab .
+
+for details on the roles and responsibilities of other entities involved with the program , see table 6 in appendix ii .
+
+in december 2015 , the fedramp pmo developed a security assessment framework that is to be followed by the cloud service providers ( providers ) and agencies seeking to authorize cloud services through the program .
+
+in addition to outlining roles and responsibilities , the framework provides agencies and cloud service providers with guidance on elements key to issuing authorizations for using cloud services through the program .
+
+these elements are critical to developing the information system or cloud service authorization package .
+
+authorization packages include , but are not limited to the following artifacts: a control implementation summary , the security plan , the security test plan and assessment report , and remedial actions plan .
+
+these artifacts are described in table 1 .
+
+fedramp provides agencies with two options for authorizing cloud services .
+
+the first option , called a jab authorization , involves the agency authorizing the cloud service based on a provisional authorization issued by the board .
+
+the second option , called an agency authorization , involves the agency issuing an authorization after either sponsoring a cloud service provider through fedramp , or by leveraging another agency's fedramp authorization of that cloud service provider .
+
+using either of these options , the agency is to review the authorization package for that cloud service prior to issuing its authorization .
+
+in reviewing the package , the agency is to consider the cloud service's system impact level ( low impact , moderate impact , or high impact ) , and deployment model , among other things , to help determine which authorization option is more appropriate .
+
+after an agency has reviewed the package and made a risk - based decision to authorize a cloud service for use , it is to formally document this decision in an authorization letter .
+
+the agency official authorizing the cloud service must provide a copy of the letter to the fedramp pmo .
+
+the pmo uses the information to verify agency use and keep other agencies informed of any changes to a provider's authorization .
+
+as of july 2019 , all 24 cfo act agencies participated in fedramp .
+
+according to the program management office's documentation , from june 2017 through july 2019 , these agencies' use of fedramp authorizations increased from 390 authorizations to 926 authorizations .
+
+specifically , the number of jab authorizations increased from 155 to 317 — a 105 percent increase .
+
+further , the total number of agency sponsored and – leveraged authorizations increased , from 235 to 609 — a 159 percent increase .
+
+figure 1 illustrates the increase in the number of fedramp authorizations for the 24 agencies from june 2017 through july 2019 .
+
+survey responses from 23 of 24 cfo act agencies indicated that the highest number of cloud service authorizations through fedramp were for software as a service .
+
+software as a service accounted for 331 of the 590 reported authorizations or 56 percent .
+
+for the other two services , infrastructure as a service and platform as a service , agencies reported issuing 153 authorizations ( 26 percent ) and 106 authorizations ( 18 percent ) , respectively .
+
+figure 2 , depicts the authorizations by agency and cloud service and shows that 18 of 23 agencies issued more authorizations for software as a service than platform as a service or infrastructure as a service .
+
+in addition , while agencies are consumers of cloud services , some agencies also serve as cloud service providers to other federal agencies .
+
+four of 24 agencies reported that they served as cloud service providers to other federal agencies in fy 2017 .
+
+all four agencies reported that their cloud services received authorizations that were approved through fedramp and used by other federal agencies .
+
+these four agencies reported a total of seven cloud services with an agency authorization and one cloud service with a provisional authorization from the jab .
+
+omb required all agencies to use fedramp for authorizing cloud services by june 2014 , and by june 2017 , all of the 24 cfo act agencies were using the program .
+
+however , the agencies also used cloud services that were not authorized through the program .
+
+in responding to our survey , the majority of the agencies ( 15 of 24 ) reported that they used cloud services that were not authorized through fedramp .
+
+for instance , one agency reported that it used 90 cloud services that were not authorized through fedramp and the other 14 agencies reported using a total of 157 cloud services that were not authorized through fedramp .
+
+seven agencies responded that they only use cloud services authorized through fedramp .
+
+two agencies did not provide a response for this question .
+
+agencies provided varying explanations for using cloud services that were not authorized through fedramp .
+
+for example , officials from two of the agencies stated that they were unable to identify providers authorized through the program that could meet their unique needs .
+
+an official from a third agency noted that the efforts to meet the program's requirements were labor - intensive and that it was too expensive for the providers to become compliant with fedramp .
+
+in addition , that official stated that providers did not want to pursue fedramp compliance unless they had enough demand from federal customers .
+
+an official from a fourth agency stated that some of that agency's cloud services were considered to be private and , thus , did not need to be authorized through the program .
+
+nevertheless , according to that official , the agency performed its own authorization actions to ensure that fedramp requirements were met .
+
+in a similar example , an official at another agency noted that it took a significant amount of time for a provider to complete the fedramp process and that the agency had to issue its own authorization while the provider was going through the process .
+
+that authorization had not yet been approved through fedramp .
+
+the survey responses of cloud service providers were consistent with the agencies' responses and indicated that multiple agencies were using cloud services that were not authorized or approved through fedramp .
+
+for example , 31 of 47 providers that responded to our survey reported that , during fy 2017 , agencies had used their cloud services and those services were not authorized by fedramp .
+
+according to one cloud service provider , agencies were using 30 of its cloud services that were not authorized through fedramp .
+
+another cloud service provider reported that agencies were using nine of its cloud services that were not authorized through the program .
+
+officials from the fedramp program management office also provided several reasons why agencies did not use the program for all of their cloud services .
+
+for example , one pmo official indicated agencies had misperceptions of the program , its process , and resources required for a fedramp authorization .
+
+the official also specified that agencies did not use the program for all their cloud services because of internal resource constraints based on other competing agency priorities .
+
+based on our work , another potential reason that agencies authorize cloud services outside of the fedramp program is that omb has not adequately monitored compliance with this requirement .
+
+as mentioned earlier , omb has issued a number of policies encouraging agencies to adopt cloud computing solutions and requiring agencies to use fedramp for authorizing cloud services .
+
+nevertheless , omb has not monitored agencies' compliance or held agencies accountable for complying with the requirement to ensure that agencies are using the program to authorize their cloud services .
+
+according to an omb technical specialist , the office collects and reviews data from the fedramp marketplace to monitor agencies' use of the program .
+
+however , the office does not collect data on the extent to which federal agencies are using cloud services authorized outside of the program or oversee agencies' compliance with using fedramp .
+
+as a result , if omb does not monitor or hold agencies accountable for using the fedramp program , omb and federal agencies have reduced assurance that security controls required by the program are being consistently implemented .
+
+additionally , omb may lack information on agencies' needs for cloud services .
+
+although the four selected agencies included key documents supporting fedramp's authorization process , they did not consistently include key information in those documents .
+
+specifically , these four agencies did not consistently or fully address required information in system security plans , security assessment reports , and remedial action plans .
+
+in addition , the agencies did not always prepare their authorizations approving the use of cloud services .
+
+fedramp recommends that agencies use the fedramp control implementation summary ( cis ) when leveraging cloud services for their systems .
+
+in addition , fedramp specifies that agencies are to use nist guidance when addressing their individual or shared control implementation responsibilities when leveraging cloud services .
+
+all 10 authorization packages we reviewed contained a summary , which identified agencies' control implementation responsibilities as well as that of the cloud service providers .
+
+an objective of system security planning is to improve the protection of information system resources .
+
+a system security plan provides an overview of the security requirements for a system or cloud service and describes the controls that are in place or planned to meet those requirements .
+
+to identify controls that an agency will need to document on its security plan , the agency reviews the cis which lists both the agency and csp's security control responsibilities .
+
+further , nist guidelines state that federal agencies' system security plans should identify: an explicitly defined authorization boundary for the system , how the system operates in terms of mission and business processes , the security categorization of the system including supporting rationale , the operational environment of the system and connections to other information systems , the security controls in place or planned for meeting security requirements , including a rationale for supplementing controls , and a review and approval by the authorizing official or designated representative prior to plan implementation .
+
+as shown in table 2 , the four selected agencies had documented security plans for 10 systems .
+
+however , the agencies had not consistently addressed the required information in their plans .
+
+as illustrated above , the security plans for the nine selected systems did not fully address all required information .
+
+for example , three plans partially identified the operational environment of the system , such as identifying external connections which could include the cloud service the agency system was leveraging .
+
+in addition , nine plans did not fully address the extent to which security controls were in place , including those listed as the agency's responsibility .
+
+further , agencies did not provide complete support that their authorizing officials had reviewed and approved the plans for five systems .
+
+specifically , agencies provided signed letters indicating that the agencies initially approved the plans .
+
+however , agencies did not provide documentation to show that subsequent changes to the system security plan after the date of the signed letters were reviewed and approved by the authorizing official .
+
+additionally , one agency had an expired letter .
+
+until agencies fully address required information in their security plans , including the controls relied on by the cloud service provider , they have reduced assurance that security controls are in place and operating as intended .
+
+nist specifies that organizations document the results of security assessments in a security assessment report .
+
+according to fedramp's guidance , agencies are to use the control implementation summary to identify controls that are their responsibility and assess agency - specific controls , inclusive of any agency controls that are shared with providers .
+
+the security assessment report is to summarize the control testing and describe whether the tested controls were effectively in place .
+
+as shown in table 3 , agencies did not always summarize the testing of controls on security assessment reports .
+
+the four agencies prepared security assessment reports for each of the 10 selected systems .
+
+however , agencies summarized the results of control tests for only three of the 10 systems reviewed .
+
+usaid summarized the test results in the security assessment report for the agency system we reviewed , but the other three agencies did not consistently summarize their results .
+
+for example , hhs did not summarize test results for three controls for one system and six controls for another system .
+
+gsa did not summarize tests results for 17 controls for one of its systems .
+
+if security assessment reports do not fully summarize the test results , agencies may have limited assurance that the controls intended to protect agency data in the cloud environment are in place and operating effectively .
+
+a remedial action plan assists agencies in identifying , assessing , prioritizing , and monitoring progress in correcting security weaknesses that are found in information systems .
+
+nist guidelines specify that organizations develop a remedial action plan , also referred to as a plan of action and milestones , to document the organization's planned actions to correct weaknesses or deficiencies noted during the assessment of security controls of the information system .
+
+in addition , fedramp guidance stated that all agencies should follow fisma which requires agencies to have a process for documenting remedial actions to address any deficiencies in the information security policies , procedures , and practices .
+
+omb requires that remedial action plans include the following information: a description of the specific weakness ; the name of the office or organization responsible for resolving the weakness ; an estimate of the funding required to resolve the weakness , including the anticipated source of funding ; an estimated completion date for resolving the weakness ; key milestones with estimated completion dates ; any changes to the key milestones and completion dates ; the source of the identified weakness ( e.g .
+
+security assessment , program review , inspector general audit , etc .
+
+ ) ; and the status of the corrective action ( ongoing , completed , etc. ) .
+
+as shown in table 4 , the four selected agencies documented remedial action plans for each of the selected systems , but did not consistently identify required information .
+
+as illustrated above , three plans partially identified the office responsible for addressing the weakness .
+
+two plans did not include changes to information regarding key milestones and completion dates and two partially included the information .
+
+further , two agencies partially identified the source of the weakness for three systems while a third agency did not identify any sources for the selected system .
+
+until agencies include all required elements in their remedial action plans , they will be less likely to effectively assess , prioritize , and monitor efforts to resolve weaknesses in their systems .
+
+omb defines an authorization to operate as an official management decision where a federal official or officials authorize the operation of information system ( s ) and accept the risk to agency operations and assets , individuals , and other organizations based on the implementation of security and privacy controls .
+
+omb requires agencies to use fedramp processes when granting authorizations to operate for their use of cloud services .
+
+according to fedramp pmo guidance , authorizing officials should document the authorization of ( 1 ) the agency system supported by the cloud service and ( 2 ) the cloud service used by the agency .
+
+additionally , the agency should provide a copy of its authorization letter for the cloud service ( cloud service authorization letter ) to the fedramp program management office so that the office can verify the agency's use of the service and keep agencies informed of any changes to a provider's authorization status .
+
+as shown in table 5 , agencies did not consistently prepare and provide the fedramp pmo with the cloud service authorization letter .
+
+gsa prepared both system and cloud service authorization letters for its two selected systems .
+
+however , the other three agencies did not consistently prepare the letters .
+
+specifically , usaid did not consistently prepare letters authorizing the cloud service and the system supported by the cloud service .
+
+in addition , hhs and epa did not consistently prepare letters authorizing their use of the cloud services .
+
+further , epa , hhs , and usaid did not consistently provide the fedramp pmo with authorization letters for cloud services .
+
+although gsa and an hhs component , cdc , provided cloud service authorization letters to the fedramp pmo , only hhs included the requirement to provide the letter to the fedramp pmo in its guidance .
+
+three of the four selected agencies did not include this requirement in their guidance .
+
+not including this requirement in their security guidance could be a potential reason for agencies' inconsistent implementation .
+
+if agencies do not provide copies of their cloud service authorization letters to the program management office , the office may not have accurate information on which agencies are using approved cloud services .
+
+further , the lack of such information could result in the office being delayed in notifying agencies when a service provider's authorization has been revoked or a provider has experienced a security incident .
+
+agencies provided various reasons for not including required information in fedramp authorization documents .
+
+such reasons included the agency was restricted from documenting proprietary information concerning the cloud service provider's portion of the shared control in the security plan and the agency was tracking all remedial actions , but the agency did not include them in the plan it provided to us .
+
+by not including the required information , agencies have reduced assurance that controls over cloud services have been effectively implemented .
+
+fedramp participants identified a number of the program's benefits , such as improved security of agencies' data and increased efficiency for providers to obtain authorizations .
+
+participants also cited a number of challenges , such as the agency resources needed for authorizing a cloud service or the resources needed by the provider to implement the program's requirements .
+
+to address challenges , gsa has taken steps to improve the program , but its guidance on fedramp's requirements and participant's responsibilities was not always clear and the program's process for monitoring the status of security controls over cloud services was limited .
+
+fedramp participants indicated that implementing certain elements of the program were challenging .
+
+participants specifically identified the authorization process , remedial actions , and time and resources as key challenges .
+
+authorization process and requirements .
+
+complex authorization process .
+
+surveyed participants — agencies and cloud service providers — responded that simplifying the agency authorization process would help them to better understand and manage their ongoing authorizations and continuous monitoring efforts .
+
+for example , 17 of 23 agencies , responding to this question , identified the agency authorization process as an area for improvement as did 30 of 47 surveyed cloud service providers .
+
+survey respondents indicated that the agency authorization process should be streamlined to be less - restrictive and time - consuming .
+
+agencies also reported that overcoming the complexity of the authorization process was one of their largest hurdles .
+
+according to the director of fedramp , the fedramp pmo encourages agencies to streamline their agency authorization processes to be less - restrictive and time - consuming .
+
+limitations with reviewing authorization packages .
+
+agencies also identified reviewing authorization packages as a challenge .
+
+agencies reported in the survey and during interviews that there were limitations in their ability to review cloud security packages prior to selecting a cloud service provider .
+
+agencies that are currently using or want to evaluate specific fedramp authorized cloud services are able to access fedramp security packages directly through the fedramp secure repository , located on omb max portal .
+
+however , agencies are given a 30-day period to access packages , which one agency official stated is too short of a time period for them to properly review documentation .
+
+although access is limited to 30 days , agencies are able to renew the access by sending an email to the fedramp program management office .
+
+the director of fedramp indicated that agencies can work directly with cloud service providers to obtain additional permissions to the package to save , print , email , post , publish , or reproduce .
+
+in addition , agencies expressed challenges with restrictions on downloading the packages , which limited their ability to automate their review of packages and subsequent monitoring of changes to the services security posture .
+
+agencies also cited challenges with sharing review - related information due to the restrictive nature of cloud service nondisclosure agreements .
+
+the director of fedramp mentioned that agencies can work directly with cloud service providers to obtain additional access permissions to their packages .
+
+lack of uniform guidance for selecting cloud services .
+
+federal agencies suggested that uniform guidance on authorization packages could assist fedramp customers in making better risk - based decisions in selecting cloud services .
+
+agency officials we interviewed stated the quality and reviews of authorization packages approved through fedramp varied .
+
+officials stated that inconsistencies in both fedramp agency and jab provisional authorization packages have required some agencies to perform additional work .
+
+according to the officials , while the jab process takes longer , the review appears to be more detailed than the agency process .
+
+officials noted that improving guidance on reviewing authorization packages could help with the consistency and quality of the agency package reviews .
+
+the fedramp pmo has taken action and published guidance during our engagement to address more details of the authorization process .
+
+in addition , according to the director of fedramp , the fedramp pmo launched a series of training events between february 2018 and june 2019 that provided detailed guidance into the package review process .
+
+need for improved collaboration and coordination .
+
+participants also identified opportunities for improving collaboration and coordination .
+
+federal agencies suggested that improved collaboration among federal agencies in leveraging cloud services could provide transparency on the cloud service providers and the services other agencies are using .
+
+this could inform agencies on whether those services could be adopted to fit the need of their missions .
+
+agencies also mentioned that fedramp pmo could improve its coordination across federal agencies and cloud service providers to provide consistent information and help facilitate opportunities to improve the program .
+
+for example , three participants suggested improving cross - agency collaborations for cloud authorizations .
+
+additionally , one survey participant noted that improved collaboration within the cloud service provider community could provide a better understanding of the impacts and associated cost of potential changes to program's policies or requirements before they are made .
+
+according to officials from the fedramp pmo , their standard practice is to solicit feedback from industry and agency stakeholders prior to release of significant guidance .
+
+they added that they plan to continue collaborating with agency and industry partners .
+
+remedial action process .
+
+in responding to our survey , 9 of 23 agencies reported that the lack of clarity on actions taken to resolve weaknesses in systems supporting cloud services was a major or moderate challenge .
+
+specifically , two agencies cited this area as a major challenge and seven as a moderate challenge .
+
+two agencies suggested that the program management office could make improvements by providing better visibility and traceability of the remedial action process to inform agencies on the risks associated with a cloud service .
+
+participants responded that the remedial action process could be improved by having structured procedures for aggregating system vulnerabilities and deficiencies .
+
+this would provide agencies with better information on weaknesses identified by cloud service providers or their third party assessors in order to better consider risks prior to the purchase or use of cloud services .
+
+additionally , agencies cited the need for improvements to the consistency of remedial action plans .
+
+specifically , agencies cited the need for a consistent format and content of remedial action plans among security packages .
+
+further , one cloud service provider stated that outcome - based performance metrics were a better measure of monitoring the status and effectiveness of the ongoing authorization and assessment of cloud services , as opposed to only relying on remedial action plans .
+
+according to the director for fedramp , the fedramp pmo developed additional remedial action guidance in february 2018 and a dedicated webpage specific to the remedial action process in january of 2018 .
+
+additionally , the director noted that for all jab provisional authorizations , the fedramp pmo and jab analyzes raw data on vulnerability scans and provides a one - page summary report that is available to agencies within the omb max portal .
+
+commitment of time and resources to complete and maintain an agency authorization .
+
+the amount of time to complete an agency authorization to operate for a cloud service was cited as one of the most challenging aspects of fedramp .
+
+in responding to our survey , six agencies cited the commitment of time and resources for agency authorizations as a major challenge ; five agencies identified it as a moderate challenge ; and six as a minor challenge .
+
+one responding agency mentioned that the time and costs associated with completing and maintaining an ongoing agency authorization was burdensome to both the agency and cloud vendor .
+
+this burden was due to a lack of allocated agency resources to continue implementing the program's requirements .
+
+in response to this challenge , the program management office has streamlined the authorization process for low - risk systems to allow for risk - based decisions that can reduce the time and resources required for an agency authorization .
+
+in addition , 36 of 47 cloud service providers responding to our survey indicated that the significant amount of resources required to implement the program's requirements for an authorization was a major or moderate challenge .
+
+additionally , jab technical representatives identified many of the challenges and opportunities for improving the program that agencies and cloud service providers identified .
+
+in addition , the officials stated that the fedramp pmo is aware of these issues and has taken steps to address them .
+
+according to the jab technical representatives , the fedramp pmo's program intended improvements include , but are not limited to , updates to guidance and education resources , plans to automate the continuous monitoring process with vulnerability scanning tools , and reduced time and costs associated for completing the authorization process for both customer agencies and cloud service providers .
+
+according to the director for fedramp , the fedramp pmo has continued to make enhancements based on industry and agency feedback .
+
+the official reported that numerous guidance documents , relating to continuous monitoring , the agency authorization process , and fedramp designations have been released during our engagement .
+
+the official also mentioned that the pmo actively seeks feedback from stakeholders and that additional opportunities for fedramp training was available .
+
+gsa has taken a number of steps to improve fedramp .
+
+among other things , the office has provided updated instructions for completing authorization packages and established and updated its training portal to help agencies and cloud service providers better understand the steps required for obtaining an authorization .
+
+in addition , the office has taken steps to streamline the authorization process and provided additional guidance on continuous monitoring of security controls over cloud services .
+
+nevertheless , fedramp's requirements and guidance on implementing controls were not always clear and the program's process for monitoring the status of security controls over cloud services was limited .
+
+clarity in program requirements and responsibilities .
+
+agencies reported challenges with understanding fedramp's requirements and the process for granting an agency authorization .
+
+specifically , agencies cited the need for clearer guidance on requirements and agency responsibilities for completing and maintaining an authorization .
+
+eight agencies reported the clarity of fedramp requirements associated with the agency authorization process as a moderate challenge ; whereas nine identified it as a minor challenge and no agencies reported it as a major challenge .
+
+five agencies reported this was not a challenge .
+
+in addition , 20 of 24 surveyed agencies indicated that additional guidance describing roles and responsibilities would be very or moderately useful to their participation in fedramp .
+
+further , 37 of 47 cloud service providers specified that additional guidance for describing the security roles and responsibilities between agencies and cloud service providers was needed .
+
+both agencies and cloud service providers commented that existing guidance for using the program does not fully address control implementation roles and responsibilities and that a process should be established to address these issues .
+
+officials from selected agencies also indicated that responsibilities were not always clearly detailed .
+
+specifically , hhs , gsa , and usaid officials stated that guidance for using fedramp could be clearer on helping define roles and responsibilities between agencies and providers in implementing security controls for cloud services .
+
+the jab technical representatives we interviewed acknowledged that while control implementation responsibilities between the agency and cloud service provider are defined in the control implementation summary , in some cases , shared responsibilities are not clearly delineated .
+
+the jab technical representatives stated that the unclear shared responsibilities could lead to inconsistent implementation of certain controls between the agency and its provider .
+
+according to the director of fedramp , it is the cloud service providers' responsibility to ensure the spreadsheet identifying control responsibilities are completed accurately and consistently .
+
+our analysis of agency documentation of required information in authorization packages found that the cause of selected agencies' gaps in required information for security plans , security assessment reports and remedial action plans were due in part , to unclear guidance for implementing their control responsibilities .
+
+if responsibilities are not clear , agencies may have reduced ability to ensure that controls over the cloud services they authorized are in place and effective .
+
+limited capabilities for continuously monitoring security controls .
+
+fedramp's continuous monitoring process does not allow for an automated review of control requirements by agencies with security management tools .
+
+according to nist sp 800-137 , security continuous monitoring is maintaining an ongoing awareness of information security , vulnerabilities , and threats to support organizational risk management decisions .
+
+in addition , nist mentions that timely , relevant , and accurate information is vital , particularly when resources are limited and agencies must prioritize their efforts .
+
+according to the program's officials , they will be working with nist to incorporate automation into the authorization process .
+
+based on our work and survey responses from agencies and cloud service providers , a number of weaknesses with the program's continuous monitoring process existed .
+
+for example , copy - protected pdfs , word documents , and excel spreadsheets comprised the remedial action plans and other documents supporting continuous monitoring of fedramp cloud service provider controls .
+
+because of the static nature of the documents , including restrictions on copying information concerning cloud service provider controls , the documents could not be readily integrated with agencies' automated security management tools in providing ongoing awareness of control implementation .
+
+further , agency staff would have to spend time manually accessing and reviewing the documents each time they needed to determine the status of a cloud service's implementation of a particular control .
+
+agency personnel would also have to confirm that the documents they reviewed were the most current version .
+
+according to the director of fedramp , agencies may request unrestricted access to the security package directly from the provider .
+
+agencies' survey responses also indicated that: 1 ) remedial action plans , used in continuous monitoring , were not updated consistently , 2 ) the manual process did not allow for automated data feeds into their continuous monitoring tools , and 3 ) restrictions on copying documents reduced information sharing within the agency .
+
+further , 21 of 23 agencies responded that fedramp's continuous monitoring of cloud security controls was a needed area of improvement .
+
+cloud service providers also reported difficulties ( 36 of 47 ) with implementing continuous monitoring which could highlight the need for further improvements .
+
+in response , the director of fedramp indicated that as of october 30 , 2018 , the fedramp pmo consolidated all continuous monitoring guidance documents , templates , and blog posts to a single webpage for ease of access by program stakeholders .
+
+jab technical representatives also acknowledged challenges with implementing continuous monitoring such as difficulties with using continuous monitoring reports to assess the security posture of a cloud service .
+
+according to jab technical representatives , agencies are responsible for reviewing continuous monitoring reports from the cloud service providers , but not all agencies could effectively conduct continuous monitoring .
+
+for example , an agency's continuous monitoring efforts could be affected from not receiving a timely notification that its cloud service provider has uploaded the required monthly continuous monitoring updates , including updates to remedial actions .
+
+according to the director of fedramp , the omb max portal provides the capability for agencies to receive automatic notifications when there is an update to the continuous monitoring .
+
+agencies can enable updates by selecting the “watch this page” option in the menu bar .
+
+while the fedramp pmo recommends agencies to enable this feature , agencies were not aware of the feature .
+
+as a result , agencies may not be aware that such updates have taken place and tend to be reliant on a providers' ability to ensure that effective security practices are in place .
+
+the jab technical representatives commented that as cloud services evolve and mature , the continuous monitoring process needs to become more automated and user - friendly to provide real - time awareness of the security status of cloud services .
+
+until the pmo allows for more options to automate continuous monitoring , agencies may have less assurance that they will receive timely information on the extent that controls are being effectively implemented for the cloud services they are using .
+
+in addition , as more federal agencies move toward dhs's continuous diagnostics and mitigation program , automation may become even more important .
+
+although federal agencies increased their use of fedramp , they continued to authorize the use of cloud services that had not been approved through the program .
+
+while omb requires agencies to use fedramp to authorize the use of cloud services , it did not monitor or ensure that agencies used the program to authorize cloud services .
+
+as a result , agencies have less assurance that security controls over cloud services have been consistently implemented .
+
+the selected agencies did not fully address key elements necessary for implementing the fedramp authorization process .
+
+agencies did not consistently address required information for implementing controls , summarizing control tests , and tracking corrective actions .
+
+in addition , agencies also did not always provide the fedramp pmo with their cloud service authorization letters .
+
+by not fully addressing these elements , agencies have less assurance that they have effectively implemented security controls intended to protect their data in cloud environments and that those controls operating as intended .
+
+fedramp participants identified a number of benefits as well as challenges with the program .
+
+among other benefits , several agencies indicated that fedramp improved of the security of their data .
+
+however , participants identified challenges with the program and areas where the program could be improved .
+
+gsa has taken a number of actions toward improving and furthering the program's progress , nonetheless unclear guidance and limitations with fedramp's continuous monitoring process could hamper the program's effectiveness and result in agencies implementing the program unevenly .
+
+we are making a total of 25 recommendations — 1 recommendation to omb and 24 recommendations to the 4 selected agencies in our review , including additional recommendations to gsa as the fedramp program lead .
+
+the director of omb should establish a process for monitoring and holding agencies accountable for authorizing cloud services through fedramp .
+
+ ( recommendation 1 ) the administrator of gsa should direct the director of fedramp to clarify guidance to agencies and cloud service providers on program requirements and responsibilities .
+
+ ( recommendation 2 ) the administrator of gsa should direct the director of fedramp to improve the program's continuous monitoring process by allowing more automated capabilities , including for agencies to review documentation .
+
+ ( recommendation 3 ) the administrator of gsa should update security plans for selected systems to include the description of security controls and reviews and approvals plan .
+
+ ( recommendation 4 ) the administrator of gsa should update the security assessment report for the selected system to identify the summarized results of control effectiveness tests .
+
+ ( recommendation 5 ) the administrator of gsa should update the list of corrective actions for selected systems to identify the responsible office and estimated funding required and anticipated source of funding .
+
+ ( recommendation 6 ) the administrator of gsa should develop guidance requiring that cloud service authorization letters be provided to the fedramp program management office .
+
+ ( recommendation 7 ) the secretary of hhs should direct the director of cdc to update the security plan for the selected system to identify the authorization boundary , the system operational environment and connections , a description of security controls , and the individual reviewing and approving the plan and date of approval .
+
+ ( recommendation 8 ) the secretary of hhs should direct the director of cdc to update the security assessment report for the selected system to identify the summarized results of control effectiveness tests .
+
+ ( recommendation 9 ) the secretary of hhs should direct the director of cdc to update the list of corrective actions for the selected system to identify the specific weaknesses , funding source , changes to milestones and completion dates , identified source of weaknesses , and status of corrective actions .
+
+ ( recommendation 10 ) the secretary of hhs should direct the administrator of cms to update the system security plans for selected systems to identify a description of security controls .
+
+ ( recommendation 11 ) the secretary of hhs should direct the administrator of cms to update the security assessment report for selected system to identify the summarized results of control effectiveness tests .
+
+ ( recommendation 12 ) the secretary of hhs should direct the administrator of cms to update and document the cms remedial action plan for the selected system to identify the anticipated source of funding .
+
+ ( recommendation 13 ) the secretary of hhs should direct the administrator of cms to prepare letters authorizing the use of cloud services for the selected systems and submit the letters to the fedramp program management office .
+
+ ( recommendation 14 ) the secretary of hhs should direct the director of nih to update security plans for selected systems to identify the authorization boundary , system operation in terms of mission and business processes , operational environment and connections , and a description of security controls .
+
+ ( recommendation 15 ) the secretary of hhs should direct the director of nih to update the security assessment report for selected systems to identify summarized results of control effectiveness tests .
+
+ ( recommendation 16 ) the secretary of hhs should direct the director of nih to update the nih list of corrective actions for selected systems to identify estimated funding and anticipated source of funding , key milestones with completion dates , and changes to milestones and completion dates .
+
+ ( recommendation 17 ) the secretary of hhs should direct the director of nih to submit the division's letters authorizing the use of cloud services for the selected systems to the fedramp program management office .
+
+ ( recommendation 18 ) the administrator of epa should update security plan for the selected operational system to identify a description of security controls , and the individual reviewing and approving the plan and date of approval .
+
+ ( recommendation 19 ) the administrator of epa should update the security assessment report for the selected operational system to identify the summarized results of control effectiveness tests .
+
+ ( recommendation 20 ) the administrator of epa should update the list of corrective actions for the selected operational system to identify the specific weakness , estimated funding and anticipated source of funding , key remediation milestones with completion dates , changes to milestones and completion dates , and source of the weaknesses .
+
+ ( recommendation 21 ) the administrator of epa should prepare the letter authorizing the use of cloud service for the selected operational system and submit the letter to the fedramp program management office .
+
+ ( recommendation 22 ) the administrator of epa should develop guidance requiring that cloud service authorization letter be provided to the fedramp program management office .
+
+ ( recommendation 23 ) the administrator of usaid should update the list of corrective actions for the selected system to include the party responsible for addressing the weakness , and source of the weakness .
+
+ ( recommendation 24 ) the administrator of usaid should prepare the letter authorizing the use of cloud service for the selected system and submit the letter to the fedramp program management office .
+
+ ( recommendation 25 ) .
+
+we provided a draft of this report to omb and the 24 cfo act agencies for review and comment .
+
+in response , we received comments from omb and the four agencies ( gsa , hhs , epa , and usaid ) to which we made recommendations .
+
+specifically , in comments provided via email on october 15 , 2019 , an omb associate general counsel stated that omb neither agreed nor disagreed with our draft recommendation that it establish a process for monitoring and enforcing agency compliance with its guidance on using fedramp .
+
+the official asserted that omb does not have a mechanism for enforcing agencies' compliance with its guidance on fedramp .
+
+however , we believe omb can and should hold agencies accountable for complying with its policies .
+
+policies without accountability mechanisms present the risk that the benefits expected from their implementation will likely not be realized .
+
+to ensure our position is clearly stated , we modified the recommendation to state that omb should establish a process for monitoring and holding agencies accountable for authorizing cloud services through fedramp .
+
+in addition , the omb associate general counsel stated that the report did not appropriately reflect fedramp's progress .
+
+we disagree .
+
+although identifying the program's progress was not one of our objectives , we highlighted several areas throughout the report where progress was achieved such as the agencies' increasing use of the program to authorize cloud services and the development of additional guidance and training opportunities for using the program .
+
+the omb associate general counsel also commented on the duration of the audit .
+
+additionally , omb commented that our use of surveys on agencies and cloud service providers' use of fedramp did not address whether the program was meeting its overall objectives , but presented more of a perception .
+
+as discussed in the scope and methodology for this review , and consistent with our objectives , the purpose of the surveys was to obtain program participants' views on the benefits , challenges , and their use of the program .
+
+additionally , our review , as designed , including our timelines , allowed us the opportunity to best assess the implementation of the program .
+
+omb also provided technical comments , which we have incorporated into our report as appropriate .
+
+in its written comments , gsa concurred with each of our six recommendations .
+
+the agency stated that it is developing a plan to address the recommendations .
+
+gsa's comments are reprinted in appendix iv .
+
+in written comments , hhs concurred with each of our 11 recommendations .
+
+one operating division , cdc , noted that our observations were narrowly focused on authorization artifacts and did not take their fisma compliant authorization process into account .
+
+we disagree .
+
+our reviews of their fedramp authorization processes included procedures for reviewing security practices that are required under fisma .
+
+the department stated that it would work with its operating divisions to address our recommendations .
+
+hhs's comments are reprinted in appendix v. the agency also provided technical comments , which we incorporated into the report as appropriate .
+
+epa provided written comments , in which it disagreed with the findings for two recommendations , partially agreed with the findings for one recommendation and disagreed with two other recommendations .
+
+epa disagreed with the finding supporting our recommendation to update the security plans for the two selected systems to identify specific required information the agency stated that one of the systems we selected for review was no longer in production and not used for epa's operations .
+
+nevertheless , the agency stated that its chief information security officer would coordinate with the agency's information security officers to ensure that security plans for the systems used to support its operations include all required information .
+
+we acknowledged in the report that epa discontinued the system after we completed our review of the system's authorization package .
+
+however , our recommendation in the draft report did not clearly convey that it was intended only for the operational system .
+
+thus , we revised the recommendation to specify the system in operation .
+
+epa disagreed with the finding supporting our recommendation to update the security control assessment report for one of the selected systems to identify the summarized results of control effectiveness tests .
+
+the agency stated that it used a fedramp certified third - party assessor that provided full documentation of control test results .
+
+however , neither the security assessment report nor other documents that epa provided to us summarized information on how the agency tested the effectiveness of its corrective actions to rectify a critical control that had previously failed .
+
+as a result , epa had limited assurance that it had effectively implemented a control that was intended to protect agency data in the cloud environment .
+
+accordingly , we believe that our recommendation is warranted .
+
+epa partially agreed with the finding supporting our recommendation to update the list of corrective actions for the selected systems to identify specific required information .
+
+the agency stated that one of the systems we selected for review was no longer in production and not used for epa's operations .
+
+in addition , the agency said that the chief information security officer would coordinate with agency information security officers to ensure that plans of corrective actions and milestones include all required information , as appropriate .
+
+we acknowledged in the report that epa discontinued its use of the system after we completed our review of the system's authorization package .
+
+however , our recommendation in the draft report did not clearly convey that it was intended only for the operational system .
+
+as a result , we revised the recommendation to specify the system in operation .
+
+epa disagreed with our recommendation that the agency prepare letters authorizing the cloud services for the selected systems and submit the letters to the fedramp program management office .
+
+the agency stated that one of the systems we selected for review was no longer in production and not used for epa's operations .
+
+we acknowledged in the report that epa had discontinued the system after we completed our review of the system's authorization package .
+
+however , our recommendation in the draft report did not clearly convey that it was intended only for the operational system .
+
+we have revised the recommendation accordingly .
+
+epa also stated that it prepares and sends authorization letters for cloud services to the fedramp pmo .
+
+however , at the time of our review , the fedramp pmo stated it had not received the cloud service authorization letter from epa for the selected operational system .
+
+we believe that our revised recommendation for epa to prepare and send the cloud service authorization to the fedramp pmo for the operational system is warranted .
+
+epa disagreed with our recommendation that the agency develop guidance requiring cloud service authorization letters to be provided to the fedramp program management office .
+
+the agency stated that it had a standard operating procedure in which the epa chief information security officer forwards the letters to the fedramp program management office .
+
+however , the agency did not provide us a copy of the standard operating procedure or otherwise demonstrate that it had such an operating procedure .
+
+thus , we continue to believe that the recommendation is warranted .
+
+epa's comments are reprinted in appendix vi .
+
+the agency also provided technical comments , which we incorporated into the report , as appropriate .
+
+further , in written comments , usaid concurred with two of our three recommendations , but did not concur with the third .
+
+specifically , usaid concurred with the two recommendations for the agency to update the list of corrective actions for the selected system and prepare the letter authorizing the use of cloud services supporting the system and submit it to the fedramp program management office .
+
+however , usaid did not concur with our recommendation to update the system security plan for the selected system to identify the authorization boundary , system operational environment and connections , and a description of security controls .
+
+the agency provided additional information that it had documented the authorization boundary , system operational environment and connections , and security controls for the selected system .
+
+upon our review of the information , we agreed that the agency had sufficiently documented these items .
+
+accordingly , we revised our report to reflect the agency's actions and withdrew the recommendation from the report .
+
+usaid's comments are reprinted in appendix vii .
+
+in addition to the aforementioned responses , two agencies — the department of veterans affairs and the social security administration — provided written responses stating that they had no comments on the draft report .
+
+these agencies' responses are reprinted in appendixes viii and ix , respectively .
+
+also , the department of justice provided technical comments , which we incorporated into the report as appropriate .
+
+sixteen cfo agencies provided emails stating that they had no comments on the draft report .
+
+these agencies were the departments of agriculture , commerce , defense , education , energy , homeland security , housing and urban development , the interior , labor , state , transportation , and the treasury ; as well as the national aeronautics and space administration , national science foundation , nuclear regulatory commission , and office of personnel management .
+
+we did not receive a response from one agency — the small business administration .
+
+we are sending copies of this report to appropriate congressional committees , the director of the office of management and budget , the 24 cfo act agencies ; and other interested parties .
+
+this report will also be available at no charge on our website at http: / / www.gao.gov .
+
+if you or your staff have any questions on matters discussed in this report , please contact gregory c. wilshusen at ( 202 ) 512-6244 or wilshuseng@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made major contributions to this report are listed in appendix x .
+
+our objectives were to determine the extent to which 1 ) federal agencies used fedramp to authorize the use of cloud services , 2 ) selected agencies addressed key elements of the program's authorization process , and 3 ) program participants identified fedramp benefits and challenges .
+
+the scope of our review included the 24 agencies covered by the chief financial officers act .
+
+to address the three objectives , we developed one survey for the 24 agencies and another survey for 83 cloud service providers identified by the fedramp program management office ( pmo ) as participating in the program .
+
+we administered these web - based surveys between april and november 2018 .
+
+we sent two follow - up email messages to all nonrespondents and subsequently attempted to contact the remaining nonrespondents by telephone or email at least twice more .
+
+to inform our survey questions and options , we designed our questionnaire based on fedramp pmo documentation and interviews with the 24 agencies and cloud service providers .
+
+we pretested the surveys with three major federal agencies , three cloud service providers , and one internal gao group .
+
+we requested that agency chief information officers and chief information security officers review and confirm the results of the survey .
+
+we received completed surveys from 24 of 24 agencies ( a 100 percent response rate ) for our agency survey and 47 of the 83 cloud survey providers identified ( a 57 percent response rate ) for our cloud service provider survey .
+
+not all survey respondents provided answers to all survey questions .
+
+with any survey , error can be introduced with respect to measurement of concepts , representation of respondents , and other factors , and we took steps to minimize these errors .
+
+we conducted a nonresponse bias analysis to determine whether certain cloud service providers might have been more or less likely to respond to the survey than others .
+
+specifically , we examined whether a cloud service provider's service model ( eg , software as a service , infrastructure as a service , platform as a service ) , impact level ( eg , high , moderate , low ) , or deployment model ( eg , government , hybrid , private ) was related to whether the csp responded to the survey .
+
+we found that a higher share of cloud service providers that provide software as a service ( saas ) responded to the survey than those that provide infrastructure as a service ( iaas ) .
+
+in addition , we found that a higher share of cloud service providers that deployed in the government community cloud responded to the survey than those that deployed in the public cloud .
+
+these results suggest that cloud service providers that utilize certain service or deployment models were more likely to reply to the survey than others .
+
+as a result , the responses of the cloud service provider survey represent only those cloud service providers that participated in this survey , and are not generalizable to cloud service providers as a whole .
+
+despite these limitations , the survey results provide insight into the experiences and views of cloud service providers that did respond .
+
+in addition to the surveys , to address our first objective , we examined 2017 , 2018 , and 2019 joint authorization board ( jab ) and agency authorization data from the 24 agencies to determine if there were an increase , decrease , or no change in the usage of the program .
+
+we also interviewed knowledgeable officials from the 24 agencies and fedramp pmo to obtain their views on the program .
+
+to address our second objective , we selected four agencies from the 24 agencies based on those with the highest and lowest amount of fedramp pmo reported fedramp authorizations as of june 15 , 2017 .
+
+we selected the four agencies by dividing them into three equal groups of eight agencies based on the highest to lowest number of fedramp pmo reported service authorizations .
+
+we selected at least one agency with the highest number of authorizations through fedramp in each group , unless we conducted prior fedramp work with the agency .
+
+given that two agencies in the third group had the same number of services authorized , we selected both agencies as one had a higher number of reported provisional authorizations through the fedramp joint authorization board process and the other had the higher number of reported authorizations through the fedramp agency process .
+
+to avoid a duplication of our efforts given limited resources , we excluded dod because another gao team was reviewing the department's cloud - related efforts , which included leveraging fedramp authorizations .
+
+as a result , we selected the department of health and human services , general services administration , the environmental protection agency , and the united states agency for international development for our review .
+
+because hhs is a large federated agency , we selected three operating divisions for a more detailed review .
+
+the three operating divisions included the centers for disease control and prevention ( cdc ) , centers for medicare and medicaid ( cms ) , and national institutes of health ( nih ) .
+
+we selected these divisions based on their extensive usage of cloud service providers authorized through fedramp .
+
+to select the agency systems' authorization packages for review , we first identified six cloud services based on fedramp pmo data that indicated as of june 15 , 2017 , the 24 agencies used these cloud services the most .
+
+we then requested the selected agencies to provide us with an inventory of systems that relied on the six cloud services in fiscal years 2017 and 2018 .
+
+from these inventories , we selected 10 agency systems .
+
+however , due to sensitivity concerns , we are not disclosing the names of the systems in this report .
+
+the case studies we selected are not generalizable to the other agencies covered by the chief financial officers act .
+
+however , it may show the potential fedramp issues other agencies face .
+
+for each agency system , we reviewed security authorization documentation , including: cloud service provider documentation , such as the control implementation summary on agency and cloud service provider responsibilities to determine the extent agencies documented selected core controls and consistently documented responsibilities in the system security plan ; security plans to determine the extent to which plans documented and implemented selected identified core security controls , and met fedramp and national institute of standards and technology ( nist ) elements ; security assessment reports to determine if the effectiveness of selected core controls had been assessed and operating as intended ; the extent to which agencies documented remedial action plans for selected systems to determine if they met fedramp or office of management and budget ( omb ) elements ; and authorization letters to determine the extent appropriate officials approved a cloud service and agency system for use .
+
+to select identified core controls as part of our authorization documentation review , we identified and selected 24 security controls from the 97 identified core controls .
+
+then , to determine the agencies' compliance with the fedramp authorization process to assure the protection of agency data , we compared the authorization documentation with the federal information security modernization act of 2014 , the federal risk and authorization management program guidance , including the program's security assessment framework , omb guidance , and nist special publication 800-53 revision 4 .
+
+each authorization package area was examined and reviewed by an analyst and each conclusion was corroborated by a second analyst .
+
+where there was disagreement in the assessment , analysts discussed their analysis and reached a consensus .
+
+in addition , we interviewed security representatives and management officials from our selected agencies to determine the effectiveness of the fedramp authorization process in reviewing the controls necessary for securing agency data in the cloud , and potential rationale for deficiencies identified in authorization documentation .
+
+we also interviewed fedramp pmo and omb staff on their efforts related to the fedramp authorization process .
+
+to address our second and third objectives , we also interviewed jab technical representatives to obtain their views on the benefits and challenges of fedramp .
+
+additionally , we obtained information about how the jab technical representatives reviewed authorization packages .
+
+to determine the reliability of the data used to select agencies and of other data to address our three objectives , we assessed the following: fedramp program management office points of contact list provided for active cloud service providers and federal agency users of fedramp , fedramp program management office data on the 24 cfo act agencies' fiscal years 2017 , 2018 , and 2019 jab and agency authorizations , fedramp program management office data on cloud service provider participation and agency usage of fedramp as of june 15 , 2017 , agency inventory of systems relying on selected cloud services , cloud service provider authorization documentation contained within cloud service provider and agency reported third - party assessment organizations' security assessment reports , and agency plans of actions and milestones .
+
+to assess the reliability of the information received and reviewed on the fedramp marketplace , we collected and reviewed information on agencies' quality control procedures and asked program officials relevant questions on the fedramp authorization log standard operating procedure .
+
+we reviewed gsa program officials' responses to our data reliability questions such as: how the information was generated , how current the data provided was , how frequently it was updated , and how the data was accurately and consistently entered into the system used .
+
+the limitation fedramp officials noted was that the data generated was based on voluntarily provided authorization to operate letters submitted to the fedramp program management office by each of the cfo act agencies .
+
+to ensure that the agency systems we reviewed relied on selected cloud service provider products , we had agencies confirm their use of the service supporting the agency's system .
+
+we then compared the selected services with agencies' annual fisma reporting to omb along with system security documentation ( e.g .
+
+system security plans ) to determine whether the cloud service services we selected were applicable to the selected agency system .
+
+a limitation with this method of selection is if an agency's inventory is inaccurate , we would need to reselect a system .
+
+for this review , one agency's inventory and system was incomplete resulting in removing that agency system from our selection .
+
+to confirm agencies' virtual access to packages in omb's repository or a cloud service provider's repository , we obtained screen captures of web portal contents from the fedramp pmo .
+
+we compared these screen captures with our own virtual access to the packages .
+
+we also obtained additional information from the fedramp pmo on how it ensures the accuracy and reliability of the cloud service provider package information .
+
+one limitation of this method is that cloud service providers could update documentation where access was outside of omb max portal , and the pmo may not be immediately aware of package updates .
+
+to verify the accuracy and reliability of plans of actions and milestones provided by agencies , we compared the agency's plans of actions and milestones with required omb elements .
+
+we also requested that agencies describe how they generated the plans of action and milestones provided to us , identify the quality control procedures used , and any limitations to the data they provided .
+
+we evaluated the materiality of the information we obtained and compared it to our audit objectives .
+
+we assessed the reliability of the information by reviewing related documents and internal controls such as agency policies and procedures as well as examining packages stored in omb's max portal and cloud service provider repositories .
+
+we also interviewed knowledgeable agency officials .
+
+through these methods , we concluded that the information was sufficiently reliable for the purposes of our reporting objectives .
+
+we conducted this performance audit from november 2016 to december 2019 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+appendix ii: fedramp roles and responsibilities roles and responsibilities issues policies which define the key requirements and capabilities of the fedramp program .
+
+oversees and reports on agencies' implementation of information security requirements , including implementation of fedramp .
+
+develops processes for agencies and providers to request fedramp security authorization ; creates a framework for agencies to leverage security authorization packages ; establishes a centralized and secure repository for authorization packages that agencies can leverage to grant security authorizations ; coordinates with the national institute of standards and technology ( nist ) and american association for laboratory accreditation to implement a formal conformity assessment to accredit assessors ; develops templates for standard contract language and service level agreements , memorandum of understanding and / or memorandum of agreement ; and is led by gsa and serves as a liaison to ensure effective communication among all participants .
+
+defines and updates the fedramp security authorization requirements ; approves accreditation criteria for third - party assessment organizations ; reviews security assessment packages of cloud service providers to grant provisional authorizations ; ensures provisional authorizations are reviewed and updated regularly ; and notifies agencies of changes to or removal of provisional authorizations .
+
+advises fedramp on fisma compliance guidance and assists in developing the standards for the accreditation of independent third - party assessment organizations ( 3pao ) .
+
+distributes fedramp information to federal cios and other representatives through cross - agency communications and events .
+
+assists government - wide and agency - specific efforts to provide adequate , risk - based and cost - effective cyber security ; coordinates cyber security operations and incident response ; develops continuous monitoring standards for ongoing cyber security of federal information systems ; and develops guidance on agency implementation of the trusted internet connection program with cloud services .
+
+gregory c. wilshusen , ( 202 ) 512-6244 or wilshuseng@gao.gov .
+
+in addition to the individual named above , sara ann w. moessbauer , ( director ) , larry crosland ( assistant director ) , rosanna guerrero ( analyst - in - charge ) , sher'rie bacon , nabajyoti barkakati , christina bixby , david blanding , chris businsky , fatima jahan , david plocher , dana pon , carl ramirez , cynthia saunders , and priscilla smith made significant contributions to this report .
+

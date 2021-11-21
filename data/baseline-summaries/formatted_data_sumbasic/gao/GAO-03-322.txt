@@ -1,0 +1,884 @@
+terrorist and criminal watch list systems — sometimes referred to as watchout , lookout , target , or tip - off systems — are important tools in controlling and protecting our nation's borders .
+
+the events of september 11 , 2001 , and other incidents since then , have reinforced their importance and highlighted the need to share and use these lists .
+
+because watch lists are important tools in border security , you requested that we identify federal databases and systems that contain watch lists , the agencies that maintain and use these watch lists in protecting our nation's borders , and the kinds of data these watch lists contain ; whether federal agencies' sharing of watch list data is governed by whether watch lists are ( 1 ) being exchanged among federal agencies and between federal agencies and state , local , and private organizations , and ( 2 ) supported by common system architectures ( system hardware , software , and data characteristics ) ; and whether opportunities exist for consolidating watch lists .
+
+to address these objectives , using a questionnaire , we surveyed nine agencies that perform border security functions and that , according to our research , either develop or use watch lists .
+
+we did not independently verify agencies' responses .
+
+details of our objectives , scope , and methodology are discussed in appendix i .
+
+the president's national strategy for homeland security and the homeland security act of 2002 provide for securing our national borders against terrorists .
+
+terrorist and criminal watch lists are important tools for accomplishing this end .
+
+simply stated , watch lists can be viewed as automated databases that are supported by certain analytical capabilities .
+
+to understand the current state of watch lists , and the possibilities for improving them , it is useful to view them within the context of such information technology management disciplines as database management and enterprise architecture management .
+
+since the september 11th terrorist attacks , homeland security — including securing our nation's borders — has become a critical issue .
+
+to mobilize and organize our nation to secure the homeland from attack , the administration issued , in july 2002 , a federal strategy for homeland security .
+
+subsequently , the congress passed and the president signed the homeland security act , which established dhs in january 2003 .
+
+among other things , the strategy provides for performance of six mission areas , each aligned with a strategic objective , and identifies major initiatives associated with these mission areas .
+
+one of the mission areas is border and transportation security .
+
+for the border and transportation security mission area , the strategy and the act specify several objectives , including ensuring the integrity of our borders and preventing the entry of unwanted persons into our country .
+
+to accomplish this , the strategy provides for , among other things , reform of immigration services , large - scale modernization of border crossings , and consolidation of federal watch lists .
+
+it also acknowledges that accomplishing these goals will require overhauling the border security process .
+
+this will be no small task , given that the united states shares a 5,525 mile border with canada and a 1,989 mile border with mexico and has 95,000 miles of shoreline .
+
+moreover , each year , more than 500 million people legally enter our country , 330 million of them noncitizens .
+
+more than 85 percent enter via land borders , often as daily commuters .
+
+our nation's current border security process for controlling the entry and exit of individuals consists of four primary functions: ( 1 ) issuing visas , ( 2 ) controlling entries , ( 3 ) managing stays , and ( 4 ) controlling exits .
+
+the federal agencies involved in these functions include the department of state's bureau of consular affairs and its bureau of intelligence and research , as well as the justice department's immigration and naturalization service ( ins ) , the treasury department's u.s. customs service ( customs ) , and the transportation department's transportation security administration ( tsa ) .
+
+the process begins at the state department's overseas consular posts , where consular officers are to adjudicate visa applications for foreign nationals who wish to enter the united states .
+
+in doing so , consular officials review visa applications , and sometimes interview applicants , prior to issuing a visa .
+
+one objective of this adjudication process is to bar from entry any foreign national who is known or suspected to have engaged in terrorist activity , is likely to engage in such activity , or is a member or supporter of a known terrorist organization .
+
+foreign nationals ( and any other persons attempting to enter the united states , such as u.s. citizens ) are to be screened for admission into the united states by ins or customs inspectors .
+
+generally , this consists of questioning the person and reviewing entry documents .
+
+since october 2002 , males aged 16 or over from certain countries ( for example , iran , iraq , syria , and the sudan ) are also required to provide their name and u.s. address and to be photographed and fingerprinted .
+
+in addition , airline officials use information provided by tsa to screen individuals attempting to travel by air .
+
+as discussed in the next section , requirements for checking a person against a watch list differ somewhat , depending upon whether the person arrives at a land - , air - , or seaport .
+
+after foreign nationals are successfully screened and admitted , they are not actively monitored unless they are suspected of illegal activity and come under the scrutiny of a law enforcement agency , such as the department of justice's federal bureau of investigation ( fbi ) .
+
+also , when foreign nationals depart the country , they are not screened unless they are males aged 16 years or over from certain countries referenced above , or are leaving by air .
+
+according to tsa , all passengers on departing flights are screened prior to boarding the plane .
+
+figure 1 is a simplified overview of the border entry / exit process .
+
+watch lists are important tools that are used by federal agencies to help secure our nation's borders .
+
+these lists share a common purpose — to provide decisionmakers with information about individuals who are known or suspected terrorists and criminals , so that these individuals can either be prevented from entering the country , apprehended while in the country , or apprehended as they attempt to exit the country .
+
+as shown in figure 2 , which builds on figure 1 by adding watch list icons and associating them with the agencies that maintain the respective lists , watch lists collectively support nine federal agencies in performing the four primary functions in the border security process .
+
+specifically: when a person applies for a visa to enter the united states , state department consular officials are to check that person against one or more watch lists before granting a visa .
+
+when a person attempts to enter the united states by air or sea , ins or customs officials are required to check that person against watch lists before the person is allowed to enter the country .
+
+in addition , when a person attempts to enter the united states by air , ins or custom officials check him or her against watch lists provided by tsa prior to allowing him or her to board the plane .
+
+persons arriving at land borders may be checked , but there is no requirement to do so .
+
+the exception , as previously discussed , is for males aged 16 or over from certain countries , who are required to be checked .
+
+once a watch list identifies a person as a known or suspected terrorist , ins , customs , or airline officials are to contact the appropriate law enforcement or intelligence organization ( for example , the fbi ) , and a decision will be made regarding the person's entry and the agency's monitoring of the person while he or she is in the country .
+
+when a person exits the country by plane , airline officials are to check that person against watch lists .
+
+in performing these roles , the agencies use information from multiple watch lists .
+
+for example , u.s. national central bureau for interpol officials told us that they provide information to the agencies involved in entry control , exit control , and stay management .
+
+in addition to highlighting the importance of watch lists for border security , the president's national strategy cites problems with these lists , including limited sharing .
+
+according to the july 2002 strategy , in the aftermath of the september 11th attacks it became clear that vital watch list information stored in numerous and disparate federal databases as not available to the right people at the right time .
+
+in particular , federal agencies that maintained information about terrorists and other criminals had not consistently shared it .
+
+the strategy attributed these sharing limitations to legal , cultural , and technical barriers that resulted in the watch lists being developed in different ways , for different purposes , and in isolation from one another .
+
+to address these limitations , the strategy calls for integrating and reducing variations in watch lists and overcoming barriers to sharing the lists .
+
+it also calls for developing an enterprise architecture for border security and transportation ( see next section for a description of an enterprise architecture ) .
+
+more specifically , the strategy provides for developing a consolidated watch list that would bring together the information on known or suspected terrorists contained in federal agencies' respective lists .
+
+if properly developed , enterprise architectures provide clear and comprehensive pictures of an entity , whether it is an organization ( for example , a federal department , agency , or bureau ) or a functional or mission area that cuts across more than one organization ( for example , grant management , homeland security , or border and transportation security ) .
+
+these architectures are recognized as essential tools for effectively and efficiently engineering business operations and the systems and databases needed to support these operations .
+
+more specifically , enterprise architectures are systematically derived and captured blueprints or descriptions — in useful models , diagrams , and narrative — of the mode of operation for a given enterprise .
+
+this mode of operation is described in both ( 1 ) logical terms , such as interrelated business processes and business rules , information needs and flows , data models , work locations , and users , and ( 2 ) technical terms , such as hardware , software , data , communications , and security attributes and performance standards .
+
+they provide these perspectives both for the enterprise's current , or “as is,” environment and for its target , or “to be,” environment , as well as a transition plan for moving from the “as is” to the “to be” environment .
+
+using enterprise architectures is a basic tenet of effective it management , embodied in federal guidance and commercial best practices .
+
+when developed and used properly , these architectures define both business operations and the technology that supports these operations in a way that optimizes interdependencies and interrelationships .
+
+they provide a common frame of reference to guide and constrain decisions about the content of information asset investments in a way that can ensure that the right information is available to those who need it , when they need it .
+
+as discussed in the previous section , enterprise architectures facilitate delivery of the right information to the right people at the right time .
+
+to this end , these architectures include data models , or logical representations of data types and their relationships , which are used to engineer physical data “stores,” or repositories .
+
+when engineered properly , these data stores are structured in a way that effectively and efficiently supports both shared and unique enterprise applications , functions , and operations .
+
+the structure of these data stores , whether they are paper records or automated databases , can take many forms , employing varying degrees of centralization and standardization .
+
+associated with the structures being employed are opportunities and limitations to effective and efficient information exchange and use .
+
+generally , these structures can be viewed along a continuum .
+
+at one extreme , databases can be nonstandard , both in terms of metadata and the technologies that manage the data , and they can be decentralized , meaning that they were built in isolation from one another to support isolated or separate , “stovepiped” applications , functions , and operations .
+
+in this case , integrating the databases to permit information exchange requires the development of unique , and potentially complex and costly , point - to - point interfaces ( hardware and software ) that translate the data or bridge incompatibilities in the technology .
+
+further , the sheer number of databases involved can exponentially increase the number of relationships , and thus interfaces , that have to be built and maintained .
+
+structuring databases in this way can quickly evolve into an overly complex , unnecessarily inefficient , and potentially ineffective way to support mission operations .
+
+ ( see fig .
+
+3 for a simplified diagram conceptually depicting this approach to structuring databases. ) .
+
+at the other extreme , databases can be structured to recognize that various enterprise applications , functions , and operations have a need for the same data or sets of data , even though they may need to use them in different ways to support different mission applications , functions , and operations .
+
+if engineered properly , these database structures allow for greater use of standards , in terms of both data definitions and technology , and are more centralized , although the option exists to create subsidiary databases — known as data warehouses and data marts — to permit more uniquely configured and decentralized data sources to support specific and unique mission needs .
+
+further , since the core data in these subsidiary databases are received from a corporate database ( s ) , the need for interfaces to translate data or connect incompatible technologies is greatly reduced .
+
+structuring databases in this way can minimize complexity and maximize efficiency and mission effectiveness .
+
+ ( see fig .
+
+4 for a simplified diagram conceptually depicting this approach to structuring databases. ) .
+
+terrorist watch lists are developed , maintained , or used by federal , state , and local government entities , as well as by private - sector entities , to secure our nation's borders .
+
+twelve such lists are currently maintained by federal agencies .
+
+these lists contain various types of data , from biographical data — such as a person's name and date of birth — to biometric data — such as fingerprints .
+
+nine federal agencies , which prior to the establishment of dhs spanned five different cabinet - level departments , currently maintain 12 terrorist and criminal watch lists .
+
+these lists are also used by at least 50 federal , state , and local agencies .
+
+the above - mentioned departments are the departments of state , treasury , transportation , justice , and defense .
+
+table 1 shows the departments , the associated nine agencies that maintain watch lists , and the 12 watch lists .
+
+the 12 watch lists support the federal agencies involved in the border security process .
+
+figure 5 , which builds on figure 2 , provides a graphical representation identifying the name of each of the lists and relating them to the agencies that maintain the lists and are involved in performing the four border security functions: issuing visas , controlling entries , managing stays , and controlling exits .
+
+the 12 watch lists do not all contain the same types of data , although some types are included in all of the lists .
+
+at the same time , some types of data are included in only a few of the lists .
+
+more specifically , all of the lists include the name and date of birth ; 11 include other biographical information ( for example , passport number and any known aliases ) ; 9 include criminal history ( for example , warrants and arrests ) ; 8 include biometric data ( for example , fingerprints ) ; 3 include immigration data ( for example , visa type , travel dates , departure country , destination country , country visited , arrival dates , departure dates , and purpose of travel ) ; and 2 include financial data ( for example , large currency transactions ) .
+
+figure 6 shows the data types that are included in each watch list .
+
+effective sharing of information from watch lists and of other types of data among multiple agencies can be facilitated by agencies' development and use of well - coordinated and aligned policies and procedures that define the rules governing this sharing .
+
+one effective way to implement such policies and procedures is to prepare and execute written watch list exchange agreements or memorandums of understanding .
+
+these agreements would specify answers to such questions as what data are to be shared with whom , and how and when they are to be shared .
+
+not all of the nine agencies have policies and procedures governing the sharing of watch lists .
+
+in particular , two of the agencies reported that they did not have any policies and procedures on watch list sharing .
+
+in addition , of the seven that reported having such policies and procedures , one did not require any written agreements .
+
+further , the policies and procedures of the seven have varied .
+
+for example , one agency's policies included guidance on sharing with other federal agencies as well as with state and local governments , but another's addressed sharing only with other federal agencies .
+
+in addition , each agency had different policies and procedures on memorandums of understanding , ranging from one agency's not specifying any requirements to others' specifying in detail that such agreements should include how , when , and where data would be shared with other parties .
+
+the variation in policies and procedures governing the sharing of information from watch lists can be attributed to the fact that each agency has developed its own policies and procedures in response to its own specific needs .
+
+in addition , the agencies reported that they received no direction from the office of homeland security identifying the needs of the government as a whole in this area .
+
+as a result , federal agencies do not have a consistent and uniform approach to sharing watch list information .
+
+the president's homeland security strategy and recent legislation call for increased sharing of watch lists , not only among federal agencies , but also among federal , state , and local government entities and between government and private - sector organizations .
+
+currently , sharing of watch list data is occurring , but the extent to which it occurs varies , depending on the entities involved .
+
+further , these sharing activities are not supported by systems with common architectures .
+
+this is because agencies have developed their respective watch lists , and have managed their use , in isolation from each other , and in recognition of each agency's unique legal , cultural , and technological environments .
+
+the result is inconsistent and limited sharing .
+
+according to the president's homeland security strategy , watch list data sharing has to occur horizontally among federal agencies as well as vertically among federal , state , and local governments in order for the country to effectively combat terrorism .
+
+in addition , recent federal homeland security legislation , including the homeland security act , usa patriot act of 2001 , and the enhanced border security and visa entry reform act of 2002 require , among other things , increased sharing of homeland security information both among federal agencies and across all levels of government .
+
+the degree to which watch list data are being shared is not consistent with the president's strategy and recent legislative direction on increased data sharing .
+
+specifically , while federal agencies report that they are generally sharing watch list data with each other , they also report that sharing with organizations outside of the federal government is limited .
+
+that is , five of the nine agencies reported that they shared data from their lists with state and local agencies , and three reported that they shared data with private industry .
+
+figure 7 visually summarizes the extent to which federal agencies share watch list data with each level of government ( federal , state , and local ) and with the private sector .
+
+as noted above , federal agencies are sharing either all or some of their watch list data with each other .
+
+however , this sharing is the result of each agency's having developed and implemented its own interfaces with other federal agencies' watch lists .
+
+the consequence is the kind of overly complex , unnecessarily inefficient , and potentially ineffective network that is associated with unstructured and nonstandard database environments .
+
+in particular , this environment consists of nine agencies — with 12 watch lists — that collectively maintain at least 17 interfaces ; one agency's watch list alone has at least 4 interfaces .
+
+a simplified representation of the number of watch list interfaces and the complexity of the watch list environment is provided in figure 8 .
+
+a key reason for the varying extent of watch list sharing is the cultural differences among the government agencies and private - sector organizations involved in securing u.s. borders .
+
+according to the president's strategy , cultural differences often prevent agencies from exchanging or integrating information .
+
+we also recently reported that differences in agencies' cultures has been and remains one of the principal impediments to integrating and sharing information from watch lists and other information .
+
+historically , legal requirements have also been impediments to sharing , but recent legislation has begun addressing this barrier .
+
+specifically , the president's strategy and our past work have reported on legal requirements , such as security , privacy , and other civil liberty protections , that restrict effective information sharing .
+
+to address this problem , congress has recently passed legislation that has significantly changed the legal framework for information sharing , which , when fully implemented , should diminish the effect of existing legal barriers .
+
+in particular , congress has enacted legislation providing for agencies to have increased access to other agencies' information and directing more data sharing among agencies .
+
+for example , section 701 of the usa patriot act broadened the goals of regional law enforcement's information sharing to cover terrorist activities .
+
+the enhanced border security and visa entry reform act expanded law enforcement and intelligence information sharing about aliens seeking to enter or stay in the united states .
+
+most recently , the homeland security act provides the newly created dhs with wide access to information held by federal agencies relating to “threats of terrorism” against the united states .
+
+section 891 expresses the “sense of congress” that “federal , state , and local entities should share homeland security information to the maximum extent practicable.” further , section 892 of the act requires the president to prescribe and implement procedures for the sharing of “homeland security information” among federal agencies and with state and local agencies , and section 895 requires the sharing of grand jury information .
+
+the president's homeland security strategy stresses the importance of information sharing and identifies , among other things , the lack of a common systems architecture — and the resultant incompatible watch list systems and data — as an impediment to systems' interoperating effectively and efficiently .
+
+to address this impediment , the strategy proposes developing a “system of systems” that would allow greater information sharing across federal agencies as well as among federal agencies , state and local governments , private industry , and citizens .
+
+in order for systems to work more effectively and efficiently , each system's key components have to meet certain criteria .
+
+in particular , their operating systems and applications have to conform to certain standards that are in the public domain , their databases have to be built according to explicitly defined and documented data schemas and data models , and their networks have to be connected .
+
+more specifically , critical system components would have to adhere to common standards , such as open systems standards , to ensure that different systems interoperate .
+
+one source for open system standards is the international organization for standardization .
+
+also , these systems' data would have to have common — or at least mutually understood — data definitions so that data could , at a minimum , be received and processed , and potentially aggregated and analyzed .
+
+such data definitions are usually captured in a data dictionary .
+
+further , these systems would have to be connected to each other via a telecommunications network or networks .
+
+when system components and data do not meet such standards , additional measures have to be employed , such as acquiring or building and maintaining unique system interfaces ( hardware and software ) or using manual workarounds .
+
+these measures introduce additional costs and reduce efficiency and effectiveness .
+
+the 12 automated watch list systems do not meet all of these criteria ( see table 2 ) .
+
+for example , they use three different types of operating systems , each of which stores data and files differently .
+
+overcoming these differences requires the use of software utilities to bridge the differences between systems .
+
+without such utilities , for example , a windows - based system cannot read data from a diskette formatted by a unix - based system .
+
+also , nine of the systems do not have software applications that comply with open system standards .
+
+in these cases , agencies may have had to invest time and resources in designing , developing , and maintaining unique interfaces so that the systems can exchange data .
+
+further , five of the systems' databases do not have a data dictionary , and of the remaining seven systems that do have data dictionaries , at least one is not sharing its dictionary with other agencies .
+
+without both the existence and sharing of these data dictionaries , meaningful understanding of data received from another agency could require an added investment of time and resources to interpret and understand what the received data mean .
+
+moreover , aggregation and analysis of the data received with the data from other watch lists may require still further investment of time and resources to restructure and reformat the data in a common way .
+
+last , seven of the systems are not connected to a network outside of their agencies or departments .
+
+our experience has shown that without network connectivity , watch list data sharing among agencies can occur only through manual intervention .
+
+according to several of these agencies , the manual workarounds are labor - intensive and time - consuming , and they limit the timeliness of the data provided .
+
+for example , data from the tipoff system are shared directly with the national automated immigration lookout system through a regular update on diskette .
+
+those data are then transferred from the national automated immigration lookout system to the interagency border inspection system .
+
+the president' s strategy attributes these differences to the agencies' building their own systems to meet agency - specific mission needs , goals , and policies , without knowledge of the information needs and policies of the government as a whole .
+
+as noted and depicted in figure 6 , this approach has resulted in an overly complex , unnecessarily inefficient , and potentially ineffective federal watch list sharing environment .
+
+as addressed in the preceding sections of this report , federal watch lists share a common purpose and support the border security mission .
+
+nevertheless , the federal government has developed , maintains , and — along with state and local governments and private entities — uses 12 separate watch lists , some of which contain the same types of data .
+
+however , this proliferation of systems , combined with the varying policies and procedures that govern the sharing of each , as well as the architectural differences among the automated lists , create strong arguments for list consolidation .
+
+the advantages of doing so include faster access , reduced duplication , and increased consistency , which can reduce costs and improve data reliability .
+
+most of the agencies that have developed and maintain watch lists did not identify consolidation opportunities .
+
+of the nine federal agencies that operate and maintain watch lists , seven reported that the current state and configuration of federal watch lists meet their mission needs , and that they are satisfied with the level of watch list sharing .
+
+however , two agencies supported efforts to consolidate these lists .
+
+the state department's bureau of consular affairs and the justice department's u.s .
+
+marshals service agreed that some degree of watch list consolidation would be beneficial and would improve information sharing .
+
+both cited as advantages of consolidation the saving of staff time and financial resources by limiting the number of labor - intensive and time - consuming data transfers , and one also cited the reduction in duplication of data that could be realized by decreasing the number of agencies that maintain lists .
+
+the president's strategy also recognizes that watch list consolidation opportunities exist and need to be exploited .
+
+more specifically , the strategy states that the events of september 11th raised concerns regarding the effectiveness of having multiple watch lists and the lack of integration and sharing among them .
+
+to address these problems , the strategy calls for integrating the numerous and disparate systems that support watch lists as a way to reduce the variations in watch lists and remove barriers to sharing them .
+
+to implement the strategy , office of homeland security officials have stated in public settings that they were developing an enterprise architecture for border and transportation security , which is one of the six key mission areas of the newly created dhs .
+
+they also reported the following initial projects under this architecture effort: ( 1 ) developing a consolidated watch list that brings together information on known or suspected terrorists in the federal agencies' watch lists , and ( 2 ) establishing common metadata or data definitions for electronic watch lists and other information that is relevant to homeland security .
+
+however , the office of homeland security did not respond to our inquiries about this effort , and thus we could not determine the substance , status , and schedule of any watch list consolidation activities .
+
+since then , the dhs chief information officer told us that dhs has assumed responsibility for these efforts .
+
+our nation's success in achieving its homeland security mission depends in large part on its ability to get the right information to the right people at the right time .
+
+terrorist and criminal watch lists make up one category of such information .
+
+to date , the federal watch list environment has been characterized by a proliferation of systems , among which information sharing is occurring in some cases but not in others .
+
+this is inconsistent with the most recent congressional and presidential direction .
+
+our experience has shown that even when sharing is occurring , costly and overly complex measures have had to be taken to facilitate it .
+
+cultural and technological barriers stand in the way of a more integrated , normalized set of watch lists , and agencies' legal authorities and individuals' civil liberties are also relevant considerations .
+
+to improve on the current situation , central leadership — spanning not only the many federal agencies engaged in maintaining and using watch lists , but also the state and local government and the private - sector list users — is crucial to introducing an appropriate level of watch list standardization and consolidation while still enforcing relevant laws and allowing agencies to ( 1 ) operate appropriately within their unique mission environments and ( 2 ) fulfill their unique mission needs .
+
+currently , the degree to which such leadership is occurring , and the substance and status of consolidation and standardization efforts under way , are unclear .
+
+in our view , it is imperative that congress be kept fully informed of the nature and progress of such efforts .
+
+to promote better integration and sharing of watch lists , we recommend that dhs's secretary , in collaboration with the heads of the departments and agencies that have and use watch lists , lead an effort to consolidate and standardize the federal government's watch list structures and policies .
+
+to determine and implement the appropriate level of watch list consolidation and standardization , we further recommend that this collaborative effort include 1. updating the watch list information provided in this report , as needed , and using this information to develop an architectural understanding of our nation's current or “as is” watch list environment ; 2. defining the requirements of our nation's target or “to be” watch list architectural environment , including requirements that address any agency - unique needs that can be justified , such as national security issues and civil liberty protections ; 3. basing the target architecture on achievement of the mission goals and objectives contained in the president's homeland security strategy and on congressional direction , as well as on opportunities to leverage state and local government and private - sector information sources ; 4. developing a near - term strategy for implementing the target architecture that provides for the integration of existing watch lists , as well as a longer - term strategy that provides for migrating to a more consolidated and standardized set of watch lists ; 5. ensuring that these strategies provide for defining and adopting more standard policies and procedures for watch list sharing and addressing any legal issues affecting , and cultural barriers to , greater watch list sharing ; and 6. developing and implementing the strategies within the context of the ongoing enterprise architecture efforts of each of the collaborating departments and agencies .
+
+in addition , we recommend that the secretary report to congress by september 30 , 2003 , and every 6 months thereafter , on the status and progress of these efforts , as well as on any legislative action needed to accomplish them .
+
+in commenting on a draft this report , three of the six departments provided either written ( justice and state ) or oral ( dhs ) comments .
+
+the remaining three departments ( defense , transportation , and treasury ) said that they had reviewed the draft but had no comments .
+
+the office of homeland security was also provided with a draft but said that it would not comment .
+
+the departments that provided comments generally agreed with our findings and recommendations .
+
+they also ( 1 ) provided technical comments , which we have incorporated as appropriate in the report , and ( 2 ) offered department - unique comments , which are summarized and evaluated below .
+
+in his oral comments , dhs's chief information officer stated that the department now has responsibility for watch list consolidation .
+
+additionally , the chief information officer generally described dhs's plans for watch list consolidation and agreed that our recommendations were consistent with the steps he described .
+
+in light of dhs's assumption of responsibility for watch list consolidation , we have modified our recommendations to direct them to the dhs secretary .
+
+in its written comments , justice stated that , in addition to cultural differences , there are other reasons why agencies do not share watch list information , such as national security and civil liberty requirements , and that these requirements complicate the consolidation of watch list information .
+
+justice also stated that , while it agrees that there is a need to establish a common watch list architecture to facilitate sharing , this need should not impede short - term efforts to improve sharing .
+
+we agree with justice's first point , which is why our recommendations provide for ensuring that all relevant requirements , which would include pertinent national security and civil liberty protections , are taken into consideration in developing our nation's watch list architectural environment .
+
+to make this more explicit , we have modified our recommendations to specifically recognize national security and civil liberty requirements .
+
+we also agree with justice's second point , and thus our recommendations also provide for pursuing short - term , cost - effective initiatives to improve watch list sharing while the architecture is being developed .
+
+ ( justice's comments are reprinted in app .
+
+ii. ) .
+
+in its written comments , state said that our report makes a number of valuable points concerning the benefits of watch list consolidation , enterprise architecture , and information sharing .
+
+however , state also said that our report ( 1 ) attributed watch list differences solely to varying agency cultures , ( 2 ) seemed to advocate a “one size fits all approach,” and ( 3 ) often makes the assumption that software and systems architecture differences necessarily obstruct information sharing .
+
+with respect to state's first point , our report states clearly that watch list differences are attributable not only to varying cultural environments , but also to each agency's unique mission needs and its legal and technical environments as well .
+
+concerning state's second point , our report does not advocate a “one size fits all” solution .
+
+rather , our recommendation explicitly calls for dhs to lead a governmentwide effort to , among other things , determine the appropriate degree of watch list consolidation and standardization needed and to consider in this effort the differences in agencies' missions and needs .
+
+regarding state's last point , our report does not state or assume that differences in software and system architecture categorically obstruct or preclude information sharing .
+
+instead , we state that those differences requiring additional measures — such as building and maintaining unique system interfaces or using manual workarounds — introduce additional costs and reduce efficiency and effectiveness .
+
+ ( state's comments are reprinted in app .
+
+iii. ) .
+
+as agreed with your office , unless you publicly announce its contents earlier , we plan no further distribution of this report until 15 days from the date on the report .
+
+at that time , we will send copies of the report to other congressional committees .
+
+we will also send copies to the directors of the offices of homeland security and management and budget , and the secretaries of the departments of defense , homeland security , justice , state , transportation , and the treasury .
+
+copies will also be made available at our web site at www.gao.gov .
+
+should you or your offices have questions on matters discussed in this report , please contact me at ( 202 ) 512-3439 .
+
+i can also be reached by e - mail at hiter@gao.gov .
+
+an additional gao contact and staff acknowledgments are listed in appendix v .
+
+our objectives were to identify ( 1 ) federal databases and systems that contain watch lists , the agencies that maintain and use these watch lists in protecting our nation's borders , and the kinds of data these watch lists contain ; ( 2 ) whether federal agencies' sharing of watch list data is governed by policies and procedures ; ( 3 ) whether watch lists are ( a ) being exchanged among federal agencies and between federal agencies and state , local , and private organizations and ( b ) supported by common system architectures ( system hardware , software , and data characteristics ) ; and ( 4 ) whether opportunities exist for consolidating watch lists .
+
+the scope of our work was based on the federal government's agency structure before the formation of the department of homeland security .
+
+we focused on the agencies that use or maintain watch lists in performing border security functions .
+
+we identified these departments and agencies through discussions with federal government officials knowledgeable about the u.s. border security mission area .
+
+the specific departments and agencies included in our scope were: u.s. national central bureau for interpol bureau of intelligence and research air force office of special investigations transportation security administration .
+
+to address our objectives , we surveyed each of the agencies cited above , using a data collection instrument .
+
+to develop this instrument , we reviewed , among other things , past gao and other reports on watch lists and on the border security process , along with relevant guidance on such topics as systems interoperability , enterprise architecture management , database management , and information sharing .
+
+we used this research to develop a series of questions designed to obtain and aggregate information necessary to answer our objectives .
+
+we then incorporated these questions into the questionnaire ( see app .
+
+iv for a copy of the questionnaire ) .
+
+we pretested the questionnaire at two federal agencies , made adjustments based on the pretest , and then transmitted it to the agencies cited above on july 29 , 2002 .
+
+responses from agencies were received from august 2002 through october 2002 .
+
+we did not independently verify agency responses .
+
+however , we did contact agency officials when necessary to clarify their responses .
+
+next , we compiled the agencies' responses to determine the number of watch lists being used , confirm the universe of agencies that have lists , and determine the number of organizations that use the lists and the kinds of data the lists contain .
+
+we also analyzed the agencies' policies and procedures governing watch list sharing .
+
+in addition , we reviewed the survey responses to determine the degree of sharing among federal , state , local , and private - sector entities , and we compared the extent of sharing with the sharing goals contained in the president's homeland security strategy and the homeland security act of 2002 .
+
+moreover , we aggregated the agencies' descriptions of their watch list systems architectures and analyzed them to identify similarities and differences .
+
+we also analyzed the architectural components of the watch list systems and compared them with the standards required for systems to interoperate and share data efficiently and effectively .
+
+finally , we analyzed the agencies' responses on watch list consolidation , to identify whether there were opportunities for consolidating watch lists and , if so , what the benefits were of doing so .
+
+additionally , we reviewed the president's homeland security strategy , homeland security legislation and agency budget requests , and other public documents to identify federal government efforts related to maintaining and sharing watch lists .
+
+we also attended conferences and other public events at which office of homeland security officials spoke on homeland security enterprise architecture and watch list standardization and consolidation efforts .
+
+we attempted to meet with office of homeland security officials , but they declined to meet with us .
+
+as a result , we submitted written questions to the office of homeland security , but received no response .
+
+we conducted our work at the headquarters of the nine federal agencies identified above , in and around the washington , d.c. , metropolitan area , from july 2002 through march 2003 , in accordance with generally accepted government auditing standards .
+
+the u.s. general accounting office ( gao ) , an we may have about your survey responses .
+
+please note investigative agency of congress , is studying federal that parts ii , iv , and v should be answered for each agency “watch lists.” our objectives are to identify: watch list developed , maintained , or used by your ( 1 ) databases and systems that contain watch lists of agency .
+
+additional survey pages are provided at the domestic and international terrorists and criminals ; end of the survey if you have more than one watch list .
+
+ ( 2 ) agencies that maintain and use these databases and systems ; ( 3 ) policies and procedures that govern the sharing of watch list data ; ( 4 ) the kinds of data that are currently being exchanged among federal , state , and local governments and private sector firms and associations ; ( 5 ) the architectural characteristics of watch list databases and systems ; and ( 6 ) opportunities for consolidating these databases and systems .
+
+fax: ( 202 ) 512-6450 to u.s. national security and welfare .
+
+security officer , at the gao address given at the end and / or the databases and systems in which they reside of the survey .
+
+ms. mcghee can be contacted at ( 202 ) could be productively consolidated .
+
+please provide the 512-8116 if you have any questions or concerns .
+
+what is your agency's definition of a “known or suspected domestic and / or international terrorist or criminal.” 4 .
+
+other ( please specify ) : _________ 2 .
+
+is this list maintained electronically , manually ( on paper ) , or by a combination of these methods ? .
+
+2 .
+
+manually ( on paper ) only 3 .
+
+both electronically and manually 3 .
+
+how many names are on this list as of august 1 , 2002 ? .
+
+__________ ( number ) .
+
+each watch list developed and / or maintained 5 .
+
+describe how your agency determines the names by your agency .
+
+name of watch list: ______________________ determinations .
+
+if additional space is needed , add pages as necessary .
+
+purpose of watch list _____________________ 1 .
+
+is your watch list limited to terrorists , or does it include information on others ? .
+
+2 .
+
+terrorists and others , such as criminals 4 .
+
+other ( please specify ) : 6 .
+
+what controls are in place to help ensure that the procedures for adding names to the watch list are consistently applied ? .
+
+2 .
+
+is this list maintained electronically , manually ( on paper ) , or by a combination of these methods ? .
+
+2 .
+
+manually ( on paper ) only 3 .
+
+both electronically and manually 3 .
+
+how many names are on this list as of august 1 , 2002 ? .
+
+__________ ( number ) a watch list — also referred to as lookout , target , or tip - off list — contains information on known and suspected domestic and international terrorists and criminals and is used by federal , state , and local agencies to identify , monitor , and apprehend these terrorists and criminals .
+
+7 .
+
+describe how your agency determines the names that are removed from this watch list , including a 9 .
+
+how often is this watch list updated ? .
+
+description of the criteria used to make such determinations .
+
+if additional space is needed , add pages as necessary .
+
+8 .
+
+other ( please specify ) : ________________ 10 .
+
+for this list , what is the level of classification of data as specified by executive order 12958 ? .
+
+8 .
+
+what controls are in place to help ensure that the procedures for deleting names from the watch list are consistently applied ? .
+
+5 .
+
+other ( please specify ) : 11 .
+
+does this watch list information allow individuals with false identities to be detected ? .
+
+1 .
+
+2 .
+
+12 .
+
+does this watch list information allow individuals with false documents to be detected ? .
+
+1 .
+
+2 .
+
+executive order 12958 specifies how information related to national defense and foreign relations is to be maintained and protected against unauthorized disclosure .
+
+it provides a hierarchy of three levels , with different levels of protection depending on the sensitivity of the information .
+
+13 .
+
+please tell us whether the list includes any of the 14 .
+
+do you share all or some of the information in this following items by placing a check ( ) in the appropriate column .
+
+list with other federal , state , or local government agencies and / or others ( eg , private sector firms , associations , etc. ) ? .
+
+please check ( ) yes or no for each type of organization .
+
+if you answered no to all of the categories above , please explain why you do not share this information with others , and then proceed to part iii .
+
+if additional space is needed , add pages as necessary .
+
+other ( please specify ) : other ( please specify ) : ( eg , student , tourist , etc. ) .
+
+other ( please specify ) : other ( please specify ) : other ( please specify ) : other data groups ( please specify ) : _____________________________ 15 .
+
+for each of the categories in question 14 that you answered yes to , please check all of the types of organizations you share data with: a .
+
+federal agencies: 3 .
+
+other ( please specify ) : _____________ please list the federal agencies you share data with .
+
+if additional space is needed , add pages as necessary .
+
+b .
+
+state agencies: 3 .
+
+other ( please specify ) : _____________ 3 .
+
+other ( please specify ) : _____________ d. private sector firms and associations: 3 .
+
+other ( please specify ) : _____________ _______________________________ 16 .
+
+of the data items in your watch list , which ones do you share and with which organizations ? .
+
+for each item , please circle whether or not you share the item with the type of organization specified in the categories in the table below .
+
+name of country issuing passport / visa other ( please specify ) : other ( please specify ) : type of visa granted ( eg , student ) data , please place a check ( ) in the appropriate column ( s ) below .
+
+and use other agencies' watch lists please provide the requested information for each watch list provided by another agency .
+
+if you do not receive others' watch lists , please go directly to part v. telecommunications links ( eg , e - mail ) web access ( hypertext transfer protocol ( http ) or http over secure socket layer ( https ) ) how does your agency use this watch list ? .
+
+secure community of interest ( such as intel - link ) other ( please specify ) : 1 .
+
+does your agency receive and use watch list information on ? .
+
+1 .
+
+2 .
+
+terrorists and others , such as 4 .
+
+does your agency have data sharing agreement ( s ) with the agencies you receive this list from ? .
+
+3 .
+
+4 .
+
+1 .
+
+2 .
+
+2 .
+
+by what mechanism ( s ) does your agency receive watch list information ? .
+
+5 .
+
+check ( ) the box showing how frequently you receive updated watch list information: 2 .
+
+manually ( on paper ) only ( go to question 4 ) 3 .
+
+both electronically and manually 8 .
+
+other ( please specify ) :____________ 6 .
+
+would receiving watch list information more 10 .
+
+for this watch list , please check ( ) the items frequently improve your agency's ability to not provided and list the reason ( s ) the agency identify , monitor , and / or apprehend known and gave for not providing them .
+
+suspected terrorists and criminals ? .
+
+1 .
+
+2 .
+
+7 .
+
+does this watch list information allow individuals with false identities to be detected ? .
+
+other ( please specify ) : 1 .
+
+2 .
+
+8 .
+
+does this watch list information allow individuals with false documents to be detected ? .
+
+1 .
+
+2 .
+
+9 .
+
+does your agency receive all the data it requests from the agency providing this watch list ? .
+
+other ( please specify ) : 1 .
+
+2 .
+
+type of visa granted ( eg , student , tourist ) if your answer is yes , please go directly to section v. if your answer is no , please proceed to question 10 .
+
+please provide the requested information for each watch list identified in parts ii and iv .
+
+list resides on .
+
+in addition , where applicable , check ( ) the standard your product is compliant with .
+
+additional pages are provided in appendix iii if you have more than one watch list .
+
+if your watch list does not reside in a computerized database or system , skip to part vi .
+
+give the agency name ) other ( specify ) : protocols ) memory ( bytes ) protocols ) other ( please specify ) : client - server ) _____________________________________________ 3 .
+
+for this watch list , please check ( ) below any of 6 .
+
+is the database or system your list resides on the software infrastructure standards your system stand - alone or networked ? .
+
+or database is compliant with .
+
+if your system or database is compliant with a standard not listed , 1 .
+
+stand - alone only ( go to question 8 ) please list it in the other category .
+
+ ( check all that apply. ) .
+
+yes ( ) no ( ) if yes , list system ( s ) 5 .
+
+is the system on which your list resides built in compliance with open system standards ? .
+
+1 .
+
+2 .
+
+8 .
+
+what fields can you use to search for individuals ? .
+
+ ( check all that apply. ) .
+
+if yes , please specify which standard ( s ) you used to develop and / or implement your system .
+
+2 .
+
+biometric fields ( eg , fingerprints ) 3 .
+
+date of birth fields .
+
+other ( please specify ) : ______________ a stand - alone database / system is one that is not directly connected to other systems or networks .
+
+9 .
+
+does your system include a “fuzzy” searchcapability ? .
+
+12 .
+
+is your agency using document type definitions ( dtds ) or schemas for requesting watch list information from another agency ? .
+
+if you answered yes , please provide a copy structure of your data .
+
+of the dtd / schema for requesting watch list information .
+
+10 .
+
+for this watch list , please describe below what type of standards , schema , or specifications 13 .
+
+is your agency using dtd / schemas for your agency uses to define the format and responding to a watch list information request content of your watch list data elements or records .
+
+from another agency ? .
+
+if you answered yes , please provide a copy of the dtd / schema for requesting watch list information .
+
+14 .
+
+is your agency using dtds / schema for automatically updating watch list information ? .
+
+11 .
+
+has your agency created a metadata template for describing a terrorist ? .
+
+if you answered yes , please provide a copy of the dtd / schema .
+
+15 .
+
+has your agency developed and institutionalized a watch list data dictionary that describes the elements used in the dtds / schemas ? .
+
+if you answered yes , please provide documents identifying the number of elements , name of each element , data type of each element , and meaning of each element .
+
+if you answered yes , please provide a copy of the data dictionary .
+
+a search for data that finds answers that come close to the data being searched for .
+
+it can get results when the exact spelling is not known or help users obtain information that is loosely related to a topic .
+
+metadata is definitional data that provides information about or documentation of data managed within an application or environment .
+
+for example , metadata would document data about data elements or attributes , such as the element name , size , and type .
+
+for example , state motor vehicle administrators use the american association of motor vehicle administrators' xml driver history query system specifications .
+
+a dtd or schema is a file that describes the structure of a document and defines how markup tabs should be interpreted .
+
+16 .
+
+is your agency sharing its data dictionary with 20 .
+
+does your watch list database contain any of other agencies ? .
+
+the following security controls ? .
+
+ ( check all that apply. ) .
+
+1 .
+
+2 .
+
+if you answered yes , please provide the 3 .
+
+vulnerability assessments or reviews names of the agencies you share with below .
+
+5 .
+
+intrusion ( actual or attempted ) detection 6 .
+
+maintaining audit trails of all access to and 7 .
+
+investigation of suspicious access or revision of access control policies and 4 .
+
+other ( please specify ) : _______________________________________ 24 .
+
+what controls are in place to help ensure data reliability ? .
+
+_______________________________________ 2 .
+
+additional fill - in boxes for question 6 .
+
+1 .
+
+additional fill - in boxes for question 5 .
+
+3 .
+
+additional fill - in boxes for question 7 .
+
+4 .
+
+additional fill - in boxes for question 8 .
+
+gary mountjoy , ( 202 ) 512-6367 .
+
+in addition to the individual named above , elizabeth bernard , neil doherty , joanne fiorino , will holloway , tonia johnson , anh le , kevin tarmann , and angela watson made key contributions to this report .
+
+the general accounting office , the audit , evaluation and investigative arm of congress , exists to support congress in meeting its constitutional responsibilities and to help improve the performance and accountability of the federal government for the american people .
+
+gao examines the use of public funds ; evaluates federal programs and policies ; and provides analyses , recommendations , and other assistance to help congress make informed oversight , policy , and funding decisions .
+
+gao's commitment to good government is reflected in its core values of accountability , integrity , and reliability .
+
+the fastest and easiest way to obtain copies of gao documents at no cost is through the internet .
+
+gao's web site ( www.gao.gov ) contains abstracts and full - text files of current reports and testimony and an expanding archive of older products .
+
+the web site features a search engine to help you locate documents using key words and phrases .
+
+you can print these documents in their entirety , including charts and other graphics .
+
+each day , gao issues a list of newly released reports , testimony , and correspondence .
+
+gao posts this list , known as “today's reports,” on its web site daily .
+
+the list contains links to the full - text document files .
+
+to have gao e - mail this list to you every afternoon , go to www.gao.gov and select “subscribe to gao mailing lists” under “order gao products” heading .
+

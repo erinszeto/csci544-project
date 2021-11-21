@@ -1,0 +1,1292 @@
+the patient protection and affordable care act ( ppaca ) , signed into law on march 23 , 2010 , is intended to reform aspects of the private health insurance market and expand the availability and affordability of health care coverage .
+
+it requires the establishment of a health insurance marketplace in each state and the district of columbia to assist individuals and small businesses in comparing , selecting , and enrolling in health plans offered by participating private issuers of qualified health plans .
+
+the department of health and human services' ( hhs ) centers for medicare & medicaid services ( cms ) is responsible for overseeing the establishment of these marketplaces , including creating a federally facilitated marketplace for states not establishing their own .
+
+cms was responsible for designing , developing , and implementing the information technology ( it ) systems needed to support the federally facilitated marketplace , to include healthcare.gov — the website that provides a consumer portal to this marketplace — and the related data systems supporting eligibility and enrollment .
+
+the federally facilitated marketplace began accepting applications for enrollment on october 1 , 2013 .
+
+however , individuals attempting to access the systems supporting the marketplace , including healthcare.gov , encountered numerous problems .
+
+in light of these problems , you asked us to examine the it management of the systems supporting the federally facilitated marketplace operated by cms .
+
+our objectives for this study were to ( 1 ) describe the problems encountered in developing and deploying healthcare.gov and its supporting systems and determine the status in addressing these deficiencies and ( 2 ) determine the extent to which cms oversaw the development effort and applied disciplined systems development practices to manage requirements and conduct systems testing , as well as the extent to which hhs and the office of management and budget ( omb ) provided oversight of the effort .
+
+to address the first objective , we reviewed independent verification and validation ( iv&v ) reports on the development effort , testimony from cms officials , and contracting documentation describing problems encountered by users after the launch of healthcare.gov and when these problems were first identified by cms and its stakeholders .
+
+to determine the status of efforts to address deficiencies , we reviewed data from relevant program documentation , such as system monitoring metrics , supplementary guidance to contractors , and independent , third - party reviews .
+
+in addition , we interviewed cms program officials responsible for the development and oversight of healthcare.gov and its supporting systems .
+
+to address the second objective , we reviewed documents describing cms's oversight and application of system development practices .
+
+we assessed the agency's actions against best practices identified by us and the software engineering institute , the institute of electrical and electronics engineers ( ieee ) , federal statutes on omb and agency it investment management and oversight responsibilities , and cms and hhs guidance pertaining to the oversight of major information technology programs .
+
+these included recognized practices for managing requirements , systems testing documentation , and conducting program oversight .
+
+these practices are identified in the software engineering institute's capability maturity model integration for development , version 1.3 ; the ieee standard for software and system test documentation ; our schedule assessment guide exposure draft ; and cms and hhs systems development life - cycle frameworks .
+
+we reviewed data from relevant program documentation , such as requirements documentation , independent verification and validation reports , test plans and test cases , project schedules , project management and requirements management plans , and project milestone review documentation .
+
+in addition , we reviewed four non - generalizable , random samples of test cases and functional requirements .
+
+we also interviewed relevant officials from cms responsible for the development and oversight of healthcare.gov and its supporting systems .
+
+further , we interviewed hhs and omb officials to determine the extent to which hhs and omb provided oversight of the effort .
+
+to determine the reliability of the data obtained from cms information systems used for managing requirements , conducting system testing , and tracking system defects , we interviewed knowledgeable agency officials within the center for consumer information and insurance oversight and office of information services about these systems and asked specific questions to understand the controls in place for ensuring the integrity and reliability of the data they contain .
+
+based on these efforts , we determined that the data we used from these sources were sufficiently reliable for the purposes of our audit .
+
+we conducted this performance audit from december 2013 to march 2015 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+a full description of our objectives , scope , and methodology can be found in appendix i .
+
+ppaca directed the federal government to establish and operate a health insurance marketplace , referred to as the federally facilitated marketplace , on behalf of states electing not to establish and operate a marketplace by january 1 , 2014 .
+
+cms operated a federally facilitated marketplace or partnership marketplace for 34 states for plan years2014 and 2015 .
+
+marketplaces , both federal and state , were intended to provide a seamless , single point of access for individuals to enroll in qualified health plans , apply for income - based financial assistance established under the law , and , as applicable , obtain an eligibility determination for other health coverage programs , such as medicaid or the state children's health insurance program ( chip ) .
+
+ppaca required federal and state marketplaces to be operational on or before january 1 , 2014 .
+
+healthcare.gov , the public interface for the federally facilitated marketplace , began facilitating enrollments on october 1 , 2013 , at the beginning of the first annual open enrollment period established by cms .
+
+since that time , cms has reported that over 8 million individuals selected a qualified health plan through the federally facilitated marketplace or a state - based marketplace from october 1 , 2013 , through march 31 , 2014 .
+
+as of october 15 , 2014 , 6.7 million individuals were enrolled and paying for 2014 health coverage through the marketplaces .
+
+hhs estimated up to 9.9 million enrollees for the 2015 enrollment period , which began on according to november 15 , 2014 , and ended on february 22 , 2015.hhs , over 8.4 million people had submitted applications for coverage through the federally facilitated marketplace for the 2015 enrollment period as of january 2 , 2015 .
+
+hhs established the office of consumer information and insurance oversight in april 2010 as part of the hhs office of the secretary .
+
+in january 2011 , the office moved to cms and was renamed the center for consumer information and insurance oversight .
+
+this office has overall responsibility for providing guidance and oversight for the federal and state systems supporting the establishment and operation of health insurance marketplaces .
+
+the office of information services , headed by the cms chief information officer ( cio ) , is responsible for oversight of the development and implementation of federal systems supporting the establishment and operation of the federally facilitated marketplace , including review , selection , implementation , and continual evaluation of these systems .
+
+the federally facilitated marketplace relies on the healthcare.gov website and several supporting systems to accomplish enrollment - related activities .
+
+to do so , these systems interconnect multiple other systems from a broad range of federal agencies , states , and other entities , such as contractors and issuers of qualified health plans , creating a complex system of systems .
+
+the cms consumer information and insurance systems group within the office of information services is tasked with technical oversight of the development and implementation of these systems .
+
+a description of each of the major systems for which cms is responsible for implementing follows .
+
+healthcare.gov is the federal website that serves as the user interface for individuals who wish to obtain coverage through the federal marketplace .
+
+individuals can use the website to obtain information about health coverage , set up a user account , select a health plan , and apply for coverage by the selected health plan .
+
+the site supports two major functions: ( 1 ) providing information about ppaca health insurance reforms and health insurance options ( the “learn” web page ) , and ( 2 ) facilitating enrollment in coverage ( the “get insurance” web page ) .
+
+the “learn” page provides basic information on how the marketplace works , available health plans , and how to apply for coverage .
+
+it also contains information on plan costs , ways to reduce out - of - pocket costs , and how individuals can protect themselves from fraud .
+
+individuals do not have to provide personal information to access this section of the website .
+
+in contrast to the information - oriented “learn” page , the “get insurance” page allows an individual to take steps to apply for health insurance and other associated benefits .
+
+before an individual can apply for health care coverage or other benefits , cms must verify his or her identity to help prevent unauthorized disclosure of personal information .
+
+the process of verifying an applicant's identity and establishing a login account is facilitated by cms's enterprise identity management system .
+
+this system is intended to provide identity and access management services to protect cms data while ensuring that users' identities are confirmed , as only authorized users are allowed and capable of accessing cms resources .
+
+the main system , the federally facilitated marketplace ( ffm ) system , contains several modules that perform key functions related to obtaining health care coverage .
+
+the core of the ffm system is a transactional database that was developed to facilitate the eligibility verification process , enrollment process , plan management , financial management services , and other functions , such as quality control and oversight .
+
+from a technical perspective , the ffm leverages data processing and storage resources that are available from private sector vendors over the internet , a type of capability known as cloud - based services .
+
+it consists of three major modules: eligibility and enrollment , plan management , and financial management .
+
+eligibility and enrollment module .
+
+individuals seeking to apply for health care coverage through the federally facilitated marketplace use the eligibility and enrollment module to guide them through a step - by - step process to determine their eligibility for coverage and financial assistance .
+
+once eligibility is determined , the applicant is then shown applicable coverage options and has the opportunity to enroll .
+
+throughout the eligibility and enrollment process , the applicant's information , such as name , address , social security number , citizenship status , and employer name , is collected and stored in the ffm system's database .
+
+this information is compared with records maintained by other federal agencies and a private entity to determine whether the applicant is eligible to enroll in a qualified health plan and , if so , to receive the advance payment of the premium tax credit and cost - sharing reductionscost of this coverage .
+
+established through ppaca to defray the the module further allows an applicant to view , compare , select , and enroll in a qualified health plan .
+
+options are displayed to the applicant on the healthcare.gov webpage , and applicants can use the “plan compare” function to view and compare plan details .
+
+the applicant can customize and filter the plans according to various factors such as plan type , maximum out - of - pocket expenses , deductible , availability of cost - sharing reductions , or insurance company , among others .
+
+once an applicant has signed up for a qualified health plan on healthcare.gov , information about the enrollment is sent to the chosen health plan issuer .
+
+plan management module .
+
+the plan management module is intended to interact with and is primarily used by state agencies and issuers of qualified health plans .
+
+the module is intended to provide a suite of services used for submitting , certifying , monitoring , and renewing qualified health plans , as well as managing the withdrawal of these health plans .
+
+specifically , using this module , states and issuers submit “bids” detailing proposed health plans to be offered on healthcare.gov , including rate and benefits information .
+
+cms then uses the module to review , monitor , and certify or decertify the bids submitted by issuers .
+
+once a bid has been certified and approved for inclusion in the marketplace , it is made available for applicants to enroll through healthcare.gov .
+
+financial management module .
+
+this module is intended to facilitate payments to issuers through electronic transactions .
+
+like plan management , the financial management module is used primarily by issuers of qualified health plans .
+
+this module also provides issuers additional services , including payment calculation for reinsurance , risk adjustment analysis , and the data collection required to support these services .
+
+transactions to be supported by the module include payments of premiums and cost - sharing reductions subsidies for individual enrollments , reinsurance , and risk adjustments .
+
+the federal data services hub ( dsh ) acts as a single portal for exchanging information between the ffm and cms's external partners , including other federal agencies and state - based marketplaces , for purposes such as facilitating eligibility determinations and transferring plan enrollment information .
+
+the dsh was designed as a “private cloud” service supporting various functions such as real - time eligibility queries , transfer of application information , and exchange of enrollment information with issuers of qualified health plans .
+
+in conducting healthcare.gov - related activities , various entities , including federal agencies , a private - sector credit agency , states , issuers of qualified health plans , and agents and brokers connect to and exchange information with the systems supporting the federally facilitated marketplace .
+
+federal agencies such as the social security administration ( ssa ) , department of homeland security ( dhs ) , and internal revenue service ( irs ) , along with equifax , inc. ( a private - sector credit agency that cms contracts with ) provide or verify information used in making determinations of a person's eligibility for coverage and financial assistance .
+
+social security administration .
+
+this agency's primary role is to assist cms in confirming applicant - supplied information by comparing it with information in ssa's records related to individuals' citizenship , social security number , incarceration status , and death .
+
+ssa also provides cms information on monthly and annual social security benefits paid to individuals under the old age , survivors , and disability insurance program , if necessary to determine eligibility .
+
+department of homeland security .
+
+the department assists cms by verifying the naturalized , acquired , or derivedimmigration status of applicants seeking eligibility to enroll in a qualified health plan or participate in medicaid , chip , or a state - based health plan using information supplied by each applicant through the website .
+
+dhs generally undertakes this role only if cms is unable to verify an applicant's status with ssa using a social security number or if the applicant indicates on the application that he or she is not a u.s. citizen .
+
+dhs also assists cms by verifying the status of noncitizens who are lawfully present in the united states and seeking eligibility to enroll in a qualified health plan or participate in medicaid , chip , or a state - based health plan , as well as current beneficiaries who have had a change in immigration status or whose status may have expired .
+
+internal revenue service .
+
+irs provides federal tax information to be used by cms in determining or assessing income and family size and determining an applicant's eligibility for insurance affordability programs , including the advance payment of the premium tax credit , cost - sharing reductions , medicaid , and chip .
+
+equifax , inc .
+
+this entity verifies information about an applicant's current income and employment to assist cms in making a determination about an applicant's qualification for insurance affordability programs , such as the advance payment of the premium tax credit and cost - sharing reductions .
+
+in addition , several other federal agencies — the departments of defense and veterans affairs , the office of personnel management , and the peace corps — support cms in determining whether a potential applicant is eligible for or enrolled in minimum essential coverage and therefore may not be eligible to receive the advance payment of the premium tax credit and cost - sharing reductions .
+
+for example , applicants that are enrolled in or eligible for coverage under certain government programs such as medicare or medicaid , or certain employer - sponsored programs , such as the federal employees health benefits program , are ineligible for these subsidies .
+
+in most states , multiple government systems may need to connect to the ffm system and dsh to carry out a variety of functions related to health care enrollment .
+
+for example , most states need to connect their state medicaid and chip agencies to either the ffm system ( through the dsh ) or their state - based marketplace to exchange data with cms about enrollment in these programs .
+
+in addition , states may need to connect with the irs ( also through the dsh ) in order to calculate the maximum amount of advance payments of the premium tax credit .
+
+finally , state - based marketplaces are to send enrollment confirmations to the ffm system so that cms can administer advance payments of the premium tax credit and cost - sharing reductions and track overall marketplace enrollment .
+
+further , in certain cases , known as partnership marketplaces , states may elect to perform one or both of the plan management and consumer assistance functions while the ffm system performs the rest .
+
+the specific functions performed by each partner vary from state to state .
+
+issuers of qualified health plans receive enrollment information from the ffm system using cms's health insurance oversight system when an individual completes the application process .
+
+in this case , the ffm system transmits the enrollment information to the dsh , which forwards it to the issuer of qualified health plans .
+
+the issuer then replies with a confirmation message .
+
+plan issuers also interact with the ffm through the plan management and financial management modules , as previously described .
+
+in addition to applicants themselves , agents and brokers may access the healthcare.gov website to perform enrollment - related activities on behalf of applicants .
+
+it is up to individual states to determine whether to allow agents and brokers to carry out these activities , which can include enrolling in health care plans and applying for the advance payment of the premium tax credit and cost - sharing reductions .
+
+figure 1 illustrates the systems that make up the federally facilitated marketplace and their connections with each other , as well as with external partners .
+
+in 2014 , we reported on challenges cms and its contractor faced in developing , implementing , and overseeing the healthcare.gov initiative .
+
+we reported on cms's efforts to plan and oversee healthcare.gov - related development contracts , as well as the agency's efforts in addressing contractor performance , in july 2014 .
+
+we determined that the agency undertook the development of healthcare.gov and its related systems without effective planning or oversight practices , despite facing a number of challenges that increased both the level of risk and the need for effective oversight .
+
+in addition , cms incurred significant cost increases , schedule slips , and delayed system functionality for the ffm and dsh systems due primarily to changing requirements that were exacerbated by oversight gaps .
+
+lastly , cms identified major performance issues with the ffm contractor but took only limited steps to hold the contractor accountable .
+
+specifically , cms declined to pay about $267,000 in requested fees to the ffm contractor , which was about 2 percent of the $12.5 million in fees paid .
+
+we recommended that cms take actions to assess increasing contract costs and ensure that acquisition strategies are completed and oversight tools are used as required , among other actions .
+
+cms concurred with most of the recommendations .
+
+in september 2014 we reported on the planned exchanges of information between the healthcare.gov website and other organizations , as well as the effectiveness of the programs and controls implemented by cms to protect the security and privacy of the information and it systems used to support healthcare.gov .
+
+we described how many systems and entities exchange information to carry out functions that support individuals' ability to use healthcare.gov to compare , select , and enroll in private health insurance plans participating in the federal marketplace , as required by the patient protection and affordable care act .
+
+in addition , we determined that cms took many steps to protect security and privacy , including developing required security program policies and procedures , establishing interconnection security agreements with its federal and commercial partners , and instituting required privacy protections .
+
+however , healthcare.gov had weaknesses when it was first deployed , including incomplete security plans , lack of a privacy risk analysis , incomplete security tests , and the lack of an alternate processing site to avoid major service disruptions .
+
+further , we identified weaknesses in the technical controls protecting the confidentiality , integrity , and availability of the ffm .
+
+specifically , cms had not always required or enforced strong password controls , adequately restricted access to the internet , consistently implemented software patches , and properly configured an administrative network .
+
+we made 28 recommendations to hhs to enhance the protection of systems and information related to healthcare.gov as well as to resolve technical weaknesses in security controls .
+
+hhs partially agreed with 3 of the 28 recommendations , agreed with 25 , and described plans to implement our technical recommendations .
+
+several problems occurred in the development and deployment of healthcare.gov and its supporting systems , which affected their performance .
+
+these problems included inadequate system capacity , numerous errors in software code , and limited system functionality .
+
+although cms was aware of these problems prior to initial launch in october 2013 , it proceeded with deployment in order to meet this deadline .
+
+consequently , consumers attempting to enroll in health plans were met with confusing error messages , slow load times for forms and pages , and , in some cases , website outages .
+
+since the initial launch of healthcare.gov and its supporting systems , cms has taken a number of steps to address these problems , to include increasing system capacity , outlining a new approach for ensuring the quality of software code , and further developing required system functionality .
+
+as a result of these efforts , the performance of heathcare.gov and its supporting systems has improved significantly .
+
+systems supporting healthcare.gov were initially launched without adequate capacity to accommodate the number of visitors to the website .
+
+in particular , when the system was launched on october 1 , 2013 , the enterprise identity management system was overwhelmed by the number of users attempting to create accounts — nearly half a million in the first 2- and - a - half weeks of open enrollment — preventing the system from functioning as intended .
+
+cms officials within the office of information services stated that they had incorrectly estimated the number of users that would visit the site during the initial launch of the 2014 enrollment period .
+
+as a result , cms had not planned to provide a level of capacity that would ensure uninterrupted service to users in a cost - effective manner .
+
+independent assessments conducted in december 2012 and june 2013 also identified weaknesses in cms's capacity planning in the months prior to launch .
+
+examples of these weaknesses included the following: capacity requirements for hardware for the ffm system were not developed .
+
+a plan for capacity for the cloud computing environment had not been developed , and thus there were uncertainties as to whether new and existing system hardware configurations and their performance were adequate to meet existing and proposed system requirements .
+
+existing capacity in the cloud environment was not adequate , and did not include an adequate number of virtual machinesprocessors .
+
+further , in a november 2013 testimony , the cms administrator acknowledged that although cms tried to project demand for the website , the agency underestimated that demand .
+
+as a result , consumers attempting to enroll in health plans were met with confusing error messages , slow load times for forms and pages , and in some cases website outages .
+
+in particular , due to inadequate system capacity , many consumers experienced difficulty creating accounts , and those that were able to create accounts had difficulty logging into them .
+
+software code for systems supporting healthcare.gov contained numerous errors , resulting in difficulties in accessing and using the site .
+
+for example , in september 2013 ( less than 1 month before launch ) , an iv&v assessment ordered by cms identified 45 critical and 324 serious code errors across the plan management , financial management , and eligibility and enrollment ffm system modules , with services relating to the eligibility and enrollment module having the highest numbers of errors .
+
+further , the iv&v assessment team reported that there was no evidence that software coding errors were being addressed .
+
+other iv&v assessments of the ffm and dsh systems also noted problems in coding practices used by systems development contractors that indicated concerns about system code .
+
+for example , in march 2013 , the iv&v assessment team reviewing the ffm and dsh systems noted multiple issues with application coding , including undesirable coding practices that were known to potentially cause errors and the inability of the assessment team to locate cms or contractor coding standards .
+
+cms also identified concerns with system coding prior to launch .
+
+in march 2013 , a director within the consumer information and insurance systems group , charged with overseeing the development effort , expressed concerns about the quality of ffm system code during a monthly status meeting .
+
+in addition , cms conducted an assessment of ffm system documentation and development processes in august 2013 and noted that late - stage coding conducted by the ffm system development contractor did not follow expected standards and best practices , resulting in code conflicts between ffm system modules .
+
+the assessment further stated that system technical changes and development were being conducted on an ad - hoc basis to resolve production issues rather than being coordinated across development teams .
+
+in september 2013 , the ffm system development contractor attributed certain coding errors to the urgency of implementing system fixes as quickly as possible .
+
+to mitigate these issues , the contractor stated that it was revisiting its code review process to help identify coding errors .
+
+however , this action was not timely , as open enrollment began shortly thereafter .
+
+further , in november 2013 , the ffm system development contractor , in response to a cms contracting officer's concerns about defects and errors in the ffm system code , stated that it was not possible to ensure that each code release addressed all defects because there was not sufficient time to fix the code and retest it to confirm that issues were resolved .
+
+cms officials agreed that some defects were not addressed prior to system launch due to the urgency in meeting the october 1 , 2013 , deadline .
+
+as with the capacity problems , these software code errors also contributed to the problems applicants faced in attempting to enroll in health care plans .
+
+for example , according to an hhs report summarizing findings from an obama administration assessment , for some weeks in the month of october 2013 , the healthcare.gov website was down an estimated 60 percent of the time .
+
+in the report , hhs noted that the assessment team determined that hundreds of errors in software code contributed to that downtime .
+
+as of initial launch , the functionality provided by the ffm system was limited compared to what was planned , thus hindering users from performing actions needed to compare health plans and small businesses from purchasing plans , as well as requiring the use of a manual process for paying issuers .
+
+in september 2011 , cms issued the first ffm system statement of work , which stated that the federal marketplace would provide all exchange capability in states electing not to establish a state - based marketplace .
+
+the statement of work identified system modules that were to encompass all federal exchange requirements , including the eligibility and enrollment , plan management , and financial management modules .
+
+however , at the time of initial open enrollment in 2013 , while parts of the eligibility and enrollment module were completed , others were not .
+
+specifically , after creating an account through the website , consumers could apply for health coverage , compare and select a plan for enrollment , and receive an advance payment of the premium tax credit and medicaid / chip eligibility determination through the eligibility and enrollment module .
+
+nonetheless , consumers were not able to perform other intended eligibility and enrollment functions such as ( 1 ) “window shopping” ( i.e. , comparing different plans ) for health plans prior to providing personal information to cms and signing up for coverage , or ( 2 ) designating authorized representatives to apply for coverage on their behalf or change their advance payment of the premium tax credit election .
+
+further , small businesses were unable to purchase health coverage for their employees through the ffm eligibility and enrollment module .
+
+other planned modules , including the plan management and financial management modules , were also not complete and thus did not provide intended functionality .
+
+for example , cms could not use the system to acquire , certify , and manage issuers offering qualified health plans through the exchange's plan management module .
+
+additionally , the system did not allow payments to be made to health issuers and did not calculate payments for reinsurance through the financial management module .
+
+since the troublesome launch of healthcare.gov , cms has taken various actions to address the problems that impeded the initial use of the website and its supporting systems .
+
+for example , beginning in october 2013 , the agency initiated steps to mitigate the lack of adequate system capacity .
+
+specifically , among other things , it doubled the number of servers for systems supporting healthcare.gov , added virtual machines for the enterprise identity management and ffm systems , and replaced a virtual database with a high - capacity physical database for the enterprise identity management system , allowing more efficient system processing for both the identity management and ffm systems .
+
+by taking these actions , cms increased overall system capacity to support internet users — going from 25 to 400 terabytes of monthly capacity .
+
+according to an hhs website , by december 2013 , the increased system capacity allowed the system to accommodate more than 1.8 million visits a day from consumers to the website and its supporting systems .
+
+according to an hhs progress report issued in december 2013 and other data provided by cms , healthcare.gov system availability went from 42.9 percent to just over 93 percent during november 2013 , and the ffm system response time went from 8 seconds in late october 2013 to less than 1 second by december 2013 .
+
+in addition , in october 2013 cms took steps to mitigate system coding issues .
+
+for example , the agency directed its development contractors to , among other things , modify system software to increase the efficiency in system interactions and implement software fixes to address issues with users logging into their accounts .
+
+in december 2013 , hhs reported that the number of errors encountered by individuals using the system decreased by over 5 percent by the end of november 2013 , going from a 6 percent error rate to under 1 percent .
+
+also , cms documented data quality plans for the enterprise identity management system in march 2014 and the ffm system in june 2014 that outline an approach for improving the quality of the systems' code .
+
+the enterprise identity management system plan calls for peer reviews to ensure that contract requirements are met and product reviews are performed on all deliverables .
+
+the ffm plan identifies three types of quality reviews — peer reviews , process and product quality assurance reviews , and quality assessment reviews — that are to be used to ensure work products conform to documented processes and standards .
+
+peer reviews .
+
+as the primary verification activity , peer reviews are to be conducted to help facilitate early detection of problems , and thus reduce the number of problems discovered in later stages of development , which helps to minimize the cost associated with rework .
+
+peer reviews are to include a review of requirements , design , code , and test planning work products .
+
+peer reviews can be conducted by peer members of the project team or team leads , managers , and design review boards .
+
+process and product quality assurance reviews .
+
+these reviews are intended to ensure that work products , project management processes , high - level development processes , and day - to - day practices adhere to documented cms processes and standards .
+
+these reviews are to be conducted by contractors not directly responsible for the work product or process being reviewed .
+
+quality assurance review .
+
+the primary purpose of the quality assurance review is to verify that the ffm it program is progressing based on expectations and is providing business value , and that appropriate risks are identified and managed so that solutions can be delivered on time and within budget .
+
+this review is conducted by a contractor managing director who is also referred to as a quality assurance director .
+
+these directors are external to the ffm system project , with technical and functional expertise in line with the program .
+
+nonetheless , even with these efforts , iv&v assessments continued to identify issues with software coding practices .
+
+for example , in july 2014 the assessment team identified over 11,000 critical code violations in the eligibility and enrollment module of the ffm system which could cause major issues in production or difficulties in maintaining the code .
+
+the assessment team highlighted the need for cms to ensure the ffm system code is reviewed and that critical and major violations are remediated .
+
+cms has also taken steps to develop additional system functionality for the ffm system .
+
+in order to complete ffm system development and to improve system functionality already provided by the original contractor tasked with developing this system , the agency awarded a new contract in january 2014 .
+
+according to the statement of work , this new ffm system development contract represents almost exclusively new development and major fixes to software already developed .
+
+the contract called for the new contractor to design , develop , test , and implement services supporting the ffm system .
+
+this includes the financial management module , the plan management module , and certain eligibility and enrollment module functions that include eligibility verification and determination .
+
+some ffm system development activities are still in progress , such as the payment service to issuers for subsidy payments to issuers through the financial management module , among others .
+
+however , cms made progress in developing and implementing services related to the ffm eligibility and enrollment and plan management modules .
+
+for example , consumers can now “window shop” using the eligibility and enrollment module , and cms can now use the plan management module to validate plan application information and route the validated information to the appropriate system supporting healthcare.gov .
+
+in developing healthcare.gov and its supporting systems , cms did not adhere to best practices for managing it development projects , which contributed to problems with the launch of healthcare.gov and its supporting systems .
+
+such best practices include managing requirements to ensure that delivered functionality meets the needs of users , conducting adequate system testing to validate that systems function as intended , and providing oversight to ensure that a project is progressing as planned and that corrective actions are taken as needed .
+
+specifically , cms did not effectively manage requirements of key systems supporting healthcare.gov , nor did it adequately test the system , or include key information in system test plans and test cases .
+
+in addition , cms's oversight of the initiative was limited by an unreliable schedule , lack of estimates of work needed to complete the project , unorganized and outdated project documentation , and inconsistent reviews of project progress .
+
+cms program and contracting officials attributed weaknesses in these it management areas to the complexity of developing a first - of - its - kind federal marketplace , which was exacerbated by changing requirements and compressed time frames for completing and deploying the systems .
+
+cms has taken action to address deficiencies in applying systems development best practices for the ffm system .
+
+however , deficiencies in requirements management , systems testing , and oversight remain .
+
+by not engaging in effective systems development practices , cms lacks essential mechanisms to ensure the successful delivery of it systems such as healthcare.gov and its supporting systems .
+
+in addition , hhs has not provided adequate oversight of the healthcare.gov initiative through its office of the cio , while omb's oversight role was limited to facilitating discussions with federal partners , providing federal policy guidance , and overseeing the project's budget .
+
+best practices developed by the software engineering institute call for , among other things , ensuring that requirements are understood and approved by system stakeholders , including system owners and system developers .
+
+thus , as a project matures and requirements are derived , the requirements should be clearly defined , agreed upon , and approved by the system stakeholders , including system owners and system developers .
+
+consistent with best practices , cms guidance also requires this approval .
+
+specifically , the cms requirements management plan documented specifically for the ffm and dsh systems called for functional requirements to be approved by a cms official — the center for consumer information and insurance oversight business owner — before being sent to the development team .
+
+the plan further stated that an agency official within the office of information services was to document this approval in the collaborative application lifecycle tool ( calt ) , the agency's project management system and requirements repository .
+
+the system records the name of the approver and the date and time at which the requirement was approved .
+
+however , in many instances , functional requirements that had been identified for the ffm and dsh systems were included in the development effort prior to or without clear evidence of required cms approval .
+
+specifically , of the 37 ffm eligibility and enrollment functional requirements that 9 were designated as having been approved prior to development , 8 were approved after the requirements were sent to 20 were never approved by cms .
+
+of the 67 dsh functional requirements we selected,approved by a cms official .
+
+cms officials within the office of information services acknowledged that approvals were not always obtained for functional requirements prior to the development of the ffm and dsh systems .
+
+the officials stated that they were unable to enforce consistent application of life - cycle processes because they were trying to develop the system in an expedited fashion to meet the october 2013 deadline .
+
+by allowing functional requirements to move to development without approval , cms did not position itself to ensure that there was a common understanding of requirements between cms center for consumer information and insurance oversight business owners and the contractors tasked with developing these systems , or that expected functionality would be provided .
+
+since systems launch , cms has developed a new requirements approval process , but it is not fully implemented after the initial system launch , cms documented and began implementing a new it governance process in june 2014 that calls for business requirementscms business owner , the cms approving authority , and the contract organization's approving authority — instead of one cms official ( the business owner ) .
+
+in addition , cms officials within the office of information services stated that functional and technical requirements also require the same three stakeholders' approval and that these stakeholders' signatures be included on all requirements documentation , indicating their approval .
+
+to be approved by three key stakeholders — the even with its new requirements approval process , however , cms has not consistently and appropriately approved requirements .
+
+in particular , 1 of 18 ffm system requirements documents that we examined under the new process contained all the necessary approvals for business , functional , and technical requirements that had been documented as part of the effort to improve and expand system functionality .
+
+specifically: of the 13 business requirements documents , 1 had been fully approved by all three stakeholders .
+
+on the other hand , 4 business requirements documents included the signature of the ffm contractor , but did not include the cms approving authority and business owner signatures ; 2 documents were approved by the cms business owner , but were not approved by the cms approving authority and the ffm contractor ; and the remaining 6 were approved by the cms approving authority and business owner , but were not approved by the ffm contractor .
+
+of the four functional design documents , none were fully approved by the required stakeholders .
+
+two of the four were not approved by the cms approving authority and the ffm contractor .
+
+one was approved by the cms business owner and the cms approving authority , but was missing the approval of the ffm contractor .
+
+the remaining functional design document was approved by cms's approving authority , but was missing the approval of the ffm contractor and cms business owner .
+
+the one technical design document included the signature of the cms approving authority , but was missing the signatures of the cms business owner and ffm contractor .
+
+in addition , it was not always clear what requirements were being approved .
+
+specifically , while pages with approval signatures were scanned and uploaded to calt , 10 of the 18 signature pages were not electronically attached or linked to documents specifying the requirements being approved , making it difficult to determine what requirements were actually approved .
+
+these conditions present uncertainty as to whether cms and its contractors can readily and always determine if the requirements being developed had received the appropriate approval .
+
+cms officials in the office of information services acknowledged the lack of approvals and stated that as of mid - october 2014 they had not yet fully implemented the new it governance process , which is to include the complete documentation of requirements approvals .
+
+specifically , while cms has documented the approval procedures for business requirements , it has not yet documented procedures for approving functional and technical requirements .
+
+while acknowledging these weaknesses , officials within the office of information services added that cms is currently tracking approvals through a weekly management report .
+
+however , this is inconsistent with the agency's newly developed procedures , which require stakeholders' signatures on requirements documentation to indicate approval .
+
+the officials further noted that they intend to review all required documentation to identify any signatures that may be missing after 2015 open enrollment is complete .
+
+however , this review would take place after the requirements were developed and would not ensure that they were clearly defined , agreed upon , and approved before development began .
+
+until it fully documents and implements its new requirements approval process , cms may not establish a shared understanding of requirements with its contractors , potentially resulting in critical system functionally not providing needed capabilities .
+
+best practices developed by the software engineering institute call for , among other things , effectively managing requirements by maintaining bidirectional traceability from the high - level original source , such as the business and program requirements , to the lower - level more detailed system and technical requirements , and from those lower - level requirements back to their original source .
+
+such bidirectional traceability allows stakeholders to ( 1 ) understand any system - wide effects as a result of changes to requirements , ( 2 ) determine whether all high - level requirements have been completely addressed and whether all lower - level more detailed requirements can be traced to a valid source ( i.e. , maintain requirement dependencies to ensure that higher - level requirements are being addressed by lower - level more detailed requirements ) , and ( 3 ) update requirements documentation as necessary for approved changes .
+
+business processes illustrate the interactions and information exchanges among functional activities and stakeholders ( eg , states , federal agencies , insurers , and employers ) performing those activities .
+
+these associations provide information for stakeholder relationships and information exchanges to facilitate coordination and agreement among stakeholders concerning their respective roles , responsibilities , and information exchange needs .
+
+ffm eligibility and enrollment business process associations were not documented in calt as required by the requirements management plan .
+
+according to cms officials within the office of information services , these associations were documented in a separate spreadsheet .
+
+however , the spreadsheet only included 1,137 of the 3,779 eligibility and enrollment functional requirements .
+
+we reviewed all of the 1,137 functional requirements .
+
+however , by not maintaining bidirectional traceability among requirements , cms could not ensure that key stakeholders had a clear understanding of system - wide effects as a result of changes to requirements , determine whether all source requirements had been completely addressed and whether all lower - level requirements could be traced to a valid source , and appropriately update requirements documentation for approved changes .
+
+cms has taken steps to establish bidirectional traceability for requirements developed after initial system launch to help improve the bidirectional traceability of requirements , cms documented and began implementing a new ffm requirements management process in june 2014 .
+
+this process includes guidance on documenting traceability in a new requirements management system — the quality center application lifecycle management tool .
+
+since the fall of 2014 , cms and its ffm contractors have made a concerted effort to provide bidirectional traceability within the life - cycle management tool for approved business , functional , and technical requirements for development efforts .
+
+in november 2014 , ffm contractors , along with cms officials within the office of information services and office of legislation , demonstrated to us how the current process is providing bidirectional traceability .
+
+specifically , contractors provided examples of business requirements and their associated functional requirements using the tool .
+
+the contractors also provided examples of how functional requirements and their associated business requirements were linked .
+
+according to the ffm contractor , as of november 2014 , requirements for three increments within the financial management module and nine increments within the eligibility and enrollment module were fully traceable within the life - cycle management tool .
+
+going forward , effective use of this life - cycle management tool should assist cms in maintaining bidirectional traceability and , thus , ( 1 ) facilitate the understanding of system - wide effects as a result of changes to requirements , ( 2 ) help determine whether all source requirements have been completely addressed , and ( 3 ) help determine whether all lower - level requirements can be traced to a valid source .
+
+testing an it system is essential to validate that the system will satisfy the requirements for its intended use and user needs .
+
+effective testing facilitates early detection and correction of software and system anomalies ; provides an early assessment of software and system performance ; and provides factual information to key stakeholders for determining the business risk of releasing the product in its current state .
+
+best practices developed by the institute of electrical and electronics engineers ( ieee ) suggest that systems testing should be conducted early and often in the life cycle of a systems development project to allow for the modification of products in a timely manner , thereby reducing the overall project and schedule impacts .
+
+in may 2011 , cms documented a testing framework that was to establish a consistent , repeatable cms testing life - cycle process for business application and infrastructure testing .
+
+in statements of work , cms required its ffm and dsh system development contractors to use this framework and perform testing and validation of all software releases prior to implementation .
+
+this was to include integration and end - to - end of both the ffm and dsh systems , which would test how , for testing example , various modules of the ffm system work together .
+
+this testing would also assess whether the individual systems that support the federally facilitated marketplace work together as intended .
+
+further , cms testing documentation stated that any critical defects discovered through the testing process were to be corrected or mitigated before the system was put into production .
+
+integration testing is preliminary testing performed by the system developer to assess the interfaces , data , and interoperability of modules and systems within a single business application .
+
+end - to - end testing is a type of integration testing that tests all of the business application's access or touch points , and data , across multiple business applications and systems , front to back ( horizontal ) and top to bottom ( vertical ) , to ensure business processes are successfully completed .
+
+testing is conducted on a complete , integrated set of business applications and systems to evaluate their compliance with specified requirements , and to evaluate whether the business applications and systems interoperate correctly , pass data and control correctly to one another , and store data correctly .
+
+prior to system launch — integration testing with plan issuers that were expected to connect to the dsh to send health plan information to the ffm plan management module had not been completed , with outstanding defects remaining unaddressed for the ffm system eligibility and enrollment module .
+
+in addition , end - to - end testing of healthcare.gov and its supporting systems did not occur prior to system launch as required .
+
+further , cms did not always ensure that system defects found during the testing were corrected prior to system launch ; thus , many defective system components were placed into production .
+
+cms staff within the office of information services , including a deputy director , as well as representatives of development contractors for the dsh and ffm systems , stated that there was insufficient time to conduct all the needed testing prior to system launch .
+
+this was , in part , because requirements were still being defined in mid - 2013 and there were delays in developing software that was ready for testing .
+
+without complete integration and end - to - end testing of the system , cms lacked a basis for knowing if all healthcare.gov interconnected systems could operate correctly , pass data correctly to one another , and store data correctly prior to system launch .
+
+in addition , without ensuring that defects were corrected prior to placing the system into production , cms jeopardized its assurance that the system would function as intended .
+
+cms has begun taking steps to improve systems testing , but has not documented its new processes according to officials in the office of information services , cms has taken steps aimed at improving its testing processes since the highly problematic launch of healthcare.gov .
+
+for example , it has implemented a new tool that integrates systems development and systems testing , which is intended to provide the agency and its contractors greater visibility into the development and testing process .
+
+in addition , according to cms officials in the office of information services , business owners and other stakeholders are now to review key testing documentation to ensure proper test coverage and to validate the results .
+
+at the time of our review the agency had not documented this new testing process .
+
+going forward , without a clearly defined and documented process for how cms will implement the testing tool as well as requirements for stakeholder reviews , cms may not be able to ensure testing processes are carried out as intended .
+
+a key document needed to ensure that testing is carried out effectively is a test plan .
+
+test plans describe the technical and management approach to be followed for testing a system or a component of a system .
+
+best practices , such as those identified by ieee , call for test plans to identify the test items ( software or system ) that are the object of testing ; provide a description of the overall approach for testing ; identify the set of tasks necessary to prepare for and perform testing ; identify how testing anomalies will be tracked and resolved ; identify roles and responsibilities for individuals or groups responsible for testing ; identify the risk issues that may adversely impact successful completion of the planned testing activities ; identify the means by which the quality of testing processes will be assured ; specify the necessary test environment and test data , such as hardware , software , and test support tools ; and specify the criteria to be used to determine whether each test item has passed or failed testing .
+
+test plans we examined for the dsh and ffm systems included most , but not all of the recommended key elements .
+
+for example , all 19 dsh and 14 ffm system test plans documented prior to the systems launch in october 2013 identified the test items that were the object of testing ; the overall approach for testing ; the set of tasks necessary to prepare for and perform the testing ; how testing anomalies were to be tracked and resolved ; and the roles for individuals or groups responsible for testing .
+
+however , a number of these test plans did not address key elements called for by best practices , relating to the quality of testing and the pass / fail testing criteria .
+
+specifically: none of the 19 dsh and 14 ffm system test plans included the means by which quality of testing processes would be assured .
+
+eleven of the 19 dsh and all 14 ffm system test plans were missing detailed criteria to be used to determine whether each test item has passed or failed testing .
+
+in addition , these plans varied in the extent to which they addressed risk issues and the test environment information .
+
+specifically: while all 14 ffm system test plans identified risk issues that may adversely impact successful completion of the planned testing activities , 8 of 19 dsh test plans included this information .
+
+while all 14 ffm test plans specified the necessary test environment and test data , such as hardware , software , and test support tools , 8 of the 19 dsh test plans included all of the information recommended by best practices .
+
+these weaknesses existed , in part , because cms lacked key elements in its framework .
+
+for example , the framework did not require test plans to include the risk issues that may adversely impact successful completion of the planned testing activities ; the means by which the quality of testing processes will be assured ; or the necessary test environment and test data , such as hardware , software , and test support tools .
+
+further , cms officials in the office of information services acknowledged the lack of certain key elements in the test plans that existed for systems supporting healthcare.gov , and attributed this , in part , to an incomplete test plan template .
+
+without including key information in the test plans , cms had less assurance that testing carried out prior to initial launch was consistently executed and of sufficient quality to validate that systems supporting healthcare.gov satisfied requirements .
+
+since the initial system launch , cms has continued to develop test plans for additional ffm system functionality , and these included most , but not all , key elements .
+
+specifically , all 11 post - october 2013 ffm system test plans included test items that are the object of testing ; the overall approach for testing ; the set of tasks necessary to prepare for and perform testing ; how testing anomalies will be tracked and resolved ; risk issues that may adversely impact successful completion of the planned testing activities ; and , for the most part , specified the necessary test environment and test data , such as hardware , software , and test support tools .
+
+nonetheless , similar to the pre - october 2013 test plans , ffm test plans had not identified all key elements called for by best practices .
+
+specifically , none of the 11 ffm post - october 2013 test plans specified the means by which the quality of testing processes would be assured , and 9 of the 11 test plans lacked criteria to be used to determine whether each test item has passed or failed testing .
+
+in addition , these plans varied in the extent to which they discussed roles and responsibilities of individuals or groups responsible for testing .
+
+specifically , while all 11 ffm test plans included the identification of roles for individuals or groups responsible for testing , 5 of these plans did not include the details regarding what tasks these individuals or groups would perform .
+
+according to an information technology specialist within the office of information services , the test plan template that was used for test plan development was updated in november 2014 to include the missing key elements we identified .
+
+while updating the test plan template with missing elements is a positive step , this will not necessarily ensure key information is included in the test plan .
+
+specifically , although the test plans we reviewed for ffm and dsh included a section for roles and responsibilities , for example , the information included was not always comprehensive and did not provide needed information .
+
+as a result , cms may continue to lack assurance that testing is consistently executed and of sufficient quality to ensure that healtcare.gov - related systems function as intended .
+
+as another key type of testing documentation , test cases describe scenarios that the system must perform to meet intended requirements .
+
+testing teams use these test cases to determine whether an application , system , or a particular system feature is working as intended .
+
+best practices identified by ieee call for each test case to include a unique identifier so that each test case can be distinguished from all other test cases ; specify all outputs and the expected behavior required of the test items ; identify dependencies ( i.e. , other test cases that must be executed before the current test case ) ; identify and describe the objective for the test case ( eg , what feature is being tested ) ; specify the ordered description of the steps to be taken by each participant for the execution of the test procedure ; and specify the inputs required to execute each test case ( i.e. , values , files , databases , etc. ) .
+
+best practices also state that test cases should be linked to requirements in order to help stakeholders ensure that there is a valid relationship between a system's requirements and the plans and procedures for testing to ensure they are met .
+
+test cases for components of systems supporting healthcare.gov included some , but not all key elements .
+
+specifically , all of the selected test cases ( 42 dsh and 83 ffm ) that were documented prior to system launch in october 2013 included a unique identifier .
+
+however , these test cases did not always identify two other key elements called for by best practices — outputs and the expected behavior and test case dependencies .
+
+specifically: one of 42 dsh test cases specified outputs and the expected behavior required of the test items .
+
+while all 83 of the ffm test cases included expected behavior required of the test items , 12 of the 83 included outputs .
+
+one of 42 dsh test cases and 4 of 83 ffm test cases included dependencies .
+
+in addition , among the test cases , results were mixed regarding the extent to which they included the objective , the description of steps , and the inputs required .
+
+specifically: while all ffm test cases included the identification and description of the testing objective , 29 of 42 dsh test cases included that information .
+
+all the ffm test cases specified the ordered description of the steps to be taken by each participant for the execution of the procedure , but one of the dsh test cases included this information .
+
+among the ffm test cases , 58 of 83 specified all of the inputs required to execute each test case , while none of the dsh test cases did so .
+
+in addition , many of the test cases did not include enough information to allow the project team to determine whether the testing contractor had performed the test and whether or not the system passed testing .
+
+specifically , while all 42 dsh test cases included information about whether or not the test passed or failed , 58 of the 83 ffm system test cases were missing pass / fail information .
+
+further , although cms provided documents that were intended to link requirements to their corresponding test cases , in many instances these documents did not correspond to the test cases we reviewed .
+
+specifically , for 24 of 42 dsh system test cases and 50 of 83 ffm system test cases , the documents did not include enough information to link the requirements being tested and the corresponding test cases .
+
+for example , certain documents included a list of test case unique identifiers , but did not include any information about the requirements related to those test cases .
+
+in other instances , the documents included test case identifiers that did not use the same naming convention as the test cases we received , so it was unclear as to what test cases those documents were related to .
+
+cms officials in the office of information services acknowledged that test case documentation for systems supporting the initial rollout of healthcare.gov had been lacking and that there were gaps in the documentation linking the requirements being tested to the corresponding test cases .
+
+they attributed these weaknesses to not having always followed required procedures for appropriately documenting test cases .
+
+these officials added that the procedures were being followed for the contract awarded in january 2014 for the implementation of additional and enhanced functionality for the ffm system .
+
+however , we determined that test cases documented under the new development contract also lacked key elements ( as described below ) .
+
+without key information included in test cases , cms was limited in its ability to ensure that documented scenarios were performed and thus that applications , systems , or features supporting healthcare.gov activities were working as intended .
+
+improvements were made to test cases developed after initial system launch , but many still lacked key elements cms took steps to improve the quality and content of its test cases subsequent to the launch of healthcare.gov .
+
+in particular , all 83 post - october 2013 test cases included a unique identifier , the objective for the test case , the ordered description of steps to be taken by each participant for the execution of the procedure , and expected behavior required of the test items .
+
+however , similar to the pre - october 2013 documentation , these test cases did not always include outputs and exact values ; test case dependencies ; and required inputs .
+
+specifically: 61 of 83 ffm test cases lacked information on outputs and exact 77 of 83 ffm test cases did not include dependencies ; and 37 of 83 ffm test cases did not specify all the inputs required to execute each test case .
+
+further , although the newly developed test case documentation did not contain all recommended information , the majority of the documentation did include information to allow the project team to determine whether the testing contractor had executed the test and whether or not the system passed testing , which is a considerable improvement over the previous process .
+
+specifically , the test procedures for 56 of the 70 newly developed test cases that we review were executed and included information about whether the test case passed or failed , compared with 25 of 83 of the pre - launch test cases .
+
+in addition , in november 2014 cms officials in the office of information services and the office of legislation , along with representatives from the ffm system development contractor , demonstrated that they were documenting the linkage of requirements to their corresponding test cases within the quality center application lifecycle management tool .
+
+going forward , use of this tool should assist cms in ensuring that there is a valid relationship between test plans , test design , test cases , and test procedures .
+
+nonetheless , until cms begins to standardize and require all key elements in test case documentation , as recommended by best practices , it may continue lack information needed to determine whether an application , system , or one of its features is working as intended .
+
+best practices that we and the software engineering instituteidentified emphasize the importance of project oversight as a means of ensuring project progress and that appropriate corrective actions can be taken when project performance deviates significantly from the plan .
+
+a deviation is significant if , when left unresolved , it precludes the project from meeting its objectives .
+
+best practices call for , among other things , ( 1 ) establishing well - constructed schedules that include the entire scope of work activities ; ( 2 ) estimating the level of effort to be expended by the project team on each task to assist in monitoring the progress of the project ; ( 3 ) documenting and monitoring activities for managing project documentation ; and ( 4 ) conducting project progress and milestone have reviews to address performance shortfalls and understand how well requirements are being met .
+
+however , cms did not always ( 1 ) ensure project schedules for healthcare.gov and its supporting systems were well - constructed ; ( 2 ) estimate level of effort for dsh and ffm functional requirements ; ( 3 ) implement data management and monitoring processes ; and ( 4 ) conduct all recommended and required project progress and milestone reviews .
+
+cms officials within the center for consumer information and insurance oversight and the office of information services attributed these weaknesses , in part , to challenges with enforcing consistent application of life - cycle processes while trying to develop the system in an expedited fashion to meet the october 2013 deadline .
+
+as a result , without adequate and comprehensive information that would be key for understanding the project's progress , cms and other oversight agencies may not have the data necessary to appropriately evaluate the project and take corrective actions .
+
+a project schedule is a fundamental management tool that specifies when work will be performed in the future and allows for measuring project performance against an approved plan .
+
+to this end , our schedule assessment guide states that a project should be guided by an integrated master schedule that reflects the entire scope of work activities .
+
+an integrated master schedule may be made up of several or several hundred individual schedules that represent portions of work within a program .
+
+these individual schedules are “subprojects” within the larger program .
+
+cms did not always have a comprehensive integrated master schedule prior to system launch in october 2013 .
+
+for example , iv&v assessment reports issued in december 2012 , february 2013 , and may 2013 identified weaknesses in project scheduling throughout the healthcare.gov development process .
+
+for example: activities related to ffm and dsh system implementation and the timeline for the design of the dsh database were not included in the integrated master schedule .
+
+certain key development activities were not included in the ffm integrated project schedule .
+
+the ffm testing schedule and the dsh planning schedule did not contain resource assignments needed to complete the work as planned .
+
+therefore , management's ability to monitor productivity or make effective decisions on the allocation of resources was severely limited .
+
+cms took steps to improve project schedules after initial launch , but schedules were not always well - constructed after awarding the new ffm development contract in january 2014 , cms re - evaluated project schedules for systems supporting healthcare.gov .
+
+however , project schedules developed since then were not always well - constructed .
+
+best practices identified by usschedules include the following: logically sequencing all work activities .
+
+the schedule should be planned so that critical project dates can be met .
+
+to do this , activities need to be logically sequenced — that is , listed in the order in which they are to be carried out .
+
+in particular , activities that must be completed before other activities can begin ( predecessor work activities ) , as well as activities that cannot begin until other activities are completed ( successor work activities ) , should be identified .
+
+date constraints and lags should be minimized and justified to help ensure that the interdependence of activities that collectively lead to the completion of events or milestones can be established and used to guide work and measure progress .
+
+confirming that the critical path is valid .
+
+the schedule should identify the program critical paththrough the sequence of work activities .
+
+establishing a valid critical path is necessary for examining the effects of any activity's slipping along this path .
+
+the program critical path determines its earliest completion date and focuses the project team's energy and management's attention on the activities that will lead to the project's success .
+
+because a critical path defines a project's earliest completion date , it must be a continuous sequence of activities from the schedule's status date to the finish milestone .
+
+ — the path of longest duration ensuring reasonable total float .
+
+the schedule should identify reasonable total floatdetermined .
+
+large total float on a work activity indicates that the work activity can be delayed without jeopardizing the finish date .
+
+the length of delay that can be accommodated without the finish date's slipping depends on a variety of factors , including the number of date constraints within the schedule and the amount of uncertainty in the duration estimates , but the work activity's total float provides a reasonable estimate of this value .
+
+as a general rule , activities along the critical path have the least total float .
+
+so that the schedule's flexibility can be cms has made an effort to tie all subprojects into an integrated master schedule and to capture all of the required effort for the healthcare.gov initiative .
+
+specifically , the agency had documented at least 26 subproject schedules within the integrated master schedule .
+
+however , our review of schedules for 4 of 17 ffm subprojects determined that these schedules did not always include key characteristics of a well - constructed schedule .
+
+the ffm integrated master schedule contained 17 subproject schedules .
+
+we selected 4 schedules that relate to the plan management , small business health options program , financial management , and eligibility and enrollment modules of the federally facilitated marketplace system .
+
+predecessor activities for 9 percent of its remaining activities .
+
+in addition , a significant number of date constraints were reflected in the project schedules , and for the majority of them the agency did not provide a justification .
+
+for example , we identified date constraints on 26 percent of the remaining work activities in both the financial management and small business health options program schedules .
+
+cms did not always ensure that project schedules had a valid critical path .
+
+for example , two of the four selected schedules — for the eligibility business operations and the financial management projects — did not have valid critical paths because there were several gaps of time where no critical activities were scheduled .
+
+specifically , the critical path for the eligibility business operations schedule had four gaps , ranging from 8 to 15 days , where no critical activities were scheduled .
+
+the financial management schedule had a gap of nearly 6 months with no critical activities scheduled .
+
+in addition , the other two schedules — for the small business health options program and plan management projects — did not have valid critical paths because the paths were determined by long - duration support and management activities rather than discrete , well - defined work .
+
+for example , the small business health options program schedule includes management activities such as “operations management” and “deployments management” that appear in the schedule as critical activities .
+
+however , a critical path cannot include these types of activities because , by their very nature , they do not represent discrete effort .
+
+cms did not always ensure reasonable total float .
+
+each of the four project schedules we reviewed appeared to be overly flexible , allowing for many activities to slip a significant number of days before impacting the dates of key events .
+
+for example , the plan management schedule allowed 50 percent of its remaining activities to slip more than 98 working days before impacting the key finish milestone .
+
+additionally , according to the schedules , remaining activities in the small business health options program , financial management , and eligibility business operations schedules could be delayed an average of 49 to 50 days before causing the project finish dates to be delayed .
+
+inaccurate values of total float falsely depict true project status , which could lead to decisions that may jeopardize the project .
+
+table 1 below summarizes how well the current subprojects' schedules met best practices .
+
+because these project schedules did not fully meet key practices for ensuring that they are well - constructed , they are limited as tools for gauging progress and providing reliable estimates of project timelines .
+
+in addition , because the reliability of an integrated master schedule depends in part on the reliability of its subordinate schedules , the weaknesses in these schedules will be reflected in the overall schedule for the healthcare.gov effort .
+
+level - of - effort estimates are used to estimate the amount of time a project will take to develop .
+
+according to the software engineering institute , this involves estimating the amount of time and resources to be spent on each work item , such as developing functional requirements for a system .
+
+these estimates can then be compared to the actual time and resources expended on each work item .
+
+this allows the project's stakeholders to determine how well the project is progressing and whether schedules should be adjusted or additional resources need to be applied .
+
+consistent with best practices , the cms requirements management plan documented specifically for the ffm and dsh systems required system development teams to estimate the level of effort for each functional requirement and those estimates to be recorded in calt .
+
+the level - of - effort estimates , according to the plan , were to be used to inform velocity — that is , how quickly the project was being developed .
+
+however , cms and its contractors rarely documented levels of effort for the ffm and dsh functional requirements prior to initial system launch in october 2013 .
+
+specifically , nearly 100 percent of the ffm eligibility and enrollment functional requirements and nearly 84 percent of the dsh functional requirements documented prior to initial launch were missing the estimated levels of effort .
+
+according to agency officials in the office of information services , contractor earned value management and other financial reports were used in the place of level of effort estimates to track contractor progress .
+
+however , the officials agreed that , while these reports would allow them to track the progress made on total project cost estimates , these reports would likely not provide the full insight necessary on how project development was progressing as could be provided with level - of - effort estimates .
+
+due to the lack of level - of - effort estimation , all subsequent monitoring mechanisms that depended on these estimates , including velocity reports , would have provided minimal guidance to cms and its contractors in monitoring work status and the remaining time needed to complete projects .
+
+cms has taken steps to estimate level of effort for major system modules and supporting projects , but has not developed or documented this policy or procedures as part of cms's efforts to improve project management processes after initial launch of healthcare.gov and its supporting systems , agency officials stated in august 2014 that they had begun the process of estimating levels of effort and including that information in a system that they historically used to track software defects .
+
+they stated that cms planned to use this system to track further ffm software development efforts , in order to provide more visibility into progress being made by the systems' development contractors .
+
+in addition , the agency provided documentation to demonstrate its progress in estimating level of effort for the ffm system .
+
+specifically , the documentation showed that ffm contractors had begun estimating levels of effort for major system modules and supporting projects .
+
+however , current cms policy does not address estimating level of effort , including how it should be calculated and applied .
+
+specifically , neither cms's expedited life cycle ( xlc ) process nor its newly developed requirements management guide addresses estimating level of effort at any level .
+
+as a result , it will be difficult for agency officials to have reasonable assurance that level - of - effort estimates are developed and calculated and applied in a consistent manner and , therefore , it may be limited as a tool for accurately monitoring progress .
+
+state that best practices identified by the software engineering instituteexplicit specifications should be made concerning what , how , where , and when data should be collected and stored to ensure their validity and to support later use for analysis and documentation purposes .
+
+in this case , data are forms of documentation required to support a project in various areas ( eg , administration , configuration management , and quality ) .
+
+these documents , among other things , are then used by project stakeholders to conduct project oversight .
+
+best practices further call for activities for managing these data to be documented and monitored to ensure that data management requirements are being satisfied .
+
+depending on the results of monitoring and changes in project requirements , situation , or status , it may be necessary to re - plan the project's data management activities .
+
+to facilitate a consistent process for managing documents , including those that define requirements , cms developed a guide in april 2012 for internal and external stakeholders ( eg , other federal agencies providing eligibility determination information ) .
+
+this guide requires the use of caltspecifically , the guide calls for updates to the status of each requirement as development progresses to help facilitate project oversight .
+
+in addition , the guide provides and defines specific status designations , such as “system requirement approved” and “ready for development.” further , the agency's requirements management plan documented specifically for the ffm and dsh systems required that calt be used for storing various project management documentation , including requirements ; source code ; network , hardware , and infrastructure descriptions ; test cases ; test results ; and system defects .
+
+for managing project data and functional requirements .
+
+however , cms and its contractors did not effectively implement data management processes .
+
+for example , they used status designations that were not standardized or defined , which would have hindered cms's ability to analyze project progress and effectively oversee the development for the ffm and dsh systems .
+
+specifically: seven undefined status designations , such as “grooming in progress,” were used for the dsh functional requirements ; and two undefined status designations , “artifact confirmed” and “planned development completed,” were used for the ffm eligibility and enrollment module functional requirements .
+
+further , key project management documentation was not always stored in calt as required , which impeded reviews of the development effort .
+
+for example , documents needed for reviews by the iv&v assessment team in september 2012 and december 2012 , such as quality assurance testing results and hardware and software requirements documents , were located on a contractor's sharepoint site and were not uploaded to calt .
+
+this would have made it difficult for the assessment team to conduct their review .
+
+cms officials in the office of information services stated that project owners of each individual effort , to include the dsh and the ffm systems , were given autonomy in managing the status of functional requirements within calt .
+
+consequently , it was difficult for cms officials responsible for overseeing the entire project to ensure consistency in managing project documentation across each individual project team , of which there were over 200 during the initial development of healthcare.gov and its supporting systems .
+
+the cms deputy chief information officer added that because project teams were receiving new requirements well into the development process , required documentation was not always a high priority .
+
+this lack of a consistent process for managing project data prior to initial system launch increased the risk that cms would not have been able to appropriately and effectively ( 1 ) monitor the progress of functional requirements as they were being developed , ( 2 ) ensure all key documentation needed for overseeing project development activities was documented and updated , and ( 3 ) monitor data management .
+
+weaknesses in data management practices continued after initial launch , but cms has plans to address them subsequent to initial system launch , problems in cms's data management practices persisted .
+
+for example , contractor staff stated that several documents we requested for our review had not yet been uploaded to calt .
+
+instead , these documents were stored on contractor systems , and thus were not readily available for project oversight .
+
+in addition , folders within calt were not always well - organized , making locating relevant documentation difficult and time consuming .
+
+for example , many of the folders were similarly named , or the names of the folders were too vague to determine what documents were included within them .
+
+to illustrate , three sub - folders within the same folder were named “uat.” in addition , while certain software release folders were named by software release number , others were named using a calendar date , making it difficult to know what documentation was relevant to each release .
+
+to help mitigate weaknesses in data management monitoring , cms developed a document management reference guide for the ffm system in july 2014 to establish a process for managing documents created by the ffm development contractor .
+
+the guide specified necessary steps for uploading and tracking documents in calt .
+
+in addition , cms has revised its procedures for tracking the status of requirements through design and testing , and no longer uses undefined status designations .
+
+cms officials in the office of information services stated that , once open enrollment for 2015 has ended , they intend to perform a review of all required calt documentation , identify missing documents , and locate and upload those documents into calt .
+
+the officials said they expect this effort to be completed by april 2015 .
+
+according to best practices outlined by the software engineering institute , the purpose of a progress review is to provide relevant stakeholders the results and impacts of a project's activities and to determine whether there are significant issues or performance shortfalls to be addressed .
+
+milestone reviews are pre - planned events or points in time at which a thorough review of status is conducted to understand how well stakeholder requirements are being met .
+
+these reviews are important to ensure that a project is progressing as planned and to identify corrective actions needed .
+
+consistent with best practices , cms requires progress and milestone reviews for each newly developed system .
+
+according to the cms xlc — its system development life - cycle process — the purpose of these reviews is to provide management and stakeholders with the opportunity to assess project work to date and identify any potential issues .
+
+the cms xlc calls for a project process agreement , which is to serve as an agreement between cms and its development contractors on the progress and milestone reviews and artifacts ( i.e. , documentation ) required for a project .
+
+the agency has identified 11 different progress and milestone reviews which vary depending on the complexity of the project .
+
+these reviews are to be conducted by cms governance boards , which are to approve the project to continue with the next phase of the systems development life cycle .
+
+table 2 describes the progress and milestone reviews documented in the cms xlc .
+
+the ffm , dsh , and enterprise identity management systems were all deemed highly complex by cms ; as such , cms guidance recommends , but does not require , that they undergo all of the reviews discussed above .
+
+however , the three systems did not undergo all the recommended reviews .
+
+cms documented a project process agreement for the enterprise identity management system in january 2012 which stated that it should undergo 10 of the 11 progress and milestone reviews ( all but the investment selection review ) and specified the required artifacts for each review .
+
+however , the agency could not demonstrate that 5 of these reviews were held .
+
+cms officials stated that 4 of these 5 reviews had been performed , but they could not provide any evidence to show this performance .
+
+for the dsh and ffm systems , the agency did not document project process agreements , and it provided evidence that some , but not all , of the recommended reviews were held for each .
+
+table 3 shows the recommended reviews for a highly complex system and whether or not those reviews were held for each system .
+
+reviews was compromised due to slippages in scheduled deliverables .
+
+however , it is unclear whether or not the contractors were aware of the required reviews since the ffm and dsh systems both lacked project process agreements .
+
+regarding the missing review artifacts , the officials further stated that all critical artifacts for each gate review were developed and that the missing artifacts were non - critical .
+
+however , the cms life - cycle framework does not designate artifacts as critical or non - critical , nor does it define these terms .
+
+by not ensuring that required progress and milestone reviews took place and that all required artifacts were developed , cms stakeholders lacked full awareness of the results and impacts of the project's activities and significant issues or performance shortfalls to be addressed .
+
+cms has taken steps to improve processes for project and milestone reviews , but all required reviews have not been held in january 2014 , cms began taking steps to improve its oversight processes for conducting progress and milestone reviews .
+
+these improvements , according to officials in the office of information services , included requiring greater collaboration between cms and its contractors ; increasing the number and frequency of contract deliverables , which would include key artifacts provided during the reviews ; and placing greater emphasis on progress and milestone reviews as well as formal signoffs prior to the next life - cycle phase .
+
+additionally , in may 2014 and june 2014 , cms documented project process agreements for the portions of the ffm system that were to be developed under the new contract .
+
+despite these efforts , cms had not documented a project process agreement for dsh as of december 2014 .
+
+in addition , although office of information services officials stated that they had held all the required reviews for the portions of the ffm system that had been placed into production at the time of our review , they were unable to provide evidence for 5 of 20 required reviews .
+
+table 4 below shows the required reviews for the ffm system and whether or not those reviews were held for newly developed portions of the ffm system that were in production as of july 2014 .
+
+in addition , cms was not always following the ffm project process agreement .
+
+for example , office of information services officials stated that production readiness reviews and operational readiness reviews were combined for certain increments .
+
+however , these reviews have different purposes , and the project process agreements stated that they should occur separately .
+
+this approach to conducting reviews puts cms at continued risk that stakeholders may not be provided sufficient information on the results and impacts of healthcare.gov - related activities , identify significant issues or performance shortfalls that need to be addressed , and understand how well requirements are being met .
+
+in addition , inconsistent application of the project process agreements may lead to key reviews continuing to be missed and approvals not being obtained .
+
+we previously reported the lack of certain progress and milestone we reviews in a report on healthcare.gov contract management.recommended that hhs direct cms to ensure that information technology projects adhere to requirements for governance board approvals before proceeding with the next phase of the systems development life cycle .
+
+hhs agreed with and had begun to take actions to address our recommendation .
+
+the secretary of hhs is required by law and omb guidance to designate a cio to be responsible for the management of agency information and information technology .
+
+and other assistance to agency heads and other senior management personnel on it acquisition and management , monitoring the performance of it programs ( including whether to continue , modify , or terminate a program or project ) , and ensuring compliance with information security requirements .
+
+more recently , congress has reaffirmed the importance of cios having a strong role in overseeing it at executive branch agencies .
+
+specifically , in december 2014 , new federal information technology acquisition reform requirements were included in the national defense authorization act , to ensure that the cio has a significant role in the management , governance , and oversight processes related to their agency's it investments .
+
+44 u.s.c .
+
+§ 3506 ( a ) , as amended by pub .
+
+l. no .
+
+104-106 , § 5125 ( feb. 10 , 1996 ) , and 40 u.s.c .
+
+§ 11315 ( paperwork reduction act of 1995 and the clinger - cohen act of 1996 ) ; 44 u.s.c .
+
+3501 note ( e - government act of 2002 , pub .
+
+l. no .
+
+107-347 , § 202 ) , and 44 u.s.c .
+
+§ 3544 ( a ) ( 3 ) ( federal information security management act of 2002 ) , which as of dec. 18 , 2014 , was superseded by 44 u.s.c .
+
+§ 3554 ( a ) ( 3 ) ( federal information security modernization act of 2014 , pub .
+
+l. no .
+
+113-283 ) ; and omb , memorandum for heads of executive departments and agencies , m - 11-29 ( washington , d.c.: aug. 8 , 2011 ) .
+
+in march 1996 , the secretary of hhs delegated the secretary's it - related authorities under the clinger - cohen act to the hhs cio .
+
+the cio in turn requested that operating division heads designate a cio for their respective divisions , and that the operating division cios serve as members of the department's it investment review board .
+
+this board , which is chaired by the hhs cio , is to review , validate , and approve selected it investments in the department's portfolio .
+
+an it investment may be selected for review at any time during its life cycle if it is high risk and high value , is a high - visibility initiative , or is performing poorly , among other criteria .
+
+this is consistent with key practices outlined in our it investment management guide , which call for the establishment of an enterprise - wide investment review board to be composed of senior executives from it and business units , who are to be given the responsibility for defining and implementing the organization's it investment governance process .
+
+beyond the actions taken by cms , in august 2011 , omb issued a memorandum to all agency heads , stating that the role of the cio should be moved away from just policymaking and infrastructure maintenance to true portfolio management for all it .
+
+the memo was intended to clarify the primary responsibility for agency cios , to include responsibility over the entire it portfolio for the agency and for terminating or turning around underperforming investments .
+
+although the secretary of hhs appointed a cio , this official had a limited role in overseeing the development and implementation of healthcare.gov and its supporting systems .
+
+the hhs cio stated that his office did not conduct oversight of the initial design and development for healthcare.gov and its supporting systems .
+
+the cio further stated that the status of the healthcare.gov development project was occasionally discussed at regular monthly meetings with senior leadership from each operating division .
+
+however , the cio stated that no issues with healthcare.gov and its supporting systems were raised in these meetings prior to initial system launch .
+
+in addition , although hhs established a process through its it investment review board that may have revealed technical issues with healthcare.gov and its supporting systems , the cio stated that the board has not been active for 2 to 3 years .
+
+the cio also stated that the department is large and federated and his office's ability to oversee its operating divisions , such as cms , is limited .
+
+he added that oversight reviews are conducted within the operating divisions by their own investment review boards .
+
+by not effectively monitoring the performance of the healthcare.gov initiative prior to the initial launch in october 2013 , the hhs cio was not appropriately positioned to advise the secretary on actions that should be taken to improve the program .
+
+the office of the cio expanded its oversight role after initial launch , but a key review board is still not active the hhs office of the cio ( ocio ) has expanded its oversight role for the healthcare.gov initiative since initial launch by convening regular meetings and briefings discussing the healthcare.gov initiative with officials at various levels .
+
+the cio stated that cms now regularly shares project documentation with ocio , which allows them to have better insight as to the status of the project and its development activities .
+
+the hhs cio also stated that although he now has greater insight into the project's development progress , he does not believe he has the authority to manage it investments at the operating division level , which includes the healthcare.gov initiative .
+
+however , as previously noted , federal law and omb guidance place responsibility for overseeing and managing the department's it investments with the cio .
+
+thus , the cio should be positioned within the department to successfully exercise his authority .
+
+further , the department - wide investment review board called for by hhs policy would provide a mechanism for carrying out these responsibilities , although it has not met for the past 2 to 3 years , according to the cio .
+
+until the department - wide investment review board carries out its assigned duties , the oversight that hhs provides for heathcare.gov - related projects may continue to be limited , potentially resulting in missed opportunities to take timely corrective actions on poorly performing projects .
+
+by law , omb oversees the management by federal agencies of information and information technology .
+
+omb's responsibilities include establishing processes to analyze , track , and evaluate the risks and results of major capital investments in information systems made by executive agencies , as well as issuing guidance on processes for selecting and overseeing agency privacy and security protections for information and information systems .
+
+omb's guidance under these authorities has included directions to agencies on the roles and responsibilities of cios and the establishment of it investment management processes .
+
+in june 2009 , omb launched the federal it dashboard as a public website that reports performance and supporting data for major it investments .
+
+the dashboard is to provide transparency for these investments in order to facilitate public monitoring of government operations and accountability for investment performance by the federal cios who oversee them .
+
+according to omb , it began using the dashboard to identify at - risk investments with its launch in june 2009 .
+
+these investments became the focus of joint omb - agency techstat accountability sessions ( techstats ) — evidence - based reviews intended to increase accountability and transparency and to improve investment performance through concrete actions .
+
+in january 2010 , omb began conducting techstat sessions to enable the federal government to intervene by turning around , halting , or terminating it projects that are failing or are not producing results .
+
+omb has identified factors that may result in an investment being selected for a techstat session , such as — but not limited to — evidence of ( 1 ) poor performance , ( 2 ) unmitigated risks , and ( 3 ) misalignment with policies and best practices .
+
+although omb called for agencies to work with their cios to conduct techstat sessions at the agency level beginning in december 2010 , omb may still select investments for review .
+
+agency cios or omb select these high - risk projects for evaluation , and conduct a review of the proposed improvement plans , revised schedules , and potential changes to budget requests .
+
+although omb plays a key role in overseeing the implementation and management of federal it investments , its involvement in overseeing the development efforts of healthcare.gov and its supporting systems was limited prior to the initial launch in october 2013 .
+
+according to officials within omb's office of e - government and information technology , headed by the federal cio , omb's role in overseeing the development of healthcare.gov and its supporting systems was limited to bringing cms and its federal partners together to work across technical teams , clarifying federal policy guidance , and overseeing the project's budget .
+
+in particular , omb facilitated monthly meetings of an it steering committee consisting of cms and other key stakeholders ( eg , other federal agencies providing eligibility determination information ) that were held to coordinate inter - agency efforts on broader federal marketplace it work .
+
+the meetings , which began in march 2012 and ended in september 2013 , primarily focused on addressing key federal marketplace information - sharing policies and identifying barriers to implementation as well as working with federal departments and agencies as necessary on the implementation and execution of the patient protection and affordable care act .
+
+however , although the healthcare.gov initiative was considered a high - risk project and independent evaluations and the it dashboard identified problems well before its deployment , omb officials did not select this investment for a techstat review .
+
+specifically , the dashboard indicated a high - risk evaluation status of healthcare.gov in march 2013 .
+
+officials in the office of e - government and information technology stated that it was hhs's responsibility to select the investment for techstat , but agreed that they retained the right to select investments themselves for review.however , in the case of the healthcare.gov initiative , omb did not do so although the it dashboard indicated problems 7 months prior to the initial launch of healthcare.gov and its supporting systems .
+
+we reported in 2011 that the federal it dashboard has enhanced omb's oversight of federal it investments .
+
+among other things , we noted that performance data from the dashboard were being used to identify poorly performing investments for executive leadership review sessions .
+
+however , in taking steps to oversee the management of the healthcare.gov it investment , omb did not effectively use information provided by this mechanism to analyze , track , and evaluate the risks of this major investment .
+
+omb took additional steps to provide oversight by establishing the u.s. digital service shortly after initial system launch on october 1 , 2013 , omb , along with the federal cio , assisted hhs and cms with addressing the technical issues that existed with healthcare.gov and its supporting systems .
+
+officials in the office of e - government and information technology stated that after technical issues were reported during initial launch of the system , the role of the federal cio was primarily to explore ways to improve the customer experience with the website .
+
+in addition , in august 2014 , the administration established the u.s. digital service , in part to respond to issues with healthcare.gov and its supporting systems .
+
+this service is to collaborate with federal agencies to identify and correct problems with government websites , among other things .
+
+omb's deputy federal cio serves as the administrator of the u.s. digital service .
+
+the mission of this service is to improve and simplify the online experience that people and businesses have with the federal government by establishing standards to bring the government's digital services in line with the best private sector services ; identifying common technology patterns that will help effectively scale services ; collaborating with federal agencies to identify and address gaps in their capacity to design , develop , deploy and operate public - facing services ; and providing accountability to ensure agencies see results .
+
+according to omb officials in the office of e - government and information technology , the service is working closely with the cms systems team charged with developing systems supporting healthcare.gov .
+
+for example , in august 2014 , the administration , in conjunction with the u.s. digital service , released a set of best practices for effective digital service delivery that are intended to serve as a guide for cms in further improving systems supporting healthcare.gov .
+
+cms is working with the service to implement these practices .
+
+in addition to its role in assisting cms with improving the healthcare.gov initiative through the u.s. digital service , omb's office of e - government and information technology continues its role in working with hhs and cms to oversee the project's budget .
+
+additionally , the consolidated and further continuing appropriations act , 2015 provides for funding to support the digital service's enhanced oversight and guidance for major it investments .
+
+problems related to insufficient capacity planning , coding errors , and incomplete implementation of planned functionality resulted in numerous performance issues with healthcare.gov and its supporting systems upon initial launch in october 2013 .
+
+consequently , individuals faced significant challenges when attempting to enroll for health insurance coverage .
+
+cms has addressed many of the initial problems by increasing capacity and taking steps to reduce software code errors .
+
+moreover , the agency has been developing additional functionality for the ffm system .
+
+nevertheless , many of the issues arose from the inadequate implementation of key practices for managing it projects , and these weaknesses had not yet been fully corrected .
+
+specifically , by not managing requirements to ensure that they addressed all needed functionality and not fully documenting and executing key testing activities , cms did not have reasonable assurance that healthcare.gov and its supporting systems would perform as intended .
+
+in addition , because it did not develop reliable project schedules , measure levels of effort , effectively manage project data , and conduct progress and milestone reviews , cms had diminished visibility into the project's status and may have missed opportunities to take corrective actions and avoid problems that occurred upon launch .
+
+with the issuance of a new development contract for the ffm system , cms has taken the opportunity to make improvements in several of these areas .
+
+however , until it ensures that it is fully implementing these best practices for managing the development of healthcare.gov and its supporting systems , it increases the risk that future development will experience additional problems .
+
+further , opportunities exist for hhs to strengthen the involvement of the department's cio in conducting oversight of the management of healthcare.gov and its supporting systems .
+
+until hhs does so it cannot be assured that the implementation and ongoing operation of this high - risk it investment will continue to provide adequate and sufficient support to millions of americans seeking to enroll in health care plans through the federally facilitated marketplace .
+
+while we previously made recommendations to omb addressing the use of dashboard ratings for overseeing it projects' performance , we found that omb had a limited role in overseeing the management of the healthcare.gov it investment , along with investments in the website's supporting systems .
+
+to improve requirements management for future development covering systems supporting healthcare.gov , we recommend that the secretary of health and human services direct the administrator of the centers for medicare & medicaid services to direct the chief information officer to take the following two actions: 1 .
+
+document the approval process for functional and technical design requirements documentation .
+
+2 .
+
+implement the cms procedure to obtain signatures from the three key stakeholders — the cms business owner , the cms approval authority , and the contractor organization approving authority — to ensure that stakeholders have a shared understanding of all business , functional , and technical requirements for systems supporting healthcare.gov prior to developing them .
+
+to improve systems testing processes for future development covering systems supporting healthcare.gov , we recommend that the secretary of health and human services direct the administrator of the centers for medicare & medicaid services to direct the chief information officer to take the following three actions: 3 .
+
+document and approve systems testing policy and procedures , including ( 1 ) the use of the system testing tool designed to integrate systems development and systems testing and ( 2 ) requirements for stakeholder review of systems test documentation that is intended to ensure proper test coverage and to validate the results .
+
+4 .
+
+require key information in system test plans , as recommended by best practices , including the means by which the quality of testing processes will be assured , and the identification of responsibilities for individuals or groups carrying out testing .
+
+5 .
+
+require and ensure key information is included in test cases , as recommended by best practices , such as all outputs and exact values ; test case dependencies ; inputs required to execute each test case ; and information about whether each test item has passed or failed testing .
+
+to improve oversight processes for systems development activities related to systems supporting healthcare.gov , we recommend that the secretary of health and human services direct the administrator of the centers for medicare & medicaid services to direct the chief information officer to take the following two actions: 6 .
+
+ensure schedules for the healthcare.gov effort are well constructed by , among other things , ( 1 ) logically sequencing activities , ( 2 ) confirming the critical paths are valid , and ( 3 ) identifying reasonable total float .
+
+7 .
+
+develop and implement policy and procedures for estimating level of effort to ensure effort is estimated at the appropriate level ( requirements or program area ) , and define how levels of effort will be used to monitor system development progress .
+
+to improve oversight for healthcare.gov and its supporting systems , we recommend that the secretary of health and human services direct the hhs chief information officer to carry out authorized oversight responsibilities .
+
+specifically , the chief information officer should ensure the department - wide investment review board is active and carrying out responsibilities for overseeing the performance of high - risk it investments such as those related to healthcare.gov .
+
+in written comments on a draft of our report ( reprinted in appendix ii ) , hhs stated that it concurred with all of the recommendations and identified actions being taken or planned to implement them .
+
+among others , these actions include instituting a process to ensure functional and technical requirements are approved , developing and implementing a unified standard set of approved system testing documents and policies , and providing oversight for healthcare.gov and its supporting systems through the department - wide investment review board .
+
+if the department ensures that these and other actions it identified are effectively implemented , then cms should be better positioned to more effectively manage current and future systems development efforts for healthcare.gov and its supporting systems .
+
+in addition , the hhs audit liaison provided technical comments from cms via e - mail .
+
+in the comments , cms disagreed with our characterization of the 11,000 ffm critical code violations that were identified by the iv&v assessment team in july 2014 .
+
+cms stated that these code violations were identified very early on in the development phase of building the eligibility and enrollment module and that most of the risk represented by these code violations is to the cost of maintaining the code over time , rather than to its successful functionality .
+
+the agency added that any defects which could cause problems with the functionality of the healthcare.gov system would have been identified and addressed during subsequent testing .
+
+however , the iv&v assessment stated that the review was based on a “snapshot of the production code” and not code that was in development .
+
+in addition , while the assessment team noted that 328 of the code violations may result in maintainability issues , the team stated that the remaining violations could cause issues in production if not corrected .
+
+other technical comments provided by hhs were incorporated as appropriate .
+
+the chief of policy , budget , and communications within omb's office of e - government & information technology also provided technical comments via e - mail .
+
+in the comments , omb took issue with our statement that it did not conduct a techstat review when the it dashboard indicated problems 7 months prior to the initial launch of healthcare.gov and its supporting systems .
+
+according to the omb official , a brief dip in the risk rating , such as the one experienced in march 2013 , did not necessitate a formal techstat .
+
+the official further stated that the tech surge that omb instituted shortly after the launch of the system , which included an assessment of its problems , effectively represented a large - scale and comprehensive techstat session and replaced the need for a separate omb - or agency - led review .
+
+nevertheless , had such an assessment or a techstat been conducted earlier in the system development process , the results could have been used to identify and correct deficiencies prior to system launch .
+
+we are sending copies of this report to the secretary of health and human services , the director of the office of management and budget , and other interested parties .
+
+in addition , the report is available at no charge on the gao website at http: / / www.gao.gov .
+
+should you or your staffs have questions on matters discussed in this report , please contact me at ( 202 ) 512-6304 .
+
+i can also be reached by e - mail at melvinv@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made major contributions to this report are listed in appendix ii .
+
+the objectives of this study were to ( 1 ) describe the problems encountered in developing and deploying healthcare.gov and its supporting systems , and determine the status in addressing these deficiencies ; and ( 2 ) determine the extent to which the centers for medicare & medicaid services ( cms ) oversaw the development effort and applied disciplined systems development practices to manage requirements and conduct systems testing , as well as the extent to which the department of health and human services ( hhs ) and the office of management and budget ( omb ) provided oversight of the effort .
+
+technical direction letters provide supplementary guidance to contractors regarding tasks contained in their statements of work or change requests .
+
+software engineering institute , cmmi for development , version 1.3 , cmu / sei - 2010-tr - 033 ( november 2010 , hanscom afb , ma ) .
+
+the software engineering institute is a federally funded research and development center operated by carnegie mellon university .
+
+its mission is to advance software engineering and related disciplines to ensure the development and operation of systems with predictable and improved cost , schedule , and quality .
+
+calt is cms's project management system and requirements repository .
+
+the requirements management plan states that requirements should be approved by an official within the office of information services , but that this function can be delegated to other cms responsible officials .
+
+to determine whether requirements maintained bidirectional traceability , we analyzed data extracts of all dsh and eligibility and enrollment module functional requirements from calt and interdependencies between higher - level and lower - level requirements .
+
+we also analyzed requirements documentation developed under the new systems development contract to identify cms's current process for maintaining bidirectional traceability .
+
+in addition , we interviewed cms officials as well as dsh system development contractors to obtain an understanding of the requirements management processes , including a live demonstration .
+
+with respect to systems testing , we reviewed the cms testing framework , contract statements of work for the dsh and ffm systems , independent verification and validation reports from september 2012 to july 2014 , and system test documentation for these systems .
+
+we focused our review on the extent to which cms applied selected key best practices for software and system ( 1 ) test plans and ( 2 ) test cases .
+
+we assessed all 14 ffm and 19 dsh system test plans documented prior to system launch in october 2013 against best practices identified by the institute of electrical and electronics engineers that describe key elements that should be included in test plans .
+
+in addition , we assessed the 11 ffm system test plans cms had documented after the new development contract to determine the extent to which these test plans included the key elements identified in best practices .
+
+we also assessed dsh and ffm system test cases against best practices identified by the institute of electrical and electronics engineers that describe key elements that should be included in test cases .
+
+in doing so , we analyzed and evaluated all dsh system test cases provided from cms and documented prior to system launch in october 2013 .
+
+in addition , we reviewed a non - generalizable random sample of 83 test cases for the ffm system from a population of 585 test cases provided from cms and documented prior to system launch in october 2013 .
+
+to determine the extent to which cms included key elements in test cases developed after the new ffm systems development contract , we reviewed a non - generalizable random sample of 83 test cases from a population of 388 .
+
+lastly , we interviewed cms officials , as well as dsh and ffm system testing contractors , to obtain an understanding of the system testing process .
+
+to determine the extent to which cms , hhs , and omb oversaw the systems development effort , we obtained and analyzed documentation , such as project schedules , the cms expedited life cycle policy , the hhs enterprise performance life cycle , as well as technical review board presentations and summary letters .
+
+we also reviewed project management documentation in cms's calt system .
+
+lastly , we reviewed pertinent oversight laws such as the clinger - cohen act of 1996 and key practices for providing investment oversight that are outlined in gao's it investment management framework .
+
+in evaluating the effectiveness of oversight , we focused on ( 1 ) project schedules , ( 2 ) level - of - effort estimates , ( 3 ) data management , and ( 4 ) progress and milestone reviews .
+
+to determine whether reliable schedules were available to assist with project oversight , we reviewed and analyzed four key subproject schedules for the ffm system , since these subprojects were a major focus of 2014 systems development efforts .
+
+three of the schedules relate to the plan management , small business health options program , and financial management modules of the ffm system , which were planned for initial open enrollment , but had been postponed in august 2013 .
+
+the fourth schedule related to the eligibility and enrollment module of the ffm system , which is for enrolling individuals for health care coverage .
+
+we evaluated the extent to which these schedules were well - constructed as defined in our schedule assessment guide .
+
+our methodology to determine the extent to which project schedules were well - constructed included five levels of compliance .
+
+“fully met” means the program office provided complete evidence that satisfied the elements of the best practice .
+
+“substantially met” means the program office provided evidence that satisfied a large portion of the elements of the best practice .
+
+“partially met” means the program office provided evidence that satisfied about half of the elements of the best practice .
+
+“minimally met” means the program office provided evidence that satisfied a small portion of the elements of the best practice .
+
+“not met” means the program office provided no evidence that satisfied any of the elements of the best practice .
+
+to determine the extent to which cms monitored the project against levels of effort , we reviewed the cms requirements management plan dated august 2012 , and analyzed and evaluated , against the plan , levels of effort documented in the calt system for all dsh and ffm eligibility and enrollment module functional requirements .
+
+for functional requirements developed after the new ffm contract was awarded , we interviewed cms officials and obtained documentation regarding their efforts in estimating levels of effort for new development .
+
+to determine the extent to which cms monitored data management activities , we reviewed cms plans and procedures , such as project management plans and the requirements management plan , for managing key project files and functional requirements , and evaluated the extent to which they adhered to cms plans and procedures within the calt system .
+
+in addition , we reviewed all dsh and ffm eligibility and enrollment module functional requirements contained in calt to determine the extent to which cms and its contractor documented key information used for overseeing development progress , such as requirements status fields .
+
+to determine whether progress and milestone reviews were conducted in accordance with cms and hhs policy , we reviewed the expedited life cycle process and available project process agreements , and analyzed and evaluated all documentation pertaining to cms's progress and milestone reviews for its dsh , ffm , and enterprise identity management systems prior to the october 2013 enrollment .
+
+in addition , we reviewed and analyzed progress and milestone reviews held for ffm software releases that were in production as of july 2014 and conducted after the new ffm systems development contract was awarded .
+
+finally , to determine the extent to which cms , hhs , and omb provided oversight in the development and implementation of healthcare.gov and its supporting systems , we interviewed knowledgeable officials , including the cms deputy chief information officer , the hhs chief information officer , and officials from omb's office of e - government and information technology .
+
+we also obtained documentation and interviewed officials at the department of defense , the department of homeland security , the internal revenue service , the office of personnel management , the peace corps , the social security administration , and the department of veterans affairs to determine the extent of their role in developing and implementing healthcare.gov and its supporting systems .
+
+to determine the reliability of the data provided from cms information systems , we performed basic steps to ensure the data provided were valid , and we reviewed relevant information describing these systems .
+
+specifically , we interviewed knowledgeable agency officials within the cms office of information services about these systems and asked specific questions to understand the controls in place for ensuring the integrity and reliability of the data contained within them .
+
+we did not assess the reliability of the systems used to maintain these data or the processes used in extracting the data for our engagement purposed .
+
+based on the results of these efforts , we found the data to be sufficiently reliable for our work .
+
+we conducted this performance audit from december 2013 to march 2015 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+in addition to the contact named above , christie motley ( assistant director ) , teresa tucker ( assistant director ) , james ashley , christopher businsky , juana collymore , nicole jarvis , kendrick johnson , jason lee , jennifer leotta , lee mccracken , thomas murphy , constantine papanastasiou , andrew stavisky , and christy tyson made key contributions to this report .
+

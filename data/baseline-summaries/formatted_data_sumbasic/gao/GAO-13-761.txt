@@ -1,0 +1,498 @@
+as one of the federal government's largest programs , medicare provides health insurance to the nation's elderly , certain disabled individuals , and individuals with end - stage renal disease .
+
+the program , which served approximately 50 million beneficiaries in 2012 , consists of four parts: a , b , c , and d. parts a and b are referred to as fee - for - service programs , and respectively , provide health insurance coverage for ( 1 ) hospital and inpatient stays , hospice , and home health services ; and ( 2 ) hospital outpatient , physician , and other services such as home health care , and durable medical equipment such as wheelchairs and walkers .
+
+cms's contractors that process fee - for - service claims are referred to a medicare administration contractors .
+
+reimbursed by medicare for services and supplies that they deliver to beneficiaries in accordance with parts a and b rules .
+
+for their part , medicare beneficiaries show proof of eligibility for coverage under parts a and b by presenting printed insurance cards to their providers at the point of care .
+
+the approximately 50 million cards that have been issued and are currently in use display social security numbers ( ssn ) as a component of beneficiaries' claims identification numbers .
+
+however , the visual display of the ssn introduces risks to the security of beneficiaries' personal information , as the number may , among other things , be obtained and used by criminals to conduct identity theft .
+
+cms depends on more than 200 information technology ( it ) systems to support administration of the medicare program , including determination of eligibility for benefits , processing and payment of claims , and exchange of medicare - related data with external stakeholders .
+
+many of these systems were developed decades ago and are difficult to modify or update to incorporate changes in business rules or data , or to integrate with other systems .
+
+in 2010 the agency assessed its it environment in response to direction from the patient protection and affordable care actmodernization initiative .
+
+and began to take steps toward planning an agencywide it at your request , we conducted a study of cms's efforts related to the removal of ssns from medicare cards .
+
+our specific objectives were to ( 1 ) assess the actions cms has been taking to identify and implement it solutions for removing ssns from medicare beneficiaries' cards , and ( 2 ) determine whether cms's ongoing it modernization initiatives could offer opportunities to facilitate efforts to remove the ssn from the cards .
+
+to address the first objective , we examined documentation that described studies the agency conducted in 2006 , 2011 , and 2013 of different approaches toward removing ssns from medicare cards .
+
+specifically , we focused our work on results of the most recent study and assessed relevant technical documents , such as those which identify system components that would be affected by the removal of the ssn from cards , and other documents that describe the data and message format requirements for exchanging data between systems .
+
+we compared activities identified in these documents to department - level requirements for identifying , developing , and implementing technical solutions for business processes .
+
+we also assessed a sample of the systems that cms identified as ones that would be affected by the removal of the ssn from cards .
+
+we based our selection on the level of effort cms estimated would be needed to implement modifications and the functionality provided by the systems .
+
+specifically , we identified 29 systems that we determined accounted for over 90 percent of the total estimated level of effort and selected 3 for our assessment — 1 with a low estimate , 1 with a high estimate , and 1 that provided critical functionality within the claims processing it environment .
+
+we examined technical documents for these 3 systems , such as those that describe architectural characteristics , data formats , and exchanges with other systems .
+
+to further address the objective , we examined data collected by cms from the federal stakeholders with whom it exchanges data related to medicare beneficiaries — the social security administration ( ssa ) and the railroad retirement board .
+
+we also held discussions with medicaid program officials from eight states to obtain their perspectives on roles they played in cms's ssn removal study .
+
+we selected these states based on the level of effort they estimated would be needed to make changes to their systems to address ssn removal .
+
+the information we obtained from them is not generalizable to all medicaid programs but provides insight into the extent to which cms involved program stakeholders in conducting its 2013 study .
+
+to address the second objective , we identified criteria by examining federal laws and guidance for leveraging it modernization initiatives to guide systems development , and assessed plans and briefings describing cms's initiatives to modernize its it environment .
+
+to determine the extent to which the goals and objectives of these initiatives could be leveraged to facilitate the ssn removal effort , we compared descriptions of specific modernization projects to information obtained from agency technical documents describing the systems that would have to be modified if the ssn were to be removed from cards .
+
+in making these comparisons , we identified common characteristics and efforts that could be coordinated to achieve efficiencies in implementing system changes .
+
+to supplement our assessment of documentation and data relevant to both objectives , we held discussions with cms officials from the agency's office of information services , including the chief information officer ( cio ) , regarding actions taken to collect and analyze information needed to complete the 2013 study .
+
+we also discussed with these officials the steps they took to involve stakeholders in identifying approaches for removing the ssn from cards and assessing the potential impact on it systems .
+
+finally , we obtained descriptive information from the agency's cio and other office of information services officials regarding plans and ongoing initiatives intended to lead to the modernization of cms's it environment .
+
+a more detailed description of our objectives , scope , and methodology is provided in appendix i .
+
+we conducted this performance audit from october 2012 to september 2013 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+the use of ssns on identification cards by federal , state , and private organizations , such as health insurance companies , was prevalent until the early 2000s .
+
+however , many organizations have since replaced these types of identification cards with those that do not contain ssns .
+
+this step was taken , in large part , in response to certain federal and state laws that place restrictions on entities' use and disclosure of consumers' personal information , including ssns .
+
+examples of federal laws include the driver's privacy protection act , which generally prohibits a state department of motor vehicles from disclosing or otherwise making available ssns and other personal information from a motor vehicle record , and the health insurance portability and accountability act ( hipaa ) and its implementing regulations , which protect the privacy of health information that identifies an individual ( including by ssns ) and restricts health care organizations from disclosing such information to others without the patient's consent .
+
+additionally , several state statutes include provisions related to restricting the display of ssns , their unnecessary collection , and their disclosure without the individual's consent .
+
+many state agencies have discontinued the use of the numbers on identification cards and other documents , such as driver's licenses , to comply with such laws .
+
+similarly , private sector health insurers have discontinued use of ssns on insurance cards in an effort to protect beneficiaries' personal health information .
+
+the numbers on the va cards are identification numbers that allow beneficiaries to access facilities ; the cards are not insurance cards .
+
+dod's cards are also used primarily for identification purposes , and are not insurance cards .
+
+the numbers in magnetic stripes on the cards .
+
+however , both dod and va continued to use the number as an identifier and have described other steps they are taking to better protect beneficiaries against theft or improper use of the numbers .
+
+specifically , dod officials stated that the department is in the process of developing and implementing a solution for removing embedded ssns from the bar codes on military identification cards and replacing them with a new identifier ; they plan to complete this project in late 2016 .
+
+additionally , va is working to remove the number embedded in magnetic stripes because of increased security risks introduced by the prevalence of electronic readers on devices such as smart phones ; it plans to complete this project in late 2016 .
+
+since the inception of medicare in 1965 , cms and its program stakeholders — ssa , the railroad retirement board , and state medicaid programs — have used an ssn - based identifier when filing and processing fee - for - service claims , and when exchanging data related to the medicare program .
+
+this number , referred to as the health insurance claim number ( hicn ) , is displayed on medicare beneficiaries' health insurance cards .
+
+individuals' eligibility to participate in the medicare fee - for - service programs is initially determined by ssa , based on factors such as age , work history , contributions made to the programs through payroll deductions , and the presence of certain medical conditions .
+
+once ssa determines that an individual is eligible , it provides information about the individual to cms , including the ssn and a 1- or 2-digit beneficiary identification code.enrollment database — the repository of data about individuals who are or have ever been on medicare .
+
+this system combines these two data fields to create the 10- or 11-digit hicn .
+
+cms prints and issues to the individual these data are transmitted to and stored in cms's a paper identification card ( similar to the example shown in fig .
+
+1 ) that displays the hicn ( i.e. , the medicare claim number ) , the cardholder's full name , his or her gender , and the effective dates of medicare program eligibility .
+
+the hicn is maintained and referenced throughout cms's it environment .
+
+for example , health care providers may reference medicare beneficiaries' printed cards at the point of care to determine eligibility for the fee - for - service program .
+
+providers may then query a cms system using the hicn printed on the card , along with other demographic data , to obtain information regarding eligibility for specific treatments or services they intend to deliver , such as glaucoma screening or smoking cessation counseling .
+
+specifically , the agency provides verification services through its hipaa eligibility transaction system ( hets ) , which allows providers to access real - time data regarding beneficiaries' eligibility at the point at which care is scheduled or delivered .
+
+likewise , providers are required by cms to use the number when they submit claims to receive payment for those treatments and services .
+
+cms's and its contractors' systems also process data based on the hicn to check for duplicate claims , apply claims and medical policy edits , issue medicare summary notices , authorize or deny payment of claims , and conduct printing and mailing operations .
+
+for example , cms's medicare administrative contractors , who are responsible for processing and paying claims , use their own systems to determine whether fee - for - service claims meet certain requirements , such as completeness of data .
+
+specifically , if a claim did not include the hicn or other required data , the contractor's system would return it to the provider as incomplete or invalid .
+
+the shared systems are the fiscal intermediary shared system , which processes part a claims ; the multi - carrier system , which processes part b claims ; and the vips medicare system , which is used to process claims for durable medical equipment .
+
+including hets , on a daily basis .
+
+these data are used to update those systems' databases .
+
+in addition to using the hicn to support the provision of and payment for health care to medicare beneficiaries , cms and its federal stakeholders , ssa and the railroad retirement board , use the number to share data needed to coordinate health insurance coverage and payments for premiums .
+
+in this regard , cms provides information that includes the number to ssa when beneficiaries' eligibility status or other data change , and ssa refers to the hicn when beneficiaries request replacement of lost medicare cards .
+
+cms also shares data that include the number with the railroad retirement board when it administers health benefits for railroad retirees who are eligible for medicare .
+
+further , cms and the 56 state and territorial medicaid programs share data based on beneficiaries' hicns .
+
+specifically , these programs provide the number along with other data on their beneficiaries that are used to help identify individuals who are eligible for both medicare and medicaid benefits .
+
+the states also provide information regarding medicaid beneficiaries for whom their programs pay medicare part a or b premiums .
+
+in turn , cms provides several types of data to the medicaid programs based on the hicn , including data needed to coordinate payment for claims when a beneficiary is covered by multiple insurers and information on the current drug prescription insurer for beneficiaries who are covered by medicare part d private plans .
+
+figure 2 depicts a simplified view of the flow of data and the use of the hicn in cms's and its stakeholders' systems .
+
+in 2010 , cms officials developed a plan to upgrade the agency's it environment and noted that the modernization of enterprise information systems and the supporting infrastructure was necessary in order for cms to continue to meet its mission .
+
+further , two scientific advisory committees that later evaluated cms's it environmentagency operated in a “stove - piped” environment in which many systems were developed to meet specific time - sensitive and legislatively driven needs , such as claims processing and eligibility determination , without consideration of the need for systems to interoperate or integrate data from other sources .
+
+the committees indicated that , because the agency continues to operate in such an environment , enhancement and sharing of data across its systems can be costly , risky , and time - consuming .
+
+in 2013 the agency took steps to update the 2010 it modernization plan .
+
+according to officials in the office of information services , this was to address recommendations resulting from the two advisory committees' evaluations .
+
+these officials described seven goals of the plan , the first of which is to establish an architecture that supports the development and implementation of it functions , known as “shared services,” that can be provided to support multiple needs of organizations conducting business within or between federal agencies .
+
+limited to , the transformation of the agency's it operations to enable cms to use technologies such as cloud computing and virtual data centers ; improvements to privacy and security controls to better protect personal health information stored and processed by the agency ; and the transition to a coordinated , enterprise approach toward developing and implementing it solutions .
+
+the chief information officer stated that the agency was continuing to work toward addressing the seven goals defined in 2013 .
+
+use of shared services can be cost efficient because when a service is reused by multiple it systems , initial system development costs occur once , and these costs can be avoided each time the service is reused .
+
+in addition , use of shared services promotes standardization and interoperation of data and can reduce stove piping .
+
+both the ssa and hhs inspectors general have reported on risks associated with the use of the ssn on medicare cards and have recommended that ssa and cms work toward identifying alternate identifiers to better safeguard medicare beneficiaries' ssns .
+
+additionally , we have previously issued reports that addressed federal agencies' use and display of ssns on identification cards and for other purposes , as well as cms's study of this issue .
+
+in a 2004 study , we found that ssns were widely exposed to view in a variety of public records , particularly those held by state and local governments , and appeared in some public records nearly everywhere in the nation .
+
+in identity thefts , and that the widespread use and retention of the number by both the public and private sectors may provide opportunities for criminals to easily obtain and misuse this personal information .
+
+we stressed that the display of nine - digit ssns on such cards , which may need to be carried and must often be disclosed , puts cardholders at risk for identity theft due to the increased potential for accidental loss , theft , or visual exposure .
+
+to help mitigate this risk , we recommended that the office of management and budget ( omb ) identify those federal activities that require or engage in the display of ssns on health insurance , identification , or any other cards issued to federal government personnel or program beneficiaries , and devise a governmentwide policy to ensure a consistent approach to this type of display .
+
+in response to our recommendation , in may 2007 omb issued a memorandum that required federal departments to establish a plan to eliminate unnecessary use of ssns .
+
+gao , social security numbers: governments could do more to reduce display in public records and on identity cards , gao - 05-59 ( washington , d.c.: nov. 9 , 2004 ) .
+
+ssns shared with contractors by private companies .
+
+we also reported in 2006 that the threat of identity theft was heightened by the visual display of ssns on federal identification cards .
+
+we noted that there were gaps in federal and state agencies' practices for protecting ssns and that congress was still considering actions to address the issues that remain .
+
+more recently , in 2012 we assessed the results of cms's 2011 study of the cost and effort associated with three approaches to removing ssns from medicare cards .
+
+as a result of our assessment , we reported in august 2012 that cms had not committed to removing the ssns and lagged behind other federal agencies .
+
+we recommended that the agency select an approach for removing the ssn from the medicare card that best protects beneficiaries from identity theft and minimizes burdens for providers , beneficiaries , and cms .
+
+we also recommended that it develop an accurate , well - documented cost estimate for such an option using standard cost - estimating procedures .
+
+cms officials concurred with our recommendations and , as discussed later in this report , took actions to address them .
+
+cms has not yet taken steps needed to select and implement a technical solution for removing ssns from medicare cards .
+
+since 2006 , the agency has conducted three studies on potential approaches to replacing the ssn - based medicare identifier , issuing reports to congress on the results of those studies in october 2006 , november 2011 , and may 2013 .
+
+however , while each of the studies addressed , at a high level , the impact of various approaches on cms's it environment , they were not intended to identify a specific technical solution for removing ssns from cards .
+
+specifically , according to cms , a 2006 study was initiated in response to congressional concerns regarding identity theft and expectations that the secretary of health and human services would accelerate ongoing plans to convert the hicn to a non - ssn based identifier for display on medicare beneficiaries' health insurance cards .
+
+the second study was conducted to respond to congressional requests for cms to re - examine approaches and costs of removing the ssn from the cards .
+
+officials in the office of information services , the cms entity that would be responsible for identifying and implementing a technical solution for ssn removal , stated that the 2006 and 2011 studies were intended to develop “rough order of magnitude” estimates of costs and efforts associated with a potential ssn removal project .
+
+in response to a request by congressional committee members and to address our august 2012 recommendation , the agency initiated a third study in august 2012 and issued the resulting report to congress in may 2013 .
+
+according to cms officials , the third study was conducted to provide cost estimates that were more reliable than those previously reported .
+
+the new estimates for two approaches documented in the 2013 report were approximately $255 million and approximately $317 million , including the cost of efforts to develop , test , and implement modifications that would have to be made to the agency's it systems .
+
+the costs of the it - related efforts for the two approaches were estimated at about $26 million ( 10 percent of the $255 million total estimated cost ) and $64 million ( 20 percent of the $317 million total estimated cost ) , respectively.according to the may 2013 report , the estimates were based on the assumption that these efforts would span an 18-month period , from october 2013 to april 2015 .
+
+according to office of information services officials , however , these costs and schedules represented high - level estimates based on the two overall approaches and did not fully reflect the effort that would be required to implement a specific it solution .
+
+furthermore , while the 2013 report noted that one of the two approaches would better protect beneficiaries' personal information , the officials said that the agency did not intend for this study to result in the identification of an it solution to address ssn removal .
+
+cms officials stated that any initiatives specifically intended to identify an it solution to address ssn removal would need to be conducted in accordance with departmental processes and requirements for managing the life cycle of it projects .
+
+in this regard , cms's it project life - cycle management guidance , the expedited life cycle ( xlc ) framework , defines the activities that are required to execute and monitor the development of it projects throughout five phases — project initiation , requirements analysis and design , development and test , implementation , and operations and maintenance .
+
+the framework requires the following activities to be completed as part of a project initiation phase before the it organization takes subsequent steps to identify technical solutions that support business needs: designate a business owner to serve as an advocate for the project ; identify a business need for which a technological solution is required and a business case is established ; explore alternative concepts and methods to satisfy the need ; develop and approve initial project cost , preliminary schedule , performance baseline , and basic business and technical risks ; conduct a preliminary enterprise architecture review to determine whether the proposed project potentially duplicates , interferes with , contradicts , or can leverage another project that already exists or is proposed , under development , or planned for near - term disposition ; identify significant assumptions and constraints on solutions relative to that need ; issue a project charter ; and conduct a selection review to determine if the proposed project is sound , viable , and worthy of funding , support , and inclusion in the information technology project portfolio .
+
+however , cms has not taken a number of the key steps called for by the it project life - cycle management guidance to identify an it solution to address ssn removal and has not made plans to do so .
+
+for example , it has not completed several steps of a project initiation phase , such as designating a business owner who would submit a request to the chief information officer to initiate an it project .
+
+additionally , the agency has not established a business case for developing an it solution to address ssn removal , issued a project charter , or presented a potential it project for ssn removal to an architectural review board for preliminary review and approval .
+
+furthermore , cms has not conducted a selection review to determine if such an it project should be included in its portfolio of it investments .
+
+nonetheless , when conducting the 2013 study , agency officials undertook activities that could address certain steps called for by the agency's it project life - cycle management processes for initiating a project , and that could provide information needed for identifying and implementing a technical solution , including the following: cms officials and program stakeholders explored alternative concepts for addressing the business need , which is one of the steps called for by agency it project management guidance .
+
+specifically , from september 2012 through december 2012 , railroad retirement board and ssa officials participated in work groups with cms to determine potential approaches to ssn removal .
+
+as a result , they identified two approaches: ( 1 ) replacing the ssn - based hicn with a new identifier that does not include the ssn , referred to as the medicare beneficiary identifier ; and ( 2 ) truncating the first five digits of the ssn for display on medicare cards .
+
+agency officials conducting the study ruled out other options , such as embedding the number in smart cards or magnetic strips , because they were determined to be too costly , technically infeasible , or burdensome to providers and beneficiaries .
+
+project officials collected information that could be used to develop initial project costs and identify basic business and technical risks associated with implementing each approach .
+
+specifically , officials conducting the 2013 study collected data that could be used for establishing a technical baseline for cost estimates , such as the level of effort system owners estimated would be required for each life - cycle phase .
+
+project officials also collected input from system and business owners regarding technical and business risks associated with the two approaches .
+
+for example , the owners of one of the shared systems described a risk that unacceptable processing times would result from the implementation of a mechanism for translating between the hicn and a new identifier .
+
+this information could be useful in identifying efficient translation mechanisms that would be less likely to introduce such a risk .
+
+agency officials took steps to determine the changes that would have to be made throughout the agency's and program stakeholders' it environment .
+
+the results of these actions could provide information essential to conducting a preliminary enterprise architecture review — another step required for initiating an it project .
+
+specifically , officials conducting the 2013 study identified internal and external stakeholder systems that could be affected if the ssn was removed from cards , and identified other it initiatives that could be coordinated with an ssn removal project .
+
+for example , during the 2013 study , cms system and functional - level business owners conducted high - level impact assessments of the two approaches on the agency's business processes and all systems identified in its information technology inventory .
+
+of cms's more than 200 systems , these officials identified 72 systems that could be affected by the introduction of a new identifier and 41 that would be affected by the second approach ( masking the first 5 digits of the ssn ) .
+
+they conducted high - level assessments of the types of changes that would need to be made to those systems , including the level of complexity of the changes , the number of hours of work at each life - cycle phase , and the potential to leverage related efforts .
+
+appendix ii provides a detailed assessment of the types of system changes that would have to be made to three internal cms systems that provide functionality key to determining beneficiaries' eligibility for specific treatments and services , validating and adjudicating part a claims , and sharing data for coordination of benefits payment between medicare and program stakeholders .
+
+agency officials also established assumptions regarding the two approaches for ssn removal .
+
+for example , when collecting data regarding the impact on its internal systems , system owners were instructed to assume that a crosswalk service would be available to translate the hicn to a new identifier , and that the new identifier would retain the same length as the existing hicn but have a different format .
+
+cms officials also established assumptions regarding conditions under which data exchanged with external stakeholders would include either number .
+
+cms collected data from its federal partners to estimate the impact of the proposed approaches on external systems .
+
+for example , officials conducting the 2013 study collected level - of - effort estimates from ssa and the railroad retirement board for implementing changes to their affected systems .
+
+although their estimates varied , the changes these stakeholder officials described were similar .
+
+ssa officials stated that they would have to make system changes to identify beneficiaries when they contact ssa and provide the new identifier , instead of the hicn , to request a new medicare card .
+
+railroad retirement board officials also stated that they would have to make changes in order to use the new identifier instead of the hicn when issuing or replacing retirees' medicare cards .
+
+cms also involved state program stakeholders and collected high - level estimates of changes that would have to be made to states' medicaid systems .
+
+because each state implements it solutions to support its unique medicaid program , the design , implementation , and level of effort estimated to modify their systems varied widely .
+
+for example , we assessed medicaid program estimates provided to cms by eight states .
+
+of these , three states estimated that less than 500 hours would be needed to make the changes , in part because some of the systems already convert identifiers .
+
+one of these states reported that no effort would be required since their systems were already capable of updating records when changes to identifiers are made .
+
+on the other hand , officials with another state medicaid program estimated that about 22,000 hours of effort would be needed to , among other things , expand databases to include a new identifier , and another estimated that over 58,000 hours would be required to modify systems to process functions based on a new identifier , including medicare buy - in , eligibility determination , and part d processing systems .
+
+three other states estimated around 4,000 hours of work to implement mechanisms to cross reference or convert the hicn to a new identifier .
+
+while the data and information collected during the 2013 study could be leveraged to support a future it project to address ssn removal , according to officials with cms's office of information services , the agency's chief information officer has not received direction from cms's leadership to submit a proposal for an it project that would lead to the identification , development , and implementation of a technical solution .
+
+we have noted in prior reports the importance of protecting medicare beneficiaries from increased risks of identity theft , and omb has required federal agencies to take steps to eliminate unnecessary uses of ssns .
+
+we have also noted that federal agencies' chief information officers are responsible for , among other key it management areas , information security along with systems development and integration .
+
+additionally , cms has designated the office of information services as the lead for developing and enforcing the agency's it policies , standards , and practices .
+
+as such , these entities should play an active role in pursuing it solutions for securing personal data , such as medicare beneficiaries' ssns .
+
+the data and information the office of information services collected during the 2013 study could provide valuable input to future efforts to define such a solution .
+
+nonetheless , until the agency designates a business owner , establishes a business case , issues a project charter , and conducts architectural and it project selection reviews for ssn removal , it will lack sufficient information and resources needed to actively pursue the identification of an it solution for ssn removal that best protects beneficiaries' identities .
+
+cms has efforts under way to modernize its it systems , a number of which could be leveraged to facilitate the removal of ssns from medicare cards .
+
+for example , one of the agency's modernization goals is to establish it functionality that can be used to support multiple business needs of organizations and facilitate data sharing among the agency and its stakeholders .
+
+this and other goals were described by office of information services officials who indicated that the agency is in the process of developing an agencywide it modernization strategy to align with newly defined business goals .
+
+a well - defined modernization strategy includes plans for systems that are integrated into an enterprise's it environment and that do not duplicate other systems' functionality .
+
+by planning accordingly , agencies increase the likelihood that they will design and develop systems that easily exchange information with other systems and improve their ability to modernize systems in a timely and cost - effective manner .
+
+in this regard , cms has initiated actions that could eliminate duplicative programming efforts and help establish standards for integrating new systems and making the modifications to existing systems needed to implement an it solution for ssn removal .
+
+for example , cms officials with the office of information services described modernization projects that were initiated to support administrators' ability to carry out other programs and that were aligned with the first of the seven stated modernization goals — to establish an it architecture capable of supporting the development and implementation of shared services .
+
+specifically , the agency established such an architecture to implement five shared services to support the administration of other agency programs , including but not limited to , programs established by the affordable care act .
+
+the shared services are enterprise identity management , which is planned to enable individuals to use a single online identity ( eg , user id ) for engaging in business with cms that meets all federal security requirements ; master data management , which is a suite of data records and services that will allow cms to link and synchronize beneficiary , provider , and organization data to multiple disparate sources ; enterprise portal , a central channel for beneficiaries , providers , organizations , and states to receive cms information , products , and services via consistent web pages ; business rules enterprise service , which provides a framework for automating and managing decision logic and routines for cms programs ( eg , provider and beneficiary cross check for accountable care organization programs ) ; and enterprise eligibility , a consistent and reusable way for business applications to access beneficiary eligibility data for a variety of uses ( eg , claims processing , providers and plans , and external programs ) .
+
+in implementing these services , the agency has taken some steps that could help define and put into place the necessary architectural components and standardized interfaces to enable sharing of the services' capabilities across the it infrastructure and cms's business areas .
+
+one of the five shared services that cms implemented , the business rules enterprise service could facilitate the implementation of an it solution for ssn removal .
+
+for example , the it infrastructure that was established to implement the service could support the implementation of a crosswalk service needed by multiple systems to translate a new identifier to the hicn ( and vice versa ) .
+
+by providing this functionality through a shared service , the crosswalk would be available for use by any system within cms's it infrastructure and therefore eliminate the need to duplicate programming efforts for each system to implement such functionality .
+
+specifically , if such a shared service were implemented to support an ssn - removal it project , it would be available for use by all the systems that , according to cms officials , would have to be modified to use a new identifier .
+
+as a result , of the 20 systems that the agency estimated would account for 86 percent of the costs to modify , systems changes would only have to be developed and tested for one implementation rather than for 18 of the 20 systems that would need to perform a crosswalk between a new identifier and the existing hicn .
+
+in addition to the five shared services described , another shared service , the beneficiary data streamlining service , was designed to consolidate into one system the functionality for determining fee - for - service eligibility that is currently implemented in four different systems ( the common working file and the three shared systems ) .
+
+this new service , which is planned to be implemented in october 2013 , would be used by these systems to eliminate duplicate or unnecessary processing .
+
+consequently , the implementation of the service could also facilitate ssn removal efforts .
+
+for example , it could reduce the extent of modifications that would have to be made to the four systems by eliminating the need to make changes to their current eligibility determination functions to process a new non - ssn - based identifier .
+
+instead , that capability would be provided by the new service .
+
+as a result , the agency could save unnecessary costs and efforts associated with duplicative programming changes to the four affected systems .
+
+while these projects could offer opportunities for leveraging ongoing modernization initiatives to facilitate ssn removal , cms officials stated that because the agency has not yet established a business case and it project for removing ssns from medicare cards , they have not included shared services or other it initiatives in their modernization activities and related plans to specifically support changes needed as a result of ssn removal .
+
+until cms establishes an it project for ssn removal that could be incorporated into ongoing agencywide modernization initiatives , it may miss opportunities to leverage other ongoing system development activities that could facilitate efforts to design , develop , and implement an it solution in a timely and cost - effective manner .
+
+while cms has spent time and resources over the past 7 years studying approaches that could be taken toward removing the ssn from medicare beneficiaries' cards , the agency has not actively established and pursued a goal to identify an it solution for doing so .
+
+the efforts made thus far by cms and its stakeholders could provide some of the information needed to initiate an it project to design and develop the system changes that would have to be made to address an agencywide effort to better safeguard medicare beneficiaries' identity .
+
+however , until the agency takes other critical steps , such as designating a business owner , establishing a business case , issuing a project charter , and conducting architectural and it project selection reviews , it will not be in a position to design , develop , and implement the changes that would have to be made to systems affected by the removal of ssns from display on medicare beneficiaries' health insurance cards .
+
+additionally , the agency may miss opportunities to improve the timeliness and cost effectiveness of any actions taken to develop and implement a technical solution that could be achieved if it incorporated such actions into plans for ongoing enterprisewide it modernization initiatives .
+
+to better position the agency to efficiently and cost - effectively identify , design , develop , and implement an it solution that addresses the removal of ssns from medicare beneficiaries' health insurance cards , we recommend that the administrator of cms take the following two actions: direct the initiation of an it project for identifying , developing , and implementing changes that would have to be made to cms's affected systems , including designating a business owner and establishing a business case , issuing a project charter , and conducting project selection and architectural reviews of proposed approaches for the removal of ssns from medicare beneficiaries' cards ; and incorporate such a project into plans for ongoing enterprisewide it modernization initiatives .
+
+in written comments on a draft of this report , signed by hhs's assistant secretary for legislation ( and reprinted in appendix iii ) , hhs stated that it appreciated the opportunity to review the report prior to its publication .
+
+further , the department stated that it concurred with both of our recommendations under the condition that certain constraints were addressed .
+
+with respect to our first recommendation , hhs agreed that removing the ssn from medicare cards is an appropriate step toward reducing the risk of identity theft , but that the agency could not make a decision to proceed with such a project without agreement from ssa and the railroad retirement board .
+
+in addition , the department stated that a clear source of funding for both it and non - it activities associated with ssn removal would need to be identified before proceeding .
+
+however , as we noted in our report , cms's chief information officer and the office of information services should play an active role in pursuing it solutions for securing personal data , such as medicare beneficiaries' ssns .
+
+for this reason , it is important that cms determine the appropriate actions to take toward initiating an it project for addressing the removal of ssns from cards and guide its stakeholders , such as ssa and the railroad retirement board , in taking the steps needed to achieve the goals of any ssn removal project .
+
+in addition , the final step of the it project initiation phase , as defined by cms's it life - cycle project management guidance , is a review to determine if proposed projects are worthy of funding and inclusion in an it project portfolio .
+
+accordingly , uncertainties regarding a clear source of funding should not constrain cms from taking steps to initiate an it project to address ssn removal .
+
+regarding our second recommendation , hhs concurred , again with the caveat that the above - mentioned constraints were addressed .
+
+the department also noted that while cms had not implemented its shared services initiative specifically for the purpose of ssn removal , the general functionality exists in the shared services to support this effort , and this was reflected in the agency's 2013 cost estimate .
+
+however , unless the agency considers ssn removal as part of its enterprisewide modernization initiative , it may miss additional opportunities for leveraging system changes being made as part of the modernization to support ssn removal .
+
+in this regard , we believe that cms is currently positioned to implement both our recommendations , regardless of perceived constraints , and to take the actions needed to initiate an it project as part of its agencywide modernization initiative .
+
+if such actions are taken cms could improve hhs's ability to protect medicare beneficiaries against increased risk of identity theft introduced by the use of ssns on medicare cards .
+
+hhs also provided technical comments , which we incorporated into the report as appropriate .
+
+as agreed with your offices , unless you publicly announce the contents of this report earlier , we plan no further distribution until 30 days from the report date .
+
+at that time , we will send copies to the secretary of hhs and interested congressional committees .
+
+in addition , the report will be available at no charge on the gao website at http: / / www.gao.gov .
+
+if you or your staffs have any questions about this report , please contact me at ( 202 ) 512-6304 or melvinv@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made key contributions to this report are listed in appendix iii .
+
+the objectives of our review were to ( 1 ) assess the actions the centers for medicare and medicaid services ( cms ) has been taking to identify and implement information technology ( it ) solutions for removing social security numbers ( ssn ) from medicare beneficiaries' cards , and ( 2 ) determine whether cms's ongoing information technology modernization initiative could offer opportunities to facilitate efforts to remove the ssn from the cards .
+
+to determine the extent to which cms has been taking steps to implement a technical solution for removing the ssn from medicare cards , we examined studies conducted by agency officials in 2006 , 2011 , and 2013 of different approaches .
+
+we reviewed supporting documents that were used by project officials to gather information from system and business owners regarding the impact that two approaches would have on the agency's it systems , including estimates of the levels of effort that would be needed to implement the changes that would have to be made to affected systems .
+
+we assessed the data from these documents , referred to as “workbooks,” to determine the steps agency officials took that could be used to identify a technical solution for the two approaches – one to introduce a new identifier that does not include the ssn and another to mask the first five digits of the ssn in the existing ssn - based identifier , the health insurance claim number ( hicn ) .
+
+we determined which activities resulted in outcomes that could be used to initiate actions towards identifying a specific technical solution by comparing documented results of cms's efforts to requirements defined by cms's processes for managing information technology projects to develop and implement technical solutions for business processes .
+
+to better understand the extent of changes that would have to be made to the systems , we assessed a sample of the systems that the agency identified as being affected by the removal of the ssn from cards and replacement with a unique , non - ssn - based number .
+
+to select the systems for our sample , we obtained and analyzed system impact workbooks for 29 systems that we determined accounted for over 90 percent of the total estimated level of effort needed to modify existing systems to process the new identifier .
+
+based on our assessment , we determined that these systems provided adequate examples of the types of system modifications that would be required to implement a technical solution for agencywide efforts to remove the ssn from medicare cards .
+
+additionally , we focused our analysis of the data included in the workbooks on the option to replace the ssn - based identifier , the hicn , on the medicare card with a new identifier since findings resulting from our prior assessment of cms's 2011 report on ssn removal established this option as the one most likely to protect beneficiaries' ssns and help prevent identify theft .
+
+from the 29 systems , we selected 3 — 1 system that represented a low level of effort based on the estimated levels of effort reported by system and business owners in the workbooks , 1 that represented a high level of effort , and 1 of the shared systems that performs a critical function — fee - for - service claims processing .
+
+to determine the types of changes that would have to be made to the systems , we examined technical documents to identify architectural components , data types , message formats , and interfaces with other systems that would have to be modified to either translate a new identifier to the hicn for internal processing , or translate the hicn back to the new identifier for purposes such as printing notices or new cards .
+
+we also held discussions with owners of the selected systems to confirm our understanding of the systems and related files and databases , along with the functionality they provide .
+
+in addition , we held discussions with cms officials from the agency's office of information services , including the chief information officer , regarding actions taken to complete the 2013 study , particularly steps taken to collect information regarding the impact on cms's existing it systems .
+
+to further address the first objective , we determined the extent to which cms involved stakeholders to estimate the levels of effort that would have to be made to address the two approaches for removing the ssn from medicare cards .
+
+to do so , we reviewed documentation that described the actions cms took to solicit input from its federal medicare and state medicaid program stakeholders , such as cms's most recent report to congress and documented results of stakeholders' assessment of the impact the ssn removal would have on their systems .
+
+we obtained and analyzed such documentation from the social security administration and the railroad retirement board , cms's two federal program stakeholders .
+
+to select states for our study , we examined documents that were provided by 49 states and the district of columbia in response to cms's request for data related to the system changes that would have to be made .
+
+we then calculated the median level of effort estimated and selected states whose estimates represented high , medium , and low levels of effort .
+
+specifically , we identified the 3 states that estimated the highest level of effort , 4 states that estimated a medium ( or closest to the median ) level of effort , and the 3 that estimated the lowest level of effort .
+
+of the 10 that we selected , we received responses from 8 — the 3 lowest , 3 of the medium , and 2 of the highest estimators .
+
+we assessed the data they provided to cms and collected additional data by conducting semistructured interviews or through written responses to a standard set of questions .
+
+while we could not generalize the information we collected from the 8 states to reflect the level of participation by all 49 states and the district of columbia , the views obtained from these state officials offered insights into the extent to which cms involved its program stakeholders in assessing approaches for removing ssns .
+
+we also held discussions with program stakeholders from each of the federal and state entities .
+
+see government performance and results act of 1993 , pub .
+
+l. no .
+
+103-62 , 107 stat .
+
+285 ( 1993 ) , as amended by the gpra modernization act of 2010 , pub .
+
+l. no .
+
+111-352 , 124 stat .
+
+3866 ( 2011 ) ; office of management and budget , management of federal information resources , circular a - 130 ( washington , d.c.: nov. 28 , 2000 ) , and planning , budgeting , acquisition , and management of capital assets , circular a - 11 , part 7 ( washington , d.c.: july 2003 ) .
+
+services , one of the modernization goals described by the chief information officer and officials from the office of information services .
+
+we then compared information obtained from this plan to descriptions of modifications to systems that would have to be made if the ssn were removed from cards .
+
+we also reviewed documentation provided to the office of information services by the owners of these systems to identify other it projects that could facilitate the development and implementation of a technical solution for an ssn removal effort .
+
+we interviewed cms officials , including the chief information officer , to obtain additional information regarding the agencywide it modernization goals and objectives and the extent to which the goals and objectives addressed the removal of ssns from medicare cards .
+
+for each of the objectives , we assessed the reliability of the documentation we received from cms , including the workbooks and technical documentation , by obtaining corroborating evidence through interviews with the agency's system and business owners who were knowledgeable of the various systems , the individuals who were responsible for filling out the workbooks at the states , and individuals knowledgeable about cms's modernization efforts , including the chief information officer .
+
+based on how we used the information and the corroborating evidence provided in the interviews , we determined that the documentation and data provided by the agency were sufficiently reliable for the purposes of our review .
+
+we conducted this performance audit from october 2012 to september 2013 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we selected three systems for assessment to better understand the types of changes that would have to be made to process beneficiary data based on the introduction of a new identifier , or medicare beneficiary identifier ( mbi ) , to replace ssns as data entered into the systems .
+
+the three systems are the hipaa eligibility transaction system ( hets ) , the fiscal intermediary standard system ( fiss ) , and the medicare beneficiary database suite of systems ( mbdss ) .
+
+ ( see app .
+
+i for a description of the methodology used to select and assess the systems. ) .
+
+the following tables provide descriptions of the systems and the functionality they provide , the number of hours that owners of the systems estimated would be required to modify the systems , and a summary of the technical characteristics and components ( eg , the programming languages and tools , software applications , data bases , data storage files , and outcomes of data processing ) that would have to be considered in estimating the impact of removing ssns from medicare cards on these systems .
+
+our assessments were conducted based on information collected from technical documentation relevant to each of the systems and from discussions with system owners in cms's office of information services .
+
+in addition to the contact named above , teresa f. tucker ( assistant director ) , wilfred b. holloway , lee a. mccracken , thomas e. murphy , maria stattel , daniel k. wexler , merry l. woo , and charles e. youman made significant contributions to this report .
+

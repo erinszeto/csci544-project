@@ -1,0 +1,884 @@
+like other federal agencies , the department of state ( state ) is increasingly dependent upon information technology ( it ) and associated services to support functions critical to the department's mission .
+
+at the same time , cyber - based threats to federal it systems and infrastructure are evolving and growing and come from a variety of sources including foreign nations , criminals , terrorists , and disgruntled insiders .
+
+the dynamic nature of cyber - based threats and the inevitable changes that occur in federal computing environments underscore the need for developing new capabilities to provide closer to real - time awareness of the security status of federal information systems that support mission critical functions , protect assets , and deliver essential services to constituents .
+
+to accomplish such awareness , state has been at the forefront of federal efforts in developing and implementing a continuous monitoring capability .
+
+it has developed and implemented a custom application called ipost that is intended to provide continuous monitoring capabilities over selected elements of state's it environment .
+
+using data collected by various automated monitoring and management tools and a scoring method based on the premise that higher scores mean higher risk , the ipost risk scoring program is intended to provide local administrators and enterprise - level management with an improved capability to monitor and report on risks and risk mitigation efforts affecting the department's it infrastructure .
+
+you asked us to review the efficiency and effectiveness of the ipost risk scoring program .
+
+specifically , our objectives were to determine ( 1 ) the extent to which state has identified and prioritized risk to the department in its risk scoring program ; ( 2 ) how agency officials use ipost information to implement security improvements ; ( 3 ) the controls for ensuring the timeliness , accuracy , and completeness of ipost information ; and ( 4 ) the benefits and challenges associated with implementing ipost .
+
+we conducted our review in the washington , d.c. , metropolitan area , where we obtained and analyzed program documentation , reports , and other artifacts , and interviewed department officials .
+
+we compared department documentation with state policies and requirements and relevant national institute of standards and technology ( nist ) guidance on risk management and vulnerability scoring .
+
+in addition , we developed a survey instrument to obtain information from domestic and overseas department officials on how they used ipost at their sites and descriptions of their experience using it .
+
+we also analyzed the timeliness , accuracy , and completeness of ipost data for selected state sites .
+
+we conducted this performance audit from march 2010 to july 2011 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+further details of our objectives , scope , and methodology are included in appendix i .
+
+information security is a critical consideration for any organization reliant on it and especially important for government agencies , where maintaining the public's trust is essential .
+
+the federal information security management act of 2002 ( fisma ) established a framework designed to ensure the effectiveness of security controls over information resources that support federal operations and assets .
+
+according to fisma , each agency is responsible , among other things , for providing information security protections commensurate with the risk and magnitude of the harm resulting from unauthorized access , use , disclosure , disruption , modification , or destruction of information collected or maintained by or on behalf of the agency and information systems used or operated by an agency or by a contractor of an agency or other organization on behalf of an agency .
+
+consistent with its statutory responsibilities under fisma , in february 2010 , nist issued special publication ( sp ) 800-37 on implementing effective risk management processes to ( 1 ) build information security capabilities into information systems through the application of management , operational , and technical security controls ; ( 2 ) maintain awareness of the security state of information systems on an ongoing basis though enhanced monitoring processes ; and ( 3 ) provide essential information to senior leaders to facilitate system authorization decisions regarding the acceptance of risk to organizational operations and assets , individuals , other organizations , and the nation arising from the operation and use of information systems .
+
+according to nist guidance these risk management processes:  promote the concept of near real - time risk management and ongoing information system authorization through the implementation of robust continuous monitoring processes ;  encourage the use of automation to provide senior leaders the necessary information to make cost - effective , risk - based decisions with regard to the organizational information systems supporting their core missions and business functions ; integrate information security into the enterprise architecture and system development life cycle ;  provide emphasis on the selection , implementation , assessment , and monitoring of security controls , and the authorization of information systems ; link risk management processes at the information system level to risk management processes at the organization level through a risk executive ( function ) ; and  establish responsibility and accountability for security controls deployed within organizational information systems and inherited by those systems ( i.e. , common controls ) .
+
+continuous monitoring of security controls employed within or inherited by the system is an important aspect of managing risk to information from the operation and use of information systems .
+
+conducting a thorough point - in - time assessment of the deployed security controls is a necessary but not sufficient practice to demonstrate security due diligence .
+
+an effective organizational information security program also includes a rigorous continuous monitoring program integrated into the system development life cycle .
+
+the objective of continuous monitoring is to determine if the set of deployed security controls continue to be effective over time in light of the inevitable changes that occur .
+
+such monitoring is intended to assist maintaining an ongoing awareness of information security , vulnerabilities , and threats to support organizational risk management decisions .
+
+the monitoring of security controls using automated support tools facilitates near real - time risk management .
+
+as described in the draft nist sp 800-137 , the monitoring process consists of the following various steps:  defining a strategy ;  establishing measures and metrics ;  establishing monitoring and assessment frequencies ; implementing the monitoring program ;  analyzing security - related information and reporting findings ; responding with mitigation actions or rejecting , avoiding , transferring , or accepting risk ; and reviewing and updating the monitoring strategy and program .
+
+in its september 2010 report , continuous asset evaluation , situational awareness , and risk scoring ( caesars ) reference architecture report , the department of homeland security ( dhs ) indicates that a key aspect of a continuous monitoring process is analyzing security - related information , defining and calculating risk , and assigning scores .
+
+the report notes that risk scoring can provide information at the right level of detail so that managers and system administrators can understand ( 1 ) the state of the it systems for which they are responsible , ( 2 ) the specific gaps between actual and desired states of security protections , and ( 3 ) the numerical value of every remediation action that can be taken to close the gaps .
+
+this information should help enable responsible managers to identify actions that can add value to improving security .
+
+the report also notes that risk scoring is not a substitute for other essential operational and management controls , such as incident response , contingency planning , and personnel security .
+
+when used in conjunction with other sources of information , such as the federal information processing standards 199 security categorization and automated asset data repository and configuration management tools , risk scoring can be an important contributor to an overall risk management strategy .
+
+nist is in the process of developing guidance that extends the caesars framework provided by dhs .
+
+nist's extension is to provide information on an enterprise continuous monitoring technical reference architecture to enable organizations to aggregate collected data from security tools , analyze the data , perform scoring , enable user queries , and provide overall situational awareness .
+
+nist has also emphasized the value of planning , scheduling , and conducting assessments of controls as part of a continuous monitoring program in sp 800-37 .
+
+this program allows an organization to maintain the security authorization of an information system over time in a highly dynamic environment of operation with changing threats , vulnerabilities , technologies , and missions or business processes .
+
+continuous monitoring of security controls using automated support tools facilitates near real - time risk management and promotes organizational situational awareness with regard to the security state of the information system .
+
+state's key missions are to ( 1 ) strive to build and maintain strong bilateral and multilateral relationships with other nations and international organizations ; ( 2 ) protect the nation against the transnational dangers and enduring threats arising from tyranny , poverty , and disease , global terrorism , international crime , and the spread of weapons of mass destruction ; and ( 3 ) combine diplomatic skills and development assistance to foster a more democratic and prosperous world integrated into the global economy .
+
+to accomplish its missions , state operates more than 260 embassies , consulates , and other posts worldwide .
+
+in addition , the department operates 6,000 passport facilities nationwide , 17 domestic passport agencies , 2 foreign press centers , 1 reception center , 5 offices that provide logistics support for overseas operations , 20 security offices , and 2 financial service centers .
+
+state is organized into nine functional bureaus: the bureaus of administration , consular affairs , diplomatic security , resource management , human resources , information resource management , and overseas buildings operations ; the office of the legal adviser ; and the foreign service institute .
+
+among other things , these functional bureaus provide services such as policy guidance , program management , and administrative support .
+
+in addition , state has six regional , or geographic bureaus including the bureau of african affairs , east asian and pacific affairs , european and eurasian affairs , western hemisphere affairs , near eastern affairs , and south asian affairs .
+
+these bureaus focus on u.s. foreign policy and relations with countries within their geographical areas .
+
+state's it infrastructure , encompassing its worldwide computer and communications networks and services , plays a critical role in supporting the department's missions .
+
+this includes opennet — the department's global unclassified network that uses internet protocol to link state's domestic and local area networks abroad .
+
+opennet serves both foreign and domestic locations , has tens of thousands of hosts , and about 5,000 routers and switches .
+
+the department budget for it was approximately $1.2 billion for fiscal year 2010 .
+
+the department's foreign affairs manual assigns the following roles and responsibilities for it to the bureau of information resource management and bureau of diplomatic security:  the bureau of information resource management , headed by the chief information officer ( cio ) , is to support the effective and efficient creation , collection , processing , transmission , dissemination , storage , and disposition of information required to formulate and execute u.s. foreign policy and manage the department's daily operations .
+
+to meet the challenges of providing information in such an environment , the bureau relies on it to disseminate this information throughout the foreign affairs community .
+
+ the bureau of diplomatic security has global responsibilities , with protection of people , information , and property .
+
+overseas , the bureau implements security programs to ensure the safety of those who work in every u.s. diplomatic mission .
+
+in the u.s. , the bureau protects the secretary of state , the u.s .
+
+ambassador to the united nations , and foreign dignitaries who visit the united states .
+
+it also investigates passport and visa fraud , conducts personnel security investigations , and issues security clearances .
+
+additional it - relevant functions it performs are network monitoring and intrusion detection , incident handling and response , and threat analysis .
+
+the foreign affairs manual also assigns roles and responsibilities to various department officials for information security .
+
+these roles and responsibilities are summarized in the following table .
+
+state has developed and implemented a complex , custom - made application called ipost to provide an enhanced monitoring capability for its extensive and worldwide it infrastructure .
+
+the source data for ipost come from a variety of enterprise management and monitoring tools including active directory ( ad ) , systems management server ( sms ) , and diagnostic scanning tools .
+
+these tools provide vulnerability data , security compliance data , anti - virus signature file data , and other system and network data to ipost .
+
+the data are posted to an ipost database , reformatted and reconciled , and then populated into other ipost databases .
+
+data are associated with a “site” or “operational unit,” and integrated into a single user interface portal ( or dashboard ) that facilitates monitoring by department users .
+
+the primary users of ipost include local and enterprise it administrators and their management .
+
+designed specifically for state , ipost provides summary and detailed data as well as the capability to generate reports based on these data .
+
+summary information provides an overview of the current status of hosts at a site , including summary statistics and network activity information .
+
+detailed data on hosts within a site are also available through the application navigation .
+
+for example , when looking at data about a specific patch , a user can see which hosts need that patch .
+
+users can select a specific host within the scope of their control to view all the current data ipost has for that host , such as all identified vulnerabilities .
+
+examples of key ipost screens and reports for sites are provided in appendix ii .
+
+state also developed and incorporated a risk scoring program into ipost that is intended to provide a continuous risk monitoring capability over its windows - based hosts on the opennet network at domestic and overseas locations .
+
+the program uses data integrated into ipost from several monitoring tools to produce what is intended to be a single holistic view of technical vulnerabilities .
+
+the objectives of the program are to measure risk in multiple areas , motivate administrators to reduce risk , measure improvement , and provide a single score for each host , site , and the enterprise .
+
+each host and user account is scored in multiple areas known as scoring components .
+
+the scoring program assigns a score to each vulnerability , weakness , or other infrastructure issue identified for the host based on the premise that a higher score means higher risk .
+
+thus , the score for a host is the total of the scores of all its weaknesses .
+
+scores are then aggregated across components to give a total or “raw” risk score for each host , site , region , or the enterprise .
+
+scores are “normalized” so that small and large sites can be equitably compared .
+
+letter grades ( “a” through “f” ) , based on normalized scores , are provided to both administrators and senior management with the intent of encouraging risk reduction .
+
+the scoring program also has an “exception” process that aims to accommodate anomaly situations where the risk cannot be reduced by local administrators because of technical or organizational impediments beyond local control .
+
+in such cases , the risk score is to be transferred to the site or operational unit that has responsibility for mitigating the weakness and local administrators are left to address only those weaknesses within their control .
+
+according to a state official , summary data ( scores by site and component ) are permanently retained in a database while detailed data were generally retained until replaced by updated data from a recent scan .
+
+in instances when a host is missed on a scan , the older detailed data are kept until they are judged to be too old to be useful .
+
+after that , the host is scored for nonreporting , and the older data are deleted .
+
+the official also noted that under a new policy being implemented , detailed data will be retained for two to three scans so that users at a site can see what changed .
+
+state has been recognized as a leader in federal efforts to develop and implement a continuous risk monitoring capability .
+
+in its caesars reference architecture report , dhs recognized state as a leading federal agency and noted that dhs's proposed target - state reference architecture for security posture monitoring and risk scoring is based , in part , on the work of state's security risk scoring program .
+
+in addition , in 2009 the national security agency presented an organizational achievement award to state's site risk scoring program team for significantly contributing to the field of information security and the security of the nation .
+
+the ipost risk scoring program identifies and prioritizes several but not all areas affecting information security risk to state's it infrastructure .
+
+specifically , the scope of the ipost risk scoring program:  addresses windows hosts but not other it assets on the opennet network , such as routers and switches ; covers a set of 10 scoring components that includes several but not all information system controls that are intended to reduce risk ; and  assigns a score for each identified security weakness , but the extent to which the score reflects risk factors such as the impact and likelihood of threat occurrence that are specific to state's computing environment could not be demonstrated .
+
+as a result , the ipost risk scoring program helps to identify , monitor , and prioritize mitigation of vulnerabilities and weaknesses for the areas it covers , but it does not provide a complete view of the information security risks to the department .
+
+the scope of state's risk scoring program covers hosts that use windows operating systems , are members of ad , and are attached to the department's opennet network .
+
+this includes approximately tens of thousands workstations and servers at foreign and domestic locations .
+
+however , the program's scope does not include other devices attached to the network such as those that use non - windows operating systems , firewalls , routers , switches , mainframes , databases , and intrusion detection devices .
+
+vulnerabilities in controls for these devices could introduce risk to the windows hosts and the information the hosts contain or process .
+
+state officials indicated that the focus on windows hosts for risk scoring was due , in part , because of the desire to demonstrate success of the risk scoring program before considering other types of network devices .
+
+windows servers and workstations also comprised a majority of the devices attached to the network and the availability of microsoft tools such as ad and sms and other enterprise management tools facilitated the collection of source data from windows hosts .
+
+state officials indicated they were considering expanding the program to include scoring other devices on opennet .
+
+in applying the risk management framework to federal information systems , agencies select , tailor , and supplement a set of baseline security controls using the procedures and catalogue of security controls identified in nist sp 800-53 , rev .
+
+3 .
+
+the effective implementation of these controls is intended to cost - effectively mitigate risk while complying with security requirements defined by applicable laws , directives , policies , standards , and regulations .
+
+to ensure that the set of deployed security controls continues to be effective over time in light of inevitable changes that occur , nist sp 800-37 states that agencies should assess and monitor a subset of security controls including technical , management , and operational controls on an ongoing basis during continuous monitoring .
+
+using data integrated into ipost from multiple monitoring tools that identify and assess the status of security - related attributes and control settings , the ipost risk scoring program supports a capability to assess and monitor a subset of the security controls including technical and operational controls on an ongoing basis .
+
+the program is built on a set of 10 scoring components , each of which , according to ipost documentation , represents an area of risk for which measurement data were readily available .
+
+the program addresses vulnerabilities , security weaknesses , and other control issues affecting risk to the windows hosts .
+
+the 10 scoring components in ipost are described in the following table .
+
+although ipost provides a capability to monitor several types of security controls on an ongoing basis , it did not address other controls intended to reduce risk to windows hosts , thereby providing an incomplete view of such risk .
+
+these controls include physical and environmental protection , contingency planning , and personnel security .
+
+vulnerabilities in these controls could introduce risk to the department's windows hosts on opennet .
+
+state officials recognized that these controls and associated vulnerabilities were not addressed in ipost and stated that when they were first developing ipost , they focused on controls and vulnerabilities that could be monitored with existing automated tools such as a scanning tool , ad , and sms since these could be implemented immediately .
+
+state officials believed this approach allowed them to develop a continuous monitoring application in the time frame they did with the limited resources available .
+
+department officials also advised that the scoring program is intended to be scalable to address additional controls and they may add other control areas in the future .
+
+according to nist sp 800-37 , risk is a measure of the extent to which an entity is threatened by a potential circumstance or event , and typically a function of: ( 1 ) the adverse impacts that would arise if the circumstance or event occurs and ( 2 ) the likelihood of occurrence .
+
+in information assurance risk analysis , the likelihood of occurrence is a weighted factor based on a subjective analysis of the probability that a given threat is capable of exploiting a given vulnerability .
+
+according to ipost documentation , a key objective of the risk scoring program is to measure risk in multiple areas .
+
+state could not demonstrate the extent to which it considered factors relating to threat , impact , and likelihood of occurrence in assigning risk scores for security weaknesses .
+
+in developing the scoring methods for the 10 scoring components , the department utilized a working group comprised of staff from the bureaus of information resource management and diplomatic security .
+
+while documentation was limited to descriptions of the certain scoring calculations assigned to each component , state officials explained that working groups comprised of staff from the bureaus of information resource management and diplomatic security had discussions to determine a range of scores for each component .
+
+state officials explained that the premise for the scoring method was the greater the risk , the higher the score , and therefore , the greater the priority for mitigation .
+
+however , minutes of the working groups' meetings and other documents did not show the extent to which threats , the potential impacts of the threats , and likelihood of occurrence were considered in developing the risk scores and state officials acknowledged these factors were not fully considered .
+
+table 3 provides a description of how state calculates a score for each component .
+
+the methodology used to assign scores for the vulnerability component illustrates the limits that risk factors such as the impact and likelihood of threats specific to state's environment were considered .
+
+each vulnerability is initially assigned a score according to the common vulnerability scoring system ( cvss ) .
+
+according to nist guidance , agencies can use the cvss base scores stored in the national vulnerability database to quickly determine the severity of identified vulnerabilities .
+
+although not required , agencies can then refine base scores by assigning values to the temporal and environmental metrics in order to provide additional contextual information that more accurately reflects the risk to their unique environment .
+
+however , state did not refine the base scores to reflect the unique characteristics of its environment .
+
+instead , it applied a mathematical formula to the base scores to provide greater separation between the scores for higher - risk vulnerabilities and the scores for lower - risk vulnerabilities .
+
+as a result , the scores may not fully or accurately reflect the risks to state's opennet network .
+
+although the ipost risk scoring program does not provide a complete view of the information security risks to the department , it helps to identify , monitor , and prioritize mitigation of vulnerabilities and weaknesses associated with windows hosts on the opennet network .
+
+state officials surveyed responded that they used ipost to ( 1 ) identify , prioritize , and fix security weaknesses and vulnerabilities on windows devices and ( 2 ) implement other security improvements at their sites .
+
+for example , at least half of the respondents said that assigning a numeric score to each vulnerability identified and each component was very helpful with prioritizing their efforts to prioritize the mitigation of windows vulnerabilities .
+
+state officials stated that ipost was particularly helpful because prior to ipost , officials did not have access to tools with these capabilities .
+
+however , state officials did not use ipost results to update key security documents related to the assessment and authorization of the opennet network .
+
+state officials reported they used ipost to help them to: ( 1 ) identify windows vulnerabilities on the devices for which they were responsible , ( 2 ) prioritize the mitigation of vulnerabilities identified , and ( 3 ) fix the vulnerability and confirm mitigation was successfully implemented .
+
+specifically , as part of their duties , state officials indicated they reviewed ipost regularly to see the results of the automated scanning of devices at their sites to see what vulnerabilities had been identified .
+
+in particular , 14 of 40 survey respondents stated that they viewed the information in ipost at least once per day , 17 viewed information in ipost at least once a week , 3 viewed information at least once a month , and 4 respondents viewed information less than once per month .
+
+in addition , state officials we interviewed indicated they reviewed ipost information on a daily basis , with one official stating it was his first task in the morning .
+
+of the information available in ipost , state officials surveyed noted that some screens and information were particularly useful at their sites .
+
+specifically , the majority of the 40 survey respondents reported that the site summary screen , site score summary screen , level of detailed information on each component , and site reports were very or moderately useful ( see fig .
+
+1 ) .
+
+these screens show site and host identifying information , statistical data , and graphical representations of the site's risk scores , host computers , accounts , and identified weaknesses for each of the 10 components .
+
+appendix ii shows sample screens containing this information .
+
+the majority of state officials surveyed also indicated that ipost was very helpful in identifying windows vulnerabilities .
+
+in particular , the majority of the 40 survey respondents indicated that ipost was very or moderately helpful in identifying vulnerabilities on devices , providing automated scanning of devices onsite for vulnerabilities , and reviewing identified vulnerabilities on devices ( see fig .
+
+2 ) .
+
+furthermore , survey respondents and state officials we interviewed also reported being able to identify additional site vulnerabilities at their sites not scored in ipost .
+
+for example , one official we spoke to said she would receive incident notices and would use ipost to obtain more information about the incident .
+
+another official noted that ipost helped identify users who were utilizing the most bandwidth on the network .
+
+generally , state officials concluded that ipost was particularly helpful because ( 1 ) it provided several officials access to tools with these capabilities they did not have prior to its use and ( 2 ) it streamlined the number of software utility and scanning tools officials could use , making the monitoring process more efficient and effective .
+
+state officials reported that the ipost features helped them prioritize the mitigation of vulnerabilities at their sites .
+
+most survey respondents indicated that ipost was very or moderately helpful with prioritizing the mitigation of windows vulnerabilities .
+
+for example , more than half of the 40 respondents said that assigning a numeric score to each vulnerability identified and each component was very or moderately helpful in their efforts to prioritize vulnerability mitigation .
+
+in addition , over half of the 40 respondents felt that assigning letter grades to sites was very or moderately helpful in prioritization efforts , though 10 respondents felt this was only slightly helpful , and 4 respondents felt this was not helpful at all .
+
+of the features presented in ipost that assist in prioritization , responses were mixed regarding how helpful ranking of sites in comparison to other sites was for prioritizing vulnerability mitigation , with 22 respondents reporting it was very or moderately helpful , 9 slightly helpful , and 7 not at all helpful .
+
+figure 3 provides details of survey responses .
+
+state officials we interviewed also indicated that ipost assisted them in prioritizing vulnerability mitigation .
+
+in particular , they found that scoring the vulnerabilities helped them to identify which ones were necessary to fix first .
+
+in regards to the letter grades and ranking , a state official told us the letter grades were useful because they aided him in deciding whether he should fix vulnerabilities identified in ipost ( if he / she had a grade lower than an a ) or focus on other activities .
+
+the ipost dashboard also provides links to available resources that users can utilize to fix identified vulnerabilities .
+
+table 4 provides an overview of available resource links located in ipost .
+
+state officials reported they used available resources linked in ipost to help them fix vulnerabilities at their sites and confirm those fixes were successfully implemented .
+
+in particular , the majority of survey respondents reported that the patch management web site , the sms post admin tool , and the it change control board baseline were very or moderately useful in helping them to fix vulnerabilities at their site .
+
+over half of the 40 respondents stated that the site risk scoring toolkit ( 26 ) , it asset baseline ( 25 ) , and the diplomatic security configuration guides ( 24 ) were very or moderately useful in helping them to fix vulnerabilities at their site .
+
+however , officials also reported they had never used some of the resources available in ipost ( see fig .
+
+4 ) .
+
+in addition , state officials mentioned they utilized ipost to confirm that fixes they made to identified vulnerabilities were successfully implemented .
+
+in particular , survey respondents reported they either waited for the next automated scan results to be posted in ipost ( 28 of 31 respondents ) or e - mailed headquarters in washington , d.c. , to run another scan to see that the fix was implemented ( 9 of 31 respondents ) .
+
+regarding the helpfulness of ipost in verifying vulnerability fixes were successfully implemented , survey respondents found ipost to be very helpful ( 17 respondents ) , moderately helpful ( 12 respondents ) , slightly helpful ( 5 respondents ) or not at all helpful ( 2 respondents ) .
+
+state officials surveyed reported that using ipost also influenced them to make other security improvements at their sites .
+
+for example , of the 24 respondents who reported updating ad at their site , 17 respondents reported they were influenced by using ipost to do so , and of the 20 respondents that reported changing how patches were rolled out , 16 reported that ipost influenced them in making this change .
+
+in addition , several respondents reported making security improvements in configurations of servers , site security policies , security training , and network architecture based in part on their use of ipost ( see fig .
+
+5 ) .
+
+for example , one survey respondent reported that since the desktops shipped to the site had obsolete software on the standardized baseline image , he / she removed the old software before deploying the workstations at the site .
+
+another survey respondent reported that he / she looked at ipost to see whether deployed patches needed to be pushed out again or if they needed to be installed manually .
+
+nist sp 800-37 states that continuous monitoring results should be considered with respect to necessary updates to an organization's security plan , security assessment report , and plan of action and milestones , since these documents are used to guide future risk management activities .
+
+the information provided by these updates helps to raise awareness of the current security state of the information system and supports the process of ongoing authorization and near real - time risk management .
+
+however , state did not incorporate the results of ipost continuous risk monitoring activities into the opennet security plan , security assessment report , and plan of action and milestones on an ongoing basis .
+
+for example , plans of action and milestones were not created or updated for guiding and monitoring the remediation of vulnerabilities deemed to be exceptions .
+
+thus , key information needed for tracking and resolving exceptions was not readily available .
+
+as a result , the department may limit the effectiveness of those documents in guiding future risk management activities .
+
+organizations establish controls to provide reasonable assurance that their data are timely , free from significant error , reliable , and complete for their intended use .
+
+according to standards for internal control in the federal government , agencies should employ a variety of control activities suited for information systems to ensure the accuracy and completeness of data contained in the system and that the data is available on a timely basis to allow effective monitoring of events and activities , and to allow prompt reaction .
+
+these controls can include validating data ; reviewing and reconciling output to identify erroneous data ; and reporting , investigating , and correcting erroneous data .
+
+these controls should be clearly documented and evaluated to ensure they are functioning properly .
+
+nist sp 800-39 also states that the processes , procedures , and mechanisms used to support monitoring activities should be validated , updated , and monitored .
+
+according to the foreign affairs manual , stakeholders , system owners , and data stewards must ensure the availability , completeness , and quality of department data .
+
+state has developed and implemented several controls that are intended to ensure the timeliness , accuracy , and completeness of ipost data .
+
+for example , state has employed the use of automated tools to collect monitoring data that are integrated into ipost .
+
+the use of automated tools is generally faster , more efficient , and more cost - effective than manual collection techniques .
+
+automated monitoring is also less prone to human error .
+
+state also has used data collection schedules that support the frequent collection of monitoring data .
+
+for example , every windows host at each ipost site is to be scanned for vulnerabilities every 7 days .
+
+the frequent collection of data helps to ensure its timeliness .
+
+in addition , state has established three scoring components — sms reporting , vulnerability reporting , and security compliance reporting — in its risk scoring program to address instances when data collection tools do not correctly report the data required to compute a score for a component , such as when a host is not scanned .
+
+to illustrate , a host is assigned a score for the vulnerability reporting component if it misses two or more consecutive vulnerability scans ( that is , the host is not scanned in 15 days ) .
+
+intended to measure the risk of the unknown according to ipost documentation , this scoring method also serves as a control mechanism for identifying and monitoring hosts from which data were not collected in accordance with departmental criteria .
+
+state officials also advised that they had conducted a pilot program for the risk scoring program that enabled site users to ( 1 ) review the results of the data collections and associated scoring of the weaknesses and ( 2 ) report any inaccuracies they observed .
+
+state then identified solutions for the inaccuracies observed .
+
+although the pilot was completed in april 2009 , state officials noted they continue to rely on ipost users to report missed scans and inaccurate or incomplete data observed .
+
+notwithstanding these controls , the timeliness , accuracy , and completeness of ipost data were not always assured .
+
+for example , several instances where ipost data were not updated as frequently as scheduled , inconsistent , or incomplete are illustrated below .
+
+ frequency of updates to ipost data supports federal requirements but vulnerability scanning was not conducted as frequently as state scheduled .
+
+fisma requires that agencies conduct periodic testing and evaluation of the effectiveness of information security policies , procedures , and practices , to be performed with a frequency based on risk but no less frequent than annually .
+
+according to ipost documentation , each host is to be scanned for vulnerabilities every 7 days .
+
+however , a review of scanning data for 15 sites ( or 120 weekly scans ) during an 8-week period in summer 2010 revealed that only 7 percent of the weekly scans successfully checked all windows hosts at the site scanned .
+
+while 54 percent of the weekly scans successfully checked between 80 percent to 99 percent of the site's windows hosts , 28 percent of the scans checked less than 40 percent of a site's hosts .
+
+ten sites experienced at least one weekly scan cycle during which none of their hosts were scanned for vulnerabilities and a rescheduled scan was also not performed .
+
+according to ipost documentation , a host may not have been scanned because the host was powered off when the scan was attempted , the host's internet protocol address was not included in the range of the scan , or the scanning tool did not have sufficient permissions to scan the host .
+
+although the frequency of updates to ipost data supports state's efforts to satisfy fisma's requirement for periodic testing and evaluation , the updates to vulnerability information in ipost were not as timely as intended .
+
+as a result , ipost users may base risk management decisions on incomplete data .
+
+ data from vulnerability scans were sometimes not uploaded to ipost in a timely manner .
+
+state officials stated that vulnerability scanning results are typically presented in the ipost staging database at least 1 day following the scan .
+
+however , the length of time it took for scan results to be uploaded into ipost was not consistent across all sites and impacted the scoring results for certain sites .
+
+the scanning results for the majority of 15 sites reviewed were typically presented in ipost at least 1 day following the scan , although it took up to 3 days for certain foreign and domestic sites .
+
+according to state officials , delays with uploading information to ipost for certain geographical areas around the world occurred because of the network's architecture .
+
+as a result , numerous windows hosts at 6 of the 15 sites reviewed received scores in ipost's vulnerability reporting component for missing two consecutive vulnerability scans even though the hosts had been scanned .
+
+consequently , ipost users may make risk management decisions based on inaccurate or incomplete data .
+
+ data presented in ipost about the number of hosts addressed were sometimes inconsistent .
+
+according to state officials , the information in ipost - generated reports should reflect the information displayed on ipost screens ; however , information presented about the number of hosts was sometimes inconsistent .
+
+for example , the number of hosts that were not scanned for security compliance differed between the ipost reports and the site summary screens for each of the 15 sites reviewed .
+
+according to a state official , the summary screen displayed number of hosts that were not scanned over two weekly cycles whereas the ipost reports presented the number of hosts that were not scanned during the current weekly cycle but ipost did not clearly label the data elements accordingly .
+
+in addition , several ipost reports generated on the same day at one site showed a different number of hosts for which sms did not report data .
+
+ipost - generated enterprise reports also varied in terms of the total number of hosts being monitored and scored , ranging from approximately 84,000 to 121,000 .
+
+as a result , ipost users may base risk management decisions on inconsistent or inaccurate data .
+
+several factors contributed to the conditions described above .
+
+technical limitations of the data collection tools contributed to missed scans .
+
+for example , the diagnostic scanning tool used by state performed agentless network scans of specific internet protocol address ranges , so hosts that are powered off during the scan or are not included in the address range during the scan are missed .
+
+state officials were aware of the limitations with the scanning tool and indicated they had taken steps to address them .
+
+specifically , state acquired and was implementing a new diagnostic tool based on agent technology to collect vulnerability and security compliance data .
+
+also , ipost did not retain detailed data from multiple cycles of scans of hosts at a site over an extended period since the data was overwritten by new scan results or was deleted .
+
+as a result , ipost users could not conduct trend analyses to determine the extent to which scans were successfully completed as scheduled or that data are accurately and consistently presented in ipost screens and reports .
+
+state recognized the importance of having detailed historical scan data .
+
+as noted earlier , a state official stated that a new policy was being implemented that requires detailed data be retained for two to three scans so that users at a site can see what changed .
+
+in addition , state had not adequately documented all of the controls in place for ensuring the timeliness , accuracy , and completeness of data and based on our review , we could not determine if all of the stated controls were in place or working as intended .
+
+further , state had not implemented formal procedures for systematically validating data and reviewing and reconciling output in ipost on an ongoing basis to detect and correct inconsistent and incomplete data , which state officials confirmed were not in place .
+
+developing , documenting , and implementing these procedures and controls , and ensuring that they are working as intended , can provide increased assurance that information displayed in ipost is consistent , accurate , and complete .
+
+state's implementation of ipost has resulted in improvements to the department's information security by providing extensive and timely information on vulnerabilities and weaknesses on windows servers and workstations , while also creating an environment where officials are motivated to fix vulnerabilities based on department priorities .
+
+however , state has faced , and will continue to face , challenges in implementing ipost .
+
+these challenges include overcoming limitations and technical issues with data collection tools , identifying and notifying individuals with responsibility for site - level security , implementing configuration management , and adopting a continuous monitoring strategy for moving forward in incorporating additional functionality into ipost .
+
+the implementation of ipost has enhanced information security at the department by offering a custom application with a common methodology for data collection , analysis , and reporting of information that security officers and system administrators can use to find extensive information on the security of windows hosts that they are responsible for and fix specified vulnerabilities .
+
+for example , information in ipost allows users to:  obtain a quick visual overview of compliance , vulnerability , patch , antivirus , and other component status for windows hosts via the site summary report ;  access information about the status of security controls to determine the extent to which the controls are implemented correctly ; and  determine which hosts were scanned or not scanned and when this occurred .
+
+ipost and the risk scoring program have also facilitated the identification of other potential security problems since users could make connections between pieces of data to find possible trends or patterns .
+
+for example , one official responded in the survey that he was able to identify a network performance problem by reviewing data available on the ipost portal and as a result , increase the data transmission rates over the network for his site .
+
+in addition , since regional and enterprise managers have access to ipost data for sites for the region or enterprise , they have increased awareness of security issues at specific sites and across the enterprise , allowing department officials a common language with which to discuss vulnerabilities and make decisions regarding their mitigation .
+
+moreover , the inclusion of a scoring approach , with associated ranking of sites and letter grades within ipost , has created a mechanism for the department chief information security officer to use in conveying to system administrators the department's priorities in addressing the mitigation of identified vulnerabilities or implementation of particular patches , among other things .
+
+the scoring method has motivated security officers and system administrators to focus on the vulnerabilities that have been given the highest scores first and mitigate these weaknesses on affected machines .
+
+this approach also allows regional and enterprise officials who review the letter grades and rankings to identify sites where improvements need to be made .
+
+having this capability has enabled the department to respond to emerging threats associated with vulnerabilities in commercial products that occurred over the past year .
+
+ipost implementation has also enhanced information security at state because having a continuous monitoring program in place provides information on weaknesses affecting windows devices .
+
+in particular , controls on these devices are assessed more often than the testing and evaluations of controls that are performed as part of certification and accreditation of opennet every 3 years .
+
+by taking steps to implement continuous monitoring through ipost , state has been able to obtain information on vulnerabilities and weaknesses affecting tens of thousands of windows devices on its opennet network every couple of days , weekly , or biweekly .
+
+having this type of capability has enabled department officials to identify vulnerabilities and fix them more rapidly than in years prior to ipost implementation .
+
+limitations in the capabilities of commercially available tools and technical issues with the tools used to collect data on vulnerabilities created challenges for state implementing a continuous monitoring program .
+
+state officials stated that when they initially began to conceptualize the application there were no commercial products available with the functionality and capabilities needed , so they developed ipost with the assistance of contractors .
+
+there were challenges involved with ipost's development , including resolving the technical issues with using scanning tools and displaying the results obtained from various data collection tools that had different data file formats .
+
+for example , state officials identified the following technical issues with the data collection tools:  certain tools did not always check each control setting as expected , did not always scan hosts when scheduled , or created false positives that had to be analyzed and explained .
+
+ a vendor did not consistently keep its scanning tool up to date with the common vulnerabilities and exposures from the national vulnerability database .
+
+ scanning tools of different vendors used different approaches for scoring groups of vulnerabilities , so when the agent software scanner of a new vendor was implemented , state had to curve scores so that the disparities did not penalize the site .
+
+another challenge with running scans is that scanning tools do not have the capability to scan tens of thousands of hosts at one time without significant network performance degradation .
+
+therefore , the department has had to establish scanning schedules so all hosts can be scanned over a period of time .
+
+state officials stated they had taken steps to address these challenges by working with a vendor to enhance its data collection tool and selecting an alternate tool when appropriate .
+
+in addition , department officials stated they were working with other agencies and a contractor to develop additional capabilities that better meet their needs .
+
+building these relationships could benefit the department as it moves forward in monitoring additional controls and developing additional capabilities in ipost .
+
+according to standards for internal control in the federal government , authority and responsibility should be clearly assigned throughout the organization and clearly communicated to all employees .
+
+responsibility for decision making is clearly linked to the assignment of authority , and individuals are held accountable accordingly .
+
+ipost generally identified the local administrator ( s ) for each windows host who would generally have the access permissions necessary to resolve nonexception weaknesses on the host .
+
+however , ipost did not identify the individual or contact point at each site or operational unit who had site - level responsibility for reviewing ipost site reports , monitoring the security state of the site's hosts , and ensuring that the control weaknesses identified on all hosts at the site were resolved .
+
+in particular , there was confusion at the department as to who was responsible for operational units when this information was requested , and the information that was subsequently provided was inaccurate for several units .
+
+as a result , the department has reduced assurance that responsibility for monitoring the security state of and resolving known weaknesses on a site's windows hosts is clearly conveyed .
+
+in addition , departmental officials did not always notify senior managers at sites with low security grades of the need to fix security weaknesses .
+
+according to state officials , operational units in ipost with grades c - or below for 3 consecutive months are to receive warning letters indicating the need to improve their grades .
+
+from april 2009 to march 2010 , 62 out of 483 sites received letters noting the need for improvement ; however , 6 additional sites should have received letters but did not .
+
+in addition , 33 sites that received at least one warning letter should have received one or more additional warnings for months with low grades but did not .
+
+as a result , senior managers may not have been fully aware of the security state of windows hosts at sites they oversee .
+
+according to the foreign affairs handbook , the development of new it services , systems and applications , and feature and maintenance enhancements are to follow the guidance outlined in the foreign affairs manual .
+
+the foreign affairs manual states that configuration management plans should be developed for it projects and identify the system configuration , components , and the change control processes to be put in place .
+
+effective configuration management also includes a disciplined process for testing configuration changes and approving modifications , including the development of test plan standards and documentation and approval of test plans , to make sure the program operates as intended and no unauthorized changes are introduced .
+
+state had not fully implemented configuration management for ipost .
+
+although the department had maintained release notes on updates , scoring documents , and presentations on ipost , key information about the program and its capabilities was not fully documented .
+
+for example , there were no diagrams of the architecture of ipost or a configuration baseline .
+
+in addition , there was no documentation of appropriate authorization and approval of changes included in ipost updates .
+
+furthermore , although state improved its process for testing applications and subsequent versions of ipost from a manual and informal testing process in april 2010 , it still lacks a written test plan and acceptance testing process with new releases being approved prior to release .
+
+for example , test procedures were not performed or documented to ensure that scripts for applying scoring rules matched the stated scoring methodology and that the scoring scripts were sufficiently tested to ensure that they fulfilled state's intended use .
+
+as the department moves forward with implementation of additional capabilities for ipost , the need for a robust configuration management and testing process increases .
+
+until such a process is fully developed , documented , and maintained , state has reduced assurance that ipost is configured properly and updates or changes to the application and scoring rules are working as intended .
+
+according to nist , as part of a risk management framework for federal information systems , a strategy for the selection of appropriate security controls to monitor and the frequency of monitoring should be developed by the information system owner and approved by the authorizing official and senior information security officer .
+
+priority for selection of controls to monitor should be given to controls that are likely to change over time .
+
+in addition , the security status of the system should be reported to the authorizing official and other appropriate organizational officials on an ongoing basis in accordance with the monitoring strategy .
+
+the authorizing official should also review the effectiveness of deployed controls on an ongoing basis to determine the current risk to organizational operations and assets .
+
+according to the foreign affairs manual , risk management personnel should balance the tangible and intangible cost to the department of applying security safeguards against the value of the information and the associated information system .
+
+while state has reported success with implementing ipost to provide ongoing monitoring of certain controls over windows hosts on opennet and reporting the status of these controls across the enterprise to appropriate officials , the department faces an ongoing challenge in continuing this success because it does not have a documented continuous monitoring strategy in place .
+
+although the department began continuous monitoring before applicable detailed federal guidance was available and selected controls to monitor based on the capabilities of existing data collection tools , the department has not re - evaluated the controls monitored to determine whether the associated risk has changed .
+
+in addition , although department officials reported they were working to implement additional controls , there was no documentation to indicate whether the department had weighed the associated risk and the tangible and intangible costs associated with implementation when selecting which controls they intended to monitor .
+
+furthermore , the frequency of how often the security status of the windows hosts should be reported to the authorizing official and other appropriate officials was not documented .
+
+therefore , until the department develops , documents , and implements a continuous monitoring strategy , the department may not have sufficient assurance that it is effectively monitoring the deployed security controls and reporting the security status to designated officials with sufficient frequency .
+
+leading practices for program management , established by the project management institute in the standard for program management , state that the information that program stakeholders need should be made available in a timely manner throughout the life cycle of a program .
+
+in addition , standards for internal control in the federal government states that information should be communicated to management and others within the agency who need it .
+
+management should also ensure there are adequate means of communicating with external stakeholders that may have a significant impact on the agency achieving its goals .
+
+a further ongoing challenge for the department is understanding and managing internal and external stakeholders' expectations for continuous monitoring activities in terms of what goals and objectives can reasonably be achieved with ipost .
+
+these expectations include:  lowering scores in ipost always implies that risks to the individual sites are decreasing .
+
+with the current scoring approach used in ipost , lowering a score may imply that the associated risks to the site are being lowered as well , but there may be other reasons for the score being adjusted that are not related to mitigating the risk to particular hosts or sites .
+
+in particular , state officials have reported that ( 1 ) curving of the scores is performed in order to promote fairness ; ( 2 ) exceptions are granted which shift the score from one operational unit to another ; and ( 3 ) moving responsibility for hosts at overseas units to domestic units , which adjusts the scores accordingly .
+
+state officials should be careful in conveying to managers who make decisions based on scores and grades that lowering of scores in ipost doesn't necessarily indicate that risks to the department are decreasing .
+
+ having continuous monitoring may replace the need for other assessment and authorization activities .
+
+according to nist , a well designed and managed continuous monitoring program can transform an otherwise static and occasional security control assessment and risk determination process that is part of periodic assessment and authorization into a dynamic process that provides essential , near , real - term security status - related information .
+
+however , continuous monitoring does not replace the explicit review and acceptance of risk by an authorizing official on an ongoing basis as part of security authorization and in itself , does not provide a comprehensive , enterprisewide risk management approach .
+
+in addition , since continuous monitoring may identify risks associated with control weaknesses on a frequent basis , there may be instances where the problem cannot be fixed immediately , such as cases where state granted exceptions for weaknesses for periods of a year or more .
+
+there will need to be a mechanism in place for the designated authority to approve the associated risks from granting these exceptions .
+
+as the department moves forward with implementation of additional capabilities , it will be important to recognize the limitations of continuous monitoring when undertaking these efforts .
+
+state officials confirmed that managing stakeholder expectations , in particular external stakeholders , had been a challenge .
+
+the chief information security officer ( ciso ) stated that the department was attempting to address these expectations by clarifying information or giving presentations to external audiences , and specifically communicated that ipost was not intended to entirely replace all certification and accreditation activities .
+
+if state continues to provide reliable and accurate information regarding continuous monitoring capabilities to both internal and external stakeholders , then the department should be able to effectively manage stakeholder expectations .
+
+state's implementation of ipost has improved visibility over information security at the department by providing enhanced monitoring of windows hosts on the opennet network with nearer - to - real - time awareness of security vulnerabilities .
+
+as part of this effort , state's development of a risk scoring program has led the way in creating a mechanism that prioritizes the work of system administrators to mitigate vulnerabilities ; however , it does not incorporate all aspects of risk .
+
+establishing a process for defining and prioritizing risk through a scoring mechanism is not simple and solutions to these issues have not yet been developed at state .
+
+neverthless , state's efforts to work on addressing these issues could continue to break new ground in improving the visibility over the state of information security at the department .
+
+ipost has helped it administrators identify , monitor , and mitigate information security weaknesses on windows hosts .
+
+in addition , state officials reported that using ipost had led them to make other security improvements at their sites .
+
+however , while ipost provides a useful tool for identifying , monitoring , and reporting on vulnerabilities and weaknesses , state officials have not used ipost results to update key security documents which can limit the effectiveness of those documents in guiding future risk management activities .
+
+as part of ipost implementation , state has implemented several controls that are intended to help ensure timeliness , accuracy , and completeness of ipost data ; however , vulnerability scans were not always conducted according to state's schedule , and scanning results were uploaded to ipost in an inconsistent manner .
+
+further , ipost data were not always consistent and complete .
+
+the acquisition and implementation of new data collection tools may help state overcome technical limitations of its scanning tool .
+
+establishing robust procedures for validating data and reviewing and reconciling output on an ongoing basis to ensure data consistency , accuracy , and completeness can provide additional assurance to ipost users and managers who make risk management decisions regarding the allocation and prioritization of resources for security mitigation efforts at sites or across the enterprise based on ipost data .
+
+ipost provides several benefits in terms of providing more extensive and timely information on vulnerabilities , while also creating an environment where officials are motivated to fix vulnerabilities based on department priorities .
+
+nevertheless , state faces ongoing challenges with continued implementation of ipost .
+
+as state implements additional capabilities and functionality in ipost , the need increases for the department to identify and notify individuals responsible for site - level security , develop configuration management and testing documentation , develop a continuous monitoring strategy , and manage and understand internal and external stakeholder expectations in order to ensure the continued success of the initiative for enhancing department information security .
+
+to improve implementation of ipost at state , we recommend that the secretary of state direct the chief information officer to take the following seven actions: incorporate the results of ipost's monitoring of controls into key security documents such as the opennet security plan , security assessment report , and plan of action and milestones .
+
+ document existing controls intended to ensure the timeliness , accuracy , and completeness of ipost data .
+
+ develop , document , and implement procedures for validating data and reviewing and reconciling output in ipost to ensure data consistency , accuracy , and completeness .
+
+ clearly identify in ipost individuals with site - level responsibility for monitoring the security state and ensuring the resolution of security weaknesses of windows hosts .
+
+implement procedures to consistently notify senior managers at sites with low security grades of the need for corrective actions , in accordance with department criteria .
+
+ develop , document , and maintain an ipost configuration management and test process .
+
+ develop , document , and implement a continuous monitoring strategy that addresses risk , to include changing threats , vulnerabilities , technologies , and missions / business processes .
+
+in written comments on a draft of this report signed by the chief financial officer for the department of state , reproduced in appendix iii , the department said the report was generally helpful in identifying the challenges state faces in implementing a continuous monitoring program around the world .
+
+in addition , state described metrics that it uses for correcting known vulnerabilities and measuring relative risks at sites .
+
+the department also concurred with two of our recommendations , partially concurred with two , and did not concur with three .
+
+specifically , state concurred with our recommendations and indicated that it has or will ( 1 ) implement procedures to consistently notify senior managers at sites with low security grades of the need for corrective actions , in accordance with department criteria , and ( 2 ) develop , document , and implement a continuous monitoring strategy .
+
+state partially concurred with our recommendation to develop , document , and implement procedures for validating data and reviewing and reconciling output in ipost to ensure data consistency , accuracy , and completeness .
+
+the department stated that it had developed and implemented procedures for validating and testing output in ipost by scanning for vulnerabilities every 7 days and establishing three scoring components to score hosts when data collection tools do not correctly report the data required to compute a score .
+
+we agree and acknowledge in our report that the department has established these controls ; however , the controls do not always ensure that if data is collected , it is accurate and complete .
+
+as mentioned in the report , we identified instances where ipost data was inconsistent , incomplete , or inaccurate , including the scoring of hosts for missed vulnerability scans when a scan had occurred .
+
+state officials make decisions about the prioritization of control weakness mitigation activities and allocation of resources based on information in ipost and so the accuracy and completeness of that information is important .
+
+having procedures for validating data and reconciling the output in ipost will help ensure that incomplete or incorrect data is detected and corrected , and documenting these procedures will help ensure that they are consistently implemented .
+
+state also partially concurred with our recommendation that the department develop , document , and maintain an ipost configuration management and test process .
+
+the department questioned the need to have a diagram of the architecture of ipost and a written test plan and acceptance testing process , and stated that our report noted state had improved its process for testing versions of ipost .
+
+we have modified the report to provide additional context for the statement regarding state's testing process in order to clarify any misunderstanding .
+
+in addition , as mentioned in the report , we identified areas where testing procedures were not performed or documented , including ensuring the scripts for applying the scoring rules matched the stated scoring methodology .
+
+in addition to lacking basic diagrams showing ipost interactions , we also determined that the department lacked a configuration baseline and documented approval process for ipost changes .
+
+having a robust configuration management and testing process helps to provide reasonable assurance that ipost is configured properly , that updates or changes to the application are working as intended , and that no authorized changes are introduced , all of which helps to ensure the security and effectiveness of the continuous monitoring application .
+
+state did not concur with our recommendation for incorporating the results of ipost's monitoring of controls into key security documents such as the opennet security plan , security assessment report , and plan of action and milestones .
+
+state did not provide a rationale for its nonconcurrence with our recommendation , and instead focused on providing additional information about the department's use of metrics related to assigning risk values .
+
+as nist guidance indicates , incorporating results from continuous monitoring activities into these key documents supports the process of ongoing authorization and near real - time risk management .
+
+in addition , as mentioned in the report , state has granted exceptions for weaknesses in ipost for periods of a year or more but has not created or updated plans of action and milestones to guide and monitor the remediation of these exceptions .
+
+continuous monitoring does not replace the explicit review and acceptance of risk by an authorizing official on an ongoing basis as part of security authorization .
+
+the results of ipost's monitoring of controls , including the ongoing monitoring and remediation of the exceptions , needs to be documented in order to identify the resources and timeframes necessary for correcting the weaknesses .
+
+in addition , the designated authority will need to review these results to ensure opennet is operating at an acceptable level of risk .
+
+in addition , the department did not concur with our recommendation to document existing controls intended to ensure the timeliness , accuracy , and completeness of ipost data because it stated that it regularly evaluates ipost data in these areas and stated that further documentation was of questionable value .
+
+however , as mentioned in our report , we identified incomplete , inconsistent , or inaccurate data in ipost during our review and could not determine if all of the controls the department told us they implemented were actually in place or working as intended .
+
+documenting the controls helps to provide assurance that all appropriate controls have been considered and can be used as a point of reference to periodically assess whether they are working as intended .
+
+the department also did not concur with our recommendation to clearly identify in ipost individuals with site - level responsibility for monitoring the security state and ensuring the resolution of security weaknesses of windows hosts .
+
+the department noted that it failed to understand the necessity for individually naming those staff with site - level responsibility in ipost since we had surveyed state officials regarding their use of ipost .
+
+as we noted in the report , the department relies on users to report when inaccurate and incomplete ipost data and scoring is identified , so that it may be investigated and corrected as appropriate — even though there is no list in ipost showing who is responsible for a particular operational unit .
+
+as we discovered when we surveyed state officials , there was confusion at the department as to who was responsible for operational units and information provided to us on who was responsible was incorrect for several units .
+
+to clarify this issue , we have incorporated additional context in the report on identifying individuals with responsibility for site - level security .
+
+lastly , the department did not concur with our findings that the ipost risk scoring program does not provide a complete view of the information security risks to the department .
+
+although the department's response generally did not address the findings made in the report , the department did state that progress in addressing control weaknesses in ipost had led to an 89 percent reduction in measured cyber security risk and that it was impossible and impracticable to cover all areas of information security and security controls in nist 800-53 as part of a continuous monitoring program .
+
+however , we did not state that all areas of information security and all controls in nist 800-53 should be monitored as part of such a program .
+
+rather , we stated that because ipost monitors only windows devices and not other devices on opennet , addresses a select set of controls , and because state officials could not demonstrate the extent to which all components that are needed to measure risk — threats , the potential impacts of the threats , and the likelihood of occurrence — were considered when developing the scoring , that ipost does not provide a complete view of the information security risks to the department .
+
+furthermore , as we mentioned in the report , the department should exercise care in implying that the lowering of scores in ipost means that risks to individual sites are decreasing as there may be other reasons for the score being adjusted that are not related to the mitigation of risk to particular hosts or sites , such as curving of scores or shifting of scores from one operational unit to another .
+
+while such activities may promote fairness , the lowering of scores may not necessarily indicate that risks to the department are decreasing .
+
+as agreed with your offices , unless you publicly announce the contents of this report earlier , we plan no further distribution until 30 days from the report date .
+
+at that time , we will send copies of this report to the secretary of state and interested congressional committees .
+
+the report will also be available at no charge on the gao web site at http: / / www.gao.gov .
+
+if you or your staff have any questions regarding this report , please contact me at ( 202 ) 512-6244 or at wilshuseng@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+key contributors to this report are listed in appendix iv .
+
+the objectives of our review were to determine ( 1 ) the extent to which the department of state ( state ) has identified and prioritized risk to the department in its risk scoring program ; ( 2 ) how agency officials use ipost information to implement security improvements ; ( 3 ) the controls for ensuring the timeliness , accuracy , and completeness of ipost information ; and ( 4 ) the benefits and challenges associated with implementing ipost .
+
+to address our objectives , we conducted our review in washington , d.c. , where we obtained and analyzed program documentation , reports , and other artifacts specific to ipost , the scoring program and components , and data collections tools ; and interviewed state officials .
+
+to address the first objective , we analyzed guidance from the national institute of standards and technology ( nist ) on risk management and vulnerability scoring and compared it to ipost risk scoring documentation to determine whether the department's criteria and methodology were consistent with federal guidance .
+
+where documentation on the department's process for defining and prioritizing risk did not exist , we obtained information from agency officials in these areas where possible .
+
+we also interviewed agency officials from nist to obtain information on the common vulnerability scoring system and how agencies can use the scoring to more accurately reflect risk to agency environments .
+
+to address the second objective , we conducted interviews with state's chief information officer , deputy chief information officer for operations , chief information security officer , selected executive directors , regional computer security officers , and information systems officers or information systems security officers to obtain information on how these officials used ipost , in particular what information or summary reports they used from ipost to make decisions about security improvements and what types of security improvements were made .
+
+we analyzed the information provided by the officials to determine patterns regarding what information were used from ipost and what types of improvements were made .
+
+for the third objective , we analyzed department requirements for frequency of updates , accuracy , and completeness of ipost data to determine what controls should be in place .
+
+we obtained documentation and artifacts on department controls , or other mechanisms or procedures for each of the scoring components covered in ipost related to frequency , accuracy , and completeness of data and compared these to department requirements .
+
+where the department lacked requirements in these areas , we analyzed our guidance on internal controls and assessment of controls for data reliability to determine what criteria should be in place to provide sufficient assurance of accurate , complete , and timely data .
+
+in areas where documentation on the department's controls did not exist , we obtained information from department officials where possible .
+
+we also selected 15 units from the list of operational units to perform analyses to determine the frequency , accuracy , and completeness of data in ipost .
+
+operational units were selected based on location ( domestic or overseas ) , the number of hosts at the site , and bureau to ensure representation from among geographic and functional bureaus within the department .
+
+frequency data obtained from ipost was tabulated to determine the number of hosts scanned and the dates scanned , and then the data was compared to the scanning schedule to determine the frequency in which scans occurred at the site for the time period of july 19 , 2010 , through september 8 , 2010 .
+
+for accuracy and completeness , we compared detailed screens on information related to vulnerability and security compliance components for each of the above 15 sites with generated reports obtained from ipost .
+
+we also obtained raw scan data from state's scanning tool for three financial center sites and compared that to ipost to check frequency and accuracy , however , an analysis of the data obtained determined it was unusable due to inconsistencies with how the data were reformatted when viewed .
+
+in addition , for completeness , we obtained detailed screen information on the configuration settings scanned as part of the security compliance component from one site and compared the scanned settings evaluated to the list of required settings in a diplomatic security mandatory security setting document for windows xp .
+
+to address the fourth objective , we analyzed federal guidance on what activities should be taken as part of implementation of continuous monitoring , as well as department policies and guidance related to information technology management and projects and compared it to department activities undertaken for ipost implementation .
+
+we also obtained descriptions of benefits and challenges from the chief information officer , deputy chief information officer for operations , chief information security officer , selected executive directors , regional computer security officers , and information systems officer or information systems security officers .
+
+we analyzed the information obtained from the department , federal guidance , and the results of our findings for the other objectives to identify patterns related to the benefits and challenges of implementation .
+
+for our second , third , and fourth objectives , we also obtained information through a survey of individuals at domestic and overseas sites to understand ipost current capabilities as of august of 2010 .
+
+we surveyed individuals at 73 of the 491 operational units in ipost .
+
+we selected survey sites by reviewing the list of operational units in ipost and chose domestic sites from among each of the functional bureaus , and overseas sites from among each of the geographic bureaus to make sure there was coverage for each bureau and region in the sample .
+
+sites within each functional and geographic bureau were selected based on the number of hosts at the site and the current letter grade received in order to include sites with varying numbers of hosts and grade scores .
+
+we developed a survey instrument to gather information from domestic and overseas department officials on how they used ipost at their location , whether they had experienced problems with using data collection tools , and what benefits and challenges they had experienced with implementation between august 1 , 2009 , and august 30 , 2010 .
+
+our final sample included 73 sites ( 36 overseas and 37 domestic ) .
+
+the sample of sites we surveyed was not a representative sample and the results from our survey cannot be generalized to apply to any other sites outside those sampled .
+
+however , the interviews and survey information provided illustrative examples of the perspectives of various individuals about ipost's current and future capabilities .
+
+we identified a specific respondent at each site by either reviewing the contact list on state's web site or asking state officials .
+
+this person was the information management officer , information system officer , system administrator , or information system security officer , or the acting or assistant official in one of these positions at a given site .
+
+to minimize errors that might occur from respondents interpreting our questions differently from our intended purpose , we pretested the questionnaire by phone with state officials who were in positions similar to the respondents who would complete our actual survey during four separate sessions .
+
+during these pretests , we asked the officials to complete the questionnaire as we listened to the process .
+
+we then interviewed the respondents to check whether ( 1 ) the questions were clear and unambiguous , ( 2 ) the terms used were precise , ( 3 ) the questionnaire was unbiased , and ( 4 ) the questionnaire did not place an undue burden on the officials completing it .
+
+we also submitted the questionnaire for review by a gao survey methodology expert .
+
+we modified the questions based on feedback from the pretests and review , as appropriate .
+
+overall , of the 73 sampled sites , 40 returned completed questionnaires and 2 of the nonresponding sites were ineligible because they had been consolidated into other sites , leading to a final response rate of 57.1 percent ; however , not all respondents provided answers to every question .
+
+two of the sites answered about their own site and other sites under their supervision ; each of these was treated as a single data point ( i.e. , site ) in statistical analyses .
+
+we reviewed all questionnaire responses , and followed up by phone and e - mail to clarify the responses as appropriate .
+
+the practical difficulties of conducting any survey may introduce nonsampling errors .
+
+for example , differences in how a particular question is interpreted , the sources of information available to respondents , or the types of respondents who do not respond to a question can introduce errors into the survey results .
+
+we included steps in both the data collection and data analysis stages to minimize such nonsampling errors .
+
+we examined the survey results and performed computer analyses to identify inconsistencies and other indications of error , and addressed such issues as necessary .
+
+an independent analyst checked the accuracy of all computer analyses to minimize the likelihood of errors in data processing .
+
+in addition , gao analysts answered respondent questions and resolved difficulties respondents had answering our questions .
+
+we analyzed responses to closed - ended questions by counting the response for all sites and for overseas and domestic sites separately .
+
+for questions that asked respondents to provide a narrative answer , we compiled the open answers in one document that was analyzed and used as examples in the report .
+
+we conducted this performance audit from march 2010 to july 2011 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+a selection of key ipost screens and reports for sites are described below .
+
+the screen provides summary information on the site including: site's grade ; host summary statistics by category which provides a graphical representation of the number of hosts that are compliant or not compliant ; active directory ( ad ) account information for users and computers ; and network activity at the site ( see fig .
+
+6 ) .
+
+the site risk score summary screen provides a summary of the site's risk score summary , including the site's grade , average risk score , and total risk score .
+
+a summary table shows the total risk score broken down by category .
+
+a graphical presentation of the risk score by component highlights components with high risk scores ( see fig .
+
+7 ) .
+
+detailed component screens provide breakdowns of the scoring results for each host .
+
+for example , the detailed security compliance screen ( see fig .
+
+8 ) identifies each host , the type of host , the date of the last security compliance scan , and the total risk score assigned the host .
+
+users can select the details option to see more specific information on the security settings that failed compliance and the associated score that was assigned .
+
+the risk score advisory report provides a summary of all the scoring issues for the site and summary advice on how to improve the site's score .
+
+summary information includes the site's grade , average risk score , and total risk score .
+
+a graphical presentation of the risk score by component highlights components with high risk scores ( see fig .
+
+9 ) .
+
+in addition to the individual named above , ed alexander and william wadsworth ( assistant directors ) , carl barden , neil doherty , rebecca eyler , justin fisher , valerie hopkins , tammi kalugdan , linda kochersberger , karl seifert , michael silver , eugene stevens , and henry sutanto made key contributions to this report .
+

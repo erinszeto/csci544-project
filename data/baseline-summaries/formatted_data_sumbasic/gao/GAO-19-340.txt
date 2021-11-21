@@ -1,0 +1,872 @@
+third - party providers , such as paid tax return preparers and tax preparation software providers , have an enormous impact on the internal revenue service's ( irs ) administration of the tax system .
+
+about 90 percent of individual taxpayers ( about 135.5 million in 2018 ) have their tax returns prepared and filed by paid preparers or use tax software to prepare their own returns .
+
+both paid preparers and tax software providers use taxpayers' personal and financial information to prepare returns , and they may retain that information after returns are filed .
+
+irs is bound by federal laws to protect taxpayer return information that is filed with , or furnished to , irs by taxpayers or on their behalf .
+
+generally , those laws do not extend to third - party providers , such as paid preparers and tax software providers , according to irs officials .
+
+if these third parties do not properly secure taxpayers' information , it may be vulnerable to theft or unauthorized use .
+
+irs estimates that at least $11.8 billion in identity theft tax refund fraud was attempted in 2017 .
+
+according to irs , it prevented at least $11.7 billion of fraud attempts but paid out at least $0.1 billion to fraudsters .
+
+you asked us to review irs's efforts to track , monitor , and deter theft of taxpayer information from third - party providers , such as paid preparers and tax software providers .
+
+this report ( 1 ) assesses what is known about the taxpayer information security requirements for the systems used by third - party providers , ( 2 ) describes irs's outreach efforts to third - party providers on the requirements , ( 3 ) assesses irs's monitoring processes for ensuring third - party providers' compliance with the requirements , and ( 4 ) assesses irs's requirements for third - party provider security incident reporting and how irs uses that information .
+
+to assess what is known about the taxpayer information security requirements for the systems used by third - party providers , we reviewed relevant laws and regulations , including the gramm - leach - bliley act and the federal trade commission's safeguards rule , and irs guidance about information security standards and requirements for third - party providers .
+
+to determine whether irs requirements align with laws and leading practices , we compared the requirements against leading practices , such as the national institute of standards and technology ( nist ) special publication 800-52 and standards for internal control in the federal government ( internal control standards ) .
+
+we reviewed irs documents , including organizational charts and associated internal revenue manual ( irm ) sections for the offices that have responsibilities for securing taxpayer information .
+
+we reviewed internal control standards , which discuss key practices to help an entity adapt to shifting environments , evolving demands , changing risks , and new priorities .
+
+we conducted semistructured interviews with 10 industry groups and related organizations that represented a cross section of the tax preparation industry to determine their knowledge about existing information security requirements .
+
+we also interviewed irs officials who were responsible for various aspects of irs's security requirements for third - party providers .
+
+to describe the outreach efforts irs takes for third - party providers , we reviewed irs outreach documents such as publications , news releases , social media posts , emails , webinars , and online education campaigns .
+
+we interviewed irs officials and conducted semistructured interviews with 10 industry groups and related organizations to identify potential challenges that irs faces in its outreach .
+
+to assess irs's monitoring processes for ensuring third - party providers' compliance with information security requirements , we reviewed the agency's monitoring procedures for third - party providers that are authorized to electronically file returns , the related irm sections , and irs's monitoring checklist and job aids .
+
+we compared these documents to a framework for managing fraud risk in federal programs ( fraud risk framework ) .
+
+the fraud reduction and data analytics act of 2015 , and office of management and budget guidance implementing its provisions , affirm that agencies should adhere to the leading practices identified in our fraud risk framework .
+
+we reviewed our fraud risk framework principles for combating fraud in a strategic , risk - based manner .
+
+we also interviewed the irs officials responsible for overseeing the monitoring program .
+
+to assess irs's requirements for third - party provider reporting of security incidents and how irs uses that information , we reviewed irs guidance about security incident reporting requirements .
+
+we analyzed data on the number and type of security incidents from irs's return integrity and compliance services ( rics ) incident management database from 2017 and 2018 , the only data available following the database's creation in december 2016 .
+
+we interviewed rics officials about the quality of these data and determined that irs's data on the number of security incidents were sufficiently reliable to describe a minimum count of security incidents .
+
+specifically , we asked about the responsibilities of officials collecting and using the data , the procedures in place to capture all reported data , and controls for ensuring the accuracy of the data and resolving any errors , among other things .
+
+we also reviewed irs documentation and interviewed irs officials to determine the security incident reporting process through which irs collects security incident data .
+
+we compared that information with leading practices outlined in nist special publication 800-53 and internal control standards .
+
+we also used the information from the semistructured interviews with 10 industry groups and related organizations to determine their knowledge about existing security incident reporting requirements .
+
+see appendix i for additional details on our objectives , scope , and methodology .
+
+we conducted this performance audit from november 2017 to may 2019 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+federal agencies are dependent on computerized ( cyber ) information systems and electronic data to carry out operations and to process , maintain , and report essential information .
+
+cybersecurity — the security of these systems and data — is vital to public confidence .
+
+ensuring the cybersecurity of the nation , including protecting privacy and sensitive data , and irs's efforts to address tax refund fraud due to identity theft are issues included in our high risk list .
+
+irs relies on information system security controls to protect the confidentiality , integrity , and availability of the sensitive financial and taxpayer information that resides on its systems .
+
+federal law and guidance specify requirements for protecting federal information and systems .
+
+the federal information security modernization act of 2014 ( fisma ) is intended to provide a comprehensive framework for ensuring the effectiveness of information system security controls over information resources that support federal operations and assets .
+
+to accomplish this , fisma requires each agency to develop , document , and implement an agency - wide information security program to provide security for the information and systems that support the operations and assets of the agency , using a risk - based approach .
+
+however , taxpayer information held by third - party providers is generally outside of these requirements , according to irs officials .
+
+fraudsters may target third parties , such as paid preparers and tax software providers , to steal taxpayer data — defined for our purposes as personally identifiable information and other personal , financial , or federal tax data — which can then be used to commit identity theft refund fraud or other types of financial crimes .
+
+viewed broadly , identity theft tax refund fraud consists of two crimes: ( 1 ) stealing or compromising taxpayer data and ( 2 ) using stolen ( or otherwise compromised ) taxpayer data to file a fraudulent tax return and collect a fraudulent refund .
+
+figure 1 presents an example of how this crime can work .
+
+in this example , a taxpayer may alert irs of identity theft refund fraud .
+
+alternatively , irs can detect identity theft refund fraud through its automated filters that search for specific characteristics , as well as through other reviews of taxpayer returns .
+
+third - party providers retain a large amount of electronic tax information , which makes them targets of various types of data theft incidents .
+
+five common types of security incidents are shown in table 1 .
+
+the number of electronically filed ( e - filed ) tax returns , and therefore the amount of electronically available data that are vulnerable to security incidents , has been increasing over the past several decades from 4.2 million in 1990 to 135.5 million in 2018 .
+
+in 2018 , approximately 90 percent of the 150.5 million filed individual income tax returns were filed with irs electronically ( see figure 2 ) .
+
+paid preparers prepared more than half of the e - filed returns in 2018 .
+
+multiple irs offices have discrete responsibilities in overseeing how third - party providers secure taxpayer information , as depicted in figure 3 .
+
+oversight responsibilities are as follows: stakeholder liaison works with the paid preparer community to educate preparers about information security risks and guide them through the process of resolving security issues when security incidents are reported .
+
+this office is also the intake point for security incident information for paid preparers .
+
+cybersecurity works to protect taxpayer information and irs's electronic systems , services , and data from internal and external cybersecurity threats — such as damage to computers , electronic communications systems , or information contained in those systems — by implementing security practices .
+
+criminal investigation ( ci ) reviews security incident reports to determine whether criminal action has occurred and investigates any potential criminal violations of applicable laws .
+
+it also investigates large - scale tax schemes and fraud .
+
+the return preparer office is responsible for matters relating to the registration and the program compliance of tax return preparers who prepare returns for compensation .
+
+the office also engages in outreach and education programs and administers irs's annual filing season program , a voluntary program to encourage noncredentialed preparers to participate in continuing education courses .
+
+small business / self - employed ( sb / se ) examination revenue agents visit e - file providers to ensure they are complying with the authorized e - file provider program's requirements .
+
+electronic products and services support ( epss ) administers the authorized e - file provider program .
+
+it is also responsible for updating irs publications 1345 and 3112 , which outline the requirements of the program .
+
+epss officials reported that they must coordinate with other business units to update individual references in the publications .
+
+epss is the intake point for security incident information for online providers and e - services users , according to officials .
+
+return integrity and compliance services ( rics ) monitors taxpayer accounts for potential fraud to protect revenue .
+
+rics also manages the security incident data reports that are submitted by tax software providers .
+
+rics is the intake point for security incident information for security summit and identity theft tax refund fraud - information sharing and analysis center ( isac ) members , as described below , and actively monitors isac alerts from the online platform for new information that may not have been reported elsewhere .
+
+while the office of professional responsibility ( opr ) does not have oversight responsibilities over the security of tax information at third parties , it administers the regulations that govern the practice of tax professionals who interact with irs on behalf of taxpayers , including attorneys , certified public accountants , and enrolled agents , among others .
+
+treasury department circular 230 , which incorporates the regulations , directed the commissioner to establish opr and any other offices within irs to administer and enforce the regulations .
+
+however , circular 230 does not include a requirement for practitioners concerning the security of taxpayer information .
+
+in recent years , irs has taken a number of steps to help battle identity theft refund fraud .
+
+in 2015 , irs formed the security summit , a public - private partnership to protect the nation's taxpayers and the tax system from identity theft refund fraud .
+
+the summit has representatives from irs , state tax administrators , and industry partners including the software industry , tax professional associations , and payroll and tax financial product processors .
+
+irs launched isac in the 2017 filing season .
+
+it aims to allow irs , states , and tax preparation industry partners to quickly share information on identity theft refund fraud .
+
+it includes two components: an online platform controlled by irs to communicate data on suspected fraud , and a collaborative organization governance structure comprising irs , states , and industry .
+
+irs uses a rapid response team in partnership with states and industry members to coordinate responses to identity theft refund fraud incidents .
+
+the team aims to respond to significant threats within 24 to 72 hours of their discovery .
+
+the rapid response team was deployed for six incidents in 2016 , one in 2017 , and was not deployed for any incidents in 2018 .
+
+irs seeks to help safeguard taxpayers' information and the electronic filing system by prescribing requirements for various types of third - party providers through its authorized e - file provider program .
+
+these requirements are outlined in revenue procedure 2007-40 and publication 1345 , handbook for authorized irs e - file providers of individual income tax returns .
+
+irs revenue procedure 2007-40 states that the security of taxpayer accounts and personal information is a top priority for the agency .
+
+further , the revenue procedure states that it is the responsibility of each irs authorized e - file provider to have security systems in place to prevent unauthorized access to taxpayer information by third parties .
+
+some of the requirements included in this program are applicable to all types of authorized e - file providers , while others are applicable to one group or another .
+
+businesses — including sole proprietors — that wish to e - file tax returns on behalf of clients must apply to irs's authorized e - file provider program and choose a provider type , as described in table 2 .
+
+according to irs , in 2018 there were more than 325,000 authorized e - file providers , some of which were paid preparers .
+
+more than 790,000 paid preparers had registered with irs as of 2018 ; accordingly , not all paid preparers are authorized e - file providers and are therefore not covered by the requirements of the authorized e - file provider program .
+
+however , a business that has been approved as an electronic return originator ( ero ) may employ multiple paid preparers who are not authorized e - file providers .
+
+those paid preparers would be allowed to e - file returns under the supervision of their ero employer .
+
+according to irs publication 3112 , the activities and responsibilities for return preparation and e - filing are distinct and different from each other .
+
+tax software providers , which irs refers to as software developers in its authorized e - file provider program , develop tax return software that individuals and businesses can use to file their own returns , or that paid preparers can use when filing returns on behalf of clients .
+
+online providers are the subset of tax software providers that allow individual taxpayers to self - prepare returns and file them with irs .
+
+providers that develop software for paid preparers' use do not fall under the definition of an online provider .
+
+irs has not fully incorporated the federal trade commission ( ftc ) safeguards rule into its requirements for all provider types under the authorized e - file provider program .
+
+the gramm - leach - bliley act provided ftc with the authority to require that financial institutions subject to its jurisdiction ensure the security and confidentiality of customer records and nonpublic personal information ; protect against any anticipated threats or hazards to the security of such records ; and protect against unauthorized access to or use of such records or information which could result in substantial harm or inconvenience to any customer .
+
+ftc , in turn , issued a regulation known as the “ftc safeguards rule.” the ftc safeguards rule applies to financial institutions including third - party providers that help taxpayers file tax returns , such as paid preparers and providers of software that allows individuals to prepare their own tax returns .
+
+the ftc safeguards rule requires those institutions to develop , implement , and maintain a comprehensive written information security program .
+
+the program must contain administrative , technical , and physical safeguards that are appropriate to the provider's size and complexity , the nature and scope of the provider's activities , and the sensitivity of any customer information at issue .
+
+irs addresses the ftc safeguards rule through its revenue procedure 2007-40 .
+
+this revenue procedure provides the procedures for the authorized e - file provider program , and clearly states that violations of the provisions of the gramm - leach - bliley act and the implementing rules and regulations promulgated by ftc are considered violations of the revenue procedure .
+
+it also states that violations may subject an authorized e - file provider to penalties or sanctions , including suspension or expulsion from the authorized e - file provider program .
+
+however , the irs publications that provide further information on the authorized e - file provider program only briefly discuss the ftc safeguards rule , and do not provide details on the required elements of an information security program .
+
+for example: publication 3112 , irs e - file application and participation , states that providers should become familiar with the privacy and security rules that implement the gramm - leach - bliley act , and with other important information regarding the safeguarding of personal information available on the ftc website .
+
+the publication does not detail each of the required elements of an information security program .
+
+publication 1345 , handbook for authorized irs e - file providers of individual income tax returns , which was updated in february 2019 , notes ftc's role in protecting taxpayer data and generally describes the requirement of implementing and maintaining a comprehensive information security program , including the requirement that administrative , technical , and physical safeguards be appropriate to the business's size , nature and scope of its activities , and the sensitivity of the customer information .
+
+the publication does not detail each of the required elements of an information security program .
+
+we identified other irs publications that are not exclusively related to the authorized e - file provider program that discuss the requirements of the ftc safeguards rule , as well as other information security measures that serve as leading practices for the broader population of tax professionals .
+
+for example , in 2018 , irs updated publication 4557 , safeguarding taxpayer data: a guide for your business .
+
+the publication aims to help tax professionals understand basic security steps , recognize signs of data theft , respond to data losses , and understand and comply with the ftc safeguards rule .
+
+this publication refers to the ftc rule and tax professionals' responsibilities to create and enact security plans , and provides a checklist from ftc to help third - party providers implement the information security plans .
+
+irs publication 4600 , tips for safeguarding taxpayer data , also discusses elements of the ftc safeguards rule .
+
+however , while irs references these documents in publications 3112 and 1345 , authorized e - file providers are not obligated to consult or follow these documents .
+
+in addition , most paid preparers do not know about the ftc safeguards rule and likely do not have information security plans for their places of business , according to officials from several tax preparation industry groups .
+
+industry group officials also told us that there are misconceptions about who should be responsible for implementing information security .
+
+for example , one industry group official said that paid preparers and eros often think that their tax software providers will provide security services or that their computer firewall or antivirus software will be enough protection .
+
+modifying the authorized e - file provider program requirements to explicitly incorporate the ftc safeguards rule's elements of an information security program would be consistent with internal control standards .
+
+the standards call for management to consider the external requirements — such as laws , regulations , and standards — and incorporate these requirements into an agency's objectives when setting the standards for the compliance of other entities .
+
+irs officials told us that they do not believe that federal law provides irs with any authority to enforce the ftc safeguards rule .
+
+however , irs has already stated in revenue procedure 2007-40 that compliance with the ftc safeguards rule is required for participation in the authorized e - file provider program .
+
+modifying its requirements to explicitly state the elements of an information security program as required under the ftc safeguards rule would help irs ensure that all types of authorized e - file providers are aware of , and comply with , the ftc safeguards rule , which could help them better protect taxpayers' information .
+
+while modifying the authorized e - file provider program may not reach paid preparers who are not part of the authorized e - file provider program , it will strengthen the controls for eros , tax software providers , and online providers .
+
+irs's authorized e - file provider program does not outline a set of minimum information security standards for systems used by paid preparers or authorized e - file providers .
+
+when we reviewed irs's publications for authorized e - file providers , we found that specific information security standards were outlined for online providers , but there were no specific standards for other types of authorized e - file providers or paid preparers .
+
+officials from tax preparation groups we interviewed and irs raised issues that relate to paid preparers' system risks .
+
+first , the tax preparation industry groups that we spoke with stated that most paid preparers , especially small firms or individual preparers , did not know the steps that they should take to protect taxpayer information on their systems .
+
+irs officials reported that paid preparers often do not know that they experienced a security incident until irs informs them something is wrong with their filing patterns .
+
+second , according to officials from several tax preparation industry groups , paid preparers often have several misconceptions as to what is required of them in protecting taxpayer data , causing confusion .
+
+industry group officials we interviewed told us that irs's current publications are not clear about requirements versus leading practices .
+
+for example , irs publication 4557 , safeguarding taxpayer data , provides paid preparers with some leading practices to protect taxpayer data , but the leading practices are not legal requirements , with the exception of the ftc safeguards rule .
+
+an official from the return preparer office explained that imposing any standards for paid preparers , whether related to competency or information security , without explicit authority would leave irs vulnerable to legal challenges because of a recent court case that found that irs does not have the authority to regulate the competency of paid preparers .
+
+according to irs's office of chief counsel , this ruling , combined with the lack of explicit statutory authority , prevents irs from establishing system standards for paid preparers , because while 31 u.s.c .
+
+§ 330 authorizes the secretary of the treasury to regulate the practice of practitioners before the department of the treasury , mere return preparation , including through systems practitioners use to prepare and transmit tax returns , is not considered practice before irs .
+
+in contrast to paper filing of tax returns , certain security measures need to be taken for e - filing returns to protect the integrity of the e - file system ; thus , irs has implicit authority to regulate e - file providers insofar as their activities relate to electronically filing returns with irs , according to irs office of chief counsel officials .
+
+these officials also noted that no single provision of the internal revenue code provides irs explicit authority to regulate the standards for e - file providers .
+
+instead , internal revenue code § 7803 gives the commissioner of internal revenue broad authority to administer and supervise the internal revenue laws , and § 6011 authorizes irs to require returns and regulate the form of such returns .
+
+when taken as a whole , these provisions of the internal revenue code show congressional intent to provide the secretary of the treasury with broad authority to administer the method for , and requirements surrounding , the e - filing of federal tax returns , according to irs officials .
+
+nevertheless , having explicit authority to establish security standards for the systems of authorized e - file providers may help irs better ensure the protection of taxpayers' information and mitigate the risk of legal challenges to irs's ability to do so .
+
+irs office of chief counsel officials also noted that for several years the department of the treasury has sought additional authority for irs to regulate all tax return preparers .
+
+for example , this request was included in the most recent ( fiscal year 2020 ) congressional budget justification .
+
+the justification for this additional authority specifically refers to the competency of tax return preparers , but does not mention security standards for the systems that those preparers use .
+
+similarly , we have previously suggested that congress consider granting irs the authority to regulate the competency of paid preparers ( that suggestion did not cover regulating the security of paid preparers' systems ) .
+
+as of april 2019 , congress had not provided such authority .
+
+without congress providing irs with explicit authority to regulate the security requirements for the systems of paid preparers or authorized e - file providers , congress and irs have limited assurance that the processes used by paid preparers or authorized e - file providers are adequately protecting taxpayers' information against electronic data breaches and potential identity theft tax refund fraud .
+
+having such explicit authority would enable irs to establish minimum security requirements and help ensure improved taxpayer information security by paid preparers and authorized e - file providers .
+
+irs does not have a robust set of information security requirements for all tax software providers in the authorized e - file provider program .
+
+instead , irs has limited security requirements for the subset of tax software providers designated as online providers outlined in irs publication 1345 , as we discuss in the next section .
+
+in publication 4164 , modernized e - file guide for software developers and transmitters , irs also provides some information on “security directive rules of behavior for accessing irs business systems” while transmitting returns to irs .
+
+however , this document does not provide a specific list of controls to for these providers to follow .
+
+irs has been working with the security summit to implement a subset of the nist special publication 800-53 security and privacy controls for the industry members of the security summit , which represents a subset of all tax software providers .
+
+the security summit partners agreed voluntarily to implement about 140 tax - related controls over a 3-year period and provide self - assessments related to the implementation of those controls .
+
+irs reported in october 2018 that 15 of the 21 security summit industry partners had voluntarily certified that they implemented the nist controls in years 1 and 2 of the rollout schedule .
+
+irs officials reported that they later determined three of the other 21 industry partners are financial institutions that do not handle taxpayer data ; thus the standards are not applicable to them .
+
+irs officials told us that they are actively following up with the remaining three providers to determine why they have not completed and submitted the self - assessment , and to what degree they have implemented the subset of nist security controls .
+
+while this is an important and significant first step , the 15 industry partners in the security summit that are voluntarily adhering to the nist security controls represent about a third of all of the tax software providers that irs has approved to be a part of the authorized e - file provider program .
+
+according to irs , these 15 security summit partners transmitted about 132.6 million ( 98.8 percent ) of all of the electronically filed returns in 2018 ; the other two - thirds of tax software providers in the authorized e - file provider program transmitted about 1.6 million ( 1.2 percent ) electronically filed returns .
+
+a security summit membership criterion states that only those providers that filed more than 50,000 returns with irs during a filing season can be members , but not all tax software providers meet this threshold .
+
+internal control standards state that managers consider external requirements when defining objectives , such as those set by standard - setting bodies designed to comply with laws , regulations or standards .
+
+management should incorporate those requirements into its objectives and sets those requirements through the established standards of conduct , oversight structure , organizational structure and expectations of competence .
+
+by statue , nist is responsible for developing information security standards and guidelines , including minimum requirements for federal information systems .
+
+according to special publication 800-53 , the controls outlined provide a holistic approach to information security and risk management by providing organizations with the breadth and depth of security controls necessary to fundamentally strengthen their information systems and the environments in which those systems operate — contributing to systems that are more resilient in the face of cyber attacks and other threats .
+
+while the guidelines in this publication are applicable to all federal information systems , other organizations are encouraged to consider using the guidelines , as appropriate .
+
+the applicability of the selected nist controls is evidenced by the adoption of those controls by the security summit partners .
+
+while most returns are filed through tax software providers that are voluntarily adhering to the security controls , these controls are not required and do not apply to all tax software providers .
+
+additionally , irs officials that are a part of the security summit stated that they cannot enforce the subset of nist controls with the remaining security summit partners because the controls were set up in a voluntary program .
+
+irs officials from multiple offices did not have a clear reason as to why this subset of nist controls has not been incorporated into the requirements for the entire population of tax software providers in the authorized e - file provider program , even though some security standards had been incorporated into the authorized e - file provider program for a limited set of providers ( online providers ) as discussed in the next section .
+
+in addition , as previously discussed , irs can prescribe the requirements to which authorized e - file providers must adhere when e - filing returns for taxpayers .
+
+incorporating fundamental security controls into its authorized e - file provider program would give irs greater assurance that tax software providers have identified and addressed information security risks consistent with professional standards .
+
+this missed opportunity to update the requirements for tax software providers by adopting the subset of nist controls is due , in part , to irs's lack of a centralized leadership over the security of taxpayer information collected by paid preparers and tax software providers .
+
+as previously discussed , multiple irs offices have discrete responsibilities for overseeing the security of taxpayer information while at third parties ; however , no one office is responsible for , or has the authority to provide , the strategic vision , oversight , or coordination over all aspects .
+
+further , while irs offices coordinate to some extent , there is not a formalized governance structure , such as a steering committee , that would help provide this level of leadership , coordination , and collaboration to the agency .
+
+according to internal control standards , an agency's organizational structure provides management's framework for planning , directing , and controlling operations to achieve agency objectives .
+
+management develops an organizational structure with an understanding of overall responsibilities , and assigns these responsibilities to discrete units to enable the organization to operate in an efficient and effective manner and reliably report quality information .
+
+a sound internal control environment requires that the agency's organizational structure clearly defines key areas of authority and responsibility , and establishes appropriate lines of reporting .
+
+without setting and requiring the same security standards for all tax software providers , irs does not have assurance that these providers have an equivalent level of standards in place to adequately protect taxpayer information .
+
+further , in continuing to operate a voluntary security controls program , irs does not have assurance that those software providers who are currently adhering to the standards will continue to do so in the future .
+
+finally , without centralized leadership in this area , it is unclear how irs will adapt to changing security threats in the future and ensuring those threats are mitigated .
+
+online providers — tax software providers that allow individuals to prepare their own tax returns — have additional requirements for security and privacy that they must follow , as outlined in publication 1345 .
+
+irs established six security , privacy , and business standards for online providers , including requirements for developing information privacy and security policies and reporting security incidents .
+
+compliance with these six standards for online providers became mandatory on january 1 , 2010 ; however , irs has not substantially updated them since then ( see appendix ii for the text of the six security , privacy , and business standards ) .
+
+these additional requirements do not apply to paid preparers , eros , or providers of tax software used by paid preparers .
+
+without updating standards regularly , the standards can become outdated and lose their ability to protect information from known vulnerabilities as technology changes .
+
+for example , irs's current guidance refers to an outdated encryption standard .
+
+specifically , irs requires online providers to use , at minimum , secure sockets layer 3.0 and transport layer security ( tls ) 1.0 .
+
+however , nist special publication 800-52 and industry leading practices recommend the use of tls 1.1 as the minimum level of encryption due to known weaknesses of using tls 1.0 to encrypt data in transmission .
+
+while the standard allows for use of later encryption versions , it refers to a minimum encryption standard that has known weaknesses .
+
+as a result , irs and taxpayers have limited assurance that their taxpayer data are protected according to nist guidelines and industry leading practices .
+
+recommended controls outlined in nist special publication 800-53 and our fraud risk framework call for continuous monitoring and regular fraud risk assessments , respectively , to help determine the effectiveness of controls in a program .
+
+internal controls standards also calls for management to periodically review the policies , procedures , and related activities for continued relevance and effectiveness in achieving the entity's objectives or addressing related risks .
+
+when we asked why the six standards in publication 1345 had not been updated since 2010 , a senior wage and investment division official stated that the publication is subject to an annual review by multiple irs offices , but no office had identified the need to update the standards as part of these reviews .
+
+an electronic products and support services ( epss ) official told us that the standards were initially developed based on the latest technology at the time .
+
+however , according to this official , technology can become obsolete quickly , and adapting standards to keep pace with technological changes can require a lot of resources .
+
+not updating the requirements for online providers again points to a missed opportunity due to irs's lack of a centralized leadership over the security of taxpayer information at paid preparers and tax software providers .
+
+in this case , centralized leadership may have identified the need to update the standards .
+
+without periodically reviewing and updating the standards themselves , irs has limited assurance that the standards have kept pace with technological changes , and therefore , that the online providers are protecting the taxpayer's data .
+
+irs uses a variety of outreach tools to communicate with third - party providers , such as paid preparers and tax software providers , about information security risks .
+
+irs tries to educate these tax professionals about ways to improve information security practices and the benefits of doing so .
+
+for example , irs informs paid preparers , tax software providers , and others about the importance of reporting security incidents in a timely manner to help ensure that action can be taken quickly to help protect their clients and avoid fraudulent returns being filed .
+
+similarly , stakeholder liaison advises paid preparers about the steps to take to ensure that their systems are no longer vulnerable to compromise , according to stakeholder liaison officials .
+
+below are examples of irs's recent communication efforts .
+
+irs and the security summit collaborated on tax professional outreach campaigns .
+
+for example , in 2018 , they launched the tax security 101 campaign , which provided tax professionals with basic information on how to protect taxpayer data .
+
+each year , irs sponsors nationwide tax forums largely targeted toward paid preparers such as enrolled agents , certified public accountants , and noncredentialed preparers .
+
+the 2018 forum included five seminars focused on securing taxpayer information , such as “data privacy and cybersecurity for tax professionals” and “data compromises — it's not a matter of ‘if' but ‘when.'” irs hosts webinars throughout the year to inform tax professionals and taxpayers about various topics , including information security .
+
+for instance , in october 2018 , irs hosted a webinar called “protect your clients , protect yourself: tax security 101.” the webinar covered common security threats , signs of data theft , ways to report taxpayer data theft to irs , and tax preparers' obligations to create a written information security plan consistent with the ftc safeguards rule .
+
+stakeholder liaison has participated in over 1,000 virtual and in - person events since june 2015 where data security was a primary topic or featured message , according to stakeholder liaison officials .
+
+further , the officials reported that there were over 165,000 attendees at these events .
+
+irs uses social media outlets such as youtube and twitter to provide information to tax professionals .
+
+for example , in july and october 2017 , irs released two youtube videos about information security for tax professionals titled “why tax professionals need a security plan” and “what to do after a tax professional data compromise.” similarly , irs's tax professional twitter account , @irstaxpros , releases information about information security ( see figure 4 ) .
+
+though irs has various ways to disseminate information to tax professionals , it faces a challenge reaching paid preparers who are not affiliated with larger industry groups or who do not visit the irs.gov website , according to both irs officials and industry group officials .
+
+according to return preparer office officials , many paid preparers are not linked to standard tax communication channels , such as direct communications from irs through news releases or email alerts .
+
+irs and industry group officials told us one barrier to reaching these paid preparers is preparers' belief that their businesses are too small to be a target for fraudsters .
+
+irs officials recognize the challenges and said that they continue to address them by speaking with tax professionals about how to increase paid preparers' awareness of information security risks , such as by making materials easy for preparers to read .
+
+irs's monitoring program is primarily focused on eros' adherence with multiple aspects of the authorized e - file provider program , such as requirements for earned income tax credit due diligence , advertising , and electronic signatures .
+
+the monitoring program also calls for monitoring of physical information security , which is not required as part of the authorized e - file provider program .
+
+the internal revenue manual ( irm ) details mechanisms and practices for monitoring authorized e - file providers , including eros and online providers .
+
+as part of this monitoring , small business / self - employed ( sb / se ) conducts field visits , the number of which more than doubled in the past few years , from almost 300 in 2015 to about 650 in 2018 .
+
+sb / se revenue agents visit providers to monitor their operations and to advise providers of any program violations .
+
+irs uses monitoring visits to investigate allegations , complaints , and warnings against authorized e - file providers , as well as to determine general compliance with program requirements .
+
+while any provider type could undergo a monitoring visit , irs officials informed us that they primarily conduct field monitoring visits for eros , which are selected using risk - based criteria .
+
+according to these officials , sb / se coordinates with other irs offices to provide field monitoring on an as - needed referral basis for other types of authorized e - file providers .
+
+irs officials reported that they were unable to confirm the specific number of recent referral monitoring visits but said there were likely fewer than five referrals in the past couple of years .
+
+however , the irm section detailing the monitoring visits provides little direction for monitoring of information security standards from irs publication 1345 .
+
+the irm lists monitoring techniques for security , but they focus largely on physical security rather than cybersecurity controls for the electronic aspects of information security .
+
+for example , the irm suggests that agents ask about access to physical files or office keys rather than about how providers send emails containing taxpayer information .
+
+according to our fraud risk framework , agencies should use a risk - based approach to evaluate outcomes and adapt activities to improve fraud risk management .
+
+as fraudsters increasingly target paid preparers and tax software providers through cybersecurity attacks , risk - based monitoring and evaluation of cybersecurity controls could help irs identify fraud risks and potential control deficiencies among third - party providers .
+
+irs officials said that the sb / se revenue agents who conduct monitoring visits do not have the technical expertise to effectively monitor information security or cybersecurity controls .
+
+for example , an irs official stated that the irm monitoring techniques ask about physical security instead of cybersecurity because revenue agents can verify whether filing cabinets are locked or whether computer passwords are visible , but they cannot verify cybersecurity controls , such as whether a provider's information security policies are consistent with government and industry guidelines .
+
+further , an sb / se official said that , while sb / se is responsible for monitoring authorized e - file providers , cybersecurity is not part of sb / se's role .
+
+however , we believe there are opportunities for revenue agents to ask basic cybersecurity questions and , at a minimum , use monitoring visits to help promote awareness of leading practices designed to help protect taxpayer information .
+
+for example , revenue agents could ask providers if they have secured their office's wireless capabilities , use encryption for sensitive business information , have a designated official in case of a security incident , or know their assigned stakeholder liaison , among other things .
+
+additionally , opportunities exist to leverage resources across irs to monitor cybersecurity controls .
+
+for instance , cybersecurity has technical expertise that sb / se could leverage to help monitor these requirements , according to a cybersecurity official .
+
+without effective monitoring of information security standards or cybersecurity controls , irs has limited assurance that eros' systems are adequately protecting taxpayers' information .
+
+if these third parties do not adequately protect that information , taxpayers will face increased risk of both tax - related and non - tax - related identity theft .
+
+improved monitoring could help irs ensure that it is more effectively detecting and responding to changing fraud risks among providers .
+
+additionally , updating documentation of monitoring activities , as needed , such as the irm and internal guidance , along with staff training , would provide irs with better assurance that the greatest risk areas are addressed appropriately .
+
+irs conducts limited monitoring of the online provider subset of tax software providers enrolled in the authorized e - file provider program .
+
+however , these monitoring efforts are not part of the systematic authorized e - file provider monitoring program for eros described above , nor are they documented in the irm or relevant job aids .
+
+according to epss officials , irs does not currently monitor all of the standards for online providers .
+
+irs staff can remotely monitor three of the six security , privacy , and business standards for online providers through electronic means , according to epss officials ( see table 3 ) .
+
+epss officials stated that the other three standards cannot be monitored remotely ( see appendix ii for the full text of the six security , privacy , and business standards ) .
+
+for two of the three standards that cannot be monitored remotely , epss officials said it would be feasible for online providers to send the results of vulnerability scans ( standard 2 in table 3 ) and privacy seal vendor certifications ( standard 3 in table 3 ) to irs for monitoring purposes .
+
+however , according to these officials , epss does not have dedicated staff who could review these results .
+
+similarly , sb / se , which conducts authorized e - file provider monitoring , does not have the technical expertise to review these results , as previously discussed .
+
+in addition , irs cannot monitor the requirement to report security incidents , according to officials , because there is no way for the agency to know whether security incidents have occurred but were not reported .
+
+however , every fiscal year , irs asks online providers to self - certify that they are meeting all six of the security , privacy , and business standards in irs publication 1345 , according to an epss official .
+
+to self - certify , providers answer “yes” or “no” questions about whether they have complied with each standard .
+
+according to this official , companies generally indicate that they are meeting all of the standards .
+
+in addition to inconsistent monitoring of online provider requirements , irs has not recently assessed the information security risks among all third - party provider types .
+
+irs initially implemented the authorized e - file provider monitoring program described above only for eros because they presented the greatest risk for fraud , according to an epss official .
+
+however , irs's monitoring practices and the associated irm section have not been updated since 2011 , and still reflect irs's initial assumption that eros present the greatest risk for fraud among the different provider types .
+
+additionally , while irs assessed the security and privacy risks of tax software providers , the assessment did not compare these risks to those presented by eros .
+
+in 2009 , we recommended that irs assess the extent to which the reliance on tax software creates significant risks to tax administration , including the security and privacy of taxpayer information .
+
+irs agreed with our recommendation and in 2011 received the results of a third - party risk assessment to determine , in part , the security and privacy risks presented by large and small software providers .
+
+the assessment found that security presented the biggest overall risk among the areas reviewed — security of information , privacy of information , accuracy of returns , and reliability of systems — due , in part , to security being the least adequately controlled risk area by small software providers .
+
+this assessment was not designed to review the risks for other authorized e - file provider types , such as eros .
+
+our fraud risk framework requires agencies to plan regular fraud risk assessments and suggests tailoring those assessments to the program .
+
+effective managers plan to conduct such assessments at regular intervals and when there are changes to the program or operating environment , such as changes in technology that could result in increased security incidents .
+
+as part of a risk assessment , managers may examine the suitability of existing fraud controls .
+
+such examination can help managers identify areas where existing control activities are not suitably designed or implemented to reduce risks to a tolerable level .
+
+by conducting a risk assessment for the authorized e - file provider program and identifying the provider types that present the greatest risks for fraud , irs can better determine whether changes to the monitoring program are needed for each provider type .
+
+if the agency determines that changes are needed , updating documentation of monitoring activities — such as the irm , internal guidance , and job aids , along with staff training — would provide irs with better assurance that the greatest risk areas are addressed appropriately .
+
+multiple offices within irs use information on security incidents to track trends in fraud schemes , which helps them to protect taxpayer information and to prevent the filing of fraudulent tax returns .
+
+for example , when stakeholder liaison receives reports about a security incident involving a paid preparer , staff collect additional information about the incident , including the cause of the incident and whether taxpayer information was compromised .
+
+stakeholder liaison can analyze the data to show geographical information , like the states most affected by breaches ; the paid preparer types most affected by incidents ; and the method of attack of incidents ; among other things , according to a stakeholder liaison official .
+
+this official said that stakeholder liaison also uses this information to produce daily management reports to keep leadership apprised of the number of incidents reported daily , as well as the cumulative number of affected preparers and taxpayers during the year and a comparison to data from the previous year .
+
+return integrity and compliance services ( rics ) officials use a risk - based method to determine the necessary mitigation and treatment plans following a security incident .
+
+for example , rics officials might assess a security incident as high risk , meaning that a taxpayer's personal , financial , and tax data were compromised .
+
+for such an incident , rics officials place the affected taxpayer identification numbers ( tin ) on dynamic selection lists — lists of tins affected in breaches and at risk of tax - related identity theft — to monitor future tax return filings for potential fraud .
+
+on the other hand , for low - risk incidents — incidents where fraudsters may have accessed information like street address or date of birth but not social security numbers — rics may compare victims' current tax returns with prior returns to look for differences that could indicate possible identity theft .
+
+according to rics officials , the office also runs individuals' information through fraud filters to help identify returns with a high likelihood of identity theft .
+
+criminal investigation's ( ci ) cybercrimes unit shares security incident information with the field offices where the incident occurred , according to ci officials .
+
+area coordinators evaluate the incident information and determine whether a criminal case should be developed .
+
+if so , coordinators develop a fraud scheme package and provide it to the agent assigned to the case to help identify other potential incidents resulting from similar schemes , according to ci officials .
+
+irs has primarily tracked information on security incidents in its rics incident management database since december 2016 , according to rics officials .
+
+security incidents can be categorized in a number of ways , such as when hackers infiltrate third - party providers' systems .
+
+between 2017 and 2018 , there was an overall decrease in the number of reported high - risk security incidents that led to confirmed identity theft victims across all types of security incidents .
+
+however , the number of reported security incidents from third - party providers increased about 50 percent during this same period , as shown in table 4 .
+
+in turn , the number of taxpayers affected by the security incidents at third - party providers also increased .
+
+however , irs does not have comprehensive information about the incidents because , in part , its reporting requirements do not apply to all third - party providers .
+
+for example , the authorized e - file provider program requires only online providers to report security incidents to irs as soon as possible but no later than the next business day after confirmation of the incident .
+
+the information that online providers are to report includes details about the security incident and the affected taxpayers' accounts .
+
+if paid preparers or eros experience a security incident at their place of business , they are not required to report any information to irs about the incident ; instead , irs encourages paid preparers to share security incident information with irs through stakeholder liaison .
+
+additionally , irs cannot track incidents that third - party providers do not report , according to irs officials .
+
+irs officials and industry representatives stated that some third - party providers may not report security incidents for fear of punishment from irs ( eg , penalties , sanctions , or removal from the authorized e - file provider program ) or negative impacts to their business reputation .
+
+irs has other voluntary reporting mechanisms for tax software providers or other members of the tax preparation industry .
+
+for example , members of the security summit can use a voluntary reporting mechanism to submit information to rics .
+
+some members of the security summit can use an additional voluntary reporting system in the isac online platform , which sends alerts about security incidents to others in the platform .
+
+irs also recently revised some of its requirements that could affect paid preparers' reporting of security incidents while using other irs services .
+
+for example , in october 2018 , the agency updated its user agreement for e - services , a suite of web - based tools that allow paid preparers , among others , to complete transactions online with irs .
+
+this update included a requirement to report any unauthorized use of the e - services account or any other breach of security as soon as users become aware of the incident .
+
+according to internal control standards , agencies should use quality information , both internal and external , to achieve objectives .
+
+for example , agencies should obtain data on a timely basis so that they can be used for effective monitoring .
+
+additionally , recommended controls in nist special publication 800-53 require reporting of suspected security incidents by federal agencies and their subordinate organizations .
+
+though irs conducts a yearly review of requirements for authorized e - file providers to find needed updates , the incident reporting requirement has not been identified as needing updates since 2010 , according to a senior wage and investment official .
+
+this is another instance where centralized leadership could have identified a need to update the incident reporting requirements .
+
+according to an epss official , irs originally applied this incident reporting requirement to only online providers because these providers stored a large amount of data and carried the highest risk of data loss .
+
+similarly , irs officials said the reporting requirement for online providers does not apply to providers of tax software used by paid preparers because those software providers do not collect or store taxpayer information on their systems .
+
+instead , the taxpayer information is stored on a paid preparer's hard drive .
+
+if a security incident occurred at the business of a paid preparer who uses tax software , then the preparer , not the tax software provider , would report that incident to irs , according to irs officials .
+
+while voluntary reporting mechanisms and updating of user agreements for irs's website are important steps , without a clear and standardized reporting requirement for all types of providers , irs will not have assurance that third - party providers consistently report their security incidents in a timely manner .
+
+irs needs this information to better understand the size and scope of information security incidents , which it uses to protect compromised individual taxpayer accounts and prevent identity theft refund fraud .
+
+security incident information can be reported to irs through various channels from the public to irs offices , and the data are ultimately stored in the rics incident management database regardless of the office that initially received the information .
+
+figure 5 depicts the flow of information from the public to irs offices , as well as the flow of information between the offices and to irs databases .
+
+while rics has documented its information intake , tracking , and storage processes in the rics incident management plan , irs does not have a comprehensive document that describes these processes across the different irs offices .
+
+for example , incident information submitted to epss and stakeholder liaison eventually moves to rics to be tracked in the incident management database .
+
+additionally , rics officials told us that they track each of these reported incidents separately and that the main repository should not contain duplicate reports of the same incidents , though multiple databases may contain information about the same incident .
+
+rics officials added that , before a new incident is added to the incident management database , staff conduct a query in the database to ensure that the incident was not already added .
+
+however , irs has not documented how the security incident data processes should flow , relying instead on informal communication efforts of the staff and the assumption that staff know where the data belong and will provide that information to the appropriate offices .
+
+internal control standards state that management should develop and maintain documentation of its internal control system and implement control activities through policies .
+
+the standards also state that documentation of responsibilities through policies and periodic review of activities can contribute to the effectiveness of implementation .
+
+this limited nature of the documentation may be due to the newness of some of these data processes .
+
+for example , a stakeholder liaison official told us that the data intake process for stakeholder liaison and entry into the return preparers database started at the beginning of 2018 .
+
+prior to that , a stakeholder liaison manager stored information about security incidents in an individual email account because there was no mechanism for storing the data in a systematic manner .
+
+further , a senior wage and investment division official stated that the processes to intake , store , and share the data among the different irs offices continue to evolve , and that documents describing these practices may quickly become obsolete .
+
+while these processes may still be evolving , documenting them can help irs combat identity theft by helping to ensure that security incidents are properly recorded and monitored in the irs systems .
+
+documenting the processes may also allow for more complete data , as the data would follow a specific routing and review process .
+
+this would reduce the risk of the data not following the various channels they go through now .
+
+such documentation can also help irs retain organizational knowledge , mitigate the risk of having that knowledge limited to a few personnel , and ensure that the agency implements these processes effectively in the future .
+
+tens of millions of taxpayers use third - party providers , such as paid preparers or tax software providers , to comply with their federal income tax obligations .
+
+it is critical that taxpayers' information , which includes personally identifiable and other sensitive information , be kept secure to maintain public confidence and avoid data breaches that expose that information for use by fraudsters .
+
+identity theft is a constantly evolving crime , but irs's information security standards for third - party providers' systems have not kept pace with the changing environment .
+
+one reason for this is that irs lacks the explicit authority to require minimum standards for the systems of paid preparers and authorized e - file providers .
+
+without this authority , congress and irs have limited assurance that the processes used to collect , store , and submit taxpayers' returns adequately protect taxpayers' information against electronic data breaches and potential tax refund fraud .
+
+modifying its authorized e - file provider program requirements to explicitly state the elements of an information security program as required under the ftc safeguards rule would help irs ensure that authorized e - file providers are aware of , and comply with , the rule .
+
+doing so could also help these providers better protect taxpayers' information .
+
+additionally , irs is missing an opportunity to capitalize on the achievements of security summit members to help ensure that tax software providers have an equivalent level of standards in place to adequately protect taxpayer information .
+
+the lack of centralized leadership at irs with responsibility for coordinating all aspects of protecting taxpayer information held by third - party providers has enabled missed opportunities .
+
+such designated leadership could help ensure greater collaboration between the various irs offices that have roles to play in this area .
+
+this leadership could have also ensured that security standards for online providers in the authorized e - file provider program would have been updated .
+
+instead , irs introduced these standards in 2010 and has not subsequently updated them .
+
+incorporating cybersecurity into its monitoring visits for eros would provide irs with greater assurance that eros' systems are adequately protecting taxpayers' information from an increased risk of both tax - related and non - tax - related identity theft .
+
+further , ensuring that irs is using a risk - based approach to review all types of authorized e - file providers would provide assurance that the greatest risk areas of fraud are addressed appropriately .
+
+finally , irs's efforts to protect taxpayer information at third - party providers would also be strengthened by greater consistency in requirements across provider types for reporting security incidents .
+
+greater consistency would help to ensure irs is obtaining timely and reliable information from third - party providers so irs can better understand the size and scope of security incidents — data it uses to protect compromised individual taxpayer accounts and prevent identity theft refund fraud .
+
+documenting the intake , storage , and sharing of the security incident data would also help irs ensure that the security incidents are properly recorded and monitored .
+
+congress should consider providing irs with explicit authority to establish security requirements for the information systems of paid preparers and authorized e - file providers .
+
+ ( matter for consideration 1 ) .
+
+we are making the following eight recommendations to irs .
+
+the commissioner of internal revenue should develop a governance structure or other form of centralized leadership , such as a steering committee , to coordinate all aspects of irs's efforts to protect taxpayer information while at third - party providers .
+
+ ( recommendation 1 ) the commissioner of internal revenue should modify the authorized e - file provider program's requirements to explicitly state the required elements of an information security program as provided by the ftc safeguards rule .
+
+ ( recommendation 2 ) the commissioner of internal revenue should require that all tax software providers that participate in the authorized e - file provider program follow the subset of nist special publication 800-53 controls that were agreed upon by the security summit participants .
+
+ ( recommendation 3 ) the commissioner of internal revenue should regularly review and update the security requirements that apply to tax software providers and other authorized e - file providers .
+
+ ( recommendation 4 ) the commissioner of internal revenue should update irs's monitoring programs for electronic return originators to include techniques to monitor basic information security and cybersecurity issues .
+
+further , irs should make the appropriate revisions to internal guidance , job aids , and staff training , as necessary .
+
+ ( recommendation 5 ) the commissioner of internal revenue should conduct a risk assessment to determine whether different monitoring approaches are appropriate for all of the provider types in the irs's authorized e - file provider program .
+
+if changes are needed , irs should make appropriate revisions to the monitoring program , internal guidance , job aids , and staff training , as necessary .
+
+ ( recommendation 6 ) the commissioner of internal revenue should standardize the incident reporting requirements for all types authorized e - file providers .
+
+ ( recommendation 7 ) the commissioner of internal revenue should document intake , storage , and sharing of the security incident data across irs offices .
+
+ ( recommendation 8 ) .
+
+we provided a draft of this report to the commissioner of internal revenue for review and comment .
+
+in its written comments , which are summarized below and reproduced in appendix iii , irs agreed with three of the recommendations and disagreed with five of the recommendations .
+
+irs also provided technical comments , which we incorporated as appropriate .
+
+irs agreed with our recommendations to regularly review and update the security requirements that apply to the tax software provider and other authorized e - file providers ; standardize the incident reporting requirements for all types of authorized e - file providers ; and document intake , storage , and sharing of the security incident data across irs offices .
+
+irs did not provide additional detail on the actions it plans to take to address these recommendations .
+
+irs disagreed with five of our recommendations , generally citing for all of them the lack of clear and explicit authority it would need to establish security requirements for the information systems of paid preparers and others who electronically file returns .
+
+for our recommendation to develop a governance structure or other form of centralized leadership , irs stated it would require statutory authority that clearly communicates its authority to establish security requirements for the information systems of paid preparers and others who electronically file tax returns .
+
+further , irs stated that without such authority , implementing the recommendation would be an inefficient , ineffective , and costly use of resources .
+
+we disagree that convening a governance structure or other centralized form of leadership would require additional statutory authority or be inefficient , ineffective , and costly .
+
+as discussed in the report , irs has seven different offices across the agency working on information security - related activities that could benefit from centralized oversight and coordination , such as updating existing standards , monitoring authorized e - file provider program compliance , and tracking security incident reports .
+
+we continue to believe that establishing a governance structure would help provide this level of leadership , coordination , and collaboration to irs's current efforts and therefore help alleviate the missed opportunities that we identified in the report , such as updating outdated security standards .
+
+further , irs could choose a leadership mechanism that it determines to be low cost and most efficient to gain a higher degree of coordination .
+
+without this structure , it is unclear how irs will adapt to changing security threats in the future and ensure those threats are mitigated .
+
+in our draft report , we made a recommendation that irs modify the authorized e - file provider program to be consistent with the ftc safeguards rule .
+
+in its response , irs stated that it did not have explicit authority to establish policy consistent with the ftc safeguards rule or enforce compliance with it .
+
+however , irs clearly states in its revenue procedure 2007-40 that violations of the provisions of the gramm - leach - bliley act and the implementing rules and regulations promulgated by ftc are considered violations of the revenue procedure and may subject an authorized e - file provider to penalties or sanctions .
+
+therefore , we believe irs has already incorporated compliance with the ftc safeguards rule as part of its authorized e - file provider program .
+
+the intent of this recommendation is not to suggest that irs develop new policies related to the elements of the safeguards rule .
+
+instead , we believe irs has the opportunity to explicitly state in its requirements for authorized e - file providers the elements of an information security program , as listed in the safeguards rule .
+
+this action will help third party providers become aware of their specific legal obligations to protect taxpayer data under the gramm - leach - bliley act .
+
+as such , we clarified text in the body of the report and the text of the recommendation to better reflect our intent .
+
+for our recommendation to require all tax software providers that participate in the authorized e - file provider program to follow the subset of nist special publication 800-53 controls that were agreed upon by the security summit participants , irs stated that it does not have the statutory authority for such a requirement .
+
+however , under its existing authority , irs has already established some information security requirements for a portion of tax software providers — those that are online providers .
+
+irs has the opportunity to further establish standards for all tax software providers by incorporating the subset of nist controls into its authorized e - file provider program , which would capitalize on the work it has completed with the security summit members .
+
+we continue to believe that without setting and requiring the same security standards for all tax software providers , irs does not have assurance that these providers have an equivalent level of standards in place to adequately protect taxpayer information .
+
+for our recommendation that irs update its monitoring programs for electronic return originators , irs stated it does not have the statutory authority to establish policy on information security and cybersecurity issues , nor to enforce compliance if noncompliance is observed .
+
+however , as we reported , irs already monitors physical aspects of information security , which goes beyond existing authorized e - file provider program requirements .
+
+since most individuals now file tax returns electronically , having checks for physical security without comparable checks for cybersecurity does not address current risks , as cyber criminals and fraudsters are increasingly attacking third - party providers , as irs has noted .
+
+we believe that incorporating some basic cybersecurity monitoring into the visits would provide irs the opportunity to help inform the most vulnerable third - party providers of additional guidance and resources .
+
+for our recommendation to conduct a risk assessment to determine whether different monitoring approaches are appropriate for all of the provider types in the authorized e - file provider program , irs stated that changes to the monitoring program would not have value to the overall program performance absent statutory authority .
+
+we disagree with this conclusion .
+
+as discussed in the report , irs does not currently systematically monitor the existing security requirements for online providers , nor does it conduct information security or cybersecurity monitoring for all types of authorized e - file providers .
+
+we believe that irs could conduct a risk assessment of its current monitoring program within existing statutory authority and make necessary changes that would provide better assurance that all types of providers are receiving some level of oversight and that irs is addressing the greatest risk areas appropriately .
+
+we are sending copies to the chairmen and ranking members of other senate and house committees and subcommittees that have appropriation , authorization , and oversight responsibilities for irs .
+
+we are also sending copies of the report to the commissioner of internal revenue and other interested parties .
+
+in addition , this report will be available at no charge on the gao website at http: / / www.gao.gov .
+
+if you or your staff have any questions about this report , please contact me at ( 202 ) 512-9110 or lucasjudyj@gao.gov .
+
+contact points for our offices of congressional relations and public affairs are on the last page of this report .
+
+gao staff who made key contributions to this report are listed in appendix iv .
+
+our objectives were to ( 1 ) assess what is known about the taxpayer information security requirements for the systems used by third - party providers , ( 2 ) describe internal revenue service's ( irs ) outreach efforts to third - party providers on the requirements , ( 3 ) assess irs's monitoring processes for ensuring third - party providers' compliance with the requirements , and ( 4 ) assess irs's requirements for third - party provider security incident reporting and how irs uses that information .
+
+to assess what is known about the taxpayer information security requirements for the systems used by third - party providers , such as paid preparers and tax software providers , we reviewed applicable laws and regulations such as the gramm - leach - bliley act and relevant portions of the internal revenue code , including 26 u.s.c .
+
+§ 6011 .
+
+this section of the internal revenue code prescribes the filing of income tax returns , as well as the electronic filing requirements for returns prepared by paid preparers .
+
+we reviewed 26 u.s.c .
+
+§7803 , which provides that the irs commissioner has the authority to administer and manage the execution and application of tax laws , while balancing the rights of , among other things , confidentiality and privacy of the taxpayer .
+
+we also reviewed the federal trade commission's ( ftc ) safeguards rule , which requires financial institutions , including tax return preparers , affiliates , and service providers , to ensure the security and confidentiality of customer records and information .
+
+this rule applies to those who are significantly engaged in providing financial products or services that include preparation and filing of tax returns .
+
+we reviewed irs revenue procedure 2007-40 , which informs authorized e - file providers of their obligations to irs , taxpayers , and other participants in the authorized e - file provider program and outlines the rules governing filing electronically with irs .
+
+we reviewed irs publications describing the obligations in irs's revenue procedure 2007-40 and the requirements of the authorized e - file provider program , including irs publication 3112 , irs e - file application and participation , and irs publication 1345 , handbook for authorized irs e - file providers of individual income tax returns .
+
+we assessed these documents to determine if the requirements for third - party providers were incorporating the laws and following leading practices as outlined by standards for internal control in the federal government ( internal control standards ) and a framework for managing fraud risk in federal programs ( fraud risk framework ) .
+
+the fraud reduction and data analytics act of 2015 , and office of management and budget guidance implementing its provisions , affirm that agencies should adhere to the leading practices identified in our fraud risk framework .
+
+we also compared the standards published in publication 1345 for online providers to the national institute of standards and technology ( nist ) special publication 800-52: guidelines for the selection , configuration , and use of transport layer security ( tls ) implementations to determine if the standards were following leading practices .
+
+we reviewed the subset of nist special publication 800-53: security and privacy controls for federal information systems and organizations controls that the security summit members agreed to voluntarily implement .
+
+we also reviewed other irs publications that provide third - party providers with descriptions of leading practices in keeping taxpayer information safe , including irs publication 4557 , safeguarding taxpayer data: a guide for your business ; irs publication 4600 , tips for safeguarding taxpayer data ; irs publication 5293 , protect your clients ; protect yourself: data security resource guide for tax professionals ; and irs publication 5294 , protect your clients ; protect yourself: data security tips for tax professionals .
+
+in assessing these documents , we identified the extent of consistency among publications .
+
+we interviewed irs officials who were responsible for various aspects of irs's security requirements for paid preparers and tax software providers .
+
+we conducted semistructured interviews with the following 10 industry groups and related organizations that represented a cross section of the tax preparation industry to determine their knowledge about existing information security requirements .
+
+american coalition for taxpayer rights american institute of certified public accountants council for electronic revenue communication advancement electronic tax administration advisory committee federation of tax administrators national association of tax professionals national society of tax professionals we reviewed irs organization documents , including organizational charts and associated internal revenue manual ( irm ) provisions for the offices that have responsibilities for securing taxpayer information .
+
+we reviewed the stated missions of the offices of electronic products and services support ( epss ) ; small business / self - employed ; return integrity and compliance services ( rics ) ; criminal investigation ( ci ) ; return preparer office ; office of professional responsibility ; cybersecurity ; and stakeholder liaison .
+
+we also interviewed officials from these offices to determine how they coordinated the responsibilities for overseeing the security of taxpayer data among the offices .
+
+we compared irs activities to the internal control standards that identify controls that help an entity adapt to shifting environments , evolving demands , changing risks , and new priorities .
+
+to describe the outreach efforts irs takes for third - party providers , we reviewed irs outreach documents such as publications , news releases , social media posts , emails , webinars , and online education campaigns .
+
+we interviewed irs officials and conducted semistructured interviews with 10 industry groups and related organizations to determine irs's communication efforts related to security standard enforcement and identify potential challenges that irs faces in its outreach .
+
+to assess irs's monitoring processes for ensuring third - party providers' compliance with information security requirements , we reviewed the agency's monitoring procedures for the authorized e - file provider program per rev .
+
+proc .
+
+2007- 40 ; irs publication 3112 , irs e - file application and participation ; and irs publication 1345 , handbook for authorized irs e - file providers of individual income tax returns .
+
+we reviewed the irm section related to monitoring the irs e - file program , monitoring checklists , and related job aides to determine the extent to which monitoring practices address security requirements in irs publication 1345 .
+
+we assessed irs's monitoring efforts against our fraud risk framework's principles to combat fraud in a strategic , risk - based manner .
+
+we also interviewed the irs officials responsible for overseeing the monitoring program .
+
+to assess irs's requirements for third - party provider reporting of security incidents and how irs uses that information , we reviewed irs guidance about security incident reporting requirements .
+
+we analyzed irs data on the number and type of security incidents tracked in the rics incident management database from 2017 and 2018 , the only data available following its creation in december 2016 .
+
+we interviewed rics officials about the quality of data in this database and determined that the data were sufficiently reliable to describe a minimum count of security incidents .
+
+specifically , we asked about the responsibilities of officials collecting and using the data , the procedures in place to capture all reported data , and controls for ensuring the accuracy of the data and resolving any errors , among other things .
+
+we reviewed irs guidance and program user agreements to determine security incident reporting requirements for third - party providers .
+
+we reviewed irs process documentation and interviewed irs officials from epss , rics , ci , return preparer office , cybersecurity , and stakeholder liaison to determine the collection , routing , and storage processes for security incident information .
+
+we assessed irs's processes and documentation practices against leading practices outlined in nist special publication 800-53 and internal control standards .
+
+we interviewed irs officials to identify ways that irs uses this security incident information .
+
+we conducted semistructured interviews with the 10 industry groups and related organizations listed above to determine their knowledge about existing security incident reporting requirements .
+
+we conducted this performance audit from november 2017 to may 2019 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+the internal revenue service ( irs ) mandated that online providers adhere to six privacy , security , and business standards as part of the authorized e - file provider program , as listed in table 6 .
+
+these standards have not been updated since they were developed in 2010 .
+
+in addition to the contact named above , jeff arkin ( assistant director ) , robyn trotter ( analyst - in - charge ) , christina bixby , alyssia borsella , mark canter , jehan chase , larry crosland , ann czapiewski , james andrew howard , michele fejfar , and robert gebhart made key contributions to this report .
+

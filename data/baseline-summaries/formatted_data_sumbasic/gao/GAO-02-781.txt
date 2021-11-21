@@ -1,0 +1,792 @@
+government and private - sector entities rely on satellites for services such as communication , navigation , remote sensing , imaging , and weather and meteorological support .
+
+although the government owns satellites , it also relies for certain services on satellites owned and operated by commercial satellite service providers .
+
+for example , the department of defense ( dod ) typically relies on commercial satellites to fulfill its communications and information transmission requirements for non – mission - critical data and to augment its military satellite capabilities .
+
+the importance of commercial satellites for dod is evident during times of conflict: according to a dod study , commercial communications satellites were used in 45 percent of all communications between the united states and the persian gulf region during desert shield / desert storm .
+
+further , the federal government's reliance on commercial satellites is expected to grow .
+
+the commercial satellite industry is also a critical component of the worldwide and national economy: the industry generated $85 billion in revenue in 2000 .
+
+accordingly , disruption of satellite services , whether intentional or not , can have a major adverse economic impact .
+
+one indication of the importance of satellite services was provided in 1998 by the failure of the galaxy iv satellite , which disrupted 80 to 90 percent of 45 million pagers across the united states for 2 to 4 days and blocked credit card authorization at point - of - sale terminals ( such as gasoline pumps ) .
+
+satellites are vulnerable to various threats .
+
+protecting satellite systems against these threats requires attention to ( 1 ) the satellite ; ( 2 ) the satellite control ground stations , which perform tracking and control functions to ensure that satellites remain in the proper orbits and which monitor satellite performance ; ( 3 ) the communications ground stations , which process the data being sent to and from satellites ; and ( 4 ) communications links between satellites and ground stations — both those that transmit the tracking and control information and those that transmit the data .
+
+security threats to any part of the system could put government and commercial functions at significant risk .
+
+accordingly , at your request , we reviewed ( 1 ) what security techniques are available to protect satellite systems from unauthorized use , disruption , or damage ; ( 2 ) how federal agencies reduce the risk associated with their use of commercial satellite systems ; and ( 3 ) what federal critical infrastructure protection ( cip ) efforts are being undertaken to address satellite system security through improved government and private - sector cooperation .
+
+to accomplish these objectives , we reviewed technical documents , policy , and directives and interviewed pertinent officials from federal agencies and the private sector involved in developing , operating , maintaining , and protecting satellite systems .
+
+appendix i provides further details on our objectives , scope , and methodology .
+
+satellites provide many significant services , including communication , navigation , remote sensing , imaging , and weather and meteorological support .
+
+satellites support direct radio communication and provide television broadcast and cable relay services , as well as home reception .
+
+satellite services also support applications such as mobile and cellular communication , telemedicine , cargo tracking , point - of - sale transactions , and internet access .
+
+satellites also provide redundancy and backup capabilities to ground - based communications , as was demonstrated after the events of september 11 , 2001 , when satellites provided critical communications while ground - based lines were unavailable .
+
+the commercial satellite industry includes manufacturers , the launch industry , service providers , and ground equipment manufacturers .
+
+manufacturers design and build satellites , supporting systems , and ground stations .
+
+the launch industry uses launch vehicles , powered by rocket engines , to place satellites in orbit .
+
+once commercial satellites are in orbit , they are operated by service providers , who lease available services .
+
+commercial satellite service clients include telecommunication companies , television networks , financial institutions , major retailers , internet service providers , and governments .
+
+some companies resell leased satellite services to their clients .
+
+for example , major telecommunication companies sometimes include satellite services in their product line .
+
+ground equipment manufacturers build and sell the items needed to use satellite services , such as ground station hardware ( antennas ) , data terminals , mobile terminals ( truck - mounted units ) , and consumer electronics ( satellite phones ) .
+
+for the year 2000 , the commercial satellite industry generated revenues of $85.1 billion: $17.2 billion for satellite manufacturing , $8.5 billion for the launch industry , $41.7 billion for satellite services , and $17.7 billion for ground equipment manufacturing , according to an industry association .
+
+federal agencies also own and operate satellites .
+
+for example , the u.s. military and intelligence communities have satellites to provide capabilities for reconnaissance , surveillance , early warning of missile launches , weather forecasts , navigation , and communications .
+
+in addition , some federal civilian agencies own satellites that are used for communications , scientific studies , and weather forecasting .
+
+further , federal agencies use commercial satellites for services such as communications , data transmission , and remote sensing .
+
+for example , dod typically relies on commercial satellites to fulfill its communications and information transmission requirements for non – mission - critical data and to augment its military satellite capabilities .
+
+the national defense industrial association ( ndia ) reported in december 1998 that the government's overall use of commercial satellites for communications and remote sensing is expected to grow significantly because of increased communications requirements .
+
+according to a dod official , the department's reliance on commercial satellites is expected to grow through 2020 .
+
+after 2020 , dod officials anticipate that commercial satellites will provide only surge capacity , as additional military satellites are expected to be operational .
+
+in addition to the u.s. military , several civilian government agencies also rely on commercial satellite systems .
+
+table 1 provides brief descriptions of the use of commercial satellites by four civilian agencies included in our review .
+
+collectively , the federal government does not dominate the commercial satellite market .
+
+according to commercial satellite industry officials , the revenue provided to the satellite industry by the federal government represents about 10 percent of the commercial satellite market .
+
+however , the importance of commercial satellites for government operations is evident during times of conflict .
+
+for example , according to a dod study , commercial communications satellites were used in 45 percent of all communications between the united states and the persian gulf region during desert shield / desert storm .
+
+further , during operations in somalia from december 1992 through march 1994 , u.s. military and commercial satellite coverage was not available , so russian commercial satellites were used .
+
+dod currently reports approximately 50 percent reliance on commercial satellites for wideband services , which are leased through the defense information systems agency's commercial satellite communications branch .
+
+the commercial satellite industry is a global industry that includes many foreign - owned corporations as well as partnerships between u.s. and foreign corporations .
+
+as a result , the u.s. government depends on foreign and international companies .
+
+for example , some commercial space systems of foreign origin are used by the u.s. military for imagery and communications support .
+
+ndia reported that foreign ownership of satellites is expected to grow and predicted that by 2010 , 80 percent of commercial communication satellite services could be provided by foreign - owned companies .
+
+this globalization of the satellite industry could affect the availability of commercial satellite systems to u.s. government or commercial entities through frequency allocations , tariffs , politics , and international law .
+
+a satellite system consists of ground stations , tracking and control links ( commonly referred to as the tracking , telemetry , and control ( tt&c ) links ) and data links , and satellites .
+
+figure 1 illustrates the basic satellite system components .
+
+as the figure shows , two kinds of ground stations are associated with satellites: control stations and communications stations .
+
+control stations perform tracking and control functions to ensure that satellites remain in the proper orbits ( commonly referred to by the industry as “station keeping” ) and to monitor their performance .
+
+communications ground stations process imagery , voice , or other data and provide , in many cases , a link to ground - based terrestrial network interconnections .
+
+the links between the two types of ground stations and the satellites are referred to by their function: tt&c and data links .
+
+tt&c links exchange commands and status information between control ground stations and satellites .
+
+data links exchange communications , navigation , and imaging data between communications ground stations and satellites .
+
+as shown in figure 1 , links are also distinguished by the direction of transmission: uplinks go from earth to space , and downlinks from space to earth .
+
+satellites can also communicate with each other ; these links are referred to as cross - links .
+
+the final component of the system is the satellite .
+
+every satellite has a “payload” and a “bus.” the payload contains all the equipment a satellite needs to perform its function , and it differs for every type of satellite .
+
+for example , the payload for a weather satellite includes cameras to take pictures of cloud formations , while the payload for a communications satellite includes transponders to relay data ( for example , television or telephone signals ) .
+
+the bus carries the payload and additional equipment into space and provides electrical power , computers , and propulsion to the entire spacecraft .
+
+a satellite can serve simply as a relay between a source and a destination ( for example , a communications satellite ) , or it can perform processing of data and communicate the data to a communications ground station ( for example , an imaging satellite ) .
+
+satellite systems face unintentional threats to all parts of the system ; such threats can be ground - based , space - based , and interference - oriented .
+
+the probability of these threats occurring and the difficulty of exploiting these vulnerabilities vary .
+
+table 2 displays some of these threats and the vulnerable components .
+
+ground stations are vulnerable to damage or destruction by natural terrestrial threats such as earthquakes , floods , thunderstorms , lightning , dust storms , heavy snows , tropical storms , tornadoes , corrosive sea spray , and salt air .
+
+in addition , they could also be affected by natural conditions and environmental hazards , such as air pollution and adverse temperature environments , as well as power outages .
+
+satellites are physically vulnerable to space - based environmental anomalies resulting from natural conditions and man - made artifacts .
+
+space - based threats include solar and cosmic radiation and related phenomena , solar disturbances , temperature variations , and natural objects ( meteoroids and asteroids ) .
+
+in addition , the growing number of satellites is contributing to the problem of space “junk” ( spacecraft and debris ) .
+
+as of may 2002 , dod identified over 9,000 man - made objects in space , including active satellites .
+
+as additional satellites are developed and deployed , dod officials stated that the threat of collisions caused by the proliferation of satellites and accompanying debris could increase .
+
+links are vulnerable both to natural conditions ( in space and in the atmosphere ) and to congestion .
+
+links can be severely degraded by the effects of solar activity and atmospheric and solar disturbances .
+
+both orbital and spectral congestion are a threat to links ( as well as to satellites ) .
+
+such congestion may restrict the future use of potential orbits and frequencies and cause unintentional interference to satellite services .
+
+according to one commercial service provider , satellite service providers worldwide work together to resolve interference problems , which are common .
+
+in addition , commercial satellite interference is regulated both internationally and nationally .
+
+the international telecommunication union specifies interference resolution policies and procedures , including those for harmful interference .
+
+further , within the united states , the federal communications commission ( fcc ) has the capability to track the location of interference , at a service provider's request .
+
+also , service providers told us that they could locate and identify unintentional or unauthorized users through a technique called triangulation .
+
+once an unauthorized user is located , a commercial service provider can jam that user's signal if the user cannot be persuaded to stop using the satellite .
+
+however , according to industry officials , typically an unauthorized user would be identified , located , and contacted through a combination of industry and government resources before such jamming would be needed .
+
+in addition , satellite systems are vulnerable to many forms of intentional human attacks that are intended to destroy ground stations and satellites or interfere with the tt&c links , data links , and cross - links .
+
+according to dod and the private sector , the probability of these threats occurring and the difficulty of exploiting these vulnerabilities vary .
+
+table 3 shows some of these intentional threats .
+
+all types of ground stations are potentially vulnerable to threats of physical attack and sabotage .
+
+these threats could target all satellite ground components , including launch facilities , command and control facilities , and supporting infrastructures .
+
+space - based threats to satellites are proliferating as a result of the growing availability of technology around the world .
+
+according to dod , potential space - based weapons include interceptors , such as space mines and orbiting space - to - space missiles , and directed - energy weapons .
+
+directed - energy weapons include ground - based , airborne , and space - based weapons that use laser energy to damage or destroy satellite services , and nuclear weapons that generate nuclear radiation and electronic pulses , resulting in direct damage to the orbital electronics by the primary and secondary effects of a detonation .
+
+ground stations , links , and supporting communications networks are all vulnerable to cyber attacks .
+
+potential cyber attacks include denial of service , malicious software , unauthorized monitoring and disclosure of sensitive information ( data interception ) , injection of fake signals or traffic ( “spoofing” ) , and unauthorized modification or deliberate corruption of network information , services , and databases .
+
+for example , malicious software ( such as computer viruses ) can be ( 1 ) implanted into computer systems during development or inserted during operations ; ( 2 ) used to manipulate network protocols , deny data or service , destroy data or software , and corrupt , modify , or compromise data ; and ( 3 ) used to attack processor - controlled transmission equipment , control systems , or the information being passed .
+
+links are particularly susceptible to electronic interference threats capable of disrupting or denying satellite communications .
+
+these threats include spoofing and jamming .
+
+a spoofer emits false , but plausible , signals for deception purposes .
+
+if false commands could be inserted into a satellite's command receiver ( spoofing the receiver ) , they could cause the spacecraft to tumble or otherwise destroy itself .
+
+it is also feasible to insert false information or computer viruses into the terrestrial computer networks associated with a space system , either remotely or through an on - site connection .
+
+such an attack could lead to space system degradation or even complete loss of spacecraft utility .
+
+a jammer emits noise - like signals in an effort to mask or prevent the reception of desired signals and can be used to disrupt uplinks , downlinks , and cross - links .
+
+an uplink jammer attempts to inject noise or some other signal into the targeted satellites' uplink receivers .
+
+in general , an uplink jammer must be roughly as powerful as the emitter associated with the link being jammed .
+
+downlink jamming attempts to inject noise or some other signal directly into earth terminal receivers .
+
+the targets of downlink jammers are ground - based satellite data receivers , ranging from large fixed ground sites to handheld global positioning system ( gps ) user terminals .
+
+since downlink jammers have a range advantage over the space - based emitters , they can often be much less powerful .
+
+downlink jamming is generally easier to accomplish than uplink jamming , since very low - power jammers are often suitable .
+
+since a downlink may be received by multiple earth terminals , it is often more difficult to jam more than a few earth terminals through downlink jamming than through uplink jamming , especially if the receiver terminals are dispersed across a significant geographical area .
+
+a cross - link jammer attempts to inject noise or some other signal between two satellites communicating directly with each other .
+
+because it is considered the most complex and difficult approach to satellite jamming , according to a dod document , cross - link jamming is considered a lower probability threat than uplink and downlink jamming .
+
+satellite services have been disrupted or denied as a result of system vulnerabilities .
+
+below is a list of satellite - related incidents that have been publicly reported in which services were interrupted unintentionally or intentionally because of satellites' vulnerabilities to jamming and equipment failure: in april 1986 , an insider , working alone under the name “captain midnight” at a commercial satellite transmission center in central florida , succeeded in disrupting a cable network's eastern uplink feed to the galaxy i satellite .
+
+although this event was a minor annoyance , it had the potential for disrupting services to satellite users .
+
+starting in 1995 , med - tv , a kurdish satellite channel , was intentionally jammed ( and eventually had its license revoked ) because its broadcasts promoted terrorism and violence .
+
+in 1997 , while a gps transmitter was being tested on the ground , it unintentionally interfered with the gps receivers of a commercial aircraft in the area .
+
+the plane temporarily lost all of its gps information .
+
+in 1997 , indonesia intentionally interfered with and denied the services of a commercial satellite belonging to the south pacific island kingdom of tonga because of a satellite orbital slot dispute .
+
+in 1998 , the failure of panamsat's galaxy iv satellite , attributable to an on - board processor anomaly , disabled 80 to 90 percent of 45 million pagers across the united states for 2 to 4 days , leaving approximately 70 percent of a major oil company's customers without the ability to pay for services at the pump .
+
+recognizing that our nation's critical infrastructures , including telecommunications , energy , banking and finance , transportation , and satellites , are the foundation of our economy , national security , and quality of life , in october 1997 the president's commission on critical infrastructure protection issued a report recommending several measures to achieve a higher level of protection of critical infrastructures .
+
+these measures included industry cooperation and information sharing , the creation of a national organization structure , a revised program of research and development , a broad program of awareness and education , and reconsideration of laws related to infrastructure protection .
+
+the report also described the potentially devastating implications of poor information security from a national perspective .
+
+the report stated that a comprehensive effort would need to “include a system of surveillance , assessment , early warning , and response mechanisms to mitigate the potential for cyber threats.” presidential decision directive ( pdd ) 63 , issued in 1998 to improve the federal government's approach to critical infrastructure protection ( cip ) , describes a strategy for cooperative efforts by government and the private sector to protect critical computer - dependent operations .
+
+the directive called on the federal government to serve as a model of how infrastructure assurance is best achieved , and it designated lead agencies to work with private - sector and government entities .
+
+to accomplish its goals , pdd 63 designated and established organizations to provide central coordination and support , including the critical infrastructure assurance office ( ciao ) , an interagency office that is housed in the department of commerce , which was established to develop a national plan for cip on the basis of infrastructure plans developed by the private sector and federal agencies ; and the national infrastructure protection center , an organization within the fbi , which was expanded to address national - level threat assessment , warning , vulnerability , and law enforcement investigation and response .
+
+to ensure coverage of critical sectors , pdd 63 also identified eight private - sector infrastructures and five special functions ; information and communication is one of the eight infrastructures identified .
+
+further , the directive designated lead federal agencies to work with the private - sector entities .
+
+for example , commerce is the lead agency for the information and communication sector ( the responsible organization within commerce is the national telecommunications and information administration ) , and the department of energy is the lead agency for the electrical power industry .
+
+similarly , for special function areas , dod is responsible for national defense , and the department of state is responsible for foreign affairs .
+
+to facilitate private - sector participation , pdd 63 also encouraged creation of information sharing and analysis centers ( isacs ) that could serve as a mechanism for gathering , analyzing , and appropriately sanitizing and disseminating information to and from infrastructure sectors and the federal government through the fbi's national infrastructure protection center .
+
+although most of the isacs are operated by private - sector organizations , the telecommunications isac is operated by a government entity , the national coordinating center for telecommunications ( ncc ) , which is part of the national communications system .
+
+in september 2001 , we reported that six isacs within five infrastructures had been established to gather and share information about vulnerabilities , attempted intrusions , and attacks within their respective infrastructure sectors and to meet specific sector objectives .
+
+in addition , at that time , we reported that the formation of at least three more isacs for various infrastructure sectors was being discussed .
+
+figure 2 displays a high - level overview of several organizations with cip responsibilities , as outlined by pdd 63 .
+
+the most recent federal cyber cip guidance was issued in october 2001 , when president bush signed executive order 13231 , critical infrastructure protection in the information age , which continues many pdd 63 activities by focusing on cyber threats to critical infrastructures and creating the president's board on cip to coordinate cyber - related federal efforts .
+
+the special advisor to the president for cyberspace security chairs the board .
+
+in july 2002 , the president issued a national strategy for homeland security that identifies 14 industry sectors , including the 8 identified in pdd 63 .
+
+the additional 6 are agriculture , food , defense industrial base , chemical industry and hazardous materials , postal and shipping , and national monuments and icons .
+
+the u.s. national space policy provides goals and guidelines for the u.s. space program , including the use of commercial satellites .
+
+in february 1991 , the president issued national space policy directive 3 , which requires u.s. government agencies to use commercially available space products and services to the fullest extent feasible .
+
+presidential decision directive 49 , dated september 19 , 1996 , provides goals for the u.s. space program and establishes space guidelines .
+
+for example , a guideline regarding the commercial space industry stated that u.s. government agencies shall purchase commercially available space goods and services to the fullest extent feasible , and that , except for reasons of national security or public safety , they shall not conduct activities with commercial applications that preclude or deter commercial space activities .
+
+neither the national space policy directive 3 nor pdd 49 specifically addresses the security of satellite systems used by federal agencies .
+
+however , pdd 49 states that critical capabilities necessary for executing space missions must be ensured .
+
+security of satellite systems has been addressed in policy documents issued by the national security telecommunications and information systems security committee ( recently renamed the committee on national security systems ) .
+
+the initial policy was set forth in national policy on application of communications security to u.s. civil and commercial space systems , national telecommunications and information systems security policy ( ntissp ) no .
+
+1 ( june 17 , 1985 ) , which governed the protection of command and control uplinks for government - used satellites other than military .
+
+this policy , which applies to space systems launched 5 years from the policy date ( june 17 , 1985 ) , limits government and government contractor use of u.s. civil and commercial satellites to those systems using accepted techniques to protect the command and control uplinks .
+
+in january 2001 , a new policy governing satellite system security was issued , superseding ntissp no .
+
+1: national information assurance ( ia ) policy for u.s. space systems , national security telecommunications and information systems security policy ( nstissp ) no .
+
+12 .
+
+nstissp no .
+
+12 , which focuses on systems used for u.s. national security information , aims to ensure that information assurance is factored into “the planning , design , launch , sustained operation , and deactivation of federal and commercial space systems used to collect , generate , process , store , display , or transmit and receive such information.” the policy also includes a provision addressing commercial imagery satellites that may be used to satisfy national security requirements during periods of conflict or war .
+
+the policy states that approved u.s. cryptographies shall be used to provide confidentiality for ( 1 ) command and control uplinks , ( 2 ) data links that transmit national security information between the ground and the space platforms , ( 3 ) cross - links between space platforms , and ( 4 ) downlinks from space platforms to mission ground or processing centers .
+
+a range of security techniques is available for protecting satellite systems: for example , using encryption on tt&c and data links , using robust parts on the satellites , and applying physical and cyber security controls at the ground stations .
+
+the application of these techniques varies across federal agencies and the private sector .
+
+commercial satellite service providers typically use some of these security techniques to meet most of their customers' security requirements , and they base their decisions on business objectives .
+
+generally , the military applies more stringent security techniques to their satellites than do civilian agencies or the private sector .
+
+table 4 provides an overview of security techniques by satellite system component .
+
+techniques to protect satellite links include the use of encryption , high - power radio frequency ( rf ) uplinks , spread spectrum communications , and a digital interface unique to each satellite .
+
+commercial satellite service providers , federal satellite owners and operators , and customers stated that they typically use at least one of these techniques .
+
+usually , only the military uses spread spectrum techniques .
+
+both tt&c and data links can be protected by encryption: generally , for tt&c links , the tracking and control uplink is encrypted , while the telemetry downlink is not .
+
+encryption is the transformation of ordinary data ( commonly referred to as plaintext ) into a code form ( ciphertext ) and back into plaintext , using a mathematical process called an algorithm .
+
+encryption can be used on data to ( 1 ) hide information content , ( 2 ) prevent undetected modification , and ( 3 ) prevent unauthorized use .
+
+different levels of encryption provide different levels of protection , including encryption approved by the national security agency ( nsa ) that is used for national security information .
+
+nstissp no .
+
+12 requires approved u.s. cryptographies on tt&c and data links for u.s. space systems transmitting national security information .
+
+for satellite systems transmitting non – national - security information , there is no policy that security is required for the links , but satellite service providers and federal satellite owners and operators included in our review stated that they protect tracking and control uplinks with encryption .
+
+however , nsa officials stated that not all commercial providers' tracking and control uplinks are encrypted .
+
+concerning the data links , customers are responsible for determining whether they are encrypted or not .
+
+most commercial satellite systems are designed for “open access,” meaning that a transmitted signal is broadcast universally and unprotected .
+
+a second security technique for links is the use of high - power rf uplinks: that is , a large antenna used to send a high - power signal from the ground station to the satellite .
+
+to intentionally interfere with a satellite's links , an attacker would need a large antenna with a powerful radio transmitter ( as well as considerable technical knowledge ) .
+
+two of the commercial providers we talked to stated that they use high - power rf uplinks as part of their satellite security approach .
+
+according to one commercial provider , most satellite operators use high - power rf uplinks for tt&c connections to block potential unauthorized users' attempts to interfere with or jam the tt&c uplink .
+
+a third technique for protecting links is the use of spread spectrum communication , a technique used by the military and not normally implemented by commercial providers .
+
+spread spectrum communication is a form of wireless communication in which the frequency of the transmitted signal is deliberately varied and spread over a wide frequency band .
+
+because the frequency of the transmitted signal is deliberately varied , spread spectrum communication can provide security to links because it increases the power required to jam the signals even if they are detected .
+
+spread spectrum communication is primarily used to optimize the efficiency of bandwidth within a frequency range , but it also provides security benefits .
+
+finally , tt&c links can be protected by the use of a unique digital interface between the ground station and the satellite .
+
+according to one commercial satellite service provider , most commercial providers use a unique digital interface with each satellite .
+
+tracking and control instructions sent from the ground station to the satellite are encoded and formatted in a way that is not publicly known .
+
+officials from the commercial satellite vendor stated that even if an attacker were successful in hacking one satellite , the unique interface could prevent the attacker from taking control of an entire fleet of satellites .
+
+in addition , communication with the digital interface to the tracking and control links requires high transmission power , so that an attacker would need a large , powerful antenna .
+
+satellites can be protected by ( 1 ) “hardening,” through designs and components that are built to be robust enough to withstand harsh space environments and deliberate attacks , and ( 2 ) the use of redundancy — backup systems and components .
+
+commercial satellite service providers and federal civilian owners and operators told us that they do not harden their satellites to the extent that the military does .
+
+commercial providers , federal civilian owners and operators , and the military use varying degrees of redundancy to protect their satellites .
+
+as satellites rely increasingly on on - board information processing , hardening is becoming more important as a security technique .
+
+hardening in this context includes physical hardening and electronic - component hardening .
+
+satellites can be hardened against natural environmental conditions and deliberate attack , and to ensure survivability .
+
+most hardening efforts are focused on providing sufficient protection to electronic components in satellites so that they can withstand natural environmental conditions over the expected lifespan of the satellite , which could be nearly 15 years .
+
+for hardening against deliberate attacks , some techniques proposed include the use of reflective surfaces , shutters , and nonabsorbing materials .
+
+according to commercial satellite providers , commercial satellites are not normally hardened against non - natural nuclear radiation because it is too costly .
+
+the drawback of hardening is the cost and the manufacturing and operational burdens that it imposes on satellite manufacturers and providers .
+
+the use of high - quality space parts is another approach to hardening .
+
+although all parts used in satellites are designed to withstand natural environmental conditions , some very high - quality parts that have undergone rigorous testing and have appreciably higher hardness than standard space parts are also available , including those referred to as class “s” parts .
+
+these higher quality space parts cost significantly more than regular space parts — partly because of the significant testing procedures and more limited number of commercial providers manufacturing hardened parts .
+
+according to an industry official , high - quality space parts are used by the military and are generally not used on commercial satellites .
+
+commercial satellite providers stated that they also use redundancy to ensure availability , through backup satellites and redundant features on individual satellites .
+
+backup satellites enable an organization to continue operations if a primary satellite fails .
+
+one provider stated that it would rather spend resources on backup satellites than on hardening future satellites or encrypting the tt&c and data links .
+
+the provider also expressed the view that a greater number of smaller , less costly satellites provides greater reliability than is provided by few large satellites , because there is more redundancy .
+
+according to an industry consulting group , backup satellites , which include in - orbit and on - ground satellites , are part of commercial satellite providers' security approaches .
+
+when backup satellites are used , they are commonly kept in orbit ; keeping backup satellites on the ground is possible , but it has the disadvantage that the system cannot immediately continue operations if the primary satellite fails .
+
+according to one provider , it could take 4 to 6 months to launch a backup satellite stored on the ground .
+
+in addition , individual satellites can be designed to have redundant parts .
+
+for example , a commercial satellite provider told us that redundant processors , antennas , control systems , transponders , and other equipment are frequently used to ensure satellite survivability .
+
+another example is that satellites could have two completely separate sets of hardware and two paths for software and information ; this is referred to as having an a - side and a b - side .
+
+in general , this technique is not used on commercial satellites , according to an industry official .
+
+techniques to protect ground stations include physical controls as well as logical security controls , hardening , and backup ground stations .
+
+ground stations are important because they control the satellite and receive and process data .
+
+one provider stated that providing physical security measures to ground stations is important because the greatest security threat to satellite systems exists at that location .
+
+locations of ground stations are usually known and accessible ; thus , they require physical security controls such as fencing , guards , and internal security .
+
+one provider emphasized the importance of performing background checks on employees .
+
+civilian agencies also stated that they protected ground stations through various physical security controls: ground stations are fenced , guarded , and secured inside with access control devices , such as key cards .
+
+the commercial satellite service providers included in our review stated that they did not protect their ground stations through hardening ; this technique is primarily used by the military .
+
+similarly , most civilian agencies we talked to do not harden their ground stations .
+
+a ground station would be considered hardened if it had protective measures to enable it to withstand destructive forces such as explosions , natural disasters , or ionizing radiation .
+
+commercial satellite providers and federal agency satellite owners and operators also may maintain off - line or fully redundant ground stations to ensure availability , which can be used if the primary ground station is disrupted or destroyed .
+
+off - line backup ground stations may not be staffed or managed by the same company , or on a full - time basis .
+
+in addition , off - line backup ground stations are not necessarily designed for long - term control of satellites .
+
+on the other hand , one commercial service provider stated that it maintained fully redundant , co - primary , geographically separated ground stations that are fully staffed with trained operators , gated with restricted access , and capable of long - term uninterruptible power .
+
+in addition , these ground stations periodically alternated which satellites they were responsible for as a training exercise .
+
+they also operated 24 hours a day , 7 days a week , and monitored each other .
+
+to mitigate the risk associated with using commercial satellites , federal agencies focus on areas within their responsibility and control: data links and communication ground stations .
+
+according to federal agency officials , agencies reduce risks associated with using commercial satellites by ( 1 ) protecting the data's authentication and confidentiality with encryption , ( 2 ) securing the data ground stations with physical security controls and backup sites , and ( 3 ) ensuring service availability through redundancy and dedicated services .
+
+federal agencies rely on commercial satellite service providers to provide the security techniques for the tt&c links , satellites , and satellite control stations .
+
+however , federal agency officials stated that they were unable to impose specific security requirements on commercial satellite service providers .
+
+further , federal policy governing the security of satellite systems used by agencies is limited because it addresses only those satellites used for national security information , pertains only to techniques associated with the links between ground stations and satellites and between satellites ( cross - links ) , and does not have an enforcement mechanism .
+
+without appropriate governmentwide policy to address the security of all satellite components and of non – national - security information , federal agencies may not , for information with similar sensitivity and criticality , consistently ( 1 ) secure data links and communication ground stations or ( 2 ) use satellites that have certain security controls that enhance availability .
+
+recent initiatives by the executive branch have acknowledged these policy limitations , but we are not aware of specific actions to address them .
+
+for critical data , agencies primarily use different types of encryption to reduce the risk of unauthorized use or changes .
+
+for example , the military services use encryption to protect most data communicated over satellites — either commercially owned or military .
+
+dod officials stated that the military services use the strongest encryption algorithms available from the nsa for the most sensitive information — national security information .
+
+for non – national - security information , the military services use less strong encryption algorithms , according to dod officials .
+
+the national aeronautics and space administration ( nasa ) also uses nsa - provided encryption for critical operations , such as human mission communications ( that is , for space shuttle missions ) .
+
+using nsa encryption requires encryption and decryption hardware at the data's source and destination , respectively .
+
+the use of this hardware requires agencies and satellite service providers to apply special physical protection procedures — such as restricting access to the equipment and allowing no access by foreign nationals .
+
+for the next generation of government - owned weather satellites , the national oceanic and atmospheric administration ( noaa ) and the u.s. military plan to use an nsa - approved commercial encryption package that will avoid the need for special equipment and allow them to restrict the data to authorized users with user ids and passwords .
+
+in addition , noaa will be able to encrypt broadcast weather data over particular regions of the world .
+
+according to nasa and noaa officials , some agency data do not require protection because the risk of unauthorized use or changes is not significant or because the information is intended to be available to a broad audience .
+
+for example , nasa uses satellites to provide large bandwidth to transmit scientific data from remote locations .
+
+according to nasa officials , the agency does not protect the transmission of these data because they are considered academic in nature and low risk .
+
+in addition , the federal aviation administration ( faa ) does not encrypt links between control centers or between control centers and aircraft , because the data on these links go from specific air traffic control centers to specific aircraft .
+
+according to faa officials , if the transmissions were required to be encrypted , every aircraft would have to acquire costly decryption equipment .
+
+further , according to national weather service officials , the service does not protect the weather data transmitted over commercial satellites because the service considers it important to make this information widely available not only to its sites but also to government agencies , commercial partners , universities , and others with the appropriate equipment .
+
+federal agencies also control the security of the data ground stations that send and receive data over satellites .
+
+to protect these ground stations , federal officials stated that they use physical security techniques , such as those discussed earlier .
+
+they protect their facilities and equipment from unintentional and intentional threats ( such as wind , snow , and vandalism ) .
+
+for example , according to faa officials , in certain locations , faa has hardened remote satellite ground stations against high wind and cold weather conditions .
+
+in addition , noaa officials stated that many of their antennas are hurricane protected .
+
+further , federal officials stated that they perform background checks on personnel .
+
+noaa officials stated that they perform background checks on satellite technicians to the secret clearance level .
+
+federal officials also stated that their ground stations are further protected because they are located on large , protected federal facilities .
+
+for example , military ground stations can be located on protected u.s. or allied military bases .
+
+also , national weather service officials stated that the service's primary communications uplink is located on a highly secured federal site .
+
+further , according to dod officials , personnel are expected to protect the satellite equipment provided to them in the field .
+
+agencies also had backup communications sites that were geographically separated , including being on different power grids .
+
+for example , according to an official , the national weather service's planned backup communications uplink site will be geographically separated from the primary site and will be on a secured federal site .
+
+federal agencies also reduce the risk associated with using commercial satellites by having redundant telecommunications capabilities .
+
+for example , for the program that provides alaska's air traffic control , faa relies on two satellites to provide backup capacity for each other .
+
+in addition to this redundancy , faa has requested its commercial satellite service provider to preferentially provide services to faa's alaska air traffic control system over other customers carried on the same satellites .
+
+another faa program provides primary communications capabilities in remote locations and has redundant satellite capacity that can be used if the primary satellite fails .
+
+the national weather service is another example .
+
+the service uses redundancy to ensure the availability of satellite services that broadcast weather data to its 160 locations by contracting for priority services that include guarantees of additional transponders or , if the satellite fails , of services on other satellites .
+
+in addition , the service plans to own and operate a backup communications center that is geographically separated from the primary site .
+
+the service performs monthly tests of the backup site's ability to provide the communications uplink to the commercial satellites .
+
+federal agencies rely on the commercial satellite service provider's security techniques for the tt&c links , satellites , and satellite control ground stations .
+
+figure 3 graphically depicts the areas not controlled by federal agencies .
+
+to mitigate the risk associated with not controlling aspects of commercial satellite security other than protecting the data links and communications ground stations , federal agencies attempt to specify availability and reliability requirements , but they acknowledge having had limited influence over security techniques employed by commercial satellite service providers .
+
+federal officials stated that they are usually constrained by the availability and reliability levels that can be provided by their telecommunications service providers .
+
+for example , for one program , an faa contract requires 99.7 percent availability in recognition of the satellite service provider's limitations , though the agency typically receives 99.8 percent .
+
+however , faa would prefer 99.999 percent availability on this program's satellite communications , which is similar to the reliability level being received from terrestrial networks that faa uses where available .
+
+according to one faa official , greater satellite reliability could be gained by having multiple satellite service providers furnish communications over the same regions , but this approach is too costly .
+
+although maintaining established or contracted reliability levels generally requires that service providers maintain some level of security , federal officials stated that their agencies cannot usually require commercial satellite service providers to use specific security techniques .
+
+commercial satellite service providers have established operational procedures , including security techniques , some of which , according to officials , cannot be easily changed .
+
+for example , once a satellite is launched , additional hardening or encryption of the tt&c link is difficult , if not impossible .
+
+some service providers offer the capability to encrypt the command uplinks .
+
+according to faa officials , faa is in the process of performing risk assessments , in compliance with its own information systems security policies , on the commercial services ( including satellite services ) that it acquires .
+
+based on these risk assessments , faa officials plan to accredit and certify the security of the agency's program that relies on commercial satellites .
+
+federal policy governing agencies' actions regarding the security of commercial satellite systems is limited , in that it ( 1 ) pertains only to satellites used for national security purposes , ( 2 ) addresses security techniques associated with links only , and ( 3 ) does not have an enforcement mechanism for ensuring compliance .
+
+although the executive branch has recently acknowledged these policy limitations , we are not aware of specific actions to address them .
+
+nstissp no .
+
+12 , the current policy governing satellite system security , applies only to u.s. space systems ( u.s. government - owned or commercially owned and operated space systems ) that are used for national security information and to imagery satellites that are or could be used for national security purposes during periods of conflict or war .
+
+it does not apply to systems that process sensitive , non – national - security information .
+
+issued by the national security telecommunications and information systems security committee ( now the committee on national security systems ( cnss ) ) , nstissp no .
+
+12 has as its primary objective “to ensure that information assurance is factored into the planning , design , launch , sustained operation , and deactivation of u.s. space systems used to collect , generate , process , store , display , or transmit / receive national security information , as well as any supporting or related national security systems.” nstissp no .
+
+12 also suggests that federal agencies may want to consider applying the policy's information assurance requirements to those space systems that are essential to the conduct of agencies' unclassified missions , or to the operation and maintenance of critical infrastructures .
+
+in addition to having a focus only on national security , the policy is further limited in that it addresses security techniques only for the links .
+
+it does not include physical security requirements for the satellites or ground stations .
+
+specifically , for satellite systems to which it applies , nstissp no .
+
+12 states that approved u.s. cryptographies shall be used to provide confidentiality for the ( 1 ) command and control uplinks , ( 2 ) data links that transmit national security information between the ground and the space platforms , ( 3 ) cross - links between space platforms , and ( 4 ) downlinks from space platforms to mission ground or processing centers .
+
+also , there is no enforcement mechanism to ensure agency compliance with the policy .
+
+according to one nsa official on the cnss support staff , enforcement of such policies has always been a problem , because no one has the authority to force agencies' compliance with them .
+
+according to some agency officials , agencies typically do not test their service providers' implementation of security procedures .
+
+according to the federal and commercial officials involved in our study , no commercial satellite is currently fully compliant with nstissp no .
+
+12 , and gaining support to build compliant systems would be difficult .
+
+according to commercial satellite industry officials , there is no business case for voluntarily following the nstissp no .
+
+12 requirements and implementing them in the satellites and ground stations , including networks that are currently being developed .
+
+commercial satellite service providers also raised concerns about the impact of nstissp no .
+
+12 on their future commercial satellite systems .
+
+several officials stated that if compliance were required , it would significantly increase the complexity of managing the satellites , because encryption key management is cumbersome , and appropriately controlling access to the hardware is difficult in global companies that have many foreign nationals .
+
+also , commercial satellite service providers stated that encrypting the tt&c links could increase the difficulty of troubleshooting , for example , because the time it takes to encrypt and then decrypt a command could become significant when a tt&c problem arises .
+
+other issues raised that make nstissp no .
+
+12 difficult to implement include the following: some satellite service providers view compliance with it as not necessary for selling services to the government , since in the past agencies have used satellites that did not comply with prior security policy .
+
+for example , dod has contracted for services on satellites that were not compliant with the previous and existing policy for various reasons .
+
+however , at times , noncompliant satellites have been dod's only option .
+
+commercial clients will likely be unwilling to pay the additional cost associated with higher levels of encryption .
+
+significant costs would include licensing agreements and redesigning hardware for new encryption technologies .
+
+satellite industry officials stated that their experience shows that encryption does not really provide much greater security than other techniques that protect tt&c and data links .
+
+notwithstanding the above issues , in response to the policy's limitations , dod officials from the office of the assistant secretary of defense for command , control , communications , and intelligence stated that the department had started drafting a policy that would require all commercial satellite systems used by dod to meet nstissp no .
+
+12 requirements .
+
+this draft policy includes a waiver process requiring prior approval before any satellite system could be used that did not meet the security requirements .
+
+if approved , this policy would apply only to dod .
+
+dod officials are anticipating that this policy will be approved by the end of 2002 .
+
+in addition to dod's efforts , a cnss official stated that a draft policy was developed to address the lack of national policy or guidance for the assurance of non – national - security information .
+
+although this policy was broad in scope , covering many aspects of information assurance , this official stated that satellite security could be included in its scope .
+
+however , this official also stated that the cnss's efforts ended in april 2002 when it sent the draft policy to the director of the office of management and budget ( omb ) for consideration , because the cnss lacks authority in the area of non – national - security information .
+
+in transmitting the draft policy to the director , omb , the cnss chair encouraged the development of this policy as a first step in establishing a national policy addressing the protection of information technology systems that process sensitive homeland security information , as well as information associated with the operation of critical infrastructures .
+
+according to an omb official , the draft policy is valuable input for future policy decisions related to protecting government information .
+
+recognizing that space activities are indispensable to our national security and economic vitality , on may 8 , 2002 , the president's national security advisor sent a memorandum to top cabinet officials stating that she plans to recommend that the white house initiate a review of u.s. space policies that have been in place since 1996 .
+
+to date , we are not aware of specific actions taken in response to the draft policy sent to omb and the national security advisor's memorandum .
+
+without appropriate governmentwide policy to address the security of all satellite components and of non – national - security information , federal agencies may not , for information with similar sensitivity and criticality , consistently ( 1 ) secure data links and communication ground stations or ( 2 ) use satellites that have certain security controls that enhance availability .
+
+as a result , federal agencies risk losing needed capabilities in the event of the exploitation of satellite system vulnerabilities .
+
+pdd 63 was issued to improve the federal approach to protecting our nation's critical infrastructures by establishing partnerships between private - sector entities and the federal government .
+
+although this directive addressed the satellite vulnerabilities of gps and led to a detailed vulnerability assessment , the satellite industry has not received focused attention as part of this national effort .
+
+given the importance of commercial satellites to our nation's economy , the federal government's growing reliance on them , and the dependency of many other infrastructures on satellites , not including them in our national cip approach creates the risk that these critical components of our information and communication infrastructure may not receive needed attention .
+
+both pdd 63 and the report of the president's commission on critical infrastructure protection ( october 1997 ) addressed satellite vulnerabilities of the gps and made several recommendations to the secretary of transportation , including to fully evaluate these vulnerabilities and actual and potential sources of interference to the system .
+
+in august 2001 , the john a. volpe transportation systems center issued a report that includes an assessment of the vulnerabilities of the gps ; analysis of civilian aviation , maritime , and surface uses ; assessment of the ways that users may be affected by short - or long - term gps outages ; and recommendations to minimize the safety and operational impacts of such outages .
+
+one overarching finding was that because of the increasing reliance of transportation on gps , the consequences of loss of the signal could be severe in terms of safety and of environmental and economic damage to the nation .
+
+despite the focused attention on gps , other aspects of the satellite industry have not received national attention .
+
+in pdd 63 , commercial satellites were not identified as a critical infrastructure ( or as part of one ) , and thus are not specifically included as part of our nation's approach to protecting critical infrastructures .
+
+further , pdd 63 does not explicitly include the commercial satellite industry as part of the information and communications infrastructure sector , nor does the newly issued national strategy for homeland security .
+
+although there have been discussions about expanding the coverage of individual sectors ( particularly since the events of september 11 , 2001 ) , national telecommunications and information administration ( ntia ) officials stated that there are no specific plans to build better partnerships with satellite builders and operators as part of their efforts .
+
+ciao officials also told us that there are no specific plans to include commercial satellite companies in current national efforts .
+
+however , ciao added that some of the current infrastructure sectors may address satellites in their plans for industry vulnerability assessments and remediation , since some of these infrastructures rely on satellites for communications or other functions , such as tracking shipments or trucks , or monitoring the condition of equipment .
+
+the telecommunications isac reiterated ntia's and ciao's comments that there are no specific plans to include satellites in national cip efforts .
+
+the isac for the telecommunications sector , recognized by the president's national security council in january 2000 , is the national coordinating center for telecommunications ( ncc ) , which is operated by the national communications system .
+
+as such , ncc is responsible for facilitating the exchange of information among government and industry participants regarding computer - based vulnerability , threat , and intrusion information affecting the telecommunications infrastructure .
+
+also , the center analyzes data received from telecommunications industry members , government , and other sources to avoid or lessen the impact of a crisis affecting the telecommunications infrastructure .
+
+since its recognition as an isac , ncc membership has expanded beyond traditional telecommunications entities to include some aerospace companies such as boeing and raytheon , but the isac does not specifically focus on commercial satellites .
+
+officials from one of the satellite service providers told us that they would endorse an isac - like forum to discuss vulnerabilities to commercial and military satellites .
+
+in july 2002 , we recommended that when developing the strategy to guide federal cip efforts , the assistant to the president for national security affairs , the assistant to the president for homeland security , and the special advisor to the president for cyberspace security ensure , among other things , that the strategy includes all relevant sectors and defines the key federal agencies' roles and responsibilities associated with each of these sectors .
+
+given the importance of satellites to the national economy , the federal government's growing reliance on them , and the many threats that face them , failure to explicitly include satellites in the national approach to cip leaves a critical aspect of the national infrastructure without focused attention .
+
+commercial satellite service providers use a combination of techniques to protect their systems from unauthorized use and disruption , including hardware on satellites , physical and logical controls at ground stations , and encryption of the links .
+
+although this level of protection may be adequate for many government requirements , commercial satellite systems lack the security features used in national security satellites for protection against deliberate disruption and exploitation .
+
+federal agencies reduce the risk associated with their use of commercial satellites by controlling the satellite components within their responsibility — primarily the data links and communication ground stations .
+
+but the satellite service provider is typically responsible for most components — the satellite , tt&c links , and the satellite control ground stations .
+
+because federal agencies rely on commercial satellite service providers for most security features , they also reduce their risk by having redundant capabilities in place .
+
+however , national satellite protection policy is limited because it pertains only to satellite systems that are used for national security information , addresses only techniques associated with the links , and does not have an enforcement mechanism .
+
+recent initiatives by the executive branch have acknowledged these policy limitations , but we are not aware of specific actions taken to address them .
+
+satellites are not specifically identified as part of our nation's critical infrastructure protection approach , which relies heavily on public - private partnerships to secure our critical infrastructures .
+
+as a result , a national forum to gather and share information about industrywide vulnerabilities of the satellite industry does not exist , leaving a national critical infrastructure without focused attention .
+
+we recommend that in pursuing the draft policy submitted to omb for completion and the recommended review of u.s. space policies , the director of omb and the assistant to the president for national security affairs review the scope and enforcement of existing security - related space policy and promote the appropriate revisions of existing policies and the development of new policies to ensure that federal agencies appropriately address the concerns involved with the use of commercial satellites , including the sensitivity of information , security techniques , and enforcement mechanisms .
+
+considering the importance of satellites to our national economy , the government's growing reliance on them , and the threats that face them , we recommend that the assistant to the president for national security affairs , the assistant to the president for homeland security , and the special advisor to the president for cyberspace security consider recognizing the satellite industry as either a new infrastructure or part of an existing infrastructure .
+
+we received written comments on a draft of this report from the deputy assistant secretary of defense , command , control , communications , intelligence , surveillance , and reconnaissance ( space and information technology programs ) , department of defense ; the chief of the satellite communications and support division , united states space command , department of defense ; the chief financial officer / chief administrative officer , national oceanic and atmospheric administration , department of commerce ; and the associate deputy administrator for institutions , national aeronautics and space administration .
+
+the departments of defense and commerce and the national aeronautics and space administration concurred with our findings and recommendations ( see apps .
+
+ii , iii , and iv , respectively ) and provided technical comments that have been incorporated in the report , as appropriate ( some of these technical comments are reproduced in the appendixes ) .
+
+we also received technical oral comments from officials from the critical infrastructure assurance office , department of commerce ; federal aviation administration , department of transportation ; office of management and budget ; and united states secret service , department of treasury ; in addition , we received written and oral technical comments from five participating private - sector entities .
+
+comments from all these organizations have been incorporated into the report , as appropriate .
+
+we did not receive comments from the special advisor to the president for cyberspace security .
+
+as we agreed with your staff , unless you publicly announce the contents of this report earlier , we plan no further distribution of it until 30 days from the date of this letter .
+
+at that time , we will send copies of this report to other interested congressional committees and the heads of the agencies discussed in this report , as well as the private - sector participants .
+
+the report will also be available on gao's website at www.gao.gov .
+
+if you have any questions about matters discussed in this report , please contact me at ( 202 ) 512-3317 or contact dave powner , assistant director , at ( 303 ) 572-7316 .
+
+we can also be reached by e - mail at daceyr@gao.gov and pownerd@gao.gov , respectively .
+
+contributors to this report include barbara collier , michael gilmore , rahul gupta , kevin secrest , karl seifert , hai tran , and jim weidner .
+
+our objectives were to determine ( 1 ) what security techniques are available to protect satellite systems from unauthorized use , disruption , or damage ; ( 2 ) how federal agencies reduce the risks associated with their use of commercial satellite systems ; and ( 3 ) what federal critical infrastructure protection efforts are being undertaken to address satellite system security through improved government / private - sector cooperation .
+
+to accomplish these objectives , we reviewed technical documents , policy documents , and directives , and we interviewed pertinent officials from federal agencies and the private sector involved in manufacturing and operating satellites and providing satellite services .
+
+to determine what security techniques are available to protect satellite systems from unauthorized use , disruption , or damage , we reviewed technical documents and policy , such as nstissp no .
+
+12 and various other sources , and we interviewed pertinent federal officials from the department of defense ( dod ) ; the federal aviation administration ( faa ) ; the national aeronautics and space administration ( nasa ) , including the goddard and marshall space flight centers ; the national oceanic and atmospheric administration ( noaa ) ; the national security agency ( nsa ) ; and the department of treasury's united states secret service .
+
+the dod organizations whose documentation we reviewed and whose officials we interviewed included the air force ; the army ; the assistant secretary of defense for command , control , communications , and intelligence ; the cheyenne mountain air force station ; the defense information systems agency ; the national security space architect ; the navy ; and the u.s. space command .
+
+in addition , we reviewed documentation and interviewed officials from private - sector organizations that manufacture and operate satellite systems , including intelsat , lockheed martin , loral space & communications , ltd. ( loral skynet and loral space systems groups ) , northrop grumman tasc , the satellite industry association , and w.l .
+
+pritchard & co. , l.c .
+
+we identified these organizations through relevant literature searches , discussions with organizations , and discussions with gao personnel familiar with the satellite industry .
+
+we did not develop an all - inclusive list of security techniques , but we attempted to establish the most commonly used of the security techniques available .
+
+to determine how federal agencies reduce the risks associated with their use of commercial satellite systems , we identified and reviewed relevant federal policy , including national security telecommunications and information systems security committee policies and applicable federal agency policies , such as the faa's information systems security program handbook .
+
+we also reviewed documentation and interviewed federal officials from dod , faa , nasa , nsa , and noaa .
+
+in addition , in meetings with commercial service providers holding government contracts , we discussed any special requirements placed on commercial service providers by federal agencies .
+
+to determine what federal critical infrastructure protection ( cip ) efforts were being undertaken to address satellite system security , we reviewed various orders , directives , and policies , such as executive order 13231 and pdd 63 .
+
+in addition , we interviewed pertinent federal officials from the critical infrastructure assurance office , national communications system / national coordinating center for telecommunications , and national telecommunications and information administration .
+
+further , in interviews with commercial service providers , we discussed their involvement in national cip - related activities .
+
+we performed our work in washington , d.c. ; bedminster , new jersey ; colorado springs , colorado ; and palo alto , california , from december 2001 through june 2002 , in accordance with generally accepted government auditing standards .
+
+we did not evaluate the effectiveness of security techniques being used by federal agencies and the private sector , or of the techniques used by federal agencies to reduce the risks associated with their use of commercial satellite systems .
+
+the general accounting office , the investigative arm of congress , exists to support congress in meeting its constitutional responsibilities and to help improve the performance and accountability of the federal government for the american people .
+
+gao examines the use of public funds ; evaluates federal programs and policies ; and provides analyses , recommendations , and other assistance to help congress make informed oversight , policy , and funding decisions .
+
+gao's commitment to good government is reflected in its core values of accountability , integrity , and reliability .
+
+the fastest and easiest way to obtain copies of gao documents at no cost is through the internet .
+
+gao's web site ( www.gao.gov ) contains abstracts and full - text files of current reports and testimony and an expanding archive of older products .
+
+the web site features a search engine to help you locate documents using key words and phrases .
+
+you can print these documents in their entirety , including charts and other graphics .
+
+each day , gao issues a list of newly released reports , testimony , and correspondence .
+
+gao posts this list , known as “today's reports,” on its web site daily .
+
+the list contains links to the full - text document files .
+
+to have gao e - mail this list to you every afternoon , go to www.gao.gov and select “subscribe to daily e - mail alert for newly released products” under the gao reports heading .
+

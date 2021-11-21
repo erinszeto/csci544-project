@@ -1,0 +1,842 @@
+as you know , wide variations exist in the quality and security of the as you know , wide variations exist in the quality and security of the various forms of identification ( id ) that federal agencies issue to their various forms of identification ( id ) that federal agencies issue to their employees to use to access federal facilities and information systems .
+
+in employees to use to access federal facilities and information systems .
+
+in an effort to increase the quality and security of id and credentialing an effort to increase the quality and security of id and credentialing practices across the federal government , the president issued homeland practices across the federal government , the president issued homeland security presidential directive 12 ( hspd - 12 ) in august 2004 .
+
+this directive security presidential directive 12 ( hspd - 12 ) in august 2004 .
+
+this directive ordered the establishment of a mandatory , governmentwide standard for ordered the establishment of a mandatory , governmentwide standard for secure and reliable forms of id for federal government employees and secure and reliable forms of id for federal government employees and contractors who access government - controlled facilities and information contractors who access government - controlled facilities and information systems .
+
+in addition , one of the primary goals of hspd - 12 is to enable systems .
+
+in addition , one of the primary goals of hspd - 12 is to enable interoperability across federal agencies .
+
+interoperability across federal agencies .
+
+in february 2005 , the department of commerce's national institute of in february 2005 , the department of commerce's national institute of standards and technology ( nist ) issued federal information processing standards and technology ( nist ) issued federal information processing standards ( fips ) 201 , personal identity verification of federal standards ( fips ) 201 , personal identity verification of federal employees and contractors .
+
+known as fips 201 , the standard is divided employees and contractors .
+
+known as fips 201 , the standard is divided into two parts .
+
+the first part , personal identity verification ( piv ) - i , sets out into two parts .
+
+the first part , personal identity verification ( piv ) - i , sets out uniform requirements for identity proofing — verifying the identity of uniform requirements for identity proofing — verifying the identity of individuals applying for official agency credentials — and for issuing individuals applying for official agency credentials — and for issuing credentials , maintaining related information , and protecting the privacy of credentials , maintaining related information , and protecting the privacy of the applicants .
+
+the office of management and budget ( omb ) , which is the applicants .
+
+the office of management and budget ( omb ) , which is responsible for ensuring compliance with the standard , issued guidance responsible for ensuring compliance with the standard , issued guidance requiring agencies to implement these requirements , with the exception of the privacy requirements , by october 27 , 2005 .
+
+the second part , piv - ii , specifies the technical requirements for credentialing systems for federal employees and contractors on the basis of interoperable smart cards .
+
+omb directed that by october 27 , 2007 , piv credentials be issued to and used by all employees and contractors who have been with the agency for 15 years or less .
+
+it also directed that the remainder of the employees be issued cards and begin using their cards no later than october 27 , 2008 .
+
+in february 2006 , we reported on agencies' progress toward implementing the first part of the standard , piv - i .
+
+this report responds to your request that we conduct a review of agencies' progress in implementing the second part of the standard , piv - ii .
+
+specifically , our objectives were to determine the progress selected agencies have made in ( 1 ) implementing the capabilities of the piv cards to enhance security and ( 2 ) achieving interoperability with other agencies .
+
+to address these objectives , we selected eight agencies that have a range of experience in implementing smart card - based id systems — the departments of agriculture ( usda ) , commerce , the interior , homeland security ( dhs ) , housing and urban development ( hud ) , and labor ; the nuclear regulatory commission ( nrc ) ; and the national aeronautics and space administration ( nasa ) .
+
+to obtain information on the agencies' progress , we analyzed documentation such as agencies' high - level plans for hspd - 12 implementation , system architectures , cost estimates , and documentation of agencies' implementation activities .
+
+we also interviewed program officials from these agencies as well as general services administration ( gsa ) , omb , and nist officials who have been involved in supporting implementation of hspd - 12 across the government .
+
+we also discussed implementation challenges with industry experts to obtain additional information and their perspectives .
+
+to obtain information on agencies' progress toward achieving cross - agency interoperability , we reviewed and analyzed documentation , such as existing interface specifications , and met with gsa officials and industry experts to discuss the steps they have taken to establish cross - agency interoperability .
+
+we performed our work at commerce , dhs , gsa , hud , interior , labor , nasa , nist , nrc , omb , and usda in the washington , d.c. , metropolitan area from june 2007 to february 2008 .
+
+we conducted this audit in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+additional details of our objectives , scope , and methodology are provided in appendix i .
+
+also , we provide a glossary of terms at the end of this report .
+
+historically , federal employees have been issued a wide variety of id cards that are used to access federal buildings and other facilities .
+
+in many cases , security personnel allow access on the basis of visual inspection of these cards .
+
+however , many of these cards can be easily forged and have other limitations in their ability to effectively authenticate individuals seeking access to federal facilities .
+
+access control is the process of determining the permissible activities of users and authorizing or prohibiting activities by each user .
+
+controlling a user's access to facilities and computer systems includes setting rights and permissions that grant access only to authorized users .
+
+there are two types of access control: physical access and logical access .
+
+physical access control focuses on restricting the entry and / or exit of users from a physical area , such as a building or a room in a building .
+
+physical access control techniques include devices such as locks that require a key to open doors or id cards that establish an individual's authorization to enter a building .
+
+logical access control is used to determine what electronic information and systems users and other systems may access and what may be done to the information that is accessed .
+
+methods for controlling logical access include requiring a user to enter a password to access information stored on a computer .
+
+access control techniques vary in the extent to which they can provide assurance that only authorized individuals and systems have been granted access .
+
+some techniques can be easily subverted , while others are more difficult to circumvent .
+
+generally , techniques that provide higher levels of assurance are more expensive , more difficult to implement , and cause greater inconvenience to users than less sophisticated techniques .
+
+when deciding which access control mechanisms to implement , agencies must first understand the level of risk associated with the facility or information that is to be protected .
+
+the higher the risk level , the greater the need for agencies to implement a high - assurance - level access control system .
+
+one means to implement a high - assurance - level access control system is through the use of smart cards .
+
+smart cards are plastic devices that are about the size of a credit card and contain an embedded integrated circuit chip capable of storing and processing data .
+
+the unique advantage that smart cards have over traditional cards with simpler technologies , such as magnetic strips or bar codes , is that they can exchange data with other systems and process information , rather than simply serving as static data repositories .
+
+by securely exchanging information , a smart card can help authenticate the identity of the individual possessing the card in a far more rigorous way than is possible with traditional id cards .
+
+a smart card's processing power also allows it to exchange and update many other kinds of information with a variety of external systems , which can facilitate applications such as financial transactions or other services that involve electronic record - keeping .
+
+figure 1 shows an example of a typical smart card .
+
+smart cards can also be used to significantly enhance the security of an agency's computer systems by tightening controls over user access .
+
+a user wishing to log on to a computer system or network with controlled access must “prove” his or her identity to the system — a process called authentication .
+
+many systems authenticate users by requiring them to enter secret passwords .
+
+this requirement provides only modest security because passwords can be easily compromised .
+
+substantially better user authentication can be achieved by supplementing passwords with smart cards .
+
+to gain access under this scenario , a user is prompted to insert a smart card into a reader attached to the computer as well as type in a password .
+
+this authentication process is significantly harder to circumvent because an intruder would not only need to guess a user's password but would also need to possess that same user's smart card .
+
+even stronger authentication can be achieved by using smart cards in conjunction with biometrics .
+
+smart cards can be configured to store biometric information ( such as fingerprints or iris scans ) in an electronic record that can be retrieved and compared with an individual's live biometric scan as a means of verifying that person's identity in a way that is difficult to circumvent .
+
+an information system requiring users to present a smart card , enter a password , and verify a biometric scan uses what is known as “three - factor authentication,” which requires users to authenticate themselves by means of “something they possess” ( the smart card ) , “something they know” ( the password ) , and “something they are” ( the biometric ) .
+
+systems employing three - factor authentication provide a relatively high level of security .
+
+the combination of a smart card used with biometrics can provide equally strong authentication for controlling access to physical facilities .
+
+smart cards can also be used in conjunction with public key infrastructure ( pki ) technology to better secure electronic messages and transactions .
+
+pki is a system of computers , software , and data that relies on certain cryptographic techniques to protect sensitive communications and transactions .
+
+a properly implemented and maintained pki can offer several important security services , including assurances that ( 1 ) the parties to an electronic transaction are really who they claim to be , ( 2 ) the information has not been altered or shared with any unauthorized entity , and ( 3 ) neither party will be able to wrongfully deny taking part in the transaction .
+
+pki systems are based on cryptography and require each user to have two different digital “keys” to gain access: a public key and a private key .
+
+both public and private keys may be generated on a smart card or on a user's computer .
+
+security experts generally agree that pki technology is most effective when used in tandem with hardware tokens , such as smart cards .
+
+pki systems use cryptographic techniques to generate and manage electronic “certificates” that link an individual or entity to a given public key .
+
+these digital certificates are then used to verify digital signatures and facilitate data encryption .
+
+the digital certificates are created by a trusted third party called a certification authority , which is also responsible for providing status information on whether the certificate is still valid or has been revoked or suspended .
+
+the pki software in the user's computer can verify that a certificate is valid by first verifying that the certificate has not expired , and then by checking the online status information to ensure that it has not been revoked or suspended .
+
+implementing a functioning pki across government agencies involves much more than just establishing the basic hardware and software infrastructure at individual agencies .
+
+for example , for pki certificates to work across the government , a vast network of interoperable online directories would need to be in place so that each user's identity could be looked up and his or her digital certificate verified before any transaction takes place .
+
+software applications would likely need to consult a number of disparate directories to validate an incoming user's digital certificate .
+
+significant costs are involved in developing , fielding , and maintaining a production pki to meet these requirements .
+
+systems must be set up to positively identify users and manage the exchange and verification of certificates .
+
+in addition , existing software applications , electronic directories , and other legacy systems must be modified so that they can interact with the pki .
+
+as a result , the total costs associated with building a pki and enabling applications to use it can be significant .
+
+in august 2004 , the president issued hspd - 12 , which directed commerce to develop a new standard for secure and reliable forms of id for federal employees and contractors to enable interoperability across the federal government by february 27 , 2005 .
+
+the directive defined secure and reliable id as meeting four control objectives .
+
+specifically , the identification credentials must be based on sound criteria for verifying an individual employee's or contractor's identity ; strongly resistant to identity fraud , tampering , counterfeiting , and terrorist able to be rapidly authenticated electronically ; and issued only by providers whose reliability has been established by an official accreditation process .
+
+hspd - 12 stipulates that the standard must include criteria that are graduated from “least secure” to “most secure” to ensure flexibility in selecting the appropriate level of security for each application .
+
+in addition , the directive directs agencies to implement , to the maximum extent practicable , the standard for ids issued to federal employees and contractors in order to gain physical access to controlled facilities and logical access to controlled information systems by october 27 , 2005 .
+
+in response to hspd - 12 , commerce's nist published fips 201 , personal identity verification of federal employees and contractors , on february 25 , 2005 .
+
+the standard specifies the technical requirements for piv systems to issue secure and reliable id credentials to federal employees and contractors for gaining physical access to federal facilities and logical access to information systems and software applications .
+
+smart cards are a primary component of the envisioned piv system .
+
+the fips 201 standard is composed of two parts .
+
+the first part , called piv - i , sets standards for piv systems in three areas: ( 1 ) identity proofing and registration , ( 2 ) card issuance and maintenance , and ( 3 ) protection of card applicants' privacy .
+
+the second part of the fips 201 standard , piv - ii , provides technical specifications for interoperable smart card - based piv systems .
+
+to verify individuals' identities , agencies are directed to adopt an accredited identity proofing and registration process that is approved by the head of the agency .
+
+there are many steps to the verification process , such as completing a background investigation of the applicant , conducting and adjudicating a fingerprint check prior to credential issuance , and requiring applicants to provide two original forms of identity source documents from an omb - approved list of documents .
+
+agencies are also directed to adopt an accredited card issuance and maintenance process that is approved by the head of the agency .
+
+this process should include standardized specifications for printing photographs , names , and other information on piv cards and for other activities , such as capturing and storing biometric and other data , and issuing , distributing , and managing digital certificates .
+
+finally , agencies are directed to perform activities to protect the privacy of the applicants , such as assigning an individual to the role of “senior agency official for privacy” to oversee privacy - related matters in the piv system ; providing full disclosure of the intended uses of the piv card and related privacy implications to the applicants ; and using security controls described in nist guidance to accomplish privacy goals , where applicable .
+
+as we have previously mentioned , the second part of the fips 201 standard , piv - ii , provides technical specifications for interoperable smart card - based piv systems .
+
+the components and processes in a piv system , as well as the identity authentication information included on piv cards , are intended to provide for consistent authentication methods across federal agencies .
+
+the piv - ii cards ( see example in fig .
+
+2 ) are intended to be used to access all federal physical and logical environments for which employees are authorized .
+
+appendix ii provides more information on the specific requirements and components of piv - ii .
+
+the piv cards contain a range of features — including photographs , cardholder unique identifiers ( chuid ) , fingerprints , and pki certificates — to enable enhanced identity authentication at different assurance levels .
+
+to use these enhanced capabilities , specific infrastructure needs to be in place .
+
+this infrastructure may include biometric ( fingerprint ) readers , personal id number ( pin ) input devices , and connections to information systems that can process pki digital certificates and the chuids .
+
+once acquired , these various devices need to be integrated with existing agency systems .
+
+for example , piv system components may need to interface with human resources systems , so that when an employee resigns or is terminated and the cardholder's employment status is changed in the human resources systems , the change is also reflected in the piv system .
+
+furthermore , card readers that are compliant with fips 201 need to exchange information with existing physical and logical access control systems in order to enable doors and systems to unlock once a cardholder has been successfully authenticated and access has been granted .
+
+fips 201 includes specifications for three types of electronic authentication that provide varying levels of security assurance .
+
+omb guidance and fips 201 direct agencies to use risk - based methods to decide which type of authentication is appropriate in a given circumstance .
+
+the three authentication methods for piv cards specified under fips 201 and their associated assurance levels are described in table 1 .
+
+in addition to the three authentication capabilities discussed in table 1 , piv cards also support the use of pin authentication , which may be used in conjunction with one of these capabilities .
+
+for example , the pin can be used to control access to biometric data on the card when conducting a fingerprint check .
+
+figure 3 illustrates the major activities of the piv system and its intended day - to - day use .
+
+nist has issued several special publications that provide supplemental guidance on various aspects of the fips 201 standard , including guidance on verifying that agencies or other organizations have the proper systems and administrative controls in place to issue piv cards and have the technical specifications for implementing the directed encryption technology .
+
+additional information on nist's special publications is provided in appendix iii .
+
+in addition , nist developed a suite of tests to be used by approved commercial laboratories to validate whether commercial products for the piv card and the card interface are in conformance with fips 201 .
+
+these laboratories use the nist test to determine whether individual commercial products conform to fips 201 specifications .
+
+once commercial products pass conformance testing , they must then go through performance and interoperability testing .
+
+gsa developed these tests , which are intended to ensure that products and services meet fips 201 requirements .
+
+the gsa tests include products that have successfully passed nist's conformance tests as well as other products that are directed by fips 201 but are not within the scope of nist's conformance tests , such as piv card readers , fingerprint capturing devices , and software directed to program the cards with employees' data .
+
+products that successfully pass gsa's conformance tests are listed on its list of products that are approved for agencies to acquire .
+
+omb is responsible for ensuring that agencies comply with the standard .
+
+in august 2005 , omb issued a memorandum to executive branch agencies with instructions for implementing hspd - 12 and the new standard .
+
+the memorandum specifies to whom the directive applies ; to what facilities and information systems fips 201 applies ; and , as outlined in the following text , the schedule that agencies must adhere to when implementing the standard .
+
+october 27 , 2005 — for all new employees and contractors , adhere to the identity proofing , registration , card issuance , and maintenance requirements of the first part ( piv - i ) of the standard .
+
+october 27 , 2006 — begin issuing cards that comply with the second part ( piv - ii ) of the standard and implementing the privacy requirements .
+
+october 27 , 2007 — verify and / or complete background investigations for all current employees and contractors who have been with the agency for 15 years or less .
+
+issue piv cards to these employees and contractors and require that they begin using their cards by this date .
+
+october 27 , 2008 — complete background investigations for all individuals who have been federal agency employees for more than 15 years .
+
+issue cards to these employees and require them to begin using their cards by this date .
+
+in addition , omb directed that each agency provide certain information on its plans for implementing hspd - 12 , including the number of individuals requiring background checks and the dates by which the agency plans to be compliant with piv - i and piv - ii requirements .
+
+agencies were not directed to provide information on the cost of their implementations , but they were directed to submit this information to omb by june 29 , 2005 .
+
+subsequently , agencies were directed to submit updated planning information to omb by september 8 , 2006 .
+
+finally , after the october 27 , 2007 , milestone had passed , omb requested that agencies provide it with an updated plan .
+
+other related guidance that omb has issued includes guidance to federal agencies on electronic authentication practices , sample privacy documents for agency use in implementing hspd - 12 , a memorandum to agencies about validating and monitoring agency issuance of piv credentials , guidance on protecting sensitive agency information , a memorandum to agencies on safeguarding against and responding to the breach of personally identifiable information , and updated instructions to agencies on publicly reporting their hspd - 12 implementation status .
+
+figure 4 shows a timeline that illustrates when hspd - 12 and additional guidance was issued as well as the major deadlines for implementing hspd - 12 .
+
+gsa , in collaboration with the federal identity credentialing committee , the federal public key infrastructure policy authority , omb , and the smart card interagency advisory board — which gsa established to address government smart card issues and standards — developed the federal identity management handbook .
+
+this handbook was intended to be a guide for agencies in implementing hspd - 12 and fips 201 and includes guidance on specific courses of action , schedule requirements , acquisition planning , migration planning , lessons learned , and case studies .
+
+it is to be periodically updated ; the most current version of the handbook was released in december 2005 .
+
+on june 30 , 2006 , gsa and omb issued a memorandum to agency officials that specified standardized procedures for acquiring fips 201-compliant commercial products that have passed nist's and gsa's testing .
+
+according to the gsa guidance , agencies are directed to use these standardized acquisition procedures when implementing their fips 201- compliant systems .
+
+in addition , gsa established a managed service office that offers shared services to federal civilian agencies to help reduce the costs of procuring fips 201-compliant equipment , software , and services by sharing some of the infrastructure , equipment , and services among participating agencies .
+
+according to gsa , the shared service offering — referred to as the usaccess program — is intended to provide several services , such as producing and issuing the piv cards .
+
+as of october 2007 , gsa had 67 agency customers with more than 700,000 government employees and contractors to whom cards would be issued through shared service providers .
+
+in addition , as of december 31 , 2007 , the managed service office ( mso ) had installed over 50 enrollment stations with 15 agencies actively enrolling employees and issuing piv cards .
+
+while there are several services offered by the mso , it is not intended to provide support for all aspects of hspd - 12 implementation .
+
+for example , the mso does not provide services to help agencies integrate their physical and logical access control systems with their piv systems .
+
+in 2006 , gsa's office of governmentwide policy established the interagency hspd - 12 architecture working group , which is intended to develop interface specifications for hspd - 12 system interoperability across the federal government .
+
+as of july 2007 , the group had issued 10 interface specification documents , including a specification for exchanging data between an agency and a shared service provider .
+
+in february 2006 , we reported that agencies faced several challenges in implementing fips 201 , including constrained testing time frames and funding uncertainties as well as incomplete implementation guidance .
+
+we recommended that omb monitor agencies' implementation process and completion of key activities .
+
+in response to this recommendation , beginning on march 1 , 2007 , omb directed agencies to post to their public web sites quarterly reports on the number of piv cards they had issued to their employees , contractors , and other individuals .
+
+in addition , in august 2006 , omb directed each agency to submit an updated implementation plan .
+
+we also recommended that omb amend or supplement governmentwide guidance pertaining to the extent to which agencies should make risk - based assessments regarding the applicability of fips 201 .
+
+omb has not yet implemented this recommendation .
+
+agencies have made limited progress in implementing and using piv cards .
+
+while the eight agencies we reviewed have generally taken steps to complete background checks on most of their employees and contractors and establish basic infrastructure , such as purchasing card readers , none of the agencies met omb's goal of issuing piv cards by october 27 , 2007 , to all employees and contractor personnel who had been with the agency for 15 years or less .
+
+in addition , for the limited number of cards that have been issued , agencies generally have not been using the electronic authentication capabilities on the cards and have not developed implementation plans for those capabilities .
+
+key products are not available to support all of those capabilities .
+
+a key contributing factor for why agencies have made limited progress in adopting the use of piv cards is that omb , which is tasked with ensuring that federal agencies successfully implement hspd - 12 , has focused agencies' attention on card issuance , rather than on full use of the cards' capabilities .
+
+specifically , omb set milestones that focused narrowly on having agencies acquire and issue cards in the near term , regardless of when the electronic authentication capabilities of the cards could be used .
+
+furthermore , although agencies anticipate having to make substantial financial investments to implement hspd - 12 , omb has not considered this to be a major new investment and has not directed agencies to prepare detailed plans to support their decisions regarding how , when , and the extent to which they plan to implement the cards' electronic authentication capabilities .
+
+without implementing these capabilities , agencies will continue to purchase costly piv cards to be used in the same way as the much cheaper , traditional id cards they are replacing .
+
+more significantly , until omb revises its approach to focus on the full use of card capabilities , hspd - 12's objective of increasing the quality and security of id and credentialing practices across the federal government may not be fully achieved .
+
+as we have previously described , by october 27 , 2007 , omb directed federal agencies to issue piv cards and require piv card use by all employees and contractor personnel who have been with the agency for 15 years or less .
+
+hspd - 12 requires that the cards be used for physical access to federally controlled facilities and logical access to federally controlled information systems .
+
+in addition , to issue cards that fully meet the fips 201 specification , basic infrastructure — such as identity management systems , enrollment stations , pki , and card readers — will need to be put in place .
+
+omb also directed that agencies verify and / or complete background investigations by this date for all current employees and contractors who have been with the agency for 15 years or less .
+
+agencies have taken steps to complete the directed background checks on their employees and contractors and establish basic infrastructure to help enable the use of piv capabilities .
+
+for example , commerce , interior , nrc , and usda established agreements with gsa's mso to use its shared infrastructure , including its pki , and enrollment stations .
+
+other agencies , including dhs , hud , labor , and nasa — which chose not to use gsa's shared services offering — have acquired and implemented other basic elements of infrastructure , such as id management systems , enrollment stations , pki , and card readers .
+
+however , none of the eight agencies met the october 2007 deadline regarding card issuance .
+
+in most cases , agencies had not begun issuing cards to more than a small number of their employees and contractor personnel .
+
+in addition , for the limited number of cards that had been issued , agencies had generally not been using the electronic authentication capabilities on the cards .
+
+instead , for physical access , agencies were using visual inspection of the cards as their primary means to authenticate cardholders .
+
+while it may be sufficient in certain circumstances — such as in very small offices with few employees — in most cases , visual inspection will not provide an adequate level of assurance .
+
+omb strongly recommends minimal reliance on visual inspection .
+
+also , seven of the eight agencies we reviewed were not using the cards for logical access control .
+
+furthermore , most agencies did not have detailed plans in place to use the various authentication capabilities .
+
+for example , as of october 30 , 2007 , labor had not yet developed plans for implementing the electronic authentication capabilities on the cards .
+
+similarly , commerce officials stated that they would not have a strategy or time frame in place for using the electronic authentication capabilities of piv cards until june 2008 .
+
+table 2 provides details about the progress each of the eight agencies had made as of december 1 , 2007 .
+
+three of the eight agencies we reviewed — hud , nasa , and usda — indicated that , while they were not currently using the enhanced authentication capabilities , they were in the process of testing products , such as biometric readers and readers that can access and authenticate pki certificates , to determine whether they could be integrated into their agencies' existing access control systems .
+
+a challenge to full use of the enhanced authentication capabilities of piv cards is that key products have not yet been commercially available .
+
+as a result , agencies have been constrained in their ability to build systems that use key authentication capabilities .
+
+currently available products are only partially able to implement electronic authentication based on the chuid that is included on all piv cards .
+
+the chuid is a special type of serial number that incorporates an electronic signature and is used to electronically validate that the information contained in the chuid , such as the card expiration date , has not been altered .
+
+however , existing physical access control systems are unable to receive and process a full chuid , which is up to 27,016 bits long .
+
+most legacy control panels for physical access control systems were built to process only a 26-bit identification number , and even the newest control panels are only able to process 256 bits , at best .
+
+consequently , agencies that have implemented chuid - based authentication have had to implement systems that truncate the chuid so that only a subset of information — without the electronic signature — is transmitted to the control panel for authentication .
+
+use of the truncated chuid does not provide the same level of assurance as processing the full chuid , because the electronic signature information is not included .
+
+according to industry representatives , it could take at least 5 to 7 years before a physical access control system could be commercially available that is capable of reading the full chuid .
+
+depending on the risk level of a system or facility , using the truncated chuid authentication approach could have important security implications .
+
+another product not yet on the market is a piv card reader that can access and validate the pki certificate on a piv card .
+
+according to industry representatives , it will be expensive to develop such readers , and many industry suppliers are not involved because they do not anticipate that they will be able to market these readers to organizations outside of the federal government .
+
+the industry representatives indicated that a few companies that have a federal government focus are developing products for this application , and they anticipate that products will become available later in 2008 .
+
+a key contributing factor to why agencies have made limited progress is that omb — which is tasked with ensuring that federal agencies successfully implement hspd - 12 — has emphasized the issuance of cards , rather than the full use of the cards' capabilities .
+
+specifically , omb's milestones have not focused on implementation of the electronic authentication capabilities that are available through piv cards , and have not set acquisition milestones that would coincide with the ability to make use of these capabilities .
+
+furthermore , despite the cost of the cards and associated infrastructure , omb has not treated the implementation of hspd - 12 as a major new investment and has not ensured that agencies have guidance to ensure consistent and appropriate implementation of electronic authentication capabilities across agencies .
+
+until these issues are addressed , agencies may continue to acquire and issue costly piv cards without using their advanced capabilities to meet hspd - 12 goals .
+
+while omb has established milestones for near - term card issuance , it has not established milestones that require agencies to develop detailed plans for making the best use of the electronic authentication capabilities of piv cards .
+
+consequently , agencies have concentrated their efforts on meeting the card issuance deadlines .
+
+for example , several of the agencies we reviewed have chosen to focus their efforts on meeting the next milestone — that cards be issued to all employees and contractor personnel and be in use by october 27 , 2008 .
+
+understandably , meeting this milestone is perceived to be more important than making optimal use of the cards' authentication capabilities , because card issuance is the measure that omb is monitoring and asking agencies to post on their public web sites .
+
+the piv card and the services involved in issuing and maintaining the data on the card , such as the pki certificates , are costly .
+
+for example , piv cards and related services offered by gsa through its shared service offering cost $82 per card for the first year and $36 per card for each of the remaining 4 years of the card's life .
+
+in contrast , traditional id cards with limited or no electronic authentication capabilities can cost less than $1 each , and have no annual maintenance costs .
+
+therefore , agencies that do not implement electronic authentication techniques are spending a considerable amount per card for capabilities that they are not able to use .
+
+an agency such as interior , for example , which plans to issue cards to approximately 90,000 individuals , could potentially spend approximately $20 million on piv cards without realizing the benefits of those cards until it implements their electronic authentication capabilities .
+
+a more economical approach would be to establish detailed plans for implementing the technical infrastructure necessary to use the electronic authentication capabilities on the cards and time the acquisition of piv cards to coincide with the implementation of this infrastructure .
+
+however , this approach has not been encouraged by omb , which instead has been measuring agencies on how many cards they issue .
+
+without omb focusing its milestones on the best use of the authentication capabilities available through piv cards , agencies are likely to continue to implement minimum authentication techniques and not be able to take advantage of advanced authentication capabilities .
+
+before implementing major new systems , agencies are generally directed to conduct thorough planning to ensure that costs and time frames are well understood and that the new systems meet their needs .
+
+omb establishes budget justification and reporting requirements for all major information technology investments .
+
+specifically , for such investments , agencies are directed to prepare a business case — omb exhibit 300 — which is supported by a number of planning documents that are essential in justifying decisions regarding how , when , and the extent to which an investment would be implemented .
+
+such planning documents are essential in helping program officials understand the costs and benefits of various implementation approaches in order to determine the most beneficial approach .
+
+however , omb determined that because agencies had id management systems in place prior to hspd - 12 and that the directive only directed agencies to “standardize” their systems , the implementation effort did not constitute a new investment .
+
+according to an omb senior policy analyst , agencies should be able to fund their hspd - 12 implementations through existing resources and should not need to develop a business case or request additional funding .
+
+while omb has not directed agencies to develop business cases for hspd - 12 implementation efforts , piv card systems are likely to represent significant new investments at several agencies .
+
+for example , agencies such as commerce , hud , and labor had not implemented pki technology prior to hspd - 12 , but they are now directed to do so .
+
+in addition , such agencies' previous id cards were used for limited purposes and were not used for logical access .
+
+these agencies had no prior need to acquire or maintain card readers for logical access control or to establish connectivity with their id management systems for logical access control and , consequently , had previously allocated very little money for the operations and maintenance of these systems .
+
+specifically , hud's annual operations and maintenance costs for its pre - hspd - 12 legacy system totaled approximately $127,000 , while the agency's estimated cost for hspd - 12 implementation in fiscal year 2008 is approximately $1.6 million — about 13 times more expensive .
+
+according to labor officials , operations and maintenance costs for its pre - hspd - 12 legacy system totaled approximately $169,000 , and labor's fiscal year 2009 budget request for hspd - 12 implementation is approximately $3 million — 17 times more expensive .
+
+while these agencies recognize that they are likely to face substantially greater costs in implementing piv card systems , they have not always thoroughly assessed all of the expenses they are likely to incur .
+
+for example , agency estimates may not include the cost of implementing advanced authentication capabilities where they are needed .
+
+the extent to which agencies need to use such capabilities could significantly impact an agency's cost for implementation .
+
+while the technical requirements of complying with hspd - 12 dictate that a major new investment be made , generally , agencies have not been directed by omb to take the necessary steps to thoroughly plan for these investments .
+
+for example , six of the eight agencies we reviewed had not developed detailed plans regarding their use of piv cards for physical and logical access controls .
+
+in addition , seven of the eight agencies had not prepared cost - benefit analyses that weighed the costs and benefits of implementing different authentication capabilities .
+
+without treating the implementation of hspd - 12 as a major new investment by requiring agencies to develop detailed plans based on risk - based assessments of agencies' physical and logical access control needs that support the extent to which electronic authentication capabilities are to be implemented , omb will continue to limit its ability to ensure that agencies properly plan and implement hspd - 12 .
+
+as a result , hspd - 12 implementation may not achieve enhanced access control , and agencies may make considerable expenditures to acquire capabilities that they cannot use .
+
+another factor contributing to agencies' limited progress is that omb has not provided guidance to agencies regarding how to determine which electronic authentication capabilities to implement for physical and logical access controls .
+
+while the fips 201 standard describes three different assurance levels for physical access ( some , high , and very high confidence ) and associates piv authentication capabilities with each level , it is difficult for agencies to link these assurance levels with existing building security assurance standards that are used to determine access controls for facilities .
+
+the department of justice ( doj ) has developed standards for assigning security levels to federal buildings , ranging from level i ( typically , a leased space with 10 or fewer employees , such as a military recruiting office ) to level v ( typically , a building such as the pentagon or central intelligence agency headquarters that has a large number of employees and a critical national security mission ) .
+
+while there are also other guidelines that agencies could use to conduct assessments of their buildings , several of the agencies we reviewed use the doj guidance to conduct risk assessments of their facilities .
+
+table 3 compares these disparate sets of guidance for physical access control .
+
+officials from several of the agencies we reviewed indicated that they were not using the fips 201 guidance to determine which piv authentication capabilities to use for physical access because they did not find the guidance to be complete .
+
+specifically , they were unable to determine which authentication capabilities should be used for the different security levels .
+
+the incomplete guidance has contributed to several agencies — including commerce , dhs , and nrc — not reaching decisions on what authentication capabilities they were going to implement .
+
+more recently , nist has begun developing guidelines for applying the fips 201 confidence levels to physical access control systems .
+
+however , this guidance has not yet been completed and was not available to agency officials when we were conducting our review .
+
+agencies also lack guidance regarding when to use the enhanced authentication capabilities for logical access control .
+
+similar to physical access control , fips 201 describes graduated assurance levels for logical access ( some , high , and very high confidence ) and associates piv authentication capabilities with each level .
+
+however , as we have previously reported , neither fips 201 nor supplemental omb guidance provides sufficient specificity regarding when and how to apply the standard to information systems .
+
+for example , such guidance does not inform agencies how to consider the risk and level of confidence needed when different types of individuals require access to government systems , such as a researcher uploading data through a secure web site or a contractor accessing government systems from an off - site location .
+
+until complete guidance is available , agencies will likely continue either to delay in making decisions on their implementations or to make decisions that may need to be modified later .
+
+one of the primary goals of hspd - 12 is to enable interoperability across federal agencies .
+
+as we have previously reported , prior to hspd - 12 , there were wide variations in the quality and security of id cards used to gain access to federal facilities .
+
+to overcome this limitation , hspd - 12 directed id cards to have standard features and means for authentication to enable interoperability among agencies .
+
+while steps have been taken to enable future interoperability , progress has been limited in implementing such capabilities in current systems , partly because key procedures and specifications have not yet been developed .
+
+as we have previously stated , nist has established conformance testing for the piv card and interface , and gsa has established testing for other piv products and services to help enable interoperability .
+
+in addition , the capability currently exists for determining the validity and status of a cardholder from another agency via pki .
+
+however , procedures and specifications to enable cross - agency interoperability using the chuid — which is expected to be more widely used than pki — have not been established .
+
+while piv cards and fips 201-compliant readers may technically be able to read the information encoded on any piv card — including cards from multiple agencies — this functionality is not adequate to allow one agency to accept another agency's piv card , because there is no common interagency framework in place for agencies to electronically exchange status information on piv credentials .
+
+for example , the agency that issued a piv card could revoke the cardholder's authorization to access facilities or systems if the card is lost or if there has been a change in the cardholder's employment status .
+
+the agency attempting to process the card would not be able to access this information because a common framework to electronically exchange status information does not exist .
+
+the interfaces and protocols that are needed for querying the status of cardholders have not yet been developed .
+
+in addition , procedures and policies have not been established for sharing information on contractor personnel who work at multiple federal agencies .
+
+without such procedures and policies , agencies will issue piv cards to their contractor staff for access only to their own facilities .
+
+contractors who work at multiple agencies may need to obtain separate piv cards for each agency .
+
+gsa recognizes the need to address these issues and has actions under way to do so .
+
+according to gsa , the federal identity credentialing committee is developing guidance on the issuance and maintenance of piv cards to the contractor community .
+
+gsa is also developing a standard specification that will enable interoperability in the exchange of identity information among agencies .
+
+according to gsa officials , they plan to complete and issue guidance by the end of september 2008 .
+
+in addition , nist is planning to issue an update to a special publication that focuses on interfaces for piv systems .
+
+such guidance should help enable agencies to establish cross - agency interoperability — a primary goal of hspd - 12 .
+
+while hspd - 12's objective was to eliminate wide variations in the quality and security of forms of id used to gain access to federal facilities , agencies have made limited progress in implementing and using piv cards in ways that would achieve this objective .
+
+although they did not meet omb's october 2007 milestone for card issuance , agencies have nevertheless focused on issuing cards to employees and contractor personnel without developing plans for using the electronic authentication capabilities of the cards .
+
+these agency actions have been driven by omb's guidance , which has emphasized the issuance of cards , rather than the full use of the cards' capabilities .
+
+while setting ambitious goals and objectives can help ensure that an initiative is given priority , omb's milestones did not provide a focus on implementing the electronic capabilities available through the piv cards .
+
+furthermore , agencies' milestones for issuing the cards did not coincide with the implementation of the technical infrastructure .
+
+despite the cost of the cards and associated infrastructure , omb has not treated the implementation of hspd - 12 as a major new investment and has not ensured that agencies have guidance to ensure consistent and appropriate implementation of electronic authentication capabilities across agencies for physical and logical access .
+
+until these issues are addressed , agencies will likely continue to acquire and issue costly piv cards and not be able to use their advanced capabilities .
+
+in addition , much work remains before agencies can take advantage of the potential for interoperability under hspd - 12 .
+
+gsa officials have taken initial steps to develop guidance to help enable the exchange of identity information across agencies , and they plan to complete and issue guidance by september 2008 .
+
+such guidance should help enable agencies to establish cross - agency interoperability — a primary goal of hspd - 12 .
+
+we recommend that the director , office of management and budget , revise the agency's approach to overseeing implementation of hspd - 12 by taking the following four actions: establish realistic milestones for full implementation of the infrastructure needed to best use the electronic authentication capabilities of piv cards in agencies .
+
+treat the hspd - 12 implementation as an investment by requiring that each agency develop a detailed plan , based on a risk - based assessment of the agency's physical and logical access control needs , that supports the extent to which electronic authentication capabilities are to be implemented .
+
+require agencies to align the acquisition of piv cards with plans for implementing their technical infrastructure to best use the cards' electronic authentication capabilities .
+
+ensure that guidance is developed that maps existing physical security guidance to fips 201 guidance .
+
+we received written comments on a draft of this report from omb's administrator of the office of e - government and information technology .
+
+the letter is reprinted in appendix iv .
+
+in addition to omb's letter , an omb senior policy analyst also provided technical comments via e - mail , which we have incorporated as appropriate .
+
+we also received written technical comments from the director of the dhs liaison office for gao and the office of the inspector general , the associate deputy secretary of the interior , the administrator of gsa , a program specialist at nasa , and the acting chief information officer for commerce .
+
+the deputy assistant secretary for administration and management from labor provided oral technical comments .
+
+we have incorporated these comments as appropriate .
+
+in addition , a gao liaison from nrc indicated via e - mail , and the assistant secretary for administration of hud stated in writing that their respective agency officials had reviewed the draft report and did not have any comments .
+
+usda officials did not respond to our request for comments .
+
+omb provided comments on our recommendations but did not specifically agree or disagree with any of them .
+
+also , in subsequent discussions , omb staff declined to agree or disagree with our recommendations , indicating that they did not want to characterize their comments in those terms .
+
+regarding our recommendation that omb establish realistic milestones for full implementation of the infrastructure needed to best use the electronic authentication capabilities of piv cards , the agency stated that it agrees that it is important to set milestones for implementing the necessary infrastructure , and that its guidance requires agencies to provide milestones for when they intend to leverage the capabilities of piv credentials .
+
+however , to ensure consistent governmentwide implementation of hspd - 12 , it is important for omb to establish such milestones across agencies , rather than to allow individual agencies to choose their own milestones .
+
+by not setting time frames for agencies to implement this infrastructure , omb has left it uncertain when these capabilities , which are critical to the success of hspd - 12 , should be implemented across the government .
+
+regarding our recommendation that omb require each agency to develop a risk - based , detailed plan for implementing electronic capabilities , the agency stated that previous guidance required agencies to develop implementation plans and provide milestones for when they plan to fully leverage the capabilities of piv credentials for physical and logical access controls .
+
+however , the implementation plans that omb refers to are based on a template that requires agencies to provide only the dates they plan to complete major activities , such as becoming fully compliant with hspd - 12 and having a plan for phasing in physical and logical access controls .
+
+this template does not require that agencies develop detailed , risk - based plans , which would include an assessment of the cost of implementing advanced authentication capabilities and the rationale for specific implementation approaches .
+
+without such detailed plans , agencies may not properly and consistently ensure that their hspd - 12 implementations make the best use of the cards' electronic capabilities or ensure that they are properly addressing high - risk areas .
+
+regarding our recommendation that omb require agencies to align the acquisition of piv cards with their plans for implementing the cards' electronic authentication capabilities , the agency stated that hspd - 12 aligns with other information security programs .
+
+while omb's statement is correct , it would be more economical for agencies to time the acquisition of piv cards to coincide with the implementation of the technical infrastructure necessary for enabling electronic authentication techniques .
+
+this approach has not been encouraged by omb , which instead measures agencies primarily on how many cards they issue .
+
+regarding our recommendation that omb ensure guidance is developed that maps existing physical security guidance to fips 201 guidance , the agency stated that nist is in the process of developing additional guidance to clarify the relationship between facility security levels and piv authentication levels .
+
+until such guidance is available , agencies will likely continue either to delay in making decisions on their implementations or to make decisions that may need to be modified later .
+
+omb also provided additional comments , which we address in appendix iv .
+
+unless you publicly announce the contents of this report earlier , we plan no further distribution until 30 days from the report date .
+
+at that time , we will send copies to interested congressional committees ; the secretaries of homeland security , labor , agriculture , commerce , the interior , and hud ; the director of omb ; the executive director for operations at nrc ; and the administrators of nasa and gsa .
+
+we will also make copies available to others upon request .
+
+in addition , the report will be available at no charge on the gao web site at http: / / www.gao.gov .
+
+if you or your staffs have any questions on the matters discussed in this report , please contact me at ( 202 ) 512-6240 or by e - mail at koontzl@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+key contributors to this report are listed in appendix v .
+
+our objectives were to determine the progress that selected agencies have made in ( 1 ) implementing the capabilities of the personal identity verification ( piv ) cards to enhance security and ( 2 ) achieving interoperability with other agencies .
+
+we reviewed homeland security presidential directive 12 ( hspd - 12 ) , federal information processing standards ( fips ) 201 , related department of commerce's national institute of standards and technology ( nist ) special publications , office of management and budget ( omb ) guidance , general services administration ( gsa ) guidance , and hspd - 12-related industry guidance .
+
+using the results from the federal computer security report cards — which include an assessment of physical security — in conjunction with the results in gao's most recent reports on federal agencies' progress in adopting smart card technology and implementation of hspd - 12 , on a nonprobability basis , we identified agencies that were in different stages of implementing smart card programs and were using different strategies for implementing hspd - 12 .
+
+for example , we included agencies with no prior experience in implementing smart card systems as well as agencies with years of experience in implementing smart card systems .
+
+we also included agencies that were using gsa's shared services offering as well as agencies that were not .
+
+the agencies we selected were the departments of agriculture ( usda ) , commerce , homeland security ( dhs ) , housing and urban development ( hud ) , the interior , and labor ; the national aeronautics and space administration ( nasa ) ; and the nuclear regulatory commission ( nrc ) .
+
+to determine the progress selected agencies had made in implementing the capabilities of the hspd - 12-compliant cards , we analyzed documentation such as agencies' high - level plans for hspd - 12 implementation , system architectures , cost estimates , and documentation of agencies' implementation activities .
+
+we also interviewed officials from the selected agencies to obtain additional information on the actions their agencies took to implement piv cards and the associated infrastructure .
+
+in addition , we compared the functionalities of the piv card that each agency had implemented with the key functionalities that an agency could implement as set forth in fips 201 .
+
+we also interviewed gsa , nist , and omb officials to obtain additional information on guidance and agencies' efforts .
+
+we used the information provided by agency officials to identify the factors contributing to agencies' limited progress .
+
+we also presented the issues we identified to industry groups and obtained their feedback and additional information on the issues .
+
+to determine agencies' progress toward achieving cross - agency interoperability , we reviewed and analyzed documentation from the architecture working group , such as existing interface specifications .
+
+we obtained and analyzed briefings with status updates on plans to enable cross - agency authentication .
+
+we also met with gsa officials and industry experts to discuss the steps that have been taken to establish cross - agency interoperability .
+
+we used this information to identify what steps have been taken and what steps remain to establish cross - agency interoperability .
+
+we performed our work at commerce , dhs , gsa , hud , interior , labor , nasa , nist , nrc , omb , and usda in the washington , d.c. , metropolitan area from june 2007 to february 2008 .
+
+we conducted this audit in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+the requirements of piv - ii include the following: specifications for the components of the piv system that employees and contractors will interact with such as piv cards , card and biometric readers , and personal identification number ( pin ) input devices ; security specifications for the card issuance and management provisions ; a suite of authentication mechanisms supported by the piv card and requirements for a set of graduated levels of identity assurances ; specifications for the physical characteristics of piv cards , including requirements for both contact and contactless interfaces and the ability to pass certain durability tests ; and mandatory information that is to appear on the front and back of the cards , such as a photograph , cardholder name , card serial number , and issuer identification .
+
+there are many components of a piv - ii system , including the following: enrollment stations — used by the issuing agency to obtain the applicant's information , including digital images of fingerprints and a digital photograph .
+
+id management system — stores and manages cardholder information , including the status of assigned credentials .
+
+card issuance stations — issue piv cards to applicants .
+
+prior to releasing a piv card to the applicant , the issuer first matches the applicant's fingerprint to the fingerprint on the piv card .
+
+once a match has been verified , the applicant is issued the card .
+
+card management system — manages life - cycle maintenance tasks associated with the credentials , such as “unlocking” the piv cards during issuance or updating a pin number or digital certificate on the card .
+
+physical access control system — permits or denies a user access to a building or room .
+
+this system may employ a variety of authentication mechanisms , ranging from visual inspection by a guard to fingerprint scanning .
+
+once the user has been authenticated and access has been authorized , the physical access control system grants entry to the user .
+
+logical access control system — permits or denies a user access to information and systems .
+
+this system may employ a variety of authentication methods , such as requiring users to enter a password or perform a fingerprint scan .
+
+public key infrastructure ( pki ) — allows for electronic verification of the status of a piv card and its authorizations by consulting an electronic database to determine whether the digital certificates contained on the card have been revoked .
+
+nist has issued several special publications providing supplemental guidance on various aspects of the fips 201 standard .
+
+selected special publications are summarized in this appendix .
+
+sp 800-73-1 is a companion document to fips 201 that specifies the technical aspects of retrieving and using the identity credentials stored in a piv card's memory .
+
+this special publication aims to promote interoperability among piv systems across the federal government by specifying detailed requirements intended to constrain vendors' interpretation of fips 201 .
+
+sp 800-73-1 also outlines two distinct approaches that agencies may take to become fips 201-compliant and specifies a set of requirements for each approach: one set for transitional card interfaces that are based on the government smart card interoperability specification ( gsc - is ) , version 2.1 , and another set for end - point card interfaces that are more fully compliant with the fips 201 piv - ii card specification .
+
+federal agencies that have implemented smart card systems that are based on the gsc - is can elect to adopt the transitional specification as an intermediate step before moving to the end - point specification .
+
+however , agencies with no existing implementation are directed to implement piv systems that meet the end - point specification .
+
+sp 800-73-1 includes requirements for both the transitional and end - point specifications and is divided into the following three parts: part 1 specifies the requirements for a piv data model that is designed to support dual interface ( contact and contactless ) cards .
+
+the mandatory data elements outlined in the data model are common to both the transitional and end - point interfaces and include strategic guidance for agencies that are planning to take the path of moving from the transitional interfaces to the end - point interfaces .
+
+part 2 describes the transitional interface specifications and is for use by agencies with existing gsc - is - based smart card systems .
+
+part 3 specifies the requirements for the end - point piv card and associated software applications .
+
+sp 800-85a outlines a suite of tests to validate a software developer's piv middleware and card applications to determine whether they conform to the requirements specified in sp 800-73-1 .
+
+this special publication also includes detailed test assertions that provide the procedures to guide the tester in executing and managing the tests .
+
+this document is intended to allow ( 1 ) software developers to develop piv middleware and card applications that can be tested against the interface requirements specified in sp 800-73-1 ; ( 2 ) software developers to develop tests that they can perform internally for their piv middleware and card applications during the development phase ; and ( 3 ) certified and accredited test laboratories to develop tests that include the test suites specified in this document , and that can be used to test the piv middleware and card applications for conformance to sp 800-73-1 .
+
+sp 800-85b outlines a suite of tests to validate a developer's piv data elements and components to determine whether they conform to the requirements specified in sp 800-73-1 , sp 800-76 , and sp 800-78 .
+
+this special publication also includes detailed test assertions that provide the procedures to guide the tester in executing and managing the tests .
+
+this document is intended to allow ( 1 ) developers of piv components to develop modules that can be tested against the requirements specified in sp 800-73-1 , sp 800-76 , and sp 800-78 ; ( 2 ) developers of piv components to develop tests that they can perform internally for their piv components during the development phase ; and ( 3 ) accredited test laboratories to develop tests that include the test suites specified in this document , and that can be used to test the piv components for conformance to sp 800-73-1 , sp 800-76 , and sp 800-78 .
+
+sp 800-76-1 outlines technical acquisition and formatting specifications for the biometric credentials of the piv system , including the piv card .
+
+the following is gao's response to the office of management and budget's ( omb ) additional comments .
+
+1 .
+
+we updated the report to include the additional work under way to enable interoperability .
+
+2 .
+
+we updated the report to discuss the capability of using pki to validate credentials from other agencies .
+
+however , as we discuss in the report , procedures and specifications to enable cross - agency interoperability using the cardholder unique identifier ( chuid ) have not been established .
+
+the chuid is expected to be much more commonly used than pki .
+
+while piv cards and fips 201-compliant readers may technically be able to read the information encoded on any piv card — including cards from multiple agencies — this functionality is not adequate to allow one agency to accept another agency's piv card , based on reading the card's chuid .
+
+this is because there is no common interagency framework in place for agencies to electronically exchange critical information about the card's validity , based on reading the chuid .
+
+3 .
+
+we agree that piv card readers currently exist that read the full chuid .
+
+however , existing physical access control panels — which must receive and process information from the card readers — are unable to process a full chuid .
+
+while the full chuid is up to 27,016 bits long , most existing control panels for physical access control systems were built to process only a 26-bit identification number , and even the newest control panels are only able to process 256 bits at best .
+
+4 .
+
+we clarified the report to reflect that omb does not consider the implementation of hspd - 12 to be a major new investment .
+
+5 .
+
+we added references to additional omb guidance in our report .
+
+6 .
+
+regarding omb's comment on the implementation dates , the report notes both omb's original deadlines and the fact that on october 23 , 2007 , omb modified its guidance to indicate that agencies not meeting omb's milestones would be directed instead to meet alternate milestones that had been mutually agreed upon by the agency and omb .
+
+in addition to the individual named above , john de ferrari ( assistant director ) , neil doherty , nancy glover , emily longcore , james macaulay , shannin o'neill , james rosen , and glenn spiegel made key contributions to this report .
+
+process of determining the permissible activities of users and authorizing or prohibiting activities by each user .
+
+the interface between the application software and the application platform ( i.e. , operating system ) , across which all services are provided .
+
+process of confirming an asserted identity with a specified or understood level of confidence .
+
+granting the appropriate access privileges to authenticated users .
+
+a digital record of an individual's biometric features .
+
+typically , a livescan of an individual's biometric attributes is translated through a specific algorithm into a digital record that can be stored in a database or on an integrated circuit chip .
+
+measures of an individual's unique physical characteristics or the unique ways that an individual performs an activity .
+
+physical biometrics include fingerprints , hand geometry , facial patterns , and iris and retinal scans .
+
+behavioral biometrics include voice patterns , written signatures , and keyboard typing techniques .
+
+a system that manages life - cycle maintenance tasks associated with the credentials , such as unlocking the piv cards during issuance or updating a pin number or digital certificate on the card .
+
+an element on the piv card that provides for unique identification of each cardholder , specifies when the piv card expires , and includes a digital signature capable of authenticating the card and verifying that it has not been altered .
+
+a digital representation of information that ( 1 ) identifies the authority issuing the certificate ; ( 2 ) names or identifies the person , process , or equipment using the certificate ; ( 3 ) contains the user's public key ; ( 4 ) identifies the certificate's operational period ; and ( 5 ) is digitally signed by the certificate authority issuing it .
+
+a certificate is the means by which a user is linked — or bound — to a public key .
+
+the assurance that information is not disclosed to unauthorized entities or computer processes .
+
+a smart card that can exchange information with a card reader without coming in physical contact with the reader .
+
+contactless smart cards use 13.56 megahertz radio frequency transmissions to exchange information with card readers .
+
+an object , such as a smart card , that identifies an individual as an official representative of a government agency .
+
+the result of a transformation of a message by means of a cryptographic system using digital keys , such that a relying party can determine ( 1 ) whether the transformation was created using the private key that corresponds to the public key in the signer's digital certificate and ( 2 ) whether the message had been altered since the transformation was made .
+
+digital signatures may also be attached to other electronic information and programs so that the integrity of the information and programs may be verified at a later time .
+
+the electronic equivalent of a traditional paper - based credential — a document that vouches for an individual's identity .
+
+the location where an issuing agency obtains an applicant's information , including digital images of fingerprints and a digital photograph .
+
+the process of determining to what identity a particular individual corresponds .
+
+the set of physical and behavioral characteristics by which an individual is uniquely recognized .
+
+a system that stores and manages cardholder information , including the status of assigned credentials .
+
+the process of providing sufficient information , such as identity history , credentials , and documents , to facilitate the establishment of an identity .
+
+the ability of two or more systems or components to exchange information and to use the information that has been exchanged .
+
+a mechanism for permitting or denying a user access to information and systems .
+
+a communications protocol that is used to determine whether a public key certificate is still valid or has been revoked or suspended .
+
+a smart card that contains stored identity credentials — such as a photograph , digital certificate and cryptographic keys , or digitized fingerprint representations — that is issued to an individual so that the claimed identity of the cardholder can be verified against the stored credentials by another person or through an automated process .
+
+an accredited and certified organization that procures fips 201-compliant blank smart cards ; initializes them with the appropriate software and data elements for the requested identity verification and access control application ; personalizes the cards with the identity credentials of the authorized cardholders ; and delivers the personalized cards to the authorized cardholders , along with the appropriate instructions for protection and use .
+
+an entity that authenticates an individual's identity applying for a piv card by checking the applicant's identity source documents through an identity proofing process , and ensures that a proper background check is completed before the credential and the piv card is issued to the individual .
+
+a method of permitting or denying a user access to a building or room .
+
+the ability of an individual to control when and on what terms his or her personal information is collected , used , or disclosed .
+
+a system of hardware , software , policies , and people that , when fully and properly implemented , can provide a suite of information security assurances — including confidentiality , data integrity , authentication , and nonrepudiation — that are important in protecting sensitive communications and transactions .
+
+the expectation of loss expressed as the probability that a particular threat will exploit a particular vulnerability with a particular harmful result .
+
+a tamper - resistant security device — about the size of a credit card — that relies on an integrated circuit chip for information storage and processing .
+
+a statement published by organizations , such as nist , the institute of electrical and electronics engineers , the international organization for standardization , and others , on a given topic — specifying the characteristics that are usually measurable and must be satisfied to comply with the standard .
+

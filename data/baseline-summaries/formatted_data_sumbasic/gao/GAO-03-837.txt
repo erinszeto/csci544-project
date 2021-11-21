@@ -1,0 +1,484 @@
+the federal government is moving toward implementing web - based electronic government to provide public services .
+
+at the same time , the computer systems that support these services face increasing security risks from viruses , hackers , and others who seek to interrupt federal operations or to obtain sensitive information that is stored in federal computers .
+
+one of the more significant federal electronic government initiatives , “pay.gov,” is an internet portal and transaction engine created and managed by the department of the treasury's financial management service ( fms ) and operated , maintained , and tested at three federal reserve facilities .
+
+pay.gov allows the public to make certain non - income - tax - related payments to the federal government via the internet .
+
+still early in its implementation , pay.gov is estimated to eventually handle up to 80 million transactions valued at $125 billion annually .
+
+because the magnitude of transaction volume and dollar value envisioned for pay.gov could result in substantial harm to the federal government if the site were successfully attacked , the former chairman of the expired subcommittee on government efficiency , financial management , and intergovernmental relations , committee on government reform , requested that we review this initiative .
+
+he asked us to determine whether the agency ( 1 ) conducted a comprehensive security risk assessment and ( 2 ) documented and implemented appropriate security measures and controls for the system's protection .
+
+to accomplish this , we interviewed fms officials and examined pay.gov risk assessment documents to determine the procedures used to assess risks .
+
+we also observed and tested the effectiveness of information security controls in operation for the pay.gov application and the computing environment in which it operates .
+
+we are addressing this report to you in response to your request .
+
+we are also issuing to you a version of this report that provides a more detailed discussion of the information security weaknesses affecting pay.gov and additional technical recommendations .
+
+because some of the weaknesses are sensitive and could jeopardize fms's ability to protect pay.gov if released to the public , that report is designated “limited official use only. .
+
+information security is a critical consideration for any organization that depends on information systems and computer networks to carry out its mission or business .
+
+it is especially important for government agencies , where the public's trust is essential .
+
+the dramatic expansion in computer interconnectivity and the rapid increase in the use of the internet are changing the way our government , the nation , and much of the world communicate and conduct business .
+
+without proper safeguards , such interconnectivity also poses enormous risks that make it easier for individuals and groups with malicious intent to intrude into inadequately protected systems and use such access to obtain sensitive information , commit fraud , disrupt operations , or launch attacks against other computer systems and networks .
+
+protecting the computer systems that support critical operations and infrastructures has never been more important because of concerns about attacks from individuals and groups with such malicious intent , including terrorists .
+
+these concerns are well founded for a number of reasons , including the dramatic increases in reported computer security incidents , the ease of obtaining and using hacking tools , the steady advance in the sophistication and effectiveness of attack technology , and the dire warnings of new and more destructive cyber attacks to come .
+
+computer - supported federal operations are likewise at risk .
+
+our previous reports , and those of agency inspectors general , describe persistent computer security weaknesses that place a variety of critical federal operations , including those at fms , at risk of disruption , fraud , and inappropriate disclosure .
+
+this body of audit evidence led us , in 1997 , to designate computer security as a governmentwide high - risk area in reports to the congress .
+
+it remains so today .
+
+how well federal agencies are addressing these risks is a topic of increasing interest in both the congress and the executive branch .
+
+this is evidenced by recent hearings on information security and recent legislation intended to strengthen information security .
+
+in addition , the administration has taken other important actions to improve information security , such as integrating information security into the president's management agenda scorecard .
+
+moreover , the office of management and budget ( omb ) and the national institute of standards and technology ( nist ) have issued security guidance to agencies .
+
+fms is the bureau of the u.s. department of the treasury that serves as the federal government's financial manager .
+
+its mission is to provide central payment services to federal agencies , operate federal collection and deposit systems , manage delinquent debt owed to the federal government , and provide governmentwide accounting and reporting services .
+
+fms processes about $3 trillion in collections and disbursements annually .
+
+to help it accomplish its mission , fms maintains multiple financial and information systems to help it process and reconcile monies disbursed and collected by the various government agencies .
+
+these banking , collection , and disbursement systems are also used to process agency transactions , record relevant data , transfer funds to and from the treasury , and facilitate the reconciliation of those transactions .
+
+in addition to its own data processing centers , fms relies on contractors and the federal reserve to help carry out its financial management services .
+
+fms's pay.gov is a governmentwide transaction portal that allows federal agencies to collect and the public to make several types of payments to the federal government via the internet .
+
+citizens and businesses remitting funds to the government for fees , fines , sales , leases , loan repayments , donations , and certain taxes can authorize pay.gov to process an automated clearing house debit against their bank account or to authorize and settle a credit card transaction .
+
+in addition to collections , pay.gov is to provide other electronic financial services over the internet to assist federal agencies , such as ( 1 ) presenting agency bills to end users for collection and ( 2 ) accepting agency forms submitted by end users .
+
+pay.gov is also to provide access control service that verifies an end user's identity ( authentication ) and authorizes the end user's allowed actions .
+
+its reporting service provides information to the treasury , agencies , and the public about transactions .
+
+pay.gov is to support program needs of agencies and cash flow management for the department of the treasury .
+
+critical information assets of this system include information provided by end users for authentication as well as form , bill , and collection data that are housed in pay.gov's databases and provided to the relevant agencies .
+
+according to fms , the benefits of using pay.gov include ( 1 ) increasing user convenience because electronic forms can be filed at any time , including outside of normal business hours , and ( 2 ) helping agencies meet their requirements under the government paperwork elimination act , which requires federal agencies to accept certain forms electronically by october 2003 , when practicable as a substitute for paper .
+
+although still early in its implementation , pay.gov transaction volumes and amounts are expected to be significant .
+
+fms has estimated that pay.gov eventually could process about 80 million transactions and collect about $125 billion a year .
+
+according to fms , during fiscal year 2002 , pay.gov collected about $1.5 billion in direct debit transactions .
+
+as of october 2002 , pay.gov was processing 20,000 direct debit transactions a month .
+
+pay.gov is part of the treasury web application infrastructure ( twai ) , a new treasury hosting environment operated by the federal reserve .
+
+according to the federal reserve , twai is completely separate from its own payment systems and computing infrastructure .
+
+twai , referred to as the pay.gov computing environment in this report , is designed to host multiple treasury applications , of which pay.gov is only one .
+
+it comprises a production or operating environment at one federal reserve facility and a test environment for testing and quality assurance services at another .
+
+in addition , a second production or operating environment is planned for the pay.gov computing environment at a third federal reserve facility .
+
+the assistant commissioner , federal finance , is responsible for the federal government's collection and deposit systems , including pay.gov .
+
+a dedicated program manager oversees and manages the pay.gov initiative for fms .
+
+responsibility for implementing and maintaining information technology security requirements for pay.gov and its computing environment has been delegated to two information system security officers .
+
+under the direction of fms , several federal reserve facilities and their contractors operate pay.gov and its computing environment and perform hosting , collection , and customer service functions .
+
+the objectives of our review were to determine whether fms ( 1 ) conducted a comprehensive security risk assessment for pay.gov and ( 2 ) documented and implemented appropriate security measures and controls for the system's protection .
+
+to determine if a risk assessment was conducted for pay.gov , we requested and examined risk assessment documents prepared for the pay.gov application and computing environment .
+
+we also interviewed agency officials and reviewed risk assessment procedures .
+
+to guide our work for assessing pay.gov security controls , we used the audit methodology described in our federal information system controls audit manual , which discusses the scope of such reviews and the type of testing required for evaluating controls intended to limit , detect , and monitor electronic access to computer resources ( data , programs , equipment , and facilities ) , thereby protecting these resources against unauthorized disclosure , modification , and use ; ensure that work responsibilities are segregated so that one individual does not perform or control key aspects of computer - related operations and thereby have the ability to conduct unauthorized actions or gain unauthorized access to assets or records ; prevent the implementation of unauthorized programs or modifications to an existing program ; and minimize the risk of unplanned interruptions and recover critical computer processing operations if interruptions occur .
+
+to evaluate these controls , we reviewed system documentation , policies , and procedures ; tested and observed controls in operation for the pay.gov application and its computing environment located at three federal reserve facilities ; and examined reports and other documents regarding security design and implementation .
+
+we also discussed with key security representatives , system administrators , and management officials whether computer - related controls were in place , adequately designed , and operating effectively .
+
+we performed our review at the financial management service in washington , d.c. , three federal reserve facilities , and at our headquarters in washington , d.c. , from october 2002 through june 2003 , in accordance with generally accepted government auditing standards .
+
+understanding the risks associated with information systems is a key element of an information security program .
+
+identifying and assessing information security risks help to determine what controls are required and what level of resources should be expended on controls .
+
+the federal information security management act of 2002 and its predecessor , the government information security reform provisions , require all federal agencies to develop comprehensive information security programs based on assessing and managing risks .
+
+the february 1996 revision to omb circular a - 130 , appendix iii , security of federal automated information resources , directs agencies to use a risk - based approach to determine adequate security , including a consideration of the major factors in risk management: the value of the system or application , threats , vulnerabilities , and the effectiveness of current or proposed safeguards .
+
+fms assessed certain risks associated with the pay.gov initiative ; however , some key risks , including those relevant to the pay.gov computing environment , were not sufficiently considered .
+
+fms prepared a business risk assessment for the pay.gov application in june 2002 , about 9 months after pay.gov's initial release but just prior to the migration of the application from a private - sector service provider to the federal reserve .
+
+the assessment identified pay.gov critical assets and the possible threats and vulnerabilities to those assets .
+
+pay.gov stakeholders then assessed those threats , their associated vulnerabilities , and the consequences of the threats in order to prioritize and assign a risk level ( for example , high , medium , or low ) for each threat .
+
+next , fms identified and analyzed the existing controls and residual risks and then devised a plan of action to mitigate the risks to the pay.gov application .
+
+however , fms did not sufficiently assess the risk associated with the pay.gov computing environment .
+
+this environment , which fms defined as a general support system , provides the infrastructure for treasury's web - based applications , including pay.gov .
+
+fms continued to host applications such as pay.gov in this computing environment without taking necessary steps to identify and address potential threats to the system .
+
+for example , fms had not conducted a business risk assessment for the computing environment because officials did not believe this was necessary .
+
+although fms's process for certification and accreditation required a business risk assessment for the pay.gov application , it did not require one for the computing environment .
+
+by not fully assessing risks , fms is more likely to implement inadequate or inappropriate security controls that do not address the system's true risks , which can lead to costly efforts to subsequently implement effective controls .
+
+the effective implementation of appropriate , properly designed security controls is an essential element for ensuring the confidentiality , integrity , and availability of computerized systems and data .
+
+weak security controls expose computerized systems and data to an increased risk of disclosure , modification , and use .
+
+although fms and the federal reserve established many policies , procedures , and controls to protect pay.gov resources , they did not always effectively implement security controls and practices to ensure the confidentiality , integrity , and availability of pay.gov's computing environment and data .
+
+weaknesses in electronic access controls placed data at risk of unauthorized access , which could lead to their unauthorized disclosure , modification , and use .
+
+in addition , weaknesses in other information system controls , including segregation of duties , software change controls , service continuity , and application security controls , further increased risk to pay.gov .
+
+prior to our review , fms and the federal reserve had taken action to protect pay.gov and its computing environment .
+
+it established key security and control policies and procedures in various system documents , including system security plans , security concept of operations , contingency plans , and configuration management plans .
+
+for example , the twai system security plan presents an overview of the security requirements of the system and describes the controls in place or planned for meeting those requirements .
+
+this document also delineates responsibilities and expected behavior of all individuals who access the system .
+
+fms and the federal reserve implemented numerous controls intended to restrict access to pay.gov and its computing environment .
+
+these controls included ( 1 ) designing a layered , multizone security architecture to restrict user access to sensitive components ; ( 2 ) installing multiple sets of firewalls from three different vendors to control external and internal access across the computing environment ; ( 3 ) deploying a network intrusion detection capability to monitor network activity ; ( 4 ) establishing controls to confirm the identity of users and to limit access to authorized levels ; ( 5 ) implementing encrypted protocols to manage devices ; ( 6 ) disallowing direct inbound internet connectivity to the internal network ; ( 7 ) prohibiting incoming e - mail ; ( 8 ) using a more secure network protocol for file sharing ; and ( 9 ) employing a team of competent system administrators .
+
+further , fms performed several security reviews to identify and mitigate vulnerabilities associated with pay.gov .
+
+the implementation of these controls helped to provide a “defense - in - depth” approach to securing pay.gov resources .
+
+fms and the federal reserve had also established other information system controls designed to protect the integrity and availability of the pay.gov computing environment .
+
+both the development and production teams involved in pay.gov activities had instituted several software change management policies and procedures that helped to ensure that only authorized programs and modifications were implemented .
+
+for example , change control boards for pay.gov and its computing production environment effectively conducted review and authorization of proposed software changes and determined whether or not to include the changes in the software release .
+
+fms also hired independent reviewers to conduct technical and software process assessments , resulting in the establishment of improved procedures in the pay.gov software development process .
+
+procedures used to make emergency changes in the production pay.gov computing environment were appropriate .
+
+moreover , the development and production teams maintained an effective record - keeping system of software change requests , thereby providing sufficient audit trails of their activities .
+
+fms and the federal reserve had also implemented local redundancy of hardware , software , and telecommunications in the pay.gov production computing environment to reduce the risk of service interruption .
+
+despite these controls , numerous information security control weaknesses increased the risk that external and internal users could have gained unauthorized access to pay.gov , which could have led to the inappropriate disclosure or modification of its data or to the disruption of service .
+
+a basic management objective for any organization is the protection of its information systems and critical data from unauthorized access .
+
+organizations accomplish this objective by designing and implementing controls that are designed to prevent , limit , and detect electronic access to computing resources .
+
+these controls include user accounts and passwords , access permissions and rights , network services and security , and audit and monitoring of security - relevant events .
+
+inadequate logical access controls diminish the reliability of computerized data and increase the risk of unauthorized access , which could lead to unauthorized disclosure , modification , and use of data .
+
+fms and the federal reserve did not consistently implement effective electronic access controls to prevent , limit , and detect access to pay.gov and its computing environment .
+
+numerous vulnerabilities existed in pay.gov's computing environment because of the cumulative effects of control weaknesses in the areas of user accounts and passwords , access permissions and rights , network services and security , and audit and monitoring of security - related events .
+
+for example , outdated software versions existed that were exploitable from the internet and could have provided an attacker with root access to a server in the pay.gov computing environment .
+
+from the vulnerable server , an attacker would have had direct access to the management network that interconnected and bypassed the firewalls for each of the security zones .
+
+by doing so , an attacker could have exploited other vulnerabilities , such as test accounts and easily guessed passwords , vulnerable services , and insecurely configured x windows servers .
+
+also , because of weaknesses in real - time alerting and the lack of an intrusion detection system on an internal network , the likelihood of detection would have been remote .
+
+weaknesses in the specific control areas are summarized below .
+
+a computer system must be able to identify and differentiate among users so that activities on the system can be linked to specific individuals .
+
+unique user accounts assigned to specific users allow systems to distinguish one user from another , a process called identification .
+
+the system must also establish the validity of a user's claimed identity through some means of authentication , such as a secret password , known only to its owner .
+
+the combination of identification and authentication , such as user account / password combinations , provides the basis for establishing individual accountability and controlling access to the system .
+
+accordingly , agencies should ( 1 ) implement procedures to control the creation , use , and removal of user accounts and ( 2 ) establish password parameters , such as length , life , and composition , to strengthen the effectiveness of account / password combinations for authenticating the identity of users .
+
+fms and the federal reserve did not sufficiently control user accounts and passwords to ensure that only authorized individuals were granted access to the systems and data .
+
+for example , pay.gov operating personnel did not consistently configure password parameters securely , and users sometimes created easy - to - guess passwords .
+
+a commonly known vendor - supplied password was not removed from one server , and passwords on another were inappropriately stored in clear text , increasing the likelihood of their disclosure and unauthorized use to gain access to server resources .
+
+moreover , users were not required to enter a unique user id to log on to certain network devices , thereby diminishing fms's ability to attribute system activity to the responsible individual .
+
+these practices increase the risk that individuals might gain unauthorized access to pay.gov resources without attribution .
+
+a basic underlying principle for securing computer systems and data is the concept of least privilege .
+
+this means that users are granted only those access rights and permissions needed to perform their official duties .
+
+organizations establish access rights and permissions to restrict the access of legitimate users to the specific programs and files that they need to do their work .
+
+user rights are allowable actions that can be assigned to users or groups .
+
+file and directory permissions are rules associated with a file or directory that regulate which users can access them and in what manner .
+
+assignment of rights and permissions must be carefully considered to avoid giving users unintentional and unnecessary access to sensitive files and directories .
+
+fms and the federal reserve routinely permitted excessive access to the pay.gov computing environment and to certain key files and directories .
+
+for example , pay.gov operating personnel permitted numerous world - writable or world - readable files on servers .
+
+in addition , operating personnel did not sufficiently configure the content of users' profiles on certain servers in the pay.gov computing environment , increasing the risk that malicious software could be introduced on the servers .
+
+inappropriate access to sensitive utilities , system directories , and other sensitive files , as well as overly permissive inbound access rules , provides opportunities for individuals to circumvent security controls to read , modify , or delete critical or sensitive information and programs .
+
+networks are series of interconnected devices and software that allow individuals to share data and computer programs .
+
+because sensitive programs and data are stored on or transmitted along networks , effectively securing networks is essential to protecting computing resources and data from unauthorized access , manipulation , and use .
+
+organizations secure their networks , in part , by installing and configuring network devices that permit authorized network service requests and deny unauthorized requests and by limiting the services that are available on the network .
+
+network devices include ( 1 ) firewalls designed to prevent unauthorized access into the network , ( 2 ) routers that filter and forward data along the network , ( 3 ) switches that forward information among parts of a network , and ( 4 ) servers that host applications and data .
+
+network services consist of protocols for transmitting data between computers .
+
+insecurely configured network services and devices can make a system vulnerable to internal or external threats , such as denial - of - service attacks .
+
+since networks often provide the entry point for access to electronic information assets , failure to secure them increases the risk of unauthorized use of sensitive data and systems .
+
+fms and the federal reserve enabled vulnerable , outdated , and / or misconfigured network services and devices .
+
+for example , pay.gov operating personnel used outdated versions of system software and configured network devices to permit vulnerable services .
+
+they also did not sufficiently restrict incoming traffic on a number of firewalls or effectively restrict access to or from a management network in the pay.gov computing environment .
+
+running vulnerable network services and insecurely configuring network devices increase the risk of system compromise , such as unauthorized access to and manipulation of sensitive system data , disruption of services , and denial of service .
+
+determining what , when , and by whom specific actions were taken on a system is crucial to establishing individual accountability , monitoring compliance with security policies , and investigating security violations .
+
+organizations accomplish this by implementing system or security software that provides an audit trail for determining the source of a transaction or attempted transaction and monitoring users' activities .
+
+how organizations configure the system or security software determines the nature and extent of audit trail information that is provided .
+
+to be effective , organizations should ( 1 ) configure the software to collect and maintain sufficient audit trail information for security - relevant events ; ( 2 ) generate reports that selectively identify unauthorized , unusual , and sensitive access activity ; and ( 3 ) regularly monitor and take action on these reports .
+
+without sufficient auditing and monitoring , organizations increase the risk that they may not detect unauthorized activities or policy violations .
+
+fms and the federal reserve did not consistently monitor system activity on firewalls and servers in the pay.gov computing environment .
+
+for example , logging was inconsistently implemented on firewalls , and there was no capability to monitor system activity as it occurred .
+
+in addition , fms did not fully implement a network intrusion detection capability .
+
+as a result , increased risk exists that unauthorized access to the servers and data may not be detected in a timely manner .
+
+in addition to electronic access controls , other important controls should be in place to ensure the confidentiality , integrity , and availability of an information system's software programs and data .
+
+these information system controls include policies , procedures , and techniques that properly segregate incompatible duties among computer personnel , appropriately prevent unauthorized software changes , and effectively ensure the continuation of operations in case of unexpected interruption .
+
+weaknesses in these areas increase the risk of unauthorized access , disclosure , and modification of the system's programs and data .
+
+segregation of duties refers to the policies , procedures , and organizational structure that help ensure that one individual cannot independently control all key aspects of a process or computer - related operation and thereby conduct unauthorized actions or gain unauthorized access to assets or records .
+
+often , segregation of duties is achieved by dividing responsibilities among two or more organizational groups .
+
+dividing duties among two or more individuals or groups diminishes the likelihood that errors and wrongful acts will go undetected because the activities of one individual or group will serve as a check on the activities of the other .
+
+inadequate segregation of duties increases the risk that erroneous or fraudulent transactions could be processed , improper program changes implemented , and computer resources damaged or destroyed .
+
+fms and the federal reserve did not consistently separate certain incompatible functions among pay.gov operating personnel .
+
+for example , they did not sufficiently separate incompatible system administration and security administration duties of pay.gov operating personnel at a federal reserve facility .
+
+to illustrate , the same individuals were responsible for adding and deleting systems users and for maintaining system audit logs .
+
+this condition existed , in part , because fms lacked implementing guidelines for separating incompatible duties among personnel administering the pay.gov computing environment .
+
+as a consequence , increased risk exists that these individuals could perform unauthorized system activities without being detected .
+
+also important for an organization's information security is ensuring that only authorized application programs are placed in operation .
+
+this is accomplished by instituting policies , procedures , and techniques that help ensure that all programs and program modifications are properly authorized , tested , and approved .
+
+moreover , access to programs should be restricted to authorized personnel only .
+
+failure to do so increases the risk that unauthorized programs or changes could be inadvertently or deliberately placed into operation .
+
+weaknesses in software change control procedures threatened the integrity and reliability of the pay.gov application and data .
+
+for example , fms and the federal reserve established change control procedures that provided developers with access to pay.gov software source code after the code had been tested and approved for operation .
+
+this provided an opportunity for the developer to inadvertently or deliberately make unauthorized changes to the source code before it was placed into operation and consequently corrupt data .
+
+in addition , key information was not consistently provided on software change request forms , thereby increasing the risk that changes could be inappropriately implemented .
+
+furthermore , the pay.gov's software change management procedures lacked the inclusion of certain standards for prioritizing , scheduling , and testing software changes , which could potentially lead to inconsistent or arbitrary decisions regarding software changes .
+
+service continuity controls should be designed to ensure that when unexpected events occur , key operations continue without interruption or are promptly resumed , and critical and sensitive data are protected .
+
+these controls include environmental controls and procedures designed to protect information resources and minimize the risk of unplanned interruptions , along with a well - tested plan to recover critical operations should interruptions occur .
+
+if service continuity controls are inadequate , even relatively minor interruptions can result in lost or incorrectly processed data , which can cause financial losses , expensive recovery efforts , and inaccurate or incomplete financial or management information .
+
+service continuity controls for pay.gov were not mature .
+
+for example , contingency plans for the pay.gov application and computing environment did not identify key personnel , did not contain detailed procedures to restore operations , and had not been tested .
+
+in addition , back - up tapes were not stored at an off - site facility .
+
+further , all windows servers in the hosting environment did not have antivirus software installed .
+
+as a result , fms has diminished assurance that it will be able to promptly recover essential pay.gov processing operations if an unexpected interruption occurs .
+
+application security controls help ensure that unauthorized individuals cannot gain access and that authorized users can only enter legitimate transactions or perform appropriate system activities .
+
+the federal reserve implemented effective procedures for establishing user accounts on the pay.gov application and distributing initial passwords to users .
+
+however , the application was designed with weak password controls and inadequate audit logging and reporting of security - relevant events .
+
+as a result , increased risk exists that unauthorized individuals and authorized users can gain access to pay.gov application and enter erroneous transactions or conduct inappropriate system activities without detection .
+
+these weaknesses existed , in part , because fms did not provide sufficient management oversight of pay.gov operating personnel to ensure that key elements of an information security program for pay.gov and its computing environment were fully or consistently implemented .
+
+although the federal reserve and its contractor operate and maintain the pay.gov computing environment and application , fms , as the program manager , is responsible for managing , securing , and overseeing the operation of pay.gov .
+
+our prior study of strong security management practices found that leading organizations handle their information security risks through an ongoing cycle of risk management .
+
+this process includes ( 1 ) assessing risks and determining what security measures are needed , ( 2 ) establishing and implementing policies and controls that meet those needs , ( 3 ) promoting security awareness so that users understand the risks and the related policies and controls in place to mitigate those risks , and ( 4 ) monitoring policies and controls to ensure they are appropriate and effective and that known weaknesses are promptly mitigated .
+
+although fms and the federal reserve had implemented numerous controls for pay.gov , the security of pay.gov systems and data was diminished because fms did not ensure that risks were fully assessed , policies and controls were effectively implemented , operating personnel were aware of strong security practices , known weaknesses were promptly mitigated , and systems were reviewed for security exposures after changes to the systems were made .
+
+as previously discussed , fms did not sufficiently assess risks for the pay.gov computing environment because it did not require a business risk assessment for certification and accreditation and officials did not believe one was necessary .
+
+by not fully assessing risks , fms was more likely to implement inadequate or inappropriate security controls that do not address the environment's true risks , which could lead to costly efforts to subsequently implement effective controls .
+
+another key element of an effective information security program is establishing and implementing appropriate policies and related controls .
+
+fms established information security policies for pay.gov in documents such as the security concept of operations , system security plans , and security policy that , in general , reflect strong security practices .
+
+however , fms and pay.gov operating personnel did not consistently implement them .
+
+many weaknesses identified in this report existed because fms or pay.gov operating personnel at federal reserve facilities did not comply with security policies .
+
+a key factor for this is that fms had not sufficiently documented specific standards or detailed guidelines for implementing those policies .
+
+for example , about 49 percent of the weaknesses identified in this report existed , in part , because fms had not developed or provided guidelines in sufficient detail for implementing controls or configuring systems .
+
+the documentation of standards and guidelines is important because it provides system administrators and other operating personnel specific instructions on how to , among other things , implement controls and configure systems in order to comply with agency information security policies .
+
+another important element of an information security program involves promoting awareness and providing required training so that users understand the risks and their role in implementing related policies and controls to mitigate those risks .
+
+however , the extent of noncompliance with strong security policies and guidelines suggests that some operating personnel were either unaware of appropriate security practices or insensitive to the need for implementing important information system controls .
+
+an ongoing monitoring program that includes testing and evaluation helps to ensure that systems are in compliance with policies , and that policies and controls are both appropriate and effective .
+
+this type of oversight is fundamental because it demonstrates management's commitment to the security program , reminds employees of their roles and responsibilities , and identifies and mitigates areas of noncompliance and ineffectiveness .
+
+although contractors conducted several reviews of controls for the pay.gov computing environment , pay.gov operating personnel did not consistently or promptly correct identified weaknesses .
+
+for example , about 22 percent of the weaknesses we identified during our review had been identified in these prior reviews , including a serious vulnerability related to the security zones established for the pay.gov computing environment .
+
+in particular , a key component of an ongoing monitoring process is the review of security configuration settings on devices after software has been installed or maintenance has been performed .
+
+operating personnel are often required to change security configuration settings on systems in order to install new software or devices and to perform maintenance on existing ones .
+
+because of this change , it is important to ensure that these security settings are reset to their secure values when the installation or maintenance is completed .
+
+however , fms did not ensure that operating personnel performed a postinstallation review to identify vulnerable configuration settings after a new release of pay.gov was installed .
+
+operating personnel stated that some of the weaknesses we identified could have occurred when system security settings were changed to install the new release but not reset to their secure value after the installation was complete .
+
+these deficiencies are consistent with those we previously reported on fms oversight of its other contractors that provide operational support for key fms financial systems .
+
+fms generally agreed with the weaknesses we identified and took immediate steps to address them .
+
+fms asserted that half of the weaknesses had been addressed during or within 1 week following our on - site review and that it has since corrected 47 of the 49 weaknesses identified .
+
+fms is actively working to address the remaining two weaknesses .
+
+prompt implementation of these actions by fms demonstrates a commitment to securing pay.gov resources .
+
+although fms and the federal reserve had implemented numerous controls to protect pay.gov computing resources , risks were not sufficiently assessed , and numerous control weaknesses increased risks to the confidentiality , integrity , and availability of pay.gov systems and data because fms did not provide sufficient management oversight to ensure that key elements of the pay.gov information security program were fully or consistently implemented .
+
+while fms has asserted that it has taken immediate action to correct the weaknesses that we identified during our review , much work remains to be done to enable fms and the federal reserve to promptly address new security threats and risks as they emerge .
+
+ensuring that known weaknesses affecting the pay.gov application and its computing environment are promptly mitigated requires top management support and leadership , disciplined processes , and consistent oversight .
+
+until fms ensures that steps are completed to mitigate these weaknesses and address emerging ones , it will have reduced assurance that the pay.gov application and computing environment are safeguarded against misuse and unauthorized disclosure and modification , and its exposure to these risks will remain unnecessarily high .
+
+to ensure the confidentiality , integrity , and availability of the pay.gov application and computing environment , we recommend that the fms commissioner direct the pay.gov program manager to develop and implement an action plan for strengthening pay.gov computer controls .
+
+in addition , we recommend that fms commissioner strengthen management oversight of the pay.gov initiative by directing the pay.gov program manager to assess risks for the pay.gov computing environment , develop technical implementation guidance to ( 1 ) assist pay.gov operating personnel with implementing controls and configuring pay.gov devices in accordance with strong security practice and ( 2 ) document reasons for using less secure configuration settings , track and actively coordinate with pay.gov operating personnel to correct or mitigate known weaknesses and report the status of corrective actions to the fms commissioner on a regular basis , and establish procedures for the proactive review or audit of the configuration settings on pay.gov devices after installation or maintenance .
+
+in providing written comments on a draft of this report ( which are reprinted in app .
+
+i ) , the fms commissioner concurred with our recommendations and noted that fms had already implemented 96 percent of the recommendations in the limited official use only version of this report , with the rest to be addressed as part of an upcoming release of pay.gov .
+
+the commissioner also identified the specific corrective actions that fms has taken to strengthen management oversight of the pay.gov initiative .
+
+these include ( 1 ) completing a comprehensive security risk assessment for the pay.gov computing environment ; ( 2 ) documenting and implementing appropriate security and management controls to protect the application and its computing environment ; ( 3 ) establishing a team to periodically check the configuration of servers and networks , as well as to evaluate operational staff awareness of and adherence to established policy ; ( 4 ) engaging the federal reserve's national incident response team and establishing an agreement with the federal reserve that the general auditors of the various reserve banks will conduct regular information technology audits of fms's internet applications ; ( 5 ) instituting greater separation of duties and a more rigorous software change management process to maintain stricter control over deployed software ; and ( 6 ) documenting security policies in all statements of work so that all vendors are aware of and accountable for security requirements .
+
+according to the fms commissioner , these actions have already helped to more consistently enforce security controls over pay.gov .
+
+the fms commissioner takes issue with one element of our assessment .
+
+throughout this report , we attribute many of the weaknesses jointly to fms and the federal reserve .
+
+the commissioner believes it is inappropriate and unnecessary to include the federal reserve as a responsible party to the report's findings because all management responsibility and authority over all business , technical , and policy decisions reside exclusively with fms .
+
+we agree with the fms commissioner that management responsibility rests with fms , which is why we have addressed our recommendations to the commissioner .
+
+however , we also believe it is appropriate and necessary to include the federal reserve as a responsible party because ( 1 ) the pay.gov application and computing environment reside at federal reserve facilities , ( 2 ) the federal reserve's personnel and contractors are responsible for operating the pay.gov application and computing environment , and ( 3 ) day - to - day operational decisions and activities by the federal reserve's personnel or contractors contributed to the security weaknesses affecting pay.gov .
+
+if you have any questions or need any further information , please contact gregory c. wilshusen , assistant director , at ( 202 ) 512-6244 , or me at ( 202 ) 512-3317 .
+
+we can also be reached by e - mail at wilshuseng@gao.gov or daceyr@gao.gov , respectively .
+
+key contributors to this report are identified in app .
+
+ii .
+
+in addition to the individual named above , lon chin , west coile , debbi conner , kristi dorsey , kenneth johnson , hal lewis , duc ngo , thomas payne , henry sutanto , and christopher warweg made key contributions to this report .
+
+the general accounting office , the audit , evaluation and investigative arm of congress , exists to support congress in meeting its constitutional responsibilities and to help improve the performance and accountability of the federal government for the american people .
+
+gao examines the use of public funds ; evaluates federal programs and policies ; and provides analyses , recommendations , and other assistance to help congress make informed oversight , policy , and funding decisions .
+
+gao's commitment to good government is reflected in its core values of accountability , integrity , and reliability .
+
+the fastest and easiest way to obtain copies of gao documents at no cost is through the internet .
+
+gao's web site ( www.gao.gov ) contains abstracts and full - text files of current reports and testimony and an expanding archive of older products .
+
+the web site features a search engine to help you locate documents using key words and phrases .
+
+you can print these documents in their entirety , including charts and other graphics .
+
+each day , gao issues a list of newly released reports , testimony , and correspondence .
+
+gao posts this list , known as “today's reports,” on its web site daily .
+
+the list contains links to the full - text document files .
+
+to have gao e - mail this list to you every afternoon , go to www.gao.gov and select “subscribe to e - mail alerts” under the “order gao products” heading .
+

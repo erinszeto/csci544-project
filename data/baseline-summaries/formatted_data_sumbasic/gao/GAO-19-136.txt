@@ -1,0 +1,998 @@
+department of defense ( dod ) space systems have grown increasingly dependent on software to enable a wide range of functions , including satellite command and control , early detection and tracking of objects in the earth's orbit , global positioning system ( gps ) signals , and radio communication for military forces .
+
+over the next 5 years , dod plans to spend over $65 billion on its space system acquisitions portfolio , including many systems that rely on software for key capabilities .
+
+however , over the last two decades , dod has had trouble with space acquisition programs where software is a key component , as evidenced by significant schedule delays and billions of dollars of cost growth attributable in part to software problems .
+
+for over 30 years , we have reported on dod's challenges in acquiring software - intensive weapon systems , including space systems .
+
+these challenges include: ineffective management of system requirements , critical software design deficiencies , deferred resolution of problems to later phases of development , inadequate testing of systems , and a lack of meaningful metrics .
+
+congress has mandated dod to improve its approaches for software development within major defense acquisitions .
+
+for example , in 2002 , congress required that each military department establish a program to ( 1 ) improve the software acquisition process that includes efforts to develop appropriate metrics for performance measurement and continual process improvement ; and ( 2 ) ensure that key program personnel have an appropriate level of experience or training in software acquisition .
+
+in 2010 , congress required that dod implement processes to include early and continual user involvement , among other things .
+
+in 2014 , congress enacted information technology ( it ) acquisition reform legislation ( referred to as the federal information technology acquisition reform act , or fitara ) , which , among other things , requires covered agencies' chief information officers to certify that incremental development is adequately implemented for it investments .
+
+in response , dod has made efforts to improve its software development within weapon system acquisitions , such as revising the department of defense instruction ( dodi ) 5000.02 — its instruction for the management of all dod acquisition programs — in 2015 for programs to use development approaches such as incremental development and to involve users more frequently .
+
+in addition , the dodi 5000.02 allows programs to tailor its acquisition procedures to more efficiently achieve program objectives .
+
+senate and house reports accompanying the national defense authorization act ( ndaa ) for fiscal year 2017 contain provisions for us to review software - intensive dod space system acquisition programs , among other things .
+
+this report addresses , for selected software - intensive space programs , ( 1 ) the extent to which these programs have involved users and delivered software using newer development approaches ; and ( 2 ) what software - specific management challenges , if any , these programs have faced .
+
+we reviewed four software - intensive major defense programs with cost growth or schedule delays attributed , in part , to software development challenges .
+
+in selecting these systems from an initial list of 49 dod space programs , we narrowed our selection to software - intensive major defense acquisition programs and major automated information systems as identified by dod where software development has contributed in some part to cost growth or schedule delays .
+
+we further narrowed to those programs that experienced unit cost or schedule breaches or changes and represented different dod services and acquisition categories .
+
+these programs are the air force's joint space operations center mission system increment 2 ( jms ) , next generation operational control system ( ocx ) , space - based infrared system ( sbirs ) ; and the navy's mobile user objective system ( muos ) .
+
+to address the objectives , we interviewed officials from the undersecretary of defense for acquisition and sustainment , office of the deputy assistant secretary of defense for systems engineering , office of cost assessment and program evaluation , office of the director of operational test and evaluation , defense digital service , defense innovation board , and the office of the assistant secretary of the air force for space acquisition .
+
+we also interviewed officials from the selected program offices and their respective contractors , space systems users , dod test organizations , and federally funded research and development centers .
+
+to determine how effectively selected dod software - intensive space programs have involved users and adopted newer software development approaches , we reviewed the fiscal year 2010 ndaa , in addition to dod's 2010 report to congress in response to this statute , and dodi 5000.02 , which identified characteristics of user engagement .
+
+we then reviewed relevant program plans and documentation — such as human engineering and human systems integration plans , and standard operating procedures — and interviewed program officials and end users to determine the extent to which the program addressed the characteristics .
+
+we also examined dod guidance and applicable leading practices to identify time frames for delivering software under incremental and iterative software development approaches , and we compared these time frames to program performance .
+
+to determine what software - specific management challenges , if any , these selected programs have faced , we reviewed gao reports and industry reports and studies on software tools and metrics used to manage software programs and also reviewed program management reports , contract documents , and external reports .
+
+we also interviewed program and contractor officials and officials from federally funded research and development centers .
+
+we also reviewed program metrics , test and evaluation reports , and external program assessments .
+
+see appendix i for additional information on our objectives , scope , and methodology .
+
+we conducted this performance audit from november 2017 to march 2019 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+software development approaches have evolved over time .
+
+dod weapon system acquisition programs have traditionally developed software using what is known as the waterfall development approach , first conceived in 1970 as linear and sequential phases of development over several years that result in a single delivery of capability .
+
+figure 1 depicts an overview of the waterfall approach .
+
+within industry , software development has evolved with the adoption of newer approaches and tools .
+
+for example , while a traditional waterfall approach usually is often broadly scoped , multiyear , and produces a product at the end of a sequence of phases , an incremental approach delivers software in smaller parts , or increments , in order to deliver capabilities more quickly .
+
+this development technique has been preferred for acquiring major federal it systems , to the maximum extent practicable , and in omb guidance since at least 2000 .
+
+in addition , iterative development promotes continual user engagement with more frequent software releases to users .
+
+figure 2 shows an overview of incremental and iterative development .
+
+devops is a more recent type of software development first used by industry around 2009 .
+
+according to the defense innovation board , devops represents the integration of software development and software operations , along with the tools and culture that support rapid prototyping and deployment , early engagement with the end user , and automation and monitoring of software .
+
+figure 3 shows a notional representation of the devops approach based on dod and industry information .
+
+there are also a variety of other software development approaches .
+
+incremental , iterative , and devops approaches are further described as follows: incremental development sets high level requirements early in the effort , and functionality is delivered in stages .
+
+multiple increments deliver a part of the overall required program capability .
+
+several builds and deployments are typically necessary to satisfy approved requirements .
+
+dod guidance for incremental development for software - intensive programs states that each increment should be delivered within 2 years , and omb guidance issued pursuant to fitara requires delivery of software for information technology investments in 6-month increments .
+
+iterative development takes a flexible approach to requirements setting .
+
+in this approach , requirements are refined in iterations based on user feedback .
+
+we include agile development approaches in this category of development ; although most agile approaches include aspects of both iterative and incremental development , as shown in figure 4 .
+
+the agile approach was first articulated in 2001 in what is known as the agile manifesto .
+
+the agile manifesto states the importance of four values: ( 1 ) individuals and interactions over processes and tools , ( 2 ) working software over comprehensive documentation , ( 3 ) customer collaboration over contract negotiation , and ( 4 ) responding to change as opposed to following a pre - set plan .
+
+approaches that share common agile principles include: scrum , extreme programming , and scaled agile framework , among others .
+
+these approaches stress delivering the most value as early as possible and constantly improving it throughout the project lifecycle based on user feedback .
+
+within industry , agile development approaches typically complete iterations within 6 weeks , and deliver working software to the user at the end of each iteration .
+
+according to dod and industry , iterative development approaches have led to quicker development at lower costs and have provided strategic benefit through rapid response to changing user needs .
+
+devops is a variation of agile that combines “development” and “operations,” emphasizing communication , collaboration , and continuous integration between both software developers and users .
+
+according to the software engineering institute , devops is commonly seen as an extension of agile into the operations side of the process , implementing continuous delivery through automated pipelines .
+
+in general , all stakeholders — including operations staff , testers , developers , and users — are embedded on the same team from the project's inception to its end , ensuring constant communication .
+
+automated deployment and testing is used instead of a manual approach , and the developer's working copies of software are synchronized with the users .
+
+software code is continuously integrated and delivered into production or a production - like environment .
+
+according to industry reports , the use of devops may lower costs due to immediate detection of problems as well as result in a greater confidence in the software because the users have continuous visibility into development , testing , and deployment .
+
+according to dod officials from the undersecretary of defense , research and engineering , adopting agile and devops within dod weapon system acquisitions — which includes dod space programs — is challenging and requires programs to adopt comprehensive strategies that cover broad topics .
+
+officials said these strategies should include plans for cultural adoption by the program office and contractor ; training and certification for program office and contractor personnel ; and tools , metrics , and processes that support continuous integration and delivery , among others .
+
+while there are a variety of approaches to developing software , involving users in early stages and throughout software development helps detect deficiencies early .
+
+industry studies have shown it becomes more expensive to remove conceptual flaws the later they are found .
+
+previous gao reports as well as other dod and industry studies have also found that user involvement is critical to the success of any software development effort .
+
+for example , we previously reported that obtaining frequent feedback is linked to reducing risk , improving customer commitment , and improving technical staff motivation .
+
+we also previously reported that two factors critical to success in incremental development were involving users early in the development of requirements and prior to formal end - user testing .
+
+in the fiscal year 2010 ndaa , congress directed dod to develop and implement a new acquisition process for information technology systems that , among other things , include early and continuous involvement of the user .
+
+this statute , in addition to dod's 2010 report to congress in response to the statute , and dodi 5000.02 identify characteristics of effective user engagement for dod acquisitions , including: early engagement: users are involved early during development to ensure that efforts are aligned with user priorities .
+
+continual engagement: users are involved on a regular , recurring basis throughout development to stay informed about the system's technical possibilities , limitations , and development challenges .
+
+feedback based on actual working software: user feedback during development is based on usable software increments to provide early insight into the actual implementation of the solution and to test whether the design works as intended .
+
+feedback incorporated into subsequent development: user feedback is incorporated into the next build or increment .
+
+defense space systems typically consist of multiple segments: one or more satellites , ground control systems , and , in some cases , terminals for end - users .
+
+each segment depends on software to enable critical functionality , such as embedded software in satellite vehicles , in applications installed on computer terminals in ground control stations , or embedded signal processing software in user terminals to communicate with satellites , shown in figure 5 .
+
+we have previously reported on significant cost growth and schedule delays in numerous dod space systems , with some space program costs rising as much as 300 percent , and delays so lengthy that some satellites spend years in orbit before key capabilities are able to be fully utilized .
+
+in particular , the programs described below have experienced significant software challenges , including addressing cybersecurity requirements , which have contributed to cost growth and schedule delays .
+
+the air force's jms program aims to replace an aging space situational awareness and command and control system with improved functionality to better track and catalogue objects in the earth's orbit to support decision making for space forces .
+
+increment 2 is to replace existing systems and deliver additional mission functionality .
+
+the air force is providing this functionality in three deliveries: the first delivery — service pack 7 — provided hardware and software updates and was delivered in september 2014 ; the second delivery — service pack 9 — aims to improve functions currently being performed , such as determining space object orbits and risks of collision ; and the final delivery — service pack 11 — aims to provide classified functionality .
+
+the government is serving as the system integrator directly managing the integration of government and commercially developed software onto commercial , off - the - shelf hardware , so there is no prime contractor .
+
+historical software development challenges include: in 2015 , we found that inconsistencies in the program's software development schedule made it unclear whether the program would be able to meet its remaining milestones .
+
+the same year , the program declared a schedule breach against its baseline due , in part , to delays in resolving deficiencies identified during software testing .
+
+in 2016 , dod noted that the revised schedule was still highly aggressive with a high degree of risk because the program was concurrently developing and testing software .
+
+in 2017 , developmental tests found a number of mission critical software deficiencies , which delayed operational testing .
+
+the director of operational test and evaluation also noted that additional work remained to help provide adequate cyber defense for jms .
+
+during operational testing in 2018 , jms was found not operationally effective and not operationally suitable due , in part , to missing software requirements , urgent deficiencies that affected system performance , and negative user feedback .
+
+mobile user objective system ( muos ) the navy's muos program aims to provide satellite communications to fixed and mobile terminal users with availability worldwide .
+
+muos includes a satellite constellation , a ground control and network management system , and a new waveform for user terminals .
+
+the ground system includes the ground transport , network management , satellite control , and associated infrastructure to both operate the satellites and manage the users' communications .
+
+the muos constellation is complete , and , according to program officials , software development officially ended in 2012 with the delivery of the waveform software .
+
+however , the user community still cannot monitor and manage muos .
+
+muos has two types of users: ground operators responsible for managing the muos communications network , and the military users of radios .
+
+space and missile defense command / army forces strategic command ( smdc / arstrat ) was the user representative while muos was developed .
+
+while dod allowed the program to move into sustainment — the phase after development is formally completed — the program continues to resolve challenges with the ground segment , and the contractor continues to deliver software updates to address deficiencies .
+
+in 2017 , the program transitioned its software sustainment efforts to an agile development approach in preparation for a follow - on operational test currently scheduled to begin in june 2019 .
+
+while lockheed martin space systems is the prime contractor for muos , we evaluated software efforts conducted by general dynamics , the subcontractor performing software development .
+
+historical software development challenges include: in 2014 , dod found that 72 percent of the software was obsolete .
+
+also in 2014 , operational testing was delayed due to software reliability issues in the ground system and waveform .
+
+in 2015 , we found that over 90 percent of muos' planned capability was dependent on resolving issues related to integrating the muos waveform , terminals , and ground systems .
+
+also in 2015 , operational tests determined muos was not operationally effective , suitable , or survivable due in part to cybersecurity concerns in the ground system .
+
+as of 2016 , there were still existing and emerging cybersecurity vulnerabilities to be addressed .
+
+lockheed martin space systems ( prime ) general dynamics ( software development subcontractor ) contract type: cost plus incentive and award fee / fixed price incentive ( firm target ) and award fee naval computer and telecommunications area master station pacific ( nctams pac ) space and missile defense command / army forces strategic command ( smdc / arstrat ) next generation operational control system ( ocx ) the air force's ocx program is designed to replace the current ground control system for legacy and new gps satellites .
+
+ocx software is being developed in a series of blocks: block 0 is planned to provide the launch and checkout system and support initial testing of gps iii satellites and cybersecurity advancements .
+
+blocks 1 and 2 are planned to provide command and control for previous generations of satellites and gps iii satellites as well as monitoring and control for current and modernized signals .
+
+the ocx contractor delivered block 0 in september 2017 .
+
+the air force took possession of block 0 in october 2017 by signing a certificate of conformance , and will accept it at a later date after block 1 is delivered .
+
+historical software development challenges include: in 2013 , dod paused ocx development due to incomplete systems engineering , which led to continuous rework and deferred requirements .
+
+in 2015 , we reported that , among other things , ocx had significant difficulties related to cybersecurity implementation .
+
+in 2016 , the program declared a nunn - mccurdy unit cost breach .
+
+also in 2016 , the contractor began implementing devops at the recommendation of defense digital service but , according to the program office and contractor , only planned to automate development without the operations component of devops .
+
+the contractor did not achieve initial planned schedule efficiencies .
+
+in 2017 , the air force accepted block 0 despite over 200 open software defects .
+
+according to the program , when block 0 was accepted there was also a plan to resolve the open software defects by the time of the first launch .
+
+since then , according to the program office , all necessary defects related to launch have been addressed .
+
+in 2018 , dod noted that the schedule was at risk since the program made aggressive assumptions in its plan to develop , integrate , test software , and resolve defects .
+
+space - based infrared system ( sbirs ) the air force's sbirs program is an integrated system of both space and ground elements that aim to detect and track missile launches .
+
+sbirs is designed to replace or incorporate existing defense support ground stations and satellites to improve upon legacy system timeliness , accuracy , and threat detection sensitivity .
+
+the air force is delivering the sbirs ground system in one program with two increments: the first increment became operational in 2001 and supports functionality of existing satellites .
+
+the second increment , which is still in development , is designed to provide new space segments , mission control software and hardware , and mobile ground capability .
+
+the air force is delivering these capabilities in multiple blocks: block 10 was accepted in 2016 and introduced new ground station software and hardware .
+
+block 20 is expected to be complete by late 2019 and is planned to further improve ground station software .
+
+historical software development challenges include: in 2001 , 2002 , and 2005 , cost increases and schedule delays due , in part , to software complexity problems led to four separate nunn - mccurdy unit cost breaches .
+
+in september 2007 , we found that the amount of rework resulting from unresolved software discrepancies was contributing to cost growth and schedule delays .
+
+in addition , the program had software algorithms that were not yet completed or demonstrated , hundreds of open deficiency reports , and a lack of coordination between space and ground system software databases .
+
+in 2016 , dod said that software deficiencies were contributing to delays in delivering the ground architecture .
+
+in 2018 , dod noted that flight software development remained a concern to the overall program schedule .
+
+according to sbirs users and the program office , cybersecurity issues found during block 10 testing are still being addressed as a part of the block 20 effort .
+
+dod programs we reviewed frequently did not involve users early or continually during development , base user feedback on actual working software , or incorporate user feedback into subsequent software deliveries .
+
+most programs had plans to incorporate these elements of user engagement throughout their software development efforts , but they often did not follow those plans due , in part , to the lack of specific guidance on user involvement and feedback .
+
+regarding frequency of software delivery , while dodi 5000.02 suggests that programs deliver incremental software deliveries every 1 to 2 years , the programs we reviewed often continued to deliver software consistent with the long delivery schedules common to waterfall development .
+
+dod is taking steps to address this issue .
+
+the four programs we reviewed often did not demonstrate key characteristics of effective user engagement as summarized below: early engagement .
+
+ocx involved users early and jms planned to involve users early but , in practice , did not do so ; sbirs and muos did not plan to involve users early in software development .
+
+continual engagement .
+
+jms , ocx , and sbirs all planned to continually involve users but , in practice , did not fully do so ; muos did not plan to do so .
+
+feedback based on actual working software .
+
+ocx and sbirs have provided users opportunities to provide such feedback but only years into software development ; jms and muos did not provide opportunities for feedback .
+
+feedback incorporated into subsequent development .
+
+jms , ocx , and sbirs all planned to incorporate user feedback but , in practice , have not done so throughout development ; muos did not plan to do so during software development .
+
+program efforts to involve users often did not match what their planning documentation described .
+
+in addition , when user input was collected , program officials did not capture documentation of how user feedback was addressed .
+
+further , we found that , in practice , none of the programs we reviewed had users providing feedback on actual working software until years after system development began .
+
+this was the case even for programs utilizing agile or iterative - incremental software development approaches , where user involvement and feedback from using functional systems early in the development cycle is foundational .
+
+these shortcomings were due , in part , to the lack of specific guidance on user involvement and feedback .
+
+both dodi 5000.02 and dod's guiding principles for delivering information technology acquisitions note that software should be developed via usable software deliveries to obtain user acceptance and feedback for the next segment of work , but this guidance lacks specificity .
+
+in particular , dod does not specify when to involve users and request their feedback , how frequently to seek user involvement and feedback on software deliverables , how to report back to users on how that feedback was addressed , and how to document the results of user involvement and feedback .
+
+as a result of programs' shortcomings with user involvement and feedback , programs risk delivering systems that do not meet user needs .
+
+in selected cases , delivered software was deemed operationally unsuitable by dod testers and required substantial rework .
+
+further details on the extent to which programs implemented the four key characteristics are described below .
+
+jms: program documents created at the start of jms system development contain specific operating procedures for conducting interactions with the user community — air force personnel who track and catalogue objects in orbit — during acquisition and fielding .
+
+however , the program has not followed these operating procedures during system development .
+
+early engagement .
+
+the jms program office planned to involve users early in development but , in practice , did not do so .
+
+jms program documentation states that users were to be involved in user engagement sessions within the first 4 weeks of iterative development .
+
+however , the first documented user engagement session was held more than a year after development start .
+
+continual engagement .
+
+the jms program office planned to engage users throughout development but , in practice , did not do so .
+
+jms program documentation states that user engagement sessions are to be held regularly during development — roughly every 2 to 4 weeks .
+
+however , in practice , program officials told us they only involved users as needed during software development .
+
+we found that the frequency of user engagement events varied from several weeks to more than 6 months .
+
+according to program officials , there were limited users available , and their operational mission duties were prioritized over assisting with system development .
+
+feedback based on actual working software .
+
+the jms program office did not provide users an opportunity to give feedback based on actual working software during development .
+
+according to program documentation , designs and notional drawings , not working software , were to be used for user engagement sessions .
+
+while jms did provide users opportunities to provide feedback , this feedback was not on actual working software .
+
+program officials said the goal of these events was never intended to include user feedback on actual working software .
+
+however , users told us that when they were finally able to use the system for the first time , 4 years after development started , it did not function as needed .
+
+the software did not execute what it had been designed to do , and earlier user engagement on actual working software may have identified these issues .
+
+feedback incorporated into subsequent development .
+
+the jms program office planned to incorporate user feedback into development but , in practice , did not do so .
+
+jms program documentation states that the program will document user feedback from user engagement events using summary notes communicated back to the user .
+
+however , jms users said it was often unclear if their feedback was incorporated .
+
+for example , in march 2016 , a user engagement event was held to discuss any questions and concerns relating to the planned system's conjunction assessment — a key feature that predicts orbit intersection and potential collision of space objects — that resulted in 8 user - identified issues .
+
+when we met with the users in 2018 , they told us that conjunction assessment issues remained unaddressed , and they would still be reliant on the legacy system to fully execute the mission and perform their duties .
+
+the legacy system is still needed , they said , because the program deferred critical functions , and the most recent operational test found the system to be operationally unsuitable .
+
+muos: the muos program office did not engage users — army forces strategic command personnel who support the narrowband and wideband communications across the air force , marines , navy , and army — during software development but are engaging users while developing software during sustainment , the acquisition phase after development when the program mainly supports and monitors performance .
+
+following the end of development , at an operational test event in 2015 , dod testers deemed the system was operationally unsuitable .
+
+the muos program office moved to an agile development approach in 2017 to address software deficiencies in preparation for the next operational test event .
+
+early engagement .
+
+the muos program office did not engage users early in development .
+
+program documentation does not describe any plans for user engagement or involvement during development and , according to program officials , no users evaluated the actual system during development .
+
+continual engagement .
+
+the muos program office did not continually engage with users .
+
+program documentation does not describe any plans for user engagement or involvement during development .
+
+program officials said no users evaluated the system during development because there were no users with real world experience on a system like muos .
+
+however , as previously noted , smdc / arstrat represented end users' interests during muos development .
+
+feedback based on actual working software .
+
+the muos program office did not provide users an opportunity to give feedback based on actual working software .
+
+program documentation does not describe a process for obtaining user feedback based on actual working software .
+
+the first time users had a chance to fully operate the system was after development ended , in preparation for operational testing in 2014 , which identified numerous defects .
+
+additionally , muos users said that they have since identified 128 functions in 11 critical areas that must be addressed or they will not accept the system .
+
+users also said that some of the vulnerabilities found during operational testing , including cybersecurity vulnerabilities , have been deferred .
+
+feedback incorporated into subsequent development .
+
+the muos program office did not incorporate user feedback into development .
+
+program documentation did not describe plans to gain user feedback or acceptance into the development of the muos system .
+
+in addition , users and the contractor told us that program officials did not allow direct interaction during development due to a concern that such interactions could lead to changes in system requirements .
+
+the program office said that user involvement to - date has not caused delays to testing or software delivery .
+
+ocx: the ocx program had limited user engagement , but has recently held user engagement events based on releases of actual working software .
+
+the program has made efforts to obtain feedback from users , but users have noted there is no time in the schedule to address much of their feedback prior to delivering the system .
+
+early engagement .
+
+the ocx program office involved users early in development in accordance with its plans .
+
+from 2011 , ocx users were involved in technical meetings where they provided feedback on the concept of operations and the design of the system .
+
+continual engagement .
+
+the ocx program office planned to engage users throughout development but , in practice , did not fully do so .
+
+ocx planning documentation includes multiple opportunities for user engagement at various stages of system development , including operational suitability and “hands - on” interaction with an integrated system .
+
+according to the program office , numerous events were held for users to give feedback on the system .
+
+however , since 2012 , the program has only held one of its planned events to address operational suitability .
+
+in addition , other opportunities for users to operate the system have been removed to accommodate the program's schedule , such as “day in the life” events that allowed users to validate the system as they would actually operate it .
+
+users said that removing events like these created fewer opportunities to identify and resolve new deficiencies .
+
+feedback based on actual working software .
+
+ocx did not plan to provide users an opportunity to give feedback based on actual working software but , in practice , did so years into development .
+
+ocx planning documents rely on simulations and mock - ups for evaluating system usability .
+
+however , users told us that mock - ups do not allow them to test functionality and may not be representative of the final delivered product .
+
+starting in 2014 — 2 years after development started — users had opportunities to review the limited functionality available at the time .
+
+since 2017 , users said they were able to test working software .
+
+feedback incorporated into subsequent development .
+
+the ocx program office planned to incorporate user feedback into development but , in practice , did not do so throughout development .
+
+ocx planning documentation includes a user comment response process that would collect and validate user comments and communicate results back to the users .
+
+according to the program office , for ocx block 0 , users provided feedback that was incorporated prior to the first launch .
+
+while ocx users said that they have the opportunity to provide feedback , there is a growing list of unaddressed block 1 issues to be resolved .
+
+some of these feedback points , if left unresolved , may result in operational suitability concerns and a delayed delivery to operations .
+
+according to the program office , critiques from the users have either been closed , incorporated into the ocx design , or are still under assessment between the contractor and users .
+
+a majority of user feedback points for the ocx iteration currently in development remain unresolved , as depicted in figure 6 .
+
+in 2016 , dod told the air force and the contractor to utilize devops .
+
+as previously noted , devops is intended to release automated software builds to users in order to unify development and operations and increase efficiency .
+
+the contractor stated it implemented devops in 2016 .
+
+however , both the air force and the contractor admitted in 2018 they never had plans to implement the “ops” side of devops , meaning they didn't plan to automatically deliver software builds to the users .
+
+without incorporating the users and experts in maintainability and deployment , the program is not benefiting from continuous user feedback .
+
+sbirs: sbirs users — air force personnel who operate , command , and control sbirs satellites to detect and track missile launches — were not involved during early system development and the program only recently increased the frequency of user events .
+
+sbirs users have been able to provide feedback on working software but are unaware how this feedback is incorporated into software development .
+
+early engagement .
+
+the sbirs program office did not engage users early in development because users were not in place and user groups were not defined .
+
+the program planning documentation that instituted the framework for user involvement was not in place until 2004 .
+
+according to sbirs users and test officials , this resulted in a poor interface design and users being unable to respond adequately to critical system alerts when using the system .
+
+though the program contractor told us that user involvement is critical for ensuring the developers deliver a system that users need and will accept , dod officials said that users were not integrated with the development approach until the software was ready to be integrated into a final product .
+
+continual engagement .
+
+the sbirs program office planned to engage users throughout development but , in practice , did not do so .
+
+sbirs planning documentation includes users involved in regular working groups throughout development .
+
+sbirs users began to be involved with system development in 2013 on a weekly basis .
+
+users were not involved during the 17 years of system development prior to this time .
+
+feedback based on actual working software .
+
+the sbirs program did not plan to provide users an opportunity to give feedback based on actual working software during development but , in practice , did so years into development .
+
+sbirs documentation only outlines user engagement as reviewing and commenting on design plans .
+
+while users were able to provide feedback on working software in 2017 , these events did not occur until 21 years after the start of development when the software was ready to be integrated .
+
+when users were able to provide feedback , they identified issues with the training system and cybersecurity .
+
+feedback incorporated into subsequent development .
+
+the sbirs program planned to incorporate user feedback into development but , in practice , did not do so .
+
+sbirs planning documentation includes methods for users to provide feedback , but users said there is no feedback loop between them and the developers ; therefore , users are unaware if their comments and concerns are addressed or ignored .
+
+dod officials and dodi 5000.02 point to the benefits of delivering smaller packages of software more frequently , but the four programs we examined have generally delivered them infrequently .
+
+dod is beginning to take steps to address these issues , such as establishing an independent advisory panel and considering recommendations issued by the defense science board on the design and acquisition of dod software .
+
+selected programs continue to focus on infrequent deliveries .
+
+according to industry practices , short , quick deliveries allow a program to deliver useful , improved capabilities to the user frequently and continually throughout development .
+
+within industry , iterations for agile development approaches are typically up to 6 weeks , and working software is delivered to the user at the end of each iteration .
+
+in addition , dodi 5000.02 states that for incremental development increments should be delivered within 2 years .
+
+while two programs in our review — jms and muos — say they have undertaken elements of agile development , which emphasize smaller deliveries of frequent software to users , they still struggled to move away from the long delivery schedules common to waterfall development .
+
+in addition , the two programs with incremental development — ocx and sbirs — have not delivered within suggested dod time frames .
+
+see figure 7 below for program software deliveries .
+
+further observations on each of the four programs follow: jms program officials and documentation indicate that the program is using an agile development approach to deliver smaller , rapid deliveries to minimize risk .
+
+according to jms program documentation , software releases were to be delivered in 6-month intervals .
+
+however , the program only delivered actual working software once during development — a delivery of capability in 2014 .
+
+the program was operationally accepted in late 2018 .
+
+however , only 3 of 12 planned capabilities were accepted for operational use .
+
+the muos program used a traditional waterfall approach during development from 2004 to 2012 and has only had one overall software product delivery during that time .
+
+the program completed the software in 2012 , yet continued to make changes during sustainment using the waterfall methodology and adopted an agile approach in 2017 to address deficiencies .
+
+since this adoption , it has delivered software more frequently — about every 3 months .
+
+this is a significant improvement over the delivery time frames during the muos waterfall development approach .
+
+the ocx program is using an “iterative - incremental” development approach .
+
+according to ocx software development plans , this approach was to enable early and frequent deliveries of capabilities .
+
+specifically , the program plans for iterations to be completed every 22 weeks .
+
+however , since software development began in 2012 , ocx has delivered just one increment of software , referred to by the ocx program as a block .
+
+the sbirs program began in 1996 , using a waterfall approach , and has had two deliveries of software .
+
+sbirs increment 1 was delivered in 2001 , and the next increment , sbirs increment 2 , block 10 , was delivered 15 years later , in 2016 .
+
+the next increment , sbirs increment 2 , block 20 , is expected to be delivered in 2019 .
+
+part of the reason programs delivered larger software packages less frequently was the adherence to the process steps in the dodi 5000.02 that were designed under the waterfall approach .
+
+while dodi 5000.02 authorizes programs to tailor their acquisition procedures to more efficiently achieve program objectives , none of the programs that were trying to employ a newer development approach took steps to tailor procedures in order to facilitate development .
+
+for example , the ocx contractor said it was delayed by complying with technical reviews under a military standard for traditional waterfall approaches , such as the preliminary design review , critical design review , and others , but the ocx program did not alter these reviews , despite having flexibility to do so .
+
+the contractor told us a more tailored approach would enable execution of smaller iterations of software deliverables .
+
+similarly , the jms program office noted that it was not fully able to integrate agile development practices because of all the different technical reviews , but jms did not tailor these requirements to more efficiently achieve outcomes , despite flexibility to do so .
+
+dod officials have acknowledged these challenges and have recently begun recommending steps to address them .
+
+officials we spoke with from defense digital service , director of operational test and evaluation , and dod leadership said that rapid development of software using newer software practices does not fit with the requirements of the dod acquisition process .
+
+further , dod's special assistant for software acquisition said that dod software development should be iterative , providing the critical capabilities in smaller , more frequent deliveries rather than delivering capabilities in a single delivery via traditional waterfall software development .
+
+in addition , other dod officials we interviewed agreed that since dod programs may not always know the full definition of a system's requirements until late in development , additional flexibility to tailor acquisition approaches could improve software acquisitions .
+
+in acknowledging the challenges in moving from a waterfall model to a more incremental approach , various dod groups have made recommendations to support delivery of smaller , more timely software deliverables: in february 2018 , the defense science board issued a series of recommendations to support rapid , iterative software development .
+
+the recommendations included requiring all programs entering system development to implement iterative approaches and providing authority to the program manager to work with users .
+
+in april 2018 , the defense innovation board made recommendations to improve dod software acquisitions , such as moving to more iterative development approaches that would deliver functionality more quickly .
+
+in june 2018 , the dod section 809 panel recommended eliminating the requirements for earned value management ( evm ) — one of dod's primary program planning and management tools — in agile programs .
+
+however , other dod and industry guides state that agile programs can still report evm if certain considerations are made , such as an agile work structure that provides a process for defining work and tracking progress of this work against planned cost and schedule .
+
+pursuant to the fiscal year 2019 national defense authorization act , dod is required , subject to authorized exceptions , to begin implementation of each recommendation submitted in the final report of the defense science board task force on the design and acquisition of software for defense systems by february 2020 .
+
+for each recommendation that dod is implementing , it is to submit to the congressional defense committees a summary of actions taken ; and a schedule , with specific milestones , for completing implementation of the recommendation .
+
+we intend to monitor dod's progress in implementing the recommendations .
+
+the programs we reviewed faced management challenges using commercial software , applying outdated software tools and metrics , and having limited knowledge and training in newer software development .
+
+dod is taking steps to address these challenges .
+
+dod has previously encouraged dod acquisition programs to use commercial software where appropriate .
+
+for example , in 2000 and in 2003 , dod policy encouraged considering the use of commercial software .
+
+in addition , regulations continue to emphasize consideration of commercial software suitable to meet the agency's needs in acquiring information technology .
+
+dod officials said that , although the effort to maintain commercial software may be equivalent to developing such capabilities in - house , programs should still consider the use of commercial software because dod and its contractors may lack the technical skillsets to develop a similar product .
+
+however , three of the programs we reviewed had difficulty integrating and maintaining modified commercial software during development: the jms acquisition approach was to only use commercial and government - provided software with no new software development planned , but the commercial products selected were not mature and required additional development , contributing to schedule delays .
+
+the muos program underestimated the level of effort to modify commercial software , which increased cost and introduced schedule delays in completing both the ground system and the waveform .
+
+according to an aerospace official who advised the program on software issues , the muos software development approach was to use a commercial software solution but with substantial modifications .
+
+in particular , the muos contractor planned to take a commercial cellular system and substantially modify it for muos .
+
+this official , along with the muos program office , said that underestimating the level of effort to modify and integrate the commercial software has been the program's biggest challenge .
+
+in september 2015 , we found that the ocx contractor was overly optimistic in its initial estimates of the work associated with incorporating open source and reused software .
+
+further , according to the air force , ocx program managers and contractors did not appear to follow cybersecurity screening or software assurance processes as required .
+
+for example , open source software was incorporated without ensuring that it was cybersecurity - compliant .
+
+these problems led to significant rework and added cost growth and schedule delays to address the cybersecurity vulnerabilities and meet cybersecurity standards .
+
+in addition , in an independent assessment of ocx , officials from the mitre corporation said that there is a lack of appreciation for the effort required for commercial software integration , stating that the level of effort is “categorically underestimated.” some program officials noted that commercial software updates led to system instability and increased costs .
+
+for example , ocx program officials said that updating an operating system version led to 38 other commercial software changes .
+
+each of these changes had to be configured , which took considerable time and added cost to the program .
+
+similarly , the sbirs contractor said they have been concerned that updates to commercial software could create a domino effect of instability , and the risks could outweigh the benefits of the update .
+
+for example , if one commercial software product is updated and becomes unstable , instability may be introduced to other commercial software products and software components .
+
+on the other hand , not updating software products could lead to cybersecurity concerns .
+
+as we previously noted , developers of commercial software generally update software to address identified flaws and cybersecurity vulnerabilities .
+
+we also reported in a review of weapon systems cybersecurity that , although there are valid reasons for delaying or forgoing weapon systems patches , this means some weapon systems are operating , possibly for extended periods , with known vulnerabilities .
+
+in addition , the lifecycles of commercial software can contribute to management challenges when these products become obsolete .
+
+for example , in 2014 , a muos ground system deep dive review identified that 72 percent of the muos software was considered to be obsolete .
+
+according to program officials , commercial software became obsolete before or soon after it was fielded , especially for operating systems and browsers , due to the long muos development cycle .
+
+software obsolescence is also among the top risks of the ocx program and has contributed to additional costs during development .
+
+dod officials and others have started to acknowledge challenges in using commercial software .
+
+for example , as we previously reported in 2018 , dod has stated that many weapon systems rely on commercial and open source software and are subject to any cyber vulnerabilities that come with them .
+
+while dod states that using commercial software is a preferred approach to meet system requirements , some program officials we interviewed told us that the effort to modify and update commercial software is underestimated .
+
+dod is working on helping programs understand commercial software risks .
+
+for example , in january 2018 , dod published a guidebook for acquiring commercial items .
+
+in addition , defense acquisition university offers several modules designed to address challenges in integrating commercial solutions .
+
+three of the dod programs we reviewed have experienced challenges in using outdated software tools or identifying appropriate performance metrics as they transition to newer software development approaches .
+
+contractors continue to rely upon outdated software tools and experience challenges .
+
+we found that three of the programs we reviewed used tools that are considered outdated and lack the flexibility needed for iterative development .
+
+contractors for three of the four programs we reviewed have experienced software development challenges due to outdated tools: the sbirs contractor uses a suite of tools that is considered outdated for newer commercial approaches .
+
+for example , one of these tools relies on a central database that , if corrupted , will stop development work and could take days or weeks to fix .
+
+according to the contractor , fixing this database has led to multiple periods of downtime and schedule delays .
+
+the muos contractor also uses a toolset that is considered outdated by commercial software development experts .
+
+the program moved to a newer agile development approach in 2017 but has retained an older software development toolset .
+
+the muos contractor said they are heavily reliant on these tools for development and do not anticipate changing the toolset .
+
+the ocx contractor also uses tools that are considered outdated by commercial approaches .
+
+according to the contractor , these tools have been in place for many years , and switching over to a new set of tools would not be in the best interest of the program because it could be disruptive to ongoing development .
+
+defense digital service experts said that a particular suite of tools used by the ocx contractor is outdated because the tools lack the flexibility needed for iterative development .
+
+both muos and sbirs contractors said that they have had to train new employees to use their outdated tools .
+
+for example , the sbirs contractor told us that when new employees begin work on the sbirs program , they already know how to use newer tools but have to be trained on the outdated tools used for sbirs development .
+
+the sbirs contractor said this has affected retention of its workforce in some cases , and the program has allocated funding to transition to newer tools in order to better recruit and retain personnel .
+
+what is cloud - based testing ? .
+
+cloud - based testing uses cloud computing environments to simulate an application's real - world usage .
+
+according to international standards , cloud testing can lead to cost savings , improved testing efficiency , and more realistic testing environments .
+
+two contractors have taken steps to update their software tools to increase automation and cloud - based testing but have not yet experienced the anticipated efficiencies: the ocx contractor is attempting to employ cloud - based testing and a devops approach .
+
+the contractor said it had to gain approval from the dod chief information office to employ commercial cloud - based testing for the unclassified portions of ocx but it has not gained similar approval for the classified portion .
+
+the sbirs contractor is using a software testing tool that would allow for faster automated testing but is not yet realizing the full benefit of its use .
+
+the sbirs testers did not use this tool in the way it was intended .
+
+specifically , the contractor said that when the software was deployed to the testing environment , testers deactivated the software at the end of their shifts instead of allowing it to run continuously until the tests were complete .
+
+the contractor said the testers did this because there were concerns over unauthorized access to the system if no one was present .
+
+as a result , the contractor separated the tests into 8-hour segments rather than allowing the tests to run continuously , reducing the effectiveness and value of automated testing .
+
+the defense science board , defense innovation board , and others have recommended dod use tools that enable the developers , users , and management to work together daily .
+
+as noted , dod is required to begin implementation of the recommendations made in the defense science board report .
+
+software metrics are measurements which provide insight to the status and quality of software development .
+
+metrics may not support newer development approaches .
+
+we have previously found that leading developers track software - specific metrics to gauge a program's progress , and that traditional cost and schedule metrics alone may not provide suitable awareness for managing iterative software development performance .
+
+three programs have faced challenges in identifying and collecting metrics that provide meaningful insight into software development progress: jms planned to collect traditional software development metrics to measure software size and quality , as well as agile metrics that provide insight into development speed and efficiency .
+
+however , officials from the jms government integrator managing sub - contracts said they lack regular reporting of metrics and access to data from subcontractors that would allow them to identify defects early .
+
+these officials said this was a challenge because the program has to run its own quality scans at the end of each sprint instead of being able to identify defects on a daily basis .
+
+muos program officials were able to receive agile metrics from the contractor when they transitioned to agile development , but they lacked access to the source data , which they said hindered their ability to oversee development .
+
+ocx program officials said they plan to use performance - based metrics throughout the remainder of the program .
+
+however , the metrics may not adequately track performance as intended .
+
+the defense contract management agency reviewed ocx metrics , particularly those related to devops , and expressed concern that program metrics may only measure total defects that were identified and corrected but may not provide insight into the complexity of those defects .
+
+dod is taking steps to identify useful software development metrics and ways to include them in new contracts .
+
+dod is aware of challenges with metrics and is taking actions to address the issues .
+
+for example , the defense innovation board is consulting with commercial companies to determine what metrics dod should collect ; and the air force's space and missile systems center has tasked the aerospace corporation with examining how to apply software performance metrics in contracts for dod space programs .
+
+dod offices such as the defense science board and dod systems engineering , as well as several federally funded research and development centers including the software engineering institute and the aerospace corporation , have also attempted to identify new metrics in correlation with advances in software development approaches .
+
+two program offices we reviewed experienced challenges due to limited software development knowledge: ocx experienced an extended period of inefficient processes because it lacked an understanding of newer approaches .
+
+according to defense digital service , when the office of secretary of defense advised the ocx program in may 2016 , it discovered that neither the program office nor contractor had been aware of the benefits of automated testing .
+
+defense digital service helped the ocx contractor automate a process that had been taking as long as 18 months to one in which the same process takes less than a day .
+
+if the program office had been aware of newer software approaches , it could have recognized these inefficiencies much earlier and avoided unnecessary schedule delays .
+
+the muos contractor lacked an “agile advocate” in the program office , which undermined its ability to fully employ an agile development approach .
+
+for example , even after the contractor adopted an agile approach , the program office directed the contractor to plan out all work across software builds in order to maintain control over requirements — similar to a waterfall approach but inefficient in agile .
+
+according to the software engineering institute , without an agile advocate in a program's leadership , organizations tend to do a partial agile or “agile - like” approach .
+
+program officials from the programs we reviewed said that while they have taken some software development training , more would be beneficial .
+
+the jms program office said that there are external training courses available locally as well as trainings at air force's space and missile systems center , but neither are required .
+
+jms program officials said that , while specific software training has not been required for the program outside of defense acquisition university certifications , courses on managing software - intensive programs would have been beneficial .
+
+similarly , defense contract management agency officials told us that ocx program officials would have benefited from more software development training .
+
+the muos program office said its training on software acquisition , software and systems measurement , software planning supportability and cost estimating , and software policies and best practices was sufficient , but the program office did not have newer software development training prior to transitioning to an agile development approach .
+
+dod is working to improve software acquisition training requirements and update them to reflect changes in the software development industry .
+
+for example , in 2017 , the defense acquisition university introduced a course on agile software development that includes how agile fits into the overall defense acquisition system and how to manage an agile software development contract .
+
+dod told us it is also working with the defense acquisition university to help inform a course on devops automation .
+
+software is an increasingly important enabler of dod space systems .
+
+however , dod has struggled to deliver software - intensive space programs that meet operational requirements within expected time frames .
+
+although user involvement is critical to the success of any software development effort , key programs often did not effectively engage users .
+
+program efforts to involve users and incorporate feedback frequently did not match plans .
+
+this was due , in part , to the lack of specific guidance on the timing , frequency , and documentation for user involvement and feedback .
+
+the lack of user engagement has contributed to systems that were later found to be operationally unsuitable .
+
+selected programs have also faced challenges in delivering software in shorter time frames , and in using commercial software , applying outdated software tools and metrics , and having limited knowledge and training in newer software development techniques .
+
+dod acknowledges these challenges and is taking steps to address them .
+
+we are making the following two recommendations to dod: the secretary of defense should ensure the department's guidance that addresses software development provides specific , required direction on when and how often to involve users so that such involvement is early and continues through the development of the software and related program components .
+
+ ( recommendation 1 ) the secretary of defense should ensure the department's guidance that addresses software development provides specific , required direction on documenting and communicating user feedback to stakeholders during software system development .
+
+ ( recommendation 2 ) .
+
+we provided a draft of this product to the department of defense for comment .
+
+in its comments , reproduced in appendix ii , dod concurred .
+
+dod also provided technical comments , which we incorporated as appropriate .
+
+we are sending copies of the report to the acting secretary of defense ; the secretaries of the army , navy , and air force ; and interested congressional committees .
+
+in addition , the report will be available at no charge on gao's website at http: / / www.gao.gov .
+
+if you or your staff have any questions about this report , please contact me at ( 202 ) 512-4841 or ludwigsonj@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made major contributions to this report are listed in appendix iii .
+
+senate and house reports accompanying the national defense authorization act for fiscal year 2017 contained provisions for gao to review challenges in software - intensive department of defense ( dod ) space systems , among other things .
+
+this report addresses , for selected software - intensive space programs , ( 1 ) the extent to which these programs have involved users and delivered software using newer development approaches ; and ( 2 ) what software - specific management challenges , if any , these programs have faced .
+
+to select the programs , we identified a non - generalizable , purposeful sample of four major defense programs representing different space military services where software is an essential component and where each program has experienced cost growth or schedule delays attributed , in part , to software challenges .
+
+we began our selection process with 49 dod space programs from the u.s. air force and navy services as identified by the office of the assistant secretary of the air force for space acquisition and a gao subject matter expert .
+
+we then narrowed our selection to 19 major defense acquisition programs ( mdap ) and major acquisition information system ( mais ) programs identified by dod .
+
+next , using information from prior gao annual weapons assessments , dod selected acquisition reports , dod defense acquisition executive summary reports , and the defense acquisition management information retrieval system , we identified 15 programs that were software - intensive systems as defined in the international standard iso / iec / ieee 42207 .
+
+this standard states that a software - intensive system is one where software contributes essential influences to the design , construction , deployment , and evolution of the system as a whole .
+
+from these 15 programs , 8 were found to have had cost growth or schedule delays attributed , in some part , to software development .
+
+we further analyzed these 8 programs for unit cost or schedule breaches as defined in 10 u.s.c .
+
+§ 2433 and 10 u.s.c .
+
+§ 2366b , ultimately resulting in 7 programs .
+
+finally , from these 7 programs , we chose a purposeful sample of 5 programs , ensuring representation from different dod services and acquisition categories .
+
+family of advanced beyond line - of - sight terminals ( fab - t ) ; air next generation operational control system ( ocx ) ; air force mdap joint space operations center mission system increment 2 ( jms ) ; air force mais mobile user objective system ( muos ) ; navy mdap space - based infrared system ( sbirs ) ; air force mdap we were unable to assess fab - t software issues with the same level of detail as the other programs we reviewed because , despite prior software challenges , the program stated it does not have documentation that separately tracks software - related requirements or efforts .
+
+this brought our total to 4 selected programs .
+
+to address the objectives , we interviewed officials from the undersecretary of defense for acquisition and sustainment , office of the deputy assistant secretary of defense for systems engineering , office of cost assessment and program evaluation , office of the director of operational test and evaluation , defense digital service , defense innovation board , and the office of the assistant secretary of the air force for space acquisition .
+
+we also interviewed officials from the selected program offices and their respective contractors , subcontractor , integrator , space systems users , a dod test organization , and federally funded research and development centers .
+
+in addition , we conducted a literature search using a number of bibliographic databases , including proquest , scopus , dialog , and worldcat .
+
+we reviewed documentation that focused on software - intensive major military acquisitions .
+
+we conducted our search in march 2018 .
+
+to determine how effectively selected dod software - intensive space programs have involved users and adopted newer software development approaches , we reviewed applicable dod policies , guidance , and federal statute that identify characteristics of user engagement .
+
+these sources were the department of defense instruction ( dodi ) 5000.02 ; office of the secretary of defense report to congress , a new approach for delivering information technology in the department of defense ; and national defense authorization act for fiscal year 2010 .
+
+we supplemented this with defense science board and defense innovation board documentation , and other industry analyses .
+
+we then reviewed relevant program plans and documentation , such as human engineering and human systems integration plans , standard operating procedures , acquisition strategies , software development plans , and other program user engagement guidance to identify plans for user engagement .
+
+we then conducted interviews with space system users and analyzed software development documentation to evaluate the extent to which programs met these dod user engagement characteristics .
+
+we also analyzed user feedback reports to identify trends in user feedback .
+
+we also examined dod and omb guidance and applicable leading practices to identify time frames for delivering software under incremental and iterative software development approaches , and we compared these time frames to program performance .
+
+to determine what software - specific management challenges , if any , selected programs faced , we reviewed reports and studies on software tools and metrics used to manage software programs , including gao reports , dod policies and guidance , and studies from the software engineering institute .
+
+we then reviewed program documents , such as software development plans , system engineering plans , system engineering management plans , software resource data reports , test and evaluation master plans , master software build plans , and obsolescence plans , as applicable , as well as contracts and statements of work .
+
+we reviewed defect metrics and reports on amounts of new , reused , inherited , and commercial software ; test and evaluation reports ; program management reports ; and external program assessments .
+
+we also evaluated program retrospectives and dod reports on leading practices to understand how programs are making efforts to address challenges in these areas .
+
+we spoke with contractors and an applicable subcontractor and government integrator , program officials , and officials from federally funded research and development centers to understand program issues , including program office and contractor training requirements .
+
+we conducted this performance audit from november 2017 to march 2019 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+in addition to the contact named above , raj chitikila , assistant director ; pete anderson , erin carson , jordan kudrna , matthew metz , roxanna sun , and jay tallon made key contributions to this report .
+
+assistance was also provided by mathew bader , virginia chanley , susan ditto , sarah gilliland , carol harris , harold podell , andrea starosciak , anne louise taylor , and alyssa weir .
+
+weapon systems cybersecurity: dod just beginning to grapple with scale of vulnerabilities .
+
+gao - 19-128 .
+
+washington , d.c.: october 9 , 2018 .
+
+weapon systems annual assessment: knowledge gaps pose risks to sustaining recent positive trends .
+
+gao - 18-360sp .
+
+washington , d.c.: april 25 , 2018 .
+
+information technology: agencies need to involve chief information officers in reviewing billions of dollars in acquisitions .
+
+gao - 18-42 .
+
+washington , d.c.: january 10 , 2018 .
+
+global positioning system: better planning and coordination needed to improve prospects for fielding modernized capability .
+
+gao - 18-74 .
+
+washington , d.c.: december 12 , 2017 .
+
+information technology reform: agencies need to improve certification of incremental development .
+
+gao - 18-148 .
+
+washington , d.c.: november 7 , 2017 space acquisitions: dod continues to face challenges of delayed delivery of critical space capabilities and fragmented leadership .
+
+gao - 17-619t .
+
+washington , d.c.: may 17 , 2017 .
+
+defense acquisitions: assessment of selected weapon programs .
+
+gao - 17-333sp .
+
+washington , d.c.: march 30 , 2017 .
+
+immigration benefits system: u.s. immigration services can improve program management .
+
+gao - 16-467 .
+
+washington , d.c.: july 7 , 2016 .
+
+gps: actions needed to address ground system development problems and user equipment production readiness .
+
+gao - 15-657 .
+
+washington , d.c.: september 9 , 2015 .
+
+defense acquisitions: assessments of selected weapon programs .
+
+gao - 15-342sp .
+
+washington , d.c.: march 12 , 2015 .
+
+defense major automated information systems: cost and schedule commitments need to be established earlier .
+
+gao - 15-282 .
+
+washington , d.c.: february 26 , 2015 .
+
+standards for internal control in the federal government .
+
+gao - 14-704g .
+
+washington , d.c.: september 2014 .
+
+software development: effective practices and federal challenges in applying agile methods .
+
+gao - 12-681 .
+
+washington , d.c.: july 27 , 2012 .
+
+information technology: critical factors underlying successful major acquisitions .
+
+gao - 12-7 .
+
+washington , d.c.: october 21 , 2011 .
+
+space acquisitions: development and oversight challenges in delivering improved space situational awareness capabilities .
+
+gao - 11-545 .
+
+washington , d.c.: may 27 , 2011 .
+
+significant challenges ahead in developing and demonstrating future combat system's network and software .
+
+gao - 08-409 .
+
+washington , d.c.: march 7 , 2008 .
+
+space based infrared system high program and its alternative .
+
+gao - 07-1088r .
+
+washington , d.c.: september 12 , 2007 .
+
+defense acquisitions: stronger management practices are needed to improve dod's software - intensive weapon acquisitions .
+
+gao - 04-393 .
+
+washington , d.c.: march 1 , 2004 .
+
+information security: effective patch management is critical to mitigating software vulnerabilities .
+
+gao - 03-1138t .
+
+washington , d.c.: september 10 , 2003 .
+
+test and evaluation: dod has been slow in improving testing of software - intensive systems .
+
+gao / nsiad - 93-198 .
+
+washington , d.c.: september 29 , 1993 .
+
+mission - critical systems: defense attempting to address major software challenges .
+
+gao / nsaid - 93-13 .
+
+washington , d.c.: december 24 , 1992 .
+
+space defense: management and technical problems delay operations center acquisition .
+
+gao / imtec - 89-18 .
+
+washington , d.c.: april 20 , 1989 .
+

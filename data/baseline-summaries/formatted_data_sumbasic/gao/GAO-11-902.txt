@@ -1,0 +1,756 @@
+the department of defense ( dod ) spends billions of dollars each year to maintain operational systems and processes intended to support its mission .
+
+in this regard , the department requested about $38 billion for its information technology ( it ) investments for fiscal year 2012 , including about $25 billion in combined investments at the departments of the air force , army , and navy ( don ) .
+
+according to dod's systems inventory , the department's it environment is composed of 2,324 systems and includes 338 financial management , 719 human resource management , 664 logistics , 250 real property and installation , and 300 weapon acquisition management systems .
+
+of the 2,324 systems , there are 470 systems at the air force , 744 at the army , and 473 at don .
+
+for decades , dod has been challenged in modernizing its systems environment to reduce duplication and increase integration between its systems .
+
+effective use of a well - defined enterprise architecture is a basic tenet of successful systems modernization and associated organizational transformation efforts , such as the one dod has long been seeking to accomplish .
+
+as we have previously reported , without a well - defined enterprise architecture , it is unlikely that dod , including its component organizations , will be able to transform business processes and modernize supporting systems to minimize overlap and maximize interoperability .
+
+further , dod's enterprise architecture approach relies on each level of its organization ( eg , dod - wide , military departments , and programs ) to develop a meaningful architecture .
+
+accordingly , the development and use of a military department enterprise architecture is critical for organizational transformation and systems modernization across dod and within each military department .
+
+in light of the critical role that military department architectures play in dod's enterprise architecture construct , you asked us to assess the status of the departments of the air force , army , and navy's enterprise architecture programs .
+
+to accomplish this , we requested key information about each department's architecture governance , content , use , and measurement .
+
+on the basis of the military departments' responses and supporting documentation , we analyzed the extent to which each satisfied the 59 core elements in our architecture maturity framework .
+
+we conducted this performance audit at dod and military department offices in the washington , d.c. , metropolitan area from october 2010 through september 2011 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objective .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objective .
+
+details on our objective , scope , and methodology are provided in appendix i .
+
+dod is a massive and complex organization entrusted with more taxpayer dollars than any other federal department or agency .
+
+organizationally , the department includes the office of the secretary of defense , the joint chiefs of staff , the military departments , numerous defense agencies and field activities , and various unified combatant commands that are responsible for either specific geographic regions or specific functions .
+
+ ( see fig .
+
+1 for a simplified depiction of dod's organizational structure. ) .
+
+in support of its military operations , the department performs an assortment of interrelated and interdependent business functions , such as logistics management , weapons systems management , supply chain management , procurement , health care management , and financial management .
+
+for fiscal year 2012 , the department requested about $38 billion for its it investments , of which about $17 billion is intended for its business systems environment and supporting it infrastructure , which includes systems and processes related to the management of contracts , finances , the supply chain , support infrastructure , and weapons systems acquisition .
+
+however , as we have previously reported , the dod systems environment that supports these business functions is overly complex and error prone , and is characterized by ( 1 ) little standardization across the department , ( 2 ) multiple systems performing the same tasks , ( 3 ) the same data being stored in multiple systems , and ( 4 ) the need for data to be entered manually into multiple systems .
+
+dod currently bears responsibility , in whole or in part , for 14 of the 30 federal government program areas that we have designated as high risk .
+
+seven of these areas are specific to dod and the department shares responsibility for 7 other governmentwide high - risk areas .
+
+the lack of an effective enterprise architecture is a key contributor to its having many of these high - risk areas .
+
+dod's business systems modernization , which is to be guided by the dod business enterprise architecture , is one of the high - risk areas , and is an essential component for addressing many of the department's other high - risk areas .
+
+for example , modernized business systems are integral to the department's efforts to address its financial , supply chain , and information security management high - risk areas .
+
+a well - defined and effectively implemented enterprise architecture is , in turn , integral to the successful modernization of dod's business systems .
+
+an enterprise architecture is a modernization blueprint that describes an organization's ( eg , a federal department or agency ) or a functional area's ( eg , terrorism information sharing or homeland security ) current and target state in both logical and technical terms , as well as a plan for transitioning between the two states .
+
+as such , it is a recognized tenet of organizational transformation and it management in public and private organizations .
+
+without an enterprise architecture , it is unlikely that an organization will be able to transform business processes and modernize supporting systems to minimize overlap and maximize interoperability .
+
+for more than a decade , we have conducted work to help federal agencies improve their architecture efforts .
+
+to this end , we developed the enterprise architecture management maturity framework ( eammf ) , which provides federal agencies with a common benchmarking tool for assessing the management of their enterprise architecture efforts and developing improvement plans .
+
+an enterprise can be viewed as either a single organization or a functional area that transcends more than one organization .
+
+an architecture can be viewed as the structure ( or structural description ) of any activity .
+
+thus , enterprise architectures are systematically derived and captured descriptions depicted in models , diagrams , and narratives .
+
+more specifically , an architecture describes the enterprise in logical terms ( such as interrelated business processes and business rules , information needs and flows , and work locations and users ) as well as in technical terms ( such as hardware , software , data , communications , security attributes , and performance standards ) .
+
+it provides these perspectives both for the enterprise's current environment , and for its target environment , and it provides a transition plan for moving from the current to the target environment .
+
+enterprise architectures are a basic tenet of both organizational transformation and it management , and their effective use is a recognized hallmark of successful public and private organizations .
+
+for over a decade , we have promoted the use of architectures , recognizing them as a crucial means to a challenging end: optimized agency operations and performance .
+
+the alternative , as our work has shown , is the perpetuation of the kinds of operational environments that saddle many agencies today , in which the lack of integration among business operations and the it resources that support them leads to systems that are duplicative , not well integrated , and unnecessarily costly to maintain and interface .
+
+employed in concert with other important it management controls ( such as portfolio - based capital planning and investment control practices ) , an enterprise architecture can greatly increase the chances that an organization's operational and it environments will be configured to optimize mission performance .
+
+moreover , the development of agency enterprise architectures is based on statutory requirements and federal guidance .
+
+further , dod is required by statute to develop an enterprise architecture to cover all defense business systems , and the business transformation initiatives of the military departments are required to develop a well - defined enterprisewide business systems architecture .
+
+there are several approaches to structuring an enterprise architecture , depending on the needs of the agency .
+
+in general , these approaches provide for decomposing an enterprise into its logical parts and architecting each of the parts in relation to enterprisewide needs and the inherent relationships and dependencies that exist among the parts .
+
+as such , the approaches are fundamentally aligned and consistent with a number of basic enterprise architecture principles , such as incremental rather than monolithic architecture development and implementation , optimization of the whole rather than optimization of the component parts , and maximization of shared data and services across the component parts rather than duplication .
+
+moreover , these approaches are not mutually exclusive and , in fact , can all be applied to some degree for a given enterprise , depending on the characteristics and circumstances of that enterprise .
+
+the approaches , which are briefly described here , are federated , segmented , and service - oriented .
+
+under a federated approach , the architecture consists of a family of coherent but distinct member architectures that conform to an overarching corporate ( i.e. , enterprise - level ) or parent architecture .
+
+this approach recognizes that each federation member has unique goals and needs as well as common roles and responsibilities with the members above and below it .
+
+as such , member architectures ( eg , component , subordinate , or subsidiary architectures ) are substantially autonomous , but they also inherit certain rules , policies , procedures , and services from the parent architectures .
+
+a federated architecture enables component organization autonomy while ensuring enterprise - level or enterprisewide linkages and alignment where appropriate .
+
+a segmented approach to enterprise architecture development and use , like a federated approach , employs a “divide and conquer” methodology in which architecture segments are identified , prioritized , developed , and implemented .
+
+in general , segments can be viewed as logical aspects , or “slivers,” of the enterprise that can be architected and pursued as separate initiatives under the overall enterprise - level architecture .
+
+as such , the segments serve as a bridge between the corporate frame of reference captured in the enterprise architecture and individual programs within portfolios of system investments .
+
+under this approach , functions and applications are defined and designed as discrete and reusable capabilities or services that may be under the control of different organizational entities .
+
+as such , the capabilities or services need to be , among other things , ( 1 ) self - contained , meaning that they do not depend on any other functions or applications to execute a discrete unit of work ; ( 2 ) published and exposed as self - describing business capabilities that can be accessed and used ; and ( 3 ) subscribed to via well - defined and standardized interfaces .
+
+this approach is intended to reduce redundancy and increase integration , as well as provide the flexibility needed to support a quicker response to changing and evolving business requirements and emerging conditions .
+
+dod has adopted a federated strategy to develop and implement the many and varied architectures across the department .
+
+this strategy is to provide a comprehensive architectural description of the entire dod enterprise , including the relationships between and among all levels of the enterprise ( eg , enterprise - level , mission areas , components , and programs ) .
+
+figure 2 shows a simplified conceptual depiction of dod's federated enterprise architecture .
+
+dod's enterprise architecture federation strategy describes specific roles and responsibilities for each level of its federated architecture .
+
+these roles and responsibilities are consistent with dod's tiered accountability approach to systems modernization , whereby components ( eg , mission areas , military departments , etc. ) .
+
+are responsible for defining their respective component architectures and transition plans and program managers are responsible for developing program - level architectures and transition plans and ensuring integration with the architectures and transition plans developed and executed at the component and enterprise levels .
+
+for example , each level of the federation is responsible for developing its respective architecture and imposing constraints on the levels below .
+
+accordingly , the completeness of the dod federated enterprise architecture depends on each level of the federation developing its own respective enterprise architecture .
+
+moreover , since the military departments comprise such a large portion of the dod enterprise , the relative importance of their respective enterprise architectures is significant .
+
+in 2002 , we developed version 1.0 of the eammf to provide federal agencies with a common benchmarking tool for planning and measuring their efforts to improve management of their enterprise architectures , as well as to provide omb with a means for doing the same governmentwide .
+
+we issued an update to the framework ( version 1.1 ) in 2003 and a new version ( version 2.0 ) in 2010 .
+
+version 2.0 expands on prior versions based on our experience in using them in evaluating governmentwide and agency - specific enterprise architectures and our solicitation of comments from federal agencies and other stakeholders on the usability , completeness , and sufficiency of the framework .
+
+the latest version provides a more current and pragmatic construct for viewing architecture development and use .
+
+in this regard , it provides a flexible benchmark against which to plan for and measure architecture program management maturity that permits thoughtful and reasonable discretion to be applied in using it .
+
+restated , the framework is not intended to be a rigidly applied “one size fits all” checklist , but rather a flexible frame of reference that should be applied in a manner that makes sense for each organization's unique facts and circumstances .
+
+specifically , depending on the size , scope , and complexity of the enterprise , not every framework core element may be equally applicable , not every assessment has to consider every element , and not every assessment has to consider every element in the same level of detail .
+
+moreover , the framework is not intended to be viewed as the sole benchmarking tool for informing and understanding an organization's journey toward architecture maturity .
+
+version 2.0 of the framework arranges 59 core elements into a matrix of seven hierarchical stages .
+
+figure 3 presents a depiction of the seven stages of maturity .
+
+each maturity stage includes all the core elements that are resident in the previous stages .
+
+each stage is described in detail here .
+
+appendix ii provides a list of core elements arranged by their respective eammf stages .
+
+at this stage , either an organization does not have plans to develop and use an enterprise architecture or it has plans that do not demonstrate an awareness of the management discipline needed to successfully develop , maintain , and use an enterprise architecture .
+
+while stage 0 organizations may have initiated some enterprise architecture activity , their efforts are largely ad hoc and unstructured and lack the institutional leadership necessary for successful development , maintenance , and use as defined in stage 1 .
+
+therefore , stage 0 has no associated core elements .
+
+at this stage , an organization puts in place the foundational pillars for treating its enterprise architecture program as an institution and for overcoming traditional barriers to its success .
+
+for example , the organization grounds enterprise architecture development and compliance in policy and recognizes it as a corporate asset by vesting ownership of the architecture with top executives ( i.e. , lines of business owners and chief “x” officers ) .
+
+as members of a chartered architecture executive committee , these individuals are provided with the knowledge and understanding of the architecture concepts and governance principles needed to lead and direct the enterprise architecture effort .
+
+through the enterprise architecture executive committee ( hereafter referred to as the executive committee ) , leadership is demonstrated through the approval of enterprise architecture goals and objectives and key aspects of the architecture's construct , such as the framework ( s ) to be used and the approach for establishing the hierarchy and structure of organization components ( eg , federation members , segments , etc. ) .
+
+also during this stage , the central figure in managing the program , the chief architect , is appointed and empowered , and the integral and relative role of the enterprise architecture vis - à - vis other enterprise - level governance disciplines is recognized in enterprise - level policy .
+
+organizations that achieve this maturity stage have demonstrated enterprise architecture leadership through an institutional commitment to developing and using the enterprise architecture as a strategic basis for directing its development , maintenance , and use .
+
+this stage builds on the strategic leadership foundation established in stage 1 by creating the managerial means to the ends — an initial version of the enterprise architecture ( stages 3 and 4 ) and an evolving and continuously improving enterprise architecture ( stages 5 and 6 ) that can be used to help guide and direct investments and achieve the architecture's stated purpose .
+
+for example , at this stage the organization establishes operational enterprise architecture program offices , including an enterprise - level program office that is headed by the chief architect , who reports to the executive committee .
+
+also at this stage , the executive committee continues to exercise leadership by ensuring that the chief architect and subordinate architects have the funding and human capital needed to “stand up” their respective program offices and have acquired the requisite architecture tools ( development and maintenance methodologies , modeling tools , and repository ) .
+
+organizations that achieve this stage have largely established the program management capacity needed to develop an initial version of the enterprise architecture .
+
+at this stage , an organization is focused on strengthening the ability of its program office ( s ) to develop an initial version of the enterprise architecture while also actually developing one or more of these versions .
+
+among other things , steps are taken to engage stakeholders in the process and implement human capital plans , to include hiring and training staff and acquiring contractor expertise .
+
+during this stage , these resources are combined with earlier acquired tools ( eg , framework ( s ) , methodologies , modeling tools , and repositories ) to execute enterprise architecture management plans and schedules aimed at delivering an initial enterprise - level version of the architecture that includes current and target views of the performance , business , data , services , technology , and security architectures , as well as an initial version of a plan for transitioning from the current to the target views .
+
+also during this stage , one or more segment architectures or federation member architectures are being developed using available tools and defined plans and schedules , and progress in developing initial architecture versions is measured by the chief architect and reported to the executive committee .
+
+although an organization at this maturity stage does not yet have a version of an enterprise architecture that is ready for implementation , it is well on its way to defining an enterprise architecture of sufficient scope and content that can be used to guide and constrain investments in a way that can produce targeted results .
+
+at this stage , an organization has developed a version of its enterprise - level architecture that has been approved by the executive committee , to include current and target views of the performance , business , data , services , technology , and security architectures , as well as an initial version of a plan for transitioning from the current to the target views .
+
+in addition , one or more segment and / or federation member architectures have been developed and approved according to established priorities .
+
+moreover , the approved enterprise - level and subordinate architectures are being used to guide and constrain capital investment selection and control decisions and system life - cycle definition and design decisions .
+
+also during this stage , a range of factors are measured and reported to the executive committee , such as enterprise architecture product quality , investment compliance , subordinate architecture alignment , and results and outcomes .
+
+organizations that achieve this stage of maturity have a foundational set of enterprise - level and subordinate enterprise architecture products that provide a meaningful basis for informing selected investments and building greater enterprise architecture scope , content , use , and results .
+
+at this stage , the enterprise architecture's scope is extended to the entire organization , and it is supported by a full complement of segment and federation member architectures , all of which include current and target views of the performance , business , data , services , technology , and security architectures , as well as well - defined plans for transitioning from the current to the target views .
+
+moreover , this suite of architecture products is governed by a common enterprise architecture framework , methodology , and repository , thus permitting the products to be appropriately integrated .
+
+also at this stage , the architecture products are continuously maintained , and major updates of the enterprise - level architecture are approved by the head of the organization , while subordinate architecture product updates are approved by their corresponding organization heads or segment owners .
+
+in addition , architecture product quality ( i.e. , completeness , consistency , usability , and utility ) as well as enterprise architecture management process integrity are assessed by an independent agent , and the results are reported to the chief architect and the executive committee .
+
+an organization that achieves this level of maturity has established a full suite of architecture products that can be employed as a featured decision support tool when considering and planning large - scale organizational restructuring or transformation initiatives .
+
+at this stage , an organization is focused on continuously improving the quality of its suite of enterprise architecture products and the people , processes , and tools used to govern their development , maintenance , and use .
+
+by achieving this stage of maturity , the organization has established a truly enterprisewide blueprint to inform both “board room” strategic planning and decision making and “on - the - ground” implementation of these changes through a range of capital investment and maintenance projects and other enterprise - level initiatives .
+
+in 2002 and 2003 , we reported on the status of enterprise architectures governmentwide , including for the departments of the air force , army , and navy .
+
+we found that some federal agencies had begun to establish the management foundation needed to successfully develop , implement , and maintain an enterprise architecture , but that executive leadership was key to addressing management challenges identified by enterprise architecture programs: ( 1 ) overcoming limited executive understanding , ( 2 ) inadequate funding , ( 3 ) insufficient number of skilled staff , and ( 4 ) organizational parochialism .
+
+accordingly , we made recommendations to omb to improve enterprise architecture leadership and oversight .
+
+omb responded to these recommendations by establishing its chief architects forum to , among other things , share enterprise architecture best practices among federal agencies and by developing an enterprise architecture assessment tool , which it used to periodically evaluate enterprise architecture programs at federal agencies .
+
+in 2006 , we reviewed enterprise architecture management at 27 federal agencies and found that management improvements were needed .
+
+overall , most agencies had not reached a sufficient level of maturity in their enterprise architecture development , particularly with regard to their approaches to assessing each investment's alignment with the enterprise architecture and measuring and reporting on enterprise architecture results and outcomes .
+
+in addition , the military departments comprised three of the four agencies with the lowest overall satisfaction of key enterprise architecture management practices .
+
+our 2006 report also identified that challenges facing agencies across the federal government in developing and using enterprise architectures are formidable .
+
+specifically , 93 percent of federal departments and agencies reported that they had encountered organizational parochialism and cultural resistance to enterprise architecture to a significant ( very great or great ) or moderate extent .
+
+other challenges reported were ensuring that the architecture program had adequate funding ( 89 percent ) , obtaining staff skilled in the architecture discipline ( 86 percent ) , and having department or agency senior leaders that understand the importance and role of the enterprise architecture ( 82 percent ) .
+
+we identified leadership as a key to overcoming these management challenges and made specific recommendations to individual agencies to address their challenges and manage their programs .
+
+since 2006 , we have continued to report that sustained top management leadership is the key to overcoming these challenges and positioning agencies to achieve enterprise architecture - related benefits such as improved alignment between their business operations and the it that supports these operations and consolidation of their it infrastructure environments .
+
+between 2005 and 2008 , we reported that dod had taken steps to comply with key requirements of the national defense authorization act for fiscal year 2005 relative to architecture development ; however , each report also concluded that much remained to be accomplished relative to the act's requirements and relevant guidance .
+
+we further reported in may 2008 that the military departments' enterprise architecture programs had yet to advance to a level that could be considered fully mature .
+
+specifically , we reported that all three departments were at the initial stage of maturity as defined in version 1.1 of gao's architecture maturity framework and had yet to fulfill the framework's requirements for , among other things , establishing a management foundation for developing , maintaining , and using the architecture .
+
+we reported that dod , as a whole , was not as well positioned as it should be to realize the significant benefits that a well - managed federation of architectures can afford its business systems modernization efforts .
+
+more recently , we reported on the need for federal agencies to measure and report enterprise architecture results and outcomes as key mechanisms for identifying overlap and duplication .
+
+specifically , we stated that while some progress has been made in improving management , more time is needed for agencies to fully realize the value of having well - defined and implemented architectures .
+
+such value can be derived from realizing cost savings through consolidation and reuse of shared services and elimination of antiquated and redundant mission operations , enhancing information sharing through data standardization and system integration , and optimizing service delivery through streamlining and normalization of business processes and mission operations .
+
+the air force , army , and don each have long - standing efforts in place to develop and use an enterprise architecture , but much remains to be accomplished before these efforts can be considered sufficiently mature to fully support ongoing organizational transformation and corporate optimization efforts .
+
+specifically , the air force has fully satisfied 20 percent , partially satisfied 47 percent , and not satisfied 32 percent of gao's enterprise architecture framework elements .
+
+the army has fully satisfied 12 percent and partially satisfied 42 percent of elements , with the remaining 46 percent not satisfied .
+
+finally , don has satisfied 27 percent , partially satisfied 41 percent , and not satisfied 32 percent of framework elements .
+
+ ( table 1 summarizes each military department's satisfaction of core enterprise architecture management elements and detailed results are presented in appendices iii , iv , and v. ) more specifically , while the military departments have each demonstrated that they are beginning to establish an institutional commitment to their respective enterprise architecture by addressing many of the elements described in stage 1 of gao's enterprise architecture management framework and to develop initial enterprise architecture content ( stage 3 ) , they have generally not established a well - developed enterprise architecture management foundation ( stage 2 ) .
+
+moreover , the departments have yet to complete and use their initial enterprise architecture versions to achieve targeted results ( stage 4 ) or expand and evolve their respective architectures to support institutional transformation ( stage 5 ) .
+
+finally , the departments have taken limited steps to continuously improve their respective architecture programs and use their architectures to achieve enterprisewide optimization ( stage 6 ) .
+
+officials at the military departments stated that they continue to face long - standing enterprise architecture management challenges , such as receiving adequate funding , overcoming cultural resistance and attaining sufficient senior leadership understanding .
+
+nevertheless , dod has been provided with considerable resources for its it systems environment .
+
+specifically , in recent years , dod has been provided with over $30 billion annually for this environment .
+
+in addition , for fiscal year 2012 , dod has requested about $38 billion for its it investments .
+
+without fully developed and effectively managed enterprise architectures , the air force , army , and don do not have a sufficient architectural basis for transforming their business processes and modernizing their thousands of supporting systems to minimize overlap and maximize interoperability .
+
+consequently , dod as a whole is not well positioned to realize the significant benefits that a well - managed set of architectures can contribute to its ongoing operational and it system modernization efforts , such as eliminating system overlap and duplication .
+
+because dod is provided with over $30 billion each year for its it systems environment , the potential for identifying and avoiding the costs associated with duplicative functionality across its it investments is significant .
+
+stage 1 of gao's eammf describes elements associated with establishing the foundational pillars for treating the enterprise architecture as an institution and for overcoming barriers to success .
+
+examples of these elements include establishing an enterprise architecture policy and an executive committee and defining the roles and responsibilities of key players and associated metrics to help ensure that their respective roles and responsibilities are fulfilled .
+
+the military departments have demonstrated that they are beginning to establish an institutional commitment to their respective enterprise architecture by fully satisfying 42 percent , partially satisfying 42 percent , and not satisfying 17 percent of the stage 1 elements .
+
+table 2 describes the extent to which each military department has satisfied the stage 1 elements .
+
+the following examples describe the military departments' performance relative to selected stage 1 elements .
+
+policy: all three of the military departments have fully satisfied the element associated with establishing a policy for enterprise architecture development , maintenance , and use .
+
+establishing such a policy is important for , among other things , confirming an organization's institutional commitment to an enterprise architecture and defining the entities responsible for architecture development , maintenance , and use .
+
+executive committee: air force and don have fully satisfied , and army has partially satisfied the element that is associated with establishing an executive committee representing the enterprise and that is responsible and accountable for the architecture .
+
+although the army has established committees responsible for some segment architecture activities , it has not yet established an executive committee responsible for an enterprise - level architecture .
+
+establishing enterprisewide responsibility and accountability is important for demonstrating the organization's institutional commitment to enterprise architecture and for obtaining buy - in from across the organization .
+
+such an executive committee also helps the enterprise architecture effort address issues that might not be entirely within the span of control of the organizational chief architect , such as obtaining adequate funding and sufficient human capital resources .
+
+performance and accountability framework: none of the military departments has fully or partially satisfied the element associated with establishing an enterprise architecture performance and accountability framework that recognizes the critical roles and responsibilities of key stakeholders and provides the metrics and means for ensuring that roles and responsibilities are fulfilled .
+
+specifically , none of the military departments has defined the metrics and means for ensuring that roles and responsibilities are fulfilled .
+
+successfully managing any program , including an enterprise architecture program , depends in part on establishing clear commitments and putting in place the means by which to determine progress against these commitments and hold responsible parties accountable for the results .
+
+to their credit , each of the military departments has taken important steps to address the stage 1 core elements , and , as a result , has begun to establish key institutional commitments to developing and using an enterprise architecture .
+
+establishing such institutional commitments is the first step to overcoming long - standing barriers to enterprise architecture success , such as top leadership understanding and parochialism and cultural resistance .
+
+without such commitments , these barriers may continue to limit the ability of an architecture program to contribute to efforts to improve the organization , which may range from streamlining business processes and it that supports a specific organizational line of business ( eg , a segment ) to larger and more significant organizationwide improvement efforts .
+
+stage 2 of gao's eammf describes elements that build on the strategic leadership commitment established in stage 1 by creating the managerial means to accomplish activities in later stages , including developing an initial version of the enterprise architecture ( stages 3 and 4 ) and evolving and continuously improving an enterprise architecture ( stages 5 and 6 ) that can be used to help guide and direct investments and achieve the architecture's stated purpose .
+
+examples of these elements include selecting automated tools , establishing an enterprise architecture program management office , developing a program management plan , justifying and funding program resources , and defining human capital plans .
+
+the military departments' satisfaction of these stage 2 core elements demonstrates that much remains to be accomplished to establish their respective enterprise architecture management foundations .
+
+specifically , the military departments have collectively satisfied only 17 percent , partially satisfied 47 percent , and not satisfied 37 percent of these elements .
+
+table 3 describes the extent to which each military department has satisfied stage 2 framework elements .
+
+the following examples describe the military departments' performance relative to selected stage 2 elements .
+
+automated tools: the air force , army , and don have each fully satisfied the element associated with selecting automated enterprise architecture tools .
+
+automated tools support the creation of a holistic view of the current and target state of the enterprise by assisting in the process of extracting , assimilating , relating , and presenting critical organizational information ( eg , the relationships between business operations and associated performance metrics , information exchanges , supporting applications and services , technology standards , and security protocols ) .
+
+program office: all three of the military departments have partially satisfied the element associated with establishing an enterprise architecture program office .
+
+although both air force and don have established a small team dedicated to enterprise architecture development and use , they do not operate within a formally chartered program office .
+
+in addition , while army has established chartered program management offices for its three primary segments , it has not established an enterprise - level architecture program management office .
+
+air force officials stated that the department does not manage its enterprise architecture as a formal program , don officials stated that the department is unable to justify creating a large program office in a fiscally constrained environment , and army officials recognized the need to establish an enterprise - level architecture program management office in the future .
+
+we and the federal chief information officers council have previously reported that enterprise architecture development and maintenance should be managed as a formal program .
+
+doing so helps ensure that the enterprise architecture program receives the appropriate attention and sufficient funding and human capital resources needed to be successful .
+
+in addition , establishing such an office would provide accountability for achieving its desired results .
+
+accordingly , the program office should be responsible to the executive committee for ensuring that critical activities that are within its span of authority and control , such as enterprise architecture program planning and performance monitoring , enterprise architecture development and maintenance using supporting tools , and enterprise architecture configuration management , are performed .
+
+program management plan: none of the three military departments has fully satisfied the element associated with managing its enterprise architecture activities according to an enterprise architecture program management plan .
+
+to their credit , army and don have partially satisfied the element .
+
+for example , don has established a governance plan that defines enterprise architecture management structures and stakeholder roles and responsibilities and army has established a program management plan for its network segment , which addresses at least some enterprisewide requirements .
+
+however , army and don have yet to develop comprehensive plans for managing their architecture programs .
+
+in addition , although air force officials stated that the department produces an annual roadmap from which goals and schedules are developed , air force officials did not provide evidence to demonstrate that a program management plan exists that includes information such as management controls and accountability mechanisms .
+
+don officials stated that they are in the process of developing a road map that will serve as a program management plan and army officials stated that the department plans to establish a program management office that addresses key program management activities .
+
+an enterprise architecture program management plan would provide the range of management structures , controls , disciplines , roles , and accountability mechanisms discussed throughout the framework as well as descriptions of the major enterprise architecture releases or increments to be developed .
+
+in this regard , the plan is a critical tool for providing a bridge between more conceptual frameworks and methodologies to the detailed and actionable work breakdown structures and schedules .
+
+as such , it is important for the departments to develop such a plan to ensure that the enterprise architecture program is effectively managed .
+
+budgetary needs: each of the military departments has partially satisfied the element associated with justifying and funding enterprise architecture budgetary needs .
+
+all of the military departments agree that sufficient resources to establish and execute their respective enterprise architecture programs are not available but that the level of current funding has enabled them to continue executing certain architectural activities .
+
+nevertheless , dod has been provided with considerable resources for its it systems environment .
+
+specifically , in recent years , dod has been provided with over $30 billion annually for this environment .
+
+in addition , for fiscal year 2012 , dod has requested about $38 billion for its it investments .
+
+moreover , architecture budgetary needs have not been identified and justified through reliable cost estimating and expected program benefits .
+
+by funding enterprise architecture as a capital investment , an organization's leadership demonstrates its long - term commitment to having and using an enterprise architecture to inform investment decision making and optimize mission - facing and mission - supporting operations .
+
+such funding requests also establish expected enterprise architecture program benefits that , in turn , provide justification for department and agency enterprise architecture expenditures and establish commitments against which enterprise architecture program managers and department executives can be held accountable .
+
+human capital plans: none of the three departments has fully or partially satisfied the element associated with developing human capital plans that identify the knowledge , skills , and abilities needed for enterprise architecture staff .
+
+army officials recognized the need for such a plan and stated that the department's updated enterprise architecture regulation will include a requirement for such a human capital plan .
+
+don officials stated that a human capital plan is not necessary due to their small number of staff and lack of a large centralized program office .
+
+air force officials stated that the department does not plan to develop such a plan because enterprise architecture is not a formally established career field within the federal government .
+
+however , having sufficient human capital to successfully develop and maintain the enterprise architecture begins with identifying human capital needs and developing a plan for acquiring , developing , and retaining qualified staff with the requisite knowledge , skills , and abilities .
+
+the enterprise architecture human capital plan is the vehicle for addressing enterprise architecture program skill gaps by , for example , training existing staff , hiring new staff , using contractor staff , and addressing staff retention , development , and recognition and reward .
+
+agencies that achieve this stage have largely established the program management capability needed to develop an initial architecture version .
+
+by not satisfying the majority of the elements at this stage , which as stated creates the managerial means to the ends , the military departments risk not being able to effectively execute higher stage core elements .
+
+for example , an agency can begin developing initial architecture products that describe its current and target environment , and a plan for transitioning from its current to its target environment ( stage 3 ) ; however , without establishing enterprise architecture management plans to guide its enterprise architecture efforts ( stage 2 ) , it risks not delivering an architecture that can be used for achieving target results and institutional transformation ( stages 4 and 5 ) .
+
+stage 3 of our eammf describes elements associated with strengthening the ability of a program office to develop initial versions of the enterprise architecture by leveraging acquired resources and tools ( established in stages 1 and 2 ) to execute enterprise architecture management plans and schedules .
+
+examples of these elements include developing subordinate architectures , developing initial enterprise - level architecture versions , and using the selected enterprise architecture methodology .
+
+the military departments' satisfaction of these stage 3 core elements demonstrates that they have begun to develop initial enterprise architecture content .
+
+specifically , the military departments have satisfied 26 percent , partially satisfied 45 percent , and not satisfied 29 percent of these elements .
+
+table 4 describes the extent to which each department has satisfied stage 3 framework elements .
+
+the following examples describe the military departments' performance relative to selected stage 3 elements .
+
+subordinate architectures: all of the military departments have satisfied the element associated with developing one or more segment and / or federation architecture .
+
+for example , the air force approved version 1.0 of its space domain architecture in september 2010 ; the army is developing architectures for its generating force and network segments ; and don has developed architecture artifacts for its net centric segment .
+
+as we have previously reported , successful enterprise architecture development for large , complex federal agencies does not involve an “all - or - nothing” monolithic approach .
+
+rather , enterprise architecture development typically follows a “divide and conquer” strategy in which the level of architectural detail needed to guide and constrain individual investments is created for distinct organizational components or functional slices of the enterprise .
+
+in taking such an approach , the level of architectural content that needs to be defined to sufficiently inform high - priority , near - term system investments can be established relatively quickly , thus allowing the benefits of the enterprise architecture to be realized sooner rather than later .
+
+developing initial enterprise - level architecture content: all three of the military departments have partially satisfied the element associated with developing an initial enterprise - level architecture that addresses the current and target environment and a sequencing plan for transitioning from the current to the target environment .
+
+the air force and don approaches to developing this enterprise architecture content involve establishing enterprise - level architecture content that is to be further supported by lower - level architectures , while army has established three architecture segments but has not yet established an enterprise - level architecture .
+
+consistent with these approaches , the air force and don have begun to develop initial enterprise - level architecture content , but this content does not include separate views of the current and target environments and neither of the two military departments has fully established a sequencing plan that describes how the department is to transition from its current to the target environment and is based on an analysis of the gaps between these environments .
+
+officials from these departments stated that they do not plan to distinguish between their current and target environments because they are focused on establishing enterprise architecture content that is more immediately useable ( don ) and they have not been asked by executive management to establish such a distinction ( air force ) .
+
+as we have previously reported , enterprise architecture development typically occurs in an incremental fashion , whereby an initial version is developed as the foundation on which to evolve and build increasingly more comprehensive , detailed , and complete versions .
+
+in addition , as we have reported , sequencing plans should be based on an assessment of the differences between the current and target architectures ( i.e. , a gap analysis ) .
+
+for example , a performance gap analysis identifies performance measures ( eg , effectiveness ) of a business process , highlights which performance measures are not being met in the current environment , and describes performance expectations for these measures in the target environment , thereby describing expected performance improvements to the business process .
+
+this performance gap analysis should also identify the business process activities or steps that need to be changed to achieve the future performance expectations .
+
+as such , these gap analyses identify necessary changes or adjustments in the current environment to achieve business goals and mission outcomes expected in the future environment , thereby serving as the support for related investments and activities , and also as a basis for prioritization ; integration ; and synchronization of decisions across the spectrum of these investments and activities .
+
+using an enterprise architecture methodology: none of the military departments has fully satisfied the element associated with developing its enterprise architecture products according to a defined methodology .
+
+the departments have not satisfied this element because , among other things , none of them has established a methodology to guide enterprise architecture development , maintenance , and use .
+
+air force officials stated that efforts to develop such a methodology have been postponed due to budget constraints and don officials stated that the department has not developed a methodology due to its focus on other resource - intensive commitments , such as applying the current enterprise architecture content .
+
+however , as stated previously in this report , dod has been provided with extensive resources for its it systems environment .
+
+army officials stated that the department's draft enterprise architecture regulation will call for the development of such a methodology .
+
+it is important for the departments to develop such a methodology , as it would provide architecture staff and stakeholders with a shared understanding of the architecture development approach , including defined steps , tasks , standards , tools , techniques , and measures that are to be used to create the specified enterprise architecture products .
+
+in addition , such a methodology would help to ensure that enterprise architecture products are , among other things , consistent , complete , aligned , integrated , and usable .
+
+an agency that achieves this stage is well on its way to defining an enterprise architecture of sufficient scope and content that can be used to guide and constrain investments in a way that can produce targeted results , even though it may not yet have developed a version of an enterprise architecture that is ready for implementation .
+
+however , agencies that develop architectural content in stage 3 without first addressing critical stage 1 and 2 elements risk developing enterprise architecture products that are not usable for achieving target results ( stage 4 ) .
+
+stage 4 of our eammf describes elements associated with completing initial enterprise architecture versions and using the architecture to achieve targeted results .
+
+examples of these elements include linking architecture to other management disciplines , measuring and reporting the quality of enterprise architecture products , and measuring and reporting enterprise architecture results and outcomes .
+
+the military departments' satisfaction of these stage 4 core elements demonstrates that , among other things , they have yet to establish a meaningful basis for guiding and constraining capital investment selection and control decisions and system life cycle definition and design decisions .
+
+specifically , they have satisfied only 15 percent , partially satisfied 39 percent , and not satisfied 45 percent of these elements .
+
+table 5 describes the extent to which each military department has satisfied stage 4 framework elements .
+
+the following examples describe the military departments' performance relative to selected stage 4 elements .
+
+linking architecture to other management disciplines: all three military departments have fully satisfied the element associated with making their respective architecture programs integral to the execution of other institutional management disciplines .
+
+specifically , the army has demonstrated that its segment architecture efforts are linked to the execution of management disciplines associated with capability integration , acquisition , and budgeting ; the air force demonstrated integration with its capability integration , acquisition , and budgeting disciplines ; and don demonstrated that its architecture efforts are linked to the execution of its strategic planning , capital planning , and system development efforts .
+
+enterprise architecture is one of several interrelated institutional management disciplines that collectively provide the means for an organization to be successful in meeting its mission goals and target outcomes .
+
+it is a contributor to many of these disciplines .
+
+in particular , it provides the bridge between strategic planning and program implementation , it informs human capital strategic planning and capital planning and investment control decision making , and it provides a critical underpinning to institutional performance management .
+
+as a result , the enterprise architecture should be an integral input into the execution of each of these management disciplines .
+
+enterprise architecture quality measurement: don has fully satisfied the element associated with measuring and reporting the quality of its enterprise architecture products ; air force has partially satisfied this element ; and army has yet to satisfy the element .
+
+specifically , the quality of don enterprise architecture products is assessed by a working group in accordance with a set of defined criteria and submitted for final approval to an enterprise architecture approval board .
+
+air force demonstrated that both its enterprise - level and subordinate architectures are subject to quality reviews that address completeness , usability , consistency , and accuracy and are reported to the appropriate officials .
+
+however , the assessments were not based on quality standards defined in an approved enterprise architecture methodology .
+
+in addition , although army's network architecture segment documentation states that quality control measures are to be used to determine quality , reuse , compliance , and risk , related measurements have not yet been defined .
+
+further , according to army officials , the quality of its other segment architecture products is not measured and reported .
+
+realizing an enterprise architecture's value depends in large part on the quality of the products or artifacts that compose it .
+
+accordingly , measuring and reporting the quality of enterprise architecture products relative to defined and consistently applied quality standards helps ensure that the enterprise architecture program will ultimately achieve its intended purpose .
+
+enterprise architecture results and outcomes: none of the military departments has partially or fully satisfied the element associated with measuring and reporting enterprise architecture results and outcomes , although all three have reported that they expect to realize future benefits from their respective architecture programs .
+
+for example , air force reported that it expects to achieve improved alignment between its business operations and it as well as improved data integration within 2 to 5 years , and don reported that it expects increased infrastructure consolidation and increased use of enterprise licenses within 2 to 5 years .
+
+what this suggests is that the real value to the military departments from developing and using enterprise architectures has yet to be realized .
+
+our framework recognizes that a key to realizing this potential is effectively managing department and agency enterprise architecture programs .
+
+however , knowing whether benefits and results are in fact being achieved requires having associated measures and metrics .
+
+in this regard , it is important for the military departments to measure and report enterprise architecture results and outcomes .
+
+examples of results and outcomes to be measured include costs avoided by eliminating duplicative investments or by reusing common services and applications and improved mission performance through re - engineered business processes and modernized supporting systems .
+
+agencies that achieve maturity stage 4 have a foundational set of enterprise - level and subordinate enterprise architecture products that provide a meaningful basis for informing selected investments and building greater enterprise architecture scope , content , use , and results .
+
+in addition , they have begun to demonstrate initial benefits associated with using their architecture .
+
+however , the military departments' limited satisfaction of stage 4 elements demonstrates that , although they have begun to develop some architecture products ( stage 3 ) , they have yet to complete initial versions of those products and use those products to achieve measurable outcomes .
+
+stage 5 of our eammf describes elements associated with establishing a full suite of architecture products that can be employed as a featured decision - support tool when considering and planning large - scale organizational restructuring or transformation initiatives .
+
+examples of these elements include ensuring that integrated repository tools and common enterprise architecture framework and methodology are used across the enterprise , enterprise - level and subordinate architectures are extended to align with external partner architectures , and all segment and / or federated architectures exist and are horizontally and vertically integrated .
+
+the military departments' satisfaction of these stage 5 core elements indicates that they have yet to expand and evolve the development and use of their respective enterprise architectures to support institutional transformation .
+
+specifically , they have satisfied only 7 percent , partially satisfied 44 percent , and not satisfied 48 percent of these elements .
+
+table 6 describes the extent to which each military department has satisfied stage 5 framework elements .
+
+the following examples describe the military departments' performance relative to selected stage 5 elements .
+
+integrated tools and common frameworks and methodologies: each of the military departments has partially satisfied the element associated with ensuring that integrated repository tools and a common enterprise architecture framework and methodology are used across the enterprise .
+
+for example , army demonstrated its use of enterprise architecture tools , but has yet to establish a common enterprise architecture framework and methodology for use across the enterprise .
+
+in addition , don and air force have established tools that can serve as a common repository for their enterprise architecture products , but they have not fully established common enterprise architecture methodologies to define how architectural products will be developed .
+
+it is important for the military departments to adopt and use a common set of tools and a common framework and methodology .
+
+doing so helps ensure that architecture products are developed and used consistently across the enterprise , which in turn further supports efforts to improve enterprisewide architecture product quality and achieve results .
+
+aligning enterprise architecture to external partner architectures: each of the military departments has partially satisfied the element associated with ensuring that enterprise - level and subordinate architectures are extended to align with external partner architectures .
+
+for example , air force has demonstrated that it is aligned with the dod information enterprise architecture .
+
+however , it has not provided evidence that its enterprise architecture aligns with the army and don architectures .
+
+in addition , while don's enterprise architecture approach is aligned with the joint staff's joint capability areas , it has not provided evidence that its enterprise architecture aligns with those of the air force and army .
+
+such alignment is critical for achieving enterprise architecture - related goals , such as identifying potentially redundant or duplicative business processes or it systems and facilitating reuse of existing systems and services .
+
+integrating segment and federated architectures: while each of the military departments has begun to develop an initial version of subordinate architectures , none of them has satisfied the element associated with ensuring that all segment and / or federated architectures exist and are horizontally and vertically integrated .
+
+we have previously reported that , in large part , achieving this core element is a byproduct of having met many of the previously discussed core elements related to , for example , adopting one or more enterprise architecture approaches ( eg , federation , segmentation , etc. ) .
+
+and employing enterprise architecture development , maintenance , and management rigor and discipline .
+
+however , the military departments have not fully satisfied critical foundational elements , such as the element associated with establishing an enterprise architecture development and maintenance methodology or measuring and reporting subordinate architecture alignment with the enterprise - level architecture .
+
+while development of subordinate architectures , as discussed earlier , typically occurs incrementally based on institutional needs and priorities , the ultimate goal remains to develop each of the subordinate architectures and to ensure that they collectively form a coherent family of parent and child architectures that are integrated both horizontally and vertically .
+
+as with the previously - cited example , developing such integrated architecture products is important for supporting the organization's ability to use these products as tools for organizational transformation by , for example , identifying potentially redundant or duplicative business processes or it systems and facilitating reuse of existing systems and services .
+
+while enterprise architecture development and use offers the potential to achieve important departmentwide benefits , such as increased use of enterprise licenses and improved data integration ( stage 4 ) , addressing the eammf's stage 5 elements expands these potential benefits to supporting large - scale departmentwide restructuring and transformation .
+
+accordingly , addressing stage 5 elements would better position the military departments to support ongoing efforts to identify dod efficiencies and savings by informing efforts to look across the military departments and identify ways in which dod can improve effectiveness and efficiency while continuing to meet mission demands .
+
+stage 6 of our eammf describes elements that are focused on continuous improvement of the quality of the suite of enterprise architecture products and the people , processes , and tools used to govern their development , maintenance , and use .
+
+examples of these elements include continuously improving enterprise architecture program capabilities and products as well as enterprise architecture methodologies and tools and ensuring that the enterprise architecture informs strategic planning and policy formulation .
+
+the military departments' satisfaction of these stage 6 core elements indicates that they have begun taking steps to improve their respective enterprise architecture program and use their respective enterprise architectures for enterprise - level optimization , but much still remains to be accomplished .
+
+specifically , they have satisfied 10 percent , partially satisfied 43 percent , and not satisfied 48 percent of these elements .
+
+table 7 describes the extent to which each military department has satisfied stage 6 framework elements .
+
+the following examples describe the military departments' performance relative to selected stage 6 elements .
+
+improving program capabilities and products: air force and don have each fully satisfied the element associated with ensuring that enterprise architecture continuous improvement efforts reflect the results of external assessments , while army has not yet satisfied this element .
+
+for example , according to don officials , our 2008 assessment of the department's enterprise architecture program has been leveraged to make program capability and product improvements , such as establishing a formalized enterprise architecture governance structure ; a policy for enterprise architecture development and maintenance ; an it investment process that includes compliance assessments with don's architecture ; and a set of criteria for measuring the quality of its products .
+
+similarly , air force leveraged our prior report to make program improvements , such as placing enterprise architecture products under configuration management .
+
+all efforts to continuously improve the enterprise architecture program capabilities and products should leverage the results of external assessments performed by organizations external to the program , including assessments periodically performed by us , omb , and others to demonstrate measurable accomplishments .
+
+improving methodologies and tools: each of the military departments has partially satisfied the element associated with continuously improving enterprise architecture methodologies and tools .
+
+for example , each military department has mechanisms in place to improve existing enterprise architecture tools .
+
+however , none of the military departments has fully developed an enterprise architecture development and maintenance methodology that can be used as a baseline for improvements .
+
+continuously improving enterprise architecture methodologies and tools helps to ensure that existing methodologies and tools continue to support changing organizational needs .
+
+strategic planning and policy formulation: none of the military departments has either fully or partially satisfied the element associated with ensuring that the enterprise architecture is used by executive leadership to inform organization strategic planning and policy formulation .
+
+the enterprise architecture provides the information needed to bridge the gap between an organization's strategic plans and the programs it implements .
+
+as such , the architecture has traditionally been informed and constrained by these plans and the institutional policies that govern the plans' implementation .
+
+as an architecture program fully matures , however , a bidirectional relationship should exist whereby it helps to inform the same strategic plans and institutional policies to which it is integral to implementing .
+
+in particular , the enterprise architecture can identify the related organizational business process , performance , information , service , technology , and security strengths , weaknesses , and opportunity gaps that should be considered for inclusion in strategic plans and institutional policies .
+
+for example , emerging technologies that are reflected in the enterprise architecture's target view can serve as the catalyst for introducing new , or for modifying existing , strategic goals and objectives , and / or the timelines for achieving them .
+
+agencies that achieve this stage of maturity have established an enterprisewide blueprint to inform strategic planning and decision making and “on - the - ground” implementation of these changes through a range of capital investment and maintenance projects and other enterprise - level initiatives .
+
+while each of the military departments has taken steps to establish and manage its respective enterprise architecture program and develop initial enterprise architecture content that could eventually be used as input into organizational strategic planning and serve as the basis for continuous improvement activities , incomplete program management mechanisms and enterprise architecture content limit the extent to which either of these ends can be achieved .
+
+as we have previously reported , long - standing governmentwide enterprise architecture management challenges include organizational parochialism and cultural resistance , ensuring adequate funding , obtaining staff skilled in the architecture discipline , and having department or agency senior leaders that understand the importance and role of the enterprise architecture .
+
+military department officials indicated that these management challenges continue to limit their respective enterprise architecture programs .
+
+in particular , regarding cultural resistance , a senior air force architecture official stated that the department's major programs resist adapting to enterprisewide approaches to meeting their technical needs .
+
+with respect to adequacy of funding , air force and don representatives provided examples of activities that could not be completed due to a lack of funding for enterprise architecture .
+
+for example , air force officials stated that the department has postponed the development of an updated enterprise architecture methodology due to limited funding .
+
+nevertheless , as stated previously in this report , dod has been provided with considerable resources for its it systems environment and architecture budgetary needs have not been identified and justified through reliable cost estimating and expected program benefits .
+
+concerning skilled staff , don and air force officials identified as a challenge identifying enterprise architecture staff who possess both business and technical skills .
+
+lastly , with regard to senior leadership understanding , army architecture officials cited the difficulty of getting senior leaders to understand the importance of having an enterprise architecture and take a holistic view of the entire military department enterprise .
+
+the continued existence of the management challenges described has contributed to the status of the military departments' enterprise architecture programs , whereby the majority of eammf elements have yet to be fully satisfied .
+
+moreover , the long - standing nature of these challenges indicates that the departments' leaders have not yet committed to effective development and use of enterprise architecture as described in our eammf .
+
+although the air force , army , and don each have long - standing efforts to develop enterprise architectures , the military departments have much to do before they have enterprise architectures that are fully developed and effectively managed .
+
+in general , the departments have fully satisfied certain elements related to establishing an institutional commitment to enterprise architecture and developing initial architecture content .
+
+however , the departments generally have not fully satisfied framework elements that are associated with establishing the foundation for architecture management ( including the development of a plan to manage the architecture program ) , completing and using initial architecture content , expanding and evolving the enterprise architecture , and continuously improving their architectures .
+
+this pattern of core element satisfaction indicates that the military departments' respective enterprise architecture programs are at risk of achieving only limited benefits .
+
+further , the military departments have been limited in their ability to overcome long - standing enterprise architecture management challenges , thus indicating a lack of organizational commitment to effective enterprise architecture development and use .
+
+without fully developed and effectively managed enterprise architectures and a plan , the air force , army , and don do not have the needed road maps for transforming their business processes and modernizing their supporting systems to minimize overlap and maximize interoperability .
+
+further , because the military departments do not have the robust enterprise architectures that dod's federated architecture approach depends on , the department at large is also without a complete road map to effectively guide its transformation .
+
+establishing such a road map is critical to dod transformation .
+
+while dod has been provided with considerable resources for its it systems environment , the department is not managing its systems in a consistent , repeatable , and effective manner that , among other things , maximizes mission performance while minimizing or eliminating system overlap and duplication .
+
+because dod is provided with over $30 billion each year for its it systems environment , the potential for identifying and avoiding the costs associated with duplicative functionality across its it investments is significant .
+
+to ensure that the military departments establish commitments to fully develop and effectively manage their enterprise architectures , we recommend that the secretaries of the air force , army , and navy each expeditiously provide to the congressional defense committees a plan that identifies milestones for their respective department's full satisfaction of all of our enterprise architecture management maturity framework elements .
+
+in the event that a military department does not intend to fully satisfy all elements of our framework , the plan should include a rationale for why the department deems any such element ( s ) to be not applicable .
+
+we received written comments on a draft of this report from dod .
+
+in the comments , which are reprinted in appendix vi , the department partially concurred with our recommendation .
+
+specifically , the dod and army cios concurred with the recommendation , while the air force and don cios did not concur .
+
+in this regard , dod stated that both air force and don believe that gao's eammf provides a comprehensive set of elements associated with the development and implementation of a robust enterprise architecture program for a federal agency or organization .
+
+the department added , however , that the air force and don do not have a valid business case that would justify the implementation of all 59 elements of our framework .
+
+instead , according to dod , in today's fiscally constrained environment , air force and don have chosen to gradually implement selected elements of the framework which are most useful in implementing optimized , secure , and cost effective it systems and capabilities .
+
+due to the large and complex nature of the dod enterprise , we determined that all 59 elements of the framework apply to the military department enterprise architecture programs .
+
+however , our recommendation does provide the military departments with the flexibility of providing a rationale or business case in their plans that would justify why the department ( s ) deems any of the 59 elements to be not applicable .
+
+we do not agree that fiscal constraints are a valid reason for limiting the air force and don enterprise architecture programs to less than full satisfaction of the framework .
+
+dod has been provided with over $30 billion annually for its it systems environment , but it is not managing its systems in a consistent , repeatable , and effective manner that , among other things , maximizes mission performance while minimizing or eliminating system overlap and duplication .
+
+this , in addition to the large and complex nature of the dod enterprise , provides compelling reasons for them to establish commitments to fully satisfy the framework elements .
+
+we therefore believe our recommendation remains valid as stated .
+
+dod also provided technical comments on this report , which have been incorporated as appropriate .
+
+we are sending copies of this report to appropriate congressional committees ; the director , office of management and budget ; the secretary of the air force ; secretary of the army ; and the secretary of the navy .
+
+this report will also be available at no charge on our web site at http: / / www.gao.gov .
+
+if you or your staffs have any questions on matters discussed in this report , please contact me at ( 202 ) 512-6304 or melvinv@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made major contributions to this report are listed in appendix vii .
+
+our objective was to assess the status of enterprise architecture efforts at the departments of the air force , army , and navy .
+
+to address this objective , we asked each department to identify responsible architecture officials and requested that the identified officials self - assess their respective department's architecture programs relative to the 59 core elements contained in version 2.0 of our enterprise architecture management maturity framework ( eammf ) .
+
+specifically , we asked the officials to indicate whether their respective department architecture programs fully satisfied , partially satisfied , or did not satisfy each core element .
+
+we also asked the officials to provide documentation in support of their self assessments .
+
+to instruct the officials in preparing their assessments , we provided the following guidance: to fully satisfy a core element , sufficient documentation must be provided to permit us to verify that all applicable aspects of the core element are met .
+
+to partially satisfy a core element , sufficient documentation must be provided to permit us to verify that at least some aspects of the core element are met .
+
+core elements that are applicable and are neither fully nor partially satisfied will be judged to be not satisfied .
+
+subsequently , we independently assessed each department's architecture program relative to the 59 eammf core elements using the self assessments and supporting documentation as a starting point .
+
+we then corroborated the assessment with supporting documentation , sought additional information as necessary through interviews with the departments' architecture officials , obtained and reviewed additional documentation as appropriate , and refined our determinations about the degree to which each core element was satisfied .
+
+in performing our analyses , we used the same criteria for determining whether a given core element was fully satisfied , partially satisfied , or not satisfied that we had instructed the departments to use .
+
+finally , we shared with the military departments the preliminary versions of the analyses that appear in this report as appendices iii , iv , and v , and made further adjustments , as appropriate , based on additional discussions and supporting documentation .
+
+we also solicited information from each department on long - standing challenges to the success of enterprise architecture in the areas of funding , cultural resistance , senior leadership , and staff skills .
+
+the results presented in this report reflect the state of department and agency architecture programs as of august 1 , 2011 .
+
+in performing our analyses , we interviewed officials and supporting contractors from the departments of the air force , army , and navy , including the offices of the chief information officer .
+
+to gain additional insights into the military departments' enterprise architecture programs , we also interviewed officials in the office of the secretary of defense .
+
+we conducted our work in the washington , d.c. , metropolitan area from october 2010 through september 2011 , in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+table 8 summarizes the framework elements in version 2.0 of our enterprise architecture management maturity framework ( eammf ) .
+
+the department of the air force fully satisfied 12 , partially satisfied 28 , and did not satisfy 19 of the 59 elements described in our eammf .
+
+table 9 summarizes the extent to which the air force has addressed the core elements described in each stage of the eammf .
+
+table 10 describes the extent to which the department satisfied each element .
+
+the department of the army fully satisfied 7 , partially satisfied 25 , and did not satisfy 27 of the 59 elements described in our eammf .
+
+table 11 summarizes the extent to which army has addressed the core elements described in each stage of the eammf .
+
+table 12 describes the extent to which the department satisfied each element .
+
+the department of the navy ( don ) fully satisfied 16 , partially satisfied 24 , and did not satisfy 19 of the 59 elements described in our eammf .
+
+table 13 summarizes the extent to which don has addressed the core elements described in each stage of the eammf .
+
+table 14 describes the extent to which the department satisfied each element .
+
+in addition to the contact named above , neelaxi lakhmani and mark bird , assistant directors ; debra conner ; shaun byrnes ; elena epps ; nancy glover ; michael holland ; anh le ; lee mccracken ; and donald sebers made key contributions to this report .
+

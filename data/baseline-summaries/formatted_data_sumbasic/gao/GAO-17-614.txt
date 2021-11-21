@@ -1,0 +1,700 @@
+cyber incidents at federal agencies demonstrate the damage that increasingly sophisticated cyber threats can cause and underscore the importance of effectively protecting federal systems .
+
+in june 2015 , the office of personnel management ( opm ) reported that an intrusion into its systems had affected the personnel records of about 4.2 million current and former federal employees .
+
+then , in july 2015 , the agency reported that a separate but related incident had compromised its systems and the files related to background investigations for 21.5 million individuals .
+
+improving the security over federal systems is imperative to protecting the confidentiality , integrity , and availability of the information on federal systems , including that considered to be personally identifiable information ( pii ) .
+
+since 1997 , we have designated the security of information on federal systems ( i.e. , information security ) to be a government - wide high - risk area .
+
+in 2003 , we expanded the area to include computerized systems supporting the nation's critical infrastructure and in 2015 , we included protecting the privacy of pii .
+
+in light of the breaches at opm , the senate report accompanying the financial services and general government appropriations act , 2016 includes a provision for us to review information security at opm .
+
+our objectives were to evaluate opm's ( 1 ) actions since the 2015 data breaches to prevent , mitigate , and respond to data breaches involving sensitive personnel records and information ; ( 2 ) information security policies and practices for implementing selected government - wide initiatives and requirements ; and ( 3 ) procedures for overseeing the security of opm information maintained by contractors providing information technology services .
+
+this report is a public version of a sensitive report that we issued concurrently .
+
+because sensitive information about systems' operating environments or shortcomings could potentially be exploited , this report omits sensitive information about opm's systems .
+
+although the information provided in this report is more limited , the report addresses the same objectives as the sensitive report and uses the same methodology .
+
+to address the first objective , we examined information security policies , plans , and procedures , as well as other relevant documents ; performed testing of opm's internal network and software tools ; and interviewed officials to determine the extent to which the agency had implemented recommendations made by the department of homeland security's ( dhs ) united states computer emergency readiness team ( us - cert ) in light of the breach .
+
+we also met with officials and reviewed documentation pertaining to the status of opm's national background investigation bureau ( nbib ) .
+
+for the second objective , we examined policies , plans , and procedures , as well as other relevant documents , and interviewed officials from the opm office of the chief information officer ( ocio ) to determine the extent to which the agency had implemented requirements associated with key government - wide initiatives .
+
+we focused on the security controls agencies are required to implement as described in the october 2015 cybersecurity strategy and implementation plan ( csip ) and the cybersecurity cross - agency priority ( cap ) goals .
+
+we also collected new information by reviewing relevant controls on three systems .
+
+we selected these systems based on the agency categorizing them as high - impact systems and them not being recently audited by gao .
+
+because system weaknesses identified in this report could be exploited , we are not identifying the systems' names or other specifics related to our selection .
+
+in a separate report with limited distribution , we provide more details regarding our scope and methodology .
+
+for the third objective , we reviewed policies and security control assessments for three contractor - operated systems .
+
+we selected the two active , contractor - operated systems that were not involved in the breach , but were categorized by the agency as high - impact systems .
+
+we also selected one active system that the agency categorized as a moderate - impact system .
+
+these three systems had also undergone a recent system security assessment .
+
+we focused the scope of our review on assessments of moderate - and high - impact controls in the following national institute of standards and technology ( nist ) special publication ( sp ) 800-53 defined control families: access controls , audit and accountability , security assessment and authorization , configuration management , contingency planning , risk assessments , and system and information integrity .
+
+in addition , we excluded controls identified by the assessors as either inherited or not applicable .
+
+see appendix i for additional details on our objectives , scope , and methodology .
+
+we conducted this performance audit from january 2016 to august 2017 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+opm collects and maintains personal information on millions of individuals , including sensitive security clearance data .
+
+the agency is the central human resources agency for the federal government , overseeing all policy to support federal agencies' human resources departments — from classification and qualifications systems to pay , leave , and benefit policies .
+
+in addition , the agency provides investigative products and services for more than 100 federal agencies to use as the basis for suitability for employment and security clearance determinations .
+
+it also provides more than 95 percent of the government's background investigations , conducting approximately 2.2 million investigations a year .
+
+the agency had a fiscal year 2016 discretionary budget authority of about $245 million and around 5,300 full - time equivalent employees .
+
+on june 4 , 2015 , opm reported that a breach to its information technology systems and data had potentially compromised the personal information of about 4.2 million former and current federal employees .
+
+in july 2015 , opm reported that a separate but related cyber incident targeting its databases containing background investigation records was estimated to have compromised security clearance background information of about 21.5 million individuals .
+
+in the months that followed the breach , further investigation by the agency revealed that the information compromised as a result of these breaches included employee social security numbers , residency and education history , employment history , information about immediate family and other personal and business acquaintances , criminal and financial history , job assignments , performance ratings , training information , and the fingerprints of approximately 5.6 million individuals .
+
+an estimated 22.1 million individuals had some form of pii stolen , with 3.6 million being a victim of both breaches .
+
+opm's director is responsible for ensuring the adequacy of the agency's information security program , including information security policies , procedures , and practices .
+
+the opm chief information officer ( cio ) leads the development , management , operations , and support of the it infrastructure , with the assistance of the managers and staff in ocio .
+
+the agency's chief information security officer ( ciso ) serves as the cio's primary information security adviser and guides the information security activities of the agency's authorizing officials and information security officers .
+
+opm also has a management review board , which includes the ciso , deputy ciso , and certain branch chiefs as members .
+
+this board is intended to manage information security risks by reviewing and approving the creation and closure actions associated with plans of action and milestones ( poa&m ) , which address identified weaknesses .
+
+the federal information security modernization act ( fisma ) of 2014 is intended to provide a comprehensive framework for ensuring the effectiveness of information security controls over information resources that support federal operations and assets and for ensuring the effective oversight of information security risks , including those throughout civilian , national security , and law enforcement agencies .
+
+fisma assigns responsibility to the head of each agency for providing information security protections commensurate with the risk and magnitude of the harm resulting from unauthorized access , use , disclosure , disruption , modification , or destruction of information systems used or operated by an agency or by a contractor of an agency or other organization on behalf of an agency .
+
+the law also delegates to the agency cio ( or comparable official ) the authority to ensure compliance with fisma requirements .
+
+fisma also requires each agency to develop , document , and implement an agency - wide information security program to provide risk - based protections for the information and information systems that support the operations and assets of the agency , including those provided or managed by another agency , contractor , or other source .
+
+such a program includes assessing risk ; developing and implementing cost - effective security plans , policies , and procedures ; developing plans for providing adequate information security for networks , facilities , and systems ; providing security awareness and specialized training ; testing and evaluating the effectiveness of controls ; planning , implementing , evaluating , and documenting remedial actions to address information security deficiencies ; developing and implementing procedures for detecting , reporting , and responding to security incidents ; and ensuring continuity of operations .
+
+in addition , fisma requires agencies to comply with nist standards and the office of management and budget ( omb ) requires agencies to comply with nist guidelines .
+
+further , fisma requires the operation of a central federal information security incident center , a role now filled by the dhs's us - cert .
+
+the mission of us - cert is to strive for a safer , stronger internet for all americans by responding to major incidents , analyzing threats , and exchanging critical cybersecurity information with trusted partners around the world .
+
+this mission is reflected in the four critical activities it is responsible for carrying out: providing cybersecurity protection to federal civilian executive branch agencies through intrusion detection and prevention capabilities .
+
+developing timely and actionable information for distribution to federal departments and agencies ; state , local , tribal , and territorial governments ; critical infrastructure owners and operators ; private industry ; and international organizations .
+
+some of the information currently distributed includes weekly vulnerability bulletins and technical alerts .
+
+responding to incidents and analyzing data about emerging cyber threats .
+
+collaborating with foreign governments and international entities to enhance the nation's cybersecurity posture .
+
+us - cert has developed programs and resources to carry out these activities , including the distribution of technical alerts , tips , and weekly vulnerability bulletins .
+
+in addition , it occasionally performs reviews at the agency and system levels , an activity that allows it to provide agencies more detailed information on agency - and / or system - specific weaknesses , vulnerabilities , and actions to remediate them .
+
+omb has established various initiatives intended to protect federal systems .
+
+these include , but are not limited to , omb's 30-day cybersecurity sprint , the october 2015 csip , and the cap goals .
+
+agency participation and compliance with these key initiatives , which are outlined in table 1 , are mandatory .
+
+in august 2014 , we issued a report that examined federal agency oversight of contractor - operated federal it systems .
+
+we reported that opm , one of six federal agencies reviewed , had generally established security and privacy requirements and had planned for assessments to determine the effectiveness of contractor implementation of controls .
+
+however , the system assessments performed were not always effective .
+
+we recommended that opm improve its oversight of contractor testing to ensure that tests are being fully executed for all contractor - operated systems .
+
+according to opm officials , efforts are underway to implement the recommendation .
+
+in may 2016 , we reported on the implementation of opm's information security program and the security of selected high - impact systems .
+
+we reported that opm , one of four agencies reviewed , had implemented numerous controls to protect selected systems , but access controls had not always been implemented effectively .
+
+weaknesses also existed in patching known software vulnerabilities and planning for contingencies .
+
+an underlying reason for these weaknesses was that opm had not fully implemented key elements of their information security program .
+
+we recommended that opm fully implement key elements of its program , including addressing shortcomings related to its security plans , training , and system testing .
+
+according to opm officials , the agency is in the process of taking actions to address these recommendations .
+
+in addition , we issued a restricted version of the may 2016 report that identified vulnerabilities specific to each of the two systems we reviewed and made recommendations to resolve access control weaknesses in those systems .
+
+in december 2016 , opm indicated its concurrence with the recommendations and provided time frames for implementing them .
+
+since the 2015 data breaches , opm has made progress in improving its security to prevent , mitigate , and respond to data breaches involving sensitive personal records and background investigations information .
+
+after breaches of personnel and background investigation information were reported , us - cert worked with the agency to resolve issues and develop a comprehensive mitigation strategy .
+
+toward this end , in september 2015 , us - cert made 19 recommendations to opm to help the agency improve its overall security posture and , thus , improve its ability to protect its systems and information from security breaches .
+
+as of may 2017 , opm had fully implemented 11 of the recommendations .
+
+for the remaining 8 recommendations , actions for 4 were still in progress .
+
+for the other 4 recommendations , opm indicated that it had completed actions to address them , but we noted further improvements were needed .
+
+further , opm had not validated actions taken to address the recommendations in a timely manner .
+
+beyond actions associated with the us - cert recommendations , opm established a new organization — the national background investigation bureau ( nbib ) — to perform background investigation services .
+
+it signed a memorandum of agreement with the department of defense ( dod ) to develop and secure new systems to support the bureau's mission .
+
+opm has made progress in implementing the 19 us - cert recommendations , but has opportunities to improve on the actions it has taken .
+
+as shown in table 2 and subsequently discussed , the agency completed actions for 11 recommendations ; needed to further improve on actions taken for 4 other recommendations it indicated had been completed ; and needed to complete actions in progress for the remaining 4 .
+
+due to the sensitive nature of the recommendations , we are not providing the specific recommendations or specific examples associated with them .
+
+generally , the recommendations pertained to strengthening activities and controls related to passwords , access permissions , patches , audit and monitoring , among other things .
+
+omb requires agencies to create a poa&m to track efforts to remediate identified weaknesses , such as those leading to the 19 recommendations made by us - cert .
+
+in addition , opm's policy requires that scheduled completion dates be included in the plan .
+
+the policy also requires a system's information system security officer ( isso ) to develop a weakness closure package containing evidence of how items in the poa&m have been remediated before the issue ( recommendation in this case ) can be closed .
+
+the policy further requires that the closure package be reviewed by the management review board , which approves closure .
+
+although opm has a poa&m to address the 19 recommendations , it had not updated completion dates in the plan .
+
+the poa&m showed scheduled completion dates of either october or december 2015 for all recommendations .
+
+however , a separate recommendation tracking document provided to us indicated a planned completion date in the third quarter of 2017 for at least one recommendation .
+
+with such inconsistencies and lack of updates , opm's ability to gauge performance is limited .
+
+further , the agency had not validated in a timely manner its actions to implement the recommendations .
+
+for example , the plan indicated that all actions to address at least 7 of the 19 recommendations had been completed in september or october 2015 .
+
+however , as of april 2017 , at least 17 months later , opm had not reviewed closure packages or otherwise validated the effectiveness of the actions taken to implement these recommendations .
+
+opm ocio officials explained that the management review board , at a december 2016 meeting , had discussed the expected evidence required to demonstrate formal closure .
+
+in addition , they noted that the us - cert recommendations in the poa&m would not be closed out until evidence was collected to validate the actions taken .
+
+while the intent to validate evidence of remediation actions is commendable , the length of time opm has taken to do so is troubling in light of the cybersecurity incidents at the agency and given the heightened risk environment in which it operates .
+
+because the us - cert recommendations are intended to improve the agency's security posture , more timely validation of the effectiveness of the actions taken is warranted .
+
+until closure packages are created and the evidence of such actions is validated , opm has limited assurance that the actions taken have effectively mitigated vulnerabilities that can expose its systems to cybersecurity incidents .
+
+in addition to its actions to address the us - cert recommendations in response to the breaches that affected background investigation data , opm updated roles and responsibilities for handling background investigations .
+
+following the recommendation of a 90-day suitability and security interagency review that identified changes needed to strengthen the background investigation process , in january 2016 , the administration announced its plans to create the nbib within opm .
+
+as of october 2016 , opm had transferred responsibility for performing personnel background investigations from its old federal investigative services unit to nbib and entered into a memorandum of agreement with dod to develop and operate information systems supporting the bureau .
+
+according to the bureau's fact sheet , nbib is intended to: improve the security of background investigation it systems through a partnership with dod , improve access to criminal history records through the creation of a law enforcement liaison unit , improve the automation and management of background investigation records , improve the efficiency of background investigation business processes , and consolidate the management of federal and contract field operations .
+
+according to opm ocio officials , existing background investigation information systems and data will continue to be maintained at opm while dod designs and develops a new system to support nbib .
+
+opm plans to maintain the legacy data for historical and reporting purposes once the new system is operational .
+
+at this time , the legacy background investigation system is expected to operate for another 3 years or until all cases in it can be closed out .
+
+to support future nbib operations , the defense information systems agency ( disa ) is in the initial stages of designing the new system , dod ocio officials said .
+
+while opm will remain the owner of the background investigations data and processes , disa will build , operate , and secure the national background investigation system , according to the memorandum of agreement between the agencies .
+
+according to the dod officials , the primary benefit of having disa host and operate the system is that it will be able to take advantage of dod's existing information security controls to help ensure the security of the system .
+
+omb's csip and cap goals require federal agencies , including opm , to take specific cybersecurity actions to bolster their system security .
+
+the requirements include identifying high value assets , minimizing the number of privileged users , using multifactor authentication to access resources , limiting the access privileged accounts have , using data encryption at rest and in transit , deploying dhs cyber threat indicators , using anti - phishing and anti - malware technology , and subjecting systems to continuous monitoring .
+
+of the eight required actions we selected for review , opm had developed and documented specific policies that addressed seven of them , had fully implemented two , and had taken actions to partially implement the remaining six .
+
+until opm completes implementation of the government - wide requirements , its systems are at greater risk than they need be .
+
+high value assets refer to those assets , systems , facilities , data , and datasets that are of particular interest to potential adversaries .
+
+these assets , systems , and datasets may contain sensitive controls , instructions , or data used in critical federal operations ; or house unique collections of data ( by size or content ) , making them of particular interest to criminal , politically - motivated , or state - sponsored actors .
+
+according to csip , federal agencies must continue to identify and submit a list of high value assets to dhs .
+
+opm had developed , documented , and implemented an information security policy for identifying its high value assets .
+
+for example , opm's policy stated that , as a part of its security authorization process , a security categorization of its information systems shall be conducted to include an evaluation to determine if a system will be a high value asset .
+
+the isso is responsible for documenting those systems identified as being high value assets using prescribed templates .
+
+further , opm had taken action to identify its high value assets .
+
+to do this , according to ocio officials , the agency considered factors such as 1 ) federal information processing standards ( fips ) publication 199 categorization of high impact ; 2 ) the sensitivity of system information ; 3 ) the amount of pii ; and 4 ) the size , location , and mission of a system .
+
+by identifying a list of its high value assets , opm is better positioned to quickly identify and initiate efforts to protect its high value assets from imminent danger of a cybersecurity attack .
+
+according to csip , privileged users refer to those users with a network account with elevated privileges that is typically allocated to system administrators , network administrators , database administrators , and others who are responsible for system / application control , monitoring , or administration functions — functions and responsibilities beyond the control of ordinary users .
+
+cyber sprint and csip require federal agencies to tighten policies and practices for privileged users by inventorying and minimizing the number of privileged users .
+
+opm defined the scope of its privileged users and implemented a process for inventorying privileged accounts .
+
+the agency's policy defines users with elevated privileges as being those users who are authorized to perform security - relevant functions that ordinary users are not authorized to perform .
+
+opm demonstrated that it reduced the number of network administrators ; however , the agency had not minimized other types of accounts with elevated privileges .
+
+to ensure privileged access is required for these other types of accounts , opm ocio officials explained that the agency conducts periodic reviews of accounts and that this review consists of ensuring that privileged access for these accounts is still warranted .
+
+however , the agency could not provide any artifacts to demonstrate this process , other than periodic reporting of the number of privileged users .
+
+establishing policy and minimizing the number of network administrators is a positive step .
+
+however , until opm demonstrates that privileged access for other relevant accounts is warranted , increased risk exists that individuals may have access privileges not required to perform their job .
+
+multifactor authentication — the use of more than one of the combinations of the following factors: something you know ( eg , a password ) , something you have ( eg , an identification badge ) , or something you are ( eg , a fingerprint or other biometric ) — is a stronger form of authentication than single - factor authentication .
+
+according to omb m - 11-11 , existing physical and logical access control systems must be upgraded to use personal identity verification ( piv ) credentials , in accordance with nist guidelines .
+
+in 2015 , the cyber sprint required agencies to “dramatically accelerate” the use of a piv card or alternative form of multifactor authentication for access to information systems , and csip requires agencies to complete implementation .
+
+further , the cap goal requires agencies to implement a set of capabilities that ensure the use of multiple factors to authenticate to information technology resources .
+
+nist states that agencies can satisfy certain identification and authentication requirements by complying with the requirements in homeland security presidential directive 12 and using multifactor authentication , such as piv cards .
+
+opm had developed and documented information security policies for implementing multifactor authentication , such as enforcing the use of piv cards .
+
+for example , opm's policy states that multifactor authentication is required for network and local access for privileged and non - privileged accounts and the use of the cards is required to gain access to information systems , when feasible .
+
+opm had implemented the use of piv cards on one of three systems we reviewed .
+
+however , it did not require or implement the use of piv cards or other multifactor authentication methods for the two other systems .
+
+according to opm ocio officials , the agency plans to complete implementation of piv cards for all systems no later than 2018 .
+
+in its fiscal year 2016 fisma audit report , opm's office of the inspector general ( oig ) reported that it had validated the agency's implementation of network - level multifactor authentication based on a prior recommendation .
+
+however , the oig reported that only 2 of opm's 46 major systems ( applications ) were compliant with omb requirements related to piv authentication , and recommended that the ocio meet the requirements of omb m - 11-11 by upgrading its major information systems to require multifactor authentication using piv credentials .
+
+the office concurred with the recommendation and stated that it would work to continue the implementation of an initial enterprise identity and access management solution for enforcing multifactor authentication , including the use of piv credentials where feasible and appropriate .
+
+opm officials indicated in the report that they were working towards multifactor authentication at the system level in order to create multiple layers of security , but that implementation efforts are ongoing .
+
+until opm upgrades all of its information systems to require the use of multifactor authentication mechanisms like piv cards , its systems and applications may be susceptible to attack if an attacker compromises its network .
+
+because we consider these actions to be in progress , we are not making a recommendation at this time .
+
+to further protect systems , agencies should employ the principle of least privilege .
+
+this principle involves granting users the most restrictive set of privileges needed to perform authorized tasks .
+
+one cap goal specifies that agencies should implement a set of capabilities that ensures users have access to only those resources that are required for their job function .
+
+further , the cyber sprint initiative and csip require agencies to tighten policies and practices for privileged users by , to the greatest extent possible , limiting functions that users can perform when using privileged accounts and ensuring that privileged user activities are logged and that such logs are reviewed regularly .
+
+opm has developed , documented , and partially implemented an information security policy that incorporated the principle of least privilege .
+
+for example , opm's policy requires that users with privileged accounts only use these accounts for security - related functions and use non - privileged accounts for other system functions .
+
+the policy also requires that privileged user activities be logged and reviewed regularly .
+
+opm initiated efforts to implement this policy ; however , it has not been fully implemented .
+
+due to the sensitive nature of the recommendation and the actions needed to implement it , these details are provided in a separate report with limited distribution .
+
+encryption of data can be used to help protect the integrity and confidentiality of data and computer programs by rendering data unintelligible to unauthorized users and by protecting the integrity of transmitted ( in transit ) or stored ( at rest ) data .
+
+according to omb circular a - 130 , when the assessed risk indicates the need , agencies must encrypt federal information at rest and in transit unless otherwise protected by alternative physical and logical safeguards implemented at multiple layers , including networks , systems , applications , and data .
+
+it notes that agencies must apply encryption to federal information categorized as either moderate or high impact in accordance with fips publication 199 unless encrypting such information is technically infeasible or would demonstrably affect the ability of agencies to carry out their mission , functions , or operations .
+
+opm has developed , documented , and partially implemented an information security policy relevant to data encryption .
+
+for example , opm policy requires system owners to ensure that moderate - and high - impact information systems and pii are protected using data encryption at rest and in transit in accordance with fips 140-2 .
+
+nevertheless , opm's implementation of data encryption at rest and in transit varied for the three systems we reviewed .
+
+specifically , one system was not configured to encrypt data in transit , but its production database was configured to encrypt data at rest .
+
+the second system was configured to encrypt data in transit , but was not configured to encrypt data at rest .
+
+for the third system , encryption efforts were nearly complete as of march 2017 , and the agency was working to complete this effort .
+
+accordingly , we are not making a recommendation at this time .
+
+until opm fully deploys encryption for the selected systems , the agency will be at increased risk that the confidentiality and integrity of the data in transit and stored on its systems is not fully protected .
+
+threat indicators play a key role in creating shared situational awareness of malicious cyber activity .
+
+according to the cyber sprint initiative , agencies must immediately deploy indicators provided by dhs regarding priority threat - actor techniques , tactics , and procedures to scan systems and check logs .
+
+in addition , csip states that , on an ongoing basis , agencies must scan for indicators of compromise within 24 hours of receipt of the threat indicators from dhs .
+
+further , the standards for internal control in the federal government state that management is to document in policies the internal control responsibilities of the organization .
+
+the standards further state that controls be documented ; documentation of controls is evidence that controls are identified , capable of being communicated to those responsible for their performance , and capable of being monitored and evaluated by the entity .
+
+although opm had deployed dhs threat indicators and scanned for them , its policy had not been updated for this specific requirement .
+
+the agency had developed and documented a policy that describes threat indicators such as signatures .
+
+for example , opm's information security handbook states that signatures related to malware should be updated .
+
+the agency also had a procedure in place that gives the ciso responsibility for ensuring that security alerts and advisories are received on a continuous basis , and notes that scanning will occur periodically .
+
+however , neither the policy nor procedure described responsibilities for ensuring the 24-hour scanning requirements are accomplished and monitored .
+
+by updating the policy and procedure to specifically document roles and responsibilities associated with dhs threat indicator requirements , such as scanning , opm could further improve upon its ability to ensure that controls are being communicated to those responsible for their performance and are capable of being monitored and evaluated .
+
+anti - phishing and malware defense is important to protect agencies from phishing attempts , where attackers use social engineering with authentic - looking e - mails , websites , or instant messages to get users to download malware , open malicious attachments , or open links that direct them to a website that requests information or executes malicious code .
+
+according to the cap goal for anti - phishing and malware defense , agencies must implement technologies , processes , and training that reduce the risk of malware introduced through e - mail and malicious web sites .
+
+opm had deployed several anti - malware technologies , but shortcomings existed with the tools deployed .
+
+due to the sensitive nature of the types of tools deployed and any shortcomings , we are not providing specific examples in this report .
+
+this information is provided in a separate report with limited distribution .
+
+opm also implemented an effective training exercise to reduce the risk of malware introduced through e - mail and malicious websites .
+
+at the request of opm , dhs's national cybersecurity assessment and technical services conducted e - mail phishing exercises to assess the agency's potential risk and vulnerabilities to e - mail phishing attacks .
+
+over the course of months , opm showed improvement with results from the phishing exercises .
+
+specifically , in april 2016 , dhs reported that it had sent 3,000 fictitious e - mails with a link that would redirect users to a website that describes the dangers of clicking on untrusted links .
+
+of the 3,000 e - mails , 366 unique users ( about 12 percent ) clicked on the phishing link .
+
+subsequent testing indicated that users were better informed .
+
+in september 2016 , for the 882 suspicious e - mails sent over the course of 7 campaigns , dhs reported only one instance ( less than 1 percent ) of a user clicking on a phishing link .
+
+by having personnel better informed to detect phishing attempts , opm has greater assurance that agency systems will not be compromised by such a threat .
+
+continuous monitoring is an important activity in assessing the security impacts on an information system resulting from planned and unplanned changes to the hardware , software , firmware , or environment of operation .
+
+according to nist , continuous monitoring facilitates ongoing awareness of threats , vulnerabilities , and information security to support organizational risk management decisions .
+
+the cap goal for information security continuous monitoring ( iscm ) states that agencies should provide ongoing observation , assessment , analysis , and diagnosis of an organization's cybersecurity posture , hygiene , and operational readiness .
+
+additionally , omb memorandum 14-03 requires federal agencies to develop and maintain an iscm strategy and establish an iscm program .
+
+further , to facilitate continuous monitoring by agencies , dhs established the continuous diagnostics and mitigation ( cdm ) program .
+
+the program involves the delivery of tools and services intended to provide the ability to enhance and automate existing agency continuous network monitoring capabilities , correlate and analyze critical security - related information , and enhance risk - based decision making at the agency and federal levels .
+
+csip states that federal agencies are to accelerate the implementation of capabilities and tools to identify risks to their systems and networks , including dhs's cdm program .
+
+further , nist sp 800-53 recommends that an organization provide role - based security training to personnel with assigned security roles and responsibilities .
+
+opm had established an iscm program and took actions to implement continuous monitoring practices .
+
+the agency also developed a continuous monitoring strategy that requires system owners to assess security controls for ongoing continuous monitoring of its information systems based on the established security control assessment frequencies specified in the continuous monitoring plan .
+
+according to the agency's fiscal year 2016 continuous monitoring plan , owners are to assess specified controls on each system periodically according to the schedule in the plan .
+
+however , opm did not consistently assess the security controls at defined frequencies for the three selected systems we reviewed .
+
+for example , the agency did not assess the controls for the systems for several months at a time .
+
+according to opm ocio officials , security controls for two systems were not assessed in accordance with defined frequencies due to a shortage of issos at the agency , and the other system was not assessed because the system was undergoing reauthorization .
+
+however , until opm consistently performs periodic assessments of the selected systems , the agency will have less assurance of whether controls for these systems are effective and operating as intended .
+
+in its 2016 fisma report , the oig identified a weakness in opm's information security governance regarding the extremely high employee turnover rate for the isso positions and opm's lack of filling those positions .
+
+subsequently , the oig recommended that opm hire a sufficient number of issos to adequately support all of the agency's major information systems .
+
+the agency concurred with the recommendation and indicated that plans were in place to hire a sufficient number of issos to support all of its major information systems .
+
+opm deployed continuous monitoring tools obtained through dhs's cdm program , and developed and deployed its own internal continuous monitoring dashboard .
+
+officials stated that the agency completed the first phase of dhs's cdm program and is in the process of implementing the second phase .
+
+however , opm has not issued role - based training requirements for the individuals configuring and maintaining the deployed cdm tools .
+
+ocio officials told us the agency drafted role - based training requirements for cdm users , but could not demonstrate to us that it has done so .
+
+until opm develops and implements role - based training requirements for staff using its cdm tools , it will not be able to ensure that staff are using the tools properly .
+
+as a result , the usefulness of the tools for monitoring the security of the agency's information systems may be diminished .
+
+opm has implemented elements of contractor oversight such as recording security assessment findings for contractor - operated systems in remediation plans , but it did not ensure that system security assessments involved comprehensive testing .
+
+the agency requires issos to conduct quality assurance reviews that include reviewing security assessments of contractor - operated systems ; however , its policy did not include detailed guidance on how the reviews are to be conducted .
+
+to determine the effectiveness of contractors' implementation of federal information security requirements , agencies rely on security control assessments for contractor - operated systems .
+
+fisma requires that agencies periodically test the management , operational , and technical controls for their systems , including for those systems that are operated by a contractor of an agency or other organization on behalf of an agency .
+
+in addition , nist sp 800-53 recommends that agencies assess systems to determine if controls are implemented correctly , operating as intended , and producing the desired results .
+
+it also requires that a plan be developed that describes the assessment procedures to be used to determine security control effectiveness , and that the agency produce a report that contains the results of this assessment .
+
+further , nist sp 800- 53a contains a suggested methodology for control assessments , including personnel to interview , documents to examine , and testing to be performed .
+
+it also states that different assessment methodologies may be used as long as they are sufficient to identify weaknesses .
+
+opm ensured that security control assessments had been conducted for the contractor - operated systems we selected for review ; however , instances existed where the methodology employed to conduct the assessments was not sufficient to identify potential weaknesses .
+
+specifically , third - party assessors , on behalf of opm's contractors , recently conducted security assessments for each of the three contractor - operated systems we reviewed .
+
+the methodologies for the assessments included document examinations , interviews , and system testing .
+
+we determined that many of the selected controls had been properly assessed , as shown in table 3 .
+
+the assessors had addressed most controls for at least two systems satisfactorily ; nevertheless , shortcomings existed in the completeness of the testing of specific controls .
+
+for example , for system 1 , 23 of the 120 controls we reviewed had not been properly assessed .
+
+for the 23 controls , the assessor did not test the system to determine if the controls were in place .
+
+in addition , for system 3 , the security control assessment provided few details on the procedures used to evaluate the effectiveness of the system's security controls .
+
+instead , the assessors recorded the exact same procedures for every control , and few had enough detail in the results to determine if the assessors had employed sufficient procedures .
+
+opm has developed , documented , and implemented a process for overseeing the security of contractor - operated systems .
+
+the process involved reviewing the third - party security control assessments , but it did not ensure the comprehensiveness of the assessments .
+
+opm has established a quality assurance process that includes reviewing security control assessments .
+
+this process consisted of a standard form letter that the isso completes after reviewing the assessment package provided by the third - party assessor .
+
+for all three selected contractor - operated systems , security officers completed the letter and noted shortcomings with the security control assessments: system 1: the isso noted some problems due to a lack of provided evidence .
+
+for example , the assessor concluded that a number of controls were partially satisfied , despite evidence not being provided by the contractor to the assessor .
+
+system 2: the security officer identified documentation issues with several controls .
+
+for example , the system security plan described the system inconsistently with other documents , such as the contingency plan .
+
+system 3: the isso stated that most of the evidence provided by the assessor was not referenced to the specific procedures performed .
+
+nevertheless , the security officers did not comment on the comprehensiveness of testing , such as the scope and depth of testing by the third - party assessors .
+
+in february 2017 , opm issued an updated authorization guide , which stated that the security officer should review the assessment results and evidence and conduct a quality assurance review on the procedures executed by the independent assessor .
+
+however , the guide does not include instructions on how the security officer should perform this review .
+
+until opm provides more detailed guidance to the issos , the issos may not conduct a rigorous review of the assessment .
+
+therefore , the agency will have less assurance that the security controls for its contractor - operated systems are comprehensively assessed .
+
+we have previously made recommendations related to opm's procedures for ensuring the sufficiency of security control assessments for its systems , including those operated by contractors on its behalf .
+
+in our august 2014 report related to agency oversight of information technology contractors , we recommended that the agency develop , document , and implement oversight procedures for ensuring that a system test is fully executed for each contractor - operated system .
+
+the agency concurred with the recommendation , but , as of april 2017 , had not provided evidence that the recommendation had been implemented .
+
+further , in our may 2016 report related to the security of high - impact systems , we recommended that opm reevaluate security control assessments to ensure that they comprehensively test technical controls for two selected high - impact systems , one of which was a contractor - operated system .
+
+the agency did not concur with our recommendation .
+
+however , without comprehensive security control assessments for these systems , opm is at increased risk that it may not detect vulnerabilities in the systems .
+
+therefore , we believe the recommendation is warranted .
+
+a remedial action plan is a key component of an agency's information security program , as described in fisma .
+
+such a plan assists agencies in identifying , assessing , prioritizing , and monitoring progress in correcting security weaknesses that are found in an information system .
+
+nist recommends that agencies develop a poa&m for an information system to document the agency's planned remedial actions to correct identified weaknesses .
+
+opm developed a poa&m for each of the three reviewed systems and recorded 63 of 64 security weaknesses identified in security assessments for those systems .
+
+tracking the weaknesses that arise from security assessments allows opm to keep track of the weaknesses as they are remediated or their risk is accepted .
+
+table 4 shows the number of security weaknesses per system reviewed .
+
+opm policy also requires management oversight and review of remediation plans .
+
+contractors are to provide evidence , which is to be reviewed and approved by multiple parties at opm before a poa&m is considered closed .
+
+however , because the assessments we selected were so recent , we were unable to evaluate whether this process had been effectively implemented .
+
+opm collects and maintains highly sensitive personal information on millions of individuals , including sensitive security clearance data .
+
+cyber incidents at opm demonstrated the impact that increasingly sophisticated cyber threats can cause and underscore the importance of protecting the agency's systems .
+
+opm has improved its security posture and is in the process of taking numerous actions , such as addressing recommendations from us - cert and implementing government - wide requirements and initiatives that could decrease the risk of future security breaches if effectively implemented .
+
+however , by not validating remedial actions in a timely manner , the agency has limited assurance whether these actions effectively mitigated vulnerabilities that can expose systems to incidents .
+
+in addition , opm had not consistently updated milestones for outstanding us - cert recommendations or complied with its own plan for conducting periodic control assessments .
+
+also , training needed to ensure proper use of monitoring tools was not being completed because the agency has not documented such requirements .
+
+further , key security controls on selected contractor - operated systems have not always been comprehensively tested .
+
+until opm further improves controls over its information and information systems , it has limited assurance that sufficient security controls are in place and operating as intended .
+
+to further improve security over personnel and other sensitive information at the agency , we are recommending that the acting director of opm implement the following five recommendations: 1 .
+
+update the poa&m to reflect expected completion dates for implementing the recommendations made by us - cert .
+
+2 .
+
+improve the timeliness of validating evidence associated with actions taken to address the us - cert recommendations .
+
+3 .
+
+update policy to reflect deployment of dhs threat indicators and the specific 24-hour scanning requirement .
+
+4 .
+
+develop and implement role - based training requirements for staff using cdm tools .
+
+5 .
+
+provide detailed guidance on the quality assurance process that includes evaluating security control assessments .
+
+in a separate report with limited distribution , we are making nine recommendations to the acting director to improve upon actions taken to implement the recommendations made by us - cert and to further implement government - wide requirements .
+
+we received written comments on a draft of this report from opm .
+
+in its comments , which are re - printed in appendix ii , the agency concurred with four of our five recommendations and partially concurred with one recommendation .
+
+opm partially concurred with our recommendation that it improve the timeliness of validating evidence associated with actions taken to address the us - cert recommendations .
+
+the agency did not specifically address the reason for its partial concurrence , but stated that it will review its management practices to support more timely closure of poa&ms .
+
+regardless of whether opm reviews its management practices , performing timely validation of evidence is critical .
+
+as noted in this report , at least 17 months had passed without opm validating evidence that it had effectively implemented the us - cert recommendations .
+
+until the evidence is validated , opm will have limited assurance that the actions taken have mitigated vulnerabilities that can expose its systems to cybersecurity incidents .
+
+in addition , opm provided comments concerning the approach of our audit and aspects of our report message .
+
+in particular , the agency stated that gao did not fully acknowledge opm's “defense in depth” strategy and that the report does not present a fully accurate picture of the agency's cybersecurity posture .
+
+as we state in this report , our objectives were to evaluate opm's actions taken since the 2015 breach , implementation of requirements associated with selected government - wide initiatives , and oversight of contractor - operated systems .
+
+we designed and performed audit procedures to collect sufficient evidence to accomplish these objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions .
+
+beyond the results of this audit , we previously reported in 2016 that opm needed to improve security controls over its high - impact systems that we selected for review .
+
+in two prior reports , we made numerous recommendations to enhance the agency's information security program and to resolve access control weaknesses in those systems .
+
+to date , these recommendations remain open .
+
+based on the results of our prior work and this audit , we believe our current report appropriately reflects opm's cybersecurity posture , consistent with our audit objectives .
+
+opm also indicated that it has taken steps to enhance its cybersecurity posture in multiple areas through the addition of cybersecurity tools and security updates , staff and agency - wide training , critical personnel hiring , and collaboration with its interagency partners .
+
+we agree that these are positive actions .
+
+effective implementation of these actions and our recommendations is essential to ensuring that sufficient security controls are in place and operating as intended .
+
+we are sending copies of this report to appropriate congressional committees , the acting director of the office of personnel management , including its office of the inspector general , and other interested congressional parties .
+
+in addition , the report is available at no charge on the gao website at http: / / www.gao.gov .
+
+if you or your staff have any questions about this report , please contact gregory c. wilshusen at ( 202 ) 512-6244 or wilshuseng@gao.gov , or dr. nabajyoti barkakati at ( 202 ) 512-4499 or barkakatin@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made key contributions to this report are listed in appendix iii .
+
+our objectives were to evaluate the office of personnel management's ( opm ) 1 ) actions since the 2015 data breaches to prevent , mitigate , and respond to data breaches involving sensitive personnel records and information ; 2 ) information security policies and practices as they relate to selected government - wide initiatives and requirements ; and 3 ) procedures for overseeing the security of opm information maintained by contractors providing information technology services .
+
+to address the first objective , we assessed the extent to which the agency had implemented 19 recommendations that the united states computer emergency response team ( us - cert ) made in its 2015 breach investigation report .
+
+we chose to focus on the status of us - cert's recommendations for this objective in order to avoid duplication of effort .
+
+according to us - cert , its recommendations outlined mitigations and security best practices based on the specific compromise and opm's cybersecurity environment , and are tailored to the opm environment .
+
+to determine the extent of implementation and whether further improvements were needed , we reviewed the status ( eg , complete or in progress ) of opm's actions to address the recommendations made by us - cert .
+
+we focused on one or more actions described in the plans of action and milestones provided to us .
+
+we interviewed officials from opm's office of the chief information officer ( ocio ) and reviewed the agency's information security documentation , to include policies , plans , and procedures .
+
+we also performed limited testing of the agency's internal network and software tools to determine the extent to which us - cert's recommendations had been implemented .
+
+this testing included examining system and device configurations , firewall rules , system status reports , and account listings .
+
+we focused on those software tools that opm indicated it had deployed as actions taken to implement us - cert recommendations .
+
+if , after reviewing the plans provided by opm and performing our own testing , we could not account for a specific recommendation or disagreed with the implementation status , we followed up with the agency .
+
+for this objective , we evaluated the reliability of the data related to the number of workstations at opm , as well as the number of outstanding patches .
+
+we assessed the data reliability by various means , including reviewing related documents , conducting observations of systems generating data , interviewing knowledgeable agency officials , and reviewing internal controls such as agency policies and procedures .
+
+we concluded that the data were sufficiently reliable for the purposes of this reporting objective .
+
+as part of this objective , because the data breaches involved background investigation information , we also reviewed opm's plans to establish the new national background investigations bureau ( nbib ) , its plans to transfer the information systems supporting nbib to the department of defense ( dod ) , and dod's plans for the national background investigations system .
+
+to accomplish this , we reviewed the memorandum of agreement between the agencies and implementation plans and interviewed officials from opm and dod .
+
+to address the second objective , we focused on the security controls agencies are required to implement , as described in the office of management and budget's october 2015 cybersecurity strategy and implementation plan ( csip ) and the cybersecurity cross - agency priority ( cap ) goals .
+
+in addition , omb issued an updated version of its circular a - 130 , which we also reviewed .
+
+based on our review of these documents , we determined that government - wide requirements associated with them include: 1 ) identifying high value assets , 2 ) minimizing the number of privileged users , 3 ) using multifactor authentication , 4 ) limiting the access for privileged accounts , 5 ) using data encryption , 6 ) deploying cyber threat indicators issued by the department of homeland security , 7 ) using anti - phishing and anti - malware technology , and 8 ) subjecting systems to continuous monitoring .
+
+further , we reviewed and applied the national institute of standards and technology's ( nist ) standards and guidelines that are related to these requirements .
+
+to determine the extent to which opm had implemented the requirements associated with the initiatives , we reviewed agency policies , implementation plans , and other related documents , and interviewed opm ocio officials and contractors .
+
+we verified this information and collected new information by reviewing relevant controls on three selected systems .
+
+we selected these systems based on the agency categorizing them as high - impact systems and them not being recently audited by gao .
+
+because system weaknesses identified in this report could be exploited , we are not identifying the system names or other specifics related to our selection .
+
+in a separate report with limited distribution , we provide more details regarding our scope and methodology .
+
+the review we conducted was targeted to acquire information specifically related to this objective and was therefore not comprehensive in nature .
+
+some of the testing we performed included reviewing configuration settings , administrative account privileges and authorizations , and data encryption .
+
+to address our third objective , we interviewed opm officials and reviewed opm policy and system security assessments .
+
+for selected opm contractor - operated systems , we reviewed the system's security assessments to determine whether the security control review conducted by the assessor was adequate to evaluate the effectiveness of the controls tested .
+
+we selected the two active , contractor - operated systems that were not involved in the breach , but were categorized by the agency as high - impact systems .
+
+we also selected one active system that the agency categorized as moderate impact .
+
+because system weaknesses identified in this report could be exploited , we are not identifying the systems' names or other specifics related to our selection .
+
+we focused the scope of our review on assessments of moderate - and high - impact controls in the following nist special publication ( sp ) 800-53 defined control families: access controls , audit and accountability , security assessment and authorization , configuration management , contingency planning , risk assessments , and system and information integrity .
+
+in addition , we excluded controls identified by the assessors as either inherited or not applicable .
+
+we determined the sufficiency of the procedures used by comparing the requirements and recommended testing procedures — as defined in nist sp 800-53 and nist sp 800-53a — of each control with the testing procedures documented by assessors in the assessment results .
+
+for each control , we evaluated whether the type ( eg , interview , observation , technical testing ) and scope of the testing performed was such that one could accurately determine whether a given control had been effectively implemented .
+
+we also reviewed the plans of action and milestones associated with each assessment to determine whether the assessment results were reflected in the plans .
+
+we conducted this performance audit from january 2016 to august 2017 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+in addition to the contacts named above , west coile and jeffrey knott ( assistant directors ) ; justin palk ( analyst - in - charge ) ; corey evans , nancy glover , david plocher , brandon sanders , michael stevens , and edward varty made key contributions to this report .
+

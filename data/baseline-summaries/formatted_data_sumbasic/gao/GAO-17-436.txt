@@ -1,0 +1,456 @@
+the federal deposit insurance corporation ( fdic ) has a demanding responsibility to enforce banking laws , regulate banking institutions , and protect depositors .
+
+in carrying out its financial and mission - related operations , the corporation relies extensively on computerized systems .
+
+because the corporation plays an important role in maintaining public confidence in financial institutions , issues that affect the confidentiality , integrity , and availability of the sensitive information maintained on its systems are of paramount concern .
+
+in particular , effective information security controls are essential to ensure that the corporation's systems and information are being adequately protected from inadvertent or deliberate misuse , fraudulent use , improper disclosure , or destruction .
+
+as part of our audit of fdic's calendar year 2016 and 2015 financial statements of the deposit insurance fund and the federal savings and loan insurance corporation resolution fund , we assessed the effectiveness of the corporation's information security controls over key financial systems , data , and networks .
+
+as highlighted in our related report on the audit of these financial statements , during 2016 , fdic made progress addressing previously reported control deficiencies related to its information systems .
+
+key corrective actions included improving controls for authorizing users' access to financial applications and for logging and monitoring financial applications to detect potentially malicious activity .
+
+however , the collective effect of the deficiencies in information security from prior years that continued to exist in calendar year 2016 , along with new deficiencies in access and configuration management controls that we identified during our calendar year 2016 and 2015 audit ( discussed in this report ) , are serious enough to merit the attention of those charged with governance of fdic .
+
+therefore , they represented a significant deficiency in fdic's internal control over financial reporting systems as of december 31 , 2016 , based on criteria established under the federal managers' financial integrity act of 1982 .
+
+our objective for this audit was to determine the effectiveness of the corporation's information security controls in protecting the confidentiality , integrity , and availability of its financial systems and information .
+
+this work was performed to support our opinion on fdic's internal control over financial reporting as of december 31 , 2016 .
+
+see appendix i for more details on our objective , scope , and methodology .
+
+we conducted this audit in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objective .
+
+fdic was established by congress to maintain the stability of and public confidence in the nation's financial system by insuring deposits , examining and supervising financial institutions , and resolving troubled institutions .
+
+congress created fdic in 1933 in response to the thousands of bank failures that had occurred throughout the late 1920s and early 1930s .
+
+the bank insurance fund and the savings association insurance fund were established as fdic responsibilities under the financial institutions reform , recovery , and enforcement act of 1989 , which sought to reform , recapitalize , and consolidate the federal deposit insurance system .
+
+the bank insurance fund and the savings association insurance fund merged into the deposit insurance fund on february 8 , 2006 , as a result of the passage of the federal deposit insurance reform act of 2005 .
+
+as administrator of the deposit insurance fund , fdic insures the deposits of banks and savings associations ( insured depository institutions ) .
+
+in cooperation with other federal and state agencies , the fdic promotes the safety and soundness of insured depository institutions by identifying , monitoring , and addressing risks to the deposit insurance fund .
+
+fdic is also the administrator of the federal savings and loan insurance corporation resolution fund .
+
+this fund was created to close out the business of the former federal savings and loan insurance corporation and liquidate the assets and liabilities transferred from the former resolution trust corporation .
+
+fdic relies extensively on computerized systems to support its mission , including financial operations , and to store the sensitive information that it collects .
+
+the corporation uses local and wide area networks to interconnect its systems .
+
+to support its financial management functions , fdic uses , among other things , the following information technology ( it ) resources: a corporate - wide system that functions as a unified set of financial and payroll systems that are managed and operated in an integrated fashion ; a system to calculate and collect fdic deposit insurance premiums and financing corporation interest amounts from insured institutions ; a web - based application that provides full functionality to support franchise marketing , asset marketing , and asset management ; an application and web portal to provide acquiring institutions with a secure method for submitting required data files to fdic ; computer programs used to derive the corporation's estimate of losses from shared loss agreements ; a system to request access to and receive permission for the computer applications and resources available to its employees , contractors , and other authorized personnel ; and a primary receivership and subsidiary financial processing and reporting system .
+
+the federal government has seen a marked increase in the number of information security incidents affecting the integrity , confidentiality , and availability of government information , systems , and services .
+
+without proper safeguards , computer systems are vulnerable to individuals and groups with malicious intentions who can intrude and use their access to obtain sensitive information , commit fraud and identity theft , disrupt operations , or launch attacks against other computer systems and networks .
+
+cyber - based threats to information systems and cyber - related critical infrastructure can come from sources internal and external to the organization .
+
+external threats include the ever - growing number of cyber - based attacks that can come from a variety of sources such as individuals , groups , and countries who wish to do harm to an organization's systems .
+
+internal threats include errors or mistakes , as well as fraudulent or malevolent acts by employees or contractors working within an organization .
+
+under the federal information security modernization act of 2014 ( fisma ) , the chairman of fdic is responsible for , among other things , ( 1 ) providing information security protections commensurate with the risk and magnitude of the harm resulting from unauthorized access , use , disclosure , disruption , modification , or destruction of the agency's information systems and information ; ( 2 ) ensuring that senior agency officials provide information security for the information and information systems that support the operations and assets under their control ; and ( 3 ) delegating to the corporation's chief information officer ( cio ) the authority to ensure compliance with the requirements imposed on the agency under fisma .
+
+fisma states that the cio is responsible for developing and maintaining a corporate - wide information security program and for developing and maintaining information security policies , procedures , and control techniques that address all applicable requirements .
+
+fisma also states that the cio is to designate a senior agency information security officer to carry out the cio's responsibilities for information security under the law .
+
+in most federal organizations , this official is referred to as the chief information security officer .
+
+at fdic , the cio is responsible for , among other things , ( 1 ) establishing the information security risk management program and ensuring that it is properly implemented ; ( 2 ) establishing the overall strategy for how the corporation frames , assesses , responds to , and monitors information security risks ; and ( 3 ) establishing and promulgating agency - wide information security risk awareness programs and practices .
+
+the responsibilities of the fdic chief information security officer include , among other things , ( 1 ) overseeing the corporation's information technology security risk management program ; ( 2 ) providing information security standards , control frameworks , security policy , best practices , and security architecture oversight ; ( 3 ) ensuring appropriate staffing and support of all information security positions that support the risk management program ; and ( 4 ) managing and maintaining the continuous monitoring program .
+
+for calendar years 2016 and 2015 , fdic implemented numerous information security controls intended to protect its key financial systems .
+
+in addition , the corporation addressed 15 of 21 recommendations to mitigate control weaknesses that we had previously identified in our reports in 2013 , 2014 , 2015 , and 2016 .
+
+nevertheless , weaknesses remained in fdic's implementation of access , configuration management , and information security program controls that threaten the confidentiality , integrity , and availability of its financial systems and information .
+
+as we have previously reported , the collective effect of weaknesses in access and configuration management controls , both new and unresolved from previous audits , contributed to our determination that fdic had a significant deficiency in internal control over financial reporting as of december 31 , 2016 .
+
+an agency can better protect the resources that support its critical operations and assets from unauthorized access , disclosure , modification , or loss by designing and implementing controls for protecting information system boundaries , identifying and authenticating users , restricting user access to only what has been authorized , encrypting sensitive data , and auditing and monitoring systems to detect potentially malicious activity , among other actions .
+
+although fdic had implemented numerous controls in these areas , weaknesses nevertheless continued to challenge the corporation in ensuring the confidentiality , integrity , and availability of its information and information systems .
+
+boundary protection controls are intended to restrict logical access into and out of networks and control connectivity to and from network - connected devices .
+
+any connections to the internet or to other external and internal networks or information systems should occur through controlled interfaces ( for example , gateways , routers , switches , and firewalls ) .
+
+in addition , networks should be appropriately configured to adequately protect access paths between systems ; this can be accomplished through the use of access control lists and firewalls .
+
+national institute of standards and technology ( nist ) guidance recommends that organizations employ boundary protection mechanisms to separate organization - defined information system components supporting organization - defined missions and / or business functions .
+
+such isolation limits unauthorized information flows among system components and also provides the opportunity to deploy greater levels of protection for selected components .
+
+consistent with nist guidance , office of management and budget circular a - 130 requires agencies to isolate sensitive or critical information resources ( eg , information systems , system components , applications , databases , and information ) into separate security domains with appropriate levels of protection based on the sensitivity or criticality of those resources .
+
+fdic did not implement sufficient internal boundary protection controls on its network to isolate financial systems from other parts of its network .
+
+although the corporation partially isolated financial systems from other parts of the environment using virtual local area networks , it did not always implement controls on network devices to prevent unauthorized users and systems from communicating with the financial systems .
+
+according to fdic , a plan to isolate sensitive systems had been made , but implementation of the plan had been delayed due to other competing priorities .
+
+until it appropriately isolates its financial systems , fdic faces increased risk that unauthorized or malicious attempts to communicate with its financial systems could go undetected .
+
+identification is the process of distinguishing one user from all others , usually through user identifications ( id ) .
+
+these are important because they are the means by which specific access privileges are assigned and recognized by the computer .
+
+however , because the confidentiality of a user id is typically not protected , other means of authenticating users — that is , determining whether individuals are who they say they are — are typically implemented .
+
+the combination of identification and authentication — such as user account - password combinations — provides the basis for establishing accountability and for controlling access to the system .
+
+nist sp 800-53 , revision 4 recommends that agency information systems uniquely identify and authenticate organizational users or processes acting on behalf of organizational users .
+
+fdic did not implement sufficient controls to ensure that users would be held accountable for the use of a key privileged account .
+
+although the corporation employed a software tool to control access to privileged accounts , it did not use the tool to control access to a privileged account that was used by multiple engineers to manage the corporation's virtual environment .
+
+as a result , fdic's ability to attribute authorized , as well as unauthorized , system activity to specific individuals could be diminished .
+
+authorization is the process of granting or denying access rights and privileges to a protected resource , such as a network , system , application , function , or file .
+
+a key component of granting or denying access rights is the concept of “least privilege,” which refers to granting a user only the access rights and permissions needed to perform official duties .
+
+to restrict a legitimate user's access to only those programs and files needed , organizations establish user access rights: allowable actions that can be assigned to a user or to groups of users .
+
+file and directory permissions are rules that are associated with a particular file or directory , regulating which users can access it — and the extent of their access rights .
+
+to avoid unintentionally giving a user unnecessary access to sensitive files and directories , an organization should give careful consideration to its assignment of rights and permissions .
+
+nist sp 800-53 , revision 4 recommends that organizations employ the principle of least privilege by allowing only authorized users ( or processes acting on behalf of users ) access permission that is necessary to accomplish assigned tasks in accordance with organizational missions and business functions .
+
+nist also recommends periodic reviews of user accounts for compliance with account management requirements .
+
+in addition , fdic policy requires administrators to use designated administrator accounts when conducting administrative tasks .
+
+fdic policy also requires removal of user permissions if the job responsibilities of the user change , if the user transfers to a different organization , or the user no longer requires access for any other reason .
+
+further , the policy requires that access settings be reviewed periodically to ensure that they remain consistent with existing authorizations and current business needs .
+
+during 2016 , fdic improved controls for authorizing users' access by addressing all nine of the weaknesses pertaining to authorization that we had previously identified and that were still unresolved as of december 31 , 2015 .
+
+for example , fdic implemented processes for reviewing individuals with access to its data centers ; ensuring that users of a key financial application do not conduct access reviews of their own accounts ; and removing users' access to another financial application in a timely manner .
+
+however , while it addressed these weaknesses from prior years , the corporation did not always consistently implement authorization controls .
+
+specifically , fdic database administrators for one database management system did not use designated administrative accounts when performing administrative tasks on certain databases .
+
+additionally , although the corporation had a process for conducting periodic reviews of access settings on mainframe accounts , it did not include all mainframe accounts in the access review process .
+
+further , about one - fifth of the user accounts we reviewed on a key financial application were granted additional privileges that had not been authorized by the users' supervisors .
+
+this occurred because the official granting the access had institutional knowledge of the privileges that the users would need , and because fdic's procedures for granting access to the application did not include responsibilities and procedures for ensuring that the level of access provided had been approved by the users' supervisor .
+
+as a result , these systems are more vulnerable to unauthorized access and modification of data .
+
+cryptography controls can be used to help protect the integrity and confidentiality of data and computer programs by rendering data unintelligible to unauthorized users and / or protecting the integrity of transmitted or stored data .
+
+cryptography involves the use of mathematical functions called algorithms and strings of seemingly random bits called keys .
+
+among other things , the algorithms and keys are used to encrypt a message or file so that it is unintelligible to those who do not have the secret key needed to decrypt it , thus keeping the contents of the message or file confidential .
+
+nist sp 800-53 , revision 4 recommends that organizations employ encryption to protect information from unauthorized disclosure and modification during transmission .
+
+the nist standard for an encryption algorithm is federal information processing standards publication ( fips pub. ) .
+
+140-2 .
+
+fdic had not completed actions to implement our prior recommendation to use fips - compliant encryption for all mainframe connections .
+
+although fdic officials stated that they initially intended to implement a tool to enable mainframe encryption in 2016 , the corporation determined that the tool would not encrypt all of the information within its planned scope .
+
+fdic officials from the division of information technology stated that the corporation is continuing to consider feasible options for encrypting mainframe connections .
+
+in the meantime , sensitive data — such as user ids and passwords — continue to be transmitted over the network in clear text , exposing them to potential compromise .
+
+audit and monitoring involves the regular collection , review , and analysis of auditable events for indications of inappropriate or unusual activity , and the appropriate investigation and reporting of such activity .
+
+automated mechanisms may be used to integrate audit monitoring , analysis , and reporting into an overall process for investigation and response to suspicious activities .
+
+audit and monitoring controls can help security professionals routinely assess computer security , perform investigations during and after an attack , and even recognize an ongoing attack .
+
+nist sp 800-53 , revision 4 states that organizations should review and analyze information system audit records for indications of inappropriate or unusual activity and report the findings to designated agency personnel .
+
+additionally , nist states that information systems should produce audit records that establish the type of event , when the event occurred , and the identity of any individuals or subjects associated with the event , among other things .
+
+fdic improved its audit and monitoring controls by implementing four of the five recommendations pertaining to audit and monitoring that we had previously identified and that were still unresolved as of december 31 , 2015 .
+
+for example , the corporation had ensured that data on successful logins was being captured for each of its database systems for investigation of potential security incidents ; implemented a centralized audit monitoring capability for its databases ; improved the logging and monitoring process for several key systems ; and documented all critical files on key servers that required real - time monitoring .
+
+however , other weaknesses existed in fdic's implementation of audit and monitoring controls .
+
+specifically: fdic had not performed vulnerability scans of all servers in its it environment .
+
+in its november 2016 report on the effectiveness of the corporation's information security program in accordance with the requirements of fisma , the fdic office of inspector general ( oig ) reported that , at the time of its audit , fdic was not performing vulnerability scans for more than 900 production servers within one of its general support systems .
+
+in addition , we found that fdic had not scanned several production servers in another of its general support systems during the 3-month time period ( july , august , and september 2016 ) that we reviewed .
+
+according to fdic officials , these conditions occurred because the corporation did not have an inventory of network assets that included all servers and because its legacy scanning and discovery tool had failed to identify all servers .
+
+the officials added that the scanning and discovery tool had since been replaced .
+
+without regularly scanning all servers , fdic cannot reasonably be assured that vulnerabilities in its servers are identified and corrected in a timely manner , increasing the risk that its systems and information may be compromised .
+
+fdic had not completed actions to address our prior year recommendation to ensure that changes made to critical files on certain key servers are adequately monitored .
+
+although the corporation specified which directories on the servers were to be monitored , the logs that were generated did not provide sufficient detail to identify the individuals making changes .
+
+according to officials in fdic's division of information technology , the corporation plans to implement a new solution in 2017 to enable security personnel to identify users making file system changes .
+
+until fdic fully addresses this recommendation by ensuring that users making changes to critical files are identified and logged , increased risk continues to exist that an unauthorized individual could inappropriately modify these files without being identified .
+
+in addition to access controls , agencies should implement policies , procedures , and techniques for managing the configuration of information systems .
+
+configuration management controls are intended to prevent unauthorized changes to information system resources ( for example , software programs and hardware configurations ) and to provide reasonable assurance that systems are configured and operating securely and as intended .
+
+nist sp 800-53 , revision 4 recommends , among other things , that agencies develop and document an inventory of information system components that accurately reflects the current system and includes all components within the system's authorization boundary ; establish a baseline configuration for the information system and its constituent components ; and identify and correct information system flaws , including installing security relevant software updates within a defined time period of their release .
+
+consistent with nist guidelines , fdic policy states that mandatory configuration settings must be established and documented for it products employed within the information system using information system - defined security configuration checklists .
+
+the policy also states that applicable vendor - released software patches designed to address security vulnerabilities are to be implemented in accordance with the cio organization's security patching schedule .
+
+nevertheless , fdic had not consistently implemented configuration management controls .
+
+for example , although the corporation used multiple tools to track and validate its it assets , it had not established a single , authoritative , accurate listing of all it assets in its environment .
+
+this occurred because fdic had not established a process to reasonably assure that a complete , accurate inventory was developed and maintained .
+
+additionally , although the corporation had defined baseline configuration settings for its information systems and had conducted configuration scans of its systems , it had not yet fully implemented processes for verifying that configurations are consistently applied .
+
+further , although fdic had applied patches to certain third - party applications supporting financial processing and had made significant progress in identifying and tracking vulnerabilities related to third - party software , it had not yet fully implemented processes to ensure that assets that require patching are identified correctly .
+
+without establishing a reliable , authoritative listing of its it assets and documenting , implementing , and monitoring security configurations , fdic has reduced assurance that its information supporting financial processing is securely configured .
+
+additionally , unless known vulnerabilities in fdic's systems and applications are patched , increased risk exists that they could be exploited , potentially exposing the corporation's financial systems and information to unauthorized access or modification .
+
+an entitywide information security management program is the foundation of a security control structure and a reflection of senior management's commitment to addressing security risks .
+
+the security management program should establish a framework and continuous cycle of activity for assessing risk , developing and implementing effective security procedures , and monitoring the effectiveness of these procedures .
+
+without a well - designed program , security controls may be inadequate ; responsibilities may be unclear , misunderstood , or improperly implemented ; and controls may be inconsistently applied .
+
+fisma requires each agency to develop , document , and implement an information security program to provide security for the information and information systems that support the agency's operations and assets , including those provided or managed by another agency , contractor , or other organization on its behalf .
+
+agency programs are to include , among other things , the following elements: periodic assessments of risk , including the magnitude of harm that could result from the unauthorized access , use , disclosure , disruption , modification , or destruction of information and information systems that support the operations and assets of the organization ; plans and procedures to ensure continuity of operations for information systems that support the operations and assets of the agency ; policies and procedures that are based on risk assessments , cost - effectively reduce information security risks to an acceptable level , and ensure that information security is addressed throughout the life cycle of each organizational information system ; periodic testing and evaluation of the effectiveness of information security policies , procedures , practices , and security controls to be performed with a frequency depending on risk , but no less than annually ; a process for planning , implementing , evaluating , and documenting remedial actions to address any deficiencies in the information security policies , procedures , and practices of the organization ; and procedures for detecting , reporting , and responding to security incidents .
+
+in addition , fisma requires the head of each federal agency to ensure that information security management processes are integrated with agency strategic and operational planning processes .
+
+fdic had developed , documented , and implemented many elements of its corporate information security program .
+
+for example , it had defined security categories for the general support systems we reviewed based on risk using nist guidance , assessed the risk from control deficiencies identified during security control tests , and ensured that the general support systems we reviewed were authorized to operate ; and conducted a disaster recovery test of its general support systems and mission - critical applications .
+
+however , fdic had not fully or consistently implemented aspects of its information security program , which was an underlying reason for many of the information security weaknesses identified during our review .
+
+specifically , fdic had not included all necessary information in procedures for granting access to a key financial application ; fully addressed the fdic oig's finding that security control assessments of outsourced service providers had not been completed in a timely manner ; fully addressed key previously identified weaknesses related to establishing agencywide configuration baselines and monitoring changes to critical server files ; and completed actions to address the fdic oig's finding that the corporation had not ensured that major security incidents are identified and reported in a timely manner .
+
+in addition , in november 2016 , the fdic oig reported that the corporation had not yet developed and documented an up - to - date information security strategic plan or completed actions to address weaknesses in its information security managers program .
+
+these shortcomings are discussed in more detail in the following section .
+
+a key element of an effective information security program is to develop , document , and implement risk - based policies , procedures , and technical standards that govern the security over an agency's computing environment .
+
+information security policy is essential to establishing roles , responsibilities , and requirements necessary for implementing an information security program .
+
+the supporting procedures provide the information and guidance on implementing the policies .
+
+according to nist sp 800-53 , revision 4 , organizations should develop and document procedures to facilitate the implementation of access and configuration management policies and associated controls .
+
+although fdic developed and documented many information security policies and procedures that were consistent with the nist risk management framework , its procedure for granting users access to a key financial application did not include responsibilities and steps for ensuring that the level of access provided had been approved by the users' supervisor .
+
+as a result , the official granting access to the application — who had institutional knowledge of the privileges that the users would need — granted additional privileges to some users for which they had not been previously approved .
+
+until it updates its procedure to include these responsibilities and steps , fdic will continue to face increased risk that users may be granted access to privileges in the application for which they have not been approved .
+
+a key element of an information security program is to test and evaluate policies , procedures , and controls to determine whether they are effective and operating as intended .
+
+security control testing should include management , operational , and technical controls for every system identified in the agency's required inventory of major systems .
+
+although control tests and evaluations may encourage compliance with security policies , the full benefits are not achieved unless the results are used to improve security .
+
+fisma requires that the frequency of tests and evaluations of management , operational , and technical controls be based on risks and occur no less than annually .
+
+the office of management and budget ( omb ) directs agencies to meet their fisma - required controls testing by drawing on security control assessment results that include , but are not limited to , continuous monitoring activities .
+
+according to nist sp 800-53 , revision 4 , continuous monitoring programs facilitate ongoing awareness of threats , vulnerabilities , and information security to support organizational risk management decisions .
+
+nist also recommends that organizations monitor security control compliance by external service providers on an ongoing basis .
+
+fdic developed a continuous control assessment methodology that defined the controls tested for each information system and the frequency that each control is to be tested .
+
+in addition , the corporation tested the effectiveness of the security controls for the three general support systems we reviewed in accordance with the methodology .
+
+however , the fdic oig has previously reported weaknesses in fdic's assessments of its outsourced service providers .
+
+specifically , in october 2015 , it reported that the corporation had not always ensured that security assessments of outsourced service providers were completed in a timely manner .
+
+in november 2016 , the oig reported that fdic had made meaningful progress towards completing timely assessments of its outsourced service providers , but noted that continued management attention was warranted in this area to ensure outstanding assessments are completed timely .
+
+when security weaknesses are identified , the related risks should be assessed , appropriate corrective or remediation actions should be taken , and follow - up monitoring should be performed to make certain that corrective actions are effective .
+
+fisma specifically requires that agencywide information security programs include a process for planning , implementing , evaluating , and documenting remedial actions to address any deficiencies in the information security policies , procedures , and practices of the agency .
+
+nist sp 800-53 , revision 4 recommends that organizations develop a plan of action and milestones ( poa&m ) for information systems to document the planned remedial actions to correct weaknesses or deficiencies identified during security control assessments .
+
+a poa&m should also be updated based on the findings from the security controls assessment , security impact analysis , and continuous monitoring activities .
+
+fdic documented poa&ms for weaknesses identified during internal control assessments and implemented an effective process for tracking and mitigating identified weaknesses for each of the systems that we reviewed .
+
+in addition , as of december 31 , 2016 , fdic had addressed 15 of the 21 previously reported information system weaknesses that were unresolved at the end of our prior audit .
+
+for example , fdic had improved controls for authorizing users' access to financial applications and for logging and monitoring financial systems to detect potentially malicious activity .
+
+however , six previously identified weaknesses remained unresolved .
+
+until it completes actions to address previously identified weaknesses , fdic will continue to face increased risk that its systems may not be adequately or consistently protected against unauthorized access to systems or data .
+
+appendix ii details the status of weaknesses that were unaddressed as of december 31 , 2015 or were initially reported in 2016 .
+
+comprehensive monitoring and incident response controls are necessary for rapidly detecting incidents , minimizing loss and destruction , mitigating the weaknesses that were exploited , and restoring computing services .
+
+while strong controls may not prevent all incidents , agencies can reduce the risks associated with these events by detecting and promptly responding before significant damage is done .
+
+fisma requires federal agencies to develop and implement procedures for detecting , reporting , and responding to security incidents .
+
+nist sp 800-53 , revision 4 further recommends that agencies develop , document , and disseminate procedures to facilitate the implementation of the incident response policy and associated incident response controls .
+
+fdic developed and documented information security policies and procedures on incident response .
+
+for example , its policy on reporting computer security incidents states that the fdic computer security incident response team is responsible for evaluating the seriousness of computer security incidents and taking appropriate corrective actions , including notifying fdic senior management , the oig , and other outside entities , when appropriate .
+
+nevertheless , shortcomings existed in fdic's implementation of its policies .
+
+specifically , fdic did not provide reasonable assurance that “major incidents,” as defined by omb guidance , were identified and reported in a timely manner .
+
+specifically , the oig reported in july 2016 that fdic's incident response policies , procedures , and guidelines did not address major incidents .
+
+in addition , the large volume of potential security violations identified by its data loss prevention tool , together with limited resources devoted to reviewing potential violations , hindered meaningful analysis of the information and fdic's ability to identify all security incidents , including major ones .
+
+among other things , the oig recommended that fdic ( 1 ) revise its incident response policies , procedures , and guidelines to address major incidents ; ( 2 ) ensure that these revisions include criteria for determining whether an incident is major , consistent with fisma and office of management and budget guidance ; and ( 3 ) review the current implementation of the data loss prevention tool to determine how it can be better leveraged to safeguard sensitive fdic information .
+
+in november 2016 , the fdic oig reported that , in response to these findings , the corporation was working to improve its incident response capabilities by developing an overarching incident response program guide , hiring an incident response coordinator , implementing a new incident tracking system , updating incident response policies and procedures , and performing a comprehensive assessment of the fdic's information security and privacy programs .
+
+if fully implemented , these actions could improve fdic's ability to identify and address security incidents , including major incidents .
+
+according to nist sp 800-39 , effective risk management requires organizations such as fdic to operate in highly complex , interconnected environments using state - of - the - art and legacy information systems — systems that organizations depend on to accomplish their missions and to conduct important business - related functions .
+
+the complex relationships among missions , mission / business processes , and the information systems supporting those missions and processes require an integrated , organization - wide view for managing risk .
+
+effective management of information security risk is critical to the success of organizations in achieving their strategic goals and objectives .
+
+nist sp 800-100 states that agencies should have a strategic plan for information security that identifies goals and objectives related to the agency's mission , specifies a plan for achieving those goals , and establishes short - and mid - term performance targets and measures that allow the agency to track , manage , and monitor its progress toward those goals and objectives .
+
+in addition , according to nist sp 800-39 , agencies should establish roles and responsibilities for managing information security risk .
+
+however , fdic had not fully implemented key activities for managing and overseeing information security risk across the organization .
+
+specifically: in november 2016 , the fdic oig reported that fdic's information security strategic plan was not up - to - date .
+
+specifically , although the corporation had an information security strategic plan , this plan had expired in 2015 and did not fully reflect omb's cybersecurity priorities or the corporation's strategies .
+
+without an up - to - date strategic plan , ongoing and planned it initiatives may not be linked to the corporation's long - term security and business goals and priorities .
+
+fdic had not completed actions to address gaps in how the roles and responsibilities of its information security managers ( ism ) are defined and carried out .
+
+in october 2015 , the fdic oig reported that the duties and roles of the isms in addressing information security requirements and risks had evolved since the ism program was established .
+
+it also reported that fdic had not completed a recent comprehensive assessment to determine whether the skills , training , oversight , and resource allocations pertaining to the isms enabled them to effectively carry out their increased responsibilities and address security risks within their divisions and offices .
+
+in november 2016 , the oig reported that fdic had conducted an assessment of its ism program , which identified gaps in areas such as available resources , training , and performance measurement .
+
+the oig also reported that fdic plans to complete all actions to address these gaps by 2018 .
+
+until then , however , increased risk exists that these capability gaps could impact the effectiveness of the fdic's information security program .
+
+fdic had implemented and strengthened many information security controls over its financial systems and information .
+
+for example , the corporation had taken steps to improve controls for restricting user access to only what has been authorized , auditing and monitoring systems for potentially malicious activity , and applying patches to address known software vulnerabilities by addressing many of the weaknesses that we previously reported .
+
+however , management attention is needed to address new and previously identified deficiencies in access controls — including boundary protection , identification and authentication , authorization , cryptography , and audit and monitoring controls — and in configuration management controls .
+
+these deficiencies , considered collectively , are the basis for our determination that fdic had a significant deficiency in internal control over financial reporting in its information systems controls as of december 31 , 2016 .
+
+in addition , fdic had developed , documented , and implemented many elements of its corporate information security program .
+
+however , further actions are needed to address shortcomings in the corporation's program , such as ensuring that its procedure for granting access to a key financial application includes key responsibilities and steps .
+
+given the important role that information systems play in fdic's internal controls over financial reporting , it is vitally important that the corporation address weaknesses in information security controls — both old and new — as part of its ongoing efforts to mitigate the risks from cyber attacks and to ensure the confidentiality , integrity , and availability of its financial and sensitive information .
+
+continued and consistent management commitment and attention to access , configuration management , and security management controls will be essential to addressing existing deficiencies and further improving fdic's information system controls .
+
+to help improve the corporation's implementation of its information security program , we recommend that the chairman of fdic direct the chief information officer to update the procedure for granting access to the key financial application , to include responsibilities and steps for ensuring that the access privileges granted have been approved by the users' supervisor .
+
+in a separate report with limited distribution , we are also making six recommendations to resolve shortcomings in fdic's internal control over financial reporting and help strengthen access and configuration management controls over key financial information , systems , and networks .
+
+in written comments on a draft of this report ( reprinted in appendix ii ) , fdic concurred with our recommendation to improve its implementation of its information security program and stated that corrective actions will be completed by july 2017 .
+
+fdic also provided an attachment detailing its actions to implement our recommendation .
+
+in addition to the aforementioned comments , fdic provided technical comments that we have addressed in our report as appropriate .
+
+in these comments , the corporation expressed concern about one additional recommendation to improve its information security program that we had made in our draft report .
+
+specifically , the draft report had included a recommendation that fdic develop , document , and implement procedures for ensuring that configuration actions identified by its computer security incident response team are taken .
+
+in written and oral comments , fdic officials provided additional information about the corporation's incident handling process in order to clarify that the condition we identified did not pose a risk to the corporation's information and systems .
+
+after our review of this information , we agree that the condition does not pose a risk to the corporation and , accordingly , removed the recommendation from our final report .
+
+we are sending copies of this report to interested congressional parties .
+
+in addition , the report is available at no charge on the gao website at http: / / www.gao.gov .
+
+if you have any questions regarding this report , please contact nick marinos at ( 202 ) 512-9342 or dr. nabajyoti barkakati at ( 202 ) 512-4499 .
+
+we can also be reached by e - mail at marinosn@gao.gov and barkakatin@gao.gov .
+
+key contributors to this report are listed in appendix ii .
+
+the objective of this information security review was to determine the effectiveness of the federal deposit insurance corporation's ( fdic ) controls in protecting the confidentiality , integrity , and availability of its financial systems and information .
+
+to do this , we identified and reviewed fdic information systems control policies and procedures , tested controls over key financial applications , and held interviews with key security representatives and management officials in order to determine whether information security controls were in place , adequately designed , and operating effectively .
+
+the review was conducted as part of our audit of the financial statements of the two funds administered by fdic: the deposit insurance fund and the federal savings and loan insurance corporation resolution fund .
+
+the scope of our audit included an examination of fdic information security policies , procedures , and controls over key financial systems in order to ( 1 ) assess the effectiveness of corrective actions taken by fdic to address weaknesses we previously reported and ( 2 ) determine whether any additional weaknesses existed .
+
+this work was performed in support of our opinion on internal control over financial reporting as it relates to our audits of the calendar years 2016 and 2015 financial statements of the two funds administered by fdic .
+
+the independent public accounting firm of cotton & company llp tested certain fdic information systems controls , including the follow - up on the status of fdic's corrective actions during calendar year 2016 to address open recommendations from our prior years' reports .
+
+we agreed on the scope of the audit work , monitored the firm's progress , and reviewed the related audit documentation to determine whether the firm's findings were adequately supported .
+
+to determine whether controls over key financial systems and information were effective , we considered the results of fdic's actions to mitigate previously - reported weaknesses that remained open as of december 31 , 2015 , and performed audit work at fdic facilities in arlington , virginia .
+
+we concentrated our evaluation primarily on the controls for systems and applications associated with financial processing , such as the ( 1 ) new financial environment ; ( 2 ) communication , capability , challenge , and control system ; ( 3 ) portfolio investment accounting ; ( 4 ) assessments information management system ; and ( 5 ) general support systems .
+
+our selection of the systems to evaluate was based on consideration of systems that directly or indirectly support the processing of material transactions that are reflected in the funds' financial statements .
+
+our audit methodology was based on the federal information system controls audit manual , which contains guidance for reviewing information system controls that affect the confidentiality , integrity , and availability of computerized information .
+
+using standards and guidance from the national institute of standards and technology and the office of management and budget , as well as fdic's policies and procedures , we evaluated controls by examining network diagrams and device configuration settings to determine if intrusion detection and prevention systems were monitoring the fdic network for suspicious activity ; reviewing privileged accounts to verify that access to privileged accounts was appropriately controlled and that accounts were not shared among multiple users ; analyzing user application authorizations to determine whether users had more permissions than necessary to perform their assigned functions ; reviewing administrative account settings to determine if privileged accounts were used as required and if access to a privileged account was appropriately controlled ; assessing configuration settings to evaluate settings used to audit inspecting vulnerability scans for in - scope systems to determine whether scans were conducted regularly and whether patches were appropriately installed on affected systems .
+
+using the requirements of the federal information security modernization act of 2014 , which establishes elements for an agency - wide information security program , we evaluated fdic's implementation of its security program by examining system authorization documentation for information on fdic's implementation of risk categorization and risk assessment practices ; reviewing information security policies and procedures to determine whether they were adequately documented and implemented ; examining fdic training records for information on general and reviewing assessments of security controls to determine if they had been completed as scheduled ; reviewing an fdic office of inspector general ( oig ) report for information on the corporation's processes for assessing security controls of outsourced service providers ; examining remedial action plans to determine whether fdic had addressed identified vulnerabilities in a timely manner ; examining two fdic oig reports for information on the corporation's reviewing security event records to determine if security events were tracked and resolved appropriately ; reviewing continuity of operations plans , contingency plans , and test results to determine whether contingency planning controls were appropriately implemented ; and examining two fdic oig reports for information on the corporation's information security strategic management activities .
+
+to determine the status of fdic's actions to correct or mitigate previously reported information security weaknesses , we reviewed prior gao reports to identify previously reported weaknesses , examined fdic's corrective action plans , and assessed the effectiveness of those actions .
+
+we conducted this audit in accordance with u.s. generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provided a reasonable basis for our findings and conclusions based on our audit objective .
+
+in addition to the individuals named above , gregory wilshusen ( director ) ; gary austin , paul foderaro , and michael hansen ( assistant directors ) ; william cook ( analyst in charge ) ; wayne emilien ; nancy glover ; franklin jackson ; thomas j. johnson ; jean mathew ; david plocher ; dacia stewart ; and adam vodraska made key contributions to this report .
+

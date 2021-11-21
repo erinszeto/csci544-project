@@ -1,0 +1,414 @@
+the department of defense ( dod ) depends on interconnected information systems and communications networks for critical combat and business operations .
+
+many of these systems and networks are interconnected through the public telecommunications infrastructure , including the internet , and they may be targeted by an increasing variety of cyber attacks .
+
+if successful , these attacks could result in the loss or corruption of critical data , damage to information systems , or disruption of military operations .
+
+to address such threats , dod has established organizations , known as computer incident response capabilities , at various locations worldwide .
+
+these organizations engage in a range of activities associated with preventing , detecting , and responding to computer incidents .
+
+at the request of the former chairman of the military readiness subcommittee , we reviewed dod's implementation of computer incident response capabilities and identified challenges to improving these capabilities .
+
+our work focused on dod organizations responsible for central incident detection and response operations that support military functions , including the joint task force - computer network defense ( jtf - cnd ) , the dod computer emergency response team ( dod cert ) , and the global network operations and security center , managed by the defense information systems agency ( disa ) .
+
+we also reviewed computer incident response capabilities at the air force , army , marine corps , and navy .
+
+much of the effort of these organizations has been aimed at monitoring unclassified systems , which often use the internet and other elements of the public telecommunications infrastructure .
+
+according to dod , the department relies on over 2.5 million unclassified computer systems , 10,000 local area networks , and hundreds of long - distance networks for mission - critical operations .
+
+these systems and networks run on multiple hardware and software platforms consisting of interconnected mainframes , systems , and network operating systems that often operate over public , commercial telecommunication lines .
+
+security over these systems and networks involves multiple dod and private sector organizations and is a difficult undertaking because of the ever - increasing number of cyber threats and attacks occurring over the internet .
+
+daily , dod identifies and records thousands of “cyber events,” some of which are determined to be attacks against systems and networks .
+
+these attacks may be perpetrated by individuals inside or outside the organization , including hackers , foreign - sponsored entities , employees , former employees , and contractors or other service providers .
+
+although historically dod focused most of its security efforts on protecting the confidentiality of classified and sensitive information , this focus evolved as unclassified dod systems and networks became increasingly exposed to cyber threats and attacks because of their connections with the public telecommunications infrastructure .
+
+after the “morris worm” attack crippled about 10 percent of the computers connected to the internet in 1988 , dod acted — through the defense advanced research projects agency — to establish the cert coordination center at carnegie mellon university to address computer security threats .
+
+in 1992 , the air force established the first military cert to help address computer security threats and attacks internally .
+
+in 1994 , a hacker from the united kingdom raised concerns by launching a series of attacks against critical dod research systems , demonstrating a need for better cyber defenses .
+
+following these events , the navy and army established certs in 1995 and 1996 , respectively .
+
+during the 1990s , incident response organizations were also gradually being established throughout other agencies of the federal government .
+
+in 1996 , the federal computer incident response capability ( fedcirc ) was established to assist federal civilian agencies in their incident handling efforts .
+
+like dod , civilian agencies continue to evolve and mature in their incident response capabilities .
+
+even as greater attention has been paid to incident response , cyber threats and attacks continue to affect the operations of dod and other federal systems and networks .
+
+since 1998 , a number of federal systems have been subjected to a series of recurring , “stealth - like” attacks , code - named moonlight maze , that federal incident response officials have attributed to foreign entities and are still investigating .
+
+more recently , the “iloveyou” virus attack affected electronic mail and other systems worldwide .
+
+according to dod officials , thousands of potential cyber attacks are launched against dod systems and networks daily , though very few are successful in accessing computer and information resources .
+
+in 1999 and 2000 , the air force , army , and navy recorded a combined total of 600 and 715 cyber attacks respectively , during which intruders attacked dod systems and networks in a variety of ways .
+
+table 1 summarizes the numbers of recent documented cyber attacks reported by the military services .
+
+dod and other organizations rely on a range of incident response activities to safeguard their systems , networks , and information from attack .
+
+these activities involve the use of various computer security tools and techniques as well as the support of systems and technical specialists .
+
+incident response activities can be grouped into four broad categories: preventive activities — such as conducting security reviews of major systems and networks and disseminating vulnerability notifications — are used to identify and correct security vulnerabilities before they can be exploited .
+
+detection activities rely on automated techniques , such as intrusion detection systems and the logging capabilities of firewalls , to systematically scan electronic messages and other data that traverse an organization's networks for signs of potential misuse .
+
+investigative and diagnostic activities involve ( 1 ) technical specialists who research cyber events and develop countermeasures and ( 2 ) law enforcement personnel who investigate apparent attacks .
+
+event handling and response activities — responding to actual events that could threaten an organization's systems and networks — involve technical and system specialists who review data generated by intrusion detection systems and determine what needs to be done .
+
+this includes providing appropriate internal and external officials with critical information on events under way and possible remedies for minimizing operational disruption .
+
+the objectives of our review were to ( 1 ) identify dod's incident response capabilities and how these capabilities are being implemented and ( 2 ) identify challenges to improving these capabilities .
+
+to do this , we worked at the dod organizations primarily responsible for incident response activities at the departmentwide level and within the four services .
+
+specifically , we worked at the u.s. space command in colorado springs , colorado ; the joint task force for computer network defense ( jtf - cnd ) in arlington , virginia ; the defense information system agency's dod computer emergency response team ( cert ) and global network operations and security center in arlington , virginia ; the air force's information warfare center and cert in san antonio , texas , and communication and information center , rosslyn , virginia ; the army's land information warfare activity and cert at fort belvoir , virginia ; the marine information technology operations center in quantico , virginia ; and the navy's fleet information warfare center and computer incident response team in norfolk , virginia .
+
+at these locations , we obtained and analyzed information on ( 1 ) policies , procedures , roles , and responsibilities for incident response , ( 2 ) intrusion detection and other incident response tools and databases , and ( 3 ) key oversight and incident reporting procedures .
+
+technical reports and database description documents were obtained and reviewed .
+
+we also reviewed operations and strategic planning documents and reports on computer security events , incidents , and intrusions for january 1999 through december 2000 .
+
+finally , we met with senior dod officials in the office of the secretary of defense to discuss departmentwide information security programs , strategies , and plans .
+
+our work was performed in accordance with generally accepted government auditing standards from april 2000 through january 2001 .
+
+we did not verify the effectiveness of dod's incident response capabilities and did not evaluate incident response capabilities within dod support agencies , such as disa .
+
+we obtained written comments on a draft of this report from the assistant secretary of defense for command , control , communications , and intelligence .
+
+these comments are reprinted in appendix i .
+
+dod has taken important steps to highlight the threat to its networks and systems and to enhance its ability to respond to computer incidents .
+
+for example , in 1997 , dod conducted a military exercise known as eligible receiver that demonstrated that hostile forces could penetrate dod systems and networks and further highlighted the need for an organization to manage the defense of its systems and networks .
+
+a series of computer attacks against dod systems in early 1998 further highlighted the need for a single departmentwide focal point for incident response .
+
+in december 1998 , dod established jtf - cnd as the primary department - level agent to coordinate and direct internal activities aimed at preventing and detecting cyber attacks , containing damage , and restoring computer functionality .
+
+the services — air force , army , marine corps , and navy — were directed to provide jtf - cnd with tactical support through their certs and other supporting components .
+
+the u.s. space command assumed operational control over jtf - cnd in october 1999 .
+
+jtf - cnd serves as the departmentwide focal point for incident response activities .
+
+in 1998 , dod also established the defense - wide information assurance program ( diap ) to promote integrated , comprehensive , and consistent information assurance activities across the department .
+
+“information assurance” refers to the range of information security activities and functions needed to protect and defend dod's information and systems .
+
+while jtf - cnd coordinates and oversees incident response activities on a day - to - day operational basis , diap's responsibilities include coordinating dod plans and policies related to incident response .
+
+dod's network of certs , jtf - cnd , and other related organizations engage in a variety of preventive , detective , investigative , and response activities , as described in further detail below .
+
+dod's preventive activities are aimed at stopping cyber attacks or minimizing the likelihood that they will be successful in penetrating systems or networks through exploiting known vulnerabilities .
+
+these activities have included ( 1 ) vulnerability assessments of the security of dod systems and networks , ( 2 ) using technical experts to try to surreptitiously gain access to systems and networks , thus exposing security weaknesses before adversaries can exploit them , and ( 3 ) alerting systems administrators to identified vulnerabilities .
+
+conducting vulnerability assessments can help ensure that system and security software is properly installed and configured and that the proper configuration is maintained through any updates or other modifications .
+
+upon request , the air force , army , navy , and national security agency conduct vulnerability assessments of dod systems and networks using a variety of automated computer security assessment tools .
+
+these tools automatically check systems and networks for known security weaknesses and generate reports summarizing results .
+
+during 2000 , the air force , army , navy , and national security agency completed over 150 assessments that identified hundreds of vulnerabilities for commands to address .
+
+upon request , the services and the national security agency use groups of technical experts to play the role of hackers and attempt to penetrate dod systems and networks by exploiting known security weaknesses in commonly used systems and software .
+
+these efforts help prepare military forces to defend against cyber attacks and are often conducted during military training exercises .
+
+in addition , dod established a joint web risk assessment cell ( jwrac ) , staffed by reservists , to continually review dod web sites to identify sensitive information .
+
+according to dod officials , during its first 6 months of operation , jwrac reviewed about 10,000 web pages and identified hundreds of discrepancies for corrective action .
+
+even with these preventive efforts , new types of security vulnerabilities are being identified almost daily , and hackers are continually developing automated tools to take advantage of them .
+
+to keep its systems and networks current with the best available protection , such as up - to - date software patches , dod depends on disa's information assurance vulnerability alert ( iava ) process , which distributes alerts , bulletins , and advisories on security vulnerabilities , as well as recommendations for repairing security weaknesses , to the military services and defense agencies .
+
+since the program began in 1998 , 27 alerts on potentially severe vulnerabilities and about 46 bulletins and advisories on lower risk cyber threats and attacks have been distributed to the services and defense agencies for corrective action .
+
+through their certs , the air force , army , marines , and navy also disseminate to component commands hundreds of technical notifications on vulnerabilities that may require corrective action .
+
+in the area of incident detection , dod relies largely on automated capabilities to identify significant cyber events — including attacks against systems and networks — as quickly as possible .
+
+computer security technologies ( such as intrusion detection systems and firewalls located at key network nodes ) identify , track , and , if warranted , block inappropriate electronic traffic .
+
+automated systems and tools are also used to collect , analyze , and display data on cyber events and to help establish a baseline of network activity to better identify anomalies and patterns that may indicate ongoing or imminent cyber attacks .
+
+currently , dod reports that about 445 host - based and 647 network - based intrusion detection systems are in operation to help safeguard its over 2.5 million unclassified host systems and the networks supporting them .
+
+host - based intrusion detection systems monitor individual computers or other hardware devices and are used to automatically examine files , process accounting information , and monitor user activity .
+
+network - based intrusion detection systems examine traffic or transmissions from host - based systems and other applications traversing key locations on the network .
+
+nearly all of these safeguard systems are based on commercial products , except for the air force's 148 automated security incident measurement systems and the joint intrusion detection systems managed by disa .
+
+the air force is also developing the common intrusion detection director system to correlate data from its intrusion detection systems and other sources in near real time to better track network activity patterns and identify cyber attacks .
+
+the army and navy have similar initiatives under way to develop databases for correlating information from intrusion detection systems and other devices .
+
+in addition , the defense advanced research projects agency is funding research to develop more sophisticated intrusion detection systems .
+
+investigative and diagnostic activities involve the use of technical specialists to research cyber events and attacks , to develop appropriate technical countermeasures , and to coordinate information with law enforcement personnel responsible for investigating and prosecuting intruders .
+
+several dod organizations , including the national security agency and air force , have established teams to examine the software code used to execute viruses and other cyber attacks and to help identify technical countermeasures for stopping the attacks or preventing them from infiltrating systems and networks .
+
+the jtf - cnd , air force , army , marines , and navy also coordinate with law enforcement and counterintelligence agencies when investigating potential criminal activities associated with cyber incidents .
+
+in addition , jtf - cnd is developing systems and procedures to better coordinate and exchange information with law enforcement and counterintelligence agencies .
+
+finally , event handling and response activities involve disseminating information and providing technical assistance to system administrators so they can appropriately respond to cyber attacks .
+
+jtf - cnd has been designated dod's focal point for sharing critical information on cyber attacks and other computer security issues with internal and external partners .
+
+the military services also rely on certs to provide information on cyber attacks and immediate technical assistance to system administrators in the event of computer attacks .
+
+certs have the capability to deploy personnel to affected locations if system administrators need help implementing corrective measures or containing damage and restoring systems and networks that may have been compromised .
+
+jtf - cnd also has developed standard tactics , techniques , and procedures for responding to cyber incidents and sharing critical information on cyber threats and attacks .
+
+further , it is developing standard policies for sharing information with external partners , such as the national infrastructure protection center ( at the federal bureau of investigation ) and the federal computer incident response capability ( at the general services administration ) .
+
+jtf - cnd is also developing procedures to exchange critical information with the intelligence community and other defense agencies .
+
+although dod has progressed in developing its incident response capabilities , it faces challenges in several areas , including departmentwide planning , data collection and integration , vulnerability assessment procedures , compliance reporting , component - level response coordination , and performance management .
+
+addressing these challenges would help dod improve its incident response capabilities and keep up with the dynamic and ever - changing nature of cyber attacks .
+
+because the risk of cyber attack is shared by all dod systems that are interconnected with each other and the public telecommunications infrastructure , it is important that incident response activities be well coordinated across the department .
+
+an attacker who successfully penetrates one dod system is likely to use that system's interconnections to attack other dod computers and networks .
+
+even if an attacker is at first unsuccessful in penetrating a particular system or network because it is well protected , such a person can go on to attack other systems and networks that may have vulnerabilities that are more easily exploited .
+
+for these reasons it is important that incident response activities be coordinated departmentwide to ensure that consistent and appropriate capabilities are available wherever they are needed .
+
+dod incident response officials agreed that coordination was important and report that the department has begun coordinating activities of the military services as part of the program , planning , and budgeting system process .
+
+however , dod has not yet identified departmentwide priorities or funding requirements for incident response .
+
+instead , each of the services annually determines its own incident response priorities and funding requirements ; as a result , the resources committed to incident response vary substantially .
+
+for example , air force officials estimated that they would spend over $43 million for their information warfare center and computer emergency response team in fiscal year 2000 , whereas navy officials estimated that they would spend less than $4 million on their corresponding activities .
+
+given widely varying resource commitments and the lack of established departmentwide priorities , it is uncertain whether systems and networks are being consistently and appropriately protected from cyber attack across the department .
+
+according to dod officials , it is difficult to identify departmentwide priorities , because no agreement has yet been reached on the core functions and characteristics of incident response teams among the multiple services and defense agencies that currently field such teams .
+
+according to dod officials , an effort is now under way at the department level to define those core functions and characteristics .
+
+integrating critical data from heterogeneous systems throughout an organization is important for effective incident response because it helps to assess and address threats , attacks , and their impact on systems and networks .
+
+sufficient information is needed to establish what events occurred and who or what caused them .
+
+as attacks become more sophisticated , obtaining this information can become more and more difficult , requiring more and better - integrated data .
+
+attackers may go to great lengths to disguise their attacks by spreading them over long periods of time or going through many different network routes , so that it is harder for intrusion detection systems to notice that attacks are occurring .
+
+because of the threat of these kinds of attacks , it is increasingly important to collect intrusion data from as many systems and sensors as possible .
+
+although it has begun to develop several tools for tracking different kinds of incident data from across the department , dod has only recently begun to implement key systems for integrating useful data from various intrusion detection systems and other heterogeneous systems , sensors , and devices for analysis .
+
+jtf - cnd has taken steps to integrate intrusion data by sponsoring development of a joint cert database to consolidate information on documented cyber attacks that have been collected individually by the services .
+
+according to dod officials , the joint cert database first became operational in january 2001 .
+
+work is also under way to develop a joint threat database as well as a database of law enforcement - related information .
+
+however , neither of these tools is yet operational .
+
+integrating intrusion data from across the department is a significant challenge because many different systems are in use that collect different kinds of data .
+
+each of the services has deployed different intrusion detection systems to track anomalous network activity , and databases designed to track different types of specific data elements have been developed to synthesize raw data for analysis .
+
+further , key information , such as data on insider attacks , is not yet tracked departmentwide .
+
+to help overcome this difficulty , jtf - cnd also launched a project to establish common terminology for incident response to help standardize reporting of cyber incidents and attacks throughout the department .
+
+however , the task force has not yet been able to bridge significant differences among the military services regarding how to classify and report computer incidents .
+
+for example , the air force currently does not report “probes” to jtf - cnd because it does not consider these events harmful until its systems or networks are actually under attack .
+
+internally , the air force identifies thousands of probes of its systems and networks daily and told us that reporting this information to jtf - cnd would provide little insight on cyber attacks .
+
+however , the army and navy do report probes to jtf - cnd .
+
+experts believe data on probes can be used to assess the likelihood of an attack in the future .
+
+this is because potential intruders typically use a series of probes to gather technical information about systems so that they can tailor an attack to exploit the vulnerabilities most likely to be associated with those systems .
+
+thus a series of probes against a system or systems may indicate that a more concerted attack against the same systems is likely in the near future .
+
+although dod has had procedures in place since 1986 for the military services to conduct vulnerability assessments of systems and networks and collect information on security weaknesses , no process has been developed , either at the department level or within the services , for prioritizing the conduct of vulnerability assessments .
+
+instead , vulnerability assessments are generally conducted only when requested by component commanders or service - level audit agencies .
+
+service officials agreed that there was no departmentwide process to identify which systems or networks faced the greatest risks and therefore should be assigned the highest priority for vulnerability assessments .
+
+neither is there a mechanism to follow up on the results of these assessments to verify that security weaknesses have been corrected .
+
+generally , the assessment teams do not verify that corrective action has been completed as recommended .
+
+the problem is compounded by the fact that , in some cases , component officials are not responsible for all the systems and network connections identified as having security vulnerabilities .
+
+no procedures are in place to ensure that the systems outside their responsibility are fixed .
+
+furthermore , the information about vulnerabilities collected during these assessments is provided only to the affected components and not shared among the military services and defense agencies .
+
+there is no process for ensuring that the results of these assessments are applied consistently and comprehensively to other similar systems and networks across the department .
+
+as a result , systems with the same vulnerabilities operating at other locations may not be addressed and thus may remain vulnerable .
+
+the dod office of the inspector general ( oig ) reported similar issues in 1997 and recommended that more be done to establish departmentwide priorities for conducting computer security reviews .
+
+compliance with information assurance vulnerability alerts ( iava ) and other published guidance is critical because most successful attacks exploit well - known vulnerabilities .
+
+in 1999 , for example , dod reported that over 94 percent of its 118 confirmed cyber intrusions could have been prevented because they involved system access vulnerabilities that could have been remedied if organizations had followed recommendations already published through iavas and other security guidance .
+
+according to dod officials , some of these fixes may have been completed but later inadvertently undone when systems were subsequently modified or upgraded .
+
+iavas are used to notify the military services and defense agencies about significant computer security weaknesses that pose a potentially immediate threat and require corrective action .
+
+the services and defense agencies are required to acknowledge receipt of the alerts and report on the status of compliance with recommended repairs within specified time frames .
+
+also , disa uses the iava process to disseminate technical bulletins and advisories about lower risk vulnerabilities and recommend ways to repair systems and networks .
+
+the military services , defense agencies , and components are responsible for following recommendations in these notifications as they deem necessary .
+
+although military components are required to report on the status of compliance with iavas , current status reports provide limited insight on the extent to which systems and networks are being repaired .
+
+the information provided by the military services is not complete and may not accurately reflect compliance across dod .
+
+in december 2000 , the oig reported that the marines and navy were the only services providing required iava compliance information to disa .
+
+in addition , based on information provided by the jtf - cnd , corrective remedies specified in alerts , technical bulletins , and advisories issued as part of the iava process may not always be followed .
+
+without full compliance and accurate reporting , dod officials do not know whether critical systems remain vulnerable to known methods of attack .
+
+dod officials are aware that the iava monitoring process as currently implemented is not adequate , and a draft revision to the existing iava policies and procedures is being developed .
+
+in december 2000 , the u.s. space command hosted a conference to address compliance reporting problems and discuss possible ways to link iava compliance reporting with existing operational readiness reporting requirements .
+
+however , at the time of our review , no final action had been taken to improve the compliance reporting process .
+
+coordinating responses to cyber attacks with internal and external partners , as well as law enforcement agencies , is important because it helps organizations respond to cyber attacks more promptly and efficiently , thus deterring cyber crime .
+
+recognizing the need for this coordination , the joint chiefs of staff established the information operations condition ( infocon ) system in march 1999 as a structured , coordinated approach to react to and defend against attacks on dod systems and networks .
+
+the infocon system defines five levels of threat and establishes procedures for protecting systems and networks at each level .
+
+these procedures were modeled after security requirements for bases , commands , and posts that require coordinated and heightened security when attacks are imminent or under way .
+
+the infocon system focuses on network - based protective measures and outlines countermeasures to unauthorized access , data browsing , and other suspicious activity , such as scanning and probing .
+
+although the infocon system is a useful approach to standardizing incident response throughout dod , the established measures provide only general guidance about the kinds of incident response activities that might be appropriate at each infocon level .
+
+most decisions about what countermeasures to apply and how to apply them are left in the hands of systems administrators and other officials at individual dod facilities .
+
+lacking detailed guidance , the decision to apply countermeasures can be difficult for these officials in part because the countermeasures themselves may affect system performance .
+
+inexperienced personnel may overreact and implement drastic countermeasures , resulting in self - inflicted problems , such as degraded system performance or communication disruptions .
+
+more detailed infocon guidance could outline operational priorities and other risk factors for consideration at each level to encourage consistent departmentwide responses to computer incidents .
+
+according to jtf - cnd , the “iloveyou” attack demonstrated problems in applying infocon procedures uniformly across the department and poor communications regarding the appropriate infocon level for responding to the cyber attack .
+
+once the “iloveyou” virus had emerged , it took dod several hours to produce a departmentwide recommendation on the appropriate infocon level for responding to the attack .
+
+individual commands independently chose a variety of different levels and responses .
+
+for example , some commands made few changes to their daily operational procedures , while others cut off all electronic mail communications and thus became isolated from outside contact regarding the status of the attack .
+
+the infocon system did not provide any specific guidance on the appropriate infocon level or procedures for responding to a virus attack .
+
+dod recently organized a conference to examine ways to improve the infocon system , and dod officials told us that revisions to the infocon procedures had been drafted that provide additional detail .
+
+however , at the time of our review , the revised procedures had not yet been issued .
+
+further , according to a jtf - cnd official , the revised procedures do not discuss the full range of system administrator actions that may be needed to address threats at each infocon level .
+
+the procedures also do not help systems administrators determine which systems are most in need of defensive actions to maintain support for critical operations .
+
+establishing and monitoring performance measures for incident response is essential to assessing progress and determining whether security measures have effectively mitigated security risks .
+
+leading organizations establish quantifiable performance measures to continually assess computer security program effectiveness and efficiency .
+
+dod officials stated that some quantifiable measures have been established for incident response .
+
+for example , the air force , army , marines , and navy identify the number and type of cyber incidents and attacks that occur annually and report this information to appropriate senior officials within dod .
+
+in addition , the deputy secretary of defense established a goal of sharing information on significant cyber incidents within 4 hours .
+
+although progress has been made , dod officials agreed that more could be done to improve incident response performance measures and goals .
+
+for example , dod could track information on the time required to respond to cyber attacks and the costs associated with managing attacks .
+
+the navy now collects some information on the staff hours used to manage cyber attacks , which could be helpful in establishing performance measures .
+
+this information also could be used to establish baselines for reporting and responding to various types of cyber attacks and could be linked to combat readiness and mission performance objectives .
+
+space command and jtf - cnd officials indicated that some work was under way to establish performance parameters for incident response and to support joint military training requirements .
+
+further , dod conducts hundreds of computer security reviews of systems and networks annually but does not assess results from these evaluations to establish goals for improving computer security across the department .
+
+information from these reviews could be used to identify patterns or security weaknesses across the department and to establish targets to reduce security weaknesses within high - risk areas or for mission - critical systems and applications .
+
+dod has established significant incident response capabilities at the military services and mechanisms for centrally coordinating information assurance activities and incident response capabilities through diap and jtf - cnd , respectively .
+
+however , dod faces challenges in improving the effectiveness of its incident response capabilities , including ( 1 ) coordinating resource planning and priorities for incident response across the department ; ( 2 ) integrating critical data from heterogeneous systems , sensors , and other devices to better monitor cyber events and attacks ; ( 3 ) establishing a departmentwide process to periodically and systematically review systems and networks on a priority basis for security weaknesses ; ( 4 ) ensuring that components across the department consistently report compliance with vulnerability alerts ; ( 5 ) improving the coordination of component - level incident response actions ; and ( 6 ) developing departmentwide performance measures to assess incident response capabilities and thus better ensure mission readiness .
+
+acting to address these challenges would help dod better protect its systems and networks from cyber threats and attacks .
+
+we recommend that the secretary of defense direct the assistant secretary of defense for command , control , communications , and intelligence and the u.s. space command to work through diap and jtf - cnd to finalize a departmentwide incident response plan , including objectives , goals , priorities , and the resources needed to achieve those objectives ; expedite the development and enhancement of a complete set of systems for integrating and analyzing useful data from intrusion detection systems and other systems used to monitor computer security weaknesses , including tracking data on insider attacks ; standardize terminology for computer incidents to facilitate the integration of incident data across the department ; establish a systematic , departmentwide process for prioritizing and conducting vulnerability assessments of high - risk systems and networks and capabilities needed to support mission - critical operations ; evaluate and monitor results from vulnerability reviews to ensure that recommended repairs have been made and have been applied to all similar systems throughout dod ; establish procedures to ensure consistent and complete reporting on the status of repairs required in iavas across the department ; link iava compliance reporting requirements to mission - critical systems and operations to increase awareness of the value of complying with technical bulletins and advisories distributed as part of the iava process ; refine infocon procedures to clarify the kinds of actions that need to be taken at each infocon level , especially with regard to priority systems , such as mission - critical systems ; and establish a performance - based management process for incident response activities to ensure that departmentwide goals as well as combat requirements are achieved , including establishing goals for ( 1 ) reducing the prevalence of known security vulnerabilities in systems and networks that support mission - critical operations and ( 2 ) timeliness in responding to known types of cyber attacks .
+
+in written comments on a draft of this report , which are reprinted in appendix i , the assistant secretary of defense for command , control , communications , and intelligence stated that the department concurred with our draft report .
+
+in response to our second recommendation , dod stated that the joint cert database is now operational .
+
+we have clarified that this recommendation is to speed the development and enhancement of a complete set of systems for integrating and analyzing incident data , not just the joint cert database .
+
+the department also provided technical comments that we have addressed as appropriate throughout the report .
+
+we are sending copies of this report to representative ike skelton , ranking minority member , house committee on armed services ; to representative curt weldon , chairman , and representative solomon p. ortiz , ranking minority member , subcommittee on military readiness , house committee on armed services ; and to other interested congressional committees .
+
+we are also sending copies to the honorable donald h. rumsfeld , secretary of defense ; the honorable paul wolfowitz , deputy secretary of defense ; and the honorable arthur l. money , assistant secretary of defense for command , control , communications , and intelligence and chief information officer .
+
+this letter will also be available on gao's home page at http: / / www.gao.gov .
+
+if you or your staff have any questions about this report , please call me on ( 202 ) 512-3317 .
+
+major contributors to this report included john de ferrari , karl seifert , john spence , and yvonne vigil .
+
+the first copy of each gao report is free .
+
+additional copies of reports are $2 each .
+
+a check or money order should be made out to the superintendent of documents .
+
+visa and mastercard credit cards are accepted , also .
+
+orders for 100 or more copies to be mailed to a single address are discounted 25 percent .
+
+orders by mail: u.s. general accounting office p.o .
+
+box 37050 washington , dc 20013 orders by visiting: room 1100 700 4th st. nw ( corner of 4th and g sts .
+
+nw ) u.s. general accounting office washington , dc orders by phone: ( 202 ) 512-6000 fax: ( 202 ) 512-6061 tdd ( 202 ) 512-2537 each day , gao issues a list of newly available reports and testimony .
+
+to receive facsimile copies of the daily list or any list from the past 30 days , please call ( 202 ) 512-6000 using a touchtone phone .
+
+a recorded menu will provide information on how to obtain these lists .
+
+web site: http: / / www.gao.gov / fraudnet / fraudnet.htm e - mail: fraudnet@gao.gov 1-800-424-5454 ( automated answering system ) .
+

@@ -1,0 +1,478 @@
+on august 22 , 1997 , we briefed you on the results of our review to date of the logistics systems support center's ( lssc ) program for solving the commodity command standard system ( ccss ) year 2000 computer system problem .
+
+the problem results from the inability of computer programs at the year 2000 to interpret the correct century from a recorded or calculated date having only two digits to indicate the year .
+
+unless corrected , this problem could cause the ccss system to malfunction or produce incorrect information when the year 2000 is encountered during automated data processing .
+
+since ccss supports the army's wholesale logistics supply management business area , which procures supplies and equipment totaling over $23 billion annually for army forces around the world , lssc's inability to ensure that ccss is year 2000 compliant could result in a loss of operational support that would be widespread , costly , and potentially debilitating to important army and other dod agency missions .
+
+our briefing was based on work we performed as part of our review of the department of defense's ( dod ) year 2000 computer systems effort for the chairman , senate governmental affairs committee ; the chairman and ranking minority member of the subcommittee on government management , information and technology , house committee on government reform and oversight ; and the honorable thomas m. davis , iii , house of representatives .
+
+during our review , we concentrated on determining ( 1 ) the status of lssc's efforts to correct ccss year 2000 system problems and ( 2 ) the appropriateness of lssc's strategy and actions for ensuring that ccss year 2000 issues will be successfully addressed .
+
+this letter summarizes the concerns we raised and provides recommendations for addressing these issues .
+
+in conducting our review , we compared lssc's progress in planning and managing its year 2000 project to our year 2000 assessment guide .
+
+we also reviewed dod's year 2000 management plan , department of the army and army materiel command ( amc ) year 2000 guidance , and private industry year 2000 guidance .
+
+we focused our review on year 2000 work performed by ( 1 ) lssc — the designer , developer , and maintainer of ccss , and ( 2 ) amc — the army major command responsible for promulgating year 2000 policy and guidance and providing assistance to its major subordinate commands and central design activities .
+
+to determine the status of lssc's year 2000 project and the appropriateness of its strategy and actions for ensuring successful completion , we interviewed lssc's year 2000 project manager , project officer , and focal point who are responsible for project management , direction , and reporting .
+
+we also interviewed the amc year 2000 project team and the amc year 2000 logistics systems chair .
+
+we obtained and analyzed year 2000 guidance as well as documentation from the ccss configuration control board , amc quarterly progress reviews , and amc year 2000 logistics task force meetings to determine year 2000 plans , strategy , and status for each of the five phases .
+
+we obtained and discussed software change schedules , workload statistics , and testing procedures and testing resource information with lssc's quality assurance division chief .
+
+we discussed software change procedures with the technical data systems division chief and impact and workload issues with the asset management systems chief .
+
+to compare lssc's workload with its available staff resources , we obtained and discussed staffing information with the agency's resources management director , budget and manpower division chief , and the business information systems director .
+
+to determine cost estimates for the project , we interviewed the year 2000 project manager and obtained and analyzed lssc documents pertaining to cost .
+
+we also discussed lssc's software maturity capability and efforts to improve its maturity level with the year 2000 project manager and the computer specialist tasked with improving lssc's software maturity capability .
+
+we conducted our work primarily at the logistics systems support center in st. louis , missouri , and at the u.s. army materiel command in alexandria , virginia .
+
+our audit work was performed from december 1996 through august 1997 in accordance with generally accepted government auditing standards .
+
+the department of defense provided written comments on a draft of this report .
+
+these comments are discussed in the “agency comments and our evaluation” section and are reprinted in appendix i .
+
+lssc is one of several central design activities ( cdas ) for the army materiel command ( amc ) .
+
+lssc's major responsibility is to design , develop , deploy , integrate , and maintain the commodity command standard system ( ccss ) , a standard automated wholesale logistics system supporting amc and other army and dod organizations .
+
+ccss performs stock control , supply management , cataloging , provisioning , procurement , maintenance , security assistance , and financial management over an inventory of supply items for these organizations .
+
+it is the business automation core of amc's commodity commands and is linked to other army logistics systems , such as the continuing balance system - expanded ( cbsx ) .
+
+ccss' financial module also provides general accounting , inventory accounting , billing support , and general ledger and financial reports for both reimbursable and non - reimbursable issues .
+
+as one of the world's largest integrated business systems , ccss comprises 561 separate subsystems that contain 10.2 million lines of program code in about 5000 programs .
+
+these subsystems work collectively to process an annual procurement budget for supplies and equipment of over $23 billion .
+
+the year 2000 problem is rooted in the way dates are recorded and computed in automated information systems .
+
+for the past several decades , systems have typically used two digits to represent the year , such as “97” representing 1997 , in order to conserve electronic data storage and reduce operating costs .
+
+however , with this two - digit format , the year 2000 is indistinguishable from 1900 , as is 2001 indistinguishable from 1901 .
+
+as a result of this ambiguity , system or application programs that use dates to perform calculations , comparisons , or sorting may generate incorrect results when working with years after 1999 .
+
+lssc staff recognized the significance of this anomaly in 1991 , and at an estimated cost of $5.9 million , recommended making all ccss date fields year 2000 compliant in accordance with army regulation 25-9 .
+
+the regulation specified that date fields were to be 8 positions in length ( yyyymmdd ) including two century positions to be populated with normal values of “19” or “20.” lssc has requested funding for the recommended changes every year since 1991 ; however , funding was denied because ccss was a legacy system designated for replacement by other systems under the dod corporate information management ( cim ) initiative .
+
+by 1994 , however , it became apparent that emergency system changes would be necessary to allow certain ccss subsystems to continue forecasting requirements beyond 1999 .
+
+lssc reports that , since 1994 , it has renovated at least 3.8 million lines of code to accommodate the year 2000 .
+
+however , initial funding for completing the ccss year 2000 effort , now estimated at over $12 million , was not approved until january 1997 .
+
+the impact of the year 2000 on ccss is substantial since ccss is heavily date dependent .
+
+date fields are used in nearly all ccss subsystems , files , databases , and data used for status accounting , computations , forecasting , financial accounting , and requisition processing .
+
+consequently , faulty turn of the century date processing would significantly impair the army's ability to order , manage , sell , and account for commodities such as ammunition , communications , and electronics .
+
+in turn , through its other logistics systems connections , it could also impair the army's ability to track and manage major end items such as aircraft , missiles , and tanks , as well as the many thousands of repair parts that support them .
+
+because ccss is the army's wholesale logistics system , a loss of ccss operational support to amc and other dod agencies poses a serious threat to overall mission capability .
+
+for example , if dates are not processed accurately in ccss applications that support inventory management and requisition processing , items ordered on or after january 1 , 2000 , could be identified as 99-year old excess inventory and become candidates for disposal .
+
+the cost of such faulty date processing would be great considering the ( 1 ) cost of the inventory item , ( 2 ) administrative costs involved in requisitioning , shipping , handling , and accounting for the item in the various financial , inventory , and transportation subsystems , and ( 3 ) costs associated with designating the item as excess inventory for disposal and the subsequent physical disposal of the item .
+
+such an occurrence could severely impair overall military readiness since the necessary items would not be available for the soldier in the field .
+
+more importantly , soldiers and military civilians may not be able to properly maintain or replace weapon systems components , which could result in injury or death .
+
+also , military equipment maintenance and overhaul facilities could be temporarily closed for lack of spare parts .
+
+in february 1997 , we published the year 2000 computing crisis: an assessment guide , which addresses common issues affecting most federal agencies and presents a structured approach and checklist to aid in the planning , managing , and implementing of year 2000 projects .
+
+the guide describes five phases — supported by program and project management activities — with each phase representing a major year 2000 program activity or segment .
+
+the guidance draws heavily on the work of the best practices subcommittee of the interagency year 2000 committee , and incorporates guidance and practices identified by leading organizations in the information technology industry .
+
+the five phases are consistent with those prescribed by dod in its year 2000 management plan .
+
+the phases and a description of each phase follows: awareness — define the year 2000 problem and gain executive - level support and sponsorship .
+
+establish a year 2000 program team and develop an overall strategy .
+
+ensure that everyone in the organization is fully aware of the issue .
+
+assessment — assess the year 2000 impact on the enterprise .
+
+identify core business areas and processes , inventory and analyze systems supporting the core business areas , and rank their conversion or replacement .
+
+develop contingency plans to handle data exchange issues , lack of data , and bad data .
+
+identify and secure the necessary resources .
+
+renovation — convert , replace , or eliminate selected platforms , applications , databases , and utilities .
+
+modify interfaces .
+
+validation — test , verify , and validate converted or replaced platforms , applications , databases , and utilities .
+
+test the performance , functionality , and integration of converted or replaced platforms , applications , databases , utilities , and interfaces in an operational environment .
+
+implementation — implement converted or replaced platforms , applications , databases , utilities , and interfaces .
+
+implement data exchange contingency plans , if necessary .
+
+in addition to following the five phases described above , the year 2000 program should also be planned and managed as a single large information system development effort .
+
+agencies should promulgate and enforce good management practices on the program and project levels .
+
+lssc is the army component responsible for applying the year 2000 five - phased resolution process to ccss .
+
+as such , in july 1996 , lssc initiated a project to address ccss year 2000 processing issues .
+
+as of july 1997 , lssc has completed a number of activities associated with the awareness and assessment phases of the process , including identifying its inventory , establishing a year 2000 project team , and assessing the date impact on ccss' 10.2 million lines of code .
+
+lssc has identified that as much as 54 percent or 5.5 million lines of code may be impacted by the year 2000 due to the fact that entire applications may need to be corrected to accommodate the date change .
+
+lssc officials stated that they still need to determine how specific code will be changed in affected applications .
+
+lssc also reported that an additional 3.8 million lines of code have already been renovated but still need to undergo integrated and regression testing .
+
+lssc plans to implement the year 2000-compliant ccss by november 1998 at a cost of over $12 million .
+
+prior to receiving funding in january 1997 , the year 2000 project remained in the awareness phase .
+
+during the awareness phase , lssc completed tasks such as assembling technical and functional representatives into a year 2000 task force , evaluating automated software assessment tools , and identifying the number of software lines of code .
+
+once the project was officially funded and entered the assessment phase , lssc officials appointed the project manager and management staff .
+
+also , the year 2000 project team prepared a project charter and schedule , secured contractor support to assist with assessment tasks , and began to determine the date impact on ccss program code .
+
+as project activity proceeded , project staff routinely reported year 2000 progress to the amc deputy commanding general , amc year 2000 logistics task force , communications - electronics command ( cecom ) year 2000 project office , and the ccss configuration control board .
+
+to support project management , lssc's year 2000 project manager drafted a plan which initially did not conform to dod's recommended year 2000 five - phased approach , although the plan did identify some tasks typically associated with year 2000 projects .
+
+for example , the plan included such tasks as beginning risk assessment and contingency plan development , providing assessment tool training , conducting an inventory of ccss applications , and obtaining contractor support for date impact assessment .
+
+as a result of our concerns that the plan did not clearly specify or identify key year 2000 phases and associated tasks , lssc's year 2000 project manager later revised the plan in an attempt to better identify phases and tasks in accordance with dod's five - phased approach .
+
+in addition to assessing the lines of code for ccss , lssc reported that it had cataloged the applications , modules , functional areas served , and languages used .
+
+lssc had also determined that all the source code for ccss was available and matched production code .
+
+in addition , lssc had acquired automated assessment tools to help identify affected and obsolete code and trained lssc staff to use these tools for the assessment , renovation , and validation phases .
+
+since the exchange of data with other systems through external interfaces creates the potential to introduce or propagate errors from one system to another , lssc identified 57 other systems which interface with ccss and is in the process of confirming data exchange requirements with the external system owners .
+
+lssc also developed a standard memorandum of agreement ( moa ) to document coordination of data exchange requirements .
+
+since ccss and its interfacing partners plan to use procedural code and sliding window techniques to correct the year 2000 problem , any date formats exchanged would be properly converted through internal program coding changes rather than changes to date formats .
+
+as part of its assessment of the level of date impact on ccss , lssc assessed the risk of not preparing ccss for the year 2000 .
+
+lssc reported that ccss , as a whole , is not year 2000 compliant and that a catastrophic failure of the army wholesale logistics mission would occur if ccss is not made compliant .
+
+lssc further reported that no known commercial or government replacements exist for ccss functionality and that renovation of existing ccss code was essential to mitigate the risk of failure .
+
+in may 1997 , lssc was still addressing the assessment phase activities of identifying a renovation strategy and developing a validation strategy and schedule for testing .
+
+according to dod's year 2000 management plan and amc's year 2000 action plan , the validation strategy should identify the general time frames for the validation of all information resources and include consideration of hardware concerns such as availability of processing cycles and storage as well as human resource issues .
+
+in addition , efforts were ongoing to contract with a vendor to perform automated code correction on some ccss subsystems .
+
+to its credit , lssc recognized the problems inherent in the century date change and began seeking funding to address year 2000 issues years ago .
+
+however , although some progress has been made , several key project management actions associated with the assessment phase have not been completed .
+
+as a result , lssc is not presently well - positioned to move forward to the more difficult phases of renovation , validation , and implementation in the year 2000 process — phases that industry experts estimate could consume as much as three - fourths of year 2000 project time and resources .
+
+lssc still needs to take a number of actions to increase its chances of success , including ( 1 ) managing competing workload priorities , ( 2 ) planning for testing , ( 3 ) clarifying and coordinating written systems interface agreements , and ( 4 ) developing a contingency plan .
+
+to increase its chances of successfully managing its year 2000 program , lssc will also need to institutionalize a repeatable software change process that can be used from project to project .
+
+if these areas are not addressed soon , lssc could find itself limited in its ability to meet the turn of century date .
+
+given the prominence of date processing in ccss and its central mission of sustaining the soldier in the field , lssc cannot afford to delay any longer , and needs to demonstrate that it will perform , all the key actions associated with sound year 2000 planning and management .
+
+in 1991 , the software engineering institute ( sei ) introduced the capability maturity model ( cmm ) to assist organizations in assessing the maturity level of their software development and maintenance processes .
+
+in general , software process maturity serves as an indicator of the likely range of cost , schedule , and quality of results that can be expected to be achieved by projects within a software organization .
+
+our year 2000 assessment guide points out that few activities within federal agencies operate above cmm level 1 , and as a result , organizations lack the basic policies , tools , and practices necessary to successfully manage large - scale efforts .
+
+a cmm level 1 is the lowest level and is characterized by a software process that is ad hoc , and occasionally even chaotic .
+
+few processes are defined and success depends on individual effort .
+
+we have recommended that federal agency information technology organizations be at least a cmm level 2 which is characterized by an established software development process discipline that is repeatable from project to project .
+
+in 1994 , lssc's software development process was assessed by a team of lssc and sei - licensed contract staff .
+
+using the cmm methodology , the team determined that lssc should be ranked at a level 1 maturity .
+
+the assessment results concluded that lssc lacked the basic software management practices necessary for repeatable software project success .
+
+the team also indicated that level 2 maturity could be attainable with a modest effort .
+
+accordingly , the assessment team made recommendations that , if implemented , could provide the basis for lssc's attainment of a level 2 maturity .
+
+based on the team's assessment , lssc developed an action plan to address the identified deficiencies .
+
+however , according to lssc officials , the action plan was never implemented due to the reassignment of lssc assessment staff , agency staff reductions , and lack of funding .
+
+after a period of nearly 3 years , lssc resurrected the cmm assessment project in december 1996 to , once again , review the assessment team's findings and recommendations and to propose follow - on actions to address the deficiencies .
+
+the review concluded that a project management system which would allow lssc to better plan , estimate , and track software projects on an enterprise - wide basis was essential for lssc to mature to a cmm level 2 .
+
+while lssc has an automated project management system under development , a member of the lssc review said the system is inadequate because it is unable to track all software projects and may not address all level 2 requirements .
+
+this information was presented to lssc's executive steering council in march 1997 .
+
+however , at the time of our review , lssc had made little progress in correcting the software process deficiencies and was still ranked at cmm level 1 .
+
+until lssc moves on to the next cmm level , its ability to contend with the later stages of the year 2000 effort will be constrained .
+
+recently , lssc officials informed us of their intent to obtain a cmm level 2 certification following completion of the year 2000 project .
+
+in addition to lacking a mature software development and maintenance process , lssc now has 42 percent fewer staff available to make the needed renovations to ccss than it had in fiscal year 1990 .
+
+moreover , since fiscal year 1990 , lssc's workload has increased , showing a notable jump in fiscal years 1997 and 1998 — the 2 years when the majority of year 2000 actions need to be performed to enable agencies to have a realistic chance of meeting the turn of century date time frame .
+
+at the same time that its staff is decreasing and its workload is increasing , lssc continues to be tasked with other software projects by the lead amc integration support office ( laiso ) .
+
+despite these indicators of potential problems , lssc has only recently begun to take the steps necessary to augment its staff with contract support for the renovation phase and has yet to fully resolve staffing issues concerning the development of test plans .
+
+in addition , lssc has not prioritized its software project schedule to provide the structure needed to keep the year 2000 project on schedule and within cost estimates .
+
+until these issues are addressed , they pose unnecessary risk to the success of lssc's year 2000 project .
+
+as of june 1997 , lssc reported that it had devoted 7 of its 315 total staff to the year 2000 project full - time .
+
+while four contract support staff had been retained to train lssc staff to use the automated software assessment tools and help with impact assessment , these contractor staff have since been released .
+
+as of august 1997 , no contract staff were on board to augment lssc staff during the renovation phase , although steps were underway to obtain additional contract support and to obtain an automated code correction solution .
+
+also , lssc reported that staff would be tasked to work exclusively on the year 2000 renovation phase after completing an ongoing major systems change project related to a base realignment and closure ( brac ) decision .
+
+lssc officials stated that as the brac - related renovation begins to diminish in september 1997 , both lssc and contract staff would be transferred to the year 2000 project .
+
+while we do not question the appropriateness of performing the brac - related work prior to year 2000 work , we are concerned that lssc's year 2000 project approach does not provide for alternatives should the brac target completion schedule slip and the subsequent lssc staff and contractors not become available .
+
+further , an examination of ccss software release schedules since fiscal year 1990 shows that the number of projects has increased as much as five - fold .
+
+at the same time as the majority of ccss year 2000 actions are to be performed , lssc's schedule calls for 10 software change projects to be fielded in fiscal year 1997 and 8 in fiscal year 1998 .
+
+these projects range in terms of complexity and magnitude from routine systems maintenance , which may require minimal effort , to the year 2000 and brac projects , which call for comprehensive changes in many of ccss' subsystems .
+
+in past years , lssc routinely accomplished two to four software change projects a year .
+
+this significant increase in workload will undoubtedly impact the ccss year 2000 project schedule for several reasons .
+
+first , laiso , the workload manager for ccss , has not ensured that competing projects do not adversely affect lssc's ability to complete the year 2000 effort .
+
+prioritization of projects could result in the postponement or cancellation of some of the competing projects .
+
+second , lssc has little historical experience dealing with a workload of this magnitude which is compounded by a workforce that has diminished significantly in recent years .
+
+prior to commencing the validation ( testing ) phase of its year 2000 effort , lssc needs to fully address two key issues regarding its testing requirements and capabilities .
+
+specifically , lssc should be planning now to ( 1 ) assure that enough staff with the appropriate background and experience are available to develop year 2000 test data and transactions and to review test results and ( 2 ) assess whether enough time has been scheduled to perform year 2000 testing .
+
+without planning how it will address these issues now , lssc is increasing the risk that ccss will not be fully validated in time for the change of century date .
+
+according to amc's year 2000 action plan , many agencies will need to establish test environments which are specific to future date testing and which have no possibility of corrupting or destroying production data.since the current ccss test files do not contain the necessary year 2000 test conditions and data , lssc will need to establish year 2000-specific test files to certify that ccss is year 2000 compliant .
+
+such test data and transactions are typically designed by functional staff knowledgeable of the ccss business processes .
+
+these staff review the testing results to ensure that year 2000 software changes have processed data correctly and that other data and processes have not been inadvertently changed during testing .
+
+according to a lssc official and lssc staffing statistics , however , there are fewer functional staff now available to identify the date fields in the test transactions or test data needed to ensure that ccss business processes are not adversely affected by the year 2000 software changes .
+
+also , lssc officials stated that they expect the availability of these staff to continue to decrease over the next few years as staff retire and agency staff reductions continue .
+
+further , lssc is not allowing enough time for year 2000 testing .
+
+while lssc officials assert that the complexity and scope of the year 2000 project is about the same as the brac project , lssc's june 1997 systems change release schedule calls for far less time to test year 2000 changes than it does for brac changes .
+
+for example , brac testing began in february 1997 and is scheduled for completion in september 1997 .
+
+year 2000 testing is scheduled to begin in september 1998 and end almost 8 weeks later in november 1998 .
+
+a lssc official acknowledged that the amount of time scheduled for year 2000 testing is insufficient , but stated that the schedule will be revised once ongoing negotiations to acquire an automated code correction service are resolved .
+
+the official also stated that he fully expects the year 2000 test schedule to greatly increase beyond the currently scheduled 8 weeks but that the increased test time should be offset by the reduced renovation time expected to be garnered by using the automated code correction service .
+
+although lssc believes that the automated code correction service should provide increased year 2000 testing time , it could not provide documented analysis to support this conclusion .
+
+while lssc believes it can increase its testing time without increasing the overall year 2000 project time , we are not as confident given lssc's cmm level 1 ranking .
+
+trying to compensate for unrealistic time schedules by either shortening earlier phases of a software change project or by lengthening overall project time is characteristic of level 1 organizations .
+
+until lssc realistically assesses its testing requirements , capabilities , and time schedules , effective year 2000 project management will become increasingly difficult to achieve , and lssc will increase the risk that it may be unable to meet the demand imposed by year 2000 testing .
+
+ccss' ability to successfully operate at the year 2000 hinges on the proper and timely exchange of data with other systems , both within the army and with external defense components .
+
+it is critically important during the year 2000 effort that agencies ensure that interfacing systems have the ability to exchange data throughout the transition period and protect against the potential for introducing and propagating errors from one organization to another and ensure that interfacing systems have the ability to exchange data through the transition period .
+
+this potential problem may be mitigated through formal agreements between interface partners that describe the method of interface and assign responsibility for accommodating the exchange of data .
+
+both the dod year 2000 management plan and amc year 2000 action plan place responsibility on component heads or their designated year 2000 contact points to document and obtain system interface agreements in the form of memorandums of agreement ( moa ) or the equivalent .
+
+further , to help assure that interfaces continue to properly exchange data after systems are renovated for the year 2000 , amc has issued minimum moa documentation requirements designed to produce consistency , assign accountability , and recognize a level of detail necessary for effective interface renovation among data exchange partners .
+
+while lssc has developed moas to document interface specifics between ccss and its interfacing systems and is in the process of finalizing those agreements with system owners , nearly all the moas lack basic information necessary for effective management and implementation of the interfaces .
+
+according to amc year 2000 guidance and the accompanying requirements of the standard moa , the agreements are to specify the ( 1 ) points of contact for reporting progress and coordinating schedules and ( 2 ) date the agreement becomes effective .
+
+to successfully implement interface changes , these agreements should also communicate the type , form , and frequency of transactions exchanged , the windowing technique that is being used at each end of the interface , and the review process for monitoring interface renovation progress and reconciling differences .
+
+however , our review disclosed that 39 of 41 moas that lssc had finalized as of july 1997 failed to fully follow amc's guidance or include other information necessary to ensure that lssc can successfully communicate with interface partners .
+
+our year 2000 assessment guide stresses the importance of adequately addressing interface and data exchange issues .
+
+without such information , the moas do not serve to communicate and coordinate the actions designed to help assure that year 2000 changes are made properly and promptly by lssc and its interfacing partners .
+
+timely and complete information on all systems interfaces that may be affected by year 2000 changes is essential to the success of the lssc year 2000 compliance program .
+
+the amount of work required to coordinate the data being exchanged between systems must be known as early as possible and documented in written moas so that lssc may complete renovation schedules , allocate resources , plan testing , and schedule implementation .
+
+the year 2000 represents a great potential for operational failure to ccss that could adversely impact core business processes as well as those of entities that depend on the ccss system for information .
+
+to mitigate this risk of failure , our year 2000 assessment guide , dod's year 2000 management plan , and the army's project change of century action plan suggest that agencies perform risk assessments and prepare realistic contingency plans that identify alternatives to ensure the continuity of core business processes in the event of operational failure .
+
+these alternatives could include performing automated functions manually or using the processing services of contractors .
+
+while lssc has taken the first steps toward development of a contingency plan by assessing the level of risk to each business area that could be affected by processing errors and by determining how that risk can be mitigated or reduced , at the completion of our review , lssc had not yet developed a contingency plan .
+
+further , despite explicit guidance from dod and the army to develop contingency plans should year 2000 corrections to ccss not be completed in time , lssc officials stated that no contingency plan would be developed for ccss .
+
+they maintained that amc does not require a contingency plan for ccss because ccss is not scheduled for replacement prior to the advent of the year 2000 .
+
+while amc's year 2000 action plan states that contingency plan development is only required for replacement systems and implies that all other systems are exempt , the amc plan also states that the guidance , policy , and responsibilities identified in the army's project change of century action plan are mandatory and are the basis of the amc plan .
+
+nevertheless , despite lssc's and amc's position that a contingency plan is not needed for ccss because the system is not being replaced prior to the year 2000 , the system still risks unanticipated operational failure .
+
+without a contingency plan that identifies specific actions to be taken if ccss fails at the year 2000 , the procurement of weapon systems and their spare parts , accounting for the sale of army equipment and services to allies , and the financial management of $9 billion of inventory could be disrupted .
+
+as a result , the army could be unable to efficiently and effectively equip and sustain its forces around the world .
+
+given the dangers associated with an operational failure of this magnitude , lssc needs the protection provided by good contingency planning to ensure that options are available if ccss is not able to operate at the year 2000 .
+
+recently , lssc officials stated that they have begun preparing an initial contingency plan , which they estimate will be completed by september 30 , 1997 .
+
+if ccss cannot correctly process dates on and after january 1 , 2000 , military equipment , such as tanks , artillery , aircraft , missiles , munitions , trucks , electronics , and other supporting materials for the soldier , in all likelihood , will not be ordered , stored , transported , issued , paid for , or maintained .
+
+mobilization plans and contingencies would be significantly impaired if materiel is delayed .
+
+however , lssc has yet to resolve several critical problems associated with the assessment phase to ensure that ( 1 ) systems are adequately tested , ( 2 ) contingency plans are developed , and ( 3 ) interface partners are fully aware of lssc's year 2000 plans .
+
+furthermore , during the same time that lssc is addressing the year 2000 issue , the agency is also working to implement considerably more software projects than it has in the past .
+
+this unprecedented workload is compounded by a reduced staff level and lssc's basic lack of a mature software development and maintenance process .
+
+together , these factors raise the risk level of the year 2000 project beyond what is normally expected of a software modification effort of this magnitude .
+
+until these problems are resolved , lssc is not well - positioned to move forward into the more time - consuming phases of renovation , validation , and implementation .
+
+as a result , we believe lssc will find it increasingly difficult to prepare ccss in time for the arrival of the year 2000 .
+
+we recommend that you: act to improve lssc's software development process that will provide the basis for achieving cmm level 2 maturity .
+
+immediately assess the impact of competing workload and staffing demands on the ccss year 2000 project .
+
+based on this assessment , consider ( 1 ) canceling or deferring less critical software projects until after the year 2000 project is substantially completed and ( 2 ) augmenting the year 2000 project with staff having the necessary skills to ensure timely completion of the project .
+
+ensure that lssc has the capability to complete the testing of all ccss subsystems and programs .
+
+specifically , lssc should ( 1 ) determine test requirements , ( 2 ) identify the testing staff needed , ( 3 ) finalize year 2000 test plans describing how the testing staff will be acquired and scheduled for developing year 2000 compliant test scenarios and data , and ( 4 ) revise the year 2000 test schedule to assure that enough time is available to meet army - mandated deadlines for year 2000 implementation .
+
+ensure that written interface agreements describe the method of data exchange between interfacing systems , name the entity responsible for performing the system interface modification , and state the completion date .
+
+develop a contingency plan that includes specific actions for ensuring that the army's logistic functions continue to operate at appropriate levels if all or part of ccss fails to work at the year 2000 .
+
+in written comments on a draft of this report , the office of the under secretary of defense ( acquisition and technology ) concurred with all of our recommendations to improve the army's lssc year 2000 program .
+
+specifically , dod agreed that a contingency plan would be developed by september 30 , 1997 , to ensure continuity of operations if all or part of ccss fails to operate by the year 2000 .
+
+dod also outlined a number of actions that have recently been initiated that are aimed at reducing and prioritizing lssc's current workload , and increasing staff with the necessary skills to help ensure the timely completion of the year 2000 project .
+
+in addition , dod pointed to several actions , both taken and planned , to improve its capability to complete year 2000 testing of ccss subsystems and programs .
+
+while we have not reviewed lssc's latest actions , if properly implemented , we believe they could help resolve the workload and testing issues we identified .
+
+in concurring with our recommendation regarding the need to initiate actions to improve lssc's software development process , dod recognized the value of achieving a cmm level 2 maturity and agreed that lssc does not have all configuration management procedures in place to reach cmm level 2 at this time .
+
+however , dod stated that lssc's history indicates that it can accomplish large projects successfully and that lssc will meet the mandated dates for the brac and year 2000 projects without achieving cmm level 2 .
+
+after completion of these projects , lssc plans to resume its efforts to achieve a cmm level 2 maturity .
+
+we believe lssc's position comes at some risk .
+
+the discipline derived from reaching a cmm level 2 maturity can greatly enhance lssc's ability to address the year 2000 challenge .
+
+this higher level of maturity is key to reducing the risk of schedule slippage , cost overruns , and poor software quality .
+
+as our report states , we have recommended that information technology organizations be at least a cmm level 2 to successfully manage large - scale projects such as the year 2000 project .
+
+our year 2000 assessment guide provides interim actions that level 1 organizations can take prior to the year 2000 to minimize the risk of failure , such as training staff on proven industry system development and program management practices and soliciting assistance from organizational entities experienced in performing or managing major software conversions .
+
+lssc could benefit from these interim actions .
+
+in concurring with our recommendation on strengthening written interface agreements , dod stated that lssc will formalize moas between interface partners .
+
+it also agreed to include specific detailed information in moas , but only when appropriate .
+
+as our report stated , we believe that , at a minimum , moas should also contain essential information for effective management of system interfaces , such as the type , form , and frequency of transactions exchanged , the windowing technique to be used , and the review process for monitoring interface renovation progress and reconciling differences .
+
+this additional information would help to ensure that interface partners are sufficiently prepared to handle unforeseen problems that may occur and to plan for contingencies .
+
+the full text of dod's comments is provided in appendix i .
+
+this report contains recommendations to you .
+
+within 60 days of the date of this letter , we would appreciate receiving a written statement on actions taken to address these recommendations .
+
+we appreciate the courtesy and cooperation extended to our audit team by lssc officials and staff .
+
+we are providing copies of this letter to the chairmen and ranking minority members of the senate committee on governmental affairs ; the subcommittee on oversight of government management , restructuring and the district of columbia , senate committee on governmental affairs ; and the subcommittee on government management , information and technology , house committee on government reform and oversight ; the honorable thomas m. davis , iii , house of representatives ; the secretary of defense ; the deputy secretary of defense ; the acting under secretary of defense ( acquisition and technology ) ; the acting under secretary of defense ( comptroller ) ; the acting assistant secretary of defense ( command , control , communications and intelligence ) ; the secretary of the army ; commanders of the army materiel command and communications - electronics command ; the director of the office of management and budget ; and other interested parties .
+
+copies will be made available to others upon request .
+
+if you have any questions on matters discussed in this letter , please call me at ( 202 ) 512-6240 , or john b. stephenson , assistant director , at ( 202 ) 512-6225 .
+
+major contributors to this report are listed in appendix ii .
+
+the following is gao's comment on the department of defense's letter dated september 12 , 1997 .
+
+1 .
+
+dod provided a number of clarifications to the report that we have incorporated as appropriate .
+
+denice m. millett , evaluator - in - charge michael w. buell , staff member the first copy of each gao report and testimony is free .
+
+additional copies are $2 each .
+
+orders should be sent to the following address , accompanied by a check or money order made out to the superintendent of documents , when necessary .
+
+visa and mastercard credit cards are accepted , also .
+
+orders for 100 or more copies to be mailed to a single address are discounted 25 percent .
+
+u.s. general accounting office p.o .
+
+box 37050 washington , dc 20013 room 1100 700 4th st. nw ( corner of 4th and g sts .
+
+nw ) u.s. general accounting office washington , dc orders may also be placed by calling ( 202 ) 512-6000 or by using fax number ( 202 ) 512-6061 , or tdd ( 202 ) 512-2537 .
+
+each day , gao issues a list of newly available reports and testimony .
+
+to receive facsimile copies of the daily list or any list from the past 30 days , please call ( 202 ) 512-6000 using a touchtone phone .
+
+a recorded menu will provide information on how to obtain these lists .
+

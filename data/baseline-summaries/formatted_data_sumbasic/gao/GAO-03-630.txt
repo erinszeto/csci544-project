@@ -1,0 +1,410 @@
+as part of our calendar year 2002 financial statement audits of the federal deposit insurance corporation's ( fdic ) bank insurance fund , savings association insurance fund , and fslic ( federal savings and loan insurance corporation ) resolution fund , we assessed ( 1 ) the progress fdic has made in correcting or mitigating computer security weaknesses reported in our calendar year 2001 audit , and ( 2 ) the effectiveness of the corporation's information system general controls .
+
+effective information system controls are essential to ensuring that financial information is adequately protected from inadvertent or deliberate misuse , fraudulent use , improper disclosure , or destruction .
+
+such controls also affect the security and reliability of nonfinancial information such as personnel and bank examination information maintained by fdic .
+
+this report summarizes weaknesses in information systems controls over fdic's computer systems .
+
+because of the significance of these weaknesses , we reported information system controls as a reportable condition in fdic's financial statements audit report for calendar year 2002 .
+
+we are also issuing a report designated for “limited official use only,” which describes in more detail the computer security weaknesses identified and offers specific recommendations for correcting them .
+
+congress created fdic in 1933 to restore and maintain public confidence in the nation's banking system .
+
+the financial institutions reform , recovery , and enforcement act of 1989 sought to reform , recapitalize , and consolidate the federal deposit insurance system .
+
+it created the bank insurance fund and the savings association insurance fund , which are responsible for protecting insured bank and thrift depositors , respectively , from loss due to institutional failures .
+
+the act also created the fslic resolution fund to complete the affairs of the former fslic and liquidate the assets and liabilities transferred from the former resolution trust corporation .
+
+it also designated fdic as the administrator of these funds .
+
+as part of this function , fdic has an examination and supervision program to monitor the safety of deposits held in member institutions .
+
+fdic insures deposits in excess of $3.3 trillion for about 9,400 institutions .
+
+together the three funds have about $49.5 billion in assets .
+
+fdic had a budget of about $1.2 billion for calendar year 2002 to support its activities in managing the three funds .
+
+for that year , it processed more than 2.6 million financial transactions .
+
+fdic relies extensively on computerized systems to support its financial operations and store the sensitive information it collects .
+
+its local and wide area networks interconnect these systems .
+
+to support its financial management functions , it relies on several financial systems to process and track financial transactions that include premiums paid by its member institutions and disbursements made to support operations .
+
+in addition , fdic uses other systems that maintain personnel information for its employees , examination data for financial institutions , and legal information on closed institutions .
+
+at the time of our review , about 7,000 individuals were authorized to use fdic's systems .
+
+fdic's acting cio is the corporation's key official for computer security .
+
+the objectives of our review were to assess ( 1 ) the progress fdic had made in correcting or mitigating weaknesses reported in our calendar year 2001 financial statement audit and ( 2 ) the effectiveness of information system general controls .
+
+these information system controls also affect the security and reliability of other sensitive data , including personnel , legal , and bank examination information maintained on the same computer systems as the corporation's financial information .
+
+our evaluation was based on ( 1 ) our federal information system controls audit manual , which contains guidance for reviewing information system controls that affect the integrity , confidentiality , and availability of computerized data ; and ( 2 ) our may 1998 report on security management best practices at leading organizations , which identifies key elements of an effective information security program .
+
+specifically , we evaluated information system controls intended to protect data and software from unauthorized access ; prevent the introduction of unauthorized changes to application and provide segregation of duties involving application programming , system programming , computer operations , information security , and quality assurance ; ensure recovery of computer processing operations in case of disaster or other unexpected interruption ; and ensure an adequate information security management program .
+
+to evaluate these controls , we identified and reviewed pertinent fdic security policies and procedures , and conducted tests and observations of controls in operation .
+
+in addition , we reviewed corrective actions taken by fdic to address vulnerabilities identified in our calendar year 2001 audit .
+
+we performed our review at fdic's headquarters in washington , d.c. ; its computer facility in arlington , virginia ; and fdic's dallas regional office , from october 2002 through march 2003 .
+
+our review was performed in accordance with u.s. generally accepted government auditing standards .
+
+fdic has made progress in correcting previously identified computer security weaknesses .
+
+of the 41 weaknesses identified in our calendar year 2001 audit , fdic has corrected 19 and is taking action intended to resolve the 22 that remain .
+
+fdic has addressed key access control , application software , system software , and service continuity weaknesses previously identified .
+
+specifically , fdic limited access to certain critical programs , software , and data ; reduced the number of users with physical access to computer facilities ; enhanced its review procedures of system software changes ; strengthened its procedures for reviewing changes to application expanded tests of its disaster recovery plan ; and defined the roles and responsibilities of its information security officers .
+
+in addition to responding to previously identified weaknesses , fdic established several other computer controls to enhance its information security .
+
+for example , it enhanced procedures to periodically review user access privileges to computer programs and data to ensure that access is granted only to those who need it to perform their jobs .
+
+likewise , fdic strengthened its physical security controls by establishing criteria for granting access to computer center operations , and developed procedures for periodically reviewing access to ensure that it remained appropriate .
+
+further , fdic enhanced its system software change control process by developing procedures requiring technical reviews of all system software modifications prior to their implementation .
+
+in addition , it established a process to periodically review application software to ensure that only authorized computer program changes were being made .
+
+fdic also improved its disaster recovery capabilities by establishing an alternate backup site to support its computer network and related system platforms , and by conducting periodic unannounced walk - through tests of its disaster recovery plan .
+
+the following sections summarize the results of our review .
+
+our “limited official use only” report details specific weaknesses in information systems controls that we identified , provides our recommendations for correcting each weakness , and indicates fdic's planned actions or those already taken for each weakness .
+
+an evaluation of the adequacy of this action plan will be part of our future work at fdic .
+
+although fdic established many policies , procedures , and controls to protect its computing resources , the corporation did not always effectively implement them to ensure the confidentiality , integrity , and availability of financial and sensitive data processed by its computers and networks .
+
+in addition to the previously reported weaknesses that remain not fully addressed , 29 new information security weaknesses were identified during this review .
+
+the weaknesses identified included instances in which fdic did not adequately restrict mainframe access , secure its network , or establish a complete program to monitor access activities .
+
+in addition , new weaknesses in other information system controls , including physical security , application software , and service continuity , further increase the risk to fdic's information systems .
+
+collectively they place the corporation's systems at risk of unauthorized access , which could lead to unauthorized disclosure , disruption of critical operations , and loss of assets .
+
+a basic management control objective for any organization is to protect data supporting its critical operations from unauthorized access , which could lead to improper modification , disclosure , or deletion .
+
+organizations can protect this critical information by granting employees the authority to read or modify only those programs and data that they need to perform their duties and by periodically reviewing access granted to ensure that it is appropriate .
+
+effective mainframe access controls should be designed to restrict access to computer programs and data , and prevent and detect unauthorized access .
+
+these controls include access rights and permissions , system software controls , and software library management .
+
+while fdic restricted access to many users who previously had broad access to critical programs , software , and data , instances remained in which the access granted specific users was still not appropriate .
+
+a key weakness in fdic's controls was that it did not adequately limit user access , as described below .
+
+nineteen users had access to production control software that would allow them to modify software outside the formal configuration control process .
+
+this risk was further heightened because fdic was not maintaining audit logs of software changes .
+
+without such logs , unauthorized software changes could be made to critical financial and sensitive systems , possibly without detection .
+
+this software was especially vulnerable because it could allow an unauthorized user to bypass security controls .
+
+further , an excessive number of users had access to 14 of 19 production job control systems we reviewed , allowing them to obtain exact details of production programs and data , which could then be used to gather information to circumvent controls .
+
+an excessive number of users had access that allowed them to read user identifications ( ids ) and passwords used to transfer data among fdic production computer systems .
+
+with these ids and passwords , the users could gain unauthorized access to financial and sensitive corporation information , possibly without detection .
+
+fdic did not adequately restrict users from viewing sensitive information .
+
+for example , about 70 users had unrestricted read access to all information that the corporation printed from its mainframe computer .
+
+this included information on bank examinations , payroll and personnel data , legal reports , vendor payments , and security monitoring information .
+
+one reason for fdic's user access vulnerabilities was that the corporation , while making progress , still had not fully established a process for reviewing the appropriateness of individual access privileges .
+
+specifically , fdic's process did not include a comprehensive method for identifying and reviewing all access granted to any one user .
+
+such reviews would have allowed fdic to identify and correct inappropriate access .
+
+in response , fdic said that it has since taken steps to restrict access to sensitive resources .
+
+further , the corporation stated that it has improved its audit logging of user access activities , enhanced its process for identifying and reviewing access granted , and further reduced access to the minimum necessary for users to perform their job functions .
+
+network security controls are key to ensuring that only authorized individuals gain access to sensitive and critical agency data .
+
+effective network security controls should be established to authenticate local and remote users .
+
+these controls include a variety of tools such as user passwords , intended to authenticate authorized users who access the network from local and remote locations .
+
+in addition , network controls provide safeguards to ensure that system software is adequately configured to prevent users from bypassing network access controls or causing network failures .
+
+since our last audit , fdic took major steps to secure its network through enhancements to its firewall and establishment of procedures to review contractor network connections ; further , it recently implemented actions to review the effectiveness of network security controls .
+
+nonetheless , weaknesses in the way the corporation configured its network servers , managed certain user ids and passwords , and provided network services have not yet been corrected .
+
+one system was using a default vendor account with broad access that would allow the user to read , copy , modify , or delete sensitive network configuration files .
+
+information on default vendor accounts is available in vendor - supplied manuals , which are readily available to hackers .
+
+with this ability , a malicious user or intruder could seriously disable or disrupt network operations by taking control of key segments of the network or by gaining unauthorized access to critical applications and data .
+
+a network service was not configured to restrict access to sensitive network resources .
+
+as a result , anyone — including contractors — with access to the fdic network could obtain copies or modify configuration files containing control information such as access control lists and user passwords .
+
+with the ability to read , copy , or modify these files , an intruder could disable or disrupt network operations by taking control of sensitive and critical network resources .
+
+a key network server was not adequately configured to restrict access .
+
+as a result , anyone — again , including contractors — with connectivity to the fdic network could copy or modify files containing sensitive network information .
+
+with this level of access , an unauthorized user could control key segments of the network .
+
+further , fdic did not adequately secure its network against known vulnerabilities or minimize the operational impact of a potential failure in a critical network device .
+
+failure to address known vulnerabilities increases the risk of system compromise , such as unauthorized access to and manipulation of sensitive system data , disruption of services , and denial of service .
+
+in response to our findings , fdic's acting cio said that the corporation had taken steps to improve network security .
+
+specifically , he said that fdic had removed the vendor default account , reconfigured network resources to restrict access , and installed software patches to secure against known vulnerabilities .
+
+a program to monitor access activities is essential to ensuring that unauthorized attempts to access critical programs and data are detected and investigated .
+
+such a program would include routinely reviewing user access activity and investigating failed attempts to access sensitive data and resources , as well as unusual and suspicious patterns of successful access to sensitive data and resources .
+
+to effectively monitor user access , it is critical that logs of user activity be maintained for all critical processing activities .
+
+this includes collecting and monitoring activities on all critical systems , including mainframes , network servers , and routers .
+
+a comprehensive monitoring program should include an intrusion - detection system to automatically log unusual activity , provide necessary alerts , and terminate access .
+
+while fdic has made progress in developing systems to identify unauthorized or suspicious access activities for both its mainframe and network systems , it still has not completed a program to fully monitor such activities .
+
+as a result , reports designed to provide security staff with information on network access activities , including information on unusual or suspicious access , were not available due to technical problems in producing them .
+
+consequently , security staff and administrators did not have the information they needed to effectively monitor the network for unauthorized or inappropriate access .
+
+further , fdic was not monitoring the access of certain employees and contractors with access that allowed them to modify specific sensitive system software libraries that can perform functions that circumvent all security controls .
+
+while these users were granted these access privileges , fdic did not maintain audit logs of access to ensure that only authorized modifications were made to these libraries .
+
+as a result , these users could make unauthorized modifications to financial data , programs , or system files , possibly without detection .
+
+according to the acting cio , the corporation has taken action to improve its program to monitor access activities .
+
+this includes developing and implementing new reports for monitoring network access and initiating action to fully implement its intrusion - detection system .
+
+in addition to information system access controls , other important controls necessary to ensure the confidentiality , integrity , and availability of an organization's system and data were ineffective at fdic .
+
+these controls include policies , procedures , and techniques that physically secure data - processing facilities and resources , prevent unauthorized changes to application software , and effectively ensure the continuation of computer processing service if an unexpected interruption occurs .
+
+although fdic has implemented numerous information system controls , remaining weaknesses in these areas increase the risk of unauthorized disclosure , disruption of critical operations , and loss of assets .
+
+physical security controls should be designed to prevent vandalism and sabotage , theft , accidental or deliberate alteration or destruction of information or property , and unauthorized access to computing resources .
+
+these controls involve restricting physical access to computer resources , usually by limiting access to the buildings and rooms in which these resources are housed , and periodically reviewing access granted to ensure that it continues to be appropriate based on criteria established for granting such access .
+
+fdic has taken several actions to strengthen its physical security , including reducing the number of staff who have access to those areas where computer resources are housed .
+
+however , while it has established policies for granting access to its computer facilities and procedures for periodically reviewing the continued need for such access , it has not yet developed a process to ensure compliance with these policies and procedures .
+
+for example , while fdic's policy provides that contractor access may only be granted for up to 6 months , 24 of 126 contractors had access to fdic's computer center for periods exceeding 6 months , some for several years .
+
+without a process to ensure compliance with established policies and procedures , fdic cannot ensure that physical access to critical computer resources is adequately controlled .
+
+in response to our finding , the acting cio , has since established additional controls to ensure compliance with its physical access policies relating to length of time access may be granted and maintenance of authorized access request forms .
+
+further , fdic recently filled a position whose duties specifically include providing daily compliance , monitoring , and oversight to ensure that physical access policies and procedures are properly followed .
+
+standard application software change control practices prescribe that only authorized , fully tested , and reviewed changes should be placed in operation .
+
+further , these practices provide a process for reviewing all software modifications made .
+
+this should include reviews of changes made to software used to link applications to computer data and programs needed to support their operations .
+
+while fdic has implemented a procedure to review application software changes for evidence of unauthorized code , fraud , or other inappropriate actions , the procedure does not include a review of other types of changes , such as those made to software used to facilitate access to software files and data .
+
+as a result , unauthorized changes could be made that alter computer program logic .
+
+in response , fdic has expanded its application software change process to include reviews of other software modifications , including those that facilitate access to files and data .
+
+service continuity controls should be designed to ensure that when unexpected events occur , critical operations continue without interruption or are promptly resumed , and critical and sensitive data are protected .
+
+an essential element is up - to - date , detailed , and fully tested service and business continuity plans .
+
+to be effective , these plans should be understood by all key staff and to include surprise testing .
+
+fdic has acted to enhance its service continuity program .
+
+for example , it ( 1 ) updated and conducted tests of its service continuity plan , ( 2 ) completed business continuity plans for all its facilities and conducted tests of these plans , and ( 3 ) established an alternate backup site to support its network and other computing resources .
+
+however , fdic has not yet performed unannounced testing of its business continuity plan .
+
+such tests are more realistic than announced tests and more accurately measure the readiness of staff for emergency situations .
+
+further , fdic had not ensured that the emergency personnel lists included in its business continuity plan are current .
+
+we identified 66 fdic employees whose names were in the emergency personnel list but who had separated from fdic , including 13 staff listed as key emergency team members .
+
+without current emergency personnel lists , fdic risks not being able to restore its critical business operations in a timely manner .
+
+fdic has since established new procedures to ensure that emergency personnel lists remain current .
+
+fdic officials said that they would incorporate unannounced testing of the business continuity plan into the 2003 operating plan , and would conduct these unannounced tests by december 31 of this year .
+
+the primary reason for fdic's continuing weaknesses in information system controls is that it has not yet fully developed and implemented a comprehensive corporate program to manage computer security .
+
+as described in our may 1998 study of security management best practices , a comprehensive computer security management program requires the following five elements , all essential to ensuring that information system controls work effectively on a continuing basis: a central security management structure with clearly defined roles and appropriate policies , procedures , and technical standards ; periodic risk assessment ; and an ongoing program of testing and evaluation of the effectiveness of policies and controls .
+
+we previously recommended to fdic that it fully develop and implement a comprehensive security management program that includes each of these elements .
+
+fdic has made progress in implementing a security management program .
+
+specifically , it ( 1 ) established a central security management structure ; ( 2 ) implemented security policies , procedures , and technical standards ; and ( 3 ) enhanced security awareness training .
+
+however , the steps taken to address periodic risk assessment and ongoing testing and evaluation of policies and controls have not yet been sufficient to ensure continuing success .
+
+central security management structure .
+
+fdic has established a central security function and has appointed information security managers for each of its divisions , with defined roles and responsibilities .
+
+further , it has provided guidance to ensure that security managers coordinate with the central security function on security - related issues .
+
+it has also developed the support of divisional senior management for the central security function .
+
+appropriate policies , procedures , and technical standards .
+
+fdic has updated its security policies and procedures to cover all aspects of the organization's interconnected environment and all computing platforms .
+
+it has also established technical security standards for its mainframe and network systems and security software .
+
+security awareness .
+
+computer attacks and security breakdowns often occur because computer users fail to take appropriate security measures .
+
+fdic has enhanced its security awareness program , which all employees and contractors are required to complete annually .
+
+it has also developed specialized security awareness training to address the specific needs of its security managers .
+
+periodic risk assessment .
+
+regular assessments , assist management in making decisions on necessary controls by helping to ensure that security resources are effectively distributed to minimize potential loss .
+
+and by increasing awareness of risks , these assessments generate support for the adopted policies and controls , which helps ensure that the policies and controls operate as intended .
+
+further , office of management and budget circular a - 130 , appendix iii , prescribes that risk be assessed when significant changes are made to the system but at least every 3 years .
+
+fdic has not fully developed a framework for assessing and managing risk on a continuing basis .
+
+while it has taken some action , including developing a framework of assessing risk when significant changes are made to computer systems and providing tools for its security managers to use in conducting risk assessments , it has not developed a process for conducting these assessments .
+
+our study of risk assessment best practices found that a process for performing such assessments should specify ( 1 ) how the assessments should be initiated and conducted , ( 2 ) who should participate , ( 3 ) how disagreements should be resolved , ( 4 ) what approvals are needed , and ( 5 ) how these assessments should be documented and maintained .
+
+in response , fdic's acting cio said that the corporation is taking steps to develop risk assessment guidance .
+
+testing and evaluation .
+
+a program that assesses the effectiveness of policies and controls includes processes for monitoring compliance with established information system control policies and procedures and testing the effectiveness of those controls .
+
+during the past year , fdic has taken steps to establish such a program of testing and evaluation .
+
+specifically , it has established a self - assessment program to evaluate information system controls and has implemented a program to monitor compliance with established policies and procedures that includes performing periodic reviews of system settings and tests of user passwords .
+
+nonetheless , fdic's program does not cover all critical evaluation areas .
+
+missing is an ongoing program that targets the key control areas of physical and logical access , segregation of duties , system and application software , and service continuity .
+
+in response , fdic's acting cio said that the corporation is taking steps to establish an oversight program to cover its control environment that will include steps to assess areas such as access controls , segregation of duties , system and application software , and service continuity .
+
+further , fdic plans to address each of these areas as part of its evolving self - assessment process .
+
+until a comprehensive program to monitor and test each of these control areas is in place , fdic will not have the oversight needed to ensure that many of the same type of information system control weaknesses previously identified are not repeated .
+
+an effective ongoing comprehensive program to monitor compliance with established procedures can be used to identify and correct information security weaknesses , such as those discussed in this report .
+
+for example , a comprehensive process to review all access authority granted to each user to ensure that access was limited to that needed to complete job responsibilities could identify inappropriate access authority granted to users .
+
+a comprehensive program to regularly test information system controls can be used to detect network security weaknesses .
+
+for example , our technical reviews of network servers identified default system passwords in use that are readily known to hackers and could be used by them to gain the access needed to exploit the network and launch an attack on fdic systems .
+
+appropriate technical reviews of the network servers and routers can identify these types of exposures .
+
+fdic has made progress in correcting information system control weaknesses and implementing controls , including limiting and reducing access , altering software change procedures , expanding testing of disaster recovery plans , and defining the roles and responsibilities of information security officers .
+
+nonetheless , continuing and newly identified security weaknesses exist .
+
+fdic has not adequately restricted mainframe access , sufficiently secured its network , or completed a program for fully monitoring access activity .
+
+weaknesses in physical security , application software , and service continuity increase the level of risk .
+
+the effect of these weaknesses — including prior and current year — further increases the risk of unauthorized disclosure of critical financial and sensitive personnel and bank examination information , disruption of critical financial operations , and loss of assets .
+
+implementation of fdic's plan to correct these weaknesses is essential to establish an effective information system control environment .
+
+the primary reason for fdic's continuing weaknesses in information system controls is that it has not yet been able to fully develop and implement a comprehensive program to manage computer security .
+
+while it has made progress in the past year in establishing key elements of this program — including a security management structure , security policies and procedures , and promoting security awareness — its systems will remain at heightened risk until fdic establishes a process for assessing and managing risks on a continuing basis and fully implements a comprehensive , ongoing program of testing and evaluation to ensure policies and controls are appropriate and effective .
+
+until fdic takes steps to correct or mitigate its information system control weaknesses and fully implements a computer security management program , fdic will have limited assurance that its financial and sensitive information are adequately protected from inadvertent or deliberate misuse , fraudulent use , improper disclosure , or destruction .
+
+to establish an effective information system control environment , in addition to completing actions to resolve prior year weaknesses that remain open , we recommend that the chairman instruct the acting cio , as the corporation's key official for computer security , to ensure that the following actions are completed .
+
+correcting the 29 information system control weaknesses related to mainframe access , network security , access monitoring , physical access , application software , and service continuity identified in our current ( calendar year 2002 ) audit .
+
+we are also issuing a report designated for “limited official use only,” which describes in more detail the computer security weaknesses identified and offers specific recommendations for correcting them .
+
+fully develop and implement a computer security management program .
+
+specifically , this would include ( 1 ) developing and implementing a process for performing risk assessments and ( 2 ) establishing an effective ongoing program of tests and evaluations to ensure that policies and controls are appropriate and effective .
+
+in providing written comments on a draft of this report , fdic's chief financial officer ( cfo ) agreed with our recommendations .
+
+his comments are reprinted in appendix i of this report .
+
+specifically , fdic plans to correct the information systems control weaknesses identified and fully develop and implement a computer security management program by december 31 , 2003 .
+
+according to the cfo , significant progress has already been made in addressing the identified weaknesses .
+
+we are sending copies of this report to the chairman and ranking minority member of the senate committee on banking , housing , and urban affairs ; the chairman and ranking minority member of the house committee on financial services ; members of the fdic audit committee ; officials in fdic's divisions of information resources management , administration , and finance ; and the fdic inspector general .
+
+we will also make copies available to others parties upon request .
+
+in addition , this report will be available at no charge on the gao web site at http: / / www.gao.gov .
+
+if you have any questions regarding this report , please contact me at ( 202 ) 512-3317 or david w. irvin , assistant director , at ( 214 ) 777-5716 .
+
+we can also be reached by e - mail at daceyr@gao.gov and irvind@gao.gov , respectively .
+
+key contributors to this report are listed in appendix ii .
+
+in addition to the person named above , edward alexander , gerald barnes , angela bell , nicole carpenter , lon chin , debra conner , anh dang , kristi dorsey , denise fitzpatrick , david hayes , jeffrey knott , harold lewis , duc ngo , eugene stevens , rosanna villa , charles vrabel , and chris warweg made key contributions to this report .
+
+the general accounting office , the audit , evaluation and investigative arm of congress , exists to support congress in meeting its constitutional responsibilities and to help improve the performance and accountability of the federal government for the american people .
+
+gao examines the use of public funds ; evaluates federal programs and policies ; and provides analyses , recommendations , and other assistance to help congress make informed oversight , policy , and funding decisions .
+
+gao's commitment to good government is reflected in its core values of accountability , integrity , and reliability .
+
+the fastest and easiest way to obtain copies of gao documents at no cost is through the internet .
+
+gao's web site ( www.gao.gov ) contains abstracts and full - text files of current reports and testimony and an expanding archive of older products .
+
+the web site features a search engine to help you locate documents using key words and phrases .
+
+you can print these documents in their entirety , including charts and other graphics .
+
+each day , gao issues a list of newly released reports , testimony , and correspondence .
+
+gao posts this list , known as “today's reports,” on its web site daily .
+
+the list contains links to the full - text document files .
+
+to have gao e - mail this list to you every afternoon , go to www.gao.gov and select “subscribe to gao mailing lists” under “order gao products” heading .
+

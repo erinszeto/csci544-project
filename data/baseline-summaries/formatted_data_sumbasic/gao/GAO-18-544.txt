@@ -1,0 +1,766 @@
+the internal revenue service ( irs ) faces an ongoing challenge to detect and prevent noncompliance with tax laws .
+
+noncompliance and fraud threaten the integrity of the tax system , costing the federal government billions of dollars annually .
+
+every year taxpayers willfully or unintentionally fail to pay hundreds of billions of dollars owed in taxes .
+
+this noncompliance includes individuals who make inadvertent mistakes and fraudsters who intentionally seek to evade taxes and obtain invalid refunds .
+
+irs's enforcement of tax laws has been on our high - risk list since the list was first established in 1990 .
+
+in 2015 we added irs's efforts to address identity theft ( idt ) tax refund fraud to the high - risk area .
+
+idt tax refund fraud occurs when a fraudster seeking a tax refund files a fraudulent tax return using a legitimate taxpayer's identifying information .
+
+detecting fraudulent tax returns has become increasingly difficult for irs as fraudsters gain access to more personal and financial information , which they use to file returns that appear legitimate .
+
+irs estimated that at least $12.2 billion in idt tax refund fraud was attempted during 2016 .
+
+irs estimated that it prevented at least $10.6 billion ( 86 percent ) of that amount but paid at least $1.7 billion in invalid refunds .
+
+one of irs's preventive tools is the return review program ( rrp ) , a pre - refund system that screens individual returns claiming refunds using characteristics predictive of idt and other refund fraud .
+
+irs began developing rrp in 2009 to replace the electronic fraud detection system , which irs built in the 1990s ( see appendix i for more information ) .
+
+given the importance of rrp for preventing billions of dollars in invalid refund payments , you asked us to examine rrp's capabilities .
+
+this report ( 1 ) describes how rrp detects and selects suspicious returns to prevent invalid refunds ; ( 2 ) assesses how irs monitors and adapts rrp ; and ( 3 ) examines what else , if anything , irs can do to strengthen rrp and use it to address other enforcement issues .
+
+to describe how rrp detects and selects suspicious returns to prevent invalid refunds , we reviewed irs documents and procedures related to rrp development and capabilities .
+
+we reviewed irs documents analyzing rrp's performance detecting and selecting fraudulent returns during the filing season .
+
+we reviewed irs's replacement plans for its legacy fraud detection system and release plans outlining requirements and capabilities for rrp .
+
+we reviewed reports from the treasury inspector general for tax administration ( tigta ) on irs's development of rrp and rrp's capabilities .
+
+we interviewed irs officials involved in the development and operation of rrp , including officials from irs's information technology ( it ) organization and wage and investment and criminal investigation divisions .
+
+to assess irs's efforts to monitor and adapt rrp , we reviewed irs documents outlining irs's process for updating rrp , reports analyzing rrp performance for the 2017 and 2018 filing seasons , and irs reports describing changes or adjustments to rrp .
+
+we reviewed tigta reports and irs documents outlining irs's process for evaluating and updating rrp .
+
+we interviewed irs officials overseeing and evaluating rrp's performance to determine how officials use the reports and analysis to manage rrp .
+
+we compared irs's efforts to the standards for internal control in the federal government that directs officials to establish and operate ongoing monitoring activities to determine the effectiveness of systems such as rrp and take corrective action as appropriate .
+
+we also assessed irs's monitoring and evaluation of rrp against leading practices to combat fraud in a strategic , risk - based manner as identified in the framework for managing fraud risks in federal programs ( the fraud risk framework ) .
+
+to evaluate what else , if anything , irs can do to strengthen rrp detection and use it to address other tax enforcement issues , we reviewed irs documentation describing rrp's current state and planned development and our prior work evaluating irs's development of rrp and other major it investments .
+
+we also reviewed our prior work and recommendations related to irs's tax enforcement activities .
+
+we interviewed irs officials involved in developing and managing rrp to discuss planned development and uses of rrp .
+
+we also interviewed officials from the small business and self - employed division responsible for enforcement activities , such as auditing individual tax returns to detect misreporting , and officials from the office of research , applied analytics , and statistics who conduct irs's research on noncompliance and irs's enforcement strategies .
+
+we compared irs's efforts to goals and objectives identified in its strategic plan: fy2018-2022 , such as encouraging compliance through tax administration and enforcement and increasing operational efficiency and effectiveness .
+
+we also compared irs's actions to the federal standards for internal control and the fraud risk framework , which direct management to evaluate the costs and benefits of using systems to inform resource allocation decisions and achieve agency objectives .
+
+we conducted this performance audit from june 2017 to july 2018 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+noncompliance , including fraud , does not have a single source , but occurs across different types of taxes and taxpayers .
+
+it includes unintentional errors as well as intentional evasion , such as intentionally underreporting income , intentionally over - reporting expenses , and engaging in abusive tax shelters or frivolous tax schemes .
+
+irs uses many approaches to address noncompliance , from sending notices to taxpayers to conducting complex audits .
+
+many of these approaches can be burdensome to irs and to taxpayers since they may occur years after taxpayers file their return .
+
+we have long highlighted the importance of strong preventive controls for detecting fraud because preventing payment of invalid refunds is easier and more cost - effective than trying to recover revenue through the pay - and - chase model of audits .
+
+irs uses pre - refund compliance checks to confirm taxpayers' identities , quickly and efficiently correct some clerical and mathematical errors , and detect possible fraud and noncompliance .
+
+as shown in figure 1 , rrp analyzes individual tax returns claiming refunds and identifies characteristics predictive of idt and other refund fraud before irs issues refunds for those returns .
+
+irs reported that between january 2015 and november 2017 , rrp prevented the issuance of more than $6.51 billion in invalid refunds .
+
+as of march 30 , 2018 , irs reports spending about $419 million developing and operating rrp .
+
+for fiscal year 2019 , irs requested $106 million to operate and further develop rrp .
+
+according to irs , rrp supports data , analytical , and case processing activities conducted by employees working in revenue protection , accounts management , taxpayer communications , and criminal prosecution .
+
+irs employees from across these areas coordinate to oversee the development and operation of the system ( see fig .
+
+2 ) .
+
+four irs divisions work with irs's information technology ( it ) organization and office of research , applied analytics , and statistics ( raas ) to develop , maintain , and operate rrp .
+
+the wage and investment ( w&i ) division leads the management of rrp with irs's it offices .
+
+w&i's audit programs cover mainly refundable credits claimed on individual income tax returns and the division develops policy and guidance for rrp and other pre - refund programs that detect suspicious returns .
+
+coordinating with other irs divisions , w&i and it update rrp as needed to reflect any new business rules or changes to existing business rules , for example .
+
+the large business and international division provides rrp with business requirements specific to large corporations .
+
+the criminal investigation division reviews and analyzes tax returns throughout the filing season to identify fraudulent patterns and trends to incorporate into rrp .
+
+the small business and self - employed division audits individual and business tax returns to detect misreporting .
+
+raas leads development of some of rrp's predictive models and idt filters .
+
+as irs's primary pre - refund system for detecting idt and other refund fraud , rrp performs three major activities ( see fig .
+
+3 ) .
+
+according to irs , rrp uses advanced analytic techniques and evaluates data from various sources to assign multiple scores to individual returns claiming refunds .
+
+the scores are based on characteristics of idt and other refund fraud known to irs .
+
+higher fraud scores indicate the return's greater potential for refund fraud .
+
+irs officials told us that rrp's design helps irs identify increasingly sophisticated tax fraud .
+
+rrp's analytic techniques include the following: predictive models .
+
+irs develops many different models that help detect emerging fraud , outliers , and taxpayer behavior inconsistencies in returns claiming refunds .
+
+these models also mine data and help irs seek out patterns predictive of idt and other refund fraud .
+
+for example , a model may use a combination of existing variables from the 1040 individual tax return , such as tax credits claimed and income .
+
+business rules .
+
+rrp contains over 1,000 rules ( a “yes” or “no” outcome ) developed by irs to flag returns for evidence of anomalous behavior .
+
+for example , rrp uses a business rule to distinguish between returns for which it has received an associated form w - 2 , wage and tax statement ( w - 2 ) , from those which it has not .
+
+clustering .
+
+rrp uses a tool that reveals patterns and relationships in masses of data allowing rrp to identify clusters of returns that share traits predictive of schemes and refund fraud .
+
+for example , irs could use clustering to identify groups of returns that share the same geographic location , among other traits .
+
+according to irs , this technique was developed to automate certain aspects of criminal investigation's identification of fraud schemes .
+
+a number of systems connect to rrp and provide additional taxpayer data or third - party information for rrp to analyze .
+
+rrp contains taxpayers' prior three years' filing history and third parties — employers , banks , and others — file information returns to report wages , interest , and other payment information to taxpayers and irs .
+
+for example , the social security administration sends w - 2s to irs .
+
+the w - 2 information is loaded regularly into rrp , along with other information returns , to validate wage and income information reported on individual returns claiming refunds — a process irs calls systemic verification .
+
+rrp has filters that combine results from the analytic techniques to automatically make a selection decision and then a treatment decision before the return can move to the next processing step and a refund can be issued .
+
+returns not selected by rrp continue through the pipeline process .
+
+selection decision .
+
+returns with fraud scores above thresholds — and meeting other criteria set by irs management — will automatically be selected by rrp filters for further action or review .
+
+according to irs , the agency's capacity to review selected returns is part of the automated selection decision , as are other criteria that weigh the cost and risk to irs .
+
+irs reports that for the 2017 filing season , rrp selected 857,438 returns as potential idt refund fraud and 219,210 returns as potential other refund fraud .
+
+this is less than 1 percent of almost 158 million individual returns filed that year .
+
+treatment decision .
+
+rrp automatically assigns selected returns to the appropriate treatment based on the characteristics of idt or other refund fraud rrp detected .
+
+examples of treatments include the following: identity theft refund fraud .
+
+returns selected by an idt filter are automatically assigned for treatment in the taxpayer protection program .
+
+irs notifies taxpayers that they must authenticate their identity before irs will process the return or issue a refund .
+
+taxpayers can verify their identity by calling an irs telephone center , visiting a taxpayer assistance center , or in some cases , authenticating online or via mail .
+
+if the taxpayer does not respond to the letter or fails to authenticate , the return is confirmed to be idt refund fraud .
+
+other refund fraud .
+
+if a return is selected by one of rrp's non - identity theft filters , rrp automatically assigns the return , based on the characteristics of fraud identified , to the integrity and verification operations ( ivo ) function within w&i's return integrity and compliance services office for further action or review .
+
+for example , rrp may select a return as potential refund fraud because it is missing verification of income for a refundable tax credit , such as the earned income tax credit .
+
+ivo tax examiners may then , for example , contact employers to confirm the income and withholding amounts reported on the return .
+
+frivolous returns .
+
+rrp selects returns that contain certain unsupportable arguments to avoid paying taxes or reduce tax liability .
+
+if irs determines these returns to be frivolous , the taxpayer may be subject to penalty .
+
+rrp assigns potentially frivolous returns to ivo for review and to notify the taxpayer .
+
+non - workload returns .
+
+rrp's non - workload filters select returns that , according to irs , score just below the thresholds for rrp's other filters described above .
+
+irs officials told us that rrp loops these returns for additional scoring and detection .
+
+rrp supports irs's efforts to prevent issuing invalid refunds in the following ways: freezing refunds .
+
+rrp connects directly to irs's systems for processing individual tax returns and issues transaction codes directly to the individual master file depending on the type of refund fraud rrp detected .
+
+irs reports that for the 2017 filing season , rrp prevented irs from issuing about $4.4 billion in invalid refunds .
+
+of that amount , $3.3 billion was attributed to idt refund fraud and $1.1 billion to other refund fraud .
+
+when rrp selects a return as potential idt refund fraud , rrp will simultaneously assign the return for treatment and issue a transaction code telling irs's processing systems to freeze the refund until the case is resolved .
+
+as a result , irs can protect the refund until the review is complete or a legitimate taxpayer has authenticated his or her identity , at which point irs will release the return .
+
+if rrp's non - identity theft filters select the return because of characteristics predictive of other refund fraud , rrp issues a transaction code to freeze the return for 14 days while ivo examiners have the opportunity to screen the return .
+
+after 14 days , the return automatically resumes processing and the refund may be released .
+
+accordingly , irs officials told us that rrp prioritizes idt treatment and if a return is selected by both idt and other refund fraud filters , rrp will automatically assign the return to the taxpayer protection program and freeze the refund .
+
+irs officials told us that when rrp's non - workload filters select a return , rrp will issue a transaction code that delays the payment of the refund associated with the return for 1 week .
+
+according to irs officials , this delay provides irs an opportunity to manually review returns that contain suspicious characteristics .
+
+incorporating treatment results .
+
+irs integrates the results from each return review into its analytic techniques to improve rrp's detection ability and accuracy on an ongoing basis .
+
+for the 2018 filing season , irs officials told us they were able to add functionality that uses real - time case feedback data to automatically improve the accuracy of some of rrp's idt fraud filters .
+
+irs officials can also change rrp's selection criteria or filters during the filing season based on emerging fraud or workload concerns .
+
+detailed data and analysis .
+
+with rrp , all available taxpayer information is linked together and available for analysis and queries by irs employees for post - refund enforcement activities , such as criminal investigations .
+
+rrp creates and distributes a report with the results of rrp's clustering analysis to analysts in criminal investigation .
+
+irs employees are also able to search rrp and analyze data relevant to their specific enforcement activities .
+
+criminal investigation officials told us they use rrp reports to identify suspicious returns that were not selected by rrp and flag them for further post - refund review .
+
+as the primary system for detecting idt and other refund fraud and preventing irs from paying invalid refunds , rrp is an integral part of irs's ability to process returns during the filing season .
+
+therefore , monitoring and evaluation activities that rely on quality information to identify , analyze , and respond to changes — such as emerging fraud trends — are critical to ensure that rrp is operating effectively .
+
+federal standards for internal control and the fraud risk framework highlight the importance of monitoring and incorporating feedback on an ongoing basis so the system remains aligned with changing objectives , environments , laws , resources , and risks .
+
+consistent with these practices , irs follows an industry - standard process to conduct a range of monitoring and evaluation activities for rrp throughout the year ( see fig .
+
+4 ) .
+
+according to irs officials , each year beginning in february , irs evaluates and updates rrp to improve detection and accuracy for the next filing season .
+
+a leading practice in the fraud risk framework is for managers to use the results of monitoring , evaluations , and investigations to improve fraud prevention , detection , and response .
+
+a more accurate rrp helps irs use its resources more effectively .
+
+for example , if rrp automatically detects fraudulent returns previously identified by manual processes or post - refund enforcement activities , irs can redirect those enforcement resources to identifying new and emerging fraud schemes .
+
+further , as rrp selects fewer legitimate returns as suspicious , irs employees are able to devote more of their time to identifying fraudulent returns .
+
+irs officials stated that to improve rrp's accuracy , irs incorporates information about all refund fraud and noncompliance detected by other enforcement activities into rrp's detection tools .
+
+irs also uses information from its research efforts and external entities , as described below .
+
+other enforcement activities .
+
+these activities include the fraud referral and evaluation program , where , according to irs , analysts manually review select tax returns that scored just below rrp's selection thresholds .
+
+another enforcement activity is the dependent database , a pre - refund screening system that identifies potential noncompliance related to the dependency and residency of children .
+
+irs staff told us they evaluate refund fraud detected by the dependent database and fraud referral and evaluation program that rrp missed and update rrp's analytic techniques for the next year .
+
+third , investigators in criminal investigation told us that they work with other irs offices to incorporate new and emerging refund fraud patterns , such as those identified as a result of external data breaches , into rrp's detection tools .
+
+to ensure that the updates are operating effectively , irs staff track the percentage of invalid returns that rrp automatically selected that were previously detected by other irs processes .
+
+irs research .
+
+irs officials stated that the agency uses information from a number of research efforts to inform updates or adaptations to rrp .
+
+for example , for the 2018 filing season , irs changed rrp's filters and selection criteria to automatically select returns that irs held manually in 2017 .
+
+irs officials told us they made these changes after researching taxpayer behavior in noncompliant claims of the earned income tax credit and additional child tax credit during the 2017 filing season .
+
+third - party information .
+
+irs collaborates with external entities to strengthen irs's defenses against paying invalid refunds .
+
+irs officials told us they use information from their collaborative efforts to update rrp's detection tools for the upcoming filing season .
+
+these efforts include the external leads program , where participating financial institutions provide leads to irs regarding deposits of suspicious refunds , and the opt - in program , a voluntary program where participating financial institutions flag and reject refunds issued by irs via direct deposit if they find that certain characteristics do not match .
+
+irs reported that in 2017 , banks recovered 144,000 refunds with a value of $204 million .
+
+irs has also used information from the security summit to improve rrp's detection of idt refund fraud .
+
+the security summit is a partnership between irs , the tax preparation industry , and state departments of revenue to improve information sharing around idt refund fraud .
+
+for the 2017 filing season , irs incorporated a number of data elements into rrp's detection tools that were identified by the security summit .
+
+irs also incorporates legislative changes into rrp for the upcoming filing season .
+
+irs officials told us in march 2018 that they are working to determine all the updates and changes they need to make to rrp's analytic techniques for the 2019 filing season to ensure that rrp will make appropriate selections in accordance with pub .
+
+l. no .
+
+115-97 , “an act to provide for reconciliation pursuant to titles ii and v of the concurrent resolution on the budget for fiscal year 2018. .
+
+between september and december each year , irs tests rrp to ensure that the system's updated detection tools meet objectives to increase detection and accuracy for the upcoming filing season .
+
+a key factor is setting rrp's thresholds used to trigger if a return will be selected by rrp .
+
+for a given set of rules and criteria , as a threshold is lowered , the number of returns that rrp selects as suspicious will increase , including both fraudulent and legitimate returns .
+
+during this testing period , irs officials determine appropriate threshold settings for rrp given irs's fraud detection objectives and irs resources available to review selected returns .
+
+irs management uses this process to inform its risk tolerance and fraud risk profile .
+
+according to the fraud risk framework , effective managers of fraud risks use the program's fraud risk profile to help decide how to allocate resources .
+
+irs officials told us they test rrp's analytic techniques and filters by running a random sample of prior - year returns through numerous iterations using different settings .
+
+this testing produces various outcomes .
+
+according to documents we reviewed and irs officials , irs management evaluates the outcomes using the following measures: selection volume: the number of returns that rrp selects as potentially fraudulent and requiring further action or review by irs analysts and examiners to confirm the return as fraudulent or legitimate .
+
+irs uses this measure to gauge the workload resulting from certain combinations of settings in rrp .
+
+accuracy: the percent of selected returns confirmed to be legitimate ( the false detection rate ) .
+
+irs uses this measure to evaluate the effect rrp's settings may have on legitimate taxpayers whose refund may be delayed because their return was inaccurately selected .
+
+revenue protected: the value of refunds associated with returns selected by rrp that irs confirmed to be fraudulent .
+
+this measure can provide an estimate of rrp's return on investment based on different combinations of settings in rrp .
+
+after irs updates rrp and establishes selection criteria , rrp is ready to operate during the filing season .
+
+to ensure that rrp is performing as expected , irs managers collect and analyze performance reports , meet weekly during the filing season , and adapt rrp to address emerging fraud or make other adjustments .
+
+we reviewed the various reports produced by rrp and irs staff and determined that the information is reliable , relevant , and timely , as required by federal standards for internal control .
+
+irs officials told us that daily reports highlighting rrp's selections are helpful , especially during the first weeks of the filing season , to ensure that systems are operating effectively .
+
+consistent with federal standards for internal control and the fraud risk framework , we found that rrp is designed to be flexible and adaptive , and irs can adjust rrp during the filing season to respond to emerging threats or other concerns .
+
+irs officials told us they made several adjustments to rrp during the 2017 filing season: irs adjusted the selection thresholds for one of rrp's idt filters after observing that the number of selections was exceeding projections , resulting in more selections than irs officials expected and possibly a higher rate of legitimate returns being incorrectly selected .
+
+according to irs officials , adjusting selection thresholds takes approximately 24 hours .
+
+to respond to an external data breach , for example , irs officials told us they might lower rrp's selection thresholds so that rrp selects more returns for review .
+
+irs reported that it disabled a rule that it determined was incorrectly selecting legitimate tax returns .
+
+irs officials told us they could address selection errors or respond to new or emerging fraud patterns by modifying rrp's analytic techniques , such as its business rules and models .
+
+according to irs officials , these types of changes require approval of the business rules governance board and take , on average , 10 business days .
+
+according to irs documents we reviewed , early in the 2017 filing season , irs discovered that rrp did not issue appropriate transaction codes to the individual master file to freeze about 11,000 returns selected as potential idt refund fraud .
+
+as a result , some of these returns posted and refunds may have been issued incorrectly .
+
+irs told us they fixed this error within 3 days of identifying it .
+
+irs plans to continue developing rrp to expand its capabilities to detect refund fraud on business and partnership returns , as well as on individual returns that improperly claim nonrefundable tax credits .
+
+according to irs , continued development of rrp will automate previously manual processes , eliminate duplicative efforts , and achieve greater efficiency .
+
+business returns and partnership returns .
+
+irs officials told us in january 2018 that they are currently working to develop rules , models , and filters in rrp to detect noncompliance and fraud in business and partnership returns .
+
+according to irs , identity thieves have long used stolen business information to create and file fake w - 2s along with fraudulent individual tax returns .
+
+however , identity thieves are now using this information to file fraudulent business returns .
+
+in may 2018 , irs reported a sharp increase in the number of fraudulent business and partnership returns in recent years .
+
+nonrefundable tax credits .
+
+irs plans to develop models and rules in rrp to detect refund fraud on individual returns that improperly claim nonrefundable tax credits .
+
+a nonrefundable tax credit is limited to the taxpayer's tax liability , which means the credit can be used to offset tax liability , but any excess of the credit over the tax liability is not refunded to the taxpayer .
+
+examples of nonrefundable credits include the child tax credit , foreign tax credit , and mortgage interest credit .
+
+according to irs officials , irs currently relies on a number of systems , including the dependent database , to screen returns for noncompliance associated with tax credits .
+
+irs's management of other major investments will affect the agency's ability to realize the full potential of rrp's current and planned capabilities because rrp interfaces with numerous legacy systems .
+
+for example , rrp obtains taxpayer information from the individual master file , which irs has been working to replace with a modern database , the customer account data engine 2 ( cade 2 ) .
+
+according to irs , cade 2 will provide rrp with additional taxpayer history data and more frequent data updates , improving rrp's detection capabilities .
+
+however , as we reported in june 2018 , irs delivered only 46 percent of planned scope for cade 2 during the time period we reviewed and paused a number of cade 2 projects .
+
+as of june 2018 , a completion date is uncertain .
+
+rrp's effectiveness is limited by the system's dependence on a legacy case management system .
+
+in 2015 , irs approved plans to implement an enterprise - wide case management system to consolidate and replace over 60 legacy systems irs currently uses .
+
+irs reports a number of limitations with the current systems , including redundancies between systems and limited visibility between programs .
+
+however , irs encountered challenges with the investment , and in 2017 irs paused development activities .
+
+as of june 2018 , irs is working to acquire another product to serve as the platform for irs's enterprise - wide case management system .
+
+our prior work has identified actions that congress could take that would improve irs's ability to administer the tax system and enforce tax laws .
+
+these actions could also improve irs's ability to further leverage rrp's capabilities .
+
+for example , in august 2014 we suggested that congress provide the secretary of the treasury with the regulatory authority to lower the threshold for requiring employers to electronically file w - 2s from 250 returns annually to between 5 to 10 returns , as appropriate .
+
+under current law , employers who file 250 or more w - 2s annually are required to file w - 2s electronically , while those who file fewer may opt to file on paper .
+
+without this change , some employers' paper w - 2s are unavailable to rrp for matching before irs issues refunds due to the additional time the social security administration needs to process paper forms .
+
+lowering the threshold would help irs use rrp to verify returns before issuing refunds .
+
+this proposed change has been included in h.r .
+
+5444 .
+
+as of june 2018 , h.r .
+
+5444 passed the house and was being considered by the senate finance committee .
+
+we have also suggested that congress grant irs broader math error authority , with appropriate safeguards against misuse of that authority , to correct taxpayer errors during tax return processing .
+
+irs officials told us that this type of corrective authority would allow irs to develop more efficient treatments for returns selected by rrp with obvious errors .
+
+although the consolidated appropriations act , 2016 gave irs additional math error authority , it is limited to certain circumstances .
+
+giving irs broader math error authority or correctible error authority with appropriate controls would enable irs to correct obvious noncompliance , would be less intrusive and burdensome to taxpayers than audits , and would potentially help taxpayers who underclaim tax benefits to which they are entitled .
+
+as of june 2018 , congress had not provided treasury with such authority .
+
+irs has additional opportunities to improve data available to rrp to enhance rrp's detection and accuracy .
+
+as described above , rrp's analytic techniques depend on taxpayer data and information from numerous irs systems and external entities .
+
+rrp's access to useful and timely information enables irs to more fully utilize rrp's analytic techniques to detect suspicious returns , leading to more accurate selection and treatment decisions .
+
+given rrp's importance to irs's mission , it is critical that irs considers and addresses risks that could affect the accuracy and effectiveness of rrp's detection and selection activities .
+
+according to the office of management and budget , risks include not only threats but also opportunities that could affect an agency's ability to achieve its mission .
+
+irs and congress have previously considered opportunities and taken steps to enhance some data made available to rrp .
+
+for example: irs expanded rrp's use of relevant data from electronically filed returns and information returns .
+
+for example , as mentioned previously , irs incorporated a number of data elements identified through the security summit into rrp .
+
+in 2016 and 2017 , irs used these data elements to develop additional business rules and models specific to electronically filed returns .
+
+irs also expanded rrp analytic techniques to incorporate data from forms 1099-misc , which taxpayers may use to report non - employee compensation .
+
+consistent with our prior reporting , in 2015 congress enacted legislation to help irs prevent invalid refunds associated with idt and other refund fraud .
+
+this change allows irs more time to use rrp to match wage information to tax returns and to identify any inconsistencies before issuing refunds .
+
+since 2017 , employers have been required to submit w - 2s to the social security administration by january 31 , about 1 to 2 months earlier than in prior years .
+
+the act also required irs to hold refunds for all taxpayers claiming the earned income tax credit or the additional child tax credit .
+
+in 2018 we made recommendations that irs fully assess the benefits and costs of using existing authority to hold additional taxpayer refunds as well as extending the date for releasing those refunds until it can verify wage information .
+
+irs outlined a number of actions it plans to take to address these recommendations .
+
+taking these actions could prevent irs from issuing millions of dollars in invalid refunds annually .
+
+irs officials told us that they are taking steps to enhance rrp's ability to detect fraudulent returns filed using prisoners' social security numbers .
+
+to do this , irs is working to load updated prisoner data into rrp more frequently and developing additional business rules .
+
+the treasury inspector general for tax administration ( tigta ) has reported that refund fraud associated with prisoner social security numbers is a significant problem for tax administration , accounting for irs's issuance of potentially fraudulent refunds worth tens of millions of dollars in 2015 .
+
+based on our prior work , we found that there may be additional opportunities for irs to enhance rrp by improving data made available to it: making w - 2 information available more frequently .
+
+in january 2018 , we reported that irs's ability to verify information on tax returns early in the filing season was affected by limitations with its it systems .
+
+irs receives and maintains information return data , including w - 2 and 1099-misc forms , through the information return master file ( irmf ) system .
+
+irmf then makes the data available to rrp for systemic verification , the automated process that uses w - 2s to verify that taxpayers accurately reported their income and other information on their tax returns .
+
+irs receives the w - 2 data from the social security administration daily — up to 25 million w - 2s per day — but only loads the data into irmf and rrp weekly .
+
+according to irs , to add new information returns to irmf , irs staff need to reload all existing information at the same time .
+
+as employers and financial institutions send more documents to irs during the filing season , reloading irmf can take 3 days or more because updates take more time as irmf's file increases in size , ultimately containing billions of information returns .
+
+irs officials told us that having w - 2s available for analysis sooner would benefit rrp detection and selection of fraudulent returns .
+
+in addition , matching w - 2 information can also provide sufficient assurance of a valid return , even if characteristics of the return might otherwise raise suspicion .
+
+according to our analysis of rrp data for the 2017 filing season , matching available w - 2s resulted in rrp excluding 367,027 electronically filed returns that rrp otherwise would have selected as suspicious .
+
+having w - 2 information loaded more frequently and available for rrp's systemic verification helps irs improve its use of limited enforcement resources by more accurately identifying fraudulent returns and excluding legitimate returns .
+
+as of april 2018 , irs officials had drafted but not yet approved a work request to send irmf data to rrp daily between january and march during the 2019 filing season .
+
+in preparing the draft request , irs officials told us they are assessing how frequently the agency can efficiently load data into irmf as the filing season progresses .
+
+federal standards for internal control require federal managers to analyze and address risks to agency objectives .
+
+as noted previously , risks include not only threats but also opportunities .
+
+leading practices in fraud risk management further state that managers should take into account external risks that can impact the effectiveness of fraud prevention efforts .
+
+until irs makes incoming employer w - 2s available to rrp more frequently , irs will not address an opportunity to expand the use of rrp's systemic verification process to more accurately detect and select invalid refund returns for additional action .
+
+making more information available electronically from returns filed on paper .
+
+rrp's analytic techniques could be strengthened if the program had electronic access to additional information from filers of paper returns .
+
+while about 90 percent of individual taxpayers file their returns electronically , over 19 million taxpayers filed on paper in 2017 .
+
+to control costs , irs transcribes a limited amount of information provided by paper filers into its computer databases .
+
+this practice limits the amount of information readily available for enforcement and other tax administration activities that rely on digitized information .
+
+we also reported that according to irs officials , digitizing and posting more comprehensive information provided by paper filers could facilitate enforcement efforts , expedite contacts for faster resolution , reduce handling costs , and increase compliance revenue .
+
+in october 2011 we found that irs considered a number of options to make more information from paper returns available electronically , including increasing manual transcription , optical character recognition technology , and barcoding technology .
+
+an optical character recognition system would read text directly from all paper returns using optical scanners and recognition software and convert the text to digital data .
+
+a 2-d bar code is a black and white grid that encodes tax return data allowing irs to scan the bar code to digitize and import the data into irs's systems , such as rrp .
+
+we recommended in 2011 that irs determine whether and to what extent the benefits of barcoding would outweigh the costs .
+
+in response to our recommendations , in 2012 irs updated an earlier evaluation of implementing barcoding technology for paper returns .
+
+the agency estimated that implementing and using barcoding technology over a 10-year period from fiscal years 2015 to 2025 would yield about $109 million in benefits , compared to about $13 million in costs — a substantial return on investment .
+
+irs estimated benefits based on anticipated reductions in staff hours dedicated to the coding , editing , transcription , and error resolution functions of paper return processing .
+
+however , because of statutory limitations , a legislative change is necessary to require individuals , estates , and trusts to print their federal income tax returns with a scannable bar code .
+
+in each of its congressional justifications for fiscal years 2012 to 2016 , irs requested that congress require returns prepared electronically but filed on paper include a scannable code printed on the return .
+
+the national taxpayer advocate made a similar legislative proposal in 2017 .
+
+as of june 2018 , congress had not taken action on the proposal .
+
+in addition to barcoding , there are other technologies irs could use to digitize more information from paper returns to further improve tax administration and enforcement activities .
+
+however , as of june 2018 , irs had not taken any additional steps to further evaluate the costs and benefits of digitizing individual return information , taking into consideration new technology or additional benefits associated with rrp's enhanced enforcement capabilities .
+
+irs's strategic plan identifies expanding the agency's use of digitized information as a key activity toward its goal to increase the efficiency and effectiveness of irs operations .
+
+updating and expanding its 2012 analysis of the costs and benefits of digitizing returns to consider any new technology or additional benefit to rrp would provide irs managers and congress with valuable information to implement the most cost - effective options for making additional , digitized information available for enforcing and administering taxes .
+
+this information could help irs make progress toward its mission by improving rrp's detection and selection of suspicious returns .
+
+in addition , greater efficiency in the paper return transcription process could free additional resources for enforcement and administration activities .
+
+irs has not yet evaluated the costs and benefits of expanding rrp to improve other tax enforcement activities , such as compliance checks or audits , for returns not claiming refunds .
+
+all individual returns ( forms 1040 ) are loaded into rrp as part of return processing .
+
+however , rrp is used to prevent irs from paying invalid refunds as part of irs's pre - refund enforcement activities and , therefore , according to irs officials , rrp has been limited to detecting and selecting individual returns claiming refunds .
+
+currently , irs does not use rrp to support other enforcement activities that detect misreporting or noncompliance on individual tax returns not claiming refunds , which also contribute to the tax gap — the difference between taxes owed and what are paid on time .
+
+underreporting of income represents the majority of the tax gap , with the average annual underreporting of individual income tax on both refund and non - refund returns for tax years 2008 to 2010 estimated by irs to be about $264 billion or 57 percent of the total gross tax gap of $458 billion .
+
+given the large amount of revenue lost each year due to underreporting , it is important that irs consider opportunities to improve its enforcement efforts and promote compliance .
+
+irs's enforcement of tax laws helps fund the u.s. government by collecting revenue from noncompliant taxpayers and , perhaps more importantly , promoting voluntary compliance by giving taxpayers confidence that others are paying their fair share .
+
+according to irs officials , rrp has benefited irs's pre - refund enforcement activities by enhancing detection of idt and other refund fraud , providing more cost - effective treatment , and enhancing data analytics for improved enforcement .
+
+based on this review of rrp's capabilities and our prior work on tax enforcement and administration , we identified a number of activities and processes that could be improved and enhanced if irs expanded rrp to analyze returns not claiming refunds , in addition to returns with refunds .
+
+for example: enhanced detection and selection of potential noncompliance .
+
+irs reported that rrp significantly enhanced its detection of idt and other refund fraud over prior systems .
+
+in january 2018 we recommended — and irs outlined planned actions — that irs assess the benefits and costs of additional uses and applications of w - 2 data for pre - refund compliance checks , such as underreporting , employment fraud , and other noncompliance .
+
+underreporting occurs when a taxpayer underreports income or claims unwarranted deductions or tax credits .
+
+as previously noted , underreporting accounts for the largest portion of the tax gap .
+
+to detect underreporting by individuals , after the filing season and after refunds have been issued , irs uses its automated underreporter ( aur ) program to electronically match income information reported to irs by third parties , such as banks and employers , against information that taxpayers report on their tax returns .
+
+during our review , we found that this process of matching income information is similar to rrp's pre - refund systemic verification process that occurs during return processing , but only applies to returns claiming refunds .
+
+irs should consider expanding rrp's capabilities to use rrp as a platform to perform aur matching on all individual returns during return processing and post - processing , as more information returns are available for matching .
+
+in may 2018 , irs officials told us that , in response to our january 2018 recommendation , irs is assessing the possibility of using rrp to perform some aur checks .
+
+however , until irs expands rrp to analyze returns not claiming refunds , these compliance checks will not cover all potential underreporting .
+
+during this review of rrp , we also found that irs could implement predictive models of noncompliance in rrp to select returns for audits .
+
+audits are an important enforcement tool for irs to identify noncompliance in reporting tax obligations and to enhance voluntary reporting compliance .
+
+irs's small business and self - employed ( sb / se ) division conducts audits of individual taxpayers after the return has been processed .
+
+sb / se staff review the returns identified for potential audit by various processes .
+
+one of these audit selection processes is a computer algorithm — discriminant function ( dif ) — that uses models to score all individual returns ( with and without refunds ) for their likelihood of noncompliance , an indicator of their audit potential .
+
+the dif models are developed from a unique data set and include variables irs has found to be effective in predicting the likelihood that a return would have a significant tax change if audited .
+
+the additional information available in rrp , such as taxpayer history , has the potential to improve the dif models and therefore the dif scoring .
+
+irs officials told us that they plan to examine opportunities to use rrp for some sb / se audit selection processes , such as incorporating dif scoring into rrp .
+
+however , as of april 2018 irs had not taken any action .
+
+more efficient and effective treatment of potentially noncompliant returns .
+
+irs reported that rrp automated and streamlined many of irs's selection and treatment processes for preventing the issuance of invalid refunds .
+
+using rrp to improve irs's detection and selection of potentially noncompliant returns during return processing could lead irs to consider treatment options , such as soft notices , that engage taxpayers earlier , to help irs and taxpayers resolve issues more quickly .
+
+a soft notice does not always require a response from the taxpayer ; instead , it provides information about a potential error and asks taxpayers to review their records .
+
+consequently , soft notices can be more efficient than other treatments , such as telephone calls or in - person interactions .
+
+this treatment option is consistent with irs's strategic objective to reduce the time between filing and resolution of compliance issues .
+
+one strategy irs highlights to achieve this objective is to review and refine irs's risk - based systems , like rrp , to detect potential issues early .
+
+currently , irs's enforcement activities , including sb / se audits and aur , occur after the return has been processed and the filing season ends .
+
+for example , aur begins matching information returns to individual tax returns in july after the filing season has ended , and according to tigta , routinely identifies more than 20 million individual tax returns with discrepancies each year .
+
+in 2013 we reported that irs took on average , over 1 year — 2 years in some cases — to notify taxpayers about discrepancies .
+
+these delays are a challenge for irs and the taxpayer .
+
+for example , when additional tax is owed , as time passes taxpayers may be less likely , or less able , to pay the original debt owed and any associated penalties that may have accrued since the time of filing .
+
+taxpayers may also be less likely to have the relevant tax records needed to respond to irs questions .
+
+notifying taxpayers earlier of a potential error could help bring them into compliance more effectively than other enforcement options .
+
+we found that irs could also expand rrp's capabilities to use rrp to identify and generate soft notices for taxpayers that do not pay taxes owed at the time of return processing .
+
+irs does not contact electronic filers with an unpaid tax balance until mid - may , weeks after the april payment deadline .
+
+this treatment option could help irs collect taxes owed and also help taxpayers by making them aware of payment options earlier and allowing them to avoid interest and penalties .
+
+irs officials agreed that it is more likely to recover any debt owed if the taxpayer is notified earlier .
+
+enhanced data analytics for improved enforcement .
+
+just as irs is using rrp data and reporting capabilities to better target resources for enforcement activities associated with refund returns , we found that irs could increase its access to useful data if it expanded rrp to analyze returns not claiming refunds .
+
+for example , using rrp's enhanced data analytics , including access to multiple data sources , irs could better identify characteristics of other types of noncompliance to improve detection and enforcement .
+
+this approach is consistent with irs's strategic goal to advance data analytics to inform decision making and improve operational outcomes .
+
+officials from irs's office of research , applied analytics , and statistics told us that rrp is a valuable data source for research on idt and other refund fraud .
+
+however , until irs expands rrp to analyze and score individual returns not claiming refunds , irs will be limited in its ability to use rrp's data analytics to help irs address other types of noncompliance and fraud .
+
+evaluating the costs and benefits of expanding rrp to analyze individual returns not claiming refunds to support other tax enforcement activities is consistent with the goals and objectives outlined in irs's strategic plan to encourage compliance through tax administration and enforcement and increase operational efficiency and effectiveness .
+
+irs has identified and implemented opportunities to expand rrp to better detect idt and other refund fraud in individual and business returns .
+
+however , until irs evaluates the costs and benefits of expanding rrp to support other enforcement activities , irs may be missing opportunities to realize operational efficiencies by streamlining the detection and treatment of other types of noncompliance and fraud .
+
+additionally , irs may be missing an opportunity to promote voluntary compliance with tax laws and make progress toward closing the estimated $458 billion average annual gross tax gap .
+
+noncompliance , including tax fraud , has been a long - standing challenge for irs .
+
+more recently , idt refund fraud has emerged as a costly and evolving threat to taxpayers and the tax system .
+
+as part of irs's effort to strategically address these challenges , rrp provides opportunities for irs to operate more efficiently , increase taxpayer compliance , and combat refund fraud .
+
+irs has plans to continue developing and enhancing rrp , including analyzing business returns for fraud .
+
+however , irs has not fully examined opportunities to improve the availability of information that rrp's analytic tools rely on .
+
+these opportunities include examining the costs and benefits of making more information from paper returns available electronically and making w - 2 information available to rrp for income verification more frequently .
+
+until irs conducts such analyses , the agency will be missing opportunities to improve rrp's detection and accuracy and prevent paying invalid refunds .
+
+these evaluations can also inform congress's decisions on requiring scannable codes on some printed tax returns , as well as issues we highlighted in our previous work , including lowering the e - file threshold for employers filing w - 2s and expanding irs's correctible error authority .
+
+congressional action on these issues would help irs better leverage rrp's capabilities .
+
+further , rrp has the potential to improve tax enforcement in other areas such as underreporting and audit selection if irs can successfully expand rrp's detection and selection capabilities to analyze individual tax returns , including those not claiming refunds , for fraud and noncompliance .
+
+earlier detection of anomalies and notification can increase compliance and collection rates .
+
+congress should consider legislation to require that returns prepared electronically but filed on paper include a scannable code printed on the return .
+
+ ( matter for consideration 1 ) .
+
+we are making the following five recommendations to irs .
+
+the commissioner of internal revenue should increase the frequency at which incoming w - 2 information is made available to rrp .
+
+ ( recommendation 1 ) the commissioner of internal revenue should update and expand a 2012 analysis of the costs and benefits of digitizing returns filed on paper to consider any new technology or additional benefits associated with rrp's enhanced enforcement capabilities .
+
+ ( recommendation 2 ) based on the assessment in recommendation 2 , the commissioner of internal revenue should implement the most cost - effective method to digitize information provided by taxpayers who file returns on paper .
+
+ ( recommendation 3 ) the commissioner of internal revenue should evaluate the costs and benefits of expanding rrp to analyze individual returns not claiming refunds to support other enforcement activities .
+
+ ( recommendation 4 ) based on the assessment in recommendation 4 , the commissioner of internal revenue should expand rrp to support identified activities .
+
+ ( recommendation 5 ) .
+
+we provided a draft of this report to the commissioner of internal revenue for review and comment .
+
+in its written comments , which are summarized below and reprinted in appendix ii , irs agreed with our five recommendations stating that it is taking action to address them and will provide a more detailed corrective action plan .
+
+irs agreed with our recommendations aimed at improving information available to rrp to enhance detection of fraudulent returns .
+
+irs stated that it is evaluating the frequency at which w - 2 data is made available to rrp and options for digitizing returns filed on paper .
+
+irs further noted that it is evaluating other associated information provided to rrp for detection .
+
+as stated earlier , efforts to improve rrp's detection and accuracy will protect additional federal revenue .
+
+irs agreed with our recommendations to evaluate options for expanding rrp to improve tax enforcement and compliance .
+
+irs stated that its objective is to make rrp the primary detection system for pre - and post - refund processing across the agency .
+
+irs stated that to expand rrp to analyze returns not claiming refunds , a legislative change requiring all information returns to be filed electronically will be necessary to achieve maximum benefit from rrp .
+
+in this report , we highlight legislative issues from our prior work , including lowering the e - file threshold for employers filing w - 2s and expanding irs's correctible error authority , to help irs better leverage rrp's capabilities .
+
+however , we are confident that even under current conditions , irs could use rrp to further improve compliance and its enforcement efforts .
+
+for example , with the current electronic filing requirements , rrp could help irs detect and resolve individual underreporting earlier in the process .
+
+irs stated its intention to collaborate with gao and other organizations to determine appropriate actions after assessing the results of its analyses .
+
+as agreed with your office , unless you publicly announce the contents of this report earlier , we plan no further distribution until 30 days from the report date .
+
+at that time , we will send copies of this report to the appropriate congressional committees , the commissioner of internal revenue , and other interested parties .
+
+in addition , the report will be available at no charge on the gao website at http: / / www.gao.gov .
+
+if you or your staff have any questions about this report , please contact me at ( 202 ) 512- 9110 or mctiguej@gao.gov .
+
+contact points for our offices of congressional relations and public affairs are on the last page of this report .
+
+gao staff who made key contributions to this report are listed in appendix iii .
+
+the return review program ( rrp ) is one of the internal revenue service's ( irs ) major information technology investments .
+
+irs began developing rrp in 2009 to improve its ability to detect fraudulent returns .
+
+in october 2016 , rrp replaced irs's legacy system , the electronic fraud detection system ( efds ) as irs's primary fraud detection system .
+
+irs originally planned for rrp to be operating by 2014 because irs had determined that by 2015 efds would not be reliable .
+
+however , in 2014 , irs paused rrp's development to reconsider rrp's capabilities within irs's strategic fraud detection goals .
+
+the year - long pause delayed efds replacement and retirement until 2016 .
+
+rrp operated as irs's primary system for detecting identity theft and other refund fraud beginning with the 2017 filing season .
+
+figure 5 is a timeline of irs's development of rrp .
+
+in addition to the contact named above , neil pinney ( assistant director ) , margaret m. adams ( analyst - in - charge ) , michael bechetti , mark canter , pamela davidson , robert gebhart , james a. howard , jesse t. jordan , paul middleton , sabine paul , j. daniel paulk , and bradley roach , made significant contributions to this report .
+

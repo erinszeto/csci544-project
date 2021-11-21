@@ -1,0 +1,1000 @@
+the u.s. food and drug administration ( fda ) , an agency within the department of health and human services ( hhs ) , is tasked with ensuring the safety , effectiveness , and quality of products that account for , according to fda , about 20 cents of every dollar spent by americans each year .
+
+these products include human and animal drugs , 80 percent of the food supply , biological products , medical devices , cosmetics , and radiation - emitting products .
+
+its responsibilities include helping to speed innovations that make foods safer and medicines and medical devices safer and more effective ; ensuring that the public has accurate , science - based information about medicines and devices to improve their health ; regulating the manufacture , marketing , and distribution of tobacco products and reducing their use by minors ; and supporting the nation's counterterrorism capability and ensuring the security of the supply of food and medical products .
+
+in carrying out its mission , fda relies on its information systems to conduct operations , process transactions , deliver services to constituents , and communicate with individuals and organizations .
+
+the agency collects , processes , and maintains highly sensitive information , including personally identifiable information , trade secrets , and confidential commercial information .
+
+one example of this type of information is proprietary business information used in approving drugs for market .
+
+significant harm to fda's reputation and economic damage to regulated industries could result if this information is not adequately protected against cyber threats .
+
+given the critical role that the fda performs and concerns over information security of federal systems , you requested that we examine security controls over key fda systems .
+
+our specific objective was to determine the extent to which fda has effectively implemented information security controls to protect the confidentiality , integrity , and availability of its information on selected information systems .
+
+to accomplish this objective , we observed and examined computer security controls over fda's network infrastructure and systems key to fda's mission .
+
+specifically , we selected a non - generalizable sample of seven systems for review that ( 1 ) receive , transmit , and / or process sensitive drug information ; ( 2 ) are essential to fda's mission , support its business processes , and contain or process sensitive proprietary business information ; and ( 3 ) were assigned a federal information processing standard rating of moderate or high impact .
+
+we also examined fda's information security policies , plans , and procedures ; reviewed testing of controls over key applications ; interviewed agency officials ; and reviewed fda inspector general reports to identify previously reported weaknesses .
+
+more details on our scope and methodology are provided in appendix i .
+
+we conducted this performance audit from february 2015 to august 2016 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+information security is a critical consideration for any agency that depends on information systems and computer networks to carry out its mission and is especially important for a federal agency such as fda , which collects , processes , and stores sensitive information on drugs and other products pending approval ; the safety of food , drug , and medical products ; and scientific research to inform regulatory decisions .
+
+while the use of interconnected electronic information systems allows the agency to accomplish its mission more quickly and effectively , this also exposes fda's information to threats from sources internal and external to the agency .
+
+internal threats can include errors , as well as fraudulent or malevolent acts by employees or contractors working within the agency .
+
+external threats include the ever - growing number of cyber - based attacks that can come from a variety of sources , including hackers , criminals , foreign nations , terrorists , and other adversarial groups .
+
+potential cyber attackers have a variety of techniques at their disposal , which can vastly enhance the reach and impact of their actions .
+
+for example , these attackers do not need to be physically close to their targets , their attacks can easily cross state and national borders , and they can more readily preserve their anonymity .
+
+additionally , advanced persistent threats — where an adversary that possesses sophisticated levels of expertise and significant resources can use physical and cyber methods to achieve its objectives — pose increasing risks .
+
+further , the interconnectivity among information systems presents increasing opportunities for such attacks .
+
+this risk is highlighted by the rising number of reported security incidents at federal agencies .
+
+specifically , the number of incidents reported by federal agencies to the united states computer emergency readiness team ( us - cert ) has increased dramatically in recent years .
+
+it rose from 5,503 in fiscal year 2006 to 77,183 in fiscal year 2015 .
+
+compounding the growing number and types of threats are the deficiencies in security controls on the information systems at federal agencies .
+
+these weaknesses have resulted in vulnerabilities in systems and information and continue to place assets at risk of inadvertent or deliberate misuse ; information at risk of unauthorized access , modification , or destruction ; and critical operations at risk of disruption .
+
+accordingly , we have designated federal information security as a government - wide high - risk area since 1997 , and in 2003 expanded this area to include computerized systems supporting the nation's critical infrastructure .
+
+in february 2015 , we further expanded this area to include protecting the privacy of personal information that is collected , maintained , and shared by both federal and nonfederal entities .
+
+in september 2015 , we reported that more than half of the 24 major federal agencies continued to experience weakness in the controls intended to preserve confidentiality — preventing unauthorized access to information and systems ; integrity — preventing unauthorized modification or destruction of information , including access and configuration controls ; and availability — ensuring timely and reliable access to and use of information when needed , such as contingency planning controls .
+
+to improve federal information security , the federal information security modernization act ( fisma ) was enacted in 2014 .
+
+the law is intended to address the increasing sophistication of cybersecurity attacks , promote the use of automated security tools with the ability to continuously monitor and diagnose the security posture of federal agencies , and provide for improved oversight of federal agencies' information security programs .
+
+fisma provides a comprehensive framework for ensuring the effectiveness of information security controls over information resources that support federal operations and assets .
+
+among other things , fisma requires federal agencies to develop , document , and implement an agency - wide information security program .
+
+agencies are to carry this out using a risk - based approach to information security management .
+
+such a program includes developing and implementing cost - effective security policies , plans , and procedures ; assessing risk ; providing specialized training ; testing and evaluating the effectiveness of controls ; planning , implementing , evaluating , and documenting remedial actions to address information security deficiencies ; and ensuring continuity of operations .
+
+fisma also gives the national institute of standards and technology ( nist ) responsibility for developing standards and guidelines that include minimum information security requirements .
+
+to this end , nist has issued numerous publications to provide guidance for agencies in implementing an information security program .
+
+these include , among others , the nist federal information processing standard ( fips ) 199 , which provides requirements for agencies to categorize their systems and information , and nist special publication ( sp ) 800-53 , which provides guidance on the selection and implementation of information security and privacy controls for systems .
+
+fda is a consumer protection agency with broad regulatory authority charged with protecting public health by ensuring the safety , effectiveness , and security of human veterinary drugs , biological products , and medical devices ; ensuring the safety of foods , cosmetics , and radiation - emitting products ; and regulating tobacco products .
+
+fda's mission includes helping to speed innovations that make foods safer and medicines and medical devices safer and more effective ; ensuring members of the public have accurate , science - based information they need to use medicines , devices , and foods to improve their health ; regulating the manufacture , marketing , and distribution of tobacco products and reducing tobacco use by minors ; and addressing the nation's counterterrorism capability by ensuring the security of the supply of foods and medical products .
+
+fda performs regulatory activities that include reviewing and approving new drugs and certain medical products ; inspecting manufacturing facilities for compliance with regulations and good manufacturing practices ; and conducting post - market surveillance of food , drug , and medical products to ensure they are safe ; tracking and identifying the source of outbreaks of foodborne illnesses ; and issuing recall notices and safety alerts for products that threaten the public health .
+
+according to fda , its fiscal year 2015 appropriation was $4.5 billion .
+
+the agency is headed by a commissioner and is staffed by more than 14,000 employees across the united states and around the world .
+
+fda consists of its office of the commissioner and four directorates that oversee the agency's core functions .
+
+these directorates are the office of foods and veterinary medicine , office of global regulatory operations and policy , office of medical products and tobacco , and office of operations .
+
+within these directorates are offices and centers that focus on core parts of the agency's mission .
+
+examples of these offices and centers are shown in table 1 .
+
+fda relies extensively on it to fulfill its mission and support related administrative needs .
+
+among the more than 80 systems reported in its fisma inventory , the agency has systems dedicated to supporting its product review and evaluation activities , regulatory compliance functions , and product safety monitoring activities , as well as systems to support administrative processes .
+
+all of these systems are supported by an it infrastructure that includes network components , critical servers , and data centers .
+
+in fiscal year 2015 , the agency reported spending $585 million on it , of which approximately $12 million ( or about 2 percent of the it budget ) was for information security .
+
+this percentage is lower than the approximately 8 percent of their fiscal year 2015 it spending that the 23 civilian agencies covered by the chief financial officers act reportedly spent on information security .
+
+for fiscal year 2016 , fda requested $640 million for it and $16 million for information security .
+
+in addition , fda indicated that real - time connectivity and access to data and information is essential for its daily operations , as well as its interactions with the public and other partners .
+
+these factors depend on high - quality , high - availability , and high - performing data networks , server and application infrastructure , communications services , simple and complex computer applications , mobile workforce capabilities , and rapid and responsive service delivery .
+
+examples of the processing activities that key fda systems perform in supporting of the agency's mission are listed below: support and facilitate post - market product safety surveillance of human drugs , biologics , devices , and combination products .
+
+provide a data repository for collecting , storing , viewing , analyzing , reporting , and tracking the receipt of adverse event data or medication errors .
+
+establish a single gateway or communications portal for accepting electronic submissions or allowing authorized users to view or obtain information .
+
+examples of electronic submissions include industry - provided trade secrets , adverse event records , and a multitude of different records related to fda's regulatory oversight of regulated products .
+
+provide capabilities for regulatory scientific research , while also supporting fda's overall goals and objectives in areas where information technology requires supercomputer - strength computational power .
+
+support fda's research and development activities .
+
+provide a platform through which fda organizations may disseminate fda - related information to interested parties , including the public , health professionals , regulated industries , and the media .
+
+provide information about the various product areas that fda regulates ( food , drugs , medical devices , cosmetics , etc .
+
+ ) , timely advisories ( eg , anticipated disease outbreaks such as the severe acute respiratory syndrome ( sars ) , buying medicines online , and lasik surgery ) , and other fda activities .
+
+provide links to related reference materials and opportunities for consumers and industry to interact with the fda .
+
+provide basic network and security capabilities for the fda enterprise .
+
+facilitate receipt and review of electronic drug applications .
+
+this function includes scans and checks of the validity of drug submissions from industry and making them available for reviewers , as well as providing file shares for storing successful submissions that are to be reviewed .
+
+in addition , fda contractors support data centers and systems that provide , among other things , the network infrastructure for the agency's systems and its public website .
+
+the information handled by these systems includes sensitive or confidential business information on drug submissions and adverse event reports , among other types of information .
+
+accordingly , effective implementation of security controls is necessary to protecting the confidentiality , integrity , and availability of fda's information and in preventing the occurrence or lowering the risks of security breaches similar to one the agency experienced in 2013 .
+
+during that breach , an intruder gained unauthorized access to one fda system's user accounts and passwords .
+
+effective controls can help ensure only authorized users ( people and processes ) access information and systems to lessen the chances of unauthorized disclosures of information , improper changes or modifications to fda's information and systems , and system disruptions that could hamper the agency's ability to perform its mission .
+
+to improve the management of fda's information systems security and operations , the agency , in fiscal year 2015 , consolidated its network and security operations centers to reorganize the systems management center ( smc ) .
+
+according to fda , the smc is the central command and control center and is intended to help establish real - time network awareness to forecast , detect , alert , and report events such as security incidents and facilitate the coordination requirements of its office of information management and technology .
+
+in addition , the agency reported that it established a cybersecurity task force to address short - and long - term concerns with protecting its network boundaries .
+
+under fisma , the commissioner of fda is responsible for ensuring the confidentiality , integrity , and availability of the information and systems that support the agency and its operations .
+
+fisma also requires that the agency head delegate to the chief information officer ( cio ) the overall responsibility for management of the agency's it security program .
+
+at fda , the cio is responsible for evaluating the overall mission requirements for an it system or application and ensuring that it complies with fda it security policies , guidelines , and standards .
+
+the cio is also responsible for , among other things , ensuring effective implementation of fda's it security policy ; formally appointing a chief information security officer ( ciso ) and ensuring that individual complies with fda's it security regulations and guidelines ; ensuring that it security is included in management planning , programming budgets , and the it capital planning process ; and ensuring that annual security reviews are conducted to include annual review and update of security policies and reporting of it systems to the office of management and budget ( omb ) .
+
+in addition , fda's it security program is headed by the agency's ciso , who is responsible for ensuring that adequate and appropriate controls are applied to fda systems for the protection of privacy , and to ensure confidentiality , integrity , and availability , of information .
+
+the ciso is to employ security policies and standards for fda information systems enterprise - wide in accordance with fda , hhs , omb , nist , and other federal security requirements .
+
+the ciso also provides guidance on it system security matters to the information systems security officers ( isso ) in the center / office they support .
+
+at fda , issos are responsible for ensuring the implementation of adequate system security for each system supporting a particular center or office .
+
+every center or office system is to have an isso assigned as the point of contact for security .
+
+among other things , fda issos' responsibilities include ( 1 ) ensuring that fda systems are operated , used , maintained , and disposed of in accordance with fda's security policies and procedures ; ( 2 ) ensuring system security plans are completed and maintained ; ( 3 ) assisting with system authorization ; ( 4 ) responding to and reporting security incidents ; ( 5 ) promoting security awareness ; and ( 6 ) ensuring media handling procedures are followed .
+
+fda has taken steps to safeguard its systems that receive , process , and maintain sensitive data by , for example , implementing policies and procedures for controlling access to and securely configuring those systems .
+
+however , a significant number of weaknesses remain in technical controls — including access controls , change controls , and patch management — that jeopardize the confidentiality , integrity , and availability of its systems .
+
+an underlying reason for these weaknesses is that fda had not yet fully implemented an agency - wide information security program to provide reasonable assurance that controls were operating effectively .
+
+these shortcomings put fda systems at increased and unnecessary risk of unauthorized access , use , or modification that could disrupt its operations .
+
+to its credit , fda , during the course of our work , immediately resolved some of the weaknesses identified and provided information on its proposed actions to address the underlying weaknesses in controls .
+
+access controls are designed and implemented to provide reasonable assurance that an agency's computerized information is reliable .
+
+both logical and physical access controls are intended to prevent , limit , and detect unauthorized access to computing resources , programs , information , and facilities .
+
+access controls include those related to ( 1 ) protection of system boundaries , ( 2 ) identification and authentication of users , ( 3 ) authorization of access permissions , ( 4 ) encryption of sensitive information , ( 5 ) audit and monitoring of system activity , and ( 6 ) physical security of facilities .
+
+as shown in table 2 , weaknesses existed in each of these areas for the systems we reviewed .
+
+in a separate report with limited distribution , we describe these weaknesses in more detail , along with associated recommendations .
+
+inadequate design or implementation of access controls increases the risk of unauthorized disclosure , modification , and destruction of sensitive information and disruption of service .
+
+boundary protection controls logical connectivity into and out of networks and controls connectivity to and from devices connected to the network .
+
+for example , multiple firewalls can be deployed to prevent both outsiders and trusted insiders from gaining unauthorized access to systems , and intrusion detection technologies can be deployed to defend against attacks from the internet .
+
+unnecessary connectivity to an organization's network increases not only the number of access paths that must be managed and the complexity of the task , but also the risk of unauthorized access in a shared environment .
+
+nist recommends that agencies implement subnetworks to separate publicly accessible system components from their internal networks .
+
+nist also states that agencies should provide adequate protection for networks and employ information control policies and enforcement mechanisms to control the flow of information between designated sources and destinations within information systems .
+
+similarly , nist recommends that organizations monitor and control communications at information systems' external boundaries and at key internal boundaries within a system .
+
+fda did not always adequately ensure that its network boundaries were sufficiently segregated .
+
+for example , the contractor supporting the agency's public - facing website did not isolate the agency's network from its own network and that of its other customers , which included non - fda customers .
+
+in addition , the contractor did not configure firewall rules to restrict access into fda's internal network .
+
+in another example , fda did not sufficiently restrict inbound connections from one of its untrusted networks and isolate that network from its internal network .
+
+the network was untrusted because the agency had not developed and implemented risk management controls for the system .
+
+as a result , it poses increased risks to other agency systems .
+
+further , as illustrated in the following examples , fda did not always implement other boundary controls .
+
+network devices at the agency's field locations were not properly configured and allowed all remote access protocols , such as the unsecure telnet protocol .
+
+routers at certain international locations were not configured to restrict inbound management traffic from untrusted sites .
+
+host - based firewalls for four key systems and some workstations were not effectively configured to permit only necessary traffic and provide protection from malicious activity .
+
+as a result , sensitive public health , proprietary business , and personal information maintained by the agency were at increased risk of compromise due to inadequate separation of the service provider's network from fda's network , inadequate separation of the untrusted network from the agency's network , and weaknesses in other boundary controls .
+
+a computer system must be able to identify and authenticate different users so that activities on the system can be linked to a specific individual .
+
+when an organization assigns a unique user account to a specific user , the system is able to distinguish that user from another — a process called identification .
+
+the system must also establish the validity of a user's claimed identity by requesting some kind of information , such as a password , that is known only by the user — a process known as authentication .
+
+the combination of identification and authentication — such as a user account / password combination — provides the basis for establishing individual accountability and for controlling access to the system .
+
+nist sp 800-53 recommends that password management controls should be established for information systems that include minimum password complexity requirements , password lifetime restrictions , prohibitions on password reuse , and user accounts to be temporarily locked out after a certain number of failed login attempts during a specified period of time .
+
+further , fda password policy outlines requirements consistent with this guidance .
+
+nist also states that agencies can satisfy certain identification and authentication requirements by complying with the requirements in homeland security presidential directive 12 and using multifactor authentication such as personal identity verification cards .
+
+multifactor authentication requires the use of two or more different factors to achieve authentication .
+
+the factors are defined as something you know ( eg , a password or a personal identification number ) ; something you have ( eg , cryptographic identification device or token ) ; or something you are ( eg , biometric ) .
+
+fda implemented personal identity verification cards for multifactor authentication ; however , the agency did not always implement strong password controls in accordance with its security policies and nist guidance on five of the seven systems we reviewed .
+
+for example , three local accounts on a database server which contained certificates used to encrypt industry partner submission packages had passwords that had not been changed in more than 5 years .
+
+in addition , several service accounts for servers with access to sensitive industry partner regulatory submissions had passwords set to never expire .
+
+further , a windows administrator's non - privileged account was unnecessarily elevated to a privileged account by being part of an administrators group .
+
+these accounts are used to administer users' logical access inside fda mission - critical systems that process confidential business information or trade secrets such as that for drug submissions and adverse event reporting .
+
+in another example , the password to a service account for synchronizing user passwords was set to never expire and had not been changed in the last 6 years .
+
+in addition , fda did not always implement password controls on certain network devices .
+
+for example , password management settings were set to default values on two network devices that delivered web applications to fda users .
+
+these default settings were for local accounts , including web administrator and root accounts , and included minimum password lengths set to six characters , with no requirements for password complexity , maximum password lifetime days , password history , and invalid attempts .
+
+in another example , a user account password for a network management server that monitors and maintains a history of network devices' hardware and software changes had not been changed since january 6 , 2011 .
+
+without implementing strong password requirements , increased risk exists that passwords could be guessed , permitting unauthorized access to fda systems .
+
+authorization is the process of granting or denying access rights and permissions to a protected resource , such as a network , a system , an application , a function , or a file .
+
+for example , operating systems have built - in authorization features such as permissions for files and folders .
+
+network devices , such as routers , have access control lists that can be used to authorize a user who can access and perform certain actions on the device .
+
+a key component of granting or denying access rights is the concept of “least privilege.” least privilege is a basic principle for securing computer resources and information .
+
+this principle means that a user is granted only those access rights and permissions needed to perform official duties .
+
+to improve authorization controls , the federal cio instructed agencies , as part of the cybersecurity sprint , to tighten policies and practices of privileged users .
+
+these steps included , for example , minimizing the number of privileged users and limiting functions that can be performed when using privileged accounts .
+
+to avoid unintentionally authorizing user access to sensitive files and directories , an agency must give careful consideration to its assignment of rights and permissions .
+
+nist special publication 800-53 recommends that agencies should grant user accounts only those privileges required for the users to perform their job functions .
+
+additionally , fda policy states that access to sensitive information must be restricted and based on the concept of need - to - know .
+
+although fda has developed and documented access control requirements based on least privilege and need - to - know principles , users were granted excessive permissions that were not needed for their official duties .
+
+these permissions enabled administrators and users who did not need such permissions with the authority to read , and in some cases , write and modify submissions that could contain sensitive or confidential business information on drug submissions or adverse event reporting , as illustrated below .
+
+forty - nine administrators and users with access to 392 production servers had , by default , unnecessary access to file shares containing industry submissions on adverse events .
+
+a group account allowed 753 users unneeded access to adverse event data submissions .
+
+ninety - two desktop users , via a group account , had unauthenticated access to one key system's file shares .
+
+4,534 users , which included regulatory reviewers and project managers , had uncontrolled “read access” to file shares on the system that handles sensitive regulatory drug and biologic product submissions .
+
+according to fda , the high number of users with access was necessary due to the high volume of regulatory submissions reviewed daily , which regularly exceeds 1,500 per day , and because staff must often access multiple sponsor submissions in order to complete their regulatory review in a timely manner .
+
+however , for the data we reviewed , only about 2,400 users per month accessed these files , compared with the 4,534 users who were granted access .
+
+moreover , fda did not restrict access to privileged users groups by , for example , differentiating high - valued submission assets from low - valued ones , even though the system stored highly sensitive industry trade secret information .
+
+in addition , for this same system , fda allowed 39 users in the administration group and 104 users in the staff group to have read , write , and modify privileges to the submission files .
+
+the server can be accessed without a user interface and fda does not have visibility of users' access to the submission files on the server .
+
+as a result , fda was at increased risk that users could inadvertently or deliberately modify these files and jeopardize the integrity of the submitted information .
+
+cryptography underlies many of the mechanisms used to enforce the confidentiality and integrity of critical and sensitive information .
+
+cryptographic tools help control access to information by making it unintelligible to unauthorized users and by protecting the integrity of transmitted or stored information .
+
+a basic element of cryptography is encryption .
+
+encryption is the conversion of data into a form , called a cipher text , which cannot be easily understood .
+
+encryption can be used to provide basic data confidentiality and integrity by transforming plain text into cipher text using a special value known as a key and a mathematical process known as an algorithm .
+
+nist sp 800-53 states that agencies should use encryption to protect the confidentiality of remote access sessions and they should encrypt sessions between host systems .
+
+the nist standard for an encryption algorithm is federal information processing standard ( fips ) 140-2 .
+
+fda did not always ensure that sensitive data were effectively encrypted when transmitted or stored .
+
+for example , 59 network devices we reviewed had weak non - fips - compliant algorithms to encrypt user passwords .
+
+in addition , a web server supporting the receipt of industry submissions and a database server storing certificates to support secure connections for receiving submissions used non - fips - compliant algorithms to encrypt passwords .
+
+furthermore , the web server's password file was encrypted by an algorithm that was outdated and had been withdrawn by nist over 10 years ago .
+
+as a result of using weak encryption algorithms , fda is at increased risk that user passwords may be easier to crack and used by unauthorized individuals to gain access to systems and sensitive information .
+
+to establish individual accountability , monitor compliance with security policies , and investigate security violations , agencies need to determine what , when , and by whom specific actions have been taken on a system .
+
+agencies can accomplish this by implementing system or security software that provides an audit trail ( a log of system activity ) that is used to determine the source of a transaction or attempted transaction and to monitor a user's activities .
+
+audit and monitoring , key components of risk management , involve the regular collection , review , and analysis of auditable events for indications of inappropriate or unusual activity , and the appropriate investigation and reporting of such activity .
+
+audit and monitoring controls can help security professionals routinely assess computer security , perform investigations during and after an attack , and even recognize an ongoing attack .
+
+audit and monitoring technologies include network - and host - based intrusion detection systems , audit logging , security event correlation tools , and computer forensics .
+
+nist guidelines state that agencies should retain sufficient audit logs to allow monitoring of key activities , provide support for after - the - fact investigation of security incidents , and meet agency information retention requirements .
+
+fda did not always implement and integrate auditing and monitoring for the seven systems we reviewed .
+
+for example , the agency did not have network monitoring visibility across its entire network .
+
+specifically , it did not monitor it assets used by a contractor supporting the system that provides the agency's internet and public network .
+
+in addition , the agency did not always audit or monitor system activity on it assets for networks supporting scientific research and high - performance computing .
+
+the agency also did not always retain audit logs to allow monitoring of key activities and provide support for after - the - fact investigation of security incidents .
+
+to illustrate , databases supporting drug submissions and adverse event reporting did not have logging enabled for monitoring the use of special system privileges such as alter , create , and grant .
+
+further , fda did not retain all records of evidence related to a 2013 security breach from an external attack on an fda internet application that allowed the attacker to gain access to a backend database and exfiltrate sensitive users account information .
+
+specifically , it did not retain digital forensics data related to the attack commands and the review of dates and times of files and database entries relevant to data exfiltration of users' account data .
+
+such information could be useful in better understanding what occurred and in preventing future occurrences .
+
+as a result , fda did not have information necessary for monitoring key database activities and supporting after - the - fact investigations of security incidents .
+
+in addition , the lack of evidence could prevent the agency from determining what events occurred within its systems and networks , such as lateral movements by an attacker that may occur from initial entry into a network to network discovery , hosts targeting , and data exfiltration activities to external systems .
+
+physical security controls restrict physical access to computer resources and protect them from intentional or unintentional loss or impairment .
+
+adequate physical security controls over computer resources ( eg , computer facilities , network devices such as routers and firewalls , telecommunications equipment , and transmission lines ) should be established that are commensurate with the risks of physical damage or access .
+
+nist sp 800-53 recommends that agencies review and update the current physical and environmental protection policy at an organization - defined frequency and conduct an assessment of risks , including the likelihood and magnitude of harm , to the information system and information it processes , stores , or transmits .
+
+consistent with federal guidance , fda's information system security and privacy guide states that physical and environmental protection policies are to be reviewed and updated every 3 years .
+
+in addition , the agency's policies for its facilities state that annual physical security reviews are to be conducted .
+
+these reviews are to include , among other things , reviewing security measures in effect to compensate for any noncompliance with requirements , and corrective actions initiated or planned to eliminate deficient conditions .
+
+while fda developed and documented physical security policies for its facilities , they had not been reviewed and updated for about 14 years .
+
+for example , the physical security policy for its headquarters facilities was dated february 2001 , and the physical security policy for field activities was dated october 2000 .
+
+neither of these policies had been reviewed and updated since they were established , even though the agency's policy requires this to occur every 3 years .
+
+in addition , the agency had not conducted required annual physical security reviews of three of its data center facilities .
+
+fda only provided documentation to support that it had reviewed one of them , which occurred in july 2013 and was not within the annual requirement .
+
+according to fda's ciso and a policy analyst , gaps in reviewing and updating policies and procedures were due to personnel resource constraints and a lack of a streamlined process to review policy and procedures at the agency .
+
+as a result , fda has diminished assurance that its computing resources are protected from inadvertent or deliberate misuse or damage .
+
+in addition to access controls , other important controls should be in place to provide reasonable assurance that the confidentiality , integrity , and availability of an agency's information is protected .
+
+these controls include policies , procedures , and techniques for ( 1 ) implementing personnel security , such as background investigations , ( 2 ) managing and implementing system configurations , ( 3 ) effectively planning for system contingencies , and ( 4 ) developing and implementing procedures for disposing of media containing sensitive information .
+
+while fda conducted background investigations according to its policy , weaknesses in other controls increased the risk of unauthorized use , disclosure , modification , or loss of the fda's mission - sensitive information .
+
+the greatest harm or disruption to a system can often come from the actions , both intentional and unintentional , of individuals .
+
+these intentional and unintentional actions can be reduced through the implementation of security controls over personnel .
+
+background checks should be done prior to an individual's authorization to access information systems , and personnel in sensitive positions should be periodically rescreened .
+
+furthermore , fda policy requires positions to be designated by sensitivity and risk level , and describes requirements for conducting background investigations for employees and contractors , including periodic reinvestigations of individuals in positions of higher risk or sensitivity .
+
+fda conducted background investigations for the employees and contractors we reviewed .
+
+specifically , each of the 14 employees and contractors we selected had up - to - date background investigations that were consistent with the risk designation of their positions .
+
+as a result , fda reduced its risk that it has employed or contracted for individuals with unsuitable backgrounds for accessing its systems .
+
+configuration management is an important control that involves the identification and management of security features for all hardware and software components of an information system at a given point and systematically controls changes to that configuration during the system's life cycle .
+
+configuration management involves , among other things , ( 1 ) verifying the correctness of the security settings in the operating systems , applications , or computing and network devices and ( 2 ) obtaining reasonable assurance that systems are configured and operating securely and as intended .
+
+in addition , establishing controls over the modification of information system components and related documentation helps to prevent unauthorized changes and ensure that only authorized systems and related program modifications are implemented .
+
+this is accomplished by instituting policies , procedures , and techniques that help make sure that all hardware , software , and firmware programs and program modifications have been properly authorized , tested , and approved .
+
+according to nist sp 800-53 , configuration management activities should include documenting approved configuration - controlled changes to information systems , retaining and reviewing records of the changes , auditing those records , and coordinating and providing oversight for configuration change control activities through a mechanism such as a change control board .
+
+patch management , a component of configuration management , is important for mitigating the risks associated with known software vulnerabilities .
+
+when a software vulnerability is discovered , the software vendor may develop and distribute a patch or work - around to mitigate the vulnerability .
+
+without the patch , an attacker can exploit the vulnerability to read , modify , or delete sensitive information ; disrupt operations ; or launch attacks against other systems .
+
+outdated and unsupported software is more vulnerable to attack and exploitation because vendors may no longer provide updates , including security updates , to correct software flaws .
+
+fda has developed , documented , and established policies and procedures to manage configuration changes .
+
+in addition , for the systems we reviewed , fda officials demonstrated that system changes were first requested , tracked , and approved at the system level prior to being forwarded via an automated tool to fda's change control board as required by policy .
+
+however , fda officials could not provide documentation to demonstrate that emergency changes to software code to remediate security vulnerabilities were tested , validated , and documented in response to the 2013 breach of its internet - facing web application .
+
+further , the agency did not always implement secure configuration settings for its systems .
+
+for example: fda did not appropriately configure 336 devices , which could prevent proper identity enforcement of these network devices and could allow unauthorized access to other networks and devices .
+
+fda used out - of - date and unsupported software on servers storing sensitive data on industry partner regulatory submissions for several of the systems we reviewed .
+
+in addition , windows file share servers and other application servers on several systems we reviewed were out of date and had reached end - of - life , in some cases for more than 4 years past the support date .
+
+two firewalls for managing contractors' access to fda's network had operating system versions that were close to end - of - life for support , and fda had no mitigation plans in place to manage this risk .
+
+similarly , fda has developed , documented , and established a policy for managing patches that includes time frames for applying patches based on risk , and emergency and out - of - cycle patches within 48 hours of discovery .
+
+however , fda did not always document emergency changes to software code on an application that supported its internet services .
+
+these changes were made in response to an external internet attack that resulted in a breach of the system's user account data .
+
+in addition , software security updates and patches were not always installed to address known security vulnerabilities , nor were they timely .
+
+for example: fda had not applied security updates and patches for network devices , switches , firewalls , specialized network devices , and servers , as well as contractor - operated network devices , in accordance with nist's common vulnerability scoring system ( cvss ) guidelines for patching devices .
+
+cvss prescribes that patches be installed within 30 days for critical or high - risk vulnerabilities , 60 days for moderate - risk vulnerabilities , and 90 days for low - risk vulnerabilities .
+
+fda's policy also requires that they follow these patching time frames .
+
+however , hundreds of these devices had not been updated with the latest patches in over 3 years .
+
+the agency had not patched 25 servers supporting its infrastructure .
+
+for example , one sever had not been patched for 6 months , from february to august of 2015 .
+
+fda had not applied critical security patches to 74 of 82 host virtual servers supporting its infrastructure .
+
+in some cases these patches contained major updates to fix multiple security vulnerabilities .
+
+various file share servers for three fda systems we reviewed had not been patched since 2009 .
+
+without proper implementation of configuration management policies and procedures and adequate security controls , fda systems are susceptible to many known vulnerabilities .
+
+losing the capability to process , retrieve , and protect electronically maintained information can significantly affect an agency's ability to accomplish its mission .
+
+if contingency planning is inadequate , even relatively minor interruptions can result in lost or incorrectly processed data , which can cause financial losses , expensive recovery efforts , and inaccurate or incomplete information .
+
+contingency planning consists of interim measures to recover information system services after a disruption .
+
+interim measures may include relocation of information systems and operations to an alternate site , recovery of information system functions using alternate equipment , or performance of information system functions using manual methods .
+
+nist sp 800-53 recommends that agencies establish a contingency planning policy in the event of unplanned disruptions and provide contingency training and exercises at an agency - defined frequency , among other things .
+
+in addition , nist sp 800-34 recommends that a test plan should be designed and tested to examine applicable contingency planning elements such as notification procedures and system recovery on an alternate platform from backup media to validate the contingency capability .
+
+further , fda policy also requires functional testing of its contingency plans annually .
+
+consistent with nist guidelines , fda's information system security and privacy guide states that contingency planning policies are to be updated every 3 years , while information system contingency plans are to be reviewed annually .
+
+fda's policy also requires that contingency plans be tested on an annual basis .
+
+however , fda did not follow its own requirements for updating and reviewing contingency policy and plans .
+
+for example , fda's contingency planning policy was established in 2007 but was still marked as a draft document and had yet to be reviewed and updated .
+
+further , fda did not review , at least annually , the contingency plans for six of the seven applications and general support systems that we reviewed during fiscal year 2015 and had not developed and documented a contingency plan for the seventh system .
+
+in addition , fda did not adequately test five of the six contingency plans we reviewed .
+
+for example: for two major applications , fda conducted procedures to mitigate system disruptions and documented those activities as tests .
+
+however , the actions performed to mitigate disruptions were not based on planned tests .
+
+a planned migration was conducted for a general support system to transfer operations to a facility .
+
+however , this migration was not the result of a planned contingency test .
+
+the plans for two general support systems had not been tested since 2013 .
+
+however , the tests did appropriately assess elements such as notification procedures , and system recovery .
+
+fda staff attributed these weaknesses to the lack of a streamlined process for reviewing policies and procedures , and personnel resource constraints such as the lack of contracted staff to support fda contingency planning and operations during an organizational transition .
+
+by not finalizing its contingency planning policy and not annually reviewing and testing contingency plans , fda has reduced assurance that it has implemented controls necessary for effectively continuing operations in the event of a disruption .
+
+the destruction of media and its disposal are key to ensuring the confidentiality of information .
+
+media can include magnetic tapes , optical disks ( such as compact disks ) , and hard drives .
+
+agencies safeguard used media to ensure that the information they contain is appropriately controlled or disposed of .
+
+media that is improperly disposed of can lead to the inappropriate or inadvertent disclosure of an agency's sensitive information or the personally identifiable information of its employees and customers .
+
+nist sp 800-53 recommends that agencies sanitize media prior to disposal and employ sanitization mechanisms to ensure information cannot be retrieved or reconstructed .
+
+fda's policy for sanitizing computer - related storage media , including server backup tapes , states that techniques used to sanitize media can include degaussing , among other things .
+
+however , fda did not sanitize media backup tapes that were being stockpiled for disposal .
+
+specifically , for two data center locations , media tapes were stored outside of servers and scheduled for sanitization , but had yet to be sanitized and disposed of .
+
+at one of the two data centers , we observed a number of older tapes , and fda staff said these tapes were awaiting disposal .
+
+specifically , staff mentioned that the legacy tapes held data from operations in prior location and were in a “holding pattern” and tentatively scheduled for decommission .
+
+similarly , fda staff from the second data center acknowledged that approximately 900 tapes were also awaiting disposal and that these tapes contained older servers , databases , and files resulting from a migration to updated servers tapes .
+
+according to the data center staff , the agency had not developed , documented , and implemented a procedure for sanitizing media , but planned to have a solution by october 2016 .
+
+until fda fully implements a process for media sanitization , the agency is at an increased risk that its sensitive information may not be adequately protected .
+
+a key reason for the weaknesses in controls over fda's information and information systems is that it has not yet fully implemented its agency - wide information security program to ensure that controls are effectively established and maintained .
+
+if an agency does not fully implement its program , security controls may be inadequate or inconsistently applied ; responsibilities may be unclear , misunderstood , or improperly implemented ; and organizational and system risks may not be assessed and monitored properly .
+
+fisma requires each agency to develop , document , and implement an information security program that , among other things , includes a periodic assessment of risk and magnitude of harm that could result from the unauthorized access , use , disclosure , disruption , modification , or destruction of information or information systems ; policies and procedures that ( 1 ) are based on risk assessments , ( 2 ) cost - effectively reduce information security risks to an acceptable level , ( 3 ) ensure that information security is addressed throughout the life cycle of each system , and ( 4 ) ensure compliance with applicable requirements ; subordinate plans for providing adequate information security for networks , facilities , and systems or a group of information systems , as appropriate ; security awareness training to inform personnel of information security risks and of their responsibilities in complying with agency policies and procedures , as well as training personnel with significant security responsibilities for information security ; periodic testing and evaluation of the effectiveness of information security policies , procedures , and practices , to be performed with a frequency depending on risk , but no less than annually , and that includes testing of management , operational , and technical controls for every system identified in the agency's required inventory of major information systems ; a process for planning , implementing , evaluating , and documenting remedial actions to address any deficiencies in information security policies , procedures , or practices ; and procedures for detecting , reporting , and responding to security incidents .
+
+fda has taken steps to implement an information security program and manage information security risks for its major applications and general support systems .
+
+however , key components of its information security program have not been fully or consistently implemented .
+
+according to nist sp 800-30 , risk is determined by identifying potential threats to the organization and vulnerabilities in its systems , determining the likelihood that a particular threat may exploit vulnerabilities , and assessing the resulting impact on the organization's mission , including the effect on sensitive and critical systems and data .
+
+identifying and assessing information security risks are essential to determining what controls are required .
+
+moreover , by increasing awareness of risks , these assessments can generate support for the policies and controls that are adopted in order to help ensure that the policies and controls operate as intended .
+
+fda policy requires that risk assessment results for its systems be reviewed annually , and risk assessments be updated prior to issuing a new authority to operate , whenever there are significant system changes , or every 3 years .
+
+fda's assessment of risk is conducted as part of its security assessments .
+
+although fda assessed risk for six of the seven systems we reviewed , it did not document the likelihood that a particular threat could exploit system vulnerabilities .
+
+for example , fda only identified information system control weaknesses and vulnerabilities for six of the reviewed systems , but did not determine the likelihood and impact of threats to those systems .
+
+for the seventh system , fda did not assess risk or issue a formal authority to operate .
+
+finally , two of the six risk assessments had not been reviewed annually .
+
+during the course of our work , fda completed the annual review of the risk assessment for one of the two systems , and we have verified this action .
+
+however , until fda completes comprehensive risk assessments and reviews them annually , the agency will have less assurance that it has identified the necessary controls to protect its assets .
+
+a key element of an effective information security program is to develop , document , and implement risk - based policies , procedures , and technical standards that govern the security over an agency's computing environment .
+
+information security policy is essential to establishing roles , responsibilities , and requirements necessary for implementing an information security program .
+
+the supporting procedures provide the information and guidance on implementing the policies .
+
+according to nist , an agency should develop policies and procedures for each of the nist families of security controls to facilitate the implementation of the controls .
+
+additionally , hhs and fda policy require that policies be reviewed every 3 years to ensure that they are sufficient and consistent with federal requirements .
+
+fda generally took steps to develop and document policies and procedures for its information security program , but did not always document them or ensure procedures were complete .
+
+for example , while the agency has developed policies to cover 17 of 18 nist control families , it did not develop one for system maintenance .
+
+in addition , the agency did not develop or document procedures for implementing controls in 8 of the 18 control families .
+
+the 8 control families were audit and accountability , identification and authentication , maintenance , media protection , physical and environmental protection , security planning , systems communication and protection , and system information and integrity .
+
+of the procedures for 10 control families that fda provided , 3 were complete .
+
+however , procedures for 7 families were incomplete and did not include steps suggested by nist .
+
+for example , procedures for security awareness and training did not include procedures for covering role - based training , and those for assessment and authorization did not address continuous monitoring as recommended by nist .
+
+further , fda did not review its policies according to its own requirements .
+
+specifically , 11 of 18 nist - recommended policies were not reviewed within the agency - defined frequency of 3 years .
+
+for example , the agency's personnel security policy was last reviewed in 1986 .
+
+policies for other controls such as those for access controls , identification and authentication , and incident response had not been reviewed in at least 7 years .
+
+fda conducted an internal review in 2013 to identify the policies that needed to be reviewed and updated , and had established a plan of actions and milestones for updating them by november 2013 .
+
+however , the agency did not meet its own deadline for reviewing and updating 11 of the 17 policies it had developed .
+
+according to fda staff , the policies had not been reviewed and updated because the process had been too cumbersome and required a sign - off from a number of stakeholders .
+
+fda's ciso also stated that they had been understaffed , which led to a large backlog of policies to be reviewed .
+
+having incomplete policies and procedures or not reviewing them reduces fda's assurance that roles and responsibilities have been clearly assigned and understood and that personnel have the information needed to implement its policies , which could lessen the agency's ability to efficiently and effectively protect its information systems .
+
+fisma requires that agencies develop and document system security plans for all major federal information systems .
+
+this requirement should be viewed as an essential part of planning adequate , cost - effective security protection for a system .
+
+according to nist , system security plans should provide an overview of the security requirements of the system , and document and describe the security controls and security control enhancements in place or planned for meeting those requirements .
+
+nist also recommends that the plans be reviewed and approved by authorizing officials or designated representatives .
+
+nist states that plans should be reviewed and updated at least annually to ensure that they continue to reflect the correct information about the system such as changes in system owners , interconnections , and authorization status , among other things .
+
+consistent with nist , hhs and fda policy require fda to review system security plans annually .
+
+fda created security plans and generally documented controls for six of the seven applications and general support systems we reviewed .
+
+however , the agency did not always ensure that the plans were complete , or that plans were reviewed .
+
+for example , fda did not always fully describe the extent to which controls were implemented for each of the six system security plans we examined .
+
+specifically , it did not document 76 of 83 nist - required high - impact control enhancements in the security plan for the high - impact system used in reporting adverse events .
+
+in addition , the agency did not document the control descriptions for 171 of 262 security controls and control enhancements ; specifically , the description of the implementation of 171 security controls and enhancements was left blank in the plan for the system supporting fda's infrastructure .
+
+the system has an important role in securing the agency's other systems since 68 of those systems inherit their controls from it .
+
+fda also did not demonstrate that any of the six plans we reviewed were approved or reviewed by authorizing or senior agency officials .
+
+according to an information system security officer , these shortfalls were related to deficiencies in their security management tool and a lack of resources .
+
+officials stated that the tool that they used for entering information into system security plans had software flaws , which did not allow them to properly capture system security plan control descriptions ; officials stated that they plan to replace the tool but could not give a firm timeline .
+
+until fda develops and documents a plan for one system supporting its research and updates system security plans to reflect current federal control requirements , the agency lacks assurance that the appropriate controls have been identified for the seven systems we reviewed and increases the likelihood that the controls will not be fully implemented .
+
+according to fisma , an agency - wide information security program must include security awareness training for agency personnel , contractors , and other users of information systems that support the agency's operations and assets .
+
+this training must cover ( 1 ) information security risks associated with users' activities and ( 2 ) users' responsibilities in complying with agency policies and procedures designed to reduce these risks .
+
+fisma also includes requirements for training personnel who have significant responsibilities for information security .
+
+according to nist , agencies should also document and monitor individual information system security training activities , including basic security awareness training and specialized information system security training .
+
+consistent with federal law and guidelines , fda's information system security and privacy control parameters guide states that the agency should provide role‐based security‐related training to all personnel with significant information security responsibilities .
+
+the agency's policy also requires that employees with significant security responsibilities participate in role - based training appropriate to their security role before receiving access to the system , when required by system or role changes and every 3 years thereafter .
+
+fda tracked and provided security awareness training in fiscal years 2015 and 2016 to each of the 16 users we selected for review .
+
+the agency tracks its user awareness training through a vendor - provided web - based application .
+
+according to fda , it previously provided awareness training to about 98 percent of its users during fiscal year 2015 .
+
+however , the agency did not always track role - based training for those with significant security responsibilities .
+
+for example , fda's tracking system only identified 6 of the 16 individuals selected as having received role - based training .
+
+according to fda personnel , the resulting list was not complete because the agency is re - engineering its process for tracking compliance of specialized security training .
+
+in addition , it did not fully provide role - based training to those with significant security responsibilities .
+
+fda demonstrated that 6 of the 16 individuals with significant security responsibilities we reviewed received specialized it training .
+
+fda responded that the remaining 10 individuals were not system administrators who required specialized training .
+
+however , 9 of the remaining 10 individuals had significant security responsibilities , which included the deputy chief information security officer and several information systems security officers .
+
+according to fda staff , the agency is currently developing role - based training courses for executives and contracting officer's representatives , and will update its it administrator module on or around october 1 , 2016 .
+
+until fda implements procedures that provide reasonable assurance that it tracks and provides role - based training to employees with significant information security responsibilities , the agency will have less assurance that staff have the adequate knowledge , skills , and abilities consistent with their roles to protect the confidentiality , integrity , and availability of the information .
+
+a key element of an information security program is to test and evaluate policies , procedures , and controls to determine whether they are effective and operating as intended .
+
+this type of oversight is a fundamental element because it demonstrates management's commitment to the security program , reminds employees of their roles and responsibilities , and identifies areas of noncompliance and ineffectiveness .
+
+fisma requires that the frequency of tests and evaluations of management , operational , and technical controls be based on risks and occur no less than annually .
+
+omb directs agencies to meet their fisma - required controls testing by drawing on security control assessment results that include , but are not limited to , continuous monitoring activities .
+
+omb also requires agencies to develop and maintain an information system continuous monitoring ( iscm ) strategy and implement an iscm program in accordance with nist guidelines .
+
+omb required agencies to develop their iscm strategies by february 28 , 2014 .
+
+continuous monitoring of security controls employed within or inherited by the system is an important aspect of managing risk to information from the operation and use of information systems .
+
+the objective of continuous monitoring is to determine if the set of deployed security controls continues to be effective over time in light of the inevitable changes that occur to a system and within an agency .
+
+such monitoring is intended to assist in maintaining an ongoing awareness of information security , vulnerabilities , and threats to support agency risk management decisions .
+
+the monitoring of security controls using automated support tools can help facilitate continuous monitoring .
+
+fda has taken steps to monitor security controls through bi - weekly vulnerability scanning using automated tools .
+
+the agency also conducted annual assessments of its information systems .
+
+however , the agency did not fully or annually assess controls for 2 of the 7 systems we reviewed .
+
+to illustrate , fda did not assess any of the security controls for a system supporting its scientific research activities .
+
+for the other system , which supports fda's it infrastructure , the agency had not conducted an assessment since 2013 , thus not meeting fisma's requirement to assess controls at least annually .
+
+further , we found that fda has not developed and documented a continuous monitoring strategy for its information systems .
+
+hhs's inspector general previously reported this weakness in fiscal years 2013 and 2014 .
+
+according to fda staff , the agency plans to assess the infrastructure system during fiscal year 2016 since the system was being restructured during fiscal year 2015 .
+
+in addition , the agency plans to implement a pilot program for continuous monitoring in august 2016 .
+
+further , the agency plans to implement the department of homeland security's continuous diagnostics and mitigation tool in 2016 to improve continuous monitoring of its it assets .
+
+until it fully tests controls for all systems and develops and documents a continuous monitoring strategy , fda has less assurance that controls over its information and information systems are in place and operating as intended .
+
+fisma requires that agency - wide information security programs include a process for planning , implementing , evaluating , and documenting remedial actions to address any deficiencies in the information security policies , procedures , and practices of the agency .
+
+agencies should establish procedures to reasonably ensure that all information security control weaknesses , regardless of how or by whom they are identified , are addressed through the agency's remediation processes .
+
+for each identified control weakness , the agency is to develop and implement a plan of actions and milestones ( poa&m ) based on findings from security control assessments , security impact analyses , continuous monitoring of activities , audit reports , and other sources .
+
+when considering appropriate corrective actions to be taken , the agency should , to the extent possible , consider the potential agency - wide implications and design appropriate corrective actions to systemically address the deficiency .
+
+fda's plans of action and milestones guide is generally consistent with federal guidance , and the agency's guide specifically requires that high - risk weaknesses be corrected within 60 days .
+
+fda had also generally developed and documented poa&ms for addressing security control weaknesses and made efforts to consider agency - wide implications of security weaknesses .
+
+however , it did not always complete remedial actions in a timely manner in accordance with the agency's established deadlines or risk requirements .
+
+to illustrate , for the seven major applications and general support systems we examined , 183 of 611 ( roughly 30 percent ) of the poa&ms had not been remedied by their scheduled completion date , 30 of which were identified as high risk and not corrected within the agency - defined requirement of 60 days .
+
+of the 183 delayed poa&ms , 102 had a scheduled completion date of 2013 or earlier .
+
+as a further example , fda's remedial action plans listed two high - risk weaknesses identified by its office of inspector general in 2006 and 2007 , but fda had not mitigated these weaknesses even though the agency had planned completion dates in 2012 .
+
+fda personnel stated that they faced challenges in remediating poa&ms in a timely manner and based on risk .
+
+according to fda personnel , there was a large volume of open poa&ms and insufficient resources , which delayed addressing weaknesses in a timely manner: as of the first quarter of 2015 , fda had 1,265 open poa&ms .
+
+fda staff also noted that risk is considered in prioritizing remediation , but that other factors such as available resources and business impacts are also considered .
+
+fda personnel stated that , because of the large number of open poa&ms , they will go after “low - hanging fruit,” favoring remediation of a larger number of poa&ms over concentrating on high - risk weaknesses .
+
+by not resolving identified weaknesses in a timely manner , or in accordance with its own policy , fda faces an increased likelihood that weaknesses , including high - risk vulnerabilities , will go uncorrected , be exploited , and result in greater harm to agency systems and information .
+
+even with strong information security controls , incidents can still occur .
+
+agencies can reduce the risks associated with these events by detecting and promptly responding before significant damage is done .
+
+a key element of an effective incident response program includes implementing comprehensive policies , procedures , and controls in order to rapidly detect incidents , minimize loss and destruction , mitigate the weaknesses that were exploited , and restore computing services .
+
+nist sp 800-53 recommends that agencies review and update their incident response policy and procedures at an organization - defined frequency .
+
+nist also recommends that an organization coordinate its incident handling activities with contingency planning activities so that during a severe incident , the agency has actions in place to keep its business operational .
+
+nist further recommends that agencies implement lessons learned from ongoing incident handling activities into incident response procedures , training , and testing , and implements the resulting changes accordingly .
+
+while fda has developed and documented an incident response policy , the agency did not comply with its own policy of updating its incident response policy every 3 years .
+
+the policy has not been updated since it was created in january 2007 .
+
+further , neither fda's incident response policy nor its procedures require or describe steps for coordinating incident response activities with planning for contingencies or system disruptions .
+
+the agency also did not update its incident response procedures using the results of lessons learned from prior incident response table top exercises we examined .
+
+for example , results from a 2012 table top exercise indicated that fda should better train its employees so that newer , less - experienced staff are better able to respond to significant cyber incidents , and that fda should update its procedures to include training requirements .
+
+however , the lessons learned were not incorporated into fda's incident response procedures .
+
+without effective incident response practices in place , fda has reduced assurance that its systems and information are protected and that it can respond to incidents .
+
+in response to our findings , fda staff mentioned that the agency is in the process of incorporating lessons learned from incident handling activities into its incident response procedures , training , and testing .
+
+in addition , the agency stated that it is taking various steps to address incident response based on our feedback from previous surveys and data requests .
+
+the agency stated that it has discontinued its incident response standard operating procedure and was developing a new one based on nist sp 800-61 .
+
+the agency's staff also mentioned that personnel will undergo security training and that fda is piloting various products to improve the agency's overall security posture , including incident response .
+
+we have not yet verified that the agency has implemented these actions , but such actions could improve fda's incident response capability .
+
+although fda has implemented numerous controls and taken steps intended to protect its information and information systems , pervasive control weaknesses continue to jeopardize the confidentiality , integrity , and availability of its sensitive information .
+
+in fiscal year 2015 , the agency centralized the management and location of its network and security operations with intended goals that include establishing real - time network awareness and improved incident detection .
+
+the agency also immediately resolved some of the weaknesses we identified during this review .
+
+nonetheless , significant weaknesses in controls for preventing or limiting unauthorized access to its systems and information , as well as weaknesses in other controls , such as those for ensuring that software and hardware are updated and securely configured and that sensitive media is disposed of , put fda's systems at risk .
+
+this is significant considering that these systems handle proprietary business data from companies in multiple industries and sensitive public health data .
+
+an underlying cause for many of these weaknesses is that fda has not fully implemented its agency - wide information security program , such as developing and documenting appropriate policies and procedures , ensuring security controls are tested effectively , remediating weaknesses in a timely manner , and planning for contingencies or system disruptions and effectively managing risks .
+
+the widespread weaknesses in technical controls and the incomplete implementation of program elements suggest that the agency has not made effective information security a high enough priority .
+
+until fda implements these practices and controls , it will have limited assurance that its information and information systems are adequately protected against unauthorized access , disclosure , modification , or loss .
+
+to effectively implement key elements of the food and drug administration's ( fda ) information security program , we are recommending that the secretary of health and human services direct the commissioner of fda to implement the following 15 recommendations: 1 .
+
+complete a risk assessment and authorization to operate for one fda system .
+
+2 .
+
+ensure that completed risk assessments for six systems reviewed address the likelihood and impact of threats to fda .
+
+3 .
+
+develop a policy for system maintenance .
+
+4 .
+
+develop procedures for the following 8 security control families: audit and accountability , identification and authentication , maintenance , media protection , physical and environmental protection , security planning , systems communication and protection , and system information and integrity .
+
+5 .
+
+enhance procedures for the following 7 security control families: access control , awareness and training , security assessment and authorization , configuration management , program management , personnel security , and system and services acquisition .
+
+6. review and update as needed per fda's frequency , the policies for the following 11 security control families: access control , audit and accountability , contingency planning , identification and authentication , incident response , media protection , physical and environmental protection , security planning , personnel security , system and services acquisition , and system and information integrity .
+
+7 .
+
+develop and document a security plan for one system supporting fda's scientific research .
+
+8 .
+
+update security plans to ensure the plans fully and accurately document the controls selected and intended for protecting each of the six systems .
+
+9. review and approve security plans for the six systems reviewed at least annually .
+
+10 .
+
+implement a process to effectively monitor and track training for personnel with significant security roles and responsibilities .
+
+11 .
+
+ensure that personnel with significant security responsibilities receive role - based training .
+
+12 .
+
+test controls at least annually for the two systems that support fda's scientific research and it infrastructure .
+
+13 .
+
+implement remedial actions in accordance with fda's prescribed time frames or update milestones if actions are delayed .
+
+14 .
+
+update fda's incident response policy in accordance with agency requirements .
+
+15 .
+
+update incident response procedures to include ( 1 ) instructions for coordinating incident response with contingency planning and ( 2 ) lessons learned from incident response tests .
+
+we are also making 166 technical recommendations in a separate report with limited distribution .
+
+these recommendations address information security weaknesses related to boundary protection , identification and authentication , authorization , cryptography , physical security , configuration management , and media protection .
+
+we received written comments on a draft of this report from the department of health and human services ( hhs ) .
+
+in the comments ( reprinted in appendix ii ) , the department stated that fda concurred with our recommendations , has begun implementing several of them , and is actively working to address all the recommendations as quickly and completely as possible .
+
+the department also stated that fda has acquired third - party expertise to assist in these efforts to immediately address the recommendations in our report .
+
+the department emphasized its commitment to protecting the public health and proprietary business information at fda , including by implementing layered defenses and other compensating controls .
+
+hhs further noted that fda has not experienced a major cybersecurity - related breach that exposed industry or public health information and that information security remains a high priority at fda .
+
+the department added that since hiring its cio in 2015 , fda has undertaken steps to better ensure the prevention , detection , and correction of incidents .
+
+these include the development of an it strategic plan and the restructuring of cybersecurity leadership , among other initiatives .
+
+in addition , hhs noted that we did not identify an elevated risk of exposure and / or exfiltration of trade secret and / or other sensitive information .
+
+however , this does not accurately reflect the results of our review .
+
+as stated in the report , we identified a significant number of weaknesses in technical controls — including access controls , change controls , and patch management — that jeopardize the confidentiality , integrity , and availability of the seven moderate - and high - impact systems we reviewed .
+
+moreover , several of these weaknesses affected fda's general support systems , which are connected to numerous systems beyond the ones we reviewed .
+
+as previously mentioned , these weaknesses place the seven fda systems , including those that receive , process , and maintain sensitive industry and public health data , at increased and unnecessary risk of unauthorized access , use , or modification .
+
+the department also made additional comments regarding our report and methodology .
+
+in particular , it stated that our methodology did not use an industry - standard approach to assessing risk , defined as the likelihood of a given threat source exploiting a particular vulnerability and the resulting significance of the impact of that adverse event on the organization , or quantify this risk in our overall assessment .
+
+we did not perform a comprehensive risk assessment of fda's information systems and information because that is fda's responsibility , not ours .
+
+however , we did consider the elements of risk to agency systems and information during our review .
+
+for example , as stated in the report , in selecting the seven systems we reviewed , we considered fda's categorization of the impact or magnitude of harm to the agency's operations , assets , and individuals should the confidentiality , integrity , or availability of the systems and the information they contain be compromised .
+
+six of the seven systems we selected were assigned a federal information processing standard rating of moderate or high impact by fda , indicating that the loss of confidentiality , integrity , or availability of these systems or the information they contain would have either a serious or severe / catastrophic impact on the organization .
+
+we also considered how each control weakness , vulnerability , or program shortcoming we identified could impair or diminish the effectiveness of a security control or be exploited to facilitate unauthorized system activity .
+
+our report identifies numerous weaknesses and vulnerabilities along with their potential impact if the vulnerabilities are exploited .
+
+it is also noteworthy that our work determined that for the reviewed systems , fda had not determined the likelihood and impact of threats to those systems .
+
+hhs also stated that our report did not consider other fda tools , resources , and capabilities designed to prevent , detect , and correct incidents , such as its ability to prevent or mitigate breaches like the one that occurred in october 2013 .
+
+we recognize that fda has implemented numerous security controls and key elements of its information security program ; however , the weaknesses we identified nevertheless pose increased and unnecessary risk to its systems and information .
+
+for example , as noted in our report , fda had not updated its incident response policy since 2007 or incorporated other key elements .
+
+having a complete and up - to - date incident response capability is essential to ensuring that fda staff have the knowledge and tools to effectively respond to security incidents , such as breaches .
+
+finally , the department stated that our report does not consistently or clearly distinguish which of the systems reviewed contained sensitive information and which do not .
+
+it noted , for example , that fda's scientific network is a research and development network that does not contain trade secret information .
+
+however , as we noted in our report , fda's systems operate in an interconnected and networked environment , and the agency had not ensured that the scientific network , for example , was adequately isolated from other systems containing sensitive data , nor had it developed and implemented risk management controls for this system .
+
+these weaknesses could provide an attacker with a pathway from this less - secure system to other systems containing sensitive public health or proprietary business data .
+
+such weaknesses therefore pose an increased risk to the sensitive information fda collects and maintains .
+
+as agreed with your offices , unless you publicly announce the contents of this report earlier , we plan no further distribution until 30 days from the report date .
+
+at that time , we will send copies to relevant congressional committees , the secretary of health and human services , the commissioner of fda , and other interested parties .
+
+in addition , the report will be available at no charge on the gao website at http: / / www.gao.gov .
+
+if you or your staff have any questions about this report please contact gregory c. wilshusen at ( 202 ) 512-6244 or wilshuseng@gao.gov or dr. nabajyoti barkakati at ( 202 ) 512-4499 or barkakatin@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made key contributions to this report are listed in appendix iii .
+
+the objective of our review was to evaluate the extent to which the food and drug administration ( fda ) has implemented information security controls to effectively protect the confidentiality , integrity , and availability of its information on selected information systems .
+
+to determine the effectiveness of the fda's security controls , we gained an understanding of the overall network environment , identified interconnectivity and control points , and examined controls for the agency's networks and facilities .
+
+we reviewed controls over the network infrastructure and selected systems that processed confidential commercial and proprietary business information .
+
+we performed our work at fda headquarters in silver spring , maryland , and at several data centers in ashburn , virginia , and silver spring , maryland .
+
+we selected a non - generalizable sample of seven systems for review that ( 1 ) receive , transmit , and / or process sensitive drug information ; ( 2 ) are essential to fda's mission , support its business processes , and contain or process sensitive proprietary business information ; and ( 3 ) were assigned a federal information processing standard rating of moderate or high impact .
+
+these systems perform the following support functions: support and facilitate post - market product safety surveillance of human drugs , biologics , devices , and combination products .
+
+provide a data repository for collecting , storing , viewing , analyzing , reporting , and tracking the receipt of adverse event data or medication errors .
+
+establish a single gateway or communications portal for accepting electronic submissions or allowing authorized users to view or obtain information .
+
+examples of electronic submissions include industry - provided trade secrets , adverse event records , and a multitude of different records related to fda's regulatory oversight of regulated products .
+
+provide capabilities for regulatory scientific research , while also supporting fda's overall goals and objectives in areas where information technology requires supercomputer - strength computational power .
+
+support fda's research and development activities .
+
+provide a platform through which fda organizations may disseminate fda - related information to interested parties , including the public , health professionals , regulated industries , and the media .
+
+provide information about the various product areas that fda regulates ( food , drugs , medical devices , cosmetics , etc .
+
+ ) , timely advisories ( eg , anticipated disease outbreaks such as the severe acute respiratory syndrome ( sars ) , buying medicines online , and lasik surgery ) , and other fda activities .
+
+provide links to related reference materials and opportunities for consumers and industry to interact with the fda .
+
+provide basic network and security capabilities for the fda enterprise .
+
+facilitate receipt and review of electronic drug applications , to include scans and checks of the validity of drug submissions from industry and making them available for reviewers , as well as providing file shares for storing successful submissions that are to be reviewed to evaluate fda's controls over its information systems , we used our federal information system controls audit manual , which contains guidance for reviewing information system controls that affect the confidentiality , integrity , and availability of computerized information ; national institute of standards and technology ( nist ) standards and guidelines ; department of health and human services guidelines ; fda policies and procedures ; and standards and guidelines from relevant security and it security organizations , such as the national security agency and the center for internet security , and the interagency security committee .
+
+reviewed firewall configurations , among other things , to determine whether system boundaries had been adequately protected ; reviewed the complexity and expiration of password settings to determine if password management was being enforced ; analyzed administrative users' system access permissions to determine whether their authorizations exceeded that necessary to perform their assigned duties ; observed configurations for providing secure data transmissions across the network to determine whether sensitive data were being encrypted ; reviewed software security settings to determine if modifications of sensitive or critical system resources had been monitored and logged ; observed physical access controls to determine if computer facilities and resources were being protected from espionage , sabotage , damage , and theft ; examined configuration settings and access controls for routers , network management servers , switches , and firewalls ; inspected key servers and workstations to determine if critical patches had been installed and / or were up - to - date ; examined contingency plans for seven systems to determine whether those plans had been developed and tested ; reviewed media handling procedures to determine if equipment used for clearing sensitive data had been tested to ensure correct performance ; and reviewed personnel clearance procedures to determine whether staff had been properly cleared prior to gaining access to sensitive information or information systems .
+
+using the requirements identified by the federal information security modernization act of 2014 ( fisma ) , which establishes key elements for an effective agency - wide information security program , and associated nist guidelines , department of health and human services and food and drug administration requirements , we evaluated fda's information security program by reviewing assessments of risk for six fda systems to determine whether threats and vulnerabilities were being identified ; analyzing fda policies , procedures , and practices to determine their effectiveness in providing guidance to personnel responsible for securing information and information systems ; analyzing security plans for six systems to determine if those plans had been documented and updated according to federal guidance ; examining the security awareness training for employees and contractors to determine whether they had received training according to federal requirements ; examining training records for personnel who have significant responsibilities to determine whether they had received training commensurate with those responsibilities ; analyzing fda's procedures and results for testing and evaluating security controls to determine whether management , operational , and technical controls for seven systems had been sufficiently tested at least annually and based on risk ; reviewing fda's implementation of continuous monitoring practices to determine whether the agency had developed and implemented an information system continuous monitoring strategy to manage its it assets and monitor the security configurations and vulnerabilities for those assets ; examining fda's process to correct weaknesses and to determine whether remedial action plans complied with federal guidance ; and reviewing fda's implementation of incident response practices .
+
+to determine the reliability of fda's computer - processed data , we evaluated the materiality of the data to our audit objective and assessed the data by various means , including reviewing related documents , interviewing knowledgeable agency officials , and reviewing internal controls .
+
+through a combination of methods , we concluded that the data were sufficiently reliable for the purposes of our work .
+
+we conducted this performance audit from february 2015 to august 2016 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objective .
+
+in addition to the individuals named above , gary austin , west coile , larry crosland , and chris warweg ( assistant directors ) ; vernetta marquis ( analyst in charge ) ; alexander anderegg , angela bell , saar dagani , angel ip , lee mccracken , constantine papanastasiou , dwayne staten , and michael stevens made key contributions to this report .
+

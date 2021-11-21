@@ -1,0 +1,986 @@
+in early 2005 , the federal bureau of investigation ( fbi ) began its sentinel program , estimated to be a 6-year , $425 million program to replace and expand both its failed virtual case file ( vcf ) project and its antiquated , paper - based , legacy system for supporting mission - critical intelligence analysis and investigative case management activities .
+
+one of the reasons we and others have cited for vcf's failure was limited use of acquisition management best practices .
+
+because of the fbi's experience with vcf and the importance of sentinel to the bureau's mission operations , you requested us to review the fbi's management of sentinel .
+
+in response to your request , we agreed to perform a series of incremental reviews to address a broad range of objectives .
+
+we initiated our work on these reviews in august 2005 and released the first of our reports on sentinel in october 2006 .
+
+this report provides the results of our second review .
+
+as agreed , the two specific objectives for this report are to determine the fbi's ( 1 ) use of effective practices for acquiring sentinel and ( 2 ) basis for reliably estimating sentinel's schedule and costs .
+
+for the first objective , we focused on contract solicitation and award , risk management , organizational change management , configuration management , and contractor tracking and oversight .
+
+in addressing both objectives , we researched relevant best practices , reviewed fbi policies and procedures , program plans and other program documents , and interviewed appropriate program officials to ascertain whether the practices had been defined and implemented .
+
+we conducted our work from our washington , d.c. , headquarters and at fbi headquarters and facilities in the greater washington , d.c. , metropolitan area between september 2005 and may 2007 in accordance with generally accepted government auditing standards .
+
+details on our objectives , scope , and methodology are included in appendix i .
+
+the fbi serves as the primary investigative unit of the department of justice .
+
+the fbi's mission includes investigating serious federal crimes , protecting the nation from foreign intelligence and terrorist threats , and assisting other law enforcement agencies .
+
+approximately 12,000 special agents and 16,000 analysts and mission support personnel are located in the bureau's washington , d.c. , headquarters and in more than 70 offices in the united states and in more than 50 offices in foreign countries .
+
+mission responsibilities at the bureau are divided among a number of major organizational components , including: administration: manages the bureau's personnel programs , budgetary and financial services , records , information resources , and information security .
+
+national security: integrates investigative and intelligence activities against current and emerging national security threats and provides information and analysis for the national security and law enforcement communities .
+
+criminal investigations: investigates serious federal crimes and probes federal statutory violations involving exploitation of the internet and computer systems .
+
+law enforcement: provides law enforcement information and forensic services to federal , state , local , and international agencies .
+
+office of the chief information officer: develops the bureau's it strategic plan and operating budget and develops and maintains technology assets .
+
+to execute its mission responsibilities , the fbi relies extensively on the use of information systems .
+
+in particular , the bureau operates and maintains hundreds of computerized systems , databases , and applications , such as the combined dna index system , which supports forensic examinations ; the national crime information center and the integrated automated fingerprint identification system , which help state and local law enforcement agencies identify criminals ; the automated case management system , which manages information collected on investigative cases ; the investigative data warehouse , which aggregates data from disparate databases in a standard format to facilitate content management and data mining ; and the terrorist screening database , which consolidates identification information about known or suspected international and domestic terrorists .
+
+following the terrorist attacks in the united states on september 11 , 2001 , the fbi shifted its mission focus to detecting and preventing future attacks and began to reorganize and transform .
+
+according to the bureau , the complexity of this mission shift , along with the changing law enforcement environment , strained its existing it environment .
+
+as a result , the bureau accelerated the it modernization program that it had begun in september 2000 .
+
+this program , later named trilogy , was the fbi's largest it initiative to date and consisted of three parts: ( 1 ) the information presentation component to upgrade fbi's computer hardware and system software , ( 2 ) the transportation network component to upgrade the agency's communication network , and ( 3 ) the user application component to upgrade and consolidate the bureau's five key investigative software applications .
+
+the heart of this last component became the virtual case file ( vcf ) project , which was intended to replace the obsolete automated case support system , fbi's primary case management application .
+
+while the first two components of trilogy experienced cost overruns and schedule delays , in part because of fundamental changes to requirements , both are currently operating .
+
+however , we recently reported that certain information security controls over the trilogy - related network were ineffective in protecting the confidentiality , integrity , and availability of information and information resources .
+
+for instance , we found that fbi did not consistently ( 1 ) configure network devices and services securely to prevent unauthorized insider access ; ( 2 ) identify and authenticate users to prevent unauthorized access ; ( 3 ) enforce the principle of least privilege to ensure that authorized access was necessary and appropriate ; ( 4 ) apply strong encryption techniques to protect sensitive data on its networks ; ( 5 ) log , audit , or monitor security - related events ; ( 6 ) protect the physical security of its network ; and ( 7 ) patch key servers and workstations in a timely manner .
+
+taken collectively , we concluded that these weaknesses place sensitive information transmitted on the network at increased risk of unauthorized disclosure or modification and could result in a disruption of service .
+
+accordingly , we recommended that the fbi director take several steps to fully implement key activities of the bureau's information security program for the network .
+
+these activities include updating assessments and plans to reflect the bureau's current operating environment , providing more comprehensive coverage of system tests , and correcting security weaknesses in a timely manner .
+
+in commenting on this report , the fbi's chief information officer ( cio ) concurred with many of our recommendations , but did not believe that the bureau had placed sensitive information at an unacceptable risk for unauthorized disclosure , modification , or insider threat exploitation .
+
+the cio cited significant strides in reducing risk since the robert hanssen espionage investigation .
+
+in response , we stated that until weaknesses identified in network devices and services , identification and authentication , authorization , cryptography , audit and monitoring , physical security , and patch management are addressed , increased risk to fbi's critical network remains .
+
+further , until the bureau fully and effectively implements certain information security program activities for the network , security controls will likely remain inadequate or inconsistently applied .
+
+the third component of trilogy — vcf — never became fully operational .
+
+in fact , the fbi terminated the project after trilogy's overall costs grew from $380 million to $537 million .
+
+vcf fell behind schedule and pilot testing showed that completing it was infeasible and cost prohibitive .
+
+among reasons we and others have cited for vcf's failure were poorly defined system requirements , ineffective requirements change control , limited contractor oversight , and human capital shortfalls because of , for example , no continuity in certain management positions and a lack of trained staff for key program positions .
+
+the sentinel program began in 2005 , and is intended to be both the successor to and an expansion of vcf .
+
+in brief , sentinel is to meet fbi's pressing need for a modern , automated capability for investigative case management and information sharing to help field agents and intelligence analysts perform their jobs more effectively and efficiently .
+
+the program's key objectives are to ( 1 ) successfully implement a system that acts as a single point of entry for all investigative case management and that provides paperless case management and workflow capabilities , ( 2 ) facilitate a bureau - wide organizational change management program , and ( 3 ) provide intuitive interfaces that feature data relevant to individual users .
+
+using commercially available software and hardware components , sentinel is to provide a range of investigative case management and workflow capabilities , including leads management and evidence management ; document and records management , indexed searching , and electronic links to legacy fbi systems and external data sources ; training , statistical , and reporting tools ; and security management .
+
+the fbi chose to use a governmentwide acquisition contract ( gwac ) for sentinel after conducting a multi - step evaluation of the different gwacs available to federal agencies .
+
+in august 2005 , the fbi issued a request for vendor proposals to more than 40 eligible companies under a national institutes of health ( nih ) contracting vehicle .
+
+according to the cio , the request was also provided to more than 500 eligible subcontractors .
+
+for the next 8 months , fbi's sentinel source selection evaluation team reviewed and evaluated vendors' responses to the task order request for proposal to determine which proposal represented the best value .
+
+the evaluation team recommended — and fbi ultimately chose — lockheed martin as the primary sentinel contractor .
+
+in march 2006 , the fbi awarded the task order to develop and integrate sentinel to lockheed martin .
+
+the fbi has structured the acquisition of sentinel into four phases ; the completion of each is expected to span about 12 to 18 months .
+
+according to fbi officials , the fbi is conducting end user training for phase 1 and expects to roll out the phase 1 production in june 2007 .
+
+the specific content of each phase is to be proposed by and negotiated with the prime contractor .
+
+the general content of each phase has these and other capabilities include phase 1: a web - based portal that will provide a data access tool for the automated case management system and other legacy systems ; a service - oriented architecture definition to support delivery and sharing of common services across the bureau .
+
+phase 2: case document and records management capabilities , document repositories , improved information assurance , application workflow , and improved data labeling to enhance information sharing .
+
+phase 3: updated and enhanced system storage and search capabilities .
+
+phase 4: implementing the remaining components of the new case management system to replace acs .
+
+to manage the acquisition and deployment of sentinel , the fbi established a program management office within the cio's office .
+
+the program office is led by a program manager and consists of the eight primary fbi units ( see fig .
+
+1 ) .
+
+overall , the fbi estimates that the four phases will cost about $425 million through fiscal year 2011 .
+
+for fiscal year 2005 , the fbi reprogrammed $97 million in appropriated funds from various sources to fund sentinel work .
+
+for fiscal years 2006 and 2007 , the fbi said it budgeted about $85 million and $138 million respectively , for sentinel , of which it reports having obligated about $95 million .
+
+for fiscal year 2008 , the fbi reports that it has budgeted about $50 million for sentinel .
+
+acquisition best practices are tried and proven methods , processes , techniques , and activities that organizations define and use to minimize program risks and maximize the chances of program success .
+
+using best practices can result in better outcomes — including cost savings , improved service and product quality , and , ultimately , a better return on investment .
+
+for example , two software engineering analyses of nearly 200 systems acquisitions projects indicated that teams using systems acquisition best practices produced cost savings of at least 11 percent over similar projects conducted by teams that did not employ the kind of rigor and discipline embedded in these practices .
+
+in addition , our research shows that best practices are a significant factor in successful acquisition outcomes , including increasing the likelihood that programs and projects will be executed within cost and schedule estimates .
+
+we and others have identified and promoted the use of a number of best practices associated with acquiring it systems .
+
+in 2004 , we reported on 18 relevant best practices and grouped them into two categories: ( 1 ) ten practices for acquiring any type of business system and ( 2 ) eight complementary practices that relate specifically to acquiring commercial component - based business systems .
+
+examples of these practices relevant to any business systems acquisition include ensuring that ( 1 ) reasonable planning for all parts of the acquisition occurs , ( 2 ) a clear understanding of system requirements exists , and ( 3 ) risks are proactively identified and systematically mitigated .
+
+examples of best practices relevant to commercial component - based systems acquisitions include ensuring that ( 1 ) commercial product modification is effectively controlled , ( 2 ) relationships among commercial products are understood before acquisition decisions are made , and ( 3 ) the organizational impact of using new system functionality is proactively managed .
+
+each of these practices is composed of from one to eight activities and is summarized in table 1 and described in greater detail in appendix ii .
+
+the fbi has recognized the importance of it to transformation , making it one of the bureau's top ten priorities .
+
+consistent with this , the fbi's strategic plan contains explicit it - related strategic goals , objectives , and initiatives ( near - term and long - term ) to support the collection , analysis , processing , and dissemination of information .
+
+this recognition is important because , as we previously reported , the bureau's longstanding approach to managing it has not always been fully consistent with leading practices .
+
+the effects of this can be seen in , for example , the failure of projects such as vcf .
+
+to address these issues , the fbi has , as we reported in 2004 , centralized it responsibility and authority under the cio and the cio has taken steps to define and implement management capabilities in the areas of enterprise architecture , it investment management , systems development and acquisition , and it human capital .
+
+since 2004 , the fbi has continued to make progress in establishing key it management capabilities .
+
+as we previously reported , the fbi has created a life cycle management directive that governs all phases and aspects of the bureau's it projects , including sentinel .
+
+the directive includes guidance , planned reviews , and control gates for each project milestone , including planning , acquisition , development , testing , and operational management of implemented systems .
+
+however , we have also reported that the challenge now for the fbi is to build on these foundational capabilities and implement them effectively on the program and project investments it has under way and planned , including sentinel .
+
+more specifically , we stated that the success of sentinel will depend on how well the fbi defines and implements its new it management approaches and capabilities .
+
+among other things , we said that it will be crucial for the fbi to understand and control sentinel requirements in the context of ( 1 ) its enterprise architecture , ( 2 ) the capabilities and interoperability of commercially available products , and ( 3 ) the bureau's human capital and financial resource constraints , and to prepare users for the impact of the new system on how they do their jobs .
+
+we concluded that not taking these steps will introduce program risks that could lead to problems similar to those that contributed to the failure of the vcf .
+
+in this regard , we recently reported on sentinel's implementation of it human capital best practices .
+
+we determined that the fbi had moved quickly to staff the sentinel program office , had created a staffing plan that defined program positions needed for the program , and had filled most of them , primarily with contract staff .
+
+however , we also determined that the sentinel staffing plan addressed only the program office's immediate staffing needs .
+
+it did not provide for the kind of strategic human capital management focus that is essential to success .
+
+exacerbating this situation was that the fbi was not proactively managing sentinel human capital availability as a program risk .
+
+we concluded that , unless the fbi adopted a more strategic approach to managing human capital for the sentinel program and treated human capital as a program risk , the chances of delivering required intelligence and investigative support capabilities in a timely and cost - effective manner were reduced .
+
+accordingly , we recommended that the fbi adopt such an approach , and the fbi agreed with our recommendations .
+
+according to the fbi's cio , sentinel human capital management improvements are being accomplished as part of ongoing office of the cio's human capital management initiatives , which are being pursued in close coordination with ongoing fbi - wide human capital management improvements .
+
+the fbi is managing various aspects of sentinel in accordance with a number of key system acquisition best practices because the fbi cio and sentinel program manager have made doing so an area of focus , which reduces sentinel acquisition risks .
+
+at the same time , however , acquisition risks are being increased because support contractors that are performing program management functions are not subject to metrics - based , performance standards .
+
+without such standards , the fbi cannot adequately ensure that support contractors are performing important program management functions effectively and efficiently .
+
+the fbi took a number of important steps when soliciting offers from contractors to lead the development of sentinel and in evaluating the offers and making a contract award decision .
+
+we and others have reported on contract solicitation and award best practices used to solicit commercial , component - based it systems .
+
+these practices provide for establishing an organizational framework to conduct a solicitation , including things such as establishing a solicitation policy , defining roles and responsibilities , hiring a qualified solicitation team ( including designating responsibility for the selection of a vendor and including contract specialists on the solicitation team ) .
+
+these practices also include guidance on how to evaluate proposals , including things such as: ( 1 ) explicitly evaluating systems integration contractors on their ability to implement commercial it components ; ( 2 ) specifying the contractual requirements and the proposal's evaluation criteria in the solicitation package ; ( 3 ) evaluating the technical and management elements of proposals on the basis of how they satisfy the requirements of the contract ; and ( 4 ) selecting a contractor that is qualified to satisfy the contract's requirements .
+
+the fbi followed all of these best practices for sentinel .
+
+for instance , the fbi developed a policy for conducting the solicitation — the sentinel source selection plan — that addressed , among other things , the qualifications for members of the source selection organization .
+
+the source selection plan also identified the individual ultimately responsible for conducting the solicitation and making the award decision .
+
+with regard to evaluating proposals , the sentinel solicitation package contained the contractual requirements and evaluation criteria the bureau would use .
+
+those criteria were designed to explicitly evaluate vendors on their ability to integrate commercial it products and components like those to be used in sentinel .
+
+in addition , fbi evaluated vendor proposals based on both the technical and management elements of their respective proposals , including elements like past performance , proposed technical approach , proposed management approach , plans for mitigating organizational conflict of interest , proposed security approach , and demonstrated prior success in meeting schedule requirements , controlling costs , and program planning .
+
+in addition , the fbi used a gwac , in which vendors' technical competence had already been already established , thus helping to ensure that the fbi's selected vendor was qualified .
+
+for a summary of the fbi's implementation of these best practices , see table 2 .
+
+the fbi has established and is following effective processes for proactively identifying and mitigating program risks before they have a chance to become actual cost , schedule , or performance problems .
+
+we and others view risk management as a core acquisition management practice .
+
+in brief , risk management is a process for identifying potential acquisition problems and taking appropriate steps to avoid them .
+
+it includes identifying risks and categorizing them based on estimated impact , developing and executing risk mitigation strategies , and reporting on progress in doing so .
+
+risk management practices include , among other things: ( 1 ) encouraging project - wide participation in the identification and mitigation of risks ; ( 2 ) defining and implementing a process for the identification , analysis , and mitigation of acquisition risks ; ( 3 ) examining the status of identified risks in program milestone reviews ; ( 4 ) establishing a written policy for managing acquisition risk ; and ( 5 ) designating responsibility for acquisition risk management activities .
+
+fbi's approach for managing sentinel's risks employs best practices .
+
+ ( see table 3. ) .
+
+for instance , the sentinel risk management plan encourages all project team members to identify and mitigate risks , and program officials told us that an e - mail notification system has been implemented in which team members use an e - mail template to forward perceived or newly identified risks to program management .
+
+furthermore , the risk management plan and the prime contractor's risk and opportunity management plan establish mechanisms for analyzing and mitigating identified risks .
+
+under these plans , risk review boards ( 1 ) solicit input on risks from employees , ( 2 ) approve specified risk mitigation plans for these risks and assign the risks to their respective risk registers , and ( 3 ) periodically review each risk within the register to monitor the implementation of the mitigation plans .
+
+further , these plans ( as well as the bureau's life cycle management directive ) call for program control gate and milestone reviews that include the status of identified risks , which our analysis of gate and milestone documentation shows includes consideration of risks .
+
+this is important because it gives fbi management the opportunity to be apprised of the risks facing the program and what program staff is doing to prevent these risks from occurring when milestone decisions are made .
+
+the fbi is beginning to plan for and position itself for the human capital and business process changes that are embedded in the commercial off - the - shelf ( cots ) software products that are to be used for sentinel .
+
+given that the first phase of sentinel involves minimal new cots software products and later phases are to be heavily cots - based , the timing of this planning and positioning is appropriate .
+
+as we have previously reported , acquiring software - intensive systems that leverage commercial components involves acquisition management best practices beyond those associated with custom , one - of - a - kind software development efforts .
+
+one category of best practices related to cots acquisitions is proactively planning for and positioning the organization for the people and process changes that will occur as a result of adopting the functionality embedded in commercial products .
+
+in short , such change occurs because cots products are created based on a set of requirements that will have marketability to a broad customer base , rather than to a single customer , which in this case is the fbi .
+
+while such products are configurable to align with the customer's architectural needs , such as business rules and date standards , the standard core functionality in the products will require the implementing organization to adopt the product's embedded business processes , which in turn will require changes to the roles and responsibilities of the organization's workforce and the policies and procedures that they follow .
+
+to ensure that the organizational impact of implementing a cots - based system is effectively managed , best practices advocate that ( 1 ) project plans explicitly provide for preparing users for the impact that the business processes embedded in the commercial components will have on their roles and responsibilities and ( 2 ) the organization actively manages the introduction and adoption of changes to how users will be expected to execute their jobs .
+
+as noted earlier , phase i of sentinel does not involve extensive use of cots .
+
+rather , phase i largely involves development of a customized web - based portal to the fbi's legacy case management system .
+
+thus , the need for the fbi to have already planned for and be positioned to introduce significant sentinel - induced organizational change is not expected to be as critical as in later phases .
+
+according to the sentinel program manager , the impact on users in phase 1 will be minimal due to the small scope of changes that users will need to deal with .
+
+phase 2 , in comparison , will introduce changes to individual users' roles , responsibilities , and business practices resulting from re - engineered business processes and a range of cots - based system capabilities .
+
+this means that most of the organizational change management activities for sentinel are planned for such later phases .
+
+recognizing the relevance of organizational change management to post - phase 1 efforts , the fbi has taken steps consistent with both of these previously - cited best practices .
+
+ ( see table 4. ) .
+
+with respect to planning , the sentinel program management plan identifies the need to work closely with users to ensure that they understand sentinel capabilities , and the sentinel communication plan outlines a strategy to assist fbi personnel in understanding the purpose and scope of sentinel and its implications .
+
+among other things , this plan provides for tracking user acceptance , including metrics to continually gauge acceptance and the effectiveness of the strategy .
+
+in addition , the sentinel training and strategy plan provides for analyzing workforce impacts and addressing changes to individuals' roles and responsibilities .
+
+regarding actively managing the introduction of changes to how individuals execute their jobs , the fbi has set in motion five areas of activity that are embodied in the previously - mentioned plans .
+
+these activities are stakeholder management , organizational impact assessment and understanding , communication , training , and performance support .
+
+more specifically , the prime contractor has conducted a sentinel stakeholder and organizational risk assessment based in part on visiting several fbi field offices and conducting focus groups with prospective sentinel users to assess risks to users' acceptance of sentinel .
+
+the results of this analysis have been incorporated into their communication and training plans and are to be addressed through things such as user manuals and program documentation .
+
+for instance , the risk and impact analysis showed that on - screen navigation through sentinel was an area of user concern , so the training plan has treated this as an area of emphasis .
+
+according to program officials , such areas of focus are intended to proactively engage and manage stakeholders through the change process , with the ultimate goal of having sentinel become “business as usual.” the challenge that the fbi faces as it proceeds with future sentinel phases is to ensure that the five areas of activity , particularly the communication and training plans , are effectively implemented .
+
+the fbi has put in place controls and tools for systematically identifying sentinel's component parts ( software , hardware , and documentation ) and controlling the configuration of these parts in a way that reasonably ensures the integrity of each and it has effectively implemented most of those controls .
+
+however , fbi has not fully implemented one of the key practices .
+
+as a result , it is unclear whether the support contractor that is responsible for this practice is in fact executing it in an effective and efficient manner .
+
+configuration management is an essential ingredient in successful it systems programs such as sentinel .
+
+the purpose of configuration management is to maintain integrity and traceability and to control modifications or changes to program assets like technology products and program documentation throughout their life cycles .
+
+effective configuration management , among other things , enables integration and alignment among related program assets .
+
+as we have previously reported , an effective configuration management program comprises four primary elements , each of which should be described in a configuration management plan and implemented according to the plan .
+
+the four elements of an effective configuration management program are: configuration identification: identifying , documenting , and assigning unique identifiers ( eg , serial number and name ) to program assets , generally referred to as configuration items .
+
+configuration control: evaluating and deciding whether to approve changes to a product's baseline configuration , generally accomplished through configuration control boards , which evaluate proposed changes on the basis of costs , benefits , and risks , and decide whether to permit a change .
+
+configuration status accounting: documenting and reporting on the status of configuration items as a product evolves .
+
+documentation , such as historical change lists , are generated and kept in a library , thereby allowing organizations to be continuously aware of the state of a product's configuration and thus to be in a position to make informed decisions about changing the configuration .
+
+configuration auditing: determining alignment between the actual product and the documentation describing it , thereby ensuring that the documentation used to support the configuration control board's decision making is consistent with the actual system products that reflect these decisions .
+
+configuration audits , both functional and physical , are performed when a significant product change is introduced and they help to ensure that only authorized changes are being made .
+
+the fbi developed the sentinel configuration management plan to govern the assets that both the fbi and prime contractor develop .
+
+this plan reflects the bureau's life cycle management directive and each of the previously - cited best practices .
+
+moreover , the fbi has largely implemented its plan , as described here and summarized in table 5 .
+
+with respect to configuration identification , the plan defines which classes of program assets are under configuration control and specifies how program staff is to ( a ) determine the program's configuration items and ( b ) assign each a unique identifier .
+
+in this regard , we observed the naming conventions the program office created for identifying and uniquely naming program assets and then verified that the fbi had inventoried items in accordance with these conventions .
+
+in addition , we observed that the fbi had placed under configuration control all of its relevant program documentation , as well as all the data item deliverables from the prime contractor , including multiple software components .
+
+regarding configuration control , the fbi's plan calls for , and its prime contractor has implemented , a commercially available software tool to store and manage the program's configuration items , including such things as baselined planning documents and hardware and software assets .
+
+among other things , we observed that the tool features a series of access controls that permit only authorized changes to program assets .
+
+for example , the tool did not allow unauthorized changes to configuration items .
+
+the fbi and the prime contractor have established configuration control boards , engineering review boards , and software change control boards as specified in the plan to establish a baselined configuration for sentinel's assets and to authorize changes to them .
+
+these boards work together ( see fig .
+
+2 ) to review suggested changes to configuration items on the basis of potential impacts on the rest of the system , including risk , cost , and schedule implications .
+
+if these boards approve a change , it is executed by the contractor and recorded in the tool .
+
+if a change is rejected by one of the review boards , it is dropped and that decision is also recorded along with the board's rationale .
+
+concerning configuration status accounting , the fbi's plan outlines procedures that are consistent with best practices and fbi's life cycle management directive .
+
+these procedures include keeping historical change lists and producing monthly configuration status accounting reports .
+
+however , according to fbi officials , the fbi is not producing regular reports as called for in its plan because the configuration management tool that the fbi is using has the ability to produce the same kinds of reports on demand .
+
+such “real time” reporting satisfies the intent of this best practice .
+
+with respect to configuration auditing , the fbi's plan calls for audits of the status of program assets .
+
+however , the bureau is not following its plans because , according to program officials , the configuration management tool's embedded controls and processes reduce the need for such audits .
+
+one such control that we observed includes the automatic recording of who made a change to the software or hardware asset and when the change was made .
+
+nevertheless , the fbi has tasked one of its support contractors with checking the status of configuration items on a daily basis to augment the tool controls .
+
+according to the contractor's representative performing this check , the boards' configuration - related decisions are compared with the configuration status reflected in the tool ; deviations are to be reported to program management .
+
+this approach , according to bureau officials , constitutes “real time” auditing and is better than the periodic audits cited in the configuration management plan .
+
+however , this contractor's activities are not documented or otherwise governed by explicit performance criteria .
+
+as a result , the results of configuration audits were not available to assess possible configuration management and security impacts , as provided for in the sentinel configuration management plan .
+
+thus , we could not verify the fbi's implementation of configuration auditing activities .
+
+this lack of performance criteria and measures for support contractors are described further in the next section .
+
+fbi officials stated that they intended to perform configuration audits called for in their plan in early june .
+
+the fbi is performing a range of activities to effectively define expectations for its prime contractor and to measure performance against and hold the contractor accountable for meeting these expectations .
+
+the bureau is also performing a number of key practices that are relevant to tracking and overseeing the many support contractors that are performing program management functions .
+
+however , it is not performing one key practice — establishing and employing product and service performance standards .
+
+as a result , the fbi cannot adequately ensure that these support contractors are performing required program management functions effectively and efficiently .
+
+contract tracking and oversight is the process by which contractual agreements are established and contractor efforts to satisfy those agreements are monitored .
+
+this process involves information sharing between the acquirer and contractor to ensure that contractual requirements are understood , that there are measurements to disclose overall project status and problems , and that there are appropriate incentives for ensuring that cost and schedule commitments are met and that quality products are delivered .
+
+contract tracking and oversight begins with the award of a contract and ends at the conclusion of the contract's period of performance .
+
+contract tracking and oversight best practices include ensuring that ( 1 ) the acquiring organization has sufficient insight into the contractor's activities to manage and control the contractor and ensure that the contract's requirements are met ; ( 2 ) the acquiring organization and contractor maintain ongoing communication and both parties implement agreed - to commitments ; ( 3 ) all contract changes are managed throughout the life of the contract ; ( 4 ) the acquisition organization has a written policy for contract tracking and oversight ; ( 5 ) responsibility for contract tracking and oversight activities is designated ; ( 6 ) the acquiring organization involves contracting specialists in the execution of the contract ; ( 7 ) a quantitative set of software and system metrics is used to define and measure product quality and contractor performance ; and ( 8 ) incentives for meeting cost and schedule estimates and measurable , metric - based product quality incentives are explicitly cited in the contract .
+
+the fbi has taken a number of actions to satisfy these best practices with respect to the sentinel prime contractor ; however , the bureau has not done the same in tracking and overseeing the many support contractors that are performing program management functions .
+
+three examples of best practices implemented in relation to the prime contractor are described here .
+
+ ( see app .
+
+iii for information on the implementation of all eight practices. ) .
+
+to ensure sufficient insight into the contractor's activities , the bureau has instituted integrated product teams for sentinel , whereby members of the program management office work side by side with the prime contractor .
+
+as a result , the sentinel program office has had daily insight into the direction of the contractor's work , thereby giving the fbi management regular opportunities to manage and control the contractor's activities .
+
+moreover , the fbi requires that the prime contractor provide a monthly report detailing the contractor's activities during the previous month , as well as its anticipated activities for the next month , to permit further insight into the contractor's activities .
+
+in addition , the bureau has also established weekly meetings with its contractors to review accomplishments , ongoing issues , and program risks .
+
+concerning managing changes to the contract throughout its lifetime , the program office has implemented a change control process consisting of several review boards to manage changes to program assets .
+
+according to program officials , board decisions that significantly change requirements ( eg , deliverables ) are handled through contract letters .
+
+these letters serve as an official record of the fbi's direction to the contractor , including changes to deliverables called for in the statement of work .
+
+regarding having a written policy for contract tracking and oversight , the fbi's life cycle management directive established the bureau's policy for tracking and overseeing contractors on all it programs , including sentinel .
+
+in addition , the sentinel program management plan provides additional procedures , including conducting reviews such as the requirements clarification review , the design concept review , and the preliminary design review .
+
+further , the sentinel statement of work contains requirements for the contractor's earned value management system , earned value baseline , and the contractor's monthly earned value status reports .
+
+with respect to support contractor tracking and oversight , the bureau is at least partially satisfying all but one of these relevant best practices .
+
+ ( see app .
+
+iii for information on implementation of all eight practices. ) .
+
+however , it has not , for example , established and applied measurable performance standards in its support contractors' statements of work .
+
+specifically , while these statements of work identify specific tasks to be accomplished and assign responsibility for overseeing their execution , they do not cite associated quality and timeliness standards for contract deliverables or other such performance measures .
+
+as noted earlier , for example , the activities performed by the configuration management support contractor ( see prior section ) are not governed by written procedures and are not subject to explicit performance standards .
+
+program officials stated that they manage support contractors daily through face - to - face interaction , and that all work products provided by support contractors are reviewed and approved by government supervisors .
+
+thus , they added , explicit performance standards are not needed .
+
+given the bureau's reliance on support contractors , however , maximizing their performance is important to sentinel's overall success .
+
+by not ensuring that statements of work spell out measures governing product and service quality and timeliness , the fbi cannot adequately ensure that these contractors are performing important program management functions effectively and efficiently .
+
+the fbi's policies and procedures that form the basis for sentinel's schedule and cost estimates are not fully consistent with reliable estimating practices .
+
+while the fbi has issued an it program management handbook , related guidance , and tools that define how it program schedules and costs are to be estimated , this handbook and related material do not , for example , address having a historical database of program schedule and cost estimates to inform future estimates .
+
+in addition , this handbook and related material do not adequately address such schedule estimating practices as providing float time between key activities and reserve time for high risk activities , and they do not adequately address such cost estimating best practices as documentation of source information .
+
+the cost estimates that the fbi has developed for sentinel reflect these limitations in policies , procedures , and tools .
+
+in particular , the estimates to date did not include all relevant costs and could not be verified by supporting documentation .
+
+without well - defined policies , procedures , and supporting tools for estimating it programs' schedules and costs , the reliability of these programs' respective estimates is questionable and , in the case of sentinel , a key basis of informed investment management is missing .
+
+the success of any program depends in part on having a reliable schedule of when the program's set of work activities will occur , how long they will take , and how they are related to one another .
+
+as such , the schedule not only provides a road map for systematic execution of a program , but also provides the means by which to gauge progress , identify and address potential problems , and promote accountability .
+
+among other things , best practices and related federal guidance call for a program schedule to be program - wide in scope , meaning that it should include the integrated breakdown of the work to be performed by both the government and its contractors over the expected life of the program .
+
+best practices also call for the schedule to expressly identify and define the relationships and dependencies among work elements and the constraints affecting the start and completion of work elements .
+
+a well - defined schedule helps to identify the amount of human capital and fiscal resources that are needed to execute the program , and thus is an important contribution to a reliable cost estimate .
+
+our research has identified a range of best practices associated with effective schedule estimating .
+
+these practices include capturing key activities: the schedule should reflect all key activities ( steps , events , outcomes , etc. ) .
+
+as defined in the program's work breakdown structure , to include activities to be performed by both the government and its contractors .
+
+sequencing key activities: the schedule should line up key activities in the order that they are to be carried out .
+
+in particular , activities that must finish prior to the start of other activities ( i.e. , predecessor activities ) as well as activities that cannot begin until other activities are completed ( i.e. , successor activities ) should be identified .
+
+by doing so , dependencies among activities that collectively lead to the accomplishment of events or milestones can be established and used as a basis for guiding work and measuring progress .
+
+establishing the duration of key activities: the schedule should reflect how long each activity will take to execute .
+
+in determining the duration of each activity , the same rationale , data , and assumptions used for cost estimating should be used for schedule estimating .
+
+further , these durations should be as short as possible and they should have specific start and end dates .
+
+excessively long periods needed to execute an activity should prompt further decomposition of the activity so that shorter execution durations will result .
+
+assigning resources to key activities: the schedule should reflect who will do the work activities , whether all required resources will be available when they are needed , and whether any funding or time constraints exist .
+
+establishing the critical path for key activities: the schedule should identify the longest duration path through the sequenced list of key activities , which is known as the schedule's critical path .
+
+if any activity slips along this path , the entire program will be delayed .
+
+therefore , potential problems that might occur along or near the critical path should be identified and reflected in the scheduling of the time for high risk activities ( see next ) .
+
+identifying “float time” between key activities: the schedule should identify the time that a predecessor activity can slip before the delay affects successor activities , which is known as “float time” and is an indicator of schedule flexibility .
+
+as a general rule , activities along the critical path typically have the least amount of float time .
+
+distributing reserves to high risk activities: the baseline schedule should include a buffer or a reserve of extra time .
+
+typically , the schedule reserve is calculated by taking the difference in time between the planned completion date and the contractual completion date for either the program as a whole or for a part of the program .
+
+as a general rule , the reserve should be applied to high risk activities , which are typically found along the critical path .
+
+integrating key activities horizontally and vertically: the schedule should be horizontally integrated , meaning that it should link the products and outcomes associated with already sequenced activities ( see previous section ) .
+
+these links are commonly referred to as “hand offs” and serve to verify that activities are arranged in the right order to achieve aggregated products or outcomes .
+
+the schedule should also be vertically integrated , meaning that traceability exists among varying levels of activities and supporting tasks and sub - tasks .
+
+such mapping or alignment among levels enables different groups to work to the same master schedule .
+
+the fbi's policies and procedures that govern it program schedule estimating are defined in the bureau's it program management handbook and its it investment management process .
+
+to the bureau's credit , these documents reflect several of the previously cited best practices for schedule estimating .
+
+for example , the handbook requires program managers to define and sequence the key activities required to complete a given project , to determine the durations of each activity , and to identify the resources needed to complete tasks .
+
+further , the handbook calls for the identification of the project's critical path and “float time.” however , the handbook and associated worksheets do not specifically call for the distribution of schedule reserve to high risk activities or for the integration of tasks horizontally and vertically .
+
+moreover , fbi policies and procedures only partially provide for assigning resources to key activities because the fbi's guidance does not address consideration of whether funding or time constraints exist .
+
+ ( see table 7 for a summary of the extent to which fbi policies and procedures address each of the best practices. ) .
+
+fbi office of the cio officials agreed that these best practices are not addressed in current bureau policies for estimating schedules and that they need to be .
+
+until they are , schedule estimates for fbi it programs , like sentinel , will be of questionable reliability , and thus the risk of sentinel's actual performance not tracking closely to plans is increased .
+
+the delays that the fbi has recently experienced on phase i of sentinel illustrate how this risk may have been realized .
+
+specifically , the original milestone for completing deployment of sentinel phase i to all headquarters and field offices was may 2007 .
+
+however , according to bureau officials , this milestone slipped to june 2007 .
+
+according to program officials , the delay is due to a number of factors , including early miscommunication with the prime contractor on when work on the program was to begin , a number of changes within the prime contractor's staff , and problems integrating commercial products that were not discovered until system acceptance testing .
+
+however , the limitations in the fbi's policies and procedures that are the basis for the sentinel schedule could have led to development of a phase i schedule that was not sufficiently reliable , and thus was a contributor to this schedule slip .
+
+a reliable cost estimate is critical to the success of any it program .
+
+such an estimate provides the basis for informed investment decision making , realistic budget formulation and program resourcing , meaningful progress measurement , proactive course correction when warranted , and accountability for results .
+
+according to omb , programs must maintain current and well - documented estimates of program costs , and these estimates must encompass the full life cycle of the program .
+
+among other things , omb states that generating reliable program cost estimates is a critical function necessary to support omb's capital programming process .
+
+without this capability , agencies are at risk of experiencing program cost overruns , missed deadlines , and performance shortfalls .
+
+our research has identified a number of best practices that are the basis of effective program cost estimating .
+
+we have grouped these practices into four characteristics of a high - quality and reliable cost estimate .
+
+they are comprehensive: the cost estimates should include both government and contractor costs of the program over its full life cycle , from inception of the program through design , development , deployment , and operation and maintenance to retirement of the program .
+
+they should also provide a level of detail appropriate to ensure that cost elements are neither omitted nor double counted , and they should document all cost - influencing ground rules and assumptions .
+
+well - documented: the cost estimates should capture in writing such things as the source data used and their significance , the calculations performed and their results , and the rationale for choosing a particular estimating method or reference .
+
+moreover , this information should be captured in such a way that the data used to derive the estimate can be traced back to , and verified against their sources .
+
+accurate: the cost estimates should provide for results that are unbiased , and they should not be overly conservative or optimistic ( i.e. , should represent most likely costs ) .
+
+in addition , the estimates should be updated regularly to reflect material changes in the program , and steps should be taken to minimize mathematical mistakes and their significance .
+
+among other things , the estimate should be grounded in documented assumptions and a historical record of cost and schedule estimating and actual experiences on other comparable programs .
+
+credible: the cost estimates should discuss any limitations in the analysis performed due to uncertainty or biases surrounding data or assumptions , and their derivation should provide for varying major assumptions and recalculating outcomes based on sensitivity analyses , and the associated risk and uncertainty inherent in estimates should be disclosed .
+
+further , the estimates should be verified based on cross - checks using other methods and by comparing the results with independent cost estimates .
+
+the fbi's policies and procedures that govern estimating program costs are defined in the bureau's it program management handbook , cost - benefit analysis guide , and it investment management process .
+
+to the bureau's credit , these documents reflect some of the previously cited best practices .
+
+for example , the handbook calls for cost estimates to be comprehensive and to be life cycle in scope , including total costs ( eg , research , development , production , training , operations and maintenance , software licensing , and labor ) over its full life cycle ( from initiation to system retirement ) .
+
+moreover , fbi guidance partially provides for documenting these estimates and ensuring their accuracy by , for example , stating that estimating assumptions should be documented and that the estimates are to be updated on a regular basis .
+
+however , these policies and procedures do not reflect all of the cost estimating best practices associated with well - documented , accurate , and credible estimates .
+
+with respect to being well - documented , they do not require that the sources of historical data used in the estimate be documented and , with respect to accuracy , they do not provide for the establishment and use of a historical database of estimating and actual experiences on comparable programs .
+
+without documenting estimated data sources , the basis for the estimates , including the circumstances surrounding the data used to derive and whether these data have been properly normalized , cannot be understood .
+
+this means that the reliability of the estimate for either current use in managing a program or for inclusion in a historical database for use in future program estimates , cannot be assured .
+
+further , without provision for establishing and using a historical database , one will not be available to inform future estimates , as is the case for the fbi .
+
+with respect to credibility , the fbi's policies and procedures do not address the need to consider and reflect any limitations in the analyses on which the estimates are based , or to document any uncertainty or biases surrounding the data used .
+
+as a result , the associated uncertainty in the estimate itself cannot be determined , thus limiting the estimate's integrity and utility .
+
+further , the fbi's policies and procedures do not provide for the conduct of risk / sensitivity analyses and disclosure of the associated risk and uncertainty of the estimates .
+
+thus , estimates will not include important information to inform program decision making , such as the range of potential costs surrounding the point estimate and the reasons behind this range .
+
+fbi office of the cio officials agreed that these practices are not included in the bureau's policies and procedures that form the basis for it program cost estimates and that they need to be .
+
+until an effective basis for cost estimating is in place and employed , fbi it programs , like sentinel , will likely not have reliable cost estimates to properly inform investment decision making and the risk of actual program cost performance not tracking closely to estimates will be increased .
+
+our analysis of sentinel cost estimates revealed reliability issues .
+
+in particular , none of the estimates are comprehensive in that they each omit relevant costs .
+
+for example , one estimate does not include government or support contractor costs and , according to program officials , another estimate does not include technology refresh , certain government labor costs , or inflationary costs .
+
+in addition , these estimates cannot be considered fully accurate or well documented .
+
+for example , according to program officials , none of the estimates was derived using a historical database reflecting actual and estimated costs on similar programs .
+
+further , none of the estimates had a fully documented estimating methodology , although some parts of one cost estimate were documented .
+
+also , none of the estimates could be traced to the source of the data that were used in developing them .
+
+these reliability concerns with the sentinel cost estimates are due in part to the fbi's not following its own cost estimating policies and procedures and in part to the previously mentioned limitations in the fbi's cost estimating policies , procedures , and supporting tools .
+
+as a result , the sentinel cost estimates do not provide a sufficient basis for informed investment decision making and do not facilitate meaningful tracking of progress against estimates , both of which are fundamental to effectively managing an it program .
+
+the success of large - scale it programs , such as sentinel , is to a large part determined by the extent to which they are executed according to rigorous and disciplined system acquisition management best practices .
+
+while implementing such practices does not guarantee program success , doing so will minimize the program's exposure to risk and thus the extent to which the program falls short of expectations .
+
+in the case of sentinel , living up to expectations is critical because not only are the capabilities that sentinel is to provide mission critical , they are long overdue and thus time is of the essence .
+
+to the fbi's credit , it has implemented a number of best practices for sentinel and by doing so has placed itself on a path to both avoid the kind of missteps that led to the failure of vcf and increase the chances of putting needed mission capabilities in the hands of bureau agents and analysts as soon as possible .
+
+nevertheless , the fbi is still not where it needs to be in managing its program office support contracts and in having reliable estimates of sentinel schedules and costs to manage and disclose progress and to inform bureau , department of justice , and congressional investment decision making .
+
+as a result , there is a risk that contractor - provided program management support will not be performed effectively and efficiently .
+
+given that sentinel's program office relies extensively on such contractor support to execute its many program management functions , less than high quality support contractor performance could adversely affect sentinel's success .
+
+risks also exist relative to having a reliable basis for informed decisions about sentinel's investment options because bureau policies , procedures , and tools that form the basis for sentinel schedule and cost estimates do not reflect important best practices .
+
+moreover , the cost estimates that the fbi has developed to date for sentinel reflect these limitations .
+
+this means that bureau and justice leadership and congress lack reasonable assurance that they have a reliable cost basis on which to decide among competing investment options and measure sentinel's progress .
+
+both effective support contractor tracking and oversight and reliable schedule and cost estimating are critical management functions that should be implemented for programs like sentinel according to organizational policies and procedures that are grounded in relevant best practices .
+
+the fbi's current policies and procedures in this area do not address several key best practices , and hence the bureau has not implemented such practices for sentinel .
+
+it is important that the fbi correct this void in its policies and procedures and that all its it programs implement these practices .
+
+to strengthen the fbi's management of its sentinel program , we are recommending that the fbi director instruct the bureau's cio to work with sentinel support contractors , where feasible , to establish and implement performance standards in statements of work relative to the quality and timeliness of products and the performance of services and revise the it handbook and related guidance to address schedule and cost estimating best practices that are identified in this report as not being addressed in fbi policies and procedures and ensure that these best practices are fully employed on all major it programs , including sentinel .
+
+in written comments on a draft of this report signed by the fbi cio and reprinted in appendix iv , the bureau stated that it agreed with our recommendation to revise and implement its guidance for it program schedule and cost estimation .
+
+the fbi cio stated that the bureau plans to do so by september 30 , 2007 .
+
+however , the fbi disagreed with our recommendation to establish and implement metrics - based performance standards for its sentinel program office support contractors , stating that the program office already provides sufficient oversight of these contractors .
+
+to support this position , the fbi commented that sentinel's staffing plan contains support contractor position descriptions that include identifying the skills required to execute each position's functions .
+
+further , it commented that all support contractor's products are reviewed and approved by government supervisors , and that the support contractors submit reports on accomplishments that are used by the fbi in reviewing and approving invoices .
+
+while we do not take issue with any of these comments , we also do not believe that these actions fully address our recommendation .
+
+as a result , we disagree with the bureau's position .
+
+specifically , our point is not whether the functions that support contractors perform , or the skills needed to perform them , are identified or whether support contractors' work is reviewed before invoice payment is approved ; rather , our point is that standards governing the quality and timeliness of the functions and work performed are not defined ; this lack of standards , in turn , increases the chances of support contractors producing products or providing services that fall short of expectations and thus do not support effective and efficient program management .
+
+as we state in our report , this is particularly important for the sentinel program because the bureau is relying extensively on support contractors to augment its own program management staff .
+
+the fbi also provided technical comments , which we have incorporated throughout the report as appropriate .
+
+we are sending copies of this report to the chairman and vice chairman of the senate select committee on intelligence and the ranking member of the house permanent select committee on intelligence as well as to the chairman and ranking member of the senate committee on the judiciary ; the chairman and ranking member of the house committee on appropriations , subcommittee on science ; the departments of state , justice , and commerce , and related agencies .
+
+we are also sending copies to the attorney general ; the director , fbi ; the director , office of management and budget ; and other interested parties .
+
+in addition , the report will also be available without charge on gao's web site at http: / / www.gao.gov .
+
+should you have any questions about matters discussed in this report , please contact me at ( 202 ) 512-3439 or by e - mail at hiter@gao.gov .
+
+contact points for our office of congressional relations and public affairs office may be found on the last page of this report .
+
+key contributors to this report are listed in appendix v .
+
+our objectives were to determine the fbi's ( 1 ) use of effective practices for acquiring sentinel and ( 2 ) basis for reliably estimating sentinel's schedule and costs .
+
+to address the first objective , we focused on five key areas associated with acquiring commercial component - based it systems , as agreed with our requestors: solicitation , risk management , organizational change management , configuration management , and contract tracking and oversight .
+
+we researched relevant best practices , including published guidance from the software engineering institute ( sei ) and gao - issued reports associated with each of these five areas .
+
+we also obtained and reviewed relevant fbi policies , procedures , guidance , and sentinel program documentation ( see below ) , and interviewed pertinent sentinel program and office of the cio officials as well as prime contractor ( lockheed martin ) and support contractor representatives where appropriate , to determine how the fbi had defined its approach to managing each of these five areas and how it had actually implemented them on sentinel .
+
+we then compared this body of evidence to best practices and related guidance that we researched , identified variances , and discussed the reasons for and impact of any variances with fbi officials .
+
+the key , governing fbi documents that we obtained and reviewed relative to each of the five areas included ( 1 ) fbi information technology life cycle management directive version 3.0 ; ( 2 ) project management handbook , version 1 ; and ( 3 ) sentinel program management plan , version 1.2 .
+
+in addition , we obtained and reviewed the following documents that were specific to each of the five areas: for solicitation , these documents include: ( 1 ) the sentinel source selection plan ; ( 2 ) the sentinel source selection decision document ; and ( 3 ) the sentinel source selection evaluation team final report .
+
+for risk management , these documents include: ( 1 ) the sentinel risk management plan ; ( 2 ) the sentinel risk register ; and ( 3 ) the lockheed martin risk and opportunity management plan for sentinel .
+
+for organizational change management , these documents include: ( 1 ) the sentinel workforce transformation strategy and plan ; ( 2 ) the sentinel stakeholder and organizational risk assessment ; ( 3 ) the sentinel organizational impact assessment ; ( 4 ) the sentinel communications plan ; and ( 5 ) the sentinel training strategy and plan .
+
+for configuration management , these documents include: ( 1 ) the sentinel configuration management plan ; and ( 2 ) the lockheed martin configuration management plan for sentinel .
+
+for contract tracking and oversight these documents include ( 1 ) the statements of work for sentinel support contractors ; ( 2 ) the sentinel measurement plan ; ( 3 ) selected sentinel measurement reports ; ( 4 ) the sentinel statement of work ; and ( 5 ) select monthly evm reports .
+
+to address our second objective , we used gao's draft guide on estimating program schedules and costs , which is based on extensive research of best practices , and federal schedule and cost estimating guidance found in the omb capital programming guide .
+
+in addition , we obtained and reviewed fbi policies and procedures governing schedule and cost estimating , including the fbi program management handbook , fbi information technology life cycle management directive , and the fbi information technology management guide .
+
+we then compared the bureau's policies and procedures to the practices in gao's guide and to federal guidance , identified variances , and discussed reasons for variances with officials from the office of the cio .
+
+we also interviewed program officials , and / or obtained and reviewed sentinel cost estimates relative to the analysis , data , and calculations supporting each estimate .
+
+we conducted our work from our washington , d.c. , headquarters , and at fbi headquarters and facilities in the greater washington , d.c. , metropolitan area between september 2005 and may 2007 in accordance with generally accepted government auditing standards .
+
+we and others have identified and promoted the use of a number of best practices associated with acquiring it systems .
+
+in 2004 , we reported on 18 relevant best practices and grouped them into two categories: ( 1 ) ten practices for acquiring any type of business system and ( 2 ) eight complementary practices that relate specifically to acquiring commercial component - based business systems .
+
+each is described here .
+
+purpose: to ensure that reasonable planning for all parts of the acquisition is conducted .
+
+description: acquisition planning is the process for conducting and documenting acquisition planning activities beginning early and covering all parts of the project .
+
+this planning extends to all acquisition areas , such as budgeting , scheduling , resource estimating , risk identification , and requirements definition as well as the overall acquisition strategy .
+
+acquisition planning begins with the earliest identification of a requirement that is to be satisfied through an acquisition .
+
+activities: ( 1 ) plans are prepared during acquisition planning and maintained throughout the acquisition .
+
+ ( 2 ) planning addresses the entire acquisition process , including life cycle support of the products being acquired .
+
+ ( 3 ) the acquisition organization has a written policy for planning the acquisition .
+
+ ( 4 ) responsibility for acquisition planning activities is designated .
+
+purpose: to ensure that the acquisition is consistent with the organization's enterprise architecture .
+
+description: architectural alignment is the process for analyzing and verifying that the proposed architecture of the system being acquired is consistent with the enterprise architecture for the organization acquiring the system .
+
+such alignment is needed to ensure that acquired systems can interoperate and are not unnecessarily duplicative of one another .
+
+exceptions to this alignment requirement are permitted , but only when justified and only when granted an explicit waiver from the architecture .
+
+a particular architectural consideration is whether requirements that extend beyond the specific system being acquired should be considered when selecting system components .
+
+such “product line” ( i.e. , systems that are developed from a common set of assets and share a common and managed set of features ) considerations can provide substantial production economies over acquiring systems from scratch .
+
+activities: ( 1 ) the system being acquired is assessed for alignment with the enterprise architecture at key life cycle decision points and any deviations from the architecture are explicitly understood and justified by an explicit waiver to the architecture .
+
+ ( 2 ) product line requirements — rather than just the requirements for the system being acquired — are an explicit consideration in each acquisition .
+
+purpose: to ensure that contract activities are performed in accordance with contractual requirements .
+
+description: contract tracking and oversight is the process by which contractual agreements are established and contractor efforts to satisfy those agreements are monitored .
+
+it involves information sharing between the acquirer and contractor to ensure that contractual requirements are understood , that there are regular measurements to disclose overall project status and whether problems exist , and that there are appropriate incentives for ensuring that cost and schedule commitments are met and that quality products are delivered .
+
+contract tracking and oversight begins with the award of the contract and ends at the conclusion of the contract's period of performance .
+
+activities: ( 1 ) the acquiring organization has sufficient insight into the contractor's activities to manage and control the contractor and ensure that contract requirements are met .
+
+ ( 2 ) the acquiring organization and contractor maintain ongoing communication ; commitments are agreed to and implemented by both parties .
+
+ ( 3 ) all contract changes are managed throughout the life of the contract .
+
+ ( 4 ) the acquiring organization has a written policy for contract tracking and oversight .
+
+ ( 5 ) responsibility for contract tracking and oversight activities is designated .
+
+ ( 6 ) the acquiring organization involves contracting specialists in the execution of the contract .
+
+ ( 7 ) a quantitative set of software and system metrics is used to define and measure product quality and contractor performance .
+
+ ( 8 ) in addition to incentives for meeting cost and schedule estimates , measurable , metrics - based product quality incentives are explicitly cited in the contract .
+
+purpose: to ensure that system investments have an adequate economic justification .
+
+description: economic justification is the process for ensuring that acquisition decisions are based on reliable analyses of the proposed investment's likely costs versus benefits over its useful life as well as an analysis of the risks associated with actually realizing the acquisition's forecasted benefits for its estimated costs .
+
+moreover , it entails minimizing the risk and uncertainty of large acquisitions that require spending large sums of money over many years by breaking the acquisition into smaller , incremental acquisitions .
+
+economic justification is not a one - time event , but rather is performed throughout an acquisition's life cycle in order to permit informed investment decision making .
+
+activities: ( 1 ) system investment decisions are made on the basis of reliable analyses of estimated system life cycle costs , expected benefits , and anticipated risks .
+
+ ( 2 ) large systems acquisitions are ( to the maximum extent practical ) divided into a series of smaller , incremental acquisition efforts , and investment decisions on these smaller efforts are made on the basis of reliable analyses of estimated costs , expected benefits , and anticipated risks .
+
+purpose: to ensure that evidence showing that the contract products satisfy the defined requirements are provided prior to accepting contractor products .
+
+description: evaluation is the process by which contract deliverables are analyzed to determine whether they meet contract requirements .
+
+it includes developing criteria such as product acceptance criteria to be included into both the solicitation package and the contract .
+
+it should be conducted continuously throughout the contract period as products are delivered .
+
+it begins with development of the products' requirements and ends when the acquisition is completed .
+
+activities: ( 1 ) evaluation requirements are developed in conjunction with the contractual requirements and are maintained over the life of the acquisition .
+
+ ( 2 ) evaluations are planned and conducted throughout the total acquisition period to provide an integrated approach that satisfies evaluation requirements and takes advantage of all evaluation results .
+
+ ( 3 ) evaluations provide an objective basis to support the product acceptance decision .
+
+ ( 4 ) the acquisition organization has a written policy for managing the evaluation of the acquired products .
+
+ ( 5 ) responsibility for evaluation activities is designated .
+
+purpose: to ensure that the project office and its supporting organizations function efficiently and effectively .
+
+description: project management is the process for planning , organizing , staffing , directing , and managing all project - office - related activities , such as defining project tasks , estimating and securing resources , scheduling activities and tasks , training , and accepting products .
+
+project management begins when the project office is formed and ends when the acquisition is completed .
+
+activities: ( 1 ) project management activities are planned , organized , controlled , and communicated .
+
+ ( 2 ) the performance , cost , and schedule of the acquisition are continually measured , compared with planned objectives , and controlled .
+
+ ( 3 ) problems discovered during the acquisition are managed and controlled .
+
+ ( 4 ) the acquisition organization has a written policy for project management .
+
+ ( 5 ) responsibility for project management is designated .
+
+purpose: to ensure that contractual requirements are clearly defined and understood by the acquisition stakeholders .
+
+description: requirements development is the process for developing and documenting contractual requirements , including evaluating opportunities for reusing existing assets .
+
+it involves participation from end users to ensure that product requirements are well understood , and that optional versus mandatory requirements are clearly delineated .
+
+requirements management is the process for establishing and maintaining agreement on the contractual requirements among the various stakeholders and for ensuring that the requirements are traceable , verifiable , and controlled .
+
+this involves base lining the requirements and controlling subsequent requirements changes .
+
+requirements development and management begins when the solicitation's requirements are documented and ends when system responsibility is transferred to the support organization .
+
+activities: ( 1 ) contractual requirements are developed , managed , and maintained .
+
+ ( 2 ) the end user and other affected groups have input into the contractual requirements over the life of the acquisition .
+
+ ( 3 ) contractual requirements are traceable and verifiable .
+
+ ( 4 ) the contractual requirements baseline is established prior to release of the solicitation package .
+
+ ( 5 ) the acquisition organization has a written policy for establishing and managing the contractual requirements .
+
+ ( 6 ) responsibility for requirements development and management is designated .
+
+ ( 7 ) requirements that are mandatory versus optional are clearly delineated and used in deciding what requirements can be eliminated or postponed to meet other project goals , such as cost and schedule constraints .
+
+purpose: to ensure that risks are identified and systematically mitigated .
+
+description: risk management is the process for identifying potential acquisition problems and taking appropriate steps to avoid their becoming actual problems .
+
+it includes risk identification and categorization based on estimated impact , development of risk mitigation strategies , and execution of and reporting on the strategies .
+
+risk management occurs early and continuously in the acquisition life cycle .
+
+activities: ( 1 ) project wide participation in the identification and mitigation of risks is encouraged .
+
+ ( 2 ) the defined acquisition process provides for the identification , analysis , and mitigation of risks .
+
+ ( 3 ) milestone reviews include the status of identified risks .
+
+ ( 4 ) the acquisition organization has a written policy for managing acquisition risk .
+
+ ( 5 ) responsibility for acquisition risk management activities is designated .
+
+purpose: to ensure that a quality solicitation is produced , and a best qualified contractor selected .
+
+description: solicitation is the process for developing , documenting , and issuing the solicitation package ; developing and implementing a plan to evaluate responses ; conducting contract negotiations ; and awarding the contract .
+
+solicitation ends with contract award .
+
+activities: ( 1 ) the solicitation package includes the contractual requirements and the proposal evaluation criteria .
+
+ ( 2 ) the technical and management elements of proposals are evaluated to ensure that the requirements of the contract will be satisfied .
+
+ ( 3 ) the selection official selects a supplier who is qualified to satisfy the contract's requirements .
+
+ ( 4 ) the acquiring organization has a written policy for conducting the solicitation .
+
+ ( 5 ) responsibility for the solicitation is designated .
+
+ ( 6 ) a selection official has been designated to be responsible for the selection process and decision .
+
+ ( 7 ) the acquiring team includes contracting specialists to support contract administration .
+
+purpose: to ensure proper transfer of the system from the acquisition organization to the eventual support organization .
+
+description: transition to support is the process for developing and implementing the plans for transitioning products to the support organization .
+
+this includes engaging relevant stakeholders in the acquisition and sharing information about the system's supporting infrastructure .
+
+transition to support begins with requirements development and ends when the responsibility for the products is turned over to the support organization .
+
+activities: ( 1 ) the acquiring organization ensures that the support organization has the capacity and capability to provide the required support .
+
+ ( 2 ) there is no loss in continuity of support to the products during transition from the supplier to the support organization .
+
+ ( 3 ) configuration management of the products is maintained throughout the transition .
+
+ ( 4 ) the acquiring organization has a written policy for transitioning products to the support organization .
+
+ ( 5 ) the acquiring organization ensures that the support organization is involved in planning for transition to support .
+
+ ( 6 ) responsibility for transition to support activities is designated .
+
+purpose: to ensure that commercial product modification is effectively controlled .
+
+description: component modification is the process for limiting the chances of a commercial product being modified to the point that it becomes a one - of - a - kind solution because doing so can result in extensive life cycle costs .
+
+such modifications , if not incorporated into the commercially available version of the product by the supplier , mean that every product release has to be modified in accordance with the custom changes , thus precluding realization of some of the benefit of using a commercial product .
+
+activity: ( 1 ) modification of commercial components is discouraged and allowed only if justified by a thorough analysis of life cycle costs and benefits .
+
+purpose: to ensure the integrity and consistency of commercial system components .
+
+description: configuration management relative to commercial component - based systems is the process for ensuring that changes to the commercial components of a system are strictly controlled .
+
+it recognizes that when using commercial components , it is the vendor , not the acquisition or support organization , that controls the release of new component versions and that new versions are released frequently .
+
+thus , acquisition management needs to provide for both receiving new product releases and controlling the implementation of these releases .
+
+activities: ( 1 ) project plans explicitly provide for evaluation , acquisition , and implementation of new , often frequent , product releases .
+
+ ( 2 ) modification or upgrades to deployed versions of system components are centrally controlled and unilateral user release changes are precluded .
+
+purpose: to ensure that relationships between commercial products are understood before acquisition decisions are made .
+
+description: dependency analysis relative to commercial component - based systems is the process for determining and understanding the characteristics of these products so that inherent dependencies among them can be considered before they are acquired .
+
+it involves recognizing that the logical and physical relationships among products impact one another .
+
+this is necessary because commercial products are built around each vendor's functional and architectural assumptions and paradigms , such as approaches to error handling and data access , and these assumptions and paradigms are likely to be different among products from different sources .
+
+such differences complicate product integration .
+
+further , some commercial products have built - in dependencies with other products that , if not known , can further complicate integration .
+
+activity: ( 1 ) decisions about the acquisition of commercial components are based on deliberate and thorough research , analysis , and evaluation of the components' interdependencies .
+
+purpose: to ensure reasonable planning for integration of commercial products with existing systems .
+
+description: legacy systems integration planning is the process for ensuring that the time and resources needed to integrate existing systems with the system being acquired are identified and provided for .
+
+it involves identifying which legacy systems will interact with the system being acquired and what kinds and levels of testing are required .
+
+integration planning recognizes that , although some commercial products may provide mechanisms and information that are helpful in integration with legacy systems , the unavailability of the source code for commercial products and the different organizations that are responsible for the two will likely require additional time and effort .
+
+activity: ( 1 ) project plans explicitly provide for the time and resources necessary for integrating commercial components with legacy systems .
+
+purpose: to ensure that the organizational impact of using new system functionality is proactively managed .
+
+description: organization change management relative to commercial component - based systems is the process for preparing system users for the business process changes that will accompany implementation of the system .
+
+it involves engaging users and communicating the nature of anticipated changes to system users through training on how jobs will change .
+
+this is necessary because commercial products are created with the developers' expectations of how they will be used , and the products' functionality may require the organization implementing the system to change existing business processes .
+
+activities: ( 1 ) project plans explicitly provide for preparing users on the impact that the business processes embedded in the commercial components will have on the user's respective roles and responsibilities .
+
+ ( 2 ) the introduction and adoption of changes to how users will be expected to execute their jobs are actively managed .
+
+purpose: to ensure that a quality solicitation is produced and a best qualified contractor is selected .
+
+description: solicitation relative to commercial component - based systems is the process for ensuring that a capable contractor is selected .
+
+it involves ensuring that the selected contractor has experience with integrating commercial component products .
+
+this is important because expertise in developing custom system solutions is different from expertise in implementing commercial components ; it requires different core competencies and experiences to be successful .
+
+activity: ( 1 ) systems integration contractors are explicitly evaluated on their ability to implement commercial components .
+
+purpose: to ensure that system requirements alone do not drive the system solution .
+
+description: tradeoff analysis relative to commercial product - based systems is the process for analyzing and understanding the tradeoffs among competing acquisition variables so as to produce informed acquisition decision making .
+
+it involves planning and executing acquisitions in a manner that recognizes four competing interests: defined system requirements , the architectural environment ( current and future ) in which the system needs to operate , acquisition cost and schedule constraints , and the availability of products in the commercial marketplace ( current and future ) .
+
+this analysis should be performed early and continuously throughout an acquisition's life cycle .
+
+activity: ( 1 ) investment decisions throughout a system's life cycle are based on tradeoffs among the availability of commercial products ( current and future ) , the architectural environment in which the system is to operate ( current and future ) , defined system requirements , and acquisition cost / schedule constraints .
+
+purpose: to ensure that vendor and product characteristics are understood before acquisition decisions are made .
+
+description: vendor and product research and evaluation relative to commercial component - based systems is the process for obtaining reliable information about both the product being considered and the vendor offering the product .
+
+it involves taking additional steps beyond vendor representations , such as obtaining information about the vendor's history , obtaining information on the vendor's business strategy relative to evolution and support of the product , and evaluating copies of the product in a test environment .
+
+activities: ( 1 ) commercial component and vendor options are researched , evaluated / tested , and understood , both early and continuously .
+
+ ( 2 ) a set of evaluation criteria for selecting among commercial component options is established that includes both defined system requirements and vendor / commercial product characteristics ( eg , customer satisfaction with company and product line ) .
+
+table 9 contains our assessment of the fbi's efforts for contract tracking and oversight for both the prime contractor and the sub - contractors .
+
+in addition to those named above , monica anatalio , tonia brown , carol cha , neil doherty , jennifer echard , nancy glover , daniel gordon , jim macauley , paula moore ( assistant director ) , karen richey , teresa tucker , kevin walsh , and jeffrey woodward made key contributions to this report .
+

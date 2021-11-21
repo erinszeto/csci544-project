@@ -1,0 +1,306 @@
+as you requested , we audited the statements of disbursements , receipts , and financing sources for the office of the secretary of the senate and the office of the sergeant at arms and doorkeeper for fiscal year 1994 and reported thereon .
+
+as part of our audit work , we evaluated and tested the general computer controls over the financial systems maintained and operated by the senate computer center ( scc ) that processed financial information for the two offices .
+
+general computer controls affect the overall security and effectiveness of computer systems and operations as opposed to being unique to any specific computer program , office , or operation .
+
+they include an entity's organizational structure , operating procedures , software security features , and physical protection .
+
+such controls are designed to ensure that ( 1 ) access to sensitive data is restricted to prevent unauthorized changes and disclosure , ( 2 ) only approved changes are made to computer programs , ( 3 ) computer staff duties are properly segregated to reduce the risk of undetected errors or fraud , and ( 4 ) back - up and recovery plans are adequate to continue essential operations in the event of an emergency .
+
+we identified general computer control weaknesses which , although mitigated by compensating controls for the financial statements we audited , could affect the security and reliability of computer operations for other senate offices .
+
+accordingly , we are reporting separately on the results of our computer control testing .
+
+this report summarizes our findings , which we discussed in detail with scc management .
+
+also , we identified weaknesses in controls over external access to senate computer resources , which we are reporting in a separate letter with limited distribution due to its sensitive nature .
+
+the overall effectiveness of the senate's computer controls is dependent on the controls implemented by ( 1 ) scc , which operates the senate mainframe computer , ( 2 ) system users , which include all member offices and senate committees , and ( 3 ) the office of telecommunications , which maintains telecommunication equipment and networks that link system users to the scc mainframe and to other users .
+
+in addition to processing financial systems , such as payroll and other disbursements , the scc mainframe processes other important and confidential information , such as senate personnel files , legis — a text retrieval system for bills and other legislative information , and capitol police and other administrative files .
+
+system users operate about 260 local area networks ( lans ) in the washington , d.c. , area and across the country that communicate with the mainframe and perform data processing functions for users .
+
+overall , there are approximately 580 user accounts that allow access to one or more programs run by scc .
+
+our objective was to evaluate and test the general computer controls over the financial systems maintained and operated by the senate computer center ( scc ) that processed financial information for the office of the secretary of the senate and the office of the sergeant at arms and doorkeeper .
+
+general computer controls , however , also affect the security and reliability of financial and nonfinancial operations processed by scc for other senate offices .
+
+specifically , we evaluated controls intended to protect data , files , and programs from unauthorized access ; prevent unauthorized changes to systems and applications software ; provide segregation of duties among applications and systems programmers , computer operators , security administrators , and other data center personnel ; ensure recovery of computer processing operations in case of a disaster or other unexpected interruption ; and ensure adequate computer security administration .
+
+to evaluate these controls , we identified and reviewed scc's information system general control policies and procedures .
+
+through this review and discussions with scc staff , including programming , operations , and security personnel , we determined how the general controls should work and the extent to which data center personnel considered them to be in place .
+
+we also reviewed the installation and implementation of scc's systems and security software .
+
+further , we tested and observed the operation of general controls over scc information systems to determine whether they were in place , adequately designed , and operating effectively .
+
+our tests included attempts to obtain access to sensitive data and programs , which were performed with the knowledge and cooperation of scc officials .
+
+to assist in our evaluation and testing of general controls , we contracted with the public accounting firm of deloitte & touche llp .
+
+we determined the scope of our contractor's audit work , monitored its progress , and reviewed the related work papers to ensure that the resulting findings were adequately supported .
+
+we performed our work at the senate computer center in washington , d.c. , from april 1995 through july 1995 in accordance with generally accepted government auditing standards .
+
+during the course of our work , we met with scc officials to discuss our work and they informed us of the steps they planned to take or had taken to address our findings .
+
+at the conclusion of our work , we provided a draft of this report to senate officials who said that they concurred with our findings , conclusions , and recommendations .
+
+two basic internal control objectives for any information system are to protect data from unauthorized changes and to prevent unauthorized disclosures of sensitive data .
+
+without effective access controls , the reliability of a computer system's data cannot be maintained , sensitive data can be accessed and changed , and information can be inappropriately disclosed .
+
+scc had computer security weaknesses that could result in unauthorized access to the system's data , files , and programs .
+
+these weaknesses included ineffective ( 1 ) implementation of scc's access control software and ( 2 ) practices to authorize , monitor , and review user access .
+
+during the course of our work , scc officials advised of actions they had taken or planned to take to address some of the weaknesses we identified .
+
+scc has implemented ca - acf2 , a commercially available access control software package , to control its primary financial management system and certain batch processing .
+
+however , acf2 was not implemented to control access to other mainframe programs , including parts of the payroll system , legis , the capitol police system , and other administrative systems .
+
+while many programs have built - in security features , such features typically are not as comprehensive or stringent as those provided by acf2 .
+
+common deficiencies in such programs include a lack of audit trails for user activity and few , if any , password management controls ( for example , forced password changes and minimum character length passwords ) .
+
+by not implementing acf2 over all its systems and programs , scc has forfeited many of the control benefits provided by the software , and must maintain expertise in the security administration for each of these systems and programs .
+
+for example , at least one system not under acf2 requires the use of a single shared password for access .
+
+since all users share the same password , the system cannot provide an audit trail of a particular user's activity , thereby limiting user accountability .
+
+scc officials advised us that they did not plan to implement acf2 over other mainframe applications due to ( 1 ) indications that , for some programs , less rigorous security measures are preferred by user management to provide easier accessibility , ( 2 ) resource constraints , and ( 3 ) intentions to transition from the mainframe to a decentralized network environment .
+
+however , as the transition may not be completed for up to 5 years , we believe that it is important for scc management to assess its ongoing risks of not implementing acf2 completely and take appropriate actions .
+
+in addition , the implementation of acf2 over the financial management system and batch processing is not fully effective .
+
+the technical options that scc has implemented to control access to the information on its mainframe negate many of the control benefits that the software offers .
+
+for example , acf2 was implemented to allow up to 20 security violations , such as attempts to access data for which the user is not authorized , to occur in a single job or session before it is canceled .
+
+similarly , a user was permitted up to 500 invalid password attempts daily before acf2 denied access .
+
+by allowing such a high number of violations and invalid password attempts to occur , scc increased the risk of unauthorized access and improper use or disclosure of sensitive senate data .
+
+scc officials advised us that they have begun changes to these acf2 control settings , such as reducing the limits on the number of security violations and invalid password attempts .
+
+other password controls were weakened due to ineffective acf2 implementation .
+
+while a user's identification ( id ) typically follows a standard format that makes it easily deduced , passwords are used to authenticate the user and thus should be difficult to deduce , kept secret , and frequently changed .
+
+most scc users were only required to change their passwords every 180 days ; some users were not required to change their passwords at all .
+
+in addition , scc had not implemented a shorter password expiration period for users having special system or security privileges .
+
+moreover , scc's current security policies did not prevent users from reusing the same password indefinitely .
+
+the longer a user is allowed to use the same password , the greater the risk that an unauthorized user may discover and use another user's id / password combination .
+
+scc management advised us that it was reviewing password policies and had reduced the password change requirement to 90 days for some users and to 30 days for some special privileges and was investigating ways to restrict others .
+
+organizations can reduce the risk that unauthorized changes or disclosures occur by ( 1 ) granting employees authority to read or modify only those programs and data that are necessary to perform their duties and ( 2 ) periodically reviewing this authority and modifying it to reflect changes in job responsibilities and terminations in employment .
+
+having unused or unneeded user accounts increases the risk that an unauthorized user will discover and use such an account without prompt detection .
+
+in a sample of 38 scc accounts , we found 3 assigned to individuals who had separated from senate employment from 5 to 15 months earlier .
+
+we also found that 159 , or over one quarter of the accounts , had not been used in more than 6 months .
+
+we noted that another 79 had never been used , of which 64 had existed for more than 120 days .
+
+because initial passwords may be easily guessed , these inactive accounts present an increased risk that passwords will be compromised and unauthorized access allowed .
+
+we also identified 30 user ids and passwords that were shared by staff in certain departments , even though these staff members have individual accounts .
+
+the use of shared ids and passwords undermines the effectiveness of monitoring because individual accountability is lost and increases the risk of password compromise .
+
+in addition , scc's implementation of acf2 allowed for unnecessary access to sensitive data and programs .
+
+both operations and programming personnel in scc's central services division had a level of access that was not necessary for performance of their regular job duties and could increase the risk of unauthorized disclosure or modification of sensitive data .
+
+for example , 11 applications programmers had the ability to change on - line payroll data , 11 could alter vendor information , and 2 could change financial data .
+
+moreover , this level of access could not be monitored because no record , or log , of the access was created .
+
+we identified another area in which scc could improve its access monitoring controls .
+
+specifically , scc did not implement session timeouts , which automatically log off a user's terminal after a specified period of inactivity , over all of its programs .
+
+lack of session timeouts increases the risk of unauthorized access to unattended terminals .
+
+scc management was reviewing its access authorization and monitoring procedures at the time of our review and had taken or planned to take several corrective actions .
+
+specifically , scc management indicated that the security administrator had begun to log and monitor user access to determine what programs and files are being used .
+
+this information will be used as a basis for removing access privileges where they are not used or needed .
+
+however , where unrestricted access is deemed necessary , management plans to log and monitor it .
+
+also , scc management advised us that inactive user ids were being removed from the system .
+
+finally , scc management was reviewing shared user ids and passwords and planned to reduce or eliminate them .
+
+in addition to access controls , a computer system typically has other important general controls to ensure the integrity and reliability of data .
+
+these general controls include policies , procedures , and control techniques to ( 1 ) prevent unauthorized changes to system software , ( 2 ) provide appropriate segregation of duties among computer personnel , and ( 3 ) ensure continuation of computer processing operations in case of an unexpected interruption .
+
+scc had weaknesses in the general controls over each of these areas , although its management had made or planned to make improvements in several areas .
+
+the integrity of an information system depends upon management's clear understanding and documentation of the system .
+
+formal processes for developing and maintaining software are important tools to assist management in ensuring that all changes to software meet user specifications , are appropriately reviewed and authorized , and include adequate security measures .
+
+scc did not have a formal change control process to document management's authorization and approval of routine and emergency changes to systems software .
+
+change control procedures for the major financial programs have not been formalized to ensure that only authorized changes are made to programs and data .
+
+inadequate management of system software changes and maintenance , including the lack of documentation , also increased the risk that back - up and recovery procedures could not be effectively performed .
+
+also , we found instances of ( 1 ) the unintended creation of access paths to computer resources and ( 2 ) situations in which scc staff were unsure of the purpose of undocumented systems software functions .
+
+both of these weaknesses increased the risk of security or reliability breaches .
+
+for example , the operating system contained the names of five programs that no longer existed , introducing the risk that an unauthorized program could be run under one of those program names to gain unauthorized access to programs and data files .
+
+scc officials were reviewing software change and maintenance procedures and planned to formalize them .
+
+also , scc management advised us that unused program names have been eliminated .
+
+one fundamental technique for safeguarding programs and data is the appropriate segregation of duties and responsibilities of computer personnel to reduce the risk that errors or fraud will go undetected .
+
+at scc , we found inadequate segregation of duties , particularly in the granting of powerful security privileges .
+
+scc has explicitly assigned two systems programmers to assist in the security administration of the access control software .
+
+under normal circumstances , back - up security staff should report to the security administrator and have no programming , operations , or librarian duties .
+
+because these individuals have both systems and security administrator privileges associated with their user accounts , they can eliminate any audit trail of their activity in the system .
+
+scc officials indicated that they were reviewing this issue and considering several steps to mitigate the risks of assigning dual responsibilities .
+
+in addition , scc has assigned powerful acf2 security functions to many user accounts for which these privileges represent a significant security exposure .
+
+for example , 49 accounts could bypass all acf2 controls ( including the creation of audit trails , known as logging ) , allowing the user full and virtually undetectable access to all files , programs , and other system resources .
+
+this level of authority should generally be limited to emergency ids , which are activated with management approval on a temporary , as - needed basis to handle problems or emergencies .
+
+scc officials advised us that they are assessing the granting of full access to such a large number of individuals and have begun to reduce or eliminate such access .
+
+in the interim , to mitigate the risks associated with unlogged access to sensitive files , they have changed their procedures to ensure that all updates to order entry and payroll files are logged .
+
+further , controls over security administration could be improved if the data security administrator reported directly to the scc director to provide adequate authority and independence in security matters .
+
+currently , the data security administrator reports to the assistant director of the educational services and support division .
+
+the data security administrator , therefore , had customer service responsibilities , which may not be compatible with the duties associated with systems security .
+
+scc management was considering the role and organizational placement of the data security administrator at the conclusion of our work .
+
+an agency must ensure that it is adequately prepared to cope with a loss of operational capability due to an earthquake , fire , accident , sabotage , or any other operational disruption .
+
+a detailed , current , and tested disaster recovery plan is essential to ensure that the scc information system can promptly restore operations and data , such as payroll processing and records , in the event of a disaster .
+
+prior to its move to its current location in 1992 , scc had an arrangement with the library of congress to provide back - up operations on its mainframe in the event of an emergency .
+
+however , the two mainframes are no longer compatible , so the library of congress back - up site cannot be used .
+
+scc has developed a back - up capability on its mainframe in the event a portion of the machine goes down .
+
+however , in the event that the entire scc was incapacitated , back - up processing would not be readily available .
+
+scc has advised us that the sergeant at arms has since contracted with a commercial vendor to provide off - site back - up processing facilities in the event of an emergency .
+
+further , scc management has advised us that it has begun to develop a disaster recovery plan .
+
+once developed , it will be important that scc implement and periodically test the plan at the back - up facility , identifying the objectives and expected results for use in evaluating test results .
+
+the senate's lack of a comprehensive strategic plan for computer security administration contributed to the general control weaknesses in scc operations .
+
+such a plan would consider all senate computer resources , and include scc , the office of telecommunications , and users in a comprehensive policy for security awareness and administration .
+
+development and implementation of a comprehensive strategic plan will become more important as scc and its customers continue moving from an environment in which all major applications are processed on a mainframe to a decentralized network environment distributed throughout the senate .
+
+in a distributed processing environment , an integrated security plan is crucial for coordinating control over multiple locations , numerous hardware and software installations , and numerous paths of communication .
+
+for example , given the large number of possible access sites throughout the senate , external access is a significant area of exposure and should be considered in any overall security plan .
+
+without a comprehensive strategy , duplication of some controls and omission of others are likely to occur , adversely affecting both efficiency and effectiveness .
+
+as part of our audits of receipts and disbursements , we evaluated assertions made by the secretary of the senate and the sergeant at arms and doorkeeper that internal controls in place on september 30 , 1994 , were effective in safeguarding assets from material loss , assuring material compliance with relevant laws and regulations , and assuring that there were no material misstatements in the financial statements .
+
+we considered the effect of general computer control weaknesses and determined that other management controls mitigated their effect on the statements of disbursements , receipts , and financing sources for the two audited entities .
+
+both of these offices use scc resources to process financial information that is essential to their operations .
+
+the senate disbursing office , a part of the office of the secretary , uses scc to process payroll and personnel information and to maintain vendor information .
+
+the senate disbursing office maintains its own accounting system , which is used to process other disbursements and report all senate financial transactions .
+
+the sergeant at arms and doorkeeper uses scc to process its accounting and equipment inventory systems .
+
+the senate disbursing office performs various control procedures to ensure that data are properly authorized and entered into the system , including comparison of system reports with supporting documents at various stages of processing .
+
+also , the senate disbursing office distributes monthly reports to the secretary of the senate and the sergeant at arms and doorkeeper that list payroll and other disbursements made on their behalf .
+
+the offices then review the monthly reports for accuracy .
+
+both the secretary of the senate and the sergeant at arms and doorkeeper reconcile the nonpayroll information to their own independent records to ensure that disbursements are consistent with the approved requests for payment that they submitted .
+
+any differences discovered by reviews or reconciliations are discussed with the senate disbursing office and resolved .
+
+finally , the secretary of the senate publishes a semiannual public report that summarizes payroll information by employee and details the individual disbursements of the entire senate .
+
+the senate's general computer control weaknesses could result in serious breaches in the security of its sensitive data and programs , such as those related to payroll and personnel .
+
+a comprehensive strategic plan that integrates and controls access and processing for all senate files , programs , and data is crucial to ensuring that senate computer resources are adequately safeguarded .
+
+as the senate moves to a distributed processing environment , development and implementation of a comprehensive computer security plan will become even more important .
+
+to correct the existing weaknesses at the senate computer center , we recommend that you direct the sergeant at arms and doorkeeper to take the following actions .
+
+develop and implement policies and procedures to limit access for the system's users to only those computer programs and data needed to perform their duties .
+
+access controls should be improved by ( 1 ) effectively utilizing scc's access control software , including assessing ongoing risks of incomplete implementation and taking appropriate control measures , ( 2 ) strengthening procedures to authorize , monitor , and review user access , and ( 3 ) implementing session timeout procedures .
+
+develop and implement policies and procedures for controlling software changes , including requiring documentation for the purpose of the change , management review and approval , and independent testing .
+
+provide for appropriate segregation of computer duties , including upgrading the position of data security administrator to allow for appropriate independence and authority .
+
+develop , implement , and test a disaster recovery plan for all critical scc operations .
+
+in addition , to improve senatewide computer security , we recommend that you direct that the senate develop and implement a comprehensive strategic plan that integrates and controls access and processing for all senate files , programs , and data .
+
+we are sending copies of this report to the sergeant at arms and doorkeeper of the u.s. senate and to the secretary of the senate .
+
+copies will be made available to others upon request .
+
+please contact me at ( 202 ) 512-9489 if you or your staffs have any questions .
+
+major contributors to this report are listed in appendix i .
+
+shannon cross robert dacey francine delvecchio sharon kittrell crawford thompson the first copy of each gao report and testimony is free .
+
+additional copies are $2 each .
+
+orders should be sent to the following address , accompanied by a check or money order made out to the superintendent of documents , when necessary .
+
+orders for 100 or more copies to be mailed to a single address are discounted 25 percent .
+
+u.s. general accounting office p.o .
+
+box 6015 gaithersburg , md 20884-6015 room 1100 700 4th st. nw ( corner of 4th and g sts .
+
+nw ) u.s. general accounting office washington , dc orders may also be placed by calling ( 202 ) 512-6000 or by using fax number ( 301 ) 258-4066 , or tdd ( 301 ) 413-0006 .
+
+each day , gao issues a list of newly available reports and testimony .
+
+to receive facsimile copies of the daily list or any list from the past 30 days , please call ( 202 ) 512-6000 using a touchtone phone .
+
+a recorded menu will provide information on how to obtain these lists .
+

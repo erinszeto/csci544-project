@@ -1,0 +1,872 @@
+the los alamos national laboratory ( lanl ) , which is operated by the national nuclear security administration ( nnsa ) , has experienced a number of security lapses in protecting sensitive information .
+
+over the last decade , these information security lapses have included , but are not limited to , the inability to accurately identify computer resources connected to the unclassified network and to identify and correct computer network vulnerabilities .
+
+the unclassified network at lanl comprises over 25,000 devices , which does not include supporting devices , such as servers , printers , and scanners .
+
+it also contains about 51,000 active network ports , which serve as the interface between computers and other devices on the network , and provides service to over 13,000 users .
+
+lanl's unclassified network is segmented into subnetworks and includes the ( 1 ) protected - unclassified network , which is the default location for unclassified computer systems at the laboratory and contains sensitive unclassified data and information ; ( 2 ) unclassified - open network , which supports the laboratory's presence on the internet and is to contain no sensitive information ; ( 3 ) collaboration network , which supports external scientific collaboration involving high - performance computing ; and ( 4 ) visitor network , which provides an outgoing connection to the internet for visitors needing to check e - mail .
+
+this report focuses on lanl's protected - unclassified network because this network is designed to protect most of the laboratory's networks and systems from unauthorized access and is the clear target of sophisticated cyber attacks .
+
+for the purposes of this report , we will refer to this network as the “unclassified” network .
+
+lanl's unclassified network has faced a number of security challenges .
+
+during 2007 , according to lanl officials , the firewalls and other blocking mechanisms of the unclassified network deflected more than 10 million cyber probes every month .
+
+cyber attacks include , among other things , the use of information exploitation tools , such as computer viruses , trojan horses , and worms , that can destroy , intercept , and degrade the integrity of or deny access to information on a computer network .
+
+in addition , the unclassified network has voluminous e - mail traffic , which makes the network potentially vulnerable to malicious code designed to exploit e - mail services .
+
+the network receives approximately 2 million e - mails per month , plus approximately 50,000 to 500,000 spam e - mails every day , and lanl employees send approximately 1 million e - mails every month .
+
+lanl's large unclassified computer network contains sensitive information , including business proprietary information ; unclassified controlled nuclear information ; naval nuclear propulsion information ; export control information ; nuclear reactor safeguards information ; the military critical technology list ; confidential foreign government information ; and personally identifiable information , including names , aliases , social security numbers , and biometric records of employees , contractors , and visitors .
+
+owing to the nature of the research and development conducted at lanl , the information on the unclassified network presents a valuable target for foreign governments , terrorists , and industrial spies .
+
+recognizing the importance of securing information systems at federal agencies , congress enacted the federal information security management act ( fisma ) in december 2002 to strengthen the security of information and information systems across the federal government .
+
+fisma requires each agency to develop , document , and implement an agency - wide information security program that supports the operations and assets of the agency , including those provided or managed by another agency or contractor on its behalf .
+
+to ensure the confidentiality , integrity , and availability of critical information and information systems used to support the operations and assets of federal agencies , information security controls and complementary program activities are required .
+
+effective information security controls are necessary to ensure the protection of sensitive information contained and transmitted over computer networks .
+
+in addition , certain program management activities , such as the development , documentation , and implementation of policies and procedures , are required to govern the protection of information .
+
+information security controls are put in place to prevent , limit , and detect unauthorized access , use , disclosure , modification , distribution , or disruption to computing resources , programs , and information .
+
+examples of information security controls are as follows: user identification and authentication allows computer systems to differentiate between users so that activities on the system can be linked to specific individuals , and the claimed identity of users can be verified .
+
+cryptography underlies many of the mechanisms used to enforce the confidentiality and integrity of critical and sensitive information .
+
+audit and monitoring controls help establish individual accountability and monitor compliance with security policies .
+
+configuration management involves the identification and management of security features for all hardware , software , and firmware components of an information system and systematically controls changes to that configuration throughout the development and operational life cycle of the system .
+
+physical controls restrict physical access to computer resources , usually by limiting access to the buildings and rooms in which the resources are housed and by periodically reviewing the access granted in order to ensure that access continues to be appropriate .
+
+a comprehensive information security program is the foundation of a security control structure and a reflection of senior management's commitment to addressing security risks .
+
+the program should establish a framework and continuous cycle of activities for assessing risk , developing and implementing effective security procedures , and monitoring the effectiveness of these procedures .
+
+information security program activities govern the security protections for the information and information systems that support the operations and assets of the agency using a risk - based approach .
+
+these activities include ensuring that an agency ( 1 ) periodically assesses the risk and the magnitude of harm that could result from unauthorized access ; ( 2 ) develops , documents , and implements risk - based policies and procedures to ensure that information security is addressed throughout the life cycle of each system and ensures compliance with applicable requirements ; ( 3 ) develops , documents , and implements plans to provide adequate information security for networks , systems , and facilities ; ( 4 ) provides security awareness training to inform personnel of information security risks and of their responsibilities in complying with agency policies and procedures ; ( 5 ) periodically tests and evaluates the effectiveness of information security policies , procedures , and practices relating to management , operational , and technical controls for every system — the frequency of such tests should be based on risk but occur at least once per year ; ( 6 ) has a process for planning , implementing , evaluating , and documenting remedial action to address deficiencies in information security policies , procedures , or practices ; ( 7 ) has procedures for detecting , reporting , and responding to security incidents ; and ( 8 ) documents , develops , and implements plans and procedures to ensure continuity of operations for information systems that support its operations and assets .
+
+this report evaluates key elements of lanl's unclassified information security program .
+
+specifically , we ( 1 ) assessed the effectiveness of security controls lanl has implemented to protect information transmitted over its unclassified computer network , ( 2 ) assessed whether lanl had implemented an information security program to ensure that controls were effectively established and maintained for its unclassified computer network , and ( 3 ) examined the expenditure of funds used to protect lanl's unclassified computer network from fiscal years 2001 through 2007 .
+
+we visited lanl to assess the effectiveness of security controls that the laboratory had implemented for its unclassified computer network , and we gained an understanding of the overall network control environment and identified its interconnectivity and control points .
+
+we performed vulnerability assessments to evaluate authentication and authorization controls , encryption mechanisms , network monitoring processes , and configuration management controls for the unclassified network .
+
+we also reviewed the effectiveness of physical security operations in preventing unauthorized access to cyber - related resources .
+
+in addition , we obtained views from and documentation on these issues from responsible security officials at the department of energy ( doe ) , nnsa , the los alamos site office ( laso ) , and lanl .
+
+to assess whether lanl had implemented an information security program to ensure that controls were effectively established and maintained for its unclassified computer network , we determined whether policies and procedures adhered to nnsa , doe , and the national institute of standards and technology ( nist ) guidance , in areas such as security awareness training , risk assessment , information security plans , security testing and evaluation , corrective action plans , and continuity of operations for information systems .
+
+in addition , we obtained the views of and documentation on these issues from officials responsible for information security management at doe , nnsa , laso , and lanl .
+
+we also met with officials from doe's office of independent oversight and its office of inspector general , regarding any related prior , ongoing , or planned work in these areas .
+
+to determine the expenditure of funds used to protect lanl's unclassified computer network from fiscal years 2001 through 2007 , we obtained and analyzed documentation detailing program expenditures and met with lanl officials to discuss the data .
+
+we chose this time period because , beginning in fiscal year 2001 , nnsa assumed programmatic responsibility for the nuclear weapons complex .
+
+we obtained responses to a series of data reliability questions , from responsible lanl officials , covering issues such as data entry access , internal control procedures , and the accuracy and completeness of the data .
+
+in addition , we obtained written responses from lanl officials to clarify discrepancies in the data we received .
+
+we determined that the data were sufficiently reliable for the purposes of this report .
+
+we conducted this performance audit from may 2007 to september 2008 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+a more detailed description of our objectives , scope , and methodology is contained in appendix i .
+
+lanl is responsible for planning and executing all facets of stockpile stewardship , including assessing , refurbishing , and certifying nuclear weapons .
+
+the laboratory operates and manages numerous nuclear facilities .
+
+critical activities include plutonium , uranium , and tritium processing ; research and development on special nuclear material ; high - energy radiography ; radiation measurement ; packaging of nuclear materials ; and the management of radioactive and hazardous waste .
+
+to help carry out these critical missions , lanl uses its unclassified and classified computer networks to manage its business operations , conduct nonnuclear experiments , and analyze nuclear weapons and their delivery systems to meet requirements established by the department of defense .
+
+protecting the computer systems that support lanl's operations has never been more important .
+
+government officials are increasingly concerned about attacks from individuals and groups with malicious intent , such as terrorists and foreign intelligence agencies .
+
+these concerns are well - founded for a number of reasons , including the dramatic increase in the reports of security incidents in the united states and the steady advance in the sophistication and effectiveness of attack technologies .
+
+as the nation's defense and intelligence communities increasingly rely on commercially available information technology , the likelihood increases that information attacks will threaten vital national interests .
+
+a basic management objective for any organization is to protect the resources that support its critical operations from unauthorized access , use , destruction , or disruption .
+
+organizations accomplish this objective by designing and implementing controls that are intended to , among other things , prevent , limit , and detect unauthorized access to computing resources , programs , information , and facilities .
+
+inadequate security controls diminish the reliability of computerized information and increase the risk of unauthorized disclosure , modification , and destruction of sensitive information and disruption of service .
+
+security controls include those related to user identification and authentication , cryptography , audit and monitoring , configuration management , and physical security .
+
+lanl has implemented measures to enhance its information security , but weaknesses remain .
+
+in particular , lanl has implemented a network security system that can detect potential intrusions on the network .
+
+however , lanl has vulnerabilities in several critical areas , including ( 1 ) identifying and authenticating users , ( 2 ) encrypting sensitive information , ( 3 ) monitoring and auditing compliance with security policies , ( 4 ) controlling and documenting changes to a computer system's hardware and software , and ( 5 ) restricting physical access to computing resources .
+
+a computer system must be able to identify and authenticate different users so that activities on the system can be linked to specific individuals .
+
+when an organization assigns unique user accounts to specific users , the system is able to distinguish one user from another — a process called identification .
+
+the system also must establish the validity of a user's claimed identity by requesting some kind of information , such as a password , that is known only by the user — a process known as authentication .
+
+the combination of identification and authentication — such as user account / password combinations — provides the basis for establishing individual accountability and for controlling access to the system .
+
+as nist notes , multifactor authentication schemes are stronger than single factor authentication .
+
+in keeping with this standard , lanl's password policy requires that one - time passcodes ( using token cards and personal identification numbers ( pin ) , i.e. , two - factor authentication ) be used whenever possible or practical .
+
+it further states that users are not to share passwords and that vendor - supplied default passwords must be changed immediately .
+
+lanl had implemented a strong authentication solution for its network through the use of two - factor authentication with a one - time password — use of a token ( cryptocard ) ; a pin ; and a one - time number code .
+
+however , strong authentication was not always used .
+
+once a user successfully accessed the network , the user could create a separate login password that would allow alternative access to sensitive information on the unclassified network .
+
+such access was allowed for file sharing and e - mail .
+
+furthermore , users shared default identifications and passwords for managing certain network devices .
+
+as a result , lanl was at increased risk that unauthorized users could access sensitive information in files and e - mails , as well as obtain access to network devices .
+
+cryptography underlies many of the mechanisms used to enforce the confidentiality and integrity of critical and sensitive information .
+
+a basic element of cryptography is encryption .
+
+the national security agency recommends disabling protocols that do not encrypt information , such as user identification and password combinations transmitted across the network .
+
+although lanl had implemented cryptography , it was not always effective or used in transmitting sensitive information .
+
+lanl integrated kerberos with its authentication process .
+
+kerberos is designed to provide strong authentication for client / server applications by using secret - key cryptography so that each party can prove its identity across an insecure network connection .
+
+however , the laboratory relied on a kerberos implementation that uses a weak and outdated encryption algorithm .
+
+furthermore , lanl neither uses encryption to protect certain network management connections , nor requires encryption for authentication to certain internal services .
+
+instead , the laboratory used clear text protocols ( i.e. , unencrypted ) to manage key network devices , such as internal firewalls and switches .
+
+as a result , sensitive data transmitted through the unclassified network is at an increased risk of being compromised .
+
+to establish individual accountability , monitor compliance with security policies , and investigate security violations , it is crucial to determine who has taken actions on the system , what these actions were , and when they were taken .
+
+according to nist , when performing vulnerability scans , greater emphasis should be placed upon systems that are accessible from the internet ( eg , web and e - mail servers ) ; systems that house important or sensitive applications or data ( eg , databases ) ; or network infrastructure components ( eg , routers , switches , and firewalls ) .
+
+in addition , according to commercial vendors , running scanning software in an authenticated mode allows the software to detect additional vulnerabilities .
+
+nist also states that the use of secure software development techniques , including source code review , is essential to preventing a number of vulnerabilities from being introduced into items such as a web service .
+
+although lanl regularly monitored its unclassified network for security vulnerabilities , the monitoring is not comprehensive .
+
+lanl frequently scans its network using multiple software tools that search for known vulnerabilities on various network devices .
+
+however , the scans were not comprehensive .
+
+for example , at the time of our review , the laboratory's vulnerability scan neither included sensitive applications such as databases , nor did it run in an authenticated mode .
+
+in addition , lanl did not conduct source code reviews .
+
+as a result , the laboratory may not detect certain vulnerabilities , leaving the network at increased risk of compromise or disruption .
+
+the purpose of configuration management is to establish and maintain the integrity of an organization's work products .
+
+organizations can better ensure that only authorized applications and programs are placed into operation by establishing and maintaining baseline configurations and monitoring changes to these configurations .
+
+configuration management involves ensuring the correctness of the security settings in the operating systems , applications , or computing and network devices , and securely maintaining operations .
+
+patch management , a component of configuration management , is important for mitigating software vulnerability risks .
+
+when software vulnerabilities are discovered , the software vendor may develop and distribute a patch or work - around to mitigate the vulnerability .
+
+nist recommends that organizations have an explicit and documented patching policy and a systematic , accountable , and documented process for installing and testing patches .
+
+in addition , lanl policy requires that all windows - based systems on the unclassified network participate in a patch management system .
+
+in addition to patch management , to further protect an organization's systems , such as from malicious e - mails , nist states that organizations should determine which types of attachments to allow and to block potentially dangerous ones .
+
+although lanl had implemented innovative techniques to maintain its system configuration and install patches , shortcomings existed in the patch process .
+
+the laboratory used an automated tool to configure and maintain its unix servers , and deployed a tool to its windows systems to track and implement patches on the majority of systems we reviewed .
+
+it also used its vulnerability scanning tools to verify the latest patch levels of windows systems .
+
+however , lanl did not always consistently implement or appropriately test these patches .
+
+for example , lanl had not applied a critical operating system patch or patches for a number of general third - party applications .
+
+as a result , lanl cannot ensure that all needed patches are applied to critical system resources or that untested patches will not have unintentional consequences , increasing the risk of exposing critical and sensitive unclassified data to unauthorized access .
+
+furthermore , although the laboratory had configured its e - mail system to prevent many common cyber attacks , it was still vulnerable to attack because the system allowed various file types as e - mail attachments .
+
+these files could be used to install malicious software onto an unsuspecting user's workstation , potentially compromising the unclassified network .
+
+physical security controls are important for protecting computer facilities and resources from espionage , sabotage , damage , and theft .
+
+these controls restrict physical access to computer resources , usually by limiting access to the buildings and rooms in which the resources are housed and by periodically reviewing the access granted in order to ensure that it continues to be appropriate .
+
+nist requires that federal organizations control all physical access points ( including designated entry / exit points ) to facilities containing information systems ( except for those areas within the facilities officially designated as publicly accessible ) and verify individual access authorizations before granting access to the facilities .
+
+in addition , nist requires that federal agencies control physical access to information system transmission lines to prevent eavesdropping , in - transit modification , disruption , or physical tampering , and that these agencies protect power equipment for information systems from damage or destruction .
+
+furthermore , lanl policy requires that access to exclusion areas that house sensitive information technology ( it ) resources and the equipment that supports these resources be limited to authorized personnel .
+
+lanl has various protections in place for its it resources .
+
+it effectively secures many of its sensitive areas and computer equipment and takes other steps to provide physical security .
+
+for example , lanl issued electronic badges and employed hand geometry devices to help control access to many of its sensitive and restricted areas .
+
+it also maintains liaisons with law enforcement agencies to help ensure additional backup security if necessary and to facilitate the accurate flow of timely security information among appropriate government agencies .
+
+however , lanl's computing facilities may be vulnerable to attack because of weaknesses in its controls over physical access points , including the lax control of vehicular traffic , inadequate fencing , unsecured buildings housing computer network equipment , and signs visible from the street that indicate what these buildings contain .
+
+in addition , lanl did not effectively control access to a ( 1 ) telecommunications room that houses transmission lines and equipment and ( 2 ) utility room that provides heating and air conditioning for sensitive it equipment .
+
+these weaknesses in physical security increased the risk that sensitive computing resources and data could be inadvertently or deliberately misused or destroyed .
+
+in response to our observations , lanl corrected the control issues associated with the telecommunications and utility rooms before the end of our site visits .
+
+regarding control of vehicular traffic , lanl's former chief of security told us that the laboratory was willing to accept the level of risk because it was infeasible to check every car entering the laboratory .
+
+the information security weaknesses in lanl's unclassified network that we identified have occurred , in large part , because the laboratory has not yet fully implemented an information security program to ensure that controls are effectively established and maintained .
+
+although lanl has implemented an effective security awareness training program , we identified a number of shortcomings in its overall information security management program , including risk assessments , policies and procedures , network security plan , security testing and evaluation , remedial action plans , and contingency planning and testing .
+
+many of these cyber security deficiencies have been the subject of prior reports by doe's office of independent oversight and laso .
+
+the most recent report , issued by the office of independent oversight in february 2008 , also documented significant weaknesses with lanl's unclassified information security program , including foreign nationals' access to the unclassified network .
+
+during our review , we found that lanl had granted over 300 foreign nationals access to its unclassified network from countries identified as sensitive by doe , including china , india , and russia .
+
+some lanl and nnsa officials raised security concerns about the level of access given to foreign nationals from sensitive countries because of the valuable scientific and technological information contained on the laboratory's unclassified network .
+
+people are one of the weakest links in attempts to secure systems and networks .
+
+therefore , an important component of an information security program is providing required training so that users understand a system's security risks and their own role in implementing related policies and controls to mitigate those risks .
+
+as defined by the system administration , networking , and security ( sans ) institute , security awareness training is designed to educate users on the appropriate use , protection , and security of information ; individual users' responsibilities ; and ongoing maintenance necessary to protect the confidentiality , integrity , and availability of information assets , resources , and systems from unauthorized access , use , misuse , disclosure , destruction , or disruption .
+
+fisma requires each agency to develop , document , and implement an information security program that includes security awareness training to inform personnel of information security risks and of their responsibilities in complying with agency policies and procedures , as well as training personnel with significant security responsibilities for information security .
+
+lanl policy requires that all employees complete an initial computer security briefing prior to being granted access to the laboratory's information system resources , and it requires that employees complete annual refresher training .
+
+according to laboratory officials , each employee is required to have a training plan highlighting all of the training courses the employee is to receive for his or her job function .
+
+according to lanl officials , there are several controls in place to ensure that individuals receive adequate computer security awareness and training that will help them develop and maintain their technical skills .
+
+for example , according to lanl officials , if employees do not complete their security awareness training on an annual basis , lanl suspends their access to security areas until they have taken the required training .
+
+lanl officials stated the badge identification system is linked to the security awareness course , and those individuals who return to the laboratory each succeeding year must take the annual computer security refresher so that they can retain access to building facilities .
+
+if individuals do not complete the course by their renewal date , lanl deactivates their badge , denies their access to lanl facilities , and directs them to report to the badge office to retake the computer security refresher course .
+
+the laboratory has also ensured that all employees have and complete training plans unique to their specific roles and responsibilities within the organization .
+
+for example , of the 20 training plans for organizational unit administrators we reviewed , all had completed their computer security training courses , and their training plans were up to date .
+
+because lanl has established a security awareness and training program , the unclassified network is at decreased risk that and individual employee's responsibilities for the safety and security of the information system will be unclear , misunderstood , or improperly implemented .
+
+lanl's information security program has not been fully implemented .
+
+specifically , ( 1 ) its risk assessment was not comprehensive , ( 2 ) specific guidance was missing from policies and procedures , ( 3 ) the network security plan was incomplete , ( 4 ) system testing had shortcomings , ( 5 ) remedial action plans were incomplete and corrective actions were not always timely , and ( 6 ) the network contingency plan was incomplete and inadequately tested .
+
+until lanl ensures that the information security program associated with its unclassified network is fully implemented , it will have limited assurance that sensitive data are adequately protected against unauthorized disclosure or modification or that network services will not be interrupted .
+
+identifying and assessing information security risks are essential steps in determining what controls are required .
+
+moreover , by increasing awareness of risks , these assessments can generate support for the policies and controls that are adopted in order to help ensure that these policies and controls operate as intended .
+
+fisma requires each agency to develop , document , and implement an information security program that includes periodic assessments of the risk and magnitude of harm that could result from the unauthorized access , use , disclosure , disruption , modification , or destruction of information and information systems .
+
+nist guidelines state that the identification of risk for an it system requires an understanding of the system's processing environment , including data and information , system and data criticality , and system and data sensitivity .
+
+furthermore , according to nist , risk management should identify threats and vulnerabilities , set priorities for actions to reduce risks , identify new controls or countermeasures , and determine risks remaining after implementing the new control , also known as residual risk .
+
+office of management and budget ( omb ) circular a - 130 , appendix iii , prescribes , as does doe policy , that risk be reassessed when significant changes are made to computerized systems — or at least every 3 years .
+
+although the laboratory updated its risk assessment in june 2007 for the unclassified network , this assessment was not comprehensive but provided a general identification and analysis of threats , vulnerabilities , and countermeasures and included a residual risk for most vulnerabilities .
+
+however , it did not fully characterize risks to the network .
+
+for example , the risk assessment did not identify risks for vulnerabilities exposed by previous doe internal findings and lanl vulnerability testing .
+
+also , we found vulnerabilities during our analysis that lanl had not previously addressed in its risk assessment .
+
+for example , strong authentication was often not required for internal network services such as e - mail and database logins .
+
+risks associated with this vulnerability were not assessed .
+
+without comprehensive risk assessments , risks to certain systems may be unknown and appropriate controls may not be in place to protect against unauthorized access or disclosure , or system disruption .
+
+lanl is taking steps to strengthen its risk management program that improves identification and assessment of potential threats , vulnerabilities , assets , and information system controls .
+
+for example , in january 2008 , lanl issued a new risk management procedure describing the detailed methodology .
+
+in addition , lanl developed a new comprehensive methodology to aid in conducting risk assessments and provided training on this new methodology .
+
+according to lanl officials , this new program is in compliance with both nist and nnsa policies and guidance .
+
+another key task in developing an effective information security program is to establish and implement risk - based policies , procedures , and technical standards that govern security over an agency's computing environment .
+
+if properly implemented , policies and procedures should help reduce the risk that could come from unauthorized access or disruption of services .
+
+because security policies and procedures are the primary mechanisms through which management communicates views and requirements , it is important that these policies and procedures be established and documented .
+
+fisma requires agencies to develop and implement policies and procedures to support an effective information security program .
+
+nist issued security standards and related guidance to help agencies implement security controls , including appropriate information security policy and procedures .
+
+the doe chief information officer has also issued guidance on management , operational , and technical controls implementing the nist security control requirements .
+
+shortcomings existed in lanl's information security policies and procedures .
+
+although the laboratory developed and documented many information security policies and procedures , it did not always have specific guidance for implementing federal and departmental requirements in the network environment .
+
+the laboratory had issued a local cyber security policy describing the cyber security program framework and an implementation procedure describing roles , responsibilities , authorities , and accountability .
+
+furthermore , it had issued specific guidance on user passwords , use of nongovernmental computers on the network , and the configuration of computers using microsoft windows that are connected to the network .
+
+however , the cyber security guidance the laboratory used did not follow guidance issued by doe's chief information officer or nist standards and guidance for categorizing information systems and developing minimum security controls .
+
+in addition , the policy was not always comprehensive .
+
+for example , lanl implemented a policy requiring centralized configuration management for its windows environment , but the policy did not address other systems the laboratory uses , such as macintosh and linux .
+
+at the time of our site visits , the laboratory had drafted , but not issued , specific policies and procedures on topics such as cyber security risk management , certification and accreditation , access control , and incident management .
+
+without effectively developing , documenting , and implementing timely policies , procedures and standards , the laboratory has less assurance that its systems and information are protected from unauthorized access .
+
+lanl was making an effort to improve its information security policies and procedures .
+
+during our site visits , the laboratory's cyber security group was undertaking a policy development and publication effort to review , revise , and issue policies as necessary to ensure compliance with doe and nnsa policy .
+
+however , until lanl completes this effort , its information security program will not be fully effective .
+
+an information system security plan should provide a complete and up - to - date overview of a system's security requirements and describe the controls that are in place or planned to meet those requirements .
+
+omb circular a - 130 specifies that agencies develop and implement system security plans for major applications and for general support systems and that these plans address policies and procedures for providing management , operational , and technical controls .
+
+in addition , nist recommends that security plans include , among other topics , existing or planned security controls , the individual responsible for the security of the system , description of the system and its interconnected environment , and rules of behavior .
+
+nist also requires federal agencies to document minimum security controls .
+
+furthermore , doe and nnsa policy requires that lanl develop an overall cyber security program plan , and specific system security plans as part of its certification and accreditation ( c&a ) process .
+
+nnsa policy further states that all documentation relevant to the system c&a should be referenced or included in the system security plan ; this includes the risk assessment results , security test and evaluation plan , and procedures and contingency plan ( s ) .
+
+the laboratory had documented an overall cyber security program plan and a security plan for the unclassified network infrastructure , but the network security plan was incomplete and not up - to - date .
+
+the laboratory - wide plan followed doe policy guidance , and the network security plan addressed certain security controls recommended by nist , such as the description of individuals responsible for security and rules of behavior .
+
+however , the network security plan had not been updated to address many of the controls nist recommended .
+
+for example , the network security plan only partially addressed access controls and system communication protection controls and was incomplete because it did not include or reference some key security activities , such as the risk assessment results and security test plans , as stated in nnsa policy guidance .
+
+although doe had issued guidance implementing fisma and related nist requirements , a laboratory cyber security official said lanl was waiting on detailed implementation instructions from nnsa and that it intends to revise the security plan by october 2008 to use controls from nist guidance .
+
+unless it uses the most current guidance on security controls , the laboratory cannot ensure that appropriate controls are documented in a security plan and in place to protect its systems and critical information .
+
+another key element of an information security program is testing and evaluating system controls to ensure they are appropriate and effective and comply with policies .
+
+fisma requires each agency to develop , document , and implement an information security program that includes periodic testing and evaluation of the effectiveness of information security policies , procedures , and practices , performed with a frequency depending on risk , but no less than annually .
+
+the program is to include testing of management , operational , and technical controls for every system identified in the agency's required inventory of major information systems .
+
+nist provides guidance to agencies for assessing security control effectiveness and for performing network security testing , and states that security test results should be appropriately documented .
+
+similarly , doe guidance specifies that all controls identified in the security plan are subject to assessment procedures , and that the breadth and depth of testing activities should be documented .
+
+the laboratory had various initiatives under way to test and evaluate system controls in its unclassified network at the time of our review , but we found shortcomings in the testing process .
+
+in fiscal year 2007 , lanl conducted a self - assessment of the unclassified security program using nist's specified security controls .
+
+however , most controls were not assessed at a very detailed level — with only 3 of the 17 control areas being assessed in more detail using certain questions and security performance tests derived from nist guidance .
+
+the laboratory also annually tests the controls in the security plan and conducts continuous automated testing to detect network vulnerabilities .
+
+however , this testing was limited because the controls identified in the security plan were not developed using nist guidance .
+
+for example , the nist control for configuration settings was not documented in the network security plan .
+
+furthermore , although testing requirements were stated in the test documentation , officials said that the breadth and depth of the testing , as well as the results of the tests , were not always documented and available for examination .
+
+furthermore , the automated testing was not comprehensive .
+
+lanl did not use an automated scanning tool to detect vulnerabilities in databases , and virtual web hosts or source code .
+
+our tests identified vulnerabilities such as outdated database software and unpatched third - party applications .
+
+without appropriate tests and evaluations of system controls , the laboratory has limited assurance that policies and controls are appropriate and working as intended .
+
+additionally , without these tests and evaluations , there is a higher risk that undetected vulnerabilities could be exploited to allow unauthorized access to sensitive information .
+
+remedial action plans , also known as plans of actions and milestones , can help agencies identify and assess security weaknesses in information systems and set priorities and monitor progress in correcting them .
+
+fisma requires each agency to develop , document , and implement an information security program that includes a process for planning , implementing , evaluating , and documenting remedial action to address any deficiencies in its information security policies , procedures , or practices .
+
+according to omb circular a - 123 , agencies should take timely and effective action to correct deficiencies that they have identified through a variety of information sources .
+
+to accomplish this , agencies should develop remedial action plans and track progress for correcting each deficiency .
+
+a plan should detail the resources required to carry out the plan , any milestones in meeting the tasks , and scheduled completion dates for those milestones .
+
+omb also states that the resource estimates should include the anticipated source of funding and whether the reallocation of resources or a request for new funding is anticipated .
+
+doe requires that plans of action and milestones serve as a management tool for tracking corrective actions associated with program and system - level weaknesses .
+
+although the laboratory had a management process for identifying , evaluating , and documenting issues and tracking corrective actions , it did not always take actions in a timely manner and the plans were incomplete .
+
+for example , the laboratory's plan of actions and milestones addressed findings for eight weaknesses identified by doe's office of independent oversight in december 2006 by establishing 63 milestones .
+
+in august 2007 , lanl's tracking report showed that tasks associated with 26 of these milestones were past due .
+
+although a tracking report completed a month later indicated that only 11 milestones were still past due , evidence had not been submitted to validate that the recently completed milestones had been satisfactorily met .
+
+an additional 6 milestones had no completion dates in these tracking reports so their status could be determined and effectively monitored .
+
+in addition , the plans did not include estimated resources required to correct weaknesses .
+
+finally , several findings from the laboratory's self - assessment were not included in the plan .
+
+without an effective remediation program , identified vulnerabilities may not be resolved in a timely manner , thereby allowing continuing opportunities for unauthorized individuals to exploit these weaknesses to gain access to sensitive information and systems .
+
+contingency planning is a critical component of information protection .
+
+if normal operations are interrupted , network managers must be able to detect , mitigate , and recover from service disruptions while preserving access to vital information .
+
+therefore , a contingency plan details emergency response , backup operations , and disaster recovery for information systems .
+
+it is important that these plans be clearly documented , communicated to potentially affected staff , and updated to reflect current operations .
+
+in addition , testing contingency plans is essential to determine whether the plans will function as intended in an emergency situation .
+
+fisma , nist , doe , and nnsa require contingency plans .
+
+fisma requires each agency to develop , document , and implement an information security program that includes plans and procedures to ensure continuity of operations for information systems that support the agency's operations and assets .
+
+nist requires that all agencies' systems have a contingency plan and that the plans address , at a minimum , identification , and notification of key personnel , plan activation , system recovery , and system reconstitution .
+
+in addition , the process should include a business impact assessment to determine what recovery strategies should be implemented to ensure availability and to fully characterize the system's requirements , processes , and interdependencies to determine contingency requirements and priorities .
+
+furthermore , nist requires that the plan be reviewed for accuracy and completeness at least annually and that testing occur annually and when significant changes are made to the it system , supported business processes , or the contingency plan .
+
+doe and nnsa also require contingency plans to ensure that the department can continue to perform and support functions in the event of a service disruption , and these plans must be updated and tested annually .
+
+the contingency plan lanl has implemented for its unclassified network is incomplete , outdated , and testing is inadequate .
+
+the laboratory had drafted a disaster recovery and contingency planning procedural document that details how the laboratory should prepare a contingency plan and testing procedures , and it notes the importance of contingency planning and testing .
+
+however , at the time of our site visits , the document had not been made final or provided to employees for review .
+
+in addition , at the time of our site visits , the most current contingency plan was over 4 years old and did not include key elements , such as identification and notification of key personnel , plan activation , system recovery , and system reconstitution .
+
+also , lanl had not completed a business impact assessment to determine what recovery strategies should be implemented at the laboratory to ensure availability of system resources during a service disruption .
+
+lanl had also not tested the contingency plan annually .
+
+furthermore , the test plan that was used was inadequate .
+
+the test plan was a checklist of regulatory questions that were checked - off and then signed and dated by an approving official .
+
+this generic checklist laid out several areas to review and provided an associated testing procedure , but did not adequately follow the contingency plan .
+
+until lanl identifies the essential processes that should be included in a contingency plan and sufficiently tests the plans , it faces higher risk that the unclassified network infrastructure will not be able to effectively recover and resume normal operations after a disruption .
+
+doe's office of independent oversight and laso have prepared reports identifying weaknesses with the management of lanl's unclassified cyber security program .
+
+these reports have surfaced numerous problems that can be traced to management deficiencies at nnsa , laso , and the laboratory itself .
+
+the most recent reports , covering 2006 and 2007 , identified problems in several specific areas: risk assessment ; leadership ; certification and accreditation ; security testing ; and policies and procedures .
+
+key findings in each of these areas included the following: risk assessment .
+
+lanl's risk assessment methodology is not comprehensive enough to address system - specific risks and does not provide laso with an appropriate appraisal of the risk in the unclassified environment .
+
+it also does not identify residual risks for acceptance or the development of appropriate mitigation strategies .
+
+as a result , the threats , vulnerabilities , and consequently the risks to lanl's unclassified systems cannot be quantified .
+
+leadership .
+
+nnsa has not exercised management and oversight responsibilities so that lanl ensures effective implementation of the unclassified cyber security program .
+
+furthermore , laso has not exercised its oversight responsibilities for managing and accepting risks for the laboratory's unclassified cyber security program and has not provided sufficient leadership to resolve lanl performance problems and establish a clear set of management priorities .
+
+finally , lanl has not exercised sufficient leadership within the unclassified program to ensure effective implementation of management and technical processes .
+
+in a 2007 follow - up report , the office of independent oversight found that nnsa and / or the contractor , los alamos national security , llc ( lans ) , had taken steps to improve leadership , including ( 1 ) hiring a new chief information officer at lanl who reports directly to the laboratory director , ( 2 ) allocating additional funding to establish increased federal oversight activities at laso , and ( 3 ) creating cyber security advisors to assist the laboratory's directorates .
+
+certification and accreditation .
+
+lanl's c&a process is significantly deficient and cannot certify that unclassified systems and information are appropriately protected .
+
+the current process is based on security directives and guidance that are obsolete , rather than on nnsa , doe , or national policies .
+
+in addition , neither the lanl unclassified network security plan nor any other security plan addresses the accreditation of servers , workstations , firewalls , routers , and other it resources that lanl personnel use to process all levels of unclassified information .
+
+furthermore , the laboratory's cyber security program plan gives a broad range of the possible number of systems on the unclassified network ( 25,000 to 35,000 ) on a daily basis , which contributes to the perception that lanl cannot accurately identify its unclassified assets .
+
+according to the office of independent oversight's most recent assessment , lanl has made little or no progress to correct the identified deficiencies .
+
+security testing .
+
+lanl's security testing and evaluation is not robust enough to ensure the security of the unclassified network .
+
+while security tests have been prepared , there is little actual testing of the controls associated with the unclassified network .
+
+rather , individual tests are used to validate security plan statements .
+
+as a result , the security testing process does not demonstrate that the management , operational , and technical controls function as intended .
+
+policies and procedures .
+
+lanl's policies and procedures have not been updated to address changing management , operational , and technical needs in the unclassified environment .
+
+while the unclassified cyber security program had been implemented within the framework of overarching policy provided by doe , a serious weakness of lanl's unclassified cyber security program is that its policies were based on obsolete directives and had not fully implemented all nnsa and doe policies concerning cyber security .
+
+in addition , lanl has not established a comprehensive set of policies , plans , and procedures for managing cyber security within lanl organizations .
+
+according to the office of independent oversight , most aspects of weaknesses relating to formal cyber security policies , plans , and procedures have yet to be resolved , which places sensitive unclassified information at greater risk .
+
+doe's office of independent oversight and laso also reported that lanl had not fully implemented doe policies and procedures for protecting sensitive but unclassified information from foreign nationals who have access to information technology resources .
+
+the office of independent oversight and laso noted , among other things , that foreign nationals' use of this information has not been fully evaluated for risk or information sensitivity .
+
+as a result , the laboratory does not have adequate assurance that foreign nationals pose no risk to sensitive unclassified computer systems ; the only risk assessment specific to foreign nationals' access to the site pertains to “benefit of work to home country ; ” lanl does not have specific procedures that describe policies and processes for managing foreign nationals' access and a method to allow lanl's cyber security site manager to know what foreign nationals are on the network ; and lanl has installed an additional 10 firewalls and improved firewall rules to enhance network segmentation , which allows better control of foreign nationals who have access to the unclassified network .
+
+however , lanl still needs to strengthen controls to further restrict access of those foreign nationals who are “scattered across the ( unclassified ) network and cannot be controlled by firewalls.” we reviewed the status of foreign nationals' access to lanl's unclassified network .
+
+lanl policy states that foreign nationals working at the laboratory may have access to the information and administrative controls needed to perform authorized work .
+
+however , this policy has resulted in foreign nationals having widespread access to lanl's unclassified network and has raised concerns among some laboratory and nnsa officials about potential security risks .
+
+as of may 2008 , lanl reported that 688 foreign nationals from 64 countries were authorized access to the unclassified network in their capacity as visitors , postdoctoral students , or permanent staff .
+
+of the 688 foreign nationals , 301 ( or 44 percent ) were from countries classified as sensitive by doe .
+
+as figure 1 shows , 22 percent of all foreign nationals at the laboratory who were authorized access to the unclassified network were from china — one of the sensitive countries .
+
+foreign nationals from other sensitive countries that had access to the unclassified network included india , russia and other countries of the former soviet union ( fsu ) , and israel .
+
+in addition , a significant number of foreign nationals from sensitive countries have been authorized remote access to lanl's unclassified network .
+
+lanl's chief information officer told us that the security risks associated with granting this level of access to foreign nationals from sensitive countries has been far too great in the past and had reached an unacceptable level because of the valuable scientific and technological information contained on the laboratory's unclassified network .
+
+as a result , lanl has reduced the number of foreign nationals from sensitive countries that have been granted remote access .
+
+lanl's former chief of security and lanl's chief information officer told us they were concerned about the large number of foreign nationals at the laboratory who have access to the unclassified network through remote or other means .
+
+in particular , the former chief of security asserted that it was a “bad idea” to have foreign nationals on the unclassified network .
+
+nnsa's deputy chief of information security questioned why any foreign nationals were authorized access to the network .
+
+in his view , all of their work should be done in a highly controlled cyber environment , with exceptions being granted on a very selective case - by - case basis .
+
+lanl officials told us that unclassified network access for foreign nationals from both sensitive and nonsensitive countries is “a given.” foreign nationals employed at the laboratory require access to the unclassified network in order to carry out their duties and meet mission requirements .
+
+in fact , the foreign nationals in certain cases possess unique skills in science that cannot easily be found in the united states .
+
+the laboratory has seen a significant increase in foreign nationals' visit and assignment activities over the past 10 years .
+
+according to lanl , much of this increase in foreign national population is due to an increase in the foreign student population in u.s. graduate programs and a marked increase in foreign postdoctoral students , which is the laboratory's key source of its technical staff .
+
+from fiscal years 2001 through 2007 , lanl spent approximately $51.4 million to protect its unclassified network .
+
+nevertheless , lanl cyber security officials told us that funding has been inadequate to address some of their security concerns , such as the potential compromise or modification of sensitive unclassified data and a shutdown of computer systems and networks processing sensitive unclassified data .
+
+in response , nnsa's chief information officer told us that lanl has not adequately justified its request for additional funds to address the laboratory's stated shortfalls .
+
+nnsa is now implementing a more systematic approach for developing information security budgets at lanl .
+
+lanl spent approximately $51.4 million from fiscal years 2001 through 2007 to protect and maintain the unclassified network .
+
+the unclassified network expenditures have primarily been directed toward c&a and technical activities .
+
+lanl's c&a costs for the unclassified network cover such items as security plan development and maintenance , self - assessments , training , education , and awareness , media , and oversight of foreign nationals' access to the unclassified network .
+
+technical costs involve items such as intrusion detection systems , network monitoring , antivirus services , e - mail monitoring , evaluating and testing security software before deployment , and incident cleanup .
+
+figure 2 depicts lanl expenditures for the unclassified network over the period .
+
+as shown , lanl's overall security expenditures for the unclassified network increased from about $2.3 million to $9.1 million between fiscal years 2001 to 2007 , with a peak of approximately $11.5 million in fiscal year 2005 .
+
+a reduction in spending occurred in fiscal year 2006 , followed by a modest increase again in fiscal year 2007 .
+
+the unclassified network expenditures for c&a activities have remained relatively stable around $1 million from fiscal years 2002 to 2007 , with the majority of unclassified network funds going toward technical activities .
+
+although cyber security expenditures increased from fiscal years 2001 to 2007 , lanl officials told us this funding has been inadequate to protect the unclassified network and overall cyber security program .
+
+in a september 27 , 2006 , letter to the nnsa administrator , the directors of lanl , lawrence livermore national laboratory , and sandia national laboratories stated that proposed reductions in the cyber security budget would expose the laboratories and nnsa to an unacceptable level of security and operational risk .
+
+the laboratory directors emphasized that the inevitable effect of cuts in cyber security funding would be to forgo improvements in the classified network while also reducing support for the unclassified network .
+
+the lack of funding would be particularly harmful to the unclassified network because it is essential to productivity , a key factor in transforming the nuclear weapons complex , and is clearly a target for external attack .
+
+according to lanl's fiscal year 2008 budget request to nnsa , the laboratory needed approximately $1 million more than the $7.7 million it was allocated to implement an effective program for its unclassified network .
+
+nnsa's allocation and lanl's request represent an approximate 11 percent difference for the unclassified network in fiscal year 2008 .
+
+according to a laso analysis identifying the impacts of failing to fully fund the lanl cyber security program , the shortage of funding exposes the unclassified network to several potential risks , including the following: the compromise , inappropriate access , or modification of sensitive unclassified data ; a shutdown of computer systems and networks processing sensitive unclassified data , without additional systems or networks being approved to process these data ; placement of lanl in noncompliance with doe guidance ; a significant gap in the laboratory's information protection capabilities ( i.e. , virus scans and firewalls ) ; the severe hampering of laboratory efforts to identify the devices and levels of sensitivity of information on the unclassified network ; impaired ability to verify the secure configuration of systems on the unclassified network ; and the hampering of the laboratory's efforts to follow up on computer compromises .
+
+lanl officials also told us that due to staffing and funding constraints , the laboratory could not provide all of the security measures that it determined necessary for an effective cyber security program , and , therefore , individuals or groups might be able to penetrate lanl's networks and gain access to sensitive information .
+
+in its analysis of the potential consequences of unfunded unclassified network activities for fiscal year 2007 , lanl asserted that because of a lack of funding to perform self - assessments , there was a risk that the laboratory's ability to discover and address cyber deficiencies would be weakened .
+
+in addition , there was a risk that unclassified network users could not receive cyber security training , which creates serious potential for user - introduced vulnerabilities to the unclassified network .
+
+moreover , there was risk that lanl could not ensure that media ( eg , disks ) containing sensitive unclassified information would be properly sanitized or destroyed .
+
+nnsa officials told us that they strongly disagreed with lanl's assertion that the laboratory does not have adequate funding for unclassified network activities .
+
+according to nnsa's chief information officer , lanl's requests for additional funds to meet the laboratory's stated shortfalls have not been adequately justified .
+
+nnsa also found the claims made by the laboratory directors about funding shortfalls in their 2006 letter to be unsubstantiated .
+
+in addition , nnsa officials stated that the laboratories were inconsistent in how they reported cyber security funding requests to nnsa .
+
+for example , prior to fiscal year 2006 , lanl produced budget requests using terminology not sanctioned or used by nnsa budget processes by categorizing funding levels for cyber security activities as “minimal,” “effective,” and “essential.” furthermore , nnsa officials stated that lanl's past cyber budget requests were prepared on an ad hoc basis and were not based on well - defined threat and risk assessments .
+
+since 2006 , nnsa has been developing a more systematic approach for developing cyber security budgets at lanl and the other national laboratories .
+
+nnsa officials in the chief information office told us that because of the shortcomings in lanl's cyber security budget preparation process , nnsa has developed standard budget guidance and terminology .
+
+nnsa and the laboratories worked together to create a standard budget template — a work breakdown structure — for the laboratories to use in requesting and allocating cyber security funding .
+
+the work breakdown structure is to be used for both the classified and unclassified networks .
+
+more specifically , nnsa cyber security officials told us that this structure provides a framework for lanl to use in determining what cyber security activities it will fund , how much it will give to each activity , and how it will set priorities for funding activities and assessing unfunded activities .
+
+in addition , nnsa's chief information office has identified a designated approving authority ( daa ) , a federal official at each national laboratory site office , to determine site risks and approve budgets .
+
+individual program officials at each laboratory provide budget information and risk assessments to their respective daa to weigh the risks and weaknesses of the cyber security program to determine how to allocate funds .
+
+nevertheless , nnsa officials could not provide us with guidance documenting how the laboratories should set budget priorities for cyber security activities .
+
+an nnsa official acknowledged that the agency has not yet produced any guidance on how to set funding priorities for the unclassified network but that nnsa is working on a plan to document the methodology it uses to approve and deny funding requests based on comprehensive assessments of risks and threats for specific work breakdown structure activities .
+
+furthermore , nnsa does not consistently document its resource allocation decisions for cyber security or identify how funding shortfalls affect critical cyber security issues .
+
+nnsa cyber security officials stated that the laboratories estimate the impact of the failure to fund cyber security activities but acknowledged the need for nnsa to develop a process to better track activities that do not receive funding .
+
+nnsa officials believe that implementing a complex - wide approach to documenting budget decisions will help the agency develop a more systematic , transparent approach for determining appropriate cyber security funding levels .
+
+ensuring the confidentiality , integrity , and availability of sensitive information transmitted over lanl's unclassified network is a national security priority because the unauthorized disclosure of sensitive information or data from the unclassified network could have serious consequences .
+
+while the laboratory has taken steps to protect sensitive information , a number of weaknesses in security controls raise concerns .
+
+these weaknesses include , among other things , keeping information on the unclassified network out of the reach of unauthorized users .
+
+securing sensitive information on lanl's unclassified network requires that the laboratory's management establish , implement , and reinforce policies , procedures , and guidance for its employees to follow .
+
+in our view , these policies and procedures lay the foundation for an effective and sustainable security culture .
+
+while lanl has instituted components of a laboratory - wide information security program , key activities , such as the assessment of information security risks , and the development of policies and procedures that adhere to federal requirements , were not fully implemented or were absent .
+
+furthermore , until lanl fully implements a laboratory - wide information security program that includes comprehensive risk assessments , risk - based policies and procedures , security plans , and a continuity of operations process , it has limited assurance that its sensitive data on the unclassified network will be adequately protected .
+
+for example , the large number of foreign nationals — particularly those from countries identified as sensitive by doe — who have access to the laboratory's unclassified network raises serious security concerns .
+
+while there can be a legitimate need for foreign nationals to have access to lanl's unclassified network to carry out mission - related responsibilities we believe it is prudent to control and restrict this level of access , whenever possible .
+
+to that end , we believe the laboratory has taken a positive step by significantly reducing the number of foreign nationals from sensitive countries that are authorized to have remote access to the unclassified network .
+
+establishing a comprehensive information security program requires a well thought out process for determining resource requirements , based on risk .
+
+we are concerned that neither nnsa nor lanl has developed a satisfactory approach to address this matter .
+
+in our view , the lack of a systematic process for identifying and allocating resources for those areas deemed to be highest risk can be traced directly to the absence of well - documented procedures and guidelines .
+
+without a rigorous and disciplined approach , it is difficult to determine what the laboratory's true resource requirements are to implement a comprehensive information security program for the unclassified network .
+
+to improve lanl's information security program for its unclassified network , we recommend that the secretary of energy and the administrator of nnsa require the director of los alamos national laboratory to take the following eight actions: ensure that the risk assessment for the unclassified network evaluates all known vulnerabilities and is revised periodically ; strengthen policies with a view toward further reducing , as appropriate , foreign nationals' — particularly those from countries identified by doe as sensitive — access to the unclassified network ; ensure that the new set of cyber security policies and procedures applicable to the unclassified network are comprehensive , including centralized configuration management for all types of systems , and contain specific instructions on how to implement federal requirements and guidance ; ensure that the network security plan for the unclassified network is revised to document security controls using federal guidance and that this plan also includes or references key security activities , such as risk assessment development and the evaluation of security test results ; strengthen the security test and evaluation process for the unclassified network by expanding technical testing to cover new areas that might be vulnerable , such as those disclosed in our report , and ensure that testing adequately considers federal guidance for evaluating security controls and determining their effectiveness ; ensure that milestones in corrective action plans are met or that new milestones are established to remediate security weaknesses for the unclassified network in a timely manner .
+
+ensure that the related plan of action and milestones used for fisma reporting includes all lanl security weaknesses and required information so that it is an effective management tool for tracking security weaknesses and identifying budgetary resources needed to protect the unclassified network ; and develop and maintain a comprehensive continuity of operations plan that addresses the current unclassified network environment and periodically test the plan for restoring operations .
+
+to ensure that nnsa has a clear and consistent strategy to determine resource requirements for the laboratory's unclassified network , we recommend that the secretary of energy and the administrator of nnsa take the following three actions: develop , document , and implement a process that clearly links resource requirements and funding decisions to risk assessments for the unclassified network ; implement a process that provides a rationale for approving or denying resource requests for the unclassified network ; and establish and implement procedures to monitor critical program activities that are unfunded or underfunded in order to improve management accountability and transparency in determining how best to fund the most critical program requirements .
+
+we are also making 41 detailed recommendations in a separate report with limited distribution .
+
+these recommendations consist of actions to be taken to correct the specific information security weaknesses related to identification and authentication , cryptography , audit and monitoring , configuration management , and physical security .
+
+we provided nnsa with a copy of this report for review and comment .
+
+nnsa did not specifically comment on our recommendations .
+
+however , nnsa agreed with our general conclusion that lanl has taken steps to protect sensitive information and acknowledged that there was considerable work yet to be done .
+
+nnsa also stated that lanl is currently responding to a doe secretarial compliance order requiring the laboratory contractor to take comprehensive steps to ensure that it identifies and addresses , among other things , critical cyber security deficiencies .
+
+the july 2007 compliance order was issued after a subcontractor employee removed classified information from lanl without authorization .
+
+the order requires lanl to submit an integrated corrective action plan to address critical security issues .
+
+these steps must be completed by december 2008 , and violations of the compliance order would subject the laboratory's contractor to civil penalties of up to $100,000 per violation per day until compliance is reached .
+
+nnsa noted that responding to the issues identified in this report — as well as more technical issues included in a limited official use only version of this report — will extend beyond the completion of the compliance order since the actions we recommend are sufficiently more complex .
+
+we would expect that our recommendations , when implemented , would complement and be consistent with other remedial actions taken to improve lanl's cyber security posture as part of the secretarial compliance order .
+
+furthermore , nnsa stated that it will exercise the leadership necessary to correct the deficiencies identified in our report and will implement controls and processes complex - wide to demonstrate that it is successfully managing risk .
+
+nnsa's comments on our draft report are presented in appendix ii .
+
+as agreed with your offices , unless you publicly announce the contents of this report earlier , we plan no further distribution until 30 days from the report date .
+
+at that time , we will send copies of this report to interested congressional committees ; the secretary of energy ; the administrator of nnsa ; the director of lanl ; and other interested parties .
+
+we will also make copies available to others upon request .
+
+in addition , this report will be made available at no charge on the gao web site at http: / / www.gao.gov .
+
+if you or your staff have any questions about this report , please contact gene aloise at ( 202 ) 512-3841 or aloisee@gao.gov ; greg wilshusen at ( 202 ) 512-6244 or wilshuseng@gao.gov ; or nabajyoti barkakati at ( 202 ) 512-6412 or barkakatin@gao.gov .
+
+contact points for our office of congressional relations and public affairs may be found on the last page of this report .
+
+major contributors to this report are included in appendix iii .
+
+the objectives of our review were to ( 1 ) assess the effectiveness of the security controls the los alamos national laboratory ( lanl ) has implemented to protect information transmitted over its unclassified computer network ; ( 2 ) assess whether lanl had fully implemented an information security program to ensure that controls were established and maintained for its unclassified computer network ; and ( 3 ) examine the expenditure of funds used to protect lanl's unclassified network from fiscal years 2001 through 2007 .
+
+to determine the effectiveness of the security controls lanl had implemented to protect information transmitted over its unclassified computer network , we gained an understanding of the overall network control environment and identified its interconnectivity and control points .
+
+our evaluation was based on our federal information system controls audit manual ( fiscam ) , which provides guidance for reviewing information system controls that affect the confidentiality , integrity , and availability of computerized information .
+
+using national institute of standards and technology ( nist ) standards and guidance , and department of energy ( doe ) and national nuclear security administration ( nnsa ) policies , procedures , practices , and standards , we developed an accurate understanding of the overall network architecture and examined routers , network management servers , switches , and firewalls ; analyzed the effectiveness of controls used to establish individual accountability and control network access ; observed methods for providing secure data transmissions across the unclassified network to determine whether sensitive data was being encrypted ; evaluated controls intended to limit , detect , and monitor electronic access to sensitive computing resources and the effectiveness of these controls in protecting computing resources from unauthorized disclosure and modification ; evaluated control configurations of selected servers and database management systems to assess the management of security features for network components ; and observed and tested physical access controls to determine if computer facilities and resources were being protected from espionage , sabotage , damage , and theft ; in addition , we obtained views and documentation on these issues from security officials at doe , nnsa , the los alamos site office ( laso ) , and lanl .
+
+to assess whether lanl had fully implemented an information security program to ensure that controls were established and maintained for its unclassified computer network , we used the requirements identified by fisma , which establishes key elements for an effective information security program .
+
+we examined training records for personnel with significant security responsibilities to determine if they received training commensurate with those responsibilities ; reviewed lanl's risk assessment process and risk assessments for the unclassified network to determine whether risks and threats were documented consistent with federal guidance ; analyzed lanl's policies , procedures , practices , and standards to determine their effectiveness in providing guidance to personnel responsible for securing information and information systems ; analyzed security plans to determine if management , operational , and technical controls were in place or planned and that security plans were updated ; analyzed security testing and evaluation results for the unclassified network to determine whether management , operational , and technical controls were tested at least annually and based on risk ; examined remedial action plans to determine whether they addressed vulnerabilities identified in lanl's security testing and evaluations ; and examined contingency plans for the unclassified network to determine whether those plans had been tested or updated .
+
+we also discussed with key security representatives and officials responsible for information security management at doe , nnsa , laso , and lanl , whether information security controls were in place , adequately designed , and operating effectively .
+
+in addition , we met with officials from doe's office of independent oversight and its office of inspector general , regarding any related prior , ongoing , or planned work in these areas .
+
+to determine the amount of funds lanl spent to protect its unclassified network from fiscal years 2001 to 2007 , we obtained and analyzed documentation on the lanl cyber security program and budget , such as the lanl cyber security program office roles and responsibilities ; laso's annual cyber survey report activity for fiscal year 2007 ; national nuclear security administration's cyber security policies ; and lanl risk assessments .
+
+we also obtained and analyzed financial data on lanl's cyber security program and unclassified network from fiscal years 2001 to 2007 .
+
+in addition , we met with cyber security officials from nnsa , laso , and lanl .
+
+to assess the reliability of funding data , we ( 1 ) reviewed quality control procedures used to report funding information ; ( 2 ) interviewed knowledgeable officials ; and ( 3 ) based on document reviews , ensured that we had received all available information .
+
+we determined that the data were sufficiently reliable for the purposes of this report .
+
+we conducted this performance audit from may 2007 to september 2008 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+in addition to the individuals named above , edward r. alexander , jr. ; west e. coile ; edward m. glagola , jr. ; jeffrey l. knott ; glen levis ; duc m. ngo ( assistant directors ) ; debra conner ; kirk j. daubenspeck , jennifer r. franks ; eugene h. gray ; rosanna guerrero ; preston s. heard ; lisa n. henson ; nicole jarvis ; john a. spence ; and christoper j. warweg made key contributions to this report .
+
+other technical assistance was provided by omari a. norman , rebecca shea , and carol herrnstadt shulman .
+
+information security: tva needs to address weaknesses in control systems and networks .
+
+gao - 08-526 .
+
+washington , d.c.: may 21 , 2008 .
+
+information security: progress reported , but weaknesses at federal agencies persist .
+
+gao - 08-571t .
+
+washington , d.c.: march 12 , 2008 .
+
+information security: securities and exchange commission needs to continue to improve its program .
+
+gao - 08-280 .
+
+washington , d.c.: february 29 , 2008 .
+
+information security: although progress reported , federal agencies need to resolve significant deficiencies .
+
+gao - 08-496t .
+
+washington , d.c.: february 14 , 2008 .
+
+information security: irs needs to address pervasive weaknesses .
+
+gao - 08-211 .
+
+washington , d.c.: january 8 , 2008 .
+
+information security: selected departments need to address challenges in implementing statutory requirements .
+
+gao - 07-528 .
+
+washington , d.c.: august 31 , 2007 .
+
+information security: despite reported progress , federal agencies need to address persistent weaknesses .
+
+gao - 07-837 .
+
+washington , d.c.: july 27 , 2007 .
+
+information security: homeland security needs to immediately address significant weaknesses in systems supporting the us - visit program .
+
+gao - 07-870 .
+
+washington , d.c.: july 13 , 2007 .
+
+information security: homeland security needs to enhance effectiveness of its program .
+
+gao - 07-1003t .
+
+washington , d.c.: june 20 , 2007 .
+
+information security: agencies report progress , but sensitive data remain at risk .
+
+gao - 07-935t .
+
+washington , d.c.: june 7 , 2007 .
+
+information security: federal deposit insurance corporation needs to sustain progress improving its program .
+
+gao - 07-351 .
+
+washington , d.c.: may 18 , 2007 .
+
+information security: fbi needs to address weaknesses in critical network .
+
+gao - 07-368 .
+
+washington , d.c.: april 30 , 2007 .
+
+information security: persistent weaknesses highlight need for further improvement .
+
+gao - 07-751t .
+
+washington , d.c.: april 19 , 2007 .
+
+information security: further efforts needed to address significant weaknesses at the internal revenue service .
+
+gao - 07-364 .
+
+washington , d.c.: march 30 , 2007 .
+
+information security: sustained progress needed to strengthen controls at the securities and exchange commission .
+
+gao - 07-256 .
+
+washington , d.c.: march 27 , 2007 .
+

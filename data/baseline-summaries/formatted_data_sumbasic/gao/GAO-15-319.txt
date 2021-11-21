@@ -1,0 +1,814 @@
+to demonstrate medicare coverage , all medicare beneficiaries are issued paper medicare cards that include their name , medicare number , and eligibility status .
+
+medicare beneficiaries present the cards to providers at the point of care to show proof of eligibility for coverage .
+
+providers use the information on the cards to verify eligibility and to submit claims to receive payment for services provided .
+
+the centers for medicare & medicaid services ( cms ) — the agency within the department of health and human services ( hhs ) that administers the medicare program — and its contractors use the information on the cards when confirming beneficiary eligibility , processing claims submitted by providers , and conducting program integrity activities .
+
+the medicare card displays beneficiaries' social security numbers ( ssn ) as the main component of beneficiaries' medicare numbers and there have been calls by policymakers to update the card to remove the ssn .
+
+displaying beneficiaries' ssns introduces risks to the security of beneficiaries' personal information , as the number may , among other things , be obtained and used by thieves to steal beneficiaries' identities .
+
+in 2013 , we recommended that cms take steps to develop an information technology solution to remove ssns from medicare cards .
+
+amid the calls to update the medicare card to remove beneficiaries' ssns , proposals have been put forward to increase the functionality of the cards by replacing paper medicare cards with electronically readable cards , and to issue electronically readable cards to providers as well .
+
+electronically readable cards include , among others , cards that store information on magnetic stripes and bar codes and “smart” cards that use microprocessor chips to store and process data .
+
+proponents of electronically readable cards suggest that using the cards in medicare would bring a number of benefits to cms and providers , including reducing medicare fraud through the authentication of beneficiary and provider identity at the point of care , furthering electronic health information exchange , and improving provider record keeping and reimbursement processes .
+
+authentication is the process of validating or confirming the identity of an individual for a specific transaction — in this case , processing medicare claims .
+
+you asked us to review the ways in which electronically readable cards could be used in medicare .
+
+in this report we ( 1 ) evaluate the different functions and features of electronically readable cards , ( 2 ) examine the potential benefits and limitations associated with the use of electronically readable cards in medicare , ( 3 ) examine the steps cms and medicare providers would need to take to implement and use electronically readable cards , and ( 4 ) describe the lessons learned from the implementation and use of electronically readable cards in other countries .
+
+to evaluate the different functions and features of electronically readable cards , we analyzed the technical capabilities of different types of electronically readable cards .
+
+although there are a variety of card technologies , we focused our review on three commonly used types of electronically readable cards: smart cards , cards with magnetic stripes , and cards with bar codes.terms of three key proposed uses for the cards in medicare that we identified: ( 1 ) authenticating beneficiary and provider presence at the point of care ; ( 2 ) electronically exchanging beneficiary medical information ; and ( 3 ) electronically conveying beneficiary identity and insurance information to providers .
+
+in conducting our analysis , we reviewed industry , academic , and federal agency documents , including national institute of standards and technology ( nist ) documents , on card technologies .
+
+we also reviewed nist standards and guidance regarding electronic identity authentication practices and interviewed officials from nist and the general services administration , the agency responsible for guiding federal agency implementation and use of smart cards for federal employees and contractors .
+
+we analyzed the capabilities of the cards in to examine the potential benefits and limitations associated with the use of electronically readable cards in medicare and the steps cms and medicare providers would need to take to implement and use electronically readable cards , we reviewed industry reports on the potential benefits associated with electronically readable cards and interviewed industry officials .
+
+we also interviewed officials from federal agencies and stakeholder organizations with knowledge and expertise related to the potential uses of electronically readable cards , including cms , office of the national coordinator for health information technology ( onc ) , department of veterans affairs ( va ) , an organization representing medicare beneficiaries , health care provider organizations , health care information technology ( it ) organizations , electronic health care transaction standards organizations , health care billing and management organizations , cms contractors that investigate potential medicare fraud , anti - health - care fraud organizations , health care insurers , an organization representing health care insurers , state medicaid programs that have used electronically readable cards , health care providers that have issued electronically readable cards to patients , and health care it vendors .
+
+ ( for a full list of organizations interviewed , see app .
+
+i. ) .
+
+we also reviewed applicable u.s. health care it and management studies and white papers .
+
+to examine the potential effects of electronically readable cards on reimbursement processes , we also analyzed data from cms on the number of claims that were rejected from january 1 , 2014 , through september 29 , 2014 .
+
+we discussed these data with agency officials , reviewed them for reasonableness and consistency , and determined that they were sufficiently reliable for our purposes .
+
+to describe the lessons learned from the implementation and use of electronically readable cards in other countries , we conducted site visits to france and germany to interview officials from relevant organizations .
+
+we chose these countries based on long - standing use of electronically readable cards for health care , a population relative to the number of medicare beneficiaries in the united states ; in the case of france , its use of provider cards ; and , in the case of germany , its use of third - party reimbursement of providers for health care services .
+
+during our site visit , we spoke with key stakeholders , including organizations representing health care providers and insurers , entities responsible for implementing the cards , and each country's respective health ministry and federal auditing body .
+
+during our work , we heard about non - card - based technologies that could also potentially serve some of the same uses as electronically readable cards , such as cell phones and other forms of identity tokens .
+
+however , those technologies were outside the scope of this review .
+
+we conducted this performance audit from february 2014 to march 2015 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+medicare covered approximately 54 million beneficiaries in fiscal year 2014 at an estimated cost of $603 billion .
+
+the program consists of four parts , parts a through d. in general , part a covers hospital and other inpatient stays , and part b covers hospital outpatient and physician services , durable medical equipment , and other services .
+
+together , parts a and b are known as traditional medicare or medicare fee - for - service .
+
+part c is medicare advantage , under which beneficiaries receive their medicare health benefits through private health plans , and part d is the medicare outpatient prescription drug benefit , which is administered through private drug plans .
+
+medicare beneficiaries who enroll in part c or part d plans receive separate cards from those plans , in addition to their traditional medicare card .
+
+generally , an individual's eligibility to participate in medicare is initially determined by the social security administration , based on factors such as age , work history , contributions made to the programs through payroll deductions , and disability .
+
+once the social security administration determines that an individual is eligible , it provides information about the individual to cms , which prints and issues a paper medicare card to the beneficiary .
+
+providers must apply to enroll in medicare to become eligible to bill for services or supplies provided to medicare beneficiaries .
+
+cms has enrollment standards and screening procedures in place that are designed to ensure that only qualified providers can enroll in the program and to prevent enrollment by entities that might attempt to defraud medicare.providers bill medicare by submitting claims for reimbursement for the services and supplies they provide to beneficiaries .
+
+providers are not issued identification cards , but instead use an assigned unique provider under medicare fee - for - service , identification number — their national provider identifier ( npi ) number — on each claim .
+
+electronically readable cards could be implemented for a number of different purposes in medicare .
+
+we identified three key proposed uses: authenticating beneficiary and provider presence at the point of care .
+
+beneficiary and provider cards could be used for authentication to potentially help limit certain types of medicare fraud , as cms could use records of the cards being swiped to verify that they were present at the point of care .
+
+using electronically readable cards for authentication would not necessarily involve both beneficiaries and providers , as cards could be used solely to authenticate beneficiaries , or solely to authenticate providers .
+
+electronically exchanging beneficiary medical information .
+
+beneficiary cards could be used to store and exchange medical information , such as electronic health records , beneficiary medical conditions , and emergency care information , such as allergies .
+
+provider cards could also be used as a means to authenticate providers accessing electronic health record ( ehr ) systems that store and electronically exchange beneficiary health information .
+
+electronically conveying beneficiary identity and insurance information to providers .
+
+beneficiary cards could be used to auto - populate beneficiary information into provider it systems and to automatically retrieve existing beneficiary records from provider it systems .
+
+for example , an electronically readable medicare beneficiary card could contain the identity and insurance information printed on the current paper medicare cards — beneficiary name , medicare number , gender , medicare benefits , and effective date of medicare coverage .
+
+the primary purpose of this potential use would be to improve provider record keeping by allowing providers the option to capture beneficiary information electronically .
+
+the use of electronically readable cards for health care has been limited thus far in the united states .
+
+according to stakeholders , the limited use is due , in part , to reluctance among the insurance industry and health care providers to invest in a technology that would depend on a significant investment from both parties to implement .
+
+however , some health insurers , including a large insurer , have issued electronically readable cards to their beneficiaries , and some integrated health systems have issued cards to patients to help manage patient clinical and administrative information.cards have been used as health insurance cards for decades .
+
+for example , france and germany have used smart cards in their health care systems since the 1990s .
+
+appendix ii includes additional details about france's and germany's use of smart cards .
+
+although there is no reliable measure of the extent of fraud in the medicare program , for over two decades we have documented ways in which fraud contributes to medicare's fiscal problems .
+
+preventing medicare fraud and ensuring that payments for services and supplies are accurate can be complicated , especially since fraud can be difficult to detect because those involved are generally engaged in intentional deception .
+
+common health care fraud schemes in medicare include the following: billing for services not rendered .
+
+this can include providers billing for services and supplies for beneficiaries who were never seen or rendered care , and billing for services not rendered to beneficiaries who are provided care ( such as adding a service that was not provided to a claim for otherwise legitimately provided services ) .
+
+in some types of fraud schemes , individuals may steal a provider's identity and submit claims for services never rendered and divert the reimbursements without the provider's knowledge .
+
+fraudulent or abusive billing practices .
+
+this can include providers billing medicare more than once for the same service ; inappropriately billing medicare and another payer for the same service ; upcoding of services ; unbundling of services ; billing for noncovered services as covered services ; billing for medically unnecessary services ; and billing for services that were performed by an unqualified individual , or misrepresenting the credentials of the person who provided the services .
+
+kickbacks .
+
+this can include providers , provider associates , or beneficiaries knowingly and willfully offering , paying , soliciting , or receiving anything of value to induce or reward referrals or payments for services or goods under medicare .
+
+among other processes , to detect potential fraud , cms employs it systems — including its fraud prevention system — that analyze claims submitted over a period of time to detect patterns of suspicious billing.cms and its contractors investigate providers and beneficiaries with suspicious billing and utilization patterns and , in suspected cases of fraud , can take administrative actions , such as suspending payments or revoking a provider's billing privileges , or refer the investigation to the hhs office of inspector general for further examination and possible criminal or civil prosecution .
+
+as we have previously reported , there are three potential factors that can be used to authenticate an individual's identity: ( 1 ) “something they possess,” such as a card , ( 2 ) “something they know,” such as a password or personal identification number ( pin ) , and ( 3 ) “something they are,” such as biometric information , for example , a fingerprint , or a picture id.generally , the more factors that are used to authenticate an individual's identity , the higher the level of identity assurance .
+
+for example , a card used in conjunction with a pin provides a higher level of identity authentication than just a card , since the pin makes it more difficult for individuals who are not the cardholder to use a lost or stolen card .
+
+nist has issued standards for federal agencies for using electronically readable cards to achieve a high level of authentication , and those standards require robust enrollment and card issuance processes to ensure that the cards are issued to the correct individuals .
+
+these processes include procedures to verify an individual's identity prior to card issuance to ensure eligibility and to ensure that the cards are issued to the correct individual .
+
+for example , verifying an individual's address is an important practice for issuing cards by mail .
+
+if a significant number of cards are issued to ineligible or incorrect individuals , it undermines the utility of the cards for identity authentication .
+
+practices that provide higher levels of identity authentication generally are more expensive and difficult to implement and maintain and may cause greater inconvenience to users than practices that provide lower levels of assurance .
+
+the level of identity authentication that is appropriate for a given application or transaction depends on the risks associated with the application or transaction .
+
+the greater the determined risk , the greater the need for higher - level identity authentication practices .
+
+the office of management and budget and nist have issued guidance defining four levels of identity assurance ranging from level 1 — “little or no confidence in the asserted identity's validity” — to level four — “very high confidence in the asserted identity's validity” — and directed agencies to use risk - based methods to decide which level of authentication is appropriate for any given application or transaction .
+
+additionally , authentication practices should take into account issues related to cost and user acceptability .
+
+cms currently relies on providers to authenticate the identities of medicare beneficiaries to whom they are providing care , but the agency does not have a way to verify whether beneficiaries and providers were actually present at the point of care when processing claims .
+
+at this point , cms has not made a determination that a higher level of beneficiary and provider authentication is needed .
+
+the type of electronically readable card most appropriate for medicare would depend on how the cards would be used .
+
+three common types of electronically readable cards that could be used to replace the current printed medicare card are smart cards , magnetic stripe cards , and bar code cards .
+
+the key distinguishing feature of smart cards is that they contain a microprocessor chip that can both store and process data , much like a very basic computer .
+
+based on our analysis of the capability of the three types of cards , we found that while all of the cards could be used for authentication , storing and exchanging medical information , and conveying beneficiary information , the ability of smart cards to process data enables them to provide higher levels of authentication and better secure information than cards with magnetic stripes and bar codes .
+
+our analysis found that smart cards could provide substantially more rigorous authentication of the identities of medicare beneficiaries and providers than magnetic stripe or bar code cards ( see fig .
+
+1 ) .
+
+although all three types of electronically readable cards could be used for authentication , smart cards provide a higher level of assurance in their authenticity because they are difficult to counterfeit or copy .
+
+magnetic stripe and bar code cards , on the other hand , are easily counterfeited or for example , officials in france told us that they chose to use copied.smart cards as their health insurance cards , in part , because they were less susceptible to counterfeiting , and reported that they have not encountered any problems with counterfeit cards .
+
+additionally , smart cards can be implemented with a public key infrastructure ( pki ) — a system that uses encryption and decryption techniques to secure information and transactions — to authenticate the cards and ensure the data on the cards have not been altered .
+
+all three types of cards could be used in conjunction with other authentication factors , such as a pin or biometric information , to achieve a higher level of authentication .
+
+however , only smart cards are capable of performing on - card verification of other authentication factors .
+
+for example , smart cards can verify whether a user provides a correct pin or can confirm a fingerprint match , without being connected to a separate it system .
+
+cards with magnetic stripes and barcodes cannot perform such on - card verification , and require a connection to a separate it system to verify pins or biometric information .
+
+we also determined that using electronically readable cards to store and exchange medical information would likely require the use of smart cards given their storage capacity and security features .
+
+smart cards have a significantly greater storage capacity than magnetic stripe and bar code cards , and would be able to store more extensive medical information on the cards .
+
+however , the storage on smart cards is limited , so it is unlikely that the cards would be able to store all of a beneficiary's medical records or medical records of a larger file size , such as medical images .
+
+in addition , smart cards could better secure confidential information , including individually identifiable health information subject to protection under the health insurance portability and accountability act of 1996 ( hipaa ) .
+
+smart cards can be implemented with pki to perform public key encryption and authentication to secure and securely transmit any medical information on the card .
+
+smart cards' ability to perform on - card verification can also be used to limit access to information on the cards to better ensure that information is not accessed inappropriately .
+
+for example , beneficiaries could be required to enter a pin for providers to access medical information on the card , while access to nonsensitive information could be allowed without beneficiaries entering a pin .
+
+our analysis also found that any of the three types of electronically readable cards could be used to convey beneficiary identity and insurance information to providers .
+
+each type of card has adequate storage capacity to contain such information , and storing this type of information may not require cards with processing capabilities or security features .
+
+if beneficiary ssns continue to serve as the main component of medicare numbers , cards with security features would be needed to reduce the risk of identity theft .
+
+using electronically readable cards to authenticate beneficiary and provider presence at the point of care could potentially curtail certain types of medicare fraud , but would have limited effect since cms has stated that it would continue to pay claims regardless of whether a card was used .
+
+using electronically readable cards to store and exchange medical records is not part of current federal efforts to facilitate health information exchange and would likely present challenges .
+
+using electronically readable cards to convey identity and insurance information to auto - populate and retrieve information from provider it systems could reduce errors in the reimbursement process and improve medical record keeping .
+
+using electronically readable cards to authenticate beneficiary and provider presence at the point of care could potentially limit certain types of medicare fraud .
+
+however , we could not determine the extent to which authenticating beneficiaries and providers at the point of care could limit fraud because there is no reliable estimate of the extent or total dollar value associated with specific types of medicare fraud schemes .
+
+stakeholders told us that authenticating beneficiaries at the point of care could potentially limit schemes in which medicare providers misuse beneficiary medicare numbers to bill fraudulently for services .
+
+in such schemes , providers use beneficiary medicare numbers to bill on their behalf without having ever seen or rendered care to the beneficiaries .
+
+as of may 2014 , cms was aware of 284,000 medicare beneficiary numbers that had been compromised and potentially used to submit fraudulent claims .
+
+stakeholders also told us that authenticating providers at the point of care could potentially limit fraud schemes in which individuals or companies misuse an unknowing provider's medicare enrollment information to submit claims and divert stolen reimbursements .
+
+adding another authentication factor , such as a pin or a biometric factor , to a beneficiary's card also could limit the potential for individuals to use a stolen medicare card to obtain care or bill for services .
+
+for example , individuals attempting to use a stolen card could not pose as a beneficiary or bill for services on behalf of a beneficiary without knowing the beneficiary's pin .
+
+beneficiaries would still be able to lend their card to others and tell them their pin , though replicating a biometric factor would be more difficult .
+
+beneficiaries that were never seen or rendered care: two owners of a home health agency paid kickbacks to obtain information on medicare beneficiaries and used the information to bill for home health care services that were not actually rendered .
+
+services: a doctor performing surgeries on beneficiaries billed medicare for individual steps involved in the surgeries , rather than the entire procedure to fraudulently increase reimbursements .
+
+services as covered services: the owner of a medical transport company provided beneficiaries with routine , nonemergency transportation services not covered by medicare , but billed medicare for emergency ambulance transportation , which is covered by medicare .
+
+told us that requiring cards to be used would not be feasible because of concerns that doing so would limit beneficiaries' access to care .
+
+specifically , cms officials told us the agency would not want to make access to medicare benefits dependent on beneficiaries having their card at the point of care .
+
+according to cms officials and stakeholders , there are legitimate reasons why a card may not be present at the point of care , such as when beneficiaries or providers forget their cards or during a medical emergency .
+
+because cms has indicated that it would still process and pay for these claims , providers submitting potentially fraudulent claims could simply not use the cards at the point of care .
+
+some stakeholders noted that cms could mitigate the risk of paying claims in which cards are not used by using its fraud prevention system or other it systems to identify and investigate providers with suspicious billing patterns related to card use .
+
+for example , such systems could identify providers that submit an abnormally high percentage of claims in which cards are not used , which could be indicative of claims for beneficiaries who were never seen or rendered care .
+
+however , cms officials noted that they already use their it systems to identify providers that bill for services for beneficiaries who were never seen or rendered care .
+
+for example , cms analyzes billing patterns to identify and conduct postpayment investigations into providers that submit an abnormal number of claims for beneficiaries with known compromised numbers .
+
+provider paid or received kickbacks for beneficiary referrals for specific services , or for the purchase of goods or services that may be paid for by medicare: the operator of a home health agency paid illegal kickbacks to physicians to refer beneficiaries who were not homebound or who otherwise did not qualify for home health services , resulting in fraudulent medicare billing for home health services .
+
+kickbacks to allow provider to fraudulently bill for services: two beneficiaries solicited and received kickbacks to serve as patients for a home health agency that fraudulently billed medicare for physical therapy services .
+
+according to stakeholders , the use of electronically readable beneficiary cards would also have little effect on many other potentially fraudulent and abusive provider billing practices .
+
+for example , use of the cards would not prevent providers from mischaracterizing services , billing for medically unnecessary services , or adding a service that was not provided to a claim for otherwise legitimate services because such fraud does not involve issues related to authentication .
+
+instead , these types of fraud typically involve providers that wrongly bill medicare for the care provided , or misrepresent the level or nature of the care provided .
+
+the use of electronically readable beneficiary and provider cards would also have little effect on preventing fraud that involves collusion between providers and beneficiaries because complicit beneficiaries , including those who receive kickbacks , would likely allow their cards to be misused .
+
+officials we spoke with in france and germany told us that the use of electronically readable cards has not limited certain types of fraud .
+
+officials from provider organizations and an insurance organization in germany told us that the use of beneficiary cards does not prevent providers from fraudulently adding services that they never provided onto otherwise legitimate claims .
+
+in addition , officials from france noted that certain elderly or infirm beneficiaries may need to rely on providers to maintain custody of and use their cards , and there had been instances of providers and caretakers misusing beneficiary cards in such cases .
+
+for example , officials from an insurance organization in france noted that nurses and caretakers of elderly patients have stolen patient cards and allowed other providers to misuse them .
+
+finally , there are also concerns that the use of an electronically readable card could introduce new types of fraud and ways for individuals to illegally access medicare beneficiary data .
+
+for example , cms officials said that malicious software written onto an electronically readable card could be used to compromise provider it systems .
+
+in addition , cms officials noted that individuals could illicitly access beneficiary information through “card skimming.” however , medicare beneficiary data in provider it systems may already be vulnerable to illegal access and use .
+
+using electronically readable cards to store and exchange beneficiary medical information is not part of current federal efforts to facilitate electronic health information exchange and would likely present challenges .
+
+to help improve health care quality , efficiency , and patient safety , the medicare ehr incentive program provides financial incentives for medicare providers to increase the use of ehr technology to , among other things , exchange patient medical information electronically with other providers .
+
+in addition , onc has funded health information exchange organizations that provide support to facilitate the electronic exchange of health information between providers .
+
+these and other ongoing federal health information exchange programs aim to increase the connections and exchanges of medical information directly between provider ehr systems so that patient medical information is available where and when it is needed .
+
+none of these existing programs include the use of electronically readable cards to store or exchange medical information .
+
+using electronically readable cards to store and exchange beneficiary medical information would introduce an additional medium to supplement health information exchange among ehr systems , with beneficiaries serving as intermediaries in the exchange .
+
+stakeholders noted that implementing another medium , such as a card , that stores beneficiary medical information outside of provider ehr systems could lead to inconsistencies with provider records .
+
+stakeholders , including a health care it vendor and a provider organization , stated that storing beneficiary medical information on beneficiary cards in addition to ehr systems could lead to problems with ensuring that medical information is synchronized and current .
+
+for example , beneficiaries who have laboratory tests performed after medical encounters would not have a means to upload the results to their cards before visiting their providers again , leading to cards that are not synchronized with provider records .
+
+several stakeholders also stated that using electronically readable cards to store and exchange medical information would likely face similar interoperability issues encountered by federal health exchange programs and providers implementing ehr systems .
+
+information that is electronically exchanged among providers must adhere to the same standards in order to be interpreted and used in ehrs .
+
+we previously found that insufficient standards for electronic health information exchange have been cited by providers and other stakeholders as a key challenge for health information exchange .
+
+for example , we found that insufficient standards for classifying and coding patient allergy information in ehrs could potentially limit providers' ability to exchange and use such information .
+
+the use of electronically readable cards would involve exchanging medical information through an additional medium , but it would also be subject to the same interoperability issues that currently limit exchange .
+
+despite potential challenges using electronically readable cards to store and exchange medical information , several stakeholders noted that adding patient health information to an electronically readable card may have benefits such as better health outcomes in emergency medical situations .
+
+for example , a beneficiary card containing medical information could be used by an emergency care provider to access important information that might otherwise be unknown , such as beneficiary allergy information .
+
+one potential benefit of electronically readable provider cards is that they could provide an option to authenticate providers accessing ehr systems , especially for remote online access .
+
+ehr systems that store patient medical information can be accessed from places outside the clinical setting , and there are concerns regarding the current level of identity authentication to ensure that only authorized providers are accessing the systems remotely .
+
+although no determinations have been made regarding what specific authentication practices are needed , or what types of technology should be used for remote access , an hhs advisory committee has recommended that the medicare ehr program implement rules regarding how providers should be authenticated when remotely accessing ehr systems .
+
+according to an electronically readable card industry organization , electronically readable cards could be used to authenticate providers remotely accessing ehr systems .
+
+using electronically readable cards to convey identity and insurance information to auto - populate and retrieve information from provider it systems could reduce errors in the reimbursement process and improve medical record keeping and health information exchange .
+
+many providers currently capture identity and insurance information by photocopying insurance cards and manually entering beneficiary information into their it systems , which can lead to data entry errors .
+
+in addition , providers have different practices for entering beneficiary names , such as different practices for recording names with apostrophes and hyphens , or may use beneficiary nicknames , leading to possible naming inconsistencies for a single individual .
+
+the failure to initially collect accurate beneficiary identity and insurance information when providers enter patient information into their it systems , or retrieve information on existing beneficiaries , can compromise subsequent administrative processes .
+
+according to stakeholders , using an electronically readable card to standardize the process of collecting beneficiary identity and insurance information could help reduce errors in the reimbursement process .
+
+when beneficiaries' identity or insurance information is inaccurate , insurers reject claims for those beneficiaries .
+
+providers then must determine why the claims have been rejected , and reimbursements are delayed until issues with the claims are addressed and the claims are resubmitted .
+
+once any issues are addressed , insurers reprocess resubmitted claims .
+
+based on data provided by cms , we found that up to 44 percent of the more than 70 million medicare claims that cms rejected between january 1 , 2014 , and september 29 , 2014 , may have been rejected because of invalid or incorrect beneficiary identity and insurance information that could be obtained from beneficiaries' medicare cards .
+
+in addition , hhs has cited an industry study indicating that , industrywide , a significant percentage of denied health insurance claims are due to providers submitting incorrect patient information to insurers .
+
+however , cms officials stated that using electronically readable cards may not necessarily reduce claim rejections because providers may still obtain beneficiary information in other ways , including over the telephone or paper forms that have been filled out by beneficiaries .
+
+stakeholders also told us that problems with collecting beneficiary information can lead to the creation of medical records that are not linked accurately to beneficiaries or records that are linked to the wrong individual , which can lead to clinical inefficiencies and potentially compromise patient safety .
+
+for example , problems collecting beneficiary information can prevent providers from retrieving existing beneficiary records from their it systems , leading providers to create duplicate medical record files that are not matched to existing beneficiary records .
+
+medical records that are not accurately linked to beneficiaries can compromise a provider's ability to make clinical decisions based on complete and accurate medical records , which can lead to repeat and unnecessary medical tests and services , and adverse events , such as adverse drug interactions .
+
+furthermore , inaccurate and inconsistent beneficiary records can also limit electronic health information exchange by limiting the ability to match records among providers .
+
+we previously found that difficulty matching beneficiaries to their health records has been a key challenge for electronic health information exchange , and this can lead to beneficiaries being matched to the wrong set of records , and to providers needing to match records manually .
+
+va also recently issued new paper cards to certain veterans to obtain care outside of va facilities .
+
+see the veterans access , choice and accountability act of 2014 , pub .
+
+l. no .
+
+113-146 , § 101 ( f ) ,128 stat .
+
+1754 , 1760 ( codified at 38 u.s.c .
+
+§ 1701 note ) .
+
+beneficiary identity and insurance information prior to appointments , through either telephone conversations or online portals to preregister for appointments .
+
+this practice of ensuring the accuracy of beneficiary information prior to appointments may limit the possible benefits of using electronically readable cards to convey information at the point of care .
+
+cms would need to update its claims processing systems to use electronically readable cards to authenticate beneficiary and provider presence at the point of care , while using the cards to convey beneficiary identity and insurance information might not require cms to make it updates .
+
+similarly , using electronically readable cards for authentication would require updates to cms's current card management processes , while using the cards to convey beneficiary identity and insurance might not .
+
+for all potential uses of electronically readable cards , medicare providers could incur costs and face challenges updating their it systems to read and use information from the cards .
+
+using electronically readable cards to authenticate beneficiaries and providers would require updates to cms's claims processing systems to verify that the cards were swiped at the point of care .
+
+cms officials told us they have not fully studied the specific it updates that would be needed to the claims processing system and could not provide an estimate of costs associated with implementing any updates .
+
+however , they noted that any it updates would necessitate additional funding and time to implement , and could involve it challenges .
+
+based on our research , we identified two options for how cms could verify that the cards were swiped by beneficiaries and providers at the point of care .
+
+the first option is based on proposals from an hhs advisory organization and a smart card industry organization .
+
+when beneficiaries and providers swipe their cards , cms's it systems would generate and transmit unique transaction codes to providers .
+
+providers would include the transaction codes on their claims .
+
+when processing claims , cms would match the original transaction codes generated by cms's it systems with the codes on submitted claims.for this option , cms officials told us that they would need to implement an it system to collect and store data on the transaction codes and build electronic connections with existing claims processing systems to match the codes with submitted claims .
+
+the second option is based on the processes used in a cms pilot program .
+
+when beneficiaries and providers swipe their cards , information about the card transaction — such as the date of the transaction and the beneficiary medicare number and provider npi associated with the cards — would be sent to cms .
+
+cms would match this information about the card transaction with information on the claims submitted by the providers .
+
+according to officials , this option would similarly involve implementing an it system to collect and store data on the card transactions and connecting the system with existing claims processing systems to match information about the transactions with submitted claims .
+
+cms officials told us that verifying that beneficiary and provider cards were swiped by including new content on claims — such as unique transaction codes — would be problematic .
+
+doing so would involve changes to industrywide standards for claim submission and the way in which cms's it systems receive submitted claims .
+
+these industrywide standards govern the data content and format for electronic health care transactions , including claim submission .
+
+adding new content to claims , such as a field for a transaction code , would require cms to seek changes to existing claim standards with the standard - setting body responsible for overseeing the data content and format for electronic health care transactions .
+
+officials told us that requesting and having such changes approved could take several years .
+
+cms officials further noted that the it infrastructure that cms developed to accept electronic claim submissions was built to accept claims based on current standards and would need to be updated to accept any new content fields .
+
+however , under the second option , verifying that the cards were swiped by matching information about the card transaction — such as the date and beneficiary and provider identification information — with information on the claims submitted would not involve additional content on claims because cms would be matching the card transactions with information currently included on claims .
+
+see gao , information security: advances and remaining challenges to adoption of public key infrastructure technology , gao - 01-277 ( washington , d.c.: feb. 26 , 2001 ) .
+
+federal agencies , told us that cms could leverage such services to use pki for electronically readable medicare cards .
+
+cms officials stated that cms has not studied this issue and said they could not provide any cost estimates for using pki for electronically readable medicare cards .
+
+in contrast to using electronically readable cards for authentication , using the cards to convey beneficiary identity and insurance information may not require updates to cms's it systems .
+
+using the cards to convey such information primarily involves transferring information from the card to provider it systems , as opposed to interacting with cms it systems .
+
+however , cms officials said if any additional identity or insurance information is put on an electronically readable card that requires changes to the content or formatting of claims , cms would have to update its claims processing systems .
+
+cms would need to update and obtain additional resources for its current card management processes to use electronically readable cards to achieve a higher level of authentication for beneficiaries and providers .
+
+card management processes involve procedures for enrollment , issuing cards , replacing cards , updating information on cards , deactivating cards , and addressing cardholder issues , among other processes ; and developing standards and procedures for card use .
+
+medicare currently does not issue cards to providers , and therefore cms would need to implement a new program to issue and manage provider cards and to develop standards and procedures for card use .
+
+in addition , we found that new standards and procedures for card use would likely need to be developed to implement electronically readable cards to authenticate beneficiaries and providers .
+
+proponents have suggested that nist standards for electronically readable cards could be used to implement such cards for medicare .
+
+however , these standards generally apply to the issuance and use of smart cards by federal employees and contractors for accessing computers and physical locations , and we found that the application of such standards could present logistical challenges for medicare and could entail changes to current medicare card management practices .
+
+for example , nist standards involve procedures for verifying the identities of individuals before they are issued cards and , among other requirements , require potential cardholders to appear in person before being issued a card .
+
+medicare does not require beneficiaries to appear in person to be enrolled in the program and issued cards .
+
+doing so could present barriers to beneficiary enrollment and could present logistical challenges , given that medicare covered approximately 54 million beneficiaries in 2014 and cms does not have an infrastructure in place to meet beneficiaries in person .
+
+additionally , to use the cards with a pki system , cms would need to implement processes to update and reissue beneficiary cards as needed to meet security requirements .
+
+currently , the nist standards require cards to be reissued every 6 years to update the pki keys on the cards .
+
+reissuing cards on a regular basis would likely require the implementation of new card management processes and additional resources for cms .
+
+as of now , cms only reissues cards if they are reported as lost , stolen , or damaged , or if there is a change to beneficiary information , such as a name change .
+
+cms would face additional card management challenges and practical concerns to use electronically readable cards in conjunction with a pin or biometric information .
+
+according to cms officials , implementing pins or biometrics would come with large costs and would involve significant changes for cms and beneficiaries .
+
+to use pins , cms would need to implement processes for creating , managing , and verifying them .
+
+cms officials and other stakeholders also noted that certain medicare beneficiaries , especially those with cognitive impairments , may not be able to remember their pins .
+
+officials we spoke with in france told us that they decided not to have beneficiaries use pins with their cards after a pilot project found that some beneficiaries had difficulties remembering them .
+
+in terms of using biometrics , cms officials and other stakeholders expressed concerns regarding beneficiaries' willingness to provide biometric information due to privacy considerations and the logistics involved in collecting such information from beneficiaries .
+
+both france and germany are currently issuing cards that include photographs of beneficiaries , and officials from both countries told us that they experienced difficulties collecting them .
+
+both countries allow beneficiaries to submit their photographs by mail , and germany allows beneficiaries to submit their photographs online.because the pictures are not taken in person , there are few controls in place to ensure that beneficiaries submit a representative photograph of themselves .
+
+va includes a photograph of the veteran on its cards , which it generally obtains in person at local medical centers .
+
+cms does not have an infrastructure like va to take photographs of medicare beneficiaries .
+
+officials from germany noted that cms would need to implement processes for securing information on electronically readable cards to use them to store and exchange beneficiary medical information .
+
+cms and onc officials and other stakeholders expressed concerns about storing individually identifiable health information on the cards and told us that beneficiaries would likely be sensitive to having their medical information on the cards , so the security processes in place to protect this information would need to be rigorous .
+
+in particular , processes would be needed for accessing and writing information onto the cards to ensure that beneficiaries could control who could view stored information and to ensure that only legitimate providers are able to access information from or write information onto the cards .
+
+in contrast with using electronically readable cards for authentication or to store and exchange beneficiary medical information , we found that cms would not necessarily need to make changes to current standards and procedures for the cards to electronically convey beneficiary identity and insurance information .
+
+the cards would not be used in a significantly different way than they are now — to convey information that providers use to verify beneficiary eligibility and to submit claims — and accordingly , little would change other than the type of card cms issues .
+
+instead of a paper card , cms would need to produce and issue an electronically readable card.in the united states has been limited , there are existing industry standards for using such cards to convey identity and insurance information .
+
+an hhs advisory organization , the workgroup for electronic data interchange ( wedi ) , has issued formatting and terminology although the use of electronically readable health insurance cards standards for using electronically readable cards that could be applied to electronically readable medicare cards .
+
+cms officials also noted that the implementation of electronically readable cards would require beneficiary and provider education and outreach regarding the new cards and any associated changes related to how the cards are used .
+
+for example , cms would have to disseminate information on the different functions and features of any card and information on what to do if the electronically readable functions of the card are not working .
+
+for cases where it systems malfunctioned or it access was an issue , cms officials stated the agency would need to have support services in place for providers and beneficiaries , and paper back - up options .
+
+for all potential uses of electronically readable cards , medicare providers could incur costs and face challenges updating their it systems to read and use information from the cards .
+
+for providers to use electronically readable cards , they would need to have hardware , such as card readers , to read information from the cards .
+
+according to stakeholders , including provider organizations , health care it , transaction standards , billing , and management organizations , and health care it vendors , in general , providers would also need to update their existing it system software to use the information on cards .
+
+for example , to use electronically readable cards to store and exchange beneficiary medical information , providers' ehr systems would need to be updated to be able to read and use the medical information on the cards .
+
+generally , providers would have to update their existing it systems with a type of software called middleware to interact with and use information from electronically readable cards , and such updates could involve significant challenges.provider it systems , including billing systems and ehrs , vary widely and often are customized to meet the needs of individual providers .
+
+while some providers have a single , integrated it system for billing , tracking according to stakeholders we spoke with , patient medical information , and other administrative applications , other providers have individual systems for each application , such as practice management , billing , and ehr systems .
+
+because of the variety and customization of systems in place , providers may need to implement uniquely developed middleware for each software system the cards would interact with to ensure that their it systems could read and use information from the cards .
+
+updating provider it systems to use electronically readable cards for beneficiary and provider authentication by including transaction codes on claims could prove particularly challenging .
+
+to do so , the cards would need to be able to interact with provider it systems used for billing so that the systems could incorporate the transaction codes generated by the cards onto provider claim forms .
+
+stakeholders told us that current provider it systems are not designed to interact with electronically readable cards to incorporate transaction codes generated by the cards onto claims .
+
+additionally , they said that provider billing practices vary widely , which presents challenges for developing standard ways to update provider it systems to be able to perform this function .
+
+for example , some providers have it systems capable of directly billing cms , while others use it systems that electronically transmit clinical encounter information to third - party billers , who generate and submit claims to cms .
+
+some providers do not use it systems , and submit paper claims or clinical encounter information to clearinghouses , which convert the claims into electronic format and submit them to cms .
+
+if information about the card transaction is sent directly to cms — and no transaction codes are included on claims — providers would not necessarily need to update their existing it software .
+
+in cms's 2011 and 2012 electronically readable card pilot program , participating physicians and suppliers did not need to update their it systems , as they used magnetic stripe cards and sent the information to cms using existing credit card readers and networks .
+
+however , if cms used smart cards with pki for authentication rather than magnetic stripe cards and credit card readers , providers would likely need to purchase card readers and software capable of authenticating the cards .
+
+while some provider it systems would need to be updated with middleware to be able to use beneficiary identity and insurance information conveyed by electronically readable cards , some provider systems already have this capability .
+
+one vendor noted that its it systems are capable of using beneficiary identity and insurance information from cards that comply with wedi electronically readable card standards to auto - populate and retrieve information from their it systems .
+
+in addition , an insurer that issues electronically readable cards that comply with wedi standards told us that there are providers that currently use its cards to auto - populate information into their it systems , though this insurer could not estimate the percentage of providers who do so .
+
+in addition to updating it systems , cms officials and stakeholders also expressed concerns regarding how using electronically readable cards to authenticate providers at the point of care would be incorporated into provider workflows .
+
+during the pilot program conducted by cms , participating providers told cms that using the cards was an administrative burden that required changes to their workflows .
+
+stakeholders noted that it might not be practical for providers to swipe the cards during the course of providing care and that the cards might instead be used by administrative or billing staff .
+
+however , having administrative staff use provider cards could create complexity in terms of card use and limits the ability of the card to be used to authenticate provider presence at the point of care .
+
+for some providers , administrative and billing processes might not take place at the same location where care is provided .
+
+stakeholders also expressed logistical concerns regarding when and how beneficiary and provider cards would be swiped at the point of care .
+
+at larger provider facilities , such as hospitals , having beneficiaries and providers swipe their cards at the point of care might require providers to deploy many card readers within a single facility .
+
+additionally , stakeholders expressed concerns regarding how the cards would be used when multiple providers provide care during a single medical encounter .
+
+for example , a beneficiary experiencing a medical emergency may be provided care by an ambulance company , hospital , and attending physicians .
+
+with each provider submitting its own claim for reimbursement , it raises questions regarding how a single swipe of the beneficiary's card would be matched to each of the claims submitted by the providers .
+
+further , stakeholders raised questions regarding how the cards would be used by providers that may have little contact with beneficiaries , such as laboratories .
+
+many stakeholders also cited potential challenges encouraging providers to incur costs to purchase hardware and update their it systems to use the cards , especially given existing cms it requirements .
+
+officials at cms and onc , along with stakeholders , noted that medicare providers are already investing resources , and facing it challenges , to meet medicare ehr incentive program requirements and to update their it both france and germany have systems to adopt new billing codes.experienced similar challenges with provider reluctance to incur costs to use electronically readable cards .
+
+according to officials from organizations we spoke with in those countries , financial subsidies to purchase hardware and update it systems , and financial incentives for card use have been key to encouraging provider participation .
+
+france and germany have each successfully implemented an electronically readable card system — specifically , a smart card system — on a national scale in their health care systems .
+
+the implementation of these systems provides lessons that could inform u.s. policymakers in deciding whether to adopt an electronically readable card for medicare .
+
+both countries' experiences demonstrate that implementation of an electronically readable card would likely be a long process and would require that competing stakeholder needs be discussed and addressed .
+
+further , the experiences of france and germany illustrate that after implementation , management of an electronically readable card system is a continuing and costly process .
+
+france and germany's successful implementation of an electronically readable card system demonstrates that implementation of such a system on a national scale is possible .
+
+according to the organization that manages the smart card system in france , 50 million citizens , or about 76 percent of the population in france , used a beneficiary card and more than 300,000 health care providers used a health care provider card as part of a health care service in 2013 .
+
+approximately 90 percent of france's health care claims were generated by swiping both a beneficiary and a health care provider smart card .
+
+in germany , approximately 70 million citizens , or about 85 percent of the population , used a smart card provided to beneficiaries as their health insurance card in 2014 , according to government officials .
+
+the experiences of both countries also demonstrate that the implementation of an electronically readable card system can be a long process .
+
+france has had a smart card system for beneficiaries and health care providers since 1998 .
+
+officials from the organization that manages the smart card system in france told us that implementation of the system had been a slow process in part because many providers lacked the it equipment — such as computers and printers — needed to manage their health care practices and had to obtain that equipment before being able to participate in the card system .
+
+health care providers' resistance to voluntarily adopting and using the smart cards — despite financial incentives to do so — also contributed to the delay in implementing the smart card system fully .
+
+fourteen years after the implementation of the smart card system in france , about 95 percent of self - employed health care providers and 18 percent of hospital - based providers in france were using health care provider cards .
+
+while the initial cards for beneficiaries were distributed in 2 to 3 years , according to french officials , issuance of an updated beneficiary card with a picture has been a slower process .
+
+french officials explained that the process of adding a photograph to the beneficiary card and issuing the updated cards has been ongoing since 2007 .
+
+as of september 2014 , 35 percent of beneficiary cards in france being used for health care had been issued 15 years ago , according to the organization that represents health care insurers .
+
+in 1995 , germany implemented a memory - only smart card that included information such as name , address , and insurance status .
+
+the card was used to electronically transfer this information to the health care providers' it systems .
+
+according to a report by the german auditing agency , in 2003 germany required that a new smart card containing a microprocessor chip and with the capability to add new functionality be implemented by january 2006 .
+
+this report also indicated that due to technical problems and stakeholder disagreements , the initial roll out of the new cards did not occur until october 2011 .
+
+by the end of 2013 , almost all of the population insured through the statutory health insurance system had been issued the new cards and providers were equipped with the readers that could access information from both the new smart card and the previous memory - only smart card .
+
+however , german officials told us that the full transition to the new cards will not be complete until early 2015 , when beneficiaries will no longer be able to use the memory - only cards .
+
+currently , the new smart cards are being used in the same way as the memory - only card .
+
+according to officials in germany , new applications will be added to the new card incrementally , with the ability to update insurance information on the card being the first application and then an expansion to storing emergency care information , such as allergies and any drug interactions .
+
+officials explained that full implementation of the new smart card — with all of the applications added — will not be completed until 2018 , more than 10 years later than mandated .
+
+the initial implementation of any new card system in medicare could also be a lengthy process because cms would need time to address the challenges that we described earlier .
+
+similarly , experiences in both france and germany have illustrated that updating a card system has the potential to be as lengthy and resource - intensive a process as the initial implementation .
+
+french officials noted that being clear about how an electronically readable card will be used and developing a system that can be easily updated are key lessons that the medicare program should consider .
+
+officials in france and germany indicated that their governments implemented smart card systems to simplify and improve administrative processes in their health care systems .
+
+specifically , both countries implemented a smart card as a means to move from a paper - based to an electronic billing and reimbursement process .
+
+in addition to administrative improvements , officials from both countries noted that the shift from paper to electronic billing and reimbursement has resulted in financial savings .
+
+for example , government officials in france told us that the estimated cost to process a paper claim is $2.40 per claim , while processing an electronic claim cost $0.20 .
+
+officials from france's federal auditing agency claim that the cards have been largely successful , with 93 percent of claims being submitted electronically in 2014 , resulting in an estimated savings of approximately $1.5 billion per year .
+
+however , according to officials from the organization that manages the beneficiary card system in france , it is difficult to isolate how much of that savings can be attributed specifically to the use of the smart cards , given that electronic billing and reimbursement could have been achieved by using technology other than an electronically readable card .
+
+german officials also reported , but did not quantify , savings associated with using smart cards to move to an electronic billing and reimbursement process .
+
+the cost savings that france and germany report from moving to electronic billing would not necessarily be achievable for medicare , which has a long - standing electronic claims processing system that enables both medicare and health care providers to process claims faster and at a lower cost .
+
+some health care providers have been submitting claims electronically since 1981 , and by law medicare has been prohibited from paying claims not submitted electronically since october 16 , 2003 , with limited exceptions .
+
+french and german government officials told us that it is important to ensure that the competing needs of stakeholders are discussed and addressed .
+
+officials also stated that in their experience this part of the process generally required a significant time investment and should occur prior to the decision to implement any electronically readable card .
+
+for instance , officials from provider organizations in germany told us that health care providers took issue with what they viewed as a continued emphasis on enhancing the administrative , rather than the clinical , features of the card .
+
+officials explained that providers and hospitals had objected to the decision to add the ability to electronically update identity and insurance information before adding the ability to store emergency care information on the new smart card .
+
+they stated that the new smart card is currently being used the same way as the memory - only smart card — to electronically transfer a beneficiary's identity and insurance information to the health care providers' it system — which provides no new benefits for providers relative to the memory - only smart cards .
+
+in both france and germany , the government established independent organizations to address stakeholders' needs .
+
+for example , officials from the independent organization in germany told us that it has seven stakeholder groups , including the national association of statutory health insurance funds as the sole representative of all health insurance funds and six umbrella organizations representing health care providers .
+
+officials explained that each group is assigned a different share of interest in the organization , with the stakeholder group that funds the organization holding a 50 percent share .
+
+an organization like those established in france and germany may not be necessary to solicit input from stakeholders in the united states .
+
+however , successful implementation of an electronically readable card system for the medicare program would depend on stakeholder participation .
+
+an official from a health care billing and management organization told us that before implementation of any electronically readable cards for medicare , cms should obtain input from beneficiary and consumer advocacy groups on how the cards should be implemented .
+
+this official also told us that cms would need to educate beneficiary and provider groups on the benefits of electronically readable cards and how to use them because beneficiary and provider buy - in would help cms in implementing the cards .
+
+cms officials confirmed that implementing an electronically readable card could result in a number of policy challenges that may cause resistance from provider and beneficiary advocacy organizations .
+
+cms officials acknowledged that the agency would have to work with multiple stakeholders who have competing priorities if they were to move forward with the development and implementation of an electronically readable card .
+
+furthermore , implementing an electronically readable card system for medicare would be done in a different health it landscape than france's and germany's .
+
+officials in both france and germany told us that they began implementing their systems when health care providers' use of it systems was limited .
+
+however , in the united states , health it is more advanced than it was in france and germany when they first implemented the electronically readable cards .
+
+nevertheless , according to officials from a u.s. health insurer , the disparate it systems of health care providers in the united states will need to be modified in order to implement an electronically readable card system .
+
+french officials noted that implementation is easier when the electronically readable card system does not have to be built on top of existing hardware and software .
+
+management of an electronically readable card system includes maintaining the technical infrastructure as well as continuously producing and issuing the cards .
+
+officials from france and germany reported that the process of managing an electronically readable card system is costly and needs to be taken into account when deciding whether to implement such a system .
+
+the independent organizations that are responsible for addressing stakeholders' needs related to the card systems in france and germany also have an ongoing role in managing these systems .
+
+in france , an additional organization manages the health care provider card system .
+
+ ( see table 1. ) .
+
+officials in both france and germany told us that they experienced significant costs related to managing the system beyond initial implementation costs .
+
+for example , in france , government officials explained that it costs about $37 million annually to maintain the infrastructure for the beneficiary card and nearly $31 million per year in it and human resources costs for the provider card .
+
+in addition , there are annual costs to produce , issue , and deactivate the cards .
+
+in france , for instance , the cost to produce and issue beneficiary cards is approximately $2.50 per card , and production and issuance costs for provider cards range from about $8 to $12 per card , depending on the method used to mail the card .
+
+in germany , the national association of statutory health insurance funds finances the organization that manages the technical infrastructure for the card system , though the individual insurance funds are responsible for producing and issuing the beneficiary smart cards .
+
+officials from this organization told us that they are paid about $2.40 per beneficiary annually for the development of the infrastructure .
+
+in 2014 , there were approximately 70 million beneficiaries using the electronically readable cards in germany , which equates to about $168 million in development costs .
+
+u.s. policymakers would need to determine the extent to which cms or other organizations would be responsible for the implementation and management of an electronically readable system for medicare .
+
+some of the responsibilities that the french and german organizations address , such as certifying the software , are currently being addressed by another agency within hhs.the appropriate agencies or organizations that should be involved in developing and implementing such a system .
+
+as consideration is given to whether to increase the functionality of the current medicare beneficiary card , and whether to implement cards for providers , the planned use of the cards will guide the type of card technology that is needed .
+
+the planned use of the cards will also prompt additional discussions regarding card management processes and standards , including whether use would be mandatory , whether pins or biometric factors would be used in addition to the cards , whether enrollment and card issuance processes would need to be updated , and what information would be stored on the card .
+
+we found that electronically readable cards would have a limited effect on program integrity , but could aid administrative processes .
+
+ultimately , a decision about whether to implement an electronically readable card will rest upon a determination regarding the costs and benefits of electronically readable cards compared to the current paper card or other strategies and solutions .
+
+the success of any electronically readable card system will also depend on participation from health care providers , and therefore any planned use will need to take provider costs and potential challenges into consideration .
+
+finally , as demonstrated by the experiences in france and germany with smart cards , implementing and maintaining an electronically readable medicare card system would likely require considerable time and effort .
+
+we provided a draft of this report to hhs for comment .
+
+hhs provided technical comments , which we incorporated as appropriate .
+
+in addition , we obtained comments from officials from the smart card alliance , an organization that represents the smart card industry .
+
+the officials emphasized the greater capability of smart cards to authenticate transactions and secure information on the cards than other electronically readable card options .
+
+smart card alliance officials commented that the way in which cms has indicated that it would implement electronically readable cards in medicare would diminish the cards' potential to limit fraud .
+
+further , the officials commented that we underestimated the potential of electronically readable cards to further cms's program integrity efforts , particularly cms's ability to identify potential fraud through postpayment claims analysis .
+
+the officials said that cms could have greater assurance in the legitimacy of claims associated with card use and that the agency could better focus its analysis on claims in which cards were not used .
+
+finally , the officials commented that possible challenges applying nist standards for using electronically readable cards in medicare should not preclude card implementation because standards that better align with the needs of the program could be developed .
+
+we believe that our report accurately characterizes the potential effects of electronically readable cards on medicare program integrity efforts , though we modified several statements to improve clarity .
+
+we also incorporated the alliance's technical comments as appropriate .
+
+as agreed with your offices , unless you publicly announce the contents of this report earlier , we plan no further distribution until 30 days from the report date .
+
+at that time , we will send copies to the secretary of health and human services , the administrator of cms , the national coordinator for health information technology , appropriate congressional committees , and other interested parties .
+
+in addition , the report will be available at no charge on the gao website at http: / / www.gao.gov .
+
+if you or your staff members have any questions about this report , please contact me at ( 202 ) 512-7114 or kingk@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made key contributions to this report are listed in appendix iii .
+
+to examine the potential benefits and limitations associated with the use of electronically readable cards in medicare and the steps cms and medicare providers would need to take to implement and use electronically readable cards , we interviewed officials from the agencies and organizations listed in table 2 .
+
+several european countries , including france and germany , use electronically readable cards for health care purposes , such as transferring identity and insurance information electronically from the card to a health care provider's it system .
+
+france and germany have long - standing experience with the use of such cards .
+
+as part of our research on the potential use of electronically readable cards in medicare , we visited france and germany to learn about how they developed and used the cards .
+
+this appendix provides information on each country's health care system , and how electronically readable cards are used within that system .
+
+health care coverage in france has been universal since 2000 .
+
+all residents may receive publicly financed health care through noncompetitive health insurance funds ( commonly referred to as statutory health insurance funds ) — six entities whose membership is based on the occupation of the individual .
+
+specifically , eligibility to receive statutory health insurance is granted either through employment ( to salaried or self - employed working persons and their families ) or as a benefit to persons ( and their families ) who have lost their jobs to students , and to retired persons .
+
+the state covers the health insurance costs of residents not eligible for statutory health insurance , such as unemployed persons .
+
+the french system of health insurance is composed of two tiers .
+
+the first tier provides basic coverage through the statutory health insurance funds , which cover about 75 percent of household medical expenses .
+
+the statutory health insurance coverage includes hospital care and treatment in public or private rehabilitation ; outpatient care provided by general practitioners , specialists , dentists , and midwives ; and prescription drugs .
+
+the second tier consists of complementary and supplementary voluntary health insurance coverage provided by mutual ( not - for - profit ) or private insurers that pay for services not covered by statutory health insurance .
+
+france's health care system uses two electronically readable cards — a beneficiary card and a health care provider card — as part of its billing and reimbursement processes ; both are smart cards .
+
+generally , beneficiaries make payment to the health care provider when services are delivered , and the health insurance funds reimburse the beneficiary .
+
+in certain circumstances , such as when services are provided by pharmacists and radiologists , third - party payment or reimbursement directly to the health care provider is used .
+
+when services are provided , the beneficiary and the health care provider both insert their cards into a two - card reader at the point of service .
+
+the software enables the health care provider to enter medical consultation information into the provider's it system .
+
+that information is used to generate an electronic health claim form , which is sent to the statutory health insurance fund and the supplementary voluntary health insurance fund for payment to either the beneficiary or the health care provider .
+
+ ( see fig .
+
+2. ) .
+
+health insurance has been mandatory for all citizens and permanent there are two primary sources of residents of germany since 2009.health insurance in germany — the publicly financed health insurance ( commonly referred to as the statutory health insurance system ) and the private health insurance system.system , which covered about 86 percent of the population in 2013 , health insurance is generally provided by competing , not - for - profit , nongovernmental health insurance funds ( called “sickness funds” ) .
+
+as of january 2013 , there were 134 sickness funds operating under the statutory health insurance system .
+
+under the statutory health insurance all employed citizens earning less than $4,874 per month ( $70,489 per year ) as of 2013 are covered by the statutory health insurance system , individuals and they and their dependents are covered without charge .
+
+whose gross wages exceed the threshold , civil servants , and those who are self - employed can choose to participate in statutory health insurance or purchase private health insurance , which covered about 11 percent of the population in 2013 .
+
+statutory health insurance coverage includes preventive services , inpatient and outpatient hospital care , physician services , prescription drugs and sick leave compensation .
+
+private health insurance covers minor benefits not covered by statutory health insurance , access to better amenities , and some copayments ( eg , for dental care ) .
+
+germany first introduced a beneficiary , memory - only health insurance smart card in 1995 .
+
+german citizens who were members of a public , statutory health insurance fund were issued the memory - only card , which contained beneficiary insurance information .
+
+this card was used to electronically transfer the information stored on the card to health care providers' it systems .
+
+more recently , germany initiated a project to modernize its health care system with the introduction of a secure network infrastructure .
+
+part of this project included updating the beneficiary smart card with a card that has the capability to store and process information .
+
+in 2011 , germany began issuing the updated smart card , which contains the same information as the memory - only card and is currently being used in the same way , which is to auto - populate health providers' it systems .
+
+according to german officials , new applications will be added incrementally to the updated smart card , with the card eventually being used to access and update online beneficiary health insurance information and exchange beneficiary medical information .
+
+as of september 2014 , officials told us that all applications will not be added until 2018 .
+
+kathleen m. king , ( 202 ) 512-7114 or kingk@gao.gov .
+
+in addition to the contact named above , lori achman , assistant director ; george bogart ; michael erhardt ; deitra lee ; elizabeth t. morrison ; vikki porter ; maria stattel ; and kate tussey made key contributions to this report .
+

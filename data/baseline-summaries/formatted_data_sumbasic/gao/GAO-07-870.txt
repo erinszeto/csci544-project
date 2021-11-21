@@ -1,0 +1,690 @@
+in the years since the 2001 terrorist attacks , the need to secure u.s. borders has taken on added importance and has received increasing attention from congress and the public .
+
+in an effort to avoid repetition of such attacks , and improve overall national security , congress and the administration have sought better ways to record and track the entry and departure of foreign visitors who pass through u.s. ports of entry by air , land , or sea ; to verify their identities ; and to authenticate their travel documentation .
+
+pursuant to several statutory mandates , the department of homeland security ( dhs ) , in consultation with the department of state , established the united states visitor and immigrant status indicator technology ( us - visit ) program .
+
+as the federal government strives to integrate information on the entry and exit from the united states of foreign nationals , it is critical that the computer systems that support us - visit are properly protected through strong information security controls since a security breach could have a direct impact on our homeland and the security of u.s. citizens .
+
+for example , if controls for systems supporting us - visit were inadequately implemented there is a risk that unauthorized individuals could ( 1 ) delete or alter visitor records used or processed by us - visit and allow a drug smuggler , terrorist , or convicted felon to illegally enter the united states or ( 2 ) mount denial of service attacks and cripple computer processing at u.s. air , land , and sea ports of entry as well as the networks and infrastructure that support these ports of entry .
+
+as agreed , our objective was to determine whether the department of homeland security has implemented appropriate information security controls to protect the confidentiality , integrity , and availability of the information and systems used to support the us - visit program .
+
+to accomplish this objective , we examined the controls over the systems operated by the united states customs and border protection ( cbp ) that support the us - visit program .
+
+we performed our review at cbp facilities in the washington , d.c. metropolitan area and selected ports of entry on the east and west coast of the continental united states from february 2006 through april 2007 , in accordance with generally accepted government auditing standards .
+
+in a separate report designated “limited official use only,” we are providing a more detailed discussion of the information security weaknesses affecting us - visit applications and additional technical recommendations .
+
+information security is a critical consideration for any organization that depends on information systems and computer networks to carry out its mission or business .
+
+it is especially important for government agencies , where maintaining the public's trust is essential .
+
+the dramatic expansion in computer interconnectivity and the rapid increase in the use of the internet have changed the way our government , the nation , and much of the world communicate and conduct business .
+
+however , without proper safeguards , systems are unprotected from individuals and groups with malicious intent to intrude and use the access to obtain sensitive information , commit fraud , disrupt operations , or launch attacks against other computer systems and networks .
+
+this concern is well - founded for a number of reasons , including the dramatic increase in reports of security incidents , the ease of obtaining and using hacking tools , the steady advance in the sophistication and effectiveness of attack technology , and the dire warnings of new and more destructive attacks to come .
+
+recognizing the importance of securing federal agencies' information and systems , congress enacted the federal information security management act of 2002 ( fisma ) to strengthen the security of information and systems within federal agencies .
+
+fisma requires each agency to use a risk - based approach to develop , document , and implement a departmentwide information security program for the information and systems that support the operations and assets of the agency .
+
+the congress has long recognized the need for a border security system that collects information about foreign nationals entering and exiting the united states and identifies those who have overstayed their visits .
+
+legislative efforts to create an entry exit control system to record and match arrival and departure records for foreign nationals traveling to the united states began as early as 1996 with the illegal immigration reform and immigrant responsibility act ( iirira ) .
+
+among other things , section 110 of the of iirira directed the former immigration and naturalization service ( ins ) to develop an automated entry exit control system to collect records of departure from every alien leaving the united states and match it with the alien's record of arrival .
+
+in 2000 , the immigration and naturalization service data management improvement act amended section 110 of iirira by replacing it in its entirety .
+
+this act , among other things , requires that the entry exit system integrate alien arrival and departure information contained in department of justice ( including ins ) and state department databases .
+
+since september 11 , 2001 , additional laws address , among other things , the use of biometric technology in an alien entry exit control system .
+
+for example , the usa patriot act mandates that this system be capable of interfacing with other law enforcement agencies , and that it uses biometric technology and tamper - resistant documents .
+
+in addition , the aviation and transportation security act requires air carriers to electronically transmit manifest information for all international flight passengers and crew members to the commissioner of customs before landing at a u.s. airport .
+
+furthermore , the enhanced border security and visa entry reform act further requires the use of biometrics in travel documents and expands the passenger arrival manifest requirements in the aviation and transportation security act to sea carriers and to air and sea departures .
+
+with the passage of the homeland security act of 2002 , 22 federal agencies and organizations merged into the department of homeland security ( dhs ) .
+
+shortly after dhs assumed operational control , the secretary of the department of homeland security renamed the entry exit system us - visit .
+
+most recently , the intelligence reform and terrorism prevention act of 2004 calls for the secretary of the department of homeland security to accelerate the full implementation of an automated biometric entry and exit data system .
+
+among other things , the act requires the biometric entry exit screening system to provide real - time updates on all information about entry exit history to relevant agencies .
+
+today , the us - visit program is a multi - agency initiative .
+
+from fiscal year 2002 through fiscal year 2007 , total funding for the us - visit program has been about $1.7 billion dollars .
+
+since fiscal year 2002 , congress has directed gao to review annual dhs plans , also called expenditure plans , describing how the agency plans to satisfy legislative conditions specified in the appropriations , including acting and complying with federal acquisition rules , requirements , guidelines , and systems acquisition management practices .
+
+these reviews have produced five reports , the latest being a review of the fiscal year 2006 us - visit expenditure plan .
+
+these reports and other recent reports on us - visit contract and financial management and us - visit operations at land ports of entry have identified fundamental challenges that dhs continues to face in meeting program expectations ( i.e. , delivering program capabilities and benefits on time and within cost ) .
+
+we have made many recommendations over the last 4 years to dhs to define and justify us - visit's future direction , strengthen program management , and ensure the delivery of promised system capabilities on time and within budget .
+
+the goals of the us - visit program are to ( a ) enhance the security of u.s. citizens and visitors , ( b ) facilitate legitimate travel and trade , ( c ) ensure the integrity of the u.s. immigration system , and ( d ) protect the privacy of our visitors .
+
+key us - visit functions include: collecting , maintaining , and sharing information on certain foreign nationals who enter and exit the united states ; identifying foreign nationals who ( 1 ) have overstayed or violated the terms of their admission ; ( 2 ) may be eligible to receive , extend , or adjust their immigration status ; or ( 3 ) should be apprehended or detained by officials ; detecting fraudulent travel documents , verifying traveler identity , and determining traveler admissibility through the use of biometrics ; and facilitating information sharing and coordination within the immigration and border management community .
+
+the us - visit program is implemented via a “system - of - systems” in that the program is composed of different systems that are used to capture and store traveler information .
+
+traveler information captured by us - visit includes such information as air , land , and sea port of entry admission data , commercial passenger and crew data , visa application data , and travel document ( passport and visa ) data .
+
+the type of data captured includes the person's complete name , date of birth , nationality , travel document issuing country , travel document number and type , applicant photo , and finger scans .
+
+the scope of the program includes the pre - entry , entry , status management , and exit of foreign national travelers who enter and leave the united states at 285 air , land , and sea ports of entry , and the provision of new analytical capabilities across the overall process .
+
+the entry aspect of the program , and the systems that support entry , are described below .
+
+when the applicant for admission arrives at a primary inspection booth , the cbp officer , using a document reader , scans the traveler's machine - readable travel documents or manually enters the information into a biographic system if the traveler is not in possession of machine readable documents .
+
+a biographic check is then made of the traveler to identify individuals who ( 1 ) are not known to pose a threat or is not suspected of posing a threat to the security of the united states ; ( 2 ) have not violated the terms of their admission to the united states ; or ( 3 ) are not wanted for commission of a criminal act in the united states or elsewhere .
+
+in addition , a photograph and summary biographical information of the individual is also displayed in cases where the individual has been issued a travel document by the department of state or by dhs .
+
+following the biographic check of the traveler by the cbp officer at the primary inspection booth , the officer then switches to a second biometric system to capture information pertaining to each traveler .
+
+the officer scans the individual's fingerprints ( left and right index fingers ) and takes a photograph .
+
+while the system is checking the finger scan , the officer questions the foreign national about the purpose of his or her travel and length of stay .
+
+if the officer determines the traveler is admissible , the officer enters the class of admission and duration of stay information into the system and also annotates the class of admission and “admit until” date on the i - 94 form .
+
+the officer in the primary inspection booth then receives either a red or green light from the system indicating the results of the query .
+
+for example , if the query from the biographic system returns derogatory information or if the document issuance information does not match the traveler , the officer gets a red light from the system and then refers the traveler to secondary inspection for further questioning or actions .
+
+if the individual is then determined to be inadmissible in secondary inspection , the person is processed for removal or other actions .
+
+this information is then entered into the system by officers at the secondary inspection area and the appropriate actions are taken .
+
+a green light indicates that the traveler's biometrics did not match any records in the us - visit biometric watch list and , in cases of repeat travelers ; there was no mismatch against the biometric data captured from the traveler's prior arrival ( s ) .
+
+the biographic system referred to above for the biographic check is performed by a system called the treasury enforcement communications system / interagency border inspection service ( tecs / ibis ) .
+
+the ibis “service” serves as a centralized , shared database of textual enforcement and lookout information , containing well over 10 million subject records .
+
+it supports approximately two dozen federal and other agencies and it resides on a cbp mainframe computer .
+
+ibis keeps track of information on suspect individuals , businesses , vehicles , aircraft , and vessels .
+
+the types of data contained on the ibis “watch list” include information from a variety of federal , state and local sources , which contributes to effective national security and law enforcement .
+
+personal information about these individuals includes , but is not limited to , name , alias , date of birth , address , physical description , details and circumstances of a search , arrest , or seizure , case information such as merchandise and values , and methods of theft .
+
+other treasury enforcement communication system ( tecs ) systems besides ibis that support us - visit are the advance passenger information system ( apis ) , a system that returns current passenger and crew manifest records on individuals arriving into and departing from the u.s. apis includes arrival and departure manifest information provided by air and sea carriers such as name , date of birth , travel document issuing country , gender , u.s. destination address , entry date , and departure date ; and i - 94 , a system which has information derived from i - 94 arrival and departure forms .
+
+cbp officers also have access to other tecs watch lists that according to us - visit officials are not used in conjunction with us - visit but are used in the border management process .
+
+for example , two systems which cbp officers have access through ibis are ( 1 ) the national crime information center ( ncic ) database which was established by the department of justice as a service to all criminal justice agencies , as well as federal , state , and local users ; and ( 2 ) the national law enforcement telecommunication system ( nlets ) , which allows queries on state criminal history , vehicle registration , driver's license information , and administrative messages .
+
+in addition , the automated targeting system – passenger is a module used at all u.s. airports and seaports receiving international flights and voyages to evaluate passengers and crew members prior to arrival or departure .
+
+us - visit officials told us that , although the system is not used in support of us - visit , it is used in the cbp officer's decision - making process about whether a passenger or crewmember should receive additional screening prior to entry into or departure from the country .
+
+the biometric system behind the finger scan processing described above is complex as well .
+
+for example , after the cbp officer at the port of entry scans the fingerprints and takes a digital photograph of the visitor , the finger scans and photograph are sent to a system called the automated biometric identification system ( ident ) which is managed by the us - visit program office .
+
+ident contains information on ( 1 ) known and suspected terrorists ; ( 2 ) selected wanted persons ( foreign - born , unknown place of birth , previously arrested by dhs ) ; ( 3 ) deported felons and sexual registrants ; ( 4 ) certain previous criminal histories ; and ( 5 ) previous ident border crossing enrollments .
+
+also included in ident is information on persons who have attempted illegal entry into the united states , persons who have applied for immigration and naturalization benefits , and persons who have applied for positions of public trust .
+
+ident checks visitors at u.s. borders against a us - visit biometric watch list of individuals for whom biometrics have been collected .
+
+these individuals include: known or suspected terrorists , individuals related to gang activity .
+
+information on these individuals comes from a variety of sources , including the federal bureau of investigation , the california department of justice , the los angeles county sheriff's office , the department of defense , and department of state visa application refusals .
+
+each of the above organizations has its own computer systems sending data to ident .
+
+for example , in the case of the department of state , ident receives enrollment data and visa refusal data from consular officers abroad who collect finger scans as part of the visa issuance process .
+
+when the visa applicant's finger scans are captured , they are electronically sent , along with a digital photo of the applicant and biographic data , to the department of state's consular consolidated database ( ccd ) and from ccd the finger scans and photo are sent to ident .
+
+information about the photo is also sent from the ccd to a tecs database called us - visa datashare .
+
+information from the fbi comes to ident from the fbi's integrated automated fingerprint identification system .
+
+the ident system performs three basic biometric operations: identification , verification , and enrollment .
+
+identification consists of searching databases , such as terrorist watch lists , to ensure that known or suspected terrorists are not admitted into the u.s .
+
+in verification , the claimed identity of a foreign visitor is confirmed by comparing the biometrics of an individual with stored biometrics associated with a travel document , such as a passport or visa .
+
+enrollment “registers” individuals into the ident database .
+
+ident also stores finger scans collected during the inspection if they are of better quality than those already stored within the system .
+
+ident in turn transmits the finger scan identification numbers associated with biometrics captured at arrival in the united states to the arrival departure information system ( adis ) .
+
+adis , which is “owned” by the us - visit program office , is a database that stores traveler arrival , status management , and departure data .
+
+arrival and departure data is received from ( 1 ) air and sea carrier manifests ; ( 2 ) inspector data entries at ports of entry ; ( 3 ) i - 94 forms ; and ( 4 ) biometric identifiers collected at arrival and certain departure locations .
+
+it matches entry , immigration status updates , and departure data to provide up - to date immigration status , including whether the individual has overstayed his / her authorized period of stay .
+
+adis also receives information from a variety of other sources .
+
+for example , information on student change of status is received from the student and exchange visitor information system ( sevis ) .
+
+schools and sponsors transmit information to sevis via the internet throughout a foreign student's or exchange visitor's stay in the u.s. sevis in turn provides this information to adis .
+
+another system called the computer linked application information management system ( claims 3 ) also sends information to adis .
+
+claims 3 is a system that contains information , including adjudication results on foreign nationals who request immigration benefits such as change of status , extension of stay , or adjustment to permanent resident status .
+
+adis consolidates the biometric and biographic information and transmits information to tecs linking the travelers' biographic information to their biometrics .
+
+adis transmits this information to the tecs biometric information file , which includes the traveler's name , date of birth , travel document information and the associated biometric identification number .
+
+as in the case of the biographic watchlists , the inspector has access to additional watchlists that are not part of the functionality of us - visit but are important in border management .
+
+for example , if a “match” is received from ident during primary inspection , the encounter data is stored as part of the us - visit process , and the traveler would be sent to secondary inspection for further action .
+
+during secondary inspection processing , the officer can access us - visit systems such as ident's secondary inspection tool and adis to receive additional information , but the officer will also separately log into other cbp systems or interconnections such as ncic , to retrieve the full case management information as part of the cbp border management and enforcement process .
+
+figure 1 is a simplified diagram of key computer systems and networks that support the us - visit program .
+
+as shown in the diagram , air , land , and sea ports of entry are connected to customs and border protection local - area networks which are connected to a wide - area network .
+
+the wide - area network is in turn connected to a data center network which houses a mainframe computer supporting tecs .
+
+the customs and border protection data center network is also connected to other networks , such as the department's wide - area network and the immigration and customs enforcement network , where the ident and adis are located .
+
+other government agencies such as the department of state receive biometric and biographic data via the customs and border protection data center network .
+
+nongovernmental networks such as private sector trade business networks transmit passenger and crew manifest data to the data center network .
+
+the us - visit program office is the information system owner for several of the systems that comprise us - visit functionality , such as the automated biometric identification system and the arrival and departure information system .
+
+however , the us - visit program office does not own all of the systems that support the program .
+
+for example , the u.s. customs and border protection is the system owner for tecs , the data center network , the wide - area network , and air , land , and sea port of entry local - area local - area networks ; u.s. immigration and customs enforcement is the system owner for the student and exchange visitor information system as well as the network that supports the automated biometric identification system the arrival and departure information system ; u.s .
+
+citizenship and immigration services is the system owner for the computer linked application information management system ; u.s. coast guard is the system owner for e - mail services ; and the department of state owns the consular consolidated database system .
+
+the us - visit program relies extensively on computerized networks and systems to collect , access , or process a significant amount of personal and sensitive information on foreign visitors , immigrants , and legal permanent residents .
+
+accordingly , effective information security controls are essential to ensuring that this information , depicted in figure 2 , is adequately protected from inadvertent or deliberate misuse , fraudulent use , improper disclosure or manipulation , and destruction .
+
+the compromise of this information could subject these citizens and visitors to financial crimes such as identity theft and could impede the department of homeland security from achieving the goals of the us - visit program .
+
+in addition , the us - visit program office has reported that threats to us - visit systems and information exist , not only because they are government assets , but also because they are a front line defense in the government's anti - terrorist identification effort .
+
+according to the program office , threats can fall into the broad categories of insiders , hackers , domestic / foreign terrorists , and other criminal elements .
+
+because of their knowledge and access to systems , insiders are in a position to modify an individual computer system for personal gain , disrupt services , or embarrass the agency .
+
+hackers , on the other hand , are a significant concern when connecting to the internet .
+
+the specific attraction to us - visit might be to embarrass us - visit or gain notoriety by having defeated the security of an organization responsible for the nation's border security .
+
+the program office also maintains that domestic or foreign terrorists are a threat since it is conceivable that these radical subversive groups could target us - visit to cause embarrassment to the program .
+
+finally , other criminal elements such as international terrorists , organized crime , and foreign intelligence organizations could target us - visit systems to obtain us - visit data on various border programs .
+
+the objective of our review was to determine whether dhs has implemented appropriate information security controls to protect the confidentiality , integrity , and availability of information and information systems used to support the us - visit program .
+
+to accomplish this , we used elements of our federal information system controls audit manual to evaluate information system controls within the cbp control environment and concentrated our efforts on the evaluation of logical access controls over major systems , applications , and networks used by cbp in support of the us - visit program .
+
+selected systems included the us - visit aspects of tecs , the data center mainframe that supports tecs , us - visit interface servers , us - visit client applications , and the supporting network and physical infrastructure such as servers , routers , firewalls , and workstations for cbp components supporting us - visit .
+
+we reviewed results from other audits , assessments , and tests , conducted interviews , and obtained and reviewed technical documentation .
+
+in coordination with cbp officials , we identified control points and obtained detailed configuration data from selected devices .
+
+we then analyzed the output from each selected device and reviewed the results in context to the network and for impact on the mission .
+
+in addition , we evaluated aspects of cbp's information security program .
+
+this program includes assessing risk ; developing and implementing policies , procedures , and security plans ; testing and evaluating the effectiveness of controls ; planning , implementing , evaluating , and documenting remedial actions to address security deficiencies ; detecting , reporting , and responding to security incidents ; and ensuring privacy for personally identifiable information .
+
+as part of this effort , we identified and examined pertinent cbp security policies , procedures , guidance , security plans , and relevant reports and reviewed corrective actions taken by cbp to address vulnerabilities identified in previous reviews and tests .
+
+we discussed whether system controls were in place , adequately designed , and operating effectively with key security representatives , systems administrators , and management officials .
+
+our work was performed at dhs offices , a data center , and selected air , land , sea ports of entry on the east and west coast of the continental united states in accordance with generally accepted government auditing standards .
+
+although cbp has implemented information security controls that are designed to safeguard us - visit data , its systems supporting us - visit have significant weaknesses in access controls and other controls designed to protect the confidentiality , integrity , and availability of its sensitive and personal information .
+
+cbp has implemented several important controls such as encrypting data transmitted between client and interface servers , deploying intrusion detection software , and performing daily backup procedures that synchronize the storage area network at a data center with its remote backup site .
+
+in addition , it controlled physical access systems for land and sea ports of entry and effectively secured some of its sensitive areas and computer equipment .
+
+however , cbp did not consistently implement effective access controls and other controls such as segregation of duties and configuration assurance for systems supporting us - visit .
+
+a key reason for these weaknesses was that cbp did not always effectively implement key program activities of the department's information security program for systems supporting the us - visit program .
+
+as a result , increased risk exists that unauthorized individuals could compromise systems that support us - visit .
+
+a basic management objective for any organization is to protect the resources that support its critical operations from unauthorized access .
+
+organizations accomplish this objective by designing and implementing access controls that are intended to prevent , limit , and detect unauthorized access to computing resources , programs , and information .
+
+these controls include identification and authentication , authorization , boundary protection , physical security , cryptography , and audit and monitoring .
+
+inadequate access controls diminish the reliability of computerized information and increase the risk of unauthorized disclosure , modification , and destruction of sensitive information and the disruption of service .
+
+a computer system must be able to identify and authenticate different users so that activities on the system can be linked to specific individuals .
+
+when an organization assigns unique user accounts to specific users , the system is able to distinguish one user from another — a process called identification .
+
+the system must also establish the validity of a user's claimed identity by requesting some kind of information , such as a password , that is known only by the user — a process known as authentication .
+
+users are also responsible for providing protection against loss or disclosure of passwords in their possession .
+
+dhs policy requires the implementation of automated identification and authentication mechanisms that enable the unique identification and authentication of individual users or processes acting on behalf of information system users .
+
+dhs did not ensure that cbp adequately identified and authenticated users in systems supporting us - visit .
+
+for example , users shared passwords for accessing remote consoles , thereby diminishing cbp's ability to attribute system activity to specific individuals .
+
+moreover , individuals with physical access to workstations could change settings without authentication .
+
+in addition , one application server owned by us - visit allowed logins using vendor default credentials from cbp port of entry workstations .
+
+as a result , increased risk exists that a malicious individual could gain network access to cbp systems and sensitive us - visit data .
+
+authorization is the process of granting or denying access rights and privileges to a protected resource , such as a network , system , application , function , or file .
+
+a key component of authorization and a basic principle for securing computer resources and data is the concept of “least privilege.” least privilege means that users are granted access to only those programs and files that they need in order to perform their official duties .
+
+to restrict legitimate users' access in this way , organizations establish access rights and permissions .
+
+“user rights” are allowable actions that can be assigned to users or to groups of users .
+
+file and directory permissions are rules that regulate which users have access to a particular file or directory and the extent of that access .
+
+to avoid unintentionally giving users unnecessary access to sensitive files and directories , as well as special machine instructions which programs used to communicate with the operating system , an organization must give careful consideration to its assignment of rights and permissions .
+
+dhs policy requires that each user or process be assigned only those privileges needed to perform authorized tasks .
+
+cbp did not sufficiently limit access to us - visit information and information systems .
+
+for example , over one thousand users with command line access could put a program designed to bypass security rules into a special system library .
+
+cbp users also inappropriately had local administrator privileges on their workstations that could be used to intentionally or unintentionally load programs that may adversely affect security .
+
+in addition , cbp did not effectively use access control lists to control connectivity to sensitive applications and network devices such as firewalls .
+
+as a result , the unnecessary level of access granted to cbp computer resources provided opportunities for individuals to circumvent security controls and deliberately or inadvertently read , modify , or delete critical or sensitive information relating to the us - visit program .
+
+boundary protections demarcate logical or physical boundaries between unknown users and protected information and systems .
+
+best practices dictate that organizations allocate publicly accessible information system components to separate sub - networks with separate physical network interfaces and that key components within private networks are also adequately segregated as sub - networks .
+
+unnecessary connectivity to an organization's network increases not only the number of access paths that must be managed and the complexity of the task , but the risk of unauthorized access in a shared environment .
+
+nist guidance states that organizations should control all remote access through a managed access control point .
+
+dhs requires that any connections to the internet or to other external systems be through controlled interfaces .
+
+for example , dhs requires that any direct connection of dhs networks to the internet or to extranets must occur through firewalls that have been certified and accredited .
+
+however , dhs did not ensure that controls adequately protected external and internal boundaries .
+
+for example , internal network traffic was not segregated .
+
+moreover , workstations and many servers did not have host based firewalls .
+
+consequently , there is a heightened risk that security checkpoints at the boundaries of cbp's network may not inspect all traffic entering the network .
+
+as a result , increased risk exists that individuals could gain unauthorized access to sensitive information and systems .
+
+physical security controls are important for protecting computer facilities and resources from espionage , sabotage , damage , and theft .
+
+these controls restrict physical access to computer resources , usually by limiting access to the buildings and rooms in which the resources are housed , and by periodically reviewing the access granted in order to ensure that it continues to be appropriate .
+
+dhs policy requires ( 1 ) that physical access to rooms , work areas and spaces , and facilities containing departmental systems , networks , and data be limited only to authorized personnel and ( 2 ) the implementation of environmental controls that safeguard agency assets against loss , theft , destruction , accidental damage , hazardous conditions , fire , malicious actions , and natural disasters .
+
+cbp policy states that information assets are required to have consistent and documented protection , similar to a “defense - in - depth” concept , which means there are multiple layers of security protecting an asset .
+
+however , cbp did not effectively implement physical security at several locations .
+
+for example , cbp did not control access to its restricted information technology spaces since its physical access systems were controlled by local authorities .
+
+in addition , sensitive information technology areas at cbp were not adequately secured and many rooms containing sensitive it equipment had no environmental controls .
+
+as a result , these weaknesses increase the risk that unauthorized personnel could access sensitive cbp computing resources supporting us - visit and inadvertently or deliberately access , misuse , or destroy network resources .
+
+cryptography underlies many of the mechanisms used to enforce the confidentiality and integrity of critical and sensitive information .
+
+one primary principle of cryptography is encryption .
+
+encryption can be used to provide basic confidentiality and integrity for data by transforming plain text into cipher text using a special value known as a key and a mathematical process known as an algorithm .
+
+dhs requires the encryption of highly sensitive system files .
+
+dhs did not consistently apply encryption to protect sensitive data traversing the communication network .
+
+for example , network routers , switches , and network management servers used unencrypted network protocols so that files traversing the network could be read .
+
+in addition , passwords were transmitted over the network in clear text and were stored using weak encryption .
+
+us - visit applications also used a single key to encrypt all communications between the clients and servers so that sensitive us - visit data could be compromised should the key be captured and decrypted .
+
+cbp also did not appropriately distribute its private certificate authority and users relied on unknown certificates .
+
+in addition , cbp applications did not assign unique certificates and used the same certificate for both the client and the server .
+
+as a result , these weaknesses could allow an attacker to have unauthorized access to cbp network resources on the internal network and view or modify the messages between the servers and any client supporting us - visit .
+
+to establish individual accountability , monitor compliance with security policies , and investigate security violations , it is crucial to determine what , when , and by whom specific actions have been taken on a system .
+
+organizations accomplish this by implementing system or security software that provides an audit trail of needed information in the desired format and locations so they can use it to determine the source of a transaction or attempted transaction and to monitor users' activities .
+
+the way in which organizations configure system or security software determines the nature and extent of information that the audit trails can provide .
+
+a key aspect of this is management of audit logs .
+
+organizations should periodically review audit log design , processes and procedures and implement changes as needed to ensure that logs effectively detect security threats .
+
+dhs policy requires the enforcement of auditing and accountability by configuring information systems to produce , store , and retain audit records of system , application , network , and user activity .
+
+dhs also requires that audit records contain sufficient information to establish what events occurred , when the events occurred , the source of the events , the cause of the events , and the event outcome .
+
+cbp also developed and implemented a monitoring list that tracks access to key operating system libraries with programs allowed to execute restricted functions .
+
+cbp did not provide adequate logging or user accountability for the mainframe , workstations , or servers .
+
+for example , monitoring lists for key operating system libraries on the mainframe did not capture needed data for all sensitive libraries in the desired locations .
+
+in addition , the monitoring list for key operating system libraries was out of date and irrelevant since it focused on 680 items that were no longer on the system .
+
+cbp also did not install central logging servers to ensure that key security - relevant events could be easily reviewed and safeguarded .
+
+as a result , cbp may allow unauthorized logical access to us - visit systems to go undetected .
+
+segregation of duties refers to the policies , procedures , and organizational structures that help ensure that no single individual can independently control all key aspects of a process or computer - related operation and thereby gain unauthorized access to assets or records .
+
+often , segregation of duties is achieved by dividing responsibilities among two or more individuals or organizational groups .
+
+this diminishes the likelihood that errors and wrongful acts will go undetected because the activities of one individual or group will serve as a check on the activities of the other .
+
+inadequate segregation of duties increases the risk that erroneous or fraudulent transactions could be processed , improper program changes implemented , and computer resources damaged or destroyed .
+
+dhs policy requires that segregation of duties be observed in order to eliminate conflicts of interest in the responsibilities and duties assigned to individuals .
+
+cbp did not always ensure that responsibilities for systems development and system operations or production were sufficiently segregated .
+
+for example , development and test servers and a development code repository were on the production network .
+
+in addition , mainframe system programmers were allowed to access application production data and developmental staff could access mainframe operating system libraries .
+
+moreover , developmental staff had update access to the application production data .
+
+as a result , potential risk exists for these individuals to perform incompatible functions and increases the likelihood that they can corrupt critical processes .
+
+configuration assurance is the process of ( 1 ) verifying the correctness of the security settings in the operating systems , applications , or computing and network devices and ( 2 ) maintaining operations in a secure fashion .
+
+patch management is an important element in mitigating the risks associated with software vulnerabilities .
+
+when software vulnerabilities are discovered , the software vendor may develop and distribute a patch or work - around to mitigate the vulnerability .
+
+dhs patch management policy states that components shall manage systems to reduce vulnerabilities by installing patches .
+
+both dhs and cbp policies state that security patches need to be installed on servers and desktops in a timely and expeditious manner .
+
+outdated and unsupported software are more vulnerable to attacks and exploitation .
+
+nsa guidance also states that it is important to install periodic updates to the operating system , since these updates contain fixes to vulnerabilities .
+
+cbp has taken steps to ensure that patches for the windows operating systems were kept up - to - date .
+
+for example , cbp officials informed us that ( 1 ) cbp has documented its patch deployment process , manual patching procedures , and scan procedures for windows and that ( 2 ) the security operations center uses an automated tool to install patches on windows devices within the ports of entry , the cbp wide - area network , and the cbp infrastructure .
+
+however , cbp did not consistently maintain secure configurations on the mainframe , applications servers , and workstations we reviewed at the data center and ports of entry .
+
+for example , production servers and workstations were missing critical operating system and software application security patches .
+
+cbp also used outdated versions of software and products that were no longer supported by the vendor .
+
+further , cbp could not implement critical security features because it had not deployed the appropriate software on some workstations .
+
+as a result , increased risk exists that the integrity of the cbp mainframe , network devices , and administrator workstations supporting us - visit could be compromised and could lead to denial - of - service attacks or to individuals gaining unauthorized access to network resources .
+
+the aggregate effect of inadequate access controls and weaknesses in other system controls place information and information systems supporting us - visit at increased risk of unauthorized disclosure , use , modification , or destruction , possibly without detection .
+
+these weaknesses increase the risk that unauthorized individuals could read , copy , delete , add , and modify sensitive information — including personally identifiable information — on systems supporting the us - visit program .
+
+they make it possible for intruders , as well as government and contractor employees , to bypass or disable computer access controls and undertake a wide variety of inappropriate or malicious acts .
+
+these acts could include tampering with data ; browsing sensitive information ; using computer resources for inappropriate purposes , such as launching attacks on other organizations ; and disrupting or disabling computer - supported operations .
+
+these risks are not confined to us - visit information .
+
+the cbp mainframe and network resources that support us - visit also support other programs and systems .
+
+as a result , the vulnerabilities identified in this report could expose the information and information systems of the other programs to the same increased risks .
+
+a key reason for these weaknesses is that , although cbp has made important progress in implementing the department's information security program , it has not effectively or fully implemented key program activities for systems supporting the us - visit program .
+
+cbp has taken several actions to implement elements of the department's information security program .
+
+for example , it has developed , documented , and disseminated information security policies , procedures , and plans .
+
+for example , cbp has ( 1 ) policies on security ; ( 2 ) procedures for incident handling and patch management ; and ( 3 ) configuration management plans ; used trusted agent fisma as a tool to report component data for enterprise management and oversight of the departmentwide information security program ; established a central security group that monitors systems such as the ports of entry's regional local - area networks , and cbp's wide - area network ; established a security awareness training program .
+
+cbp reported a 99 percent security awareness training completion rate for employees and contractors for fiscal year 2006 ; implemented a central data repository for its business continuity documents ; and developed and tested continuity of operations and disaster recovery plans for recovering the production environment at cbp's data center which includes the tecs application .
+
+dhs also requires its components to implement information security program activities in accordance with fisma requirements , omb policies , and applicable nist guidance .
+
+among other things , fisma requires agencies to develop , document , and implement periodic assessments of the risk and magnitude of harm that could result from the unauthorized access , use , disclosure , disruption , modification , or destruction of information or information systems ; plans for providing adequate information security for networks , facilities , and systems or groups of information systems , as appropriate ; periodic testing and evaluation of the effectiveness of information security policies , procedures , and practices , performed with a frequency depending on risk , but no less than annually , and that includes testing of management , operational , and technical controls for every system identified in the agency's required inventory of major information systems ; a process for planning , implementing , evaluating , and documenting remedial actions to address any deficiencies in information security policies , procedures , and practices of the agency ; and procedures for detecting , reporting , and responding to security incidents .
+
+in addition , the e - government act of 2002 also requires agencies to conduct privacy impact assessments ( pia ) for information systems to ( 1 ) ensure the system conforms to applicable legal , regulatory , and policy requirements regarding privacy , ( 2 ) determine the risks and effects of collecting , maintaining and disseminating information in identifiable form in an electronic information system , and ( 3 ) examine and evaluate protections and alternative processes for handling information to mitigate potential privacy risks .
+
+insofar as protecting personal privacy is an essential element of information security , the privacy impact assessment is an important means by which an agency can identify related risks and needed information security controls .
+
+however , cbp did not fully or effectively implement these program activities .
+
+we identified risk assessments that did not fully characterize the risks facing critical systems , security plans that did not have updated interconnection security agreements , tests and evaluations of security controls that were inadequate , remedial action plans that lacked required elements , incident detection and handling procedures that had not been adequately implemented , and privacy issues that were not addressed in all cases .
+
+identifying and assessing information security risks are essential to determining what controls are required .
+
+by increasing awareness of risks , these assessments can generate support for the policies and controls that are adopted .
+
+nist guidelines state that identification of risk for it systems require keen understanding of the system's processing environment , including data and information , system interfaces , system and data criticality , and system and data sensitivity .
+
+cbp completed risk assessments for the cbp mainframe and the local area networks within the last 3 years and the risk assessments identify key information such as threat sources , threat actions , risk levels , and business impact as described in nist guidelines .
+
+however , the risk assessments cbp performed for systems supporting the us - visit program did not always fully characterize risks to the systems .
+
+for example , the risk assessment for tecs was conducted without the benefit of ( 1 ) a completed privacy impact assessment and ( 2 ) a complete inventory of all interconnections between tecs and other systems .
+
+as a result , cbp has less assurance that risks associated with these interconnections have been properly identified and that privacy controls have been implemented to mitigate risks .
+
+the purpose of an information system security plan is to provide an overview of the security requirements of the system and describe the controls that are in place or planned for meeting those requirements .
+
+according to nist guidance , security plans should document all interconnected systems and describe the interaction among systems with regard to the authorization for the connection to other systems or the sharing of information .
+
+system interconnections , if not appropriately protected , may compromise connected systems and the data they store , process or transmit .
+
+dhs policy states that security protections for interconnected systems should be ( 1 ) documented in an interconnection security agreement approved and signed by both parties and ( 2 ) updated every three years or sooner whenever a significant change occurs to any of the interconnected systems .
+
+according to dhs policy , an interconnection security agreement is vital in protecting the confidentiality , integrity , and availability of data processed between interconnected systems .
+
+however , 52 of the 57 interconnection security agreements listed in the tecs security plan were not current since they had not been updated within 3 years .
+
+without updated interconnection security agreements , cbp has limited assurance that appropriate security controls have been identified and documented in system security plans .
+
+without current and complete documentation on the interconnection of systems supporting us - visit , unintended access may be granted to connecting parties and there is heightened risk of compromise for connected systems and the data they store , process , or transmit .
+
+cbp officials have acknowledged that many interconnection security agreements were not current and stated they are in the process of updating the interconnection security agreements .
+
+another key element of an information security program is testing and evaluating system controls to ensure that they are appropriate , effective , and comply with policies .
+
+fisma requires that agencies test and evaluate the information security controls of their major systems , and that the frequency of such tests be based on risk , but occur no less than annually .
+
+nist requires agencies to ensure that the appropriate officials are assigned roles and responsibilities for testing and evaluating controls over systems .
+
+according to nist , the security test results should be documented and that the objectives of testing are to ( 1 ) uncover design , implementation , and operational flaws that could allow the violation of security policy ; ( 2 ) determine the adequacy of security mechanisms , assurances , and other properties to enforce the security policy ; and ( 3 ) assess the degree of consistency between system documentation and its implementation .
+
+in addition , dhs has provided guidance to its component agencies on developing system test and evaluation plans , documenting the results , and using an automated tool to capture test requirements and test results .
+
+cbp test documentation did describe the vulnerabilities that we found during our audit such as the absence of one major application privacy impact assessment , the lack of the application's interconnection security agreements , and patch management problems at ports of entry's local - area networks .
+
+however , cbp did not adequately test security controls .
+
+for example , cbp tests of a major application and the mainframe did not identify or discuss certain vulnerabilities that we identified during our audit .
+
+moreover , its testing did not reveal problems with the mainframe that potentially allowed unauthorized users to read , copy , change , delete , and modify us - visit and mainframe data .
+
+in addition , although testing requirements were stated in test documentation , the breadth and depth of the test , as well as the results of the test , were not always documented .
+
+as a result , without comprehensive tests and evaluations of security controls , cbp has limited assurance that security mechanisms enforce the security policy for systems supporting us - visit .
+
+cbp officials have acknowledged that there are deficiencies in how it documents , monitors , and reports test findings and stated that they are taking steps to resolve these deficiencies .
+
+the development and implementation of remedial action plans are key components of an effective information security program .
+
+these plans assist agencies in identifying , assessing , prioritizing , and monitoring the progress in correcting security weaknesses that are found in information systems .
+
+fisma states that agencies must develop a process for planning , implementing , evaluating , and documenting remedial actions to address deficiencies in the information security policies , procedures , and practices of the agency .
+
+according to omb guidance , a plan of action and milestones is a tool that identifies tasks that need to be accomplished and is to assist agencies in identifying , assessing , prioritizing , and monitoring the progress of corrective efforts for security weaknesses found in programs and systems .
+
+the plan details resources required to accomplish the elements of the plan , any milestones in meeting the task , and scheduled completion dates for those milestones .
+
+omb also states that the resource estimates should include the anticipated source of funding and whether a reallocation of base resources or a request for new funding is anticipated .
+
+dhs policy requires , among other things , that ( 1 ) all “significant” deficiencies be addressed by a remedial action plan ; ( 2 ) components use the trusted agent fisma tool to identify , track , and manage all it system weaknesses and associated plans of action and milestones to closure ; ( 3 ) components identify an action as completed only when a weakness has been fully resolved and the corrective action has been tested and approved ; and ( 4 ) remedial action plans must identify the necessary resources to correct identified weaknesses .
+
+however , cbp did not always address significant deficiencies in a remedial action plan as required by dhs policy .
+
+several of these exceptions resulted in vulnerabilities or exposed us - visit information to increased risk of unauthorized disclosure and modification .
+
+for example , cbp patch management weaknesses that made workstations supporting us - visit vulnerable to attacks were not addressed in a corresponding remedial action plan .
+
+in addition , deficiencies found during security testing for the tecs application supporting us - visit were also not always entered in the trusted agent fisma database .
+
+for example , 13 of the 19 exceptions found during security testing for one major application , were not entered in the trusted agent fisma database .
+
+cbp also did not always accurately report the status of remedial actions .
+
+weaknesses that were only partially resolved were sometimes reported as closed on remedial action plans .
+
+for example , an office of inspector general recommendation that cbp perform penetration testing was marked as “completed” in the remedial action plan even though it was not addressed and penetration testing was not performed for a key port of entry application .
+
+furthermore , one application poa&m did not estimate the resources to correct deficiencies .
+
+for example , this application's poa&m stated that the requirement to authorize interconnections to all systems was funded in a budget but the list of required resources was described as “$0.” as a result , without ensuring that remedial action plans meet established requirements , cbp has limited assurance that information system weaknesses affecting systems supporting us - visit will be corrected in a timely manner .
+
+even strong controls may not block all intrusions and misuse , but organizations can reduce the risks associated with such events if they take steps to promptly detect and respond to them before significant damage is done .
+
+in addition , analyzing security incidents allows organizations to gain a better understanding of the threats to their information and the costs of their security - related problems .
+
+such analyses can pinpoint vulnerabilities that need to be eliminated so that they will not be exploited again .
+
+incident reports can be used to provide valuable input for risk assessments , help in prioritizing security improvement efforts , and illustrate risks and related trends for senior management .
+
+fisma requires that agency information security programs include procedures for detecting and reporting security incidents .
+
+furthermore , nist guidance prescribes network and host - based intrusion detection systems as a means of protecting systems from the threats that come with increasing network connectivity .
+
+to ensure effective handling of incidents , dhs policy requires the establishment and maintenance of an incident handling capability that includes preparation , identification , containment , eradication , and recovery .
+
+preparation includes developing policies and procedures , identifying supporting roles and responsibilities , and establishing and implementing tools and processes to ensure timely reporting of security incidents .
+
+identification includes determining the cause of a suspicious event and notification to management .
+
+containment includes mitigating the risks of continuing to operate the affected system by creating backups , keeping incident handlers informed , gathering logs for review and changing passwords .
+
+eradication involves correcting the condition that caused the incident .
+
+recovery involves testing and validating the system before bringing it back into production .
+
+cbp has ( 1 ) established a computer security incident response center which is responsible for investigating , analyzing , documenting , and resolving reported incidents ; ( 2 ) implemented policies and procedures pertaining to the preparation and identification processes for handling incidents ; and ( 3 ) described what should be included in interconnection security agreements such as the security policies that will be followed , how incidents will be handled , and audit trail responsibilities for interconnecting organizations .
+
+however , cbp did not adequately establish and implement tools and processes to ensure timely detection of security incidents .
+
+for example , the cbp data center and the ports of entry have not fully implemented host - based firewalls and intrusion detection systems on their servers and workstations that process us - visit information .
+
+cbp has not established centralized log collection for all cbp servers supporting us - visit .
+
+moreover , cbp does not have fully documented policies and procedures for responding to security incidents .
+
+for example , at the time of our review , cbp officials stated that policies and procedures for the containment , eradication , and recovery of incidents were currently under development .
+
+as a result , without consistent detection and reporting , cbp cannot be assured that it is detecting and handling incidents in systems supporting us - visit in an effective manner .
+
+in addition to fisma , federal agencies are subject to privacy laws aimed at preventing the misuse of personal information .
+
+the privacy act of 1974 and the privacy provisions of the e - government act of 2002 contain the major requirements for the protection of personal privacy by federal agencies .
+
+the privacy act places limitations on agencies' collection , disclosure , and use of personal information maintained in systems of records and requires that when agencies establish or make changes to a system of records , they must notify the public by a system of records notice .
+
+the e - government act of 2002 strives to enhance protection for personal information in government information systems or information collections by requiring that agencies conduct privacy impact assessments .
+
+these privacy impact assessments include an analysis of how personal information is collected , stored , shared , and managed in a federal system .
+
+according to omb guidance , these privacy impact assessments must analyze and describe how the information will be secured including administrative and technological controls and should be current .
+
+further , dhs guidance requires them to describe how shared information is secured by the recipient and how the external system's security controls have been addressed to ensure the security of the information once it is shared .
+
+one goal of the us - visit program is to protect the privacy of our visitors .
+
+however , privacy documents for systems supporting us - visit were not current or complete .
+
+for example , dhs officials told us that the tecs system of records notice was out of date .
+
+in addition , privacy impact assessments have not been completed for other us - visit systems .
+
+for example , cbp did not complete assessments for two regional field local - area networks , nor was an assessment approved for tecs .
+
+without fully developing privacy impact assessments and protecting the confidentiality of personal information in its computer systems through adequate computer security controls , there is a heightened risk that disgruntled employees or malicious users could alter personal information and compromise the confidentiality , integrity , and availability of us - visit data , as well as the data of other applications on the mainframe .
+
+cbp systems supporting the us - visit program were riddled with significant information security control weaknesses that place sensitive information — including personally identifiable information — at increased risk of unauthorized and possibly undetected disclosure and modification , misuse , and destruction , and place program operations at increased risk of disruption .
+
+weaknesses existed in all control areas and computing device types reviewed .
+
+deficiencies in identification and authentication controls , authorization controls , boundary protection measures , physical security , use of cryptography , audit and monitoring practices , segregation of duties , and configuration assurance controls exposed cbp's mainframe computer , network infrastructure , servers , and workstations to insider and external threats .
+
+while cbp has made important progress in implementing the department's information security program , it has not taken all the steps necessary to ensure the confidentiality , integrity , and availability of the information and information systems supporting the us - visit program .
+
+consequently , such information may have been disclosed to or modified by unauthorized individuals .
+
+these weaknesses require immediate attention .
+
+ensuring that weaknesses affecting cbp's computing resources are promptly mitigated and that controls are effective to protect us - visit information require senior management support and leadership , disciplined processes , effective coordination between cbp and other government organizations , and consistent oversight .
+
+until dhs and cbp act to mitigate the weaknesses in cbp systems supporting the us - visit program and cbp effectively and fully implements its information security program , limited assurance exists that sensitive information will be sufficiently safeguarded against unauthorized disclosure , modification , and destruction , and that the us - visit program will achieve its goals .
+
+to help the department effectively and fully implement information security program activities for cbp systems supporting the us - visit program , we are recommending that the secretary of homeland security direct the commissioner , u.s. customs and border protection to 1. fully characterize risks in risk assessments for systems supporting us - 2. update the interconnection security agreements in the tecs security 3. enhance the procedures and documentation for testing and evaluating the effectiveness of security controls ; 4. ensure remedial action plans address all significant security vulnerabilities , accurately report status of remedial actions , and identify necessary resources for completing actions ; 5. fully develop and implement policies and tools for the timely detection and handling of security incidents ; and 6. update and complete privacy documents for systems supporting the us - visit program .
+
+in a separate report designated limited official use only , we are making 54 detailed recommendations to the secretary of homeland security to strengthen information security controls over cbp systems supporting the us - visit program .
+
+we received written comments on a draft of our report from dhs' director of the departmental gao / oig liaison office ( these are reprinted in app .
+
+i ) .
+
+the director stated that cbp concurs with our six recommendations and that it has already taken a number of steps toward mitigating many of our findings .
+
+the director also stated that the department has directed cbp to complete remediation activities to address each of the recommendations .
+
+as we agreed with your office , unless you publicly announce the contents of this report earlier , we plan no further distribution of it until 30 days from the date of this letter .
+
+we will then send copies of this report to the secretary of the department of homeland security ; the commissioner of customs and border protection ; the director of the united states visitor and immigrant status indicator technology program ; the dhs inspector general ; and other interested congressional committees .
+
+we will also make copies available to others on request .
+
+in addition , the report will be available at no charge on gao's web site at http: / / www.gao.gov .
+
+if you have any questions regarding this report , please contact gregory c. wilshusen at ( 202 ) 512-6244 or keith a. rhodes at ( 202 ) 512-6412 .
+
+we can also be reached by e - mail at wilshuseng@gao.gov or rhodesk@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+key contributors to this report are acknowledged in appendix ii .
+
+in addition to the individuals named above , william f. wadsworth ; bruce e. cain ; jason a. carroll ; lon c. chin ; west e. coile ; kirk j. daubenspeck ; neil j. doherty ; patrick r. dugan ; denise e. fitzpatrick ; edward m. glagola jr. ; kory w. godfrey ; mustafa s. hassan ; david b. hayes ; kaelin p. kuhn ; vernetta y. marquis ; kevin c. metcalfe ; jennifer u .
+
+mills ; tammi l. nguyen ; ronald e. parker ; david f. plocher ; john a. spence ; henry i. sutanto ; amos a. tevelow ; and christopher j. warweg , made key contributions to this report .
+

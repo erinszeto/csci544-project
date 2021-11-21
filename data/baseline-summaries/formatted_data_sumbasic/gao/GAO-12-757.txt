@@ -1,0 +1,720 @@
+millions of americans currently use mobile devices — cellphones , smartphones , and tablet computers — on a daily basis to communicate , obtain internet - based information , and share information , photographs , and videos .
+
+dramatic recent advances in the technical capabilities of mobile devices have paved the way for increased connectivity .
+
+as a result , consumers can now carry out a broad range of interactions , including sensitive transactions , which previously required the use of a desktop or laptop computer .
+
+given the extent of consumer reliance on mobile interactions , it is increasingly important that these devices be secured from threats to the confidentiality , integrity , and availability of the information they maintain and share .
+
+accordingly , our objectives were to determine: ( 1 ) what common security threats and vulnerabilities affect mobile devices , ( 2 ) what security features and practices have been identified to mitigate the risks associated with these vulnerabilities , and ( 3 ) the extent to which government and private entities have been addressing the security vulnerabilities of mobile devices .
+
+to assess common security threats and vulnerabilities as well as security controls and practices to address them , we obtained and reviewed published analyses and guidance , including databases of mobile security vulnerabilities .
+
+we also interviewed representatives from federal agencies and private companies with responsibilities in the telecommunications and cybersecurity fields to obtain current information about threats and vulnerabilities .
+
+to determine the extent to which the government and private entities are addressing vulnerabilities , we analyzed statutes , regulations , agency policies , and technical standards .
+
+we also interviewed officials from federal agencies and private companies to identify actions taken to address mobile security , such as developing guidance and sharing information .
+
+we conducted this performance audit from november 2011 to september 2012 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+appendix i contains additional details on the objectives , scope , and methodology of our review .
+
+consumer adoption of mobile devices is growing rapidly , enabled by affordable prices , increasingly reliable connections , and faster transmission speeds .
+
+according to a recent analysis , mobile devices are the fastest growing consumer technology , with worldwide sales increasing from 300 million in 2010 to an estimated 650 million in 2012 .
+
+advances in computing technology have resulted in increased speed and storage capacity for mobile devices .
+
+the advances have enhanced consumers' abilities to perform a wide range of online tasks .
+
+while these devices provide many productivity benefits to consumers and organizations , they also pose security risks if not properly protected .
+
+several different types of private sector entities provide products and services that are used by consumers as part of a seamless mobile telecommunications system .
+
+these entities include mobile device manufacturers , operating system developers , application developers , and wireless carriers .
+
+wifi and bluetooth are commonly used technologies that allow an electronic device to exchange data wirelessly ( using radio waves ) with other devices and computer networks .
+
+recent report,january 2012 .
+
+google inc. led the development of android , an operating system for mobile devices , based on the linux operating system .
+
+android , like linux , is an “open” operating system , meaning that its software code is publicly available and can be tailored to the needs of individual devices and telecommunications carriers .
+
+thus , many different tailored versions of the software are in use .
+
+to run on android devices , software applications need to be digitally signed by the developer , who is responsible for the application's behavior .
+
+android applications are made available on third - party application marketplaces , websites , and on the online official android application store called google play .
+
+research in motion , corp. research in motion developed a proprietary operating system for its blackberry mobile devices .
+
+although a proprietary system , it can run any third - party applications that are written in java .
+
+applications are tested by research in motion before users can download them .
+
+in addition , any application given access to sensitive data or features when installed is required by research in motion to be digitally signed by the developer .
+
+blackberry applications are available for download on the online store called blackberry app world .
+
+mobile application developers develop the software applications that consumers interact with directly .
+
+in many cases , these applications provide the same services that are available through traditional websites , such as news and information services , online banking , shopping , and electronic games .
+
+other applications are designed to take into account a user's physical location to provide tailored information or services , such as information about nearby shops , restaurants , or other elements of the physical environment .
+
+wireless carriers manage telecommunications networks and provide phone services , including mobile devices , directly to consumers .
+
+while carriers do not design or manufacture their own mobile devices , in some cases they can influence the design and the features of other manufacturers' products because they control sales and interactions with large numbers of consumers .
+
+major wireless carriers with the largest total market shares in the united states include verizon wireless , at&t inc. , sprint , and t - mobile usa inc. carriers provide basic telephone service through wireless cellular networks which cover large distances .
+
+however , other types of shorter - range wireless networks may also be used with mobile devices .
+
+these shorter - range networks may be supported by the same carriers or by different providers .
+
+major types of wireless networks include cellular networks , wifi networks , and wireless personal area networks .
+
+cellular networks .
+
+cellular networks are managed by carriers and provide coverage based on dividing a large geographical service area into smaller areas of coverage called “cells.” the cellular network is a radio network distributed over the cells and each cell has a base station equipped with an antenna to receive and transmit radio signals to mobile phones within its coverage area .
+
+a mobile device's communications are generally associated with the base station of the cell in which it is located .
+
+each base station is linked to a mobile telephone switching office , which is also connected to the local wireline telephone network .
+
+the mobile phone switching office directs calls to the desired locations , whether to another mobile phone or a traditional wireline telephone .
+
+this office is responsible for switching calls from one cell to another in a smooth and seamless manner as consumers change locations during a call .
+
+figure 1 depicts the key components of this cellular network .
+
+wifi networks .
+
+wifi networking nodes may be established by businesses or consumers to provide networking service within a limited geographic area , such as within a home , office , or place of business .
+
+they are generally composed of two basic elements: access points and wireless - enabled devices , such as smart phones and tablet computers .
+
+these devices use radio transmitters and receivers to communicate with each other .
+
+access points are physically wired to a conventional network and provide a means for wireless devices to connect to them .
+
+wifi networks conform to the institute of electrical and electronics engineers 802.11 standards .
+
+other wireless personal area networks .
+
+other wireless personal area networks may be used that do not conform to the wifi standard .
+
+for example , the bluetooth standard is often used to establish connectivity with nearby components , such as headsets or computer keyboards .
+
+while federal agencies are not responsible for ensuring the security of individual mobile devices , several are involved in activities designed to address and promote cybersecurity and mobile security in general .
+
+the department of commerce ( commerce ) is responsible under in coordination with homeland security presidential directive 7other federal and nonfederal entities , for improving technology for cyber systems and promoting efforts to protect critical infrastructure .
+
+within commerce , the national institute of standards and technology ( nist ) is responsible for developing information security standards and guidelines , including minimum requirements for unclassified federal information systems , as part of its statutory responsibilities under the federal information security management act ( fisma ) .
+
+for example , nist has developed guidelines on cellphone and bluetooth security .
+
+these standards and guidelines are generally made available to the public and can be used by both the public and private sectors .
+
+nist also serves as the lead federal agency for coordinating the national initiative for cybersecurity education ( nice ) with other agencies .
+
+according to nist , nice seeks to establish an operational , sustainable , and continually improving cybersecurity education program for the nation .
+
+nice includes an awareness initiative , which is led by the department of homeland security ( dhs ) , which focuses on boosting national cybersecurity awareness through public service campaigns to promote cybersecurity and responsible use of the internet , and making cybersecurity a popular educational and career pursuit for older students .
+
+as we previously reported , nist developed a draft strategic plan for the nice initiative .
+
+this plan includes strategic goals , supporting objectives , and related activities for the awareness component .
+
+specifically , the draft strategic plan calls for ( 1 ) improving citizens' knowledge to allow them to make smart choices as they manage online risk , ( 2 ) improving knowledge of cybersecurity within organizations so that resources are well applied to meet the most obvious and serious threats , and ( 3 ) enabling access to cybersecurity resources .
+
+the plan also identifies supporting activities and products designed to support the overarching goal , such as the “stop .
+
+think .
+
+connect.” awareness campaign .
+
+according to commerce's national telecommunications and information administration ( ntia ) , it serves as the president's principal adviser on telecommunications policies pertaining to economic and technological advancement and to the regulation of the telecommunications industry , including mobile telecommunications .
+
+ntia is responsible for coordinating telecommunications activities of the executive branch and assisting in the formulation of policies and standards for those activities , including considerations of interoperability , privacy , security , spectrum use , and emergency readiness .
+
+federal law and policy tasks dhs with critical infrastructure protection responsibilities that include creating a safe , secure , and resilient cyber environment in conjunction with other federal agencies , other levels of government , international organizations , and industry .
+
+the national strategy to secure cyberspace tasked dhs as the lead agency in promoting a comprehensive national awareness program to empower americans to secure their own parts of cyberspace .
+
+consistent with that tasking , dhs is currently leading the awareness component of nice .
+
+the federal communications commission's ( fcc ) role in mobile security stems from its broad authority to regulate interstate and international communications , including for the purpose of “promoting in addition , fcc has established the safety of life and property.” communications , security , reliability , and interoperability council ( csric ) .
+
+csric is a federal advisory committee whose mission is to provide recommendations to fcc to help ensure , among other things , secure and reliable communications systems , including telecommunications , media , and public safety .
+
+a previous csricincluded a working group that was focused on identifying cybersecurity best practices ( including mobile security practices ) , and had representation from segments of the communications industry and public safety communities .
+
+the current csric has focused on the development and implementation of best practices related to several specific cybersecurity topics .
+
+fcc has also established a technological advisory council , which includes various working groups , one of which has been working since march 2012 to identify , prioritize , and analyze mobile security and privacy issues .
+
+the federal trade commission ( ftc ) promotes competition and protects the public by , among other things , bringing enforcement actions against entities that engage in unfair or deceptive acts or practices .
+
+an unfair act is an act or practice that causes or is likely to cause substantial injury to consumers that is not reasonably avoidable by consumers and is not outweighed by countervailing benefits to consumers or to competition .
+
+a deceptive act or practice occurs if there is a representation , omission , or practice that is likely to mislead the consumer acting reasonably in the circumstances , to the consumer's detriment .
+
+according to ftc , its authority to bring enforcement actions covers many of the entities that provide mobile products and services to consumers , including mobile device manufacturers , operating system developers , and application developers .
+
+ftc's jurisdiction also extends to wireless carriers when they are not engaged in common carrier activities .
+
+for example , mobile phone operators engaging in mobile payments functions such as direct - to - carrier billing are under ftc's jurisdiction .
+
+the department of defense ( dod ) is responsible for security systems , including mobile devices that use its networks or contain dod data .
+
+while it has no responsibility with regards to consumer mobile devices , its guidance can be useful for consumers .
+
+for example , the dod security technical implementation guides are available to the public .
+
+these guides contain technical guidance to secure information systems or software that might otherwise be vulnerable to a malicious computer attack .
+
+in addition , certain guides address aspects of mobile device security .
+
+the office of management and budget ( omb ) is responsible for overseeing and providing guidance to federal agencies on the use of information technology , which can include mobile devices .
+
+one omb memorandum to federal agencies , for example , instructs agencies to properly safeguard information stored on federal systems ( including mobile devices ) by requiring the use of encryption and a “time - out” function for re - authentication after 30 minutes of inactivity .
+
+threats to the security of mobile devices and the information they store and process have been increasing significantly .
+
+many of these threats are similar to those that have long plagued traditional computing devices connected to the internet .
+
+for example , cyber criminals and hackers have a variety of attack methods readily available to them , including using software tools to intercept data as they are transmitted to and from a mobile device , inserting malicious software code into the operating systems of mobile devices by including it in seemingly harmless software applications , and using e - mail phishing techniques to gain access to mobile - device users' sensitive information .
+
+the significance of these threats , which are growing in number and kind , is magnified by the vulnerabilities associated with mobile devices .
+
+common vulnerabilities in mobile devices include a failure to enable password protection , the lack of the capability to intercept malware , and operating systems that are not kept up to date with the latest security patches .
+
+cyber - based attacks against mobile devices are evolving and increasing .
+
+examples of recent incidents include: in may 2012 , a regulatory agency in the united kingdom fined a company for distributing malware versions of popular gaming applications that triggered mobile devices to send costly text messages to a premium - rate telephone number .
+
+in february 2012 , a cybersecurity firm , symantec corporation , reported that a large number of android devices in china were infected with malware that connected them to a botnet.operator was able to remotely control the devices and incur charges on user accounts for premium services such as sending text messages to premium numbers , contacting premium telephony services , and connecting to pay - per - view video services .
+
+the number of infected devices able to generate revenue on any given day ranged from 10,000 to 30,000 , enough to potentially net the botnet's operator millions of dollars annually if infection rates were sustained .
+
+in january 2012 , an antivirus company reported that hackers had subverted the search results for certain popular mobile applications so that they would redirect users to a web page where they were encouraged to download a fake antivirus program containing malware .
+
+in october 2011 , ftc reached a settlement of an unfair practice case with a company after alleging that its mobile application was likely to cause consumers to unwittingly disclose personal files , such as pictures and videos , stored on their smartphones and tablet computers .
+
+the company had configured the application's default settings so that upon installation and set - up it would publicly share users' photos , videos , documents , and other files stored on those devices .
+
+symantec corporation , internet security threat report , 2011 trends vol.17 ( mountain view , calif.: april 2012 ) .
+
+an estimated half million to one million people had malware on their android devices in the first half of 2011 ; and 3 out of 10 android owners are likely to encounter a threat on their device each year as of 2011 .
+
+according to a networking technology company , juniper networks , malware aimed at mobile devices is increasing .
+
+for example , the number of variants of malicious software , known as “malware,” aimed at mobile devices has reportedly risen from about 14,000 to 40,000 , a 185 percent increase in less than a year .
+
+figure 2 shows the increase in malware variants between july 2011 and may 2012 .
+
+the increasing prevalence of attacks against mobile devices makes it important to assess and understand the nature of the threats they face and the vulnerabilities these attacks exploit .
+
+mobile devices face a range of cybersecurity threats .
+
+these threats can be unintentional or intentional .
+
+unintentional threats can be caused by software upgrades or defective equipment that inadvertently disrupt systems .
+
+intentional threats include both targeted and untargeted attacks from a variety of sources , including botnet operators , cyber criminals , hackers , foreign nations engaged in espionage , and terrorists .
+
+these threat sources vary in terms of the capabilities of the actors , their willingness to act , and their motives , which can include monetary gain or political advantage , among others .
+
+for example , cyber criminals are using various attack methods to access sensitive information stored and transmitted by mobile devices .
+
+table 1 summarizes those groups or individuals that are key sources of threats for mobile devices .
+
+these threat sources may use a variety of techniques , or exploits , to gain control of mobile devices or to access sensitive information on them .
+
+common mobile attacks are presented in table 2 .
+
+attacks against mobile devices generally occur through four different channels of activities: software downloads .
+
+malicious applications may be disguised as a game , device patch , or utility , which is available for download by unsuspecting users and provides the means for unauthorized users to gain unauthorized use of mobile devices and access to private information or system resources on mobile devices .
+
+visiting a malicious website .
+
+malicious websites may automatically download malware to a mobile device when a user visits .
+
+in some cases , the user must take action ( such as clicking on a hyperlink ) to download the application , while in other cases the application may download automatically .
+
+direct attack through the communication network .
+
+rather than targeting the mobile device itself , some attacks try to intercept communications to and from the device in order to gain unauthorized use of mobile devices and access to sensitive information .
+
+physical attacks .
+
+unauthorized individuals may gain possession of lost or stolen devices and have unauthorized use of mobile devices and access sensitive information stored on the device .
+
+mobile devices are subject to numerous security vulnerabilities , including a failure to enable password protection , the inability to intercept malware , and operating systems that are not kept up to date with the latest security patches .
+
+while not a comprehensive list of all possible vulnerabilities , the following 10 vulnerabilities can be found on all mobile platforms .
+
+mobile devices often do not have passwords enabled .
+
+mobile devices often lack passwords to authenticate users and control access to data stored on the devices .
+
+many devices have the technical capability to support passwords , personal identification numbers ( pin ) , or pattern screen locks for authentication .
+
+some mobile devices also include a biometric reader to scan a fingerprint for authentication .
+
+however , anecdotal information indicates that consumers seldom employ these mechanisms .
+
+additionally , if users do use a password or pin they often choose passwords or pins that can be easily determined or bypassed , such as 1234 or 0000 .
+
+without passwords or pins to lock the device , there is increased risk that stolen or lost phones' information could be accessed by unauthorized users who could view sensitive information and misuse mobile devices .
+
+two - factor authentication is not always used when conducting sensitive transactions on mobile devices .
+
+according to studies , consumers generally use static passwords instead of two - factor authentication when conducting online sensitive transactions while using mobile devices .
+
+using static passwords for authentication has security drawbacks: passwords can be guessed , forgotten , written down and stolen , or eavesdropped .
+
+two - factor authentication generally provides a higher level of security than traditional passwords and pins , and this higher level may be important for sensitive transactions .
+
+two - factor refers to an authentication system in which users are required to authenticate using at least two different “factors” — something you know , something you have , or something you are — before being granted access .
+
+mobile devices themselves can be used as a second factor in some two - factor authentication schemes .
+
+the mobile device can generate pass codes , or the codes can be sent via a text message to the phone .
+
+without two - factor authentication , increased risk exists that unauthorized users could gain access to sensitive information and misuse mobile devices .
+
+wireless transmissions are not always encrypted .
+
+information such as e - mails sent by a mobile device is usually not encrypted while in transit .
+
+in addition , many applications do not encrypt the data they transmit and receive over the network , making it easy for the data to be intercepted .
+
+for example , if an application is transmitting data over an unencrypted wifi network using hypertext transfer protocol ( http ) ( rather than secure http ) , the data can be easily intercepted .
+
+when a wireless transmission is not encrypted , data can be easily intercepted by eavesdroppers , who may gain unauthorized access to sensitive information .
+
+mobile devices may contain malware .
+
+consumers may download applications that contain malware .
+
+consumers download malware unknowingly because it can be disguised as a game , security patch , utility , or other useful application .
+
+it is difficult for users to tell the difference between a legitimate application and one containing malware .
+
+for example , figure 3 shows how an application could be repackaged with malware and a consumer could inadvertently download it onto a mobile device .
+
+mobile devices often do not use security software .
+
+many mobile devices do not come preinstalled with security software to protect against malicious applications , spyware , and malware - based attacks .
+
+further , users do not always install security software , in part because mobile devices often do not come preloaded with such software .
+
+while such software may slow operations and affect battery life on some mobile devices , without it , the risk may be increased that an attacker could successfully distribute malware such as viruses , trojans , spyware , and spam , to lure users into revealing passwords or other confidential information .
+
+operating systems may be out - of - date .
+
+security patches or fixes for mobile devices' operating systems are not always installed on mobile devices in a timely manner .
+
+it can take weeks to months before security updates are provided to consumers' devices .
+
+depending on the nature of the vulnerability , the patching process may be complex and involve many parties .
+
+for example , google develops updates to fix security vulnerabilities in the android os , but it is up to device manufacturers to produce a device - specific update incorporating the vulnerability fix , which can take time if there are proprietary modifications to the device's software .
+
+once a manufacturer produces an update , it is up to each carrier to test it and transmit the updates to consumers' devices .
+
+however , carriers can be delayed in providing the updates because they need time to test whether they interfere with other aspects of the device or the software installed on it .
+
+in addition , mobile devices that are older than 2 years may not receive security updates because manufacturers may no longer support these devices .
+
+many manufacturers stop supporting smartphones as soon as 12 to 18 months after their release .
+
+such devices may face increased risk if manufacturers do not develop patches for newly discovered vulnerabilities .
+
+software on mobile devices may be out - of - date .
+
+security patches for third - party applications are not always developed and released in a timely manner .
+
+in addition , mobile third - party applications , including web browsers , do not always notify consumers when updates are available .
+
+unlike traditional web browsers , mobile browsers rarely get updates .
+
+using outdated software increases the risk that an attacker may exploit vulnerabilities associated with these devices .
+
+mobile devices often do not limit internet connections .
+
+many mobile devices do not have firewalls to limit connections .
+
+when the device is connected to a wide area network it uses communications ports to connect with other devices and the internet .
+
+these ports are similar to doorways to the device .
+
+a hacker could access the mobile device through a port that is not secured .
+
+a firewall secures these ports and allows the user to choose what connections he or she wants to allow into the mobile device .
+
+the firewall intercepts both incoming and outgoing connection attempts and blocks or permits them based on a list of rules .
+
+without a firewall , the mobile device may be open to intrusion through an unsecured communications port , and an intruder may be able to obtain sensitive information on the device and misuse it .
+
+mobile devices may have unauthorized modifications .
+
+the process of modifying a mobile device to remove its limitations so consumers can add additional features ( known as “jailbreaking” or “rooting” ) changes how security for the device is managed and could increase security risks .
+
+jailbreaking allows users to gain access to the operating system of a device so as to permit the installation of unauthorized software functions and applications and / or to not be tied to a particular wireless carrier .
+
+while some users may jailbreak or root their mobile devices specifically to install security enhancements such as firewalls , others may simply be looking for a less expensive or easier way to install desirable applications .
+
+in the latter case , users face increased security risks , because they are bypassing the application vetting process established by the manufacturer and thus have less protection against inadvertently installing malware .
+
+further , jailbroken devices may not receive notifications of security updates from the manufacturer and may require extra effort from the user to maintain up - to - date software .
+
+communication channels may be poorly secured .
+
+having communication channels , such as bluetooth communications , “open” or in “discovery” mode ( which allows the device to be seen by other bluetooth - enabled devices so that connections can be made ) could allow an attacker to install malware through that connection , or surreptitiously activate a microphone or camera to eavesdrop on the user .
+
+in addition , using unsecured public wireless internet networks or wifi spots could allow an attacker to connect to the device and view sensitive information .
+
+in addition , connecting to an unsecured wifi network could allow an attacker to access personal information from a device , putting users at risk for data and identity theft .
+
+one type of attack that exploits the wifi network is known as man - in - the - middle , where an attacker inserts himself in the middle of the communication stream and steals information .
+
+for example , figure 4 depicts a man - in - the - middle attack using an unsecured wifi network .
+
+as a result , an attacker within range could connect to a user's mobile device and access sensitive information .
+
+the number and variety of threats aimed at mobile devices combined with the vulnerabilities in the way the devices are configured and used by consumers means that consumers face significant risks that the proper functioning of their devices as well as the sensitive information contained on them could be compromised .
+
+mobile device manufacturers and wireless carriers can implement a number of technical features , such as enabling passwords and encryption , to limit or prevent attacks .
+
+in addition , consumers can adopt key practices , such as setting passwords , installing software to combat malware , and limiting the use of public wireless connections for sensitive transactions , which also can significantly mitigate the risk that their devices will be compromised .
+
+table 3 outlines security controls that can be enabled on mobile devices to help protect against common security threats and vulnerabilities .
+
+the security controls and practices described are not a comprehensive list , but are consistent with recent studies and guidance from nist and dhs , as well as recommended practices identified by the fcc csric advisory committee .
+
+in addition , security experts , device manufacturers , and wireless carriers agreed that the security controls and practices identified are comprehensive and are in agreement with the lists .
+
+appendix iii provides links to federal websites that provide information on mobile security .
+
+organizations may face different issues than individual consumers and thus may need to have more extensive security controls in place .
+
+for example , organizations may need additional security controls to protect proprietary and other confidential business data that could be stolen from mobile devices and need to ensure that mobile devices connected to the organization's network do not threaten the security of the network itself .
+
+table 4 outlines controls that may be appropriate for organizations to implement to protect their networks , users , and mobile devices .
+
+in addition to using mobile devices with security controls enabled , consumers can also adopt recommended security practices to mitigate threats and vulnerabilities .
+
+table 5 outlines security practices consumers can adopt to protect the information on their devices .
+
+the practices are consistent with guidance from nist and dhs , as well as recommended practices identified by fcc's csric advisory committee .
+
+organizations also benefit from establishing security practices for mobile device users .
+
+table 6 outlines additional security practices organizations can take to safeguard mobile devices .
+
+federal agencies and mobile industry companies have taken steps to develop standards for mobile device security and have participated in initiatives to develop and implement certain types of security controls .
+
+however , these efforts have been limited in scope , and mobile device manufacturers and carriers do not consistently implement security safeguards on mobile devices .
+
+although fcc has facilitated public - private coordination to address specific challenges , such as cellphone theft , and developed cybersecurity best practices , it has not yet taken similar steps to encourage device manufacturers and wireless carriers to implement a more complete industry baseline of mobile security safeguards .
+
+furthermore , dhs , ftc , nist , and the private sector have taken steps to raise public awareness about mobile security threats .
+
+however , security experts agree that many consumers still do not know how to protect themselves from mobile security vulnerabilities .
+
+dhs and nist have not yet developed performance measures that would allow them to determine whether they are making progress in improving awareness of mobile security issues .
+
+federal agencies and mobile industry companies have worked to develop best practices and taken steps to address certain aspects of mobile security .
+
+fcc has worked with mobile companies on several initiatives .
+
+for example , fcc tasked its advisory committee , csric , with developing cybersecurity best practices , including recommended practices for wireless and mobile security .
+
+in march 2011 , csric released its report recommending that wireless carriers and device manufacturers consider adopting practices such as: working closely and regularly with customers to provide recommendations concerning existing default settings and to identify future default settings that may introduce vulnerabilities ; employing fraud detection systems to detect customer calling anomalies ( eg , system access from a single user from widely dispersed geographic areas ) ; having processes in place to ensure that all third - party software has been properly patched with the latest security patches and that the system works correctly with those patches installed ; establishing application support for cryptography that is based on open and widely reviewed and implemented encryption algorithms and protocols ; and enforcing strong passwords for mobile device access and network access .
+
+in addition , in march 2012 fcc tasked csric with examining three major cybersecurity threats to networks that allow cyber criminals to access internet traffic for theft of personal information and intellectual property .
+
+in response , csric recommended that wireless carriers ( 1 ) use key practices when mitigating botnet threats , ( 2 ) use best practices for deploying and managing domain name system security extensions , and ( 3 ) develop an industry framework to prevent internet route hijacking via security weaknesses in the border gateway protocol.working with the wireless carriers to implement these recommendations and is tasked with developing ways to measure the effectiveness of the recommendations .
+
+fcc also tasked the technological advisory council's wireless security and privacy working group to examine mobile security issues , such as vulnerabilities of wifi networks , security of older generation cellular networks , malicious applications , and text messaging security .
+
+the working group is scheduled to issue its recommendations in december 2012 .
+
+moreover , in april 2012 , fcc announced that it had reached agreement with the ctia - the wireless association , and multiple wireless carriers to establish processes to deter theft of mobile devices .
+
+under the antitheft agreement , participating wireless carriers are to take several specific actions and submit quarterly progress reports to fcc .
+
+for example , the antitheft agreement calls for wireless carriers to initiate , implement , and deploy database solutions by october 31 , 2012 , to prevent reportedly lost or stolen smartphones from being used on another wireless network .
+
+the fcc plans to monitor progress in developing these databases and ctia agreed to report progress quarterly , beginning june 30 , 2012 .
+
+the agreement also will result in the launch of a public education campaign by july 1 , 2012 , to inform consumers about the ability to lock or locate and erase data from a smartphone .
+
+in addition , wireless carriers and device manufacturers reported that they participate in private - sector standards - setting organizations , which have addressed aspects of mobile security .
+
+for example , the open mobile alliance , an industry standards group , has developed a specification to provide a common means for mobile developers to implement standards for secure and reliable data transport between two communicating parties .
+
+furthermore , a consortium of wireless carriers and mobile device manufacturers known as the messaging , malware and mobile anti - abuse working group has an initiative underway to address text - message - based spam .
+
+under this initiative , wireless carriers encourage customers to forward spam text messages back to the carriers , who can use the messages to identify the source of spam and take corrective action to block its content from their networks .
+
+according to fcc officials , the current chairman of the messaging , malware and mobile anti - abuse working group is a member of csric and the chair of the working group that developed recommended solutions for the botnet threats .
+
+while private and public sector entities have initiated activities to identify mobile security safeguards , these safeguards are not always available on mobile devices or activated by users .
+
+according to a 2012 study by nq mobile and the national cyber security alliance ( ncsa ) , approximately 30 percent of respondents said they did not have mobile security features on their smartphones .
+
+in addition , approximately 66 percent of respondents did not report that they activated password protection on their devices to prevent unauthorized access and that at least 67 percent did not report activating a remote - wipe or remote - locate security feature .
+
+security company representatives told us that these results were generally consistent with their experiences and observations .
+
+in addition , mobile device manufacturers and wireless carriers do not consistently implement or activate security safeguards on their mobile devices .
+
+according to most of the device manufacturers and several wireless carriers we spoke with , safeguards such as passwords , encryption , and remote wipe / lock / locate can be made available on their mobile devices , although one wireless carrier noted that encryption might be inappropriate for certain types of devices .
+
+several of these companies also acknowledged that it is possible to preconfigure mobile devices to prompt the user to implement safeguards when the phone is first set up .
+
+however , with the exception of password protection for online voicemail accounts , none of the device manufacturers or wireless carriers stated that they generally configure their devices to prompt the user to implement these controls .
+
+we also observed that general cybersecurity instructions were not directly accessible from either carriers or device manufacturers , although instructions for implementing controls could be found by searching the company's website for information about individual models of smartphones .
+
+fcc has the ability to encourage broad implementation of mobile security safeguards among mobile industry companies .
+
+while it has taken steps to encourage implementation of safeguards in certain areas , it has not yet taken similar steps to encourage industry implementation of a broad baseline of mobile security safeguards .
+
+for example , in its recent antitheft agreement with ctia , and participating wireless carriers , fcc took an active role in encouraging major wireless carriers to adopt specific procedures to discourage the theft of mobile devices .
+
+this effort demonstrates that fcc can facilitate private sector efforts to establish an industry baseline and milestones for addressing mobile security challenges .
+
+moreover , representatives from multiple companies agreed that fcc could play a role in coordinating private sector efforts to improve mobile security .
+
+fcc has also facilitated private sector efforts to establish cybersecurity best practices in areas not specific to mobile security .
+
+as mentioned previously , fcc tasked csric to review best practices for botnet threats , domain name system attacks , and internet route hijacking .
+
+csric developed voluntary recommendations in these areas and has been working with wireless carriers to implement them .
+
+according to fcc officials , wireless carriers representing 90 percent of the domestic customer base have committed to adopting and using these practices .
+
+although these recommendations are not specific to mobile devices , fcc officials stated that the process of seeking voluntary compliance from carriers had been successful and demonstrated the willingness of carriers to adopt best practices .
+
+fcc officials stated that they hope to have the same cooperation from wireless carriers when the technological advisory council's wireless security and privacy working group releases its recommendations on mobile security issues , scheduled for december 2012 .
+
+while it is not clear that the working group will develop a baseline of recommended practices for implementation by mobile industry companies , the council's recommendations nevertheless could be part of such a baseline .
+
+another candidate for a set of baseline mobile security standards that mobile industry companies could be encouraged to implement is the collection of cybersecurity best practices developed by csric in 2011 .
+
+those practices have not yet been adopted as a baseline within the mobile industry .
+
+fcc officials from the public safety and homeland security bureau stated that they had not yet taken action to promote this specific set of recommended practices , although they had held informal meetings with industry to discuss the implementation of cybersecurity practices .
+
+whether mobile industry companies adopt the csric - recommended practices or choose other baseline practices and controls , it will be important for fcc to encourage industry to adopt recommended practices .
+
+if such practices are not implemented , vulnerabilities in mobile devices are likely to continue to pose risks for consumers .
+
+many of the key practices that have been identified as effective in mitigating mobile security risks depend on the active participation of users .
+
+thus it is important that an appropriate level of awareness is achieved among consumers who use mobile devices on a regular basis .
+
+to address this need , federal agencies have developed and distributed a variety of educational materials .
+
+for example: dhs's us - computer emergency readiness team ( us - cert ) has developed cybersecurity tip sheets and technical papers related to mobile security .
+
+these materials , which are published on the us - cert website , provide lists of suggestions , such as the use of passwords and encryption , to help consumers to protect their devices and sensitive data from network attacks and theft .
+
+dhs coordinates domestic and international engagements and cybersecurity outreach endeavors .
+
+for example , as the lead agency for the awareness component of the nice initiative , dhs coordinates the national cyber security awareness month and a national cybersecurity public awareness campaign called “stop .
+
+think .
+
+connect.” as part of these efforts , dhs has developed educational materials that , although not specifically related to mobile security , encourage users to adopt safe practices when using the internet .
+
+the dhs website related to this effort also provides links to educational materials hosted on third - party websites , such as staysafeonline.org .
+
+ftc manages the onguardonline website , which provides individuals with information about how to use the internet in a safe , secure , and responsible manner .
+
+as part of this effort , ftc has developed educational materials specifically related to mobile security , such as avoiding malicious mobile applications and protecting children who use mobile devices .
+
+in addition , ftc and dhs have developed and distributed printed cybersecurity guides to schools , business , and other entities , according to an ftc staff member .
+
+nist published guidelines on the security of cellphones and personal digital assistants in 2008. provides users with information about how to secure their devices .
+
+for example , the guidance discusses the value of implementing authentication ( eg , password protection ) and remotely erasing or locking devices that are lost or stolen .
+
+among other things , this guidance dhs and nonprofit organizations also have developed and distributed cybersecurity educational materials in collaboration with ncsa .
+
+in addition to funding from the private sector , dhs officials stated that dhs has contributed a grant to ncsa to conduct surveys and other activities .
+
+ncsa has produced educational materials that specifically relate to mobile security .
+
+for example , ncsa's website provides tips that individuals can follow to protect their mobile devices such as avoiding malware , using trusted internet connections , and securing personal information through the use of strong passwords .
+
+nist , special publication 800-124 , guidelines on cell phone and pda security ( october 2008 ) .
+
+according to nist officials , they are revising this publication and will release a draft update in fiscal year 2012. mobile phone theft , ( 2 ) spam and mobile phones , and ( 3 ) computer viruses and mobile phones .
+
+similarly , ctia maintains a blog with information on topics such as establishing passwords and using applications that can track , locate , lock , and / or wipe wireless devices that are lost or stolen .
+
+in addition , as part of the antitheft initiative discussed above , ctia agreed that its members would implement a system to inform users about security safeguards on mobile devices as well as launch an education campaign regarding the safe use of smartphones .
+
+despite the efforts underway by the federal government and the private sector to develop and distribute educational materials , it is unclear whether consumer awareness has improved as a result .
+
+representatives from companies that specialize in information security told us that many consumers do not understand the importance of implementing mobile security safeguards or do not know how to implement them .
+
+their views are consistent with the results of the 2012 ncsa study , which suggested that many mobile users do not know how to implement mobile security safeguards .
+
+the survey reported that more than half of respondents felt that they required additional information in order to select and / or implement security solutions for their mobile devices .
+
+further , the study reported that approximately three - quarters of respondents reported that they did not receive information about the need for security solutions at the time they purchased their phone .
+
+the survey did not include data that would indicate whether consumer awareness had improved or worsened over time .
+
+while dhs and nist have conducted or supported several consumer cybersecurity awareness efforts , neither has developed outcome - oriented performance measures to assess the effectiveness of government efforts to enhance consumer awareness of mobile security .
+
+an outcome - oriented performance measure is an assessment of the result , effect , or consequence that will occur from carrying out a program or activity compared to its intended purpose .
+
+nist officials stated that they do not currently measure progress related to awareness activities associated with nice .
+
+furthermore , although dhs officials stated that the department assesses the effectiveness of several of the awareness activities , these assessments are not based on outcome - oriented measures .
+
+for example , dhs officials stated that they assess the “stop .
+
+think .
+
+connect.” events by ( 1 ) the number of individuals who join the campaign and agree to receive additional information , such as newsletters , concerning cybersecurity ; ( 2 ) the total number of events held ; ( 3 ) the number of agencies and states that join the campaign ; and ( 4 ) the number of times the campaign website is visited .
+
+however , these measures are not outcome - oriented because they do not indicate how , if at all , these activities have ( 1 ) improved citizens' knowledge about managing online risk , ( 2 ) improved knowledge of cybersecurity within organizations , or ( 3 ) enabled access to cybersecurity resources .
+
+to develop measures of the impact of government efforts on consumer awareness of mobile security issues , a baseline measure of consumer awareness would be needed from which to mark progress .
+
+however , neither dhs nor nist has developed a baseline measure of the state of national cybersecurity awareness .
+
+establishing a baseline measure and regularly assessing consumer awareness and behavior regarding a particular issue can enable organizations to document where problems exist , identify causes , prioritize efforts , and monitor progress .
+
+dhs officials stated that the department has considered conducting a study on consumer behavior and awareness related to general cybersecurity but has not yet done so .
+
+without a baseline measure of consumer awareness , it will remain difficult for nist and dhs to measure any correlation between the government's activities and enhanced consumer awareness .
+
+further , without outcome - oriented performance measures , the government will be limited in its ability to determine whether it is achieving its identified goals and objectives , including whether cybersecurity awareness efforts are effective at increasing adoption of recommended security practices .
+
+mobile devices face an array of threats that take advantage of numerous vulnerabilities commonly found in such devices .
+
+these vulnerabilities can be the result of inadequate technical controls , but they can also result from the poor security practices of consumers .
+
+private sector entities and relevant federal agencies have taken steps to improve the security of mobile devices , including making certain controls available for consumers to use if they wish and promulgating information about recommended mobile security practices .
+
+however , security controls are not always consistently implemented on mobile devices , and it is unclear whether consumers are aware of the importance of enabling security controls on their devices and adopting recommended practices .
+
+although fcc has taken steps to work with industry to develop cybersecurity best practices , it has not yet taken steps to encourage wireless carriers and device manufacturers to implement a more complete industry baseline of mobile security safeguards , and nist and dhs have not determined whether consumer awareness of mobile security issues has improved since the government's efforts have been initiated .
+
+to help mitigate vulnerabilities in mobile devices , we recommend that the chairman of the federal communications commission continue to work with wireless carriers and device manufacturers on implementing cybersecurity best practices by encouraging them to implement a complete industry baseline of mobile security safeguards based on commonly accepted security features and practices ; and monitor progress of wireless carriers and device manufacturers in achieving their milestones and time frames once an industry baseline of mobile security safeguards has been implemented .
+
+to determine whether the nice initiative is having a beneficial effect in enhancing consumer awareness of mobile security issues , we recommend that the secretary of homeland security in collaboration with the secretary of commerce establish a baseline measure of consumer awareness and behavior related to mobile security and develop performance measures that use the awareness baseline to assess the effectiveness of the awareness component of the nice initiative .
+
+we received written comments on a draft of this report from the chief of fcc's public safety and homeland security bureau , the director of dhs's departmental gao - oig liaison office , and the acting secretary of commerce .
+
+these officials generally concurred with our recommendations and provided technical comments , which we have considered and incorporated as appropriate into the final report .
+
+ftc did not provide written comments on the draft report , but an attorney in ftc's office of the general counsel did provide technical comments in an e - mail that we addressed as appropriate .
+
+dod did not provide comments on the draft report .
+
+the comments we received are summarized below .
+
+in addition to fcc's written comments , the chief of fcc's public safety and homeland security bureau stated in e - mail comments that the commission generally concurred with our recommendations that it encourage wireless carriers and device manufacturers to implement a complete industry baseline of mobile security safeguards ; and to monitor progress of wireless carriers and device manufacturers in achieving their milestones and time frames once a baseline has been implemented .
+
+in the written comments , the chief added that fcc has facilitated private sector efforts , for example , through advisory committees such as csric to establish and promote the implementation of cybersecurity best practices that secure the underlying internet infrastructure .
+
+fcc officials also provided preliminary oral and written technical comments , which we addressed as appropriate ( fcc's written comments are reprinted in app .
+
+ii ) .
+
+the director of dhs's departmental gao - oig liaison office provided written comments in which the department concurred with our recommendations that it work with commerce to establish a baseline measure of consumer awareness and behavior related to mobile security and develop performance measures that use the baseline to assess the effectiveness of the awareness component of the nice initiative .
+
+he stated that the department will coordinate with its counterparts at commerce to assess the feasibility of different methods to create a baseline measure of consumer awareness and continue to promote initiatives to educate the public about cybersecurity .
+
+he also stated that the department will coordinate with its nist counterparts on the development of performance measures using the awareness campaign and other methods .
+
+he also provided technical comments , which we have incorporated as appropriate ( dhs's comments are reprinted in app .
+
+iii ) .
+
+the acting secretary of commerce provided written comments in which the department concurred in principle with our recommendations that nist work with dhs to establish a baseline measure of consumer awareness and behavior related to mobile security and that it develop performance measures that use the baseline to assess the effectiveness of the awareness component of the nice initiative .
+
+the acting secretary provided technical comments and asked that we consider replacing “baseline understanding” with “baseline measure,” which we have incorporated into the final report .
+
+she also provided suggested revised text .
+
+however , we believe that the information in the draft is correct and communicates appropriately as written .
+
+therefore , we have not added the suggested text ( commerce's comments are reprinted in app .
+
+iv ) .
+
+we are sending copies of this report to the appropriate congressional committees ; the chairmen of the federal communications commission and federal trade commission ; the secretaries of commerce , defense , and homeland security ; and other interested congressional parties .
+
+the report also is available at no charge on the gao website at http: / / www.gao.gov .
+
+if you or your staff have any questions about this report , please contact: gregory c. wilshusen at ( 202 ) 512-6244 or dr. nabajyoti barkakati at ( 202 ) 512-4499 , or by e - mail at wilshuseng@gao.gov or barkakatin@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+key contributors to this report are listed in appendix vi .
+
+the objectives of our review were to determine: ( 1 ) what common security threats and vulnerabilities currently exist in mobile devices , ( 2 ) what security features are currently available and what practices have been identified to mitigate the risks associated with these vulnerabilities , and ( 3 ) the extent to which government and private entities are addressing security vulnerabilities of mobile devices .
+
+to determine the common security threats and vulnerabilities that currently exist in mobile devices ( cellphones , smartphones , and tablets ) , as well as security features and practices to mitigate them , we identified agencies and private companies with responsibilities in the telecommunication and cybersecurity arena , and reviewed and analyzed information security - related websites , white papers , and mobile security studies .
+
+we interviewed officials , and obtained and analyzed documentation from the federal communications commission ( fcc ) , department of homeland security ( dhs ) , department of defense ( dod ) , department of commerce ( commerce ) , and federal trade commission ( ftc ) to determine the extent to which they have identified mobile security vulnerabilities and developed standards and guidance on the security of mobile devices .
+
+we interviewed and obtained documents from an industry group and an advisory council , both of which have representation from the telecommunication industry ; these included the ctia - the wireless association and the communications security , reliability , and interoperability council ( csric ) .
+
+we also analyzed information from the us - computer emergency readiness team ( us - cert ) and the national vulnerability database on mobile security vulnerabilities .
+
+further , we obtained input from the private companies who make up the largest market share for mobile devices in the united states to determine what steps they are taking to provide security for their mobile devices .
+
+these included mobile device manufacturers — htc corporation , research in motion , corp , motorola mobility inc. , samsung , and lg electronics — as well as wireless carriers — verizon wireless , at&t inc. , t - mobile usa inc. , and sprint .
+
+we also met with representatives of information security companies , including symantec corporation and juniper networks .
+
+we approached apple inc. and google inc. ; however , apple officials did not agree to meet with us and google officials did not provide responses to our questions .
+
+we developed draft lists of common vulnerabilities and security practices based on our analysis of government security guidance as well as private sector studies and reports .
+
+we provided copies of these lists to each of the companies listed above and addressed their comments as appropriate .
+
+to determine the extent to which government and private entities are addressing security vulnerabilities of mobile devices , we analyzed statutes and regulations to determine federal roles related to mobile security .
+
+in order to identify initiatives related to improving mobile security or raising consumer awareness , we interviewed the federal and private sector officials mentioned above , and members of a private sector working group devoted to mobile security issues , known as the messaging , malware , and mobile anti - abuse working group .
+
+in addition , we analyzed multiple studies related to consumer attitudes and practices related to mobile devices .
+
+specifically , we assessed available methodological information against general criteria for survey quality and relevant principles derived from the office of management and budget ( omb ) standards and guidelines for statistical surveys .
+
+because the available methodological documentation did not allow us to fully assess the quality of the survey data , the risk of error in the surveys makes it possible that reported results may not be very accurate or precise .
+
+although we corroborated the study's general findings with information security experts , readers should be cautious in drawing conclusions based on these results .
+
+we conducted this performance audit from november 2011 to september 2012 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+the table below provides information and website links to federal sites that include information related to mobile security .
+
+website links are current as of july 10 , 2012 .
+
+in addition to the individuals named above , key contributions to this report were made by john de ferrari ( assistant director ) , west e. coile , neil j. doherty , rebecca e. eyler , richard j. hagerman , tammi n. kalugdan , david f. plocher , carl m. ramirez , meredith r. raymond , and brandon c. sanders .
+

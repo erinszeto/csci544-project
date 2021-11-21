@@ -1,0 +1,276 @@
+t here has been increased discussion about law enforcement legally "hacking" and accessing certain information on or about devices or servers .
+
+officials conduct this hacking as part of criminal investigations and takedowns of websites that host illicit content or facilitate illegal activity .
+
+there have been reports of such hacking for more than a decade .
+
+over the years , law enforcement has explored various avenues to discover and exploit vulnerabilities in technology so it may attempt to uncover information relevant to a case that might otherwise be inaccessible .
+
+for instance , as people have adopted tools to conceal their physical locations and anonymize their online activities , law enforcement reports that it has become more difficult to locate bad actors and attribute certain malicious activity to specific persons .
+
+as a result , officials have debated the best route to access information that may be beneficial to the administration of justice .
+
+exploiting vulnerabilities is one such tool .
+
+in exploiting vulnerabilities , law enforcement may take one of two broad paths to gain access to devices and information .
+
+it may rely upon known vulnerabilities that have not yet been patched , or it may develop tools to detect and use previously unknown and undisclosed vulnerabilities ( or otherwise acquire exploits for these zero - day vulnerabilities ) that it can then leverage .
+
+law enforcement's use of previously unknown vulnerabilities has become the subject of some debate .
+
+policymakers have questioned law enforcement practices for maintaining versus disclosing these vulnerabilities .
+
+they have also questioned how maintaining or disclosing vulnerabilities may impact security — information security , public safety , and homeland security alike .
+
+this has opened a broader debate about whether law enforcement should disclose vulnerabilities and whether there should be rules for law enforcement behavior in this arena .
+
+this report provides background on law enforcement's use of technology vulnerabilities in criminal investigations .
+
+it also provides information on the government's system by which agencies collectively determine whether to maintain or disclose newly discovered vulnerabilities .
+
+the report also outlines a range of policy issues that may arise regarding the use and disclosure of vulnerabilities in technology .
+
+the first reported instances of law enforcement hacking involved authorities using keylogging programs to obtain encryption keys and subsequent access to devices .
+
+for example , in a 1999 case against a cosa nostra mob boss the federal bureau of investigation ( fbi ) physically installed a keylogger ( using a technique that was classified at the time ) on his computer to capture his encryption key and gain access to his computer .
+
+several years later , in 2001 , authorities started using a more advanced keylogger — one that could be installed remotely — named magic lantern .
+
+in addition to capturing keystrokes , magic lantern could record internet browsing histories and usernames / passwords for sites .
+
+more recently , law enforcement has been utilizing exploits to bypass protections of software such as tor , which allows users to access websites anonymously .
+
+in addition , it has relied on vulnerabilities discovered in software that encrypts or otherwise secures data and limits access to information .
+
+while some investigations are known to have used specially designed exploits or malware , referred to as network investigative techniques ( nits ) , others are merely suspected of using nits to exploit vulnerabilities .
+
+the remainder of this section discusses examples of how the fbi has utilized exploits or malware over the years to facilitate its investigations .
+
+the obama administration established a process — known as the vulnerabilities equities process ( vep ) — to help decide whether or not to disclose information about a vulnerability that the government has discovered or otherwise obtained .
+
+the vep was first set into motion through a presidential directive in 2008 .
+
+an executive secretariat , run by the white house's national security council , oversees the vep .
+
+while the federal government has outlined a process that can be used for deciding whether or not to disclose a vulnerability , it has not provided clear data on how often this process is used and how many vulnerabilities it may retain at any given moment .
+
+in 2015 , the national security agency ( nsa ) noted that "[h]istorically , the nsa has released more than 91 percent of vulnerabilities discovered in products that have gone through [its] internal review process and that are made or used in the united states. .
+
+the nsa further noted that the remaining 9% of vulnerabilities it did not disclose were either patched by the relevant vendors or retained for national security purposes .
+
+the discussion has not included information on the total number of vulnerabilities uncovered and does not provide a reference for the total number of vulnerabilities disclosed through the process .
+
+of note , the nsa used an internal review process prior to the establishment of the interagency vep , so it is not clear whether use of the vep has resulted in a similar proportion of newly discovered vulnerabilities being disclosed .
+
+it is also unclear whether federal law enforcement would disclose vulnerabilities at a rate similar to the nsa if it had its own process for vetting vulnerabilities to be retained or disclosed .
+
+due to the nature of its investigations , law enforcement may be poised to exploit categorically different types of vulnerabilities than its foreign intelligence counterparts .
+
+rand researchers analyzed a dataset of more than 200 zero - day software exploits that it received from a vulnerability research group .
+
+rand considers these data to be a proxy for the vulnerabilities that a "private use group" ( eg , government , defense contractor , exploit developer , or vulnerability researcher ) may have .
+
+looking at the stockpile of zero - day vulnerabilities , rand's findings indicate that about 5.7% of them will have been discovered by an outside entity after a year .
+
+if these findings can be applied to other vulnerability stockpiles , one might extrapolate , for instance , that if the u.s. government has a similar stockpile of vulnerabilities , a similar proportion of them may be discovered by an outside group — including another nation state — after a year .
+
+rand also determined that the average lifespan of a given vulnerability in its dataset was 6.9 years before it was patched or became publicly disclosed .
+
+in addition , 25% of the vulnerabilities only survived 1.5 years or less , while at the top end , 25% survived at least 9.5 years before being patched or publicly disclosed .
+
+as such , if these findings may be reliably applied to other vulnerabilities , law enforcement or another government entity may be able to retain or exploit a given vulnerability for about 9.5 years before it is patched or publicly disclosed .
+
+of course , this lifespan may be influenced by factors such as the desirability — by researchers , nation states , criminals , or others — of finding a specific vulnerability .
+
+the debate surrounding law enforcement use and disclosure of vulnerabilities generally circles around the exploitation of zero - day , or unknown and unpatched , vulnerabilities .
+
+however , law enforcement also relies upon known vulnerabilities to obtain certain information and evidence .
+
+these known vulnerabilities may be unpatched by software vendors .
+
+additionally , the vulnerabilities may be patched by software vendors but users may continue to rely on outdated , unpatched versions of the technology .
+
+some experts have suggested that a majority of hacking incidents involve such known vulnerabilities , and potentially "3 / 4 of hacking incidents occur through means that we know about and therefore have the opportunity to fix. .
+
+in some instances , congress has mandated that certain vulnerabilities exist such that law enforcement may legally exploit these security flaws to obtain information .
+
+for instance , the 1990s brought "concerns that emerging technologies such as digital and wireless communications were making it increasingly difficult for law enforcement agencies to execute authorized surveillance. .
+
+congress passed the communications assistance for law enforcement act ( calea ; p.l .
+
+103-414 ) to help law enforcement maintain its ability to execute authorized electronic surveillance in a changing technology environment .
+
+among other things , calea requires that telecommunications carriers assist law enforcement in intercepting electronic communications for which it has a valid legal order to carry out .
+
+specifically , calea places capability requirements on telecommunications carriers mandating , among other things , that their system designs allow law enforcement to intercept wire and electronic communications and access call - identifying information .
+
+essentially , the systems must be sufficiently unsecured such that content and call - identifying information can , given a lawful court order , be accessed by or provided to law enforcement .
+
+there have been debates around expanding the range of built - in vulnerabilities that law enforcement may utilize .
+
+for instance , congress has debated whether to require technology companies to build back door access points into encryption such that law enforcement , when presenting a lawful warrant , may access encrypted communications or stored data .
+
+this has been one of the most contentious points of debate in the larger policy discussion on the challenges that law enforcement may encounter from evolving technology .
+
+for more information on this issue , see the following text box .
+
+officials and policymakers have largely moved away from the idea of introducing what could be exploitable vulnerabilities into technology .
+
+to date , research has not demonstrated that granting exceptional access — a means by which a vulnerability could be introduced and only accessed by legitimate , authorized actors — could be controlled such that only these authorized actors ( eg , law enforcement ) may take advantage of it .
+
+one group of computer scientists and security experts , for instance , contends that providing for exceptional access "will open doors through which criminals and malicious nation - states can attack the very individuals law enforcement seeks to defend. .
+
+the discussion on whether law enforcement should generally retain or disclose zero - day vulnerabilities that it discovers / obtains lacks a number of data points that may help inform this conversation , as well as other conversations on law enforcement's relationship with technology .
+
+one primary question centers on the effectiveness of using , or exploiting , vulnerabilities .
+
+how "effective" are these nits , or vulnerability exploits , in developing law enforcement cases ? .
+
+there are a number of arguments for and against why law enforcement should retain knowledge of vulnerabilities and , if available , their exploits .
+
+however , quantitative analysis of related questions is lacking .
+
+in what number — and proportion — of cases does law enforcement rely on technology vulnerabilities to obtain evidence ? .
+
+in cases involving evidence obtained through the use of nits , was this evidence more crucial than other case evidence ( not obtained through an nit ) to the investigation or prosecution ? .
+
+are there tools other than nits that law enforcement can use to obtain the same evidence , and how often are those tools utilized ? .
+
+how often do investigators decline to pursue a suspect or case because they cannot access communications or a device and do not have an exploit ( and related vulnerability ) ? .
+
+what is the financial cost of developing or purchasing vulnerability exploits ? .
+
+once a vulnerability is discovered and an exploit is developed , how many times might a given exploit be used ? .
+
+what is the impact on "innocent bystanders" ? .
+
+are nits deployed narrowly enough to avoid implicating innocent individuals ? .
+
+are the warrants authorizing use of nits written narrowly enough to prevent innocent individuals from having their machines and information compromised ? .
+
+can nits introduce unintended weaknesses into the target machines / servers ? .
+
+can they ( and how often do they ) unintentionally collect information beyond the scope of the intended target information ? .
+
+within the broader going dark debate , "lawful hacking is often posited as an alternative to encryption regulation. .
+
+some experts have suggested that the u.s. government should continue to support strengthening encryption and simultaneously give law enforcement resources to bolster their capabilities to conduct investigations in an environment of evolving technology and strong encryption .
+
+some have also noted that "if the executive branch is unable to successfully develop lawful hacking tools to address a sufficient amount of the need for government access to communications to meet the expectations of the general public , it becomes dramatically more likely that it will feel compelled to seek comprehensive legislative solutions mandating exceptional access. .
+
+these hacking tools may include exploits for both publicly known and zero - day vulnerabilities .
+
+the ability of law enforcement to take advantage of publicly known vulnerabilities may drive the conversation on going dark .
+
+if law enforcement is readily able to exploit these vulnerabilities , the question of whether it is going dark becomes less relevant .
+
+however , if law enforcement cannot take advantage of known vulnerabilities ( for whatever reason ) , the question remains of whether it is being outpaced by the speed and strength of technology .
+
+law enforcement's use of zero - day vulnerabilities ( those that it would submit to the vulnerabilities equities process ) , however , is a different issue .
+
+one question is whether the vep , or any potential changes to the process , could affect law enforcement's reported going dark challenges .
+
+if the vep generally results in disclosure of vulnerabilities , law enforcement might have a more limited timeframe in which it may develop exploits for , and take advantage of , a given vulnerability .
+
+on the other hand , if disclosure results in vendors patching these holes , malicious actors may be less likely to detect and exploit the vulnerabilities .
+
+law enforcement may acquire knowledge of vulnerabilities through a number of means ; this information may be publicly available ( such as that included in the national vulnerability database ) , obtained from a hacker or vulnerabilities marketplace , or discovered .
+
+law enforcement may obtain exploits to take advantage of these vulnerabilities by purchasing them off - the - shelf ( which may not be useful to law enforcement who need to customize them for legal use ) , including from an online marketplace .
+
+they may also develop exploits ( or contract an outside entity to develop them ) tailored to suit specific law enforcement needs .
+
+yet another unknown regarding the acquisition of zero - day vulnerabilities or exploits is whether other entities have or will discover the same vulnerability .
+
+as former white house cybersecurity coordinator howard schmidt noted , "[i]t's pretty naive to believe that with a newly discovered zero - day , you are the only one in the world that's discovered it ... [w]hether it's another government , a researcher or someone else who sells exploits , you may have it by yourself for a few hours or a few days , but you sure are not going to have it alone for long. .
+
+acquiring the knowledge of vulnerabilities and their exploits can be costly .
+
+some have suggested that the knowledge of vulnerabilities and their exploits can go for upwards of $1 million on the black or grey markets .
+
+rand reports that the federal government may , however , spend more money assessing products for vulnerabilities and subscribing to vulnerability feeds than it spends on purchasing zero - day vulnerabilities and their exploits .
+
+if this is indeed the case , the latter choice could be more cost - effective for federal law enforcement , which operates within specific fiscal constraints .
+
+there has been speculation surrounding how much the fbi paid a company for the exploit to help obtain data from the phone of one of the shooters in the 2015 san bernardino terrorist attack .
+
+some have placed the price tag near $1 million .
+
+it is unclear how often federal law enforcement purchases information on vulnerabilities or their exploits , how much the average payment may be , or whether the acquired material can be applied to multiple investigations .
+
+policymakers may explore federal law enforcement budgets for acquiring vulnerability knowledge and tools to exploit these holes .
+
+given that there will always be vulnerabilities , some may question whether there should be more attention given to preventing exploits of these vulnerabilities by strengthening security rather than to responding to exploits and deciding how to handle them .
+
+fbi director comey has noted that the government needs "to be more predictive , less reactive" and that this involves , in part , a focus on reducing vulnerabilities ; the public and private sectors can use information on malicious actors and their techniques to strengthen potential targets and prevent cyber incidents .
+
+some have suggested that "the u.s. government should create incentives for individuals , companies , and governments to find software vulnerabilities , publicize , and patch them , and thus reduce the risk of attack. .
+
+part of this may involve establishing or promoting "bug bounty" programs .
+
+the concept of a bounty has long been used by law enforcement ( and others ) to obtain leads in identifying and locating suspects in crimes .
+
+for instance , the fbi runs a most wanted program , offering monetary rewards for information that leads to the identification or arrest of a suspect .
+
+federal law enforcement could formalize a bug bounty program leading to information on vulnerabilities and their exploits .
+
+while this practice already occurs on an ad hoc basis , policymakers may debate whether a formalized process would be cost effective or fruitful .
+
+a number of companies have established internal bug bounty programs such that they can identify software vulnerabilities and patch them quickly .
+
+for example , apple offers up to $200,000 for the identification of certain vulnerabilities , and this reward has been identified as one of the highest .
+
+rewards such as these may incentivize some hackers to bring vulnerability knowledge directly to vendors or affected companies rather than to law enforcement .
+
+bug bounty programs are also familiar to the federal government , as some agencies have already piloted them for their own systems .
+
+in april 2016 , the department of defense ( dod ) launched the "hack the pentagon" pilot program where "hackers were provided legal consent to perform specific hacking techniques against [dod] websites , receiving financial awards for successfully submitting vulnerability reports. .
+
+while the federal government may expand its own bug bounty programs , another option that policymakers may consider is financially supporting private sector bug bounty programs through federal grants .
+
+there are a number of avenues through which various departments and agencies could provide assistance , and doj grants are one such angle .
+
+for one , doj could provide grants to support bug bounty programs at entities that share information on vulnerabilities with law enforcement .
+
+however , the success of such an initiative may be bounded by financial capabilities , as the federal government could have trouble competing with the high bug bounty rewards offered by the private sector .
+
+grants could also be used to help entities establish internal bug bounty programs so that they would be better prepared to counter the efforts of hackers , criminals , and other malicious actors .
+
+with respect to vulnerabilities , two types of information sharing may be of particular interest to law enforcement .
+
+one involves sharing information with technology companies and the public , the other involves sharing information amongst law enforcement entities .
+
+the vulnerabilities equities process ( vep ) , outlined above , is a primary means by which law enforcement may share information on zero - day vulnerabilities with the technology industry and public .
+
+in examining the vep , policymakers may evaluate whether this is the most appropriate path by which law enforcement disseminates knowledge of previously unknown and unpatched vulnerabilities .
+
+relatedly , policymakers may examine the issue of law enforcement disclosing details about nits used to exploit vulnerabilities .
+
+there is no formalized or mandated process by which these tools may be evaluated for potential sharing .
+
+law enforcement may view these details as sensitive and may even classify the tools used .
+
+take , for instance , cases involving the playpen website and the fbi's nit that leveraged a vulnerability to help obtain identifying information of potential perpetrators .
+
+even when requested in court , the fbi has declined to reveal the details of the nit used against the playpen website , and in at least one case has opted to dismiss charges rather than reveal detailed nit source code .
+
+in addition , the fbi has classified elements of the nit , which impedes criminal discovery — and thus potential public disclosure — of the specific nit source code .
+
+some have questioned whether revealing details about an nit would provide insight into how law enforcement is utilizing it and whether — if a court has authorized a warrant for the use of an nit — law enforcement has acted within the authorized scope of the warrant .
+
+others have argued that details about an nit would reveal information about the presence of a particular software vulnerability and how the nit was deployed to a target computer .
+
+policymakers may examine which entities should determine if and how nit details should be revealed .
+
+should this be decided by law enforcement , the courts , or congress ? .
+
+in sharing information on vulnerabilities and potential exploits with the larger law enforcement community , law enforcement may turn to the national domestic communications assistance center ( ndcac ) .
+
+the ndcac , which opened in 2013 , is led by the fbi and aimed at technical knowledge management and information sharing on technical solutions between federal , state , and local law enforcement agencies .
+
+specifically , its four core functions are law enforcement coordination , industry relations , technology sharing , and calea implementation .
+
+the ndcac may be an appropriate venue for law enforcement to share information on vulnerabilities and potential exploits that may be used to leverage these vulnerabilities .
+
+in the 114 th congress , the encryption working group recommended that congress officially authorize and modernize the ndcac to help bolster law enforcement's technical expertise .
+

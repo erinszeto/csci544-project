@@ -1,0 +1,204 @@
+encryption and other technologies can foster increased privacy and heightened security .
+
+simultaneously they have been cited as presenting hurdles for law enforcement and intelligence officials .
+
+on the one hand , some contend that technological developments have resulted in a " golden age of surveillance " for law enforcement ; the large amount of information that investigators have at their fingertips — access to location data , information about individuals' contacts , and a range of websites — collectively form " digital dossiers " on individuals .
+
+on the other hand , some argue that law enforcement is " going dark " as their capabilities are outpaced by the speed of technological change , and thus they cannot access certain information they are otherwise legally authorized to obtain .
+
+the tension between the benefits and challenges of encryption is not new .
+
+it started in the 1990s and was reinvigorated in 2014 when companies like apple and google implemented automatic full - device encryption for mobile devices and automatic encryption for certain communications systems .
+
+companies using such strong encryption assert they do not maintain encryption keys and therefore cannot unlock , or decrypt , the devices or communications — not even when presented with a court authorized wiretap order .
+
+law enforcement concerns about the lack of encryption keys were highlighted by the november and december 2015 terrorist attacks in paris , france , and san bernardino , ca .
+
+questions arose as to whether the attackers used strong encryption and , more importantly , if they did , whether and how this might have hindered investigations .
+
+these questions have reopened larger discussions on how encryption and quickly advancing technologies could impact law enforcement operations .
+
+this report specifically examines certain encryption issues that have been raised in the investigation of the december 2 , 2015 , terrorist attack in san bernardino , ca .
+
+following the attack , u.s. investigators recovered a cell phone reportedly used by one of the shooters .
+
+federal bureau of investigation ( fbi ; bureau ) director james b. comey testified before congress two months later , indicating that the bureau was still unable to access the information on the device .
+
+this report highlights certain issues that policymakers may examine as they follow the ongoing dispute between law enforcement and technology companies .
+
+while this is a fast - moving issue with many components , this report focuses on questions related to the government's request .
+
+the topics discussed are based on developments in the case as of the date of this report .
+
+on february 16 , 2016 , the u.s. district court for the central district of california ordered apple , inc. under the all writs act to provide "reasonable technical assistance to assist law enforcement agents in obtaining access to the data" on the cell phone for which the government had already obtained a probable cause warrant .
+
+the order directs apple's assistance to feature three components: bypass or disable the iphone's auto - erase after 10 incorrect passcode attempts function ( even if the function has not been enabled ) ; enable the fbi to electronically input passcodes for testing ; and ensure there is no added delay between passcode attempts .
+
+in other words , it essentially asks apple to create an operating system update that will allow the fbi to ( 1 ) enter more than 10 passcodes without the risk of the data being wiped after the tenth incorrect try ; ( 2 ) automate the entry of those passcode combinations rather than entering them manually ; and ( 3 ) try back - to - back passcode attempts without the gradually increasing delays between attempts that is currently programmed into the system .
+
+this would allow the fbi to try and "brute force" open the iphone by continuously entering passcode attempts until the correct one is identified .
+
+notably , the order is not asking apple to provide an encryption key or to break the encryption on the device .
+
+the company sees this as "an overreach by the u.s. government" and is opposing the order .
+
+an operating system allowing law enforcement to use brute force to open the phone in this case could potentially be replicated and used to open other phones in cases where law enforcement demonstrates lawful need .
+
+if the technology then falls into the wrong hands , it could potentially be exploited by criminals and other malicious actors .
+
+there is much debate over whether the government's request in the san bernardino case would constitute the creation of a so - called "back door" or "master key" to the iphone's encryption .
+
+apple views the government's order as directing a back door be built into its product .
+
+it sees the access of any entity , including a government agency , to encrypted user data without the user's explicit authorization , as a back door .
+
+in apple's view , the government is a third party , and only those who are authorized by either the owner / sender of the information ( first party ) or the recipient of the information ( second party ) have a right to that information .
+
+apple's view is shared by other technology companies .
+
+the government , however , does not consider its request to enable a back door .
+
+the order does not request that apple create a master key , or create a new decryption key in the software that can be used against any iphone .
+
+it narrowly limits the request to apple's assistance to the specific phone , with the updated operating system only being applicable to the iphone with the serial number and other unique identifiers in this case .
+
+since 2014 , apple has enabled full disk encryption on iphones .
+
+this ensures the data on a given phone are safe from unauthorized disclosure while at rest .
+
+this is different from the encryption of imessage communications , which ensures the data in transit are safe from authorized disclosure .
+
+examples of information protected on the iphone with full - disk encryption include geographic location data ( where the phone has been ) as well as contacts and pictures that were not backed up to an online service .
+
+longer passwords offer more potential combinations , and thus it can be potentially more time - consuming to identify the correct password .
+
+using an automated password guesser , and given the hardware limits of the iphone 5c , if the phone has a four - digit passcode , it would take about 13 minutes to guess every possibility ( 10,000 passcode combinations ) .
+
+if that passcode is six - digits , it would take roughly 22 hours to guess all of the one million combinations .
+
+if the phone is secured with an eight - character password ( letters and numbers , upper and lower case ) , it would take over 500,000 years to guess every combination .
+
+to accomplish what is requested in the court order , the fbi needs apple , rather than a different entity , to develop this software update .
+
+this is because of the method apple uses to ensure the integrity of all the software that runs when an iphone is turned on .
+
+iphones look for an apple certificate which is cryptographically signed before it will boot into the operating system .
+
+without that certificate of assurance , the data would remain encrypted on the device and inaccessible .
+
+while it is possible to reverse engineer a software update to the operating system in order to enable unlimited passcode attempts , it is computationally expensive ( i.e. , time and energy ) to recreate that cryptographically signed certificate .
+
+some have suggested that if apple chooses not to comply , the fbi could likely employ hackers to develop a system .
+
+of note , the court order does not request or compel apple to compromise implementation of encryption on all iphones .
+
+the order directs apple to insert a weakness into the implementation — unlimited passcode attempts and no danger of the phone being wiped because of incorrect guesses — only for the iphone in question .
+
+the legal question in the san bernardino case turns primarily on whether the all writs act can be interpreted broadly enough to require apple to help the government in accessing the data on the device against its wishes .
+
+the all writs act , enacted as part of the judiciary act of 1789 , provides that federal courts "may issue all writs necessary or appropriate in aid of their respective jurisdictions and agreeable to the usages and principles of law. .
+
+the supreme court has observed that "[t]he all writs act is a residual source of legal authority to issue writs that are not otherwise covered by statute. .
+
+a writ is a court order to do or not do something .
+
+although the all writs act was penned 226 years ago , the debate in the san bernardino case , and similar past litigation , has centered on a much more recent , although pre - digital 1977 case , united states v. new york tel .
+
+co .
+
+relying on the all writs act , the court in new york tel .
+
+co .
+
+upheld an order directing the new york telephone company to assist the government in installing a pen register — a device for recording the outgoing numbers dialed on a telephone — for which it already obtained a probable cause warrant to do so .
+
+the court observed that the act extends "to persons who , though not parties to the original action or engaged in any wrongdoing , are in a position to frustrate the implementation of the order or the proper administration of justice. .
+
+while the court accepted that the all writs act can apply to third parties , it observed that "unreasonable burdens may not be imposed. .
+
+to determine the reasonableness of the order in that case , the court assessed a seemingly non - exhaustive list of factors , including ( 1 ) the company was not "so far removed from the underlying controversy" to avoid compliance ; ( 2 ) the order required only "meager assistance" from the company ; ( 3 ) the telephone company was a "highly regulated public utility with a duty to serve the public" ; ( 4 ) the company had not proffered a "substantial interest in not providing assistance" ; the use of the pen register was not "offensive" to the company ; ( 5 ) the company regularly employed such devices for billing purposes: ( 6 ) the company had previously promised to provide the fbi instructions on how to install its own pen register ; ( 7 ) the order was in no way "burdensome" ; ( 8 ) the order provided the company be fully reimbursed for its efforts ; ( 9 ) compliance with the order required "minimal effort" by the company ; and ( 10 ) there were "no disruptions to its operations. .
+
+additionally , the court observed that the order was "consistent with the intent of congress. .
+
+as noted by one commentator , although the court established a list of factors to consider , it is not clear , among other things , how much weight should be given to each factor , or how these factors might apply to future cases , like the request before the central district of california .
+
+in recent years , courts have been required to apply the all writs act and the n ew york tel .
+
+co. factors to requests by the government to access data stored on various locked electronic devices .
+
+for instance , in an unreported 2014 ruling , the southern district of new york ( s.d.n.y. ) .
+
+read new york tel .
+
+co. and subsequent lower court case law to require an unnamed company to unlock a smart phone .
+
+however , in a pending case in the eastern district of new york , a magistrate judge issued a preliminary ruling in october 2015 rejecting the government's request to unlock an iphone 5c running an earlier version of ios .
+
+in the latter case , the magistrate judge was largely persuaded by the fact that "congress has done nothing that would remotely suggest an intent to force apple , in the circumstances of this case , to provide the assistance the government now requests. .
+
+while the san bernardino case is not the first in which apple has been ordered to assist the government in unlocking an iphone , it appears to be the first time apple has been asked to write and install unique software on a specific device .
+
+without congressional action , the central district of california and future courts must apply the new york tel .
+
+co. factors , with minimal guidance provided by lower court case law .
+
+of the new york tel .
+
+co. factors , two appear especially relevant to the san bernardino case .
+
+first , is whether a reviewing court would view the "unreasonable burden" test as including an assessment of not only the burden on apple in creating and installing new software on this particular phone , but also the burden on apple's business as a whole .
+
+while one factor from new york tel .
+
+co is the extent to which the legal order would "disrupt[] … the operations" of the business in question , it is not certain whether the focus should be on the disruption posed by the immediate need to unlock the phone , or the potentially larger disruption to apple's financial bottom line .
+
+apple has acknowledged that it has the technical capacity to unlock the device , but asserts that the desire to protect the privacy and security of its customers is sufficient to warrant its opposition to the court's order .
+
+second , is how much weight , if any , a reviewing court should place on the fact that congress has debated , but not enacted , a law mandating forced decryption on u.s technology companies .
+
+the supreme court has noted that "where a statute specifically addresses the particular issue at hand , it is that authority , and not the all writs act , that is controlling. .
+
+the question here is whether the communications assistance for law enforcement act ( calea ) can be read as "specifically address[ing]" the relief the government seeks .
+
+although congress failed to include companies like apple in calea's mandate that a "telecommunications carrier" must assist the government in "intercept[ing]" communications carried by the provider , this issue was on congress's radar in 1994 during passage of calea .
+
+congress explicitly excluded "information services" from calea's scope .
+
+the government takes the position , however , that unless and until congress actually enacts legislation on this issue , congressional silence does not suffice to limit the authority of the federal courts to require apple to help the government access potentially vital information on this and other devices .
+
+apple has informed the court that it will contest the february 16 order .
+
+its motion and opposition to the government's brief are due by february 26 , 2016 , and a court hearing with both parties is to be held on march 22 , 2016 .
+
+in response to this legal debate , policymakers may ask a number of questions with respect to the order from the central district of california and the larger ongoing encryption debate .
+
+apple has indicated that it is possible to develop an alternate operating system for the iphone in question that would accomplish the items in the court order .
+
+as such , the focus now has been on whether it should be done .
+
+will doing so effectively create a "back door" to the encryption ? .
+
+creating a one - time software update is not without risks .
+
+apple employees and others who have access to the software used to reduce the security of the iphone may use that knowledge for malicious purposes later .
+
+the insider threat has long been considered the greatest threat to cybersecurity — an authorized employee who has access and knowledge of the company has the ability to do far greater harm than someone from the outside .
+
+once apple creates such a software update to inhibit its encryption implementation , it exists in the world and there is no guarantee that a disgruntled employee or one who is bought would not leak the code to an adversary who may use it against the u.s. or its interests in the future .
+
+and even though this particular case is for the iphone ( limited by its unique identifiers ) , it is conceivable that those identifiers can be swapped with other identifiers in the future to make the compromised operating system more widely applicable to the universe of iphones in the world .
+
+if apple develops an operating system update to comply with the court order , what precedent does this set for apple and other companies' compliance with future law enforcement investigations ? .
+
+the fbi has indicated that encryption is not only an issue in terrorism investigations , but in cases against kidnappers , murderers , drug traffickers , and others .
+
+would apple , google , and others need to help the fbi develop operating systems to circumvent security features in every case where the fbi requests assistance ? .
+
+if apple complies with the u.s. court order to help the fbi , would this set a precedent for apple to help law enforcement in other countries ? .
+
+apple is a multi - national corporation that manufactures phones sold around the world .
+
+would apple now need to help international law enforcement entities with similar requests ? .
+
+what burden might this place on apple and other companies going forward ? .
+

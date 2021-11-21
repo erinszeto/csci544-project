@@ -1,0 +1,962 @@
+polar - orbiting satellites provide critical environmental data that are used in weather forecasting .
+
+in 2010 , the national oceanic and atmospheric administration ( noaa ) initiated the joint polar satellite system ( jpss ) program with assistance from the national aeronautics and space administration ( nasa ) .
+
+the jpss program is to provide the next generation of polar - orbiting satellites , replacing existing satellites as they reach the end of their useful lives .
+
+the jpss program includes three satellites , the first of which was successfully launched in october 2011 .
+
+noaa plans to use the next satellite in the program as a replacement for that first satellite .
+
+however , the potential remains for a near - term satellite data gap .
+
+because of the criticality of satellite data to weather forecasting , the possibility of a satellite data gap , and the potential impact of a gap on the health and safety of the u.s. population and economy , we added this issue to gao's high risk list in 2013 and it remained on the list in 2015 .
+
+given your continuing concerns about the potential impact of a gap in polar satellite data , you asked us to review the jpss program and the potential for future gaps in polar satellite coverage .
+
+our objectives were to ( 1 ) evaluate noaa's progress on the jpss satellite program with respect to schedule , cost , and key risks ; ( 2 ) assess noaa's efforts to plan and implement appropriate information security protections for polar satellite data ; ( 3 ) evaluate noaa's efforts to assess the probability of a near - term gap in polar satellite data , as well as its progress in implementing key activities for mitigating a gap ; and ( 4 ) assess noaa's efforts to plan and implement a follow - on polar satellite program .
+
+to evaluate noaa's progress on the jpss satellite program with respect to schedule , cost , and key risks , we compared project schedule and cost data to baseline targets between july 2013 and december 2015 , reviewed key program risk areas and planned actions to mitigate risks , and examined the effect of any schedule delays and risks on a potential gap in satellite data .
+
+in addition , we interviewed jpss program office staff for details on schedule , cost , and risk information .
+
+we assessed the reliability of cost , schedule , and risk data for the jpss program by comparing information in program source reports at different points in time , by comparing risk data to source documents such as risk registers , and by following up on specific cost and schedule information in meetings with agency officials .
+
+we found that these data were sufficiently reliable for our purposes .
+
+to assess noaa's efforts to plan and implement appropriate information security protections for polar satellite data , we compared information security policies and practices for the current and future state of the jpss program against the federal information security modernization act of 2014 and supporting guidance .
+
+we assessed the jpss program's efforts to categorize the security level of the system ; select , implement , and test security controls ; authorize the system for operations ; and monitor controls .
+
+we also analyzed information on recent security incidents and noaa's response to them , and interviewed key managers and staff .
+
+to evaluate noaa's efforts to assess the probability of a near - term gap in polar satellite data , as well as its progress in implementing key activities for mitigating a gap , we analyzed noaa's analysis of polar satellite availability and gap mitigation plan against best practices in contingency planning , examined progress and reporting on noaa's key gap mitigation activities , and interviewed key officials .
+
+in order to assess noaa's efforts to plan and implement a follow - on polar satellite program , we determined the scope , expected cost , timelines , and key risks of the jpss polar follow - on program , analyzed documentation for key program milestones with respect to program criteria and charts of expected satellite life , and interviewed jpss program staff .
+
+we conducted this performance audit from may 2015 to may 2016 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+additional details on our objectives , scope , and methodology are provided in appendix i .
+
+since the 1960s , the united states has operated two separate polar - orbiting meteorological satellite systems: the polar - orbiting operational environmental satellite ( poes ) series , which is managed by noaa , and the defense meteorological satellite program ( dmsp ) , which is managed by the air force .
+
+these satellites obtain environmental data that are processed to provide graphical weather images and specialized weather products .
+
+these satellite data are also the predominant input to numerical weather prediction models , which are a primary tool for forecasting weather days in advance — including forecasting the path and intensity of hurricanes .
+
+the weather products and models are used to predict the potential impact of severe weather so that communities and emergency managers can help prevent and mitigate its effects .
+
+polar satellites also provide data used to monitor environmental phenomena , such as ozone depletion and drought conditions , as well as data sets that are used by researchers for a variety of studies such as climate monitoring .
+
+unlike geostationary satellites , which maintain a fixed position relative to the earth , polar - orbiting satellites constantly circle the earth in an almost north - south orbit , providing global coverage of conditions that affect the weather and climate .
+
+each satellite makes about 14 orbits a day .
+
+as the earth rotates beneath it , each satellite views the entire earth's surface twice a day .
+
+currently , a noaa / nasa satellite ( called the suomi national polar - orbiting partnership , or s - npp ) and two operational dmsp satellites are positioned so that they cross the equator in the early morning , mid - morning , and early afternoon .
+
+in addition , the government relies on a series of european satellites , called the meteorological operational ( metop ) satellites , for satellite observations in the midmorning orbit .
+
+these polar - orbiting satellites are considered primary satellites for providing input to weather forecasting models .
+
+in addition to these primary satellites , noaa , the air force , and a european weather satellite organization maintain older satellites that still collect some data and are available to provide limited backup to the operational satellites should they degrade or fail .
+
+figure 1 illustrates the current operational polar satellite constellation .
+
+according to noaa , 80 percent of the data assimilated into its national weather service numerical weather prediction models that are used to produce weather forecasts 3 days and beyond comes from polar - orbiting satellites .
+
+specifically , a single afternoon polar satellite provides noaa 45 percent of the global coverage it needs for its numerical weather models .
+
+noaa obtains the rest of the polar satellite data it needs from other satellite programs , including the department of defense's ( dod ) early morning satellites and the european mid - morning satellite .
+
+polar satellites gather a broad range of data that are transformed into a variety of products .
+
+satellite sensors observe different bands of radiation wavelengths , called channels , which are used for remotely determining information about the earth's atmosphere , land surface , oceans , and the space environment .
+
+when first received , satellite data are considered raw data .
+
+to make them usable , processing centers format the data so that they are time - sequenced and include earth - location and calibration information .
+
+after formatting , these data are called raw data records .
+
+the centers further process these raw data records into channel - specific data sets , called sensor data records and temperature data records .
+
+these data records are then used to derive weather and climate products called environmental data records .
+
+these environmental data records include a wide range of atmospheric products detailing cloud coverage , temperature , humidity , and ozone distribution ; land surface products showing snow cover , vegetation , and land use ; ocean products depicting sea surface temperatures , sea ice , and wave height ; and characterizations of the space environment .
+
+combinations of these data records ( raw , sensor , temperature , and environmental data records ) are also used to derive more sophisticated products , including outputs from numerical weather models and assessments of climate trends .
+
+figure 2 is a simplified depiction of the various stages of satellite data processing .
+
+with the expectation that combining the poes and dmsp programs would reduce duplication and result in sizable cost savings , a may 1994 presidential decision directive required noaa and dod to converge the two satellite programs into a single one capable of satisfying both civilian and military requirements: the national polar - orbiting operational environmental satellite system ( npoess ) .
+
+npoess satellites were expected to replace the poes and dmsp satellites in the morning , mid - morning , and afternoon orbits when they neared the end of their expected life spans .
+
+to reduce the risk involved in developing new technologies and to maintain climate data continuity , the program planned to launch a demonstration satellite in may 2006 .
+
+the first npoess satellite was to be available for launch in march 2008 .
+
+however , in the years after the program was initiated , npoess encountered significant technical challenges in sensor development , program cost growth , and schedule delays .
+
+by march 2009 , agency executives decided to use the planned demonstration satellite as an operational satellite because the schedule delays could have led to a gap in satellite data .
+
+eventually , cost and schedule concerns led the white house's office of science and technology policy to announce in february 2010 that noaa and dod would no longer jointly procure the npoess satellite system ; instead , each agency would plan and acquire its own satellite system .
+
+specifically , noaa — with support from nasa — would be responsible for the afternoon orbit and dod would be responsible for the early morning orbit .
+
+the agencies would rely on european satellites for the mid - morning orbit .
+
+when the decision to disband npoess was announced , noaa and nasa immediately began planning for a new satellite program in the afternoon orbit called jpss .
+
+key plans included acquiring and launching two satellites for the afternoon orbit , called relying on nasa for system acquisition , engineering , and integration ; completing , launching , and supporting s - npp ; developing and integrating five instruments on the two satellites ; finding alternative host satellites for selected instruments that would not be accommodated on the jpss satellites ; and providing ground system support for jpss ( including s - npp ) , and data communications for other missions , including the metop satellite .
+
+noaa organized the jpss program into flight and ground projects that have separate areas of responsibility .
+
+figure 3 depicts program components .
+
+the flight project includes a set of five instruments , the spacecraft , and launch services .
+
+table 1 lists and describes the instruments .
+
+the ground project consists of ground - based systems that handle satellite communications and data processing .
+
+the jpss program is working to implement a critical upgrade to the jpss ground system that will allow it to support both the s - npp and all planned jpss satellites .
+
+the ground system's versions are numbered ; the version that is currently in use is called block 1.2 , and the new version that is under development is called block 2.0 .
+
+while block 2.0 is planned to replace block 1.2 , a jpss program official stated that there will be a period of overlap of about 60 days during which both versions are operational , and noted that block 1.2 may stay online longer , if warranted , to address unanticipated problems on block 2.0 .
+
+in addition to multi - mission support , program officials stated that the new iteration of the ground system will also have a different set of security requirements that are designed specifically for the jpss system , as opposed to the old requirements which were based on legacy needs .
+
+officials also stated that the upgrade will include an enhanced architecture that is more scalable to future changes , and will allow noaa to replace obsolete hardware and software .
+
+since its inception , the composition and cost of the jpss program have varied .
+
+in 2010 , noaa estimated that the life - cycle costs of the jpss program would be approximately $11.9 billion for a program lasting through fiscal year 2024 , which included $2.9 billion in noaa funds spent on npoess through fiscal year 2010 .
+
+following this , the agency undertook a cost estimating exercise where it validated that the cost of the full set of jpss functions from fiscal year 2012 through fiscal year 2028 would be $11.3 billion .
+
+after adding the agency's sunk costs , which had increased to $3.3 billion through fiscal year 2011 , the program's life - cycle cost estimate totaled $14.6 billion .
+
+subsequently , noaa took steps to lower this estimate , since it was $2.7 billion higher than the original estimate for jpss at the time that npoess was disbanded .
+
+in fiscal year 2013 , noaa officials agreed to cap the jpss life - cycle cost at $12.9 billion , and to merge funding for two climate sensors into the jpss budget .
+
+by october 2012 , noaa also decided to remove selected elements from the satellite program , such as the number of ground - based receptor stations ( thus affecting the time it takes for products to reach end users ) and the number of interface data processing segments .
+
+the administration then directed noaa to begin implementing additional changes in the program's scope and objectives in order to meet the agency's highest - priority needs for weather forecasting and reduce estimated life - cycle costs from $12.9 billion to $11.3 billion .
+
+by april 2013 , noaa had decided to , among other things , cancel one of two planned free - flyer missions and transfer the remaining free - flyer mission to a new program within noaa called the solar irradiance , data , and rescue mission .
+
+in addition , requirements for certain climate sensors were moved to nasa .
+
+as we reported previously , noaa also reduced the estimated life - cycle cost of the program by eliminating the operational costs for the 3 years at the end of the jpss mission ; the current life - cycle cost estimate includes operational costs through 2025 even though the jpss - 2 satellite is expected to be operational until 2028 .
+
+table 2 compares the planned cost , schedule , and scope of the jpss program at different points in time .
+
+safeguarding federal computer systems and the systems supporting the nation's infrastructures , including the nation's weather observation and forecasting infrastructure , is essential to protecting national and economic security , and public health and safety .
+
+for government organizations , information security is also a key element in maintaining the public trust .
+
+inadequately protected systems may be vulnerable to insider threats as well as the risk of intrusion by individuals or groups with malicious intent who could unlawfully access the systems to obtain sensitive information , disrupt operations , or launch attacks against other computer systems and networks .
+
+moreover , cyber - based threats to federal information systems are evolving and growing .
+
+accordingly , we designated information security as a government - wide high risk area in 1997 and it has remained on our high - risk list since then .
+
+federal law and guidance specify requirements for protecting federal information and information systems .
+
+the federal information security management act of 2002 and the federal information security modernization act of 2014 ( fisma ) , which largely supersedes the 2002 act , require executive branch agencies to develop , document , and implement an agency - wide information security program to provide security for the information and information system that support operations and assets of the agency .
+
+the 2002 act also assigns certain responsibilities to the national institute of standards and technology ( nist ) , which is tasked with developing , for systems other than national security systems , standards and guidelines that must include at a minimum , ( 1 ) standards to be used by all agencies to categorize all of their information and information systems based on the objectives of providing appropriate levels of information security , according to a range of risk levels ; ( 2 ) guidelines recommending the types of information and information systems to be included in each category ; and ( 3 ) minimum information security requirements for information and information system in each category .
+
+accordingly , nist developed a risk management framework of standards and guidelines for agencies to follow in developing information security programs .
+
+the framework addresses broad information - security and risk - management activities , including categorizing the system's impact level ; selecting , implementing , and assessing security controls ; authorizing the system to operate ( based on progress in remediating control weaknesses and an assessment of residual risk ) ; and monitoring the efficacy of controls on an ongoing basis .
+
+figure 4 shows an overview of this framework and table 3 describes the framework's key activities and artifacts .
+
+in addition , appendix ii describes relevant nist publications .
+
+federal agencies face an evolving array of information security - based threats which put federal systems and information at an increased risk of compromise .
+
+in september 2015 , we reported that federal agencies showed weaknesses in several major categories of information system controls including access controls , which limit or detect access to computer resources , and configuration management controls , which are intended to prevent unauthorized changes to information system resources .
+
+further , in november 2015 , we reported that over the past 6 years we had made about 2,000 recommendations to improve information security programs and associated security controls .
+
+we noted that agencies had implemented about 58 percent of these recommendations .
+
+since 2012 , we issued three reports on the jpss program that highlighted technical issues , component cost growth , management challenges , and key risks .
+
+in these reports , we made a total of 11 recommendations to noaa to improve the management of the jpss program .
+
+these recommendations included addressing key risks and establishing a comprehensive contingency plan consistent with best practices .
+
+the agency agreed with these 11 recommendations .
+
+as of december 2015 , the agency had implemented 2 recommendations and was working to address the remaining 9 .
+
+more specifically , in september 2013 and december 2014 , we reported that while noaa had taken steps to mitigate an anticipated gap in polar satellite data , it had not yet established a comprehensive contingency plan .
+
+for example , its plan did not fully identify risks to its contingency plans such as including recovery time objectives for key products , identifying opportunities for accelerating calibration and validation of products , and providing an assessment of available alternatives based on their costs and potential impacts .
+
+in addition , we found that noaa had not prioritized these alternatives .
+
+we recommended that noaa revise its plan to , among other things , identify recovery time objectives for key products , provide an assessment of alternatives based on costs and potential impacts , and establish a schedule with meaningful timelines and linkages among mitigation activities .
+
+we also recommended that noaa investigate ways to prioritize mitigation projects with the greatest potential benefit in the event of a gap .
+
+noaa agreed with these recommendations and stated it was taking steps to implement them .
+
+in december 2014 , we also found that , while noaa was providing oversight of its many gap mitigation projects and activities , the agency's oversight efforts were not consistent or comprehensive .
+
+specifically , only one of three responsible entities obtained monthly progress reports , and the three responsible agencies reported only on selected activities on a quarterly basis .
+
+we recommended that noaa ensure that relevant entities provide monthly and quarterly updates of progress on all gap mitigation projects during existing meetings .
+
+noaa agreed with this recommendation and stated it was taking steps to implement it .
+
+at that time , we also reported that noaa had previously revised its estimate of how long a gap could last down to 3 months , but that this estimate was based on inconsistent and unproven assumptions and did not account for the risk that space debris poses to the s - npp satellite's life expectancy .
+
+we recommended that noaa update the jpss program's assessment of potential polar satellite data gaps to include more accurate assumptions about launch dates and the length of the data calibration period , as well as key risks such as the potential effect of space debris .
+
+noaa agreed with this recommendation and stated it was taking steps to implement it .
+
+over the last year , the jpss program has continued to make progress in developing the jpss - 1 satellite .
+
+in early 2015 , the program completed two key instruments for the jpss - 1 satellite: the cris and viirs instruments .
+
+the program also completed its systems integration review for the jpss - 1 satellite in february 2015 .
+
+more recently , the program completed the atms instrument and integrated the instruments on the spacecraft .
+
+as of december 2015 , the jpss program reported that it remained on track to meet its planned launch date of march 2017 for the jpss - 1 satellite , and still expected the jpss - 2 satellite to launch no later than november 2021 .
+
+however , the program has continued to experience delays in meeting interim milestones .
+
+in 2014 , we reported that key components of the jpss - 1 satellite had experienced delays .
+
+since that time , the program has continued to experience delays on key components ranging from 3 to 10 months .
+
+in particular , one component experienced almost 2 years of delay since july 2013 .
+
+table 4 provides details on specific key milestones .
+
+as of january 2016 , the program continued to experience technical challenges that could cause additional schedule delays and potentially affect the scheduled launch of the jpss - 1 satellite .
+
+a delay in completing a key component on the spacecraft , called a gimbal , has in turn delayed the beginning of environmental testing .
+
+since november 2014 , program officials moved the component's planned completion date from april 2015 to february 2016 .
+
+the jpss ground system also has experienced recent delays .
+
+the program experienced an unexpectedly high number of program trouble reports in completing an upgrade on the ground system .
+
+a key milestone related to this upgrade was recently delayed from january to august 2016 .
+
+program officials stated that delays such as these are normal and anticipated on complex and technical space system development efforts like jpss , and that the program includes schedule reserves to address such challenges as they arise .
+
+as of january 2016 , the program reported it had 24 days of margin remaining to its launch readiness date of december 2016 , and another 3 months of margin between that date and the launch commitment date of march 2017 .
+
+however , the margin of 24 days prior to the launch readiness date is less than the 1.9 months recommended by nasa's development standards .
+
+this margin is also a decrease from the 6 months of margin the program had in july 2014 .
+
+given this narrowing of available schedule reserves , resolving the remaining technical issues ( discussed later in this report ) will be critical to achieving the planned launch date .
+
+the jpss program's baseline life - cycle cost estimate remains at $11.3 billion , but the cost of the flight segment has grown and the amount of reserve funds has decreased .
+
+specifically , the cost of the flight segment grew by 8 percent from july 2013 to july 2014 , and by another 2 percent in the period from july 2014 to december 2015 .
+
+during those time frames , the cost of the ground system remained relatively steady ; it dropped by 3 percent between 2013 and 2014 and then rose by 1.4 percent between 2014 and 2015 .
+
+over this 2-year period , noaa's estimate for the program's development , maintenance , and operations has grown from almost $10.4 billion to just under $10.7 billion , meaning that the corresponding amount of reserve funds has decreased .
+
+the program currently has about $648 million in reserve funding for unanticipated issues over the life of the program .
+
+this is a 12.7-percent reduction in the amount of reserves between july 2014 and december 2015 .
+
+table 5 shows changes in cost estimates for jpss program components between july 2014 and december 2015 , as well as the overall percentage of change between july 2013 and december 2015 .
+
+within the flight segment , selected components have continued to experience higher cost growth .
+
+since july 2014 , the atms instrument's cost increased by nearly 16 percent , while the omps instrument's cost has grown nearly 10.4 percent ( with a 7 percent increase between july and august 2015 ) .
+
+in contrast , during the same time period , the viirs instrument's cost decreased by 1.5 percent and the cris instrument's cost decreased by 3.8 percent .
+
+noaa officials stated that they are using information gained from the development of jpss - 1 instruments to aid in developing instruments for jpss - 2 .
+
+leveraging this information will be important in controlling costs on future satellites .
+
+program officials stated that component cost increases such as these are normal and anticipated on complex and technical space system development efforts like jpss .
+
+the program director explained that reserves were included in the life cycle cost estimate to address these cost increases and that the program is continuing to work within its approved life - cycle cost estimate .
+
+the jpss program's risk management guidance calls for identifying risks , developing action plans for addressing the risks , and reporting to management on key risks .
+
+these action plans are to include a list of steps to mitigate the risks and when those steps are to be completed .
+
+since its inception in 2010 , jpss has identified and tracked key program risks .
+
+moreover , the program office presents key risks during noaa monthly program management council reviews .
+
+over the last 2 years , noaa has successfully closed four key risks .
+
+these risks include components that directly impact cost , schedule , and technical aspects of the program .
+
+more specifically , noaa resolved risks involving a delay in the use of legacy polar data ; a delay in completing problem change reports related to the current ground system ; and issues stemming from the sale of a supplier of high - performance computing technology .
+
+however , as of november 2015 , risks remained on both the flight and ground segment for jpss that could potentially impact the planned completion of the spacecraft and ground system .
+
+jpss - 1 spacecraft component delivery: the program has experienced issues with development of the gimbal component , which as stated above , facilitates the transmission of data to the ground system and other satellites .
+
+the delivery date of the gimbal component continues to slip and has begun to impact remaining integration and test activities .
+
+the jpss program office has taken steps to mitigate this risk by asking the prime spacecraft contractor to create a contingency plan on this issue , and delaying environmental testing until production is completed .
+
+however , the significant delays and rework involved have already caused critical milestone dates to slip up to five times .
+
+if this issue continues to consume program reserves , it may further delay noaa's ability to begin environmental testing on other areas of the spacecraft , thus delaying launch readiness .
+
+ground segment issues: the program is facing several issues in developing and testing the next version of the ground system ( block 2.0 ) , which could delay it from being operational when needed to support the jpss - 1 satellite .
+
+specifically , a recent site acceptance test resulted in a higher - than - expected number of problem change requests in a new version of the ground system .
+
+these have not yet been resolved .
+
+the program is also experiencing challenges in testing the ground system's requirements that may cause a delay in verifying some requirements until closer to launch .
+
+program officials reported that they are developing a contingency plan to deal with the open change requests , and are re - planning the activities leading up to the completion of block 2.0 in order to remove potential schedule conflicts between the ground and satellite testing schedules .
+
+similar to its efforts to manage the program's cost and schedule , the jpss program office is actively monitoring these risks .
+
+close management and monitoring of costs , schedules , and risks will be essential to ensuring a successful and timely launch .
+
+in accordance with fisma and the nist risk management framework , noaa has established security policies and procedures governing its organizations and programs in each of the framework areas .
+
+the jpss program implemented information security practices in the area of system categorization , and made progress in implementing information security practices in each of the other risk management areas .
+
+however , the program has yet to fully implement the best practices and policies established by the organization , and shortfalls exist in each of the remaining areas .
+
+for example , while the program has established plans of action to address control weaknesses , it has not addressed systemic critical issues in a timely manner .
+
+while required to remediate critical and high risk vulnerabilities within 30 days , as of august 2015 , the program had over 1,400 critical and high risk vulnerabilities that were over 4 months old .
+
+as described earlier , fisma requires federal agencies to develop , document , and implement an agency - wide information security program .
+
+it also calls for agencies to perform key activities to protect critical assets , in accordance with nist's risk management framework .
+
+this framework provides broad information security and risk management activities which guide the life - cycle processes to be followed in developing information systems: system categorization: programs are to categorize systems by identifying the types of information used , selecting a provisional impact level , modifying the rating based on mission - based factors , and assigning a category based on the highest level of impact to confidentiality , integrity , and availability .
+
+programs select the initial impact levels using an assessment of threat events and their impact to operations .
+
+selection and implementation of security controls .
+
+programs are to determine protective measures , or security controls , to be implemented based on the system categorization results .
+
+these security controls are documented in a system security plan .
+
+key controls include access controls ; incident response ; security assessment and authorization ; identification and authentication ; and configuration management .
+
+once controls are identified , programs are to determine implementation actions for each of the designated controls .
+
+these implementation actions are also specified in the system security plan .
+
+assessment of security controls .
+
+programs are to develop a test plan that will determine which controls to test ( called a security controls assessment ) , prioritize and schedule assessments , select and customize techniques , and develop risk mitigation techniques to address weaknesses .
+
+in addition to testing controls , test plans may also include penetration testing , which involves simulating attacks to identify methods for circumventing the security features of an application , system , or network , and using tools or techniques commonly used by attackers .
+
+authorization to operate ( ato ) : programs are to obtain security authorization approval in order to operate .
+
+resolving weaknesses and vulnerabilities identified during testing is an important step leading up to achieving ato .
+
+programs are to establish plans of action and milestones ( poa&m ) to plan , implement , and document remedial actions to address any deficiencies in information security policies , procedures , and practices using poa&ms .
+
+monitoring of security controls: agencies are to monitor their security controls on an ongoing basis after deployment , including assessing controls' effectiveness and reporting on the security state of the system .
+
+a key part of ongoing monitoring is handling incidents .
+
+nist guidance specifies procedures for implementing fisma incident - handling requirements , and includes guidelines on establishing an effective incident response program and detecting , analyzing , prioritizing , and handling an incident .
+
+in accordance with noaa policy , the jpss program implemented key elements of the nist framework regarding system categorization and identified the ground system as a high - impact system .
+
+a high - impact system is one where the loss of confidentiality , integrity , or availability could be expected to have a severe or catastrophic adverse effect on organizational operations , organizational assets , or individuals .
+
+steps leading to this categorization included the following: the jpss program identified several information types relevant to the jpss mission , including space operations , environmental monitoring and forecasting , contingency planning , and continuity of operations .
+
+for each information type , jpss program officials identified security levels in the areas of confidentiality , availability , and integrity , based on the nature of its mission .
+
+program officials chose these levels based on a detailed risk assessment , which allowed them to determine the extent to which threats could adversely impact the organization and the extent to which agency systems are vulnerable to these circumstances or events .
+
+the program assigned an overall high - impact security level for its ground system , based on the highest impact level for each of the component information types .
+
+in accordance with noaa policy and nist guidance , the jpss program established a system security plan for its ground system that identifies the key security controls it plans to implement based on its system security categorization and impact analyses .
+
+key control areas include access controls , risk assessment , incident response , identification and authentication , and configuration management .
+
+however , the program determined that the jpss ground system is at a high risk of compromise to its confidentiality , integrity , and availability due to the significant number of controls that were not fully implemented .
+
+according to program documentation , as of june 2015 , the jpss program had fully implemented 53 percent of the baseline system security controls , and partially implemented the remaining controls .
+
+moreover , out of 17 control areas , the jpss program had fully implemented all of the controls for only one area: incident response .
+
+the program has not fully implemented security controls for the remaining 16 control areas .
+
+the areas with the most partially implemented controls were physical protection , access control , audit and accountability , and configuration management .
+
+program officials explained that there are so many partially implemented controls because the current ground system ( block 1.2 ) was built under the predecessor npoess program to dod moderate security standards .
+
+when npoess was disbanded and noaa initiated the jpss program in 2010 , the program took over development of the s - npp satellite and ground system .
+
+program officials noted that noaa's early priorities were to transition the dod contracts to noaa and to establish the jpss program office , and that they were not able to begin planning to upgrade the ground system until 2012 .
+
+noaa acknowledged that they need to increase the security of the ground system and noted that they have been working to do that .
+
+program officials stated that they implemented compensating controls to mitigate the risks inherent in the block 1.2 system .
+
+these compensating controls include increased logging and monitoring of traffic to identify anomalies , segmentation of the environment , and increased staffing on remediating and patching weaknesses .
+
+in addition , program officials stated that they plan to implement the remaining controls when the program upgrades the ground system from block 1.2 to block 2.0 in august 2016 .
+
+in accordance with noaa policy and the nist framework , the jpss program developed a plan for assessing its security controls , customized its testing approach to the ground system , and implemented the assessment .
+
+specifically , in 2015 , a contractor working for noaa's national environmental satellite , data , and information service ( nesdis ) tested how the program implemented the controls identified in the system security plan and identified weaknesses in the required controls established by the program .
+
+the results of this test , called a security controls assessment , were documented in a subsequent report .
+
+the security controls assessment also included results of an annual penetration test that was conducted by a private sector company in may 2015 to verify the effectiveness of security controls .
+
+the june 2015 security controls assessment identified a large number of critical and high risk vulnerabilities , and these numbers have been growing over time .
+
+specifically , the assessment identified 146 critical and 951 high risk vulnerabilities on block 1.2 of the ground system , as well as 102 critical and 295 high risk vulnerabilities on block 2.0 of the ground system .
+
+figure 5 shows the number of open vulnerabilities on the block 1.2 system , by severity , from the third quarter of 2014 to the second quarter of 2015 .
+
+the program is currently working to address the vulnerabilities through the creation of plans of action to remediate them , as discussed in the following section .
+
+however , the program's assessment of its security controls had significant limitations .
+
+specifically , the assessment team reported that it did not have all of the information it needed to plan or test the entire system and its artifacts .
+
+in establishing procedures for the assessment , the assessment team noted concerns regarding uncertainty about the physical locations for jpss components , inconsistencies in system inventory management , and communication and information availability between different groups within jpss , including contractors .
+
+also , in implementing the assessment , the team encountered a discrepancy between the security scans and the asset inventory being assessed .
+
+these shortcomings were noted again in a later security scan , which according to the program office , showed a struggle with understanding the rules of security scans , using the assessment tool , and maintaining a valid inventory .
+
+according to nesdis officials , while the assessment team had the information it needed when it initiated its review , the program continued to develop and revise the system .
+
+thus , the inventory of system components that was assessed did not match the evolving system .
+
+moreover , noaa officials stated that the assessment attempted to account for the limitations by factoring a high likelihood and high impact of an unknown risk into the system's overall risk score .
+
+these limitations increase the risk that devices in place on the current jpss network have not been identified or tested .
+
+as a result of these testing limitations , the security controls assessment may not have identified all of the system's specific control weaknesses .
+
+consistent with fisma requirements and nist guidance , noaa has a process for authorizing its systems to operate .
+
+in order to achieve ato , noaa requires its programs to establish plans of actions and milestones ( poa&m ) to address control weaknesses , make satisfactory progress in completing poa&ms , and resolve at least 80 percent of the poa&ms on or before their due dates .
+
+noaa also follows a department of commerce policy which requires it to remediate all vulnerabilities deemed critical or high risk within 30 days of discovery .
+
+the commerce policy notes that vulnerabilities that are not remediated within 30 days must be managed through the poa&m process or accepted with written justification by the authorizing official .
+
+noaa's poa&m policy requires mitigation of critical and high risk vulnerabilities within 30 days , which noaa officials explained that they interpreted as requiring mitigation within 30 days of establishment of a poa&m .
+
+in addition , the commerce policy calls for the authorizing official to officially accept the risk if the vulnerability cannot be remediated within the required timeframe .
+
+the jpss program has implemented the ato process on both its current system ( block 1.2 ) and planned system upgrade ( block 2.0 ) in july 2015 , and plans to obtain another ato for both blocks by july 2016 .
+
+the authorizing officials for the jpss ground system are the deputy assistant administrator at nesdis and the noaa chief information officer .
+
+to obtain its ato , the jpss program made progress in addressing many of its security weaknesses through poa&ms .
+
+specifically , the program assigned a level of criticality to each poa&m , and tracks and reports the status of all poa&ms at the monthly program management council meetings .
+
+the jpss program office drafted poa&ms for deficiencies in both the existing ground system ( block 1.2 ) and its planned ground system upgrade ( block 2.0 ) .
+
+also , the program office plans to remediate all critical and high risk vulnerabilities before going live with block 2.0 in august 2016 .
+
+however , the program has not complied with the department of commerce policy for remediating critical and high risk vulnerabilities within 30 days or with noaa's policy for remediating such poa&ms within 30 days .
+
+after a security scan conducted in march 2015 identified over 1,000 critical and high risk vulnerabilities on block 1.2 and almost 400 critical and high risk vulnerabilities on block 2.0 , the program established poa&ms to address these vulnerabilities .
+
+these vulnerabilities included use of outdated software , an obsolete web server , and older virus definitions .
+
+at the time the poa&ms were established in august 2015 , the 1,400 vulnerabilities were already over 4 months old .
+
+the jpss program set completion dates for the poa&ms of august 2016 for block 2.0 and january 2017 for block 1.2 .
+
+these anticipated completion dates are 17 and 22 months later than required by commerce and noaa policies .
+
+in addition to the poa&ms resulting from the security controls assessment , the jpss program does not plan to address other poa&ms in a timely manner .
+
+the program consistently establishes due dates for its poa&ms that are 1 to 3 years in the future .
+
+this is illustrated by the following examples: noaa created a poa&m for upgrading its operating systems to supportable platforms and applying all recommended patches to the system to improve security posture and reduce its risk .
+
+the issues associated with the unsupportable platforms are scheduled for completion in 2016 , 3 years after the poa&m was opened .
+
+noaa created a poa&m in 2013 to improve configuration settings for its antivirus software .
+
+this fix is also estimated to occur in late 2016 , 3 years after the issue was identified .
+
+in 2013 , noaa created a poa&m to protect the integrity of data transmissions .
+
+this poa&m would ensure that the system monitors for unauthorized access to the system and enforces authorization requirements .
+
+noaa plans to fully mitigate this weakness in late 2016 .
+
+the extended time it takes the jpss program to resolve vulnerabilities is a longstanding issue .
+
+in august 2014 , the department's inspector general reported that it took the program 11 to 14 months to remediate high risk vulnerabilities identified between 2011 and 2013 .
+
+the inspector general noted that this slow rate of remediation was not sufficient to keep up with the rapid growth in the number of vulnerabilities .
+
+program officials also noted that it is often not possible to remediate critical and high risk vulnerabilities within 30 days because patches may not be available for selected components , testing may take longer than 30 days , and certain changes need to be coordinated with mission partners .
+
+program officials also stated that they plan to modify their internal procedures associated with the federal information processing standard 200 security control baseline analysis document to allow longer timelines when 30 days is not feasible .
+
+further , in commenting on a draft of this report , noaa officials stated that the program decided to delay the due date for certain poa&ms on block 1.2 that would require significant changes in architecture to coincide with the delivery of block 2.0 .
+
+while the 30 days called for in commerce and noaa policies may be challenging , noaa's ground system has been operating for years with known vulnerabilities due to the backlog of unresolved poa&ms .
+
+these vulnerabilities threaten the confidentiality , integrity , and availability of the ground system that supports s - npp operations .
+
+until the program remediates these vulnerabilities and addressed poa&ms in a timely manner , the jpss program remains at increased risk of potential exploits .
+
+in accordance with noaa policy , the jpss program established a continuous monitoring plan to ensure information security controls are working .
+
+consistent with the plan , the program conducts regular security control and vulnerability assessments , monitors the status of remedial actions , and briefs management on a monthly basis on security status .
+
+the jpss program also monitors potential security control weaknesses by tracking incidents and intrusions , on which it reports to a noaa - wide incident response team .
+
+like other federal agencies , noaa has experienced several recent information security incidents regarding unauthorized access to web servers and computers .
+
+specifically , noaa officials reported 10 medium and high severity incidents related to the jpss ground system between august 2014 and august 2015 .
+
+of these , noaa has closed 6 of the 10 incidents .
+
+the incidents that were closed involved hostile probes , improper usage , unauthorized access , password sharing , and other it - related security concerns .
+
+according to noaa officials , the jpss program office and the noaa incident response team track all information security incidents .
+
+however , inconsistencies exist in the status of incidents being tracked .
+
+specifically , there are differences between what is being tracked by the jpss program office and what is closed by noaa's incident response team .
+
+two of the four incidents that were recommended for closure by the jpss program office are currently still open according to the incident report .
+
+jpss program officials explained that they can only recommend the closure of an incident and the noaa incident response team is ultimately responsible for closing an incident based on the information that was provided .
+
+thus , the inconsistency in the status of incidents should be resolved when noaa updates its tracking tool .
+
+until noaa and the jpss program have a consistent understanding of the status of incidents , there is an increased risk that key vulnerabilities will not be identified or properly addressed .
+
+over the last year , noaa made progress in assessing the potential for a satellite gap , improved its satellite gap mitigation plan , and completed multiple mitigation activities ; however , key shortfalls remain on these efforts .
+
+to ensure that satellites are available when needed , satellite experts consider performing annual assessments of a satellite's health and future availability to be a best practice .
+
+the jpss satellite program completed such assessments in 2013 , 2014 , and 2015 and determined that a near - term gap in satellite data is unlikely , but there are weaknesses in noaa's analysis .
+
+further , government and industry best practices call for the development of contingency plans to maintain an organization's essential functions in the case of an adverse event such as a gap in critical satellite - based data .
+
+noaa has developed such plans and has improved them over the last few years ; however , shortcomings remain in its current plan .
+
+in addition , noaa is in the process of implementing the activities it identified in the plan .
+
+at the conclusion of our review , program officials provided an update on the status of key mitigation activities , and noted that they plan to continue to work to improve its gap mitigation plan in 2016 .
+
+we previously reported that noaa was facing a potential near - term gap in polar data between the expected end of useful life of the s - npp satellite and the beginning of operation of the jpss - 1 satellite .
+
+as of october 2013 , noaa officials stated that a 3-month gap was likely based on an analysis of the availability and robustness of the polar constellation .
+
+in april 2015 , noaa revised its assumption of how long s - npp will last by adding up to 4 years to its expected useful life .
+
+under this new scenario , noaa would not anticipate experiencing a near - term gap in satellite data because s - npp would last longer than the expected start of operations for jpss - 1 .
+
+currently , jpss - 1 is expected to be launched in march 2017 with a 3-month on - orbit check out period ( through june 2017 ) and jpss - 2 is expected to launch in november 2021 .
+
+figure 6 shows the latest estimate of the expected lives of noaa's polar satellites .
+
+while the outlook regarding the length of a potential gap has improved , there are several reasons why a potential gap could still occur and last longer than noaa anticipates .
+
+for instance , the s - npp satellite could fail sooner than expected , or the jpss - 1 satellite could either encounter delays during its remaining development and testing , or fail upon launch or in early operations .
+
+under these scenarios , a gap is still possible , and could last for up to 5 years in the event of a launch failure .
+
+if the jpss - 2 satellite were to be delayed or encounter problems as well , a gap could be even longer .
+
+space and satellite experts consider performing annual assessments of a satellite's health and future availability to be a best practice .
+
+for example , the department of defense ( dod ) requires annual assessments of the health of its satellite assets as part of its budget preparations .
+
+the assessments show , among other things , the probability that a specific satellite or instrument will be available for use at a given time in the future .
+
+while this assessment is not required under noaa policy , in 2013 the jpss program began performing an annual analysis of the expected availability of satellites in the polar constellation .
+
+the program did this to get regular updates on the health of individual satellites and to help plan future satellite programs and launch dates .
+
+according to program officials , noaa uses these analyses to support their strategies on gap mitigation .
+
+among other things , the analyses show the likely availability of each satellite and instrument over time , scenarios showing the effects on availability given impact from space debris and a life limiting factor on the atms instrument , and scenarios for overall polar constellation availability .
+
+see appendix iii for more information on what the availability analysis shows for the current polar satellite constellation .
+
+in december 2014 , we reported that noaa's 2013 assessment of satellite availability had several limitations , including inconsistent launch date plans , unproven assumptions about on - orbit checkout and validation , and exclusion of the risk of a potential failure due to space debris .
+
+agency officials acknowledged the assessment's limitations and completed updated assessments in december 2014 and november 2015 .
+
+noaa made specific improvements in its 2014 assessment .
+
+specifically , noaa improved the underlying analysis of s - npp quality through additional analysis of the existing life and health of the s - npp satellite bus , using data through mid - 2014 ; showed both individual instrument and overall satellite availability over time for the s - npp and jpss satellites ; showed overall availability over time of all key performance parameter instruments ( regardless of satellite ) , and for the constellation's robustness criteria ; and showed several availability scenarios depicting what would happen in the event of a loss of the jpss - 1 satellite .
+
+in addition , the november 2015 assessment made further improvements by including key factors that could have an effect on s - npp's useful life in its analysis .
+
+specifically , the newer assessment includes actual instrument performance through mid - 2015 , assumptions about the risk of space debris , and information on the health of s - npp's batteries .
+
+these enhancements help to better conceptualize decisions noaa will need to make in planning and launching future satellites .
+
+however , weaknesses remain in the latest assessment , which decrease noaa's assurance that its satellite life estimates are reliable .
+
+specifically: noaa assumes that jpss - 1 data from key instruments will be available to satellite data users for operational use 3 months after launch , which is far less time than it took to calibrate and validate these instruments for operational use on s - npp .
+
+while initial satellites in a series are more difficult to calibrate and validate than subsequent ones and some unvalidated data may be available earlier , this estimate ( which is 2 to 3 times faster than was experienced on s - npp ) appears to be overly optimistic .
+
+this may mean that the jpss - 1 satellite takes longer to become operational than noaa is planning .
+
+noaa's analysis of the degrading health of the s - npp satellite is not consistent with the estimated life dates from its april 2015 flyout chart ( as shown in figure 6 ) .
+
+specifically , the flyout chart shows s - npp with an extended useful life through late 2020 , while the assessment shows that there is only a 50 percent likelihood that s - npp will be fully functioning in 2020 .
+
+jpss program officials stated that they plan to perform another assessment in 2016 .
+
+until it has a strong assurance of how long the jpss satellites are likely to last using an assessment that includes assumptions that are more consistent with past experiences , noaa risks not adequately planning for mitigating a potential loss , or not communicating to its various stakeholders when its satellites are likely to fail .
+
+government and industry best practices call for the development of contingency plans to maintain an organization's essential functions in the case of an adverse event .
+
+a summary of guidelines for developing a sound contingency plan are identified in table 6 below .
+
+in october 2012 , noaa developed a contingency plan ( which it refers to as its gap mitigation plan ) , which was subsequently updated in 2014 and in april 2015 .
+
+in 2013 , we reviewed noaa's original contingency plan and reported that it had shortcomings in nine areas , including that the agency had not selected strategies from its plan to be implemented or developed procedures and actions to implement the selected strategies .
+
+we made a recommendation to establish a more comprehensive contingency plan for potential satellite data gaps which included these and other elements .
+
+noaa agreed with our recommendation and worked to implement it .
+
+in 2014 , we reviewed a revised plan and evaluated noaa's progress against the weaknesses we had previously identified .
+
+we reported that it had completed two of the nine areas , made partial progress in five areas , and made no progress in two areas .
+
+in its most recent contingency plan , noaa fully addressed two of the remaining seven issues , conducted work in four areas , and had not addressed the remaining issue .
+
+see table 7 for details on the seven areas that were not fully addressed during our prior reviews .
+
+in summary , noaa made progress by listing the contingency strategies it selected to be implemented and has integrated strategies identified after the 2014 plan was developed .
+
+it also detailed plans to make jpss - 1 data available as soon as possible after launch .
+
+however , noaa has not yet documented the jpss program's required recovery time and has not developed an integrated master schedule for gap mitigation activities .
+
+the program updated the status of ongoing and planned mitigation activities in early 2016 , and plans to issue an updated contingency plan later in 2016 .
+
+noaa identified 35 gap mitigation activities and is making progress in implementing them .
+
+these activities fall into three general categories: ( 1 ) understanding the probability and the impact of a gap , ( 2 ) reducing the likelihood of a gap , and ( 3 ) reducing the impact of a gap .
+
+as of january 2016 , 16 activities had been completed , including transitioning the s - npp satellite from a research satellite to a fully operational satellite .
+
+another 18 activities are ongoing , including assimilating more observations from commercial aircraft observations and unmanned aerial systems into weather models , and leveraging data and models from the european center for medium - range weather forecasts into national weather service weather models .
+
+one other activity is planned for the future .
+
+see table 8 below for details on these activities .
+
+while these gap mitigation activities are important to help mitigate the impact of a satellite data gap , noaa acknowledges that no mitigation activities can fully replace polar - orbiting satellite observations .
+
+noaa has begun planning for new satellites to ensure the future continuity of polar satellite data .
+
+this program is called the polar follow - on ( pfo ) .
+
+according to noaa officials , pfo will allow for polar satellite coverage in the afternoon orbit into the 2030s .
+
+noaa plans to eventually manage pfo as an integrated program with the current jpss program .
+
+the pfo budget includes operational costs for both it and the current jpss program after fiscal year 2025 .
+
+noaa officials have stated that part of its goal for the future satellite program is to provide “robustness” in order to minimize the chance of a data gap like the near - term one the agency is facing .
+
+according to noaa documentation , the main objectives of the pfo program are to ( 1 ) have the earliest possible launch readiness for the jpss - 3 and jpss - 4 satellites in order to achieve robustness , and ( 2 ) to minimize costs .
+
+as recommended by a 2013 independent review team , noaa would achieve robustness on its polar satellite program when ( 1 ) it would take two failures to create a gap in data for key instruments , and ( 2 ) the agency would be able to restore the system to a two - failure condition within 1 year of a failure .
+
+this means that noaa would need a backup satellite in orbit to provide data in the event of one failure , and that the agency would have the ability to launch another satellite within a year to replace an on - orbit need .
+
+achieving robustness would greatly minimize the chances of a single point of failure — that is , a problem with one satellite causing an immediate loss of data .
+
+noaa has identified the satellites it plans to build as a part of pfo .
+
+the pfo program is planned to include two more satellites in the jpss series , called jpss - 3 and jpss - 4 .
+
+noaa plans for these satellites to be nearly identical to the jpss - 2 satellite .
+
+each satellite will include the three instruments that are considered to be key performance parameters: the advanced technology microwave sounder ( atms ) , the cross - track infrared sounder ( cris ) , and the visible infrared imaging radiometer suite ( viirs ) .
+
+the satellites will also include the ozone mapping and profiler suite - nadir ( omps - n ) .
+
+these four instruments are environmental sensors that provide critical data used in numerical weather prediction and imagery .
+
+noaa also is planning for two climate instruments that are on jpss - 2 — the ozone mapping and profiler suite - limb ( omps - l ) and the radiation budget instrument — to be hosted on jpss - 3 and jpss - 4 as well .
+
+however , according to noaa , these instruments are not essential and their funding from jpss - 2 onward is uncertain .
+
+in addition to the jpss - 3 and jpss - 4 satellites , pfo is planned to include a cubesat satellite .
+
+specifically , noaa plans to fly a satellite called the earth observing nanosatellite – microwave .
+
+this satellite , due to launch in 2020 , would be able to replace some , but not all , atms data in the event of a gap between jpss - 1 and jpss - 2 .
+
+program officials have stated that , because of its low cost and the experience the agency will gain from the mission , noaa will launch the earth observing nanosatellite – microwave regardless of the status of the remainder of the constellation .
+
+figure 7 shows the planned expected lives for all of the jpss and pfo satellites .
+
+noaa has taken several steps in planning the pfo program .
+
+specifically , it established goal launch dates , high - level annual budget estimates , and roles and responsibilities for noaa offices that will play a role on the new program .
+
+however , noaa is in the process of updating key formulation documents for pfo , such as high - level requirements , an updated concept of operations and project plan , and budget information for key components .
+
+program officials stated that they expect to complete key documents by mid - 2016 .
+
+noaa plans to develop the pfo satellites well before they are needed .
+
+in general , the agency makes a distinction between the date it wants to have a satellite available for launch ( called a launch readiness date ) and the actual planned launch date .
+
+noaa set the launch readiness dates for the jpss - 3 and jpss - 4 satellites as january 2024 and april 2026 , respectively .
+
+noaa also has a contingency plan to launch the jpss - 3 satellite with only the two most important instruments ( atms and cris ) as early as 2023 , if it is needed to mitigate a near - term satellite data gap due to unanticipated problems with jpss - 1 or jpss - 2 .
+
+in contrast , noaa's planned launch dates for jpss - 3 and jpss - 4 are 2 and 5 years later , respectively .
+
+noaa currently plans , beginning with jpss - 2 , to launch a new satellite every 5 years in order to achieve a robust constellation of satellites .
+
+specifically , planned launch dates for the jpss - 3 and jpss - 4 satellites are july 2026 and july 2031 , respectively ( see figure 7 ) .
+
+noaa has given several reasons for planning to achieve launch readiness several years ahead of launch .
+
+according to noaa officials , this difference between planned launch readiness and actual launch dates , called the “build - ahead” strategy , is part of an effort to achieve the two robustness criteria as quickly as possible .
+
+noaa officials also stated that early readiness would allow a “robust sparing strategy” for atms and cris .
+
+according to noaa , this would allow for completed components from the jpss - 3 and jpss - 4 satellites to be substituted as needed if parts failed during integration and test of an earlier satellite .
+
+additionally , according to noaa , experienced contractor staff needed to complete development efficiently for the pfo satellites are in place now .
+
+such staff may not be available if there is an extended break in development time .
+
+however , uncertainties remain on whether it is necessary to develop both jpss - 3 and jpss - 4 early in order to achieve robustness .
+
+for example , while noaa flyout charts for the polar constellation list the jpss satellites starting with jpss - 1 as lasting only 7 years , program officials have stated that they could last as long as 10 or 11 years .
+
+in addition , noaa recently updated the flyout chart to show that s - npp could last as long as 9 years , based on past performance .
+
+if the satellites last longer than expected , then there could be unnecessary redundancy .
+
+for example , at the extended useful life estimate of 10 to 11 years , jpss - 1 , jpss - 2 , and jpss - 3 would still be available in 2027 when jpss - 4 completes development .
+
+if noaa were to delay launching jpss - 4 until it is needed , the satellite could be in storage for 4 years .
+
+figure 8 shows anticipated satellite lifetimes with extended useful lives .
+
+alternatively , if the early satellites do not last longer than expected , then there is an increased potential for future gaps in polar satellite coverage , as there will be several periods in which only one satellite is on orbit .
+
+due to this uncertainty , noaa faces important decisions on timing the development and launch of the remaining satellites in the jpss program .
+
+noaa requires cost / benefit studies for major programs to assist in making major decisions .
+
+however , the program did not evaluate the costs and benefits of launch scenarios based on the latest estimates of how long the satellites would last .
+
+such an analysis is needed to ensure robust coverage while minimizing program costs , and could help determine the most cost - effective launch schedule .
+
+for example , if jpss - 4 development could be deferred , the annual cost of pfo might be decreased .
+
+a potential cost decrease is important because , according to noaa documentation , the overall funding need for pfo is expected to be about $8.2 billion , compared to about $11.3 billion for the full jpss program through 2025 .
+
+until noaa ensures that its plans for future polar satellite development are based on the full range of estimated lives of potential satellites , the agency may not be making the most efficient use of the nation's sizable investment in the polar satellite program .
+
+facing a potential gap in weather satellite data , noaa has made progress in developing the jpss - 1 satellite and is on track to launch it in march 2017 .
+
+however , the agency continues to experience cost growth , schedule delays , and technical risks on key components .
+
+in particular , a component on the spacecraft has fallen more than 6 months behind schedule , putting the spacecraft on the critical path leading up to the planned launch date .
+
+continued close management of costs , schedules , and risks will be essential to ensuring a successful and timely launch .
+
+given the increasing information security risks across the federal government , building information security into ground systems is a critical component of the jpss system development .
+
+although the jpss program has assessed key risks , established and evaluated security controls , and remediated selected control weaknesses , key deficiencies remain .
+
+specifically , the team responsible for testing security controls did not have all the information it needed to test the entire system .
+
+also , while the assessment found numerous vulnerabilities , the program has not addressed them in a timely manner .
+
+these security shortfalls put the program at risk of being compromised , and there have been a number of security incidents affecting the ground system in recent years .
+
+while noaa's incident response group has effectively addressed security incidents , there are discrepancies between noaa and the jpss program on the status of incidents .
+
+such discrepancies make it more difficult to ensure that all incidents are identified , addressed , and tracked to closure .
+
+until these deficiencies are addressed , the polar satellite infrastructure will continue to be at increased risk of compromise .
+
+to address the risk of a near - term satellite gap and to move to a more robust constellation of polar satellites , noaa has assessed the health of its operational satellites annually , established and improved its gap mitigation plans , and is beginning to plan a new satellite program to ensure coverage through 2038 .
+
+while the jpss program improved its satellite assessment and gap mitigation plans , shortfalls remain , including identifying recovery time objectives for key data products .
+
+in prior reports , we have made recommendations to noaa to improve its satellite availability assessment and its gap mitigation plans .
+
+we continue to believe that these recommendations are valid and , if fully implemented , would improve noaa's ability to assess and manage the risk of a gap in satellite data .
+
+we will continue to monitor noaa's ongoing efforts to address our prior recommendations .
+
+while noaa is planning a follow - on polar satellite program to better ensure polar satellite coverage in the future , the agency has not evaluated the costs and benefits of different launch scenarios based on its updated understanding of how long its satellites might last , and uncertainties remain in determining appropriate dates for the development and launch of the satellites .
+
+unless noaa makes launch decisions based on the most current estimates of useful life of its satellites , the agency may not make the most effective and economical use of the nation's sizable investment in polar satellites .
+
+given the importance of addressing risks on the jpss satellite program , we are making the following four recommendations to the secretary of commerce .
+
+specifically , we recommend that the secretary direct the administrator of noaa to take the following actions: establish a plan to address the limitations in the program's efforts to test security controls , including ensuring that any changes in the system's inventory do not materially affect test results .
+
+when establishing plans of action and milestones to address critical and high risk vulnerabilities , schedule the completion dates within 30 days , as required by agency policy .
+
+ensure that the agency and program are tracking and closing a consistent set of incident response activities .
+
+evaluate the costs and benefits of different launch scenarios for the pfo program based on updated satellite life expectancies to ensure satellite continuity while minimizing program costs .
+
+we sought comments on a draft of our report from the department of commerce and nasa .
+
+we received written comments from the department of commerce transmitting noaa's comments , which are reprinted in appendix iv .
+
+noaa concurred with all four of our recommendations and identified steps it is taking to implement them .
+
+in its comments , noaa wrote that it recognizes the need to close polar data gaps and to keep pace with changes in information security requirements ; however , it noted that resource constraints and shifting priorities have presented challenges in meeting these objectives .
+
+in response to our second recommendation , to schedule completion dates for plans of actions and milestones ( poa&m ) to address critical and high - risk vulnerabilities within 30 days as required by agency policy , noaa concurred and noted that jpss would continue to follow agency policy .
+
+noaa explained that agency policy allows the authorizing official to accept and document risks when remediation of vulnerabilities cannot be performed as anticipated .
+
+it further noted that there are two situations which may result in remediation taking longer than the policy requires: ( 1 ) when applying patches to a system that must remain static while in development and testing , and ( 2 ) when applying patches to a complex operational system that requires analysis and testing prior to deployment in order to protect the availability of the system .
+
+while we acknowledge that there are valid reasons that remediating a poa&m might take longer than the 30 days required by agency policy , the jpss program did not follow agency policy in that it did not schedule completion of key poa&ms within 30 days and did not have documentation from the authorizing official accepting the risk of a delayed remediation schedule for critical and high - risk vulnerabilities , as we note in this report .
+
+moving forward , noaa noted that it plans to update its fips 200 compliance document to include steps to obtain and document risk acceptance from the authorizing official .
+
+we agree that updating this plan and implementing it will help ensure that the program is better aligned with agency policy and in a better position to remediate or accept vulnerabilities .
+
+in response to our fourth recommendation , to evaluate the costs and benefits of different launch scenarios for the pfo program based on updated satellite life expectancies , noaa concurred and noted in its letter that it had evaluated the costs and benefits of different launch scenarios using the latest estimates of satellite lives as part of its budget submission .
+
+we discussed this with program officials in april 2016 .
+
+program officials explained that the program determined it would minimize costs by building the satellites as soon as possible , and it would minimize risks by planning to launch the satellites at a cadence that would meet the program's goals for a robust polar constellation .
+
+however , the agency did not provide sufficient supporting evidence or artifacts .
+
+without documentation showing specific comparisons of options with respect to cost totals and overall risk , the assumptions noaa used , and the processes and time frames in which noaa's decisions were reached , we were not able to validate the agency's results .
+
+noaa also stated in its letter that it will continue to update its analysis based on , among other things , updated satellite life expectancies and information gained from award of future spacecraft and instrument contracts .
+
+doing so would help ensure that the agency is making the most efficient use of investments in the polar satellite program .
+
+noaa also provided technical comments , which we have incorporated into our report , as appropriate .
+
+in its technical comments , noaa officials referred to our finding that the satellite availability assessment is not consistent with the estimated life dates in its flyout chart , noting that ( 1 ) its flyout charts are not intended to depict a satellite's estimated life , and ( 2 ) our focus on s - npp's 50 percent likelihood of functioning in 2020 is inappropriate because jpss - 1 will be the primary operational satellite in 2020 .
+
+however , the flyout charts show “planned mission life” according to noaa requirements .
+
+it is misleading to show a mission life extending through late 2020 if the agency's estimate of the satellite's health puts it at only a 50 percent likelihood of full functionality .
+
+furthermore , while jpss - 1 should be the primary satellite and s - npp should be a secondary satellite in 2020 , the status of s - npp's health would become paramount if jpss - 1 experienced a failure on launch or on orbit .
+
+on march 16 , 2016 , an audit liaison for nasa provided an e - mail stating that the agency would provide any input it might have to noaa for inclusion in noaa's comments .
+
+we are sending copies of this report to the appropriate congressional committees , the secretary of commerce , the administrator of nasa , the director of the office of management and budget , and other interested parties .
+
+in addition , the report will be available at no charge on the gao website at http: / / www.gao.gov .
+
+if you or your staff have any questions on the matters discussed in this report , please contact me at ( 202 ) 512-9286 or at pownerd@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made major contributions to this report are listed in appendix v .
+
+our objectives were to ( 1 ) evaluate the national oceanic and atmospheric administration's ( noaa ) progress on the joint polar satellite system ( jpss ) program with respect to schedule , cost , and key risks ; ( 2 ) assess noaa's efforts to plan and implement appropriate information security protections for polar satellite data ; ( 3 ) evaluate noaa's efforts to assess the probability of a near - term gap in polar satellite data , as well as its progress in implementing key activities for mitigating a gap ; and ( 4 ) assess noaa's efforts to plan and implement a follow - on polar satellite program .
+
+to evaluate noaa's progress on the jpss satellite program with respect to schedule , cost , and key risks , we compared actual or anticipated completion dates for important flight and ground project milestones against previously anticipated completion dates between july 2013 and december 2015 , and explored the root causes of recent delays .
+
+we also compared cost data for program instruments and other components to previous data for those same components , to determine differences over time .
+
+we compared monthly management reports on key program risks to determine the status of major remaining program risks , and to determine which risks had been closed .
+
+we also compared risk data to source documents such as risk registers .
+
+in addition , we interviewed jpss program office staff for details on schedule , cost , and risk information .
+
+we assessed the reliability of monthly reports on the jpss program's schedule , cost , and risk information by comparing these data to other program artifacts and through interviews with knowledgeable officials .
+
+we found these data to be sufficiently reliable for our purposes .
+
+in order to assess noaa's efforts to plan and implement appropriate information security protections for polar satellite data , we compared commerce and noaa information security policies and jpss program information security practices to selected federal information security modernization act of 2014 ( fisma ) requirements as well as implementing guidance from the office of management and budget and the national institute of standards and technology ( nist ) .
+
+specifically , we assessed policies and practices in the areas outlined in nist's risk management framework: system categorization ; selection , implementation , and assessment of security controls ; authorization to operate ; and ongoing monitoring .
+
+we obtained and analyzed key artifacts supporting the jpss program's efforts to address these risk management areas , including the program's system categorization results , the system security plan , the system controls assessment report , authorization to operate documentation , incident reports , and the program's continuous monitoring plan .
+
+we interviewed key managers and staff from the jpss program office and the noaa office of the chief information officer to better understand their information security policies and practices .
+
+we assessed the reliability of the agency's information on controls and vulnerabilities by comparing it to supporting documentation and artifacts , and found that the data were sufficiently reliable for our purpose of reporting on shortfalls in agency practices .
+
+to evaluate noaa's efforts to assess the probability of a near - term gap in polar satellite data , as well as its progress in implementing key activities for mitigating a gap , we analyzed noaa's methodology for determining the expected length of a potential gap and compared it against other gap estimates and availability requirements .
+
+we reviewed noaa's april 2015 polar satellite gap mitigation / contingency plan , and compared it to best practices in contingency planning developed by leading government and industry sources as well as shortfalls we previously identified in noaa's october 2012 and february 2014 contingency plans .
+
+we evaluated the status of noaa's gap mitigation activities .
+
+we interviewed officials from the jpss program , as well as noaa's office of atmospheric research , national weather service , and noaa satellite , data , and information service staff for further information on satellite availability details and gap mitigation activities .
+
+we assessed the reliability of noaa's assessment of satellite availability by comparing it to underlying analyses , prior assessments , and shortfalls we identified on prior assessments .
+
+we found the data to be sufficiently reliable for our purpose of reporting on strengths and weaknesses of the agency's assessment .
+
+in order to assess noaa's efforts to plan and implement the jpss polar follow - on ( pfo ) program , we analyzed program documentation to determine the scope , expected cost , timelines , and key risks affecting the program .
+
+we compared this information against other noaa and jpss program documentation and identified key information that has yet to be completed for the pfo program .
+
+we also met with jpss program staff for further insights on their plans for the pfo program .
+
+we conducted our work at noaa and its component offices — including the offices of the jpss program — and the facilities of a program contractor .
+
+we conducted this performance audit from may 2015 to may 2016 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+protect organizational operations , assets , individuals , other organizations , and the nation from a diverse set of threats including hostile cyber - attacks , natural disasters , structural failures , and human errors .
+
+the guidance includes privacy controls to be used in conjunction with the specified security controls to achieve comprehensive security and privacy protection .
+
+in november 2015 , the national oceanic and atmospheric administration ( noaa ) updated its assessment of the availability the existing suomi national polar - orbiting partnership ( s - npp ) satellite over time .
+
+the agency determined that there is an 80 percent likelihood that s - npp will be able to provide key measurements until data from the next joint polar satellite system satellite ( called jpss - 1 ) are available , if jpss - 1 is launched in march 2017 and available to begin operation in september 2017 ( see figure 9 ) .
+
+in addition to the contact named above , colleen phillips ( assistant director ) , shaun byrnes ( analyst - in - charge ) , chris businsky , kara lovett epperson , torrey hardee , franklin jackson , and lee mccracken made key contributions to this report .
+

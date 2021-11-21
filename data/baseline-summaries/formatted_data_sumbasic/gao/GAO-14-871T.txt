@@ -1,0 +1,260 @@
+thank you for inviting me to participate in today's hearing on the implementation of the patient protection and affordable care act ( ppaca ) and healthcare.gov .
+
+as you know , ppaca requires the establishment of a health insurance marketplace in each state to assist consumers and small businesses in comparing , selecting , and enrolling in health plans offered by participating private insurers .
+
+the department of health and human services' ( hhs ) centers for medicare & medicaid services ( cms ) is responsible for overseeing the establishment of these marketplaces , including creating a federally facilitated marketplace for states that do not establish their own .
+
+this marketplace is supported by an array of information technology ( it ) systems , including healthcare.gov , the website that provides the consumer portal to the marketplace , and related data systems .
+
+to facilitate the enrollment process , healthcare.gov and its supporting it systems must collect and process individuals' sensitive personal information , such as employment and tax information .
+
+portions of this information may be accessed by multiple organizations , including cms , other federal agencies , insurers , and state agencies .
+
+accordingly , ensuring the security and privacy of this information is critically important .
+
+my statement today will summarize the key findings from our recently issued work on the privacy and security protections of the healthcare.gov our specific objectives for that review website and related it systems.were to ( 1 ) describe the planned exchanges of information between the healthcare.gov website , supporting it systems , and the federal , state , and other organizations that are providing or accessing that information , including special arrangements for handling tax information in compliance with legal requirements , and ( 2 ) assess the effectiveness of the programs and controls implemented by cms to protect the security and privacy of the information and it systems used to support healthcare.gov .
+
+more details on our scope and methodology are contained in the reports .
+
+the work on this statement was based on was performed in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+ppaca directed each state to establish a state - based health insurance marketplace for individuals to enroll in private health insurance plans , apply for income - based financial assistance , and , as applicable , obtain a determination of their eligibility for other health coverage programs , such as medicaid or the state children's health insurance program ( chip ) .
+
+for states that did not establish a marketplace , ppaca required the federal government to establish and operate a marketplace for that state , referred to as the federally facilitated marketplace .
+
+for plan year 2014 , 17 states elected to establish their own marketplace , and cms operated a federally facilitated marketplace or partnership marketplace for 34 states .
+
+the act required the marketplaces to be operational on or before january 1 , 2014 , and healthcare.gov began facilitating enrollments on october 1 , 2013 , at the beginning of the first annual open enrollment period established by cms .
+
+the initial open enrollment period ended on april 15 , 2014 .
+
+requirements for ensuring the security and privacy of individuals' personally identifiable information ( pii ) , such as that collected and processed by healthcare.gov and related systems , have been established by a number of federal laws and guidance .
+
+these include the following: the federal information security management act of 2002 ( fisma ) , which requires each federal agency to develop , document , and implement an agency - wide information security program .
+
+national institute of standards and technology ( nist ) guidance and standards , which are to be used by agencies to , among other things , categorize their information systems and establish minimum security requirements .
+
+the privacy act of 1974 , which places limitations on agencies' collection , access , use , and disclosure of personal information maintained in systems of records .
+
+the computer matching act , which is a set of amendments to the privacy act requiring agencies to follow specific procedures before engaging in computerized comparisons of records for establishing or verifying eligibility or recouping payments for federal benefit programs .
+
+the e - government act of 2002 , which requires agencies to analyze how personal information is collected , stored , shared , and managed before developing or procuring information technology that collects , maintains , or disseminates information in an identifiable form .
+
+the health insurance portability and accountability act of 1996 , which requires the adoption of standards for the electronic exchange , privacy , and security of health information .
+
+the internal revenue code , which provides for the confidentiality of tax returns and return information .
+
+irs publication 1075 , which establishes security guidelines for safeguarding federal tax return information used by federal , state , and local agencies .
+
+under fisma , the secretary of hhs has overall responsibility for the department's agency - wide information security program ; this responsibility has been delegated to the department's chief information officer ( cio ) .
+
+the hhs cio is also responsible for the department's response to information security incidents and the development of privacy impact assessments for the department's systems .
+
+the cms center for consumer information and insurance oversight has overall responsibilities for federal systems supporting the federally facilitated marketplace and for overseeing state marketplaces .
+
+further , security and privacy responsibilities for healthcare.gov and supporting systems are shared among several offices and individuals within cms , including the cio , the chief information security officer , component - level information systems security officers , the cms senior official for privacy , and the cms office of e - health standards privacy policy and compliance .
+
+in particular , the cms cio is responsible for implementing and administering the cms information security program , which covers the systems developed by cms to satisfy ppaca requirements .
+
+the chief information security officer is responsible for , among other things , ensuring the assessment and authorization of all systems and the completion of periodic risk assessments , including annual security testing and security self - assessments .
+
+the process of enrolling for insurance through healthcare.gov is facilitated by a number of major systems managed by cms .
+
+figure 1 shows the major entities that exchange data in support of marketplace enrollment in qualified health plans and how they are connected .
+
+the major systems that facilitate enrollment include the following: the healthcare.gov website: this serves as the user interface for individuals to obtain coverage through a federally facilitated marketplace .
+
+it has two major functions: ( 1 ) providing information about ppaca health insurance reforms and health insurance options and ( 2 ) facilitating enrollment in coverage .
+
+enterprise identity management system: this system allows cms to verify the identity of an individual applying for coverage and establish a login account for that user .
+
+once an account is created using a name and e - mail address , the person's identity is confirmed using additional information , which can include a social security number , address , phone number , and date of birth .
+
+federally facilitated marketplace system ( ffm ) : this system consists of three major modules to facilitate ( 1 ) eligibility and enrollment , ( 2 ) plan management , and ( 3 ) financial management .
+
+for eligibility , an applicant's information is collected to determine whether they are eligible for insurance coverage and financial assistance .
+
+once eligibility is determined , the system allows the applicant to view , compare , select , and enroll in a qualified health plan .
+
+the plan management module is to provide state agencies and issuers of qualified health plans with the ability to submit , certify , monitor , and renew qualifying health plans .
+
+the financial management module is to facilitate payments to health insurers , among other things .
+
+from a technical perspective , the ffm system relies on “cloud - based” data processing and storage services from private - sector vendors .
+
+federal data services hub: this system acts as a single portal for exchanging information between the ffm system and other systems or external partners , which include other federal agencies , state - based marketplaces , other state agencies , other cms systems , and issuers of qualified health plans .
+
+the data hub supports , among other things , real - time eligibility queries , transfer of applicant and taxpayer information , exchange of enrollment information with plan issuers , monitoring of enrollment information , and submission of health plan applications .
+
+healthcare.gov - related activities are also supported by other cms systems , including a data warehouse system to provide reporting and performance metrics ; the health insurance oversight system , which provides an interface for issuers of qualified health plans to submit information about qualifying health plans ; and a general accounting system that handles payments associated with advance premium tax credits and cost - sharing reductions .
+
+in addition , cms relies on a variety of federal , state , and private - sector entities to support healthcare.gov - related activities , and these entities exchange information with cms's systems: federal agencies such as the social security administration ( ssa ) , department of homeland security ( dhs ) , and internal revenue service ( irs ) , along with equifax , inc. ( a private - sector credit agency under contract with cms ) provide or verify information used in making determinations of a person's eligibility for coverage and financial assistance .
+
+the department of defense ( dod ) , office of personnel management ( opm ) , peace corps , and department of veterans affairs ( va ) assist in determining whether a potential applicant has alternate means for obtaining minimum essential coverage .
+
+state - based marketplaces may rely on the ffm system for certain functions , and state medicaid and chip agencies may connect to the ffm to exchange enrollment data , which are typically routed through cms's data hub .
+
+in addition to accessing the plan management and financial management modules of the ffm , issuers of qualified health plans receive information from the system when an individual completes the application process .
+
+agents and brokers may access the healthcare.gov website on behalf of applicants .
+
+to facilitate offline , paper - based applications , cms contracted with a private - sector company for intake , routing , review , and troubleshooting of paper applications for enrollment into health plans and insurance affordability programs .
+
+while cms has security and privacy - related protections in place for healthcare.gov and related systems , weaknesses exist that put the personal information these systems collect , process , and maintain at risk of inappropriate modification , loss , or disclosure .
+
+the agency needs to take a number of actions to address these deficiencies in order to better protect individuals' personally identifiable information .
+
+cms established security - related policies and procedures for healthcare.gov .
+
+specifically , it assigned overall responsibility for securing the agency's information and systems to appropriate officials , including the agency cio and chief information security officer , and designated information system security officers to assist in certifying particular cms systems ; documented information security policies and procedures to safeguard the agency's information and systems ; developed a process for planning , implementing , evaluating , and documenting remedial actions to address identified information security deficiencies ; and established interconnection security agreements with the federal agencies with which it exchanges information , including dod , dhs , irs , ssa , and va ; these agreements identify the requirements for the connection , the roles and responsibilities of each party , the security controls protecting the connection , the sensitivity of the data to be exchanged , and the required training and background checks for personnel with access to the connection .
+
+in addition , cms took steps to protect the privacy of applicants' information .
+
+for example , it published and updated a system - of - records notice for healthcare.gov that addressed required information such as the types of information that will be maintained in the system and the external entities that may receive such information without affected individuals' explicit consent ; developed basic privacy training for all staff and role - based training for staff who have access to pii while executing their routine duties ; and established an incident - handling and breach response plan and an incident response team to manage responses to privacy incidents , identify trends , and make recommendations to hhs to reduce risks to pii .
+
+however , when healthcare.gov was deployed in october 2013 , cms accepted increased security risks because of the following: cms allowed four states to connect to the data hub even though they had not completed all cms security requirements .
+
+these states were given a 60-day interim authorization to connect , because cms officials regarded this as a mission - critical need .
+
+subsequently , all four states addressed the weaknesses in their security assessments and were granted 3-year authorizations .
+
+cms authorized the ffm system to operate even though all the security controls had not been tested for a fully integrated version of the system .
+
+this authority to operate was granted for 6 months , on the condition that a full security assessment was conducted within 60 to 90 days of october 1 , 2013 .
+
+in december 2013 , an assessment of the eligibility and enrollment module was conducted .
+
+however , the plan management and financial management modules , which had not yet been fully developed , were not tested .
+
+although cms developed and documented security policies and procedures , it did not fully implement required actions before healthcare.gov began collecting and maintaining pii from individual applicants: system security plans were not complete .
+
+while system security plans for the ffm and data hub incorporated most of the elements specified by nist , each was missing or had not completed one or more relevant elements .
+
+for example , the ffm security plan did not define the system's accreditation boundary , or explain why five of the security controls called for by nist guidance were determined not to be applicable .
+
+without complete system security plans , agency officials will be hindered in making fully informed judgments about the risks involved in operating those systems .
+
+interconnection agreements were not all complete .
+
+cms had not completed security documentation governing its interconnection with equifax , inc. , but instead was relying on a draft data use agreement that had not been fully approved within cms .
+
+this makes it more difficult for agency officials to ensure that adequate security controls are in place to protect the connection .
+
+privacy risks were not assessed .
+
+in completing privacy impact assessments for the ffm and data hub , cms did not assess risks associated with the handling of pii or identify mitigating controls to address such risks .
+
+without such an analysis , cms cannot demonstrate that it thoroughly considered and addressed options for mitigating privacy risks associated with these systems .
+
+interagency agreements governing data exchanges were not complete .
+
+cms established computer matching agreements with dhs , dod , irs , ssa , and va for its data exchanges to verify eligibility for healthcare coverage and premium tax credits ; however , it had not established such agreements with opm or the peace corps .
+
+this increases the risk that appropriate protections will not be applied to the pii being exchanged with these agencies .
+
+security testing was not complete .
+
+while cms has undertaken , through its contractors and at the agency and state levels , a series of security - related testing activities for various healthcare.gov - related systems , these assessments did not effectively identify and test all relevant security controls prior to deploying the systems .
+
+for example , the assessments of the ffm did not include all the security controls specified by nist and cms , such as incident response controls and controls specified for physical and environmental protection .
+
+in addition , cms could not demonstrate that it had tested all the security controls specified in the ffm's october 2013 security plan , and it did not test all the system's components before deployment or test them on the integrated system .
+
+testing of all deployed eligibility and enrollment modules and plan management modules did not occur until march 2014 , and as of june 2014 ffm testing remained incomplete .
+
+without comprehensive testing , cms lacks assurance that security controls for the ffm system are working as intended .
+
+alternate processing site was not fully established .
+
+cms developed and documented contingency plans for the ffm and data hub that identified activities , resources , responsibilities , and procedures needed to carry out operations during prolonged disruptions of the systems .
+
+it also established system recovery priorities , a line of succession based on the type of disaster , and specific procedures on how to restore both systems and their associated applications in the event of a disaster .
+
+however , although the contingency plans designated a site at which to recover the systems , this site had not been established .
+
+specifically , according to cms , data supporting the ffm were being backed up at the recovery site , but backup systems are not otherwise supported there , limiting the facility's ability to support disaster recovery efforts .
+
+cms did not effectively implement or securely configure key security controls on the systems supporting healthcare.gov .
+
+for example: strong passwords ( i.e. , passwords of sufficient length or complexity ) were not always required or enforced on systems supporting the ffm .
+
+this increases the likelihood that an attacker could gain access to the system .
+
+certain systems supporting the ffm were not restricted from accessing the internet , increasing the risk that unauthorized users could access data from the ffm network .
+
+cms did not consistently apply security patches to ffm systems in a timely manner , and several critical systems had not been patched or were no longer supported by their vendors .
+
+this increased the risk that servers supporting the ffm could be compromised through exploitation of known vulnerabilities .
+
+one of cms's contractors had not properly secured its administrative network , which could allow for unauthorized access to the ffm network .
+
+in addition to these weaknesses , we also identified weaknesses in security controls related to boundary protection , identification and authentication , authorization , and configuration management .
+
+collectively , these weaknesses put healthcare.gov systems and the information they contain at increased and unnecessary risk of unauthorized access , use , disclosure , modification , and loss .
+
+the security weaknesses we identified occurred in part because cms did not ensure that the multiple parties contributing to the development of the ffm system had a shared understanding of how security controls were to be implemented .
+
+specifically , cms and contractor staff did not always agree on how security controls for the ffm were to be implemented or who was responsible for ensuring they were functioning properly .
+
+for example , although cms identified one subcontractor as responsible for managing firewall rules , this responsibility was not included in the subcontractor's statement of work , and staff for the subcontractor said that this was the responsibility of a different contractor .
+
+without ensuring agreement on security roles and responsibilities , cms has less assurance that controls will function as intended , increasing the risk that attackers could compromise the system and the data it contains .
+
+in our september 2014 report , we made the following six recommendations aimed at improving the management of the security of healthcare.gov: 1 .
+
+ensure that system security plans for the ffm and data hub contain all information recommended by nist .
+
+2 .
+
+ensure that all privacy risks associated with healthcare.gov are analyzed and documented in privacy impact assessments .
+
+3 .
+
+develop computer matching agreements with opm and the peace corps to govern data that are being compared with cms data to verify eligibility for advance premium tax credits and cost - sharing reductions .
+
+4 .
+
+perform a comprehensive security assessment of the ffm , including the infrastructure , platform , and all deployed software elements .
+
+5 .
+
+ensure that the planned alternate processing site for the systems supporting healthcare.gov is established and made operational in a timely fashion .
+
+6 .
+
+establish detailed security roles and responsibilities for contractors , including participation in security control reviews , to better ensure effective communication among individuals and entities with responsibility for the security of the ffm and its supporting infrastructure .
+
+in an associated report with limited distribution , we also made 22 recommendations to resolve technical security weaknesses related to access controls , configuration management , and contingency planning .
+
+implementing these recommendations will enable hhs and cms to better ensure that healthcare.gov systems and the information they collect and process are effectively protected from threats to their confidentiality , integrity , and availability .
+
+in its comments on our draft reports , hhs concurred with 3 of the 6 recommendations to fully implement its information security program , partially concurred with the remaining 3 recommendations , and concurred with all 22 of the recommendations to resolve technical weaknesses in security controls , describing actions it had under way or planned related to each of them .
+
+in conclusion , healthcare.gov and its related systems represent a complex system of systems that interconnects a broad range of federal agency systems , state agencies and systems , and other entities , such as contractors and issuers of health plans .
+
+ensuring the security of such a system poses a significant challenge .
+
+while cms has taken important steps to apply security and privacy safeguards to healthcare.gov and its supporting systems , significant weaknesses remain that put these systems and the sensitive , personal information they contain at risk of compromise .
+
+given the complexity of the systems and the many interconnections among external partners , it is particularly important to analyze privacy risks , effectively implement technical security controls , comprehensively test the security controls over the system , and ensure that an alternate processing site for the systems is fully established .
+
+chairman issa , ranking member cummings , and members of the committee , this concludes my statement .
+
+i would be pleased to answer any questions you have .
+
+if you have any questions about this statement , please contact gregory c. wilshusen at ( 202 ) 512-6244 or dr. nabajyoti barkakati at ( 202 ) 512- 4499 .
+
+we can also be reached by e - mail at wilshuseng@gao.gov and barkakatin@gao.gov .
+
+other key contributors to this testimony include john de ferrari , lon chin , west coile , and duc ngo ( assistant directors ) ; mark canter ; marisol cruz ; sandra george ; nancy glover ; torrey hardee ; tammi kalugdan ; lee mccracken ; monica perez - nelson ; justin palk ; and michael stevens .
+
+this is a work of the u.s. government and is not subject to copyright protection in the united states .
+
+the published product may be reproduced and distributed in its entirety without further permission from gao .
+
+however , because this work may contain copyrighted images or other material , permission from the copyright holder may be necessary if you wish to reproduce this material separately .
+

@@ -1,0 +1,396 @@
+as you are aware , the u.s. securities and exchange commission ( sec ) is responsible for enforcing securities laws , issuing rules and regulations that provide protection for investors , and helping to ensure that the securities markets are fair and honest .
+
+to support its demanding financial and mission - related responsibilities , the commission relies extensively on computerized systems .
+
+in order to protect financial and sensitive information — including personnel and regulatory information maintained by sec — from inadvertent or deliberate misuse , fraudulent use , improper disclosure or manipulation , or destruction , it is essential that sec have effective information security controls in place .
+
+on december 16 , 2013 , we issued our report on the audit of the sec's fiscal years 2013 and 2012 financial statements .
+
+identified , among other things , information security control weaknesses that , considered collectively , represent a significant deficiencyinternal control over financial reporting .
+
+gao , financial audit: securities and exchange commission's financial statements for fiscal years 2013 and 2012 , gao - 14-213r ( washington , d.c.: dec. 16 .
+
+2013 ) .
+
+this report presents more detailed information and our recommendations related to the specific information security control weaknesses that we identified during our audit .
+
+our objective was to determine the effectiveness of information security controls for protecting the confidentiality , integrity , and availability of sec's key financial systems and information .
+
+to do this , we examined the commission's information security policies , plans , and procedures ; tested controls over key financial applications ; interviewed key agency officials ; and reviewed our prior reports to identify previously reported weaknesses and assessed the effectiveness of corrective actions taken .
+
+we performed our work in accordance with u.s. generally accepted government auditing standards .
+
+we believe that our audit provided a reasonable basis for our conclusions in this report .
+
+see appendix i for more details on our objective , scope , and methodology .
+
+information security is a critical consideration for any organization that depends on information systems and computer networks to carry out its mission or business and is especially important for government agencies , where maintaining the public's trust is essential .
+
+while the dramatic expansion in computer interconnectivity and the rapid increase in the use of the internet have enabled agencies such as sec to better accomplish their missions and provide information to the public , agencies' reliance on this technology also exposes federal networks and systems to various threats .
+
+this can include threats originating from foreign nation states , domestic criminals , hackers , and disgruntled employees .
+
+concerns about these threats are well founded because of the dramatic increase in reports of security incidents , the ease of obtaining and using hacking tools , and advances in the sophistication and effectiveness of attack technology , among other reasons .
+
+without proper safeguards , systems are vulnerable to individuals and groups with malicious intent who can intrude and use their access to obtain or manipulate sensitive information , commit fraud , disrupt operations , or launch attacks against other computer systems and networks .
+
+we and federal inspectors general have reported on persistent information security weaknesses that place federal agencies at risk of disruption , fraud , or inappropriate disclosure of sensitive information .
+
+accordingly , since 1997 , we have designated information security as a government - wide high - risk area , and we continued to do so in the most recent update to our high - risk list .
+
+the federal information security management act ( fisma ) of 2002 is intended to provide a comprehensive framework for ensuring the effectiveness of information security controls over information resources that support federal operations and assets .
+
+to develop , document , and implement an agency - wide security program to provide security for the information and systems that support the operations and assets of the agency , including information and information systems provided or managed by another agency , contractor , or other source .
+
+additionally , fisma assigns responsibility to the national institute of standards and technology ( nist ) to provide standards and guidelines to agencies on information security .
+
+nist has issued related standards and guidelines , including recommended security controls for federal information systems and organizations , nist special publication ( nist sp ) 800-53 , and contingency planning guide for federal information systems , nist sp 800-34 .
+
+fisma was enacted as title iii , e - government act of 2002 , pub l. no 107-347 , 116 stat .
+
+2946 ( 2002 ) .
+
+the electronic data gathering , analysis , and retrieval ( edgar ) system performs the automated collection , validation , indexing , acceptance , and forwarding of submissions by companies and others that are required to file certain information with sec .
+
+its purpose is to accelerate the receipt , acceptance , dissemination , and analysis of time - sensitive corporate information filed with the commission .
+
+edgar / fee momentum , a subsystem of edgar , maintains accounting information pertaining to fees received from registrants .
+
+end user computing spreadsheets and / or user developed applications are used by sec to prepare , analyze , summarize , and report on its financial data .
+
+the financial reporting and analysis tool facilitates the compilation of monthly , quarterly , and year - end financial reports .
+
+this tool also helps perform data reconciliation and analysis of the principal financial statements .
+
+the imagenow application is a workflow tool that tracks , reviews , and approves documents related to disgorgements , penalties , and court registry .
+
+the general support system provides ( 1 ) business application services to internal and external customers and ( 2 ) security services necessary to support these applications .
+
+under fisma , the sec chair has responsibility for , among other things , ( 1 ) providing information security protections commensurate with the risk and magnitude of harm resulting from unauthorized access , use , disclosure , disruption , modification , or destruction of the agency's information systems and information ; ( 2 ) ensuring that senior agency officials provide information security for the information and information systems that support the operations and assets under their control ; and ( 3 ) delegating to the agency chief information officer ( cio ) the authority to ensure compliance with the requirements imposed on the agency .
+
+fisma further requires the cio to designate a senior agency information security officer who will carry out the cio's information security responsibilities .
+
+although sec had implemented and made progress in strengthening information security controls , weaknesses limited their effectiveness in protecting the confidentiality , integrity , and availability of a key financial system .
+
+sec did not consistently control access to this financial system's network , servers , applications , and databases ; manage its configuration ; segregate duties ; and plan for contingencies and disasters .
+
+these weaknesses existed , in part , because sec did not effectively oversee and manage the migration of the key financial system to a new location .
+
+consequently , sec's financial information and systems were exposed to increased risk of unauthorized access , disclosure , modification , and disruption .
+
+a basic management objective for any organization is to protect the resources that support its critical operations and assets from unauthorized access .
+
+organizations accomplish this by designing and implementing controls that are intended to prevent , limit , and detect unauthorized access to computer resources ( eg , data , programs , equipment , and facilities ) , thereby protecting them from unauthorized disclosure , modification , and loss .
+
+specific access controls include border protection , identification and authentication of users , authorization restrictions , cryptography , audit and monitoring procedures , incident response procedures , and physical security .
+
+without adequate access controls , unauthorized individuals , including intruders and former employees , can surreptitiously read and copy sensitive data and make undetected changes or deletions for malicious purposes or for personal gain .
+
+in addition , authorized users could intentionally or unintentionally modify or delete data or execute changes that are outside of their authority .
+
+although sec had issued policies and implemented controls based on those policies , it did not consistently protect its network boundary from possible intrusions ; identify and authenticate users ; authorize access to resources ; ensure that sensitive data are encrypted ; audit and monitor actions taken on the commission's systems and network ; and restrict physical access to sensitive assets .
+
+boundary protection controls logical connectivity into and out of networks and controls connectivity to and from network - connected devices .
+
+implementing multiple layers of security to protect an information system's internal and external boundaries provides defense in depth .
+
+by using a defense - in - depth strategy , entities can reduce the risk of a successful cyber attack .
+
+for example , multiple firewalls could be deployed to prevent both outsiders and trusted insiders from gaining unauthorized access to systems .
+
+at the system level , any connections to the internet , or to other external and internal networks or information systems , should occur through controlled interfaces ( for example , proxies , gateways , routers and switches , firewalls , and concentrators ) .
+
+at the host or device level , logical boundaries can be controlled through inbound and outbound filtering provided by access control lists and personal firewalls .
+
+sec deployed multiple firewalls that were intended to prevent unauthorized access to its systems ; however , it did not securely configure access control lists on firewalls inside a key financial system's environment .
+
+for example , its network devices and firewall settings inappropriately permitted users in the production environment to access the system's network management server .
+
+in addition , the system's production internet firewalls were configured to allow systems in the “demilitarized zone” to connect to each other .
+
+as a result of these configurations , sec introduced vulnerability to unnecessary and potentially undetectable access at multiple points in the key financial system's network environment .
+
+information systems need to be managed to effectively control user accounts and identify and authenticate users .
+
+users and devices should be appropriately identified and authenticated through the implementation of adequate logical access controls .
+
+users can be authenticated using mechanisms such as a password and user id combination .
+
+sec policy requires strong password controls for authentication , such as passwords that are at least 8 eight alphanumeric characters in length and that expire after a predetermined period of time .
+
+however , sec did not consistently implement strong password controls for identifying and authenticating users to certain servers , network devices , and databases in the key financial system's environment .
+
+for example , password length on a network management device and a server contained fewer characters than required .
+
+user account passwords on another server were configured to never expire .
+
+additionally , two databases had a user password that had the same name as the user account .
+
+as a result , sec is at increased risk that accounts could be compromised and used by unauthorized individuals to access sensitive information .
+
+authorization encompasses access privileges granted to a user , program , or process .
+
+it is used to allow or prevent actions by that user based on predefined rules .
+
+authorization includes the principles of legitimate use and least privilege .
+
+operating systems have some built - in authorization features such as user rights and privileges , groups of users , and permissions for files and folders .
+
+network devices , such as routers , may have access control lists that can be used to authorize users who can access and perform certain actions on the device .
+
+access rights and privileges are used to implement security policies that determine what a user can do after being allowed into the system .
+
+maintaining access rights , permissions , and privileges is one of the most important aspects of administering system security .
+
+however , sec did not always employ the principle of least privilege when authorizing access permissions to a key financial system .
+
+specifically , it did not appropriately restrict access to security - related parameters and users' rights and privileges for several network devices , databases , and servers supporting key financial applications .
+
+as a result , users had excessive levels of access that were not required to perform their jobs .
+
+this could lead to data being inappropriately modified , either inadvertently or deliberately .
+
+cryptographic controls can be used to help protect the integrity and confidentiality of data and computer programs by rendering data unintelligible to unauthorized users and / or protecting the integrity of transmitted or stored data .
+
+cryptography involves the use of mathematical functions called algorithms and strings of seemingly random bits called keys to ( 1 ) encrypt a message or file so that it is unintelligible to those who do not have the secret key needed to decrypt it , thus keeping the contents of the message or file confidential ; ( 2 ) provide an electronic signature that can be used to determine if any changes have been made to the related file , thus ensuring the file's integrity ; or ( 3 ) link a message or document to a specific individual's or group's key , thus ensuring that the “signer” of the file can be identified .
+
+nist guidance states that the use of encryption by organizations can reduce the probability of unauthorized disclosure of information .
+
+nist also recommends that organizations employ cryptographic mechanisms to prevent unauthorized disclosure of information during transmission , encrypt passwords while being stored and transmitted , and establish a trusted communications path between users and security functions of information systems .
+
+however , sec did not configure settings of the logging and database servers supporting key financial applications to use encryption when transmitting data .
+
+as a result , increased risk exists that transmitted data can be intercepted , viewed , and modified .
+
+audit and monitoring involves the regular collection , review , and analysis of auditable events for indications of inappropriate or unusual activity , and the appropriate investigation and reporting of such activity .
+
+automated mechanisms may be used to integrate audit monitoring , analysis , and reporting into an overall process for investigation of and response to suspicious activities .
+
+audit and monitoring controls can help security professionals routinely assess computer security , perform investigations during and after an attack , and even recognize an ongoing attack .
+
+audit and monitoring technologies include network and host - based intrusion detection systems , audit logging , security event correlation tools , and computer forensics .
+
+network - based intrusion detection systems capture or “sniff” and analyze network traffic in various parts of a network .
+
+fisma requires that each federal agency implement an information security program that includes procedures for detecting , reporting , and responding to security incidents .
+
+however , sec had not consistently configured certain servers supporting a key financial system to maintain audit trails for all security - relevant events .
+
+for example , several of these network devices did not perform “failed access control lists access violation” logging .
+
+also , while sec had initiated deployment of tools to monitor its network infrastructure , critical systems' local logs were not sent to a centralized syslog server that logs security events .
+
+in addition , the syslog server was offline for more than 1 month .
+
+as a result , increased risk exists that sec will be unable to determine ( 1 ) if certain malicious incidents have occurred and ( 2 ) who or what caused them .
+
+physical security controls restrict physical access to computer resources and protect them from intentional or unintentional loss or impairment .
+
+adequate physical security controls over computer facilities and resources should be established that are commensurate with the risks of physical damage or access .
+
+physical security controls over the overall facility and areas housing sensitive information technology components include , among other things , policies and practices for granting and discontinuing access authorizations ; controlling badges , id cards , smartcards , and other entry devices ; controlling entry during and after normal business hours ; and controlling the entry and removal of computer resources ( such as equipment and storage media ) from the facility .
+
+physical controls also include environmental controls , such as smoke detectors , fire alarms , extinguishers , and uninterruptible power supplies .
+
+while sec improved physical security controls after relocating its primary data center to a secure location , sec did not sufficiently control physical access to a key financial system's administrator area in headquarters .
+
+for example , system administrators' workstations were located in an open area that was accessible by all personnel with access to the sec headquarters building .
+
+the insufficient physical access control over the system administrators' workstations reduces sec's ability to protect the system from unauthorized access .
+
+configuration management involves the identification and management of security features for all hardware , software , and firmware components of an information system at a given point and systematically controls changes to that configuration during the system's life cycle .
+
+fisma requires each federal agency to have policies and procedures that ensure compliance with minimally acceptable system configuration requirements .
+
+systems with secure configurations have less vulnerability and are better able to thwart network attacks .
+
+effective configuration management provides reasonable assurance that systems are configured and operating securely and as intended .
+
+in addition to periodically looking for software vulnerabilities and fixing them , security software should be kept current by establishing effective programs for patch management , virus protection , and other emerging threats .
+
+also , software releases should be adequately controlled to prevent the use of noncurrent software .
+
+although it had configuration management related policies , plans and procedures in place , sec did not configure a key financial system at its new data center according to sec's secure configuration baseline .
+
+for example , the system's server ran multiple insecure services .
+
+in addition , while sec had formed a patch vulnerability group to monitor vulnerabilities and evaluate the results of vulnerability scan reports , it did not routinely and consistently patch servers supporting key financial applications in a timely manner .
+
+moreover , sec used outdated versions of software and products that were no longer supported by their respective vendors .
+
+consequently , increased risk exists that the system was exposed to vulnerabilities that could be exploited by attackers seeking to gain unauthorized access .
+
+to reduce the risk of error or fraud , duties and responsibilities for authorizing , processing , recording , and reviewing transactions should be separated to ensure that one individual does not control all critical stages of a process .
+
+effective segregation of duties starts with effective entity - wide policies and procedures that are implemented at the system and application levels .
+
+often , segregation of incompatible duties is achieved by dividing responsibilities among two or more organizational groups , which diminishes the likelihood that errors and wrongful acts will go undetected because the activities of one individual or group will serve as a check on the activities of the other .
+
+inadequate segregation of duties increases the risk that erroneous or fraudulent transactions could be processed , improper program changes implemented , and computer resources damaged or destroyed .
+
+according to nist sp 800-53 , revision 3 , to prevent collusive malevolent activity , organizations should separate the duties of individuals as necessary and implement separation of duties through assigned information system access authorizations .
+
+during fiscal year 2013 , sec implemented segregation of duties controls for key information technology processes .
+
+for example , sec had implemented segregation of duties for the administrative accounts tested .
+
+in addition , based on our inquiries , sec employees from the office of information technology security , office of financial management , and system operations understood their duties and responsibilities .
+
+however , production servers for the key financial system had active development user accounts .
+
+as a result , increased risk exists that unauthorized individuals from the development environment could pose a threat to the system's processes in the production environment .
+
+losing the capability to process , retrieve , and protect electronically maintained information can significantly affect an agency's ability to accomplish its mission .
+
+if contingency and disaster recovery plans are inadequate , even relatively minor interruptions can result in lost or incorrectly processed data , which can cause financial losses , expensive recovery efforts , and inaccurate or incomplete information .
+
+given these severe implications , it is important that an entity have in place ( 1 ) up - to - date procedures for protecting information resources and minimizing the risk of unplanned interruptions , ( 2 ) a tested plan to recover critical operations should interruptions occur , and ( 3 ) redundancy in critical systems .
+
+although sec had developed contingency and disaster recovery plans and implemented controls for this planning , it did not ( 1 ) update its contingency and disaster recovery plans to reflect its computing environment , ( 2 ) test disaster recovery procedures to ascertain recovery after the move to its newly built data center , and ( 3 ) ensure redundancy of a critical server for the key financial system .
+
+consequently , sec had limited assurance that financial information could be recovered and made available to meet agency priorities and requirements in the event of a failure at its primary data center .
+
+the information security weaknesses existed in the key financial system , in part , because sec did not effectively oversee and manage the implementation of information security controls during the migration of the system to a new production environment .
+
+specifically , sec did not consistently provide adequate contractor oversight and implement an effective risk management process during the migration to the new production environment at its data center in june 2013 .
+
+sec relied on a contractor to migrate the key financial system to a new production environment , which included the completion of critical security - related tasks .
+
+the office of federal procurement policy's guide to best practices for contract administration states that a good contract administration program is essential to improving contractor performance under federal contracts .
+
+it also states that those entrusted with the duty to ensure that the government gets all that it has bargained for must be competent in the practices of contract administration .
+
+in addition , nist guidance states that the head of an agency should establish appropriate accountability for information security and provide active support and oversight of monitoring and improvement for the information security program .
+
+moreover , sec policy states that the agency is to monitor project development throughout the life cycle to ensure that security controls are incorporated and security project milestones are met .
+
+however , sec did not adequately oversee the contractor's efforts related to the migration of the system from sec's operation center to its data center in a different location .
+
+specifically , sec did not assign information security personnel to monitor and evaluate the contractor's performance in completing required security tasks .
+
+in addition , while the project plan included security - related tasks and milestones , sec officials did not review the system's security and project migration plans to verify that security - related roles , resources , and responsibilities were identified .
+
+further , sec did not confirm that the contractor completed the security - related project tasks prior to the decision to go live , including ( 1 ) implementing the baseline security configuration on the system's servers , ( 2 ) testing the security of its servers , ( 3 ) building a monitoring capability inside its network environment , and ( 4 ) identifying and committing resources to perform security configuration and testing after the server build - out .
+
+sec officials attributed this lack of rigorous oversight to their reliance on the ability of the contractor to adequately complete the effort .
+
+as a result , senior management officials were unaware that security - related project tasks had not been completed when the agency approved the system to go live .
+
+according to nist sp 800-37,risks and , prior to placing information systems into operation , ensure that ( 1 ) information system - related security risks are being adequately addressed on an ongoing basis and ( 2 ) the authorizing official explicitly understands and accepts the risk to organizational operations and assets .
+
+in addition , the key financial system's security plan states that sec is to monitor changes to the system and conduct security impact analyses to determine the effects of the changes .
+
+prior to change implementation , and as part of the change approval process , the organization is to analyze changes to the system for potential security impacts .
+
+after the system is changed ( including upgrades and modifications ) , the agencies are to identify and mitigate organization should check the security features to verify that the features are still functioning properly .
+
+to improve its information security risk management process , in february 2013 sec established the operational risk management office to proactively identify operational risks in all division offices .
+
+as part of the agency's risk management process , the heads of business lines are responsible for identifying risks and controls .
+
+sec also established a risk committee with the purpose of formalizing the risk framing process and creating an sec - wide information security risk management strategy , based on decisions and priorities set by the risk committee .
+
+the risk decisions and risk priorities are to be used as guiding principles by management officials in implementing daily and operational it tasks .
+
+however , sec did not effectively manage risk associated with the migration of a key financial system to a new location .
+
+specifically , ( 1 ) sec's information security risk committee did not identify and convey risks related to the data center move ( and to the system ) to the agency's operational risk management program office , which is responsible for developing and overseeing sec's operational risk management and internal control program and evaluating the results of internal control reviews and information technology system reviews performed by the internal control divisions and offices ; ( 2 ) sec did not perform a security impact analysis after the system servers were rebuilt and major changes were made to the systems ; and ( 3 ) sec did not act to mitigate security - related risks identified and communicated in the system's weekly status reports by the contractor prior to the go - live date .
+
+consequently , sec did not have timely awareness of potential security vulnerabilities , which resulted in pervasive control weaknesses in the system when the new production environment went live .
+
+sec resolved two of the seven previously reported information system control deficiencies in the areas of access controls and audit and for example , sec disabled inactive administrator accounts monitoring.and enabled audit and monitoring capability on a server .
+
+however , five of the seven previously reported weaknesses still exist .
+
+these five remaining weaknesses encompassed sec's financial and general support systems .
+
+for example , sec did not always configure its remote host and network infrastructure devices to require the use of strong passwords ; effectively enforce logical access controls , including controls in the user separation process across its it systems at the network levels ; and consistently apply patches or perform necessary system updates .
+
+sec continues to make progress in improving information security controls over its key financial systems .
+
+however , information security control weaknesses in a key financial system's production environment may jeopardize the confidentiality , integrity , and availability of information residing in and processed by the system .
+
+these included deficiencies in sec's controls over access control , configuration management , segregation of duties , and contingency and disaster recovery planning .
+
+in addition , sec did not consistently provide adequate contractor oversight and implement an effective risk management process during the migration of an important financial system to its new location .
+
+cumulatively , these weaknesses decreased assurance regarding the reliability of the data processed by the key financial system and increased the risk that unauthorized individuals could gain access to critical hardware or software and intentionally or inadvertently access , alter , or delete sensitive data or computer programs .
+
+consequently , the combination of the continuing and new information security weaknesses existing as of september 30 , 2013 , considered collectively , represented a significant deficiency in sec's internal control over financial reporting .
+
+until sec mitigates its control deficiencies and strengthens oversight of contractors performing security - related tasks as part of its information security program , it will continue to be at risk of ongoing deficiencies in the security controls over its financial and support systems and the information they contain .
+
+as part of fully implementing a comprehensive information security program , we recommend that the chair direct the chief information officer to take the following two actions: 1 .
+
+assign information security personnel to monitor and evaluate contractor performance in implementing information security controls in sec's information technology projects .
+
+2 .
+
+implement a risk management process to ensure that similar contract oversight weakness are not widespread that includes ( 1 ) identifying and conveying risks , ( 2 ) performing security impact analyses , and ( 3 ) mitigating identified risks as appropriate .
+
+in a separate report with limited distribution , we are also making 49 detailed recommendations consisting of actions to be taken to correct specific information security weaknesses related to access control , configuration management , segregation of duties , and contingency and disaster recovery plans .
+
+we provided a draft of this report to sec for its review and comment .
+
+in its written comments ( reproduced in app .
+
+ii ) , sec generally agreed with our recommendations .
+
+sec acknowledged that the appropriate level of attention was not applied to contractor oversight during the migration of the financial system and stated that contractual , procedural , and corrective measures are taking place to prevent similar occurrences .
+
+in addition , sec agreed with the specific points we made about the risk management process and stated that this process continues to be improved .
+
+this report contains recommendations to you .
+
+the head of a federal agency is required by 31 u.s.c .
+
+§ 720 to submit a written statement on the actions taken on the recommendations by the head of the agency .
+
+the statement must be submitted to the senate committee on homeland security and governmental affairs and the house committee on oversight and government reform not later than 60 days from the date of this report .
+
+a written statement must also be sent to the house and senate committees on appropriations with your agency's first request for appropriations made more than 60 days after the date of this report .
+
+we are also sending copies of this report to interested congressional parties .
+
+in addition , the report is available at no charge on the gao website at http: / / www.gao.gov .
+
+we acknowledge and appreciate the cooperation and assistance provided by sec management and staff during our audit .
+
+if you have any questions about this report or need assistance in addressing these issues , please contact gregory c. wilshusen at ( 202 ) 512-6244 or wilshuseng@gao.gov or nabajyoti barkakati at ( 202 ) 512-4499 or barkakatin@gao.gov .
+
+gao staff who made significant contributions to this report are listed in appendix iii .
+
+as part of our audit of the securities and exchange commission's ( sec ) fiscal years 2012 and 2013 financial statements , we assessed the commission's information security controls .
+
+the objective was to determine the effectiveness of sec's information security controls for ensuring the confidentiality , integrity , and availability of its key financial systems and information .
+
+to do this , we identified and reviewed sec information systems control policies and procedures , conducted tests of controls , and held interviews with key security representatives and management officials concerning whether information security controls were in place , adequately designed , and operating effectively .
+
+we evaluated controls based on our federal information system controls audit manual ( fiscam ) , which contains guidance for reviewing information system controls that affect the confidentiality , integrity , and availability of computerized information ; national institute of standards and technology standards and special publications ; sec's plans , policies , and standards ; and the national security agency's 60 minute network security guide .
+
+we assessed the effectiveness of both general and application controls by performing information system controls walkthroughs surrounding the observing technical controls implemented on selected systems ; initiation , authorization , processing , recording , and reporting of financial data ( via interviews , inquiries , observations , and inspections ) ; reviewing systems security assessment and authorization documents ; reviewing sec policies and procedures ; testing specific controls ; and scanning and manually assessing sec systems including general support systems and financial applications .
+
+we also evaluated the statement on standards for attestation engagements report and performed testing on key information technology controls on the following applications and systems: delphi - prism , fedinvest , and federal personnel and payroll system / quicktime .
+
+we selected which systems to evaluate based on a consideration of financial systems and service providers integral to sec's financial statements .
+
+the evaluation and testing of sec information system controls , including the evaluation of the status of sec's corrective actions during fiscal year 2013 to address open recommendations from our prior years' reports , was performed jointly with the independent firm of williams , adley , & company - dc , llp .
+
+we agreed on the scope of the audit work , monitored the firm's progress , and reviewed the related audit documentation to determine that the firm's findings were adequately supported .
+
+to determine the status of sec's actions to correct or mitigate previously reported information security weaknesses , we identified and reviewed its information security policies , procedures , practices , and guidance .
+
+we reviewed prior gao reports to identify previously reported weaknesses and examined the commission's corrective action plans to determine which weaknesses it had reported were corrected .
+
+for those instances where sec reported that it had completed corrective actions , we assessed the effectiveness of those actions by reviewing appropriate documents , including sec - documented corrective actions , and interviewing the appropriate staffs , including system administrators .
+
+to assess the reliability of the data we analyzed , such as information system control settings , security assessment and authorization documents , and security policies and procedures , we corroborated them by interviewing sec officials , programmatic personnel , and system administrators to determine whether the data obtained were consistent with system configurations in place at the time of our review .
+
+based on this assessment , we determined the data were reliable for the purposes of this report .
+
+we performed our work in accordance with u.s. generally accepted government auditing standards .
+
+we believe that our audit provided a reasonable basis for our conclusions in this report .
+
+in addition to the contacts named above , gao staff who made major contributions to this report are michael w. gilmore and duc ngo ( assistant directors ) , angela bell , lee mccracken , and henry sutanto .
+

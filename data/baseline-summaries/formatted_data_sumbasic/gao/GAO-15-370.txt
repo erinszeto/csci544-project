@@ -1,0 +1,826 @@
+cyber - based threats to federal information systems are evolving and growing .
+
+these threats can come from many sources , including criminals and other adversarial groups , foreign nations , terrorists , and insiders .
+
+further , the growing interconnectivity among information systems presents increasing opportunities for cyber attacks .
+
+specifically , the number of incidents reported by federal agencies to the united states computer emergency readiness team ( us - cert ) has increased dramatically in recent years from 5,503 incidents reported in fiscal year 2006 to 60,753 incidents in fiscal year 2013 .
+
+federal policy identifies 16 infrastructure sectors critical to the nation's security , economy , and public health and safety — including the nation's air - traffic - control and federal - information technology systems — that rely extensively on computerized information systems and electronic data .
+
+effectively implementing appropriate security over the information systems and data can make these sectors more resilient to attack or unintentional compromise .
+
+for more than 10 years , the federal aviation administration ( faa ) has been modernizing the air - traffic control ( atc ) system across the national airspace system ( nas ) .
+
+faa initiated its current modernization efforts in 2004 with the next generation air transportation system ( nextgen ) , which consists of several programs that provide digital communications between controllers and pilots , as well as between satellite - based surveillance and navigation .
+
+nextgen increases reliance on integrated information systems and distribution of information , digital communication methods , and global positioning system ( gps ) technology that may put the atc system at greater risk for intentional or unintentional information - system failures and breaches .
+
+you asked us to examine these risks .
+
+this report identifies the cybersecurity challenges facing faa as it shifts to the nextgen atc system and how faa has begun addressing those challenges .
+
+in addition , this report assesses the extent to which faa and its contractors , in the acquisition of nextgen programs , have followed federal guidelines for incorporating cybersecurity controls .
+
+to ascertain the key challenges faa faces and how it is addressing them , we reviewed relevant cybersecurity documents from faa and asked faa officials to provide us with detailed descriptions of their cybersecurity plans as they relate to the nextgen atc system .
+
+we interviewed faa officials in the air traffic organization — specifically the technical operations information security office , nas cyber operations center , and the program management office ; the office of nextgen ; the office of safety ; and the office of finance and management — to identify information about the cybersecurity risks and challenges officials have identified , as well as mitigation strategies either in place or planned .
+
+we interviewed a diverse but non - generalizable sample of 15 aviation and cybersecurity experts in private industry and academia to obtain their views on faa's efforts to address nextgen cybersecurity issues .
+
+we selected these experts based on their knowledge of these topics , as demonstrated by their publications , participation as experts in prior relevant gao work , or recommendation by other experts .
+
+we also reviewed studies on nextgen cybersecurity challenges and spoke with a variety of industry stakeholders and academics .
+
+to assess the extent to which faa and its contractors , in the acquisition of nextgen programs , have followed federal guidelines for incorporating cybersecurity controls , we compared pertinent faa policies , procedures , and practices with selected federal information - security laws and federal guidance , including standards and guidelines from the national institute of standards and technology ( nist ) .
+
+in particular , we compared faa's acquisition management system ( ams ) against nist's risk management guidelines and information - technology security guidelinesto determine if it follows these guidelines for the six foundational nextgen programs , surveillance and broadcast services subsystem ( sbss ) , data communications ( data comm ) , nas voice switch , collaborative air traffic management ( catm ) , common support service - weather ( css - wx ) , and system wide information management ( swim ) .
+
+we analyzed faa's documentation of key cybersecurity activities for these programs and interviewed program managers to determine if faa completed the key activities in the process , or has plans to complete activities that were started but not completed .
+
+we then chose two key nextgen acquisitions , sbss and data comm .
+
+we chose them for a detailed , in - depth review because of their importance to nextgen , their cost , and their deployment status .
+
+sbss has completed key activities in the acquisition cycle .
+
+our reviewing data comm , which has not completed the cycle , should allow insight into how the process has changed and what still might be an issue for upcoming programs .
+
+for these two programs , we assessed how well faa and its contractors completed key cybersecurity activities and the extent to which they complied with ams and nist guidelines relating to cybersecurity .
+
+as part of this effort , we also compared documentation of program activities and plans to these requirements , and interviewed agency officials .
+
+we also reviewed pertinent sections of prior gao reports related to cybersecurity .
+
+we performed our work at faa headquarters in washington , d.c. ; the air traffic control systems command center in warrenton , virginia ; and an faa contractor location in herndon , virginia .
+
+see appendix i for a more detailed description of our scope and methodology .
+
+we conducted this performance audit from september 2013 to march 2015 , in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+nextgen is a modernization effort begun in 2004 by faa to transform the nation's ground - based atc system into a system that uses satellite - based navigation and other advanced technology .
+
+this effort is a multiyear , incremental transformation that will introduce new technologies and leverage existing technologies to affect every part of the nas .
+
+these new technologies will use an internet protocol ( ip ) based network to see figure 1 below for a graphic illustration of the different communicate.parts of the nas , the flow of information among them , and their transition to an ip - based network .
+
+according to faa , the shift to nextgen technologies will require faa to replace its proprietary , relatively isolated atc computer systems with information systems that interoperate and share data throughout faa's operations and those of its aviation partners .
+
+these combined aviation operations are known as the enterprise .
+
+these new systems , which will be described in detail later in this report , will use ip - networking technologies to communicate across the enterprise .
+
+this transformation involves acquiring , certifying , and operating a vast network of navigation , communications , and surveillance systems , including information systems in the cockpits of thousands of aircraft ( avionics ) ; it will also employ digital and internet - based computer - networking technologies , exposing the air - traffic control ( atc ) system to new cybersecurity risks .
+
+nextgen comprises many programs that are in various stages of acquisition and deployment in the nas .
+
+faa classifies six programs as its foundational nextgen programs: surveillance and broadcast services subsystem ( sbss ) , collaborative air traffic management ( catm ) , common support services weather ( css - wx ) , data communications ( data comm ) , nas voice switch ( nvs ) , and system wide information management ( swim ) ( see fig .
+
+2 ) .
+
+for the six programs we examined , faa relies on contractors to assist with or complete most of the broad information technology and risk management activities .
+
+nist , omb , and fisma state that regardless of whether a security task was performed by a contractor or by a federal agency , the federal agency is ultimately responsible for ensuring system security .
+
+the ams requires that faa program officials monitor the contractors' performance in implementing contractual requirements , including those related to security .
+
+the office of the chief information security officer within the office of finance and management oversees cybersecurity across the three main areas of faa activity known as domains ( i.e. , nas atc operations , mission support , and research and development ) .
+
+this office provides operational security services to the mission support and r&d domains through efforts across faa , as well as the cyber security management center ( csmc ) .
+
+the csmc provides system monitoring and vulnerability remediation for faa's standard information - technology systems that support the agency .
+
+mission - support information systems , such as email , are separate from the nas and r&d domain systems .
+
+the air traffic organization ( ato ) , the operational arm of faa , implements and oversees cybersecurity measures for atc information systems through several of its offices .
+
+the ato's nas security risk executive ( risk executive ) located in technical operations has responsibility for cybersecurity on all nas atc systems , including continuous monitoring , threat response coordination , and policy .
+
+according to faa , the risk executive works internally with faa's security and hazardous materials office and nextgen offices , and externally with department of homeland security ( dhs ) and airline stakeholders to provide an understanding of faa's critical mission and how it relates to other critical infrastructures .
+
+another office within ato , the nas cyber operations unit , is responsible for monitoring some nas systems , network data flows , and cyber events to detect anomalous and unauthorized cyber activities in the nas domain .
+
+ato's program management office is responsible for developing and fulfilling cybersecurity and all other system requirements for nas information systems , including nextgen systems , through the acquisitions process .
+
+the office of nextgen develops and disseminates cybersecurity policy on nextgen's system engineering and controls , develops the nas enterprise architecture , which is the agency's long - term strategic plan for nextgen that includes , among other things , the information systems security ( iss ) plans , and is responsible for the overall implementation of faa's nextgen initiative .
+
+the office of security and hazardous material safety performs internal forensics investigations on computers that csmc identifies as involved in activity that may compromise cybersecurity .
+
+the office of safety certifies the safety of all aircraft and aircraft equipment , including the software components for the avionics systems that could affect the safe operation of an aircraft .
+
+the federal information security management act of 2002 ( fisma ) established a comprehensive framework to better ensure the effectiveness of security controls over information resources that support federal operations and assets .
+
+fisma requires each agency to develop , document , and implement an agency - wide information - security program , using a risk - based approach to determine and address cybersecurity requirements for information system management .
+
+such a program includes planning , implementing , evaluating , and documenting remedial actions to address information security deficiencies .
+
+federal cybersecurity guidelines , such as those published by nist , strongly encourage agencies to implement information cybersecurity early in the process of developing information systems .
+
+in this manner , the cybersecurity requirements can change as needed and be integrated cost - effectively .
+
+nist also provides a process for integrating information - security and risk - management activities into the system development process over the life of the system .
+
+accordingly , nist has developed a risk management framework of standards and guidelines for agencies to follow in developing information security programs .
+
+relevant publications include the following: guide for applying the risk management framework to federal information systems: a security life cycle approach provides a process that integrates information - security and risk - management activities into the system development's life cycle including security categorization , security control selection and implementation , security control assessment , information system authorization , and security control monitoring of an information system .
+
+security and privacy controls for federal information systems and organizationsfederal information systems and organizations , and a process for selecting controls to protect organizational operations , assets , individuals , other organizations , and the nation from a diverse set of threats including hostile cyber attacks , natural disasters , structural failures , and human errors .
+
+the guidance includes privacy controls to be used in conjunction with the specified security controls to achieve comprehensive security and privacy protection .
+
+provides a catalog of security and privacy controls for security considerations in the system development life cyclepresents a framework for incorporating security across the life cycle of a system and describes a minimum set of security steps needed to effectively incorporate security into a system during its development .
+
+it is intended to help agencies select and acquire cost - effective security controls by explaining how to include information - system security requirements in the system development's life cycle .
+
+in addition to these nist publications , the office of management and budget's ( omb ) security of federal automated information resources establishes a minimum set of controls to be included in federal automated information - security programs ; assigns federal agency responsibilities for the security of automated information ; and links the agency's automated information - security programs and the agency's management control systems .
+
+faa's acquisition management system ( ams ) provides policies and guidance for managing all of its acquisitions .
+
+the ams serves as the framework for it project management and risk evaluation to help ensure that systems are developed and maintained on time and within budget , and that they deliver the capabilities necessary to meet user requirements including the development and integration of cybersecurity controls .
+
+faa faces cybersecurity challenges in at least three areas: ( 1 ) protecting its air traffic control ( atc ) information systems , ( 2 ) securing aircraft avionics used to operate and guide aircraft , and ( 3 ) clarifying cybersecurity roles and responsibilities among multiple faa offices .
+
+faa has taken several steps to address these challenges , but cybersecurity experts suggested additional actions faa could take to enhance cybersecurity .
+
+new networking technologies connecting faa's atc information systems expose these systems to new cybersecurity risks , potentially increasing opportunities for systems to be compromised and damaged .
+
+such damage could stem both from attackers seeking to gain access to and move among information systems , and from trusted users of the systems , such as controllers or pilots , who might inadvertently cause harm .
+
+faa's atc - related information systems are currently a mixture of old , legacy systems and new , ip - networked systems .
+
+faa's legacy systems consist mainly of decades - old , point - to - point , hardwired information systems , such as controller voice - switching systems , that share information only within their limited , wired configuration .
+
+in contrast , faa plans for nextgen call for the new information systems to be networked together with ip technology into an overarching system of interoperating subsystems .
+
+according to faa officials and experts we consulted , the ease of access to these different types of systems , and the potential to damage them , varies .
+
+the older systems , depicted on the left in figure 3 below , are difficult to access remotely because few of them connect from faa to external entities such as through the internet .
+
+they also have limited lines of direct connection within faa .
+
+conversely , the new information systems for nextgen programs are designed to interoperate with other systems and use ip networking to communicate within faa , as shown on the right in figure 3 below .
+
+according to experts , if one system connected to an ip network is compromised , damage can potentially spread to other systems on the network , continually expanding the parts of the system at risk .
+
+as shown in the figure , cybersecurity controls , if properly designed and effectively implemented , can make ip - networked systems more resilient against damage while allowing the systems to interoperate .
+
+according to mitre , because the older systems had limited connectivity , they were generally not protected with cybersecurity controls .
+
+once one of them is breached , it is easy to potentially damage that system , gain access to other systems with which it communicates , and potentially damage those systems as well .
+
+according to faa , so far , approximately 36 percent of the atc systems in the national airspace system ( nas ) are connected using ip , and faa officials expect the percentage of nas systems using ip networking to grow to 50 to 60 percent by 2020 .
+
+according to mitre and other experts , a hybrid system comprising both ip - connected and point - to - point subsystems increases the potential for the point - to - point systems to be compromised because of the increased connectivity to the system as a whole provided by the ip - connected systems .
+
+we reported in january 2015 that faa has taken steps to protect its atc systems from cyber - based threats .
+
+however , we stated that significant security - control weaknesses remain that threaten the agency's ability to ensure the safe and uninterrupted operation of the national airspace system .
+
+we made numerous recommendations to address these weaknesses , and faa has concurred with these recommendations .
+
+gao , information security: faa needs to address weaknesses in air traffic control systems .
+
+gao - 15-221 .
+
+ ( washington dc: january 2015 ) .
+
+faa is developing an approach , called an enterprise approach , to connect and protect its information systems enterprise - wide .
+
+the enterprise approach views ip - networked systems as subsystems within the larger enterprise - wide system .
+
+under this approach , the subsystems can interoperate while an enterprise - wide set of shared cybersecurity controls , called “common controls,” and a monitoring program protect and increase the resiliency of the subsystems .
+
+according to faa officials and cybersecurity experts we spoke to , using common controls in an enterprise approach increases the efficiency of cybersecurity efforts .
+
+for example , nist recommends the use of common controls because when new threats to the system are discovered and those threats can be addressed by revisions to common controls , agencies can then immediately protect all the interoperating subsystems by revising just the common control .
+
+for isolated , legacy systems , cybersecurity control revisions have to be developed and implemented uniquely for each individual system .
+
+faa officials said that they apply both common controls and individual system controls , where appropriate , to ip - connected systems interoperating within an enterprise domain , in accordance with nist guidance and omb policy .
+
+twelve of our 15 cybersecurity experts discussed enterprise - level holistic threat modeling , and all 12 agreed that faa should develop such a model to strengthen cybersecurity agency - wide .
+
+nist and the 12 experts we consulted said that threat modeling , a cybersecurity best practice , enables an organization to identify known threats , including insider threats , across its organization and align its cybersecurity efforts and limited resources accordingly to protect its mission .
+
+nist guidance also states that an integrated , agency - wide view for managing risk can address the complex relationship among missions , the business processes needed to carry out missions , and the information systems supporting those missions and processes .
+
+nist also recommends organization - wide threat modeling,because an agency - wide threat model would help to identify all known threats to information systems , allowing an agency to further identify vulnerabilities in those systems .
+
+faa officials said that faa has not produced a plan to develop an enterprise - wide threat model but has made some initial steps toward developing such a model .
+
+specifically , faa officials said that they have examined threats to the future nextgen air - transportation system and are currently working to develop multiple threat models .
+
+such efforts include reviewing the resiliency of the atc system in conjunction with the department of homeland security ( dhs ) .
+
+nist recommended such a review in its guidelines to promote the protection of critical infrastructure .
+
+according to faa , it also assesses risks associated with individual systems when it acquires them and during system reauthorization .
+
+according to faa , these assessments examine how the system in question interoperates with other systems ; however , faa officials agree that these assessments do not constitute a holistic threat model that might give faa an agency - wide view of known threats to the entire atc system .
+
+one faa official said and an aviation advisory group published a report stating that such a threat model would allow faa to approach cybersecurity in a proactive way , whereas faa's current activities are reactive .
+
+for example , a threat model like that recommended by nist and our experts could help faa be more proactive in dealing with the rise of insider threats in federal agencies .
+
+faa officials told us that they have not yet reached a point where they are prepared to pursue a comprehensive enterprise - wide threat model .
+
+some experts told us that developing and maintaining a threat model would be costly and time consuming .
+
+faa officials told us that they have not determined the funding or time that would be needed to develop such a model or identified the resources needed to implement it .
+
+one senior faa official agreed with the experts' view that an enterprise holistic - wide threat model is expensive and time - consuming to accomplish and maintain ; he said that no plan currently exists to produce one for this reason .
+
+while developing a holistic threat model could be costly and time - consuming , in a constrained - resource environment such as faa's , the information contained in such a model could allow faa to target resources to parts of the system commensurate with the likelihood of compromise and the danger associated with the potential consequences that might occur .
+
+without a holistic threat model , it is unclear how faa will be able to develop a more comprehensive picture of threats to its systems , and how they might compromise these systems .
+
+most of our experts said that without this knowledge , faa might not target its cybersecurity resources and analyses appropriately , leaving some important risks unmitigated while overprotecting against less severe risks .
+
+ten of the cybersecurity experts we contacted also said that a holistic continuous - monitoring program is necessary for the ip - networked agency - wide approach that faa is taking to accommodate nextgen programs .
+
+cybersecurity experts and faa officials told us that a holistic , continuous - monitoring program includes ( 1 ) real - time monitoring of the enterprise system's boundaries , ( 2 ) detection of would - be attackers probing for vulnerabilities , ( 3 ) real - time monitoring and investigation of internal user activity that is outside expectations , and ( 4 ) other continuous - monitoring activities such as incident detection , response , and recovery activities and mitigations .
+
+faa officials said they have implemented some monitoring activities for atc systems .
+
+although no coordinated policy exists for faa enterprise - wide continuous monitoring , the cyber security steering committee has developed a plan that will incorporate dhs's continuous diagnostics and mitigation programoperations ( nco ) group , which has responsibility for incident response for nas atc systems , daily analyzes atc's system activity reports , which , among other things , report on cyber attacks .
+
+currently 9 of 39 ip - in the future .
+
+for example , the nas cyber connected atc systems provide system activity reports for nco's review .
+
+nco does not currently analyze activity reports for the other 30 systems .
+
+we have previously found that this limited monitoring ability increased the risk that a cybersecurity event affecting nas systems could go undetected and recommended that faa provide the nco function with sufficient access to provide more comprehensive monitoring .
+
+faa officials said that ato plans to have all nas's ip - connected systems reporting daily to nco within 3 years .
+
+according to faa and experts we interviewed , modern communications technologies , including ip connectivity , are increasingly used in aircraft systems , creating the possibility that unauthorized individuals might access and compromise aircraft avionics systems .
+
+aircraft information systems consist of avionics systems used for flight and in - flight entertainment ( see fig .
+
+4 below ) .
+
+historically , aircraft in flight and their avionics systems used for flight guidance and control functioned as isolated and self - contained units , which protected their avionics systems from remote attack .
+
+however , according to faa and experts we spoke to , ip networking may allow an attacker to gain remote access to avionics systems and compromise them — as shown in figure 4 ( below ) .
+
+firewalls protect avionics systems located in the cockpit from intrusion by cabin - system users , such as passengers who use in - flight entertainment services onboard .
+
+four cybersecurity experts with whom we spoke discussed firewall vulnerabilities , and all four said that because firewalls are software components , they could be hacked like any other software and circumvented .
+
+the experts said that if the cabin systems connect to the cockpit avionics systems ( eg , share the same physical wiring harness or router ) and use the same networking platform , in this case ip , a user could subvert the firewall and access the cockpit avionics system from the cabin .
+
+an faa official said that additional security controls implemented onboard could strengthen the system .
+
+faa officials and experts we interviewed said that modern aircraft are also increasingly connected to the internet , which also uses ip - networking technology and can potentially provide an attacker with remote access to aircraft information systems .
+
+according to cybersecurity experts we interviewed , internet connectivity in the cabin should be considered a direct link between the aircraft and the outside world , which includes potential malicious actors .
+
+faa officials and cybersecurity and aviation experts we spoke to said that increasingly passengers in the cabin can access the internet via onboard wireless broadband systems .
+
+one cybersecurity expert noted that a virus or malware planted in websites visited by passengers could provide an opportunity for a malicious attacker to access the ip - connected onboard information system through their infected machines .
+
+according to five cybersecurity experts , the threat of malicious activity by trusted insiders also grows with the ease of access to avionics systems afforded by ip connectivity if proper controls , such as role - based access , are not in place .
+
+for example , the presence of personal smart phones and tablets in the cockpit increases the risk of a system's being compromised by trusted insiders , both malicious and non - malicious , if these devices have the capability to transmit information to aircraft avionics systems .
+
+faa's office of safety ( avs ) is responsible for certifying the airworthiness of new aircraft and aviation equipment , including software components for avionics systems .
+
+although faa's aircraft - airworthiness certification does not currently include assurance that cybersecurity is addressed , faa currently issues rules with limited scope , called special conditions , to aircraft manufacturers when aircraft employ new technologies where ip interconnectivity could present cybersecurity risks .
+
+faa views special conditions as an integral part of the certification process , which gives the manufacturer approval to design and manufacture the aircraft , engine , or propeller with additional capabilities not referred to in faa regulations .
+
+for example , faa issued special conditions to address the increased connectivity among aircraft cockpit and cabin systems for the boeing 787 and airbus a350 to provide systems cybersecurity and computer network protection from unauthorized external and internal access .
+
+faa officials said that research supporting cybersecurity - related special conditions could be aggregated and used to support portions of a new rule , and industry experts we spoke with said they would support the certainty rulemaking would bring .
+
+according to faa officials and the radio technical commission for aeronautics ( rtca ) , faa has not yet developed new regulations to certify cybersecurity assurance for avionics systems because historically , aircraft avionics systems were isolated within the aircraft itself and not considered vulnerable to cybersecurity attacks .
+
+according to rtca , faa's certification process for component airworthiness focuses on design assurance , which evaluates the probability and consequences of component failure .
+
+further , rtca reports that a focus on cybersecurity assurance would evaluate the likelihood and consequences of cybersecurity failure .
+
+the likelihood of an attack takes into account different levels of trustworthiness of entities with access to a component and the relative intention to do harm .
+
+however , faa officials and an aviation expert said that intention has not been considered a factor in avionics component - system failures because other security processes generally prevented untrusted entities from gaining access to avionics components .
+
+faa officials said that the agency recognizes that cybersecurity is an increasingly important issue in the aircraft - operating environment and is shifting the certification focus to address this potential new threat .
+
+faa's office of safety began developing a larger airworthiness rule covering avionics cybersecurity in 2013 but determined more research was necessary before rulemaking could begin and halted the process .
+
+in december 2014 , faa tasked its aviation rulemaking advisory committee ( arac ) with submitting a report within 14 months of the march 2015 kickoff meeting that provides recommendations on rulemaking and policy , and guidance on best practices for information security protection for aircraft , including both certification of avionics software and hardware , and continued airworthiness .
+
+faa states that without updates to regulations , policy , and guidance to address aircraft system information security / protection ( asisp ) , aircraft vulnerabilities may not be identified and mitigated in a timely manner , thus increasing exposure times to security threats .
+
+according to the arac task assignment , the report should provide recommendations by early 2016 on whether asisp - related rulemaking , policy , and / or guidance on leading practices are needed , and the rationale behind such recommendations .
+
+if policy or guidance , or both , are needed , among other things , the report should specify which aircraft and airworthiness standards would be affected .
+
+cybersecurity roles and responsibilities are spread across faa among different offices with varying missions and functions related to cybersecurity .
+
+faa is taking steps to align agency cybersecurity orders and policies , as well as it infrastructure and governance , with the changing needs of the nextgen cyber environment .
+
+in november 2013 , the chief information officer ( cio ) and chief information security officer ( ciso ) under the faa's reorganized it office began reorganizing and rewriting cybersecurity - related policies and plans agency - wide , and restructuring the agency's it infrastructure and governance , in part to address the shifts in cybersecurity activities and roles due to atc modernization .
+
+according to faa , a working group expects to complete a draft by september 2015 that reflects the restructuring of it infrastructure .
+
+the faa's cio is developing an enterprise approach for non - nas information systems and cybersecurity , and is also leading a cross - agency team in developing the cyber security strategy for 2016 – 2020 .
+
+separately , the ato is also developing and maintaining an enterprise approach for nas systems in the atc domain .
+
+faa has also taken steps to better coordinate its cybersecurity efforts .
+
+faa runs exercises that simulate cyber attacks and are designed to increase internal collaboration and help clarify roles during such events .
+
+specifically , the nas security risk executive and other ato staff organized and conducted five of these exercises between 2013 and 2015 involving faa cybersecurity staff from different faa offices as well as staff from the departments of defense and homeland security , and mitre .
+
+faa officials said that these exercises are an integral part of sustaining and improving operational activities and are incorporated into the planning process for all nas activities .
+
+faa plans to continue conducting one or two per year .
+
+in addition to the ato's nas risk executive , faa established the cybersecurity steering committee in november 2013 to better coordinate faa agency - wide cybersecurity efforts at the executive level and provide an integrated approach to cybersecurity strategy and planning with a mission focus for faa .
+
+the committee has begun establishing the specific roles and responsibilities required to fulfill its mission .
+
+it is chaired by the ciso and includes representatives from ato , nextgen , and security and hazardous material safety .
+
+these members are tasked with working together to identify , prioritize , strategize , and operationalize cybersecurity requirements , issues , programs , and projects needed to integrate an agency - wide approach to cybersecurity .
+
+given that the committee is in its early phases of operation , it is too early to tell whether it will be able to provide the cybersecurity visibility and coordination functions as outlined by the committee charter .
+
+while faa is working to transform the organization of its cybersecurity efforts , the experts we consulted said that it could improve upon those efforts by including all key stakeholders in its agency - wide approach .
+
+all 15 of our cybersecurity and aviation experts agreed that organizational clarity regarding roles , responsibilities , and accountability is key to ensuring cybersecurity across the organization .
+
+in addition , the five experts who commented on stakeholder inclusion all said that because aircraft avionics systems have the potential to be connected to systems outside the aircraft , aircraft cybersecurity issues should be included in an agency - wide cybersecurity effort .
+
+for instance , avs issues cybersecurity - related rules for aircraft and has begun reviewing rulemaking on cybersecurity , but avs is not included in developing the agency - wide approach for information systems security and has no representative on the cybersecurity steering committee .
+
+faa states that avs subject matter experts can be called upon to share information and recommendations but that regulatory aspects associated with cybersecurity for avs's information systems are addressed by the faa's cio and are therefore not under the purview of the faa cybersecurity steering committee .
+
+while avs has not directly requested to be on this committee , we previously found that it is important to ensure that relevant participants be included in collaborative efforts.could result in omitting an faa stakeholder that has an understanding of specific technological changes in aircraft traversing the nas environment and how these changes might intersect with changing atc technologies and cybersecurity needs .
+
+according to nist , one goal of an agency - wide approach to cybersecurity is protecting new information systems from threats by ensuring that when those systems are acquired , they incorporate security controls .
+
+to accomplish this goal , faa's acquisition management system ( ams ) includes the six major information - technology and security - risk - management activities described in key nist guidance .
+
+while faa has integrated these six activities into the ams lifecycle , our analysis of two nextgen foundational programs , sbss and data comm , revealed instances in which some of these activities were not completed properly , or were completed in an untimely manner .
+
+in addition , while data comm managers have thus far provided oversight of their contractors' security - related acquisition activities , sbss managers did not possess some of the detailed information that would have enhanced their oversight prior to the system's deployment .
+
+to its credit , faa has integrated nist's six broad information - security and risk - management activities into its ams , which guides the life cycle processes to be followed in developing faa information systems .
+
+these activities include assessing the security controls , authorizing the system to operate based on the results of security categorizing the system's impact level,selecting security controls , implementing the security controls , assessments and a determination of risk , and monitoring the efficacy of the security controls on an ongoing basis following a system's deployment .
+
+these activities and their relationship to faa's ams life cycle are shown in figure 5 below .
+
+system categorization: nist guidance states that in applying the risk management framework to federal information systems' design and development processes , agencies should first categorize each information system's impact level ( i.e. , the severity of the consequences to the agency's mission if a system were compromised ) .
+
+in accordance with this guidance and other federal agency requirements , faa's acquisition process requires that each new system's security impact level be categorized as low , moderate , or high based upon the risks associated with the system and the information it processes , stores , or transmits.of the six foundational nextgen systems we reviewed , all have completed at least an initial categorization process .
+
+select security controls: nist guidance states that agencies should next select protective measures , known as security controls , based on the characterization described above .
+
+according to nist guidance and federal agency requirements , the impact categorization determines which security control baseline ( i.e. , starting point for consideration ) the system should use , as the low - impact baseline lists fewer controls than the moderate - or high - impact baselines .
+
+nist guidance also states that as part of the selection phase , organizations should tailor the baseline security controls so that they align with the system's specific mission , function , or environment .
+
+in some cases , this aligning may include eliminating some inapplicable controls or applying supplemental controls .
+
+in accordance with nist guidance , faa's acquisition policies require the selection of appropriate security controls that reflect the system's categorization , and allow for appropriate tailoring of security controls .
+
+for example , detailed tailoring directions are provided in an faa handbook that supplements the ams .
+
+in addition , faa recently drafted guidance to require that programs report , among other things , the cybersecurity decisions and activities conducted in the selection of security controls .
+
+implement security controls: nist guidance also states that once selected , the system must implement controls specified in the security plan .
+
+the guidance emphasizes that implementation helps protect systems against possible compromise .
+
+when nist changes its guidance and introduces new security controls , omb calls for deployed systems to implement the controls within one year of the change , and for systems under development to comply with nist publications upon their eventual deployment .
+
+the handbook that supplements faa's ams states that selected and tailored security controls should be implemented ; however , according to faa officials , faa does not have a policy regarding how quickly to implement new nist controls , and one official stated that the omb's direction is “not realistic” given current constraints .
+
+the official noted that while the agency recognizes that its implementation cycle for critical cybersecurity controls needs to be more agile and responsive , swift implementation is hampered by federal - funding processes , acquisition requirements , and , as discussed below , the need to extensively test security controls .
+
+the official noted that faa is considering adapting acquisition practices in order to rapidly implement critical controls ; however , no definitive plan has been established .
+
+assess security controls: additionally , nist guidance states that assessments are important to ensuring that the security controls are functioning as intended .
+
+if a weakness is discovered during the assessment process , agencies are expected to generate a remediation plan to address the identified weakness .
+
+omb directs agencies to develop plans of action and milestones ( poa&ms ) , which are intended to help agencies act upon assessment findings .
+
+similarly , faa's acquisition policies state that security controls should be assessed to ensure that they provide the necessary security protection for each acquired system .
+
+the faa handbook that supplements the ams provides detailed guidance on managing poa&ms in the event that the assessments discover weaknesses .
+
+authorize system to operate based on risk: in addition , faa's ams states that systems must obtain security authorization approval prior to receiving authorization to operate , which reflects nist guidance that authorization to deploy a system should only be granted after considering the risks .
+
+nist guidance states the authorizing officials should consider the results of assessments , including poa&ms , in their decisions .
+
+similarly , the faa acquisition process requires that the authorizing official receive poa&ms to assist them in deciding if the system can be deployed .
+
+moreover , the ams requires that systems be reauthorized at least every 3 years , and the decision regarding whether or not the security risks are acceptable must be reconsidered at that time .
+
+according to both nist and faa policy , reauthorization may take place more frequently than every 3 years if significant changes occur to the information system environment .
+
+monitor security controls on ongoing basis: last , nist guidance states that agencies should monitor the security controls on an ongoing basis after deployment , including assessing controls' effectiveness and reporting on the security state of the system .
+
+faa's ams states that the security controls must be monitored after the system is deployed to ensure that they operate as expected and provide the necessary protection .
+
+examples of faa's continuous monitoring activities include periodic scans of operational systems , patching vulnerabilities , and updating the system's security plan .
+
+faa's acquisition policies also require that each system assess a subset of its controls every year .
+
+core security controls , which have greater volatility or importance to the organization , are to be assessed every year .
+
+nextgen programs are completed in stages , sometimes referred to as builds .
+
+as a result , even when one build of a system is operational , the program is not necessarily complete .
+
+new features and capabilities can be added to the system over time as future builds move through the acquisition process .
+
+moreover , some steps can be completed more than once .
+
+for example , multiple assessments can take place .
+
+repeated to determine whether updates are required .
+
+for example , security controls for sbss have been re - assessed by faa's independent risk assessment team , which conducts testing , demonstrations , file reviews , and interviews with relevant personnel before and after a system becomes operational .
+
+many of the six broad risk - management activities described in the ams and nist guidance involve security controls .
+
+these detailed protective measures — which include topics like access control , contingency planning , and physical security measures — are critical to ensuring that systems are sufficiently protected .
+
+among other things , nist guidance states that agencies should select security controls and assess the efficacy of security controls .
+
+in addition , nist and omb expect agencies to address weaknesses found during assessments .
+
+we analyzed two nextgen programs' treatment of security controls and remediation activities: ( 1 ) sbss , which is operating in some parts of the nas , including over the gulf of mexico , and ( 2 ) data comm , which has not yet finished the acquisition process but has deployed a test system .
+
+we selected these because of their importance to nextgen , cost , and deployment status .
+
+although faa adhered to aspects of federal guidance on control selection , assessment , and weakness remediation , its implementation of these risk management activities could be or could have been improved .
+
+nist provides the specific security protections , known as security controls that an organization should consider to help protect an information system .
+
+for a “moderate impact” system , like the majority of the foundational nextgen systems that have completed the categorization process , nist lists more than 200 such controls as a baseline .
+
+however , nist acknowledges that agencies should tailor security controls so that they are relevant and appropriate for their individual systems .
+
+the process of tailoring controls can include electing to rely on common controls rather than selecting a comparable nist control for implementation,are not applicable for a particular system .
+
+according to nist guidance , these decisions must be justified and appropriately documented , such as in a system security plan .
+
+or deciding that controls identified by nist when sbss was developed , faa and its contractors selected controls from nist guidance .
+
+for example , they selected controls such as an audit record of login attempts and automated mechanisms to alert security personnel to malicious activity .
+
+as allowed by the nist and faa guidance , sbss determined that many controls were not applicable or were already covered by existing common controls , such as policies and procedures related to faa security management activities .
+
+sbss's initial system - security plan accounted for the majority of moderate baseline controls recommended at the time .
+
+however , it did not sufficiently document the implementation details for some controls , including contingency planning and incident response controls .
+
+for example , the initial system security plan described the existing process that faa used to detect and respond to incidents affecting nas systems .
+
+however , it did not describe system - level requirements or procedures for incident handling for sbss .
+
+a few of these controls were associated with weaknesses identified during the assessment process , indicating that these controls should have received more consideration during the selection process .
+
+better documentation in the system security plan may have supported such consideration .
+
+while faa's system - security plan template from fiscal year 2009 provided guidance on documenting security controls , the fiscal year 2015 system - security plan template has since been updated based on nist guidance and provides substantially more detailed instruction than in the past .
+
+in addition , the 2008 sbss system security plan did not record decisions associated with more than three dozen enhancements that nist provides to strengthen the controls and that are included in the security baseline .
+
+for example , while the system security plan accounted for permitted actions without identification or authentication , it did not document the enhancement that clarified that actions should be permitted to the extent necessary to accomplish mission objectives .
+
+this lack of documentation may have been due to limitations in faa's system security - plan template during that time period .
+
+while the template provided instruction that enhancements were to be documented , it did not specifically identify them in the same way that other controls were identified .
+
+sbss continues to update the system security plan and security controls as part of the ongoing monitoring process , and the current system - security plan template covers enhancements .
+
+the data comm program is newer than sbss and is not yet operational , as of and as such , its initial security control selection is still under way.october 2014 , data comm had included approximately 60 percent of the more than 250 controls listed in the third version of the nist 800-53 guidelines , some of which were identified as common controls .
+
+as for the slightly more than 100 controls that were identified as out of scope at this time , an faa official explained that updates will be made as the program matures and that more security controls may be added in the future as deemed necessary .
+
+in accordance with nist guidance , data comm has documented its justification for its current selection of nist controls and its tailoring decisions to date in the system security plan .
+
+however , even though sbss and data comm contractors justify control selection in the programs' respective system - security plans , the contractors are not required to implement the most recent controls unless specifically tasked to do so by faa .
+
+currently , the sbss contractor is only obligated to follow the first revision of nist guidelines from 2006 , although nist has updated the guidelines three times since that time , most recently in 2013 .
+
+data comm's contractor is required to follow the third version of the guidelines , which was published in 2009 , and updated in 2010 .
+
+nist updates its guidelines to reflect new and emerging threats , and issues new security controls to help agencies better protect their systems .
+
+according to nist , the most recent update was motivated by the increasing sophistication of cyber attacks and the operations tempo of adversaries ( i.e. , the frequency of such attacks , the technical competence of the attackers , and the persistence of targeting by attackers ) .
+
+according to faa , systems can incorporate new controls on an ad - hoc basis or by modifying systems' contracts to reflect updated nist guidance , and nist's most recent controls are reflected in faa's updated templates and guidance .
+
+however , faa does not require that contracts be modified within a particular time frame to reflect nist revisions .
+
+although the sbss program asks the contractor to implement more recent nist controls on an ad - hoc basis , these actions are outside of the contract's requirements and , according to program officials , must be paid for separately .
+
+while ad - hoc additions may be sufficient in some cases , sbss has not yet implemented some of the controls that nist recommended in its 2010 revision , but plans to address these controls in accordance with nist's 2013 update as these are part of a large update .
+
+sbss officials explained that they did not previously have funding for an update of such a large scope , but they requested and received funding beginning in fiscal year 2015 .
+
+according to program officials , these funds will allow them to adopt the missing controls .
+
+an faa official stated that the sbss program plans to adopt the most recent version of the nist standards in fiscal year 2016 .
+
+given the pace of change in the threat environment , omb is directing agencies that timely adoption of new nist guidance , within a year , is critical to enhancing the protection of agencies' information systems .
+
+as previously discussed , omb requires that if nist updates its security control guidance — which has occurred four times since the guidance was initially developed in 2005 — deployed systems must implement all relevant updates within one year .
+
+systems with weaknesses that could be exploited by these adversaries may be at increased risk if relevant controls in the new nist guidelines are not implemented .
+
+with regard to data comm , an faa official responsible for the program explained that the program security office had reviewed the changes in the most recent version of the nist guidelines and that the official did not believe any security control changes that warranted a contract modification .
+
+rather , the program will identify any security differences between the baseline and the latest nist 800-53 revision 3 as part of the acquisition process and address them in the resulting poa&ms , if required .
+
+however , the program office did not have an official analysis associated with this decision .
+
+nist guidance recommends that agencies document the assumptions , constraints , and rationale supporting significant risk - management decisions in order to inform future decisions .
+
+without documentation of its analysis , data comm's future managers may not be able to react appropriately when the threat landscape changes to such a degree that a contract modification would be warranted .
+
+faa did not sufficiently test certain security controls provided by the system's contractor prior to sbss's deployment .
+
+as previously discussed , nist guidance permits agencies to rely on controls provided by another party , such as a contractor ; however , it instructs agencies to ensure that such controls are still sufficient and appropriate .
+
+as nist explains and as gao has previously found , the responsibility for mitigating risks arising from the use of contractor - provided systems and security controls lies with the agency .
+
+nist instructs agencies to determine if security controls provided by external parties are sufficient to ensure protection .
+
+while nist guidance provides some latitude in how agencies are to accomplish this task , the guidance makes clear that the steps must be sufficient to ensure the security of the system at hand .
+
+however , faa's pre - deployment testing of sbss was insufficient .
+
+specifically , according to the sbss contractor , faa used a briefing by the contractor to determine that the contractor's processes for managing and controlling changes to sbss were sufficient .
+
+however , the agency did not evaluate the processes to ensure that they were in place and operating effectively until october 2009 , nearly a year after the system was initially deployed , when faa identified significant weaknesses with the sbss configuration controls implemented by the contractor .
+
+shortcomings in these contractor - provided change - management security controls contributed to a significant sbss system outage .
+
+specifically , in august 2010 , an engineer made an error while implementing a system change that caused the network to shut down , which prevented surveillance data transmitted through the hub from reaching faa control centers .
+
+as a result , air traffic controllers could not use sbss surveillance data to help separate aircraft in the affected locations for nearly 16 hours .
+
+a report produced by the sbss contractor after the outage identified that the outage had occurred because of shortcomings in the processes and controls for managing and controlling changes to the system , and recommended steps to ensure that such a disruption would not occur again , including strengthening these controls .
+
+although faa's testing had discovered weaknesses in a few of the controls less than a year before the outage , more robust testing of the controls prior to deployment may have indentified these issues earlier — possibly allowing for any identified to be corrected in time to potentially prevent or reduce the impact of the outage .
+
+however , these weaknesses had not yet been remedied when the outage occurred.has been thoroughly investigated to ensure that the sbss program and the contractor learned from the experience , and that remedial actions were taken to strengthen the controls .
+
+furthermore , a representative from the sbss contractor noted that nextgen programs share information on an ad hoc basis to allow other systems to benefit from their experiences .
+
+faa officials stated the outage although data comm has not finished selecting its security controls , an faa official who manages the program reported that the contractor is testing controls that have been selected thus far .
+
+in addition , data comm had identified more than 70 controls as of october 2014 that it classified as common controls .
+
+as previously discussed , common controls are managed by the agency , and accepting these controls is permitted by nist guidance .
+
+according to faa , data comm and other nextgen systems rely on the integrity of common controls so that they do not have to duplicate effort and spend funds needlessly .
+
+however , we recently reported that faa did not test how some common controls protected the security of systems being added to the atc environment .
+
+for example , faa defined the security awareness training common control , but the testers did not examine training records to verify that personnel on the systems that rely on the control were taking the training .
+
+we recommended that faa ensure that testing of security controls , including common controls , is comprehensive enough to determine whether these controls are operating effectively , and faa concurred .
+
+according to nist guidance and the ams , agencies are expected to create plans of action and milestones ( poa&m ) when security weaknesses are detected during the testing of an information system .
+
+according to nist and omb , poa&ms are a remediation plan with milestone dates for corrective actions that are needed to mitigate the identified weakness .
+
+in order for a poa&m to be closed , risk must be at an acceptable level .
+
+for example , the program might implement additional security controls , or further examination may show that the weakness is an acceptable risk or not actually applicable to the system .
+
+however , sbss has not always remediated weaknesses identified in poa&ms , which exposes the system to risk .
+
+according to faa , sbss was deployed in 2008 with weaknesses in the program's intrusion detection system , a shortcoming that was still unresolved as of early 2015 .
+
+an faa official explained that remedial actions had not been implemented previously due to a lack of funding , but would be applied as part of an estimated $42 million update in fiscal year 2015 .
+
+gao , information security: faa needs to address weaknesses in air traffic control systems .
+
+gao - 15-221 .
+
+ ( washington dc: january 2015 ) .
+
+infrequent to facilitate timely oversight and resolution of poa&ms .
+
+in october 2013 , faa implemented a new poa&m database , known as the smart tool , that faa officials say is intended to improve oversight , and could reduce delays in addressing poa&ms .
+
+although faa policy does not identify a maximum amount of time that a poa&m can remain unresolved , delays in addressing security weaknesses extend the amount of time that systems are vulnerable to exploitation .
+
+faa officials agreed that systems are more secure when poa&ms are resolved in a timely fashion .
+
+in addition , until september 2014 , data comm had not finished formally documenting the rationale as to why it did not plan to mitigate some of the weaknesses of a test system associated with the program .
+
+these weaknesses had been discovered in fiscal year 2013 .
+
+specifically , the data comm program is using a test system at two locations to obtain feedback from controllers , pilots , and other users .
+
+the test system generated 30 poa&ms in fiscal year 2013 , and faa has since resolved them .
+
+however , faa officials reported that they do not intend to address all of the poa&ms because they will replace the test system in 2016 with new technology that reflects user feedback .
+
+all of the poa&ms are categorized as “low risk,” and faa officials explained that their analysis of the costs , risks , and benefits indicates that these poa&ms are not worth addressing given the replacement schedule ; however , this analysis was not initially noted in the poa&m records .
+
+as noted previously , nist guidance states that documenting significant risk management decisions is imperative in order for officials to have the necessary information to make credible , risk - based decisions .
+
+we asked data comm officials about this concern in september 2014 , and were told that data comm had taken action to remedy the situation during the course of our audit .
+
+specifically , the poa&m records were updated to reflect the program's decision process .
+
+according to faa's ams , procurement should be an integrated part of the acquisition life - cycle management process , and contract administration should include monitoring contract deliverables .
+
+we found that faa and the sbss contractor communicated about key milestones during the acquisition process , and such communication contributes to the broad goal of contract monitoring .
+
+for example , the contractor performed the design - phase risk assessment ( which detailed the methodology for control selection ) , presented that assessment to faa , and received comments from faa on the control selection process .
+
+however , faa's ability to monitor sbss's contract deliverables was reduced by limitations in the system's work breakdown structure ( wbs ) .
+
+a wbs deconstructs the program's end product into successive levels with smaller elements until the work has been subdivided into a level suitable for management control .
+
+the lowest , most detailed level of the wbs is defined as the work package level .
+
+there were more than 50 work packages for sbss , but our analysis found that the work packages for sbss primarily covered management issues for certification and accreditation versus detailed security issues .
+
+consequently , most of the work packages did not address design and development activities for specific , complex , technical - security requirement areas .
+
+moreover , many of the work packages' project implementation activities were not formally tracked or monitored .
+
+as a result of these issues , faa could not effectively monitor the contractor's cost , schedule , and technical problems associated with specific security requirements .
+
+the lack of specificity and oversight unnecessarily increased the risk that weaknesses could occur .
+
+sbss's contractors are also responsible for implementing security controls to address weaknesses , but we found that in at least one case , faa did not exercise its oversight responsibility to provide the contractor with sufficiently timely feedback on the plans of action ( i.e. , poa&ms ) that detail which security controls should be adopted .
+
+specifically , in 2013 , the contractor provided faa with cost and schedule assessments associated with 48 poa&ms .
+
+however , despite attempts to solicit feedback , faa did not provide the contractor with timely feedback on this proposal for 5 months , when faa declined the proposal .
+
+instead , faa determined it would issue a new request for proposals based on more recent nist guidance ( rev .
+
+4 ) to address these controls .
+
+as data comm is still under development , its security requirements and selected controls continue to evolve .
+
+officials stated that they work closely with the contractor to ensure delivery against technical cost and schedule requirements .
+
+for the security controls selected thus far , faa is able to trace the control to the associated security requirement , an ability that indicates that faa is exercising oversight in this area .
+
+we also found that the data comm program also monitors system development and security through a variety of meetings , such as monthly program management reviews , quarterly executive committee meetings , bi - weekly program management working groups , and weekly contracts meetings .
+
+while the ams does not delineate specific meeting frequency or agenda requirements , the regularity and content from data comm's meetings aligns with the ams guidance to monitor the contract deliverables .
+
+through its nextgen initiative , faa is shifting the atc system from a point - to - point communications system to an internet - technology - based , interconnected system , a process of changeover that increases cybersecurity risks .
+
+faa is making strides to address these risks , including implementing an enterprise approach for protecting its systems from cyber attack by both internal and external threats in accordance with nist and other cybersecurity leading practices ; however , faa has not developed a holistic threat model that would describe the landscape of security risks to faa's information systems .
+
+such a model would inform the ongoing implementation of faa's cybersecurity efforts to protect the national airspace system .
+
+development of a threat model could require significant resources and time , however , and faa would first need to assess the costs and time frames involved in such an effort .
+
+faa has also recognized that extensive changes to its information - security procedures and some realignment of information security functions within its organization are required to implement a secure , interconnected ip - based atc system , and has taken a number of steps in this direction .
+
+however , the experts we consulted were concerned that faa's plans for organizational realignment have not adequately considered the role of the office of safety , which is responsible for certifying the avionics systems aboard aircraft , including cybersecurity of those systems that enable communication with air traffic control and that guide aircraft .
+
+faa's acquisition management system is evolving to stay up - to - date on federal cybersecurity guidance as faa designs and develops nextgen systems ; and faa has made significant strides in incorporating requirements for security controls recommended by nist guidelines into its acquisition of these systems .
+
+while faa generally followed many of the nist guidelines for establishing security controls in the two key nextgen acquisitions we examined , we found instances where faa lacked assurance that security weaknesses were properly addressed .
+
+for sbss , faa did not ensure that weaknesses identified during security reviews were adequately tracked and in some cases were not resolved on a timely basis .
+
+as a result , faa lacked assurance that weaknesses that could compromise system security were addressed , exposing systems to potential compromise .
+
+faa has taken steps to ensure future incidents do not occur , such as creating a more robust remediation system for tracking weaknesses .
+
+also , for both systems , faa has not yet adopted , as directed by omb , the latest security controls recommended by nist guidelines , which reflect updates to deal with the evolving cybersecurity threat to information .
+
+although faa anticipates that sbss will adopt these controls in fiscal year 2016 , the program has yet to provide the funding to the contractor to implement the controls .
+
+delays in adopting the latest standards extend the amount of time that system security requirements may not adequately mitigate system exposure to the newest threats .
+
+to better ensure that cybersecurity threats to nextgen systems are addressed , the secretary of transportation should instruct the faa administrator to take the following three actions .
+
+as a first step to developing an agency - wide threat model , assess the potential cost and timetable for developing such a threat model and the resources required to maintain it .
+
+incorporate the office of safety into faa's agency - wide approach by including it on the cybersecurity steering committee .
+
+given the challenges faa faces in meeting omb's guidance to implement the latest security controls in nist's revised guidelines within one year of issuance , develop a plan to fund and implement the nist revisions within omb's time frames .
+
+we provided a draft of this report to the department of transportation for review and comment .
+
+the department provided written comments , which are reprinted in appendix ii .
+
+the department concurred with two of our three recommendations .
+
+specifically , faa concurred with the recommendation that it assess the potential cost and timetable for developing an agency - wide threat model , and the recommendation that it develop a plan to fund and implement nist revisions within omb timeframes .
+
+with regard to the recommendation to incorporate the office of safety into faa's agency - wide approach by including it as a member on the cybersecurity steering committee , the department believes that faa has already complied with the intent of the recommendation .
+
+according to the department , faa has transferred cybersecurity personnel from the office of safety to the office of the chief information officer , which manages cybersecurity for all aviation safety information systems .
+
+the department also stated that faa's chief information office works closely with the office of safety on certification standards for non - faa information systems operating within the national airspace system .
+
+we agree that these actions will help in the execution and coordination of cybersecurity activities involving the office of safety .
+
+however , we maintain that in addition to these actions , the office of safety should be a member of the cybersecurity steering committee , which , as the department notes in its letter , was established to lead faa's efforts to develop a comprehensive cyber - risk management strategy , and to identify and correct both existing and evolving vulnerabilities in all internet protocol - based systems .
+
+because aircraft aviation systems are becoming increasingly connected to systems outside the aircraft , the office of safety , which is responsible for certifying aircraft systems , should be involved in agency - wide cybersecurity efforts , including cybersecurity planning and vulnerability identification , since such efforts may be crucial in conducting its certification activities .
+
+as we state in the report , not including the office of safety as a full member of the committee could hinder faa's efforts to develop a coordinated , holistic , agency - wide approach to cybersecurity .
+
+this lack of involvement could result in omitting an faa stakeholder that has an understanding of specific technological changes in aircraft traversing the nas environment and how these changes might intersect with changing atc technologies and cybersecurity needs .
+
+in its comments the department stated that faa is committed to strengthening its capabilities to defend against new and evolving cybersecurity threats .
+
+according to the department , faa is initiating a comprehensive program to improve the cybersecurity defenses of the nas infrastructure , as well as other mission critical systems .
+
+the department's letter lists a number of actions faa has taken to improve cybersecurity , many of which are described in this report .
+
+we applaud faa's commitment to strengthening cybersecurity in the nas , and agree that the actions it has taken are important steps for faa to take .
+
+we also believe that addressing our recommendations will result in valuable improvements to the information security of the nas .
+
+we are sending copies of this report to the department of transportation and the appropriate congressional committees .
+
+in addition , the report will be available at no charge on the gao website at http: / / www.gao.gov .
+
+if you or your staff members have any questions about this report , please contact me on ( 202 ) 512-2834 or at dillinghamg@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+key contributors to this report are listed in appendix iv .
+
+the objectives of this report were to ( 1 ) identify the key challenges facing faa as it shifts to the nextgen atc system and how faa is addressing those challenges and ( 2 ) assess the extent faa and its contractors followed federal guidelines for incorporating cybersecurity requirements in its acquisition of nextgen programs .
+
+to ascertain challenges faa faces with nextgen and how faa has begun addressing these challenges , we obtained relevant security documents from faa and detailed descriptions of faa's cybersecurity efforts from officials .
+
+we also selected a non - generalizable sample of 15 cybersecurity and aviation experts with varied experience — some of whom have knowledge of faa's internal cybersecurity activities , policies , and personnel .
+
+we then analyzed the information about faa's cybersecurity efforts , synthesized it , and produced a document that we provided to the experts for their review .
+
+faa concurred that the document was accurate .
+
+we then interviewed the experts , collecting information on the cybersecurity challenges they think faa faces and will face in the nextgen transition .
+
+interviewees also commented , to the extent they were able , on the extent to which faa's cybersecurity activities and plans address the identified challenges .
+
+we analyzed and synthesized these responses , reporting on the numbers of experts who discussed particular topics as well as the numbers of experts who agreed or disagreed on particular messages .
+
+the experts from whom we obtained responses are listed in table 1 .
+
+separately , we also obtained the views of several aviation industry officials , including officials from the airlines for america , airports council international — north america , air line pilots association , general aviation manufacturers association , garmin , mitre corporation,national air traffic controller association , and the boeing corporation .
+
+we also reviewed relevant reports issued by gao , the inspector general of the department of transportation , and the national academies .
+
+to assess the extent to which faa and its contractors , in the acquisition of nextgen programs , have followed federal guidelines for incorporating cybersecurity controls , we compared pertinent faa policies , procedures , and practices with selected federal information security laws and federal guidance , including standards and guidelines from the national institute of standards and technology ( nist ) .
+
+in particular , we compared faa's acquisition management system ( ams ) against nist's risk management guidelines and information technology - security guidelines ( 800-37 ) and security considerations in software development life cycle ( 800-64 ) to determine if faa's acquisition policy follows federal cybersecurity guidelines for the six foundational nextgen programs: surveillance and broadcast services ( sbss ) ; collaborative air traffic management ( catm ) ; data communications ( data comm ) ; nas voice switch ( nvs ) ; common support service - weather ( css - wx ) ; and system wide information management ( swim ) .
+
+the nextgen foundational programs consist of different segments , also called builds ; parts ; and subsystems .
+
+some security activities take place at the program level , while others apply to specific components of the program .
+
+we analyzed faa's program documentation of key cybersecurity activities as described by nist and interviewed system managers to determine if faa completed the activities or has plans to complete the activities that were started but not fully completed .
+
+in addition , we chose two key nextgen acquisitions , sbss and data comm , for an in - depth review because of their importance to nextgen , cost , and deployment status .
+
+sbss has completed the acquisition cycle , while data comm will allow for insight into how the process has changed and what still might be an issue for upcoming programs .
+
+we assessed if faa had established and implemented a disciplined life - cycle management approach integrated with information security by comparing faa's policies for system life - cycle management and cybersecurity to nist guidance on security risk management system acquisition .
+
+we also compared documentation of project activities and plans to these requirements , and interviewed officials about faa's policies and faa's information security practices .
+
+we assessed how well faa and contractors completed key cybersecurity activities and the extent to which they complied with ams and nist requirements relating to cybersecurity .
+
+we also compared documentation of project activities and plans to these requirements , and interviewed agency officials about faa's policies and information security practices .
+
+we also reviewed pertinent sections of prior gao reports related to cybersecurity .
+
+we performed our work at faa headquarters in washington , d.c. ; the air traffic control systems command center in warrenton , virginia ; and at an faa contractor location in herndon , virginia .
+
+we determined that information provided by the federal and nonfederal entities , such as the type of information contained within faa's security assessments and plans of action and milestones , was sufficiently reliable for the purposes of our review .
+
+to arrive at this assessment , we corroborated the information by comparing the plans with statements from relevant agency officials .
+
+we conducted this performance audit from september 2013 through march 2015 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objective .
+
+in addition to the individual named above , ed laughlin , assistant director ; gary austin , assistant director ; nick marinos , assistant director ; jake campbell ; bill cook ; colin fallon ; elke kolodinski ; nick nadarski ; josh ormond ; krzysztof pasternak ; and alison snyder made key contributions to this report .
+

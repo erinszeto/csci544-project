@@ -1,0 +1,742 @@
+the internal revenue service ( irs ) relies extensively on information technology ( it ) investments to annually collect more than $3 trillion in taxes , distribute more than $400 billion in refunds , and carry out its mission of providing service to america's taxpayers in meeting their tax obligations .
+
+for fiscal years 2016 and 2017 , the agency reported spending approximately $2.7 billion and $2.6 billion , respectively , for these investments .
+
+given the size and significance of irs's investments and the challenges inherent in successfully delivering them , you asked us to review the performance of key it investments and the agency's associated risk management efforts .
+
+specifically , our objectives were to ( 1 ) evaluate the performance of selected irs it investments , ( 2 ) summarize any risks associated with selected irs legacy systems and evaluate the steps the agency has taken to manage them , and ( 3 ) determine the extent to which irs has implemented key it workforce planning practices .
+
+to address the first objective , we initially identified a non - generalizable sample of the agency's investments based on several factors , including ( 1 ) mission criticality ; ( 2 ) funding for fiscal year 2016 , as reported on the federal it dashboard ; and ( 3 ) investment risk , as determined by irs .
+
+this resulted in the selection of nine investments for our review .
+
+four of the selected investments were primarily in development during fiscal year 2016 and five investments were primarily in the operations and maintenance phase during the same time frame .
+
+for the four investments in development , we reviewed documentation , including quarterly reports showing planned versus actual cost , schedule , and scope of work delivered for fiscal year 2016 and the first 2 quarters of fiscal year 2017 .
+
+we also interviewed relevant officials .
+
+for the five investments in the operations and maintenance phase , we obtained operational performance metrics for fiscal year 2016 and the first 2 quarters of fiscal year 2017 , as well as the planned versus actual results against these metrics .
+
+we also compared irs's efforts to assess the operational performance of these investments with key factors identified in the office of management and budget's ( omb ) capital programming guidance .
+
+these factors included , for example , ( 1 ) analyzing how well the investment contributes to achieving the organizations strategic goals ; and ( 2 ) determining the extent to which the investment supports customer processes as designed , and how well the investment is delivering the goods or services it was designed to deliver .
+
+for the second objective , we chose three investments from our initial selection of nine — individual master file ( imf ) , integrated data retrieval system ( idrs ) , and mainframes and servers services and support ( msss ) — because they were originally placed into operation in the late 1960s and early 1970s and , thus , are considered legacy systems .
+
+to summarize the risks associated with these systems , we reviewed risk logs , risk detail reports , and reports identifying the number of staff supporting the systems .
+
+in addition , we reviewed agency documentation identifying the legacy programming languages used and the age of the supporting hardware .
+
+to evaluate the steps irs has taken to manage the risks , we analyzed documentation , including risk management plans ; risk logs ; risk detail reports ; and meeting minutes from irs's applications development risk review board .
+
+in addition , we evaluated the agency's risk management efforts by comparing the aforementioned documentation to key practices identified in the software engineering institute's capability maturity model® integration for development and omb guidance .
+
+we also interviewed irs officials involved in the risk management process .
+
+to address the third objective , we obtained documentation describing a tool that irs is planning to implement agency - wide to address it workforce planning .
+
+further , we viewed a demonstration of the functionality provided by this tool , and interviewed officials in irs's human capital office , as well as investment staff , to determine the extent to which the tool has been implemented across the agency .
+
+we also obtained and reviewed information relative to the agency's cross - functional acquisition training , efforts intended to strengthen it program management , and results of it skills assessments .
+
+we compared irs's current and planned it workforce planning efforts to key practices for it workforce planning derived from sources such as the clinger - cohen act of 1996 ; office of personnel management workforce planning guidance ; and omb circular a - 130 ; and as identified in our report on it workforce planning efforts .
+
+in addition , we interviewed staff responsible for managing four investments to identify the extent to which it workforce planning best practices were being implemented .
+
+we selected the four investments from our initial selection of nine investments according to one or more of the following factors: ( 1 ) mission critical designation by irs , ( 2 ) exposure to human capital risk , or ( 3 ) status as a key development effort at irs .
+
+additional details regarding our objectives , scope , and methodology can be found in appendix i .
+
+we conducted this performance audit from november 2016 to june 2018 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+the mission of the irs , an agency within the department of the treasury ( treasury ) , is to provide america's taxpayers with top quality service by helping them understand and meet their tax responsibilities ; and to enforce the tax law with integrity and fairness to all .
+
+in carrying out its mission , irs annually collects over $3 trillion in taxes from millions of individual taxpayers and numerous other types of taxpayers .
+
+it also manages the distribution of over $400 billion in refunds .
+
+to guide its future direction , the agency has six strategic goals: ( 1 ) empower and enable all taxpayers to meet their tax obligations ; ( 2 ) protect the integrity of the tax system by encouraging compliance through administering and enforcing the tax code ; ( 3 ) collaborate with external partners proactively to improve tax administration ; ( 4 ) cultivate a well - equipped , diverse , flexible and engaged workforce ; ( 5 ) advance data access , usability and analytics to inform decision making and improve operational outcomes ; and ( 6 ) drive increased agility , efficiency , effectiveness and security in irs operations .
+
+the mission of irs's information technology organization is to deliver it services and solutions that drive effective tax administration to ensure public confidence .
+
+it is led by the chief information officer ( cio ) , who oversees several subordinate offices .
+
+figure 1 shows the structure of irs's information technology organization .
+
+for fiscal year 2016 , irs's it portfolio contained 137 investments , of which 23 were classified as major .
+
+according to the agency , it spent approximately $2.7 billion on its it investments during fiscal year 2016 .
+
+of the $2.7 billion , approximately $1.9 billion ( 70 percent ) was spent for operations and maintenance activities , and approximately $800 million ( 30 percent ) was spent for development , modernization , and enhancement .
+
+among the agency's investments that we selected for our review , the following four were primarily in development during fiscal year 2016: the affordable care act ( aca ) administration investment encompasses the planning , development , and implementation of it systems needed to support irs's tax administration responsibilities associated with the patient protection and affordable care act .
+
+the agency reported spending $253 million on this investment in fiscal year 2016 .
+
+customer account data engine 2 ( cade 2 ) is to , among other things , provide daily processing of taxpayer accounts , address a financial material weakness , and maintain a clean audit opinion .
+
+it is expected to replace the nearly 50 year old imf system that irs is using to process individual taxpayer accounts .
+
+a key project supporting cade 2 is the individual tax processing engine project , which , according to the agency , is a complex effort to , among other things , convert approximately 200,000 lines of imf's legacy assembly language code to java .
+
+according to irs , the agency has completed an initial phase of converting the assembly language code for core imf components to java ; however , significant work remains to complete the conversion .
+
+specifically , in october 2017 , irs's cio stated that the agency could deliver a system to replace the core imf components in 5 years if the agency was provided with 50 to 60 employees and the associated funding , direct hire authority to hire employees with the right skills , and approximately $85 million each year .
+
+the agency reported spending $182.6 million on cade 2 in fiscal year 2016 .
+
+the return review program ( rrp ) is irs's primary system for fraud detection .
+
+as such , it supports the agency's capabilities to detect , resolve , and prevent criminal and civil tax noncompliance .
+
+according to irs , as of may 2017 , the system had helped protect over $4.5 billion in revenue .
+
+the agency reported spending $100.2 million on this investment in fiscal year 2016 .
+
+enterprise case management ( ecm ) is to provide an enterprise solution for performing case management across irs's business units .
+
+according to the agency , its current systems provide limited visibility into case management practices between programs , process redundancies , and multiple handoffs that can lead to , among other things , increased risks ; and ecm is expected to address these limitations .
+
+the agency reported spending $38.1 million on the investment in fiscal year 2016 .
+
+five other investments that we selected for our review were in the operations and maintenance phase during fiscal year 2016: msss represents approximately 73 percent of irs's it infrastructure .
+
+specifically , this investment encompasses the design , development , and deployment of servers , middleware and large systems , and enterprise storage infrastructures , including systems software products , databases , and operating systems .
+
+the msss investment began in 1970 .
+
+the agency reported spending $499.4 million on this investment in fiscal year 2016 .
+
+telecommunications systems and support ( tss ) provides the voice and data network infrastructure services , video services , and engineering throughout irs .
+
+the tss investment began in 2001 .
+
+the agency reported spending $336.4 million on this investment in fiscal year 2016 .
+
+end user systems and services ( euss ) provides desktops , laptops , mobile devices , software , incident management services , and asset management services to end users in irs .
+
+the euss investment began in 2002 .
+
+the agency reported spending $238.0 million on this investment in fiscal year 2016 .
+
+idrs is used by irs employees to review tax information , issue notices to taxpayers , and update taxpayer records .
+
+the idrs investment began in 1973 .
+
+the agency reported spending $15.8 million on this investment in fiscal year 2016 .
+
+imf is irs's system for processing individual taxpayer account data .
+
+using this system , accounts are updated , taxes are assessed , and refunds are generated as required during each tax filing period .
+
+virtually all irs information system applications and processes depend on output , directly or indirectly , from this data source .
+
+as previously noted , the agency uses assembly language code to program this system , which began in the late 1960s .
+
+the agency intends to decommission imf once cade 2 is fully implemented ; however , as we recently reported , the agency has not provided a target date for decommissioning imf .
+
+the agency reported spending $14.3 million on this investment in fiscal year 2016 .
+
+for several years , we have reported on the performance of irs's it investments and identified opportunities for improving the management of these investments .
+
+in february 2015 , we reported that the agency had provided summary - level chief technology officer risk assessment ratings for the majority of it investments in quarterly reporting to congress .
+
+however , the agency did not provide such ratings for selected investments for which congress required detailed reporting , including cade 2 and rrp , which are the subject of this review .
+
+we noted that summary - level risk assessment ratings would improve the visibility into risks faced by the investments and provide congress with the information to more easily determine the investments requiring greater attention .
+
+consequently , we recommended that irs provide summary - level risk assessment ratings for all major investments in its quarterly reporting to congress .
+
+in response to our recommendation , irs began providing summary - level risk information for all major investments in its fiscal year 2015 second quarter report to congress .
+
+in its report for the fourth quarter of fiscal year 2016 , the agency reported that selected aging systems were facing increased risks .
+
+in this regard , the agency cio provided a risk assessment rating for major it investments , which incorporated risks associated with people , infrastructure , deferred scope , and delivery of agreed - upon scope .
+
+irs reported that two investments had risk ratings that went from yellow to red .
+
+specifically , imf received a red risk rating for the people factor and cade 2 received a red risk rating for the delivery of agreed upon scope factor .
+
+in a report in june 2016 , we noted , among other things , that cade 2 and aca did not report information on planned versus actual delivery of functionality in accordance with best practices .
+
+in addition , aca did not report timely information on planned versus actual costs .
+
+accordingly , we recommended that irs report , at least quarterly , scope and cost performance for cade 2 and aca , consistent with best practices .
+
+in response to our recommendation , the agency began reporting on planned versus actual delivery of functionality for cade 2 starting in fiscal year 2016 .
+
+however , the agency has not reported on planned versus actual functionality for aca .
+
+in march 2017 , officials responsible for managing the investment told us that the agency had not implemented the recommendation because it did not see the benefit in doing so given that the remaining development work was minimal .
+
+irs subsequently completed the development work for aca in september 2017 , at which point the investment transitioned to operations and maintenance .
+
+given the status of the investment , we agree that the recommendation is no longer applicable .
+
+in addition , our prior work has emphasized the importance of irs more effectively managing its legacy systems .
+
+as part of a government - wide review in november 2013 , we reported on the extent to which 10 agencies' large investments had undergone operational analyses — a key performance evaluation and oversight mechanism required by omb to ensure investments in the operations and maintenance phase continue to meet agency needs .
+
+we noted that msss had not had an operational analysis for fiscal year 2012 .
+
+as a result , we recommended that treasury perform an operational analysis for the investment .
+
+the department did not comment on our recommendation but subsequently performed an operational analysis for the msss investment .
+
+in may 2016 , we reported on legacy it systems across the federal government , noting that these systems were becoming increasingly obsolete and that many of them used outdated software languages and hardware parts that were unsupported by the vendor .
+
+as part of that work , we highlighted treasury's use of assembly language code and common business oriented language ( cobol ) — a programming language developed in the late 1950s and early 1960s — to program its legacy systems .
+
+we noted the need for agencies to move to more modern , maintainable languages , as appropriate and feasible .
+
+further , we noted that a leading it research and advisory company had reported that organizations using cobol should consider replacing the language , and that there should be a shift in focus to using more modern languages for new products .
+
+we also pointed out that the use of cobol presents challenges for agencies given that procurement and operating costs associated with this language will steadily rise , and because fewer people with the proper skill sets are available to support the language .
+
+further , we reported that imf was over 50 years old and , although irs was working to modernize it , the agency did not have a time frame for completing the modernization or replacement .
+
+in addition , we noted that irs did have not have specific activities or timelines for updating msss and euss .
+
+thus , we recommended that treasury direct the cio to identify and plan to modernize or replace irs's legacy systems .
+
+the department had no comments on our recommendation .
+
+we have also previously reported on agencies' it workforce planning efforts .
+
+specifically , in november 2016 we identified eight key it workforce planning activities based on relevant laws and guidance and noted that the five federal departments in our review , including treasury , had mixed progress in addressing the activities .
+
+we made one recommendation to treasury and the department agreed with our recommendation .
+
+the performance of selected irs it investments has varied .
+
+in this regard , we found that the four selected investments in development had spent less than planned , and that most were behind schedule and had delivered less scope than planned .
+
+in addition most of these investments had significant variances , meaning that actual cost , schedule , or scope varied from plans by more than 10 percent .
+
+for the five selected investments in the operations and maintenance phase , we found that most had met all of their operational performance targets and all performed operational analyses required by omb .
+
+however , none of the analyses addressed all key factors specified in omb's guidance .
+
+best practices highlight the importance of monitoring the performance of projects in development by comparing actual cost , schedule , and scope to plans in order to allow appropriate corrective actions if actual performance deviates significantly from planned performance .
+
+with regard to the four selected investments in development that we reviewed , irs reported cost , schedule , and scope performance information for ecm , cade 2 , and rrp , but the agency reported only cost and schedule information for aca .
+
+table 1 provides details reported by the agency on the performance of these it investments .
+
+regarding ecm , the agency reported that it spent $1.5 million less than budgeted , had an approximately 9 percent schedule overrun for the three projects it worked on during the time frame of our review , and delivered about 90 percent of planned scope .
+
+however , after 18 months of working with a contractor , the agency paused all development activities for the investment because the product that was being delivered did not meet the agency's needs .
+
+specifically , according to agency officials , including the cio , the contractor's solution was not sufficiently automated to be scalable across the agency .
+
+thus , irs subsequently established a new effort to acquire a product that would be aligned with its business needs .
+
+the officials stated that the strategy for acquiring the new product includes collaboration with other agencies on experiences in implementing enterprise case management systems and requesting information on potential solutions from commercial vendors .
+
+regarding cade 2 , irs reported that it spent $4 million less than it budgeted , had a 54 percent schedule overrun for the 15 projects it worked on during the time frame of our review , and delivered 46 percent of the planned scope .
+
+officials responsible for managing cade 2 stated that the cost , schedule , and scope variances from planned performance were due to human resource and funding shortages .
+
+specifically , the agency reported that it does not have an adequate number of staff with expertise in assembly language code and tax processing to perform development work on both its core tax processing system ( imf ) and its tax processing system modernization effort ( cade 2 ) , or enough java programmers to develop and maintain new code .
+
+as a result , the agency paused 7 of the 15 projects .
+
+ ( irs's efforts to address its human resources constraints are discussed later in this report. ) .
+
+for rrp , the agency reported that it spent $29.5 million less than budgeted , had a 19 percent schedule overrun for the 4 projects it worked on during the time frame of our review , and delivered about 80 percent of planned scope .
+
+according to the agency , these variances were due to , among other things , overestimation of planned costs , deferral of planned scope to a future release , and additional time needed to address a development defect .
+
+for aca , the agency reported that it spent $41.6 million less than planned and was on time for the four projects it worked on .
+
+according to the agency , the cost variance was due to , among other things , an initial overestimation of the costs to complete planned work .
+
+irs did not track scope delivery for aca and , as a result , we could not determine the scope performance for the investment .
+
+as previously mentioned , in june 2016 , we recommended that irs report on actual scope information for aca at least quarterly .
+
+in its march 2017 response to the recommendation , the agency stated that it did not see the benefits of implementing the recommendation for the investment given the minimal development work remaining .
+
+irs has since completed this development work and transitioned aca to the operations and maintenance phase .
+
+we agree that the recommendation is no longer applicable given the status of the investment .
+
+according to omb's fiscal year 2016 capital planning guidance , ongoing performance of operational investments should be monitored to ensure the investments are meeting the needs of the agency , are delivering expected value , and / or are consistent with the agency's enterprise architecture .
+
+to achieve these goals , agencies are required to establish and publically report on five operational metrics for major it investments , as well as planned and actual performance against these metrics .
+
+according to omb , these metrics seek to answer more subjective questions about areas such as customer satisfaction and financial performance .
+
+irs reported operational performance metrics , as required , for the five selected investments we reviewed that were in the operations and maintenance phase .
+
+further , three of these investments — imf , msss , and tss — met all of their operational performance targets , and the remaining two investments — idrs and euss — met four of five operational performance targets during the time frame that we reviewed .
+
+table 2 lists the operational performance metrics for each of the five investments , the metrics' areas of focus , as well as the extent to which irs met planned performance targets .
+
+with regard to the investments that did not meet their performance targets: idrs did not meet its target for irs employees' usage of the investment for 9 out of the 18 months we reviewed .
+
+officials responsible for managing idrs stated that this was likely due to a reduction in the number of staff at the agency who access taxpayer accounts and to a lag experienced early in the months before notices are sent out for the filing year .
+
+euss did not meet its target for the average amount of time irs employees wait to receive telephone support for 6 out of the 18 months we reviewed .
+
+according to officials responsible for managing euss , this target was missed due to the attrition of telephone support staff and the agency's inability to hire additional support staff .
+
+omb's fiscal year 2016 capital programming guidance highlights the importance of operational analyses in examining the ongoing performance of operational investments .
+
+the guidance further notes that such analyses should be conducted at least annually and should address , among other things , the following: the extent to which the investment supports customer processes as designed , and how well the investment is delivering the goods or services it was designed to deliver ; how well the investment contributes to achieving the organizations a comparison of current performance with a pre - established cost alternative methods of achieving the same mission needs and greater utilization of technology or consolidation of investments to better meet organizational goals .
+
+the five selected investments that we reviewed in the operations and maintenance phase performed operational analyses that addressed most , but not all of these key factors identified in omb guidance .
+
+specifically , four of the investments addressed five of the six factors , and one investment addressed four of the factors .
+
+table 3 provides our assessment of the investments' operational analyses .
+
+with regard to the investments that did not address all key factors identified in omb's guidance: the imf operational analysis did not address the factor associated with greater utilization of technology or consolidation of investments to better meet organizational goals .
+
+specifically , the analysis stated that the agency is researching the validity of converting legacy assembly language code to a modern programming language .
+
+however , the analysis did not more broadly address greater utilization of technology or consolidation to better meet organizational goals , consistent with the key factor in omb's guidance .
+
+in addition , the analysis did not reflect irs's progress to date in modernizing imf and the associated challenges .
+
+this omission is concerning given the risk exposure from the agency's continued use of the legacy assembly language code .
+
+ ( such risk is further discussed later in this report. ) .
+
+with respect to idrs , while the investment is intended to , among other things , provide for systemic review of tax information , issue notices to taxpayers , and update taxpayer records , irs's performance metrics generally focused on system availability and usage and did not address the extent to which the intended functionality was being provided .
+
+agency officials agreed that idrs's metrics could be improved to address the extent to which intended functionality is being provided .
+
+for tss , while the investment provides , among other things , video conferencing and enterprise voice and fax services , the operational analysis did not address how well these service offerings were being delivered .
+
+irs officials stated that they had instead evaluated these service offerings in a post - implementation review , which is a one - time effort conducted after an investment has completed development .
+
+however , by not addressing the factor in the operational analysis , which is an annual exercise , irs risks not being continually informed of the extent to which the investment is meeting the needs of the agency .
+
+in addition , the operational analysis for the tss investment did not appropriately include a comparison of current performance with a pre - established cost baseline .
+
+specifically , while the analysis included planned and actual cost figures for fiscal year 2016 , the planned cost figure was not complete as it did not account for reimbursable costs and user fees .
+
+regarding msss , the operational analysis did not address alternative methods of achieving the same mission needs and strategic goals .
+
+senior officials in irs's information technology organization stated that the agency had performed analyses of alternative methods for achieving mission needs and strategic goals , but these analyses were not included in the operational analysis for the investment .
+
+the operational analysis for euss did not appropriately include a comparison of current performance with a pre - established cost baseline .
+
+specifically , while the analysis included planned and actual cost figures for fiscal year 2016 , the planned cost figure was not complete as it did not include multi - year funding and user fees .
+
+a branch chief for the idrs investment stated that irs has used the same operational performance metrics for the investment for 10 to 15 years , and the agency has not revisited them to justify their validity over time or to modify them .
+
+the branch chief further noted that the operational performance metrics are usage - based and do not provide a qualitative measure of how well the investment is delivering intended services .
+
+irs officials did not identify the causes for the deficiencies we noted with the other selected investments' operational analyses .
+
+until irs addresses the shortcomings noted for the selected operational investments , the agency risks not having critical information needed to determine whether the investments fully meet intended objectives and whether there are alternative ways to efficiently meet the agency's mission .
+
+three selected investments we reviewed — imf , idrs , and msss — are facing significant risks due to their reliance on legacy programming languages , outdated hardware , and a shortage of human resources with critical skills .
+
+however , irs has not implemented steps needed to effectively manage these risks — and thus , the agency's ability to carry out its tax processing and modernization efforts may be impacted .
+
+two of the three selected investments — imf and idrs — rely on legacy programming languages , resulting in increased risk to continuing operation of these investments .
+
+specifically , irs reported that imf is written in assembly language code and cobol , and idrs is written in cobol .
+
+as we previously reported , reliance on assembly language code and cobol has risks , such as a rise in procurement and operating costs , and a decrease in the availability of individuals with the proper skill sets .
+
+in addition , one investment in our review — msss — relies on a significant amount of outdated hardware .
+
+specifically , at the start of fiscal year 2017 , the agency reported an inventory of approximately $684.2 million in hardware associated with this investment .
+
+of this amount , approximately $430.3 million , or 63 percent , was for outdated hardware , with about 21 percent of that amount directly supporting tax processing .
+
+the $430.3 million is broken down as follows: $112.6 million in communications equipment , which includes devices such as network switches and telephone systems ; $171.5 million in systems supporting irs employees , which includes desktop and laptop computers , scanners , and printers ; $88.9 million in equipment directly supporting tax processing , which includes servers and unisys mainframes ; and $57.3 million in storage equipment , which includes automated tape libraries and disk arrays .
+
+figure 2 illustrates the categories of hardware associated with msss , including outdated hardware .
+
+irs officials stated that the outdated hardware associated with msss is expensive to maintain because it is often past the warranty .
+
+specifically , after a warranty for hardware ends , the maintenance fees for this hardware commonly increase by approximately 25 percent per year .
+
+in addition , the officials stated that , relying on this hardware has the potential to expose irs to equipment failures that could preclude its systems from supporting the annual tax filing season and expanding the systems and tools for enforcement approaches , among other things .
+
+the three selected investments — imf , msss , and idrs — are also facing risks due to the attrition of key personnel .
+
+for example , imf program officials noted that developers are responsible for maintaining taxpayer accounts and applying business rules associated with the tax process for a given situation or tax year , and thus require skills beyond creating or updating lines of code .
+
+however , according to an internal staffing report for imf for 2011 to 2017 , the agency experienced attrition of developers skilled in legacy programming languages and tax processing , exposing the investment to increased risks of not being able to successfully process tax information .
+
+for example: according to the report , from 2011 to 2017 , 24 developers responsible for performing work on the imf investment retired or were transferred to other positions .
+
+in addition , as a result of this attrition , 32 developers were available to perform imf system updates for the 2017 tax filing season , which was about 4 developers ( 5,840 work hours ) less than needed to perform the work .
+
+further , as of july 2017 , imf projected a shortage of 3 developers ( 4,042 work hours ) needed for the 2018 tax filing season .
+
+in an internal document identifying options to address the loss of knowledge caused by the attrition of staff for imf , irs reported that it has taken various actions as a result of the ongoing attrition of developers .
+
+among others , these actions include: ( 1 ) cancelation of planned system enhancements ; ( 2 ) training and transfer of developers from other projects to perform work on imf ; and ( 3 ) reduction in the amount of development work being completed for cade 2 to address a financial material weakness .
+
+according to imf risk logs , the investment also reported potential impacts on tax processing as a result of the attrition .
+
+these impacts include ( 1 ) the agency's delay in implementing modifications to imf for the filing season to reflect changes in the tax law , ( 2 ) tax processing delays due to the lack of adequate institutional knowledge to resolve complex issues , and ( 3 ) a lack of necessary data from imf , which the agency uses as input for other tax processing systems .
+
+further , according to the agency's cio , it takes 4 to 5 years to train developers performing work on the imf investment .
+
+the agency , however , is facing challenges with such training and development .
+
+for example , imf program staff stated that the agency has historically recruited and trained future developers from within the agency , where staff had an understanding of irs business processes and concepts .
+
+however , according to the program staff , budgetary reductions limiting travel , moving costs , or stipends , have prevented the agency from continuing such efforts .
+
+according to our analysis of an irs report showing staffing allocations for msss , as of april 2017 , irs reported that there were 12 cobol developers supporting the msss investment .
+
+agency officials noted impacts as a result of attrition among its developers , such as the loss of historical knowledge and expertise required to ensure proper maintenance of systems and prevent disruptions during the tax filing season .
+
+with regard to idrs , irs officials reported the attrition of 30 developers from january 2012 through january 2017 .
+
+in addition , these officials noted that , as of march 2017 , the attrition had resulted in a shortage of 20 developers required to complete work on the investment .
+
+in addition , the agency identified 10 “single points of failure” for this investment , meaning that only one staff is available to support a function .
+
+further , the officials noted that attrition of staff may result in ( 1 ) a delay in updating systems to reflect tax law changes and ( 2 ) irs's inability to complete critical idrs project activities on time .
+
+we established an evaluation framework based on leading practices from the software engineering institute and omb guidance .
+
+the framework consists of 6 practices and 22 associated activities for managing it investment risks .
+
+table 4 identifies these practices and activities .
+
+irs has not fully implemented all of the key practices for managing risks for any of the three selected legacy investments that we reviewed .
+
+specifically , based on our analysis , the agency fully implemented one key practice and partially implemented the remaining five for imf ; fully implemented two key practices , partially implemented two , and did not implement the remaining two for idrs ; fully implemented one key practice , partially implemented three , and did not implement the remaining two for msss .
+
+table 5 provides our assessment of the extent to which irs implemented key risk management practices for the selected three legacy investments .
+
+irs fully implemented one key risk management practice for imf .
+
+specifically , irs officials responsible for managing imf risks stated that the agency continuously identified risks through , among other things , monthly meetings .
+
+further , these risks were documented using the item tracking reporting and control tool , irs's risk and issue repository .
+
+in addition , we determined that irs partially implemented the remaining five key risk management practices for imf .
+
+specifically , the agency prepared for risk management by using irs's application development organization risk management strategy along with the item tracking reporting and control tool , which describe how projects are to identify , analyze , prioritize , mitigate , and monitor risks and issues .
+
+however , the risk management strategy did not address risk constraints or risk assumptions .
+
+in addition , irs's risk analysis for imf included criteria for evaluating and quantifying risk likelihood and severity , but it did not address residual risk , which is the exposure remaining after action has been taken to manage a risk .
+
+further , the agency's prioritization of risks for imf included consideration of risk criticality , but did not include the creation of a risk profile , which documents the highest priority risks .
+
+with respect to risk mitigation , irs developed a stabilization plan in december 2016 for imf , and used the item tracking reporting and control tool .
+
+the stabilization plan and tool addressed risk mitigation plans , which included specific actions to be taken , as well as an assignment of responsibility and commitment of resources .
+
+further , the agency documented the rationale for accepted imf risks and established a schedule or period of performance for risk handling activities .
+
+however , irs did not meet the activities for developing alternative courses of action for all critical risks , and establishing threshold values for acceptability of risks , or threshold values for each risk category .
+
+finally , regarding monitoring , irs reviewed risks at least annually , but did not implement a strategy to escalate and monitor unresolved risks , even though the application development risk management strategy outlined a process for doing so .
+
+further , the agency did not compare risks status to acceptability thresholds to determine the need for implementing a risk mitigation plan .
+
+officials responsible for overseeing risk management activities for the investment also did not review its risk management process at least annually to ensure that the process remains appropriate and effective .
+
+irs fully implemented two of the key risk management practices for idrs .
+
+specifically , the agency continuously identified idrs risks via bi - weekly meetings and documented risks using the item tracking reporting and control tool .
+
+in addition , the agency prioritized risks based on a documented risk inventory and risk profile .
+
+in addition , irs partially implemented two key practices .
+
+specifically , similar to imf , the agency prepared the idrs investment for risk management by using irs's application development organization risk management strategy ; however , it did not address risk constraints or risk assumptions .
+
+further , the agency partially analyzed idrs risks by including criteria for evaluating and quantifying risk likelihood and severity ; however , it did not include residual risks and , thus , may not be aware of additional risk mitigation actions that are needed .
+
+further , irs did not implement the remaining two practices .
+
+with respect to risk mitigation , as of march 2017 , the agency did not include risk mitigation plans , as required , for 15 of the 20 risks identified for idrs .
+
+further , the agency did not maintain dates for risk handling activities for the investment , as the majority of completion dates and projected impact dates for identified risks had passed and these dates were not updated .
+
+the agency also did not meet any of the key activities for monitoring identified risks for the investment .
+
+for example , it did not compare risk status to acceptability thresholds to determine the need for implementing a risk mitigation plan .
+
+further , the agency did not provide evidence that executive leadership is monitoring all top risks for idrs .
+
+for example , while irs officials closed 19 of 20 identified risks noting that these risks were tracked by the applications development risk review board , the meeting minutes that we received from this board did not show that the risks were being monitored .
+
+lastly , irs did not review the idrs risk management process at least annually .
+
+irs fully addressed one key risk management practice for msss .
+
+specifically , the agency prioritized risks in the msss risk log by assigning “red,” “yellow,” and “green” indicators to identified risks .
+
+further , irs identified the most significant risks for the msss investment in a weekly status report which is intended to address the agency's readiness to support the tax filing season .
+
+irs partially implemented three practices for msss .
+
+the agency continuously identified the investment's risks via several processes .
+
+for example , the agency uses its sustaining infrastructure program to address infrastructure components in need of replacement .
+
+according to irs officials and documentation on the sustaining infrastructure program , the program includes ( 1 ) an identification of aging infrastructure components ; and ( 2 ) risk scoring and ranking of the components based on age , the extent to which the asset is associated with critical irs processes , and the asset's impact on operations .
+
+irs officials stated that this process results in a prioritized list of assets that are candidates for replacement .
+
+in addition , the agency documents msss risks via a risk log ; however , the risk log does not include all risks for the investment .
+
+for example , while officials responsible for managing the msss investment told us about human resource risks , these risks were not included in the risk log .
+
+the agency also partially mitigated the investment's risks by developing risk mitigation plans and specific actions for the items identified in its risk log ; however , the actions did not include a schedule or period of performance .
+
+irs also did not establish threshold values for msss risk categories , or alternative courses of action for critical risks .
+
+the agency partially monitored msss risks by reviewing risks regularly , providing executive monitoring of top risks , and implementing a strategy to escalate unresolved risks .
+
+however , the agency did not compare risk status to acceptability thresholds to determine the need for implementing a risk mitigation plan .
+
+in addition , an irs official responsible for managing risk and issue data for the msss investment stated that irs did not review the risk management process for msss annually .
+
+instead , the officials only updated the date and version number on the document that captures this process .
+
+in addition , irs did not implement two key practices .
+
+first , the agency did not prepare the msss investment for risk management .
+
+specifically , while the agency provided the risk management plan intended to document how it prepares the investment for risk management , we found — and irs's director for demand management and project governance , and approver of this plan confirmed — that the plan did not describe the risk management activities that the agency was carrying out for the investment .
+
+in addition , the agency did not meet key activities for analyzing msss risks .
+
+for example , the agency used criteria for evaluating and quantifying risk likelihood but it did not document criteria to analyze the severity of all of its risks or consider inherent and residual risks .
+
+irs cited various reasons for the inconsistent implementation of risk management key practices for the three selected investments .
+
+for example , idrs officials responsible for risk management stated that their current guidance did not clearly address some of the key practices .
+
+further , msss officials responsible for risk management stated that the majority of the risk management activities for the investment are not documented .
+
+in addition , msss officials stated that selected risks were not documented due to their perception that a reduced budget and hiring freeze would not allow the agency to mitigate the risks .
+
+however , documenting these risks would ensure that irs appropriately forms a baseline for initiating risk management activities .
+
+until irs fully implements all of the key practices for managing risks , it will be challenged to successfully identify and mitigate risks before they adversely impact the agency's ability to carry out its mission .
+
+as we have previously reported , implementing effective it workforce planning practices can better position agencies to address human capital risks .
+
+accordingly , our prior work has highlighted four key it workforce planning practices and supporting activities identified in various laws enacted and guidance issued over the past 20 years that call for agencies to perform workforce planning activities .
+
+these key practices are ( 1 ) setting the strategic direction for workforce planning , ( 2 ) analyzing the workforce to identify skill gaps , ( 3 ) developing strategies to address skill gaps , and ( 4 ) monitoring and reporting on progress in addressing skill gaps .
+
+the key it workforce planning practices and supporting activities are identified below .
+
+while irs has initiated it workforce planning efforts , the agency has not yet implemented any of the four it workforce planning practices .
+
+specifically , we found that the human capital office and it organization have collaboratively developed a tool to automate the it workforce planning process but the tool is in the initial stages of implementation and irs has not yet performed any of the activities associated with setting the strategic direction for workforce planning .
+
+in addition , the agency has developed an inventory of its current it workforce but it has not yet developed the competency and staffing requirements nor conducted any of the activities associated with analyzing the workforce to identify skill gaps , developing strategies to address skill gaps , or monitoring and reporting on progress in addressing skill gaps for the agency .
+
+while irs has not implemented key practices for it workforce planning at the agency level , staff for imf and cade 2 — two of the four investments selected for our review — provided evidence of efforts they had taken to address their workforce needs .
+
+for example , for imf , in 2016 , irs established a process for continuously matching the current workforce capacity , in terms of skills and staffing , with a projected level of work .
+
+in addition , imf staff identified competencies and staffing requirements for the investment , and assessed the gaps in competencies and staffing by assessing net available staff hours with needed staff hours for particular skill types .
+
+lastly , imf staff developed strategies and implemented activities in an effort to address it skill gaps by creating a stabilization plan , which includes short and long - term activities for training and realignment of resources .
+
+for cade 2 , irs conducted an assessment in 2015 to identify government and contractor resource needs and utilization .
+
+irs also identified skill gaps and developed strategies and implemented activities such as knowledge transfer sessions to begin addressing these skill gaps .
+
+the cade 2 program manager stated that the program is waiting for additional guidance and direction from the human capital office , as the work in this area was a rudimentary one - time effort .
+
+staff for the remaining two investments we reviewed — idrs and rrp — stated that they were awaiting further implementation of the agency - wide workforce planning tool to address their it workforce planning needs .
+
+irs officials attributed the limited progress in implementing it workforce planning practices to resource constraints and competing priorities .
+
+nevertheless , until the agency implements these practices , it will continue to face challenges in assessing and addressing the gaps in knowledge and skills that are critical to the success of its key investments , some of which we identified earlier in the report .
+
+irs has performed operational analyses to examine the ongoing performance of some it investments , but it has not fully addressed key factors specified in omb guidance .
+
+until irs fully addresses all key factors for performing operational analyses , the agency risks not having the information it needs to determine whether the investments fully meet intended objectives , or if there are alternative or more efficient ways to do so .
+
+in addition , irs faces significant risks that could impact key tax processing investments .
+
+specifically , imf , idrs , and msss are reliant on legacy programming languages and outdated hardware , and the agency is experiencing shortages of staff with the skills to support these investments .
+
+however , the agency has not implemented key risk management practices , placing the tax processing and modernization efforts at risk .
+
+by fully implementing key risk management practices , irs will have better assurance that it is proactively addressing risks before they can impact the agency's ability to carry out its mission .
+
+further , although human capital risks have in part led to significant cost , schedule , and scope variances for cade 2 , a key modernization system , irs has not implemented key it workforce planning practices .
+
+specifically , while the agency has initiated efforts to address workforce planning agency - wide , which it plans to continue , the efforts have not yet been implemented for all of the agency's it investments .
+
+until irs implements effective key workforce planning practices , it will not be best positioned to address the human capital risks it faces and ensure the timely and effective delivery of its investments .
+
+we are making the following 21 recommendations to irs: the commissioner of the irs should ensure the operational analysis for imf fully addresses greater utilization of technology or consolidation of investments to better meet organizational goals .
+
+ ( recommendation 1 ) the commissioner of the irs should ensure the operational analysis for idrs addresses the extent to which the investments support customer processes as designed , and how well the investments are delivering the goods or services they were designed to deliver .
+
+ ( recommendation 2 ) the commissioner of the irs should ensure the operational analysis for tss addresses the extent to which the investments support customer processes as designed , and how well the investments are delivering the goods or services they were designed to deliver .
+
+ ( recommendation 3 ) the commissioner of the irs should ensure the operational analysis for tss includes a comparison of current performance with a pre - established cost baseline .
+
+ ( recommendation 4 ) the commissioner of the irs should ensure the operational analysis for euss includes a comparison of current performance with a pre - established cost baseline .
+
+ ( recommendation 5 ) the commissioner of the irs should ensure the operational analysis for msss addresses alternative methods of achieving the same mission needs and strategic goals .
+
+ ( recommendation 6 ) the commissioner of the irs should fully implement the risk management key practice associated with preparing for risk management for the imf investment .
+
+ ( recommendation 7 ) the commissioner of the irs should fully implement the risk management key practice associated with analyzing risk for the imf investment .
+
+ ( recommendation 8 ) the commissioner of the irs should fully implement the risk management key practice for prioritizing risk for the imf investment .
+
+ ( recommendation 9 ) the commissioner of the irs should fully implement the risk management key practice associated with mitigating risk for the imf investment .
+
+ ( recommendation 10 ) the commissioner of the irs should fully implement the risk management key practice associated with monitoring , reporting , and controlling risk for the imf investment .
+
+ ( recommendation 11 ) the commissioner of the irs should fully implement the risk management key practice associated with preparing for risk management for the idrs investment .
+
+ ( recommendation 12 ) the commissioner of the irs should fully implement the risk management key practice associated with analyzing risk for the idrs investment .
+
+ ( recommendation 13 ) the commissioner of the irs should fully implement the risk management key practice associated with mitigating risk for the idrs investment .
+
+ ( recommendation 14 ) the commissioner of the irs should fully implement the risk management key practice associated with monitoring , reporting , and controlling risk for the idrs investment .
+
+ ( recommendation 15 ) the commissioner of the irs should fully implement the risk management key practice associated with preparing for risk management for the msss investment .
+
+ ( recommendation 16 ) the commissioner of the irs should fully implement the risk management key practice associated with identifying risk for the msss investment .
+
+ ( recommendation 17 ) the commissioner of the irs should fully implement the risk management key practice associated with analyzing risk for the msss investment .
+
+ ( recommendation 18 ) the commissioner of the irs should fully implement the risk management key practice associated with mitigating risk for the msss investment .
+
+ ( recommendation 19 ) the commissioner of the irs should fully implement the risk management key practice associated with monitoring , reporting , and controlling risk for the msss investment .
+
+ ( recommendation 20 ) the commissioner of the irs should fully implement it workforce planning practices , including the following actions ( 1 ) setting the strategic direction for workforce planning ; ( 2 ) analyzing the workforce to identify skill gaps ; ( 3 ) developing strategies and implementing activities to address skill gaps ; and ( 4 ) monitoring and reporting on progress in addressing skill gaps .
+
+ ( recommendation 21 ) .
+
+we received written comments on a draft of this report from irs .
+
+in its comments , which are reproduced in appendix ii , irs did not state whether it agreed or disagreed with our recommendations .
+
+however , the agency acknowledged the importance of strengthening its risk management process by implementing the key leading practices we identified , and described actions underway which confirm the significance of the risks described in our report .
+
+the agency also reported actions it has taken since the end of our review to address the it workforce planning recommendation and stated that it would provide a detailed corrective action plan addressing each of our recommendations .
+
+further , irs provided technical comments , which we incorporated , as appropriate .
+
+we are sending copies of this report to interested congressional committees , the commissioner of irs , and other interested parties .
+
+this report will also be available at no charge on our website at http: / / www.gao.gov .
+
+if you or your staffs have any questions on matters discussed in this report , please contact me at ( 202 ) 512-9286 or pownerd@gao.gov .
+
+contact points for our offices of congressional relations and public affairs may be found on the last page of this report .
+
+gao staff who made major contributions to this report are listed in appendix iii .
+
+our objectives were to ( 1 ) evaluate the performance of selected internal revenue service ( irs ) information technology ( it ) investments , ( 2 ) summarize any risks associated with selected legacy systems and evaluate the steps irs has taken to manage them , and ( 3 ) determine the extent to which irs has implemented key it workforce planning practices .
+
+to select investments for our review , we first considered investments identified by irs as essential to tax processing .
+
+we then considered the following factors: ( 1 ) investments impacting the greatest number of irs business areas and associated services based on our review of irs's 2016 technology roadmap ; ( 2 ) investments with the highest levels of funding for fiscal year 2016 , as reported on the federal it dashboard ; ( 3 ) investments that irs's chief information officer rated as having significant risk with respect to human capital or infrastructure ; and ( 4 ) investments with planned future system migration efforts as outlined in irs's enterprise transition plan .
+
+in addition , we considered a mix of investments in development and operations and maintenance .
+
+we selected the following nine investments ( presented in order of those considered mission critical , followed by those most prominently meeting the above selection factors ) : ( 1 ) individual master file ( imf ) , ( 2 ) integrated data retrieval system ( idrs ) , ( 3 ) telecommunications systems and support ( tss ) , ( 4 ) mainframes and servers services and support ( msss ) , ( 5 ) end user systems and services ( euss ) , ( 6 ) enterprise case management ( ecm ) , ( 7 ) customer account data engine 2 ( cade 2 ) , ( 8 ) return review program ( rrp ) , and ( 9 ) affordable care act administration ( aca ) .
+
+to address our first objective , we analyzed irs's reporting on the performance of the nine investments in our selection .
+
+the investments included four that were primarily in development — cade 2 , rrp , ecm , and aca — and five that were primarily in the operations and maintenance phase — imf , idrs , tss , msss , and euss .
+
+for the three investments which were using irs's investment performance tool — cade 2 , rrp , and ecm — we compiled and analyzed quarterly reports showing planned versus actual cost , schedule , and scope for work irs was performing on these investments during fiscal year 2016 through the first 2 quarters of 2017 .
+
+for the fourth investment — aca — we compared reported planned and actual costs , as well as planned and actual completion dates for development activities for fiscal year 2016 and the first 2 quarters of 2017 .
+
+irs did not report information on aca's performance in meeting scope goals .
+
+in addition , for the five operational investments , we compiled and analyzed operational performance information reported for the selected investments for fiscal year 2016 and the first 2 quarters of 2017 ; this information included , where reported , the performance target and actual results for each metric .
+
+further , we determined the extent to which an operational analysis was performed for each of the investments in accordance with best practices .
+
+to do so , we obtained operational analyses for fiscal year 2016 and analyzed the analyses against relevant practices outlined in the office of management and budget's ( omb ) fiscal year 2016 capital programming guidance .
+
+to assess the reliability of the data for the investments in development used for this objective , we interviewed officials responsible for overseeing the use of the investment performance tool to confirm the completeness of the data generated from the tool , as well as our understanding of what these data represent .
+
+we also followed up with these officials to discuss detected anomalies we found in the performance data .
+
+in addition , we relied on data reliability assessments we previously completed on irs's financial management system because it is a source of the actual cost data found in the investment performance tool .
+
+finally , we followed up on irs's actions to address recommendations we previously made to improve the reliability of the cost , schedule , and scope performance data .
+
+while we found additional actions are needed to address our recommendations , we determined the investments' data are sufficiently reliable for our purposes .
+
+with respect to the reported operational performance data , we reviewed documentation describing the performance metrics and interviewed irs officials regarding the process for reporting such metrics .
+
+we determined these data were sufficiently reliable for purposes of reporting on operational performance .
+
+for our second objective , we selected three investments from our initial selection of nine — imf , idrs , and msss — because they were placed into operation in the late 1960s and early 1970s , and are therefore considered legacy investments .
+
+to summarize the risks associated with these investments , we reviewed , among other things , risk logs captured in irs's item tracking reporting and control tool and risk detail reports .
+
+in addition , we obtained resource assessment documentation , where available , and documentation from irs identifying staff availability and the legacy programming languages supporting these investments .
+
+we also identified aged hardware components supporting the selected investments by obtaining reports from the knowledge , incident / problem , service asset management system .
+
+this system is used for tracking and managing irs assets , to include recording and tracking asset acquisitions , transfers , and disposals .
+
+we supplemented our review of documentation with interviews of irs officials responsible for software and infrastructure maintenance .
+
+to evaluate the steps irs has taken to mitigate risks , we analyzed documentation such as risk management plans ; risk logs captured in irs's item tracking reporting and control tool and through other means ; risk detail reports that included the probability , impact , and overall status for identified risks ; risk mitigation plans ; and meeting minutes from irs's applications development risk review board .
+
+we also interviewed irs officials involved in the risk management process , including software developers responsible for maintaining aging programming languages , system administrators , and risk coordinators .
+
+we selected officials based on ( 1 ) the median number of years the officials had worked to support the investment ; ( 2 ) their position as an investment branch chief or section chief in order to fairly represent the management's perspective on matters discussed ; ( 3 ) consideration of employees who serve in more than one role in the risk management process in order to obtain diverse perspectives on the process ; and ( 4 ) their fair representation of all programming language types and infrastructure supporting the investments .
+
+we evaluated irs's risk management efforts by comparing information obtained to key practices from the software engineering institute's capability maturity model® integration for development , as well as omb guidance .
+
+to assess the reliability of the data used for our second objective , we interviewed officials responsible for overseeing the use of irs's item tracking reporting and control tool and users of this tool to determine if the tool was being consistently implemented .
+
+in addition , as part of our interviews with software developers responsible for maintaining aging programming languages , we determined the extent to which risks shared by these officials were consistent with formally documented risks .
+
+lastly , we corroborated irs's identification of legacy programming languages , and infrastructure components with our staff possessing expert knowledge of irs's it environment .
+
+we determined these data were sufficiently reliable for purposes of describing risks faced by selected investments , as well as for evaluating irs's risk management efforts .
+
+for our third objective , we obtained documentation describing a tool that irs is planning to implement agency - wide to address it workforce planning .
+
+further , we obtained a demonstration of the functionality provided by this tool , and interviewed officials in irs's human capital office , as well as investment staff , to determine the extent to which this tool has been implemented across the agency .
+
+we also obtained and reviewed information relative to cross - functional acquisition training , efforts intended to strengthen it program management , and results of it skills assessments .
+
+we compared irs's efforts to key practices for it workforce planning derived from sources , including the clinger - cohen act of 1996 , office of personnel management workforce planning guidance , and omb circular a - 130 , and identified in our report on it workforce planning efforts .
+
+in addition , we selected four investments from our initial selection of nine — imf , idrs , cade 2 , and rrp — to identify efforts they had taken to address their workforce needs .
+
+we selected the four investments based on one or more of the following factors: ( 1 ) mission critical designation by irs , ( 2 ) exposure to human capital risk , or ( 3 ) status as a key development effort at irs .
+
+officials responsible for managing two of the investments — imf and cade 2 — provided information on their efforts .
+
+for imf , we reviewed workforce capacity planning documentation as well as short and long - term workforce plans to assess imf implementation of workforce planning efforts such as skills gap analysis , development of strategies and implementation of activities to address it skills gaps , and monitoring and reporting progress in addressing it skills gaps .
+
+for cade 2 , we reviewed documentation from its resource assessment conducted in 2015 , which included information relative to resource needs and skills gaps .
+
+in addition , we reviewed documentation of efforts to address skills gaps , including training and knowledge transfer programs .
+
+we conducted this performance audit from november 2016 to june 2018 in accordance with generally accepted government auditing standards .
+
+those standards require that we plan and perform the audit to obtain sufficient , appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives .
+
+we believe that the evidence obtained provides a reasonable basis for our findings and conclusions based on our audit objectives .
+
+in addition to the individual named above , the following staff made key contributions to this report: sabine paul ( assistant director ) , bradley roach ( analyst in charge ) , andrew banister , mark canter , vern cumarasegaran , rebecca eyler , paul middleton , and martin skorczynski .
+

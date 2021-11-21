@@ -1,0 +1,622 @@
+i appreciate the opportunity to participate in today's hearing on the use of smart cards and biometrics in the federal government .
+
+one of the primary functions of any security system is the control of people into or out of protected areas , such as physical buildings , information systems , and our national border .
+
+people are identified by three basic means: by something they know , something they have , or something they are .
+
+people and systems regularly use these means to identify people in everyday life .
+
+for example , members of a community routinely recognize one another by how they look or how their voices sound — by something they are .
+
+automated teller machines ( atm ) recognize customers from their presentation of a bank card — something they have — and their entering a personal identification number ( pin ) — something they know .
+
+using keys to enter a locked building is another example of using something you have .
+
+more secure systems may combine two or more of these approaches .
+
+technologies called biometrics can automate the identification of people by one or more of their distinct physical or behavioral characteristics .
+
+the term biometrics covers a wide range of technologies that can be used to verify identity by measuring and analyzing human characteristics — relying on attributes of the individual instead of things the individual may have or know .
+
+as requested , i will provide an overview of biometric technologies that are currently available , describe some of the current uses of these technologies , and discuss the issues and challenges associated with the implementation of biometrics .
+
+my testimony today is based on a body of work we completed last year examining the use of biometrics for border control .
+
+in that report , we discussed the current maturity of several biometric technologies , the possible implementation of these technologies in current border control processes , and the policy implications and key considerations for using these technologies .
+
+we performed our work in accordance with generally accepted government auditing standards .
+
+when used for personal identification , biometric technologies measure and analyze human physiological and behavioral characteristics .
+
+identifying a person's physiological characteristics is based on direct measurement of a part of the body — fingertips , hand geometry , facial geometry , and eye retinas and irises .
+
+the corresponding biometric technologies are fingerprint recognition , hand geometry , and facial , retina , and iris recognition .
+
+identifying behavioral characteristics is based on data derived from actions , such as speech and signature , the corresponding biometrics being speaker recognition and signature recognition .
+
+biometrics can theoretically be very effective personal identifiers because the characteristics they measure are thought to be distinct to each person .
+
+unlike conventional identification methods that use something you have , such as an identification card to gain access to a building , or something you know , such as a password to log on to a computer system , these characteristics are integral to something you are .
+
+because they are tightly bound to an individual , they are more reliable , cannot be forgotten , and are less easily lost , stolen , or guessed .
+
+biometric technologies vary in complexity , capabilities , and performance , but all share several elements .
+
+biometric identification systems are essentially pattern recognition systems .
+
+they use acquisition devices such as cameras and scanning devices to capture images , recordings , or measurements of an individual's characteristics and computer hardware and software to extract , encode , store , and compare these characteristics .
+
+because the process is automated , biometric decision - making is generally very fast , in most cases taking only a few seconds in real time .
+
+depending on the application , biometric systems can be used in one of two modes: verification or identification .
+
+verification — also called authentication — is used to verify a person's identity — that is , to authenticate that individuals are who they say they are .
+
+identification is used to establish a person's identity — that is , to determine who a person is .
+
+although biometric technologies measure different characteristics in substantially different ways , all biometric systems involve similar processes that can be divided into two distinct stages: enrollment and verification or identification .
+
+in enrollment , a biometric system is trained to identify a specific person .
+
+the person first provides an identifier , such as an identity card .
+
+the biometric is linked to the identity specified on the identification document .
+
+he or she then presents the biometric ( eg , fingertips , hand , or iris ) to an acquisition device .
+
+the distinctive features are located and one or more samples are extracted , encoded , and stored as a reference template for future comparisons .
+
+depending on the technology , the biometric sample may be collected as an image , a recording , or a record of related dynamic measurements .
+
+how biometric systems extract features and encode and store information in the template is based on the system vendor's proprietary algorithms .
+
+template size varies depending on the vendor and the technology .
+
+templates can be stored remotely in a central database or within a biometric reader device itself ; their small size also allows for storage on smart cards or tokens .
+
+minute changes in positioning , distance , pressure , environment , and other factors influence the generation of a template , making each template likely to be unique , each time an individual's biometric data are captured and a new template is generated .
+
+consequently , depending on the biometric system , a person may need to present biometric data several times in order to enroll .
+
+either the reference template may then represent an amalgam of the captured data or several enrollment templates may be stored .
+
+the quality of the template or templates is critical in the overall success of the biometric application .
+
+because biometric features can change over time , people may have to reenroll to update their reference template .
+
+some technologies can update the reference template during matching operations .
+
+the enrollment process also depends on the quality of the identifier the enrollee presents .
+
+the reference template is linked to the identity specified on the identification document .
+
+if the identification document does not specify the individual's true identity , the reference template will be linked to a false identity .
+
+in verification systems , the step after enrollment is to verify that a person is who he or she claims to be ( i.e. , the person who enrolled ) .
+
+after the individual provides whatever identifier he or she enrolled with , the biometric is presented , which the biometric system captures , generating a trial template that is based on the vendor's algorithm .
+
+the system then compares the trial biometric template with this person's reference template , which was stored in the system during enrollment , to determine whether the individual's trial and stored templates match ( see figure 1 ) .
+
+verification is often referred to as 1:1 ( one - to - one ) matching .
+
+verification systems can contain databases ranging from dozens to millions of enrolled templates but are always predicated on matching an individual's presented biometric against his or her reference template .
+
+nearly all verification systems can render a match – no - match decision in less than a second .
+
+a system that requires employees to authenticate their claimed identities before granting them access to secure buildings or to computers is a verification application .
+
+in identification systems , the step after enrollment is to identify who the person is .
+
+unlike verification systems , no identifier need be provided .
+
+to find a match , instead of locating and comparing the person's reference template against his or her presented biometric , the trial template is compared against the stored reference templates of all individuals enrolled in the system ( see figure 2 ) .
+
+identification systems are referred to as 1:n ( one - to - n , or one - to - many ) matching because an individual's biometric is compared against multiple biometric templates in the system's database .
+
+there are two types of identification systems: positive and negative .
+
+positive identification systems are designed to ensure that an individual's biometric is enrolled in the database .
+
+the anticipated result of a search is a match .
+
+a typical positive identification system controls access to a secure building or secure computer by checking anyone who seeks access against a database of enrolled employees .
+
+the goal is to determine whether a person seeking access can be identified as having been enrolled in the system .
+
+negative identification systems are designed to ensure that a person's biometric information is not present in a database .
+
+the anticipated result of a search is a nonmatch .
+
+comparing a person's biometric information against a database of all who are registered in a public benefits program , for example , can ensure that this person is not “double dipping” by using fraudulent documentation to register under multiple identities .
+
+another type of negative identification system is a surveillance system that uses a watch list .
+
+such systems are designed to identify people on the watch list and alert authorities for appropriate action .
+
+for all other people , the system is to check that they are not on the watch list and allow them normal passage .
+
+the people whose biometrics are in the database in these systems may not have provided them voluntarily .
+
+for instance , for a surveillance system , the biometrics may be faces captured from mug shots provided by a law enforcement agency .
+
+no match is ever perfect in either a verification or an identification system , because every time a biometric is captured , the template is likely to be unique .
+
+therefore , biometric systems can be configured to make a match or no - match decision , based on a predefined number , referred to as a threshold , that establishes the acceptable degree of similarity between the trial template and the enrolled reference template .
+
+after the comparison , a score representing the degree of similarity is generated , and this score is compared to the threshold to make a match or no - match decision .
+
+depending on the setting of the threshold in identification systems , sometimes several reference templates can be considered matches to the trial template , with the better scores corresponding to better matches .
+
+retina recognition signature recognition speaker recognition facial recognition technology identifies people by analyzing features of the face not easily altered — the upper outlines of the eye sockets , the areas around the cheekbones , and the sides of the mouth .
+
+the technology is typically used to compare a live facial scan to a stored template , but it can also be used in comparing static images such as digitized passport photographs .
+
+facial recognition can be used in both verification and identification systems .
+
+in addition , because facial images can be captured from video cameras , facial recognition is the only biometric that can be used for surveillance purposes .
+
+fingerprint recognition is one of the best known and most widely used biometric technologies .
+
+automated systems have been commercially available since the early 1970s , and at the time of our study , we found there were more than 75 fingerprint recognition technology companies .
+
+until recently , fingerprint recognition was used primarily in law enforcement applications .
+
+fingerprint recognition technology extracts features from impressions made by the distinct ridges on the fingertips .
+
+the fingerprints can be either flat or rolled .
+
+a flat print captures only an impression of the central area between the fingertip and the first knuckle ; a rolled print captures ridges on both sides of the finger .
+
+an image of the fingerprint is captured by a scanner , enhanced , and converted into a template .
+
+scanner technologies can be optical , silicon , or ultrasound technologies .
+
+ultrasound , while potentially the most accurate , has not been demonstrated in widespread use .
+
+last year , we found that optical scanners were the most commonly used .
+
+during enhancement , “noise” caused by such things as dirt , cuts , scars , and creases or dry , wet , or worn fingerprints is reduced , and the definition of the ridges is enhanced .
+
+approximately 80 percent of vendors base their algorithms on the extraction of minutiae points relating to breaks in the ridges of the fingertips .
+
+other algorithms are based on extracting ridge patterns .
+
+hand geometry systems have been in use for almost 30 years for access control to facilities ranging from nuclear power plants to day care centers .
+
+hand geometry technology takes 96 measurements of the hand , including the width , height , and length of the fingers ; distances between joints ; and shapes of the knuckles .
+
+hand geometry systems use an optical camera and light - emitting diodes with mirrors and reflectors to capture two orthogonal two - dimensional images of the back and sides of the hand .
+
+although the basic shape of an individual's hand remains relatively stable over his or her lifetime , natural and environmental factors can cause slight changes .
+
+iris recognition technology is based on the distinctly colored ring surrounding the pupil of the eye .
+
+made from elastic connective tissue , the iris is a very rich source of biometric data , having approximately 266 distinctive characteristics .
+
+these include the trabecular meshwork , a tissue that gives the appearance of dividing the iris radially , with striations , rings , furrows , a corona , and freckles .
+
+iris recognition technology uses about 173 of these distinctive characteristics .
+
+formed during the 8th month of gestation , these characteristics reportedly remain stable throughout a person's lifetime , except in cases of injury .
+
+iris recognition can be used in both verification and identification systems .
+
+iris recognition systems use a small , high - quality camera to capture a black and white , high - resolution image of the iris .
+
+the systems then define the boundaries of the iris , establish a coordinate system over the iris , and define the zones for analysis within the coordinate system .
+
+retina recognition technology captures and analyzes the patterns of blood vessels on the thin nerve on the back of the eyeball that processes light entering through the pupil .
+
+retinal patterns are highly distinctive traits .
+
+every eye has its own totally unique pattern of blood vessels ; even the eyes of identical twins are distinct .
+
+although each pattern normally remains stable over a person's lifetime , it can be affected by disease such as glaucoma , diabetes , high blood pressure , and autoimmune deficiency syndrome .
+
+the fact that the retina is small , internal , and difficult to measure makes capturing its image more difficult than most biometric technologies .
+
+an individual must position the eye very close to the lens of the retina - scan device , gaze directly into the lens , and remain perfectly still while focusing on a revolving light while a small camera scans the retina through the pupil .
+
+any movement can interfere with the process and can require restarting .
+
+enrollment can easily take more than a minute .
+
+signature recognition authenticates identity by measuring handwritten signatures .
+
+the signature is treated as a series of movements that contain unique biometric data , such as personal rhythm , acceleration , and pressure flow .
+
+unlike electronic signature capture , which treats the signature as a graphic image , signature recognition technology measures how the signature is signed .
+
+in a signature recognition system , a person signs his or her name on a digitized graphics tablet or personal digital assistant .
+
+the system analyzes signature dynamics such as speed , relative speed , stroke order , stroke count , and pressure .
+
+the technology can also track each person's natural signature fluctuations over time .
+
+the signature dynamics information is encrypted and compressed into a template .
+
+differences in how different people's voices sound result from a combination of physiological differences in the shape of vocal tracts and learned speaking habits .
+
+speaker recognition technology uses these differences to discriminate between speakers .
+
+during enrollment , speaker recognition systems capture samples of a person's speech by having him or her speak some predetermined information into a microphone a number of times .
+
+this information , known as a passphrase , can be a piece of information such as a name , birth month , birth city , or favorite color or a sequence of numbers .
+
+text independent systems are also available that recognize a speaker without using a predefined phrase .
+
+this phrase is converted from analog to digital format , and the distinctive vocal characteristics , such as pitch , cadence , and tone , are extracted , and a speaker model is established .
+
+a template is then generated and stored for future comparisons .
+
+speaker recognition can be used to verify a person's claimed identity or to identify a particular person .
+
+it is often used where voice is the only available biometric identifier , such as telephone and call centers .
+
+biometrics is a very young technology , having only recently reached the point at which basic matching performance can be acceptably deployed .
+
+it is necessary to analyze several metrics to determine the strengths and weaknesses of each technology and vendor for a given application .
+
+the three key performance metrics are false match rate ( fmr ) , false nonmatch rate ( fnmr ) , and failure to enroll rate ( fter ) .
+
+a false match occurs when a system incorrectly matches an identity , and fmr is the probability of individuals being wrongly matched .
+
+in verification and positive identification systems , unauthorized people can be granted access to facilities or resources as the result of incorrect matches .
+
+in a negative identification system , the result of a false match may be to deny access .
+
+for example , if a new applicant to a public benefits program is falsely matched with a person previously enrolled in that program under another identity , the applicant may be denied access to benefits .
+
+a false nonmatch occurs when a system rejects a valid identity , and fnmr is the probability of valid individuals being wrongly not matched .
+
+in verification and positive identification systems , people can be denied access to some facility or resource as the result of a system's failure to make a correct match .
+
+in negative identification systems , the result of a false nonmatch may be that a person is granted access to resources to which she should be denied .
+
+for example , if a person who has enrolled in a public benefits program under another identity is not correctly matched , she will succeed in gaining fraudulent access to benefits .
+
+false matches may occur because there is a high degree of similarity between two individuals' characteristics .
+
+false nonmatches occur because there is not a sufficiently strong similarity between an individual's enrollment and trial templates , which could be caused by any number of conditions .
+
+for example , an individual's biometric data may have changed as a result of aging or injury .
+
+if biometric systems were perfect , both error rates would be zero .
+
+however , because biometric systems cannot identify individuals with 100 percent accuracy , a trade - off exists between the two .
+
+false match and nonmatch rates are inversely related ; they must therefore always be assessed in tandem , and acceptable risk levels must be balanced with the disadvantages of inconvenience .
+
+for example , in access control , perfect security would require denying access to everyone .
+
+conversely , granting access to everyone would result in denying access to no one .
+
+obviously , neither extreme is reasonable , and biometric systems must operate somewhere between the two .
+
+for most applications , how much risk one is willing to tolerate is the overriding factor , which translates into determining the acceptable fmr .
+
+the greater the risk entailed by a false match , the lower the tolerable fmr .
+
+for example , an application that controlled access to a secure area would require that the fmr be set low , which would result in a high fnmr .
+
+however , an application that controlled access to a bank's atm might have to sacrifice some degree of security and set a higher fmr ( and hence a lower fnmr ) to avoid the risk of irritating legitimate customers by wrongly rejecting them .
+
+as figure 3 shows , selecting a lower fmr increases the fnmr .
+
+perfect security would require setting the fmr to 0 , in which case the fnmr would be 1 .
+
+at the other extreme , setting the fnmr to 0 would result in an fmr of 1 .
+
+vendors often use equal error rate ( eer ) , an additional metric derived from fmr and fnmr , to describe the accuracy of their biometric systems .
+
+eer refers to the point at which fmr equals fnmr .
+
+setting a system's threshold at its eer will result in the probability that a person is falsely matched equaling the probability that a person is falsely not matched .
+
+however , this statistic tends to oversimplify the balance between fmr and fnmr , because in few real - world applications is the need for security identical to the need for convenience .
+
+fter is a biometric system's third critical accuracy metric .
+
+fter measures the probability that a person will be unable to enroll .
+
+failure to enroll ( fte ) may stem from an insufficiently distinctive biometric sample or from a system design that makes it difficult to provide consistent biometric data .
+
+the fingerprints of people who work extensively at manual labor are often too worn to be captured .
+
+a high percentage of people are unable to enroll in retina recognition systems because of the precision such systems require .
+
+people who are mute cannot use voice systems , and people lacking fingers or hands from congenital disease , surgery , or injury cannot use fingerprint or hand geometry systems .
+
+although between 1 and 3 percent of the general public does not have the body part required for using any one biometric system , they are normally not counted in a system's fter .
+
+because biometric systems based solely on a single biometric may not always meet performance requirements , the development of systems that integrate two or more biometrics is emerging as a trend .
+
+multiple biometrics could be two types of biometrics , such as combining facial and iris recognition .
+
+multiple biometrics could also involve multiple instances of a single biometric , such as 1 , 2 , or 10 fingerprints , 2 hands , and 2 eyes .
+
+one prototype system integrates fingerprint and facial recognition technologies to improve identification .
+
+a commercially available system combines face , lip movement , and speaker recognition to control access to physical structures and small office computer networks .
+
+depending on the application , both systems can operate for either verification or identification .
+
+experimental results have demonstrated that the identities established by systems that use more than one biometric could be more reliable , be applied to large target populations , and improve response time .
+
+biometrics have been used in several federal applications including access control to facilities and computers , criminal identification , and border security .
+
+in the last 2 years , laws have been passed that will require a more extensive use of biometric technologies in the federal government .
+
+biometric systems have long been used to complement or replace badges and keys in controlling access to entire facilities or specific areas within a facility .
+
+the entrances to more than half the nuclear power plants in the united states employ biometric hand geometry systems .
+
+figure 4 illustrates the use of fingerprint recognition for physical access .
+
+as noted in our technology assessment , recent reductions in the price of biometric hardware have spurred logical access control applications .
+
+fingerprint , iris , and speaker recognition are replacing passwords to authenticate individuals accessing computers and networks .
+
+the office of legislative counsel of the u.s. house of representatives , for example , is using an iris recognition system to protect confidential files and working documents .
+
+other federal agencies , including the department of defense , department of energy , and department of justice , as well as the intelligence community , are adopting similar technologies .
+
+the department of homeland security's transportation security administration ( tsa ) is working to establish a systemwide common credential to be used across all transportation modes for all personnel requiring unescorted physical and / or logical access to secure areas of the national transportation system , such as airports , seaports , and railroad terminals .
+
+called the transportation worker identification credential ( twic ) , the program was developed in response to recent laws and will include the use of smart cards and biometrics to provide a positive match of a credential to a person for 10-15 million transportation workers across the united states .
+
+fingerprint identification has been used in law enforcement over the past 100 years and has become the de facto international standard for positively identifying individuals .
+
+the federal bureau of investigation ( fbi ) has been using fingerprint identification since 1928 .
+
+the first fingerprint recognition systems were used in law enforcement about 4 decades ago .
+
+the fbi's integrated automated fingerprint identification system ( iafis ) is an automated 10-fingerprint matching system that stores rolled fingerprints .
+
+the more than 40 million records in its criminal master file are connected electronically with all 50 states and some federal agencies .
+
+iafis was designed to handle a large volume of fingerprint checks against a large database of fingerprints .
+
+last year , we found that iafis processes , on average , approximately 48,000 fingerprints per day and has processed as many as 82,000 in a single day .
+
+iafis's target response time for criminal fingerprints submitted electronically is 2 hours ; for civilian fingerprint background checks , 24 hours .
+
+the immigration and naturalization service ( ins ) began developing the automated biometric fingerprint identification system ( ident ) around 1990 to identify illegal aliens who are repeatedly apprehended trying to enter the united states illegally .
+
+ins's goal was to enroll virtually all apprehended aliens .
+
+ident can also identify aliens who have outstanding warrants or who have been deported .
+
+when such aliens are apprehended , a photograph and two index fingerprints are captured electronically and queried against three databases ( see figure 5 ) .
+
+ident has over 4.5 million entries .
+
+a fingerprint query of ident normally takes about 2 minutes .
+
+ident is also being used as a part of the national security entry - exit registration system ( nseers ) that was implemented last year .
+
+ins passenger accelerated service system ( inspass ) , a pilot program in place since 1993 , has more than 45,000 frequent fliers enrolled at nine airports , and has admitted more than 300,000 travelers .
+
+it is open to citizens of the united states , canada , bermuda , and visa waiver program countries who travel to the united states on business three or more times a year .
+
+inspass permits frequent travelers to circumvent customs procedures and immigration lines .
+
+to participate , users undergo a background screening and registration .
+
+once enrolled , they can present their biometric at an airport kiosk for comparison against a template stored in a central database .
+
+in a joint ins and state department effort to comply with the illegal immigration reform and immigrant responsibility act of 1996 , every border crossing card issued after april 1 , 1998 , contains a biometric identifier and is machine - readable .
+
+the cards , also called laser visas , allow mexican citizens to enter the united states for the purpose of business or pleasure without being issued further documentation and stay for 72 hours or less , going no farther than 25 miles from the border .
+
+consular staff in mexico photograph applicants and take prints of the two index fingers and then electronically forward applicants' data to ins .
+
+both state and ins conduct checks on each applicant , and the fingerprints are compared with prints of previously enrolled individuals to ensure that the applicant is not applying for multiple cards under different names .
+
+the cards store a holder's identifying information along with a digital image of his or her picture and the minutiae of the two index fingerprints .
+
+as of may 2002 , state had issued more than 5 million cards .
+
+the department of state has been running pilots of facial recognition technology at 23 overseas consular posts for several years .
+
+as a visa applicant's information is entered into the local system at the posts and replicated in state's consular consolidated database ( ccd ) , the applicant's photograph is compared with the photographs of previous applicants stored in ccd to prevent fraudulent attempts to obtain visas .
+
+some photographs are also being compared to a watch list .
+
+laws passed in the last 2 years require a more extensive use of biometrics for border control .
+
+the attorney general and the secretary of state jointly , through the national institute of standards and technology ( nist ) are to develop a technology standard , including biometric identifier standards .
+
+when developed , this standard is to be used to verify the identity of persons applying for a u.s. visa for the purpose of conducting a background check , confirming identity , and ensuring that a person has not received a visa under a different name .
+
+by october 26 , 2004 , the departments of state and justice are to issue to aliens only machine - readable , tamper - resistant visas and other travel and entry documents that use biometric identifiers .
+
+at the same time , justice is to install at all ports of entry equipment and software that allow the biometric comparison and authentication of all u.s. visas and other travel and entry documents issued to aliens and machine - readable passports .
+
+the department of homeland security is developing the united states visitor and immigrant status indication technology ( us - visit ) system to address this requirement .
+
+while biometric technology is currently available and used in a variety of applications , questions remain regarding the technical and operational effectiveness of biometric technologies in large - scale applications .
+
+we have found that a risk management approach can help define the need and use for biometrics for security .
+
+in addition , a decision to use biometrics should consider the costs and benefits of such a system and its potential effect on convenience and privacy .
+
+the approach to good security is fundamentally similar , regardless of the assets being protected , whether information systems security , building security , or homeland security .
+
+as we have previously reported , these principles can be reduced to five basic steps that help to determine responses to five essential questions ( see figure 6 ) .
+
+what am i protecting ? .
+
+the first step in risk management is to identify assets that must be protected and the impact of their potential loss .
+
+who are my adversaries ? .
+
+the second step is to identify and characterize the threat to these assets .
+
+the intent and capability of an adversary are the principal criteria for establishing the degree of threat to these assets .
+
+step three involves identifying and characterizing vulnerabilities that would allow identified threats to be realized .
+
+in other words , what weaknesses can allow a security breach ? .
+
+what are my priorities ? .
+
+in the fourth step , risk must be assessed and priorities determined for protecting assets .
+
+risk assessment examines the potential for the loss or damage to an asset .
+
+risk levels are established by assessing the impact of the loss or damage , threats to the asset , and vulnerabilities .
+
+what can i do ? .
+
+the final step is to identify countermeasures to reduce of eliminate risks .
+
+in doing so , the advantages and benefits of these countermeasures must also be weighed against their disadvantages and costs .
+
+countermeasures identified through the risk management process support the three integral concepts of a holistic security program: protection , detection , and reaction .
+
+protection provides countermeasures such as policies , procedures , and technical controls to defend against attacks on the assets being protected .
+
+detection monitors for potential breakdowns in protective mechanisms that could result in security breaches .
+
+reaction , which requires human involvement , responds to detected breaches to thwart attacks before damage can be done .
+
+because absolute protection is impossible to achieve , a security program that does not incorporate detection and reaction is incomplete .
+
+biometrics can support the protection component of a security program .
+
+it is important to realize that deploying them will not automatically eliminate all security risks .
+
+technology is not a solution in isolation .
+
+effective security also entails having a well - trained staff to follow and enforce policies and procedures .
+
+weaknesses in the security process or failures by people to operate the technology or implement the security process can diminish the effectiveness of technology .
+
+furthermore , there is a need for the security process to account for limitations in technology .
+
+biometrics can help ensure that people can only enroll into a security system once and to ensure that a person presenting himself before the security system is the same person that enrolled into the system .
+
+however , biometrics cannot necessarily link a person to his or her true identity .
+
+while biometrics would make it more difficult for people to establish multiple identities , if the one identity a person claimed were not his or her true identity , then the person would be linked to the false identity in the biometric system .
+
+the quality of the identifier presented during the enrollment process is key to the integrity of a biometrics system .
+
+procedures for exception processing would also need to be carefully planned .
+
+as we described , not all people can enroll in a biometrics system .
+
+similarly , false matches and false nonmatches will also sometimes occur .
+
+procedures need to be developed to handle these situations .
+
+exception processing that is not as good as biometric - based primary processing could be exploited as a security hole .
+
+a decision to use biometrics in a security solution should also consider the benefits and costs of the system and the potential effects on convenience and privacy .
+
+best practices for information technology investment dictate that prior to making any significant project investment , the benefit and cost information of the system should be analyzed and assessed in detail .
+
+a business case should be developed that identifies the organizational needs for the project and a clear statement of high - level system goals should be developed .
+
+the high - level goals should address the system's expected outcomes such as the binding of a biometric feature to an identity or the identification of undesirable individuals on a watch list .
+
+certain performance parameters should also be specified such as the time required to verify a person's identity or the maximum population that the system must handle .
+
+once the system parameters are developed , a cost estimate can be developed .
+
+not only must the costs of the technology be considered , but also the costs of the effects on people and processes .
+
+both initial costs and recurring costs need to be estimated .
+
+initial costs need to account for the engineering efforts to design , develop , test , and implement the system ; training of personnel ; hardware and software costs ; network infrastructure improvements ; and additional facilities required to enroll people into the biometric system .
+
+recurring cost elements include program management costs , hardware and software maintenance , hardware replacement costs , training of personnel , additional personnel to enroll or verify the identities of people in the biometric system , and possibly the issuance of token cards for the storage of biometrics .
+
+weighed against these costs are the security benefits that accrue from the system .
+
+analyzing this cost - benefit trade - off is crucial when choosing specific biometrics - based solutions .
+
+the consequences of performance issues — for example , accuracy problems , and their effect on processes and people — are also important in selecting a biometrics solution .
+
+the privacy act of 1974 limits federal agencies' collection , use , and disclosure of personal information , such as fingerprints and photographs .
+
+accordingly , the privacy act generally covers federal agency use of personal biometric information .
+
+however , the act includes exemptions for law enforcement and national security purposes .
+
+representatives of civil liberties groups and privacy experts have expressed concerns regarding ( 1 ) the adequacy of protections for security , data sharing , identity theft , and other identified uses of biometric data and ( 2 ) secondary uses and “function creep.” these concerns relate to the adequacy of protections under current law for large - scale data handling in a biometric system .
+
+besides information security , concern was voiced about an absence of clear criteria for governing data sharing .
+
+the broad exemptions of the privacy act , for example , provide no guidance on the extent of the appropriate uses law enforcement may make of biometric information .
+
+because there is no general agreement on the appropriate balance of security and privacy to build into a system using biometrics , further policy decisions are required .
+
+the range of unresolved policy issues suggests that questions surrounding the use of biometric technology center as much on management policies as on technical issues .
+
+finally , consideration must be given to the convenience and ease of using biometrics and their effect on the ability of the agency to complete its mission .
+
+for example , some people find biometric technologies difficult , if not impossible , to use .
+
+still others resist biometrics because they believe them to be intrusive , inherently offensive , or just uncomfortable to use .
+
+lack of cooperation or even resistance to using biometrics can affect a system's performance and widespread adoption .
+
+furthermore , if the processes to use biometrics are lengthy or erroneous , they could negatively affect the ability of the assets being protected to operate and fulfill its mission .
+
+for example , last year , we found that there are significant challenges in using biometrics for border security .
+
+the use of biometric technologies could potentially impact the length of the inspection process .
+
+any lengthening in the process of obtaining travel documents or entering the united states could affect travelers significantly .
+
+delays inconvenience travelers and could result in fewer visits to the united states or lost business to the nation .
+
+further studies could help determine whether the increased security from biometrics could result in fewer visits to the united states or lost business to the nation , potentially adversely affecting the american economy and , in particular , the border communities .
+
+these communities depend on trade with canada and mexico , which totaled $653 billion in 2000 .
+
+in conclusion , biometric technologies are available today that can be used in security systems to help protect assets .
+
+however , it is important to bear in mind that effective security cannot be achieved by relying on technology alone .
+
+technology and people must work together as part of an overall security process .
+
+as we have pointed out , weaknesses in any of these areas diminishes the effectiveness of the security process .
+
+we have found that three key considerations need to be addressed before a decision is made to design , develop , and implement biometrics into a security system: 1 .
+
+decisions must be made on how the technology will be used .
+
+2 .
+
+a detailed cost - benefit analysis must be conducted to determine that the benefits gained from a system outweigh the costs .
+
+3 .
+
+a trade - off analysis must be conducted between the increased security , which the use of biometrics would provide , and the effect on areas such as privacy and convenience .
+
+security concerns need to be balanced with practical cost and operational considerations as well as political and economic interests .
+
+a risk management approach can help federal agencies identify and address security concerns .
+
+as federal agencies consider the development of security systems with biometrics , they need to define what the high - level goals of this system would be and develop the concept of operations that will embody the people , process , and technologies required to achieve these goals .
+
+with these answers , the proper role of biometric technologies in security can be determined .
+
+if these details are not resolved , the estimated cost and performance of the resulting system will be at risk .
+
+mr. chairman , this concludes my statement .
+
+i would be pleased to answer any questions that you or members of the subcommittee may have .
+
+for further information , please contact keith rhodes at ( 202 ) - 512-6412 or richard hung at ( 202 ) - 512-8073 .
+
+this is a work of the u.s. government and is not subject to copyright protection in the united states .
+
+it may be reproduced and distributed in its entirety without further permission from gao .
+
+however , because this work may contain copyrighted images or other material , permission from the copyright holder may be necessary if you wish to reproduce this material separately .
+

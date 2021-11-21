@@ -1,0 +1,370 @@
+the food and drug administration ( fda ) , a component of the public health service ( phs ) within the department of health and human services ( hhs ) , regulates the importation of selected foods , drugs , cosmetics , biological products , medical devices , and electronic products to ensure that the public is protected from products that make fraudulent or misleading claims or that threaten public health and safety .
+
+in 1987 , fda began developing a support and information system to automate and improve its import entry clearance process , which required extensive manual examination of paperwork .
+
+through an automated interface with the u.s. customs service , fda has implemented a portion of this system , now known as the operational and administrative system for import support ( oasis ) , to enhance its ability to regulate imported products and to relieve importers and fda personnel of some of the paperwork burdens associated with processing imported products .
+
+this report responds to your request that we assess the progress of and identify any problems associated with fda's implementation of oasis , as well as systems development areas needing improvement .
+
+fda's overall mission is to protect the public from selected domestic or imported foods , drugs , cosmetics , biological products , and medical devices and from products that make fraudulent or misleading claims that might threaten public health and safety .
+
+on matters relating to its import operations , fda's office of regulatory affairs provides guidance and systems support , and performs planning , budgeting , and reporting activities for 6 regional offices , 21 district offices , and about 130 resident inspection posts .
+
+imported products can enter the united states at seaports , airports , courier hubs , and border crossings .
+
+the volume of import entries subject to fda regulations has been increasing over the last 20 years from about 590,000 entries in 1975 to about 1.6 million entries currently , and is expected to reach 2 million entries by 2000 .
+
+products imported into the united states must be cleared first by customs , whose responsibilities include assessing and collecting revenues from imports , enforcing customs and related laws , and assisting in the administration and enforcement of other provisions of laws and regulations on behalf of 60 federal agencies .
+
+import brokers act as agents for importers and process the information required to bring products into the united states .
+
+brokers can electronically transmit data on their products to customs through an automated interface with customs' automated commercial system ( acs ) .
+
+if customs determines that a product requires fda approval before being released into the domestic market , such as for regulated food and drugs , the broker is to forward entry information to fda for review .
+
+under fda's manual entry and review process , brokers must submit entry documents ( an fda - 701 , invoice , and associated certifications ) to fda for each shipment .
+
+using these documents , fda inspectors at the port of entry decide whether to release the shipment for entry , examine the shipment by inspecting it there , perform paper or laboratory examination of it for possible refusal due to violations of laws and regulations , or detain it until the broker furnishes additional information .
+
+entry documents can range from a few pages to as many as 40 pages depending on the type and volume of goods in a shipment .
+
+the time interval between when the broker submits the documents to fda and when the broker receives a release or examination decision from fda averages 2 days .
+
+as the volume of imports continued to grow , fda recognized a need to automate and expedite its entry and review process .
+
+also , fda envisioned that an automated system would provide a method to capture and share historical data to bring uniformity to its enforcement decisions for detecting and preventing “port shopping” by importers .
+
+fda found that because of its heavy workload or less interest in particular products at some ports , some importers tended to use the port of entry that provided them with the best opportunity for receiving fda approval .
+
+in 1987 , the fda commissioner formed a task force to develop a new automated system as recommended in a contractor - prepared feasibility study .
+
+this system , now known as oasis , was intended to increase the efficiency and effectiveness of fda's program for monitoring imported products .
+
+in general , oasis was expected to ( 1 ) increase the productivity of investigations personnel through automated interfaces with the laboratories , brokers and / or customs , ( 2 ) improve screening of imports by providing suggestions for actions likely to result in discovery of violations , ( 3 ) provide faster turnaround for processing of importer's entries and faster and more consistent responses , ( 4 ) provide national and district uniformity in processing of entries , and ( 5 ) maintain a base of information for generation of reports .
+
+oasis was initially planned to be fully implemented in september 1989 .
+
+we interviewed fda and customs officials in the washington , d.c. , area , and seattle , washington , to determine the operational objectives and timeframe for implementing oasis .
+
+we also reviewed systems documentation provided by fda , such as the system design , functional requirements , capacity analysis , risk assessment , regional contingency plan , implementation schedules , software support contracts , task orders , interagency agreement between fda and customs , and security and information resources management policies and procedures .
+
+we assessed fda's efforts to design , develop , and implement oasis against gao's executive guide on the best practices of leading private and public organizations for strategic information management , and federal guidelines , such as the federal information processing standards publications .
+
+in addition , we reviewed the 1994 joint self - assessment report on oasis , the contractor's cost - benefit analysis , and the system design review committee's report .
+
+to monitor the implementation of oasis , we visited and interviewed officials in fda district offices and ports of entry in seattle ( system pilot location ) ; miami , florida ; buffalo and new york , new york ; and detroit , michigan .
+
+we also conducted telephone interviews with fda officials in several other district offices .
+
+interviews with fda import managers and inspectors at these sites provided us with observations and examples of entries processed both manually and electronically at major fda air , sea , and border ports .
+
+we also interviewed customs officials and import brokers at the sites visited to obtain their perspectives on how the system has improved the import process .
+
+further , we interviewed officials at hhs , who were involved with the self - assessment and system design reviews .
+
+we also interviewed one of the prior software development contractors and the current contractor regarding their roles and responsibilities for the oasis project .
+
+we performed our work from april 1994 through june 1995 , in accordance with generally accepted government auditing standards .
+
+we requested official comments on a draft of this report from the secretary of health and human services on august 10 , 1995 .
+
+as of september 18 , 1995 , we had not received any comments to include in the final version of this report .
+
+the development of oasis is taking considerably longer than fda officials expected .
+
+as shown in figure 1 , after 8 years and three software development contractors , fda still does not have a fully functional automated import system .
+
+the original design , which was called the import support and information system ( isis ) , was for a large , nationwide , on - line , real - time , distributed fda system .
+
+this system was modified following its 1991 pilot test and fda's agreement with customs to include an automated interface with customs' acs .
+
+as shown in figure 1 , the modified system , known as oasis , was pilot tested in seattle , washington , in 1992 and expanded to portland , oregon , and blaine , washington , in 1993 .
+
+oasis , as implemented in the seattle district locations , provides fda inspectors the ability to ( 1 ) receive import entry data electronically from import brokers through interface with acs , ( 2 ) receive results of preliminary processing against fda's selectivity criteria screening file , which is installed on acs , that the shipment “may proceed,” must be “detained” for sampling , or must be held for “fda review,” ( 3 ) be alerted to potential problem areas with each line item of an entry , make follow - up screening decisions , and transmit these electronically to the broker through interface with acs , ( 4 ) track actions taken and maintain historical data on all electronic import entries , and ( 5 ) eliminate many of the paper transactions among fda , customs , and import brokers .
+
+in addition , import brokers who interface with acs receive preliminary and subsequent screening decisions relating to their electronic entries simultaneously with fda .
+
+however , software design problems experienced at the pilot locations made oasis difficult to use .
+
+such problems included slow response times when receiving and printing electronic data , moving from computer screen to computer screen , or going in and out of other systems while processing entries .
+
+these oasis development problems prompted fda to assemble a team of information resources management ( irm ) representatives from hhs , phs , and within fda to pilot a self - assessment tool to analyze risks associated with the development of oasis .
+
+in june 1994 , as a result of the exit briefing by the self - assessment team on its results and pending actions under way by fda to replace the expiring oasis contract , fda's director of the office of information resources management called for the termination of both the development and deployment of all but the front - end portion of oasis known as the electronic entry processing system or eeps .
+
+fda decided to maintain and refine oasis in the seattle district .
+
+in its july 1994 report , the self - assessment team concluded that the oasis project was at high risk for system failure due to the lack of senior - level management involvement , project planning , and basic development processes as well as system design flaws , an insufficient budget , and a skeleton staff lacking adequate system design and implementation expertise .
+
+in contrast to the oasis functions described previously , eeps allows fda inspectors to receive the broker's entry data from acs , but only allows inspectors and brokers to receive the preliminary admissibility messages of either “may proceed” or “fda review” for the entire entry .
+
+it is not capable of processing or transmitting any follow - up line - item decisions from fda to the brokers .
+
+eeps was deployed to 114 ports between march 1994 and june 1995 , with 103 additional ports expected to be automated by the end of 1995 .
+
+according to import brokers and fda inspectors we interviewed , even eeps' limited capability provides them quicker notifications as to the admissibility of imported shipments and reduces the amount of paperwork required from brokers .
+
+for “may proceed” decisions , paper entry documentation is generally eliminated .
+
+for example , during the month of june 1995 , fda reported that of 2,520 brokers who interfaced with customs' acs in the seattle district and eeps ports , 1,585 , or 63 percent , used electronic filing for 178,412 fda entries , and that 78 percent of the 1,585 electronic filers were not required to submit entry documentation for “may proceed” entries .
+
+table 1 below compares the traditional manual entry process to eeps .
+
+as recommended in 1994 by the self - assessment team , hhs , phs , and fda formed a systems design review committee to determine if ( 1 ) the oasis design adequately meets the user requirements , ( 2 ) fda computer hardware , or platform , is adequate for the system , ( 3 ) real - time access is necessary , and ( 4 ) telecommunications are adequate .
+
+the committee's june 1995 report addressed the first three items .
+
+fda's telecommunications management branch is conducting an agencywide study on the telecommunications and network capacity and capabilities needed .
+
+the results of this study are expected in february 1996 .
+
+the committee's june 1995 report stated that ( 1 ) the oasis system design contains significant deficiencies , ( 2 ) the adequacy of the agency platform cannot be determined because certain stress and system load tests have not been performed or documented , and ( 3 ) real - time access is not necessary .
+
+although further development and deployment of the oasis system is on hold , completion of a successful import system remains a major information resource management goal for fda .
+
+we previously reportedon fda's need to address systems development problems and implementation delays , and our current review identified many of the same problems reported by the self - assessment team .
+
+in addition , we found that the oasis project lacked necessary cost and performance information and did not consider some proven best practices of leading organizations that help ensure successful systems development .
+
+these problems must be resolved if fda is to complete its automation of import operations .
+
+beginning in late september 1994 with the award of a new agencywide strategic information systems support contract , fda began to address some of the systems development process problems identified but continued to lack effective senior - level management and direction , as well as a systems project management team with information technology expertise .
+
+in addition , fda has made little progress in implementing basic systems development procedures , including conducting user acceptance testing and a risk assessment .
+
+recent developments include the completion of a system design review which concluded that oasis was not ready for national implementation and recommended an immediate reengineering effort .
+
+fda top management did not adequately oversee the oasis project and did not provide clear direction and appropriate resources needed to support the project .
+
+we found that this situation was largely due to an irm structure that did not clearly define control and lines of accountability for the oasis project .
+
+in addition , we found that the oasis project was directed by managers who lacked the systems development training and expertise to successfully design , develop , deploy , and maintain an information system .
+
+the deputy commissioner for the office of management and systems is both the chief financial officer and the senior irm official for fda .
+
+irm activities on the oasis project are the responsibility of the office of information resources management ( oirm ) under the deputy commissioner for the office of management and systems and the office of regulatory affairs ( ora ) under the deputy commissioner for the office of operations .
+
+as shown in figure 2 , many fda offices and divisions have some involvement with the oasis project .
+
+the responsibilities of oirm include ( 1 ) ensuring that the agency's 5-year strategic plan for acquisition and development of information resources is prepared and implemented , ( 2 ) ensuring that the most cost - effective approach is applied when acquiring information technology , and ( 3 ) approving acquisitions and ensuring that irm goals and strategies are achieved .
+
+since the oasis project began , its planning , design , development , implementation , and contractor acquisition and interaction resided primarily within the divisions of import operations and information systems in ora .
+
+however , ora's requests for procurement authority for oasis were and continue to be reviewed and approved by oirm .
+
+the deputy commissioner for management and systems told us that since the award of the current strategic information systems contract in september 1994 , the associate commissioner for oirm has been charged with providing ora with continuous technical consultation and scrutiny of all contractor task orders and deliverables prepared under ora's direction .
+
+the oasis project manager is the director of the strategic initiatives staff , which is part of ora , and does not report directly to oirm officials .
+
+in addition , some oversight has been provided at the department level .
+
+in accordance with the paperwork reduction act , as amended , the hhs secretary designated a senior official who is responsible for ensuring agency compliance with and prompt , efficient , and effective implementation of the information policies and irm responsibilities under the act .
+
+the designated senior official at hhs is the assistant secretary for management and budget , who has delegated certain authorities — such as for procurement — to agencies within the public health service , including fda .
+
+the hhs deputy assistant secretary for irm , who reports directly to the designated senior official , is responsible for management and operation of the department's irm program .
+
+it is at this level that hhs has provided fda with assistance on both the self - assessment team and system design review committee .
+
+the joint fda / phs / hhs self - assessment report indicated that fda senior - level management needed to be closely involved with oasis due to the visibility of the system and the troubled system development history .
+
+the report stated that the commissioner or other top fda officials did not receive regularly scheduled progress reports on the project .
+
+we found several memoranda dating back to 1989 in which oirm raised concerns to ora about the cost , complexity , and lack of well - defined requirements , alternatives , and planning regarding oasis .
+
+nonetheless , the project continued under the direction of ora until june 1994 , when the oirm director called for the termination of further development based upon the results of the self - assessment team .
+
+it is critical that senior - level oversight of this automation effort be established to ensure that information technology is acquired , used , and managed to improve the performance of fda's public health and safety mission , and that responsibility and accountability are improved .
+
+as discussed in gao's may 1994 publication on the best practices of leading private and public organizations for strategic information management , these organizations have found that without senior executives recognizing the value of improving information management , meaningful change is slow and sometimes nearly impossible .
+
+as discussed above , ora administered the day - to - day management of the oasis project .
+
+we found , however , that ora did not have the systems development expertise in - house to perform these functions .
+
+our review of the experience and qualification statements of oasis project management showed that the ora deputy associate commissioner — the senior project official , the project manager , and the project officer did not have any systems development training or experience .
+
+the oasis project manager concurred with our finding in a february 1995 memorandum , which stated that ora did not have employees with adequate knowledge and experience in life - cycle methodology and related skills , all of which were important to a system of oasis' complexity .
+
+the memorandum stated that ora planned to use its current software development and support contractor to address this deficiency in systems development and hardware acquisition expertise .
+
+during our review , the self - assessment team recommended in its july 1994 report that ora request and accept assistance from another fda component , phs , or hhs to address deficiencies in staff knowledge .
+
+as stated previously , ora receives oversight from oirm for task order review and approval , but not day - to - day assistance from this or other sources as recommended .
+
+ora still does not have someone with the system development expertise to oversee the oasis project and monitor the contractor's work .
+
+a best practice that can lead to improved mission performance is to ensure that skills and knowledge of line and information management professionals are upgraded .
+
+also useful is establishing customer / supplier relationships internally and defining roles between line managers and information management support professionals to maximize management processes .
+
+lastly , the chance of a breakdown between the agency and contractors is great when the agency does not have information management professionals with the needed expertise to assist line management in evaluating and supervising contractor performance .
+
+we found that fda has not been effective in controlling costs or monitoring the progress of oasis .
+
+fda officials informed us that they did not have a cost accounting system that would enable them to clearly identify the costs of the oasis project .
+
+they said that some of this cost was commingled with other information systems projects .
+
+for example , despite our repeated attempts to obtain the systems life - cycle cost for oasis from its inception through the current fiscal year , fda did not provide us with cost data until july 1995 .
+
+this information was prepared by fda's contractor and submitted in june 1995 , as part of a cost - benefit analysis requested by fda .
+
+according to information contained in the contractor's report , the oasis systems development costs were estimated to be $13.8 million from fiscal year 1987 through april 1995 .
+
+we did not independently verify these estimates .
+
+in addition , the agency did not properly account for or match oasis costs with outcomes to determine if oasis would meet fda's needs within its budget allocation .
+
+accurate accounting of all project costs will be crucial since fda is supportive of legislation that would allow the agency to collect user fees for imports processed through the automated system to offset the costs of developing , deploying and supporting the system .
+
+also , the importance of an import screening system to fda's operations and the import community warrants the maintenance of reliable cost and performance information to keep congressional appropriations and oversight committees informed of the status of any systems development effort .
+
+ora officials we interviewed told us that they did not establish any baseline measures to assess current and expected oasis operational and technical performance .
+
+as discussed in gao's best practices publication , standard performance measurement practices focus on benefits , costs , and risks and , in most cases , include program outcomes , resource consumption , and elapsed time ( cycle time ) of specific work processes , activities , or transactions .
+
+performance measures act as a common focus , allowing management to target problem areas , highlight successes , and generally increase the rate of performance improvement through enhanced learning .
+
+such measures would allow top management to assess and manage the risk associated with its import automation effort , and to control the trade - offs between continued funding of existing operations and developing new performance capabilities .
+
+we found that fda did not follow sound systems development procedures , such as those outlined in federal guidelines , when developing oasis because its project management team lacked expertise and training in systems development .
+
+specifically , fda did not ( 1 ) validate its criteria for electronically screening import entries , ( 2 ) conduct user acceptance testing , ( 3 ) conduct a risk assessment or prepare a security plan to address contingencies or backup procedures to be used in the event of disasters or threats to fda's computer facilities , equipment , and data , and ( 4 ) conduct a cost - benefit analysis .
+
+many of these problems were brought to fda's attention as early as 1988 .
+
+the following systems development problems must be resolved if fda is to avoid continued criticism of its attempts to complete an automated import system .
+
+no fda validation of screening criteria .
+
+fda had not validated the import admissibility screening criteria that reside in customs' acs .
+
+validation is essential to ensure that import entries are processed accurately and that potentially unsafe products are properly identified for “fda review.” oasis project officials in ora said that they did not have access to the criteria in acs and could only validate information contained in the acs - generated error reports .
+
+moreover , these officials stated that they did not know if customs corrected all the errors they identified .
+
+the joint self - assessment report also concluded that fda did not have an adequate verification and validation process for its software and documentation .
+
+did not conduct user acceptance testing .
+
+the self - assessment report stated that fda did not have written acceptance criteria or test plans .
+
+for example , fda did not conduct nor participate with customs in user acceptance testing prior or subsequent to implementing the acs interface .
+
+ora's deputy associate commissioner told us that it relied on and trusted customs to ensure that the screening criteria database was functioning as intended .
+
+security plan not developed .
+
+until recently , fda had not conducted a risk assessment or developed a disaster recovery plan for eeps , as required by federal guidelines .
+
+in 1992 , fda declared oasis a “record system” subject to the requirements of the privacy act of 1974 .
+
+thereafter , fda considered oasis a critical - sensitive system .
+
+also , the computer security act of 1987 requires agencies to establish security plans and perform vulnerability assessments for all computer systems that contain sensitive information .
+
+in february 1995 , fda issued a risk assessment of eeps at fda headquarters and a contingency plan to address backup procedures for the pacific region , which runs the regional computer facility in the seattle district office .
+
+however , we found that the risk assessment was incomplete and did not address major portions of eeps .
+
+in addition , the contingency plan was not viable because fda moved the oasis processing function from seattle to the larger processing facility in its headquarters in rockville , maryland .
+
+fda does not have a contingency plan for ora's headquarters computer center .
+
+however , it plans to obtain a risk assessment of ora's information systems and contents through an interagency agreement with the department of transportation .
+
+as of may 1995 , fda could not tell us when a risk assessment and contingency plan would be performed at fda headquarters to address security concerns for this mission - critical system .
+
+no cost - benefit analysis conducted .
+
+at the beginning of our review , we learned that no one had performed a cost - benefit analysis for the oasis project .
+
+this deficiency was also later reported by the self - assessment team .
+
+a cost - benefit analysis describes the development and operational costs of each alternative , and of nonrecurring ( improved system operations and resource utilization ) and recurring ( operations and maintenance , including personnel ) benefits that could be attained through the development of each proposed alternative .
+
+such an analysis is useful to managers , users , and designers for analyzing alternative systems and will be essential to any decisions for further development of an automated import system .
+
+ora officials told us that they did not ask for such an analysis in the past .
+
+in february 1995 , the current contractor was tasked with conducting a cost - benefit analysis , which was completed in june 1995 .
+
+however , fda did not request that the contractor perform an alternatives analysis .
+
+the current effort was limited to an analysis of oasis' historical costs from fiscal year 1987 through april 1995 , which were estimated to be $13.8 million as well as projected costs from may 1995 through fiscal year 2001 , which were estimated to be $26.2 million .
+
+the contractor also analyzed the costs and benefits of automation as compared to the current manual process .
+
+in june 1995 , the system design review committee issued its report on oasis which concluded that the system is not ready for national implementation because of significant system deficiencies , including inconsistent user interface design and the lack of automated configuration management and version control .
+
+consequently , the committee recommended that a reengineering effort begin immediately to design a system that would incorporate all customers' needs , take advantage of modern technology and the strategic direction in which fda is heading , and position fda for the future .
+
+in a july 10 , 1995 , meeting with fda's deputy commissioner for the office of management and systems , we were told that fda will not implement oasis nationwide and will begin a reengineering effort .
+
+in addition , fda agreed to the recommendations of the committee as stated in a july 12 , 1995 , correspondence from the deputy commissioner to ora officials .
+
+however , the details of the reengineering effort have not yet been documented so it is not clear who will lead this effort , what will it involve , and how long will it take .
+
+reengineering is a formidable undertaking that requires an organization's managers and employees to change the way they think and work .
+
+for example , after senior management recognizes the need for change and commits to reengineering , it then must direct the effort .
+
+existing business processes should be described and analyzed , and measurable improvement goals should be set .
+
+in addition , senior management must also support the reengineering effort by identifying training needs and determining whether outside expertise is necessary .
+
+new business processes should then be designed and the organizational culture , structure , roles , and responsibilities should be changed to support these new processes .
+
+finally , new business processes should be implemented by acquiring and installing new technology or redesigning existing technology to support the new processes .
+
+fda , though , has not yet clearly defined its reengineering effort and how it plans to link this effort to its information technology initiatives .
+
+this is critical if fda is to achieve dramatic changes in overall performance and customer satisfaction .
+
+a thorough understanding of the factors that led to fda's failure over the past 8 years to develop and implement an import system to meet its mission critical needs is crucial to help ensure that similar problems and obstacles are avoided in the future .
+
+as fda plans its reengineering effort , it is presented with an opportunity to identify and correct its long - standing systems development problems .
+
+because these problems can be attributed to a lack of top management oversight , systems expertise , and reliable cost and performance information , continued attention by fda and hhs is vital to the success of this automation effort .
+
+it is crucial that fda follow sound system development procedures , in conjunction with a well - defined reengineering strategy , if it is to successfully implement an import system and achieve its public health and safety mission .
+
+we recommend that the secretary of health and human services direct the assistant secretary for management and budget and the commissioner of the food and drug administration to ensure that continuous top management oversight and systems expertise are provided to fda as it proceeds with its import automation effort ; fda develops and maintains reliable cost and performance information ; fda follows sound systems development practices , including validating systems software , conducting user acceptance testing , developing a security plan , and conducting a cost - benefit analysis that includes an assessment of alternative systems .
+
+we also recommend that the secretary direct the assistant secretary and the commissioner to clearly define how fda plans to reengineer its import operations .
+
+at a minimum , fda should ( 1 ) identify and analyze existing business processes and work flows , ( 2 ) obtain the necessary technical assistance and training to support its reengineering efforts , and ( 3 ) determine new information needs , application system requirements , and technology requirements necessary to support the new business processes .
+
+as agreed with your office , unless you publicly announce the contents of this report earlier , we plan no further distribution until 15 days from the date of this letter .
+
+we will then send copies of this report to the secretary of health and human services , the commissioner of the food and drug administration , the director of the office of management and budget , and other interested parties .
+
+copies also will be made available to others upon request .
+
+this report was prepared under the direction of patricia t. taylor , associate director .
+
+you or your staff can reach me at ( 202 ) 512-6252 , or ms. taylor at ( 202 ) 512-5539 , if there are any questions on the report .
+
+other major contributors are listed in appendix i .
+
+susan t. chin , evaluator - in - charge the first copy of each gao report and testimony is free .
+
+additional copies are $2 each .
+
+orders should be sent to the following address , accompanied by a check or money order made out to the superintendent of documents , when necessary .
+
+orders for 100 or more copies to be mailed to a single address are discounted 25 percent .
+
+u.s. general accounting office p.o .
+
+box 6015 gaithersburg , md 20884-6015 room 1100 700 4th st. nw ( corner of 4th and g sts .
+
+nw ) u.s. general accounting office washington , dc orders may also be placed by calling ( 202 ) 512-6000 or by using fax number ( 301 ) 258-4066 , or tdd ( 301 ) 413-0006 .
+
+each day , gao issues a list of newly available reports and testimony .
+
+to receive facsimile copies of the daily list or any list from the past 30 days , please call ( 301 ) 258-4097 using a touchtone phone .
+
+a recorded menu will provide information on how to obtain these lists .
+
