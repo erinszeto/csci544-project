@@ -9,8 +9,12 @@ This code uses a PERL subprocess to calculate ROUGE scores. Thus, you will need 
 If you face this issue, "Cannot open exception db file for reading: //RELEASE-1.5.5/data/WordNet-2.0.exc.db", remove 'RELEASE-1.5.5\data\WordNet-2.0.exc.db'. And then build the 'WordNet-2.0.ex.db' file again.
 To build this file, see example below.
 ```
-cd RELEASE-1.5.5/data/
-perl WordNet-2.0-Exceptions/buildExeptionDB.pl ./WordNet-2.0-Exceptions ./smart_common_words.txt ./WordNet-2.0.exc.db
+cd /rouge_papier_v2/rouge_papier_v2/rouge_data/
+rm WordNet-2.0.exc.db
+cd /rouge_papier_v2/rouge_papier_v2/rouge_data/WordNet-2.0-Exceptions
+perl ./buildExeptionDB.pl . exc WordNet-2.0.exc.db
+cd ../
+ln -s WordNet-2.0-Exceptions/WordNet-2.0.exc.db WordNet-2.0.exc.db
 ```
 
 ## Installation
