@@ -95,7 +95,7 @@ class Bsl2(nn.Module):
         mlp = []
         mlp.append(nn.Linear(input, output))
         mlp.append(nn.ReLU())
-        mlp.append(nn.Dropout(p=dropout, inplace=True))
+        mlp.append(nn.Dropout(p=dropout, inplace=False))
         return nn.Sequential(*mlp)
 
     def forward(self,inputs,input_length,section_indicator,begin,end,device):
@@ -191,7 +191,7 @@ class Bsl3(nn.Module):
         mlp = []
         mlp.append(nn.Linear(input, output))
         mlp.append(nn.ReLU())
-        mlp.append(nn.Dropout(p=dropout, inplace=True))
+        mlp.append(nn.Dropout(p=dropout, inplace=False))
         return nn.Sequential(*mlp)
 
     def forward(self,inputs,input_length,section_indicator,begin,end,device):
@@ -265,7 +265,7 @@ class Concatenation(nn.Module):
         mlp = []
         mlp.append(nn.Linear(input, output))
         mlp.append(nn.ReLU())
-        mlp.append(nn.Dropout(p=dropout, inplace=True))
+        mlp.append(nn.Dropout(p=dropout, inplace=False))
         return nn.Sequential(*mlp)
 
     def forward(self,inputs,input_length,section_indicator,begin,end,device):
@@ -368,7 +368,7 @@ class Attentive_context(nn.Module):
         mlp = []
         mlp.append(nn.Linear(input, output))
         mlp.append(nn.ReLU())
-        mlp.append(nn.Dropout(p=dropout, inplace=True))
+        mlp.append(nn.Dropout(p=dropout, inplace=False))
         return nn.Sequential(*mlp)
 
     def attention_net(self, features, sent_representation):
@@ -737,7 +737,7 @@ class SummaRunnerSentenceExtractor(nn.Module):
             rnn_output_packed, 
             batch_first=True)
 
-        rnn_output = F.dropout(rnn_output, p=self.rnn_dropout, inplace=True,
+        rnn_output = F.dropout(rnn_output, p=self.rnn_dropout, inplace=False,
                                training=self.training)
 
         sentence_states = self.sentence_rep(rnn_output)
