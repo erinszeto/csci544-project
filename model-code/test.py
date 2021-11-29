@@ -67,8 +67,9 @@ hyp_path = './test_hyp/%s-%s-%d/'%(args.model,args.dataset,args.runtime)
 if not os.path.exists(hyp_path):
     os.makedirs(hyp_path)
 
-device = torch.device("cuda:%d"%(args.device))
-torch.cuda.set_device(args.device)
+device = torch.device("cpu")       # ("cuda:%d"%(args.device))
+# torch.cuda.device(args.device)
+torch.autograd.set_detect_anomaly(True)
 # Set the ROUGE parameter
 remove_stopwords = args.remove_stopwords
 stemmer = args.stemmer
